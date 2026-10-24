@@ -1,0 +1,119 @@
+Q000904	M	How do autoencoders perform dimensionality reduction?
+Q001032	E	What is cluster analysis in the context of machine learning?
+Q001033	E	Can you explain the difference between supervised and unsupervised learning with respect to cluster analysis?
+Q001034	E	What are some common use cases for cluster analysis?
+Q001035	E	How does cluster analysis help in data segmentation?
+Q001036	M	What are the main challenges associated with clustering high-dimensional data?
+Q001037	M	Discuss the importance of scaling and normalization in cluster analysis.
+Q001038	M	How would you determine the number of clusters in a dataset?
+Q001039	M	What is the silhouette coefficient, and how is it used in assessing clustering performance?
+Q001040	E	Explain the difference between hard and soft clustering.
+Q001041	M	Can you describe the K-means clustering algorithm and its limitations?
+Q001042	M	How does hierarchical clustering differ from K-means?
+Q001043	M	What is the role of the distance metric in clustering, and how do different metrics affect the result?
+Q001044	M	Explain the basic idea behind DBSCAN (Density-Based Spatial Clustering of Applications with Noise).
+Q001045	M	How does the Mean Shift algorithm work, and in what situations would you use it?
+Q001046	H	Discuss the Expectation-Maximization (EM) algorithm and its application in clustering.
+Q001150	M	Explain how dimensionality reduction techniques help to overcome the Curse of Dimensionality.
+Q001151	M	What is Principal Component Analysis (PCA) and how does it address high dimensionality?
+Q001155	M	What is manifold learning, and how does it relate to high-dimensional data analysis?
+Q001185	M	What are the techniques for data reduction in the context of data mining?
+Q001304	E	Can you define dimensionality reduction and explain its importance in machine learning?
+Q001307	M	How can dimensionality reduction prevent overfitting?
+Q001309	M	When would you use dimensionality reduction in the machine learning pipeline?
+Q001310	M	Discuss the difference between linear and nonlinear dimensionality reduction techniques.
+Q001311	M	Can dimensionality reduction be reversed? Why or why not?
+Q001312	E	Explain Principal Component Analysis (PCA) and its objectives.
+Q001313	M	How does Linear Discriminant Analysis (LDA) differ from PCA?
+Q001314	M	What is the role of eigenvectors and eigenvalues in PCA?
+Q001315	M	Describe how PCA can be used for noise reduction in data.
+Q001316	H	Explain the kernel trick in Kernel PCA and when you might use it.
+Q001317	M	Discuss the concept of t-Distributed Stochastic Neighbor Embedding (t-SNE).
+Q001318	M	What is the difference between t-SNE and PCA for dimensionality reduction?
+Q001390	E	What is dimensionality reduction and how can it be beneficial in machine learning?
+Q001509	E	What is K-Means clustering, and why is it used?
+Q001511	E	What are centroids in the context of K-Means?
+Q001512	E	Describe the algorithmic steps of the K-Means clustering method.
+Q001513	M	What is the role of distance metrics in K-Means, and which distances can be used?
+Q001514	M	How do you decide on the number of clusters (k) in a K-Means algorithm?
+Q001515	M	What are some methods for initializing the centroids in K-Means clustering?
+Q001516	M	Can K-Means clustering be used for categorical data? If so, how?
+Q001517	M	Explain the term cluster inertia (within-cluster sum-of-squares).
+Q001518	M	What are some limitations of K-Means clustering?
+Q001519	M	How does K-Means clustering react to non-spherical cluster shapes?
+Q001520	M	How do you handle outliers in the K-Means algorithm?
+Q001521	M	Discuss the concept and importance of feature scaling in K-Means clustering.
+Q001522	M	Why is K-Means clustering considered a greedy algorithm?
+Q001895	E	What is Principal Component Analysis (PCA)?
+Q001896	E	How is PCA used for dimensionality reduction?
+Q001897	M	Can you explain the concept of eigenvalues and eigenvectors in PCA?
+Q001898	M	Describe the role of the covariance matrix in PCA.
+Q001899	M	What is the variance explained by a principal component?
+Q001900	M	How does scaling of features affect PCA?
+Q001901	M	What is the difference between PCA and Factor Analysis?
+Q001902	E	Why is PCA considered an unsupervised technique?
+Q001903	H	Derive PCA from the optimization perspective, i.e., minimization of reconstruction error.
+Q001904	M	Can you explain Singular Value Decomposition (SVD) and its relationship with PCA?
+Q001905	M	How do you determine the number of principal components to use?
+Q001906	M	What is meant by 'loading' in the context of PCA?
+Q001907	M	Explain the process of eigenvalue decomposition in PCA.
+Q001909	M	What are the limitations of PCA when it comes to handling non-linear relationships?
+Q002277	E	Name the main types of problems addressed by unsupervised learning.
+Q002278	E	Explain the concept of dimensionality reduction and why it is important.
+Q002279	E	What is clustering, and how can it be used to gain insights into data?
+Q002280	M	Can you discuss the differences between hard and soft clustering?
+Q002281	E	Describe the K-means clustering algorithm and how it operates.
+Q002282	M	What is the role of the silhouette coefficient in clustering analysis?
+Q002283	M	Explain the DBSCAN algorithm. What advantages does it offer over K-means?
+Q002284	M	How does the hierarchical clustering algorithm work, and when would you use it?
+Q002285	M	What is the difference between agglomerative and divisive hierarchical clustering?
+Q002286	M	Explain the working of Principal Component Analysis (PCA).
+Q002287	M	Describe t-Distributed Stochastic Neighbor Embedding (t-SNE) and its use cases.
+Q002288	M	How does Linear Discriminant Analysis (LDA) differ from PCA, and when would you use each?
+Q002290	M	Explain what an autoencoder is and how it can be used for dimensionality reduction.
+Q004016	M	What is a linear autoencoder? Discuss its equivalence with PCA. Which one is better in reconstruction?
+Q004114	E	Describe the k-means algorithm.
+Q004115	M	What is the distortion function in k-means? Is it convex or non-convex?
+Q004116	M	Tell me about the convergence of the distortion function in k-means.
+Q004117	E	What is the Gaussian Mixture Model?
+Q004118	M	Describe the EM algorithm intuitively.
+Q004119	E	What are the two steps of the EM algorithm?
+Q004120	E	Why do we need dimensionality reduction techniques?
+Q004121	E	Why do we need PCA and what does it do?
+Q004122	M	What is the difference between logistic regression and PCA?
+Q004123	E	What are the two pre-processing steps that should be applied before doing PCA?
+Q004124	M	What is t-SNE? Why do we use PCA instead of t-SNE?
+Q004384	E	What is unsupervised learning?
+Q004385	E	What is clustering? When do we need it?
+Q005224	M	Explain K-means clustering. How does it work? What are its limitations?
+Q005227	E	What is dimensionality reduction?
+Q005228	M	Explain PCA (Principal Component Analysis). How does it work? When would you use it?
+Q005313	M	What is t-SNE, and how is it used for NLP?
+Q005489	E	Explain Principal Component Analysis (PCA).
+Q005490	M	What is the difference between LDA and PCA for dimensionality reduction?
+Q005491	M	What is the difference between t-SNE and UMAP for dimensionality reduction?
+Q006292	M	In unsupervised learning, if the ground truth about a dataset is unknown, how can we determine the most useful number of clusters?
+Q006299	M	What is the difference between a Gaussian Mixture Model and K-Means?
+Q006611	M	Explain PCA. What is the physical intuition behind it?
+Q006616	M	How does a Gaussian Mixture Model work (EM algorithm)?
+Q006617	M	When using a Gaussian mixture model, how do you know it is applicable?
+Q006618b	E	Why is dimension reduction important?
+Q006677	M	You have data on all purchases of customers at a grocery store. Describe how you would program an algorithm that clusters the customers into groups. How would you determine the appropriate number of clusters?
+Q012038	M	How do you evaluate a clustering model's effectiveness without pre-labelled groups?
+Q012591	E	Explain briefly K-Means clustering and how we can find the best value of K.
+Q012598	M	You are working on a clustering problem. What different evaluation metrics can be used, and how do you choose between them?
+Q012602	M	How can you evaluate the performance of a dimensionality reduction algorithm on your dataset?
+Q012604	M	In what cases would you use vanilla PCA, Incremental PCA, Randomized PCA, or Kernel PCA?
+Q012605	M	Discuss two clustering algorithms that can scale to large datasets.
+Q007322	M	Compare PCA, t-SNE and UMAP. When would you use each, and how do people misread these plots?
+Q007323b	M	Why can UMAP transform new points when t-SNE cannot?
+Q007339	M	How do you choose k in clustering, and how do you evaluate a clustering when you have no labels?
+Q007340	M	Silhouette score says k=2 but the product team needs about 10 actionable segments. What do you do?
+Q007341	H	Why do high-dimensional Euclidean distances concentrate, and what does that do to k-means specifically?
+D03712	E	Explain k-means, its objective and its failure modes.
+D03713	M	Compare centroid-based, hierarchical and density-based clustering, and when DBSCAN is preferable.
+D03714	M	How do Gaussian mixture models differ from k-means and how does expectation maximization fit them?
+D03715	M	Explain PCA and when you would use it, and compare it with ICA and t-SNE.
+D03716	M	What is latent semantic analysis and how does it relate to the SVD?
+D03717	M	What are hidden Markov models, and what are transition and emission probabilities?
+D03718	H	How does the Viterbi algorithm decode the most likely hidden state sequence in an HMM?

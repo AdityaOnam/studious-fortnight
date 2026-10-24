@@ -1,0 +1,113 @@
+## Inference fundamentals and metrics
+- [E] How does LLM inference differ from LLM training in compute pattern, memory use, and optimization goals? {Q003360}
+- [M] Walk me through what happens inside an LLM server from the moment a request arrives until the last token is streamed back. {Q008545a}
+- [E] How does token streaming work, and why does it change how users perceive latency? {Q004970}
+- [E] What are TTFT, TPOT (inter-token latency), end-to-end latency, and throughput in LLM serving, and what drives each one? {Q003361,Q011234,Q011808,Q008553}
+- [M] How do TTFT, TPOT, and throughput trade off against each other when you tune batch size? {Q005136,D04764}
+- [M] What are reasonable TTFT and per-token latency targets for an interactive chat product, and how would you turn them into SLOs? {Q008553}
+- [M] How do you measure LLM inference performance, and what would you report beyond average tokens per second? {Q003382}
+- [M] Describe the throughput-versus-latency trade-off curve of an LLM server and explain what goodput is. {Q008610,D00157}
+- [M] Why does queueing delay explode as an LLM server approaches saturation? {Q008611}
+- [M] Besides model compute, what are the main sources of latency in an LLM serving stack? {D04952}
+- [M] What are the main challenges in LLM inference? {Q003384}
+- [M] What are MFU and MBU, and which one is the more meaningful efficiency metric for decode? {GEN}
+- [M] How would you compare tokens-per-second fairly across models that use different tokenizers? {GEN}
+- [M] Why do API providers usually charge more for output tokens than for input tokens? {GEN}
+- [M] Your chat product has acceptable TTFT, but users complain that text "types out" too slowly. Which bottleneck do you target? {Q007089}
+- [M] How do you optimize TTFT versus TPOT, and why do the two goals often conflict? {Q011295,D00132}
+## Prefill, decode, and the roofline
+- [E] What is autoregressive generation, and how do the prefill and decode phases differ in compute and memory behavior? {Q006010,Q011230,D00130,D04740,D03769,Q008545b}
+- [E] Why is LLM generation so much slower per token than a classifier's single forward pass? {Q011294,D00131}
+- [M] Why is the first token slower to appear than the tokens after it? {Q004671,Q006942}
+- [M] Explain arithmetic intensity and the roofline model as applied to LLM inference. {Q008593,D04949,Q009906}
+- [H] Why is prefill compute-bound while decode is memory-bandwidth-bound? {Q004946,Q011800,Q009884,Q009460,D04744}
+- [H] Why is decode memory-bandwidth-bound? Walk through the numbers on an H100. {Q007492,Q010165}
+- [H] Why is decode throughput bounded by memory bandwidth, and how does GQA change the arithmetic? {Q007511}
+- [H] Do the roofline math: how many tokens per second can one H100 produce for a 70B model at batch size 1? {Q005113,Q011809}
+- [M] Why doesn't a faster GPU with the same memory bandwidth speed up batch-1 decode? {Q008546}
+- [M] During decode your GPU shows low compute utilization yet is clearly the bottleneck. What is the most accurate explanation? {Q006981}
+- [H] Why does batching raise decode throughput so dramatically, and why doesn't the KV cache read amortise across the batch the way weight reads do? {Q008594}
+- [M] At roughly what batch size does LLM decode become compute-bound? {Q008547,Q009886}
+- [H] At what batch size does KV cache traffic overtake weight traffic in decode, and how does GQA shift that crossover? {Q010166,Q010167}
+- [M] Why does KV cache bandwidth, rather than FLOPs, dominate decode latency? {Q009817}
+- [H] Where does attention sit on the roofline, compared with the MLP GEMMs, as context length grows? {Q009907}
+- [H] How does moving to FP8 shift the roofline ridge point? {Q009908}
+- [H] Why does decode need a differently shaped attention kernel than prefill, and what does a kernel like FlashDecoding parallelize over? {Q008582,Q010176}
+- [M] How does FlashAttention reduce memory traffic, and why does it matter more for prefill than for decode? {GEN}
+- [M] Why does per-token decode latency still grow with context length even when a KV cache is used? {GEN}
+- [M] Request A has a 4,000-token prompt and a 50-token answer; request B has a 400-token prompt and a 2,000-token answer. Which feels slower end-to-end, and which costs more? {Q006979,Q006943}
+- [M] In LLM serving, what does a long-context request cost you that a long-generation request does not? {Q009653}
+- [H] What are the main bottlenecks in a typical LLM inference pipeline on a modern GPU? {Q003381}
+## KV cache basics and sizing
+- [E] What is the KV cache, and why does it make autoregressive generation faster? {Q004323,Q006938a,Q007453,Q009190b,D00127,D04741,Q010846,Q011192}
+- [M] In token-by-token decoding, which of Q, K, and V are cached, and why is there no point in caching queries? {Q007416,Q007456}
+- [M] How does KV cache memory scale with context length, batch size, and model dimensions, and what happens if the context window grows 4x? {Q004423,D03765,Q010545}
+- [M] Derive the per-token KV cache memory formula and compute it for a concrete model. {Q007514,Q011785,D00128,Q007218,D04742}
+- [M] Why does context length become a memory problem before it becomes a compute problem during decode? {Q009855}
+- [M] A Llama-7B FP16 service at 4k context runs at batch 1 on a 24 GB GPU but OOMs at batch 8. What changed, and what is the cheapest fix? {Q006990}
+- [M] How much memory does the KV cache add for 32 concurrent 8K-context sequences on a 70B model? {Q008560}
+- [H] Serve Llama-2-70B (GQA, 8 KV heads, 80 layers, head dim 128, FP16) at 32k context with batch 4. Roughly how much GPU memory does the KV cache alone need? {Q006980}
+- [M] Ballpark the KV cache size of a 70B-class model at 128K context. {Q008549}
+- [H] A 70B-class model at 128k context does not fit in memory because of the KV cache. What do you do? {Q010249}
+- [H] Redo the 128k-context KV estimate for a 70B-class model with FP8 KV cache and MQA. What is the new maximum batch size? {Q010251}
+- [H] Estimate the KV cache needed to serve a large model, and explain how it constrains batch size and context length. {Q004681,Q009935}
+- [H] Estimate the KV cache footprint of a Llama-3-70B-class model and explain what PagedAttention fixes. {Q010168}
+- [H] How would you size the KV cache for a new open-weight model you have not served before? {Q011210}
+- [H] Your capacity plan used "2 x layers x kv_heads x head_dim x bytes" per token for every model in the fleet. What breaks for MLA, sliding-window, or hybrid models? {Q011299,D00129}
+- [M] In LLaMA-2 style inference code, how are the KV cache tensors laid out and updated at each decoding step? {D04547}
+- [H] Product wants a 1M-token context window on a self-hosted model. What breaks in serving, and how do you make it work? {Q008697}
+- [H] Why does KV cache memory, not FLOPs, often become the real bottleneck at 1M-token contexts? {Q010040}
+## Architectural levers on KV cache size
+- [M] Why does grouped-query attention shrink the KV cache but barely change the weight count, and what does it trade off? {Q009191,Q008550}
+- [H] How does Multi-head Latent Attention (MLA) compress the KV cache, and what does it cost at inference time? {GEN}
+- [H] Would you expect MLA or KV cache quantization to be the better first move on an existing GQA model? {Q007538}
+- [H] A 70B MHA model is too KV-heavy for your target context and concurrency, and you have about 5% of the original pre-training compute. What is the best move? {Q006983}
+- [H] With an open-source base model that already uses GQA-8, which KV reduction techniques can you still apply after training, and which need pretraining? {Q009284}
+- [H] How does sliding-window attention change the KV cache memory formula, and how would you design the rolling-buffer cache it enables? {Q007517,Q009824,Q009877}
+- [H] Does an MoE model such as Mixtral have different KV cache math from a dense model with the same attention setup, and why do people assume otherwise? {Q008552,Q009826}
+- [H] What is an attention sink, why does it exist, and what breaks if you evict it from the KV cache? {Q007530}
+- [H] What approaches exist for compressing the KV cache itself (eviction, merging, low-rank, quantization), and what are the newer directions? {Q006012}
+- [H] How do LRU or LFU cache eviction policies relate to KV cache eviction policies in long-context serving? {Q010055}
+- [M] What memory-saving methods exist specifically for LLM inference? {D04763}
+## PagedAttention and KV memory management
+- [M] How do you handle the large memory footprint of the KV cache when serving many concurrent requests? {Q003365,Q005122,Q004702}
+- [M] What KV cache memory management problems (fragmentation, over-reservation) do naive serving systems have, and how does PagedAttention solve them? {Q005964}
+- [M] What is PagedAttention and how does it work? {Q005123,Q008596,Q011802,Q006938b,Q007515,D00133,D04747,Q011297}
+- [M] What is the block table in vLLM, and how does it map logical to physical KV blocks? {Q011307}
+- [H] How does copy-on-write work in PagedAttention for beam search, parallel sampling, or n-best sampling? {Q008598,D04748}
+- [M] Why does PagedAttention raise throughput rather than single-request latency? {Q011306,D00134}
+- [M] Why does vLLM report such a large throughput gain over naive batching? What is the mechanism-level answer? {Q006923}
+- [M] What is the trade-off in choosing the block size for a paged KV cache? Why not 1-token blocks, and why not 128? {Q008597,Q009914,Q010169}
+- [H] What does the block-table indirection in paged attention cost inside the attention kernel? {Q009892}
+- [M] Why does paged allocation of the KV cache help with fragmentation and with admission control? {Q009876}
+- [M] Why does GPU memory keep growing during LLM serving and stay occupied after requests finish? {D04743}
+- [M] Your self-hosted LLM cluster rejects requests with OOM errors under load, yet nvidia-smi shows several GB free per GPU. What is the likely cause and fix? {Q007090}
+- [M] What happens in vLLM when the KV cache fills up mid-generation, and how does the engine decide which sequence to preempt? {Q008551,Q008570,Q010247}
+- [H] When GPU memory runs out, how do you choose between preempt-and-recompute and swapping KV blocks to CPU? {Q010170,D04749}
+- [M] When would you evict KV cache blocks versus offload them to host memory? {Q009893}
+- [M] What metric would you alert on to detect KV cache thrashing in an LLM serving system? {Q009837}
+- [H] How does paged attention interact with a ring-buffer (rolling) KV cache? {Q009825}
+- [H] What breaks in a paged-attention cache manager when three quarters of the layers keep no per-token KV state? {Q009889,Q010059}
+- [H] Why is prefix caching harder with a recurrent (Mamba-style) state than with a KV cache? {Q007549,Q007631}
+- [H] Why can't you roll back a Mamba state by 30 tokens the way you drop KV blocks, and what does that cost an agent that edits its own history? {Q008695}
+- [H] You are moving from a dense transformer to a Mamba-attention hybrid. What changes in your serving stack? {Q008694}
+## Prefix caching and KV reuse
+- [M] How does prefix (prompt) caching relate to the KV cache, and what exactly gets reused? {Q009192}
+- [M] What is prefix caching (for example RadixAttention), when does it save money, and what invalidates a cached prefix? {Q006011,Q011804,Q007455,D00139,D04766}
+- [M] Your chatbot shares a long system prompt across most requests and TTFT is high under load. Which lever gives the biggest direct win? {Q006921}
+- [M] How does a shared multi-thousand-token system prompt change the economics in favour of a cache-centric serving design? {Q009860}
+- [M] When does RadixAttention outperform plain PagedAttention, and for what workloads? {D00154}
+- [M] How does a decoder-only model make KV cache reuse across multi-turn conversations simpler than an encoder-decoder model does? {D04449}
+- [H] A chat assistant re-sends a long conversation history every turn. How do you avoid recomputing it, and what are the pitfalls? {Q009861}
+- [H] What happens to the prefix cache hit rate when a user edits a message at turn 40 or in the middle of a file, and how do you keep the rest usable? {Q009286,Q009389}
+- [M] When building the next-turn prompt under a prefix cache, where do you insert retrieved older turns without breaking the cache boundary? {Q009292}
+- [H] What exactly must go into the cache key for cross-request KV cache reuse? {Q008639}
+- [H] How would you add hash-based block reuse (prefix caching) to a paged KV cache block manager? {Q009915}
+- [M] How would you unit-test that a refactor did not silently drop the prefix cache hit rate? {Q009293}
+- [H] Prefix cache hit rate fell from 80% to 30% after an app release with no infrastructure change. What do you look for first? {Q010425}
+- [H] What does sliding-window attention do to prefix caching in a multi-turn agent? {Q007535}
+- [H] How does sequence-axis KV compression interact with prefix caching for agent sessions that keep appending tool output? {Q009495}
+- [M] Why is context caching sometimes a better choice than RAG for a single 50K-token document queried repeatedly? {D00170}
+- [M] What is tiered KV cache offloading across GPU, CPU, and NVMe, and when does loading a cached prefix beat recomputing the prefill? {Q006175,D00151,D00169,Q008638}
+- [H] At what hit rate does an NVMe tier for the KV cache stop paying for itself? {Q008640}
+- [H] How do distributed KV cache layers such as LMCache and Mooncake Store differ in architecture and role, and how do they share KV across engines? {Q006176,Q006177}

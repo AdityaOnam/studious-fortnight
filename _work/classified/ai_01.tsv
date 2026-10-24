@@ -1,0 +1,300 @@
+Q000855	ML10	E	What is anomaly detection?
+Q000856	ML10	E	What are the main types of anomalies in data?
+Q000857	ML10	M	How does anomaly detection differ from noise removal?
+Q000858	ML05	E	Explain the concept of outliers and their impact on a dataset.
+Q000859	ML10	M	What is the difference between supervised and unsupervised anomaly detection?
+Q000860	ML10	E	What are some real-world applications of anomaly detection?
+Q000861	ML10	M	What is the role of statistics in anomaly detection?
+Q000862	ML10	M	How do you handle high-dimensional data in anomaly detection?
+Q000863	ML10	M	What are some common statistical methods for anomaly detection?
+Q000864	ML10	M	Explain the working principle of k-NN (k-Nearest Neighbors) in anomaly detection.
+Q000865	ML10	M	Describe how cluster analysis can be used for detecting anomalies.
+Q000866	ML10	M	Explain how the Isolation Forest algorithm works.
+Q000867	ML10	E	Explain the concept of a Z-Score and how it is used in anomaly detection.
+Q000868	ML10	M	Describe the autoencoder approach for anomaly detection in neural networks.
+Q000869	ML10	M	How does Principal Component Analysis (PCA) help in identifying anomalies?
+Q000870	MS02	E	What is Apache Spark and what are its main components?
+Q000871	MS02	E	Why choose Apache Spark?
+Q000872	MS02	M	Explain how Apache Spark differs from Hadoop MapReduce.
+Q000873	MS02	E	Describe the concept of RDDs (Resilient Distributed Datasets) in Spark.
+Q000874	MS02	M	What are DataFrames in Spark and how do they compare to RDDs?
+Q000875	MS02	M	What is lazy evaluation and how does it benefit Spark computations?
+Q000876	MS02	M	How does Spark achieve fault tolerance?
+Q000877	MS02	E	What is the role of the Spark Driver and Executors?
+Q000878	MS02	M	How does Spark's DAG (Directed Acyclic Graph) Scheduler work?
+Q000879	MS02	E	Explain the concept of a Spark Session and its purpose.
+Q000880	MS02	M	How does Spark integrate with Hadoop components like HDFS and YARN?
+Q000881	MS02	E	Describe the various ways to run Spark applications (cluster, client, local modes).
+Q000882	MS02	E	What are Spark's data source APIs and how do you use them?
+Q000883	MS02	M	Discuss the role of accumulators and broadcast variables in Spark.
+Q000884	MS02	M	What is the significance of the Catalyst optimizer in Spark SQL?
+Q000885	MS02	M	How does Tungsten contribute to Spark's performance?
+Q000901	DL05	E	What is an autoencoder?
+Q000902	DL05	E	Explain the architecture of a basic autoencoder.
+Q000903	DL05	E	What is the difference between an encoder and a decoder in an autoencoder?
+Q000904	ML04	M	How do autoencoders perform dimensionality reduction?
+Q000905	DL05	E	What are some key applications of autoencoders?
+Q000906	DL05	M	Describe the difference between a traditional autoencoder and a variational autoencoder (VAE).
+Q000907	DL05	E	What is meant by the latent space in the context of autoencoders?
+Q000908	DL05	M	How can autoencoders be used for unsupervised learning?
+Q000909	DL05	M	Explain the concept of a sparse autoencoder.
+Q000910	DL05	M	What is a denoising autoencoder and how does it work?
+Q000911	DL05	M	Describe how a contractive autoencoder operates and its benefits.
+Q000912	DL05	M	What are convolutional autoencoders and in what cases are they preferred?
+Q000913	DL05	M	How do recurrent autoencoders differ from feedforward autoencoders, and when might they be useful?
+Q000914	DL05	M	Explain the idea behind stacked autoencoders.
+Q000915	DL05	M	Discuss the role of regularization in training autoencoders.
+Q000931	ML01	E	What do you understand by the terms bias and variance in machine learning?
+Q000932	ML01	M	How do bias and variance contribute to the overall error in a predictive model?
+Q000933	ML01	E	Can you explain the difference between a high-bias model and a high-variance model?
+Q000934	ML01	E	What is the bias-variance trade-off?
+Q000935	ML01	M	Why is it impossible to simultaneously minimize both bias and variance?
+Q000936	ML01	M	How does model complexity relate to bias and variance?
+Q000937	ML01	M	What could be the potential causes of high variance in a model?
+Q000938	ML01	M	What might be the reasons behind a model's high bias?
+Q000939	ML01	M	How would you diagnose bias and variance issues using learning curves?
+Q000940	ML01	E	What are learning curves?
+Q000941	ML01	M	What is the expected test error, and how does it relate to bias and variance?
+Q000942	ML01	H	How do you use cross-validation to estimate bias and variance?
+Q000943	ML01	M	What techniques are used to reduce bias in machine learning models?
+Q000944	ML01	M	Can you list some methods to lower variance in a model without increasing bias?
+Q000945	ML07	M	What is regularization, and how does it help with bias and variance?
+Q000946	ML03	M	Describe how boosting helps to reduce bias.
+Q001002	LLM03	E	What is ChatGPT and how does it relate to language models like GPT-3?
+Q001003	DROP	-	dup
+Q001004	LLM03	E	Explain the concept of a language model.
+Q001005	LLM01	M	How do transformers, the architecture behind ChatGPT, work?
+Q001006	LLM03	E	What differentiates ChatGPT from rule-based chatbots?
+Q001007	FT01	E	Explain the significance of fine-tuning in language models.
+Q001008	LLM02	E	How does tokenization work in the context of transformer models?
+Q001009	LLM03	M	Give a detailed description of the GPT model architecture.
+Q001010	LLM02	M	What are positional encodings, and why are they important in transformers?
+Q001011	LLM01	M	Explain the concept of attention mechanisms in GPT models.
+Q001012	LLM03	M	How does the decoder-only architecture of GPT facilitate language generation?
+Q001013	LLM04	M	Describe the training process of a GPT model.
+Q001014	LLM04	M	What are some common issues faced during the training of large language models?
+Q001015	FT01	M	How can you fine-tune a pre-trained model like GPT-3 for a specific task?
+Q001016	LLM04	M	Discuss the cost and resource implications of training models like GPT-3.
+Q001017	LLM02	M	What are the steps involved in pre-processing input data for ChatGPT?
+Q001018	ML02	E	What is classification in the context of machine learning?
+Q001019	ML02	E	Can you differentiate between binary and multiclass classification?
+Q001020	ML01	E	How does a classification algorithm learn from data?
+Q001021	ML07	E	What is the role of a loss function in classification algorithms?
+Q001022	ML01	M	What are the differences between generative and discriminative models?
+Q001023	ML02	E	Explain the concept of decision boundaries in classification.
+Q001024	ML05	M	How would you handle categorical features in a classification problem?
+Q001025	ML01	M	What is the "Curse of Dimensionality" and how does it affect classification?
+Q001026	ML02	M	Explain the concept of Support Vector Machines (SVM).
+Q001027	ML02	M	What is the Naive Bayes classifier and how does it work?
+Q001028	ML03	M	Describe how a Decision Tree works in classification tasks.
+Q001029	ML03	M	What is a Random Forest and why is it often more effective than a single Decision Tree?
+Q001030	ML03	M	Explain what Gradient Boosting Machines (GBM) are and how they work.
+Q001031	ML02	E	How does the k-Nearest Neighbours (k-NN) algorithm classify data points?
+Q001032	ML04	E	What is cluster analysis in the context of machine learning?
+Q001033	ML04	E	Can you explain the difference between supervised and unsupervised learning with respect to cluster analysis?
+Q001034	ML04	E	What are some common use cases for cluster analysis?
+Q001035	ML04	E	How does cluster analysis help in data segmentation?
+Q001036	ML04	M	What are the main challenges associated with clustering high-dimensional data?
+Q001037	ML04	M	Discuss the importance of scaling and normalization in cluster analysis.
+Q001038	ML04	M	How would you determine the number of clusters in a dataset?
+Q001039	ML04	M	What is the silhouette coefficient, and how is it used in assessing clustering performance?
+Q001040	ML04	E	Explain the difference between hard and soft clustering.
+Q001041	ML04	M	Can you describe the K-means clustering algorithm and its limitations?
+Q001042	ML04	M	How does hierarchical clustering differ from K-means?
+Q001043	ML04	M	What is the role of the distance metric in clustering, and how do different metrics affect the result?
+Q001044	ML04	M	Explain the basic idea behind DBSCAN (Density-Based Spatial Clustering of Applications with Noise).
+Q001045	ML04	M	How does the Mean Shift algorithm work, and in what situations would you use it?
+Q001046	ML04	H	Discuss the Expectation-Maximization (EM) algorithm and its application in clustering.
+Q001047	DL03	E	What is a Convolutional Neural Network (CNN)?
+Q001048	DL03	E	Can you explain the structure of a typical CNN architecture?
+Q001049	DL03	E	How does convolution work in the context of a CNN?
+Q001050	DL03	E	What is the purpose of pooling in a CNN, and what are the different types?
+Q001051	DL01	M	How do activation functions play a role in CNNs?
+Q001052	DROP	-	notq
+Q001053	DL03	M	Can you describe what is meant by 'depth' in a convolutional layer?
+Q001054	DL03	M	How do CNNs deal with overfitting?
+Q001055	DL03	E	What is the difference between a fully connected layer and a convolutional layer?
+Q001056	DL03	E	What is feature mapping in CNNs?
+Q001057	DROP	-	notq
+Q001058	DL03	M	How does parameter sharing work in convolutional layers?
+Q001059	DL03	E	Why are CNNs particularly well-suited for image recognition tasks?
+Q001060	DL03	M	Explain the concept of receptive fields in the context of CNNs.
+Q001061	DL03	M	What is local response normalization, and why might it be used in a CNN?
+Q001062	DROP	-	notq
+Q001063	DL03	M	Can you explain what a stride is and how it affects the output size of the convolution layer?
+Q001064	DL03	M	How do dilated convolutions differ from regular convolutions?
+Q001065	DL03	E	What is computer vision and how does it relate to human vision?
+Q001066	DL03	E	Describe the key components of a computer vision system.
+Q001067	DL03	E	Explain the concept of image segmentation in computer vision.
+Q001068	DL03	E	What is the difference between image processing and computer vision?
+Q001069	DL03	M	How does edge detection work in image analysis?
+Q001070	DL03	E	Discuss the role of convolutional neural networks (CNNs) in computer vision.
+Q001071	DL03	M	What is the significance of depth perception in computer vision applications?
+Q001072	DL03	M	Explain the challenges of object recognition in varied lighting and orientations.
+Q001073	DL03	E	What are the common image preprocessing steps in a computer vision pipeline?
+Q001074	DL03	M	How does image resizing affect model performance?
+Q001075	DL03	E	What are some techniques to reduce noise in an image?
+Q001076	DL03	E	Explain how image augmentation can improve the performance of a vision model.
+Q001077	DL03	M	Discuss the concept of color spaces and their importance in image processing.
+Q001078	DL03	M	What are feature descriptors, and why are they important in computer vision?
+Q001079	DL03	M	Explain the Scale-Invariant Feature Transform (SIFT) algorithm.
+Q001096	ML07	E	What is a cost function in machine learning?
+Q001097	ML07	E	How does a cost function differ from a loss function?
+Q001098	ML07	E	Explain the purpose of a cost function in the context of model training.
+Q001099	ML07	M	What are the characteristics of a good cost function?
+Q001100	ML07	M	Differentiate between convex and non-convex cost functions.
+Q001101	ML07	M	Why is convexity important in cost functions?
+Q001102	ML07	M	What is the significance of the global minimum in a cost function?
+Q001103	ML07	M	How does the choice of cost function affect the generalization of a model?
+Q001104	ML07	E	Describe the Mean Squared Error (MSE) cost function and when to use it.
+Q001105	ML07	M	Explain the Cross-Entropy cost function and its applications.
+Q001106	ML07	M	What is the Hinge loss, and in which scenarios is it applied?
+Q001107	ML07	M	How is the Log Loss function used in logistic regression?
+Q001108	ML07	M	Discuss the role of the Huber loss and where it is preferable over MSE.
+Q001109	ML07	M	What is the 0-1 loss function, and why is it often impractical?
+Q001110	ML07	M	Explain the concept of regularization in cost functions.
+Q001141	ML01	E	What is meant by the "Curse of Dimensionality" in the context of Machine Learning?
+Q001142	ML01	M	Explain how the Curse of Dimensionality affects distance measurements in high-dimensional spaces.
+Q001143	ML01	E	What are some common problems encountered in high-dimensional data analysis?
+Q001144	ML01	M	Discuss the concept of sparsity in relation to the Curse of Dimensionality.
+Q001145	ML01	M	How does the Curse of Dimensionality impact the training of machine learning models?
+Q001146	ML01	M	Can you provide a simple example illustrating the Curse of Dimensionality using the volume of a hypercube?
+Q001147	ML05	M	What role does feature selection play in mitigating the Curse of Dimensionality?
+Q001148	DROP	-	dup
+Q001149	ML02	M	How does the curse of dimensionality affect the performance of the K-nearest neighbors (KNN) algorithm?
+Q001150	ML04	M	Explain how dimensionality reduction techniques help to overcome the Curse of Dimensionality.
+Q001151	ML04	M	What is Principal Component Analysis (PCA) and how does it address high dimensionality?
+Q001152	ML05	M	Discuss the differences between feature extraction and feature selection in the context of high-dimensional data.
+Q001153	ML03	M	Can Random Forests effectively handle high-dimensional data without overfitting?
+Q001154	ML07	M	How does regularization help in dealing with the Curse of Dimensionality?
+Q001155	ML04	M	What is manifold learning, and how does it relate to high-dimensional data analysis?
+Q001156	CS04	E	What is data modeling and why is it important?
+Q001157	CS04	M	Explain the difference between conceptual, logical, and physical data models.
+Q001158	CS04	M	What are the key steps in the data modeling process?
+Q001159	CS04	E	Describe the different types of relationships in a relational database.
+Q001160	CS04	E	What is normalization and why is it used in database design?
+Q001161	CS04	E	Explain the difference between OLTP and OLAP systems.
+Q001162	SD02	M	What is a star schema and when would you use it?
+Q001163	DROP	-	dup
+Q001164	MS02	M	Describe the concept of slowly changing dimensions (SCDs) in data warehousing.
+Q001165	MS02	E	What is a fact table and how does it differ from a dimension table?
+Q001166	CS04	M	Explain the purpose of surrogate keys in data modeling.
+Q001167	MS02	E	What is a data warehouse and its key characteristics?
+Q001168	MS02	E	Explain the ETL (Extract, Transform, Load) process and its stages.
+Q001169	MS02	M	What are the common challenges faced during ETL processes?
+Q001170	MS02	M	Describe the difference between full load and incremental load in ETL.
+Q001171	MS02	M	What is data staging and why is it important in ETL?
+Q001172	ML01	E	Define data mining and explain its importance in the modern data-driven world.
+Q001173	ML01	E	What is the difference between data mining and data analysis?
+Q001174	ML01	E	How does data mining relate to machine learning?
+Q001175	ML01	E	Explain the concept of Knowledge Discovery in Databases (KDD).
+Q001176	ML01	E	What are the common tasks performed in data mining?
+Q001177	ML01	M	Describe the CRISP-DM process in data mining.
+Q001178	ML01	E	What are the types of data that can be mined?
+Q001179	MS02	M	Explain the concept of data warehousing and its relevance to data mining.
+Q001180	ML05	E	Why is data preprocessing an important step in data mining?
+Q001181	ML05	E	What are the common data preprocessing techniques?
+Q001182	ML05	E	Explain the concept of data cleaning and why it is necessary.
+Q001183	DROP	-	dup
+Q001184	ML05	M	How does data transformation differ from data normalization?
+Q001185	ML04	M	What are the techniques for data reduction in the context of data mining?
+Q001186	ML05	E	How do you handle missing values in a dataset?
+Q001187	ML05	M	What are the methods for outlier detection during data preprocessing?
+Q001188	ML05	E	What is data preprocessing in the context of machine learning?
+Q001189	ML05	E	Why is data cleaning essential before model training?
+Q001190	ML05	E	What are common data quality issues you might encounter?
+Q001191	ML05	E	Explain the difference between structured and unstructured data.
+Q001192	ML05	E	What is the role of feature scaling, and when do you use it?
+Q001193	DROP	-	dup
+Q001194	DROP	-	dup
+Q001195	ML05	M	Describe different types of data normalization techniques.
+Q001196	ML05	E	What is data augmentation, and how can it be useful?
+Q001197	DROP	-	dup
+Q001198	ML05	E	Explain the concept of data encoding and why it is important.
+Q001199	DROP	-	dup
+Q001200	ML05	M	What is the difference between imputation and deletion of missing values?
+Q001201	ML05	M	Describe the pros and cons of mean, median, and mode imputation.
+Q001202	ML05	M	How does K-Nearest Neighbors imputation work?
+Q001203	ML05	M	When would you recommend using regression imputation?
+Q001204	DROP	-	dup
+Q001205	ML05	M	How do missing values impact machine learning models?
+Q001206	ML05	E	What is one-hot encoding, and when should it be used?
+Q001207	ML01	E	What is Machine Learning and how does it differ from traditional programming?
+Q001208	ML01	E	Explain the difference between Supervised Learning and Unsupervised Learning.
+Q001209	ML01	E	What is the difference between Classification and Regression problems?
+Q001210	ML01	E	Describe the concept of Overfitting and Underfitting in ML models.
+Q001211	DROP	-	dup
+Q001212	ML06	M	Explain the concept of Cross-Validation and its importance in ML.
+Q001213	ML07	M	What is Regularization and how does it help prevent overfitting?
+Q001214	ML01	M	Describe the difference between Parametric and Non-Parametric models.
+Q001215	DROP	-	dup
+Q001216	ML05	E	Explain the concept of Feature Engineering and its significance in ML.
+Q001217	DROP	-	dup
+Q001218	ML05	M	Explain the difference between Feature Scaling and Normalization.
+Q001219	DROP	-	dup
+Q001220	DROP	-	dup
+Q001221	ML05	E	What is Feature Selection and what are its techniques?
+Q001238	ML03	E	What is a Decision Tree in the context of Machine Learning?
+Q001239	ML03	M	Can you explain how a Decision Tree is constructed?
+Q001240	ML03	E	What is the difference between classification and regression Decision Trees?
+Q001241	ML03	M	Name and describe the common algorithms used to build a Decision Tree.
+Q001242	ML03	E	What are the main advantages of using Decision Trees?
+Q001243	ML03	E	Outline some limitations or disadvantages of Decision Trees.
+Q001244	ML03	M	Explain the concept of "impurity" in a Decision Tree and how it is used.
+Q001245	ML03	M	What are entropy and information gain in the Decision Tree context?
+Q001246	ML03	M	Define Gini impurity and its role in Decision Trees.
+Q001247	ML03	M	Discuss how Decision Trees handle both categorical and numerical data.
+Q001248	ML03	M	What is tree pruning and why is it important?
+Q001249	ML03	M	How does a Decision Tree avoid overfitting?
+Q001250	ML03	M	What is the significance of the depth of a Decision Tree?
+Q001251	ML03	M	Explain how missing values are handled by Decision Trees.
+Q001252	ML03	M	Can Decision Trees be used for multi-output tasks?
+Q001253	DL01	E	Define deep learning and how it differs from other machine learning approaches.
+Q001254	DL01	E	What is an artificial neural network?
+Q001255	DL01	E	Explain the concept of 'depth' in deep learning.
+Q001256	DL01	E	What are activation functions, and why are they necessary?
+Q001257	DROP	-	dup
+Q001258	DL01	E	Describe the role of weights and biases in neural networks.
+Q001259	DL01	M	What is the vanishing gradient problem, and how can it be avoided?
+Q001260	DL01	E	Explain the difference between shallow and deep neural networks.
+Q001261	DL01	M	What is the universal approximation theorem?
+Q001262	DL02	E	How do dropout layers help prevent overfitting?
+Q001263	DL01	E	What is forward propagation and backpropagation?
+Q001264	DROP	-	dup
+Q001265	DL04	E	Explain Recurrent Neural Networks (RNNs) and their use cases.
+Q001266	DL04	M	Discuss the architecture and applications of Long Short-Term Memory networks (LSTMs).
+Q001267	DL03	M	What is the significance of Residual Networks (ResNets)?
+Q001268	LLM01	M	How does a Transformer architecture function, and in what context is it typically used?
+Q001304	ML04	E	Can you define dimensionality reduction and explain its importance in machine learning?
+Q001305	ML01	E	What are the potential issues caused by high-dimensional data?
+Q001306	DROP	-	dup
+Q001307	ML04	M	How can dimensionality reduction prevent overfitting?
+Q001308	ML05	E	What is feature selection, and how is it different from feature extraction?
+Q001309	ML04	M	When would you use dimensionality reduction in the machine learning pipeline?
+Q001310	ML04	M	Discuss the difference between linear and nonlinear dimensionality reduction techniques.
+Q001311	ML04	M	Can dimensionality reduction be reversed? Why or why not?
+Q001312	ML04	E	Explain Principal Component Analysis (PCA) and its objectives.
+Q001313	ML04	M	How does Linear Discriminant Analysis (LDA) differ from PCA?
+Q001314	ML04	M	What is the role of eigenvectors and eigenvalues in PCA?
+Q001315	ML04	M	Describe how PCA can be used for noise reduction in data.
+Q001316	ML04	H	Explain the kernel trick in Kernel PCA and when you might use it.
+Q001317	ML04	M	Discuss the concept of t-Distributed Stochastic Neighbor Embedding (t-SNE).
+Q001318	ML04	M	What is the difference between t-SNE and PCA for dimensionality reduction?
+Q001351	ML03	E	What is ensemble learning in machine learning?
+Q001352	ML03	M	Can you explain the difference between bagging, boosting, and stacking?
+Q001353	ML03	E	Describe what a weak learner is and how it is used in ensemble methods.
+Q001354	DROP	-	dup
+Q001355	ML03	E	What are some advantages of using ensemble learning methods over single models?
+Q001356	ML03	M	How does ensemble learning help with the variance and bias trade-off?
+Q001357	ML03	M	What is a bootstrap sample and how is it used in bagging?
+Q001358	ML03	M	Explain the main idea behind the Random Forest algorithm.
+Q001359	ML03	M	How does the boosting technique improve weak learners?
+Q001360	ML03	M	What is model stacking and how do you select base learners for it?
+Q001361	ML03	E	How can ensemble learning be used for both classification and regression tasks?
+Q001362	ML03	M	Describe the AdaBoost algorithm and its process.
+Q001363	ML03	M	How does Gradient Boosting work and what makes it different from AdaBoost?
+Q001364	ML03	M	Explain XGBoost and its advantages over other boosting methods.
+Q001365	ML03	M	Discuss the principle behind the LightGBM algorithm.
+Q001366	ML03	M	How does the CatBoost algorithm handle categorical features differently from other boosting algorithms?
+Q001367	ML06	E	What is Explainable AI (XAI), and why is it important?
+Q001368	ML06	M	Can you explain the difference between interpretable and explainable models?

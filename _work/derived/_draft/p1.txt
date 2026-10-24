@@ -1,0 +1,212 @@
+LLM01|E|Why does self-attention scale quadratically with sequence length, and which part of the computation causes it?|A:01-foundations/01-llm-internals.md
+LLM01|M|What alternatives to full attention exist for long sequences, and what does each give up?|A:01-foundations/01-llm-internals.md
+LLM01|E|Why is the dot product of queries and keys divided by the square root of the key dimension?|A:01-foundations/03-attention-mechanisms.md
+LLM01|M|What would happen to the softmax distribution and gradients if you removed the scaling factor in scaled dot-product attention?|A:01-foundations/03-attention-mechanisms.md
+LLM01|E|Explain the roles of queries, keys and values in attention and why separate projections are used for each.|A:01-foundations/03-attention-mechanisms.md
+LLM01|M|Why do transformers use multiple attention heads instead of one large head of the same total dimension?|A:01-foundations/03-attention-mechanisms.md
+LLM01|M|How does a causal mask work in a decoder-only model, and why must it be applied before the softmax?|A:01-foundations/03-attention-mechanisms.md
+LLM01|M|Compare multi-head, multi-query and grouped-query attention in terms of quality, KV cache size and decode speed.|A:01-foundations/03-attention-mechanisms.md
+LLM01|M|Why has the industry moved from multi-head attention to grouped-query attention for most large models?|G:docs/01-basic-concepts/README.md
+LLM01|H|How would you convert an existing multi-head attention checkpoint into a grouped-query attention model with minimal retraining?|G:docs/04-transformer-architecture/README.md
+LLM01|M|What problem does multi-head latent attention solve, and how does it differ from grouped-query attention?|A:01-foundations/03-attention-mechanisms.md
+LLM01|M|Why is standard attention memory-bound rather than compute-bound on modern GPUs?|A:01-foundations/03-attention-mechanisms.md
+LLM01|M|Explain how FlashAttention reduces memory traffic without changing the mathematical result of attention.|A:01-foundations/03-attention-mechanisms.md
+LLM01|H|Walk through the online softmax trick used inside FlashAttention and why tiling is possible.|G:docs/04-transformer-architecture/README.md
+LLM01|M|What does FlashAttention-2 change in work partitioning compared to the first version, and why does it help?|A:01-foundations/03-attention-mechanisms.md
+LLM01|H|Why do newer FlashAttention versions depend on specific GPU generations, and how does low-precision FP8 attention affect accuracy?|G:docs/04-transformer-architecture/README.md
+LLM01|M|How does sliding window attention reduce cost, and how can information still propagate beyond the window?|G:docs/04-transformer-architecture/README.md
+LLM01|M|Compare sparse attention and linear attention approximations. Why have they not fully replaced softmax attention?|A:01-foundations/03-attention-mechanisms.md
+LLM01|H|What is an attention sink, and why do streaming-inference methods keep the first few tokens in cache?|G:docs/04-transformer-architecture/README.md
+LLM01|M|Why do modern LLMs use pre-layer-norm instead of post-layer-norm, and what training behavior does each produce?|A:01-foundations/01-llm-internals.md
+LLM01|M|What is RMSNorm, how does it differ from LayerNorm, and why do most recent LLMs use it?|G:docs/01-basic-concepts/README.md
+LLM01|M|What is the role of the feed-forward network in a transformer block, and roughly what fraction of parameters does it hold?|G:docs/04-transformer-architecture/README.md
+LLM01|M|Explain gated feed-forward variants such as SwiGLU and why they are preferred over ReLU or GELU MLPs.|A:01-foundations/01-llm-internals.md
+LLM01|M|Why do residual connections allow very deep transformers to train, and what is the gradient-flow argument?|G:docs/04-transformer-architecture/README.md
+LLM01|E|Walk me through a full forward pass of a decoder-only transformer from token IDs to next-token probabilities.|A:01-foundations/04-transformer-architecture.md
+LLM01|M|What changed architecturally between GPT-2 and Llama-style models?|A:01-foundations/04-transformer-architecture.md
+LLM01|M|What are the trade-offs of tying the input embedding matrix to the output projection?|A:01-foundations/04-transformer-architecture.md
+LLM01|M|How does cross-attention differ from self-attention, and where does it appear in encoder-decoder models?|G:docs/04-transformer-architecture/README.md
+LLM01|M|Contrast BERT, GPT and T5 in terms of architecture, pretraining objective and typical use cases.|G:docs/04-transformer-architecture/README.md
+LLM01|M|Why did decoder-only models win over encoder-decoder models for general-purpose LLMs, and where do encoder-decoder models still make sense?|G:docs/01-basic-concepts/README.md
+LLM01|M|For a given model, how do the compute shares of attention and the feed-forward layers change as sequence length grows?|G:docs/04-transformer-architecture/README.md
+LLM01|H|How would you estimate FLOPs and activation memory for one transformer layer given batch size, sequence length and hidden size?|G:docs/04-transformer-architecture/README.md
+LLM01|M|What are the typical stages of a transformer pretraining loss curve, and how would you diagnose a plateau or spike?|G:docs/04-transformer-architecture/README.md
+LLM01|M|What is a state-space model such as Mamba, and why are hybrid SSM-transformer models appealing?|G:docs/04-transformer-architecture/README.md
+LLM01|M|Why does the token embedding layer often need special treatment during training and fine-tuning?|G:docs/04-transformer-architecture/README.md
+LLM02|E|How does byte pair encoding build its vocabulary, and how does it tokenize unseen words?|A:01-foundations/02-tokenization-deep-dive.md
+LLM02|M|Compare BPE, WordPiece and unigram tokenization in how vocabularies are learned and how text is segmented.|A:01-foundations/02-tokenization-deep-dive.md
+LLM02|M|What are the trade-offs of a larger versus smaller vocabulary on embedding size, sequence length and multilingual quality?|A:01-foundations/02-tokenization-deep-dive.md
+LLM02|M|Why is byte-level BPE attractive for robustness, and what is its downside for non-Latin scripts?|A:01-foundations/02-tokenization-deep-dive.md
+LLM02|M|Why do LLMs struggle to count characters in a word or reverse strings?|A:01-foundations/02-tokenization-deep-dive.md
+LLM02|M|What happens if you swap the tokenizer between a model and its fine-tuned variant or serving stack?|A:01-foundations/02-tokenization-deep-dive.md
+LLM02|M|How does tokenization affect cost and latency for non-English languages, and what can be done about it?|A:01-foundations/02-tokenization-deep-dive.md
+LLM02|M|What are special tokens and chat templates, and what breaks when the wrong template is used at inference?|G:docs/01-basic-concepts/README.md
+LLM02|M|How would you estimate token counts for cost planning before you have production traffic?|A:01-foundations/02-tokenization-deep-dive.md
+LLM02|M|Why does whitespace and formatting of code or JSON change token counts and model behavior?|A:01-foundations/02-tokenization-deep-dive.md
+LLM02|M|How are images converted into tokens for a vision transformer, and how does that affect context budget?|A:01-foundations/02-tokenization-deep-dive.md
+LLM02|M|How do audio and video get tokenized for multimodal models, and what are the cost implications?|A:01-foundations/02-tokenization-deep-dive.md
+LLM02|E|What is an embedding in the context of an LLM, and how does it relate to a token ID?|G:docs/01-basic-concepts/README.md
+LLM02|E|Why does a transformer need positional information, and what happens without it?|G:docs/04-transformer-architecture/README.md
+LLM02|M|Why does the original transformer use sinusoidal encodings, and what are the properties of sine and cosine at different frequencies?|G:docs/04-transformer-architecture/README.md
+LLM02|M|How does rotary position embedding encode relative position, and why is it popular in modern LLMs?|A:01-foundations/01-llm-internals.md
+LLM02|M|Compare RoPE and ALiBi in extrapolation behavior and typical use cases.|G:docs/01-basic-concepts/README.md
+LLM02|H|Why does RoPE degrade beyond the trained context length, and how do position interpolation and NTK-aware scaling address it?|G:docs/04-transformer-architecture/README.md
+LLM02|H|How would you extend a model trained at 8K context to 128K, and how would you verify quality did not regress at short lengths?|G:docs/04-transformer-architecture/README.md
+LLM02|M|Why does ALiBi extrapolate to longer sequences without retraining?|G:docs/04-transformer-architecture/README.md
+LLM03|M|Explain mixture of experts: how routing works, what active versus total parameters mean, and why it saves compute.|A:01-foundations/01-llm-internals.md
+LLM03|H|What are the system-design consequences of MoE models for memory, batching and expert load balancing at serving time?|A:01-foundations/01-llm-internals.md
+LLM03|M|What auxiliary losses or techniques are used to keep MoE experts evenly utilized during training?|G:docs/04-transformer-architecture/README.md
+LLM03|M|Why is the KV cache of an MoE model not smaller than a dense model of equal attention size?|G:docs/04-transformer-architecture/README.md
+LLM03|M|What does the Chinchilla scaling law say about the optimal ratio of parameters to training tokens?|G:docs/01-basic-concepts/README.md
+LLM03|H|Why would a team train an 8B model on trillions of tokens far beyond the compute-optimal point?|A:03-training-and-adaptation/01-pretraining-basics.md
+LLM03|M|Distinguish training-compute-optimal from inference-optimal scaling and explain when each matters.|A:01-foundations/01-llm-internals.md
+LLM03|M|Are emergent abilities real phase transitions or artifacts of the metric chosen? How would you test that?|G:docs/01-basic-concepts/README.md
+LLM03|M|When would you choose a small language model over a frontier model, and what tasks suit each?|A:00-interview-prep/01-question-bank.md
+LLM03|M|How do dense, MoE and hybrid attention architectures differ in what they optimize for?|A:01-foundations/04-transformer-architecture.md
+LLM03|M|What is a diffusion language model, and where might it beat an autoregressive model?|A:04-inference-optimization/08-diffusion-llms.md
+LLM03|M|Why are diffusion language models not yet the default despite faster parallel decoding?|A:04-inference-optimization/08-diffusion-llms.md
+LLM03|M|What is native multimodality in an LLM compared to bolting a vision encoder onto a text model?|A:01-foundations/01-llm-internals.md
+LLM03|H|How do you read a vendor model card to decide whether an open-weight license fits a commercial product you plan to resell as an API?|A:00-interview-prep/01-question-bank.md
+LLM03|M|How would you approach picking between a closed frontier model and an open-weight model when quality is close but cost differs widely?|A:02-model-landscape/04-model-selection-guide.md
+LLM03|M|Why do reasoning models differ from standard chat models, and what are they trained to do differently?|G:docs/01-basic-concepts/README.md
+LLM03|M|What is test-time compute, and how does a thinking budget control cost and quality?|G:docs/01-basic-concepts/README.md
+LLM03|M|Why is the Transformer-SSM hybrid architecture attractive for long-context inference?|G:docs/04-transformer-architecture/README.md
+LLM03|H|A model advertises a 10M-token context window but scores poorly at 128K on a long-context benchmark. How do you advise a team planning to rely on it?|A:00-interview-prep/01-question-bank.md
+LLM04|E|What is the causal language modeling objective, and how does it differ from masked language modeling?|G:docs/01-basic-concepts/README.md
+LLM04|M|What loss function is used for pretraining, and how do cross-entropy and perplexity relate?|G:docs/01-basic-concepts/README.md
+LLM04|M|Why is deduplication of pretraining data important, and how do MinHash and SimHash work?|G:docs/01-basic-concepts/README.md
+LLM04|M|Describe a pretraining data pipeline: sources, filtering, deduplication, quality scoring and mixing.|A:03-training-and-adaptation/01-pretraining-basics.md
+LLM04|M|What is a data curriculum in pretraining, and why might ordering or mixing proportions matter?|A:03-training-and-adaptation/01-pretraining-basics.md
+LLM04|M|What is the data wall, and how does synthetic data change the pretraining picture?|A:03-training-and-adaptation/06-synthetic-data-generation.md
+LLM04|M|What are the risks of training on model-generated data, and what is model collapse?|A:03-training-and-adaptation/06-synthetic-data-generation.md
+LLM04|M|How do you ensure the quality of a ten-million-row synthetic dataset before using it for training?|A:03-training-and-adaptation/06-synthetic-data-generation.md
+LLM04|M|What is evol-instruct style data generation, and what diversity problems can it introduce?|A:03-training-and-adaptation/06-synthetic-data-generation.md
+LLM04|M|Estimate the compute needed to pretrain a 70B dense model on 15T tokens, and explain the formula you use.|A:03-training-and-adaptation/01-pretraining-basics.md
+LLM04|H|A 7B model needs how much GPU memory for training with Adam in mixed precision? Break down weights, gradients, optimizer states and activations.|G:docs/01-basic-concepts/README.md
+LLM04|M|How do you convert parameter count to inference memory for different precisions, and what is the KV cache overhead on top?|G:docs/01-basic-concepts/README.md
+LLM04|M|Compare data parallelism, tensor parallelism and pipeline parallelism, and say when you combine them.|G:docs/07-model-training/README.md
+LLM04|M|What do ZeRO stages 1, 2 and 3 shard, and how does FSDP relate?|G:docs/07-model-training/README.md
+LLM04|M|What is activation checkpointing, and what compute-for-memory trade does it make?|G:docs/07-model-training/README.md
+LLM04|M|Training hits out-of-memory errors. List the levers you would pull in order and the cost of each.|G:docs/07-model-training/README.md
+LLM04|M|What are loss spikes in large-scale training, and how do teams detect and recover from them?|A:03-training-and-adaptation/01-pretraining-basics.md
+LLM04|M|Compare BF16, FP8 and FP4 training: what range and precision issues arise at each level?|A:03-training-and-adaptation/01-pretraining-basics.md
+LLM04|M|How do learning rate, warmup, gradient clipping and effective batch size interact in large-model training?|G:docs/07-model-training/README.md
+LLM04|M|What is sequence packing, and why must attention masks and loss masks be handled correctly with it?|G:docs/07-model-training/README.md
+LLM04|M|What is a typical failure when a training job loses a GPU node mid-run, and how should checkpointing be designed?|A:16-case-studies/17-multi-tenant-fine-tuning-platform.md
+LLM04|H|How would you design fault tolerance and resume logic for a multi-week, thousand-GPU training run?|A:03-training-and-adaptation/01-pretraining-basics.md
+LLM04|M|Why does the Chinchilla compute-optimal recipe not tell you the right model size for a product that will serve billions of requests?|A:03-training-and-adaptation/01-pretraining-basics.md
+LLM04|M|How does the cost of data contamination in pretraining corpora show up in benchmark scores?|A:06-retrieval-systems/15-data-engineering-for-ai.md
+LLM05|E|Compare greedy decoding, beam search and sampling for text generation.|G:docs/01-basic-concepts/README.md
+LLM05|E|What does temperature do to the next-token distribution, and what happens at temperature zero and at very high values?|A:01-foundations/06-inference-pipeline.md
+LLM05|M|Explain top-k and top-p sampling and when top-p is preferable.|A:01-foundations/06-inference-pipeline.md
+LLM05|M|Why can outputs still vary at temperature zero?|G:docs/01-basic-concepts/README.md
+LLM05|M|How would you make LLM outputs reproducible enough to regression-test when the API no longer exposes temperature?|A:01-foundations/06-inference-pipeline.md
+LLM05|M|What are repetition penalties, and what side effects can they have on code or structured text?|G:docs/01-basic-concepts/README.md
+LLM05|M|How do logit bias and stop sequences give precise control over generation, and what are the pitfalls?|G:docs/01-basic-concepts/README.md
+LLM05|M|What are logits, and how does an LLM turn them into the next token step by step?|G:docs/01-basic-concepts/README.md
+LLM05|E|How does generation know when to stop? Discuss EOS tokens, max tokens and stop sequences.|G:docs/01-basic-concepts/README.md
+LLM05|M|Explain speculative decoding: draft, verify, accept. Why does it preserve the target distribution?|A:04-inference-optimization/03-speculative-decoding.md
+LLM05|M|Why does speculative decoding give little benefit for high-temperature creative generation?|A:04-inference-optimization/03-speculative-decoding.md
+LLM05|M|How do draft heads such as Medusa or EAGLE differ from using a separate small draft model?|A:04-inference-optimization/03-speculative-decoding.md
+LLM05|H|A colleague says speculative decoding hurts throughput at large batch sizes so it should be disabled in production. Do you agree?|A:04-inference-optimization/03-speculative-decoding.md
+LLM05|M|What is lookahead or n-gram speculation, and for which workloads does it shine?|A:04-inference-optimization/03-speculative-decoding.md
+LLM05|M|How does constrained decoding guarantee valid JSON or grammar-conforming output?|A:05-prompting-and-context/06-structured-generation.md
+LLM05|M|How does constrained decoding differ from JSON mode and from function calling?|G:docs/02-prompt-engineering/README.md
+LLM05|H|What is the throughput and quality cost of grammar-constrained decoding, and how would you mitigate it at scale?|G:docs/08-inference-optimization/README.md
+LLM05|E|What is the lost-in-the-middle problem, and what does it imply for how you order retrieved context?|A:05-prompting-and-context/05-context-engineering.md
+LLM05|M|What are the options when a document exceeds the model's context window?|G:docs/01-basic-concepts/README.md
+LLM05|M|When would you choose long context over RAG, and when does RAG still win?|A:05-prompting-and-context/05-context-engineering.md
+LLM05|M|How do you handle the high time-to-first-token of million-token prompts?|A:05-prompting-and-context/05-context-engineering.md
+LLM05|M|What is context rot, and why does response quality degrade as the context fills with irrelevant material?|A:05-prompting-and-context/05-context-engineering.md
+LLM05|M|Why is an LLM API stateless, and where does conversational memory actually live?|G:docs/01-basic-concepts/README.md
+LLM05|M|What techniques exist to compress long contexts, and when would you use semantic caching versus sliding windows?|G:docs/08-inference-optimization/README.md
+LLM05|M|Why do LLMs get math wrong, and what architectural patterns mitigate it?|G:docs/01-basic-concepts/README.md
+LLM05|M|What is a knowledge cutoff, and how should an application handle questions that need newer information?|G:docs/01-basic-concepts/README.md
+LLM05|M|How do sampling controls on hosted frontier models differ from open-weight models, and what does that imply for determinism?|A:01-foundations/06-inference-pipeline.md
+LLM05|M|What is self-consistency decoding, and how does best-of-N differ from it?|A:13-reliability-and-safety/02-ensemble-methods.md
+LLM06|E|What is the KV cache, and why does it speed up autoregressive generation?|A:01-foundations/03-attention-mechanisms.md
+LLM06|M|How do you compute KV cache size per token for a model, and which factors dominate at long context?|A:01-foundations/03-attention-mechanisms.md
+LLM06|H|Your capacity plan used one KV-per-token formula for every model in the fleet. What breaks for MLA, sliding-window or hybrid models?|A:04-inference-optimization/02-kv-cache-and-context-caching.md
+LLM06|M|Explain the prefill and decode phases and why they have different bottlenecks.|A:01-foundations/06-inference-pipeline.md
+LLM06|M|Why is LLM generation slower per token than running a classifier, and what is the arithmetic intensity argument?|A:04-inference-optimization/01-inference-fundamentals.md
+LLM06|M|How do you optimize time-to-first-token versus time-per-output-token, and why do they conflict?|A:04-inference-optimization/01-inference-fundamentals.md
+LLM06|M|What does PagedAttention solve, and how do block tables and copy-on-write enable KV sharing?|A:04-inference-optimization/05-paged-attention.md
+LLM06|M|Why does PagedAttention raise throughput rather than latency?|A:04-inference-optimization/05-paged-attention.md
+LLM06|M|Compare static, dynamic and continuous batching for LLM serving.|A:04-inference-optimization/04-batching-strategies.md
+LLM06|M|What is a prefill stall in a continuous-batching server, and how does chunked prefill mitigate it?|A:04-inference-optimization/04-batching-strategies.md
+LLM06|H|When does disaggregating prefill and decode onto separate pools beat chunked prefill on a single pool?|A:04-inference-optimization/04-batching-strategies.md
+LLM06|M|What does KV transfer between prefill and decode nodes require, and what tools are used to move the cache?|G:docs/08-inference-optimization/README.md
+LLM06|M|What is prefix caching or RadixAttention, and how does it change the way you structure system prompts?|G:docs/08-inference-optimization/README.md
+LLM06|M|Compare INT8, INT4, FP8 and FP4 quantization in terms of accuracy and hardware support.|G:docs/08-inference-optimization/README.md
+LLM06|M|How does AWQ differ from GPTQ in how it chooses what to protect during quantization?|A:03-training-and-adaptation/07-quantization-deep-dive.md
+LLM06|M|Why does QLoRA use NF4 instead of standard 4-bit floating point?|A:03-training-and-adaptation/07-quantization-deep-dive.md
+LLM06|H|The team wants to move serving from FP8 to NVFP4 to cut cost. What do you check before approving?|A:03-training-and-adaptation/07-quantization-deep-dive.md
+LLM06|M|What is KV cache quantization, and how can its error be compensated?|G:docs/08-inference-optimization/README.md
+LLM06|M|When is quantization-aware training worth it compared to post-training quantization?|A:03-training-and-adaptation/07-quantization-deep-dive.md
+LLM06|M|What are GGUF and similar local-serving formats, and why are they unsuited for datacenter serving?|A:03-training-and-adaptation/07-quantization-deep-dive.md
+LLM06|M|Why is tensor parallelism preferred over pipeline parallelism for low-latency serving?|A:04-inference-optimization/06-serving-infrastructure.md
+LLM06|M|How does tensor parallel sharding work, and what is the AllReduce communication cost per layer?|G:docs/08-inference-optimization/README.md
+LLM06|M|Explain expert parallelism and context parallelism and when each is needed.|A:04-inference-optimization/06-serving-infrastructure.md
+LLM06|H|Why can DeepSeek-style MLA models not use standard tensor-parallel layouts without KV duplication, and what do inference engines do about it?|G:docs/08-inference-optimization/README.md
+LLM06|M|What is KV cache offloading to CPU or NVMe, and how do you decide when it pays off?|G:docs/19-inference-frameworks/README.md
+LLM06|M|What is ring attention and how does it enable very long contexts across devices?|G:docs/08-inference-optimization/README.md
+LLM06|M|Compare vLLM, SGLang and TensorRT-LLM and pick one for a given workload.|A:04-inference-optimization/06-serving-infrastructure.md
+LLM06|M|When does RadixAttention in SGLang outperform PagedAttention, and for what workloads?|G:docs/19-inference-frameworks/README.md
+LLM06|H|Why shouldn't you quote framework throughput numbers from memory, and how would you design a reproducible inference benchmark?|G:docs/19-inference-frameworks/README.md
+LLM06|M|A vendor pitches an accelerator at 3,000 tokens per second. How do you evaluate that claim?|A:04-inference-optimization/01-inference-fundamentals.md
+LLM06|M|What is goodput, and why measure performance on a Pareto curve rather than at batch size one?|A:01-foundations/06-inference-pipeline.md
+LLM06|M|How would you estimate the number of GPUs needed to serve a given model at a target QPS and latency?|A:01-foundations/06-inference-pipeline.md
+LLM06|M|What is multi-LoRA serving, and how does it let one base model serve many tenants?|A:03-training-and-adaptation/03-lora-qlora-peft.md
+LLM06|M|How do you handle noisy neighbors in a multi-tenant LLM serving cluster?|A:04-inference-optimization/06-serving-infrastructure.md
+LLM06|H|One malformed request crashed an inference replica and every tenant on it lost service. What is the design lesson and fix?|A:04-inference-optimization/06-serving-infrastructure.md
+LLM06|H|Design a premium low-latency tier for an agent product needing very high tokens per second per user.|A:04-inference-optimization/06-serving-infrastructure.md
+LLM06|M|Why is Ollama not a production inference server, and what changes if a prototype built on it becomes a shared API?|A:04-inference-optimization/09-on-device-and-edge-deployment.md
+LLM06|M|When would you choose on-device inference over a cloud API, and what do you give up?|A:04-inference-optimization/09-on-device-and-edge-deployment.md
+LLM06|M|How does MoE inference change batching, communication and memory planning?|G:docs/08-inference-optimization/README.md
+LLM06|M|Why are inference frameworks vulnerable to unsafe deserialization, and how do you harden them?|G:docs/19-inference-frameworks/README.md
+LLM06|M|When is self-hosting an open-weight model cheaper than an API, and what hidden costs flip the answer?|A:04-inference-optimization/07-cost-optimization-playbook.md
+LLM06|M|How do you justify the cost of an AI system to a CFO?|A:04-inference-optimization/07-cost-optimization-playbook.md
+LLM06|M|What does a tiered KV storage hierarchy look like, and how does it affect cache hit rates for agentic workloads?|A:04-inference-optimization/02-kv-cache-and-context-caching.md
+LLM06|M|Why is context caching sometimes better than RAG for a single 50K-token document queried repeatedly?|A:04-inference-optimization/02-kv-cache-and-context-caching.md
+LLM06|M|How does knowledge distillation produce a smaller serving model, and when is distillation preferred over quantization?|A:03-training-and-adaptation/05-knowledge-distillation.md
+LLM06|M|Production LLM serving suddenly slows down. What metrics and diagnostic steps do you follow?|G:docs/08-inference-optimization/README.md
+LLM07|E|What is perplexity, and what are its limits as a measure of LLM quality?|G:docs/01-basic-concepts/README.md
+LLM07|M|Why are traditional metrics such as BLEU and ROUGE poor fits for evaluating open-ended LLM output?|A:14-evaluation-and-observability/01-llm-evaluation.md
+LLM07|M|How would you evaluate LLM outputs when there is no ground truth?|A:00-interview-prep/01-question-bank.md
+LLM07|M|What are the main limitations and biases of LLM-as-a-judge, and how do you mitigate them?|A:14-evaluation-and-observability/01-llm-evaluation.md
+LLM07|H|Walk through building and validating an LLM judge: labeling, data splits, prompt iteration and the metrics you track.|A:ai_evals_comprehensive_study_guide.md
+LLM07|M|Why do binary pass/fail judge criteria often work better than numeric rating scales?|A:ai_evals_comprehensive_study_guide.md
+LLM07|M|What is position bias in pairwise judging, and how do you debias it?|A:13-reliability-and-safety/02-ensemble-methods.md
+LLM07|M|Your three LLM judges agree on 95 percent of verdicts. Is that good news?|A:13-reliability-and-safety/02-ensemble-methods.md
+LLM07|M|How do you calibrate an LLM judge against human labels and correct estimated metrics for judge error?|A:16-case-studies/18-eval-gated-cicd.md
+LLM07|M|When would you use human evaluation, and how do you measure inter-annotator agreement?|A:14-evaluation-and-observability/01-llm-evaluation.md
+LLM07|M|A vendor claims 90 percent on a coding benchmark. What questions do you ask before believing it?|A:14-evaluation-and-observability/03-benchmarks-and-leaderboards.md
+LLM07|M|Why have benchmarks like MMLU and HumanEval become unreliable for ranking frontier models?|A:14-evaluation-and-observability/03-benchmarks-and-leaderboards.md
+LLM07|M|What are benchmark saturation and contamination, and how can you detect contamination?|A:14-evaluation-and-observability/03-benchmarks-and-leaderboards.md
+LLM07|M|Why do scaffold and harness differences produce very different scores for the same model?|A:14-evaluation-and-observability/03-benchmarks-and-leaderboards.md
+LLM07|M|How would you use a crowd-voted Elo leaderboard responsibly when choosing a model for a chat product?|A:14-evaluation-and-observability/03-benchmarks-and-leaderboards.md
+LLM07|M|What is wrong with using a general benchmark like MMLU to pick a model for your own use case?|A:02-model-landscape/02-capability-assessment.md
+LLM07|M|How do you build a custom evaluation set for a new LLM feature, step by step?|A:02-model-landscape/02-capability-assessment.md
+LLM07|M|What are common evaluation pitfalls such as small test sets, leakage, ignoring variance and evaluating a different system than you ship?|A:02-model-landscape/02-capability-assessment.md
+LLM07|M|What is eval awareness, and how might it distort safety or capability evaluations?|A:02-model-landscape/02-capability-assessment.md
+LLM07|H|Your coding agent's benchmark score jumped 15 points after a model upgrade. How do you know the gain is real?|A:07-agentic-systems/10-evaluating-agentic-systems.md
+LLM07|M|How do you decide whether a 95 percent accuracy claim from an AI system is meaningful?|A:00-interview-prep/01-question-bank.md
+LLM07|E|What are the different types of hallucination, and how would you detect each in production?|G:docs/01-basic-concepts/README.md
+LLM07|M|What causes LLM hallucinations at the training and decoding levels?|G:docs/01-basic-concepts/README.md
+LLM07|M|How do SelfCheckGPT, semantic entropy and citation verification detect hallucinations?|G:docs/09-ai-safety-evaluation/README.md
+LLM07|M|Your hallucination rate jumped 30 percent after a provider silently updated the model. How do you detect and respond?|A:00-interview-prep/01-question-bank.md
+LLM07|M|How would you design an abstention strategy so a model says it does not know instead of fabricating?|A:13-reliability-and-safety/01-guardrails.md
+LLM07|M|What is a reasoning model's chain of thought good for, and why is it not a reliable account of the model's actual computation?|A:05-prompting-and-context/03-chain-of-thought.md
+LLM07|M|Why should you not train against the chain of thought if you want to monitor it?|A:03-training-and-adaptation/08-rlvr-and-reasoning-models.md
+LLM07|M|When is chain-of-thought overthinking harmful, and how do you control reasoning effort?|A:05-prompting-and-context/03-chain-of-thought.md
+LLM07|M|How do you evaluate long-context recall, and why can retrieval benchmarks like needle-in-a-haystack mislead?|A:02-model-landscape/02-capability-assessment.md
+LLM07|M|How would you A/B test two models in production, and which metrics and guardrails would you track?|A:02-model-landscape/02-capability-assessment.md
+LLM07|M|Design an evaluation system for comparing two LLMs on open-ended tasks.|A:00-interview-prep/01-question-bank.md
+LLM07|M|Why can behavioural self-reports from an LLM differ from what it actually does?|G:docs/09-ai-safety-evaluation/README.md
+LLM07|M|What is overrefusal, and how do you balance safety and helpfulness when evaluating a model?|G:docs/09-ai-safety-evaluation/README.md
+LLM07|M|How would you evaluate whether a model's output is grounded when you need to both measure and enforce it?|A:13-reliability-and-safety/01-guardrails.md
+LLM07|M|What is a panel of LLM judges, and when is it worth the cost?|A:13-reliability-and-safety/02-ensemble-methods.md
+LLM07|M|What does Galileo-style distilled judge or cascade judging do, and what are its limits?|A:14-evaluation-and-observability/01-llm-evaluation.md
+LLM07|H|Your eval pipeline runs a cheap judge on all traffic and escalates low-confidence cases to a frontier judge. How do you validate this cascade?|A:14-evaluation-and-observability/01-llm-evaluation.md
+LLM07|M|How do you keep the grader out of reach of the system being evaluated?|A:14-evaluation-and-observability/01-llm-evaluation.md
+LLM07|M|What is the benchmark-to-production gap, and how do you bridge it?|A:14-evaluation-and-observability/03-benchmarks-and-leaderboards.md

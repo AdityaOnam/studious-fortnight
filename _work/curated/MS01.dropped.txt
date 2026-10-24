@@ -1,0 +1,6 @@
+Q001717	vague
+Q005171	offscope
+Q012497	vague
+D00884	offscope
+D00889	offscope
+D03478	offscope

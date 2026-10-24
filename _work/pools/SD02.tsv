@@ -1,0 +1,205 @@
+Q001162	M	What is a star schema and when would you use it?
+Q011698	M	How do you handle a tenant who wants to export all their data from a multi-tenant system?
+Q012657	M	Describe the advantages and disadvantages of relational databases vs NoSQL databases.
+Q000094	M	SQL vs NoSQL: when would you choose each?
+Q000097	M	What are common database scaling strategies?
+Q000102	M	How does database replication work?
+Q000104	E	Why is database replication useful?
+Q000106	E	Why is sharding used?
+Q000107	M	How does a query work in a sharded database?
+Q000108	M	What happens if a query does not provide the shard key in a sharded database?
+Q000110	H	How would you design a database for a large-scale application?
+Q000446	M	SQL vs NoSQL: how do you choose?
+Q000448	M	What is the difference between sharding, partitioning and replication?
+Q000569	M	What is the difference between object, block and file storage?
+Q000365b	M	What are the trade-offs between SQL and NoSQL databases?
+Q000637	H	How does Discord store trillions of messages?
+Q000640	M	How do you upload a large file to S3?
+Q000642	M	What are the top use cases of object stores?
+Q000643	M	How do you decide which type of database to use?
+Q000644	M	What is a serverless database?
+Q000648	M	How do you implement the read replica pattern?
+Q000703	M	What happens when you upload a file to Amazon S3?
+Q000729	E	What is database sharding?
+Q000752	E	What is an object store?
+Q000788	M	How can we optimize performance when uploading large files to an object storage service such as S3?
+Q000809	H	How are restaurant locations stored in the database so that a location-based service can return nearby restaurants efficiently?
+Q000815	M	What is a time-series database (TSDB), and how is it different from a relational database?
+Q000824	M	Are serverless databases the future, and how do they differ from traditional cloud databases?
+Q000844	M	How do you create a unique row ID in sharded databases?
+Q001826	M	Explain eventual consistency and its role in NoSQL databases.
+Q001828	M	How is data modeling in NoSQL databases distinct from that in relational databases?
+Q001829	E	What advantages do NoSQL databases offer for managing large volumes of data?
+Q001830	M	When would you choose a NoSQL database over a relational database?
+Q001831	H	Describe the various consistency models in NoSQL databases and how they handle transactions and conflict resolution.
+Q002128	E	Describe the difference between SQL and NoSQL databases.
+Q002580	E	What is the difference between strong consistency and eventual consistency?
+Q002634	E	What is the difference between horizontal and vertical sharding?
+Q002635	M	What are the challenges of sharding?
+Q002636	M	How do you choose a good shard key?
+Q002637	M	What is the difference between synchronous and asynchronous replication?
+Q002638	M	How do you handle failover in master-slave replication?
+Q002646	M	How do NoSQL databases achieve scalability?
+Q002648	M	What is polyglot persistence?
+Q003068	M	What are best practices for file metadata and lifecycle management?
+Q003215	H	How do you measure and tune search relevance?
+Q003734	H	What are the options for synchronizing MySQL data to Elasticsearch, and how do you handle full sync, incremental sync, out-of-order events, and data reconciliation?
+Q003766	M	What is the difference between BASE and ACID? How is eventual consistency implemented in practice?
+Q003817	H	After sharding a database, how do you handle distributed IDs, cross-shard JOINs and distributed transactions?
+Q006357	E	What is the purpose of database replication?
+Q006358	M	What are the different types of database replication supported by SQL Server?
+Q006474	M	When should you use sharding?
+Q012320	E	Why are data partitioning and routing needed?
+Q012321	M	How do you do data partitioning and routing?
+Q012322	M	Why are replication and consistency needed?
+Q009457	H	An agent needs durable operational state (conversation memory, pending human approvals, idempotency records for tool calls) and the business wants analytics over all of it. With managed Postgres next to your lakehouse (Delta) tables, how do you split the data and why?
+D01176	M	What problems can read-write splitting with asynchronous replication cause for read-your-writes consistency, and how do you mitigate them?
+D01177	M	Compare horizontal partitioning (sharding) and vertical partitioning of a database.
+D01178	M	What sharding strategies exist (range, hash, directory) and what are their trade-offs for hot spots and rebalancing?
+D01179	H	What problems appear after sharding: distributed transactions, cross-shard joins, global unique IDs, resharding? How would you handle each?
+D01180	M	How would you generate globally unique IDs across shards, and how do auto-increment, UUID and Snowflake IDs compare?
+D01181	E	What are the main differences between relational and non-relational databases, and how do you choose?
+D01182	M	What do BASE and eventual consistency mean, and how do they contrast with ACID?
+D01183	H	How would you migrate a large production table to a sharded layout with zero downtime?
+D01627	M	When would you pick a relational database over a NoSQL store, and when the reverse?
+D01628	M	How do the data models of key-value, document, column-family and graph databases differ, and what workloads suit each?
+D01629	M	Compare how SQL and NoSQL databases typically scale (vertical vs horizontal) and what that implies for consistency.
+D01630	M	What is schema-on-write versus schema-on-read and what are the pros and cons of flexible schemas?
+D01870	M	What is the role of an index in a NoSQL store compared with an RDBMS?
+D02181	M	How do you scale a MySQL deployment: read-write splitting, sharding by key, and vertical partitioning? What are the trade-offs?
+D02182	M	What new problems appear after sharding a database, such as cross-shard joins, distributed transactions and global unique IDs?
+D02183	M	How do you handle replication lag in a read-write splitting setup so users do not read stale data?
+D02184	M	Compare hash-based and range-based sharding strategies. How does each handle hotspots and resharding?
+D02185	H	Design a pipeline to keep an Elasticsearch index in sync with a MySQL database. Compare dual writes, scheduled sync and binlog CDC.
+D02186	H	What delivery and ordering guarantees must a database-to-search-index sync provide, and how do you handle deletes, retries and backfills?
+D02187	M	When would you choose a NoSQL database over a relational database?
+D02188	E	What are the main types of NoSQL databases (key-value, document, column family, graph) and a typical use case for each?
+D02189	M	Compare SQL and NoSQL databases in terms of schema, scaling, consistency and query capabilities.
+D02190	M	What advantages do NoSQL databases offer for horizontal scaling and what do they give up?
+D02191	M	Which cache read-write strategies exist: cache-aside, read-through, write-through and write-behind? Compare them.
+D02349	M	Compare synchronous, semi-synchronous and asynchronous replication in terms of durability, latency and failover safety.
+D02361	M	What are the two fundamental techniques of data replication and data partitioning, and what problem does each solve?
+D02548	E	What is read-write splitting and how is it typically implemented?
+D02549	M	How does master-slave replication work in a relational database, and what is replication lag?
+D02550	M	How can you avoid users reading stale data after a write when using read replicas?
+D02551	M	What causes replication lag and how can you reduce it?
+D02552	M	When do you need database sharding, and what is the difference between vertical and horizontal partitioning?
+D02553	M	Compare hash-based, range-based and directory-based sharding strategies and their effect on hotspots and rebalancing.
+D02554	M	How do you choose a shard key, and what makes a bad shard key?
+D02555	M	What problems does sharding introduce, such as cross-shard joins, global IDs, distributed transactions and pagination?
+D02556	H	How do you migrate a live database from a single instance to a sharded cluster with no downtime?
+D02557	H	How would you add shards to a hash-sharded database without remapping all data?
+D02558	M	What is hot and cold data separation and what are its benefits and costs?
+D02559	M	How do you migrate cold data out of a hot database while keeping consistency, and how can you roll back?
+D02560	M	How do you route queries between hot and cold storage in the application and keep cold queries acceptable?
+D02561	M	How does cold-hot separation differ from archiving and from table partitioning?
+D02562	H	Design the storage for an order system that must keep five years of orders while most queries target the last three months.
+D02563	M	Why is deep pagination with LIMIT and a large OFFSET slow in a relational database?
+D02564	M	Compare cursor-based pagination, subquery, deferred join and covering index approaches for deep pagination.
+D02566	M	Why is SELECT * discouraged in production queries?
+D02567	M	When are joins acceptable, and what makes a join expensive on large tables?
+D02568	M	What are the pros and cons of foreign keys and cascades at large scale?
+D02569	M	Why prefer UNION ALL over UNION, and why prefer batch operations over many single statements?
+D02570	M	How do you diagnose and optimize a slow SQL query using execution plans?
+D02571	M	What situations cause an index to be ignored, such as functions on columns, implicit type conversion or leading wildcards?
+D02572	M	When does a composite index beat several single-column indexes and how does the leftmost prefix rule apply?
+D02573	M	What are the costs of over-indexing, redundant indexes and indexing frequently updated columns?
+D02574	M	When is a prefix index on a string column useful, and what are its limitations?
+D02575	M	How does choosing appropriate column data types affect storage, index size and query performance?
+D03233	H	How would you guarantee that one seat is assigned to exactly one passenger under heavy concurrency without making other passengers wait on locks?
+D03234	H	Compare pessimistic locking, optimistic concurrency control and a single-writer queue for seat assignment in a check-in system.
+D03235	M	Design a key-value store built on top of a relational database supporting get, put, delete and TTL, scaled to 1 million concurrent transactions and petabytes of data.
+D03236	H	How would you implement key expiry efficiently in a SQL-backed key-value store so expired keys are deleted without scanning the full table?
+D03237	H	How would you shard a SQL-backed key-value store and handle rebalancing when you add shards?
+D03254	M	How would you model and index photo tags to efficiently answer both photos where user X is tagged and who is tagged in photo Y?
+D03256	H	Compare adjacency lists in a relational store, a graph database and a key-value store for follower/following queries, and how you would shard them.
+D03257	H	How would you handle celebrity accounts with millions of followers in a follow-graph design?
+D03259	H	How would you store and update a per-user set of senders with new messages so that updates are real time and reads are very cheap?
+D03265	H	What non-traditional storage approaches would suit a read-heavy, rarely updated dictionary service, and how would you roll out weekly updates safely?
+D03266	H	Design a single-node persistent key-value store with O(1) get, put and delete that uses disk and RAM optimally.
+D03267	H	How does a log-structured hash index (like Bitcask) achieve O(1) writes and reads, and what are its limitations?
+D03268	H	How would you handle compaction, crash recovery and key-space limits in a single-node log-structured key-value store?
+D03269	H	How would you make a single-node persistent key-value store even faster than a log-structured hash index, and what hardware or I/O techniques would you use?
+D03270	H	What trade-offs do memory-mapped files, direct I/O and batched fsync introduce for the latency and durability of a key-value store?
+D03271	H	Design a scalable blob storage service like Amazon S3 with seamless scaling, durability under node failures, multi-tenancy and geographic redundancy.
+D03272	H	How would you achieve high durability in an object store using replication versus erasure coding, and what are the cost trade-offs?
+D03273	H	How would you detect and handle data corruption in transit and at rest in a distributed object store?
+D03274	H	How would you handle hot storage nodes and rebalance data when adding capacity in an object store?
+D03275	M	How would you design the metadata service and bucket/object namespace for an S3-like storage system?
+D03280	M	How does an inverted index work, and how would you update it incrementally as new documents arrive?
+D03281	H	How would you implement typo-tolerant search using edit distance, n-grams or a BK-tree, and what are the performance trade-offs?
+D03282	M	How does TF-IDF scoring work and what are its weaknesses compared to BM25?
+D03296	H	How would you protect the database from a burst of purchase attempts in a flash sale while guaranteeing no overselling?
+D03300	H	How would HyperLogLog or other probabilistic sketches be used to count unique visitors per time window, and how do you merge sketches across windows?
+D03307	H	Compare geohash, quadtree and S2/H3 cell indexes for proximity search, including boundary issues and hot cells.
+D03308	H	How would you handle frequently changing user locations in a nearby-search index without constant index rewrites?
+D03312	H	Design a realtime key-value database that broadcasts every insert, update and delete to all subscribed clients, with 1 million tables of up to 100 subscribers each.
+D03319	M	How does your design behave while scaling up and down, and what data movement or warm-up costs are involved?
+D03976	M	How do you decide between SQL and NoSQL for a new service? Which questions about data and access patterns drive the decision?
+D03977	M	Compare relational, document, key-value, wide-column, graph, and time-series databases and give a good use case for each.
+D03978	M	When is a graph database a better choice than a relational database with join tables?
+D03979	M	Why are time-series databases suited to metrics and monitoring workloads compared to a general-purpose relational database?
+D03980	M	What are the use cases and limits of object storage versus block storage versus file storage?
+D03981	M	Describe common use cases for object stores such as S3 and what they are bad at.
+D03982	E	What is RAID and how do RAID 0, 1, 5, 6, and 10 trade off capacity, performance, and fault tolerance?
+D03983	M	What are HDFS and its design assumptions, and when is a distributed file system appropriate?
+D03984	M	Compare master-slave and master-master replication, including what happens when the primary fails.
+D03985	M	Compare synchronous and asynchronous replication in terms of durability, latency, and availability.
+D03986	M	Describe the read replica pattern and the problem replication lag causes for read-your-writes behavior.
+D03987	H	A user places an order and immediately cannot see it because the read hit a lagging replica. What are several ways to fix this?
+D03988	M	How would you route reads and writes to primary and replicas: in application code or through database middleware? Compare the options.
+D03989	M	In master-slave replication, what happens to writes if the master fails before replicating, and how do you promote a replica safely?
+D03990	E	What is sharding and how does it differ from replication?
+D03991	M	Compare vertical partitioning and horizontal partitioning of a table.
+D03992	M	Compare hash-based, range-based, list-based, and composite sharding. Which hot spot problems does each have?
+D03993	M	What are the top data sharding algorithms and how do they differ in rebalancing cost?
+D03994	H	What are the downsides of sharding, such as cross-shard joins, rebalancing, and hotspots, and how do you mitigate them?
+D03995	H	How would you choose a shard key for a social app so that common queries stay on one shard and no shard becomes a hot spot?
+D03996	H	You must reshard from 8 to 16 shards with no downtime. Describe a safe approach.
+D03997	M	What is database federation and when would you split databases by function?
+D03998	M	How do you route a query to the correct partition? Compare client-side routing, proxy-based routing, and a coordinator.
+D03999	M	How would you partition data in a system when a single user's data may grow unbounded or a single entity becomes a hot key?
+D04000	E	What does normalization achieve and what are the first three normal forms?
+D04001	M	When would you deliberately denormalize a schema, and what consistency burdens does that create?
+D04002	M	What are materialized views, and when would you use them for read-heavy dashboards?
+D04003	M	What is the N+1 query problem and how do you detect and fix it?
+D04004	M	Explain how database indexes speed up reads and what they cost on writes and storage.
+D04005	M	What is the difference between dense and sparse indexes?
+D04006	M	Compare B-tree indexes with LSM-tree based storage for read-heavy and write-heavy workloads.
+D04007	M	What does a cheat sheet for database performance include, such as indexing, query rewrite, caching, and connection pooling?
+D04008	M	Why can a database become the bottleneck in a high-write system, and what are your options: queues, LSM engines, sharding, batching?
+D04009	E	Explain ACID and BASE and the trade-off between them.
+D04010	M	Compare strong, weak, and eventual consistency and give an example of a system suited to each.
+D04011	M	What is read-your-writes, monotonic reads, and causal consistency, and how can you provide them over eventually consistent storage?
+D04012	M	What are the common patterns for achieving eventual consistency, such as event-based, background sync, saga, and CQRS?
+D04013	M	What do you mean by a hotspot account in a payment system, and how can you increase throughput on it?
+D04014	M	Why would you split a hot balance into sub-accounts or use a cache-first balance, and what risks does each introduce?
+D04015	M	Compare UUID, Snowflake, database auto-increment, database segments, and Redis counters as unique ID generators.
+D04016	H	Design a unique ID generator that works across many machines with roughly sortable IDs. What happens if a clock moves backwards?
+D04017	M	Why can random UUIDs as primary keys hurt database insert performance?
+D04018	M	How does change data capture work and what problems does it solve for keeping caches, search indexes, and warehouses in sync?
+D04019	M	How would you keep a search index such as Elasticsearch consistent with the primary database?
+D04020	M	What are the top use cases of Elasticsearch and what makes it a poor primary store?
+D04021	M	How does a modern search engine process crawling, indexing, and query serving? What is an inverted index?
+D04022	M	Compare data lakes, data warehouses, and operational databases and when each is used.
+D04023	M	What is a serverless database and what trade-offs come with it?
+D04024	M	How do you decide between scaling a single PostgreSQL-style database up and moving to a distributed database?
+D04025	M	What are the main data management approaches in a microservice architecture: database per service, shared database, and API composition?
+D04026	M	How do you perform queries that span multiple services' data in a microservice architecture without distributed joins?
+D04027	M	What is a data pipeline and what are the typical stages from ingestion to serving?
+D04028	M	Describe the Lambda architecture and the problems of maintaining both batch and speed layers.
+D04029	M	Compare stream and batch processing frameworks and how they evolved.
+D04030	M	Why did Facebook build a dedicated graph store (TAO) instead of continuing with a look-aside cache over MySQL?
+D04031	H	How would you design a graph-aware cache layer that supports read-after-write consistency across multiple data centers?
+D04032	M	How does a Bitcask-style key-value store handle writes, reads, deletes, and compaction on a single machine?
+D04033	H	Design a single-node, write-optimized key-value store whose values do not fit in memory. How do you recover the index after a crash?
+D04034	M	What distinguishes the four kinds of NoSQL stores: key-value, document, column-oriented, and graph?
+D04035	M	What does 3NF mean in practice, and what is a database proxy used for in front of a relational database?
+D04036	M	Compare document, key-value, and wide column databases for storing user activity feeds.
+D04037	M	What are the database challenges at scale, such as large data volume, high concurrency, and hot rows?
+D04038	M	What does a multi-model database offer and what are its trade-offs?
+D04039	M	How do you store and serve a large binary asset such as photos or videos, and why not store the blobs in the relational database?
+D04040	H	How would you reduce the metadata overhead of storing billions of small photos on a file system?
+D04362	M	What is the difference between SQL scaling patterns such as master-slave replication, federation, sharding, denormalization, and SQL tuning? When do you apply each?
+D04363	M	When might you choose a NoSQL store over SQL for reasons like flexible schemas, large volume of data, or very high throughput?
+D04364	M	What are the pros and cons of full-text search engines versus database indexes for search queries?

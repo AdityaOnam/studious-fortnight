@@ -1,0 +1,211 @@
+Q004927	H	How do you design an AI system for high availability and fault tolerance?
+Q004928	H	How do you design an AI system that gracefully degrades when the model is unavailable?
+Q004929	H	What are the key considerations for multi-region deployment of AI systems?
+Q011626	M	What is the difference between a circuit breaker and a retry?
+Q012120	H	Design a system that lets multiple teams query a shared dataset without exposing raw data.
+Q000500	M	What is the difference between blue-green and canary deployment?
+Q000501	M	What is the difference between monitoring and observability? What are the three pillars of observability?
+Q000503	M	What is the difference between SLI, SLO and SLA? What is an error budget?
+Q000566	M	What is the difference between a Region and an Availability Zone, and why does the distinction matter?
+Q000571	M	What is the difference between a security group and a NACL?
+Q000573	M	Explain the cloud shared responsibility model.
+Q000626	M	How do you design secure access to a web API?
+Q000654	E	What is the ELK stack and why is it popular?
+Q000683	M	How does AWS Lambda work behind the scenes?
+Q000689	M	How do we manage configurations in a system?
+Q000692	M	How do you transform a system to be cloud native?
+Q000694	M	How do you design for high availability?
+Q000695	E	What is cloud native?
+Q000712	M	How do you design a secure system?
+Q000714	M	How do we manage sensitive data in a system?
+Q000764	E	What does availability mean when you design a system?
+Q000765	E	What is sensitive data?
+Q000916	M	What is the difference between availability and reliability in the context of a software system?
+Q000917	M	How do you define system availability, and what are the key components to measure it?
+Q000918	E	What is the concept of "Five Nines" and how does it relate to system availability?
+Q000919	M	How does redundancy contribute to the reliability of a system?
+Q000920	E	What is a single point of failure (SPOF), and how can it be mitigated?
+Q000921	M	Discuss the significance of Mean Time Between Failures (MTBF) in reliability engineering.
+Q000922	M	What is the role of Mean Time to Repair (MTTR) in maintaining system availability?
+Q000923	M	What is the difference between high availability (HA) and fault tolerance (FT)?
+Q000924	H	How would you architect a system for high availability?
+Q000925	M	What design patterns are commonly used to improve system availability?
+Q000926	M	How can load balancing improve system availability, and what are some of its potential pitfalls?
+Q000927	M	Explain the role of health checks in maintaining an available system.
+Q000928	E	What is the purpose of the circuit breaker pattern in a distributed system?
+Q000929	M	What are some key indicators you would monitor to ensure system reliability?
+Q000930	M	How do you implement a monitoring system that accurately reflects system availability?
+Q001585	M	How can you configure middleware to ensure secure data transmission?
+Q001683	M	How can load balancers help mitigate DDoS attacks?
+Q001711	M	How do you handle failure in a microservice?
+Q001714	M	Explain the 'Circuit Breaker' pattern. Why is it important in a microservices ecosystem?
+Q002006	H	Describe a strategy a Reactive System might use to maintain responsiveness during a component failure.
+Q002007	M	How does message-driven architecture contribute to the resilience of Reactive Systems?
+Q002008	M	Identify a resiliency strategy in Reactive Systems and explain how it minimizes the impact of failures.
+Q002013	H	Describe how a Reactive System would differently address a transient failure versus a network partition.
+Q002947	E	What are SLOs and error budgets, and how do you define them?
+Q002948	M	What are your key API SLOs?
+Q002949	M	How do you trace requests across services?
+Q002950	M	How do you detect partial outages?
+Q002951	M	What metrics predict incidents early?
+Q002952	M	How do you design actionable alerts?
+Q003058	M	How do you implement proper error logging without exposing sensitive information?
+Q003060	M	How should clients handle intermittent server errors (5xx)?
+Q003066	M	How do you secure file access per user or role?
+Q003106	M	How should 5xx errors be handled in production APIs?
+Q003219	M	How do you prevent and detect API abuse and DDoS attacks?
+Q003225	M	How do you implement comprehensive security monitoring for REST APIs?
+Q003773	M	How can a trace ID be propagated across HTTP, RPC and message queues?
+Q003803	E	How much downtime per year does an availability of 99.9%, 99.99% and 99.999% allow?
+Q003804	M	What do RTO and RPO constrain respectively, and what costs does an RPO of 0 bring?
+Q003808	M	How is a timeout budget propagated layer by layer along a call chain?
+Q003809	M	What is a retry budget? What happens when multiple SDK layers retry at the same time?
+Q006438	M	What is failover clustering?
+Q006494	M	Why do we need circuit breaking?
+Q006500	E	Why are SLAs, SLOs, and SLIs important?
+Q006501	E	Why is disaster recovery important?
+Q012195	H	Design a login API that remains secure even if the SSL certificate is compromised.
+Q012222	H	Design an authentication and authorization service that supports OTP, OAuth, etc.
+Q012331	M	How can APIs be unreliable and unpredictable?
+Q012461	M	What is chaos engineering, and how is it used to build resilient systems?
+Q012477	E	What is high availability?
+Q008592	M	What are the risks of hedged requests for non-idempotent operations?
+Q009525	M	How would you drain a region for a deploy of a real-time TTS service without dropping live calls?
+Q009666	H	What is your failure model when one chip in a several-hundred-chip inference instance goes down mid-request?
+Q009813	H	A coding assistant generated a retry helper for calls to a model endpoint: catch any exception, sleep 2^attempt seconds, try up to five times, return None if all fail. It passes the unit tests. Review it as if it were going into a production backend: what is wrong, and what would you change?
+Q009814	M	Should a retry policy for model-endpoint calls live in every caller, in the SDK client, or in a gateway in front of the model?
+Q009815	M	How do retries work when a streaming response fails halfway through?
+Q009940	H	In a ChatGPT-scale serving stack, how do you handle a region losing 30% of its GPU capacity?
+Q010011	M	How would you deterministically test the circuit-breaker behaviour of a multi-provider LLM client pool?
+Q010398	H	A rolling deploy of 20 LLM serving replicas with 5-minute drains takes forever. How do you make deploys faster without killing streams?
+Q010401	M	Blue/green versus rolling deployment for a model version bump: which and why?
+D01226	E	How is availability achieved through redundancy, and how do you measure it in nines?
+D01227	M	What is the difference between rate limiting, service degradation and circuit breaking, and when does each apply?
+D01228	M	How does a circuit breaker work and what are its states?
+D01229	M	What should be monitored in a production system to detect failures early (system, application, business metrics)?
+D01230	M	What are the main security considerations in a typical web system design: authentication, authorization, encryption and input validation?
+D01231	M	Compare the token bucket, leaky bucket and sliding window algorithms for rate limiting.
+D01637	M	What does a continuous integration pipeline typically do, and what benefit does it give a team?
+D01638	M	What is the difference between continuous integration, continuous delivery and continuous deployment?
+D01639	M	How would you design a zero-downtime deployment script, and what is the difference between blue/green and rolling deployments?
+D01640	M	What log levels exist (trace, debug, info, warn, error, fatal) and how do you choose what to log at each level in production?
+D01641	M	What should and should not be written to application logs for security and privacy reasons?
+D01865	M	How does a deployment script keep an application running after a new version is pushed, and how do you roll back safely?
+D02383	M	What metrics would you export to observe the health of a consensus cluster in production, such as leader changes and replication lag?
+D02384	M	How would you use chaos engineering to validate that a consensus-based cluster tolerates leader crashes and network partitions?
+D02444	M	How are trace IDs and span IDs generated and propagated in distributed tracing, and what uniqueness properties do they need?
+D02479	M	What is a cascading failure in a microservice call chain, and what patterns prevent it?
+D02480	M	How do you achieve observability in microservices using logs, metrics and distributed tracing?
+D02483	M	How would you roll out a new version of a microservice safely, and how does gray release differ from blue-green deployment?
+D02484	E	What is high availability, and how do you measure it in terms of nines of uptime?
+D02485	M	What are the common causes of system unavailability, and which design measures address each?
+D02486	M	How do clustering and redundancy remove single points of failure at each layer of a web architecture?
+D02487	M	How do asynchronous calls and caching contribute to higher availability, and what new risks do they introduce?
+D02488	H	Design a highly available order service for flash sales, and explain which availability mechanisms you would layer in.
+D02489	M	What do RTO and RPO mean, and how do they drive the choice of a disaster recovery architecture?
+D02490	M	Compare cold standby, warm standby, hot standby and active-active redundancy in cost and recovery time.
+D02491	M	Compare same-city disaster recovery, remote disaster recovery, same-city active-active and geo-distributed active-active.
+D02492	H	What are the main challenges of building a multi-region active-active architecture, particularly around data consistency and traffic routing?
+D02493	M	How does automatic failover work with a sentinel or a keepalived virtual IP, and what can go wrong with false failover?
+D02494	H	How would you prove that your failover actually works, and how often should you drill it?
+D02503	M	What is a circuit breaker and what are its three states?
+D02504	M	How does a service avalanche happen in a call chain, and how does a circuit breaker prevent it?
+D02505	M	What triggers a breaker to open, for example error ratio, slow-call ratio or consecutive failures, and how is the half-open probe done?
+D02506	H	Can you use P99 latency directly as a circuit breaker condition? Discuss the pitfalls of using tail latency percentiles.
+D02507	M	What is the difference between circuit breaking, rate limiting and service degradation, and how do they cooperate on a single request?
+D02508	M	What is service degradation, when is it triggered and at what granularity can it be applied?
+D02509	M	What does a good fallback look like, and what pitfalls such as fallback calling another failing dependency must be avoided?
+D02510	M	Compare thread-pool isolation and semaphore isolation for protecting a service from slow dependencies.
+D02511	M	What is the bulkhead pattern and how does it contain failure?
+D02512	H	How would you operate degradation switches at scale, including pre-defined plans, switch storage and safe rollback?
+D02513	M	What is system adaptive protection that throttles traffic based on load, CPU and concurrency rather than static thresholds?
+D02514	M	Why is setting timeouts essential for remote calls, and what happens to a system with no timeouts?
+D02515	M	How do you choose a timeout for a downstream call, and how should timeouts in a call chain relate to the caller overall deadline?
+D02516	M	Compare retry strategies such as fixed interval, exponential backoff and backoff with jitter.
+D02517	M	What is a retry storm, and how do you bound retry amplification across multiple layers?
+D02518	M	Which errors are safe to retry and which are not, and why must retries be paired with idempotency?
+D02519	H	A service calls three downstreams in series, each retrying three times. What happens during a downstream outage and how would you redesign it?
+D02520	M	What metrics would you watch to detect that timeouts and retries are misconfigured in production?
+D02634	E	What is the difference between authentication and authorization?
+D02635	M	Explain how session-cookie based authentication works and how to make it work across multiple server nodes.
+D02636	M	Why do cookie-based sessions need CSRF protection, and how do token headers change the picture?
+D02637	M	Can sessions work if the client disables cookies? How else could the session identifier be carried?
+D02638	M	What is RBAC, and how does it differ from ABAC?
+D02639	H	Design an authorization system for an enterprise platform with menu, data and operation permissions, role management and an audit trail.
+D02640	M	What are the three parts of a JWT, and what does each contain?
+D02641	M	How does JWT-based authentication work, and what prevents a client from tampering with the payload?
+D02642	M	What is the difference between decoding a JWT and verifying it?
+D02643	M	What are the main advantages of stateless JWT authentication over server-side sessions?
+D02644	H	How do you log out or revoke a JWT before it expires, given that the token is stateless?
+D02645	M	How do you implement JWT renewal with short-lived access tokens and refresh tokens?
+D02646	M	What security practices strengthen a JWT deployment, such as algorithm pinning, short expiry, secure storage and key rotation?
+D02647	M	What is single sign-on, and what benefits does it bring?
+D02648	H	Design an SSO system covering login state storage, ticket validation, logout propagation and cross-domain login.
+D02649	M	What is OAuth 2.0 and what problem does it solve compared with sharing passwords?
+D02650	M	Describe the authorization code flow and why it is preferred over the implicit flow.
+D02651	M	Why do servers store salted slow hashes of passwords rather than encrypted passwords, and why is MD5 inadequate?
+D02652	M	What is a salt and how does it defend against rainbow-table attacks?
+D02653	M	Why use an adaptive hash like bcrypt for passwords instead of a fast hash like SHA-256?
+D02654	M	Why do websites offer password reset rather than password retrieval, and what should a secure forgot-password flow include?
+D02655	M	Compare symmetric and asymmetric encryption, and explain how they are combined in practice such as in TLS.
+D02656	M	What is the difference between hashing, encryption and encoding, and when do you use each?
+D02657	M	Compare AES and RSA in terms of speed, key management and typical use.
+D02658	M	How do digital signatures work and what do they guarantee?
+D02659	M	What is data masking (desensitization), and where in the pipeline should it be applied for logs, APIs and databases?
+D02660	M	Why must input validation be done on the server even when the client already validates it?
+D02661	M	What is the difference between input validation, authorization checks and business rule validation, and where does each belong?
+D02662	H	Design a sensitive-word filtering service that scans user content at high QPS, and compare brute force, Trie, Aho-Corasick and DFA approaches.
+D02663	M	How does a Bloom filter act as a quick pre-filter in a content filtering pipeline, and what trade-off do false positives introduce?
+D02664	M	How can a keyword filter cope with obfuscated variants and support hot updates of the word list without downtime?
+D02839	M	How do you troubleshoot growing message queue lag in a production consumer?
+D02840	M	How do you troubleshoot a sudden slowdown of a cache server such as Redis?
+D03318	M	How do you justify the cost-effectiveness of a design and trade it off against availability and durability requirements?
+D04149	E	What are SLA, SLO, and SLI, and how do they relate?
+D04150	M	How would you choose SLIs and set an SLO for a user-facing API?
+D04151	M	Explain the nines of availability, and how to compute the availability of components in sequence versus in parallel.
+D04152	M	What is the difference between high availability and fault tolerance, and between availability and reliability?
+D04153	M	Compare fail-over strategies such as active-passive and active-active and the data loss risks of each.
+D04154	M	How do you design for high availability across the layers: DNS, load balancer, application, database, and storage?
+D04155	M	What are the key patterns in a cheat sheet for designing fault-tolerant systems?
+D04156	M	Explain the circuit breaker pattern with its closed, open, and half-open states.
+D04157	M	What retry strategies exist? Compare linear, exponential, and jittered backoff, and explain why jitter matters.
+D04158	H	How can retries make an outage worse, and what mechanisms such as budgets, timeouts, and circuit breakers prevent retry storms?
+D04159	M	How do timeouts, bulkheads, and load shedding contribute to resilience?
+D04160	M	What do RTO and RPO mean, and how do they drive disaster recovery strategy choices?
+D04161	M	Compare backup and restore, pilot light, warm standby, and multi-site active-active disaster recovery strategies.
+D04162	M	Compare cold, warm, and hot sites for disaster recovery.
+D04163	M	What are logs, metrics, and traces and how do they complement each other?
+D04164	M	What is the ELK stack and why is it popular for centralized logging?
+D04165	M	Compare the push and pull model for a metrics system, such as Prometheus-style scraping versus agents pushing.
+D04166	M	How would you alert on business metrics such as a sudden drop in sign-up conversion without alert fatigue?
+D04167	M	Explain OAuth 2.0 roles and the authorization code flow, and what OpenID Connect adds.
+D04168	M	Compare the common OAuth 2.0 flows and when each should be used.
+D04169	M	Compare session-based authentication with JWT. What are the revocation and scaling issues of each?
+D04170	M	Compare SAML with OAuth 2.0 and OpenID Connect, and describe how single sign-on works.
+D04171	M	What are the top four forms of authentication mechanisms for APIs and when would you use each?
+D04172	M	How do you design a permission system? Compare ACL, DAC, MAC, RBAC, and ABAC.
+D04173	M	How should passwords be stored, and what is the role of salting and slow hashing?
+D04174	M	How do passkeys work and why are they more phishing-resistant than passwords?
+D04175	M	How does two-factor authentication such as TOTP work?
+D04176	M	What is the difference between encoding, encryption, hashing, and tokenization?
+D04177	M	What are the key steps in a cheat sheet to build secure APIs?
+D04178	M	How do you design a secure system overall, from network, application, data, and operational standpoints?
+D04179	M	How do you manage sensitive data and secrets in a system, including encryption at rest and in transit?
+D04180	M	How would you mitigate a DDoS attack on a public service?
+D04181	M	Compare blue-green, canary, rolling, and recreate deployment strategies.
+D04182	M	How would you roll out a risky change to a live system with the ability to roll back quickly?
+D04183	M	What are the main stages of a CI/CD pipeline and what quality gates should be present?
+D04184	M	Compare virtual machines and containers and when you would use each.
+D04185	M	What are the main Kubernetes service types and when do you use each?
+D04186	M	What are the top Kubernetes design patterns, such as sidecar and ambassador?
+D04187	M	How does AWS Lambda run code behind the scenes and what causes cold starts?
+D04188	M	What are the hidden costs of the cloud that engineers often overlook when designing systems?
+D04189	M	What are the Docker best practices you must know for production images?
+D04190	M	What is the difference between DevOps, SRE, and platform engineering?
+D04191	M	How would you handle a cascading failure in which one slow dependency exhausts threads across upstream services?
+D04192	M	How do you monitor a system so you detect issues before users report them?
+D04193	M	How does a CDN help protect an origin against traffic spikes and attacks?
+D04194	M	What is the role of reconciliation in a payment system, and why do you need it even if the system claims exactly-once semantics?
+D04195	M	Explain double-entry bookkeeping and why a ledger should be append-only.
+D04367	M	What does availability in numbers look like for two components in parallel versus in sequence when each has 99.9 percent availability?
+D04368	M	What are the disadvantages of fail-over, such as added hardware, complexity, and the potential for data loss?

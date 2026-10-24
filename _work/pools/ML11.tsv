@@ -1,0 +1,74 @@
+Q001972	E	What is Q-learning, and how does it fit in the field of reinforcement learning?
+Q001973	E	Can you describe the concept of the Q-table in Q-learning?
+Q001974	M	How does Q-learning differ from other types of reinforcement learning such as policy gradient methods?
+Q001975	E	Explain what is meant by the term 'action-value function' in the context of Q-learning.
+Q001976	M	Describe the role of the learning rate (α) and discount factor (γ) in the Q-learning algorithm.
+Q001977	M	What is the exploration-exploitation trade-off in Q-learning, and how is it typically handled?
+Q001978	E	Define what an episode is in the context of Q-learning.
+Q001979	E	Discuss the concept of state and action space in Q-learning.
+Q001980	M	Describe the process of updating the Q-values in Q-learning.
+Q001981	M	What is the Bellman Equation, and how does it relate to Q-learning?
+Q001982	M	Explain the importance of convergence in Q-learning. How is it achieved?
+Q001983	H	What are the conditions necessary for Q-learning to find the optimal policy?
+Q001984	M	What are common strategies for initializing the Q-table?
+Q001985	M	How do you determine when the Q-learning algorithm has learned enough to stop training?
+Q001986	H	Discuss how Q-learning can be applied to continuous action spaces.
+Q002051	E	What is reinforcement learning, and how does it differ from supervised and unsupervised learning?
+Q002052	E	Define the terms agent, environment, state, action, and reward in the context of reinforcement learning.
+Q002053	E	Can you explain the concept of the Markov Decision Process (MDP) in reinforcement learning?
+Q002054	E	What is the role of a policy in reinforcement learning?
+Q002055	M	What are value functions and how do they relate to reinforcement learning policies?
+Q002056	M	Describe the difference between on-policy and off-policy learning.
+Q002057	E	What is the exploration vs. exploitation trade-off in reinforcement learning?
+Q002058	M	What are the Bellman equations, and how are they used in reinforcement learning?
+Q002059	M	Explain the difference between model-based and model-free reinforcement learning.
+Q002060	M	What are the advantages and disadvantages of model-based reinforcement learning?
+Q002061	M	How does Q-learning work, and why is it considered a model-free method?
+Q002062	M	Describe the Monte Carlo method in the context of reinforcement learning.
+Q002063	M	How do Temporal Difference (TD) methods like SARSA differ from Monte Carlo methods?
+Q002064	M	What is Deep Q-Network (DQN), and how does it combine reinforcement learning with deep neural networks?
+Q002065	M	Describe the concept of experience replay in DQN and why it's important.
+Q004532	H	What role does PyTorch play in reinforcement learning?
+Q005198	E	What is reinforcement learning?
+Q005207	M	What is the difference between policy-based and value-based methods?
+Q005208	E	Explain the concept of exploration vs exploitation.
+Q012525	M	Why are the optimal value function V* and the optimal policy pi* equivalent?
+Q012526	M	Explain the Q-learning algorithm in detail, including the update formula for Q(s,a). Is it on-policy or off-policy, and why?
+Q012527	M	Explain the Sarsa algorithm, similar to Q-learning, including its Q(s,a) update formula. Is it on-policy or off-policy, and why?
+Q009541	H	Behaviour cloning on teleoperation data has a well-known failure mode. What is it, and what do you do about it on a real humanoid?
+Q009542	H	In behaviour cloning, how do you decide which failure states are worth the cost of collecting corrections for?
+Q009543	H	Why can adding more expert-quality data sometimes fail to fix the compounding-error problem of behaviour cloning at all?
+Q009547	H	You have 10 hours of demonstrations for a new robot task and budget for 50 more. How do you decide what to collect, and what return do you expect?
+Q009548	M	How would you tell whether a plateau in imitation learning is a data problem or a model-capacity problem?
+Q009549	M	Would you rather have 50 hours of demonstrations on one task or 10 hours each on five related tasks, and why?
+Q009550	H	A whole-body controller trained entirely in simulation has to run on real hardware. What transfers, what does not, and how do you close the gap?
+Q009551	M	How would you tell an overfit-to-sim failure from a genuinely under-trained policy?
+Q009552	M	In sim-to-real training, why does randomising latency matter more than it sounds like it should?
+Q009561	H	Where does reinforcement learning fit on top of imitation learning for manipulation, and what makes the reward the hard part?
+Q009562	H	How would you use the failed episodes that imitation learning throws away?
+Q009563	H	What safeguards would let you run online RL on a real humanoid at all?
+Q009564	H	A lab reports that pretraining on human video lifted zero-shot success in unseen homes from 9 to 56 percent. How do you get robot-useful pretraining from video that contains no robot actions, and how would you stress-test that claim?
+Q009565	H	Which embodiment differences between a human and a humanoid robot would most limit transfer from human video, and how would you measure them?
+Q009566	H	How would you decide the ratio of human-video pretraining compute to robot adaptation data for the next model?
+Q009624	M	When would you choose Q-learning over policy gradients, and vice versa?
+Q009625	H	What is the deadly triad in reinforcement learning, precisely, and which of the three do you give up in each family of methods?
+Q009626	H	Why does PPO clip the importance ratio instead of using a KL penalty alone?
+D04772	E	Define the components of a reinforcement-learning problem: agent, environment, state, action, reward, policy and return.
+D04773	M	What is the difference between a value function V, an action-value function Q and an advantage function?
+D04774	M	Explain the Markov property and the Bellman expectation and optimality equations.
+D04775	M	Compare Monte Carlo and temporal-difference learning in bias and variance.
+D04776	M	What is the difference between SARSA and Q-learning, and what does on-policy versus off-policy mean?
+D04777	M	What problem does DQN solve beyond tabular Q-learning, and what roles do experience replay and target networks play?
+D04778	M	What is overestimation bias in Q-learning and how does Double DQN reduce it?
+D04779	M	Derive the REINFORCE policy gradient and explain why subtracting a baseline reduces variance without adding bias.
+D04780	M	Why are policy-gradient methods high-variance, and what tricks (reward-to-go, baselines, advantage estimation) address this?
+D04781	M	Compare value-based and policy-based methods; when is each preferable, for example with continuous actions?
+D04782	M	Explain the actor-critic architecture and the advantage actor-critic (A2C/A3C) algorithm.
+D04783	M	What is DDPG and how does it extend DQN ideas to continuous action spaces?
+D04784	M	Why is on-policy training sample-inefficient, and how does importance sampling let you reuse data from an older policy?
+D04785	M	When does importance sampling become unreliable, and why does TRPO constrain the KL divergence between old and new policy?
+D04786	M	Explain PPO-Clip and PPO-Penalty. What does the clipping range epsilon do to the policy update?
+D04787	M	What is generalized advantage estimation and how do lambda and gamma control the bias-variance trade-off?
+D04788	M	What is the sparse-reward problem in RL and what remedies exist (reward shaping, curiosity, curriculum)?
+D04789	M	What is imitation learning, how does behavioral cloning suffer from compounding error, and how does inverse RL differ?
+D04790	M	How does exploration versus exploitation appear in policy-gradient training and what is the role of entropy regularization?

@@ -1,0 +1,304 @@
+Q010749	DROP	-	notq
+Q010750	DROP	-	notq
+Q010751	DROP	-	notq
+Q010752	DROP	-	notq
+Q010753	DROP	-	notq
+Q010754	DROP	-	notq
+Q010755	DROP	-	notq
+Q011784	LLM01	M	Explain scaled dot-product attention and why the 1/sqrt(d_k) scaling factor matters.
+Q011785	LLM06	M	What is the KV cache, and what are its memory implications at scale? Derive the formula.
+Q011786	LLM01	M	What are Multi-Query Attention (MQA) and Grouped-Query Attention (GQA), and what do they trade away?
+Q011787	LLM01	H	What is Multi-head Latent Attention (MLA) and why did DeepSeek introduce it?
+Q011788	LLM01	H	Explain FlashAttention. It does not reduce FLOPs, so why is it faster?
+Q011789	LLM02	M	How does Byte Pair Encoding work, and what are its failure modes (numbers, code, non-Latin scripts)?
+Q011790	LLM02	M	What is positional encoding in transformers, and how has it evolved (sinusoidal, learned, RoPE, ALiBi)?
+Q011791	LLM02	H	Explain RoPE and how position interpolation / YaRN extend context beyond the trained length.
+Q011792	LLM03	M	What do the Chinchilla scaling laws say, and how do they differ from earlier scaling intuitions?
+Q011793	LLM03	M	What is a mixture-of-experts architecture and how does it scale capacity without scaling FLOPs?
+Q011794	FT01	M	Explain the difference between pre-training, supervised fine-tuning and preference optimisation.
+Q011795	LLM05	M	Compare greedy, beam search, top-k, top-p and temperature sampling. When does each fail?
+Q011796	LLM05	M	What is the lost-in-the-middle problem in long contexts and how do you address it?
+Q011797	LLM01	M	Why is LayerNorm placed pre-block in modern transformers, and what is RMSNorm?
+Q011798	LLM01	H	Explain SwiGLU and why gated activations replaced ReLU/GELU in modern LLM MLP blocks.
+Q011799	LLM01	H	Walk me through what happens, tensor by tensor, in one forward pass of a decoder-only transformer.
+Q011800	LLM06	H	Explain the prefill and decode phases. Why is prefill compute-bound and decode memory-bandwidth-bound?
+Q011801	LLM06	M	What is continuous (in-flight) batching and why did it replace static batching?
+Q011802	LLM06	M	How does PagedAttention work, and what problem of KV-cache fragmentation does it solve?
+Q011803	LLM05	H	What is speculative decoding? Why is output quality preserved, and when does it not help?
+Q011804	LLM06	M	Explain prefix caching / prompt caching. When should you use it, and what invalidates a cached prefix?
+Q011805	LLM06	H	Compare FP16, BF16, FP8, INT8, INT4 and FP4 for serving. What breaks at each step down?
+Q011806	LLM04	H	Compare tensor, pipeline, data, sequence and expert parallelism. When do you combine them?
+Q011807	LLM06	H	Estimate the GPU memory needed to serve a 70B model: weights, KV cache, activations, fragmentation.
+Q011808	LLM06	M	What are TTFT, TPOT, ITL and throughput, and how do they trade against each other?
+Q011809	LLM06	H	Do the roofline maths: how many tokens/sec can one H100 produce for a 70B model at batch size 1?
+Q011810	LLM06	M	When would you choose vLLM vs SGLang vs TensorRT-LLM vs a custom stack?
+Q011811	LLM06	H	How would you cut LLM serving cost by 10x? Enumerate every lever and rank them.
+Q011812	GA04	H	Your p99 latency doubled after a deploy with no model change. Walk through the diagnosis.
+Q011813	LLM06	H	Explain disaggregated prefill/decode serving and when it pays for itself.
+Q011814	RAG02	M	What chunking strategy would you use for a large technical documentation corpus, and why?
+Q011815	RAG04	M	How do you choose between a sparse retriever (BM25) and a dense retriever? When do you need both?
+Q011816	RAG04	M	What is a reranker, when should you use one, and what does a cross-encoder cost you?
+Q011817	RAG06	M	How would you evaluate the quality of a RAG pipeline, evaluating retrieval and generation separately?
+Q011818	RAG04	M	What is HyDE (hypothetical document embeddings) and when does it outperform standard dense retrieval?
+Q011819	RAG05	M	How does agentic RAG differ from standard RAG, and when is the extra complexity justified?
+Q011820	RAG03	H	What causes semantic drift in embedding search and how do you detect it?
+Q011821	RAG06	H	Design permission-aware retrieval: users must never see content they can't access in the source system.
+Q011822	RAG03	M	Compare HNSW, IVF-PQ and flat indexes. How do you pick, and what does recall@k cost in latency?
+Q011823	RAG02	M	How do you handle tables, figures and multi-column PDFs in a retrieval pipeline?
+Q011824	RAG06	M	How do you keep an index fresh when the underlying corpus changes continuously?
+Q011825	RAG01	H	How do you attribute every claim in a generated answer to a specific retrieved span?
+Q011826	GA03	M	Explain the ReAct pattern and what it solves over chain-of-thought alone.
+Q011827	GA02	M	How do you handle tool-call errors, timeouts and retries in an agentic loop?
+Q011828	GA02	M	What is MCP (Model Context Protocol) and how does it differ from traditional function calling?
+Q011829	GA02	M	How many tools is too many? How do you design tool schemas an LLM can actually use correctly?
+Q011830	GA03	M	How does multi-agent orchestration work, and when does it break down?
+Q011831	GA03	H	Design memory for a long-running agent: what do you store, where, and how do you retrieve it?
+Q011832	GA03	M	How does an agent decide when to call a tool versus answer from its own knowledge?
+Q011833	GA03	M	What makes an agent loop terminate correctly? How do you bound cost and steps?
+Q011834	GA03	H	How do you make an agent's actions reversible, or at least auditable, in a production system?
+Q011835	GA03	H	Design human-in-the-loop approval for an agent that takes consequential actions.
+Q011836	GA03	H	Your agent drifts after a long run and confidently works on the wrong thing. Diagnose it.
+Q011837	FT03	M	Walk me through RLHF end to end: reward model, policy optimisation, KL penalty.
+Q011838	FT03	M	What is DPO and why did it displace PPO-based RLHF at many labs? When is online RL still better?
+Q011839	FT03	H	Explain GRPO and why dropping the value network matters at scale.
+Q011840	FT02	M	Explain the LoRA decomposition mathematically. Why does it work, and how do you choose the rank r?
+Q011841	FT02	M	How does QLoRA achieve its memory reduction, and what are the quantization trade-offs?
+Q011842	FT02	M	Compare LoRA, prefix tuning, prompt tuning and full fine-tuning. When would you choose each?
+Q011843	FT01	M	What is catastrophic forgetting and how do you mitigate it during fine-tuning?
+Q011844	FT02	H	Do the GPU memory maths for full fine-tuning a 7B model in bf16 with Adam. Now with LoRA.
+Q011845	FT03	M	What is RLVR (RL with verifiable rewards) and where does it beat a learned reward model?
+Q011846	FT03	M	Explain reward hacking in RLHF and how labs address it.
+Q011847	FT04	M	What is distillation, and how do you build a strong small model from a large one?
+Q011848	LLM07	H	Design an LLM-as-judge evaluation. What are its known biases and how do you correct for them?
+Q011849	LLM07	H	How do you build an eval set when there is no labelled ground truth and experts are expensive?
+Q011850	RAG06	H	How do you detect and measure hallucinations in a production RAG system?
+Q011851	GA04	H	Design the regression gate that decides whether a prompt or model change ships.
+Q011852	LLM07	H	Why do benchmark scores improve while users say the system got worse? Enumerate the reasons.
+Q011853	GA04	M	What observability does a production LLM system need: traces, spans, costs, feedback?
+Q011854	GA04	M	How do you manage prompt versioning and rollbacks in production?
+Q011855	GA04	H	Design online evaluation: what do you log, what do you sample, and what do you A/B test?
+Q011856	GA03	M	How would you evaluate an agent, as opposed to a single model response?
+Q011857	GA05	M	What is prompt injection (direct and indirect), and what is your layered defence?
+Q011858	GA05	M	Walk me through the OWASP Top 10 for LLM applications and which ones actually bite in practice.
+Q011859	GA05	E	What is the difference between jailbreaking and adversarial prompting?
+Q011860	GA05	H	Design guardrails for a consumer-facing assistant. Input filters, output filters, or both?
+Q011861	FT03	M	What is Constitutional AI and how does it differ from RLHF? What is RLAIF?
+Q011862	GA05	H	How do you prevent an agent with tool access from exfiltrating data via a malicious web page?
+Q011863	GA05	M	How do you handle PII in prompts, logs and training data?
+Q011864	GA05	M	What is mechanistic interpretability and why do labs invest in it?
+Q011865	GA05	M	How would you audit a deployed model for differential performance across user groups?
+Q011866	GA05	H	Design a red-teaming programme for a model you are about to release.
+Q011867	GA06	M	How do vision-language models get images into an LLM: projector, cross-attention, or native tokens?
+Q011868	GA06	M	What changes when you move from images to video in multimodal models?
+Q011869	GA06	H	Budget the latency for a real-time voice agent: VAD, ASR, LLM, TTS, network. Where does the time go?
+Q011870	GA06	H	Design barge-in / interruption handling for a voice agent.
+Q011871	GA06	M	How do you evaluate ASR quality beyond WER, and TTS quality when there is no single correct output?
+Q011872	GA06	M	How do you handle code-switching and accents in a production ASR system?
+Q011873	GA06	H	Explain streaming TTS chunking and jitter-buffer sizing.
+Q011874	GA06	H	Design a speaker diarisation system and explain how you attribute roles, not just clusters.
+Q011875	GA06	H	How would you build multimodal retrieval over images, video and text in one index?
+Q011876	MS04	H	Design a code assistant: repo indexing, context assembly, edit application, evaluation.
+Q011877	MS04	H	Design a customer-support agent that can take real actions, with escalation to humans.
+Q011878	MS04	H	Design semantic search over a large product catalogue.
+Q011879	MS03	H	Design a content-moderation system combining classifiers and LLMs.
+Q011880	MS04	H	Design a document-intelligence pipeline: scanned PDFs in, structured fields out, at 10M documents.
+Q011881	MS04	H	Design a Text-to-SQL system over a warehouse with thousands of tables.
+Q011882	MS04	H	Design a meeting assistant: recording, diarisation, summary, action items, integrations.
+Q011883	MS04	H	Design an LLM gateway: routing across providers, failover, caching, budgets and rate limits.
+Q011884	MS04	H	Design the serving stack for a consumer chat assistant at hundreds of millions of users.
+Q011885	CODE01	M	Implement scaled dot-product attention with a causal mask, from scratch, in NumPy or PyTorch.
+Q011886	CODE01	M	Implement a KV cache and single-step decode.
+Q011887	CODE01	H	Implement BPE training and encoding from scratch.
+Q011888	SD07	M	Implement an LRU cache with O(1) get/put, then add TTL.
+Q011889	SD07	M	Implement a token-bucket rate limiter, then make it distributed.
+Q011890	CS02	M	Write an async batch processor over an API with concurrency limits, retries with jitter and error isolation.
+Q011891	CS07	M	Write a streaming SSE/JSON parser that handles arbitrary chunk boundaries.
+Q011892	CODE01	M	Implement a text chunker with overlap that never splits a semantic unit.
+Q011893	CODE01	M	Implement cosine similarity search over embeddings, then explain why you would not ship it.
+Q011894	SD07	M	Build core business logic for a toy banking application, with a specification that grows across four progressive levels.
+Q011895	SD07	M	Build an in-memory database: SET/GET/DELETE first, then filtered scans, then TTL with timestamps, then file compaction.
+Q011896	SD07	M	Design and create a task scheduler.
+Q011897	SD07	M	Build an object-oriented system for managing courses, grades and students.
+Q011898	SD07	M	Write a web crawler over a domain: first synchronous, then make it async.
+Q011899	SD07	H	Build a rate limiter. Requirements are added incrementally: per-tenant limits, burst allowances, then a sliding window. How do you keep the code from collapsing?
+Q011900	DROP	-	unfixable
+Q011901	LLM01	E	What are the key components of a Transformer model and why does each matter?
+Q011902	LLM03	H	Explain attention-free transformer architectures and their trade-offs.
+Q011903	LLM01	M	Walk me through the matrix manipulations relevant to LLM architectures.
+Q011904	LLM06	H	Design a batched inference system where 100 requests take the same time as 1.
+Q011905	LLM03	H	How do scaling laws influence the safety evaluation of large models?
+Q011906	MS04	H	Design a chat assistant service like Claude.
+Q011907	MS04	H	Design a system that enables a large language model to handle multiple questions in a single thread.
+Q011908	SD06	H	Design a distributed search system for 1 billion documents at 1 million QPS.
+Q011909	SD04	H	Design APIs for developers to access an LLM provider's models securely and efficiently.
+Q011910	SD06	H	Design a file-sharing / distribution system.
+Q011911	LLM07	H	How would you design an experiment to test for a specific emergent capability or bias in a large language model?
+Q011912	GA05	M	What do you see as the most pressing unsolved problem in AI alignment?
+Q011913	GA05	M	How would you balance performance optimisation with model interpretability?
+Q011914	GA05	H	How would you approach designing a system to ensure the safe deployment of AI models in production?
+Q011915	RAG06	H	An enterprise customer says their RAG-based knowledge assistant hallucinates too much. As the applied engineer on the account, what do you do in the first 48 hours?
+Q011916	DROP	-	hr
+Q011917	DROP	-	hr
+Q011918	DROP	-	hr
+Q011919	DROP	-	hr
+Q011920	DROP	-	hr
+Q011921	SD07	M	Design and implement an in-memory key-value store supporting set, transactional begin, commit and abort.
+Q011922	SD07	M	Create a database ORM, step by step.
+Q011923	DROP	-	frontend
+Q011924	DROP	-	unfixable
+Q011925	DROP	-	dsa
+Q011926	ML09	M	Compute the KL divergence given different random variables.
+Q011927	ML07	M	If the accuracy of a classifier is 1, what is the lower/upper bound on the loss function for a single training example?
+Q011928	ML06	M	We have two models, with 85% and 82% accuracy. Which do you pick?
+Q011929	ML05	E	How do you handle missing data in Pandas?
+Q011930	LLM01	M	Explain self-attention. What is its computational complexity, and what are your options when contexts get long?
+Q011931	ML09	H	What is the relationship between cross-entropy, KL divergence and perplexity, and why is cross-entropy the training loss for language models?
+Q011932	LLM05	M	What is the effect of adjusting an LLM's context window size?
+Q011933	GA02	M	You are building a production agent that calls tools (function calling). What makes the loop reliable enough to ship?
+Q011934	MS04	H	How would you build an LLM-powered enterprise search system?
+Q011935	SD06	H	Design and build a webhook delivery system that reliably delivers events to customer-registered URLs.
+Q011936	SD06	H	Design a system to schedule jobs in a distributed environment.
+Q011937a	SD07	H	Design an in-memory database.
+Q011937b	SD06	H	Design Slack.
+Q011938	GA04	H	A customer says "the model got worse" after you upgraded model versions in their deployment. How do you verify and respond?
+Q011939	GA05	M	How do you approach GenAI safety in consumer products?
+Q011940	GA05	H	How would you design safeguards for an AI system that can take actions on behalf of a user?
+Q011941	MS04	H	An enterprise customer says "We want AI to automate our claims processing." As the engineer in the room, what do the first two weeks look like?
+Q011942	DROP	-	hr
+Q011943	DROP	-	hr
+Q011944	DROP	-	hr
+Q011945	DROP	-	hr
+Q011946	DROP	-	hr
+Q011947	DROP	-	dsa
+Q011948	CODE01	E	Write a function to compute root-mean-square error given y_pred and y_true lists.
+Q011949	ML01	E	Define the bias-variance trade-off and discuss the relationship between the two.
+Q011950	ML02	E	What are the assumptions of linear regression?
+Q011951	ML01	M	Distinguish regularization from validation: when is each the right tool?
+Q011952	ML06	M	You have a binary loan-approval classifier and limited access to feature weights. How do you explain a rejection?
+Q011953	LLM04	H	Design the training setup for a model that doesn't fit on one accelerator, say 70B parameters on a pod.
+Q011954	MS04	H	Design the serving system for a multimodal assistant (text and image in, streaming text out) at hundreds of millions of users.
+Q011955	MS03	H	Design a personalised recommendation system for rental listings using demographics, property metadata, amenities, price, reviews and location.
+Q011956	MS03	H	Design a classifier that predicts the optimal moment to insert a commercial break in a video.
+Q011957	MS03	H	How would you improve product search results, focusing on the fraction of relevant documents retrieved (recall)?
+Q011958	ML01	M	Justify using a neural network for a given problem: what do you need to know about the network, dataset, timeline and business context?
+Q011959	ML01	M	Do 1 million Seattle ride trips suffice to build an accurate ETA prediction model? How would you decide?
+Q011960	DROP	-	dsa
+Q011961	DROP	-	dsa
+Q011962	DROP	-	dsa
+Q011963	ML06	H	Your ads CTR model shows a 2% offline AUC gain, but the online A/B is revenue-neutral with worse calibration. What is going on, and what do you do?
+Q011964	FT01	H	Walk me through a post-training recipe to turn a pretrained base model into a personalised assistant.
+Q011965	MS03	H	Design a personalised news-feed ranking system, including the "next post" logic for a social media feed.
+Q011966	MS03	H	Design a recommendation system for social media ads, and an evaluation framework for ads ranking.
+Q011967	MS03	H	Design the ML components behind a social-media Story feature.
+Q011968	MS03	H	Design an end-to-end classification pipeline for marketplace listings.
+Q011969	MS03	H	Design a language translation model / service.
+Q011970	DROP	-	hr
+Q011971	DROP	-	hr
+Q011972	DROP	-	hr
+Q011973	SD07	M	Build an in-memory key-value store with SET/GET/DELETE, then add transactions with BEGIN/COMMIT/ROLLBACK, including nested transactions.
+Q011974	DROP	-	dsa
+Q011975	LLM03	M	Explain how a Mixtral-style sparse mixture-of-experts model works. Why does a ~47B-parameter model run at roughly the cost of a ~13B one?
+Q011976	FT01	M	After fine-tuning on a customer's task, target accuracy is up but the model got worse at everything else. What happened and what do you do?
+Q011977	LLM03	H	A flagship model is a sparse MoE with ~10x more total than active parameters. Why is that architecture a good fit for private enterprise deployment, and where does it hurt?
+Q011978	RAG06	H	How would you evaluate multilingual retrieval quality when employees query in French and Korean over mostly-English documents?
+Q011979	GA03	H	Design an agent that automates an enterprise workflow, say, drafting RFP responses from internal documents and a CRM. What does "enterprise-grade" add?
+Q011980	MS04	H	A bank wants the whole stack (model, RAG, agents) deployed air-gapped on their own GPUs. What actually changes versus a SaaS deployment?
+Q011981	DROP	-	hr
+Q011982	CODE01	H	Implement top-k MoE routing with a shared expert in PyTorch, and point out the efficiency and correctness traps.
+Q011983	FT03	H	DeepSeek R1-Zero was trained with RL and essentially no SFT first. What did that show, and why did full R1 add SFT back?
+Q011984	FT04	H	How do you build a training dataset without triggering model collapse when much of your data is synthetic?
+Q011985	LLM04	H	DeepSeek claims frontier-class results at a fraction of the usual training cost. How is that possible?
+Q011986	LLM05	H	When you push a model from 8K to hundreds of thousands of tokens of context, what actually breaks first, and why?
+Q011987	LLM05	H	How do you take a model trained at 8K-32K context and make it work at 128K or more?
+Q011988	RAG05	M	For a long-context assistant, when is a 1M-token context window the right tool, and when should you use retrieval instead?
+Q011989	FT03	H	Kimi K1.5 scaled RL for reasoning without a process reward model or tree search. Why deliberately keep the RL recipe that simple?
+Q011990	GA03	H	How would you evaluate whether an agentic model is actually good, beyond a single benchmark number?
+Q011991	LLM03	M	GLM-4.5 is an MoE with 355B total but 32B active parameters. Explain the economics: what does that split buy you and what does it cost?
+Q011992	LLM03	H	What is Multi-Token Prediction (MTP), why add an MTP layer, and how does it help at inference time?
+Q011993	FT03	H	Why does long-horizon agentic RL need a disaggregated, asynchronous design rather than a colocated-synchronous one?
+Q011994	MS04	H	Design an end-to-end cloud service that lets users delegate multi-step phone tasks ("order my usual coffee") to an autonomous agent. Cover architecture and failure modes.
+Q011995	LLM07	H	How would you evaluate an agentic coding model on SWE-bench and tau-bench style benchmarks without fooling yourself?
+Q011996	LLM02	H	Qwen uses byte-level BPE with a ~151K vocabulary, augmented for multilingual coverage and with digits split into single characters. Why those choices, and what are the trade-offs?
+Q011997	FT01	H	A model unifies a thinking mode and a non-thinking mode with a caller-settable thinking budget. How would you train that, and how would you serve it?
+Q011998	LLM03	M	When would you pick a 30B MoE model with ~3B active parameters over a 32B dense model?
+Q011999	FT04	M	Explain strong-to-weak distillation, bootstrapping smaller models from flagship ones. How does it work and why is it cheaper?
+Q012000	FT03	M	Reasoning models are trained with RL using verifiable rewards on maths and code. Why is that preferred over PPO with a learned reward model for these domains?
+Q012001	LLM07	H	As the release engineer for an open-weights model, how do you make sure the benchmark numbers are trustworthy and not contaminated?
+Q012002	GA06	H	Qwen2.5-VL uses a native dynamic-resolution ViT with window attention and multimodal RoPE. Why native resolution instead of fixed tiling, and what does MRoPE encode?
+Q012003	LLM02	M	Why is tokenization the first bottleneck for Indian-language LLMs, and how does a low-fertility tokenizer change the economics?
+Q012004	LLM06	H	How do you deploy a capable assistant on cost-sensitive or on-device hardware without a datacentre GPU? Walk through the efficiency toolkit.
+Q012005	MS04	H	Design cross-lingual RAG: the knowledge base is in English and Hindi, but users ask in Tamil, Telugu or transliterated Hinglish.
+Q012006	FT03	H	A model ships hybrid think/non-think modes and was post-trained with SFT then RLVR. How would you build that, and why RLVR over vanilla RLHF?
+Q012007	MS04	H	Design a real-time voice agent for a citizen helpline in Hindi and three regional languages, targeting sub-250 ms perceived latency over a phone line.
+Q012008	GA06	H	Build a Voice Activity Detector from scratch. How do you make it robust for phone-quality Indian-language audio?
+Q012009	MS04	H	A state agency wants to move a paper-and-call-centre welfare-scheme service onto a multilingual assistant, on-prem for data residency. How do you scope and ship it?
+Q012010	DROP	-	dsa
+Q012011	GA04	H	A Copilot chat feature has a p95 budget of 3 seconds to first useful content. Where does the time go, and how do you cut it?
+Q012012	MS04	H	Design a Copilot feature that answers questions over a user's work email, documents and meetings, without ever leaking content the user can't access.
+Q012013	MS04	H	Design an agent that can take actions in a spreadsheet ("insert a pivot table of Q3 sales by region"): orchestration, tools and failure handling.
+Q012014	GA05	H	A shipped Copilot feature that summarises job applicants for recruiters is accused of working worse for some groups. How do you establish whether that's true, and what do you do about it?
+Q012015	ML07	M	What is the closed-form solution of linear regression, and when do you use gradient descent instead?
+Q012016	ML07	M	What are the differences between L1 and L2 regularization in logistic regression?
+Q012017	ML07	H	Write the loss function for logistic regression and prove it has a global minimum.
+Q012018	ML09	H	How is KL divergence loss different from cross-entropy loss? And from contrastive loss?
+Q012019	ML03	M	How do bagging and boosting differ? What is the computational difference between XGBoost and Random Forest?
+Q012020	ML01	M	Explain the bias-variance trade-off, cross-validation, and the curse of dimensionality.
+Q012021	DL04	M	How do GRU cells work, and how do they address the vanishing gradient problem? How does a BiLSTM work?
+Q012022a	LLM01	E	What is Attention in machine learning models?
+Q012022b	DL01	M	What happens in a neural network if you remove all the hidden layers?
+Q012023	ML06	E	Discuss precision, recall and F1: when would you prioritise one over the others?
+Q012024	ML05	M	How do you handle data imbalance, collinearity, feature selection and regularization?
+Q012025	ML08	M	Explain how you would design and evaluate an A/B test. What is a p-value and how do you interpret it here?
+Q012026	ML08	M	What is Maximum Likelihood Estimation and how does it differ from Bayesian inference?
+Q012027a	MS03	H	How would you design a recommendation system to suggest books to users?
+Q012027b	DROP	-	unfixable
+Q012028	DROP	-	hr
+Q012029	DROP	-	hr
+Q012030	LLM06	H	Explain post-training quantization versus quantization-aware training. What breaks when you push weights to 2-4 bits, and how do you recover quality?
+Q012031	FT02	H	You have one on-device base model but a dozen features: summarization, rewriting, reply suggestions, tone adjustment. How do you specialise without shipping a dozen models?
+Q012032	DROP	-	hr
+Q012033	DL07	H	A CUDA kernel is 10x slower than expected. Without running it, what are the usual suspects, and how do you confirm each?
+Q012034	CODE01	H	Implement the block manager for a paged KV cache: allocate, append, free, and copy-on-write prefix sharing.
+Q012035	ML03	M	Explain strategies to combat overfitting in tree-based classification models.
+Q012036	DL02	M	Summarize the differences and benefits of the Adam optimizer compared with other methods for neural-network image classification.
+Q012037	ML05	M	A network confuses pugs and pit bulls and some training labels are wrong. How do you modify the model and the data?
+Q012038	ML04	M	How do you evaluate a clustering model's effectiveness without pre-labelled groups?
+Q012039	LLM06	M	What does TensorRT / TensorRT-LLM actually do to a model to make it faster, and when will it not help?
+Q012040	LLM06	H	Design the parallelism strategy for serving a 405B-parameter dense model. TP, PP, EP: what goes where and why?
+Q012041a	SD06	H	Design a podcast search engine with transcript indexing.
+Q012041b	MS03	H	Design a recommendation algorithm for type-ahead search.
+Q012042	LLM06	H	A customer's LLM chatbot on 8 GPUs is "too slow and too expensive." You have one week with them. What do you do?
+Q012043	DROP	-	hr
+Q012044	CODE01	M	Implement non-maximum suppression. Then vectorise it.
+Q012045	DROP	-	dsa
+Q012046	DL03	H	How would you design the neural network architecture for multi-camera 3D object detection without lidar?
+Q012047	ML05	M	How do you handle extreme class imbalance in rare-event detection (e.g. a child running into the road)?
+Q012048	ML05	M	Explain how you would auto-label a fleet dataset and what quality controls you would put on it.
+Q012049	MS01	M	How would you detect and handle distribution shift between fleet data and your training set?
+Q012050	MS03	H	Design the data engine: fleet triggers, upload, labelling, retraining, shadow-mode validation, release.
+Q012051	ML06	H	Disengagement rate is a weak proxy. How would you actually measure whether an autonomy release is safer than the last one?
+Q012052	GA06	H	How would you fuse camera, radar and IMU inputs into a single perception stack, and where would you fuse them?
+Q012053	DROP	-	hr
+Q012054	DROP	-	dsa
+Q012055	ML06	H	Your offline metric improved but the online A/B did not. Enumerate the reasons this happens and how you would tell them apart.
+Q012056	ML10	M	Explain position bias in ranking data and how you would debias training.
+Q012057	MS02	M	How do you design a feature store, and what causes training/serving skew?
+Q012058	MS03	H	Design the ETA prediction system for a ride-hailing marketplace. What features, what model, how do you serve it in under 100 ms?
+Q012059	MS03	H	Design a personalised feed ranking system with a two-stage candidate generation and ranking architecture.
+Q012060	MS03	H	Design a content recommendation system for a streaming catalogue, including cold-start for new titles and new users.
+Q012061	MS03	H	Design "people you may know" / job-recommendation ranking at a professional network's scale.
+Q012062	MS03	H	Design dynamic pricing / surge for a two-sided marketplace and describe the feedback loops that can go wrong.
+Q012063	MS03	H	Design a visual search system: user uploads an image, you return visually similar in-catalogue items.
+Q012064	MS03	H	Design a fraud-detection system with heavy class imbalance and an adversarial opponent.
+Q012065	MS04	H	Design an LLM-powered customer-support assistant on top of an existing help centre, with escalation to humans.
+Q012066	MS01	M	How do you monitor a deployed ranking model for drift, and what triggers a retrain?
+Q012067	DROP	-	hr
+Q012068	CS02	M	Implement a thread-safe batching logger: many producer threads call log(msg); a background thread flushes batches of up to 100 messages every second or when full.
+Q012069	SD01	H	You have a stream of billions of events and need the top-K most frequent keys with bounded memory. Exact counting is impossible: what do you do?
+Q012070	DROP	-	dsa
+Q012071	FT05	M	When would you fine-tune instead of using RAG or prompt engineering, and if you do, LoRA or full fine-tuning?
+Q012072	FT05	M	A customer insists on fine-tuning an open model on their support tickets because "we want our own model." You think RAG solves it. What do you do?
+Q012073	GA04	H	An agent you shipped four months ago runs on a base model being deprecated in 60 days. How do you swap the model without regressing quality, and what had to be in place beforehand?
+Q012074	DROP	-	offtopic
+Q012075	DROP	-	offtopic
+Q012076	DROP	-	offtopic

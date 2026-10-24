@@ -1,0 +1,300 @@
+Q002682	CS06	E	Can an abstract class have constructors? Why?
+Q002683	CS06	M	What are the Java 8+ interface features and how do they affect abstraction?
+Q002684	DROP	-	notq
+Q002685	CS07	E	What is the difference between generics and raw types in Java?
+Q002686	CS07	M	When would you use reflection in Java and what are its disadvantages?
+Q002687	CS07	M	Explain the different types of references in Java.
+Q002688	CS07	E	What are the benefits of using annotations in Java?
+Q002689	CS02	M	Explain the difference between Executor and ExecutorService in Java.
+Q002690	DROP	-	notq
+Q002691	DROP	-	notq
+Q002692	CS07	E	What is the difference between ArrayList and LinkedList?
+Q002693	CS07	M	When would you use TreeSet over HashSet?
+Q002694	CS07	M	How does HashMap handle collisions?
+Q002695	CS07	E	What is the difference between HashMap and TreeMap?
+Q002696	CS02	M	How do you make a collection thread-safe in Java?
+Q002697	CS06	E	What is the difference between a constructor and a method?
+Q002698	CS06	M	Can constructors be overloaded? How does constructor chaining work?
+Q002699	CS06	E	What happens if you do not provide a constructor in a class?
+Q002700	CS06	M	Can constructors be private? What are the use cases?
+Q002701	CS07	M	How do you handle exceptions in constructors?
+Q002702	CS07	M	When should you create custom checked vs unchecked exceptions?
+Q002703	CS07	H	How do you design exception hierarchies effectively?
+Q002704	CS07	M	What information should custom exceptions contain?
+Q002705	SD04	M	How do you handle exceptions in microservices architectures?
+Q002706	CS07	M	What are the performance considerations for custom exceptions?
+Q002707	CS06	E	What is encapsulation and why is it important?
+Q002708	CS06	M	What is the difference between encapsulation and data hiding?
+Q002709	CS06	E	How do you achieve encapsulation in Java?
+Q002710	CS06	M	Can you break encapsulation in Java? How?
+Q002711	CS06	E	What is the difference between encapsulation and abstraction?
+Q002712	CS07	E	What is the difference between checked and unchecked exceptions in Java?
+Q002713	CS07	M	Why does Java have both Error and Exception classes?
+Q002714	CS07	M	Can you throw an exception from a finally block?
+Q002715	DROP	-	dup
+Q002716	CS07	M	How do you create effective custom exceptions?
+Q002717	CS07	E	What is the difference between final, finally, and finalize in Java?
+Q002718	CS07	M	Can you have a final class with non-final methods?
+Q002719	CS07	E	What happens if you do not initialize a final variable?
+Q002720	CS07	M	Can final methods be overloaded?
+Q002721	CS07	M	Why are String and wrapper classes final in Java?
+Q002722	CS07	M	What is garbage collection and how does it work in Java?
+Q002723	CS07	M	Explain the difference between minor and major garbage collection.
+Q002724	CS07	M	What are GC roots and why are they important?
+Q002725	CS07	H	How can you tune garbage collection performance in Java?
+Q002726	CS07	M	What causes OutOfMemoryError in Java and how can you prevent it?
+Q002727	DROP	-	notq
+Q002728	CS06	E	What is inheritance and what are its types?
+Q002729	CS06	E	What is the difference between method overriding and method overloading?
+Q002730	CS06	M	What is the diamond problem and how does Java solve it?
+Q002731	CS06	M	When would you use inheritance vs composition?
+Q002732	CS06	M	What happens if you do not call super() in a constructor?
+Q002733	DROP	-	notq
+Q002734	DROP	-	notq
+Q002735	CS06	M	What is the difference between abstract classes and interfaces in modern Java?
+Q002736	CS06	M	How do default methods solve the interface evolution problem?
+Q002737	CS06	M	How does Java resolve conflicts when multiple interfaces have the same default method?
+Q002738	CS07	E	What are functional interfaces and why are they important?
+Q002739	CS06	M	When should you use interfaces vs abstract classes in your design?
+Q002740	DROP	-	notq
+Q002741	CS07	E	What is the enhanced for-loop in Java?
+Q002742	CS07	E	What are the different ways to iterate over a collection in Java?
+Q002743	CS07	M	When would you use an Iterator instead of an enhanced for-loop?
+Q002744	CS07	E	What is the difference between Iterator and ListIterator?
+Q002745	CS07	M	What is fail-fast behavior in iterators?
+Q002746	CS07	M	Which iteration method is most efficient for different collection types?
+Q002747	CS07	E	What are lambda expressions in Java?
+Q002748	DROP	-	dup
+Q002749	CS07	E	What are method references in Java?
+Q002750	CS07	E	What are default methods in Java interfaces?
+Q002751	CS07	M	What are the advantages of lambda expressions over anonymous classes?
+Q002752	CS07	M	Explain the difference between map() and flatMap() in Java streams.
+Q002753	CS07	M	When should you use Optional instead of null?
+Q002754	DROP	-	dup
+Q002755	CS07	M	Explain the Java Stream API processing model.
+Q002756	CS07	E	What is the difference between JDK, JRE, and JVM?
+Q002757	CS07	E	How does Java achieve platform independence?
+Q002758	DROP	-	notq
+Q002759	CS07	M	What happens when you execute 'java MyClass'?
+Q002760	CS07	E	Can you run Java applications without installing the JDK?
+Q002761	CS07	E	What is bytecode and why is it important?
+Q002762	DROP	-	notq
+Q002763	CS07	E	What is the List interface in Java?
+Q002764	DROP	-	dup
+Q002765	CS07	M	When would you use Vector instead of ArrayList?
+Q002766	CS07	M	How does ArrayList handle capacity management?
+Q002767	CS02	M	How do you make an ArrayList thread-safe?
+Q002768	CS07	M	What happens when you modify a list during iteration?
+Q002769	CS07	E	How do you convert between different List implementations?
+Q002770	CS07	E	What is the difference between capacity and size in ArrayList?
+Q002771	CS07	E	What is the Map interface in Java?
+Q002772	CS07	M	What is the difference between HashMap, LinkedHashMap, and TreeMap?
+Q002773	CS07	M	What is the significance of load factor in HashMap?
+Q002774	CS07	M	Can you use mutable objects as keys in HashMap?
+Q002775	CS07	E	How do you iterate through a Map efficiently?
+Q002776	CS07	E	Explain the difference between stack and heap memory in Java.
+Q002777	CS07	E	What happens to local variables when a method finishes execution?
+Q002778	CS07	M	How does Java prevent memory leaks compared to C/C++?
+Q002779	CS07	M	What is the difference between shallow and deep copying in terms of memory?
+Q002780	CS07	M	How can you monitor and optimize Java memory usage?
+Q002781	DROP	-	dup
+Q002782	CS06	M	Can you override static methods in Java? Why or why not?
+Q002783	CS07	M	What are covariant return types in method overriding?
+Q002784	CS07	M	What happens if a method throws exceptions in overriding?
+Q002785	CS06	M	How does method resolution work in an inheritance hierarchy?
+Q002786	CS06	M	Why does Java not support multiple class inheritance?
+Q002787	DROP	-	dup
+Q002788	CS06	M	What is the difference between composition and multiple inheritance?
+Q002789	CS06	M	When should you choose multiple inheritance over composition?
+Q002790	CS06	M	How do mixin interfaces work in Java?
+Q002791	CS02	E	What is the difference between extending Thread and implementing Runnable?
+Q002792	CS02	M	How do you prevent deadlock in multithreaded applications?
+Q002793	CS02	M	What is the difference between synchronized and volatile?
+Q002794	CS02	M	Explain the Producer-Consumer problem and its solution.
+Q002795	CS02	E	What are thread pools and why are they useful?
+Q002796	CS06	E	What is polymorphism and what are its types?
+Q002797	CS06	M	How does method overriding enable runtime polymorphism?
+Q002798	DROP	-	dup
+Q002799	DROP	-	dup
+Q002800	DROP	-	notq
+Q002801	CS07	M	What are the rules for method overriding in Java?
+Q002802	DROP	-	notq
+Q002803	CS07	E	What is the Queue interface in Java?
+Q002804	CS07	E	What is the difference between the Queue and Deque interfaces?
+Q002805	CS07	M	How does PriorityQueue maintain order?
+Q002806	CS07	M	Why is ArrayDeque preferred over LinkedList for stack/queue operations?
+Q002807	CS07	E	Can PriorityQueue contain duplicate elements?
+Q002808	CS02	M	How do you implement a thread-safe queue?
+Q002814	CS07	E	What is the Set interface in Java?
+Q002815	CS07	E	What is the difference between HashSet, LinkedHashSet, and TreeSet?
+Q002816	CS07	M	How does HashSet ensure uniqueness?
+Q002817	CS07	E	Can you store null values in different Set implementations?
+Q002818	CS07	E	How do you convert between different Set implementations?
+Q002819	CS07	E	How do you implement set operations like union and intersection?
+Q002820	CS07	E	What is the static keyword and how does it work in Java?
+Q002821	DROP	-	notq
+Q002822	CS02	M	What happens if you access static variables from multiple threads?
+Q002823	CS07	M	Explain the difference between static and instance initialization blocks.
+Q002824	CS07	M	What are the use cases for static methods and when should you avoid them?
+Q002825	DROP	-	notq
+Q002826	CS07	M	Why are Strings immutable in Java and what are the benefits?
+Q002827	CS07	E	When should you use StringBuilder vs StringBuffer?
+Q002828	CS07	M	What is the String Pool and how does intern() work?
+Q002829	CS07	E	Explain the difference between equals() and == for Strings.
+Q002830	CS07	M	How has the String implementation changed in recent Java versions?
+Q002831	CS07	E	What is the difference between the this and super keywords?
+Q002832	CS07	M	Can you use this() and super() in the same constructor?
+Q002833	DROP	-	dup
+Q002834	CS07	M	How do you access a grandparent method in Java?
+Q002835	DROP	-	notq
+Q002836	CS07	E	When should you use the this keyword explicitly?
+Q002837	CS07	E	What is the difference between throw and throws in Java?
+Q002838	CS07	E	Can a method have multiple throw statements?
+Q002839	CS07	E	What happens if you do not handle a checked exception that is thrown?
+Q002840	CS07	M	Can overriding methods change the throws clause?
+Q002841	CS07	M	How do you handle exceptions in lambda expressions?
+Q002842	CS07	M	What is the difference between try-catch-finally and try-with-resources?
+Q002843	CS07	M	Can a finally block prevent exception propagation?
+Q002844	CS07	M	What happens if both try and finally blocks throw exceptions?
+Q002845	CS07	E	Can you have a try block without catch or finally?
+Q002846	CS07	M	How does multi-catch work and what are its limitations?
+Q002847	DROP	-	dup
+Q002848	CS07	E	What are wrapper classes and why do we need them?
+Q002849	CS07	E	Explain autoboxing and unboxing with examples.
+Q002850	CS07	M	What is the Integer cache and how does it work?
+Q002851	CS07	M	What are the performance implications of using wrapper classes?
+Q002852	CS07	M	How do you safely handle null wrapper values?
+Q002853	CS07	E	What utility methods do wrapper classes provide?
+Q002916	DROP	-	notq
+Q002917	DROP	-	notq
+Q002854	CS01	E	Explain the difference between L1, L2, and L3 caches.
+Q002855	CS01	E	What is the difference between a cache hit and a cache miss?
+Q002856	CS01	M	Compare direct-mapped, set-associative, and fully associative caches.
+Q002857	CS01	M	What are the three types of cache misses?
+Q002858	CS01	M	Explain write-through vs write-back cache policies.
+Q002859	DROP	-	notq
+Q002860	DROP	-	notq
+Q002861	CS02	M	Why is ordering important in the dining philosophers problem?
+Q002862	CS02	M	What is the difference between the first and second readers-writers problem solutions?
+Q002863	CS02	M	In the sleeping barber problem, why do we need the access_seats semaphore?
+Q002864	CS02	M	How would you modify the producer-consumer solution to handle multiple producers and consumers?
+Q002865	CS02	M	What happens if you swap the order of the sem_wait() calls in the producer-consumer solution?
+Q002866	CS02	E	What is the convoy effect in FCFS scheduling?
+Q002867	CS02	M	Why is SJF optimal for average waiting time?
+Q002868	CS02	E	What are the advantages and disadvantages of Round Robin scheduling?
+Q002869	CS02	M	How do you choose the optimal time quantum for Round Robin?
+Q002870	CS02	M	What is priority inversion and how can it be solved?
+Q002871	CS02	E	What is a race condition and how can it be prevented?
+Q002872	DROP	-	unfixable
+Q002873	CS02	M	What are the advantages and disadvantages of Peterson's algorithm?
+Q002874	CS02	M	When would you use a spinlock vs a mutex?
+Q002875	CS02	H	What is the ABA problem in concurrent programming?
+Q002876	DROP	-	notq
+Q002877	CS02	E	What are the four conditions necessary for deadlock to occur?
+Q002878	CS02	M	What is the difference between deadlock prevention and deadlock avoidance?
+Q002879	CS02	M	Explain the Banker's Algorithm with an example.
+Q002880	CS02	M	How do you detect deadlock in a system?
+Q002881	CS02	M	What are the trade-offs between different deadlock handling approaches?
+Q002882	CS01	E	What is the difference between internal and external fragmentation?
+Q002883	CS01	M	Which memory allocation algorithms minimize external fragmentation?
+Q002884	CS01	M	How does memory compaction solve fragmentation problems?
+Q002885	DROP	-	notq
+Q002886	DROP	-	notq
+Q002887	DROP	-	notq
+Q002888	CS01	M	What are the advantages and disadvantages of the buddy system?
+Q002889	CS01	H	How do you measure and monitor fragmentation in a running system?
+Q002890	CS01	M	What are the advantages and disadvantages of shared memory vs message passing?
+Q002891	CS01	M	When would you use pipes vs sockets?
+Q002892	CS01	E	What is the difference between anonymous and named pipes?
+Q002893	CS02	M	How do you handle race conditions in shared memory?
+Q002894	CS01	M	What happens if a process dies while holding a system resource (like a message queue)?
+Q002895	CS01	M	Compare First Fit, Best Fit, and Worst Fit allocation strategies.
+Q002896	CS01	M	How does the Buddy System work and what are its advantages?
+Q002897	CS01	M	What is a memory pool and when would you use it?
+Q002898	CS07	M	How do garbage collectors handle circular references?
+Q002899	CS01	E	What is paging and how does it differ from segmentation?
+Q002900	CS01	M	How does address translation work in paging?
+Q002901	CS01	E	What is a TLB and why is it important?
+Q002902	CS01	M	Compare different page replacement algorithms.
+Q002903	CS01	M	What are the advantages and disadvantages of hierarchical paging?
+Q002904	DROP	-	notq
+Q002905	DROP	-	notq
+Q002906	CS01	E	What is the difference between the Ready and Waiting process states?
+Q002907	CS01	E	Can a process go directly from the Running to the Waiting state?
+Q002908	CS01	E	What causes a process to move from the Running to the Ready state?
+Q002909	CS01	M	What is a zombie process and how is it related to process states?
+Q002910	CS01	M	Explain the concept of suspended process states.
+Q002911	CS01	M	Why is thread creation faster than process creation?
+Q002912	CS01	M	When would you use processes vs threads?
+Q002913	CS01	M	What happens when a thread crashes vs when a process crashes?
+Q002914	CS01	M	Explain the difference between user-level and kernel-level threads.
+Q002915	CS02	E	What is the difference between multithreading and multiprocessing?
+Q002918	CS01	E	What is segmentation and how does it differ from paging?
+Q002919	CS01	M	What are the advantages and disadvantages of segmentation?
+Q002920	CS01	M	How does address translation work in segmentation?
+Q002921	CS01	M	What is external fragmentation and how can it be solved in segmentation?
+Q002922	CS01	M	How do you implement shared segments in a segmentation system?
+Q002923	CS02	E	What is the difference between a binary semaphore and a mutex?
+Q002924	CS02	M	Can a semaphore value be negative?
+Q002925	CS02	M	What happens if you call sem_post() more times than sem_wait()?
+Q002926	CS02	M	How do you prevent priority inversion with semaphores?
+Q002927	CS02	M	What is a spurious wakeup and how do you handle it?
+Q002928	CS01	E	What is thrashing and what causes it?
+Q002929	CS01	M	How can you detect thrashing in a system?
+Q002930	CS01	M	What is the working set model and how does it help prevent thrashing?
+Q002931	CS01	M	Compare different anti-thrashing strategies.
+Q002932	CS01	M	How do you recover from thrashing once it occurs?
+Q002933	CS01	E	What is the difference between FIFO and LRU page replacement?
+Q002934	CS01	M	Why is the Optimal page replacement algorithm not practically implementable?
+Q002935	CS01	M	What is Belady's anomaly and which algorithms suffer from it?
+Q002936	CS01	M	How does the Clock algorithm approximate LRU?
+Q002937	CS01	M	What factors affect the choice of page replacement algorithm?
+Q003168	DROP	-	notq
+Q003169	DROP	-	notq
+Q002938	SD04	M	How do you document pagination, errors, and auth in API documentation?
+Q002939	SD04	M	How do you ensure API documentation stays current?
+Q002940	SD04	M	How do you version OpenAPI specs?
+Q002941	SD04	M	How do you generate SDKs from OpenAPI specs?
+Q002942	SD04	M	Why use an API gateway in microservices?
+Q002943	SD04	M	How do you implement authentication at the API gateway vs in the services?
+Q002944	SD04	M	Where should rate limiting be placed, at the API gateway or in the service?
+Q002945	SD04	M	How do you handle canary releases via an API gateway?
+Q002946	SD04	M	Compare API gateway to service mesh features.
+Q002947	SD05	E	What are SLOs and error budgets, and how do you define them?
+Q002948	SD05	M	What are your key API SLOs?
+Q002949	SD05	M	How do you trace requests across services?
+Q002950	SD05	M	How do you detect partial outages?
+Q002951	SD05	M	What metrics predict incidents early?
+Q002952	SD05	M	How do you design actionable alerts?
+Q002953	SD04	M	What are the different types of API testing and when would you use each?
+Q002954	SD04	M	How do you test authentication and authorization in REST APIs?
+Q002955	SD04	M	What strategies help ensure API contract compatibility during testing?
+Q002956	SD04	M	How do you implement effective performance testing for APIs?
+Q002957	SD04	M	What are the best practices for test data management in API testing?
+Q002958	SD04	M	How do you test error handling and edge cases in APIs?
+Q002959	CS08	M	What security testing approaches are essential for REST APIs?
+Q002960	CS09	M	How do you integrate API testing into CI/CD pipelines effectively?
+Q002961	SD04	M	What approaches help test APIs with external dependencies?
+Q002962	SD04	M	How do you measure and improve API test coverage?
+Q002963	SD04	E	Why is API versioning important?
+Q002964	DROP	-	notq
+Q002965	DROP	-	notq
+Q002966	DROP	-	notq
+Q002967	DROP	-	notq
+Q002968	SD04	M	What are the main API versioning strategies and their trade-offs?
+Q002969	SD04	M	How do you handle backward compatibility when evolving APIs?
+Q002970	SD04	M	What is the difference between semantic versioning and date-based versioning for APIs?
+Q002971	SD04	M	How do you properly deprecate an API version?
+Q002972	SD04	M	What versioning strategy works best for microservices?
+Q002973	SD04	M	How do you version APIs when clients have different update cycles?
+Q002974	SD04	M	What is the recommended approach for versioning REST APIs in production?
+Q002975	SD04	H	How do you handle database schema changes across API versions?
+Q002976	SD04	M	What are the challenges of maintaining multiple API versions?
+Q002977	SD04	M	How do you implement version negotiation in REST APIs?
+Q002978	SD04	E	Is every API a web service? Explain.
+Q002979	SD04	M	Compare REST, SOAP, and gRPC as web services.
+Q002980	SD04	M	When is a non-web API preferable?
+Q002981	SD04	M	How does network transport affect API design?
+Q002982	SD04	M	How do you secure APIs vs web services?
+Q002983	SD04	M	What trade-offs exist between gRPC and REST?
+Q002984	SD04	E	Give examples of APIs that are not web services.

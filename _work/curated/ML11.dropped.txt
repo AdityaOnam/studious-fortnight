@@ -1,0 +1,7 @@
+Q004532	vague
+Q009547	offscope
+Q009548	offscope
+Q009549	offscope
+Q009564	offscope
+Q009565	offscope
+Q009566	offscope

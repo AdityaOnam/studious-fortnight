@@ -1,0 +1,466 @@
+Q004560	H	How does Google Search work?
+Q004561	H	How does the Facebook News Feed work?
+Q004562	H	How does Facebook's advertising targeting algorithm work?
+Q004563	H	How does the Instagram feed work?
+Q004585	H	Design an event recommendation system.
+Q004598	H	Design a game recommendation engine.
+Q004648	H	Design a video recommendation system.
+Q004912	H	Design a content moderation system using AI.
+Q004913	H	Design a real-time AI recommendation system.
+Q004916	H	Design a fraud detection system powered by LLMs.
+Q004930	H	Design an AI-powered search engine for an e-commerce platform.
+Q004936	H	Design an AI notification system that prioritizes instead of broadcasting.
+Q004937	H	Design an AI-powered anomaly detection system for cloud infrastructure.
+Q004939	H	Design an AI dynamic pricing engine.
+Q004940	H	Design an AI resume screening system that handles 100K applications per week.
+Q004944	H	Design an AI-powered live streaming content moderation system.
+Q005365	H	Design a machine learning system for YouTube video recommendation.
+Q005366	H	Design a machine learning system for YouTube video search.
+Q005367	H	Design a machine learning system for a personalized content feed.
+Q005368	H	Design a machine learning system for harmful content detection.
+Q005369	H	Design a machine learning system for similar listings on Airbnb.
+Q005370	H	Design a machine learning system for replacement product recommendation.
+Q005371	H	Design a machine learning system for event recommendation.
+Q005372	H	Design a machine learning system for multimodal search.
+Q005373	H	Design a machine learning system for ad click prediction.
+Q005374	H	Design a machine learning system to estimate delivery time.
+Q005375	H	Design a machine learning system for image search.
+Q005376	H	Design a machine learning system for friends recommendation.
+Q005377	H	Design a machine learning product recommendation system for an e-commerce platform.
+Q005378	H	How would you build a system to detect fraudulent transactions?
+Q005380	H	How would you build a spam detection system?
+Q005383	H	How would you design a customer churn prediction model?
+Q005384	H	What would be your approach to ranking search results?
+Q005395	M	Discuss scalability and latency requirements for ML systems.
+Q005721	H	How would you measure the difficulty level of a story?
+Q005722	H	Given a story, how would you edit it to make it easier or more difficult?
+Q005723	H	When you type a question on StackOverflow, you are shown a list of similar questions to make sure your question hasn't been asked before. How do you build such a system?
+Q005724	H	How would you design an algorithm to match pool riders for Lyft or Uber?
+Q005725	H	How would you build a trigger word detection algorithm to spot the word "activate" in a 10-second audio clip?
+Q005726	H	If you were to build a Netflix clone, how would you build a system that predicts when a user stops watching a TV show, whether they are tired of that show or just taking a break?
+Q005727	H	Imagine you were working on the iPhone. Every time users open their phones, you want to suggest the one app they are most likely to open first, with 90% accuracy. How would you do that?
+Q005728	H	Given a dataset of credit card purchases where each record is labelled as fraudulent or safe, how would you build a fraud detection algorithm?
+Q005734	H	When you enter a search query on Google, you are shown a list of related searches. How would you generate a list of related searches for each query?
+Q005735	H	How would you build a system to suggest trending hashtags on Twitter?
+Q005736	H	How would you build a system to display the top 10 results when a user searches for rental listings in a certain location on Airbnb?
+Q005738	H	Design a machine learning system.
+Q005752	H	For any user on Twitter, how would you suggest who they should follow? What do you do when that user is new? What are some of the limitations of data-driven recommender systems?
+Q005754	H	Build a system that returns images associated with a query, like Google Images.
+Q005755	H	Each question on Quora often gets many different answers. How do you create a model that ranks all these answers? How computationally intensive is this model?
+Q005756	H	How would you build an autocompletion algorithm to finish your sentence when you text?
+Q005757	H	On social networks like Facebook, users can list their high schools. How would you estimate what percentage of listed high schools are real, and how would you find and deploy at scale a way of detecting invalid schools?
+Q005760	H	Facebook would like to estimate the month and day of people's birthdays, regardless of whether people give that information directly. What methods would you propose, and what data would you use?
+Q005761	M	Build a system to predict the language a text is written in.
+Q005762	H	An e-commerce company is trying to minimize the time it takes customers to purchase their selected items. As a machine learning engineer, what can you do to help them?
+Q006561	H	Build a machine learning model to predict whether an ad will be clicked on a social network.
+Q006628	H	How would you design an algorithm for fraud detection?
+Q006632	H	How would you design a ranking system?
+Q006666	H	Given Wi-Fi data in your office, how would you determine which rooms and areas are underutilized and overutilized?
+Q006668	H	How could you use GPS data from a car to determine the quality of a driver?
+Q006669	H	Given accelerometer, altitude, and fuel usage data from a car, how would you determine the optimum acceleration pattern to drive over hills?
+Q006670	H	Given position data of NBA players in a season's games, how would you evaluate a basketball player's defensive ability?
+Q006671	H	How would you quantify the influence of a Twitter user?
+Q006672	H	Given location data of golf balls in games, how would you construct a model that can advise golfers where to aim?
+Q006676	H	How would you come up with an algorithm to detect plagiarism in online content?
+Q006678	H	Suppose you are building the music recommendation engine at Spotify to recommend music based on past listening history. How would you approach this problem?
+Q006692	H	How could you collect and analyze data to use social media to predict the weather?
+Q006693	H	How would you construct a feed that shows relevant content for a site that involves user interactions with items?
+Q006694	H	How would you design the "People You May Know" feature on LinkedIn or Facebook?
+Q006698	H	How would you predict who someone may want to send a Snapchat or Gmail message to?
+Q006699	H	How would you suggest to a franchise where to open a new store?
+Q006702	H	In a search engine, given partial data on what the user has typed, how would you predict the user's eventual search query?
+Q006704	H	Given a database of all previous alumni donations to your university, how would you predict which recent alumni are most likely to donate?
+Q006705	H	You are Uber and you want to design a heatmap to recommend to drivers where to wait for a passenger. How would you approach this?
+Q006706	H	How would you build a model to predict a March Madness bracket?
+Q006734	H	Say you are working on Facebook News Feed. What would be some important metrics? How would you make the news each person gets more relevant?
+Q006736	H	You are on the data science team at Uber and are asked to start thinking about surge pricing. What would be the objectives of such a product and how would you start looking into this?
+Q006782	H	Design a content moderation system.
+Q006794	M	Is this even an LLM/ML problem, or would a rule or heuristic win?
+Q007076	M	An interviewer says "design a system to recommend products" and you have 45 minutes. What is the strongest first move?
+Q007078	M	Your ranker lifts offline NDCG@10 by 4 points, and the interviewer asks how you know this helps the business. How do you answer?
+Q007079	M	In an ML system design interview at the Staff+ level with 45 minutes, how should you allocate depth versus breadth compared to a mid-level candidate?
+Q007080	M	Halfway through an ML system design interview you have spent 20 of 45 minutes on feature engineering and haven't touched serving or monitoring. What is the right recovery?
+Q007081	M	The prompt is "detect spam in comments." Volume is low and a keyword blocklist already catches most of it. What is the strongest senior response?
+Q007083	M	You are designing a recommendation feed and propose training on "click = positive, no-click = negative." The interviewer pushes back. What is the strongest revision?
+Q007100	H	For a 100M-DAU video feed over a 10M-item catalog with a 120ms p99 latency, why use a two-stage funnel rather than one big ranking model over the whole catalog?
+Q007101	H	Your recommendation feed maximizes CTR and engagement climbs, but the catalog collapses into the same popular items for everyone. What is the right fix and where do you apply it?
+Q007102	M	When designing fraud detection, how do you set the decision threshold?
+Q007103	M	Why does a payments fraud system such as Stripe Radar use logistic regression, GBMs, and random forests rather than a large transformer?
+Q007104	H	A new merchant joins your payments platform with zero transaction history. How do you score their transactions for fraud on day one?
+Q011708	M	Why not just use an LLM for everything in a recommendation system?
+Q011721	M	In a fraud detection system, why combine ML with rules instead of using only ML?
+Q011722	M	In a fraud detection system, why use an LLM for explanation instead of SHAP/LIME?
+Q011723	M	How do you handle model latency spikes in a real-time fraud detection system?
+Q011724	M	How does a fraud detection system handle coordinated fraud attacks?
+Q011725	M	How do you balance fraud prevention with customer experience?
+Q011879	H	Design a content-moderation system combining classifiers and LLMs.
+Q011955	H	Design a personalised recommendation system for rental listings using demographics, property metadata, amenities, price, reviews and location.
+Q011956	H	Design a classifier that predicts the optimal moment to insert a commercial break in a video.
+Q011957	H	How would you improve product search results, focusing on the fraction of relevant documents retrieved (recall)?
+Q011965	H	Design a personalised news-feed ranking system, including the "next post" logic for a social media feed.
+Q011966	H	Design a recommendation system for social media ads, and an evaluation framework for ads ranking.
+Q011967	H	Design the ML components behind a social-media Story feature.
+Q011968	H	Design an end-to-end classification pipeline for marketplace listings.
+Q011969	H	Design a language translation model / service.
+Q012027a	H	How would you design a recommendation system to suggest books to users?
+Q012041b	H	Design a recommendation algorithm for type-ahead search.
+Q012050	H	Design the data engine: fleet triggers, upload, labelling, retraining, shadow-mode validation, release.
+Q012058	H	Design the ETA prediction system for a ride-hailing marketplace. What features, what model, how do you serve it in under 100 ms?
+Q012059	H	Design a personalised feed ranking system with a two-stage candidate generation and ranking architecture.
+Q012060	H	Design a content recommendation system for a streaming catalogue, including cold-start for new titles and new users.
+Q012061	H	Design "people you may know" / job-recommendation ranking at a professional network's scale.
+Q012062	H	Design dynamic pricing / surge for a two-sided marketplace and describe the feedback loops that can go wrong.
+Q012063	H	Design a visual search system: user uploads an image, you return visually similar in-catalogue items.
+Q012064	H	Design a fraud-detection system with heavy class imbalance and an adversarial opponent.
+Q000630	H	How does Twitter recommend the "For You" timeline in 1.5 seconds?
+Q003288	H	Design search and recommendation for Airbnb.
+Q012281	M	How do you evaluate user satisfaction in a content recommendation system?
+Q012286	E	What is content analysis in a news recommendation system?
+Q012288	M	What features are extracted from an article in a content recommendation system?
+Q012290	M	Why are semantic tags needed in a content recommendation system?
+Q012467	H	How would you compute ETA at scale for a ride-hailing service like Uber?
+Q008939	H	Build text-to-image search over 100M product images. Walk me through the design.
+Q008940	H	How do you mine hard negatives from click logs without poisoning training with position bias?
+Q008941	M	A merchandiser complains that "red dress" surfaces orange dresses in text-to-image product search. What is your debug path?
+Q008942	H	When is a caption-then-BM25 pipeline actually better than embedding search for image retrieval?
+Q009308	H	Engagement metrics and wellbeing metrics disagree. How do you build a system that resolves that?
+Q009309	H	Your recommendation model is trained on engagement labels. How would you change the training objective, not just the launch gate?
+Q009310	M	What do you do when a wellbeing guardrail metric regresses but only for a small, highly engaged cohort?
+Q009311	H	Design discovery and search across millions of user-created characters.
+Q009312	M	How do you collapse thousands of near-duplicate versions of the same popular character in search without erasing the creators who made the good ones?
+Q009313	M	What offline metric would you trust enough to gate a launch of a character search and discovery system?
+Q009579	H	You have dozens of ranking signals and a brand-new tenant with zero interaction data. How do you rank, and how do you improve?
+Q009581	M	Click data says users prefer stale-but-familiar documents. Do you follow the clicks?
+Q009742	H	Design the recommendation system for Instagram Reels.
+Q009744	H	What breaks in a short-video recommendation design at 100k QPS, and where do you spend your latency budget?
+Q009755	H	Design the harmful-content detection system for Facebook and Instagram uploads.
+Q009757	H	In a harmful-content detection pipeline, where would you insert an LLM, and for which policy areas is it too slow or expensive?
+Q010202	H	In a self-driving system, if end-to-end wins on aggregate metrics but you cannot explain one bad clip, do you ship it?
+Q010206	H	Disengagement rate is a weak safety proxy. How would you actually measure whether a self-driving system is safe enough to ship?
+Q010207	H	For a self-driving system, your leading safety indicators all improve and your outcome rate is flat. What do you conclude?
+Q010208	H	How would you choose the human-driver benchmark for a new city with no comparable published data?
+Q010209	H	You have hundreds of millions of fleet miles. How do you find and use the rare scenarios that matter?
+Q010210	H	How do you stop the training distribution from collapsing towards triggered events and degrading nominal driving?
+Q010211	H	A cluster of rare scenarios has 40 examples and a suspected safety implication. Is that enough to gate a release on?
+Q010212	H	Design the output representation for a behaviour prediction model. What metrics would you gate it on?
+Q010213	H	How would you detect mode collapse in a mixture head during training rather than after?
+Q010214	H	How do you build a simulator you would trust to gate a release?
+Q010215	H	Your planner improves 8% in simulation and is flat on the road. Where do you look first?
+Q010216	H	How would you measure whether your simulated agents are too polite?
+Q010217	H	Budget the compute and latency for an onboard self-driving stack. What breaks when a model gets bigger?
+Q010218	H	How would you catch a latency regression that only appears at 40 degrees ambient temperature?
+Q010219	H	Would you ever accept a nondeterministic kernel on the safety path, and under what argument?
+Q010220	H	You are opening a self-driving service in a new city. Structure the safety case.
+D03321	E	What are the typical steps you follow when approaching an ML system design interview question?
+D03322	M	Walk me through a structured framework for designing a production ML system from problem formulation to monitoring.
+D03323	E	Why is it important to ask clarifying questions at the start of an ML system design interview, and which ones do you usually ask?
+D03324	M	How do you translate an abstract business problem into a concrete ML problem with defined inputs, outputs and learning category?
+D03325	M	How do you decide whether a problem actually needs machine learning or can be solved with heuristics?
+D03326	M	How do you weigh the cost of data collection, annotation and compute against expected impact when deciding to build an ML solution?
+D03327	M	What business, latency, scale and privacy requirements would you pin down before designing any ML system?
+D03328	M	How do you choose between offline and online metrics, and how do you reconcile them when they disagree?
+D03329	M	What are counter metrics, and why do you track them alongside the primary success metric of an ML product?
+D03330	M	How do you handle trade-offs between competing metrics such as engagement, revenue and user satisfaction in a recommendation system?
+D03331	M	Why is it usually right to start an ML project with a heuristic or a simple model before moving to a complex one?
+D03332	M	What are the main components of a production ML system beyond the model itself?
+D03333	M	How would you structure a multi-stage funnel of candidate generation, ranking, re-ranking and filtering, and why is it needed?
+D03334	M	What factors drive your choice between logistic regression, gradient boosted trees and a deep neural network for a new ranking problem?
+D03335	M	What are the data needs you identify at the start of an ML design, and how do you decide which signals are the big actors?
+D03336	M	How do you obtain labels for a supervised model when natural labels such as clicks are available only for positives?
+D03337	M	Compare natural labels, explicit feedback and human annotation as label sources in terms of cost, noise and bias.
+D03338	M	How would you create training data when you have few labels and labeling is expensive?
+D03339	M	How do weak supervision and programmatic labeling work, and what are their risks?
+D03340	M	How does active learning reduce labeling cost, and how would you integrate it into a production labeling pipeline?
+D03341	M	How do you build a data generation pipeline that joins features and labels for training, and what can go wrong?
+D03342	M	How do you decide which features to build for a design problem with users, items, queries and context as actors?
+D03343	M	How do you represent high-cardinality ID features and text features in a ranking model?
+D03344	M	What is the difference between static features from a feature store and dynamic features computed at request time, and when do you use each?
+D03345	M	How do you preprocess text, image and video inputs before feeding them into a model in a production pipeline?
+D03346	M	How would you split time-correlated data into train, validation and test sets, and what leakage pitfalls do you watch for?
+D03347	M	How do you handle class imbalance in a production classification system at the data level and loss level?
+D03348	M	How do you compare batch prediction, online prediction and a hybrid of both for serving an ML model?
+D03349	M	When would you choose on-device inference over server-side inference, and what constraints does that impose on the model?
+D03350	M	How would you compress a model for deployment on a mobile device?
+D03351	M	How do you roll out a new ranking model safely using shadow deployment, canary release and A/B testing?
+D03352	M	How do you design an online A/B test for a new recommendation model, including user allocation, duration and guardrails?
+D03353	M	When would you use a bandit approach instead of a fixed A/B test for deploying model variants?
+D03354	M	How do you scale an ML system for both training and serving when traffic grows tenfold?
+D03355	M	What would you log and monitor in a production ML system to detect problems early?
+D03356	M	What are the common failure modes specific to ML systems compared with ordinary software systems?
+D03357	M	How do feedback loops arise in deployed recommendation or ranking models, and how would you mitigate them?
+D03358	M	How do you detect and respond to covariate shift, label shift and concept drift in production?
+D03359	M	How often should a production model be retrained, and how would you decide between training from scratch and fine-tuning the previous model?
+D03360	H	Walk through how you would extend an existing ranking system to add a new feature without destabilizing the current design.
+D03361	M	How can bias in training data and human labeling affect an ML product, and how would you reduce it by design?
+D03362	M	How do you balance freshness and diversity against relevance in a ranking system?
+D03363	M	What privacy and security considerations should be part of an ML system design?
+D03364	M	How do you distribute training across machines, and when would you pick data parallelism over model parallelism?
+D03365	M	How do you decide the budget split of latency across retrieval, ranking and re-ranking stages in a real-time system?
+D03366	H	You have a 200 ms latency budget for a personalized ranking service. How would you design the system to meet it?
+D03367	H	How would you design the offline experimentation platform that lets many teams evaluate ranking models consistently?
+D03368	M	What are the challenges in building the training-data joiner between impression logs and later user actions such as purchases?
+D03369	M	How do you handle delayed feedback when conversions arrive hours or days after the impression?
+D03370	M	How would you structure the interaction between a research prototype and a production serving system to avoid training-serving skew?
+D03371	M	What are the main differences between ML in research and ML in production regarding objectives, stakeholders, latency and fairness?
+D03372	M	Why does the compute requirement differ between training and inference in production, and how does it shape design choices?
+D03373	M	How do you debug an ML model that performs well offline but poorly after launch?
+D03374	M	How would you do hyperparameter tuning at scale for a production model with limited budget?
+D03375	M	What are the pros and cons of building an ML system as a set of separate models versus one multi-task model?
+D03376	M	How does multi-task learning with shared layers and task-specific heads help a ranking system optimize several engagement signals?
+D03377	M	How would you combine multiple predicted engagement probabilities such as click, like, share and hide into one ranking score?
+D03378	M	How do you avoid optimizing for clickbait when the training signal is clicks?
+D03379	M	How do you define relevance for a recommender when completed views, watch time, likes and clicks each give different incentives?
+D03392	H	Design an ads click prediction system.
+D03393	M	For ad click prediction, how do you collect negative samples and handle the extreme imbalance between clicks and impressions?
+D03394	M	Why would you formulate ad click prediction as pointwise learning to rank and what are the alternatives?
+D03395	M	How would you model the interaction between user and ad features in a CTR model, from feature crossing to deep architectures?
+D03396	M	How do you represent sparse ID features and dense counting features in a CTR prediction model?
+D03397	M	How do you ensure predicted CTRs are well calibrated when they feed into an ad auction?
+D03398	M	How would you handle ad fatigue and negative feedback such as hide or block in ad ranking?
+D03399	M	How would you continually train a CTR model on a stream of impressions without catastrophic drift?
+D03400	H	Design a news feed ranking system for a social network with billions of users.
+D03401	M	What signals would you use for a news feed model: post features, author-user affinity, user history and context?
+D03402	M	How would you handle new posts with no engagement history in a feed ranking system?
+D03403	M	How would you incorporate the user-author relationship strength into feed ranking?
+D03404	M	How would you add diversity and ads into a ranked feed without hurting engagement?
+D03405	H	Design a harmful content detection system for a social media platform.
+D03406	M	Compare early fusion and late fusion for combining text, image and video signals in a content moderation model.
+D03407	M	Compare a single binary harm classifier, per-category classifiers, a multi-label classifier and a multi-task model for moderation.
+D03408	M	How would you support many languages in a harmful content classifier with limited labeled data per language?
+D03409	M	How do you combine automated detection with human review and user reports in a moderation pipeline?
+D03410	M	How do you pick thresholds for removing versus demoting content when harm categories have different severity?
+D03411	M	How do you deal with adversarial users who modify content to evade a deployed moderation model?
+D03412	H	Design a People You May Know friend recommendation system.
+D03413	M	Why model friend recommendation as link prediction on a graph rather than as pointwise classification of user pairs?
+D03414	M	How would you generate candidates for friend recommendation at a scale of one billion users using friends of friends?
+D03415	M	How do you build training data from graph snapshots at consecutive times for edge prediction?
+D03416	M	How would you use a graph neural network to produce node embeddings for connection recommendation?
+D03417	M	How do you avoid recommending popular hub users to everyone in a social graph recommender?
+D03418	H	Design a visual search system for finding visually similar images.
+D03419	M	How would you train an image embedding model using contrastive learning, and how do you choose positive and negative pairs?
+D03420	M	How would you build an approximate nearest neighbor service for billions of image embeddings?
+D03421	M	How do you evaluate a visual search system offline when no explicit relevance judgments exist?
+D03422	H	Design a text-to-video search system for a video sharing platform.
+D03423	M	Compare frame-level and video-level encoders for video retrieval in terms of quality, cost and latency.
+D03424	M	How would you combine a two-tower visual-text retrieval model with an inverted-index text search for video search?
+D03425	M	How would you train a text-video two-tower model and what loss would you use?
+D03426	H	Design a search system for an e-commerce marketplace.
+D03427	M	Describe the stages of a multi-layer search pipeline from query understanding to blending and filtering.
+D03428	M	What does query understanding include, such as spell checking, expansion, relaxation and intent classification?
+D03429	M	How do you scale candidate retrieval from billions of documents to thousands using an inverted index and semantic retrieval?
+D03430	M	Why use a multi-stage ranker with a lightweight first stage and a heavier second stage?
+D03431	M	What is a blender in search result page construction, and why is it needed?
+D03432	M	How do you evaluate a search ranker online when clicks are affected by position bias and clickbait?
+D03433	H	Design a video recommendation system for a streaming platform with hundreds of millions of users.
+D03434	M	How do you combine content-based and collaborative filtering approaches, in parallel or sequentially, in a hybrid recommender?
+D03435	M	Describe the candidate generation, ranking and re-ranking stages of a recommender and the goal of each.
+D03436	M	What business rules and re-ranking constraints do you apply after a ranker, such as freshness, fairness and diversity?
+D03437	M	How would you solve the cold start problem for new users and new videos in a recommender?
+D03438	M	How would you balance exploration and exploitation in a recommender while measuring the cost of exploring?
+D03439	H	Design a game recommendation engine for a gaming platform.
+D03440	H	Design an event recommendation system for a ticketing platform.
+D03441	M	Why is event recommendation harder than movie recommendation, and how does it change your feature and model choices?
+D03442	M	What user-event features such as distance, price similarity and time similarity would you engineer for event ranking?
+D03443	H	Design a typeahead query suggestion system for a search box.
+D03444	H	Design a system that suggests replacement items for out-of-stock products in an online grocery order.
+D03445	H	Design a rental or lodging recommendation system for a travel marketplace.
+D03446	H	Design a place recommendation system for a maps application.
+D03447	H	Design a proximity service that finds nearby businesses and ranks them for a user.
+D03448	H	Design a system that estimates food delivery time.
+D03449	H	Design a ride matching system for a ride-hailing service.
+D03450	H	Design a fraud detection system for an online platform.
+D03451	H	Design a healthcare diagnosis support system based on patient data.
+D03452	H	Design a named entity linking system for text.
+D03453	H	Design a language identification system for user-generated text.
+D03454	H	Design a sentiment analysis system for product reviews at scale.
+D03455	H	Design an OCR and text recognition system for photos taken on mobile devices.
+D03456	H	Design an image blurring system that automatically obscures faces and license plates.
+D03457	H	Design a question answering system over a large collection of documents.
+D03458	H	Design the ML stack for a self-driving car covering perception, prediction and planning.
+D03459	H	Design a pedestrian jaywalking detection system for an autonomous vehicle.
+D03475	M	What are the sensors used in a self-driving stack and how do their trade-offs affect the model design?
+D03476	M	How would you design a multi-task network that shares a backbone across several perception tasks in a vehicle?
+D03477	M	What latency constraints exist in different modules of an autonomous driving stack and how do they influence model choices?
+D03488	H	Design the ML system for detecting fraudulent card payments in real time for an online payments processor.
+D03489	H	Design the ML system to detect payment fraud where fraud patterns change quickly and labels arrive weeks late.
+D03490	M	How would you move a fraud detection system from hand-written rules and shallow models to deep learning without losing explainability?
+D03491	H	Design the ML system for detecting fraud using graph relationships between accounts, devices and payment instruments.
+D03492	M	How would you use learned embeddings of entities to improve fraud detection, and how do they get updated?
+D03493	H	Design the ML system for detecting suspicious account activity and account takeover.
+D03494	H	Design the ML system to detect fraud in an online food delivery marketplace involving customers, couriers and restaurants.
+D03495	H	Design the ML system for automatically discovering new fraud types that existing models do not cover.
+D03496	M	How would you prevent repeat fraudsters who create new accounts after being banned?
+D03497	H	Design an ML system that predicts whether a payment transaction will be declined, and uses it to improve authorization rates.
+D03498	H	Design the ML system for routing payments through the best payment gateway to maximize success and minimize cost.
+D03499	H	Design the ML system for verifying identity documents uploaded by users.
+D03500	H	Design an ML system that identifies business customers and high-value merchants from transaction data.
+D03501	H	Design the ML system for classifying bank transactions into spending categories.
+D03502	H	Design the ML system for detecting cash intermediaries and money laundering patterns.
+D03503	H	Design the ML system for ranking the posts in a social network home feed.
+D03504	H	Design the ML system for recommending interesting posts and tweets to users on a social platform.
+D03505	H	Design the ML system for recommending accounts to follow on a microblogging service, including handling brand-new users.
+D03506	H	Design the ML system that generates a personalized daily digest of notifications for each user.
+D03507	H	Design the ML system for deciding when and whether to send a push notification to each user.
+D03508	M	How would you measure the long-term effect of notifications on retention versus short-term opens and clicks?
+D03509	H	Design the ML system for personalizing the optimal time and frequency of marketing emails.
+D03510	H	Design the ML system for selecting which marketing message to send to each user of a consumer finance app.
+D03511	H	Design the ML system for targeting in-app messages and cross-sell offers to existing users.
+D03512	H	Design the ML system for generating engaging email subject lines using generative models.
+D03513	H	Design the ML system for ranking search results in an e-commerce marketplace.
+D03514	H	Design the ML system for personalizing e-commerce search results for each user.
+D03515	H	Design the ML system for ranking restaurants and dishes in a food delivery search.
+D03516	H	Design the ML system for searching groceries and food items, handling typos and multi-word queries.
+D03517	H	Design the ML system for job search that ranks relevant job postings for a query and member.
+D03518	H	Design the ML system for travel search that ranks hotels or flights based on user intent.
+D03519	H	Design the ML system for ranking homes in a real-estate search for buyers.
+D03520	H	Design the ML system for podcast search and discovery.
+D03521	H	Design the ML system for improving search for new customers who have no history.
+D03522	H	Design the ML system for autocompleting user queries in an e-commerce search box.
+D03523	H	Design the ML system for suggesting related search queries after a user searches.
+D03524	H	Design a conversational, open-ended search system that answers product questions in natural language.
+D03525	H	Design the ML system for evaluating the relevance of search results at scale without relying only on clicks.
+D03526	H	Design the ML system for post search on a social platform.
+D03527	H	Design the ML system for searching files and predicting which files a user is going to look for.
+D03528	H	Design the ML system for visual search that finds products similar to a photo taken by the user.
+D03529	H	Design the ML system for recommending visually similar content.
+D03530	H	Design the ML system for finding the user's old photos worth revisiting.
+D03531	H	Design the ML system for searching inside a video for a specific moment.
+D03532	H	Design the ML system for recommending complementary products, such as completing an outfit or a room.
+D03533	H	Design the ML system for generating personalized outfit combinations for a shopper.
+D03534	H	Design the ML system for recommending substitute items when an ordered product is unavailable.
+D03535	H	Design the ML system for recommending similar homes or listings on a rental marketplace.
+D03536	H	Design the ML system for recommending furniture items that match a user's taste and room.
+D03537	H	Design the ML system for recommending items to add to the cart at checkout.
+D03538	H	Design the ML system for recommending restaurants on a food delivery app, including new customers.
+D03539	H	Design the ML system for suggesting a user's likely next order in a food delivery app.
+D03540	H	Design the ML system for ordering items in a restaurant menu to maximize conversion.
+D03541	H	Design the ML system for recommending recipes and food items based on dietary preferences.
+D03542	H	Design the ML system for personalizing the homepage of a music or podcast streaming service.
+D03543	H	Design the ML system for recommending the next song and creating personalized playlists.
+D03544	H	Design the ML system for recommending diverse video content to users on a streaming platform.
+D03545	H	Design the ML system that personalizes the artwork or thumbnail shown for each title.
+D03546	H	Design the ML system for recommending articles and news content to readers.
+D03547	H	Design the ML system for recommending learning content to students on an educational platform.
+D03548	H	Design the ML system for recommending increasingly difficult reading material to language learners.
+D03549	H	Design the ML system for personalizing a mobile game store with item and offer recommendations.
+D03550	H	Design the ML system for recommending fitness training videos.
+D03551	H	Design the ML system for recommending financial products to bank customers under regulatory constraints.
+D03552	H	Design the ML system for recommending apps in a marketplace of third-party integrations.
+D03553	H	Design the ML system for suggesting shortcuts or quick actions on an app homepage.
+D03554	H	Design the ML system for recommending contribution opportunities to users of a collaborative platform.
+D03555	H	Design the ML system for job recommendations that match candidates with relevant roles.
+D03556	H	Design the ML system for diversifying travel recommendations across destinations and categories.
+D03557	H	Design the ML system for personalized paywall and free-limit decisions in a subscription product.
+D03558	H	Design the ML system for ranking products using a shared feature store across several ranking use cases.
+D03559	H	Design a multi-task ranking model that serves recommendations for several surfaces of an e-commerce marketplace.
+D03560	H	Design the ML system for ranking customer support cases so that agents handle the most urgent first.
+D03561	H	Design the ML system for predicting the click-through rate of ads shown to users.
+D03562	H	Design the ML system for serving ads on a social platform, including retrieval, ranking and auction.
+D03563	H	Design the ML system for predicting conversions and optimizing ad spend for advertisers.
+D03564	H	Design the ML system for recommending bids and budgets to advertisers.
+D03565	H	Design the ML system for automated real-time bidding in an advertising exchange.
+D03566	H	Design the ML system for creating lookalike audiences for ad targeting.
+D03567	H	Design the ML system for contextual advertising that targets ads based on page content.
+D03568	H	Design the ML system for predicting the value of an individual ad request.
+D03569	H	Design the ML system for predicting and reducing advertiser churn.
+D03570	H	Design the ML system for generating ad headlines and ad content with generative models and human review.
+D03571	H	Design the ML system for optimizing marketing spend across paid channels.
+D03572	H	Design the ML system for uplift modeling to decide which customers should receive a promotion.
+D03573	H	Design the ML system for evaluating the success of past promotions using causal methods.
+D03574	H	Design the ML system for predicting customer lifetime value.
+D03575	H	Design the ML system for predicting subscription churn and choosing retention actions.
+D03576	H	Design the ML system for scoring and prioritizing sales leads.
+D03577	H	Design the ML system for determining the best time to charge a customer's subscription renewal.
+D03578	H	Design the ML system for pricing trips dynamically in a ride-hailing marketplace.
+D03579	H	Design the ML system for predicting estimated time of arrival for rides on a road network.
+D03580	H	Design the ML system for predicting food delivery time shown to customers at checkout.
+D03581	H	Design the ML system for predicting delivery drop-off times for a parcel logistics network.
+D03582	H	Design the ML system for estimating delivery dates for furniture and large-item e-commerce orders.
+D03583	H	Design the ML system for assigning couriers to orders and reducing courier waiting time.
+D03584	H	Design the ML system for predicting the supply and demand of delivery drivers by region.
+D03585	H	Design the ML system for matching riders to drivers with pooled rides.
+D03586	H	Design the ML system for estimating travel distance and route cost.
+D03587	H	Design the ML system for predicting delivery location coordinates from address text.
+D03588	H	Design the ML system for detecting errors in map data and flagging incorrectly captured locations.
+D03589	H	Design the ML system for predicting the position of traffic control elements for an autonomous vehicle.
+D03590	H	Design the ML system for generating human-readable names for pickup points.
+D03591	H	Design the ML system for estimating the market value of a home.
+D03592	H	Design the ML system for estimating product dimensions for shipping from limited item data.
+D03593	H	Design the ML system for categorizing products in an e-commerce catalog.
+D03594	H	Design the ML system for automatically tagging product listings.
+D03595	H	Design the ML system for assigning color names to product images.
+D03596	H	Design the ML system for generating floor plans from photos.
+D03597	H	Design the ML system for resolving duplicate entities and detecting relationships in a knowledge graph.
+D03598	H	Design the ML system for classifying restaurants and cuisines from menu and review data.
+D03599	H	Design the ML system for predicting whether a store is open at a given time.
+D03600	H	Design the ML system for predicting the availability of grocery items for substitution.
+D03601	H	Design the ML system for detecting stolen or duplicated photos on a listing platform.
+D03602	H	Design the ML system for detecting viral spam content on a professional network.
+D03603	H	Design the ML system for detecting spam accounts and spam invitations.
+D03604	H	Design the ML system for detecting spam listings in a marketplace.
+D03605	H	Design the ML system for detecting policy-violating comments and rude messages.
+D03606	H	Design the ML system for detecting and blocking unwanted phone callers.
+D03607	H	Design the ML system for detecting phishing and payment fraud in messaging.
+D03608	H	Design the ML system for identifying whether audio contains speech or music.
+D03609	H	Design the ML system for recognizing people in photos with privacy controls.
+D03610	H	Design the ML system for detecting vulnerabilities in source code.
+D03611	H	Design the ML system for predicting hard drive failures in a data center.
+D03612	H	Design the ML system for automatically triaging software bugs and assigning them to the right team.
+D03613	H	Design the ML system for predicting which software tests are likely to fail for a given code change.
+D03614	H	Design the ML system for classifying cloud workloads by type.
+D03615	H	Design the ML system for forecasting resource usage and cost in a cloud platform.
+D03616	H	Design the ML system for improving video streaming quality by adapting to network conditions.
+D03617	H	Design the ML system for improving video quality at scale in a transcoding pipeline.
+D03618	H	Design the ML system for automatically categorizing videos.
+D03619	H	Design the ML system for generating audio previews of podcasts.
+D03620	H	Design the ML system for personalizing video clips for each viewer.
+D03621	H	Design the ML system for translating and transcribing speech across languages.
+D03622	H	Design a grammatical error correction system for a writing assistant.
+D03623	H	Design the ML system for suggesting text edits and rewrites in a writing assistant.
+D03624	H	Design the ML system for detecting named entities and extracting information from text.
+D03625	H	Design the ML system for identifying the language of a piece of text.
+D03626	H	Design the ML system for predicting customer intent in support messages.
+D03627	H	Design the ML system that clusters customer support issues by similarity.
+D03628	H	Design the ML system for categorizing and analyzing customer feedback at scale.
+D03629	H	Design the ML system for automatically routing customer phone calls.
+D03630	H	Design the ML system for extracting metadata and layout from PDFs and scanned documents.
+D03631	H	Design the ML system for classifying user-uploaded documents.
+D03632	H	Design the ML system for automatically tagging sensitive data in a data lake.
+D03633	H	Design the ML system for building a modern OCR pipeline that handles varied fonts and layouts.
+D03634	H	Design the ML system for capturing which parts of an article readers pay attention to.
+D03667	H	How would you measure the difficulty of a reading passage for language learners, and how would you edit text to adjust its difficulty?
+D03668	H	Given a labelled dataset of credit card purchases, how would you build a fraud detection algorithm end to end?
+D03669	H	How would you suggest who to follow to a Twitter user, handle brand-new users, and what limits do data-driven recommenders have?
+D03670	H	How would you generate the list of related searches shown under a search engine query?
+D03671	H	How would you build a system that returns images for a text query, as in an image search engine?
+D03672	H	How would you build a system that suggests trending hashtags?
+D03673	H	How would you rank the many answers to a question on a Q and A site, and how computationally expensive is your model?
+D03674	H	How would you design the system that returns the top ten rental listings for a location search?
+D03675	H	How would you build an algorithm that completes the sentence you are typing in a messaging app?
+D03676	H	How would you show similar existing questions to a user who is typing a new question on a Q and A site?
+D03677	H	How would you design an algorithm to match riders for pooled rides?
+D03678	H	How would you estimate what percentage of high schools listed by users on a social network are real, and detect invalid ones at scale?
+D03679	H	How would you build a trigger-word detection system that spots a keyword in a ten-second audio clip?
+D03680	H	How would you predict whether a user stopped watching a TV show because they are tired of it or just taking a break?
+D03681	H	How would you estimate people's birthdays when they do not provide them, and what data would you use?
+D03682	H	How would you predict the price of a property listing and use it to decide whether to invest in a city?
+D03683	H	How would you suggest the one app a user is most likely to open first every time they unlock their phone?
+D03684	H	How would you map nicknames to real first names?
+D03685	H	How would you help an e-commerce company minimize the time customers take to complete a purchase?
+D03686	H	How would you build a chatbot that helps people book hotels?
+D03687	H	How would you train a model to decide whether a word like jaguar refers to an animal or a car in a sentence?
+D03688	H	How would you build a model to recognize whether an image shows a triangle, a circle or a square?
+D03689	H	Given only CIFAR-10, how would you build a model that detects whether an image belongs to one of its ten classes or to none?
+D04332	M	Design a real-time fraud detection system that blocks account takeover and botnet logins using risk scores and a rule engine.
+D04333	M	Why would you use semi-supervised learning for fraud detection in an adversarial setting where labels are scarce?
+D04334	H	How do you handle feature evolution when attackers adapt to your fraud model, and how do you combine online scoring with offline retraining?
+D04335	M	Which signals would you use to detect login attacks of increasing difficulty: single IP, many IPs per device, distributed IPs, and targeted accounts?
+D04336	M	Design a personalized content recommendation system for a news or short-video feed.
+D04337	M	How do you define and measure user satisfaction for a recommender when click-through rate alone is misleading?
+D04338	M	Which algorithms would you combine in a recommender, such as collaborative filtering, logistic regression, GBDT, factorization machines, and DNNs?
+D04339	M	How do recall (candidate generation) strategies reduce latency in a recommender, and how do they interact with ranking?
+D04340	M	How would you handle cold start for new users and new content in a recommendation system, for example using trending signals and content analysis?
+D04341	M	How would you train a recommendation model continuously with real-time feedback at large scale?
+D04342	M	How would you extract semantic tags and categories from articles and use them as features for ranking?
+D04343	M	Design a ranking service for a social news feed that mixes learned relevance with business constraints such as frequency caps.
+D04344	M	How would you design a content moderation pipeline that mixes automated models with human review?

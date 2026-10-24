@@ -1,0 +1,545 @@
+LLM03	E	What is the difference between a prefix LM and a causal LM in terms of attention masks and which tokens can attend to which?	wdndev:01 llm concepts
+LLM03	M	What are the trade-offs between causal, prefix, and encoder-decoder language models for generation versus understanding tasks?	wdndev:01 llm concepts
+LLM04	E	What training objectives are used for large language models, and how do causal LM, masked LM and span-corruption objectives differ?	wdndev:01 llm concepts
+LLM03	M	What are emergent abilities in LLMs, and what competing explanations exist for why they appear at certain scales?	wdndev:01 llm concepts
+LLM03	H	Some researchers argue emergent abilities are an artifact of the metric chosen. How would you design an experiment to test that claim?	wdndev:01 llm concepts
+LLM03	M	Why have most modern LLMs converged on a decoder-only architecture rather than encoder-decoder?	wdndev:LLM why decoder only
+LLM01	H	Explain the low-rank argument for why bidirectional attention may limit the expressiveness of an encoder-style model compared with causal attention.	wdndev:LLM why decoder only
+LLM03	M	Why is decoder-only pretraining often said to give better zero-shot performance than encoder-decoder pretraining?	wdndev:LLM why decoder only
+LLM06	M	How does a decoder-only model make KV-cache reuse across multi-turn conversations simpler than an encoder-decoder model does?	wdndev:LLM why decoder only
+LLM03	M	Compare the encoder-only, encoder-decoder and decoder-only families, and give an example task where each is the best choice.	wdndev:01 llm concepts
+LLM05	M	Why do LLMs sometimes fall into repetitive loops, and what decoding-time and training-time remedies would you apply?	wdndev:01 llm concepts
+LLM05	M	Can an LLM accept an arbitrarily long input in theory? Which architectural and hardware constraints bound the usable context?	wdndev:01 llm concepts
+LLM05	H	What techniques let a pretrained model handle inputs much longer than its training context, and what does each sacrifice?	wdndev:01 llm concepts
+FT05	M	When would you choose a BERT-style encoder over a decoder-only LLM such as LLaMA for a production NLP task?	wdndev:01 llm concepts
+FT05	M	Does every vertical domain need its own domain-specific LLM? What would you weigh before deciding between a general model and a specialized one?	wdndev:01 llm concepts
+LLM03	E	What is the main idea of an autoregressive language model and how is its probability factorized?	wdndev:语言模型
+LLM07	E	Define perplexity and explain how it relates to cross-entropy and to the average branching factor of a language model.	wdndev:语言模型
+DL06	M	How does an n-gram language model estimate probabilities, and why does it suffer from sparsity and limited context?	wdndev:语言模型
+DL06	M	What is the entropy of English, and how did early information-theoretic work motivate statistical language modelling?	wdndev:语言模型
+DL06	M	What smoothing techniques are used in n-gram models, and what problem do they solve?	wdndev:语言模型
+DL06	M	Why is Chinese word segmentation hard, and what are the main sources of ambiguity (granularity standards, overlapping ambiguity, unseen words)?	wdndev:分词
+DL06	M	Compare dictionary-based segmentation (forward/backward maximum matching) with statistical segmentation approaches.	wdndev:分词
+DL06	M	How does a DAG plus dynamic programming find the max-probability segmentation of a sentence, and what role does an HMM play for out-of-vocabulary words?	wdndev:jieba分词原理
+DL06	M	Explain how a Viterbi decoder is used with a BMES tagging scheme to segment unseen words.	wdndev:jieba分词原理
+DL06	E	What makes part-of-speech tagging hard, and how do dictionary-lookup and statistical taggers differ?	wdndev:词性标注
+DL06	M	How would an HMM-based POS tagger be trained and decoded, and what independence assumptions does it make?	wdndev:词性标注
+DL06	E	What is the difference between constituency parsing and dependency parsing, and what downstream tasks use each?	wdndev:句法分析
+DL06	M	How has deep learning changed syntactic parsing compared with grammar-rule-based approaches?	wdndev:句法分析
+DL06	E	What are word embeddings and why are dense vectors preferred over one-hot representations?	wdndev:词向量
+DL06	M	How would you evaluate the quality of a set of trained word vectors, intrinsically and extrinsically?	wdndev:词向量
+DL06	M	Describe how you would incrementally update a word-embedding model with new domain vocabulary without retraining from scratch.	wdndev:词向量
+DL06	E	Compare CBOW and skip-gram in word2vec. Which works better for rare words and why?	wdndev:Word2Vec
+DL06	M	Why does word2vec use negative sampling or hierarchical softmax instead of a full softmax over the vocabulary?	wdndev:Word2Vec
+DL06	M	How are negative samples drawn in word2vec, and why is the unigram distribution raised to the 3/4 power?	wdndev:Word2Vec
+DL06	M	Explain hierarchical softmax: how does a Huffman tree reduce the cost of computing output probabilities?	wdndev:Word2Vec
+DL06	M	What is subsampling of frequent words in word2vec and what problem does it solve?	wdndev:Word2Vec
+DL06	M	In what ways does word2vec improve on earlier embedding methods such as LSA or neural-network language model embeddings?	wdndev:NLP面试题
+DL06	M	Why are static embeddings such as word2vec unable to handle polysemy, and how did ELMo and BERT address this?	wdndev:NLP面试题
+DL06	M	Walk through the history of NLP pretraining from word embeddings to ELMo, GPT and BERT. What changed at each step?	wdndev:NLP面试题
+DL06	M	Compare BERT, OpenAI GPT and ELMo in terms of architecture, directionality and how they are used downstream.	wdndev:NLP面试题
+DL06	M	Compare CNN, RNN and Transformer as feature extractors for text, in terms of long-range dependencies, parallelism and compute.	wdndev:NLP三大特征抽取器
+DL06	E	What are the main strategies for obtaining a sentence embedding from a pretrained encoder, and when is each appropriate?	wdndev:NLP面试题
+DL01	E	Why do neural networks need non-linear activation functions? What would a deep network without them collapse into?	wdndev:激活函数
+DL01	M	Explain vanishing and exploding gradients, their causes in deep networks, and practical mitigations.	wdndev:激活函数
+DL01	E	What are the drawbacks of sigmoid and tanh as hidden-layer activations?	wdndev:激活函数
+DL01	M	Compare ReLU, Leaky ReLU, PReLU and ELU. What is the dying-ReLU problem and how do you detect it?	wdndev:激活函数
+DL01	M	What is GeLU, why is it preferred in Transformers, and how is it commonly approximated?	wdndev:激活函数
+DL01	M	Define Swish/SiLU and explain why it is smooth and non-monotonic.	wdndev:激活函数
+DL01	M	What is a Gated Linear Unit and how does it differ from a plain activation in a feed-forward block?	wdndev:激活函数
+LLM01	M	Write the formula for the Transformer FFN block and explain what role the FFN plays beyond attention.	wdndev:激活函数 FFN
+LLM01	M	Why do SwiGLU and GeGLU feed-forward blocks use three weight matrices, and how is the hidden dimension adjusted to keep parameter count comparable?	wdndev:激活函数 GLU
+LLM01	M	What empirical evidence supports gated FFN variants over ReLU FFNs in LLMs?	wdndev:激活函数 GLU
+LLM01	E	Describe the scaled dot-product attention computation step by step, including shapes of Q, K, V and the output.	wdndev:attention
+LLM01	M	Why is the dot product scaled by the square root of d_k? What goes wrong in the softmax gradient if it is not?	wdndev:Transformer架构细节
+LLM01	M	Why does the variance of the dot product grow with dimension, and how does that tie to softmax saturation?	wdndev:Transformer架构细节
+LLM01	M	Why does self-attention use separate Q, K, V projections rather than comparing raw embeddings directly?	wdndev:Transformer架构细节
+LLM01	M	Why is multi-head attention used instead of a single large attention head? What does each head learn?	wdndev:Transformer架构细节
+LLM01	M	How does the total compute of multi-head attention compare to single-head attention with the same model dimension?	wdndev:Transformer架构细节
+LLM01	M	What is the time and memory complexity of self-attention with respect to sequence length, and where does the bottleneck lie in practice?	wdndev:attention
+LLM01	E	Explain what each module in a Transformer encoder and decoder does, including Add and Norm.	wdndev:Transformer架构细节
+LLM01	M	What is fed into the Transformer decoder during training versus inference, and what is teacher forcing?	wdndev:Transformer架构细节
+LLM01	M	How does masked self-attention in the decoder prevent information leakage, and how is the mask applied numerically?	wdndev:Transformer架构细节
+LLM01	M	How does cross-attention in an encoder-decoder Transformer differ from self-attention, and where do Q, K and V come from?	wdndev:Transformer架构细节
+LLM01	M	Why can a Transformer encoder be fully parallelized across positions while the decoder is only parallel during training?	wdndev:Transformer架构细节
+LLM01	M	Why did the Transformer replace RNN-based seq2seq models? Discuss the two main limitations of seq2seq.	wdndev:Transformer架构细节
+LLM01	M	Compare Transformers and RNNs for feature extraction in terms of path length between distant tokens and parallel computation.	wdndev:Transformer架构细节
+LLM01	M	What is the role of residual connections in a Transformer and what happens to training without them?	wdndev:Transformer架构细节
+LLM01	M	Compare batch norm, layer norm, instance norm and group norm. Why is layer norm used in Transformers?	wdndev:layer_normalization
+LLM01	M	Contrast Post-LN and Pre-LN Transformers in terms of gradient flow, warmup requirements and final performance.	wdndev:layer_normalization
+LLM01	M	What is RMSNorm, how does it differ from LayerNorm, and why do recent LLMs adopt it?	wdndev:llama系列模型
+LLM01	H	Why does Post-LN often require learning-rate warmup while Pre-LN does not? Explain through the scale of gradients near the output layer.	wdndev:layer_normalization
+LLM01	M	What is DeepNorm or similar and why might very deep Transformers need a modified residual scaling?	wdndev:layer_normalization
+LLM01	M	Where does the non-linearity in a Transformer block come from?	wdndev:bert细节
+LLM01	E	Explain Multi-Query Attention and Grouped-Query Attention. How do they differ from multi-head attention?	wdndev:MHA_MQA_GQA
+LLM01	M	How do MQA and GQA change KV-cache size and memory bandwidth during decoding, and what quality cost do they carry?	wdndev:MHA_MQA_GQA
+LLM01	M	How would you convert an existing multi-head checkpoint into a GQA model (uptraining), and what is mean-pooling of KV heads?	wdndev:MHA_MQA_GQA
+LLM01	H	Given n_heads=32 and n_kv_heads=8, compute the KV cache per token per layer and explain how query heads share K/V in the attention kernel.	wdndev:MHA_MQA_GQA
+LLM01	M	What is FlashAttention and why is it faster than standard attention even though FLOPs are unchanged?	wdndev:attention
+LLM01	H	Explain tiling and online softmax in FlashAttention and how the backward pass avoids storing the full attention matrix.	wdndev:attention
+LLM01	M	What does IO-awareness mean for GPU kernels, and how do HBM and SRAM hierarchy shape attention implementation?	wdndev:attention
+LLM01	M	What are sparse, sliding-window and linear attention variants, and what accuracy trade-offs do they make?	wdndev:attention
+LLM01	E	What are the two pretraining tasks in BERT, and what does each teach the model?	wdndev:bert细节
+LLM04	M	In BERT masked LM, why are 15 percent of tokens selected and why is only 80 percent of them replaced with [MASK] while 10 percent are random and 10 percent unchanged?	wdndev:bert细节
+LLM04	M	How does BERT's masked language modelling differ from CBOW in word2vec?	wdndev:bert细节
+LLM01	M	What is the purpose of the [CLS] token in BERT and how is its output used for classification?	wdndev:bert细节
+LLM02	M	BERT sums token, segment and position embeddings. Why does adding rather than concatenating not destroy semantic information?	wdndev:bert细节
+LLM01	M	How does BERT distinguish different senses of a polysemous word?	wdndev:bert细节
+LLM01	M	Why is ELMo called shallowly bidirectional while BERT is deeply bidirectional?	wdndev:bert细节
+LLM01	M	What are the differences between BERT and the original Transformer encoder?	wdndev:bert细节
+LLM01	M	How do you process documents longer than BERT's 512-token limit during fine-tuning and inference?	wdndev:bert细节
+LLM01	M	What are the strengths and limitations of BERT, such as the pretrain-finetune mismatch and the independence assumption among masked tokens?	wdndev:bert细节
+LLM01	M	What improvements did RoBERTa make over BERT (dynamic masking, no NSP, more data), and why do they matter?	wdndev:bert变种
+LLM01	M	How does ALBERT reduce parameters (factorized embedding, cross-layer sharing) and why replace NSP with sentence-order prediction?	wdndev:bert变种
+LLM01	M	What does SpanBERT change in the masking strategy and training objective, and which tasks benefit?	wdndev:bert变种
+LLM01	M	Compare autoregressive and autoencoding pretraining. How does XLNet's permutation language model try to combine them?	wdndev:bert变种
+LLM03	M	What is the GLM autoregressive blank-infilling objective and how does it unify understanding and generation?	wdndev:chatglm系列
+LLM03	M	What changes did ChatGLM2 introduce relative to ChatGLM (FlashAttention, multi-query attention, longer context)?	wdndev:chatglm系列
+LLM03	M	How do the ChatGLM family, LLaMA and GPT architectures differ in position encoding, masking and normalization?	wdndev:chatglm系列
+LLM03	M	What architectural changes distinguish LLaMA from the original GPT/Transformer (RMSNorm pre-norm, SwiGLU, RoPE)?	wdndev:llama系列模型
+LLM01	M	Why does LLaMA apply normalization on the input of each sub-layer rather than the output?	wdndev:llama系列模型
+LLM03	M	What changed between LLaMA 1, LLaMA 2 and LLaMA 3 in data size, context length, tokenizer vocabulary and attention?	wdndev:llama 3
+LLM03	M	Why did LLaMA 3 invest heavily in data quality and filtering, and how does that interact with scaling-law predictions?	wdndev:llama 3
+FT01	M	How was Alpaca built using self-instruct data, and what risks come with training on model-generated instructions?	wdndev:llama系列模型
+FT01	M	Describe the self-instruct data generation pipeline: seed tasks, instruction generation, filtering and deduplication.	wdndev:llama系列模型
+FT01	M	What was the Code Llama infilling (fill-in-the-middle) task and how is the training data formatted for it?	wdndev:llama系列模型
+LLM03	H	Walk through a LLaMA-2 forward pass for one token during generation, naming each module from embedding to logits.	wdndev:llama 2代码详解
+LLM06	M	In LLaMA-2 style inference code, how are the KV cache tensors laid out and updated at each decoding step?	wdndev:llama 2代码详解
+LLM02	M	How is rotary position embedding applied inside the attention layer in LLaMA code, and to which tensors?	wdndev:llama 2代码详解
+LLM02	E	What are the main ways to inject position information into a Transformer, and why does attention need it at all?	wdndev:位置编码
+LLM02	M	Compare sinusoidal, learned absolute, relative and rotary position encodings.	wdndev:位置编码
+LLM02	M	Explain how RoPE encodes relative position through rotation of query and key vectors, and why the dot product depends only on relative offset.	wdndev:位置编码
+LLM02	H	Derive why RoPE with 2D rotation blocks produces an attention score that is a function of the position difference m-n.	wdndev:位置编码
+LLM02	M	What is the long-range decay property of RoPE and how does the base frequency affect it?	wdndev:位置编码
+LLM02	M	How does ALiBi add linear distance penalties to attention logits, and why does it extrapolate to longer sequences?	wdndev:位置编码
+LLM02	M	Why do models fail at lengths beyond their training window, and what are the common length-extrapolation approaches?	wdndev:位置编码
+LLM02	H	Compare position interpolation, NTK-aware scaling and YaRN for extending RoPE context. What do they trade off?	wdndev:位置编码
+LLM02	M	Why is the sinusoidal encoding in the original Transformer chosen to be a function of dimension and position, and what property does it give for relative offsets?	wdndev:位置编码
+LLM02	E	What are the common subword tokenization algorithms (BPE, WordPiece, Unigram, byte-level BPE), and why use subwords at all?	wdndev:tokenize分词
+LLM02	M	Describe the BPE training algorithm and how encoding a new string works.	wdndev:tokenize分词
+LLM02	M	How does WordPiece differ from BPE in how it selects merges?	wdndev:tokenize分词
+LLM02	M	What are the advantages of byte-level BPE, and how does it handle unseen characters?	wdndev:tokenize分词
+LLM02	M	What does SentencePiece add compared with BPE implemented over pre-tokenized words?	wdndev:tokenize分词
+LLM02	M	What happens to multilingual and low-resource languages when a tokenizer is trained mostly on English text?	wdndev:tokenize分词
+LLM02	M	What is the effect of vocabulary size on embedding parameters, sequence length and softmax cost, and how do you pick it?	wdndev:tokenize分词
+LLM02	M	When is extending the vocabulary of a pretrained model for a new domain or language worthwhile, and what are the risks?	wdndev:微调 词表扩增
+LLM02	H	Describe the steps to extend a LLaMA tokenizer with new tokens and initialize their embeddings so continued pretraining converges.	wdndev:微调 词表扩增
+LLM02	M	Why can tokenization cause LLMs to fail at tasks like counting letters, arithmetic or reversing strings?	wdndev:tokenize分词
+LLM05	M	What are the top-k, top-p and temperature sampling strategies, and how do they reshape the next-token distribution?	wdndev:解码策略
+LLM05	M	Compare top-k and top-p sampling. When does top-p adapt better to varying distribution shapes?	wdndev:解码策略
+LLM05	M	What does temperature do mathematically to logits, and what happens at temperature near 0 and very high temperature?	wdndev:解码策略
+LLM05	M	In what order are top-k, top-p and temperature applied when combined, and does order change the result?	wdndev:解码策略
+LLM05	E	What is greedy decoding and what are its weaknesses compared with beam search?	wdndev:LLM推理常见参数
+LLM05	M	How does beam search work, and why does it tend to produce generic, repetitive text in open-ended generation?	wdndev:LLM推理常见参数
+LLM05	M	How does a repetition penalty modify logits, and what side effects can too high a value cause?	wdndev:LLM推理常见参数
+LLM05	M	How would you choose generation parameters for a code assistant versus a creative writing assistant?	wdndev:推理 生成参数
+LLM05	M	Why do beam search scores need length normalization?	wdndev:LLM推理常见参数
+LLM03	M	What problem does the sparsely-gated mixture-of-experts layer solve, and how does the gating network select experts?	wdndev:MoE论文
+LLM03	M	What is noisy top-k gating and why is noise added to the gate logits?	wdndev:MoE论文
+LLM03	M	What is the shrinking batch problem in MoE training and how is it mitigated?	wdndev:MoE论文
+LLM03	M	Why does an MoE layer need an auxiliary load-balancing loss, and what happens to expert utilization without it?	wdndev:MoE论文
+LLM03	M	Describe the importance loss and load loss for balancing experts in sparsely-gated MoE.	wdndev:MoE论文
+LLM03	M	How does conditional computation let an MoE model have far more parameters than active FLOPs per token?	wdndev:MoE论文
+LLM03	M	How do GShard, Switch Transformer and GLaM differ in routing (top-2 vs top-1), capacity factor and expert placement?	wdndev:MoE经典论文简牍
+LLM03	M	What is the capacity factor in Switch Transformers and what happens to tokens that overflow an expert?	wdndev:Switch Transformers
+LLM03	M	Why did Switch Transformer route each token to a single expert, and what stability tricks did it use (selective precision, small init)?	wdndev:Switch Transformers
+LLM03	M	Write down the Switch Transformer load-balancing auxiliary loss and explain what it penalizes.	wdndev:Switch Transformers
+LLM03	M	What is the router z-loss in ST-MoE and what instability does it address?	wdndev:MoE经典论文简牍
+LLM03	M	What do experts specialize in according to ST-MoE analysis, and how does the number of experts affect pretraining and fine-tuning?	wdndev:MoE经典论文简牍
+LLM03	M	Why are MoE models harder to fine-tune than dense models, and what remedies exist?	wdndev:MoE经典论文简牍
+LLM03	M	Compare MoE versus dense models at equal active parameters or equal FLOPs in terms of quality, memory footprint and serving cost.	wdndev:Switch Transformers
+LLM03	H	How would you serve a large MoE model efficiently, given that every expert's weights must be resident even though only a few activate per token?	wdndev:Switch Transformers
+LLM03	M	How can MoE be used to make a dense model lighter, as in MoEBERT's conversion of FFNs into experts?	wdndev:MoE经典论文简牍
+LLM04	M	Does repeating pretraining data for multiple epochs hurt LLM performance? What does empirical evidence say about the number of useful epochs?	wdndev:token及模型参数
+LLM04	M	Why would a team consider multi-epoch training on the same corpus, and what degradation mechanisms (memorization, overfitting) arise?	wdndev:token及模型参数
+LLM04	M	Can dropout or other regularization reduce the harm of repeated data in pretraining?	wdndev:token及模型参数
+LLM03	M	According to compute-optimal scaling laws, how should model size and training tokens grow together for a fixed compute budget?	wdndev:token及模型参数
+LLM03	H	Why do modern small models train on far more tokens than Chinchilla-optimal, and what changes when inference cost is included?	wdndev:token及模型参数
+FT01	M	How many tokens or examples are typically needed for SFT, and why does quality often matter more than quantity?	wdndev:token及模型参数
+LLM03	M	What factors determine the performance of a pretrained model: parameters, data size, data quality, compute?	wdndev:token及模型参数
+LLM01	M	Why is the Transformer's lack of recurrence both a strength and a weakness for modelling very long sequences?	wdndev:Transformer架构细节
+LLM01	M	What are the differences between BERT, GPT and T5 pretraining and when would you use each for downstream tasks?	wdndev:attention
+LLM01	M	Explain how softmax saturation affects gradients in attention and how scaling mitigates it.	wdndev:Transformer架构细节
+LLM03	M	What is the relationship between instruction following ability and model scale, and does chain-of-thought emerge only in large models?	wdndev:思维链
+DL04	M	Why did LSTMs and GRUs replace vanilla RNNs, and what do the forget, input and output gates do?	wdndev:清华课程 神经网络基础
+DL04	M	How does the vanishing gradient problem manifest in RNNs, and how does an LSTM cell state mitigate it?	wdndev:清华课程 神经网络基础
+DL04	M	Compare GRU and LSTM in parameters and when you would choose one.	wdndev:清华课程 神经网络基础
+DL04	M	What are the benefits of a bidirectional RNN and when can it not be used?	wdndev:清华课程 神经网络基础
+DL01	M	Walk through backpropagation on a small computational graph and state the chain rule at one node.	wdndev:清华课程 神经网络基础
+DL01	E	Why is cross-entropy preferred over mean squared error for classification output layers with softmax?	wdndev:清华课程 神经网络基础
+DL02	M	Compare SGD, momentum, RMSProp, Adagrad and Adam update rules and when each is appropriate.	wdndev:NLP面试题 参数更新
+DL02	M	What is the effect of the learning rate on SGD convergence, and how do schedules like cosine decay with warmup help LLM training?	wdndev:NLP面试题 参数更新
+FT01	E	What does an SFT dataset record look like for instruction tuning, and how do single-turn and multi-turn formats differ?	wdndev:03 数据格式
+FT03	M	What data format does a reward model need, and how does it differ from SFT data?	wdndev:03 数据格式
+FT03	M	What data does PPO training consume in an RLHF pipeline (prompts, rollouts, rewards), and how are prompts sampled?	wdndev:03 数据格式
+FT01	M	How many examples do you need to fine-tune an LLM for a given task, and how would you determine the point of diminishing returns?	wdndev:03 数据格式
+FT01	M	Where would you source data for domain-specific continued pretraining and instruction tuning, and how would you vet its quality?	wdndev:03 数据格式
+LLM04	M	What open pretraining corpora exist, and what filtering, deduplication and quality steps do web-scale corpora undergo?	wdndev:03 数据格式
+LLM04	M	Why is near-duplicate removal (MinHash/LSH) important in pretraining data, and what harm do duplicates cause?	wdndev:03 数据格式
+LLM04	M	How would you mix general, code, and domain data when continuing pretraining a base model on a vertical domain?	wdndev:03 数据格式
+LLM04	M	How do you estimate how much GPU memory a model of N billion parameters needs for inference and for full-precision training?	wdndev:1.显存问题
+LLM04	M	Can you train a 65B-parameter model on four 32GB GPUs? Reason through weights, gradients, optimizer states and activations.	wdndev:1.显存问题
+LLM04	M	How do you measure GPU utilization and model FLOPs utilization (MFU) during training, and what is a healthy MFU?	wdndev:1.显存问题
+LLM04	M	Training across nodes is slower than expected. How would you check interconnect bandwidth, NVLink topology and NCCL configuration?	wdndev:1.显存问题
+LLM04	E	What is TF32 and how many bits are used for sign, exponent and mantissa compared with FP32, FP16 and BF16?	wdndev:1.显存问题
+LLM04	M	Compare FP16 and BF16 for LLM training. Why is BF16 usually more stable and when would loss scaling still be needed?	wdndev:9.总结
+LLM04	M	How does mixed-precision training keep FP32 master weights, and what is dynamic loss scaling?	wdndev:deepspeed介绍
+LLM04	E	What are the main parallelism strategies for training LLMs, and what problem does each solve?	wdndev:1.概述
+LLM04	E	Explain data parallelism. What gets replicated, what gets split, and what is communicated each step?	wdndev:2.数据并行
+LLM04	M	Why is PyTorch DataParallel (DP) inferior to DistributedDataParallel (DDP)?	wdndev:2.数据并行
+LLM04	M	Explain how DDP uses bucketed ring all-reduce to overlap gradient communication with backward computation.	wdndev:2.数据并行
+LLM04	M	What are the collective communication primitives (broadcast, scatter, reduce, all-reduce, all-gather, reduce-scatter) and where is each used in training?	wdndev:分布式训练题目
+LLM04	M	How is all-reduce implemented as reduce-scatter plus all-gather, and what is the per-GPU communication volume of ring all-reduce?	wdndev:deepspeed介绍
+LLM04	M	What is the difference between point-to-point and collective communication, and which does pipeline parallelism rely on?	wdndev:分布式训练题目
+LLM04	M	How does PyTorch FSDP differ from DDP, and what are its memory and communication trade-offs?	wdndev:2.数据并行
+LLM04	M	Describe the three ZeRO stages and what each one partitions (optimizer states, gradients, parameters).	wdndev:deepspeed介绍
+LLM04	H	For a model with Psi parameters trained with Adam in mixed precision, derive the per-GPU memory for ZeRO-0/1/2/3 with N GPUs.	wdndev:deepspeed介绍
+LLM04	H	Why does ZeRO-3 increase communication volume to about 1.5x that of DDP, while ZeRO-1 and ZeRO-2 do not?	wdndev:deepspeed介绍
+LLM04	M	What do ZeRO-Offload and ZeRO-Infinity do, and when do they make sense?	wdndev:deepspeed介绍
+LLM04	M	Why does the optimizer state take 12 bytes per parameter with mixed-precision Adam (FP32 weights, momentum, variance)?	wdndev:deepspeed介绍
+LLM04	M	What does the DeepSpeed config typically control (stage, offload, bucket size, gradient accumulation, micro-batch), and how would you tune it for throughput?	wdndev:deepspeed介绍
+LLM04	M	What is gradient accumulation and how do micro-batch size, global batch size and the number of GPUs relate?	wdndev:deepspeed介绍
+LLM04	M	What is activation checkpointing (gradient checkpointing) and what is the compute-memory trade-off?	wdndev:清华课程 高效训练
+LLM04	M	Explain CPU offloading and compute-communication overlapping as training optimizations.	wdndev:清华课程 高效训练
+LLM04	E	What is pipeline parallelism, and why is naive pipeline parallelism inefficient?	wdndev:3.流水线并行
+LLM04	M	Explain micro-batching in GPipe and derive the pipeline bubble fraction for K stages and M micro-batches.	wdndev:3.流水线并行
+LLM04	M	Compare GPipe and 1F1B schedules in terms of bubble size and peak activation memory.	wdndev:3.流水线并行
+LLM04	M	What does the interleaved 1F1B schedule in Megatron-LM change, and what extra cost does it introduce?	wdndev:3.流水线并行
+LLM04	M	What are PipeDream, PipeDream-2BW and PipeDream-Flush, and how do they handle weight versions and staleness?	wdndev:3.流水线并行
+LLM04	M	How do you partition layers across pipeline stages to balance load, and what happens when the embedding or LM head makes stages unequal?	wdndev:3.流水线并行
+LLM04	E	What is tensor parallelism, and how does it differ from pipeline parallelism?	wdndev:4.张量并行
+LLM04	M	Explain column-parallel and row-parallel linear layers and how Megatron-LM partitions an MLP block with only one all-reduce in forward.	wdndev:4.张量并行
+LLM04	M	How does Megatron-LM split self-attention across GPUs, and why does the number of heads constrain the TP degree?	wdndev:4.张量并行
+LLM04	M	Why is tensor parallelism usually confined to a single node?	wdndev:4.张量并行
+LLM04	M	Compare 1D, 2D, 2.5D and 3D tensor parallelism in memory use and communication.	wdndev:4.张量并行
+LLM04	M	What problem does sequence parallelism solve in tensor-parallel training, and which activations does it partition?	wdndev:5.序列并行
+LLM04	H	Explain ring attention or context parallelism for training with very long sequences. How is attention computed when K/V are sharded?	wdndev:5.序列并行
+LLM04	M	How are DP, TP and PP combined into 3D parallelism, and how do you map each to the cluster topology?	wdndev:6.多维度混合并行
+LLM04	H	You have 1024 GPUs across 128 nodes of 8 GPUs and must train a 175B model. Choose TP, PP and DP sizes and justify them.	wdndev:分布式训练题目
+LLM04	M	Why can ZeRO-3 underperform 3D parallelism at thousand-GPU scale?	wdndev:分布式训练题目
+LLM04	M	Why is ZeRO-3 over slow commodity Ethernet impractical for large models?	wdndev:分布式训练题目
+LLM04	M	Can pipeline parallelism be combined with ZeRO-2 or ZeRO-3, and why is that generally discouraged?	wdndev:分布式训练题目
+LLM04	M	Given a single node with several GPUs, how do you choose between DDP, ZeRO, PP and TP depending on whether the model fits on one GPU?	wdndev:分布式训练题目
+LLM04	M	Given multiple nodes with slow inter-node network, which combination of parallelism strategies would you pick and why?	wdndev:分布式训练题目
+LLM04	M	What is expert parallelism for MoE models, and what role does all-to-all communication play?	wdndev:8.moe并行
+LLM04	H	How do you combine expert parallelism with data and tensor parallelism, and what are the load-imbalance and communication pitfalls?	wdndev:8.moe并行
+LLM04	M	What is automatic parallelism (Alpa, GSPMD, FlexFlow, Mesh-TensorFlow), and what search space do these systems explore?	wdndev:7.自动并行
+LLM04	M	How does Alpa decompose the problem into inter-operator and intra-operator parallelism?	wdndev:7.自动并行
+LLM04	M	What do Megatron-LM, DeepSpeed, FairScale and Colossal-AI each offer, and how would you choose among them?	wdndev:分布式训练题目
+LLM04	M	How did BLOOM and Megatron-Turing NLG combine DeepSpeed and Megatron to train at scale?	wdndev:分布式训练题目
+LLM04	M	What are the main practical problems in training LLMs: compute cost, data quality, long training time, loss spikes, bias?	wdndev:分布式训练题目
+LLM04	H	A large training run suddenly shows a loss spike followed by divergence. What would you check and what mitigations would you apply?	wdndev:分布式训练题目
+LLM04	M	A single GPU is all you have for fine-tuning a 7B model. What memory-saving techniques make that feasible?	wdndev:分布式训练题目
+LLM04	M	How do you speed up data-parallel training when communication starts to dominate step time?	wdndev:分布式训练题目
+LLM04	M	What is synchronous versus asynchronous gradient updates in data parallelism, and why do LLM trainings use synchronous?	wdndev:分布式训练题目
+LLM04	M	If a worker in a multi-node training job fails mid-run, how do you recover without losing days of progress?	wdndev:分布式训练题目
+LLM04	M	What is a straggler in distributed training and how do you detect and mitigate one?	wdndev:分布式训练题目
+LLM04	M	What is the arithmetic for training FLOPs of a transformer (6ND), and how do you use it to estimate training time on a cluster?	wdndev:分布式训练 显存
+LLM04	M	How does activation memory scale with batch size, sequence length and layers, and which parts dominate in long-context training?	wdndev:1.显存问题
+DL07	M	How would you launch multi-node DDP training with torchrun, and what are rank, local rank and world size?	wdndev:2.数据并行
+DL07	M	Why does DDP with unused parameters hang or error, and how do you debug it?	wdndev:2.数据并行
+DL07	M	When saving a checkpoint under FSDP or ZeRO-3, how are sharded states consolidated and what pitfalls exist?	wdndev:deepspeed介绍
+FT01	M	Why do we need incremental (continued) pretraining of a base model on domain text, and when is it preferable to SFT alone?	wdndev:2.预训练
+FT01	M	What preparation is needed for continued pretraining: data collection, cleaning, tokenization, mixing ratio and learning-rate setting?	wdndev:2.预训练
+FT01	M	What learning-rate and warmup strategy do you use when continuing pretraining of a converged model so you do not destabilize it?	wdndev:2.预训练
+FT01	M	How is an incremental-pretraining pipeline organized end to end, from raw domain documents to a checkpoint ready for SFT?	wdndev:2.预训练
+LLM04	M	How do you decide whether to train a domain LLM from scratch, continue pretraining, or only fine-tune?	wdndev:1.微调
+LLM04	H	How would you design a data curation pipeline for pretraining a new LLM, covering language ID, quality classifiers, PII removal and decontamination?	wdndev:03 数据格式
+FT02	E	What is parameter-efficient fine-tuning and why is it needed compared with full fine-tuning?	wdndev:05 基本概念
+FT02	M	What are the advantages of PEFT in terms of memory, storage per task, catastrophic forgetting and deployment?	wdndev:05 基本概念
+FT02	M	Compare the families of PEFT methods: additive (adapters, prompts), selective (BitFit), and reparameterization (LoRA).	wdndev:05 基本概念
+FT02	M	What are known limitations of current PEFT methods, such as lower ceiling on knowledge injection or hyperparameter sensitivity?	wdndev:05 基本概念
+FT02	M	What best practices would you follow when choosing and configuring a PEFT method for a new task?	wdndev:05 基本概念
+FT01	M	How much GPU memory does full-parameter fine-tuning of a 7B model need with Adam in mixed precision, and what drives the estimate?	wdndev:05 微调
+FT01	M	After SFT a model seems to have gotten worse or dumber. What are the likely causes and how would you diagnose them?	wdndev:05 微调
+FT01	M	How would you construct a high-quality instruction-tuning dataset: sources, diversity, formatting, deduplication and quality filtering?	wdndev:05 微调
+FT01	M	What is the LIMA hypothesis and how does it influence how much SFT data you collect?	wdndev:05 微调
+FT01	M	After training on domain data, general ability degrades. How do you reduce forgetting of general capabilities?	wdndev:05 微调
+FT01	M	How do you mix replay data from the general distribution with domain data, and how do you pick the ratio?	wdndev:05 微调
+FT01	M	How can continued pretraining be made to inject more domain knowledge, for example via data mixing, repeated exposure and curriculum?	wdndev:05 微调
+FT01	M	Should SFT start from a base model or from an already chat-tuned model? Discuss trade-offs.	wdndev:05 微调
+FT01	M	What requirements does an instruction format impose when fine-tuning a domain model (templates, special tokens, loss masking)?	wdndev:05 微调
+FT01	M	Why is it typical to compute the SFT loss only on assistant tokens, and what goes wrong if you train on the prompt too?	wdndev:05 微调
+FT01	M	How would you build an evaluation set for a domain-tuned model, and how do you keep it from leaking into the training data?	wdndev:05 微调
+FT01	M	Is injecting new knowledge better done in pretraining or in SFT? What does the evidence say about SFT teaching knowledge versus style?	wdndev:05 微调
+FT05	M	To make a model proficient in a specific industry's knowledge, would you continue pretraining, fine-tune, use RAG, or combine them?	wdndev:05 微调
+FT01	M	How would you fine-tune a model for multi-turn dialogue, and how do you construct training samples from conversations?	wdndev:05 微调
+FT01	M	What is catastrophic forgetting in fine-tuned LLMs and what techniques (replay, regularization, LoRA, EWC) limit it?	wdndev:05 微调
+FT01	E	How do pretraining and SFT differ in objective, data, scale and learning-rate regime?	wdndev:05 微调
+FT01	M	SFT with a larger dataset starts to give out-of-memory errors. What do you change, and why does memory scale this way?	wdndev:05 微调
+FT01	M	How can you optimize SFT samples, e.g. packing, length bucketing, dropping low-quality or contradictory examples?	wdndev:05 微调
+FT01	M	What does sequence packing do in SFT, and what attention-masking issue must you handle?	wdndev:05 微调
+FT01	M	How would you run hyperparameter experiments for fine-tuning (learning rate, epochs, batch size, rank) with limited compute?	wdndev:05 微调
+FT01	M	How many epochs should SFT run, and how do you detect over-training of an instruction-tuned model?	wdndev:05 微调
+FT01	M	What are the benefits of instruction tuning for zero-shot generalization to unseen tasks?	wdndev:05 微调
+FT02	M	What is BitFit and how few parameters does it train? When might it be enough?	wdndev:05 prompting
+FT02	M	How does prefix tuning prepend trainable vectors to each layer's keys and values, and why use a reparameterization MLP during training?	wdndev:05 prompting
+FT02	M	Compare prompt tuning, prefix tuning, P-tuning and P-tuning v2. What scale effects do they show?	wdndev:05 prompting
+FT02	M	Why does prompt tuning approach full fine-tuning only for very large models, and how does P-tuning v2 address smaller models?	wdndev:05 prompting
+FT02	M	What are the inference-time costs of prompt-based PEFT, and how do they reduce usable context length?	wdndev:05 prompting
+FT02	M	How does an adapter module work (down-projection, nonlinearity, up-projection, residual), and where is it inserted in a Transformer layer?	wdndev:05 adapter
+FT02	M	What do AdapterFusion and AdapterDrop add, and why would you drop adapters in lower layers?	wdndev:05 adapter
+FT02	M	What do MAM Adapter and UniPELT propose in terms of unifying PEFT designs?	wdndev:05 adapter
+FT02	M	What latency penalty do adapters add at inference compared with LoRA, and why?	wdndev:05 adapter
+FT02	E	Explain LoRA. What is the low-rank decomposition, which matrices are trained, and how are they initialized?	wdndev:05 lora
+FT02	M	Why is LoRA's B matrix initialized to zero and A random, and what does that guarantee at the start of training?	wdndev:05 lora
+FT02	M	How do rank r and the scaling factor alpha interact, and how would you tune them?	wdndev:05 lora
+FT02	M	Which weight matrices in a Transformer should LoRA target (q, k, v, o, MLP), and what does evidence say about the impact?	wdndev:05 lora
+FT02	M	How can LoRA weights be merged into the base model for zero inference overhead, and what are the downsides when serving many adapters?	wdndev:05 lora
+FT02	M	Calculate the number of trainable parameters when adding LoRA with rank 8 to the q and v projections of a 32-layer model with hidden size 4096.	wdndev:05 lora
+FT02	M	What is the hypothesis of low intrinsic dimensionality behind LoRA, and when does it fail?	wdndev:05 lora
+FT02	M	How does AdaLoRA allocate rank adaptively across layers and what importance score does it use?	wdndev:05 lora
+FT02	M	What are the three key ideas of QLoRA (NF4, double quantization, paged optimizers), and why does it save memory?	wdndev:05 lora
+FT02	M	Why is the NF4 data type suited to normally distributed pretrained weights?	wdndev:05 lora
+FT02	M	Compare memory of full fine-tuning, LoRA and QLoRA for a 65B model, and where the savings come from.	wdndev:05 lora
+FT02	M	What quality gap, if any, does LoRA have versus full fine-tuning on reasoning-heavy or knowledge-heavy tasks?	wdndev:05 lora
+FT02	M	How do you serve hundreds of LoRA adapters on a shared base model efficiently?	wdndev:05 lora
+FT02	M	Summarize delta tuning: how do addition-based, specification-based and reparameterization-based methods differ?	wdndev:清华课程 Delta Tuning
+FT02	M	What is a verbalizer and a template in prompt learning, and why does prompt learning with masked LMs work well in few-shot settings?	wdndev:清华课程 Prompt Tuning
+FT02	M	What is a connection between different PEFT methods from a unified-view perspective?	wdndev:05 总结
+LLM06	E	What are the two phases of LLM inference, prefill and decode, and how do their compute and memory profiles differ?	wdndev:llm推理优化技术
+LLM06	E	What is the KV cache and why does it make autoregressive decoding faster?	wdndev:llm推理优化技术
+LLM06	M	Estimate the KV cache size for a model with L layers, H heads, head dimension d, batch B and sequence length S in FP16.	wdndev:llm推理优化技术
+LLM06	M	Why does GPU memory keep growing during LLM serving and stay occupied after requests finish?	wdndev:06 推理
+LLM06	M	Why is decoding memory-bandwidth bound rather than compute bound, and what does that imply for batching?	wdndev:llm推理优化技术
+LLM06	M	What is static batching and why is it inefficient for variable-length LLM requests?	wdndev:vllm
+LLM06	M	What is continuous (iteration-level, in-flight) batching, and how does it raise throughput?	wdndev:vllm
+LLM06	M	Explain PagedAttention. How does it reduce KV-cache fragmentation and enable prefix sharing?	wdndev:vllm
+LLM06	M	What is the role of the block table in vLLM, and how does copy-on-write support parallel sampling or beam search?	wdndev:vllm
+LLM06	H	Design a serving scheduler that handles preemption when KV-cache blocks run out. What are the options (swap, recompute) and their costs?	wdndev:vllm
+LLM06	M	Compare vLLM, TGI, FasterTransformer/TensorRT-LLM, CTranslate2 and DeepSpeed-MII as serving options. How would you choose?	wdndev:0.llm推理框架简单总结
+LLM06	M	What optimizations did FasterTransformer apply (kernel fusion, custom attention kernels, INT8) and what limitations does a static engine have?	wdndev:faster_transformer
+LLM06	M	What does TGI offer in terms of token streaming, continuous batching and tensor-parallel inference?	wdndev:text_generation_inference
+LLM06	M	How is pipeline, tensor and sequence parallelism used at inference time and when is each preferred?	wdndev:llm推理优化技术
+LLM06	M	What is speculative decoding? Why does it preserve the target model's output distribution?	wdndev:llm推理优化技术
+LLM06	H	What determines the speedup of speculative decoding, and when does it fail to help (large batches, low acceptance rate)?	wdndev:llm推理优化技术
+LLM06	M	Compare FP16, INT8 and INT4 inference in memory, speed and accuracy. Why is INT8 not always faster in practice?	wdndev:06 推理
+LLM06	M	What is post-training quantization versus quantization-aware training, and what are weight-only versus weight-and-activation quantization?	wdndev:llm推理优化技术
+LLM06	M	Why are activations harder to quantize in LLMs than weights (outlier channels), and how do SmoothQuant or LLM.int8() address it?	wdndev:llm推理优化技术
+LLM06	M	How do GPTQ and AWQ differ in how they choose quantized weights?	wdndev:llm推理优化技术
+LLM06	M	What is sparsity or pruning in LLMs, structured versus unstructured, and why is unstructured sparsity hard to accelerate?	wdndev:llm推理优化技术
+LLM06	M	How does knowledge distillation reduce serving cost, and what are the options for logit-level versus data-level distillation?	wdndev:llm推理优化技术
+LLM06	M	How does inference speed compare on CPU versus GPU for LLMs and when would CPU inference be acceptable?	wdndev:06 推理
+LLM06	M	What memory-saving methods exist for training, fine-tuning and inference of LLMs?	wdndev:06 推理
+LLM06	M	Define time to first token, time per output token and throughput. How do you trade latency for throughput when tuning batch size?	wdndev:llm推理优化技术
+LLM06	H	Your LLM service must meet a p95 TTFT target while maximizing tokens per second. How do you configure batching, chunked prefill and replicas?	wdndev:llm推理优化技术
+LLM06	M	What is prefix caching and when does it give big wins in production?	wdndev:vllm
+LLM06	M	Why does the LLM decoder generate tokens sequentially, and what are the techniques to reduce its latency?	wdndev:vllm
+LLM05	M	How do you make an LLM output comply with a required format (JSON, regex, schema), and what are the trade-offs of constrained decoding?	wdndev:06 推理 输出合规
+LLM07	M	Do LLMs actually reason? What evidence supports or contradicts the claim, and how do you probe for it?	wdndev:06 推理
+LLM06	M	How should the application pattern change when moving from an offline API to streaming and agentic workloads?	wdndev:06 推理 应用模式
+LLM06	M	What does Ray Serve or MLC LLM add for deployment, and when would you use them for edge devices?	wdndev:0.llm推理框架简单总结
+ML11	E	Define the components of a reinforcement-learning problem: agent, environment, state, action, reward, policy and return.	wdndev:07 强化学习基础
+ML11	M	What is the difference between a value function V, an action-value function Q and an advantage function?	wdndev:07 强化学习基础
+ML11	M	Explain the Markov property and the Bellman expectation and optimality equations.	wdndev:07 马尔可夫决策过程
+ML11	M	Compare Monte Carlo and temporal-difference learning in bias and variance.	wdndev:07 表格型方法
+ML11	M	What is the difference between SARSA and Q-learning, and what does on-policy versus off-policy mean?	wdndev:07 表格型方法
+ML11	M	What problem does DQN solve beyond tabular Q-learning, and what roles do experience replay and target networks play?	wdndev:07 DQN
+ML11	M	What is overestimation bias in Q-learning and how does Double DQN reduce it?	wdndev:07 DQN
+ML11	M	Derive the REINFORCE policy gradient and explain why subtracting a baseline reduces variance without adding bias.	wdndev:策略梯度
+ML11	M	Why are policy-gradient methods high-variance, and what tricks (reward-to-go, baselines, advantage estimation) address this?	wdndev:策略梯度
+ML11	M	Compare value-based and policy-based methods; when is each preferable, for example with continuous actions?	wdndev:策略梯度
+ML11	M	Explain the actor-critic architecture and the advantage actor-critic (A2C/A3C) algorithm.	wdndev:07 演员-评论家
+ML11	M	What is DDPG and how does it extend DQN ideas to continuous action spaces?	wdndev:07 DDPG
+ML11	M	Why is on-policy training sample-inefficient, and how does importance sampling let you reuse data from an older policy?	wdndev:近端策略优化(ppo)
+ML11	M	When does importance sampling become unreliable, and why does TRPO constrain the KL divergence between old and new policy?	wdndev:近端策略优化(ppo)
+ML11	M	Explain PPO-Clip and PPO-Penalty. What does the clipping range epsilon do to the policy update?	wdndev:近端策略优化(ppo)
+ML11	M	What is generalized advantage estimation and how do lambda and gamma control the bias-variance trade-off?	wdndev:大模型RLHF PPO
+ML11	M	What is the sparse-reward problem in RL and what remedies exist (reward shaping, curiosity, curriculum)?	wdndev:07 稀疏奖励
+ML11	M	What is imitation learning, how does behavioral cloning suffer from compounding error, and how does inverse RL differ?	wdndev:07 模仿学习
+ML11	M	How does exploration versus exploitation appear in policy-gradient training and what is the role of entropy regularization?	wdndev:07 强化学习基础
+FT03	E	Give a high-level description of RLHF and its three stages: SFT, reward modelling and RL optimization.	wdndev:rlhf相关
+FT03	M	How is a reward model trained from pairwise human preferences using the Bradley-Terry loss?	wdndev:rlhf相关
+FT03	M	Does the reward model need to be the same size or family as the policy model? What trade-offs are there?	wdndev:rlhf相关
+FT03	M	What are practical shortcomings of RLHF, such as reward hacking, annotation noise and training instability?	wdndev:rlhf相关
+FT03	M	Human preference data is expensive. What strategies reduce annotation cost, such as AI feedback and active selection?	wdndev:rlhf相关
+FT03	M	The SFT-RM-PPO pipeline is long and slow to iterate. How would you shorten it?	wdndev:rlhf相关
+FT03	M	PPO for LLMs involves four models (actor, critic, reference, reward). What does each do, and how would you reduce the compute and memory burden?	wdndev:rlhf相关
+FT03	M	Why is a KL penalty against the reference model added during RLHF, and what happens if the coefficient is too small or too large?	wdndev:PPO原理与源码
+FT03	H	Walk through the RLHF PPO actor loss: ratio, clipping, advantage and per-token KL reward. How is the critic loss defined?	wdndev:PPO原理与源码
+FT03	M	How is the reward assigned per token in RLHF (terminal reward plus KL shaping), and why does the critic matter for credit assignment?	wdndev:PPO原理与源码
+FT03	M	Why can the critic or value head in LLM PPO be unstable, and what are options like GRPO that remove it?	wdndev:PPO原理与源码
+FT03	M	What is reward hacking in RLHF? Give examples and describe how you would detect and mitigate it.	wdndev:rlhf相关
+FT03	E	What is Direct Preference Optimization and how does it avoid training an explicit reward model?	wdndev:DPO
+FT03	H	Derive the DPO loss from the KL-regularized reward-maximization objective and show how the optimal policy gives an implicit reward.	wdndev:DPO
+FT03	M	Compare DPO and PPO-based RLHF in stability, compute, data requirements and final quality.	wdndev:DPO
+FT03	M	What is the role of beta in DPO, and what failure modes occur such as decreasing chosen likelihood or length exploitation?	wdndev:DPO
+FT03	M	What are IPO, KTO and other DPO variants and what problem does each target?	wdndev:DPO
+FT03	M	Is DPO on-policy? What difference does it make if the preference pairs come from a different model than the one being trained?	wdndev:DPO
+FT03	M	What is the Bradley-Terry model and what assumptions does it make about human preferences?	wdndev:DPO
+GA03	E	What is an LLM agent, and what components distinguish it from a plain chatbot?	wdndev:rlhf相关 Agent
+GA03	M	What key capabilities do LLM agents need (planning, memory, tool use, reflection) and how are they implemented?	wdndev:rlhf相关 Agent
+GA03	M	What types of LLM agents exist (reactive, plan-and-execute, goal-driven, multi-agent), and when is each suitable?	wdndev:rlhf相关 Agent
+GA03	M	What gives an LLM agent autonomy, and how do you bound it safely?	wdndev:rlhf相关 Agent
+GA03	M	How would you construct an agent on top of an LLM, covering prompting, tool schema, loop control and stop conditions?	wdndev:rlhf相关 Agent
+FT05	M	How do you inject domain knowledge into an LLM: prompting, RAG, continued pretraining or fine-tuning?	wdndev:rlhf相关
+GA03	M	What are the layers of LLM agent techniques: prompt engineering, external tools, decomposition, feedback loops, single and multi-agent?	wdndev:大模型agent技术
+GA03	M	What are the main design components of a goal-oriented agent architecture (central executive, memory, sensory, motor, learning, world model)?	wdndev:大模型agent技术
+GA03	M	How do short-term and long-term memory differ in an agent and how is each realized (context window, vector store, summarization)?	wdndev:大模型agent技术
+GA03	M	Why are seemingly simple problems (arithmetic, planning, long-horizon tasks) hard for LLM agents, and how do you mitigate compounding errors?	wdndev:大模型agent技术
+GA03	M	What is the benefit of task decomposition and recomposition in agents, e.g. chain-of-thought, tree-of-thought or plan-and-solve?	wdndev:大模型agent技术
+GA03	M	How does feedback or self-reflection improve agent outputs, and what are its limits?	wdndev:大模型agent技术
+GA03	M	When does a multi-agent setup help over a single agent and what coordination problems does it introduce?	wdndev:大模型agent技术
+GA03	H	How would you evaluate an LLM agent on long-horizon tasks, and which failure categories would you track?	wdndev:大模型agent技术
+RAG01	E	What is retrieval-augmented generation and what problems does it solve for LLMs?	wdndev:rag技术
+RAG01	M	How does RAG handle long-tail knowledge, private data, data freshness and source attribution?	wdndev:rag技术
+RAG01	E	What are the key modules of a RAG system, from data ingestion and indexing to retrieval, post-processing and generation?	wdndev:rag技术
+RAG01	M	What different invocation patterns of RAG exist (retrieve once, iterative retrieval, retrieval on demand)?	wdndev:rag技术
+FT05	M	Compare RAG and SFT for adding knowledge. When would you choose each or combine them?	wdndev:rag技术
+FT05	M	Which factors (update frequency, data privacy, latency, cost, hallucination risk) decide RAG versus fine-tuning for an enterprise Q&A product?	wdndev:rag技术
+RAG02	M	What data acquisition and parsing steps are needed before indexing enterprise documents?	wdndev:检索增强llm
+RAG02	M	How would you choose chunk size and overlap, and how does chunking affect retrieval recall and answer quality?	wdndev:检索增强llm
+RAG02	M	Compare fixed-size, recursive, semantic and structure-aware chunking.	wdndev:检索增强llm
+RAG03	M	How should the index be built: which embedding model, which similarity metric, and what index structure for millions of chunks?	wdndev:检索增强llm
+RAG04	M	What query transformation techniques exist (rewriting, expansion, multi-query, HyDE, decomposition) and when do they help?	wdndev:检索增强llm
+RAG04	M	What are the roles of ranking and post-processing in RAG, such as reranking, filtering, deduplication and context compression?	wdndev:检索增强llm
+RAG01	M	What response generation strategies exist for RAG (stuff, map-reduce, refine) and how do they trade off context use and cost?	wdndev:检索增强llm
+GA01	M	What does a good RAG prompt template contain to ensure grounded, citable answers and graceful handling of insufficient context?	wdndev:检索增强llm
+RAG01	M	How do retrieval-plugin style systems, LlamaIndex and LangChain structure a RAG pipeline and what do these abstractions cost?	wdndev:检索增强llm
+RAG05	M	How might a code assistant like Copilot retrieve relevant context from a repository, and what unique challenges does code retrieval pose?	wdndev:检索增强llm
+MS04	H	Design a question-answering system over a company knowledge base with documents and wikis of mixed formats and access rights.	wdndev:检索增强llm
+RAG06	M	How do you evaluate a RAG system end to end, separating retrieval quality from generation quality?	wdndev:检索增强llm
+RAG01	M	Why do naive RAG systems fail on multi-hop or comparison questions, and what would you change?	wdndev:检索增强llm
+RAG03	M	How does a dual-encoder differ from a cross-encoder for retrieval, and why are they combined in a retrieve-then-rerank pipeline?	wdndev:清华课程 信息检索
+RAG04	M	Explain BM25, its inputs and why it remains a strong baseline against neural retrievers.	wdndev:清华课程 信息检索
+RAG03	M	How does hard-negative mining improve a dense retriever's training?	wdndev:清华课程 信息检索
+RAG04	M	What retrieval metrics (Recall@k, MRR, nDCG) would you use and how do they differ?	wdndev:清华课程 信息检索
+RAG05	M	How do REALM and WebGPT integrate retrieval or browsing into language models?	wdndev:清华课程 开放式QA
+LLM07	E	What is LLM hallucination, and how do factuality errors differ from faithfulness errors?	wdndev:大模型幻觉
+LLM07	M	Is hallucination always harmful? Give use cases where it is acceptable or even desirable.	wdndev:大模型幻觉
+LLM07	M	What are the main sources of hallucination in data, training and inference?	wdndev:幻觉来源与缓解
+LLM07	M	Why does exposure bias or maximum-likelihood training encourage hallucination?	wdndev:幻觉来源与缓解
+LLM07	M	Why might SFT on knowledge the base model never saw encourage hallucination?	wdndev:幻觉来源与缓解
+LLM07	M	How would you measure hallucination rate (fact-checking, NLI-based, self-consistency, reference-based)?	wdndev:大模型幻觉
+LLM07	M	What approaches detect self-contradiction in LLM output, such as SelfCheckGPT-style sampling consistency?	wdndev:幻觉来源与缓解
+LLM07	M	What mitigations work at the data level, training level and inference level (RAG, decoding changes, verification)?	wdndev:幻觉来源与缓解
+LLM07	M	On what types of queries are LLMs most likely to hallucinate?	wdndev:大模型幻觉
+LLM07	M	How can a model be taught to say it doesn't know (honesty / calibration), and how would you train and evaluate that ability?	wdndev:评测
+LLM07	M	How do you evaluate a large language model? Compare automatic benchmarks, human evaluation and LLM-as-a-judge.	wdndev:评测
+LLM07	M	What are the common LLM benchmarks (MMLU, C-Eval, GSM8K, HumanEval, MT-Bench) and what capability does each measure?	wdndev:评测
+LLM07	M	What are the weaknesses of public benchmarks, such as contamination and saturation, and how would you build a trustworthy private eval?	wdndev:评测
+LLM07	M	What tools and frameworks are used to run LLM evaluations, and how would you set up a regression suite?	wdndev:评测
+GA01	E	What is chain-of-thought prompting and how does it differ from standard few-shot prompting?	wdndev:思维链
+GA01	M	Why does chain-of-thought prompting improve complex reasoning, and what is its essence?	wdndev:思维链
+GA01	M	For which kinds of tasks does chain-of-thought help, and for which does it not help or hurt?	wdndev:思维链
+GA01	M	What are the limitations of chain-of-thought, such as unfaithful reasoning and dependence on model scale?	wdndev:思维链
+GA01	M	How do self-consistency, zero-shot CoT and least-to-most prompting extend basic CoT?	wdndev:思维链
+LLM07	M	Why does CoT reasoning appear only in sufficiently large models, and what capability is it linked to?	wdndev:思维链
+LLM07	H	Are chain-of-thought explanations faithful to a model's actual computation? How would you test this?	wdndev:思维链
+GA03	E	What is LangChain and what are its core modules (models, prompts, chains, memory, agents, retrievers)?	wdndev:langchain
+GA03	M	What is a LangChain agent, and how does it choose and execute tools?	wdndev:langchain
+GA03	M	What are the benefits and drawbacks of using an orchestration framework like LangChain in production versus calling model APIs directly?	wdndev:langchain
+GA03	M	How would you build a knowledge Q&A application with LangChain: loaders, splitters, embeddings, vector store, retriever and chain?	wdndev:langchain
+GA03	M	How does conversation memory work in an LLM application and what are its options (buffer, window, summary)?	wdndev:langchain
+GA04	M	How would you make an LLM app that depends on a chain of prompts debuggable and observable?	wdndev:langchain
+FT04	M	Describe how knowledge distillation works for compressing language models (e.g. TinyBERT, patient KD) and which layers or signals are matched.	wdndev:清华课程 模型压缩
+FT04	M	Compare pruning, quantization, low-rank approximation, weight sharing and distillation as model compression methods.	wdndev:清华课程 模型压缩
+DL06	M	What are the main metrics for text generation evaluation and their weaknesses (BLEU, ROUGE, BERTScore, human)?	wdndev:清华课程 文本生成评估
+LLM05	M	What are the differences between autoregressive and non-autoregressive generation in speed and quality?	wdndev:清华课程 文本生成
+LLM05	M	How can you control text generation via prompts, probability modification or architectural changes?	wdndev:清华课程 文本生成
+CODE01	M	Implement scaled dot-product attention with a causal mask in PyTorch, including batch and head dimensions.	wdndev:attention
+CODE01	M	Implement multi-head attention from scratch, then modify it into grouped-query attention.	wdndev:MHA_MQA_GQA
+CODE01	M	Implement RMSNorm and compare numerically with LayerNorm.	wdndev:llama 2代码详解
+CODE01	H	Implement rotary position embeddings and verify that the attention score depends only on relative position.	wdndev:llama 2代码详解
+CODE01	M	Implement a KV cache for autoregressive decoding of a small Transformer and show it matches full recomputation.	wdndev:llama 2代码详解
+CODE01	M	Implement top-k and top-p (nucleus) sampling with temperature over a logits tensor.	wdndev:解码策略
+CODE01	M	Implement beam search decoding with length normalization for a causal language model.	wdndev:LLM推理常见参数
+CODE01	M	Implement a LoRA linear layer that wraps a frozen linear layer and supports merging.	wdndev:lora
+CODE01	M	Implement the DPO loss given policy and reference log-probabilities for chosen and rejected responses.	wdndev:DPO
+CODE01	M	Implement the PPO clipped objective and a GAE advantage computation for a batch of trajectories.	wdndev:近端策略优化(ppo)
+CODE01	M	Implement REINFORCE with a baseline on a simple environment.	wdndev:策略梯度
+CODE01	M	Implement a byte-pair-encoding tokenizer trainer and encoder from scratch.	wdndev:tokenize分词
+CODE01	M	Implement a SwiGLU feed-forward block.	wdndev:激活函数
+CODE01	M	Implement word2vec skip-gram with negative sampling.	wdndev:Word2Vec
+CODE01	H	Implement a top-k mixture-of-experts layer with an auxiliary load-balancing loss.	wdndev:Switch Transformers
+CODE01	M	Implement sinusoidal positional encodings and ALiBi biases.	wdndev:位置编码
+CODE01	M	Implement a BM25 scorer and a simple retriever over a small corpus.	wdndev:检索增强llm
+CODE01	M	Implement a simple RAG pipeline: chunking, embedding, cosine similarity search, prompt assembly.	wdndev:检索增强llm
+CODE01	H	Implement an online-softmax attention computation that processes keys in blocks, as in FlashAttention.	wdndev:attention
+LLM01	M	If you double the sequence length, how do the attention FLOPs and the activation memory change in standard and FlashAttention?	wdndev:attention
+LLM01	M	Explain why decoding with a KV cache costs O(n) per step in attention while recomputation costs O(n squared).	wdndev:llm推理优化技术
+LLM01	M	Count the parameters of a decoder-only Transformer given vocabulary size, hidden size, number of layers and FFN expansion.	wdndev:token及模型参数
+LLM01	M	Why is the FFN intermediate dimension typically 4x the hidden size, and why does SwiGLU use about 8/3x?	wdndev:激活函数
+LLM01	M	Why are embeddings sometimes tied between input and output layers, and what are the benefits and risks?	wdndev:Transformer架构细节
+LLM01	M	How are attention heads typically distributed across hidden dimension, and what happens to representational capacity if head dimension is too small?	wdndev:Transformer架构细节
+LLM01	M	What are attention sinks and why do streaming LLMs keep the first few tokens in the cache?	wdndev:attention
+LLM01	M	How does sliding-window attention enlarge the effective receptive field across stacked layers?	wdndev:attention
+LLM02	M	Why can adding position embeddings to token embeddings lose information compared with injecting position in each attention layer?	wdndev:位置编码
+LLM02	M	What is the effect of the RoPE base (theta) on long-context behavior and why do long-context models raise it?	wdndev:位置编码
+LLM02	M	How does NoPE (no positional encoding) work in decoder-only models and why can causal masking leak positional information?	wdndev:位置编码
+LLM02	M	Why is Unicode normalization and pre-tokenization (whitespace, digits splitting) important in tokenizer design?	wdndev:tokenize分词
+LLM03	M	Why does the Switch routing use a softmax gate followed by top-1, and how do auxiliary losses interact with expert capacity?	wdndev:Switch Transformers
+LLM03	M	How does fine-grained expert segmentation and shared experts (DeepSeekMoE style) improve expert specialization?	wdndev:MoE经典论文简牍
+LLM03	M	What is expert choice routing and how does it address load imbalance compared with token-choice routing?	wdndev:MoE经典论文简牍
+LLM03	M	How do you count total versus active parameters in an MoE model, and which one governs memory versus FLOPs?	wdndev:Switch Transformers
+LLM03	H	Design the router for an MoE LLM that must avoid expert collapse, token dropping and communication hot-spots. What would you monitor?	wdndev:Switch Transformers
+LLM03	M	What is the Chinchilla finding and how does it revise the earlier Kaplan scaling law on how to split compute between parameters and tokens?	wdndev:token及模型参数
+LLM03	M	How would you use small-scale experiments to predict the loss of a much larger model, and what could break the extrapolation?	wdndev:token及模型参数
+LLM04	M	How do you choose the global batch size and learning rate for large-scale pretraining, and what is the critical batch size?	wdndev:分布式训练题目
+LLM04	M	Why is Adam's epsilon and beta2 setting important for stability in large-model training?	wdndev:分布式训练题目
+LLM04	M	What is the cost of recomputation in activation checkpointing in terms of extra forward FLOPs, and how does selective recomputation reduce it?	wdndev:清华课程 高效训练
+LLM04	M	Estimate the all-reduce time for gradients of a 7B model in BF16 across 8 GPUs with 300 GB/s links.	wdndev:deepspeed介绍
+LLM04	M	What is overlapping of communication and computation, and what prevents perfect overlap in ZeRO-3?	wdndev:deepspeed介绍
+LLM04	M	How does heterogeneous-memory training (GPU, CPU, NVMe) change achievable model sizes, and what throughput penalty does it add?	wdndev:1.概述
+LLM04	M	What is the bubble ratio when using 8 pipeline stages and 32 micro-batches, and how would you reduce it?	wdndev:3.流水线并行
+LLM04	M	Why does pipeline parallelism require careful handling of activation memory in the first stages under 1F1B?	wdndev:3.流水线并行
+LLM04	M	Why does expert parallelism require all-to-all, and how does its cost scale with the number of nodes?	wdndev:8.moe并行
+LLM04	M	Which parallelism dimension should be placed on the fastest interconnect, and why?	wdndev:6.多维度混合并行
+LLM04	M	How would you decide the order and sizes of TP, PP, DP and EP given model shape, GPU memory and network bandwidth?	wdndev:9.总结
+FT01	M	What are the benefits and risks of fine-tuning with synthetic data generated by a stronger model?	wdndev:llama系列模型
+FT01	M	How do you evaluate that a fine-tuned model has not regressed on safety and general capabilities?	wdndev:05 微调
+FT01	M	What are the differences between continued pretraining, SFT and RLHF in terms of data, loss and what each changes in the model?	wdndev:05 微调
+FT01	M	When fine-tuning a chat model for a narrow task, how do you keep the system prompt and chat template consistent between training and inference?	wdndev:05 微调
+FT01	M	What is the effect of fine-tuning learning rate that is too high on a pretrained LLM, and how would you recognize it from training curves?	wdndev:05 微调
+FT02	M	Why is LoRA often less prone to forgetting than full fine-tuning, and what does the LoRA Learns Less and Forgets Less result suggest?	wdndev:lora
+FT02	M	How would you decide LoRA rank for a task of known complexity and dataset size?	wdndev:lora
+FT02	M	What is the practical difference between merging a LoRA into the base weights versus keeping it as a runtime adapter?	wdndev:lora
+FT02	M	What memory does QLoRA save relative to LoRA, and where does de-quantization cost compute?	wdndev:lora
+FT03	M	Why do RLHF-trained models tend to produce longer outputs, and how would you counter length bias in reward models and DPO?	wdndev:rlhf相关
+FT03	M	How do you check a reward model is reliable before using it for RL, e.g. held-out preference accuracy and out-of-distribution robustness?	wdndev:rlhf相关
+FT03	M	What is rejection sampling fine-tuning (best-of-n) as an alternative to PPO, and when is it enough?	wdndev:rlhf相关
+FT03	M	What is RLAIF or constitutional AI and how does it reduce reliance on human labels?	wdndev:rlhf相关
+FT03	M	Compare outcome reward models and process reward models for reasoning tasks.	wdndev:rlhf相关
+FT03	M	What is GRPO and how does it estimate advantages without a learned value function?	wdndev:PPO原理与源码
+FT03	M	What is reinforcement learning with verifiable rewards and which task types suit it?	wdndev:rlhf相关
+FT03	M	Why is the reference model kept frozen during RLHF and DPO, and what would happen if it were updated every step?	wdndev:PPO原理与源码
+FT03	M	How would you debug an RLHF run in which the reward rises steadily but human evaluation shows quality getting worse?	wdndev:rlhf相关
+LLM06	M	Why does serving a long-context request hurt the throughput of other requests, and how does chunked prefill mitigate that?	wdndev:vllm
+LLM06	M	Why does increasing batch size improve throughput up to a point in decoding, and what limits it (KV memory, compute)?	wdndev:llm推理优化技术
+LLM06	M	What is the roofline model and how does arithmetic intensity explain why prefill is compute bound and decode is memory bound?	wdndev:llm推理优化技术
+LLM06	M	For a 70B model in FP16, how many GPUs of 80GB are needed to serve with a given KV cache budget, and which parallelism do you use?	wdndev:llm推理优化技术
+LLM06	M	What accuracy and speed trade-offs do you expect from 4-bit weight-only quantization on a 7B model, and how would you validate it?	wdndev:llm推理优化技术
+LLM06	M	What are the main sources of latency in an LLM serving stack beyond model compute (tokenization, queueing, network, sampling)?	wdndev:llm推理优化技术
+LLM06	M	What is the role of custom CUDA kernels and operator fusion in LLM inference engines?	wdndev:faster_transformer
+LLM06	M	How do multi-LoRA serving and model multiplexing share a base model across tenants?	wdndev:1.vllm
+LLM05	M	What does min-p or typical sampling try to improve over top-p?	wdndev:解码策略
+LLM05	M	Why can high temperature increase hallucination while very low temperature lowers diversity, and how would you choose in a QA product?	wdndev:解码策略
+LLM05	M	What is the lost-in-the-middle effect and how would you order retrieved passages to minimize it?	wdndev:01 llm concepts
+LLM05	M	How do you evaluate whether a long-context extension actually works, beyond perplexity (needle-in-haystack, long-benchmarks)?	wdndev:01 llm concepts
+LLM07	M	Why is perplexity not a reliable measure of instruction-following or chat quality?	wdndev:语言模型
+LLM07	M	What biases affect LLM-as-a-judge evaluations, such as position, verbosity and self-preference, and how do you reduce them?	wdndev:评测
+LLM07	M	How would you measure the knowledge boundary of a model to enable honest refusal?	wdndev:评测
+LLM07	M	How do you detect benchmark contamination in a model's training data?	wdndev:评测
+LLM07	H	Design an evaluation suite for a general-purpose chat model covering knowledge, reasoning, code, safety, instruction following and multilingual ability.	wdndev:评测
+RAG01	M	When should a RAG system decide not to retrieve at all, and how would you implement that decision?	wdndev:rag技术
+RAG02	M	How do you deal with tables, figures and scanned PDFs when ingesting documents for RAG?	wdndev:检索增强llm
+RAG02	M	What metadata would you attach to each chunk and how does it help filtering and citation?	wdndev:检索增强llm
+RAG03	M	How do you choose an embedding model for a domain with specialized vocabulary, and when does fine-tuning embeddings pay off?	wdndev:检索增强llm
+RAG04	M	How would you combine keyword and vector retrieval and merge their ranked lists?	wdndev:检索增强llm
+RAG06	M	Users complain a RAG chatbot gives confident but wrong answers. Walk through how you would find whether retrieval or generation is at fault.	wdndev:rag技术
+RAG06	M	How do you keep a RAG index fresh when source documents are frequently updated or deleted?	wdndev:rag技术
+GA03	M	How does the ReAct loop interleave reasoning and acting, and what failure modes does it have?	wdndev:大模型agent技术
+GA03	M	What are good stopping and loop-detection strategies for agents that can call tools repeatedly?	wdndev:大模型agent技术
+GA03	M	Where should a human approve actions in an agent workflow, and how do you decide which actions need approval?	wdndev:大模型agent技术
+GA01	M	How do few-shot example selection and ordering affect in-context learning performance?	wdndev:思维链
+GA01	M	Why can prompting with exemplars of reasoning improve accuracy even when the exemplars contain mistakes?	wdndev:思维链
+FT05	H	A startup with limited GPU budget wants a domain-specific assistant. Lay out a decision tree among prompting, RAG, LoRA fine-tuning and continued pretraining.	wdndev:05 微调
+FT04	M	What is the difference between logit distillation and sequence-level distillation, and what is the effect of temperature on the soft targets?	wdndev:清华课程 模型压缩
+FT04	M	How does self-instruct bootstrapping relate to distillation from a stronger model, and what are the legal and quality caveats?	wdndev:llama系列模型
+DL02	M	Why does a Transformer need learning-rate warmup, and what happens to Adam's second-moment estimate early in training?	wdndev:layer_normalization
+DL02	M	What is gradient clipping by global norm and why is it standard in LLM training?	wdndev:分布式训练题目
+DL01	M	What is the difference between ReLU, GeLU and SwiGLU in their gradient behavior near zero, and why does it matter for deep Transformers?	wdndev:激活函数
+DL06	M	What is the difference between extractive, generative and retrieval-based question answering?	wdndev:清华课程 QA
+DL06	M	How do the BERT-era approaches to machine reading comprehension predict answer spans?	wdndev:清华课程 QA
+GA05	M	How could training-data extraction attacks reveal memorized data from an LLM, and how do you reduce memorization?	wdndev:token及模型参数
+GA05	M	What risks arise when using LLM-generated outputs (hallucinated facts) in a user-facing product, and what guardrails would you add?	wdndev:幻觉

@@ -1,0 +1,202 @@
+Q003420	M	How do you handle ambiguous or vague user queries in RAG systems?
+Q003421	M	What are the different query transformation techniques that enhance user queries in RAG?
+Q003422	M	What are the pros and cons of query transformation techniques in RAG?
+Q003423	H	To minimize RAG system latency, which pre-retrieval enhancement technique would you choose?
+Q003433	E	What are the common retrieval approaches used in RAG systems?
+Q003435	M	What are the key metrics for evaluating retrieval quality in RAG?
+Q003440	M	How does hybrid search work in the context of RAG retrieval?
+Q003441	M	When do you opt for hybrid search instead of semantic search?
+Q003442	H	How do you balance relevance and diversity when retrieving document chunks for RAG?
+Q003443	M	How do sparse embeddings differ from dense embeddings in terms of keyword matching and retrieval interpretability?
+Q003446	M	How does re-ranking differ from the initial retrieval process in RAG?
+Q003447	M	What are the different types of re-ranker models that can be used in RAG?
+Q003448	M	Why is the cross-encoder typically used as the re-ranker rather than the bi-encoder?
+Q003449	M	A RAG system retrieves 20 candidate document chunks but can only fit 5 in the LLM's context window. Without re-ranking, how might this limitation affect response quality, and what specific problems would a re-ranker solve?
+Q003450	M	Describe a scenario where BM25 retrieval might return relevant chunks but in poor ranking order. How would a neural re-ranker specifically address this limitation?
+Q003451	H	If your RAG system serves both simple factual queries and complex analytical questions, how would you decide when to bypass the re-ranker for efficiency while maintaining quality?
+Q003452	M	Describe the vector pre-computation and storage strategy in a bi-encoder + cross-encoder pipeline. Why can't cross-encoders pre-compute text representations like bi-encoders can?
+Q003453	E	Why is re-ranking important in the RAG pipeline after initial document retrieval?
+Q003456	M	Compare the noise reduction capabilities of re-rankers versus simply increasing the similarity threshold in initial retrieval. When would each approach be more appropriate?
+Q003457	M	What challenges do re-rankers face regarding computational overhead and latency?
+Q003458	M	How would you evaluate the effectiveness of a reranker in a RAG system? Which metrics (e.g., MRR, MAP, NDCG) would you prioritize and why?
+Q003459	M	Explain the difference between Precision@k and Recall@k in the context of RAG. When might you prefer one over the other?
+Q003460	M	Why is MRR unsuitable when there are multiple relevant chunks per query, and how does MAP address this limitation?
+Q003461	M	How do you manually calculate MAP@5 (Mean Average Precision at 5) for a retrieval result? What does MAP reveal about the retrieval system that raw Precision does not?
+Q003462	M	Suppose your RAG retriever gets perfect Recall@10 but low Precision@10. What problems could this cause for the downstream generator?
+Q003463	M	How would the value of NDCG@k change if all relevant chunks are retrieved but in the reverse order (least to most relevant)?
+Q004292	M	Explain the difference between a cross-encoder and a bi-encoder.
+Q004294	M	Explain the intuition behind multi-vector dense representations.
+Q004295	M	Explain the intuition behind sparse representations.
+Q004296	M	Elaborate on why sparse text embeddings are more efficient than dense text embeddings.
+Q004311	H	Explain some of the architectures and patterns in retrieval systems and semantic search in the context of LLM systems.
+Q004312	H	How do you achieve good search in large-scale systems?
+Q004313	H	How would you implement query understanding and decomposition to break down complex queries into simpler sub-queries and then recombine the results?
+Q004315	E	Explain the concept behind keyword-based search in the context of search systems.
+Q004316	M	How are reranking models trained?
+Q004757	M	What is hybrid search, and why is it better than pure vector search?
+Q004758	M	What is re-ranking, and how does it improve RAG retrieval quality?
+Q004759	H	What is ColBERT, and how does late interaction retrieval work?
+Q004760	H	Compare reranker architectures: cross-encoder, ColBERT, and LLM-based rerankers.
+Q004770	M	What is the role of metadata filtering in RAG systems?
+Q004773	M	What is query transformation in RAG (HyDE, query decomposition, step-back prompting)?
+Q004895	M	Your semantic search fails for short queries. How do you improve it?
+Q005957	M	How do you choose a reranking model, and how do cross-encoders and ColBERT differ?
+Q005958	M	How is multi-path retrieval implemented in RAG, and how does Reciprocal Rank Fusion (RRF) work?
+Q005995	M	What is late-interaction retrieval, and what problems do ColBERTv2, ColPali, and ColQwen each solve?
+Q006000	M	How do sparse vectors (BM25/SPLADE) differ from dense embedding vectors, and when should you use each?
+Q006066	M	Why is a re-ranker essential in a RAG pipeline, and how do you choose the model and tune it?
+Q006181	M	What is RAG-Fusion, and what problem of traditional RAG does it solve?
+Q006182	M	What is HyDE (Hypothetical Document Embeddings), and how does it work?
+Q006190	M	What is hybrid retrieval, when do you need sparse plus dense dual-path retrieval, and how does RRF fuse the results?
+Q007028	M	Your RAG system has healthy recall@20, but answers are vague and miss specifics, and precision@5 measures 0.55. What is the best first move?
+Q007033	M	A user searches for the exact error code "E1042." Which retriever most reliably surfaces it?
+Q007034	M	Why do production systems like Perplexity fuse BM25 and dense retrieval and then run a cross-encoder, instead of just doing one bigger vector search?
+Q007035	M	You turned on hybrid search, but searches for part numbers like "ACME-X200" still miss even though the docs contain them. What is the most likely cause?
+Q007036	M	A teammate wants to replace RRF with a tuned weighted fusion (α·bm25 + (1−α)·dense) to squeeze out a few NDCG points. What is the senior caveat?
+Q007038	M	Queries are pure natural-language paraphrases over a small, clean FAQ with no codes or proper nouns, and a teammate insists on adding BM25 and RRF. What is the best call?
+Q007039	M	Why not just run the cross-encoder reranker over the whole corpus and skip first-stage retrieval?
+Q007042	M	In a RAG system recall@50 is broken because the gold chunk often isn't retrieved at all, and a teammate adds a cross-encoder reranker to fix it. Will it work?
+Q007043	M	A grounded factual QA system over your own clean docs has good recall, and a teammate proposes HyDE to boost retrieval. What is the best call?
+Q007063	E	What is hybrid search? Why combine vector and keyword (BM25) search?
+Q007064	M	Why re-rank on top of vector retrieval? Cross-encoder vs bi-encoder?
+Q007105	M	Your enterprise RAG assistant retrieves well on conceptual questions but fails on exact error codes and SKU IDs. What is the fix?
+Q007155	M	What are the architecture patterns for information retrieval and semantic search?
+Q007156	E	Why is it important to have very good search in a RAG system?
+Q007157	M	How can you achieve efficient and accurate search results in large-scale datasets?
+Q007159	E	Explain the keyword-based retrieval method.
+Q007160	H	How do you fine-tune re-ranking models?
+Q007161	M	Explain the most common metric used in information retrieval and when it fails.
+Q007162	M	If you were to create an algorithm for a Quora-like question-answering system, with the objective of ensuring users find the most pertinent answers as quickly as possible, which evaluation metric would you choose to assess its effectiveness?
+Q007164	M	Compare different information retrieval metrics and explain which one to use when.
+Q007165	M	How does hybrid search work?
+Q007166	M	If you have search results from multiple methods, how would you merge and homogenize the rankings into a single result set?
+Q007168	M	What are the different techniques that can be used to improve retrieval?
+Q010815	M	Describe hybrid search and when you would use it.
+Q010818	M	What is reranking and when would you skip it?
+Q011067	M	Why use hybrid search?
+Q011068	E	What is reranking?
+Q011159	M	What is contextual retrieval?
+Q011160	E	What is hybrid search?
+Q011222	M	When would you use ColBERT over a bi-encoder?
+Q011227	M	Why not just ask an LLM to judge relevance instead of using embeddings?
+Q011373	M	When would you use hybrid search over pure dense search?
+Q011374	M	Why is Reciprocal Rank Fusion (RRF) safer than simple score addition?
+Q011375	H	When would you choose SPLADE over the standard BM25 + dense hybrid approach?
+Q011376	M	How do you balance dense vs sparse in hybrid search?
+Q011380	M	Why is a cross-encoder fundamentally more accurate than a bi-encoder?
+Q011381	M	How do you decide how many candidates to rerank?
+Q011384	M	When would you use LLM-based reranking?
+Q011385	H	How do you handle reranking for extremely long queries (e.g., a whole paragraph)?
+Q011398	M	Why is HyDE (Hypothetical Document Embeddings) risky for some applications?
+Q011411	M	How does Contextual Retrieval compare to HyDE for improving retrieval quality?
+Q011415	M	Explain the difference between bi-encoders, cross-encoders, and late interaction models. When would you choose each?
+Q011416	H	ColBERT stores one vector per token. How does it scale, and what are the storage tradeoffs?
+Q011417	H	You are designing a legal document search system with 5M documents. The team is debating between dense bi-encoder search with a cross-encoder reranker vs. ColBERT. What do you recommend?
+Q011815	M	How do you choose between a sparse retriever (BM25) and a dense retriever? When do you need both?
+Q011816	M	What is a reranker, when should you use one, and what does a cross-encoder cost you?
+Q011818	M	What is HyDE (hypothetical document embeddings) and when does it outperform standard dense retrieval?
+Q012085	M	Discuss reranker architecture choices: cross-encoder, ColBERT, LLM-based.
+Q012086	H	You retrieved 50 candidate passages but the model's useful context budget is about 10. How do you choose, and how do you know your choices are good?
+Q003603	M	What problems do chunking strategy, metadata, hybrid search, query rewriting, and reranking each solve in RAG retrieval?
+Q003604	M	What is hybrid search, and how are BM25 and vector retrieval fused?
+Q003606	M	If the correct document enters the candidate pool but always ranks outside the top K, should you adjust recall or introduce reranking?
+Q003619	M	How do you choose between an LLM reranker and a dedicated reranker?
+Q007363	M	Why does a cross-encoder beat bi-encoder cosine similarity, and why not use it for first-stage retrieval?
+Q007829	M	Why can't you just use a cross-encoder for first-stage retrieval over 10M documents?
+Q007840	E	What is hybrid search, and why does pure vector search fail on some queries?
+Q007842	M	Give a query distribution where you would weight BM25 above dense retrieval.
+Q007843	E	What is a reranker, and why add one after vector search?
+Q007844	M	Your reranker adds 250ms of latency and the product manager objects. What are your options?
+Q007845	M	Why not fine-tune the bi-encoder instead of adding a reranker?
+Q007846	M	Where does ColBERT-style late interaction fit between bi-encoders and cross-encoder rerankers?
+Q007849	M	How would you pick a relevance cutoff for a "no good answer found" path?
+Q007850	E	What does BM25 actually compute? Walk through the formula's moving parts.
+Q007851	M	How would you tune k1 and b in BM25 for a corpus of very short documents like support ticket titles?
+Q007852	M	Why does BM25 need no training while a dense retriever does?
+Q007866b	M	Why does contextual BM25 matter, not just contextual embeddings?
+Q007890	M	How does reciprocal rank fusion work, and why fuse by rank instead of by score?
+Q007891	M	When would weighted fusion beat RRF, and what data do you need to tune it?
+Q007892	M	How does reciprocal rank fusion interact with multi-query expansion?
+Q007893	M	If a document appears only in the dense result list, what is its ceiling in the RRF-fused ranking?
+Q007894	M	Explain the retrieval-architecture spectrum: bi-encoders, cross-encoders, and late interaction (ColBERT).
+Q007895	H	Why is ColBERT's MaxSim robust to document length in a way single-vector pooling isn't?
+Q007896	H	Estimate storage for 10M chunks under bi-encoder, cross-encoder, and ColBERT architectures. Where would a "listwise" LLM reranker fit on this spectrum?
+Q007897	M	What query understanding techniques would you apply before retrieval, and when is each worth it?
+Q007898	M	How do you measure whether query rewriting is actually helping retrieval?
+Q007899	M	When does HyDE hurt?
+Q007900	H	How would you keep total pre-retrieval latency under 300ms while using query rewriting, HyDE, and similar techniques?
+Q007901	M	How do you handle retrieval in a multi-turn conversation?
+Q007902	H	How do you evaluate query rewriting quality offline? What does the golden set look like for multi-turn conversations?
+Q007903	M	What goes wrong in multi-turn retrieval when the user abruptly changes topic?
+Q007913	H	When would you route a numeric question to text-to-SQL instead of RAG, and how would you decide which path a query takes?
+Q007915	M	How would you implement sub-question decomposition in RAG, and when does it make things worse?
+Q007916	M	How would you decide, at query time and cheaply, whether a question needs decomposition?
+Q007917	M	How do you keep the final synthesis answering the original question rather than the sub-questions?
+Q007918	M	What is learned sparse retrieval (SPLADE-style), and when would you pick it over BM25 or a dense retriever?
+Q007919	H	SPLADE's expansion lengthens postings lists. What would you actually tune to keep query latency acceptable?
+Q007920	M	Would you fuse SPLADE with dense retrieval, or does the expansion make dense retrieval redundant?
+Q007922	M	How would you pick the MMR lambda without hand-tuning it on intuition?
+Q007923	M	When is returning duplicate content actually the right behaviour in retrieval?
+Q007924	M	How do you handle time in retrieval: "latest" queries, superseded documents, and questions about the past?
+Q007925	H	How would you pick the time-decay constant tau for a given corpus rather than guessing?
+Q007926	M	A user asks "what is our parental leave policy" and there are three versions of the document. What exactly should your retriever return?
+Q007929	H	How would you evaluate code retrieval, given that "the relevant chunk" is often a set of files rather than one?
+Q007930	M	Your corpus is multilingual and users query in several languages. What breaks, and how do you fix it?
+Q007931	M	In multilingual retrieval, why translate the query rather than the corpus, and when would you flip that decision?
+Q007946	M	Your product has several distinct corpora: docs, tickets, code, and CRM. How do you route queries?
+Q007947	M	How do you build the evaluation set for query routing, and what accuracy is acceptable?
+Q007949	M	How do you make relevance scores comparable when fusing results across corpora?
+Q007954	M	What retrieval metrics would you track (recall@k, MRR, nDCG), and what does each actually tell you?
+Q007955	M	Why does recall@k matter more than precision@k for RAG specifically?
+Q007999	H	Teams increasingly rerank with an LLM rather than a cross-encoder. How do pointwise, pairwise, and listwise LLM reranking work, and when is the cost justified?
+Q008000	H	How would you measure position bias in a listwise LLM reranker on your own data?
+Q008001	H	How many labelled pairs do you need to distil an LLM reranker into a cross-encoder, and how do you check the student did not simply inherit the teacher's biases?
+Q008451	M	Which retrieval metrics would you use - recall@k, MRR, nDCG - and when does each matter?
+Q009331	H	When training a code-retrieval component for an agent with a retrieval reward, why weight precision over recall?
+Q009354	H	You have an embedding model and a reranker. Why sell both? Design the two-stage retrieval pipeline and explain when the reranker earns its latency.
+Q009355	M	How would you pick the candidate depth (top-100 vs top-1000) of a two-stage retrieval pipeline empirically?
+Q009356	M	What breaks if documents exceed the reranker's max sequence length?
+Q009381	H	In multilingual retrieval evals, reranking helps Korean-query-to-English-document retrieval much more than English-to-English. Why might that be?
+Q009392	M	How do you evaluate retrieval quality for code specifically?
+Q009570	M	When does BM25 beat dense embeddings on enterprise data, and how would you combine them?
+Q009572	H	How do you tune the lexical/dense balance in hybrid search per tenant without per-tenant training data?
+Q009591	H	When merging ranked results from N connector shards where scores are not comparable (different BM25 statistics), how do you merge them?
+Q009592	M	When merging ranked results from N shards, how does the approach change with pagination (for example, fetching results 90-100)?
+Q009787	M	Walk me through hybrid retrieval: keyword, vector, and reranking. When does each stage earn its cost?
+Q009788	M	Why is score-based fusion between BM25 and cosine similarity problematic?
+Q009789	H	Where do document ACL filters go in a hybrid retrieval pipeline, and what do they do to recall?
+Q009998	H	You retrieved 50 candidate passages for a query but the model's useful context budget is about 10. How do you choose, and how do you know your choices are good?
+Q009999	H	Your cross-encoder reranker adds 150 ms at p95. When is that worth it, and when do you distill it into the bi-encoder?
+Q010081	M	How do you keep entity names (scheme names, place names) from being mangled across scripts in cross-lingual RAG?
+D00389	E	When would you use hybrid search instead of pure dense retrieval?
+D00390	M	Why does BM25 still matter next to dense embeddings?
+D00391	M	Why is reciprocal rank fusion safer than adding raw scores from different retrievers?
+D00392	M	How do you tune the balance between dense and sparse in hybrid search, including query-adaptive weights?
+D00393	M	When would you pick learned sparse models like SPLADE over BM25 plus dense?
+D00394	M	Describe multi-path retrieval and RAG-Fusion: how are queries rewritten and results fused?
+D00395	M	How does multi-tenant keyword scoring distort BM25 statistics, and how do you avoid it?
+D00396	M	Why is a cross-encoder fundamentally more accurate than a bi-encoder reranker?
+D00397	M	How do you decide how many candidates to pass to the reranker?
+D00398	M	When would you use an LLM as a reranker, and how do listwise and pointwise approaches differ?
+D00399	M	How do you rerank when the query is extremely long?
+D00400	M	When would you skip reranking altogether?
+D00401	M	How does ColBERT's MaxSim scoring work, and why is it better than single-vector similarity?
+D00402	M	ColBERT stores one vector per token. How does it scale and what are the storage trade-offs?
+D00403	H	For a legal search system with five million documents, decide between a dense bi-encoder, ColBERT and a hybrid with reranking.
+D00404	M	What do ColBERTv2 and PLAID change about index size and speed?
+D00405	M	What do ColPali and ColQwen do differently from text-based late-interaction retrieval?
+D00406	M	Describe query rewriting strategies: contextual rewrite, expansion, HyDE and multi-query.
+D00407	M	Why is HyDE risky for some applications?
+D00408	M	How does query decomposition help with multi-part questions?
+D00409	M	How does contextual retrieval compare to HyDE for improving retrieval quality?
+D00410	M	How do you improve recall when retrieval results are irrelevant?
+D00411	M	What retrieval metrics would you compute to evaluate a retriever on a golden query set?
+D00412	M	How do you diversify results after reranking and apply business rules without hurting relevance?
+D00413	M	How do you choose a reranker model and tune its latency?
+D00414	M	How do you add metadata filters and recency weighting to ranking in enterprise search?
+D03815	M	When do hybrid dense and keyword retrieval, cross-encoder reranking and query rewriting help a RAG system?
+D04834	M	What query transformation techniques exist (rewriting, expansion, multi-query, HyDE, decomposition) and when do they help?
+D04835	M	What are the roles of ranking and post-processing in RAG, such as reranking, filtering, deduplication and context compression?
+D04844	M	Explain BM25, its inputs and why it remains a strong baseline against neural retrievers.
+D04846	M	What retrieval metrics (Recall@k, MRR, nDCG) would you use and how do they differ?
+D04968	M	How would you combine keyword and vector retrieval and merge their ranked lists?

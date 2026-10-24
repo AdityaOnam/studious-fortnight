@@ -1,0 +1,301 @@
+Q008122	LLM04	M	Why does ZeRO-1 add almost no communication overhead while ZeRO-3 does?
+Q008123	LLM04	M	When is gradient checkpointing a bad trade-off?
+Q008124	FT02	M	What changes when you add LoRA to a training setup that uses gradient accumulation and gradient checkpointing?
+Q008125	FT03	M	Explain GRPO. Why has it displaced PPO for reasoning RL?
+Q008126	FT03	H	What happens to GRPO's gradient on prompts the model always (or never) solves, and what does that imply for data curation?
+Q008127	FT03	M	Why is the KL-to-reference term still needed with verifiable rewards?
+Q008128	FT03	M	Why are math and code so RL-friendly? Explain verifiable rewards and the R1-style training recipe.
+Q008129	FT03	H	How do you stop a code-RL model from gaming the unit tests?
+Q008130	FT03	M	Why did pure-RL R1-Zero produce messy outputs, and what does the cold-start SFT fix?
+Q008131	FT03	H	What is the equivalent of a verifiable reward for a domain like legal drafting?
+Q008132	FT03	M	What are RLAIF and Constitutional AI? How does AI feedback replace human feedback?
+Q008133	LLM07	M	What biases does an LLM judge introduce and how do you measure them?
+Q008134	FT03	H	If the AI labeller in RLAIF is the same model family being trained, what failure loops does that risk?
+Q008135	FT03	M	What is the "alignment tax"? How does preference tuning cause over-refusal, and how do you manage it?
+Q008136	LLM07	H	How would you build an over-refusal eval for a security-tools customer?
+Q008137	FT03	H	Why does a single scalar reward tend to over-weight harmlessness, and what is the alternative?
+Q008138	FT05	M	When is fine-tuning the wrong call? Describe failure modes you would warn a team about.
+Q008139	FT01	M	A team fine-tuned a model on 300 noisy examples and says "it feels better". What do you ask for?
+Q008140	FT01	H	How do you future-proof a fine-tuning investment against base-model churn?
+Q008141	FT05	M	Hosted fine-tuning APIs vs training it yourself: how do you decide?
+Q008142	FT05	M	What clauses do you check in a provider's fine-tuning terms before uploading data?
+Q008143	FT05	H	What breaks when you migrate a hosted fine-tune to open weights?
+Q008144	FT01	H	Your fine-tuned model's training loss looked great, but outputs in production are worse than the base model. Walk me through your debugging process.
+Q008145	FT01	H	What single artefact would you log at training time to make debugging a fine-tuned model's production regressions easy later?
+Q008146	FT01	M	How do you catch a chat template mismatch between training and serving in CI before deploy?
+Q008147	FT01	H	Design an end-to-end fine-tuning pipeline for a customer-support model at a mid-size company. Walk me through data, training, eval, deployment and iteration.
+Q008148	FT05	H	In a fine-tuning pipeline for a customer-support model, where does RAG sit in training data versus serving, and why must they match?
+Q008149	FT05	M	When would you ship the prompted baseline instead of a fine-tuned model?
+Q008150	FT01	H	How do you prevent feedback-loop bias when training on the model's own accepted drafts?
+Q008151	FT01	H	How do you construct the data mixture for a fine-tune to prevent capability regressions, and how do you validate the mixture?
+Q008152	FT01	M	Why does interleaving data mixtures beat sequential training phases in fine-tuning?
+Q008153	FT01	H	When fine-tuning with a data mixture, your general-data slice fixes MMLU but the task metric drops 3 points. What are your options?
+Q008154	FT01	M	How does the right data mixture ratio change between SFT and continued pretraining?
+Q008155	FT01	M	Explain sequence packing in SFT. What is the attention contamination problem and how is it solved?
+Q008156	FT01	H	Why is cross-sequence attention contamination from packing worse on templated datasets than on diverse ones?
+Q008157	LLM01	H	How do FlashAttention varlen kernels avoid materializing the block-diagonal mask for packed sequences?
+Q008158	FT01	M	What breaks if you pack sequences in SFT but forget to reset position IDs?
+Q008159	LLM06	M	How do you serve fine-tuned models at scale: merged checkpoints vs adapters, versioning, rollback?
+Q008160	FT02	H	Why can serving a QLoRA-trained adapter on an fp16 base shift model behaviour?
+Q008161	LLM06	H	Design routing for 500 tenant LoRA adapters where 10 tenants account for 80% of traffic. What changes if variants need different system prompts too?
+Q008162	FT03	H	Your DPO run improves win rate against the SFT model, but outputs are longer, waffly and hedge constantly. Debug it.
+Q008163	FT03	H	Why do both chosen and rejected log probabilities decrease during DPO, and when is that actually fine?
+Q008164	LLM07	H	How would you construct a length-controlled evaluation of a DPO-tuned model that a reviewer would trust?
+Q008165	LLM07	H	Your fine-tune gained 8 points on your benchmark. How do you know the gain is real and not contamination?
+Q008166	LLM07	H	After a fine-tune gained 8 points on your benchmark, you find 3% n-gram overlap with training data, and removing it costs you 2 of the 8 points. Do you ship?
+Q008167	FT04	H	How would you detect that your synthetic-data teacher model was contaminated, given you cannot inspect its training set?
+Q008168	FT03	H	You are running GRPO with a verifier reward on a code task. Reward climbs steadily, but outputs get shorter and more repetitive and held-out pass rate drops. What is happening?
+Q008169	FT03	H	How would you design a verifier that is genuinely hard to hack for a code task?
+Q008170	FT03	H	Why does entropy collapse specifically hurt GRPO more than it hurts PPO?
+Q008171	FT04	H	Design a pipeline to distil a frontier model's performance on your task into an 8B model you can serve yourself. Walk me through the whole thing.
+Q008172	FT04	H	In a distillation setup, how would you decide the routing threshold between student and teacher in production?
+Q008173	FT04	H	What changes if the teacher and student have different tokenizers and you only have the teacher's text outputs?
+Q008174	FT03	H	You want to RL-train an agent for a multi-turn tool-use task, and the only reward you have is whether the final task succeeded. How do you make that work?
+Q008175	FT03	H	How would you RL-train an agent on a task where success is only checkable by a human?
+Q008176	FT03	H	Why is trajectory-level advantage tolerable when RL-training a multi-turn agent with only a final-success reward, and at what horizon does it stop working?
+Q008177	GA03	M	A vendor shows you 90% agent success on their own environment suite. What do you ask before buying?
+Q008178	GA04	H	How would you build a drift monitor that catches behaviour changes in a mocked service used for agent RL training, not just schema changes?
+Q008179	GA03	H	At what point is a live staging environment cheaper than maintaining a mock environment for agent training?
+Q008180	FT03	H	Your RL loop samples rollouts with a fast inference engine and trains with FSDP. Why do the two disagree on token log-probs, and what do you do about it?
+Q008181	FT03	H	How would you tell training-inference mismatch apart from a learning rate that is simply too high?
+Q008182	FT03	H	What does going fully asynchronous buy you in RL throughput, and what does it cost in correctness?
+Q008183	FT03	H	Why is training-inference mismatch worse for MoE models in RL?
+Q008184	GA05	M	A team fine-tuned an aligned model on a few thousand benign support transcripts, and its refusal behaviour got noticeably weaker. Why does that happen, and how do you guard against it?
+Q008185	GA05	H	Which slice of a safety eval would you expect to move first after a benign fine-tune, and why?
+Q008186	GA05	H	How would you design a fine-tuning API that lets customers tune freely without shipping models that comply with clearly harmful requests?
+Q008187	GA05	H	Why does narrow training on insecure code generalise to unrelated misbehaviour?
+Q008188	FT01	H	What changes when you fine-tune a mixture-of-experts model instead of a dense one?
+Q008189	FT01	H	Would you freeze or train the router for a 5k-example SFT run of an MoE model, and what evidence would change your mind?
+Q008190	FT02	H	How would you pick which experts to put LoRA on when fine-tuning an MoE model?
+Q008191	FT03	H	Why is routing a source of noise in RL on MoE models?
+Q008192	GA03	E	What is the difference between a workflow and an agent?
+Q008193	GA03	M	Where on the workflow-to-agent spectrum would you place a RAG chatbot that can optionally issue a search query?
+Q008194	GA03	M	Can a system be a workflow at the top level with agents inside it?
+Q008195	GA03	M	When should you NOT build an agent?
+Q008196	GA03	M	A PM wants an "agent" for invoice processing with fixed extraction fields. What do you build?
+Q008197	GA03	M	How would you retrofit an over-agentic system into a workflow?
+Q008198	GA03	M	Walk me through the core agent loop. What are the components and stop conditions?
+Q008199	GA03	M	Where would you put permission checks in the agent loop?
+Q008200	GA03	H	How would you make an agent loop resumable after a process crash?
+Q008201	GA02	M	How does function/tool calling actually work mechanically, end to end?
+Q008202	GA02	M	What happens if you return tool results in a different order than the calls?
+Q008203	GA02	H	Why do providers use constrained decoding for tool arguments but not for choosing which tool to call?
+Q008204	GA02	M	A teammate says "the model executes the tool." What is wrong with that, and why does the distinction matter?
+Q008205	GA02	M	Where would you implement human approval for a 'delete_records' tool, in the prompt or the executor, and why?
+Q008206	GA03	M	How do you test an agent without real side effects?
+Q008207	GA02	M	Explain parallel tool calls and tool-choice forcing. When would you use each?
+Q008208	GA02	M	How would you handle one failure among five parallel tool calls?
+Q008209	GA02	M	Why might you force 'required' tool choice on the first iteration of an agent loop but 'auto' afterward?
+Q008210	GA02	E	What is MCP and what problem does it solve?
+Q008211	GA02	M	If you are building a single-model internal product, does MCP buy you anything over plain function calling?
+Q008212	GA02	M	How does an MCP host handle two servers exposing identically named tools?
+Q008213	GA02	M	Describe MCP's architecture and its primitives.
+Q008214	GA02	H	Why does MCP sampling route through the host instead of the server calling a model API directly?
+Q008215	GA02	M	When would you expose data as an MCP resource instead of a "search" tool?
+Q008216	GA03	M	What is ReAct, and how relevant is it in 2026?
+Q008217	GA03	M	If reasoning models think internally anyway, is an explicit scratchpad/think tool still useful in an agent?
+Q008218	GA03	H	How does ReAct's myopia show up in a coding agent, concretely?
+Q008219	GA02	M	What makes a good tool definition? Give concrete design rules.
+Q008220	GA02	M	How would you detect that two tools are being confused by the model in production?
+Q008221	GA02	M	Your agent's tool count just hit 40. What do you do?
+Q008222	GA02	M	Why do we need MCP at all? Why not just hand the model an OpenAPI spec and let it call REST endpoints?
+Q008223	GA02	M	Your company already has 200 internal REST services. Would you write 200 MCP servers?
+Q008224	GA02	M	How would you decide the granularity of MCP servers relative to endpoints?
+Q008225	GA02	M	You are designing an MCP server. How do you decide whether something should be a tool, a resource, or a prompt?
+Q008226	GA02	M	Your MCP server exposes a 500 MB log file as a resource. What goes wrong, and how do you restructure it?
+Q008227	GA02	M	When would you use MCP resource templates rather than fixed URIs?
+Q008228	GA03	M	When should you use a reasoning model inside an agent loop, and when is it a waste of money?
+Q008229	GA03	H	How would you measure whether a reasoning model is actually earning its cost at a given step of an agent?
+Q008230	GA01	H	What happens to your prompt cache when a reasoning model's thinking blocks enter the message history?
+Q008231	GA02	M	Your agent charged a customer's card twice. The trace shows one tool call. What happened, and how do you prevent it?
+Q008232	GA02	H	The model itself decides to call a charge tool twice because it forgot it already did. Does an idempotency key save you?
+Q008233	GA02	H	How do you handle a tool that is not idempotent and cannot be made so?
+Q008234	GA02	M	What does strict mode on a tool schema guarantee, and what does it leave to you?
+Q008235	GA02	H	Your extraction schema has 40 fields and uses keywords strict mode rejects. What do you do?
+Q008236	GA02	M	Would you ever turn strict mode off for a tool, and why?
+Q008237	GA02	M	How should tool errors be surfaced to the model?
+Q008238	GA02	M	Should transient infrastructure errors (timeouts, 502s) even reach the model, or be retried silently by the executor?
+Q008239	GA02	M	How would you measure whether your tool error messages are working?
+Q008240	GA02	M	Consolidated vs granular tools: how do you decide?
+Q008241	GA02	M	How does per-call latency change the decision between consolidated and granular tools?
+Q008242	GA02	H	Design the tool set for an agent that manages a Postgres database. Where do you consolidate?
+Q008243	GA02	M	How do you make tool outputs token-efficient, and why does it matter so much for agents?
+Q008244	GA01	M	How does prompt caching change the cost math for bloated tool results?
+Q008245	GA02	M	When is truncating tool outputs actively dangerous?
+Q008246	GA03	M	Your agent's context window fills up mid-task. What are your options?
+Q008247	GA03	H	What specifically goes into a good compaction summary for a coding agent?
+Q008248	GA03	H	How do you evaluate that context compaction isn't losing critical state?
+Q008249	GA03	M	Distinguish working memory from persistent memory in agent design.
+Q008250	GA03	M	Would you implement agent memory as vector search or as files the agent greps, and why?
+Q008251	GA03	M	How do you prevent one bad "memory" from degrading every future session?
+Q008252	GA03	M	Compare plan-then-execute with reactive (ReAct-style) execution. When does each win?
+Q008253	GA03	M	How would you represent an agent's plan, as prose in context or a structured todo tool, and why?
+Q008254	GA03	H	What would your replanning trigger design be for a plan-then-execute agent?
+Q008255	GA03	M	When do reflection / self-critique loops actually help, and what do they cost?
+Q008256	GA03	M	Should the critic in a reflection loop be a different model than the generator?
+Q008257	GA03	M	Where would you insert reflection in a coding agent's loop: every step, or at commit boundaries?
+Q008258	GA03	M	Explain the orchestrator-worker / subagent pattern. What is the real benefit?
+Q008259	GA03	M	What should a subagent's result schema contain for a research task?
+Q008260	GA03	M	When would you give a worker agent write access versus keeping all writes in the orchestrator?
+Q008261	GA03	M	When does multi-agent beat single-agent, and when does it make things worse?
+Q008262	GA03	H	How would you parallelize a large refactor safely, if not with concurrent write-agents?
+Q008263	GA03	M	What coordination failures would you expect to see in multi-agent traces?
+Q008264	GA03	M	What are handoffs in multi-agent systems, and how do they differ from orchestration?
+Q008265	GA03	M	How do you evaluate routing quality in a handoff system?
+Q008266	GA03	H	What happens to in-flight tool approvals or permissions across an agent handoff?
+Q008267	GA02	M	Compare MCP's transports. When would you choose each?
+Q008268	GA02	H	Why was mandatory long-lived SSE a problem for serverless MCP deployments?
+Q008269	GA02	H	How does session state work over MCP's Streamable HTTP transport if the server is stateless?
+Q008270	GA02	H	You maintain an MCP server with clients on three different protocol revisions. How do you handle negotiation and deprecation?
+Q008271	GA05	M	What are the security risks of connecting a third-party MCP server, and how do you mitigate them?
+Q008272	GA05	H	How would you design an MCP gateway for an enterprise (central allowlist, auth, auditing)?
+Q008273	GA05	H	Does OAuth on Streamable HTTP MCP servers address any of the description-based attacks (such as tool description poisoning)?
+Q008274	GA03	M	How do you evaluate an agent? Compare trajectory evals and final-outcome evals.
+Q008275	GA03	H	How do you build the resettable environment for evaluating an agent that touches three external SaaS APIs?
+Q008276	GA03	M	What rubric items would you give an LLM judge for a support agent?
+Q008277	GA03	M	Explain pass@k vs pass^k. Why does the distinction matter for production agents?
+Q008278	GA03	H	Your agent has pass@1 of 80% and pass^4 of 40%. What does that tell you and what do you try first?
+Q008279	GA03	H	When is best-of-n with a verifier a legitimate way to convert pass@k into pass^1?
+Q008280	GA05	M	What guardrails does a production agent loop need?
+Q008281	GA03	H	How do you keep human approval gates from destroying UX on a 50-step agent task?
+Q008282	GA03	M	Who approves when an agent runs unattended overnight?
+Q008283	GA02	H	You have connected six MCP servers. There are now 130 tool definitions and about 45k tokens of schema in context before the user says a word. What do you do?
+Q008284	GA02	H	How would you build a search_tools tool for dynamic tool discovery without adding a round trip to every task?
+Q008285	GA01	H	An MCP server sends a list-changed notification mid-session. What happens to your prompt cache?
+Q008286	GA03	M	Your agent needs to remember things across sessions. Would you use a vector store or rolling summarisation? Defend the choice.
+Q008287	GA03	M	How do you handle an agent memory that becomes false, like a user changing their address?
+Q008288	GA03	M	How would you evaluate whether your agent's memory layer is helping at all?
+Q008289	GA01	H	Your agent's prompt cache hit rate is 20% when you expected 90%. Walk me through the debugging.
+Q008290	GA01	M	You must inject the current time into an agent's prompt because it reasons about deadlines. Where does it go, given prompt caching?
+Q008291	GA04	M	How would you measure cost per successful task rather than prompt cache hit rate?
+Q008292	GA04	M	How do you test an agent in CI (not evals), on every pull request, in under five minutes?
+Q008293	GA04	H	Your recorded-response test cassettes drift from real model behaviour and CI passes while production breaks. How do you detect that?
+Q008294	GA04	M	How do you write assertions for an agent whose output is legitimately different every run?
+Q008295	GA03	H	You are splitting a research agent into an orchestrator and subagents. Design the interface: what exactly crosses the boundary in each direction?
+Q008296	GA03	H	A subagent returns a summary containing a subtle hallucination and the orchestrator cannot tell. How do you defend against this?
+Q008297	GA03	M	When would you let a subagent spawn its own subagents?
+Q008298	GA03	H	Design the human approval flow for an agent that files expense reports. Where do the gates go, and how do you stop people from clicking through them?
+Q008299	GA03	M	In an agent approval flow, the approver is on holiday and the report is time-sensitive. What does your system do?
+Q008300	GA03	H	How do you audit that a human approval of an agent action was meaningful rather than reflexive?
+Q008301	GA02	H	What are MCP's sampling and elicitation primitives for, and why does hardly anyone use them?
+Q008302	GA02	H	You are writing an MCP host. Would you enable sampling for third-party servers, and what controls would you put on it?
+Q008303	GA05	H	How does MCP elicitation interact with prompt injection risk?
+Q008304	GA04	H	Your agent platform's bill jumped from $8k to $40k in a month and nobody knows why. How do you find out, and how do you make sure this never happens blind again?
+Q008305	GA04	H	One tenant is 60% of your agent platform's spend and 2% of revenue. What do you do technically?
+Q008306	GA04	H	How do you attribute the cost of a shared prompt cache across tenants?
+Q008307	GA03	M	What are Agent Skills, and when do you package knowledge as a skill rather than a tool, an MCP server, or retrieval?
+Q008308	GA03	M	A skill's instructions conflict with your system prompt. Which should win, and how do you make that predictable?
+Q008309	GA03	M	How would you evaluate whether an Agent Skill improves outcomes rather than just being loaded?
+Q008310	GA02	H	What are MCP Apps, and what do they change about an MCP server's security model?
+Q008311	GA02	H	When a user filters a chart in an MCP App's UI and then asks the model about "these results", how does the model know what they are?
+Q008312	GA05	H	Would you let a third-party MCP server's UI trigger a write tool without a fresh approval?
+Q008313	GA03	H	The user hits Stop while your agent is in the middle of a tool call. What should happen, and how do you design streaming and cancellation for an agent UI?
+Q008314	GA03	H	The user hits Stop on an agent, then types "actually, carry on". What does the agent do with the half-finished work?
+Q008315	GA04	M	How would you test agent cancellation behaviour in CI?
+Q008316	GA03	H	Walk me through the compounding-error math for agents, and what it implies for design.
+Q008317	GA03	H	How does verification-before-done interact with the compounding-error math for agents?
+Q008318	GA03	H	Given a fixed budget, when do you spend it on a better model versus recovery machinery for an agent?
+Q008319	GA05	M	How does prompt injection work against agents via tool results, and what actually mitigates it?
+Q008320	GA05	H	Design a safe "summarise my unread emails" agent. Where are the trust boundaries?
+Q008321	GA05	H	Why are markdown image URLs a classic data exfiltration channel in chat UIs?
+Q008322	GA05	M	What is the "lethal trifecta," and how do you design agent systems around it?
+Q008323	GA05	H	A coding agent has repo access, reads GitHub issues, and can push branches. Walk through the lethal trifecta. Which leg would you break for a customer-support agent, and how?
+Q008324	GA05	M	How do you sandbox a code-executing agent?
+Q008325	GA05	M	Does the sandboxing calculus change for an agent running on the user's own machine (Claude Code-style) versus a hosted service?
+Q008326	GA05	M	How would you let sandboxed agent code use 'pip install' safely?
+Q008327	GA02	M	Why are computer-use / browser agents so much harder to make reliable than API-based agents?
+Q008328	GA02	M	Given a choice of DOM access vs screenshots for a browser agent, what does DOM access fix and what does it not fix?
+Q008329	GA02	H	How would you evaluate a computer-use agent beyond task success rate?
+Q008330	GA03	H	How do you build agents that survive long-horizon tasks, with hours or days of execution?
+Q008331	GA03	H	For a long-running agent, what exactly goes into the checkpoint, the full message array or summarised state, and what are the tradeoffs on resume?
+Q008332	GA03	H	How do you handle a tool version change in the middle of a long-running agent run?
+Q008333	GA04	H	How do you engineer an agent for cost and latency without wrecking quality?
+Q008334	GA04	H	How do you decide which agent steps are safe for the cheap model: static rules or learned routing?
+Q008335	GA04	H	Why can aggressive history truncation increase cost in an agent?
+Q008336	GA04	M	What does good observability look like for an agent system?
+Q008337	GA04	H	How do you detect "silent degradation" in an agent, where success rate is stable but quality is dropping?
+Q008338	GA04	M	What would you redact from agent traces without destroying debuggability?
+Q008339	GA03	H	Your agent gets stuck in loops or gives up too early. Diagnose and fix both.
+Q008340	GA03	H	How do you distinguish a productive retry from a loop programmatically?
+Q008341	GA03	M	What is the right behaviour when the agent correctly determines a task is impossible?
+Q008342	GA02	M	What is tool-call hallucination, and how do you defend against it?
+Q008343	GA02	H	Why is a fabricated-but-valid ID worse than a call to a nonexistent tool?
+Q008344	GA02	H	Does strict/constrained decoding eliminate tool-call hallucination?
+Q008345	GA01	M	What is context pollution in agents, and how do you deal with it?
+Q008346	GA01	H	How would you detect context self-poisoning in agent traces automatically?
+Q008347	GA01	H	What makes a compaction prompt good at dropping poisoned context but keeping decisions?
+Q008348	GA03	M	Should you build your agent on a framework or roll the loop yourself? Defend a position.
+Q008349	GA03	M	Which single piece of agent framework infrastructure would you pay for first, and why?
+Q008350	GA03	M	How would you structure agent code so you can swap frameworks later?
+Q008351	GA04	H	A customer reports the agent did something wrong three days ago. You have the trace. Can you reproduce it? How do you build a system where the answer is yes?
+Q008352	GA04	H	Storing full payloads for every agent run is expensive at scale. What is your retention policy?
+Q008353	GA04	H	How do you replay an agent run that involved a human approval and a 20-minute pause?
+Q008354	MS04	H	You are building a multi-tenant agent platform. Tenants bring their own MCP servers and their own data. What isolates them?
+Q008355	GA05	H	In a multi-tenant agent platform, a tenant's MCP server description contains a prompt injection targeting your orchestrator. Which isolation controls help?
+Q008356	MS04	H	How do you let tenants in a multi-tenant agent platform share a common tool set without sharing the prompt cache?
+Q008357	GA04	H	You want to change your agent's system prompt. How do you ship it without finding out from customers that you broke something?
+Q008358	LLM07	M	Your eval set says the new system prompt is 3% better. Is that real?
+Q008359	LLM07	M	How do you build an eval set that does not rot?
+Q008360	GA04	H	Define SLOs for a customer support agent. Every span returns 200 and latency is fine. What do you actually alert on?
+Q008361	LLM07	H	Your LLM judge and your human labels disagree 15% of the time. What do you do?
+Q008362	GA04	H	How do you set an error budget for something you only measure on a 2% sample?
+Q008363	GA03	H	Your agent handles multi-turn conversations where users change their minds, and static test cases can't cover that. Build me an evaluation environment.
+Q008364	GA03	H	Your agent overfits to the evaluation simulator's quirks and regresses in production. How do you detect that?
+Q008365	GA03	H	How many scenarios do you need before the pass^k number means anything?
+Q008366	MS04	H	Design the memory and personalisation layer for an assistant serving millions of users. What do you store, when do you summarise versus retrieve, and how do you evaluate memory quality?
+Q008367	MS04	H	How do you handle a user correcting a fact the memory system extracted wrongly?
+Q008368	GA05	H	When does an assistant's memory become a prompt-injection surface, and what is the mitigation?
+Q008369	GA03	H	MCP connects an agent to tools. What does A2A solve that MCP does not, and how do the two compose?
+Q008370	GA03	H	A peer agent's Agent Card advertises a skill it turns out to do badly. How would you find that out, and what do you do about it?
+Q008371	GA03	H	Would you ever put A2A between two agents inside your own company, and what would justify the overhead?
+Q008372	GA03	H	You are exposing one of your agents to another company's agent. What crosses the boundary, and what do you refuse to expose?
+Q008373	GA03	H	A peer agent returns an artifact that is subtly wrong and your agent acts on it. Who is accountable, and what would have caught it?
+Q008374	GA03	H	How would you rate-limit a peer agent whose legitimate traffic is genuinely spiky?
+Q008375	GA02	H	When an agent writes code against an API instead of calling exposed function definitions, at how many tools or how large a result does the code API start paying for itself?
+Q008376	GA03	H	What does a human approval prompt actually look like when the unit of action is a script?
+Q008377	GA03	H	Your agent solves the same class of task 500 times a week and never gets better at it. How would you make it learn, without fine-tuning?
+Q008378	GA03	H	How would you stop two learned procedures in an agent's memory from contradicting each other?
+Q008379	GA03	H	What would make you delete a learned procedure that is still being retrieved and still succeeding?
+Q008380	GA02	H	How does authorisation work for a remote MCP server, and what do teams get wrong when they implement it?
+Q008381	GA02	H	Your MCP server needs to call three upstream SaaS APIs on behalf of the user. How do you obtain and store those tokens?
+Q008382	GA02	H	An agent runs unattended overnight and a token expires mid-run. What happens?
+Q008383	GA02	H	A tool call takes twenty minutes, or needs the user's answer halfway through. How do you model that over MCP now that the protocol is stateless?
+Q008384	GA02	H	The user answers an MCP elicitation an hour later and the signed state has expired. What should the server do?
+Q008385	GA03	H	How does the agent decide between waiting on a long-running task and continuing with other work?
+Q008386	LLM07	M	Why do people say "evals are the moat" for AI products? What makes them the core engineering artifact?
+Q008387	LLM07	M	How would you convince a team shipping on vibes to invest in evals?
+Q008388	LLM07	M	What is the smallest useful eval suite you would build in week one?
+Q008389	LLM07	M	Who should own the eval set: engineering, PM, or a dedicated team?
+Q008390	LLM07	M	Walk me through the taxonomy of evaluation methods for LLM systems and when you would use each.
+Q008391a	LLM07	M	Give a concrete criterion that looks judge-worthy but can be reduced to an assertion.
+Q008391b	LLM07	M	When would you pay for human evaluation even though your LLM judge agrees with humans 85% of the time?
+Q008392	LLM07	M	What kinds of code-graded assertions can you use on LLM outputs, and where do they break down?
+Q008393	LLM07	M	How would you grade a summarisation task without an LLM judge?
+Q008394	LLM07	M	Your regex grader shows 95% pass but users complain. What is happening?
+Q008395	LLM07	M	You are building evals for a new LLM feature from scratch. How many examples do you need, and where do they come from?
+Q008396	LLM07	M	How do you decide an eval example is "hard" before you have failures?
+Q008397	LLM07	M	Your eval is 95% passing and stops discriminating between candidate prompts. What do you do?
+Q008398	LLM07	M	What is LLM-as-judge, and when is it the right tool?
+Q008399	LLM07	H	Your LLM judge passes 90% of outputs but users are unhappy. How do you debug the judge itself?
+Q008400	LLM07	M	Would you use the same model as generator and judge?
+Q008401	LLM07	M	Define pass@k. Why is the naive way of computing it problematic, and what is the fix?
+Q008402	LLM07	M	When is optimising pass@10 legitimate for a product?
+Q008403	LLM07	M	How does pass@k relate to best-of-n sampling with a verifier at inference time?
+Q008404	GA04	M	What is the difference between guardrail metrics and quality metrics? Give examples of each.
+Q008405	GA04	M	How would you set the threshold for a guardrail metric like jailbreak rate: zero or nonzero?
+Q008406	GA04	H	Your helpfulness A/B test win ships and escalation rate rises 15%. What happened?
+Q008407	GA04	M	What should you log for every LLM call in production, and what are the pitfalls?
+Q008408	GA04	H	How would you implement "delete this user's data" when their text appears inside other logged prompts?
+Q008409	GA04	M	What would you log differently for a voice agent?
+Q008410	GA04	M	What is the difference between observability and evals for LLM applications?
+Q008411	GA04	M	Which of observability and evals would you build first on a brand new LLM feature, and why?
+Q008412	GA04	M	If your LLM observability bill got cut in half, what would you stop capturing?
+Q008413	LLM07	M	What is the difference between reference-based and reference-free evaluation, and why do BLEU, ROUGE and exact match fail on LLM output?
+Q008414	LLM07	M	When is BLEU still the right tool for evaluating LLM output?
+Q008415	LLM07	M	How would you grade a summarisation feature where every summary is legitimately different?
+Q008416	LLM07	M	Your eval reports 82% pass on 100 examples. What does that number not tell you?
+Q008417	ML08	M	How many examples would you need to detect a 3-point improvement in an eval pass rate?
+Q008418	LLM07	H	What would make you distrust an 82% eval pass rate even with a tight confidence interval?
+Q008419	LLM07	M	Why do you version an eval dataset, and what exactly belongs in the version?
+Q008420	LLM07	H	How would you handle an example everyone agrees is mislabelled but that has been in the frozen eval suite for a year?
+Q008421	LLM07	M	What goes in the eval set versus a unit test?

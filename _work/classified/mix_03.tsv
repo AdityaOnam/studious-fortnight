@@ -1,0 +1,304 @@
+Q007821	RAG02	M	How would you chunk source code differently from prose?
+Q007822	RAG02	M	What breaks when you chunk a table row-by-row?
+Q007823	RAG02	M	How do you A/B test two chunking strategies?
+Q007824	RAG02	M	How do chunk size and overlap affect retrieval quality, and what numbers would you start with?
+Q007825	RAG02	M	Why does a multi-topic chunk embed poorly? What is happening in vector space?
+Q007826	RAG02	M	How does your chunking approach change for a corpus of tweets versus legal contracts?
+Q007827	RAG02	M	What metric tells you your chunks are too big?
+Q007828	RAG03	M	How does a bi-encoder embedding model work at retrieval time, and what is the key limitation of that architecture?
+Q007829	RAG04	M	Why can't you just use a cross-encoder for first-stage retrieval over 10M documents?
+Q007830	RAG03	M	What are hard negatives and why do they matter when training an embedding model?
+Q007831	RAG03	M	Why do embedding models handle negation badly?
+Q007832	RAG03	M	How would you choose an embedding model? What role does MTEB play, and what are its limits?
+Q007833	RAG03	H	Your domain is medical device manuals. How do you build an evaluation set for choosing an embedding model without labelers?
+Q007834	RAG03	M	When is a self-hosted open-weights embedding model clearly better than an API?
+Q007835	RAG03	M	What breaks when you change embedding models and forget to re-embed the corpus?
+Q007836	RAG03	E	When do you need approximate nearest neighbour search instead of exact search?
+Q007837	RAG03	M	How exactly would you measure the recall your ANN index achieves?
+Q007838	RAG03	H	Your p99 latency doubled after deleting 30% of vectors from the vector index. What happened?
+Q007839	RAG03	M	At what point does the ANN index's RAM cost push you to quantization?
+Q007840	RAG04	E	What is hybrid search, and why does pure vector search fail on some queries?
+Q007841	DROP	-	dup
+Q007842	RAG04	M	Give a query distribution where you would weight BM25 above dense retrieval.
+Q007843	RAG04	E	What is a reranker, and why add one after vector search?
+Q007844	RAG04	M	Your reranker adds 250ms of latency and the product manager objects. What are your options?
+Q007845	RAG04	M	Why not fine-tune the bi-encoder instead of adding a reranker?
+Q007846	RAG04	M	Where does ColBERT-style late interaction fit between bi-encoders and cross-encoder rerankers?
+Q007847	RAG03	M	Which distance metric should you use for embedding search (cosine, dot product, or Euclidean), and does the choice actually matter?
+Q007848	RAG03	M	If your index reports Euclidean distance but your embedding model is cosine-trained, when would you actually see a quality difference?
+Q007849	RAG04	M	How would you pick a relevance cutoff for a "no good answer found" path?
+Q007850	RAG04	E	What does BM25 actually compute? Walk through the formula's moving parts.
+Q007851	RAG04	M	How would you tune k1 and b in BM25 for a corpus of very short documents like support ticket titles?
+Q007852	RAG04	M	Why does BM25 need no training while a dense retriever does?
+Q007853	RAG02	M	How would you detect that a document parser silently corrupted documents, at scale, without reading every page?
+Q007854	RAG02	M	Which single automatic signal catches the most document parse failures per unit of effort?
+Q007855	RAG02	M	When is a flagged page worth re-parsing with a VLM versus dropping it from the corpus?
+Q007856	RAG02	E	What metadata would you attach to each chunk, and what does it buy you?
+Q007857	RAG02	M	Which chunk metadata fields would you embed into the chunk text versus keep as filterable fields, and why?
+Q007858	RAG02	M	How does storing the embedding model version in chunk metadata help during a model migration?
+Q007859	RAG03	M	Many embedding models tell you to prefix queries and documents differently, or to pass a task instruction. Why, and what goes wrong if you ignore it?
+Q007860	RAG03	H	How would you detect, from production data alone, that the index was built without the document prefix?
+Q007861	RAG03	H	If the embedding instruction lives only on the query side, what can you tune without reindexing, and how would you test it?
+Q007862	RAG02	M	Everyone focuses on retrieval algorithms. What is actually the hardest part of building RAG over enterprise documents?
+Q007863	RAG02	M	How do you measure document parsing quality at corpus scale?
+Q007864	RAG02	H	A financial table answers most user questions. Walk through how you would ingest it. When is VLM-per-page parsing worth the cost?
+Q007865	RAG02	M	Explain contextual retrieval. What problem does it solve, and how does late chunking relate?
+Q007866a	RAG02	H	How does prompt caching make contextual retrieval affordable at 10M chunks? Sketch the cost math.
+Q007866b	RAG04	M	Why does contextual BM25 matter, not just contextual embeddings?
+Q007867	RAG06	M	What is the re-indexing story for contextual retrieval when documents get edited?
+Q007868	RAG03	M	What are the tradeoffs of embedding dimensionality, and what are Matryoshka embeddings?
+Q007869	RAG03	M	Why must you renormalize Matryoshka embeddings after truncating them?
+Q007870	RAG03	H	How would you combine Matryoshka truncation with int8 or binary quantization?
+Q007871	RAG03	M	At what corpus scale does embedding dimensionality start dominating your infrastructure bill?
+Q007872	RAG03	M	When would you fine-tune your embedding model, and how would you actually do it?
+Q007873	RAG03	M	Why are hard negatives essential when fine-tuning an embedding model? What happens with only random negatives?
+Q007874	RAG03	M	Fine-tuned embedder versus fine-tuned reranker: how do you choose?
+Q007875	RAG03	H	How do you roll out a new embedding model against a 50M-chunk live index with zero downtime?
+Q007876	RAG03	M	Explain how HNSW works, and what the M and ef parameters control.
+Q007877	RAG03	M	Why does a highly selective metadata filter hurt HNSW specifically?
+Q007878	RAG03	M	What happens to search quality after deleting 40% of vectors from an HNSW index?
+Q007879	RAG03	H	How would you tune HNSW M and ef differently for a 99%-recall offline job versus a 20ms-p99 online API?
+Q007880	RAG03	M	Compare HNSW, IVF, and product quantization. What are the recall, latency, and memory tradeoffs?
+Q007881	RAG03	M	Why does IVF need retraining as data drifts but HNSW doesn't?
+Q007882	RAG03	H	Sketch the memory math for 1B 768-dimensional vectors under float32, int8, and PQ-96. When would binary quantization with rescoring beat PQ?
+Q007883	RAG03	M	How do you choose a vector database? Compare pgvector, dedicated vector stores, and search engines.
+Q007884	RAG03	M	What consistency bugs appear when the vector index is a separate system from the document store?
+Q007885	RAG03	M	Your queries use a tenant filter with 5% selectivity. How does that change your vector database choice?
+Q007886	RAG03	M	When is Elasticsearch's BM25 maturity worth its operational weight?
+Q007887	RAG03	M	How does metadata filtering interact with ANN indexes? Explain pre-filtering versus post-filtering.
+Q007888	DROP	-	dup
+Q007889	RAG03	H	Design indexing for 10k tenants where the largest has 10M vectors and the median has 5k. How does your vector DB decide between filtered ANN and brute force, and what would a cost model look at?
+Q007890	RAG04	M	How does reciprocal rank fusion work, and why fuse by rank instead of by score?
+Q007891	RAG04	M	When would weighted fusion beat RRF, and what data do you need to tune it?
+Q007892	RAG04	M	How does reciprocal rank fusion interact with multi-query expansion?
+Q007893	RAG04	M	If a document appears only in the dense result list, what is its ceiling in the RRF-fused ranking?
+Q007894	RAG04	M	Explain the retrieval-architecture spectrum: bi-encoders, cross-encoders, and late interaction (ColBERT).
+Q007895	RAG04	H	Why is ColBERT's MaxSim robust to document length in a way single-vector pooling isn't?
+Q007896	RAG04	H	Estimate storage for 10M chunks under bi-encoder, cross-encoder, and ColBERT architectures. Where would a "listwise" LLM reranker fit on this spectrum?
+Q007897	RAG04	M	What query understanding techniques would you apply before retrieval, and when is each worth it?
+Q007898	RAG04	M	How do you measure whether query rewriting is actually helping retrieval?
+Q007899	RAG04	M	When does HyDE hurt?
+Q007900	RAG04	H	How would you keep total pre-retrieval latency under 300ms while using query rewriting, HyDE, and similar techniques?
+Q007901	RAG04	M	How do you handle retrieval in a multi-turn conversation?
+Q007902	RAG04	H	How do you evaluate query rewriting quality offline? What does the golden set look like for multi-turn conversations?
+Q007903	RAG04	M	What goes wrong in multi-turn retrieval when the user abruptly changes topic?
+Q007904	RAG05	M	When does the agentic "model writes its own queries" pattern beat explicit query rewriting?
+Q007905	RAG01	M	How do you make a RAG system produce trustworthy citations?
+Q007906	RAG06	M	How do you catch a correct claim with the wrong citation attached in a RAG answer?
+Q007907	RAG06	H	What is the latency and cost of per-claim entailment checking for RAG citations, and how would you reduce it?
+Q007908	RAG01	M	Would you ever let a RAG model answer from parametric knowledge without a citation?
+Q007909	RAG06	M	How do you keep a RAG index fresh as documents change?
+Q007910	RAG06	H	In a RAG index, a document's chunk count changes between versions. Walk through the failure and your fix. How do you verify deletions actually propagated everywhere?
+Q007911	RAG06	M	Which data in a typical enterprise should bypass the RAG index entirely and be fetched live?
+Q007912	RAG02	M	How do you make tables and charts in documents actually retrievable and answerable in a RAG system?
+Q007913	RAG04	H	When would you route a numeric question to text-to-SQL instead of RAG, and how would you decide which path a query takes?
+Q007914	RAG02	M	How do you evaluate table extraction quality specifically?
+Q007915	RAG04	M	How would you implement sub-question decomposition in RAG, and when does it make things worse?
+Q007916	RAG04	M	How would you decide, at query time and cheaply, whether a question needs decomposition?
+Q007917	RAG04	M	How do you keep the final synthesis answering the original question rather than the sub-questions?
+Q007918	RAG04	M	What is learned sparse retrieval (SPLADE-style), and when would you pick it over BM25 or a dense retriever?
+Q007919	RAG04	H	SPLADE's expansion lengthens postings lists. What would you actually tune to keep query latency acceptable?
+Q007920	RAG04	M	Would you fuse SPLADE with dense retrieval, or does the expansion make dense retrieval redundant?
+Q007921	RAG02	M	Your RAG corpus is full of near-duplicates: document versions, boilerplate, quoted email threads. How do you handle deduplication?
+Q007922	RAG04	M	How would you pick the MMR lambda without hand-tuning it on intuition?
+Q007923	RAG04	M	When is returning duplicate content actually the right behaviour in retrieval?
+Q007924	RAG04	M	How do you handle time in retrieval: "latest" queries, superseded documents, and questions about the past?
+Q007925	RAG04	H	How would you pick the time-decay constant tau for a given corpus rather than guessing?
+Q007926	RAG04	M	A user asks "what is our parental leave policy" and there are three versions of the document. What exactly should your retriever return?
+Q007927	RAG02	M	How does retrieval over a codebase differ from retrieval over prose?
+Q007928	RAG05	M	When does an embedding index beat an agent with grep over a code repository?
+Q007929	RAG04	H	How would you evaluate code retrieval, given that "the relevant chunk" is often a set of files rather than one?
+Q007930	RAG04	M	Your corpus is multilingual and users query in several languages. What breaks, and how do you fix it?
+Q007931	RAG04	M	In multilingual retrieval, why translate the query rather than the corpus, and when would you flip that decision?
+Q007932	RAG06	H	How would you build an evaluation set for cross-lingual retrieval without native speakers for every language?
+Q007933	RAG05	M	Explain self-RAG and corrective RAG. Do they earn their complexity in production?
+Q007934	RAG05	M	In corrective RAG, what is the right fallback when the grader says every retrieved document is irrelevant, in an enterprise setting with no web search?
+Q007935	RAG05	M	How would you keep a retrieval grading loop from doubling your p95 latency?
+Q007936	RAG05	H	Some questions are answered by your data warehouse, some by documents, and some need both. How do you design retrieval across structured and unstructured data?
+Q007937	RAG06	M	How do you evaluate text-to-SQL when many different queries return the same correct result?
+Q007938	RAG06	H	A mixed question needs a warehouse figure and a reason from a ticket the user may not be allowed to see. Where is access enforced on each path?
+Q007939	RAG05	M	What is GraphRAG, and when is the knowledge-graph structure worth the complexity?
+Q007940	RAG05	M	How would you handle entity resolution errors polluting the knowledge graph in GraphRAG?
+Q007941a	RAG05	H	Estimate indexing cost for GraphRAG versus standard RAG on a 1M-chunk corpus.
+Q007941b	RAG05	M	Why can't plain top-k retrieval ever answer "summarise the main themes of this corpus"?
+Q007942	RAG05	M	Compare single-shot RAG with agentic RAG. When does retrieval-as-a-tool win?
+Q007943	RAG06	H	How do you evaluate an agentic RAG system where every run takes a different trajectory?
+Q007944	RAG05	M	What guardrails cap cost when the model controls how many searches it runs in agentic RAG?
+Q007945	GA02	M	How does MCP change how you would expose retrieval tools to the model?
+Q007946	RAG04	M	Your product has several distinct corpora: docs, tickets, code, and CRM. How do you route queries?
+Q007947	RAG04	M	How do you build the evaluation set for query routing, and what accuracy is acceptable?
+Q007948	RAG05	H	A query needs docs and tickets joined together. How does each retrieval architecture cope?
+Q007949	RAG04	M	How do you make relevance scores comparable when fusing results across corpora?
+Q007950	MS04	H	Design retrieval for a multi-tenant SaaS product where users have different document permissions.
+Q007951	MS04	H	In a permission-aware retrieval system, a document's sharing settings change every few minutes. How does your design keep up?
+Q007952	RAG05	H	Why does keying a semantic cache by user break its hit rate, and what is the middle ground?
+Q007953	GA05	H	How would you red-team a multi-tenant permission-aware RAG system before launch?
+Q007954	RAG04	M	What retrieval metrics would you track (recall@k, MRR, nDCG), and what does each actually tell you?
+Q007955	RAG04	M	Why does recall@k matter more than precision@k for RAG specifically?
+Q007956	RAG06	H	Your recall@100 is 95% but recall@5 after reranking is 60%. Where is the bug?
+Q007957	RAG06	H	How do retrieval metrics mislead when your golden set has incomplete relevance labels?
+Q007958	RAG06	M	How do you evaluate the generation side of RAG: faithfulness, relevance, and citation quality?
+Q007959	RAG06	M	Your RAG system's faithfulness score is high but users say the answers are wrong. What is happening?
+Q007960	RAG06	M	How do you validate your LLM judge against humans, and what agreement is good enough?
+Q007961	RAG06	M	How do you build a golden evaluation set for RAG without months of labelling?
+Q007962	RAG06	H	Why do synthetic queries overestimate retrieval quality, and how exactly do you counter it?
+Q007963	RAG06	H	Your chunking change invalidated all chunk-ID labels in the RAG golden set. How should the golden set have been designed?
+Q007964	RAG06	H	How big does a RAG evaluation set need to be to detect a 5-point recall difference?
+Q007965	RAG06	M	What must be in your traces to make triaging a wrong RAG answer take minutes, not hours?
+Q007966	RAG06	M	In a RAG system, the gold chunk was retrieved at rank 3 and the model still ignored it. What are the top three hypotheses?
+Q007967	RAG06	M	How do you decide whether one bad RAG answer warrants pipeline changes?
+Q007968	RAG06	M	What are the top failure modes of production RAG systems?
+Q007969	RAG06	M	Which three of the top production RAG failure modes would you build detection for first on a new system?
+Q007970	RAG06	M	How does prompt injection via retrieved documents work, and what actually mitigates it?
+Q007971	GA04	M	Break down the latency and cost budget of a RAG query. What do you optimise first?
+Q007972a	GA04	H	Your RAG system's p95 latency is 4s and product wants 1.5s. Walk through the cuts you would make, in order.
+Q007972b	GA04	H	How does prompt caching interact with per-user ACL'd context?
+Q007973	GA04	M	At what QPS does self-hosting the reranker beat the API?
+Q007974	RAG05	M	What caching strategies apply to RAG systems, and what are the invalidation traps?
+Q007975	RAG05	M	How do you pick the similarity threshold for a semantic cache? What experiment would you run?
+Q007976	RAG06	M	A customer reports seeing an answer referencing a document they can't access. Which cache do you suspect and why?
+Q007977a	RAG05	H	How exactly does prompt caching shift the crossover corpus size between long-context stuffing and RAG? Sketch the cost math.
+Q007977b	RAG05	H	If effective context length keeps improving, which RAG components die first and which never do?
+Q007978	RAG05	M	How do you decide empirically the retrieve-generously operating point (how many chunks to retrieve)?
+Q007979	RAG03	H	A better embedding model ships and you have 400M chunks indexed. How would you decide whether the new model is worth the reindex, concretely?
+Q007980	RAG03	H	During an embedding model migration, what breaks if the dual-write window has a gap and some documents are only in the old index?
+Q007981	GA06	H	When would you skip parsing entirely and retrieve over page images with a visual retriever like ColPali?
+Q007982	GA06	H	How would you cut the per-page vector count in a ColPali-style retriever without losing the benefit of late interaction?
+Q007983	GA06	H	How do you produce a precise citation when your retrieval unit is a page image?
+Q007984	RAG06	H	Design a retrieval evaluation harness the team will actually use. What runs, when, and what blocks a merge?
+Q007985	RAG06	M	Your LLM judge and your human labels agree only 70% of the time. What do you do?
+Q007986	RAG06	H	How do you keep the golden set from overfitting as engineers tune against it?
+Q007987	RAG06	H	You have thumbs-up/down and click logs from a live RAG product. How do you turn that into retrieval improvements?
+Q007988	ML08	H	Why does interleaving reach significance faster than an A/B test on the same traffic?
+Q007989	RAG06	H	How would you avoid a feedback loop where the ranker only ever learns from documents it already ranks highly?
+Q007990	RAG03	H	Your vector index will not fit on one machine. How do you shard it, and what breaks?
+Q007991	RAG03	H	With 20 shards and a scatter-gather query, how do you keep p99 from being dominated by the slowest shard?
+Q007992	RAG03	H	In a sharded vector search, how much do you over-fetch per shard, and how would you determine that number?
+Q007993	GA05	H	Anyone can add documents to your RAG corpus. How do you stop an attacker planting a document that hijacks the assistant?
+Q007994	GA05	H	Which defence against corpus-poisoning documents survives an attacker who knows exactly what defences you have?
+Q007995	GA05	H	Where would you draw the line on what an agent may do with retrieved content in its context?
+Q007996	GA02	H	You are exposing retrieval as a tool to an agent over MCP. How does designing a tool interface differ from designing a retrieval API?
+Q007997	GA02	H	How would you propagate and verify end-user identity through an MCP tool call to the retrieval filter?
+Q007998	GA02	H	How do you evaluate a retrieval tool, given that the metric is now "did the agent's task succeed" rather than recall@k?
+Q007999	RAG04	H	Teams increasingly rerank with an LLM rather than a cross-encoder. How do pointwise, pairwise, and listwise LLM reranking work, and when is the cost justified?
+Q008000	RAG04	H	How would you measure position bias in a listwise LLM reranker on your own data?
+Q008001	RAG04	H	How many labelled pairs do you need to distil an LLM reranker into a cross-encoder, and how do you check the student did not simply inherit the teacher's biases?
+Q008002	RAG05	H	A teammate wants to delete the vector index and give the agent grep, file reads, and keyword search instead, the way coding agents work. Where are they right, and where does it break outside code?
+Q008003	RAG06	H	How would you design the evaluation that decides whether the dense retrieval leg stays in an agentic search setup?
+Q008004	RAG05	M	What does an agent need in a search tool's results to reformulate well after a miss?
+Q008005	RAG06	H	Your assistant must say "I don't know" when the corpus lacks the answer. How do you decide when to abstain, and how do you set the threshold?
+Q008006	RAG06	H	How would you build near-miss unanswerable questions for evaluation without contaminating the corpus?
+Q008007	RAG06	M	The RAG assistant's abstain rate doubled overnight with no deploy. What are your first three checks?
+Q008009	FT05	E	When would you fine-tune a model instead of using prompting or RAG?
+Q008010	FT05	M	Your PM says "fine-tune it on our docs so it knows our product." How do you respond?
+Q008011	FT05	M	What evaluation would you build before deciding whether to fine-tune?
+Q008012	FT05	M	When would you do both RAG and fine-tuning?
+Q008013	FT01	E	What actually happens during supervised fine-tuning? What role do chat templates and special tokens play?
+Q008014	FT01	M	Your fine-tuned model never stops generating. What are the top three suspects?
+Q008015	FT01	M	Why can training a base versus an instruct checkpoint give different results on the same data?
+Q008016	FT01	E	What is loss masking in SFT, and why do you mask the prompt tokens?
+Q008017	FT01	M	How would you verify loss masking is correct before launching an SFT run?
+Q008018	FT01	M	In a multi-turn SFT dataset, would you train on all assistant turns or only the final one? What is the tradeoff?
+Q008019	FT01	E	How much data do you need to fine-tune a model? Quality versus quantity?
+Q008020	FT01	M	You have 100k scraped examples of mixed quality. What is your pipeline before training?
+Q008021	FT01	M	How would you detect that near-duplicates in the fine-tuning data are hurting you?
+Q008022	FT02	M	Full fine-tuning versus parameter-efficient fine-tuning: how do you choose?
+Q008023	FT02	M	How would you detect that LoRA is underfitting versus the data being the problem?
+Q008024	FT02	M	Your LoRA model matches full fine-tuning on the target task. Is there any reason to still prefer full fine-tuning?
+Q008025	FT02	M	Explain how LoRA works: the math, and what r and alpha mean.
+Q008026	FT02	M	In LoRA, why initialize B to zero rather than initializing both matrices randomly?
+Q008027	FT02	M	If doubling the LoRA rank r doesn't improve quality, what does that tell you?
+Q008028	FT02	M	What breaks if LoRA alpha is way too large relative to r?
+Q008029	FT01	E	What is catastrophic forgetting in fine-tuning, and how do you mitigate it?
+Q008030	FT01	M	How would you choose the mixing ratio of general data to task data when fine-tuning?
+Q008031	FT01	M	Your task metric improves after fine-tuning but users report the model got "dumber." What is your diagnostic plan?
+Q008032	FT01	E	What are the key hyperparameters for fine-tuning, and what are sensible starting values?
+Q008033	FT02	M	Why do LoRA runs tolerate roughly 10x higher learning rate than full fine-tuning?
+Q008034	FT01	M	Your fine-tuning loss curve has a spike at step 50 and never recovers. What do you check?
+Q008035	FT01	M	How do you tell that a fine-tune is overfitting? What are the signals?
+Q008036	FT01	H	Your eval loss rises after epoch 1 but human raters prefer the epoch-3 checkpoint. Which do you ship and why?
+Q008037	FT01	M	How do duplicated training examples masquerade as extra epochs?
+Q008038	FT03	M	Walk through the classic RLHF pipeline end to end.
+Q008039	FT03	M	Why use pairwise preferences instead of absolute ratings in RLHF?
+Q008040	FT03	M	What breaks if you skip SFT and run PPO on the base model?
+Q008041	FT03	M	Where does DPO short-circuit the RLHF pipeline?
+Q008042	FT01	M	Would you fine-tune a base model or an instruct model? How does that choice change your data and your recipe?
+Q008043	FT01	H	If you fine-tune an instruct model and its multi-turn behaviour degrades, how would you detect that before shipping?
+Q008044	FT01	H	What would you do differently if the base model and instruct model have different tokenizers?
+Q008045	FT01	M	Why do you deduplicate fine-tuning data, and how would you actually do it?
+Q008046	FT01	M	Why is MinHash preferred over pairwise cosine similarity for deduplication at scale?
+Q008047	FT01	M	How would you pick the Jaccard threshold for near-duplicate removal rather than just taking 0.8 on faith?
+Q008048	FT03	M	What is the difference between an outcome reward model and a process reward model, and when do you need each?
+Q008049	FT03	H	How would you generate process reward model labels without human annotators, and what bias does that introduce?
+Q008050	FT03	H	Why might a process reward model used as a best-of-N reranker degrade as N grows?
+Q008051	FT02	M	Which modules do you target with LoRA, how do you pick the rank, and what are the actual memory savings?
+Q008052	FT02	H	Why does low-rank-many-modules beat high-rank-few-modules at equal parameter count in LoRA?
+Q008053	FT02	M	When would you also train the embedding layer when using LoRA?
+Q008054	FT02	M	How does adapter merging work, and how do multi-LoRA serving and hot-swapping work in production?
+Q008055	FT02	H	Why is merging a LoRA adapter into a 4-bit quantized base model problematic?
+Q008056	FT02	H	How would you design serving for 500 tenant-specific fine-tunes with skewed traffic?
+Q008057	FT02	M	Explain QLoRA: NF4, double quantization, and paged optimizers. What do you give up?
+Q008058	FT02	H	Why are normal-distribution quantiles the right levels for weight quantization in NF4?
+Q008059	FT02	H	Your QLoRA adapter evaluates worse when served on the fp16 base model. Why, and what would you do?
+Q008060	FT03	M	How do you train a reward model? Explain the preference data and the Bradley-Terry loss.
+Q008061	FT03	M	Why sample reward model training responses from the SFT model rather than another model?
+Q008062	FT03	H	How would you detect and correct length bias in a reward model?
+Q008063	FT03	M	Explain PPO in the RLHF context. Why is there a KL penalty against a reference model?
+Q008064	FT03	H	What do you monitor during a PPO run to catch failure early?
+Q008065	FT03	M	Why does PPO clip probability ratios instead of just taking a bigger learning rate?
+Q008066	FT03	M	What is reward hacking? Give concrete examples and mitigations.
+Q008067	FT03	H	Reward is climbing steadily during your RLHF run. What evidence distinguishes genuine improvement from reward hacking?
+Q008068	FT03	H	How would you harden a unit-test reward against gaming?
+Q008069	FT03	M	Explain DPO. What is the key insight that lets it skip the reward model and the RL loop?
+Q008070	FT03	M	In DPO, what role does beta play and what happens at very small or very large values?
+Q008071	FT03	H	In the DPO derivation, why does the partition function term cancel, and why does that matter?
+Q008072	FT03	H	What is lost by never sampling from the policy during DPO training?
+Q008073	FT03	M	DPO versus PPO-style RLHF: when would you choose each?
+Q008074	FT03	H	Why does off-policy data limit DPO's ceiling?
+Q008075	FT03	H	Design an iterative DPO loop. Where does its extra signal come from?
+Q008076	FT03	H	When would best-of-n sampling with a reward model beat both DPO and PPO?
+Q008077	FT03	M	Give one-liners on IPO, KTO, and ORPO: what problem does each solve, and when would you pick it?
+Q008078	FT03	H	Why does DPO's implicit reward margin grow unboundedly and why is that bad?
+Q008079	FT03	M	You have 500k thumbs-up/down events from production. Which preference-tuning method would you use and why?
+Q008080	FT01	M	How do you evaluate a model before and after fine-tuning?
+Q008081	FT01	M	Your fine-tune improves the task metric by 15% but drops an internal instruction-following eval by 5%. Do you ship it?
+Q008082	LLM07	M	How do you make LLM-as-judge evaluations trustworthy enough to gate releases?
+Q008083	FT01	M	What is the difference between continued pretraining and SFT? When do you need domain knowledge injection?
+Q008084	FT01	H	Why does SFT inject knowledge so poorly compared to continued pretraining?
+Q008085	FT01	H	Design the data mixture for adapting an 8B model to clinical notes. What fractions and why?
+Q008086	FT01	H	How would you check that continued pretraining actually added knowledge rather than style?
+Q008087	FT04	M	How do you generate synthetic training data with an LLM, and what are the pitfalls?
+Q008088	FT04	M	How would you measure whether a synthetic dataset is diverse enough?
+Q008089	FT04	H	Why does rejection sampling change the quality economics of synthetic data for math and code but not for creative writing?
+Q008090	FT04	M	Explain distillation for LLMs, black-box versus logit distillation, and the licensing caveats.
+Q008091	FT04	M	In distillation, why do soft targets carry more information than sampled text?
+Q008092	FT04	H	Your student and teacher have different tokenizers. What breaks in logit distillation and what are the workarounds?
+Q008093	FT02	M	Do the GPU memory math: why can't you full-fine-tune a 7B model on a single 24 GB GPU with Adam?
+Q008094	FT02	H	Where does 8-bit Adam save memory and what is the risk?
+Q008095	FT02	H	Redo the fine-tuning memory math for LoRA at r=16. What is now the dominant memory term?
+Q008096	FT02	H	Why keep fp32 master weights at all in bf16 training?
+Q008097	FT01	H	You are fine-tuning on a domain full of jargon and someone suggests adding new tokens to the tokenizer. What can go wrong, and how do you handle vocabulary changes correctly?
+Q008098	FT01	H	How would you verify after training that newly added tokens actually learned anything?
+Q008099	FT01	H	What breaks if you add tokens to a model whose embeddings are tied and quantized to 4-bit?
+Q008100	FT02	H	DoRA, rsLoRA, and LoRA+ all claim to improve on vanilla LoRA. What does each actually change, and when would you reach for them?
+Q008101	FT02	H	Why does DoRA still merge cleanly into the base weights at inference?
+Q008102	FT02	M	If DoRA beats LoRA on your eval by 0.4 points but costs 30% more training time, how do you decide?
+Q008103	FT04	M	Explain model merging: task arithmetic, TIES, DARE, and SLERP. When does merging actually work?
+Q008104	FT04	H	Why does model merging fail across independently pretrained models but work across fine-tunes of one base?
+Q008105	FT04	H	How would you merge three LoRAs of different ranks trained on the same base model?
+Q008106	FT01	H	You have 500k instruction examples of mixed quality and compute budget to train on 20k. How do you choose the 20k?
+Q008107	FT01	H	When selecting instruction data with an LLM judge, how would you handle the case where your judge model and your target model share a base, so the judge systematically prefers its own style?
+Q008108	FT01	H	What changes in instruction data selection if the 500k examples come from 4 different sources with very different quality profiles?
+Q008109	FT03	M	Walk through actually collecting preference data. What are the logistics, and where does it go wrong?
+Q008110	FT03	H	Your vendor delivers 50k preference pairs with a Krippendorff's alpha of 0.45. What do you do?
+Q008111	FT03	H	How would you design preference data collection differently if the task is code review rather than open-ended chat?
+Q008112	FT03	H	How do you evaluate a reward model? Why is held-out pairwise accuracy not enough?
+Q008113	FT03	H	How would you decide when to retrain the reward model during a long RLHF run?
+Q008114	FT03	H	What would a best-of-N curve that is flat from N=1 tell you about a reward model?
+Q008115	FT01	H	You are fine-tuning a reasoning model that writes a thinking block before its final answer. How do you build the SFT data, and what breaks if you train on final answers only?
+Q008116	FT01	H	Your domain experts gave you answer-only labels. How do you get reasoning traces without inventing reasoning the experts never used?
+Q008117	FT01	H	How would you shorten a reasoning model's thinking without losing accuracy?
+Q008118	FT02	H	Why does LoRA hold up so well for RL fine-tuning, even at very low rank, when the same rank can underfit a large SFT run?
+Q008119	FT02	H	If RL needs so little capacity, why do labs still run full-parameter RL?
+Q008120	FT02	H	How would you test whether an SFT stage is capacity-limited by its LoRA rank rather than by data?
+Q008121	LLM04	H	Explain gradient accumulation, gradient checkpointing, and ZeRO/FSDP, and how you would combine them for a real training run.

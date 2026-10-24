@@ -1,0 +1,300 @@
+Q003340	LLM04	M	What is model parallelism, and how is it used in LLM pre-training?
+Q003341	LLM04	E	What is the significance of self-supervised learning in LLM pretraining?
+Q003342	LLM01	E	What is the role of self-attention in the Transformer model, and why is it called "self-attention"?
+Q003343	LLM01	E	What is the purpose of the encoder in a transformer model?
+Q003344	LLM01	E	What is the purpose of the decoder in a transformer model?
+Q003345	LLM01	M	How does the encoder-decoder structure work at a high level in the Transformer model?
+Q003346	LLM01	M	What is the purpose of scaling in the self-attention mechanism in the Transformer model?
+Q003347	LLM01	M	Why does the Transformer model use multiple self-attention heads instead of a single self-attention head?
+Q003348	LLM01	M	How are the outputs of multiple heads combined and projected back in multi-head attention in the Transformer model?
+Q003349	LLM01	M	How does masked self-attention differ from regular self-attention, and where is it used in a Transformer?
+Q003350	DROP	-	dup
+Q003351	LLM01	M	What is cross-attention in the Transformer decoder, and how does it differ from self-attention in the encoder?
+Q003352	LLM01	E	What is the softmax function, and where is it applied in the Transformer model?
+Q003353	LLM01	E	What is the purpose of residual (skip) connections in Transformer model layers?
+Q003354	LLM01	E	Why is layer normalization used, and where is it applied in a Transformer?
+Q003355	LLM04	M	What is cross-entropy loss, and how is it applied during transformer training?
+Q003356	LLM01	M	What are the fundamental limitations of the Transformer model?
+Q003357	LLM01	M	How do transformers address the limitations of traditional deep learning models like CNNs and RNNs?
+Q003358	LLM01	M	How does the Transformer model address the vanishing gradient problem?
+Q003359	LLM01	M	What is the purpose of the position-wise feed-forward sublayer in the Transformer model?
+Q003360	LLM06	E	Can you briefly explain the difference between LLM training and LLM inference?
+Q003361	LLM06	E	What is latency in LLM inference, and why is it important?
+Q003362	LLM06	E	What is batch inference, and how does it differ from single-query inference?
+Q003363	LLM06	M	How does batching generally help with LLM inference efficiency?
+Q003364	LLM06	M	How does quantization affect inference speed and memory requirements?
+Q003365	LLM06	M	How do you handle the large memory requirements of the KV cache in LLM inference?
+Q003366	LLM02	E	After tokenization, how are tokens converted into embeddings in the Transformer model?
+Q003367	LLM03	M	How can techniques like mixture-of-experts (MoE) optimize inference efficiency?
+Q003368	LLM05	E	What are the different decoding strategies in LLMs?
+Q003369	LLM05	M	How does Beam Search improve upon Greedy Search, and what is the role of the beam width parameter?
+Q003370	LLM05	E	When you set the temperature to 0.0, which decoding strategy are you using?
+Q003371	LLM05	M	How is Beam Search fundamentally different from a Breadth-First Search (BFS) or Depth-First Search (DFS)?
+Q003372	LLM05	E	What is the role of the context window during LLM inference?
+Q003373	LLM05	E	What is the purpose of temperature in LLM inference, and how does it affect the output?
+Q003374	LLM05	E	What is autoregressive generation in the context of LLMs?
+Q003375	LLM03	H	Would you prefer diffusion language models (DLMs) or autoregressive LLMs for latency-sensitive applications, and why?
+Q003376	LLM05	M	What is speculative decoding, and when would you use it?
+Q003377	LLM06	H	What are the challenges in performing distributed inference across multiple GPUs?
+Q003378	LLM06	H	How would you design a scalable LLM inference system for real-time applications?
+Q003379	LLM06	M	What is continuous batching, and how does it differ from static batching?
+Q003380	LLM06	E	What is mixed precision (e.g., FP16), and why is it used during inference?
+Q003381	LLM06	H	What are the various bottlenecks in a typical LLM inference pipeline when running on a modern GPU?
+Q003382	LLM06	M	How do you measure LLM inference performance?
+Q003383	LLM06	E	What are the different LLM inference engines available?
+Q003384	LLM06	M	What are the challenges in LLM inference?
+Q003385	LLM06	M	What are the possible options for accelerating LLM inference?
+Q003386	GA01	E	What is Chain-of-Thought (CoT) prompting, and when is it most useful?
+Q003387	GA01	E	What is prompt engineering, and why is it important for LLMs?
+Q003388	GA01	E	What is the difference between zero-shot and few-shot prompting?
+Q003389	GA01	M	What are the different approaches for choosing examples for few-shot prompting?
+Q003390	GA01	M	Why is context length important when designing prompts for LLMs?
+Q003391	GA01	E	What is a system prompt, and how does it differ from a user prompt?
+Q003392	GA01	M	What is In-Context Learning (ICL), and how is few-shot prompting related?
+Q003393	GA01	M	What is self-consistency prompting, and how does it improve reasoning?
+Q003394	DROP	-	dup
+Q003395	GA02	M	How would you structure a prompt to ensure the LLM output is in a specific format, like JSON?
+Q003396	LLM04	E	What are the different phases in LLM development?
+Q003397	FT01	E	What are the different types of LLM fine-tuning?
+Q003398	FT01	E	What role does instruction tuning play in improving an LLM's usability?
+Q003399	FT03	E	What role does alignment tuning play in improving an LLM's usability?
+Q003400	FT01	M	How do you prevent overfitting during fine-tuning?
+Q003401	FT01	M	What is catastrophic forgetting, and why is it a concern in fine-tuning?
+Q003402	FT01	M	What are the strengths and limitations of full fine-tuning?
+Q003403	FT05	M	When might prompt engineering be preferred over task-specific fine-tuning?
+Q003404	FT05	M	When should you use fine-tuning vs. RAG?
+Q003405	RAG05	M	Is RAG still relevant in the era of long context LLMs?
+Q003406	RAG01	M	What are the fundamental challenges of RAG systems?
+Q003407	RAG01	E	Can you give examples of real-world applications where RAG systems have demonstrated value?
+Q003408	RAG06	H	Why might a RAG system with perfect Context Recall still fail to produce accurate responses? How does the Faithfulness metric help diagnose this issue?
+Q003409	RAG06	M	Explain how hallucinations in LLMs specifically impact the Faithfulness metric. What techniques could you implement to improve the Faithfulness metric score?
+Q003410	RAG06	M	How does Response Relevancy differ from Context Relevancy, and why do you need both metrics to properly evaluate a RAG system?
+Q003411	RAG06	M	How does the Response Relevancy metric help evaluate whether a RAG generator is addressing the user's query effectively?
+Q003412	RAG06	M	When evaluating RAG generator output, what are the risks of relying solely on response relevancy? How can including the faithfulness metric improve reliability?
+Q003413	RAG02	M	How do you choose the chunk size for a RAG system?
+Q003414	RAG02	M	What are the potential consequences of having chunks that are too large versus chunks that are too small?
+Q003415	RAG01	M	What are the key considerations when choosing an LLM for a RAG system?
+Q003416	RAG01	M	How is the prompt provided to the LLM in a RAG system different from a standard, non-RAG prompt?
+Q003417	RAG01	M	What are the key hyperparameters in a RAG pipeline?
+Q003418	RAG01	M	How do you choose values for various LLM inference hyperparameters in a RAG system?
+Q003419	RAG06	M	What happens with a weak generator LLM in a RAG system?
+Q003420	RAG04	M	How do you handle ambiguous or vague user queries in RAG systems?
+Q003421	RAG04	M	What are the different query transformation techniques that enhance user queries in RAG?
+Q003422	RAG04	M	What are the pros and cons of query transformation techniques in RAG?
+Q003423	RAG04	H	To minimize RAG system latency, which pre-retrieval enhancement technique would you choose?
+Q003424	RAG02	M	What are the different chunk enhancement techniques in RAG?
+Q003425	RAG02	M	What are the pros and cons of chunk enhancement techniques in RAG?
+Q003426	RAG02	E	What are some common chunking methods used in RAG?
+Q003427	RAG02	M	What are the criteria to choose a specific chunking method in RAG?
+Q003428	RAG02	M	How does the chunking strategy differ when dealing with structured documents (like PDFs with tables and figures) versus plain text documents?
+Q003429	RAG06	M	What are the possible reasons for the poor performance of a RAG retriever?
+Q003430	RAG06	M	What happens with a weak retriever in Retrieval-Augmented Generation (RAG) systems?
+Q003431	RAG06	M	What are effective strategies to reduce latency in RAG systems?
+Q003432	RAG01	M	How does RAG help reduce hallucinations in LLM-generated responses?
+Q003433	RAG04	E	What are the common retrieval approaches used in RAG systems?
+Q003434	RAG06	M	What are some common challenges in RAG retrieval?
+Q003435	RAG04	M	What are the key metrics for evaluating retrieval quality in RAG?
+Q003436	RAG03	E	What are embeddings, and how are they utilized in RAG retrieval?
+Q003437	RAG03	M	What are the key considerations when choosing an embedding model for a RAG system?
+Q003438	RAG03	E	What is a vector database, and how is it utilized in RAG retrieval?
+Q003439	RAG03	M	What are the typical distance metrics used for similarity search in vector databases, and why are they chosen?
+Q003440	RAG04	M	How does hybrid search work in the context of RAG retrieval?
+Q003441	RAG04	M	When do you opt for hybrid search instead of semantic search?
+Q003442	RAG04	H	How do you balance relevance and diversity when retrieving document chunks for RAG?
+Q003443	RAG04	M	How do sparse embeddings differ from dense embeddings in terms of keyword matching and retrieval interpretability?
+Q003444	RAG03	M	How can fine-tuning embedding models improve the retriever's performance in RAG?
+Q003445	RAG03	H	What advantages does quantization offer over dimensionality reduction for scaling embeddings?
+Q003446	RAG04	M	How does re-ranking differ from the initial retrieval process in RAG?
+Q003447	RAG04	M	What are the different types of re-ranker models that can be used in RAG?
+Q003448	RAG04	M	Why is the cross-encoder typically used as the re-ranker rather than the bi-encoder?
+Q003449	RAG04	M	A RAG system retrieves 20 candidate document chunks but can only fit 5 in the LLM's context window. Without re-ranking, how might this limitation affect response quality, and what specific problems would a re-ranker solve?
+Q003450	RAG04	M	Describe a scenario where BM25 retrieval might return relevant chunks but in poor ranking order. How would a neural re-ranker specifically address this limitation?
+Q003451	RAG04	H	If your RAG system serves both simple factual queries and complex analytical questions, how would you decide when to bypass the re-ranker for efficiency while maintaining quality?
+Q003452	RAG04	M	Describe the vector pre-computation and storage strategy in a bi-encoder + cross-encoder pipeline. Why can't cross-encoders pre-compute text representations like bi-encoders can?
+Q003453	RAG04	E	Why is re-ranking important in the RAG pipeline after initial document retrieval?
+Q003454	RAG02	E	What is the purpose of overlap during chunking in a RAG pipeline?
+Q003455	RAG03	E	What role does cosine similarity play in relevant chunk retrieval within a RAG pipeline?
+Q003456	RAG04	M	Compare the noise reduction capabilities of re-rankers versus simply increasing the similarity threshold in initial retrieval. When would each approach be more appropriate?
+Q003457	RAG04	M	What challenges do re-rankers face regarding computational overhead and latency?
+Q003458	RAG04	M	How would you evaluate the effectiveness of a reranker in a RAG system? Which metrics (e.g., MRR, MAP, NDCG) would you prioritize and why?
+Q003459	RAG04	M	Explain the difference between Precision@k and Recall@k in the context of RAG. When might you prefer one over the other?
+Q003460	RAG04	M	Why is MRR unsuitable when there are multiple relevant chunks per query, and how does MAP address this limitation?
+Q003461	RAG04	M	How do you manually calculate MAP@5 (Mean Average Precision at 5) for a retrieval result? What does MAP reveal about the retrieval system that raw Precision does not?
+Q003462	RAG04	M	Suppose your RAG retriever gets perfect Recall@10 but low Precision@10. What problems could this cause for the downstream generator?
+Q003463	RAG04	M	How would the value of NDCG@k change if all relevant chunks are retrieved but in the reverse order (least to most relevant)?
+Q003464	RAG06	M	What is the significance of Context Precision@K in evaluating a RAG retriever, and how does it differ from standard Precision@k in traditional information retrieval?
+Q003465	RAG06	H	Why does Context Precision@K use a weighted sum approach with relevance indicators, and how does this better reflect RAG retriever performance?
+Q003466	RAG06	M	Given a retrieval result where relevant chunks appear at positions 2, 4, 6, and 8 out of 10 total chunks, manually calculate the Context Precision@10. What does this score tell us about the retriever's ranking ability?
+Q003467	RAG06	M	A RAG system achieves Context Precision@5 = 0.8. What are the possible scenarios that could lead to this score?
+Q003468	RAG06	M	Compare Context Recall with traditional information retrieval recall. Why is Context Recall computed using "ground truth claims" rather than simply counting relevant documents?
+Q003469	RAG06	M	What does context precision measure in a RAG retriever, and how does it differ from context recall?
+Q003470	RAG06	M	If your retriever achieves high context precision but low context recall, what types of user queries would likely suffer most?
+Q003471	RAG06	M	In what situations would you prioritize Context Precision over Context Recall in a RAG retriever, and how would this impact the generator's performance?
+Q003472	RAG06	H	Describe a scenario where a RAG system might achieve high Context Recall but still produce poor answers. What complementary metrics would you use alongside Context Recall to get a complete picture of retriever performance?
+Q003473	RAG06	M	If your RAG retriever consistently shows Context Recall scores below 0.6, what are the three potential root causes?
+Q003474	RAG06	H	Why is it important for RAG systems to optimize both context precision and context recall simultaneously? What trade-offs might occur?
+Q003475	RAG06	H	Explain why Context Relevancy is considered a "reference-free" metric while Context Precision and Context Recall are "reference-dependent." When would you prefer using Context Relevancy over the other two metrics?
+Q003476	RAG06	M	Describe a scenario where a RAG retriever achieves high Context Relevancy but low Context Precision. What does this imply about the retriever's performance?
+Q003477	RAG06	M	Suppose a RAG retriever retrieves all relevant chunks but includes many irrelevant ones, leading to low Context Relevancy. How would you improve the retriever to address this issue?
+Q003478	RAG06	M	How does the Faithfulness metric assess the quality of a RAG generator?
+Q003479	RAG06	M	Distinguish between Faithfulness and Context Precision metrics in RAG evaluation. Why might a system have high Context Precision but low Faithfulness, and what would this indicate about your pipeline?
+Q003480	DROP	-	dup
+Q003481	FT02	M	How do you choose between LoRA (low-rank decomposition) and full fine-tuning?
+Q003482	GA03	M	How do you choose between ReAct and Plan-and-Execute agents?
+Q003483	DROP	-	notq
+Q003484	LLM01	E	What is the functional difference between an encoder and a decoder in the Transformer?
+Q003485	LLM05	M	In autoregressive generation, is the next input the sampled token id or the probability distribution?
+Q003486	DL05	H	Compare DDPM and Flow Matching: what are their sampling efficiency, advantages, and disadvantages?
+Q003487	DL02	M	When does label smoothing help?
+Q003488	DROP	-	notq
+Q003489	DROP	-	notq
+Q003490	FT03	H	How do you choose between on-policy methods, off-policy methods, and DPO?
+Q003491	FT03	M	What are the differences in principle between PPO, GRPO, and DPO?
+Q003492	FT03	M	What are the suitable use cases for PPO, GRPO, and DPO respectively?
+Q003493	RAG03	M	How does FAISS implement efficient approximate nearest neighbor (ANN) search?
+Q003957	DL02	M	How will you implement dropout during the forward and backward pass?
+Q003958	DL02	M	What do you do if neural network training loss or testing loss stays constant?
+Q003959	DL05	E	What are GANs, VAEs, and memory augmented neural networks?
+Q003960	DL01	E	What is the problem with sigmoid during backpropagation?
+Q003961	ML01	H	Given a black box machine learning algorithm that you can't modify, how could you improve its error?
+Q003962	ML06	M	How do you find the best hyperparameters?
+Q003963	ML01	E	What is transfer learning?
+Q003964	ML07	M	Compare and contrast L1-loss vs. L2-loss and L1-regularization vs. L2-regularization.
+Q003965	ML01	E	Can you state Tom Mitchell's definition of learning and discuss T, P and E?
+Q003966	ML01	E	What are the different types of tasks encountered in Machine Learning?
+Q003967	ML01	E	What are supervised, unsupervised, semi-supervised, self-supervised, multi-instance learning, and reinforcement learning?
+Q003968	ML01	M	Loosely, how can supervised learning be converted into unsupervised learning and vice versa?
+Q003969	ML02	E	Consider linear regression. What are T, P and E?
+Q003970	ML07	M	Derive the normal equation for linear regression.
+Q003971	ML09	E	What do you mean by an affine transformation? Discuss affine vs. linear transformation.
+Q003972	ML01	E	Discuss training error, test error, generalization error, overfitting, and underfitting.
+Q003973	ML01	M	Compare representational capacity vs. effective capacity of a model.
+Q003974	ML01	E	What are nonparametric models? What is nonparametric learning?
+Q003975	ML01	M	What is an ideal model? What is Bayes error? What are the sources of Bayes error?
+Q003976	ML01	E	What is the no free lunch theorem in connection to Machine Learning?
+Q003977	ML07	E	What is regularization? Intuitively, what does regularization do during the optimization procedure?
+Q003978	ML07	E	What is weight decay? Why is it added?
+Q003979	ML06	E	Why is a validation set necessary?
+Q003980	ML06	M	What are the different types of cross-validation? When do you use which one?
+Q003981	ML08	M	What are point estimation and function estimation in the context of Machine Learning? What is the relation between them?
+Q003982	ML07	M	What is the maximum likelihood estimate of a parameter vector theta? Where does the log come from?
+Q003983	ML07	H	Prove that for linear regression, MSE can be derived from maximum likelihood under proper assumptions.
+Q003984	ML08	M	Why is maximum likelihood the preferred estimator in ML?
+Q003985	ML08	H	Under what conditions does the maximum likelihood estimator guarantee consistency?
+Q003986	ML07	E	What is cross-entropy loss?
+Q003987	ML07	M	What is the difference between an optimization problem and a Machine Learning problem?
+Q003988	ML07	M	How can a learning problem be converted into an optimization problem?
+Q003989	ML07	M	What is empirical risk minimization? Why the term empirical? Why do we rarely use it in the context of deep learning?
+Q003990	ML07	E	Name some typical loss functions used for regression and compare and contrast them (L2-loss, L1-loss, and Huber loss).
+Q003991	DL04	M	Write the equation describing a dynamical system. Can you unfold it? Now, can you use this to describe an RNN?
+Q003992	DL04	M	What determines the size of an unfolded graph?
+Q003993	DL04	M	What are the advantages of an unfolded computational graph in RNNs?
+Q003994	DL04	M	What does the output of the hidden layer of an RNN at an arbitrary time t represent?
+Q003995	DL04	M	Are the outputs of the hidden layers of RNNs lossless? If not, why?
+Q003996	DL04	M	RNNs are used for various tasks. From an RNN's point of view, which tasks are more demanding than others?
+Q003997	DL04	M	Discuss some examples of important design patterns of classical RNNs.
+Q003998	DL04	H	Write the equations for a classical RNN where the hidden layer has recurrence. How would you define the loss in this case? What problems might you face while training it?
+Q003999	DL04	E	What is backpropagation through time (BPTT)?
+Q004000	DL04	M	Consider an RNN that has only output-to-hidden recurrence. What are its advantages or disadvantages compared to an RNN having only hidden-to-hidden recurrence?
+Q004001	DL04	M	What is teacher forcing? Compare and contrast it with BPTT.
+Q004002	DL04	M	What is the disadvantage of using a strict teacher forcing technique? How can this be solved?
+Q004003	DL04	H	Explain the vanishing/exploding gradient phenomenon for recurrent neural networks.
+Q004004	DL04	H	Why don't we see the vanishing/exploding gradient phenomenon in feedforward networks?
+Q004005	DL04	M	What is the key difference in architecture of LSTMs/GRUs compared to traditional RNNs?
+Q004006	DL04	E	What is the difference between LSTM and GRU?
+Q004007	DL02	H	Adam and RMSProp adjust the size of gradients based on previously seen gradients. Do they inherently perform gradient clipping? If not, why?
+Q004008	DL04	H	Discuss RNNs in the context of Bayesian Machine Learning.
+Q004009	DL02	M	Can we do Batch Normalization in RNNs? If not, what is the alternative?
+Q004010	DL05	E	What is an autoencoder? What does it "auto-encode"?
+Q004011	DL05	M	What were autoencoders traditionally used for? Why has there been a resurgence of autoencoders for generative modeling?
+Q004012	DL05	M	What loss functions are used for autoencoders?
+Q004013	DL05	H	What is a linear autoencoder? Can it be optimal (lowest training reconstruction error)? If yes, under what conditions?
+Q004014	DL05	M	What is the impact of the size of the hidden layer in autoencoders?
+Q004015	DL05	M	What is an undercomplete autoencoder? What is it typically used for?
+Q004016	ML04	M	What is a linear autoencoder? Discuss its equivalence with PCA. Which one is better in reconstruction?
+Q004017	DL05	M	What problems might a nonlinear undercomplete autoencoder face?
+Q004018	DL05	H	What are overcomplete autoencoders? What problems might they face? Does the scenario change for linear overcomplete autoencoders?
+Q004019	DL05	M	Discuss the importance of regularization in the context of autoencoders.
+Q004020	DL05	H	Why do generative autoencoders not require regularization?
+Q004021	DL05	E	What are sparse autoencoders?
+Q004022	DL05	M	What is a denoising autoencoder? What are its advantages? How does it solve the overcomplete problem?
+Q004023	DL05	H	What is score matching? Discuss its connections to denoising autoencoders.
+Q004024	DL05	H	Are there any connections between autoencoders and RBMs?
+Q004025	DL05	H	What is manifold learning? How are denoising and contractive autoencoders equipped to do manifold learning?
+Q004026	DL05	M	What is a contractive autoencoder? Discuss its advantages. How does it solve the overcomplete problem?
+Q004027	DL05	M	Why is a contractive autoencoder named so?
+Q004028	DL05	H	What are the practical issues with contractive autoencoders (CAEs)? How can they be tackled?
+Q004029	DL05	M	What is a stacked autoencoder? What is a deep autoencoder? Compare and contrast.
+Q004030	DL05	M	Compare the reconstruction quality of a deep autoencoder vs. PCA.
+Q004031	DL05	H	What is predictive sparse decomposition?
+Q004032	DL05	E	Discuss some applications of autoencoders.
+Q004033	ML01	E	What is representation learning? Why is it useful?
+Q004034	ML01	M	What is the relation between representation learning and deep learning?
+Q004035	ML01	E	What is one-shot and zero-shot learning? Give examples.
+Q004036	ML01	H	What trade-offs does representation learning have to consider?
+Q004037	DL02	H	What is greedy layer-wise unsupervised pretraining (GLUP)? Why greedy? Why layer-wise? Why unsupervised? Why pretraining?
+Q004038	DL02	M	What are the purposes of greedy layer-wise unsupervised pretraining?
+Q004039	DL02	H	Why does unsupervised pretraining work?
+Q004040	DL02	H	When does unsupervised pretraining work? Under which circumstances?
+Q004041	DL02	H	Why might unsupervised pretraining act as a regularizer?
+Q004042	DL02	H	What is the disadvantage of unsupervised pretraining compared to other forms of unsupervised learning?
+Q004043	DL02	H	How do you control the regularizing effect of unsupervised pretraining?
+Q004044	DL02	H	How do you select the hyperparameters of each stage of greedy layer-wise unsupervised pretraining?
+Q004045	ML08	E	What are deterministic algorithms?
+Q004046	ML08	E	What are Las Vegas algorithms?
+Q004047	ML08	E	What are deterministic approximate algorithms?
+Q004048	ML08	E	What are Monte Carlo algorithms?
+Q004049	GA05	H	Discuss state-of-the-art attack and defense techniques for adversarial models.
+Q004050	ML01	E	Describe bias and variance with examples.
+Q004051	DROP	-	dup
+Q004052	ML08	H	What are the union bound and Hoeffding's inequality?
+Q004053	ML01	M	Write the formulae for training error and generalization error. Point out the differences.
+Q004054	ML01	H	State the uniform convergence theorem and derive it.
+Q004055	ML01	H	What is the sample complexity bound of the uniform convergence theorem?
+Q004056	ML01	H	What is the error bound of the uniform convergence theorem?
+Q004057	ML01	M	What is the bias-variance trade-off theorem?
+Q004058	ML01	H	From the bias-variance trade-off, can you derive the bound on training set size?
+Q004059	ML01	M	What is the VC dimension?
+Q004060	ML01	H	What does the training set size depend on for a finite and an infinite hypothesis set? Compare and contrast.
+Q004061	ML01	M	What is the VC dimension for an n-dimensional linear classifier?
+Q004062	ML02	H	How is the VC dimension of an SVM bounded although it is projected to an infinite dimension?
+Q004063	ML01	H	Considering that Empirical Risk Minimization is an NP-hard problem, how do logistic regression and SVM loss work?
+Q004064	ML06	E	Why are model selection methods needed?
+Q004065	ML01	M	How do you make a trade-off between bias and variance?
+Q004066	ML06	M	What are the different attributes that can be selected by model selection methods?
+Q004067	ML06	E	Why is cross-validation required?
+Q004068	DROP	-	dup
+Q004069	ML06	M	What is hold-out cross validation? What are its advantages and disadvantages?
+Q004070	ML06	M	What is k-fold cross validation? What are its advantages and disadvantages?
+Q004071	ML06	M	What is leave-one-out cross validation? What are its advantages and disadvantages?
+Q004072	ML05	E	Why is feature selection required?
+Q004073	ML05	E	Describe some feature selection methods.
+Q004074	ML05	M	What is the forward feature selection method? What are its advantages and disadvantages?
+Q004075	ML05	M	What is the backward feature selection method? What are its advantages and disadvantages?
+Q004076	ML05	M	What is the filter feature selection method? Describe two of them.
+Q004077	ML09	M	What is mutual information and KL divergence?
+Q004078	ML09	M	Describe KL divergence intuitively.
+Q004079	ML01	E	Describe the curse of dimensionality with examples.
+Q004080	ML01	H	What is local constancy or smoothness prior or regularization?
+Q004081	DL01	M	State the universal approximation theorem. What is the technique used to prove it?
+Q004082	ML09	M	What is a Borel measurable function?
+Q004083	DL01	H	Given the universal approximation theorem, why can't an MLP still reach an arbitrarily small positive error?
+Q004084	DL01	H	What is the mathematical motivation of Deep Learning as opposed to standard Machine Learning techniques?
+Q004085	DL01	H	In standard Machine Learning vs. Deep Learning, how is the order of the number of samples related to the order of regions that can be recognized in the function space?
+Q004086	DL01	H	How does Deep Learning tackle the curse of dimensionality?
+Q004087	ML02	H	How can the SVM optimization function be derived from the logistic regression optimization function?
+Q004088	ML02	E	What is a large margin classifier?
+Q004089	ML02	M	Why is SVM an example of a large margin classifier?
+Q004090	ML02	M	What is the role of C in SVM?
+Q004091	ML02	H	In SVM, what is the angle between the decision boundary and theta?
+Q004092	ML02	H	What is the mathematical intuition of a large margin classifier?
+Q004093	ML02	M	What is a kernel in SVM? Why do we use kernels in SVM?
+Q004094	ML02	M	What is a similarity function in SVM? Why is it named so?
+Q004095	ML02	M	How are the landmarks initially chosen in an SVM? How many and where?
+Q004096	ML02	M	Can we apply the kernel trick to logistic regression? Why is it not used in practice then?
+Q004097	ML02	M	What is the difference between logistic regression and SVM without a kernel?
+Q004098	ML02	M	How does the SVM parameter C affect the bias/variance trade-off?
+Q004099	ML02	M	How does the SVM kernel parameter sigma^2 affect the bias/variance trade-off?
+Q004100	ML02	M	Can any similarity function be used for SVM?
+Q004101	ML02	M	Logistic regression vs. SVMs: when to use which one?
+Q004102	ML08	M	What are the differences between the Bayesian and Frequentist approaches to Machine Learning?

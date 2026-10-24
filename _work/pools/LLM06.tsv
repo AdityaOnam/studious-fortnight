@@ -1,0 +1,511 @@
+Q003360	E	Can you briefly explain the difference between LLM training and LLM inference?
+Q003361	E	What is latency in LLM inference, and why is it important?
+Q003362	E	What is batch inference, and how does it differ from single-query inference?
+Q003363	M	How does batching generally help with LLM inference efficiency?
+Q003364	M	How does quantization affect inference speed and memory requirements?
+Q003365	M	How do you handle the large memory requirements of the KV cache in LLM inference?
+Q003377	H	What are the challenges in performing distributed inference across multiple GPUs?
+Q003378	H	How would you design a scalable LLM inference system for real-time applications?
+Q003379	M	What is continuous batching, and how does it differ from static batching?
+Q003380	E	What is mixed precision (e.g., FP16), and why is it used during inference?
+Q003381	H	What are the various bottlenecks in a typical LLM inference pipeline when running on a modern GPU?
+Q003382	M	How do you measure LLM inference performance?
+Q003383	E	What are the different LLM inference engines available?
+Q003384	M	What are the challenges in LLM inference?
+Q003385	M	What are the possible options for accelerating LLM inference?
+Q004323	M	Explain the concept of KV caching in LLM inference.
+Q004531	M	What is model quantization, and when is it useful?
+Q004423	M	What is the KV cache and why does it matter for inference? How does its memory scale?
+Q004430	M	Explain quantization (INT8/INT4, FP8) and KV-cache quantization. What is the accuracy/latency tradeoff?
+Q004671	M	Why is the first token slower than the rest in an LLM?
+Q004681	H	Estimate the KV cache memory needed to serve a large model. How does it constrain batch size and context length?
+Q004702	M	Your Transformer's KV cache grows too large during long sequence generation. How do you manage memory?
+Q004946	H	Why is prefill compute-bound and decode memory-bandwidth-bound?
+Q004947	H	What is chunked prefill, and why does it improve tail latency under mixed traffic?
+Q004948	H	What is prefill-decode disaggregation, and when does it pay off?
+Q004951	M	How do you serve LLMs in production?
+Q004952	E	What is model quantization?
+Q004953	H	Explain post-training quantization (PTQ) vs quantization-aware training (QAT). What breaks when you push weights to 2-4 bits?
+Q004970	M	How does token streaming work?
+Q004972	M	How does SGLang work?
+Q004973	M	How does TensorRT-LLM work?
+Q004974	M	How does llama.cpp run LLMs on everyday hardware?
+Q004975	E	How does Ollama work?
+Q004976	H	When would you choose vLLM vs SGLang vs TensorRT-LLM?
+Q004993	M	You quantized your LLM, but accuracy dropped significantly. How do you minimize quantization loss?
+Q005106	M	How do you improve inference speed in production LLM deployments?
+Q005107	M	How do you select GPUs for LLM inference?
+Q005111	M	How does an LPU work?
+Q005112	H	Estimate the GPU memory needed to serve a 70B model (weights, KV cache, activations). Does it fit on a single 80 GB GPU?
+Q005113	H	Do the roofline math: how many tokens/sec can one H100 produce for a 70B model at batch size 1?
+Q005117	M	How does continuous batching improve LLM inference throughput?
+Q005122	M	What is the KV cache, and how do you manage memory for it?
+Q005123	M	What is PagedAttention?
+Q005124	M	How do you optimize inference for edge and mobile deployment?
+Q005125	M	What is model quantization (INT8, INT4, FP16, BF16), and how does it affect quality?
+Q005128	M	How do you manage GPU memory for serving multiple models?
+Q005129	M	What is model sharding, and when would you use it?
+Q005136	M	What are TTFT, TPOT, and throughput, and how do they trade against each other?
+Q005964	M	What are the KV cache memory management challenges, and how does PagedAttention solve them?
+Q006010	E	What is autoregressive generation, and how do the prefill and decode phases differ?
+Q006011	M	What are prefix caching and RadixAttention, and why are they essential for long-context scenarios?
+Q006012	H	What is Attention Matching for KV cache compression, and what are the newer directions in KV cache optimization?
+Q006013	H	What is prefill-decode (PD) disaggregation in vLLM, how can KV cache be transferred across nodes (e.g., with Mooncake and LMCache), and how would you deploy it in production?
+Q006014	M	What are continuous batching and chunked prefill, and why are they core optimizations in inference engines?
+Q006015	H	How is tensor parallelism sharded, how costly is the AllReduce communication, and when should you use DP, PP, or EP instead?
+Q006017	H	For MoE model inference, how do you choose between expert parallelism and tensor parallelism, and why can't DeepSeek's MLA architecture use standard tensor parallelism?
+Q006019	H	What are KV cache offloading and context parallelism (Ring Attention), and what problems do they solve?
+Q006168	M	What is prefill-decode (PD) disaggregation, and when is it worth using?
+Q006170	M	How do you design a reproducible benchmark for LLM inference frameworks?
+Q006172	M	How are HuggingFace TGI and vLLM related, and what are their respective strengths and weaknesses?
+Q006173	M	Besides vLLM, SGLang, and TensorRT-LLM, what other inference frameworks exist, and how do you choose by hardware?
+Q006175	M	What is tiered KV cache offloading, and how do the GPU, CPU, and NVMe tiers divide the work?
+Q006176	H	What is the architecture of LMCache, and how does it share KV cache across engines without modifying the vLLM/SGLang kernels?
+Q006177	H	How does Mooncake Store, as a distributed KV cache storage engine, differ from LMCache, and what is each one's role?
+Q006178	M	How do chunked prefill and layered prefill differ, and what scenarios suit each?
+Q006179	H	What optimization problems are specific to MoE models in inference frameworks, and how do speculative decoding and PD separation work with MoE?
+Q006920	H	You must deploy a 70B model on 8×A100 40GB GPUs (320GB total). Walk through the precision choice. What is the strongest plan?
+Q006921	M	Your chatbot shares a long system prompt across most requests and TTFT is high under load. Which lever gives the biggest, most direct win?
+Q006922	H	You enabled speculative decoding and saw a latency win at low traffic, but at peak (high concurrency) it got slightly slower. Why?
+Q006923	M	Why does vLLM report roughly 23x throughput over naive batching? What is the strongest mechanism-level answer?
+Q006924	M	Your traffic is mostly multi-call agentic programs that reuse the same prompts in slightly varying forms and emit strict JSON. Which serving stack fits best?
+Q006930	M	A BF16 fine-tune passed your gates. You quantize it to int4 for serving. What is the disciplined final step?
+Q006936a	E	What is quantization and why is it used? How do INT8 and FP16 compare?
+Q006936b	M	GPTQ vs AWQ vs GGUF vs bitsandbytes NF4: when would you use each?
+Q006937	H	How does FP8 improve inference throughput on H100 GPUs?
+Q006938a	E	What is the KV cache and why does it matter?
+Q006938b	M	How does PagedAttention eliminate memory fragmentation?
+Q006939a	M	How does speculative decoding work and what speedup should you expect?
+Q006939b	M	What is the difference between static and dynamic (continuous) batching?
+Q006942	M	Why is the first token slow but subsequent tokens stream out quickly?
+Q006943	M	One feature sends a 1,000-token prompt and gets a 1,000-token answer; another sends 2,000-token prompts but caps answers at 100 tokens. Which is cheaper and faster, and why?
+Q006979	M	Two requests to the same model: (A) a 4,000-token prompt with a 50-token answer; (B) a 400-token prompt with a 2,000-token answer. Which feels slower end-to-end, and why?
+Q006980	H	You must serve Llama-2-70B (GQA, 8 KV heads, 80 layers, D_h=128, FP16) at 32k context with batch 4. Roughly how much GPU memory does the KV cache alone need?
+Q006981	M	During decode your GPU shows low compute utilization but is clearly the bottleneck. What is the most accurate explanation?
+Q006983	H	A 70B MHA model is too KV-cache-heavy to serve at your target context and concurrency, and you have about 5% of the original pre-training compute available. What is the best move?
+Q006986	M	Your serving GPU has plenty of KV-cache memory free, yet throughput is poor and many requests sit idle waiting for a batch to finish. Which lever helps most?
+Q006987	M	On H100s you want both lower memory and higher matmul throughput for a Llama-class model, with minimal accuracy work. What is the best quantization choice?
+Q006990	M	A Llama-7B FP16 service at 4k context runs fine at batch 1 on a 24 GB GPU but OOMs at batch 8. What changed, and what is the cheapest fix to raise the ceiling?
+Q007015a	M	How do you serve LLMs in production?
+Q007015b	E	Explain model quantization.
+Q007089	M	Your interactive LLM chat has acceptable TTFT but users complain text "types out" too slowly. Which change targets the right bottleneck?
+Q007090	M	Your self-hosted LLM cluster starts rejecting requests with OOM errors under load, but nvidia-smi shows several GB free per GPU. What is the most likely cause and fix?
+Q007112	M	How do you estimate the cost of running SaaS-based and open-source LLMs?
+Q007201	H	Why does quantization not decrease the accuracy of an LLM?
+Q007202	M	What techniques can you use to optimize LLM inference for higher throughput?
+Q007203	H	How can you accelerate a model's response time without attention approximations like grouped-query attention?
+Q007218	M	How do you calculate the size of the KV cache?
+Q010846	M	Explain the KV cache and why it matters.
+Q010848	M	Compare batching strategies for LLM serving.
+Q010849	M	How do you optimize LLM inference costs?
+Q010850	M	Explain quantization techniques for LLM deployment.
+Q011028	M	How do you ship a major vLLM version upgrade without changing model behavior?
+Q011174	M	What is the difference between vLLM and SGLang?
+Q011175	M	How do you optimize LLM inference cost?
+Q011192	M	What is the KV cache and why does it matter for serving?
+Q011210	H	How would you size the KV cache for a new open-weight model?
+Q011230	M	Explain the difference between the prefill and decode phases.
+Q011234	M	What determines TTFT versus TPS?
+Q011235	M	How would you estimate GPU requirements for serving a model?
+Q011284	M	How does AWQ differ from GPTQ?
+Q011285	H	The team wants to move serving from FP8 to NVFP4 to cut cost. What do you check?
+Q011294	E	Why is LLM generation slower than classification?
+Q011295	M	How do you optimize TTFT vs. TPOT?
+Q011296	H	A vendor pitches an accelerator at "3,000 tokens per second." How do you evaluate it?
+Q011297	M	How does PagedAttention help with KV cache management?
+Q011299	H	Your capacity plan used "2 × layers × kv_heads × head_dim × bytes" per token for every model in the fleet. What breaks?
+Q011302	M	Why is continuous batching superior to static batching for LLMs?
+Q011303	H	What is a "stall" in LLM serving, and how does chunked prefill mitigate it?
+Q011304	H	When does disaggregated prefill/decode beat chunked prefill on one pool?
+Q011306	M	Why does PagedAttention significantly increase throughput?
+Q011307	M	Explain the "block table" in the context of vLLM.
+Q011308	M	Why is tensor parallelism preferred over pipeline parallelism for low-latency serving?
+Q011592	H	How would you evaluate a new accelerator or serving platform for your fleet?
+Q011785	M	What is the KV cache, and what are its memory implications at scale? Derive the formula.
+Q011800	H	Explain the prefill and decode phases. Why is prefill compute-bound and decode memory-bandwidth-bound?
+Q011801	M	What is continuous (in-flight) batching and why did it replace static batching?
+Q011802	M	How does PagedAttention work, and what problem of KV-cache fragmentation does it solve?
+Q011804	M	Explain prefix caching / prompt caching. When should you use it, and what invalidates a cached prefix?
+Q011805	H	Compare FP16, BF16, FP8, INT8, INT4 and FP4 for serving. What breaks at each step down?
+Q011807	H	Estimate the GPU memory needed to serve a 70B model: weights, KV cache, activations, fragmentation.
+Q011808	M	What are TTFT, TPOT, ITL and throughput, and how do they trade against each other?
+Q011809	H	Do the roofline maths: how many tokens/sec can one H100 produce for a 70B model at batch size 1?
+Q011810	M	When would you choose vLLM vs SGLang vs TensorRT-LLM vs a custom stack?
+Q011811	H	How would you cut LLM serving cost by 10x? Enumerate every lever and rank them.
+Q011813	H	Explain disaggregated prefill/decode serving and when it pays for itself.
+Q011904	H	Design a batched inference system where 100 requests take the same time as 1.
+Q012004	H	How do you deploy a capable assistant on cost-sensitive or on-device hardware without a datacentre GPU? Walk through the efficiency toolkit.
+Q012030	H	Explain post-training quantization versus quantization-aware training. What breaks when you push weights to 2-4 bits, and how do you recover quality?
+Q012039	M	What does TensorRT / TensorRT-LLM actually do to a model to make it faster, and when will it not help?
+Q012040	H	Design the parallelism strategy for serving a 405B-parameter dense model. TP, PP, EP: what goes where and why?
+Q012042	H	A customer's LLM chatbot on 8 GPUs is "too slow and too expensive." You have one week with them. What do you do?
+Q012408	E	What is quantization in Large Language Models (LLMs)?
+Q012409	E	Why do we quantize LLMs?
+Q012410	E	What are the types of quantization?
+Q012411	E	How does quantization reduce model size?
+Q012412	M	What is the trade-off between performance and accuracy in quantization?
+Q012413	M	How does quantization impact inference latency?
+Q012414	E	What is GPTQ and why is it important for LLM quantization?
+Q012415	E	What is weight-only quantization?
+Q012416	E	What is activation quantization?
+Q012417	E	What is calibration in quantization?
+Q012418	M	What is the difference between weight quantization and activation quantization?
+Q012419	E	Why is quantization important for modern LLM deployment?
+Q007387	H	Your model meets quality targets but runs at 4s p95 latency, and you need 400ms with 10x the throughput. Design the compression plan.
+Q007388	H	Your 4-bit quantized model matches on aggregate benchmarks but users complain. How do you find what broke?
+Q007416	M	In a decoder generating token-by-token, which of Q, K, V get cached and why?
+Q007453	E	What is the KV cache and why does it make generation fast?
+Q007455	M	What is prefix caching and when does it save money?
+Q007456	M	Why can't you cache the queries too in the KV cache?
+Q007464	M	How would you measure whether speculative decoding is actually helping in a live serving deployment?
+Q007492	H	Why is decode memory-bandwidth-bound? Walk me through the arithmetic intensity.
+Q007511	H	Why is decode throughput bounded by memory bandwidth, and how does GQA change the arithmetic?
+Q007514	M	Derive the KV cache memory formula and compute it for a concrete model.
+Q007515	M	How does PagedAttention reduce waste, and what problem does fragmentation cause?
+Q007517	H	How does sliding-window attention change the KV cache memory formula?
+Q007530	H	What is an attention sink, why does it exist, and what breaks if you evict it from the KV cache?
+Q007531	H	How does a learned softmax bias change the quantization story for attention sinks?
+Q007535	H	What does sliding-window attention do to prefix caching in a multi-turn agent?
+Q007537	H	How does Multi-head Latent Attention (MLA) interact with tensor parallelism compared to GQA?
+Q007538	H	Would you expect MLA or KV cache quantization to be the better first move on an existing GQA model?
+Q007539	M	Why is quantizing activations harder than quantizing weights, and how does that shape architecture choices?
+Q007540	M	You quantize weights to 4-bit and see no benchmark drop. What would make you distrust that result?
+Q007541	M	Why does quantization hurt long generations more than short ones?
+Q007549	H	Why does prefix caching get harder with a recurrent state than with a KV cache?
+Q007631	H	What does a recurrent state, rather than a KV cache, do to prefix caching in an agent workload?
+Q008159	M	How do you serve fine-tuned models at scale: merged checkpoints vs adapters, versioning, rollback?
+Q008161	H	Design routing for 500 tenant LoRA adapters where 10 tenants account for 80% of traffic. What changes if variants need different system prompts too?
+Q008545a	M	Walk me through what happens inside the server when an LLM processes a request.
+Q008545b	M	Why are prefill and decode bottlenecked differently in LLM inference?
+Q008546	M	Why doesn't adding more compute (a faster GPU with the same bandwidth) speed up batch-1 decode?
+Q008547	M	At roughly what batch size does LLM decode become compute-bound?
+Q008548	M	How would you speed up TTFT specifically?
+Q008549	M	What is the KV cache, why is it needed, and how big does it get? Ballpark it for a 70B-class model at 128K context.
+Q008550	M	Why does GQA shrink the KV cache but not the weight count meaningfully?
+Q008551	M	What happens in vLLM when the KV cache fills up mid-generation?
+Q008552	H	How would the KV cache size math change for a mixture-of-experts model?
+Q008553	M	Define TTFT, TPOT, and tokens/sec. What drives each one, and what are reasonable targets for a chat product?
+Q008554	M	Your P99 TTFT doubled but P50 is flat - what are your top hypotheses?
+Q008555	M	Which latency metric does speculative decoding improve, and which can it hurt?
+Q008559	M	How do you estimate whether a model fits on a given GPU? Will a 70B model fit on one 80 GB card?
+Q008560	M	How much memory does the KV cache add if you serve 32 concurrent 8K-context sequences on a 70B model?
+Q008561	H	Why might you still choose 2xGPU FP8 over 1xGPU INT4 for serving a large model?
+Q008565	M	What is quantization for inference? Explain weights-only vs weights-and-activations quantization, and the typical tradeoffs.
+Q008566	H	Why does W4A16 quantization barely help a high-batch serving deployment?
+Q008567	H	What are activation outliers and why do they make W8A8 quantization hard?
+Q008568	M	What's the difference between static and continuous batching, and why did continuous batching become universal?
+Q008569	H	What new scheduling problems does continuous batching create?
+Q008570	H	How does the inference engine decide when to preempt a running sequence, and what happens to its KV cache?
+Q008582	H	Why does decode need a differently shaped attention kernel than prefill?
+Q008583	M	What does changing the attention backend actually change for you operationally?
+Q008593	H	Explain arithmetic intensity and the roofline model as applied to LLM inference. Why does batching improve decode throughput so dramatically?
+Q008594	H	Why doesn't the KV cache read amortise across the batch like weight reads do?
+Q008595	H	Where does MoE sit on the roofline compared to a dense model at the same active-parameter count?
+Q008596	M	What problem does PagedAttention solve, and how does it work?
+Q008597	M	What's the cost of paging in PagedAttention - why not make blocks 1 token each?
+Q008598	H	How does copy-on-write work in PagedAttention for beam search or n-best sampling?
+Q008599	M	What is chunked prefill and what scheduling problem does it fix?
+Q008600	M	How would you pick the chunk size for chunked prefill?
+Q008601	H	Why does mixing a prefill chunk into a decode batch improve hardware utilization rather than just sharing the pain?
+Q008605	M	Compare GPTQ, AWQ, GGUF, INT8, and FP8. How do you actually choose a quantization approach for a deployment?
+Q008606	H	Why do activation outliers make W8A8 harder than W4A16?
+Q008607	M	What would make you reject a 4-bit quantized model that passes perplexity checks?
+Q008608	M	What is KV-cache quantization, and when is it the right lever?
+Q008609	H	Why are keys more quantization-sensitive than values in the KV cache?
+Q008610	M	Describe the throughput-latency tradeoff curve for an LLM server, and explain goodput.
+Q008611	M	Why does queueing delay explode near saturation in an LLM server?
+Q008612	H	Your P99 TTFT breaches SLO but GPU utilization shows 60% - what do you investigate?
+Q008613	M	vLLM, SGLang, TensorRT-LLM, TGI, llama.cpp/Ollama - how do you choose a serving stack?
+Q008614	M	Your workload is 90% shared-system-prompt agent traffic - which LLM serving stack would you choose and why?
+Q008615	M	What does a vendor-tuned stack like TensorRT-LLM buy over a portable engine, and what does it cost you when you want to add AMD capacity?
+Q008616	M	Explain tensor parallelism vs pipeline parallelism for inference. When do you need each?
+Q008617	H	Why does TP=8 across two 4-GPU nodes over Ethernet perform terribly?
+Q008618	H	How does MoE change the parallelism picture for inference?
+Q008635	H	Your product is moving from a standard chat model to a reasoning model with extended thinking. What changes for capacity, SLOs, and design?
+Q008636	M	How would you pick the thinking budget per request rather than setting one global value?
+Q008637	H	Which is worse for your fleet: one 30K-token reasoning request or thirty 1K-token chat requests, and why?
+Q008638	H	Explain KV cache offloading and cross-request reuse beyond a single GPU's memory. When does loading a cached prefix beat just recomputing prefill?
+Q008639	H	What exactly must go into the cache key for cross-request KV cache reuse?
+Q008640	H	At what hit rate does an NVMe tier for KV cache stop paying for itself?
+Q008641	M	How do you choose inference hardware: NVIDIA GPUs, AMD, TPUs, or cloud silicon like Inferentia and Trainium?
+Q008642	H	Why might one GPU with more HBM beat two smaller GPUs with the same total memory for LLM inference?
+Q008643	M	What would make you reject an inference chip that wins on dollars per token?
+Q008647	H	At low batch sizes your decode is slower than the bandwidth math predicts, and the GPU timeline shows gaps between kernels. What is CPU overhead in LLM serving, and how do CUDA graphs and overlapped scheduling fix it?
+Q008648	H	Why do CUDA graphs need batch-size buckets, and what does padding to a bucket cost you?
+Q008649	H	How would you confirm from a profile that a latency problem is host overhead rather than memory bandwidth?
+Q008653	H	Build the full GPU memory budget for a serving deployment, and show how it determines maximum batch size and concurrency.
+Q008654a	H	Redo the GPU memory budget math for a serving deployment with FP8 weights on 2 GPUs.
+Q008654b	H	Your product wants to raise the context limit from 8K to 128K - what does that do to cost per request?
+Q008658	H	How does a 30% prompt-cache hit rate change an LLM serving capacity plan?
+Q008659	M	Peak LLM traffic is 3x the daily average - how do you split reserved vs autoscaled capacity?
+Q008660	H	GPU cold starts take minutes. How do you autoscale an inference fleet anyway?
+Q008661	H	Why is GPU utilization a bad scaling signal for decode-heavy workloads?
+Q008663	H	KV cache utilization is 95%, preemptions are climbing, but GPU "utilization" looks fine - what's happening and what do you do?
+Q008668	H	Which LLM-serving graceful-degradation options relieve KV-memory pressure versus compute pressure?
+Q008677	H	What is prefill/decode disaggregation, and why do large-scale deployments separate the two?
+Q008678	H	Estimate the KV bytes transferred for an 8K-token prompt on a 70B GQA model in prefill/decode disaggregation - is that transfer a problem on NVLink vs Ethernet?
+Q008679	H	How does prefill/decode disaggregation interact with prefix caching?
+Q008683	H	How does prefix-aware routing interact with autoscaling for a replicated LLM deployment, and what does that do to your scale-up policy?
+Q008684	H	What prefix cache hit rate would justify a shared KV tier over simple sticky sessions?
+Q008685	H	How does serving a large sparse mixture-of-experts model differ from serving a dense model, and what does expert parallelism change?
+Q008686	H	Why does low traffic hurt an MoE deployment more than a dense one of similar quality?
+Q008687	H	How would you detect and quantify expert imbalance in production for an MoE model?
+Q008690	H	Your traffic is shifting from single-turn chat to agents: 20 to 50 model calls per task, tool calls in between, sessions lasting tens of minutes. What does that do to your serving design?
+Q008694	H	You are moving from a dense transformer to a Mamba-attention hybrid. What changes in your serving stack?
+Q008695	H	Why can you not roll a Mamba state back by 30 tokens the way you can drop KV blocks, and what does that cost an agent that edits its own history?
+Q008696	H	Your hybrid Mamba-attention deployment reports a 0% prefix cache hit rate on chat traffic but 90% on RAG traffic. What do you check first?
+Q008697	H	Product wants to offer a 1M-token context window on a model you self-host. What breaks in serving, and how do you make it work?
+Q008698	H	Why does context parallelism help prefill far more than it helps decode?
+Q008699	H	A customer sends a different 900K-token document with every request: how does that change your pricing and capacity plan?
+Q008700	H	What changes in your serving design when the NVLink domain grows from 8 GPUs in a server to 72 GPUs in a rack, as with GB200 NVL72-class systems?
+Q008701	H	Why does wide expert parallelism free HBM for KV cache, and how does that change achievable batch size?
+Q008702	H	A single NVLink switch tray fails in the rack: what happens to your serving instance, and how do you design for it?
+Q009001	H	You are self-hosting a VLM for a document pipeline and throughput is a third of what you projected from the LLM's specs. Why, and what do you do?
+Q009064	M	What would you try next to cut LLM inference costs by another 50%?
+Q009190b	M	What exactly does the KV cache buy you at inference time?
+Q009191	M	Why does grouped-query attention shrink the KV cache, and what does it trade off?
+Q009192	M	How does prefix/prompt caching relate to the KV cache?
+Q009250	H	You need to run a ~3B-parameter language model on a phone with tight memory and power budgets. What changes versus serving the same model in a datacenter?
+Q009252	M	When would you give up on on-device inference and route the request to a server model instead?
+Q009253	H	Explain post-training quantization versus quantization-aware training. What breaks when you push weights to 2-4 bits, and how do you recover quality?
+Q009254	H	How would you decide the quantization bit-width per layer with a fixed 1 GB budget?
+Q009262	M	Estimate the KV-cache memory for a 3B on-device model at 4k context, and name the levers that shrink it.
+Q009263	M	Which KV-cache memory lever would you try first if you needed 2x headroom for a new on-device feature?
+Q009264	H	What does int4 KV-cache quantization do to long-context retrieval quality, and how would you measure it?
+Q009275	H	How do you catch a time-to-first-token regression across thousands of device/OS combinations before shipping?
+Q009276	M	For a prefix cache in on-device inference, what versions it, and how big is it allowed to get?
+Q009281	H	Your new on-device model is a 20B sparse model whose full weights live in flash, with only 1-4B parameters active at a time. How do you serve it on a phone?
+Q009283	M	What does flash-based sparse-weight serving do to your time-to-first-token budget on a cold start after the OS has evicted the cache?
+Q009284	H	If you moved to an open-source base model with GQA-8, which KV-cache reduction techniques can you still apply post hoc and which need pretraining?
+Q009286	H	What happens to the prefix-cache hit rate when a user edits a message at turn 40, and how do you keep the rest of the branch usable?
+Q009287	M	Would you replicate a prefix cache across serving nodes or shard requests by prefix hash, and why?
+Q009290	H	Estimate what one chat message costs to serve, and say which lever moves that cost most.
+Q009291	M	How does a long-context feature that raises average dialogue length change the per-message serving cost?
+Q009292	M	When building the prompt for the next turn of a conversation under a prefix cache, where do you insert retrieved older turns without breaking the cache boundary?
+Q009293	M	How would you unit-test that a refactor did not silently drop the prefix-cache hit rate?
+Q009374	H	Dense 30B versus MoE with 25B active parameters on a single 80GB GPU: how do you decide for a specific customer?
+Q009388	H	In a low-latency next-edit prediction serving system, how do you cancel in-flight GPU work cheaply when the user keeps typing?
+Q009389	H	What breaks in a KV-cache scheme for code completion when the user edits the middle of a file rather than appending?
+Q009419	M	When serving a custom code-completion model to millions of users, GPU utilisation is 35% but P99 latency is fine. Do you chase the utilisation?
+Q009420	H	How does speculative decoding interact with continuous batching?
+Q009438	M	When diagnosing a jump in an LLM endpoint's p99 latency, how does continuous batching change the analysis versus static batching?
+Q009439	M	To control LLM endpoint p99 latency, what would you cap first, input tokens or output tokens, and why?
+Q009460	H	Why does decode become memory-bandwidth-bound rather than FLOP-bound, and how does that change your kernel priorities?
+Q009480	H	When serving a 671B-parameter MoE model, how do you decide the expert-parallel degree versus the tensor-parallel degree?
+Q009481	M	What metric tells you experts are imbalanced when serving an MoE model in production, and what is your mitigation?
+Q009495	H	How does sequence-axis KV compression interact with prefix caching for agent sessions that keep appending tool output?
+Q009595	M	How would you cut TTFT for a generated answer by half without changing models?
+Q009620	H	How do you make sampling reproducible across batch sizes on GPU?
+Q009634	H	In a serving system for a multimodal LLM assistant, what breaks first as median context length grows 10x?
+Q009641	H	At what model size does the crossover favour an SRAM-only accelerator (no HBM, only on-die SRAM) for LLM inference?
+Q009642	H	For an SRAM-only inference accelerator, what does removing the cache hierarchy do to your ability to reason about worst-case latency?
+Q009643	H	For serving a 70B dense model with 8-bit weights, how does the analysis change for a sparse MoE of the same total parameter count?
+Q009644	H	Where would you spend a 2x quantization win when serving an LLM: fewer chips per instance, or longer context?
+Q009651	H	On a GPU you batch to amortise weight reads. What is the batching calculus on an SRAM-only accelerator?
+Q009653	M	In LLM serving, what does a long-context request cost you that a long-generation request does not?
+Q009656	H	In a disaggregated LLM serving setup, how would you decide the ratio of prefill to decode capacity?
+Q009657	H	What happens to prefix caching when prefill and decode live on different machines?
+Q009658	H	How would you serve a large mixture-of-experts model when expert selection is data-dependent?
+Q009659	H	When serving a mixture-of-experts model, how would you pick the capacity factor from production traffic rather than from the training config?
+Q009660	H	When serving a mixture-of-experts model, what would you measure to know that expert placement is hurting you?
+Q009665	M	In an accelerator-based LLM serving system, how would you detect that the host, not the device, is the tail-latency source?
+Q009733	M	In a serverless model-inference platform, when does it become cheaper to give a model dedicated capacity?
+Q009734	H	How does chunk-level weight deduplication change the cold-start math for serverless model inference?
+Q009740	H	A new LLM architecture ships with an attention variant that no inference-engine kernel supports. What happens on day zero, and what is the fallback?
+Q009750	H	How does grouped-query attention interact with KV-cache quantization?
+Q009758	H	You need to serve a Llama-class 70B+ model to hundreds of millions of assistant users. What does the serving stack look like and where does the money go?
+Q009759	M	Your p99 TTFT for an LLM service doubles at peak traffic. What are the top three suspects?
+Q009760	M	When does speculative decoding hurt throughput?
+Q009775	H	One reasoning model serves an assistant across multiple apps and devices. How would you cut reasoning tokens per query at that scale without losing accuracy?
+Q009817	M	Why does KV-cache bandwidth, not FLOPs, dominate decode latency?
+Q009824	H	Estimate the KV-cache memory for serving Mistral 7B, and design the rolling-buffer cache that sliding-window attention enables.
+Q009825	H	How does paged attention interact with a ring-buffer (rolling) KV cache?
+Q009826	M	Does Mixtral's KV-cache memory math differ from Mistral 7B's, and why do people assume otherwise?
+Q009835	M	Why does continuous batching outperform static batching for LLM serving? What are the tradeoffs?
+Q009836	H	How does speculative decoding interact with a continuous-batching scheduler?
+Q009837	M	What metric would you alert on to detect KV-cache thrashing in an LLM serving system?
+Q009838	H	You need to quantize a model for a customer's hardware. How do you choose a scheme, and how do you prove quality hasn't regressed?
+Q009839	M	Why does weight-only quantization speed up decode but barely help prefill?
+Q009840	M	When would you serve two precisions of the same model behind a router?
+Q009850	H	Mistral Large 3 is an open-weight sparse MoE with roughly 675B total and 41B active parameters. A customer wants to self-host it on one 8-GPU node. Does it fit, and how would you serve it?
+Q009851	H	How does serving a large MoE model change if the customer only has 8x A100 80 GB, which has no FP8 tensor cores?
+Q009852	H	How would you detect that quantization has damaged a few rarely routed experts more than the rest of an MoE model?
+Q009855	M	Why does context length turn into a memory question before it turns into a compute question during decode?
+Q009858	H	Why would you disaggregate prefill and decode onto separate machines for LLM serving? What does that buy you and what does it cost?
+Q009859	M	In a disaggregated prefill/decode serving design, what determines whether the KV-cache transfer becomes the bottleneck?
+Q009860	M	How does a shared multi-thousand-token system prompt change the economics in favour of a cache-centric LLM serving design?
+Q009861	H	A chat assistant re-sends a long conversation history on every turn. How do you avoid recomputing all of it, and what are the pitfalls?
+Q009876	M	Why does paged allocation of the KV cache help fragmentation and admission control?
+Q009877	M	Where would you slot in a rolling-window KV cache if the model used sliding-window attention?
+Q009884	M	Why is decode latency dominated by memory bandwidth rather than compute, and what does that imply for how you optimise a serving system?
+Q009886	M	At what batch size does LLM decode start to become compute-bound again?
+Q009889	H	What breaks in a paged-attention cache manager when three quarters of the layers keep no per-token KV?
+Q009891	H	How does the picture for serving a 70B-parameter model change on a Blackwell-class GPU with FP4 support?
+Q009892	H	What does the block-table indirection in paged attention cost in the attention kernel?
+Q009893	M	When would you evict versus offload KV-cache blocks to host memory?
+Q009894	M	What does TensorRT / TensorRT-LLM actually do to a model to make it faster, and when will it not help?
+Q009895	M	How would you verify a fused inference engine is numerically equivalent enough to the source model?
+Q009896	M	What is your process when a TensorRT engine is slower than the PyTorch baseline?
+Q009897	M	Compare FP8, INT8, and INT4 quantization for LLM inference. How do you decide, and how do you validate?
+Q009898	M	Why is the KV cache often quantized separately from weights?
+Q009899	M	When would you accept the cost of quantization-aware training over post-training quantization?
+Q009900	M	Explain continuous (in-flight) batching. Why does it beat static batching, and what new problems does it create?
+Q009901	H	How would you set the chunked-prefill chunk size?
+Q009902	M	What metrics would tell you decode steps are being starved in a continuous-batching LLM server?
+Q009903	H	Here's a CUDA kernel that's 10x slower than expected. Without running it, what are the usual suspects, and how do you confirm each?
+Q009904	H	A GPU profiler says a kernel hits 85% memory throughput and 20% compute. What class of fixes remains?
+Q009905	H	When does lowering occupancy improve GPU kernel performance?
+Q009906	H	When is a workload compute-bound vs memory-bound on a GPU? Do the roofline math for transformer prefill vs decode.
+Q009907	H	Where does attention (as opposed to the MLP GEMMs) sit on the roofline as context grows?
+Q009908	H	How does FP8 move the roofline ridge point?
+Q009909	H	Design the parallelism strategy for serving a 405B-parameter dense model. Tensor, pipeline, and expert parallelism: what goes where and why?
+Q009910	H	How do NVLink bandwidth and InfiniBand bandwidth change the parallelism strategy for serving a 405B dense model if it moves to a Blackwell NVL72-class rack?
+Q009911	H	How does the parallelism strategy for serving change for a 400B MoE with about 30B active parameters?
+Q009914	M	When implementing a block manager for a paged KV cache, how do you pick the block size? What do 1-token versus 128-token blocks trade?
+Q009915	H	How would you add prefix caching across requests (hash-based block reuse) to a paged KV-cache block manager?
+Q009916	M	A customer insists quality dropped after quantization but their eval suite shows no change. What now?
+Q009920	H	How does speculative decoding interact with continuous batching in a real serving engine?
+Q009921	M	Blackwell-class GPUs run NVFP4 natively. How does it differ from INT4 weight-only quantization, and when would you serve a model in it?
+Q009922	M	Why does a non-uniform floating-point grid (such as NVFP4) suit weight distributions better than INT4's uniform grid?
+Q009923	M	What would you measure to choose between FP8 and NVFP4 for a latency-sensitive chat product?
+Q009935	M	Estimate the KV-cache memory for serving a large model, and explain how it constrains batch size and throughput.
+Q009936	H	Prefill and decode have different bottlenecks. How would you schedule them differently, or disaggregate them?
+Q010035	H	Why is batched inference harder for MoE models (expert imbalance inside a batch)?
+Q010040	H	Why does KV-cache memory, not FLOPs, often become the real bottleneck at 1M-token contexts?
+Q010055	H	How do LRU/LFU cache eviction policies relate to KV-cache eviction policies in long-context serving?
+Q010059	H	How would you implement prefix caching when a quarter of your layers hold KV cache and the rest hold recurrent state?
+Q010086	H	How do you deploy a capable assistant on cost-sensitive or on-device hardware without a datacentre GPU? Walk through the efficiency toolkit.
+Q010087	M	Why does weight-only int4 quantization help decode but barely help prefill?
+Q010165	H	Why is LLM decode memory-bandwidth-bound rather than compute-bound? Walk through the numbers on an H100.
+Q010166	H	At what batch size does the KV cache, rather than the weights, dominate memory bandwidth in decode?
+Q010167	H	How does grouped-query attention (GQA) change the batch-size crossover at which the KV cache dominates bandwidth?
+Q010168	H	Estimate the KV-cache footprint for serving a Llama-3-70B-class model, and explain what PagedAttention fixes.
+Q010169	M	What is the trade-off in choosing the block size in PagedAttention?
+Q010170	H	How would you decide between preempt-and-recompute and swap-to-CPU when GPU memory runs out?
+Q010171	H	Design the scheduler for a continuous-batching inference engine.
+Q010172	H	How does speculative decoding complicate a continuous-batching scheduler loop, given a variable number of tokens accepted per step?
+Q010173	H	What metrics would you expose to detect scheduler pathologies in a continuous-batching engine, and what would a rising preemption rate tell you?
+Q010176	H	What changes about the attention tiling strategy for decode (one query token) versus prefill, and what does a decode-specific kernel like FlashDecoding parallelize over instead?
+Q010179	H	How does speculative decoding interact with continuous batching when different sequences accept different numbers of tokens per step?
+Q010180	H	Compare INT8, FP8, and FP4 for LLM serving. What breaks, and how do you validate that a quantized endpoint is "good enough"?
+Q010181	M	Should you quantize the KV cache too, and what is different about it?
+Q010182	H	A customer reports that the FP8 endpoint "feels dumber" but your evals show parity. What do you do?
+Q010188	M	When would you deploy vLLM vs SGLang vs TensorRT-LLM?
+Q010189	H	What benchmark harness would you set up to rigorously choose between vLLM, SGLang, and TensorRT-LLM for a customer?
+Q010194	H	How do prefill-heavy workloads (long prompts, short answers) change the cost-per-million-tokens math and pricing of a dedicated LLM endpoint?
+Q010195	M	What changes in the cost-per-million-tokens estimate for a dedicated LLM endpoint when moving it to B200 GPUs?
+Q010198	H	Serve a DeepSeek-V3-class open MoE model (671B total parameters, about 37B active per token) on Blackwell GPUs. How do you lay it out, and why does expert parallelism change the economics?
+Q010199	H	When a large coding customer onboards to a served MoE model and the expert routing histogram shifts sharply, what happens to p99 inter-token latency, and how do you respond?
+Q010200	H	How does the serving layout change for a roughly 1T-parameter MoE model with 384 experts?
+Q010246	M	Walk me through continuous batching in an LLM inference server. Why does it beat static batching?
+Q010247	H	In an LLM inference server with continuous batching, what happens under memory pressure mid-generation: preempt, swap, or recompute?
+Q010248	H	How does speculative decoding interact with batch scheduling in an LLM inference server?
+Q010249	H	Estimate the KV-cache memory to serve a 70B-class model at 128k context. What do you do when it does not fit?
+Q010250	H	How does prefix caching change your load-balancer design for LLM serving?
+Q010251	H	Redo the KV-cache memory estimate for a 70B-class model at 128k context with fp8 KV and MQA. What is the new maximum batch size?
+Q010272	H	Why is batched Mixture-of-Experts inference trickier than dense inference (expert imbalance within a batch)?
+Q010393	H	How do you autoscale a vLLM deployment? Why does standard CPU-based HPA not work?
+Q010394	H	Your queue-depth autoscaler for an LLM deployment flaps every 5 minutes. How do you stabilise it without eating the spike?
+Q010396	M	Why is load balancing LLM inference different from load balancing stateless HTTP, and what does a good routing layer do?
+Q010397	H	Session affinity versus prefix-hash routing for LLM inference: when does each fail?
+Q010399	H	Walk me through deploying a 70B open-weight model to production on Kubernetes. What breaks?
+Q010400	H	How do you cut LLM replica startup time from 12 minutes to under 3?
+Q010420	H	When sizing a self-hosted 13B model deployment where 80% of traffic is one shared system prompt, how does prefix caching change the math?
+Q010421	H	What breaks in a self-hosted LLM sizing estimate when someone adds a 32k-context feature?
+Q010424	H	Most of your inference traffic is now agents, not chat: long sessions, 50k-token contexts re-sent every step, bursty tool loops. What changes in the serving stack?
+Q010425	H	Prefix cache hit rate fell from 80% to 30% after an app release with no infra change. What do you look for first?
+Q010426	H	When is disaggregated (prefill/decode) LLM serving not worth the operational cost?
+Q010544	M	Will a 3B-parameter model run on users' phones? Do the maths.
+Q010545	M	How does the KV cache size scale if you increase the context window 4x?
+D00127	E	What is the KV cache, and why does it speed up autoregressive generation?
+D00128	M	How do you compute KV cache size per token for a model, and which factors dominate at long context?
+D00129	H	Your capacity plan used one KV-per-token formula for every model in the fleet. What breaks for MLA, sliding-window or hybrid models?
+D00130	M	Explain the prefill and decode phases and why they have different bottlenecks.
+D00131	M	Why is LLM generation slower per token than running a classifier, and what is the arithmetic intensity argument?
+D00132	M	How do you optimize time-to-first-token versus time-per-output-token, and why do they conflict?
+D00133	M	What does PagedAttention solve, and how do block tables and copy-on-write enable KV sharing?
+D00134	M	Why does PagedAttention raise throughput rather than latency?
+D00135	M	Compare static, dynamic and continuous batching for LLM serving.
+D00136	M	What is a prefill stall in a continuous-batching server, and how does chunked prefill mitigate it?
+D00137	H	When does disaggregating prefill and decode onto separate pools beat chunked prefill on a single pool?
+D00138	M	What does KV transfer between prefill and decode nodes require, and what tools are used to move the cache?
+D00139	M	What is prefix caching or RadixAttention, and how does it change the way you structure system prompts?
+D00140	M	Compare INT8, INT4, FP8 and FP4 quantization in terms of accuracy and hardware support.
+D00141	M	How does AWQ differ from GPTQ in how it chooses what to protect during quantization?
+D00142	M	Why does QLoRA use NF4 instead of standard 4-bit floating point?
+D00143	H	The team wants to move serving from FP8 to NVFP4 to cut cost. What do you check before approving?
+D00144	M	What is KV cache quantization, and how can its error be compensated?
+D00145	M	When is quantization-aware training worth it compared to post-training quantization?
+D00146	M	What are GGUF and similar local-serving formats, and why are they unsuited for datacenter serving?
+D00147	M	Why is tensor parallelism preferred over pipeline parallelism for low-latency serving?
+D00148	M	How does tensor parallel sharding work, and what is the AllReduce communication cost per layer?
+D00149	M	Explain expert parallelism and context parallelism and when each is needed.
+D00150	H	Why can DeepSeek-style MLA models not use standard tensor-parallel layouts without KV duplication, and what do inference engines do about it?
+D00151	M	What is KV cache offloading to CPU or NVMe, and how do you decide when it pays off?
+D00152	M	What is ring attention and how does it enable very long contexts across devices?
+D00153	M	Compare vLLM, SGLang and TensorRT-LLM and pick one for a given workload.
+D00154	M	When does RadixAttention in SGLang outperform PagedAttention, and for what workloads?
+D00155	H	Why shouldn't you quote framework throughput numbers from memory, and how would you design a reproducible inference benchmark?
+D00156	M	A vendor pitches an accelerator at 3,000 tokens per second. How do you evaluate that claim?
+D00157	M	What is goodput, and why measure performance on a Pareto curve rather than at batch size one?
+D00158	M	How would you estimate the number of GPUs needed to serve a given model at a target QPS and latency?
+D00159	M	What is multi-LoRA serving, and how does it let one base model serve many tenants?
+D00160	M	How do you handle noisy neighbors in a multi-tenant LLM serving cluster?
+D00161	H	One malformed request crashed an inference replica and every tenant on it lost service. What is the design lesson and fix?
+D00162	H	Design a premium low-latency tier for an agent product needing very high tokens per second per user.
+D00163	M	Why is Ollama not a production inference server, and what changes if a prototype built on it becomes a shared API?
+D00164	M	When would you choose on-device inference over a cloud API, and what do you give up?
+D00165	M	How does MoE inference change batching, communication and memory planning?
+D00166	M	Why are inference frameworks vulnerable to unsafe deserialization, and how do you harden them?
+D00167	M	When is self-hosting an open-weight model cheaper than an API, and what hidden costs flip the answer?
+D00168	M	How do you justify the cost of an AI system to a CFO?
+D00169	M	What does a tiered KV storage hierarchy look like, and how does it affect cache hit rates for agentic workloads?
+D00170	M	Why is context caching sometimes better than RAG for a single 50K-token document queried repeatedly?
+D00171	M	How does knowledge distillation produce a smaller serving model, and when is distillation preferred over quantization?
+D00172	M	Production LLM serving suddenly slows down. What metrics and diagnostic steps do you follow?
+D03765	M	What is the KV cache, why does it matter for inference, and how does its memory scale with context length and batch size?
+D03766	M	Explain INT8, INT4 and FP8 quantization and the trade-off between accuracy and latency, including KV cache quantization.
+D03767	M	Compare post-training quantization with quantization-aware training.
+D03768	M	How do PagedAttention and continuous batching raise serving throughput?
+D03769	M	What is the difference between the prefill and decode phases of LLM inference and how do they affect performance?
+D03770	M	Explain tensor, pipeline and sequence parallelism for serving large models.
+D04449	M	How does a decoder-only model make KV-cache reuse across multi-turn conversations simpler than an encoder-decoder model does?
+D04547	M	In LLaMA-2 style inference code, how are the KV cache tensors laid out and updated at each decoding step?
+D04740	E	What are the two phases of LLM inference, prefill and decode, and how do their compute and memory profiles differ?
+D04741	E	What is the KV cache and why does it make autoregressive decoding faster?
+D04742	M	Estimate the KV cache size for a model with L layers, H heads, head dimension d, batch B and sequence length S in FP16.
+D04743	M	Why does GPU memory keep growing during LLM serving and stay occupied after requests finish?
+D04744	M	Why is decoding memory-bandwidth bound rather than compute bound, and what does that imply for batching?
+D04745	M	What is static batching and why is it inefficient for variable-length LLM requests?
+D04746	M	What is continuous (iteration-level, in-flight) batching, and how does it raise throughput?
+D04747	M	Explain PagedAttention. How does it reduce KV-cache fragmentation and enable prefix sharing?
+D04748	M	What is the role of the block table in vLLM, and how does copy-on-write support parallel sampling or beam search?
+D04749	H	Design a serving scheduler that handles preemption when KV-cache blocks run out. What are the options (swap, recompute) and their costs?
+D04750	M	Compare vLLM, TGI, FasterTransformer/TensorRT-LLM, CTranslate2 and DeepSpeed-MII as serving options. How would you choose?
+D04751	M	What optimizations did FasterTransformer apply (kernel fusion, custom attention kernels, INT8) and what limitations does a static engine have?
+D04752	M	What does TGI offer in terms of token streaming, continuous batching and tensor-parallel inference?
+D04753	M	How is pipeline, tensor and sequence parallelism used at inference time and when is each preferred?
+D04754	M	What is speculative decoding? Why does it preserve the target model's output distribution?
+D04755	H	What determines the speedup of speculative decoding, and when does it fail to help (large batches, low acceptance rate)?
+D04756	M	Compare FP16, INT8 and INT4 inference in memory, speed and accuracy. Why is INT8 not always faster in practice?
+D04757	M	What is post-training quantization versus quantization-aware training, and what are weight-only versus weight-and-activation quantization?
+D04758	M	Why are activations harder to quantize in LLMs than weights (outlier channels), and how do SmoothQuant or LLM.int8() address it?
+D04759	M	How do GPTQ and AWQ differ in how they choose quantized weights?
+D04760	M	What is sparsity or pruning in LLMs, structured versus unstructured, and why is unstructured sparsity hard to accelerate?
+D04761	M	How does knowledge distillation reduce serving cost, and what are the options for logit-level versus data-level distillation?
+D04762	M	How does inference speed compare on CPU versus GPU for LLMs and when would CPU inference be acceptable?
+D04763	M	What memory-saving methods exist for training, fine-tuning and inference of LLMs?
+D04764	M	Define time to first token, time per output token and throughput. How do you trade latency for throughput when tuning batch size?
+D04765	H	Your LLM service must meet a p95 TTFT target while maximizing tokens per second. How do you configure batching, chunked prefill and replicas?
+D04766	M	What is prefix caching and when does it give big wins in production?
+D04767	M	Why does the LLM decoder generate tokens sequentially, and what are the techniques to reduce its latency?
+D04770	M	How should the application pattern change when moving from an offline API to streaming and agentic workloads?
+D04771	M	What does Ray Serve or MLC LLM add for deployment, and when would you use them for edge devices?
+D04947	M	Why does serving a long-context request hurt the throughput of other requests, and how does chunked prefill mitigate that?
+D04948	M	Why does increasing batch size improve throughput up to a point in decoding, and what limits it (KV memory, compute)?
+D04949	M	What is the roofline model and how does arithmetic intensity explain why prefill is compute bound and decode is memory bound?
+D04950	M	For a 70B model in FP16, how many GPUs of 80GB are needed to serve with a given KV cache budget, and which parallelism do you use?
+D04951	M	What accuracy and speed trade-offs do you expect from 4-bit weight-only quantization on a 7B model, and how would you validate it?
+D04952	M	What are the main sources of latency in an LLM serving stack beyond model compute (tokenization, queueing, network, sampling)?
+D04953	M	What is the role of custom CUDA kernels and operator fusion in LLM inference engines?
+D04954	M	How do multi-LoRA serving and model multiplexing share a base model across tenants?

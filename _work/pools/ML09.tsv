@@ -1,0 +1,87 @@
+Q001603	E	What is a vector and how is it used in machine learning?
+Q001604	E	Explain the difference between a scalar and a vector.
+Q001605	E	What is a matrix and why is it central to linear algebra?
+Q001606	E	Explain the concept of a tensor in the context of machine learning.
+Q001607	E	How do you perform matrix addition and subtraction?
+Q001608	E	What are the properties of matrix multiplication?
+Q001609	E	Define the transpose of a matrix.
+Q001610	E	Explain the dot product of two vectors and its significance in machine learning.
+Q001611	E	What is the cross product of vectors and when is it used?
+Q001612	E	How do you calculate the norm of a vector and what does it represent?
+Q001613	E	Define the concept of orthogonality in linear algebra.
+Q001614	E	What is the determinant of a matrix and what information does it provide?
+Q001615	E	Can you explain what an eigenvector and eigenvalue are?
+Q001616	E	How is the trace of a matrix defined and what is its relevance?
+Q001617	E	What is a diagonal matrix and how is it used in linear algebra?
+Q001908	H	Discuss the importance of the trace of a matrix in the context of PCA.
+Q003971	E	What do you mean by an affine transformation? Discuss affine vs. linear transformation.
+Q004077	M	What is mutual information and KL divergence?
+Q004078	M	Describe KL divergence intuitively.
+Q004082	M	What is a Borel measurable function?
+Q004135	E	What is broadcasting in connection to linear algebra?
+Q004136	E	What are scalars, vectors, matrices, and tensors?
+Q004137	E	What is the Hadamard product of two matrices?
+Q004138	E	What is an inverse matrix?
+Q004139	E	If the inverse of a matrix exists, how do you calculate it?
+Q004140	M	What is the determinant of a square matrix? How is it calculated (e.g., Laplace expansion)? What is the connection of the determinant to eigenvalues?
+Q004141	E	Discuss span and linear dependence.
+Q004142	M	What is Ax = b? When does Ax = b have a unique solution?
+Q004143	M	In Ax = b, what happens when A is fat or tall?
+Q004144	E	When does the inverse of A exist?
+Q004145	E	What is a norm? What are the L1, L2 and L-infinity norms?
+Q004146	M	What are the conditions a norm has to satisfy?
+Q004147	M	Why is the squared L2 norm preferred in ML over the plain L2 norm?
+Q004148	M	When is the L1 norm preferred over the L2 norm?
+Q004149	M	Can the number of nonzero elements in a vector be defined as the L0 norm? If not, why?
+Q004150	E	What is the Frobenius norm?
+Q004151	E	What is a diagonal matrix?
+Q004152	M	Why is multiplication by a diagonal matrix computationally cheap? How is the multiplication different for a square vs. non-square diagonal matrix?
+Q004153	E	What is a symmetric matrix?
+Q004154	E	What is a unit vector?
+Q004155	E	When are two vectors x and y orthogonal?
+Q004156	M	In R^n, what is the maximum possible number of orthogonal vectors with non-zero norm?
+Q004157	E	When are two vectors x and y orthonormal?
+Q004158	M	What is an orthogonal matrix? Why is it computationally preferred?
+Q004159	E	What are eigendecomposition, eigenvectors and eigenvalues?
+Q004160	E	How do you find the eigenvalues of a matrix?
+Q004161	M	Write the eigendecomposition formula for a matrix. If the matrix is real symmetric, how does this change?
+Q004162	M	Is the eigendecomposition guaranteed to be unique? If not, how do we represent it?
+Q004163	M	What are positive definite, negative definite, positive semi-definite and negative semi-definite matrices?
+Q004164	M	What is SVD? Why do we use it? Why not just use eigendecomposition?
+Q004165	M	Given a matrix A, how will you calculate its SVD?
+Q004166	E	What are singular values, left singular vectors and right singular vectors?
+Q004167	M	What is the connection of the SVD of A with functions of A?
+Q004168	M	Why are singular values always non-negative?
+Q004169	M	What is the Moore-Penrose pseudo-inverse and how do you calculate it?
+Q004170	H	If we apply the Moore-Penrose pseudo-inverse to Ax = b, what solution is provided if A is fat? What solution is provided if A is tall?
+Q004171	M	Which matrices can be decomposed by eigendecomposition?
+Q004172	M	Which matrices can be decomposed by SVD?
+Q004173	E	What is the trace of a matrix?
+Q004174	M	How do you write the Frobenius norm of a matrix A in terms of the trace?
+Q004175	M	Why is the trace of a product of matrices invariant to cyclic permutations?
+Q004176	E	What is the trace of a scalar?
+Q004178	E	What are underflow and overflow?
+Q004179	M	How do you tackle the problem of underflow or overflow for the softmax function or log-softmax function?
+Q004180	M	What is poor conditioning?
+Q004181	E	What is the condition number?
+Q004182	E	What are grad, div and curl?
+Q004183	E	What are critical or stationary points in multiple dimensions?
+Q004187	E	What is a Jacobian matrix?
+Q004188	E	What is a Hessian matrix?
+Q004214	E	Write the formulae for the logistic and softplus functions.
+Q004216	H	What do you mean by measure zero and almost everywhere?
+Q004218	E	Define self-information. What are its units?
+Q004219	M	What are Shannon entropy and differential entropy?
+Q004220	M	What is Kullback-Leibler (KL) divergence?
+Q004221	M	Can KL divergence be used as a distance measure?
+Q005805	M	What is the relationship between SVD and eigendecomposition?
+Q005806	M	What is the relationship between PCA and SVD?
+Q011926	M	Compute the KL divergence given different random variables.
+Q011931	H	What is the relationship between cross-entropy, KL divergence and perplexity, and why is cross-entropy the training loss for language models?
+Q012018	H	How is KL divergence loss different from cross-entropy loss? And from contrastive loss?
+Q009607	M	Derive the gradient of cross-entropy loss with softmax inputs, and explain why we fuse them numerically.
+Q009612	M	Explain the SVD and give two places it shows up in modern deep learning.
+Q009613	H	What is the cost of a full SVD on a 4096x4096 matrix, and what would you use instead if you only need the top 10 singular vectors?
+Q009614	M	Why is the spectral norm of a weight matrix relevant to Lipschitz bounds?
+Q009933	M	What is the relationship between cross-entropy, KL divergence, and perplexity, and why is cross-entropy the training loss for language models?
+Q009934	H	Why is KL(p‖q) rather than KL(q‖p) the quantity MLE minimises, and how do the two differ in behaviour (mode-covering vs mode-seeking)?

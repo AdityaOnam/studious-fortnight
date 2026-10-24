@@ -1,0 +1,473 @@
+CS03	E	Compare the OSI seven-layer model with the TCP/IP four-layer model. Which layers map to each other?	JavaGuide:network/osi-and-tcp-ip-model
+CS03	E	Why are network protocols organized into layers, and what benefits does layering bring?	JavaGuide:network/osi-and-tcp-ip-model
+CS03	E	Name the protocol data unit used at each layer of the TCP/IP stack and describe how encapsulation works as data moves down the stack.	JavaGuide:network/osi-and-tcp-ip-model
+CS03	E	What are the key differences between TCP and UDP?	JavaGuide:network/other-network-questions2
+CS03	M	When would you choose UDP over TCP for an application? Give concrete examples and justify each.	JavaGuide:network/other-network-questions2
+CS03	M	Why is TCP described as byte-stream oriented while UDP is message oriented, and what practical problems does this cause for application protocols?	JavaGuide:network/other-network-questions2
+CS03	M	How does an application deal with message boundaries (sticky packets) when reading from a TCP socket?	JavaGuide:network/other-network-questions2
+CS03	E	Which common application-layer protocols run over TCP and which over UDP?	JavaGuide:network/other-network-questions2
+CS03	E	Walk through the TCP three-way handshake. What state does each side go through?	JavaGuide:network/tcp-connection-and-disconnection
+CS03	M	Why does TCP need three handshake messages rather than two? What goes wrong with a two-way handshake?	JavaGuide:network/tcp-connection-and-disconnection
+CS03	M	In the second handshake the server already sends an ACK. Why does it also need to send a SYN in the same segment?	JavaGuide:network/tcp-connection-and-disconnection
+CS03	M	Can data be carried in the segments of a TCP three-way handshake? Which ones, and why?	JavaGuide:network/tcp-connection-and-disconnection
+CS03	M	What are the SYN (half-open) queue and the accept (full-connection) queue in a TCP server, and what happens when each overflows?	JavaGuide:network/tcp-connection-and-disconnection
+CS03	M	Why does connection teardown take four steps while setup takes three?	JavaGuide:network/tcp-connection-and-disconnection
+CS03	M	Under what circumstances can a TCP close appear to take only three segments instead of four?	JavaGuide:network/tcp-connection-and-disconnection
+CS03	M	What happens in TCP if the ACK of the first FIN is lost on its way to the closing side?	JavaGuide:network/tcp-connection-and-disconnection
+CS03	M	Why does the active closer wait 2MSL after the fourth wave before releasing the connection?	JavaGuide:network/tcp-connection-and-disconnection
+CS03	M	A server shows thousands of connections stuck in CLOSE_WAIT. What does that indicate and how would you debug it?	JavaGuide:network/tcp-connection-and-disconnection
+CS03	M	A server shows tens of thousands of sockets in TIME_WAIT. Is that a problem, and how do you decide what to do about it?	JavaGuide:network/tcp-time-wait
+CS03	H	Why is enabling tcp_tw_reuse (or recycling TIME_WAIT sockets aggressively) risky, and under what conditions is it safe?	JavaGuide:network/tcp-time-wait
+CS03	M	Which side ends up in TIME_WAIT, and why should you check who initiates the close before tuning anything?	JavaGuide:network/tcp-time-wait
+CS03	M	What two problems does TIME_WAIT solve for a TCP connection?	JavaGuide:network/tcp-time-wait
+CS03	M	How does TCP guarantee reliable delivery? List the mechanisms involved.	JavaGuide:network/tcp-reliability-guarantee
+CS03	M	Compare stop-and-wait ARQ with continuous (sliding window) ARQ. Why is the latter more efficient?	JavaGuide:network/tcp-reliability-guarantee
+CS03	M	How does TCP determine the retransmission timeout, and what goes wrong if it is set too short or too long?	JavaGuide:network/tcp-reliability-guarantee
+CS03	M	Explain TCP fast retransmit. Why does it trigger on duplicate ACKs instead of waiting for a timeout?	JavaGuide:network/tcp-reliability-guarantee
+CS03	H	What problem does selective acknowledgement (SACK) solve, and what additional information does D-SACK report to the sender?	JavaGuide:network/tcp-reliability-guarantee
+CS03	M	How does TCP implement flow control with the sliding window? What happens when the receiver advertises a zero window?	JavaGuide:network/tcp-reliability-guarantee
+CS03	M	Explain TCP congestion control: slow start, congestion avoidance, fast retransmit and fast recovery.	JavaGuide:network/tcp-reliability-guarantee
+CS03	M	What is the difference between flow control and congestion control in TCP?	JavaGuide:network/tcp-reliability-guarantee
+CS03	M	What is the difference between TCP keepalive and HTTP keep-alive?	JavaGuide:network/tcp-keepalive-vs-http-keepalive
+CS03	M	What are the possible outcomes of a TCP keepalive probe, and what are its limitations for detecting dead peers?	JavaGuide:network/tcp-keepalive-vs-http-keepalive
+CS03	M	How are idle HTTP persistent connections closed and reclaimed on the server and client side?	JavaGuide:network/tcp-keepalive-vs-http-keepalive
+CS03	M	Can TCP and UDP listen on the same port number simultaneously? Why does that not conflict?	JavaGuide:network/can-tcp-and-udp-use-the-same-port
+CS03	M	Why does DNS use port 53 for both TCP and UDP, and when does it fall back to TCP?	JavaGuide:network/can-tcp-and-udp-use-the-same-port
+CS03	M	A host can only use 65535 ports. Why can a server still hold far more than 65535 concurrent TCP connections?	JavaGuide:network/maximum-number-of-tcp-connections-per-host
+CS03	H	What actually limits the number of concurrent TCP connections on a Linux server, and why do clients or NAT gateways hit limits earlier?	JavaGuide:network/maximum-number-of-tcp-connections-per-host
+CS03	M	What fields make up the four-tuple that identifies a TCP connection?	JavaGuide:network/maximum-number-of-tcp-connections-per-host
+CS03	M	Ping to a host succeeds but a TCP connection to it times out. What are the possible explanations and how would you narrow them down?	JavaGuide:network/can-ping-but-tcp-may-not-connect
+CS03	E	What does the ping command do, and which protocol does it use?	JavaGuide:network/other-network-questions
+CS03	M	Why can an HTTPS request fail at the TLS stage even though TCP connects fine, for example with SNI-based filtering?	JavaGuide:network/can-ping-but-tcp-may-not-connect
+CS03	E	What happens, step by step, when you type a URL into a browser and press Enter?	JavaGuide:network/the-whole-process-of-accessing-web-pages
+CS03	M	In the browser navigation flow, which caches are checked before a DNS query is sent, and in what order?	JavaGuide:network/the-whole-process-of-accessing-web-pages
+CS03	M	How does the browser turn an HTML response into a rendered page? Which resources block rendering?	JavaGuide:network/the-whole-process-of-accessing-web-pages
+CS03	E	Explain how DNS resolution works. What are recursive and iterative queries?	JavaGuide:network/dns
+CS03	E	What types of DNS servers exist (root, TLD, authoritative, local resolver) and what role does each play?	JavaGuide:network/dns
+CS03	E	What are the common DNS record types (A, AAAA, CNAME, MX, NS, TXT) and what is each used for?	JavaGuide:network/dns
+CS03	M	What is DNS hijacking and how can you detect and mitigate it?	JavaGuide:network/other-network-questions
+CS03	M	Why does DNS use UDP for most queries, and what role does caching and TTL play in DNS performance and propagation delay?	JavaGuide:network/dns
+CS03	M	How do CNAME records differ from A records, and what restrictions does a CNAME impose on a zone apex?	JavaGuide:network/dns
+CS03	E	What is the difference between HTTP and HTTPS?	JavaGuide:network/http-vs-https
+CS03	M	Explain the SSL/TLS handshake. How do the client and server end up with a shared symmetric key?	JavaGuide:network/http-vs-https
+CS03	M	Why does TLS use asymmetric cryptography only for the handshake and symmetric encryption for the data?	JavaGuide:network/http-vs-https
+CS03	H	Compare RSA key exchange with ECDHE key exchange in a TLS handshake. Why does only ECDHE give forward secrecy?	JavaGuide:network/https-rsa-vs-ecdhe
+CS03	H	In a cipher suite named ECDHE_RSA_AES128_GCM_SHA256, what does each component do? Is the data encrypted with both RSA and ECDHE?	JavaGuide:network/https-rsa-vs-ecdhe
+CS03	H	What changed in TLS 1.3 compared with TLS 1.2 in terms of handshake round trips and supported key exchange modes?	JavaGuide:network/https-rsa-vs-ecdhe
+CS03	M	How do TLS session resumption and session tickets affect forward secrecy and handshake cost?	JavaGuide:network/https-rsa-vs-ecdhe
+CS03	M	What is the difference between SSL and TLS, and which versions are considered obsolete?	JavaGuide:network/http-vs-https
+CS03	E	List the main HTTP status code classes and give examples of codes in each.	JavaGuide:network/http-status-codes
+CS03	M	What is the difference between 301 and 302, and between 401 and 403, redirects and auth failures?	JavaGuide:network/http-status-codes
+CS03	M	When should a service return 502, 503 or 504, and how do they differ from a plain 500?	JavaGuide:network/http-status-codes
+CS03	M	What are the main differences between HTTP/1.0 and HTTP/1.1?	JavaGuide:network/http1.0-vs-http1.1
+CS03	M	How does HTTP caching differ between 1.0 (Expires, Pragma) and 1.1 (Cache-Control, ETag)?	JavaGuide:network/http1.0-vs-http1.1
+CS03	M	What problem does the Host header solve, and why was it needed in HTTP/1.1?	JavaGuide:network/http1.0-vs-http1.1
+CS03	M	What are range requests and the 100-continue mechanism in HTTP/1.1, and what bandwidth problems do they address?	JavaGuide:network/http1.0-vs-http1.1
+CS03	M	What are the main differences between HTTP/1.1 and HTTP/2?	JavaGuide:network/other-network-questions
+CS03	M	What are the main differences between HTTP/2 and HTTP/3, and why does HTTP/3 use QUIC over UDP?	JavaGuide:network/other-network-questions
+CS03	H	How does head-of-line blocking differ between HTTP/1.1, HTTP/2 over TCP and HTTP/3 over QUIC?	JavaGuide:network/other-network-questions
+CS03	M	What is HTTP/2 multiplexing and header compression (HPACK), and how do they reduce latency?	JavaGuide:network/other-network-questions
+CS03	M	HTTP is stateless. How do web applications maintain user state across requests?	JavaGuide:network/other-network-questions
+CS03	M	What are the differences between cookies and sessions, and what are the trade-offs of each for authentication?	JavaGuide:network/other-network-questions
+CS03	M	How would you share session state across several backend servers behind a load balancer?	JavaGuide:network/other-network-questions
+CS03	E	What is the difference between a URI and a URL?	JavaGuide:network/other-network-questions
+CS03	M	What are the differences between GET and POST? Are the usual claims about safety and idempotency actually accurate?	JavaGuide:network/other-network-questions
+CS03	E	Which HTTP methods are idempotent and which are safe? Why does this matter for retries?	JavaGuide:network/other-network-questions
+CS03	E	Name common HTTP request and response headers and explain what Content-Type, Cache-Control, Authorization and Accept-Encoding do.	JavaGuide:network/other-network-questions
+CS03	E	What is WebSocket and how is its handshake performed on top of HTTP?	JavaGuide:network/application-layer-protocol
+CS03	M	How does WebSocket differ from HTTP, and when is each appropriate?	JavaGuide:network/other-network-questions
+CS03	M	Compare short polling, long polling, WebSocket and server-sent events for pushing updates to browsers.	JavaGuide:network/other-network-questions
+CS03	M	When would you pick SSE over WebSocket for a real-time feature such as streaming responses?	JavaGuide:network/other-network-questions
+CS03	M	Why do WebSocket connections complicate load balancing and horizontal scaling of a server?	JavaGuide:network/other-network-questions
+CS03	M	How does an email travel from sender to recipient? Compare SMTP, POP3 and IMAP.	JavaGuide:network/application-layer-protocol
+CS03	E	What are SSH, FTP, Telnet and RTP used for, and which of them are considered insecure by design?	JavaGuide:network/application-layer-protocol
+CS03	M	Why is RPC not a single protocol, and why is it more common than plain HTTP/REST for internal service calls?	JavaGuide:network/http-vs-rpc
+CS03	M	Compare HTTP/REST and RPC styles: resource access versus method invocation. How would you choose between them?	JavaGuide:network/http-vs-rpc
+CS03	M	Is gRPC just HTTP/2 plus Protobuf? What else does an RPC framework provide beyond a transport?	JavaGuide:network/http-vs-rpc
+CS03	M	Does HTTP/2 make RPC frameworks unnecessary? Explain your reasoning.	JavaGuide:network/http-vs-rpc
+CS03	E	What is an IP address and how does IP routing deliver a packet across networks?	JavaGuide:network/other-network-questions2
+CS03	M	What are the main differences between IPv4 and IPv6, and why has IPv6 adoption been slow?	JavaGuide:network/other-network-questions2
+CS03	M	How can a backend service obtain the real client IP when requests pass through proxies and load balancers?	JavaGuide:network/other-network-questions2
+CS03	M	What does NAT do, and how does a NAT gateway keep track of mappings for outgoing connections?	JavaGuide:network/nat
+CS03	M	What problems does NAT introduce for peer-to-peer connections and how are they worked around?	JavaGuide:network/nat
+CS03	E	What is a MAC address and how does it differ from an IP address?	JavaGuide:network/arp
+CS03	M	What problem does ARP solve and how does it work within one LAN versus across different LANs?	JavaGuide:network/arp
+CS03	M	What is ARP spoofing and how does it enable a man-in-the-middle attack on a local network?	JavaGuide:network/arp
+CS03	E	What are the main functions of the physical, data link, network and transport layers?	JavaGuide:network/computer-network-xiexiren-summary
+CS03	M	Compare a hub, a switch and a router. Which layer does each operate at?	JavaGuide:network/computer-network-xiexiren-summary
+CS03	M	What are the differences between circuit switching, packet switching and message switching?	JavaGuide:network/computer-network-xiexiren-summary
+CS03	M	What do CSMA/CD and CSMA/CA do, and why is collision detection not possible on wireless networks?	JavaGuide:network/computer-network-xiexiren-summary
+CS03	M	How does subnetting work? Given a CIDR block, how do you compute the network address, broadcast address and host count?	JavaGuide:network/computer-network-xiexiren-summary
+CS03	M	Compare link-state routing (OSPF) and distance-vector routing (RIP). What is BGP used for?	JavaGuide:network/computer-network-xiexiren-summary
+CS03	E	What is a proxy server versus a reverse proxy, and what is each used for?	JavaGuide:network/computer-network-xiexiren-summary
+CS03	M	What is a CDN and how does DNS-based request routing steer users to a nearby edge node?	JavaGuide:network/dns
+CS08	M	Explain the SYN flood attack. How do SYN cookies and backlog tuning mitigate it?	JavaGuide:network/network-attack-means
+CS08	M	How do UDP flood, HTTP flood and DNS flood attacks work, and how do you defend against each?	JavaGuide:network/network-attack-means
+CS08	M	What is IP spoofing and why does it enable reflection and amplification attacks?	JavaGuide:network/network-attack-means
+CS08	M	What is a TCP reset attack and how can an attacker forge a RST packet?	JavaGuide:network/network-attack-means
+CS08	M	How does a man-in-the-middle attack work and how do HTTPS and certificate validation prevent it?	JavaGuide:network/network-attack-means
+CS08	H	How would you design a layered defence against a large DDoS attack on a public web service?	JavaGuide:network/network-attack-means
+CS03	M	What is the difference between a blocking socket, a non-blocking socket and an I/O-multiplexed server loop?	JavaGuide:operating-system/io-multiplexing
+CS01	E	What is an operating system and what are its main functions?	JavaGuide:operating-system/operating-system-basic-questions-01
+CS01	E	What is the difference between user mode and kernel mode, and why do they exist?	JavaGuide:operating-system/operating-system-basic-questions-01
+CS01	E	What is a system call and how does a user program switch into the kernel to execute it?	JavaGuide:operating-system/interrupt-exception-syscall
+CS01	M	Why is a system call more expensive than an ordinary function call?	JavaGuide:operating-system/interrupt-exception-syscall
+CS01	M	Compare interrupts, exceptions, traps and system calls. What do they have in common and how do they differ?	JavaGuide:operating-system/interrupt-exception-syscall
+CS01	M	How does the timer interrupt enable preemptive multitasking?	JavaGuide:operating-system/interrupt-exception-syscall
+CS01	M	Trace what happens inside the kernel when a user process calls a blocking read() on a file or socket.	JavaGuide:operating-system/interrupt-exception-syscall
+CS01	E	What is the difference between a process and a thread?	JavaGuide:operating-system/process-and-thread
+CS01	M	Why do we need threads when we already have processes?	JavaGuide:operating-system/process-and-thread
+CS01	E	Which resources do threads in the same process share and which are private to each thread?	JavaGuide:operating-system/process-and-thread
+CS01	E	What is a PCB and what information does it contain? How does a TCB relate to it?	JavaGuide:operating-system/operating-system-basic-questions-01
+CS01	E	Describe the typical states of a process and the transitions between them.	JavaGuide:operating-system/operating-system-basic-questions-01
+CS01	M	What do fork, exec and wait do in Linux, and what are zombie and orphan processes?	JavaGuide:operating-system/process-and-thread
+CS01	M	Why is fork() cheap in modern Linux despite copying the address space conceptually? How does copy-on-write work?	JavaGuide:operating-system/memory-management
+CS01	M	What is a context switch, what state is saved, and why does it cost CPU time?	JavaGuide:operating-system/process-and-thread
+CS01	M	Why is a thread context switch cheaper than a process context switch?	JavaGuide:operating-system/process-and-thread
+CS01	M	Compare user-level threads, kernel-level threads and hybrid models. What do many-to-one and one-to-one mappings imply?	JavaGuide:operating-system/process-and-thread
+CS01	M	How do coroutines, fibers and virtual threads differ from kernel threads, and what do they save?	JavaGuide:operating-system/process-and-thread
+CS01	M	Does adding more threads always make a program faster? What factors cause multithreading to hurt performance?	JavaGuide:operating-system/operating-system-basic-questions-01
+CS01	E	List the inter-process communication mechanisms and compare their strengths.	JavaGuide:operating-system/ipc
+CS01	M	Compare pipes, named pipes, message queues and shared memory for IPC. Which needs explicit synchronisation?	JavaGuide:operating-system/ipc
+CS01	M	What is the difference between a semaphore and a signal in the context of IPC?	JavaGuide:operating-system/ipc
+CS01	M	When would you use Unix domain sockets rather than TCP sockets for communication between local processes?	JavaGuide:operating-system/ipc
+CS01	H	Why do microkernel designs place so much emphasis on IPC performance?	JavaGuide:operating-system/ipc
+CS01	E	What is virtual memory and what problems does it solve?	JavaGuide:operating-system/virtual-memory
+CS01	M	Compare segmentation with paging. What are the advantages and drawbacks of each, and how does segmented paging combine them?	JavaGuide:operating-system/virtual-memory
+CS01	M	Walk through virtual-to-physical address translation with a page table.	JavaGuide:operating-system/virtual-memory
+CS01	M	Why are multi-level page tables used instead of a single flat page table?	JavaGuide:operating-system/virtual-memory
+CS01	M	What is a TLB, and how does its hit rate affect the effective memory access time?	JavaGuide:operating-system/virtual-memory
+CS01	M	Describe what happens during a page fault, and distinguish a valid page fault from an invalid access.	JavaGuide:operating-system/virtual-memory
+CS01	M	Compare page replacement algorithms: FIFO, LRU, Clock and optimal. Which can exhibit Belady's anomaly?	JavaGuide:operating-system/virtual-memory
+CS01	M	What is thrashing, how does the working set model relate to it, and how can you detect and fix it?	JavaGuide:operating-system/memory-management
+CS01	M	What is the principle of locality and why does it make virtual memory and caches work?	JavaGuide:operating-system/operating-system-basic-questions-02
+CS01	M	What is the difference between VSZ, RSS and PSS when measuring process memory?	JavaGuide:operating-system/memory-management
+CS01	M	What are internal and external memory fragmentation? How do paging and the buddy allocator address them?	JavaGuide:operating-system/memory-management
+CS01	M	What is memory overcommit in Linux and how does it relate to the OOM killer?	JavaGuide:operating-system/memory-management
+CS01	M	A process allocation succeeds but the process is later killed by the OOM killer. How is that possible and how do you investigate?	JavaGuide:operating-system/memory-management
+CS01	M	What does mmap do and how does it differ from read/write? Where is shared memory built on top of it?	JavaGuide:operating-system/memory-management
+CS01	M	How does virtual memory provide isolation between processes while allowing controlled sharing?	JavaGuide:operating-system/operating-system-basic-questions-02
+CS01	M	What is swap, when should it be enabled or disabled on a database or JVM server, and what are the trade-offs?	JavaGuide:operating-system/memory-management
+CS01	E	What is zero-copy and which copy does the term eliminate?	JavaGuide:operating-system/zero-copy
+CS01	M	Count the data copies and context switches in a traditional read-then-write file transfer.	JavaGuide:operating-system/zero-copy
+CS01	M	Compare mmap+write, sendfile and splice for zero-copy transfer. What does DMA scatter-gather add?	JavaGuide:operating-system/zero-copy
+CS01	M	Why does a message broker such as Kafka benefit from sendfile when serving consumers, and when does it not help (e.g. with TLS)?	JavaGuide:operating-system/zero-copy
+CS01	E	What is I/O multiplexing and how does it differ from blocking and non-blocking I/O?	JavaGuide:operating-system/io-multiplexing
+CS01	M	Compare select, poll and epoll. Why does epoll scale better with many connections?	JavaGuide:operating-system/io-multiplexing
+CS01	M	Explain level-triggered versus edge-triggered epoll and the pitfalls of edge-triggered mode.	JavaGuide:operating-system/io-multiplexing
+CS01	M	Is epoll always the best choice? In which situations does it give little benefit?	JavaGuide:operating-system/io-multiplexing
+CS01	M	Compare the five Unix I/O models: blocking, non-blocking, multiplexing, signal-driven and asynchronous.	JavaGuide:operating-system/io-multiplexing
+CS01	E	What do a file system's inode, dentry and file name each represent?	JavaGuide:operating-system/file-system
+CS01	M	What happens in the kernel when a process opens a file by path?	JavaGuide:operating-system/file-system
+CS01	M	Compare contiguous, linked and indexed allocation of file blocks on disk.	JavaGuide:operating-system/file-system
+CS01	M	How can a file system keep track of free space? Compare bitmaps and free lists.	JavaGuide:operating-system/file-system
+CS01	M	What is the VFS layer and what problem does it solve?	JavaGuide:operating-system/file-system
+CS01	M	What is the difference between hard links and symbolic links? Why can't a hard link cross file systems?	JavaGuide:operating-system/file-system
+CS01	M	What is the page cache and how does it affect file read and write performance?	JavaGuide:operating-system/file-system
+CS01	M	After write() returns successfully, is the data guaranteed to be on disk? What do fsync and O_DIRECT change?	JavaGuide:operating-system/operating-system-basic-questions-02
+CS01	M	How does a journaling file system protect against corruption after a crash?	JavaGuide:operating-system/file-system
+CS01	M	Compare disk scheduling algorithms such as FCFS, SSTF, SCAN and C-SCAN.	JavaGuide:operating-system/operating-system-basic-questions-02
+CS01	E	What are common Linux commands you use to inspect CPU, memory, disk and network usage on a misbehaving server?	JavaGuide:operating-system/linux-intro
+CS01	E	Explain Linux file permissions (rwx, chmod, umask) and the difference between file types such as regular, directory and symlink.	JavaGuide:operating-system/linux-intro
+CS01	E	What is the difference between an environment variable set in a shell session and one defined in a profile file?	JavaGuide:operating-system/linux-intro
+CS01	E	Explain the Linux directory tree and the purpose of /etc, /var, /proc, /dev and /tmp.	JavaGuide:operating-system/linux-intro
+CS01	M	What does the shell option pipefail do, and why does a pipeline normally hide failures from earlier commands?	JavaGuide:operating-system/shell-intro
+CS01	M	How would you make a production shell script safe against concurrent runs, leftover temp files and hanging network calls?	JavaGuide:operating-system/shell-intro
+CS02	E	What are the common CPU scheduling algorithms (FCFS, SJF, round robin, priority, multilevel feedback queue) and their trade-offs?	JavaGuide:operating-system/cpu-scheduling-and-load
+CS02	M	Which metrics do schedulers optimise (throughput, turnaround, response time, fairness) and why do they conflict?	JavaGuide:operating-system/cpu-scheduling-and-load
+CS02	M	Why can SJF cause starvation and how does aging solve it?	JavaGuide:operating-system/cpu-scheduling-and-load
+CS02	M	How does the Linux CFS scheduler pick the next task, and what motivated the move toward EEVDF?	JavaGuide:operating-system/cpu-scheduling-and-load
+CS02	M	What events cause a task to leave the CPU: blocking, time slice expiry, preemption, exit?	JavaGuide:operating-system/cpu-scheduling-and-load
+CS02	M	What is the difference between load average and CPU utilisation? Can load be high while CPU is idle?	JavaGuide:operating-system/cpu-scheduling-and-load
+CS02	M	You receive a CPU alert on a production host. How do you determine whether user code, kernel, I/O wait or run-queue contention is responsible?	JavaGuide:operating-system/cpu-scheduling-and-load
+CS02	E	What is a critical section and what properties must a solution to the critical-section problem satisfy?	JavaGuide:operating-system/os-lock-and-sync
+CS02	E	What are the ways threads synchronise with each other, and when do you use each?	JavaGuide:operating-system/os-lock-and-sync
+CS02	M	Compare mutex, spinlock and semaphore. When is spinning better than sleeping?	JavaGuide:operating-system/os-lock-and-sync
+CS02	M	What is a condition variable and why must it always be used together with a mutex and a while-loop predicate check?	JavaGuide:operating-system/os-lock-and-sync
+CS02	M	What is a futex and how does it avoid system calls in the uncontended case?	JavaGuide:operating-system/os-lock-and-sync
+CS02	M	How do atomic instructions such as compare-and-swap form the foundation of locks and lock-free structures?	JavaGuide:operating-system/os-lock-and-sync
+CS02	H	Why do locks also provide memory-ordering guarantees, and what can go wrong with unsynchronised reads of shared data?	JavaGuide:operating-system/os-lock-and-sync
+CS02	M	What is priority inversion, how can it occur with locks, and how do priority inheritance protocols prevent it?	JavaGuide:operating-system/os-lock-and-sync
+CS02	M	What are the common mistakes when using locks, such as holding a lock across blocking I/O or forgetting to unlock on error paths?	JavaGuide:operating-system/os-lock-and-sync
+CS02	E	What is a deadlock and what are the four necessary conditions for it?	JavaGuide:operating-system/dead-lock
+CS02	M	Describe deadlock prevention, avoidance, detection and recovery, and give an example technique of each.	JavaGuide:operating-system/dead-lock
+CS02	M	How does the banker's algorithm avoid deadlock and what are its practical limitations?	JavaGuide:operating-system/dead-lock
+CS02	M	How do you detect a deadlock using a wait-for graph or resource allocation graph?	JavaGuide:operating-system/dead-lock
+CS02	M	What is the difference between deadlock, livelock and starvation? Give an example of each.	JavaGuide:operating-system/dead-lock
+CS02	M	A service hangs with no CPU usage. How do you determine whether it is a deadlock using thread dumps?	JavaGuide:operating-system/dead-lock
+CS02	M	What coding practices reduce deadlock risk, such as lock ordering, timeouts and not calling unknown code while holding a lock?	JavaGuide:operating-system/dead-lock
+CS02	M	How can deadlocks arise in a database, and how do databases detect and resolve them?	JavaGuide:operating-system/dead-lock
+CS02	M	Show how two threads acquiring two locks in opposite order can deadlock, and explain why a global lock ordering removes the problem.	JavaGuide:operating-system/dead-lock
+CS04	E	What is the difference between a database, a DBMS, a database system and a DBA?	JavaGuide:database/basis
+CS04	E	Define candidate key, primary key, foreign key, prime attribute and non-prime attribute in the relational model.	JavaGuide:database/basis
+CS04	E	What is an ER diagram and how do you map entities and relationships to tables?	JavaGuide:database/basis
+CS04	M	Explain the first three normal forms and Boyce-Codd normal form. Give an example of a violation of each.	JavaGuide:database/basis
+CS04	M	When is it reasonable to denormalise a schema, and what costs does it introduce?	JavaGuide:database/basis
+CS04	E	What is the difference between a primary key and a foreign key?	JavaGuide:database/basis
+CS04	M	Why do many large-scale systems avoid foreign key constraints and cascading deletes in the database?	JavaGuide:database/basis
+CS04	E	What are stored procedures and what are their advantages and drawbacks?	JavaGuide:database/basis
+CS04	E	What is the difference between DROP, DELETE and TRUNCATE?	JavaGuide:database/basis
+CS04	E	What is the difference between DML and DDL statements, and which ones can be rolled back?	JavaGuide:database/basis
+CS04	M	What steps do you follow when designing a database schema for a new application?	JavaGuide:database/basis
+CS04	E	What are views, triggers and cursors in SQL, and when would you avoid using them?	JavaGuide:database/sql/sql-syntax-summary
+CS04	E	What is the difference between WHERE and HAVING?	JavaGuide:database/sql/sql-syntax-summary
+CS04	E	Explain INNER, LEFT, RIGHT, FULL OUTER and CROSS joins with examples of when each is used.	JavaGuide:database/sql/sql-questions-03
+CS04	M	What is the difference between UNION and UNION ALL, and why is UNION ALL usually faster?	JavaGuide:database/sql/sql-syntax-summary
+CS04	M	Compare correlated and uncorrelated subqueries. When can a subquery be rewritten as a join, and does that help performance?	JavaGuide:database/sql/sql-questions-03
+CS04	M	How do aggregate functions treat NULL values, and how does COUNT(*) differ from COUNT(column) and COUNT(DISTINCT column)?	JavaGuide:database/sql/sql-questions-03
+CS04	M	How does NULL behave in comparisons, joins, GROUP BY and ORDER BY? What is three-valued logic?	JavaGuide:database/sql/sql-questions-05
+CS04	M	How would you find the Nth highest salary within each department? Compare window-function and subquery approaches.	JavaGuide:database/sql/sql-questions-04
+CS04	M	Compare ROW_NUMBER, RANK and DENSE_RANK window functions with a tie example.	JavaGuide:database/sql/sql-questions-04
+CS04	M	How do aggregate window functions with PARTITION BY and frame clauses compute running totals or moving averages?	JavaGuide:database/sql/sql-questions-04
+CS04	M	How do LAG and LEAD work, and how would you use them to compute month-over-month change?	JavaGuide:database/sql/sql-questions-04
+CS04	M	How would you find duplicate rows in a table and delete all but one?	JavaGuide:database/sql/sql-questions-02
+CS04	M	How would you find customers who have never placed an order? Compare NOT IN, NOT EXISTS and LEFT JOIN IS NULL.	JavaGuide:database/sql/sql-questions-03
+CS04	M	What is the logical processing order of a SELECT statement (FROM, WHERE, GROUP BY, HAVING, SELECT, ORDER BY, LIMIT)?	JavaGuide:database/sql/sql-syntax-summary
+CS04	M	How do CASE expressions and conditional aggregation help pivot rows into columns?	JavaGuide:database/sql/sql-questions-05
+CS04	M	What is the difference between a self join and a hierarchical query, and how would you query a tree stored in a table?	JavaGuide:database/sql/sql-questions-03
+CS04	E	What are the ACID properties of a transaction? Explain each with an example.	JavaGuide:database/mysql/mysql-questions-01
+CS04	M	Which mechanisms in a database implement atomicity, consistency, isolation and durability?	JavaGuide:database/mysql/mysql-questions-01
+CS04	E	What problems can occur with concurrent transactions: dirty read, non-repeatable read, phantom read and lost update?	JavaGuide:database/mysql/mysql-questions-01
+CS04	M	What is the difference between a non-repeatable read and a phantom read?	JavaGuide:database/mysql/mysql-questions-01
+CS04	E	Describe the four SQL standard isolation levels and which anomalies each prevents.	JavaGuide:database/mysql/transaction-isolation-level
+CS04	M	What is the default isolation level in MySQL InnoDB and why was it chosen? Is isolation implemented purely with locks?	JavaGuide:database/mysql/mysql-questions-01
+CS04	M	Compare lock-based and MVCC-based concurrency control. What are the trade-offs?	JavaGuide:database/mysql/innodb-implementation-of-mvcc
+CS04	H	Explain how InnoDB implements MVCC using undo logs, hidden columns and read views.	JavaGuide:database/mysql/innodb-implementation-of-mvcc
+CS04	M	How does MVCC behave differently under READ COMMITTED and REPEATABLE READ?	JavaGuide:database/mysql/innodb-implementation-of-mvcc
+CS04	H	Does MVCC fully prevent phantom reads in InnoDB? How do next-key locks complement it, and what remains for locking reads?	JavaGuide:database/mysql/innodb-implementation-of-mvcc
+CS04	M	What is the difference between a snapshot read and a current read?	JavaGuide:database/mysql/mysql-questions-01
+CS04	M	Compare table-level and row-level locks. What are the benefits and drawbacks of each?	JavaGuide:database/mysql/mysql-questions-01
+CS04	M	What kinds of row locks does InnoDB have: record lock, gap lock and next-key lock? When is each used?	JavaGuide:database/mysql/mysql-questions-01
+CS04	M	What are shared and exclusive locks, and how do intention locks speed up table-lock checks?	JavaGuide:database/mysql/mysql-questions-01
+CS04	M	Why can an UPDATE that filters on a non-indexed column lock the whole table in InnoDB?	JavaGuide:database/mysql/mysql-questions-01
+CS04	M	How do two transactions deadlock in a database, how does InnoDB resolve it, and how would you reduce deadlock frequency?	JavaGuide:database/mysql/mysql-questions-01
+CS04	M	Describe optimistic and pessimistic concurrency control in databases. When is each suitable?	JavaGuide:database/mysql/mysql-questions-01
+CS04	E	Why do databases use indexes, and what are the costs of having many indexes?	JavaGuide:database/mysql/mysql-index
+CS04	M	Why do relational databases use B+ trees rather than hash tables for indexes?	JavaGuide:database/mysql/mysql-questions-01
+CS04	M	Why use a B+ tree instead of a B tree or a binary search tree for database indexes?	JavaGuide:database/mysql/mysql-questions-01
+CS04	M	When does a hash index outperform a B+ tree index, and what query types can it not support?	JavaGuide:database/mysql/mysql-index
+CS04	M	What is the difference between a clustered and a non-clustered (secondary) index?	JavaGuide:database/mysql/mysql-index
+CS04	M	Why does a secondary-index lookup in InnoDB need a second lookup into the clustered index, and how can that be avoided?	JavaGuide:database/mysql/mysql-index
+CS04	M	What is a covering index and how does it improve query performance?	JavaGuide:database/mysql/mysql-index
+CS04	M	Explain composite indexes and the leftmost prefix rule. How do you choose column order?	JavaGuide:database/mysql/mysql-index
+CS04	M	What is index condition pushdown and when does it reduce table lookups?	JavaGuide:database/mysql/mysql-index
+CS04	M	Which columns are good candidates for indexing and which are not?	JavaGuide:database/mysql/mysql-questions-01
+CS04	M	What are the common causes of an index not being used: functions on columns, leading wildcard, OR conditions, implicit type conversion?	JavaGuide:database/mysql/mysql-index-invalidation
+CS04	M	Why does comparing a string column to a numeric literal cause an index to be ignored while the reverse case does not?	JavaGuide:database/mysql/index-invalidation-caused-by-implicit-conversion
+CS04	M	Why can LIKE '%abc' not use a B+ tree index, and what alternatives exist for suffix or substring search?	JavaGuide:database/mysql/mysql-index-invalidation
+CS04	M	How does the optimizer handle OR conditions and index merge, and why can IN/NOT IN lead to full scans?	JavaGuide:database/mysql/mysql-index-invalidation
+CS04	M	Is SELECT * always bad for index usage? What are the trade-offs?	JavaGuide:database/mysql/mysql-index-invalidation
+CS04	M	How can ORDER BY with LIMIT end up using filesort or a bad index, and how would you fix it?	JavaGuide:database/mysql/mysql-index-invalidation
+CS04	M	Why should primary keys be monotonically increasing in a clustered-index engine, and what are the downsides of random UUID primary keys?	JavaGuide:database/mysql/mysql-index
+CS04	M	How do you read an EXPLAIN plan? What do type, key, rows and Extra tell you?	JavaGuide:database/mysql/mysql-query-execution-plan
+CS04	M	A query that was fast is now slow. Describe how you diagnose it with slow query logs, EXPLAIN and statistics.	JavaGuide:database/mysql/mysql-questions-01
+CS04	M	What are common SQL optimisation techniques you apply to slow queries?	JavaGuide:database/mysql/mysql-questions-01
+CS04	M	How do you optimise deep pagination queries such as LIMIT 1000000, 20?	JavaGuide:database/mysql/mysql-questions-01
+CS04	M	What is the difference between keyset (seek) pagination and offset pagination?	JavaGuide:database/mysql/mysql-questions-01
+CS04	M	Describe the components of the MySQL architecture: connector, parser, optimizer, executor and storage engine. How is a SELECT executed?	JavaGuide:database/mysql/how-sql-executed-in-mysql
+CS04	M	Why was the MySQL query cache removed in 8.0, and what made it ineffective under write-heavy workloads?	JavaGuide:database/mysql/mysql-query-cache
+CS04	M	Compare MyISAM and InnoDB: transactions, locking, crash recovery, foreign keys and index layout.	JavaGuide:database/mysql/mysql-questions-01
+CS04	M	What are the roles of redo log, undo log and binlog in MySQL?	JavaGuide:database/mysql/mysql-logs
+CS04	H	Why does MySQL use a two-phase commit between redo log and binlog, and what could go wrong without it?	JavaGuide:database/mysql/mysql-logs
+CS04	M	How does the redo log provide crash recovery and what is write-ahead logging?	JavaGuide:database/mysql/mysql-logs
+CS04	M	Explain the redo log flush policies (innodb_flush_log_at_trx_commit) and the durability versus performance trade-off.	JavaGuide:database/mysql/mysql-logs
+CS04	M	Compare the binlog formats STATEMENT, ROW and MIXED. What are the consequences for replication safety?	JavaGuide:database/mysql/mysql-logs
+CS04	M	What is the difference between redo log and binlog in terms of layer, content and use?	JavaGuide:database/mysql/mysql-logs
+CS04	M	How does the undo log support both rollback and MVCC, and what happens when long transactions keep old versions alive?	JavaGuide:database/mysql/mysql-logs
+CS04	M	What is the difference between CHAR and VARCHAR, and why does VARCHAR(100) versus VARCHAR(10) matter beyond storage?	JavaGuide:database/mysql/mysql-questions-01
+CS04	M	Why use DECIMAL instead of FLOAT or DOUBLE for monetary values?	JavaGuide:database/mysql/mysql-questions-01
+CS04	M	Why is storing large TEXT or BLOB columns discouraged, and should files like images be stored in the database?	JavaGuide:database/mysql/mysql-questions-01
+CS04	M	Compare DATETIME, TIMESTAMP and integer Unix timestamps for storing times. How do time zones and range limits influence the choice?	JavaGuide:database/mysql/some-thoughts-on-database-storage-time
+CS04	M	Why should dates not be stored as strings?	JavaGuide:database/mysql/some-thoughts-on-database-storage-time
+CS04	E	What is the difference between NULL and an empty string in SQL, and what problems can NULL cause for indexes and queries?	JavaGuide:database/mysql/mysql-questions-01
+CS04	M	Should a phone number or an IP address be stored as an integer or a string? Justify the choice.	JavaGuide:database/mysql/mysql-questions-01
+CS04	M	Why can an auto-increment primary key have gaps after rollbacks, failed inserts or restarts?	JavaGuide:database/mysql/mysql-auto-increment-primary-key-continuous
+CS04	M	Where is the auto-increment counter persisted, and what happens to it after a restart in different MySQL versions?	JavaGuide:database/mysql/mysql-auto-increment-primary-key-continuous
+CS04	M	What are RTO and RPO and how do they drive a database backup strategy?	JavaGuide:database/mysql/mysql-backup-and-restore
+CS04	M	Compare logical and physical backups, and explain how binlog-based point-in-time recovery works.	JavaGuide:database/mysql/mysql-backup-and-restore
+CS04	M	Why is an untested backup not a backup, and how would you design a restore drill?	JavaGuide:database/mysql/mysql-backup-and-restore
+CS04	M	What is the difference between a character set and a collation, and why is utf8mb4 preferable to utf8 in MySQL?	JavaGuide:database/character-set
+CS04	E	What is the difference between a character set and a character encoding, and how do ASCII, GBK and UTF-8 compare?	JavaGuide:database/character-set
+CS04	M	Why does the same table sometimes show garbled text after migration between systems, and how do you troubleshoot charset mismatches?	JavaGuide:database/character-set
+CS04	M	How do you evaluate and plan a hot and cold data separation strategy for a large table?	JavaGuide:database/mysql/mysql-questions-01
+CS04	M	What are the indexing, naming and field-design rules you would enforce for a high-performance MySQL schema?	JavaGuide:database/mysql/mysql-high-performance-optimization-specification-recommendation
+CS04	M	What are the risks of long-running transactions and large transactions in a relational database?	JavaGuide:database/mysql/mysql-logs
+CS04	M	What is a database view and when does a materialised view make sense?	JavaGuide:database/mysql/a-thousand-lines-of-mysql-study-notes
+CS04	M	Why does a JOIN on columns with different data types or character sets perform poorly?	JavaGuide:database/mysql/mysql-index-invalidation
+CS04	M	Describe the nested loop join, hash join and sort-merge join strategies and when each is chosen.	JavaGuide:database/sql/sql-questions-03
+SD02	M	How do you scale a MySQL deployment: read-write splitting, sharding by key, and vertical partitioning? What are the trade-offs?	JavaGuide:database/mysql/mysql-questions-01
+SD02	M	What new problems appear after sharding a database, such as cross-shard joins, distributed transactions and global unique IDs?	JavaGuide:database/mysql/mysql-questions-01
+SD02	M	How do you handle replication lag in a read-write splitting setup so users do not read stale data?	JavaGuide:database/mysql/mysql-questions-01
+SD02	M	Compare hash-based and range-based sharding strategies. How does each handle hotspots and resharding?	JavaGuide:database/mysql/mysql-questions-01
+SD02	H	Design a pipeline to keep an Elasticsearch index in sync with a MySQL database. Compare dual writes, scheduled sync and binlog CDC.	JavaGuide:database/mysql/mysql-to-elasticsearch-sync
+SD02	H	What delivery and ordering guarantees must a database-to-search-index sync provide, and how do you handle deletes, retries and backfills?	JavaGuide:database/mysql/mysql-to-elasticsearch-sync
+SD02	M	When would you choose a NoSQL database over a relational database?	JavaGuide:database/nosql
+SD02	E	What are the main types of NoSQL databases (key-value, document, column family, graph) and a typical use case for each?	JavaGuide:database/nosql
+SD02	M	Compare SQL and NoSQL databases in terms of schema, scaling, consistency and query capabilities.	JavaGuide:database/nosql
+SD02	M	What advantages do NoSQL databases offer for horizontal scaling and what do they give up?	JavaGuide:database/nosql
+SD02	M	Which cache read-write strategies exist: cache-aside, read-through, write-through and write-behind? Compare them.	JavaGuide:database/redis/3-commonly-used-cache-read-and-write-strategies
+SD01	M	Compare local cache, distributed cache and multi-level cache. When would you combine them?	JavaGuide:database/redis/cache-basics
+CS05	E	What is Redis and what are its main use cases beyond caching?	JavaGuide:database/redis/redis-questions-01
+CS05	M	Why is Redis so fast despite being single-threaded for command execution?	JavaGuide:database/redis/redis-questions-01
+CS05	M	Compare Redis and Memcached: data types, persistence, threading model and clustering.	JavaGuide:database/redis/redis-questions-01
+CS05	M	Why use a distributed cache like Redis instead of a local in-process cache? What are the trade-offs?	JavaGuide:database/redis/redis-questions-01
+CS05	E	Which data types does Redis provide and what is a typical use case for each?	JavaGuide:database/redis/redis-data-structures-01
+CS05	M	How is the Redis String type implemented internally (SDS), and why not use plain C strings?	JavaGuide:database/redis/redis-questions-01
+CS05	M	Should you store an object as a Redis String (serialized) or as a Hash? Compare the trade-offs.	JavaGuide:database/redis/redis-questions-01
+CS05	M	Would you store a shopping cart as a String or a Hash in Redis? Justify the design.	JavaGuide:database/redis/redis-questions-01
+CS05	M	How would you implement a leaderboard in Redis and what commands would you use?	JavaGuide:database/redis/redis-questions-01
+CS05	H	Why does Redis implement sorted sets with a skip list rather than a balanced tree, red-black tree or B+ tree?	JavaGuide:database/redis/redis-skiplist
+CS05	M	Which internal encodings does Redis use for small versus large lists, hashes, sets and sorted sets, and why switch between them?	JavaGuide:database/redis/redis-data-structures-01
+CS05	M	How would you implement a lottery system using Redis Sets?	JavaGuide:database/redis/redis-questions-01
+CS05	M	How can a Bitmap be used to count daily active users or track user check-ins, and what are its memory characteristics?	JavaGuide:database/redis/redis-data-structures-02
+CS05	M	What is HyperLogLog, what error rate does it have, and how would you use it to count unique page visitors?	JavaGuide:database/redis/redis-data-structures-02
+CS05	M	How would you check whether an element is definitely not in a huge set using Redis? What are the trade-offs of the options?	JavaGuide:database/redis/redis-questions-01
+CS05	M	How does Redis GEO store locations and answer nearby-search queries?	JavaGuide:database/redis/redis-data-structures-02
+CS05	M	Describe how to implement a distributed lock with Redis. What are the pitfalls around expiry, ownership and clock drift?	JavaGuide:database/redis/redis-questions-01
+CS05	H	A Redis distributed lock expires while the holder is still working. How do you prevent this, and what does a watchdog or fencing token do?	JavaGuide:database/redis/redis-questions-01
+CS05	M	Can Redis be used as a message queue? Compare Lists, Pub/Sub and Streams for this purpose.	JavaGuide:database/redis/redis-stream-mq
+CS05	M	What problems do Redis Streams solve compared with Lists and Pub/Sub, and how do consumer groups provide acknowledgement?	JavaGuide:database/redis/redis-stream-mq
+CS05	M	How would you implement delayed tasks with Redis? Compare sorted sets, key expiry notifications and dedicated delay-queue libraries.	JavaGuide:database/redis/redis-delayed-task
+CS05	E	What is the difference between RDB and AOF persistence in Redis?	JavaGuide:database/redis/redis-persistence
+CS05	M	Does creating an RDB snapshot block the main thread? Explain the difference between SAVE and BGSAVE and the role of fork and copy-on-write.	JavaGuide:database/redis/redis-persistence
+CS05	M	Why does Redis AOF log commands after executing them instead of before, and what are the consequences?	JavaGuide:database/redis/redis-persistence
+CS05	M	Compare the AOF fsync policies always, everysec and no. What data can be lost in each?	JavaGuide:database/redis/redis-persistence
+CS05	M	What is AOF rewrite, why is it needed, and how does it work without blocking clients?	JavaGuide:database/redis/redis-persistence
+CS05	M	What is hybrid RDB-AOF persistence and what problem does it solve on restart?	JavaGuide:database/redis/redis-persistence
+CS05	M	How would you choose between RDB, AOF or both for a given workload, and what do you monitor in production?	JavaGuide:database/redis/redis-persistence
+CS05	M	How does Redis check the integrity of a truncated or corrupted AOF file and recover from it?	JavaGuide:database/redis/redis-persistence
+CS05	M	Describe Redis's threading model before and after version 6.0. What work did the multithreading in 6.0 parallelise?	JavaGuide:database/redis/redis-questions-01
+CS05	M	Why did Redis avoid multithreading for command execution for so long, and what background threads does it have?	JavaGuide:database/redis/redis-questions-01
+CS05	M	How does Redis use I/O multiplexing and an event loop to serve many clients on one thread?	JavaGuide:database/redis/redis-questions-01
+CS05	M	Why do we set expiration times on cached keys, and how does Redis decide that a key has expired?	JavaGuide:database/redis/redis-questions-01
+CS05	M	Compare lazy deletion, periodic deletion and active expiry in Redis. What are the weaknesses of each?	JavaGuide:database/redis/redis-questions-01
+CS05	M	What happens when a large number of keys expire at the same time, and how do you avoid it?	JavaGuide:database/redis/redis-questions-01
+CS05	M	List Redis eviction policies such as allkeys-lru, volatile-ttl and allkeys-lfu. How would you choose one?	JavaGuide:database/redis/redis-questions-01
+CS05	M	How does Redis approximate LRU instead of maintaining an exact LRU list, and why?	JavaGuide:database/redis/redis-questions-01
+CS05	M	What is a Redis transaction (MULTI/EXEC), and is it atomic or durable? How do errors inside a transaction behave?	JavaGuide:database/redis/redis-questions-02
+CS05	M	How do WATCH and Lua scripts address the limitations of Redis transactions?	JavaGuide:database/redis/redis-questions-02
+CS05	M	How do pipelining and batch commands reduce latency in Redis, and what are the limits of batching in cluster mode?	JavaGuide:database/redis/redis-questions-02
+CS05	M	What is a bigkey in Redis, what harm does it cause, and how do you find and fix it?	JavaGuide:database/redis/redis-common-blocking-problems-summary
+CS05	M	What is a hot key and how do you detect and mitigate it in a Redis cluster?	JavaGuide:database/redis/redis-questions-02
+CS05	M	What are slow queries in Redis, which commands are risky (KEYS, HGETALL, SMEMBERS) and what are safe alternatives?	JavaGuide:database/redis/redis-common-blocking-problems-summary
+CS05	M	What causes Redis memory fragmentation, how do you detect it from INFO, and how can it be reduced?	JavaGuide:database/redis/redis-memory-fragmentation
+CS05	H	Redis latency suddenly spikes. List the possible blocking causes (O(n) commands, persistence, swap, big keys, network, CPU contention) and how you would diagnose each.	JavaGuide:database/redis/redis-common-blocking-problems-summary
+CS05	M	Why can FLUSHALL or deleting a huge key block Redis and what does lazy free (UNLINK) change?	JavaGuide:database/redis/redis-common-blocking-problems-summary
+CS05	M	How can swap and CPU contention with other processes affect Redis latency?	JavaGuide:database/redis/redis-common-blocking-problems-summary
+CS05	M	What is cache penetration and what are the solutions (null caching, Bloom filter, validation)?	JavaGuide:database/redis/redis-questions-02
+CS05	M	What is a cache breakdown (hot key expiry) and how do you prevent a stampede on a single key?	JavaGuide:database/redis/redis-questions-02
+CS05	M	What is a cache avalanche and how do you protect a database from it?	JavaGuide:database/redis/redis-questions-02
+CS05	H	How do you keep the cache and the database consistent? Compare update-then-delete, delete-then-update and delayed double delete.	JavaGuide:database/redis/redis-questions-02
+CS05	H	Design a cache consistency mechanism using binlog subscription or message queues. What failure scenarios remain?	JavaGuide:database/redis/redis-questions-02
+CS05	M	How does Redis master-replica replication work, including full and partial resynchronisation?	JavaGuide:database/redis/redis-questions-02
+CS05	M	What does Redis Sentinel provide and how does it elect a new master during failover?	JavaGuide:database/redis/redis-questions-02
+CS05	M	How does Redis Cluster shard data using hash slots? What happens during resharding or when a node fails?	JavaGuide:database/redis/redis-questions-02
+CS05	M	What are the trade-offs between Redis Cluster, Sentinel and client-side sharding?	JavaGuide:database/redis/redis-questions-02
+CS05	M	What conventions would you adopt for using Redis in production, such as key naming, TTLs and avoiding big values?	JavaGuide:database/redis/redis-questions-02
+CS05	M	Why is a skip list used for sorted sets? Describe search, insertion and the probabilistic level assignment.	JavaGuide:database/redis/redis-skiplist
+CS05	E	What is MongoDB and how is its data stored (documents, collections, BSON)?	JavaGuide:database/mongodb/mongodb-questions-01
+CS05	M	What kinds of applications are a good fit for MongoDB, and which are not?	JavaGuide:database/mongodb/mongodb-questions-01
+CS05	M	Compare the MongoDB document model with relational tables in terms of embedding versus referencing data.	JavaGuide:database/mongodb/mongodb-questions-01
+CS05	M	Is the WiredTiger storage engine based on an LSM tree or a B+ tree, and what does that imply for read and write performance?	JavaGuide:database/mongodb/mongodb-questions-01
+CS05	M	What is the MongoDB aggregation pipeline and which stages (match, group, lookup, sort) would you use for a report?	JavaGuide:database/mongodb/mongodb-questions-01
+CS05	M	Does MongoDB support multi-document transactions, and what are their costs and limitations?	JavaGuide:database/mongodb/mongodb-questions-01
+CS05	M	How does MongoDB compress data on disk and what are the trade-offs between compression algorithms?	JavaGuide:database/mongodb/mongodb-questions-01
+CS05	M	What index types does MongoDB support (single field, compound, multikey, text, geospatial, TTL)?	JavaGuide:database/mongodb/mongodb-questions-02
+CS05	M	Does field order matter in a MongoDB compound index, and does the left-prefix rule apply?	JavaGuide:database/mongodb/mongodb-questions-02
+CS05	M	What is a TTL index and when would you use one?	JavaGuide:database/mongodb/mongodb-questions-02
+CS05	M	What is a covered query in MongoDB and what conditions must be satisfied for it?	JavaGuide:database/mongodb/mongodb-questions-02
+CS05	M	How do MongoDB replica sets provide high availability, and how are elections and write concern related?	JavaGuide:database/mongodb/mongodb-questions-02
+CS05	M	How does sharding work in MongoDB? How do you choose a shard key and what happens with a poor choice?	JavaGuide:database/mongodb/mongodb-questions-02
+CS05	M	Why can an inverted index make full-text search faster than a B+ tree index in a relational database?	JavaGuide:database/mysql/mysql-to-elasticsearch-sync
+CS05	M	Why use Elasticsearch alongside MySQL, and what consistency guarantees does the search index lose compared with the primary store?	JavaGuide:database/mysql/mysql-to-elasticsearch-sync
+CS05	M	How does a Bloom filter work and what false-positive and false-negative properties does it have?	JavaGuide:data-structure/bloom-filter
+CS05	M	How do you size a Bloom filter given the expected number of elements and target false-positive rate?	JavaGuide:data-structure/bloom-filter
+CS05	M	Why can items not be deleted from a standard Bloom filter, and how do counting Bloom filters or cuckoo filters help?	JavaGuide:data-structure/bloom-filter
+CS05	M	Where are Bloom filters useful in databases and caches, such as LSM-tree reads or cache penetration protection?	JavaGuide:data-structure/bloom-filter
+CS07	M	How does a hash table work, and what techniques resolve collisions (chaining versus open addressing)?	JavaGuide:data-structure/hash-table
+CS07	M	What is the load factor of a hash table, when is it resized, and why is lookup O(1) on average but O(n) in the worst case?	JavaGuide:data-structure/hash-table
+CS07	M	What makes a good hash function and what happens with an adversarial set of keys?	JavaGuide:data-structure/hash-table
+CS07	M	Compare arrays and linked lists in terms of access, insertion, memory locality and typical use.	JavaGuide:data-structure/linear-data-structure
+CS07	E	Compare stacks and queues. Name real systems where each is used, and describe variants such as deque and priority queue.	JavaGuide:data-structure/linear-data-structure
+CS07	M	What is a circular queue and what problem does it solve compared to a simple array queue?	JavaGuide:data-structure/linear-data-structure
+CS07	M	What is a binary heap, how is it stored in an array, and what are the complexities of insert, delete-min and heapify?	JavaGuide:data-structure/heap
+CS07	M	Why is building a heap from an array O(n) rather than O(n log n)?	JavaGuide:data-structure/heap
+CS07	M	How does heap sort work, and why is it not stable and often slower than quicksort in practice?	JavaGuide:data-structure/heap
+CS07	M	What is the difference between a full binary tree, a complete binary tree and a balanced tree?	JavaGuide:data-structure/tree
+CS07	M	What do pre-order, in-order and post-order traversals produce on a binary search tree, and when is each useful?	JavaGuide:data-structure/tree
+CS07	M	What is an AVL tree and how do rotations restore balance after insertion?	JavaGuide:data-structure/tree
+CS07	M	Why do we need red-black trees, what invariants do they maintain, and how do they compare with AVL trees?	JavaGuide:data-structure/red-black-tree
+CS07	M	How do you represent a graph in memory? Compare adjacency matrix with adjacency list.	JavaGuide:data-structure/graph
+CS07	M	When would you choose BFS and when DFS, and what are their time and space complexities on a graph?	JavaGuide:data-structure/graph
+CS07	M	What is a skip list, how does it achieve O(log n) search, and how does it compare with a balanced tree under concurrency?	JavaGuide:data-structure/skip-list
+CS07	M	What is a trie, what problems is it suited for, and how do its memory costs compare with a hash table?	JavaGuide:data-structure/trie
+CS07	M	What is a disjoint-set (union-find) structure and how do path compression and union by rank improve it?	JavaGuide:data-structure/union-find
+CS07	M	Which data structures are used to implement an LRU cache and why is a doubly linked list needed with a hash map?	JavaGuide:data-structure/lru-cache
+CS07	M	How would you extend an LRU cache to be thread-safe with good concurrency, and what are the trade-offs against LFU?	JavaGuide:data-structure/lru-cache
+CS07	E	How do you analyse time and space complexity? What are the common complexity classes and how do you assess loops and recursion?	JavaGuide:algorithms/complexity-analysis
+CS07	M	Compare comparison-based sorts (quick, merge, heap) in terms of time complexity, stability and space. When is each preferred?	JavaGuide:algorithms/10-classical-sorting-algorithms
+CS07	M	When can counting, bucket and radix sort beat O(n log n), and what assumptions do they need?	JavaGuide:algorithms/10-classical-sorting-algorithms
+CS07	M	What is the worst case of quicksort, how does pivot selection avoid it, and why is merge sort preferred for external sorting?	JavaGuide:algorithms/10-classical-sorting-algorithms
+CS07	M	What are the approaches to finding the top K elements in a stream? Compare heap, quickselect and sorting.	JavaGuide:algorithms/top-k
+CS07	M	How do you recognise that a problem can be solved by dynamic programming, and how does memoisation compare with bottom-up tabulation?	JavaGuide:algorithms/dynamic-programming
+CS07	M	What distinguishes a greedy algorithm from dynamic programming, and how do you prove a greedy choice is safe?	JavaGuide:algorithms/greedy
+CS07	M	How do you decide between DFS, BFS and backtracking for a search problem, and how do you prune duplicates?	JavaGuide:algorithms/backtracking
+CS02	E	What is a race condition and how does it arise when two threads increment a shared counter?	JavaGuide:operating-system/os-lock-and-sync
+CS02	M	Explain the producer-consumer problem and how to solve it with semaphores or a mutex plus condition variables.	JavaGuide:operating-system/os-lock-and-sync
+CS02	M	Explain the dining philosophers problem. What strategies avoid deadlock and starvation?	JavaGuide:operating-system/dead-lock
+CS02	M	Describe the readers-writers problem and the trade-off between reader and writer preference.	JavaGuide:operating-system/os-lock-and-sync
+CS02	M	What is a counting semaphore versus a binary semaphore, and how does a binary semaphore differ from a mutex?	JavaGuide:operating-system/os-lock-and-sync
+CS02	M	Why do spinlocks make sense on multicore but not on single-core systems?	JavaGuide:operating-system/os-lock-and-sync
+CS02	M	What is a thread pool and why is it preferred over creating a thread per request? How do you size one for CPU-bound versus I/O-bound work?	JavaGuide:operating-system/process-and-thread
+CS02	M	Why does a lock-free algorithm based on CAS suffer from the ABA problem, and how can it be mitigated?	JavaGuide:operating-system/os-lock-and-sync
+CS02	M	How do cooperative and preemptive scheduling differ, and what are the implications for coroutine-based runtimes?	JavaGuide:operating-system/process-and-thread
+CS02	M	What is lock contention, and how can you reduce it by shrinking critical sections or sharding locks?	JavaGuide:operating-system/os-lock-and-sync
+CS02	M	How does the time quantum in round robin scheduling affect throughput and response time?	JavaGuide:operating-system/cpu-scheduling-and-load
+CS02	M	What is CPU affinity and why might pinning threads to cores improve performance?	JavaGuide:operating-system/cpu-scheduling-and-load
+CS02	H	A service shows high load average but low CPU utilisation. What can cause this and how do you find the culprit?	JavaGuide:operating-system/cpu-scheduling-and-load
+CS02	M	Why can two threads on different cores see stale values of a shared variable, and what do memory barriers do?	JavaGuide:operating-system/os-lock-and-sync
+CS02	M	How do lock timeouts and retry strategies help with application-level deadlock avoidance?	JavaGuide:operating-system/dead-lock
+CS01	M	What happens to a process's memory and file descriptors when it forks and when it calls exec?	JavaGuide:operating-system/process-and-thread
+CS01	M	What is the difference between a major (hard) page fault and a minor (soft) page fault?	JavaGuide:operating-system/virtual-memory
+CS01	M	How does the OS allocate memory to a process via brk and mmap, and how do user-space allocators like malloc build on them?	JavaGuide:operating-system/memory-management
+CS01	M	What is the buddy system for physical memory allocation and what problem does it address?	JavaGuide:operating-system/memory-management
+CS01	M	What is the difference between a file descriptor, an open file description and an inode?	JavaGuide:operating-system/file-system
+CS01	M	Why might a program see good write throughput but lose data after a power failure, and how do you design for durability?	JavaGuide:operating-system/file-system
+CS01	M	How do interrupts, DMA and polling differ for handling device I/O?	JavaGuide:operating-system/interrupt-exception-syscall
+CS01	M	What is the difference between synchronous, asynchronous, blocking and non-blocking I/O?	JavaGuide:operating-system/io-multiplexing
+CS01	H	How would you build a server that handles 100k concurrent connections on Linux? Discuss threads, event loops and kernel limits.	JavaGuide:operating-system/io-multiplexing
+CS01	M	How does the Linux kernel deliver a signal to a process, and which signals cannot be caught?	JavaGuide:operating-system/ipc
+CS03	M	How does connection pooling and reuse of persistent HTTP connections reduce latency?	JavaGuide:network/the-whole-process-of-accessing-web-pages
+CS03	M	What is HTTP pipelining and why did it fail to solve head-of-line blocking in HTTP/1.1?	JavaGuide:network/other-network-questions
+CS03	M	How do browsers cache resources using ETag, Last-Modified and conditional requests, and what does a 304 response mean?	JavaGuide:network/http1.0-vs-http1.1
+CS03	M	What are the Nagle algorithm and delayed ACK, and how can their interaction cause latency?	JavaGuide:network/tcp-reliability-guarantee
+CS03	M	What happens if a SYN packet or the final ACK of the handshake is lost?	JavaGuide:network/tcp-connection-and-disconnection
+CS03	M	How would you debug intermittent connection resets between two services using tcpdump or Wireshark?	JavaGuide:network/network-attack-means
+CS03	M	How does traceroute work and which ICMP messages does it rely on?	JavaGuide:network/can-ping-but-tcp-may-not-connect
+CS03	M	What is MTU and path MTU discovery, and how can fragmentation cause connectivity problems?	JavaGuide:network/computer-network-xiexiren-summary
+CS03	M	What is DHCP and how does a device obtain an IP address when joining a network?	JavaGuide:network/computer-network-xiexiren-summary
+CS03	M	How does a stateful firewall differ from a packet-filtering firewall?	JavaGuide:network/computer-network-xiexiren-summary
+CS03	M	What do cookie attributes such as HttpOnly, Secure and SameSite do, and why do they matter for session security?	JavaGuide:network/other-network-questions
+CS03	M	How does a server learn about half-dead TCP connections after a client crash, and why do applications add heartbeats?	JavaGuide:network/tcp-keepalive-vs-http-keepalive
+CS04	M	What is a savepoint in a transaction, and how can it be used for partial rollback?	JavaGuide:database/mysql/a-thousand-lines-of-mysql-study-notes
+CS04	M	Explain how write-ahead logging, checkpoints and group commit interact in a relational database engine.	JavaGuide:database/mysql/mysql-logs
+CS04	M	How does a database buffer pool work and how do its size and hit ratio affect performance?	JavaGuide:database/mysql/mysql-questions-01
+CS04	M	What are the trade-offs of a UUID, auto-increment or snowflake ID as a primary key?	JavaGuide:database/mysql/mysql-index
+CS04	M	How would you add a column or an index to a billion-row table in production without downtime?	JavaGuide:database/mysql/mysql-questions-01
+CS04	M	Why can COUNT(*) be slow on large InnoDB tables, and how do you speed up counting?	JavaGuide:database/mysql/mysql-questions-01
+CS04	M	What are the differences between a unique index, a prefix index and a full-text index?	JavaGuide:database/mysql/mysql-index
+CS04	M	How does the query optimizer choose between candidate indexes, and why can stale statistics lead to a bad plan?	JavaGuide:database/mysql/mysql-query-execution-plan
+CS04	M	What does the EXPLAIN type column progression (ALL, index, range, ref, eq_ref, const) mean for performance?	JavaGuide:database/mysql/mysql-query-execution-plan
+CS04	M	What do Using filesort and Using temporary in an EXPLAIN output mean, and how do you eliminate them?	JavaGuide:database/mysql/mysql-query-execution-plan
+CS04	M	How can a gap lock cause unexpected lock waits under REPEATABLE READ?	JavaGuide:database/mysql/mysql-questions-01
+CS04	M	How do you handle a hot-row update such as an inventory decrement without heavy lock contention?	JavaGuide:database/mysql/mysql-questions-01
+CS04	M	How does SELECT FOR UPDATE differ from a plain SELECT within a transaction?	JavaGuide:database/mysql/mysql-questions-01
+CS04	M	How does MySQL master-replica replication work using the binlog, relay log and IO/SQL threads?	JavaGuide:database/mysql/mysql-logs
+SD02	M	Compare synchronous, semi-synchronous and asynchronous replication in terms of durability, latency and failover safety.	JavaGuide:database/mysql/mysql-logs
+CS05	M	What is an LSM tree and how does it differ from a B+ tree for write-heavy workloads?	JavaGuide:database/mongodb/mongodb-questions-01
+CS05	M	When would you choose Redis Streams, Kafka or a database table to implement a job queue?	JavaGuide:database/redis/redis-stream-mq
+CS05	M	How would you design a rate limiter or counter using Redis atomic operations and expiry?	JavaGuide:database/redis/redis-questions-01
+CS05	M	Which metrics from the Redis INFO command would you alert on in production?	JavaGuide:database/redis/redis-persistence
+CS05	M	How would you handle a Redis master failure that loses the most recent writes under asynchronous replication?	JavaGuide:database/redis/redis-questions-02
+CS05	M	What are Redis Modules and what capabilities, such as search or Bloom filters, do they add?	JavaGuide:database/redis/redis-questions-01
+CS05	M	How does cache warming help avoid a cold-start load spike on the database?	JavaGuide:database/redis/cache-basics

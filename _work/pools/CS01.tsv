@@ -1,0 +1,320 @@
+Q000209	E	What is an operating system?
+Q000210	E	Why is an operating system needed?
+Q000212	E	What does a process contain?
+Q000213	E	What does a thread have of its own?
+Q000214	E	Why are threads used?
+Q000215	M	When would you use a process versus a thread?
+Q000218	E	What is a Process Control Block (PCB)?
+Q000219	E	What does a PCB contain?
+Q000220	E	Why is the PCB important?
+Q000221	E	What is context switching?
+Q000222	M	What happens during a context switch?
+Q000223	E	Why is context switching needed?
+Q000225	M	Why is context switching expensive?
+Q000226	M	How can excessive context switching be reduced?
+Q000227	E	What is the difference between a user-level thread and a kernel-level thread?
+Q000301	E	What is virtual memory?
+Q000302	E	Why do we need virtual memory?
+Q000303	M	How does virtual memory work?
+Q000304	M	What happens when a page is not in RAM?
+Q000305	M	What happens when RAM is full in a virtual memory system?
+Q000311	E	What is the role of the MMU (Memory Management Unit)?
+Q000312	M	Why does paging reduce external fragmentation?
+Q000313	E	Why is segmentation used in memory management?
+Q000314	M	In segmentation, what happens if the offset exceeds the segment limit?
+Q000315	E	What is a page fault?
+Q000316	E	Why does a page fault occur?
+Q000317	M	How does a page fault get handled, step by step?
+Q000318	M	Why are page faults expensive?
+Q000319	E	Why is it called a "page fault"?
+Q000320	E	What is page replacement?
+Q000321	E	Why is page replacement needed?
+Q000325	M	In page replacement, why does the choice of victim page matter?
+Q000326	M	Why is the Optimal page replacement algorithm mostly theoretical?
+Q000327	M	Why does thrashing happen?
+Q000328	M	What happens to CPU utilization during thrashing?
+Q000329	M	Why does page replacement make thrashing worse?
+Q000332	H	Can thrashing happen even with an SSD?
+Q000333	E	What is the difference between stack and heap memory?
+Q000334	E	Why is it called a stack?
+Q000335	M	Why is stack memory usually faster than heap memory?
+Q000338	E	Why does recursion cause stack overflow?
+Q000339	M	Can heap memory outlive the function that allocated it?
+Q000340	M	Can a local variable be stored on the heap?
+Q000341	M	Is heap memory shared between threads?
+Q000342	E	What happens if heap memory is not released?
+Q000343	M	Why is internal fragmentation called "internal"?
+Q000344	M	Why is external fragmentation called "external"?
+Q000345	M	How can memory fragmentation be reduced?
+Q000372	E	What is an operating system? What are its main functions?
+Q000373	E	What is the difference between a program and a process?
+Q000374	M	What is a context switch? Why is it costly?
+Q000375	E	Explain the process state diagram.
+Q000376	M	What does fork() return? What are zombie and orphan processes?
+Q000377	M	What are the IPC (inter-process communication) mechanisms?
+Q000388	E	What is the difference between internal and external fragmentation?
+Q000389	M	What is the TLB and why do we need it?
+Q000390	E	What is virtual memory and why do we need it?
+Q000391	M	Compare FIFO, LRU and Optimal page replacement. What is Belady's anomaly?
+Q000392	M	What is thrashing? How do you fix it?
+Q000393	M	What is a kernel? What is the difference between a monolithic kernel and a microkernel?
+Q000394	M	What is a system call? Give examples and explain the flow.
+Q000395	E	What are the common RAID levels?
+Q000396	M	Name the disk scheduling algorithms and explain why they exist.
+Q000349a	E	What is the difference between a process, a thread and a program?
+Q000352a	M	What is the difference between paging and segmentation?
+Q000843	E	What is the difference between a symbolic link and a hard link?
+Q001088	E	What is the difference between a process and a thread?
+Q001089	M	How are threads typically created and managed in modern operating systems?
+Q001091	M	Can you explain the concept of a context switch and how it affects concurrency?
+Q002854	E	Explain the difference between L1, L2, and L3 caches.
+Q002855	E	What is the difference between a cache hit and a cache miss?
+Q002856	M	Compare direct-mapped, set-associative, and fully associative caches.
+Q002857	M	What are the three types of cache misses?
+Q002858	M	Explain write-through vs write-back cache policies.
+Q002882	E	What is the difference between internal and external fragmentation?
+Q002883	M	Which memory allocation algorithms minimize external fragmentation?
+Q002884	M	How does memory compaction solve fragmentation problems?
+Q002888	M	What are the advantages and disadvantages of the buddy system?
+Q002889	H	How do you measure and monitor fragmentation in a running system?
+Q002890	M	What are the advantages and disadvantages of shared memory vs message passing?
+Q002891	M	When would you use pipes vs sockets?
+Q002892	E	What is the difference between anonymous and named pipes?
+Q002894	M	What happens if a process dies while holding a system resource (like a message queue)?
+Q002895	M	Compare First Fit, Best Fit, and Worst Fit allocation strategies.
+Q002896	M	How does the Buddy System work and what are its advantages?
+Q002897	M	What is a memory pool and when would you use it?
+Q002899	E	What is paging and how does it differ from segmentation?
+Q002900	M	How does address translation work in paging?
+Q002901	E	What is a TLB and why is it important?
+Q002902	M	Compare different page replacement algorithms.
+Q002903	M	What are the advantages and disadvantages of hierarchical paging?
+Q002906	E	What is the difference between the Ready and Waiting process states?
+Q002907	E	Can a process go directly from the Running to the Waiting state?
+Q002908	E	What causes a process to move from the Running to the Ready state?
+Q002909	M	What is a zombie process and how is it related to process states?
+Q002910	M	Explain the concept of suspended process states.
+Q002911	M	Why is thread creation faster than process creation?
+Q002912	M	When would you use processes vs threads?
+Q002913	M	What happens when a thread crashes vs when a process crashes?
+Q002914	M	Explain the difference between user-level and kernel-level threads.
+Q002918	E	What is segmentation and how does it differ from paging?
+Q002919	M	What are the advantages and disadvantages of segmentation?
+Q002920	M	How does address translation work in segmentation?
+Q002921	M	What is external fragmentation and how can it be solved in segmentation?
+Q002922	M	How do you implement shared segments in a segmentation system?
+Q002928	E	What is thrashing and what causes it?
+Q002929	M	How can you detect thrashing in a system?
+Q002930	M	What is the working set model and how does it help prevent thrashing?
+Q002931	M	Compare different anti-thrashing strategies.
+Q002932	M	How do you recover from thrashing once it occurs?
+Q002933	E	What is the difference between FIFO and LRU page replacement?
+Q002934	M	Why is the Optimal page replacement algorithm not practically implementable?
+Q002935	M	What is Belady's anomaly and which algorithms suffer from it?
+Q002936	M	How does the Clock algorithm approximate LRU?
+Q002937	M	What factors affect the choice of page replacement algorithm?
+Q003702	M	Why is a page fault sometimes normal behavior and sometimes turns into a SIGSEGV?
+Q003703	M	What do VSZ, RSS, and PSS each represent?
+Q003704	M	What is a TCB, and how does it relate to a PCB?
+Q003705	M	What is the difference between load average and CPU utilization?
+Q003707	M	What is the TLB for, and what is the address translation flow when a TLB is used?
+Q003708	M	What is the relationship between memory overcommit and the OOM killer?
+Q003709	M	What is the difference between select, poll, and epoll?
+Q003710	M	What is the difference between mmap, sendfile, and splice?
+Q003712	E	What do fork, exec, and wait each do in Linux?
+Q004248	E	What is the main purpose of an operating system? Discuss the different types.
+Q004249	E	What are a socket, a kernel, and a monolithic kernel?
+Q004250	E	Define virtual memory, thrashing, and threads.
+Q004251	E	What is RAID? What are the different types?
+Q004253	E	What is fragmentation? What are the types of fragmentation?
+Q004255	E	Why does thrashing occur?
+Q004256	E	What is paging and why do we need it?
+Q006251	M	What is the difference between user-level threads and kernel-level threads?
+Q006252	M	What is the difference between a system call and a subroutine in Linux?
+Q006260	E	What is the name of the operating system technique in which two or more CPUs run programs simultaneously and divide the work among themselves?
+Q006342	E	What is RAID and how does it work?
+Q006502	E	What is a hypervisor?
+Q006503	E	Why use a virtual machine?
+Q012430	M	How do virtual machines work?
+D00895	E	What are the four basic characteristics of an operating system: concurrency, sharing, virtualization and asynchrony?
+D00896	E	What are the main responsibilities of an operating system (process, memory, file and device management)?
+D00897	E	What is a system call, and why can't user programs simply call kernel functions directly?
+D00898	M	Walk through what happens at the hardware and kernel level when a user program invokes a system call such as read().
+D00899	M	Compare a monolithic kernel with a microkernel in terms of performance, isolation and fault tolerance.
+D00900	M	What is the difference between external interrupts, exceptions and traps, and which one does a system call use?
+D00901	E	What is the difference between user mode and kernel mode, and why does the CPU need both?
+D00902	M	Which events cause a switch from user mode to kernel mode?
+D00903	M	Explain the classes of exceptional control flow: traps, interrupts, faults and signals. How do they differ?
+D00904	E	What is the difference between a process and a thread? What resources does each own?
+D00905	M	Why is a context switch between threads of the same process cheaper than between two processes?
+D00906	M	What exactly is saved and restored during a context switch, and what hidden costs (cache, TLB) follow it?
+D00907	E	Describe the process state transition diagram: ready, running, waiting and the events that cause each transition.
+D00908	M	What is a process control block and what information does it contain?
+D00909	M	What is a coroutine and how does it differ from a thread in scheduling, stack usage and context-switch cost?
+D00910	M	Compare user-level threads, kernel-level threads and hybrid threading models.
+D00911	E	List the main inter-process communication mechanisms and when you would choose each.
+D00912	M	What is the difference between an anonymous pipe, a named pipe (FIFO) and a message queue?
+D00913	M	Why is shared memory the fastest IPC mechanism, and what extra problem does it introduce?
+D00914	M	How do two processes on different machines communicate, and how does that differ from local IPC?
+D00915	E	What is an orphan process and what is a zombie process? How does each get cleaned up?
+D00916	M	How can a zombie process accumulate on a server, and how do you detect and prevent it?
+D00917	M	What is SIGCHLD used for, and how do wait() and waitpid() differ?
+D00918	M	What does fork() actually do, and how does copy-on-write make it cheap?
+D00919	E	What is virtual memory, and what problems does it solve?
+D00920	M	Explain how a virtual address is translated to a physical address in a paging system.
+D00921	M	What is a page table, and why are multi-level page tables used instead of a single flat one?
+D00922	M	What is a TLB, and what happens on a TLB miss versus a page fault?
+D00923	M	Describe the sequence of events when a page fault occurs and the page must be loaded from disk.
+D00924	E	Compare paging and segmentation. What are internal and external fragmentation?
+D00925	M	What is segmented paging and what advantages does it combine from both schemes?
+D00926	M	Explain the optimal, FIFO, LRU, second-chance and clock page replacement algorithms and compare them.
+D00927	M	What is Belady's anomaly and which page replacement algorithms suffer from it?
+D00928	M	What is thrashing, how do you detect it, and how can the OS mitigate it?
+D00929	M	How does the OS approximate LRU cheaply given hardware reference bits?
+D00930	M	What is a buffer overflow, how can it be exploited, and what mitigations (stack canaries, ASLR, NX) exist?
+D00931	M	Describe the layout of a process address space: text, data, BSS, heap and stack. Which grows in which direction?
+D00932	M	What is the difference between stack memory and heap memory in terms of allocation speed, lifetime and fragmentation?
+D00933	H	A server's memory usage keeps growing but heap profiling shows no leaks. What OS-level causes could explain it?
+D00934	M	What are the physical structure of a disk and the components of disk access time?
+D00935	M	Compare FCFS, shortest-seek-time-first and elevator (SCAN) disk scheduling. Which causes starvation?
+D00936	M	What is an inode and how does a Unix file system find the data blocks of a file?
+D00937	M	What is the difference between a hard link and a soft link, and what happens to each when the original file is deleted?
+D00938	M	Why do modern file systems use journaling, and what does a journal protect against?
+D00939	M	What is a mount point, and how does the kernel combine multiple file systems into a single directory tree?
+D00940	E	What are the stages of compiling a C program, from source to executable?
+D00941	M	Compare static linking and dynamic linking regarding binary size, memory sharing, updates and symbol resolution.
+D00942	M	What does an object file contain, and what does a linker do with relocatable object files?
+D00943	M	What is endianness and what is the difference between host byte order and network byte order?
+D00944	M	How can a program detect at runtime whether the machine is little-endian or big-endian?
+D00945	M	What are the main synchronization mechanisms available inside the Linux kernel?
+D00946	M	When is a spinlock preferable to a sleeping mutex, and when is it harmful?
+D00947	E	What is a boot loader and what does the machine do between power-on and the OS taking control?
+D00948	M	Compare MBR and GPT partition tables.
+D01426	M	What is a deadlock in the Linux kernel context and which synchronization primitives (spinlock, semaphore, RCU) apply to it?
+D01471	E	What is an operating system and what are its main responsibilities?
+D01472	M	Why is the operating system described as a resource manager and an abstraction layer between hardware and applications?
+D01473	E	What is a device driver and why does an OS need one?
+D01474	E	What is the difference between a process and a thread?
+D01475	M	Which resources do threads of the same process share, and which are private to each thread?
+D01476	M	Why is creating and context-switching between threads cheaper than between processes?
+D01477	M	When would you choose multi-process over multi-threaded design for an application?
+D01478	E	What are the main segments of a process address space (code, data, heap, stack)?
+D01479	M	What happens to the stack and heap when a program makes a deeply recursive call or allocates memory without freeing it?
+D01480	E	What is a Process Control Block and what information does it hold?
+D01481	M	What exactly happens during a context switch, and why is it considered pure overhead?
+D01482	M	What factors make a context switch more expensive, such as cache and TLB effects?
+D01483	E	What are the states in the process life cycle and what transitions occur between them?
+D01484	E	What is inter-process communication and why is it needed?
+D01485	M	Compare shared memory and message passing as IPC mechanisms.
+D01486	M	Compare pipes, named pipes (FIFOs), message queues, sockets and shared memory for IPC.
+D01487	E	What is an interrupt and how does the CPU handle one?
+D01488	M	Distinguish hardware interrupts from software interrupts (traps/exceptions) with examples.
+D01489	M	Why is polling sometimes preferred over interrupt-driven I/O?
+D01490	E	What is virtual memory and what problems does it solve?
+D01491	M	What does the MMU do, and how is a virtual address translated into a physical address?
+D01492	E	What is the difference between paging and segmentation?
+D01493	M	Compare internal and external fragmentation and explain which of paging or segmentation suffers from which.
+D01494	M	How does a page table work, and why are multi-level page tables used?
+D01495	M	What is a TLB and how does it speed up address translation?
+D01496	M	What is a page fault and what steps does the OS take to handle it?
+D01497	M	What is demand paging, and what are its advantages and risks?
+D01498	M	What is thrashing, why does it happen and how can the OS mitigate it?
+D01499	M	Explain FIFO, LRU, LFU and optimal page replacement algorithms and compare them.
+D01500	M	What is Belady's anomaly and which page replacement algorithms are affected by it?
+D01501	H	Why is true LRU hard to implement in hardware, and what approximations such as the clock algorithm are used?
+D01502	M	What is a file system and how are directories and files organized on disk?
+D01503	M	Compare contiguous, linked and indexed file allocation methods.
+D01504	M	What is an inode and what metadata does it store?
+D01505	M	What is the difference between a hard link and a symbolic link?
+D01506	E	What is the difference between user mode and kernel mode, and how does a system call cross that boundary?
+D01507	M	Why does cache locality matter for program performance, and how do temporal and spatial locality relate to caching?
+D01508	E	What is cache memory and why does the memory hierarchy exist?
+D01509	M	Compare direct-mapped, fully associative and set-associative cache mapping.
+D01510	M	What are write-through and write-back cache policies and what are their trade-offs?
+D01511	M	What is a cache line, and how can false sharing between cores degrade performance?
+D01512	E	Describe the fetch-decode-execute instruction cycle of a CPU.
+D01513	M	What roles do the program counter, registers, ALU and control unit play when a CPU executes an instruction?
+D01514	M	What is the Von Neumann architecture and what is the Von Neumann bottleneck?
+D01515	M	Compare Von Neumann and Harvard architectures.
+D01516	M	How do fixed-point and floating-point number representations differ, and what precision issues arise with floating point?
+D01517	M	Why does 0.1 + 0.2 not equal exactly 0.3 in floating-point arithmetic?
+D01518	M	How does a parity bit detect errors, and what kinds of errors can it not detect?
+D01519	H	How does a Hamming code detect and correct a single-bit error?
+D01520	M	What are the main differences between RISC and CISC processors, and where does ARM fit?
+D01521	M	What are the main components of a computer system and how do CPU, memory, buses and I/O devices interact?
+D01522	M	What are the differences between DMA and CPU-driven (programmed) I/O?
+D01994	E	What is an operating system and what are its main functions?
+D01995	E	What is the difference between user mode and kernel mode, and why do they exist?
+D01996	E	What is a system call and how does a user program switch into the kernel to execute it?
+D01997	M	Why is a system call more expensive than an ordinary function call?
+D01998	M	Compare interrupts, exceptions, traps and system calls. What do they have in common and how do they differ?
+D01999	M	How does the timer interrupt enable preemptive multitasking?
+D02000	M	Trace what happens inside the kernel when a user process calls a blocking read() on a file or socket.
+D02001	E	What is the difference between a process and a thread?
+D02002	M	Why do we need threads when we already have processes?
+D02003	E	Which resources do threads in the same process share and which are private to each thread?
+D02004	E	What is a PCB and what information does it contain? How does a TCB relate to it?
+D02005	E	Describe the typical states of a process and the transitions between them.
+D02006	M	What do fork, exec and wait do in Linux, and what are zombie and orphan processes?
+D02007	M	Why is fork() cheap in modern Linux despite copying the address space conceptually? How does copy-on-write work?
+D02008	M	What is a context switch, what state is saved, and why does it cost CPU time?
+D02009	M	Why is a thread context switch cheaper than a process context switch?
+D02010	M	Compare user-level threads, kernel-level threads and hybrid models. What do many-to-one and one-to-one mappings imply?
+D02011	M	How do coroutines, fibers and virtual threads differ from kernel threads, and what do they save?
+D02012	M	Does adding more threads always make a program faster? What factors cause multithreading to hurt performance?
+D02013	E	List the inter-process communication mechanisms and compare their strengths.
+D02014	M	Compare pipes, named pipes, message queues and shared memory for IPC. Which needs explicit synchronisation?
+D02015	M	What is the difference between a semaphore and a signal in the context of IPC?
+D02016	M	When would you use Unix domain sockets rather than TCP sockets for communication between local processes?
+D02017	H	Why do microkernel designs place so much emphasis on IPC performance?
+D02018	E	What is virtual memory and what problems does it solve?
+D02019	M	Compare segmentation with paging. What are the advantages and drawbacks of each, and how does segmented paging combine them?
+D02020	M	Walk through virtual-to-physical address translation with a page table.
+D02021	M	Why are multi-level page tables used instead of a single flat page table?
+D02022	M	What is a TLB, and how does its hit rate affect the effective memory access time?
+D02023	M	Describe what happens during a page fault, and distinguish a valid page fault from an invalid access.
+D02024	M	Compare page replacement algorithms: FIFO, LRU, Clock and optimal. Which can exhibit Belady's anomaly?
+D02025	M	What is thrashing, how does the working set model relate to it, and how can you detect and fix it?
+D02026	M	What is the principle of locality and why does it make virtual memory and caches work?
+D02027	M	What is the difference between VSZ, RSS and PSS when measuring process memory?
+D02028	M	What are internal and external memory fragmentation? How do paging and the buddy allocator address them?
+D02029	M	What is memory overcommit in Linux and how does it relate to the OOM killer?
+D02030	M	A process allocation succeeds but the process is later killed by the OOM killer. How is that possible and how do you investigate?
+D02031	M	What does mmap do and how does it differ from read/write? Where is shared memory built on top of it?
+D02032	M	How does virtual memory provide isolation between processes while allowing controlled sharing?
+D02033	M	What is swap, when should it be enabled or disabled on a database or JVM server, and what are the trade-offs?
+D02034	E	What is zero-copy and which copy does the term eliminate?
+D02035	M	Count the data copies and context switches in a traditional read-then-write file transfer.
+D02036	M	Compare mmap+write, sendfile and splice for zero-copy transfer. What does DMA scatter-gather add?
+D02037	M	Why does a message broker such as Kafka benefit from sendfile when serving consumers, and when does it not help (e.g. with TLS)?
+D02038	E	What is I/O multiplexing and how does it differ from blocking and non-blocking I/O?
+D02039	M	Compare select, poll and epoll. Why does epoll scale better with many connections?
+D02040	M	Explain level-triggered versus edge-triggered epoll and the pitfalls of edge-triggered mode.
+D02041	M	Is epoll always the best choice? In which situations does it give little benefit?
+D02042	M	Compare the five Unix I/O models: blocking, non-blocking, multiplexing, signal-driven and asynchronous.
+D02043	E	What do a file system's inode, dentry and file name each represent?
+D02044	M	What happens in the kernel when a process opens a file by path?
+D02045	M	Compare contiguous, linked and indexed allocation of file blocks on disk.
+D02046	M	How can a file system keep track of free space? Compare bitmaps and free lists.
+D02047	M	What is the VFS layer and what problem does it solve?
+D02048	M	What is the difference between hard links and symbolic links? Why can't a hard link cross file systems?
+D02049	M	What is the page cache and how does it affect file read and write performance?
+D02050	M	After write() returns successfully, is the data guaranteed to be on disk? What do fsync and O_DIRECT change?
+D02051	M	How does a journaling file system protect against corruption after a crash?
+D02052	M	Compare disk scheduling algorithms such as FCFS, SSTF, SCAN and C-SCAN.
+D02053	E	What are common Linux commands you use to inspect CPU, memory, disk and network usage on a misbehaving server?
+D02054	E	Explain Linux file permissions (rwx, chmod, umask) and the difference between file types such as regular, directory and symlink.
+D02055	E	What is the difference between an environment variable set in a shell session and one defined in a profile file?
+D02056	E	Explain the Linux directory tree and the purpose of /etc, /var, /proc, /dev and /tmp.
+D02057	M	What does the shell option pipefail do, and why does a pipeline normally hide failures from earlier commands?
+D02058	M	How would you make a production shell script safe against concurrent runs, leftover temp files and hanging network calls?
+D02313	M	What happens to a process's memory and file descriptors when it forks and when it calls exec?
+D02314	M	What is the difference between a major (hard) page fault and a minor (soft) page fault?
+D02315	M	How does the OS allocate memory to a process via brk and mmap, and how do user-space allocators like malloc build on them?
+D02316	M	What is the buddy system for physical memory allocation and what problem does it address?
+D02317	M	What is the difference between a file descriptor, an open file description and an inode?
+D02318	M	Why might a program see good write throughput but lose data after a power failure, and how do you design for durability?
+D02319	M	How do interrupts, DMA and polling differ for handling device I/O?
+D02320	M	What is the difference between synchronous, asynchronous, blocking and non-blocking I/O?
+D02321	H	How would you build a server that handles 100k concurrent connections on Linux? Discuss threads, event loops and kernel limits.
+D02322	M	How does the Linux kernel deliver a signal to a process, and which signals cannot be caught?

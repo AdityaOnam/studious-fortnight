@@ -1,0 +1,6 @@
+Q010004	offscope
+Q010080	offscope
+Q010517	vague
+Q009598	junk
+D00427	vague
+D00437	offscope

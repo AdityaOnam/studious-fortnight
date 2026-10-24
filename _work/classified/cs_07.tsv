@@ -1,0 +1,300 @@
+Q002985	SD04	M	How do you expose a non-web API as a web service?
+Q002986	SD04	M	What does protocol-agnostic API design mean?
+Q002987	SD04	M	How would you migrate SOAP services to REST?
+Q002988	SD04	M	When should you choose an asynchronous pattern for an API operation?
+Q002989	SD04	M	How do you track and resume long-running jobs in an API?
+Q002990	SD04	M	How do you secure job status endpoints?
+Q002991	SD04	M	How do you handle failures and retries for asynchronous API jobs?
+Q002992	SD04	M	How do you estimate and report progress of long-running jobs?
+Q002993	CS08	E	What is the difference between authentication and authorization?
+Q002994	CS08	M	Why is Bearer token authentication preferred over Basic authentication?
+Q002995	CS08	M	How do JWT tokens work and what are their advantages?
+Q002996	CS08	E	What is the difference between access tokens and refresh tokens?
+Q002997	CS08	M	How do you implement role-based access control in APIs?
+Q002998	CS08	M	What are OAuth 2.0 scopes and how are they used?
+Q002999	CS08	M	How should you handle token expiration in client applications?
+Q003000	CS08	M	What security considerations apply to API keys?
+Q003001	SD04	M	How do you implement proper session management in stateless APIs?
+Q003002	CS08	H	What is the best way to handle authorization for hierarchical resources?
+Q003003	CS08	M	API keys vs JWTs: when and why would you use each?
+Q003004	CS08	M	Which OAuth flows suit native apps vs SPAs?
+Q003005	CS08	M	How do you rotate and revoke tokens safely?
+Q003006	CS08	M	How do you secure tokens in browsers and mobile apps?
+Q003007	CS08	M	What are the pros and cons of mTLS compared to OAuth?
+Q003008	SD04	H	How do you design idempotent bulk operations?
+Q003009	SD04	M	When should you choose 200 vs 207 for bulk results?
+Q003010	SD04	M	How do you handle validation and transactions for bulk operations?
+Q003011	SD04	M	How do you paginate bulk input, and what batching strategies exist?
+Q003012	SD04	M	How do you stream large bulk results?
+Q003013	CS03	M	What is the difference between ETag and Last-Modified headers?
+Q003014	SD01	M	When should you use private vs public Cache-Control directives?
+Q003015	SD01	H	How do you handle cache invalidation in distributed systems?
+Q003016	SD01	M	What are the performance implications of different caching strategies?
+Q003017	SD01	M	How do you prevent cache stampede problems?
+Q003018	SD01	M	What caching considerations apply to paginated responses?
+Q003019	SD01	M	How do you implement cache warming effectively?
+Q003020	SD01	M	What are the security implications of caching in APIs?
+Q003021	SD01	H	How do you handle cache coherence across multiple API instances?
+Q003022	SD01	M	What metrics should you monitor for cache performance?
+Q003023	DROP	-	dup
+Q003024	SD01	M	How do you design cache-friendly URLs?
+Q003025	SD01	M	How do you cache authenticated responses safely?
+Q003026	SD01	M	What are stale-while-revalidate and stale-if-error?
+Q003027	SD01	M	When should you choose write-through vs cache-aside?
+Q003028	DROP	-	dup
+Q003029	CS03	E	What is content negotiation and why is it important?
+Q003030	CS03	M	How do quality values (q-values) work in content negotiation?
+Q003031	CS03	M	What is the purpose of the Vary header in content negotiation?
+Q003032	SD04	M	How can content negotiation be used for API versioning?
+Q003033	CS03	M	What should happen when a server cannot satisfy a content negotiation request?
+Q003034	SD01	M	How does content negotiation affect caching strategies?
+Q003035	CS03	M	What is the difference between server-driven and agent-driven negotiation?
+Q003036	SD04	M	How do you implement language negotiation in REST APIs?
+Q003037	SD04	M	What are the performance implications of content negotiation?
+Q003038	SD04	M	How should mobile vs desktop clients handle content negotiation differently?
+Q003039	CS08	M	How does the CORS preflight work?
+Q003040	CS08	M	Why should you avoid Access-Control-Allow-Origin: * with cookies?
+Q003041	CS08	H	How do you configure CORS dynamically per tenant?
+Q003042	CS08	M	In a CORS preflight response, which headers must be echoed back?
+Q003043	CS08	M	How do you debug CORS issues in the browser?
+Q003044	SD04	M	What are the differences between PUT and PATCH, and when should you use each?
+Q003045	SD04	M	How do you handle partial updates safely?
+Q003046	SD04	M	How do you design bulk CRUD endpoints?
+Q003047	SD04	M	How do you prevent lost updates in concurrent edits?
+Q003048	SD04	M	What HTTP headers improve the ergonomics of CRUD APIs?
+Q003049	SD04	M	How do you structure validation errors for good UX?
+Q003050	SD04	M	What are the trade-offs between JSON Schema and custom validators?
+Q003051	SD04	M	Where should validation live in a layered architecture?
+Q003052	SD04	M	How do you validate nested arrays and objects?
+Q003053	SD04	M	How do you keep validation and OpenAPI specs in sync?
+Q003054	SD04	M	What makes a good error response in REST APIs?
+Q003055	SD04	M	How do you handle validation errors with multiple field issues?
+Q003056	CS03	E	What is the difference between 401 and 403 status codes?
+Q003057	CS03	M	When should you use 422 Unprocessable Entity vs 400 Bad Request?
+Q003058	SD05	M	How do you implement proper error logging without exposing sensitive information?
+Q003059	CS08	M	What strategies help prevent error information disclosure vulnerabilities?
+Q003060	SD05	M	How should clients handle intermittent server errors (5xx)?
+Q003061	SD04	M	What is the best practice for API versioning in error responses?
+Q003062	SD04	M	How do you handle errors in bulk/batch operations?
+Q003063	SD04	M	What error handling considerations apply to asynchronous operations?
+Q003064	SD04	M	What are the trade-offs between multipart uploads and direct-to-storage uploads?
+Q003065	SD04	M	How do you resume interrupted downloads and uploads?
+Q003066	SD05	M	How do you secure file access per user or role?
+Q003067	SD01	M	How do you serve large files efficiently (CDN, range requests)?
+Q003068	SD02	M	What are best practices for file metadata and lifecycle management?
+Q003069	SD04	M	How do you design a consistent filtering API?
+Q003070	SD04	M	How do you prevent abuse of filtering and sorting queries?
+Q003071	SD04	M	What can go wrong with pagination and sorting consistency?
+Q003072	SD04	M	How do you implement sparse fieldsets and projections?
+Q003073	SD04	M	How would you expose complex search vs simple filters?
+Q003074	SD04	M	What problems does HATEOAS solve, and when is it overkill?
+Q003075	SD04	M	How do you version and document link relations?
+Q003076	SD04	M	Compare HATEOAS with out-of-band API documentation.
+Q003077	SD04	M	How would you test presence and correctness of hypermedia links?
+Q003078	CS03	E	What is the difference between Content-Type and Accept headers?
+Q003079	SD04	M	How do you implement API versioning using headers?
+Q003080	CS03	M	Explain how ETag headers work for caching and concurrency control.
+Q003081	CS08	M	What CORS headers are needed for a cross-origin API request?
+Q003082	SD04	M	How should rate limiting information be communicated through headers?
+Q003083	CS03	E	What is the purpose of the Location header?
+Q003084	DROP	-	dup
+Q003085	CS08	M	What security headers should always be included in API responses?
+Q003086	CS03	M	How do conditional requests work with If-Modified-Since?
+Q003087	CS08	E	What is the difference between the Authorization and Authentication headers?
+Q003088	DROP	-	dup
+Q003089	CS03	E	Why is GET considered safe and idempotent?
+Q003090	SD04	M	When would you use POST vs PUT for creating resources?
+Q003091	CS03	E	What is the purpose of the OPTIONS method?
+Q003092	SD04	M	How do you handle bulk operations in REST?
+Q003093	CS03	M	What makes DELETE idempotent even though it modifies state?
+Q003094	SD04	M	How should you handle non-CRUD operations in REST?
+Q003095	CS03	E	What is the difference between 200 and 204 status codes for successful operations?
+Q003096	CS03	M	How do conditional requests work with HTTP methods?
+Q003097	CS03	E	Why is POST not idempotent?
+Q003098	CS03	E	When should you use 201 vs 200 for successful requests?
+Q003099	DROP	-	dup
+Q003100	SD04	M	How do you handle partial failures in bulk operations?
+Q003101	CS03	E	What status code should be returned for successful DELETE operations?
+Q003102	SD01	M	How should you handle rate limiting in APIs?
+Q003103	CS03	E	What is the purpose of 3xx status codes in REST APIs?
+Q003104	SD04	M	How do you indicate that a long-running operation has started?
+Q003105	DROP	-	dup
+Q003106	SD05	M	How should 5xx errors be handled in production APIs?
+Q003107	SD03	M	How do you implement idempotency for POST?
+Q003108	CS03	M	Why is PUT idempotent but PATCH might not be?
+Q003109	SD03	M	How do you handle idempotency key storage and TTL?
+Q003110	SD03	M	What race conditions must you avoid when implementing API idempotency?
+Q003111	SD03	H	How does idempotency interact with eventual consistency?
+Q003112	SD04	M	Explain REST constraints. Which ones are most often compromised in practice and why?
+Q003113	SD04	M	Map CRUD to HTTP methods; when is POST vs PUT appropriate?
+Q003114	SD04	M	How do you design clean resource URLs, and when should you use path vs query parameters?
+Q003115	CS08	M	Compare session cookies, JWT, and OAuth 2.0; when would you choose each?
+Q003116	DROP	-	dup
+Q003117	DROP	-	dup
+Q003118	SD04	E	Why is JSON preferred for most web APIs?
+Q003119	SD04	M	How do you validate JSON vs XML payloads?
+Q003120	SD04	M	When would you still choose XML today?
+Q003121	SD04	M	How do you implement content negotiation to serve JSON and XML?
+Q003122	SD04	M	What are the pros and cons of JSON vs XML in performance and tooling?
+Q003123	CS08	H	How do you implement token introspection for opaque tokens?
+Q003124	CS08	M	How do you validate a JWT on the server?
+Q003125	CS08	M	What lifetimes and storage approaches suit access tokens vs refresh tokens?
+Q003126	CS08	M	How do you implement logout with stateless JWTs?
+Q003127	CS08	M	What is the risk of alg=none in JWTs and how do you prevent it?
+Q003128	CS08	M	When should you choose opaque tokens over JWTs?
+Q003129	SD04	M	Sync vs async communication between microservices: when and why?
+Q003130	SD04	M	How do you avoid tight coupling between services?
+Q003131	SD03	H	How do you implement the saga pattern with REST endpoints?
+Q003132	SD03	H	How do you handle partial failures across services?
+Q003133	SD04	M	What versioning and compatibility strategies apply to internal vs external APIs?
+Q003134	SD04	M	How do you keep API mocks in sync with API contracts?
+Q003135	SD04	M	When should you use static vs dynamic API mocks?
+Q003136	SD04	M	How do you simulate rate limiting, delays, and errors in API mocks?
+Q003137	CS09	M	How do API mocks help with CI/CD pipelines?
+Q003138	SD04	M	How do you transition from mocks to real services?
+Q003139	DROP	-	notq
+Q003140	DROP	-	notq
+Q003141	CS08	M	Which OAuth flow would you use for a mobile app and why?
+Q003142	CS08	M	How do PKCE and the state parameter improve OAuth security?
+Q003143	CS08	M	Token introspection vs JWT validation: what are the differences?
+Q003144	CS08	M	How do you design granular OAuth scopes?
+Q003145	CS08	H	How would you revoke tokens across microservices?
+Q003146	DROP	-	notq
+Q003147	DROP	-	notq
+Q003148	SD04	M	What are the main differences between offset-based and cursor-based pagination?
+Q003149	SD04	M	Why does offset-based pagination become slow with large offsets?
+Q003150	SD04	M	How do you handle pagination when the underlying data changes?
+Q003151	SD04	M	What is the best way to implement pagination for search results?
+Q003152	CS04	M	How do you optimize database queries for paginated results?
+Q003153	SD04	H	What pagination strategy works best for real-time data streams?
+Q003154	SD04	M	How should you handle pagination in mobile applications?
+Q003155	CS08	M	What are the security considerations for pagination?
+Q003156	SD04	M	How do you implement pagination for aggregated or grouped data?
+Q003157	SD04	H	What is the best approach for paginating across multiple data sources?
+Q003158	SD04	E	When should you use path vs query parameters?
+Q003159	SD01	M	How do query parameters affect caching?
+Q003160	SD04	M	How do you represent actions in REST paths?
+Q003161	SD04	M	How do you design complex filtering in an API?
+Q003162	SD04	M	How do you validate and document parameters in OpenAPI?
+Q003163	SD01	M	What are the trade-offs between token bucket and sliding window rate limiting?
+Q003164	SD01	M	How do you handle rate limits per endpoint and per user?
+Q003165	DROP	-	dup
+Q003166	CS08	M	How do you protect login endpoints specifically?
+Q003167	SD01	H	How do you scale rate limits across multiple servers?
+Q003170	SD04	M	When would you choose SSE over WebSockets?
+Q003171	SD04	H	How do you scale WebSockets horizontally?
+Q003172	SD04	M	How do you resume streams after disconnects?
+Q003173	CS08	M	How do you secure and authenticate real-time connections?
+Q003174	SD04	M	What are the trade-offs of long polling under load?
+Q003175	SD04	M	Why prefer a top-level object over a top-level array in JSON responses?
+Q003176	SD04	M	How would you design a consistent pagination response shape?
+Q003177	SD04	M	Compare JSON Patch vs JSON Merge Patch.
+Q003178	SD04	M	How do you design error envelopes that are both machine- and human-readable?
+Q003179	SD04	M	How do you pragmatically embed links (HATEOAS) in API responses?
+Q003180	DROP	-	dup
+Q003181	CS03	E	Explain the difference between stateful and stateless communication.
+Q003182	SD04	M	What is HATEOAS and why is it considered the highest level of REST maturity?
+Q003183	SD04	M	How does the Uniform Interface constraint improve API design?
+Q003184	SD04	M	What makes an API truly RESTful vs just REST-like?
+Q003185	SD04	M	How does the cacheable constraint improve API performance?
+Q003186	SD04	M	Why is the layered system constraint important for modern APIs?
+Q003187	SD04	E	What are the benefits of the client-server constraint?
+Q003188	SD04	M	How do you design URLs that follow REST principles?
+Q003189	SD04	E	What is the difference between REST and RESTful?
+Q003190	SD04	M	When would you choose GraphQL over REST?
+Q003191	SD04	M	How does caching differ between REST and GraphQL?
+Q003192	SD04	M	What advantages does SOAP offer in enterprise scenarios?
+Q003193	SD04	M	How do you prevent N+1 issues in GraphQL?
+Q003194	SD04	M	Compare versioning strategies in REST vs GraphQL.
+Q003195	SD04	M	Can REST be strongly typed like GraphQL? How?
+Q003196	CS08	M	How do you secure SOAP vs REST vs GraphQL endpoints?
+Q003197	SD04	M	How would you wrap a SOAP service to present a REST API?
+Q003198	SD04	M	What are typical performance pitfalls in REST, GraphQL, and SOAP APIs?
+Q003199	SD04	M	How do you evolve API schemas and contracts over time?
+Q003200	SD04	M	What makes an API RESTful?
+Q003201	DROP	-	dup
+Q003202	SD04	M	How would you refactor /createUser and /updateUser endpoints into a RESTful design?
+Q003203	SD04	M	When would you choose RPC over REST?
+Q003204	SD04	E	Why is statelessness important in REST?
+Q003205	SD04	M	How do you handle actions like "approve" and "cancel" with REST paths?
+Q003206	SD04	M	What are the downsides of action-based endpoints?
+Q003207	SD04	H	How do you evolve a non-RESTful API to REST without breaking clients?
+Q003208	SD04	M	Are HATEOAS and REST required together? Explain.
+Q003209	SD04	M	Give examples of cache-friendly REST patterns.
+Q003210	DROP	-	dup
+Q003211	SD04	M	When should you add a dedicated search endpoint vs using filters?
+Q003212	SD04	M	How do you design facets and aggregations in API responses?
+Q003213	SD04	M	How do you avoid deep paging performance issues?
+Q003214	CS08	M	How do you secure complex query parsing in an API?
+Q003215	SD02	H	How do you measure and tune search relevance?
+Q003216	CS08	M	What are the essential security headers for REST APIs and their purposes?
+Q003217	CS08	M	How do you implement proper authentication vs authorization in REST APIs?
+Q003218	CS08	M	What is the difference between symmetric and asymmetric encryption in API security?
+Q003219	SD05	M	How do you prevent and detect API abuse and DDoS attacks?
+Q003220	CS08	M	What are the security considerations for API versioning?
+Q003221	DROP	-	dup
+Q003222	CS08	M	What is the OWASP API Security Top 10 and how do you address these risks?
+Q003223	DROP	-	dup
+Q003224	CS08	M	What are the security implications of CORS and how do you configure it safely?
+Q003225	SD05	M	How do you implement comprehensive security monitoring for REST APIs?
+Q003226	SD04	E	What does stateless communication mean in REST APIs?
+Q003227	SD04	M	How does statelessness improve API scalability?
+Q003228	CS08	M	What is the difference between stateful and stateless authentication?
+Q003229	SD04	M	How do you handle user context in stateless APIs?
+Q003230	SD04	M	What are the challenges of implementing stateless APIs?
+Q003231	SD04	M	How do you implement pagination in a stateless manner?
+Q003232	SD04	M	How does caching work with stateless APIs?
+Q003233	SD04	M	What is wrong with storing conversation state on the server?
+Q003234	SD03	M	How do you handle idempotency in stateless APIs?
+Q003235	SD04	M	Can you have real-time features in stateless APIs?
+Q003236	SD04	E	Why should REST URLs use nouns instead of verbs?
+Q003237	SD04	M	How do you handle nested resources in URL design?
+Q003238	SD04	E	What is the difference between using hyphens and underscores in URLs?
+Q003239	DROP	-	dup
+Q003240	SD04	M	What are the best practices for URL versioning?
+Q003241	SD04	M	How do you design URLs for filtering and searching?
+Q003242	SD04	E	Should you use singular or plural nouns for collections?
+Q003243	SD04	M	How do you handle file uploads and downloads in URL design?
+Q003244	CS08	M	What security considerations apply to URL design?
+Q003245	SD04	M	How do you design URLs for complex queries and reports?
+Q003246	SD04	M	How do you ensure webhook reliability and idempotency?
+Q003247	CS08	M	How do you secure webhooks?
+Q003248	SD04	M	How do you handle client downtime gracefully when delivering webhooks?
+Q003249	SD04	M	What admin tools help troubleshoot webhooks?
+Q003250	SD04	M	Compare polling vs webhooks vs SSE.
+Q003251	DROP	-	notq
+Q003252	SD06	H	How would you design a globally distributed chat system?
+Q003253	DROP	-	notq
+Q003254	DROP	-	notq
+Q003255	DROP	-	notq
+Q003256	DROP	-	notq
+Q003257	DROP	-	notq
+Q003258	DROP	-	notq
+Q003259	DROP	-	notq
+Q003260	DROP	-	notq
+Q003261	DROP	-	notq
+Q003262	DROP	-	notq
+Q003263	DROP	-	notq
+Q003264	DROP	-	notq
+Q003265	DROP	-	notq
+Q003266	DROP	-	notq
+Q003267	DROP	-	notq
+Q003268	DROP	-	notq
+Q003269	DROP	-	notq
+Q003270	DROP	-	notq
+Q003271	DROP	-	notq
+Q003272	DROP	-	notq
+Q003273	DROP	-	notq
+Q003274	DROP	-	notq
+Q003275	DROP	-	notq
+Q003276	DROP	-	notq
+Q003277	SD06	H	Design YouTube.
+Q003278	SD06	H	Design Amazon Prime Video.
+Q003279	SD06	H	Design Amazon Shopping Cart.
+Q003280	SD06	H	Design Facebook News Feed.
+Q003281	SD06	H	Design Instagram.
+Q003282	SD06	H	Design WhatsApp.
+Q003283	SD06	H	Design Netflix streaming service.
+Q003284	SD06	H	Design a content delivery network.
+Q003285	SD06	H	Design Uber ride-hailing.
+Q003286	SD06	H	Design a surge pricing system.

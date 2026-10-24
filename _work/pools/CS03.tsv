@@ -1,0 +1,400 @@
+Q000398	E	Explain the OSI model and what each layer does.
+Q000399	E	What is the difference between the OSI and TCP/IP models?
+Q000400	E	TCP vs UDP: when would you choose each?
+Q000401	M	Explain the TCP 3-way handshake. Why not a 2-way handshake?
+Q000402	M	What is TIME_WAIT in TCP connection termination?
+Q000403	M	What happens when you type a URL in the browser?
+Q000404	M	How does DNS resolution work step by step?
+Q000405	M	What is ARP? How does it work?
+Q000406	E	What is the difference between TCP and IP?
+Q000407	E	What is the difference between a MAC address and an IP address?
+Q000408	M	How many hosts can a 192.168.1.0/26 subnet have?
+Q000409	E	What is NAT and why do we need it?
+Q000410	E	What is the difference between circuit switching and packet switching?
+Q000411	M	What is the difference between flow control and congestion control?
+Q000412	M	Explain TCP slow start and congestion avoidance.
+Q000413	M	What is the difference between Go-Back-N and Selective Repeat?
+Q000414	M	Why is HTTP stateless and how do sessions work then?
+Q000417	E	What is the difference between SMTP, POP3 and IMAP?
+Q000418	E	What is the difference between a hub, a switch and a router?
+Q000419	E	What is a socket? Name some well-known ports.
+Q000420	M	How do ping and traceroute work?
+Q000422	M	What is a VPN and how is it different from a proxy?
+Q000613	M	How does NAT work, and how did it enable the growth of the Internet?
+Q000615	M	What makes HTTP/2 faster than HTTP/1?
+Q000617	E	What are the differences between WAN, LAN, PAN, and MAN?
+Q000622	E	What are the components of a URL?
+Q000652	M	What happens when you type a URL into your browser?
+Q000697	M	How is email delivered?
+Q000715	M	How does a VPN work?
+Q000718	M	How does HTTPS work?
+Q000719	M	How does a Domain Name System (DNS) lookup work?
+Q000823	M	How is data sent over the network, and why do we need so many layers in the OSI model?
+Q000830	E	What is the difference between a URI, a URL, and a URN?
+Q000833	M	What is SSL offloading?
+Q000849	M	Active vs passive FTP mode: which one is more secure?
+Q000850	E	How does DHCP work?
+Q000851	E	What is the DORA process in DHCP?
+Q000852	E	What is a DHCP server?
+Q000897	E	What are some common response codes that an API might return, and what do they signify?
+Q002308	E	What is the WebSocket protocol and how does it differ from HTTP?
+Q002309	M	Explain how the WebSocket handshake works.
+Q002310	E	What are some common use cases for WebSockets?
+Q002311	M	What are the limitations of WebSockets?
+Q002312	E	Can you describe the WebSocket API provided by HTML5?
+Q002313	H	Explain the WebSocket frame format.
+Q002314	M	How do WebSockets handle communication through proxies and firewalls?
+Q002316	M	How would you detect and handle WebSocket connection loss?
+Q002317	M	Explain the role of ping/pong frames in WebSockets.
+Q002318	M	How does WebSocket ensure ordered delivery of messages?
+Q002321	M	Explain how a WebSocket connection is closed.
+Q003013	M	What is the difference between ETag and Last-Modified headers?
+Q003029	E	What is content negotiation and why is it important?
+Q003030	M	How do quality values (q-values) work in content negotiation?
+Q003031	M	What is the purpose of the Vary header in content negotiation?
+Q003033	M	What should happen when a server cannot satisfy a content negotiation request?
+Q003035	M	What is the difference between server-driven and agent-driven negotiation?
+Q003056	E	What is the difference between 401 and 403 status codes?
+Q003057	M	When should you use 422 Unprocessable Entity vs 400 Bad Request?
+Q003078	E	What is the difference between Content-Type and Accept headers?
+Q003080	M	Explain how ETag headers work for caching and concurrency control.
+Q003083	E	What is the purpose of the Location header?
+Q003086	M	How do conditional requests work with If-Modified-Since?
+Q003089	E	Why is GET considered safe and idempotent?
+Q003091	E	What is the purpose of the OPTIONS method?
+Q003093	M	What makes DELETE idempotent even though it modifies state?
+Q003095	E	What is the difference between 200 and 204 status codes for successful operations?
+Q003096	M	How do conditional requests work with HTTP methods?
+Q003097	E	Why is POST not idempotent?
+Q003098	E	When should you use 201 vs 200 for successful requests?
+Q003101	E	What status code should be returned for successful DELETE operations?
+Q003103	E	What is the purpose of 3xx status codes in REST APIs?
+Q003108	M	Why is PUT idempotent but PATCH might not be?
+Q003181	E	Explain the difference between stateful and stateless communication.
+Q003507	M	What is the difference between TCP keepalive and HTTP keep-alive?
+Q003508	M	If you can ping a host, does a TCP connection to it definitely succeed?
+Q003509	E	Can TCP and UDP use the same port?
+Q003510	M	What is the maximum number of TCP connections a host can maintain?
+Q003655	E	What are the OSI seven-layer model and the TCP/IP four-layer model? What problem does each layer solve?
+Q003656	M	How does TCP ensure reliable transmission, and how do you choose between TCP and UDP?
+Q003691	M	Why does TIME_WAIT exist, and how do you troubleshoot a large number of TIME_WAIT connections?
+Q003673	M	Why does DNS usually use UDP, and when does it switch to TCP?
+Q003682	E	What is the difference between a cookie and a session?
+Q003683	M	Why is TCP byte-stream-oriented while UDP is message-oriented?
+Q003684	M	In the second step of the TCP handshake, why does the server send back a SYN in addition to the ACK?
+Q003685	M	Why can't the server's ACK and FIN be combined in TCP connection termination, making it a three-way close?
+Q003686	M	Why must the client wait 2*MSL (maximum segment lifetime) after the fourth wave before entering the CLOSED state?
+Q003688	E	What is an IP address, and how does IP addressing work?
+Q003689	E	What is NAT, and what are the benefits of NAT firewalls?
+Q003694	M	Why can the Nagle algorithm and delayed ACK make small packets slower?
+Q003698	E	What is TCP keepalive?
+Q003699	M	How is a TCP connection established, and if HTTPS is used, what does the TLS handshake do?
+Q003700	M	After the browser receives the HTML, how does it continue loading resources such as CSS, JS, and images and render the page?
+Q003701	M	What really happens when you navigate to a URL?
+Q003885	M	Why is Netty built on NIO rather than traditional BIO?
+Q003936	E	What is a cookie, and what is it used for?
+Q003937	M	Can sessions still work without cookies?
+Q004232	M	Two machines want to communicate, with the first sending a message to the second. Explain in detail how the communication takes place, including the OSI and TCP/IP models, the role of each layer in transmitting data, and the three-way handshake used to establish connections.
+Q006242	E	Why were TCP and UDP created?
+Q006243	M	How do TCP and UDP handle errors?
+Q006462	E	Why does the OSI model matter?
+Q012472	M	How do you troubleshoot if you can't access a particular website?
+Q012487	M	How do WebSockets work?
+Q012535	M	What is RIP (Routing Information Protocol), a distance-vector routing protocol, and what algorithm does it use?
+Q012536	E	What is the ARP protocol (Address Resolution Protocol)?
+Q012537	E	What is NAT (Network Address Translation)?
+Q009446	M	Given a list of allowed IP ranges as CIDR blocks plus explicit deny ranges, implement is_allowed(ip) efficiently for millions of checks per second.
+D01008	E	Describe the five-layer, OSI and TCP/IP network models and what each layer is responsible for.
+D01009	M	How does data get encapsulated as it moves down the layers and decapsulated on the receiving host?
+D01010	M	Why did the Internet adopt TCP/IP over the OSI model, and in what ways does the layering still leak in practice?
+D01011	E	Compare circuit switching and packet switching. Why is the Internet packet-switched?
+D01012	E	What are the four components of packet delay: processing, queuing, transmission and propagation?
+D01013	M	Given a 1500-byte packet on a 100 Mbps link spanning 1000 km, compute transmission and propagation delay and say which dominates.
+D01014	M	What problems must a link layer solve: framing, transparent transmission and error detection?
+D01015	M	How does CSMA/CD work, and why does it not apply to modern switched full-duplex Ethernet?
+D01016	M	What is a MAC address and how does it differ from an IP address?
+D01017	M	How does a learning switch build and use its forwarding table? How does it differ from a hub and a router?
+D01018	M	What is a VLAN and why would you deploy one?
+D01019	M	What fields does an IPv4 header contain and what are TTL, fragmentation offset and protocol used for?
+D01020	E	Explain classful IP addressing, subnetting and CIDR.
+D01021	M	Given the address 192.168.10.37/27, compute the network address, broadcast address and number of usable hosts.
+D01022	M	Why was CIDR introduced and how does route aggregation reduce routing table sizes?
+D01023	E	What is ARP, and how does a host find the MAC address of a destination in the same subnet?
+D01024	M	What is ARP spoofing and how can it be mitigated?
+D01025	M	How do ping and traceroute use ICMP and TTL to do their job?
+D01026	E	What is NAT, why was it introduced, and what problems does it create for peer-to-peer applications?
+D01027	M	How does NAT with port translation keep track of many internal hosts behind one public IP?
+D01028	M	What is a VPN and how does tunneling protect traffic across the public Internet?
+D01029	M	How does a router forward a packet: longest prefix match, next hop and TTL decrement?
+D01030	M	Compare distance-vector routing (RIP) with link-state routing (OSPF). What is count-to-infinity?
+D01031	M	Why is BGP used between autonomous systems while RIP and OSPF are used inside them?
+D01032	E	What are the main differences between TCP and UDP, and when would you choose UDP?
+D01033	M	What fields does a TCP header contain and what do sequence number, acknowledgment number and window size do?
+D01034	E	Explain the TCP three-way handshake and what each segment contains.
+D01035	M	Why does TCP need three handshake steps rather than two?
+D01036	M	What is a SYN flood attack and how do SYN cookies defend against it?
+D01037	E	Explain the TCP four-way connection teardown.
+D01038	M	Why does the closing side stay in TIME_WAIT for 2 MSL, and what problems arise from many TIME_WAIT sockets?
+D01039	M	A server shows thousands of connections stuck in CLOSE_WAIT. What does it indicate and how do you fix it?
+D01040	M	Why does connection teardown need four segments while setup needs three?
+D01041	M	How does TCP provide reliable delivery: sequence numbers, acknowledgments, retransmission and checksums?
+D01042	M	How does TCP compute the retransmission timeout and what is Karn's algorithm trying to avoid?
+D01043	M	Explain the TCP sliding window and how it differs from flow control and congestion control.
+D01044	M	How does TCP flow control prevent a fast sender from overwhelming a slow receiver? What happens with a zero window?
+D01045	M	Explain slow start, congestion avoidance, fast retransmit and fast recovery.
+D01046	M	Why does packet loss crush TCP throughput on long-fat networks, and how do algorithms such as BBR differ from loss-based control?
+D01047	M	How can an application maximize bandwidth utilization over TCP, given window sizes and RTT?
+D01048	M	What are TCP sticky packets (message boundary problem), and how do application protocols deal with them?
+D01049	M	What is Nagle's algorithm and delayed ACK, and how can they combine to hurt latency?
+D01050	M	What is head-of-line blocking in TCP and how does QUIC address it?
+D01051	E	How does the Domain Name System work, and how does recursive resolution differ from iterative resolution?
+D01052	M	What does DNS caching involve (browser, OS, resolver) and how do TTLs influence propagation of changes?
+D01053	M	Why does DNS mostly use UDP, and when does it switch to TCP?
+D01054	M	What is DNS-based load balancing and what are its limitations?
+D01055	E	What does DHCP do and how does a new host obtain an IP address?
+D01056	M	Compare SMTP, POP3 and IMAP.
+D01057	E	What happens, in as much detail as possible, from typing a URL in the browser to seeing the page?
+D01058	M	In the URL-to-page flow, which protocols are involved at each layer, and where can caching shortcut the process?
+D01059	E	What are the main HTTP methods and what is each used for?
+D01060	M	What is the difference between GET and POST regarding semantics, safety, idempotency, cacheability and parameter placement?
+D01061	M	Explain safe and idempotent methods. Which standard methods are idempotent and why does it matter for retries?
+D01062	M	When would you use PUT versus PATCH versus POST for updating a resource?
+D01063	M	What is the HTTP OPTIONS method used for, and how does it relate to CORS preflight?
+D01064	E	What do the status code classes 1xx, 2xx, 3xx, 4xx and 5xx mean, and what are the most common codes in each?
+D01065	M	What is the difference between 301 and 302 redirects, and between 302 and 307?
+D01066	M	What is the difference between 401 and 403, and between 502, 503 and 504?
+D01067	M	What is the difference between a 304 response and a 200 from cache, and how do conditional requests work?
+D01068	M	How does HTTP caching work with Cache-Control, ETag, Last-Modified, Expires and If-None-Match?
+D01069	M	Explain the difference between no-cache and no-store in Cache-Control.
+D01070	M	What are persistent connections and pipelining in HTTP/1.1, and why does pipelining rarely help?
+D01071	M	What are the problems of HTTP/1.x that HTTP/2 addresses?
+D01072	M	Explain HTTP/2 binary framing, multiplexing, header compression and server push.
+D01073	M	How does HTTP/3 over QUIC differ from HTTP/2 over TCP and what does it gain?
+D01074	M	What did HTTP/1.1 add over HTTP/1.0?
+D01075	M	What are chunked transfer encoding and range requests, and what use cases do they serve?
+D01076	M	How does content negotiation work and which headers drive it?
+D01077	M	What does the Host header enable (virtual hosting) and why was it needed?
+D01078	M	What is the difference between a forward proxy, a reverse proxy and a tunnel proxy?
+D01079	M	What headers (X-Forwarded-For, Via) are used when a request passes through proxies, and why can they be spoofed?
+D01080	E	What is a cookie, and how does it differ from a session?
+D01081	M	What are the Secure, HttpOnly, SameSite and Domain attributes of a cookie and what do they protect against?
+D01082	M	How is session state tracked between stateless HTTP requests? Compare cookie-based session IDs with token-based approaches.
+D01083	E	What are the differences between HTTP and HTTPS?
+D01084	M	Walk through the TLS handshake and say how the symmetric session key is established.
+D01085	M	Why does HTTPS combine asymmetric and symmetric encryption instead of using only one?
+D01086	M	What disadvantages does HTTPS have (latency, CPU cost, certificate management) and how are they reduced?
+D01087	M	How does a non-blocking socket behave differently from a blocking one on read, write and connect?
+D01088	M	What is a socket, and what is the sequence of system calls for a TCP server and a TCP client?
+D01089	M	What does the listen backlog control, and what happens when it is exceeded?
+D01090	M	What are WebSockets and how do they differ from long polling and server-sent events?
+D01091	M	What is a RESTful API and what constraints define REST?
+D01092	M	How should resource URIs, HTTP verbs and status codes be designed in a REST API?
+D01093	M	How do multiplexing techniques such as TDM, FDM, statistical TDM and CDMA allow sharing of a channel?
+D01094	M	What are the common well-known ports for HTTP, HTTPS, SSH, FTP, DNS and SMTP?
+D01095	M	How do active and passive modes of FTP differ and why does passive mode work better behind firewalls?
+D01096	H	Users report a website is slow only from one region. How would you use DNS, traceroute, TCP and HTTP-level tools to localize the problem?
+D01097	H	A service sees many connection resets under load. What kernel, TCP and application-level causes would you investigate?
+D01564	E	Describe the seven layers of the OSI model and what each layer does.
+D01565	M	How does the OSI model map onto the TCP/IP model, and what is encapsulation?
+D01566	M	At which layers do hubs, switches, routers and load balancers operate?
+D01567	E	What are the key differences between TCP and UDP?
+D01568	M	Why do DNS, live video streaming and online games typically use UDP?
+D01569	M	What fields does a UDP header contain and why is it so lightweight?
+D01570	H	How would you build reliability on top of UDP, and what protocol uses this approach?
+D01571	E	Explain the TCP three-way handshake.
+D01572	M	Why does TCP need three steps instead of two to establish a connection?
+D01573	M	What is a SYN flood attack and how can it be mitigated?
+D01574	E	Explain the TCP four-way connection termination.
+D01575	M	What is the TIME_WAIT state, why does it exist, and what problems can many TIME_WAIT sockets cause?
+D01576	M	Why does connection termination need four steps rather than three?
+D01577	E	What is the difference between TCP flow control and congestion control?
+D01578	M	How does the sliding window protocol work, and how does the receiver window affect throughput?
+D01579	M	Compare stop-and-wait, Go-Back-N and selective repeat ARQ.
+D01580	M	Explain slow start, congestion avoidance, fast retransmit and fast recovery in TCP.
+D01581	M	How do TCP Tahoe and Reno differ in their reaction to packet loss?
+D01582	H	Why does TCP perform poorly over high-latency lossy links, and what could you do about it?
+D01583	E	What happens, step by step, when a domain name is resolved to an IP address?
+D01584	M	Compare recursive and iterative DNS queries, and explain the role of resolvers, root and authoritative servers.
+D01585	M	How does DNS caching and TTL work, and what are the trade-offs when changing a record?
+D01586	E	What are the differences between HTTP and HTTPS?
+D01587	M	What problems does HTTPS solve that plain HTTP does not (confidentiality, integrity, authentication)?
+D01588	M	Is HTTP stateless, and how do applications maintain state across requests?
+D01589	M	What are the main improvements of HTTP/2 over HTTP/1.1, and what does HTTP/3 change again?
+D01590	M	What are persistent connections and head-of-line blocking in HTTP?
+D01591	E	Walk through the TLS handshake and explain what is negotiated.
+D01592	M	Why does TLS use asymmetric cryptography for the handshake but symmetric cryptography for bulk data?
+D01593	M	How does a client validate a server certificate chain during the TLS handshake?
+D01594	M	What is forward secrecy and how does ephemeral Diffie-Hellman provide it?
+D01595	M	What are the semantics of the HTTP methods GET, POST, PUT, PATCH and DELETE, and which are safe and idempotent?
+D01596	M	When would you use PUT versus PATCH versus POST for updating a resource?
+D01597	E	What do the HTTP status code classes 2xx, 3xx, 4xx and 5xx mean?
+D01598	M	What is the difference between 301 and 302, and between 401 and 403?
+D01599	M	When should an API return 400, 404, 409, 422 or 429 versus 500, 502, 503 or 504?
+D01600	E	What are cookies and sessions, and how do they differ?
+D01601	M	What are the security-related cookie attributes HttpOnly, Secure and SameSite, and what does each protect against?
+D01602	M	How do you handle sessions when the application is scaled out across multiple servers?
+D01603	E	What happens when you type a URL in the browser and press Enter?
+D01604	M	How does the browser turn HTML, CSS and JavaScript into pixels, and what are reflow and repaint?
+D01605	M	How do async and defer attributes on script tags affect page loading?
+D01606	E	What are the REST architectural constraints?
+D01607	M	What makes an API truly RESTful in terms of resource naming, statelessness and use of HTTP methods?
+D01608	M	Compare client-side rendering and server-side rendering in terms of SEO, first paint and server load.
+D01609	M	Why would you choose static site generation or hybrid rendering over pure CSR or pure SSR?
+D01610	M	What is the difference between a web server and a web application server (WAS)?
+D01611	M	Why place a web server in front of an application server (reverse proxy, static content, SSL termination)?
+D01612	M	What are the trade-offs between native, web and hybrid mobile apps?
+D01613	M	What is a progressive web app and which browser features make it work offline?
+D01616	E	What is the purpose of a load balancer and what problem does it solve?
+D01617	M	Compare L4 and L7 load balancing.
+D01618	M	Compare round robin, least connections, IP hash and weighted load balancing algorithms.
+D01878	M	Why must a process handling many connections avoid one-thread-per-connection, and how do event-driven servers address it?
+D01879	M	What is the difference between a proxy and a reverse proxy?
+D01880	M	What is a socket and how does a TCP server accept and serve client connections?
+D01881	M	How do HTTP caching headers such as Cache-Control, ETag and Last-Modified work?
+D01882	M	What is the difference between URL, URI and URN?
+D01883	M	What is the difference between the TCP three-way handshake latency and the added round trips of TLS, and how do session resumption and keep-alive reduce them?
+D01884	E	Compare the OSI seven-layer model with the TCP/IP four-layer model. Which layers map to each other?
+D01885	E	Why are network protocols organized into layers, and what benefits does layering bring?
+D01886	E	Name the protocol data unit used at each layer of the TCP/IP stack and describe how encapsulation works as data moves down the stack.
+D01887	E	What are the key differences between TCP and UDP?
+D01888	M	When would you choose UDP over TCP for an application? Give concrete examples and justify each.
+D01889	M	Why is TCP described as byte-stream oriented while UDP is message oriented, and what practical problems does this cause for application protocols?
+D01890	M	How does an application deal with message boundaries (sticky packets) when reading from a TCP socket?
+D01891	E	Which common application-layer protocols run over TCP and which over UDP?
+D01892	E	Walk through the TCP three-way handshake. What state does each side go through?
+D01893	M	Why does TCP need three handshake messages rather than two? What goes wrong with a two-way handshake?
+D01894	M	In the second handshake the server already sends an ACK. Why does it also need to send a SYN in the same segment?
+D01895	M	Can data be carried in the segments of a TCP three-way handshake? Which ones, and why?
+D01896	M	What are the SYN (half-open) queue and the accept (full-connection) queue in a TCP server, and what happens when each overflows?
+D01897	M	Why does connection teardown take four steps while setup takes three?
+D01898	M	Under what circumstances can a TCP close appear to take only three segments instead of four?
+D01899	M	What happens in TCP if the ACK of the first FIN is lost on its way to the closing side?
+D01900	M	Why does the active closer wait 2MSL after the fourth wave before releasing the connection?
+D01901	M	A server shows thousands of connections stuck in CLOSE_WAIT. What does that indicate and how would you debug it?
+D01902	M	A server shows tens of thousands of sockets in TIME_WAIT. Is that a problem, and how do you decide what to do about it?
+D01903	H	Why is enabling tcp_tw_reuse (or recycling TIME_WAIT sockets aggressively) risky, and under what conditions is it safe?
+D01904	M	Which side ends up in TIME_WAIT, and why should you check who initiates the close before tuning anything?
+D01905	M	What two problems does TIME_WAIT solve for a TCP connection?
+D01906	M	How does TCP guarantee reliable delivery? List the mechanisms involved.
+D01907	M	Compare stop-and-wait ARQ with continuous (sliding window) ARQ. Why is the latter more efficient?
+D01908	M	How does TCP determine the retransmission timeout, and what goes wrong if it is set too short or too long?
+D01909	M	Explain TCP fast retransmit. Why does it trigger on duplicate ACKs instead of waiting for a timeout?
+D01910	H	What problem does selective acknowledgement (SACK) solve, and what additional information does D-SACK report to the sender?
+D01911	M	How does TCP implement flow control with the sliding window? What happens when the receiver advertises a zero window?
+D01912	M	Explain TCP congestion control: slow start, congestion avoidance, fast retransmit and fast recovery.
+D01913	M	What is the difference between flow control and congestion control in TCP?
+D01914	M	What is the difference between TCP keepalive and HTTP keep-alive?
+D01915	M	What are the possible outcomes of a TCP keepalive probe, and what are its limitations for detecting dead peers?
+D01916	M	How are idle HTTP persistent connections closed and reclaimed on the server and client side?
+D01917	M	Can TCP and UDP listen on the same port number simultaneously? Why does that not conflict?
+D01918	M	Why does DNS use port 53 for both TCP and UDP, and when does it fall back to TCP?
+D01919	M	A host can only use 65535 ports. Why can a server still hold far more than 65535 concurrent TCP connections?
+D01920	H	What actually limits the number of concurrent TCP connections on a Linux server, and why do clients or NAT gateways hit limits earlier?
+D01921	M	What fields make up the four-tuple that identifies a TCP connection?
+D01922	M	Ping to a host succeeds but a TCP connection to it times out. What are the possible explanations and how would you narrow them down?
+D01923	E	What does the ping command do, and which protocol does it use?
+D01924	M	Why can an HTTPS request fail at the TLS stage even though TCP connects fine, for example with SNI-based filtering?
+D01925	E	What happens, step by step, when you type a URL into a browser and press Enter?
+D01926	M	In the browser navigation flow, which caches are checked before a DNS query is sent, and in what order?
+D01927	M	How does the browser turn an HTML response into a rendered page? Which resources block rendering?
+D01928	E	Explain how DNS resolution works. What are recursive and iterative queries?
+D01929	E	What types of DNS servers exist (root, TLD, authoritative, local resolver) and what role does each play?
+D01930	E	What are the common DNS record types (A, AAAA, CNAME, MX, NS, TXT) and what is each used for?
+D01931	M	What is DNS hijacking and how can you detect and mitigate it?
+D01932	M	Why does DNS use UDP for most queries, and what role does caching and TTL play in DNS performance and propagation delay?
+D01933	M	How do CNAME records differ from A records, and what restrictions does a CNAME impose on a zone apex?
+D01934	E	What is the difference between HTTP and HTTPS?
+D01935	M	Explain the SSL/TLS handshake. How do the client and server end up with a shared symmetric key?
+D01936	M	Why does TLS use asymmetric cryptography only for the handshake and symmetric encryption for the data?
+D01937	H	Compare RSA key exchange with ECDHE key exchange in a TLS handshake. Why does only ECDHE give forward secrecy?
+D01938	H	In a cipher suite named ECDHE_RSA_AES128_GCM_SHA256, what does each component do? Is the data encrypted with both RSA and ECDHE?
+D01939	H	What changed in TLS 1.3 compared with TLS 1.2 in terms of handshake round trips and supported key exchange modes?
+D01940	M	How do TLS session resumption and session tickets affect forward secrecy and handshake cost?
+D01941	M	What is the difference between SSL and TLS, and which versions are considered obsolete?
+D01942	E	List the main HTTP status code classes and give examples of codes in each.
+D01943	M	What is the difference between 301 and 302, and between 401 and 403, redirects and auth failures?
+D01944	M	When should a service return 502, 503 or 504, and how do they differ from a plain 500?
+D01945	M	What are the main differences between HTTP/1.0 and HTTP/1.1?
+D01946	M	How does HTTP caching differ between 1.0 (Expires, Pragma) and 1.1 (Cache-Control, ETag)?
+D01947	M	What problem does the Host header solve, and why was it needed in HTTP/1.1?
+D01948	M	What are range requests and the 100-continue mechanism in HTTP/1.1, and what bandwidth problems do they address?
+D01949	M	What are the main differences between HTTP/1.1 and HTTP/2?
+D01950	M	What are the main differences between HTTP/2 and HTTP/3, and why does HTTP/3 use QUIC over UDP?
+D01951	H	How does head-of-line blocking differ between HTTP/1.1, HTTP/2 over TCP and HTTP/3 over QUIC?
+D01952	M	What is HTTP/2 multiplexing and header compression (HPACK), and how do they reduce latency?
+D01953	M	HTTP is stateless. How do web applications maintain user state across requests?
+D01954	M	What are the differences between cookies and sessions, and what are the trade-offs of each for authentication?
+D01955	M	How would you share session state across several backend servers behind a load balancer?
+D01956	E	What is the difference between a URI and a URL?
+D01957	M	What are the differences between GET and POST? Are the usual claims about safety and idempotency actually accurate?
+D01958	E	Which HTTP methods are idempotent and which are safe? Why does this matter for retries?
+D01959	E	Name common HTTP request and response headers and explain what Content-Type, Cache-Control, Authorization and Accept-Encoding do.
+D01960	E	What is WebSocket and how is its handshake performed on top of HTTP?
+D01961	M	How does WebSocket differ from HTTP, and when is each appropriate?
+D01962	M	Compare short polling, long polling, WebSocket and server-sent events for pushing updates to browsers.
+D01963	M	When would you pick SSE over WebSocket for a real-time feature such as streaming responses?
+D01964	M	Why do WebSocket connections complicate load balancing and horizontal scaling of a server?
+D01965	M	How does an email travel from sender to recipient? Compare SMTP, POP3 and IMAP.
+D01966	E	What are SSH, FTP, Telnet and RTP used for, and which of them are considered insecure by design?
+D01967	M	Why is RPC not a single protocol, and why is it more common than plain HTTP/REST for internal service calls?
+D01968	M	Compare HTTP/REST and RPC styles: resource access versus method invocation. How would you choose between them?
+D01969	M	Is gRPC just HTTP/2 plus Protobuf? What else does an RPC framework provide beyond a transport?
+D01970	M	Does HTTP/2 make RPC frameworks unnecessary? Explain your reasoning.
+D01971	E	What is an IP address and how does IP routing deliver a packet across networks?
+D01972	M	What are the main differences between IPv4 and IPv6, and why has IPv6 adoption been slow?
+D01973	M	How can a backend service obtain the real client IP when requests pass through proxies and load balancers?
+D01974	M	What does NAT do, and how does a NAT gateway keep track of mappings for outgoing connections?
+D01975	M	What problems does NAT introduce for peer-to-peer connections and how are they worked around?
+D01976	E	What is a MAC address and how does it differ from an IP address?
+D01977	M	What problem does ARP solve and how does it work within one LAN versus across different LANs?
+D01978	M	What is ARP spoofing and how does it enable a man-in-the-middle attack on a local network?
+D01979	E	What are the main functions of the physical, data link, network and transport layers?
+D01980	M	Compare a hub, a switch and a router. Which layer does each operate at?
+D01981	M	What are the differences between circuit switching, packet switching and message switching?
+D01982	M	What do CSMA/CD and CSMA/CA do, and why is collision detection not possible on wireless networks?
+D01983	M	How does subnetting work? Given a CIDR block, how do you compute the network address, broadcast address and host count?
+D01984	M	Compare link-state routing (OSPF) and distance-vector routing (RIP). What is BGP used for?
+D01985	E	What is a proxy server versus a reverse proxy, and what is each used for?
+D01986	M	What is a CDN and how does DNS-based request routing steer users to a nearby edge node?
+D01993	M	What is the difference between a blocking socket, a non-blocking socket and an I/O-multiplexed server loop?
+D02323	M	How does connection pooling and reuse of persistent HTTP connections reduce latency?
+D02324	M	What is HTTP pipelining and why did it fail to solve head-of-line blocking in HTTP/1.1?
+D02325	M	How do browsers cache resources using ETag, Last-Modified and conditional requests, and what does a 304 response mean?
+D02326	M	What are the Nagle algorithm and delayed ACK, and how can their interaction cause latency?
+D02327	M	What happens if a SYN packet or the final ACK of the handshake is lost?
+D02328	M	How would you debug intermittent connection resets between two services using tcpdump or Wireshark?
+D02329	M	How does traceroute work and which ICMP messages does it rely on?
+D02330	M	What is MTU and path MTU discovery, and how can fragmentation cause connectivity problems?
+D02331	M	What is DHCP and how does a device obtain an IP address when joining a network?
+D02332	M	How does a stateful firewall differ from a packet-filtering firewall?
+D02333	M	What do cookie attributes such as HttpOnly, Secure and SameSite do, and why do they matter for session security?
+D02334	M	How does a server learn about half-dead TCP connections after a client crash, and why do applications add heartbeats?
+D03947	E	What is the difference between TCP and UDP, and when would you pick each?
+D03948	M	Explain the TCP three-way handshake and connection teardown. Why is a handshake needed at all?
+D03949	M	How do TCP flow control and congestion control differ?
+D03950	M	What are the top use cases for UDP, and why do real-time applications tolerate its unreliability?
+D03951	M	What does the OSI model describe, and why does it still matter for debugging?
+D03952	M	At which OSI layers do switches, routers, load balancers, and firewalls operate, and what information do they use to make decisions?
+D03953	E	Explain the difference between IPv4 and IPv6 and why IPv6 adoption matters.
+D03954	E	What is the difference between public, private, static, and dynamic IP addresses?
+D03955	M	Describe how a DNS lookup works from a browser through resolver, root, TLD, and authoritative servers.
+D03956	M	What is the difference between recursive and iterative DNS queries?
+D03957	E	Explain the DNS record types A, AAAA, CNAME, MX, NS, TXT, and SRV.
+D03958	M	How does DNS caching work, and what are the risks of long and short TTLs during a failover?
+D03959	M	What disadvantages does DNS have as an infrastructure component, such as propagation delay and DDoS exposure?
+D03960	M	Walk through everything that happens from typing a URL into a browser to seeing a rendered page.
+D03961	M	How does HTTPS establish a secure connection, and how is the symmetric session key negotiated?
+D03962	M	Is HTTPS actually safe? What attacks remain possible against a TLS connection?
+D03963	M	What is mutual TLS and when would you use it between services?
+D03964	M	Compare HTTP long polling, WebSockets, and Server-Sent Events. When would you use each?
+D03965	M	How does a WebSocket connection start with an HTTP upgrade and what are the challenges of scaling many persistent connections?
+D03966	M	Compare polling and webhooks for learning about events in another system.
+D03967	M	Compare TCP, HTTP, WebSocket, gRPC, and other common network protocols and where each is typically used.
+D03968	M	Compare cookies, sessions, JWT, and PASETO for tracking authenticated users.
+D03969	E	What is the difference between cookies and sessions?
+D03970	M	When would you use a VPN, and how does one create a secure tunnel?
+D03971	M	How does SSH authenticate a user and encrypt a session?
+D03972	M	What are the top firewall use cases and where does a firewall sit in a network architecture?
+D03973	M	Describe a typical AWS network layout with VPC, public and private subnets, NAT, internet gateway, and security groups.
+D03974	E	What is the difference between big-endian and little-endian byte order and when does it matter in networking?
+D03975	M	Why is HTTP/2 or HTTP/3 faster than HTTP/1.1 for loading modern web pages?

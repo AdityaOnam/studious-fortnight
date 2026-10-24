@@ -1,0 +1,556 @@
+MS03	E	What are the typical steps you follow when approaching an ML system design interview question?	alirezadir__AIMLInterviews:MLSD/ml-system-design.md
+MS03	M	Walk me through a structured framework for designing a production ML system from problem formulation to monitoring.	alirezadir__AIMLInterviews:MLSD/ml-system-design.md
+MS03	E	Why is it important to ask clarifying questions at the start of an ML system design interview, and which ones do you usually ask?	alirezadir__AIMLInterviews:MLSD/ml-system-design.md
+MS03	M	How do you translate an abstract business problem into a concrete ML problem with defined inputs, outputs and learning category?	alirezadir__AIMLInterviews:MLSD/ml-system-design.md
+MS03	M	How do you decide whether a problem actually needs machine learning or can be solved with heuristics?	alirezadir__AIMLInterviews:MLSD/ml-system-design.md
+MS03	M	How do you weigh the cost of data collection, annotation and compute against expected impact when deciding to build an ML solution?	alirezadir__AIMLInterviews:MLSD/ml-system-design.md
+MS03	M	What business, latency, scale and privacy requirements would you pin down before designing any ML system?	alirezadir__AIMLInterviews:MLSD/ml-system-design.md
+MS03	M	How do you choose between offline and online metrics, and how do you reconcile them when they disagree?	alirezadir__AIMLInterviews:MLSD/ml-system-design.md
+MS03	M	What are counter metrics, and why do you track them alongside the primary success metric of an ML product?	alirezadir__AIMLInterviews:MLSD/ml-system-design.md
+MS03	M	How do you handle trade-offs between competing metrics such as engagement, revenue and user satisfaction in a recommendation system?	alirezadir__AIMLInterviews:MLSD/ml-system-design.md
+MS03	M	Why is it usually right to start an ML project with a heuristic or a simple model before moving to a complex one?	alirezadir__AIMLInterviews:MLSD/ml-system-design.md
+MS03	M	What are the main components of a production ML system beyond the model itself?	alirezadir__AIMLInterviews:MLSD/ml-system-design.md
+MS03	M	How would you structure a multi-stage funnel of candidate generation, ranking, re-ranking and filtering, and why is it needed?	alirezadir__AIMLInterviews:MLSD/ml-system-design.md
+MS03	M	What factors drive your choice between logistic regression, gradient boosted trees and a deep neural network for a new ranking problem?	alirezadir__AIMLInterviews:MLSD/ml-system-design.md
+MS03	M	What are the data needs you identify at the start of an ML design, and how do you decide which signals are the big actors?	alirezadir__AIMLInterviews:MLSD/ml-system-design.md
+MS03	M	How do you obtain labels for a supervised model when natural labels such as clicks are available only for positives?	alirezadir__AIMLInterviews:MLSD/ml-system-design.md
+MS03	M	Compare natural labels, explicit feedback and human annotation as label sources in terms of cost, noise and bias.	alirezadir__AIMLInterviews:MLSD/ml-system-design.md
+MS03	M	How would you create training data when you have few labels and labeling is expensive?	alirezadir__AIMLInterviews:MLSD/ml-system-design.md
+MS03	M	How do weak supervision and programmatic labeling work, and what are their risks?	alirezadir__AIMLInterviews:MLSD/ml-system-design.md
+MS03	M	How does active learning reduce labeling cost, and how would you integrate it into a production labeling pipeline?	alirezadir__AIMLInterviews:MLSD/ml-system-design.md
+MS03	M	How do you build a data generation pipeline that joins features and labels for training, and what can go wrong?	alirezadir__AIMLInterviews:MLSD/ml-system-design.md
+MS03	M	How do you decide which features to build for a design problem with users, items, queries and context as actors?	alirezadir__AIMLInterviews:MLSD/ml-system-design.md
+MS03	M	How do you represent high-cardinality ID features and text features in a ranking model?	alirezadir__AIMLInterviews:MLSD/ml-system-design.md
+MS03	M	What is the difference between static features from a feature store and dynamic features computed at request time, and when do you use each?	alirezadir__AIMLInterviews:MLSD/ml-system-design.md
+MS03	M	How do you preprocess text, image and video inputs before feeding them into a model in a production pipeline?	alirezadir__AIMLInterviews:MLSD/mlsd-feature-eng.md
+MS03	M	How would you split time-correlated data into train, validation and test sets, and what leakage pitfalls do you watch for?	alirezadir__AIMLInterviews:MLSD/ml-system-design.md
+MS03	M	How do you handle class imbalance in a production classification system at the data level and loss level?	alirezadir__AIMLInterviews:MLSD/ml-system-design.md
+MS03	M	How do you compare batch prediction, online prediction and a hybrid of both for serving an ML model?	alirezadir__AIMLInterviews:MLSD/ml-system-design.md
+MS03	M	When would you choose on-device inference over server-side inference, and what constraints does that impose on the model?	alirezadir__AIMLInterviews:MLSD/ml-system-design.md
+MS03	M	How would you compress a model for deployment on a mobile device?	alirezadir__AIMLInterviews:MLSD/ml-system-design.md
+MS03	M	How do you roll out a new ranking model safely using shadow deployment, canary release and A/B testing?	alirezadir__AIMLInterviews:MLSD/ml-system-design.md
+MS03	M	How do you design an online A/B test for a new recommendation model, including user allocation, duration and guardrails?	alirezadir__AIMLInterviews:MLSD/ml-system-design.md
+MS03	M	When would you use a bandit approach instead of a fixed A/B test for deploying model variants?	alirezadir__AIMLInterviews:MLSD/ml-system-design.md
+MS03	M	How do you scale an ML system for both training and serving when traffic grows tenfold?	alirezadir__AIMLInterviews:MLSD/ml-system-design.md
+MS03	M	What would you log and monitor in a production ML system to detect problems early?	alirezadir__AIMLInterviews:MLSD/ml-system-design.md
+MS03	M	What are the common failure modes specific to ML systems compared with ordinary software systems?	alirezadir__AIMLInterviews:MLSD/ml-system-design.md
+MS03	M	How do feedback loops arise in deployed recommendation or ranking models, and how would you mitigate them?	alirezadir__AIMLInterviews:MLSD/ml-system-design.md
+MS03	M	How do you detect and respond to covariate shift, label shift and concept drift in production?	alirezadir__AIMLInterviews:MLSD/ml-system-design.md
+MS03	M	How often should a production model be retrained, and how would you decide between training from scratch and fine-tuning the previous model?	alirezadir__AIMLInterviews:MLSD/ml-system-design.md
+MS03	H	Walk through how you would extend an existing ranking system to add a new feature without destabilizing the current design.	alirezadir__AIMLInterviews:MLSD/ml-system-design.md
+MS03	M	How can bias in training data and human labeling affect an ML product, and how would you reduce it by design?	alirezadir__AIMLInterviews:MLSD/ml-system-design.md
+MS03	M	How do you balance freshness and diversity against relevance in a ranking system?	alirezadir__AIMLInterviews:MLSD/ml-system-design.md
+MS03	M	What privacy and security considerations should be part of an ML system design?	alirezadir__AIMLInterviews:MLSD/ml-system-design.md
+MS03	M	How do you distribute training across machines, and when would you pick data parallelism over model parallelism?	alirezadir__AIMLInterviews:MLSD/ml-system-design.md
+MS03	M	How do you decide the budget split of latency across retrieval, ranking and re-ranking stages in a real-time system?	alirezadir__AIMLInterviews:MLSD/ml-system-design.md
+MS03	H	You have a 200 ms latency budget for a personalized ranking service. How would you design the system to meet it?	alirezadir__AIMLInterviews:MLSD/mlsd-newsfeed.md
+MS03	H	How would you design the offline experimentation platform that lets many teams evaluate ranking models consistently?	alirezadir__AIMLInterviews:MLSD/ml-system-design.md
+MS03	M	What are the challenges in building the training-data joiner between impression logs and later user actions such as purchases?	alirezadir__AIMLInterviews:MLSD/ml-system-design.md
+MS03	M	How do you handle delayed feedback when conversions arrive hours or days after the impression?	alirezadir__AIMLInterviews:MLSD/mlsd-ads-ranking.md
+MS03	M	How would you structure the interaction between a research prototype and a production serving system to avoid training-serving skew?	chiphuyen__machine-learning-systems-design:content/design-a-machine-learning-system.md
+MS03	M	What are the main differences between ML in research and ML in production regarding objectives, stakeholders, latency and fairness?	chiphuyen__machine-learning-systems-design:content/research-vs-production.md
+MS03	M	Why does the compute requirement differ between training and inference in production, and how does it shape design choices?	chiphuyen__machine-learning-systems-design:content/research-vs-production.md
+MS03	M	How do you debug an ML model that performs well offline but poorly after launch?	chiphuyen__machine-learning-systems-design:content/design-a-machine-learning-system.md
+MS03	M	How would you do hyperparameter tuning at scale for a production model with limited budget?	chiphuyen__machine-learning-systems-design:content/design-a-machine-learning-system.md
+MS03	M	What are the pros and cons of building an ML system as a set of separate models versus one multi-task model?	alirezadir__AIMLInterviews:MLSD/mlsd-newsfeed.md
+MS03	M	How does multi-task learning with shared layers and task-specific heads help a ranking system optimize several engagement signals?	alirezadir__AIMLInterviews:MLSD/mlsd-newsfeed.md
+MS03	M	How would you combine multiple predicted engagement probabilities such as click, like, share and hide into one ranking score?	alirezadir__AIMLInterviews:MLSD/mlsd-newsfeed.md
+MS03	M	How do you avoid optimizing for clickbait when the training signal is clicks?	alirezadir__AIMLInterviews:MLSD/mlsd-video-recom.md
+MS03	M	How do you define relevance for a recommender when completed views, watch time, likes and clicks each give different incentives?	alirezadir__AIMLInterviews:MLSD/mlsd-video-recom.md
+ML06	M	When would you prefer Precision@k and Recall@k, and why do they fail to capture ranking quality?	alirezadir__AIMLInterviews:MLSD/mlsd-metrics.md
+ML06	M	Explain Mean Reciprocal Rank and describe a situation where it is the right metric.	alirezadir__AIMLInterviews:MLSD/mlsd-metrics.md
+ML06	M	Explain mean average precision for ranked retrieval and when binary relevance makes it appropriate.	alirezadir__AIMLInterviews:MLSD/mlsd-metrics.md
+ML06	M	Explain DCG and nDCG, why the log discount is used, and when graded relevance calls for nDCG.	alirezadir__AIMLInterviews:MLSD/mlsd-metrics.md
+ML06	M	What is normalized cross entropy and why is it used to evaluate ads click prediction models?	alirezadir__AIMLInterviews:MLSD/mlsd-metrics.md
+ML06	M	Why is click-through rate an imperfect online metric for search or recommendation quality?	alirezadir__AIMLInterviews:MLSD/mlsd-metrics.md
+ML06	M	What is the difference between conversion rate, bounce rate, engagement rate and time spent, and when is each appropriate?	alirezadir__AIMLInterviews:MLSD/mlsd-metrics.md
+ML06	M	How would you choose between offline ranking metrics for a system with binary versus graded relevance?	alirezadir__AIMLInterviews:MLSD/mlsd-metrics.md
+ML06	M	Your offline nDCG improved but online engagement did not. What are possible reasons?	alirezadir__AIMLInterviews:MLSD/mlsd-metrics.md
+ML06	H	How would you compute and interpret a revenue lift metric from an online experiment on an ads system?	alirezadir__AIMLInterviews:MLSD/mlsd-ads-ranking.md
+ML06	M	What are prevalence, proactive rate and appeal reversal rate in content moderation, and what does each tell you?	alirezadir__AIMLInterviews:MLSD/mlsd-harmful-content.md
+ML06	M	Why do PR-AUC and F1 suit harmful content detection better than accuracy?	alirezadir__AIMLInterviews:MLSD/mlsd-harmful-content.md
+MS03	H	Design an ads click prediction system.	alirezadir__AIMLInterviews:MLSD/mlsd-ads-ranking.md
+MS03	M	For ad click prediction, how do you collect negative samples and handle the extreme imbalance between clicks and impressions?	alirezadir__AIMLInterviews:MLSD/mlsd-ads-ranking.md
+MS03	M	Why would you formulate ad click prediction as pointwise learning to rank and what are the alternatives?	alirezadir__AIMLInterviews:MLSD/mlsd-ads-ranking.md
+MS03	M	How would you model the interaction between user and ad features in a CTR model, from feature crossing to deep architectures?	alirezadir__AIMLInterviews:MLSD/mlsd-ads-ranking.md
+MS03	M	How do you represent sparse ID features and dense counting features in a CTR prediction model?	alirezadir__AIMLInterviews:MLSD/mlsd-ads-ranking.md
+MS03	M	How do you ensure predicted CTRs are well calibrated when they feed into an ad auction?	alirezadir__AIMLInterviews:MLSD/mlsd-ads-ranking.md
+MS03	M	How would you handle ad fatigue and negative feedback such as hide or block in ad ranking?	alirezadir__AIMLInterviews:MLSD/mlsd-ads-ranking.md
+MS03	M	How would you continually train a CTR model on a stream of impressions without catastrophic drift?	alirezadir__AIMLInterviews:MLSD/mlsd-ads-ranking.md
+MS03	H	Design a news feed ranking system for a social network with billions of users.	alirezadir__AIMLInterviews:MLSD/mlsd-newsfeed.md
+MS03	M	What signals would you use for a news feed model: post features, author-user affinity, user history and context?	alirezadir__AIMLInterviews:MLSD/mlsd-newsfeed.md
+MS03	M	How would you handle new posts with no engagement history in a feed ranking system?	alirezadir__AIMLInterviews:MLSD/mlsd-newsfeed.md
+MS03	M	How would you incorporate the user-author relationship strength into feed ranking?	alirezadir__AIMLInterviews:MLSD/mlsd-newsfeed.md
+MS03	M	How would you add diversity and ads into a ranked feed without hurting engagement?	alirezadir__AIMLInterviews:MLSD/mlsd-newsfeed.md
+MS03	H	Design a harmful content detection system for a social media platform.	alirezadir__AIMLInterviews:MLSD/mlsd-harmful-content.md
+MS03	M	Compare early fusion and late fusion for combining text, image and video signals in a content moderation model.	alirezadir__AIMLInterviews:MLSD/mlsd-harmful-content.md
+MS03	M	Compare a single binary harm classifier, per-category classifiers, a multi-label classifier and a multi-task model for moderation.	alirezadir__AIMLInterviews:MLSD/mlsd-harmful-content.md
+MS03	M	How would you support many languages in a harmful content classifier with limited labeled data per language?	alirezadir__AIMLInterviews:MLSD/mlsd-harmful-content.md
+MS03	M	How do you combine automated detection with human review and user reports in a moderation pipeline?	alirezadir__AIMLInterviews:MLSD/mlsd-harmful-content.md
+MS03	M	How do you pick thresholds for removing versus demoting content when harm categories have different severity?	alirezadir__AIMLInterviews:MLSD/mlsd-harmful-content.md
+MS03	M	How do you deal with adversarial users who modify content to evade a deployed moderation model?	alirezadir__AIMLInterviews:MLSD/mlsd-harmful-content.md
+MS03	H	Design a People You May Know friend recommendation system.	alirezadir__AIMLInterviews:MLSD/mlsd-pymk.md
+MS03	M	Why model friend recommendation as link prediction on a graph rather than as pointwise classification of user pairs?	alirezadir__AIMLInterviews:MLSD/mlsd-pymk.md
+MS03	M	How would you generate candidates for friend recommendation at a scale of one billion users using friends of friends?	alirezadir__AIMLInterviews:MLSD/mlsd-pymk.md
+MS03	M	How do you build training data from graph snapshots at consecutive times for edge prediction?	alirezadir__AIMLInterviews:MLSD/mlsd-pymk.md
+MS03	M	How would you use a graph neural network to produce node embeddings for connection recommendation?	alirezadir__AIMLInterviews:MLSD/mlsd-pymk.md
+MS03	M	How do you avoid recommending popular hub users to everyone in a social graph recommender?	alirezadir__AIMLInterviews:MLSD/mlsd-pymk.md
+MS03	H	Design a visual search system for finding visually similar images.	alirezadir__AIMLInterviews:MLSD/mlsd-image-search.md
+MS03	M	How would you train an image embedding model using contrastive learning, and how do you choose positive and negative pairs?	alirezadir__AIMLInterviews:MLSD/mlsd-image-search.md
+MS03	M	How would you build an approximate nearest neighbor service for billions of image embeddings?	alirezadir__AIMLInterviews:MLSD/mlsd-image-search.md
+MS03	M	How do you evaluate a visual search system offline when no explicit relevance judgments exist?	alirezadir__AIMLInterviews:MLSD/mlsd-image-search.md
+MS03	H	Design a text-to-video search system for a video sharing platform.	alirezadir__AIMLInterviews:MLSD/mlsd-mm-video-search.md
+MS03	M	Compare frame-level and video-level encoders for video retrieval in terms of quality, cost and latency.	alirezadir__AIMLInterviews:MLSD/mlsd-mm-video-search.md
+MS03	M	How would you combine a two-tower visual-text retrieval model with an inverted-index text search for video search?	alirezadir__AIMLInterviews:MLSD/mlsd-mm-video-search.md
+MS03	M	How would you train a text-video two-tower model and what loss would you use?	alirezadir__AIMLInterviews:MLSD/mlsd-mm-video-search.md
+MS03	H	Design a search system for an e-commerce marketplace.	alirezadir__AIMLInterviews:MLSD/mlsd-search.md
+MS03	M	Describe the stages of a multi-layer search pipeline from query understanding to blending and filtering.	alirezadir__AIMLInterviews:MLSD/mlsd-search.md
+MS03	M	What does query understanding include, such as spell checking, expansion, relaxation and intent classification?	alirezadir__AIMLInterviews:MLSD/mlsd-search.md
+MS03	M	How do you scale candidate retrieval from billions of documents to thousands using an inverted index and semantic retrieval?	alirezadir__AIMLInterviews:MLSD/mlsd-search.md
+MS03	M	Why use a multi-stage ranker with a lightweight first stage and a heavier second stage?	alirezadir__AIMLInterviews:MLSD/mlsd-search.md
+MS03	M	What is a blender in search result page construction, and why is it needed?	alirezadir__AIMLInterviews:MLSD/mlsd-search.md
+MS03	M	How do you evaluate a search ranker online when clicks are affected by position bias and clickbait?	alirezadir__AIMLInterviews:MLSD/mlsd-search.md
+MS03	H	Design a video recommendation system for a streaming platform with hundreds of millions of users.	alirezadir__AIMLInterviews:MLSD/mlsd-video-recom.md
+MS03	M	How do you combine content-based and collaborative filtering approaches, in parallel or sequentially, in a hybrid recommender?	alirezadir__AIMLInterviews:MLSD/mlsd-video-recom.md
+MS03	M	Describe the candidate generation, ranking and re-ranking stages of a recommender and the goal of each.	alirezadir__AIMLInterviews:MLSD/mlsd-video-recom.md
+MS03	M	What business rules and re-ranking constraints do you apply after a ranker, such as freshness, fairness and diversity?	alirezadir__AIMLInterviews:MLSD/mlsd-video-recom.md
+MS03	M	How would you solve the cold start problem for new users and new videos in a recommender?	alirezadir__AIMLInterviews:MLSD/mlsd-video-recom.md
+MS03	M	How would you balance exploration and exploitation in a recommender while measuring the cost of exploring?	alirezadir__AIMLInterviews:MLSD/mlsd-video-recom.md
+MS03	H	Design a game recommendation engine for a gaming platform.	alirezadir__AIMLInterviews:MLSD/mlsd-game-recom.md
+MS03	H	Design an event recommendation system for a ticketing platform.	alirezadir__AIMLInterviews:MLSD/mlsd-event-recom.md
+MS03	M	Why is event recommendation harder than movie recommendation, and how does it change your feature and model choices?	alirezadir__AIMLInterviews:MLSD/mlsd-event-recom.md
+MS03	M	What user-event features such as distance, price similarity and time similarity would you engineer for event ranking?	alirezadir__AIMLInterviews:MLSD/mlsd-event-recom.md
+MS03	H	Design a typeahead query suggestion system for a search box.	alirezadir__AIMLInterviews:MLSD/ml-system-design.md
+MS03	H	Design a system that suggests replacement items for out-of-stock products in an online grocery order.	alirezadir__AIMLInterviews:MLSD/ml-system-design.md
+MS03	H	Design a rental or lodging recommendation system for a travel marketplace.	alirezadir__AIMLInterviews:MLSD/ml-system-design.md
+MS03	H	Design a place recommendation system for a maps application.	alirezadir__AIMLInterviews:MLSD/ml-system-design.md
+MS03	H	Design a proximity service that finds nearby businesses and ranks them for a user.	alirezadir__AIMLInterviews:MLSD/ml-system-design.md
+MS03	H	Design a system that estimates food delivery time.	alirezadir__AIMLInterviews:MLSD/ml-system-design.md
+MS03	H	Design a ride matching system for a ride-hailing service.	alirezadir__AIMLInterviews:MLSD/ml-system-design.md
+MS03	H	Design a fraud detection system for an online platform.	alirezadir__AIMLInterviews:MLSD/ml-system-design.md
+MS03	H	Design a healthcare diagnosis support system based on patient data.	alirezadir__AIMLInterviews:MLSD/ml-system-design.md
+MS03	H	Design a named entity linking system for text.	alirezadir__AIMLInterviews:MLSD/ml-system-design.md
+MS03	H	Design a language identification system for user-generated text.	alirezadir__AIMLInterviews:MLSD/ml-system-design.md
+MS03	H	Design a sentiment analysis system for product reviews at scale.	alirezadir__AIMLInterviews:MLSD/ml-system-design.md
+MS03	H	Design an OCR and text recognition system for photos taken on mobile devices.	alirezadir__AIMLInterviews:MLSD/ml-system-design.md
+MS03	H	Design an image blurring system that automatically obscures faces and license plates.	alirezadir__AIMLInterviews:MLSD/ml-system-design.md
+MS03	H	Design a question answering system over a large collection of documents.	alirezadir__AIMLInterviews:MLSD/ml-system-design.md
+MS03	H	Design the ML stack for a self-driving car covering perception, prediction and planning.	alirezadir__AIMLInterviews:MLSD/mlsd-av.md
+MS03	H	Design a pedestrian jaywalking detection system for an autonomous vehicle.	alirezadir__AIMLInterviews:MLSD/mlsd-av.md
+ML10	M	What are the main approaches to candidate generation in a recommender system, and what are the trade-offs of each?	alirezadir__AIMLInterviews:MLSD/ml-system-design.md
+ML10	M	Compare pointwise, pairwise and listwise learning to rank and when you would use each.	alirezadir__AIMLInterviews:MLSD/ml-system-design.md
+ML10	M	Compare user-based and item-based collaborative filtering and matrix factorization.	alirezadir__AIMLInterviews:MLSD/mlsd-video-recom.md
+ML10	M	Explain how a two-tower retrieval model is trained and served, and what limits its expressiveness.	alirezadir__AIMLInterviews:MLSD/ml-system-design.md
+ML10	M	What are the pros and cons of content-based recommendation compared with collaborative filtering?	alirezadir__AIMLInterviews:MLSD/mlsd-video-recom.md
+ML10	M	How do you handle position bias when training ranking models from click logs?	alirezadir__AIMLInterviews:MLSD/mlsd-search.md
+DL03	M	Compare two-stage detectors such as Faster R-CNN with one-stage detectors such as YOLO or SSD in accuracy, speed and use cases.	alirezadir__AIMLInterviews:MLSD/mlsd_obj_detection.md
+DL03	M	What is non-maximum suppression and why is it needed in object detection?	alirezadir__AIMLInterviews:MLSD/mlsd-av.md
+DL03	M	How does the DETR model differ from anchor-based detectors?	alirezadir__AIMLInterviews:MLSD/mlsd-av.md
+DL03	M	What is the difference between semantic segmentation and instance segmentation?	alirezadir__AIMLInterviews:MLSD/mlsd-av.md
+DL03	M	How do 3D object detectors from point clouds differ from 2D image detectors, and why are they computationally heavy?	alirezadir__AIMLInterviews:MLSD/mlsd-av.md
+DL03	M	How does multi-object tracking work using Kalman filters or deep association methods like DeepSORT?	alirezadir__AIMLInterviews:MLSD/mlsd-av.md
+DL03	M	Why is focal loss useful for one-stage detectors, and what problem does it solve?	alirezadir__AIMLInterviews:MLSD/mlsd-av.md
+DL03	M	How would you evaluate an object detector using IoU and mean average precision?	alirezadir__AIMLInterviews:MLSD/mlsd_obj_detection.md
+DL04	M	How are RNNs and LSTMs used for trajectory prediction of other agents on the road, and what are alternatives?	alirezadir__AIMLInterviews:MLSD/mlsd-av.md
+MS03	M	What are the sensors used in a self-driving stack and how do their trade-offs affect the model design?	alirezadir__AIMLInterviews:MLSD/mlsd-av.md
+MS03	M	How would you design a multi-task network that shares a backbone across several perception tasks in a vehicle?	alirezadir__AIMLInterviews:MLSD/mlsd-av.md
+MS03	M	What latency constraints exist in different modules of an autonomous driving stack and how do they influence model choices?	alirezadir__AIMLInterviews:MLSD/mlsd-av.md
+MS01	M	What is the role of an embedding generation service, an indexing service and a nearest neighbor service in a retrieval-based prediction pipeline?	alirezadir__AIMLInterviews:MLSD/mlsd-prediction.md
+RAG03	M	Compare tree-based, LSH and clustering-based approximate nearest neighbor methods.	alirezadir__AIMLInterviews:MLSD/ml-system-design.md
+DL06	M	What are the trade-offs between statistical text encoders like TF-IDF and learned encoders like BERT for ranking features?	alirezadir__AIMLInterviews:MLSD/mlsd-feature-eng.md
+DL06	M	How would you preprocess text for a transformer model, including normalization, pre-tokenization and special tokens?	alirezadir__AIMLInterviews:MLSD/mlsd-feature-eng.md
+DL03	M	How would you preprocess video for a model, including frame sampling, resizing and normalization?	alirezadir__AIMLInterviews:MLSD/mlsd-feature-eng.md
+ML05	M	Why must you compute scaling statistics and imputation values on the training split only?	alirezadir__AIMLInterviews:MLSD/ml-system-design.md
+ML05	M	What sampling methods exist, such as random, stratified, reservoir and importance sampling, and when is each used?	alirezadir__AIMLInterviews:MLSD/ml-system-design.md
+ML05	M	What is the difference between non-probability and probability sampling, and what biases does each introduce?	alirezadir__AIMLInterviews:MLSD/ml-system-design.md
+MS02	M	How do you pre-compute and store embeddings for users and items so that online ranking is fast?	alirezadir__AIMLInterviews:MLSD/ml-system-design.md
+MS01	M	What is the difference between covariate shift, label shift and concept drift, and how do you statistically detect each?	alirezadir__AIMLInterviews:MLSD/ml-system-design.md
+MS03	H	Design the ML system for detecting fraudulent card payments in real time for an online payments processor.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system to detect payment fraud where fraud patterns change quickly and labels arrive weeks late.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	M	How would you move a fraud detection system from hand-written rules and shallow models to deep learning without losing explainability?	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for detecting fraud using graph relationships between accounts, devices and payment instruments.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	M	How would you use learned embeddings of entities to improve fraud detection, and how do they get updated?	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for detecting suspicious account activity and account takeover.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system to detect fraud in an online food delivery marketplace involving customers, couriers and restaurants.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for automatically discovering new fraud types that existing models do not cover.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	M	How would you prevent repeat fraudsters who create new accounts after being banned?	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design an ML system that predicts whether a payment transaction will be declined, and uses it to improve authorization rates.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for routing payments through the best payment gateway to maximize success and minimize cost.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for verifying identity documents uploaded by users.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design an ML system that identifies business customers and high-value merchants from transaction data.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for classifying bank transactions into spending categories.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for detecting cash intermediaries and money laundering patterns.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for ranking the posts in a social network home feed.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for recommending interesting posts and tweets to users on a social platform.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for recommending accounts to follow on a microblogging service, including handling brand-new users.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system that generates a personalized daily digest of notifications for each user.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for deciding when and whether to send a push notification to each user.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	M	How would you measure the long-term effect of notifications on retention versus short-term opens and clicks?	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for personalizing the optimal time and frequency of marketing emails.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for selecting which marketing message to send to each user of a consumer finance app.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for targeting in-app messages and cross-sell offers to existing users.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for generating engaging email subject lines using generative models.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for ranking search results in an e-commerce marketplace.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for personalizing e-commerce search results for each user.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for ranking restaurants and dishes in a food delivery search.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for searching groceries and food items, handling typos and multi-word queries.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for job search that ranks relevant job postings for a query and member.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for travel search that ranks hotels or flights based on user intent.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for ranking homes in a real-estate search for buyers.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for podcast search and discovery.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for improving search for new customers who have no history.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for autocompleting user queries in an e-commerce search box.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for suggesting related search queries after a user searches.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design a conversational, open-ended search system that answers product questions in natural language.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for evaluating the relevance of search results at scale without relying only on clicks.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for post search on a social platform.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for searching files and predicting which files a user is going to look for.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for visual search that finds products similar to a photo taken by the user.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for recommending visually similar content.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for finding the user's old photos worth revisiting.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for searching inside a video for a specific moment.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for recommending complementary products, such as completing an outfit or a room.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for generating personalized outfit combinations for a shopper.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for recommending substitute items when an ordered product is unavailable.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for recommending similar homes or listings on a rental marketplace.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for recommending furniture items that match a user's taste and room.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for recommending items to add to the cart at checkout.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for recommending restaurants on a food delivery app, including new customers.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for suggesting a user's likely next order in a food delivery app.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for ordering items in a restaurant menu to maximize conversion.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for recommending recipes and food items based on dietary preferences.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for personalizing the homepage of a music or podcast streaming service.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for recommending the next song and creating personalized playlists.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for recommending diverse video content to users on a streaming platform.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system that personalizes the artwork or thumbnail shown for each title.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for recommending articles and news content to readers.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for recommending learning content to students on an educational platform.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for recommending increasingly difficult reading material to language learners.	chiphuyen__machine-learning-systems-design:content/exercises.md
+MS03	H	Design the ML system for personalizing a mobile game store with item and offer recommendations.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for recommending fitness training videos.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for recommending financial products to bank customers under regulatory constraints.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for recommending apps in a marketplace of third-party integrations.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for suggesting shortcuts or quick actions on an app homepage.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for recommending contribution opportunities to users of a collaborative platform.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for job recommendations that match candidates with relevant roles.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for diversifying travel recommendations across destinations and categories.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for personalized paywall and free-limit decisions in a subscription product.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for ranking products using a shared feature store across several ranking use cases.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design a multi-task ranking model that serves recommendations for several surfaces of an e-commerce marketplace.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for ranking customer support cases so that agents handle the most urgent first.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for predicting the click-through rate of ads shown to users.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for serving ads on a social platform, including retrieval, ranking and auction.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for predicting conversions and optimizing ad spend for advertisers.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for recommending bids and budgets to advertisers.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for automated real-time bidding in an advertising exchange.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for creating lookalike audiences for ad targeting.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for contextual advertising that targets ads based on page content.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for predicting the value of an individual ad request.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for predicting and reducing advertiser churn.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for generating ad headlines and ad content with generative models and human review.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for optimizing marketing spend across paid channels.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for uplift modeling to decide which customers should receive a promotion.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for evaluating the success of past promotions using causal methods.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for predicting customer lifetime value.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for predicting subscription churn and choosing retention actions.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for scoring and prioritizing sales leads.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for determining the best time to charge a customer's subscription renewal.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for pricing trips dynamically in a ride-hailing marketplace.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for predicting estimated time of arrival for rides on a road network.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for predicting food delivery time shown to customers at checkout.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for predicting delivery drop-off times for a parcel logistics network.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for estimating delivery dates for furniture and large-item e-commerce orders.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for assigning couriers to orders and reducing courier waiting time.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for predicting the supply and demand of delivery drivers by region.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for matching riders to drivers with pooled rides.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for estimating travel distance and route cost.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for predicting delivery location coordinates from address text.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for detecting errors in map data and flagging incorrectly captured locations.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for predicting the position of traffic control elements for an autonomous vehicle.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for generating human-readable names for pickup points.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for estimating the market value of a home.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for estimating product dimensions for shipping from limited item data.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for categorizing products in an e-commerce catalog.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for automatically tagging product listings.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for assigning color names to product images.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for generating floor plans from photos.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for resolving duplicate entities and detecting relationships in a knowledge graph.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for classifying restaurants and cuisines from menu and review data.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for predicting whether a store is open at a given time.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for predicting the availability of grocery items for substitution.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for detecting stolen or duplicated photos on a listing platform.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for detecting viral spam content on a professional network.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for detecting spam accounts and spam invitations.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for detecting spam listings in a marketplace.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for detecting policy-violating comments and rude messages.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for detecting and blocking unwanted phone callers.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for detecting phishing and payment fraud in messaging.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for identifying whether audio contains speech or music.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for recognizing people in photos with privacy controls.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for detecting vulnerabilities in source code.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for predicting hard drive failures in a data center.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for automatically triaging software bugs and assigning them to the right team.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for predicting which software tests are likely to fail for a given code change.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for classifying cloud workloads by type.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for forecasting resource usage and cost in a cloud platform.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for improving video streaming quality by adapting to network conditions.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for improving video quality at scale in a transcoding pipeline.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for automatically categorizing videos.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for generating audio previews of podcasts.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for personalizing video clips for each viewer.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for translating and transcribing speech across languages.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design a grammatical error correction system for a writing assistant.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for suggesting text edits and rewrites in a writing assistant.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for detecting named entities and extracting information from text.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for identifying the language of a piece of text.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for predicting customer intent in support messages.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system that clusters customer support issues by similarity.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for categorizing and analyzing customer feedback at scale.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for automatically routing customer phone calls.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for extracting metadata and layout from PDFs and scanned documents.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for classifying user-uploaded documents.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for automatically tagging sensitive data in a data lake.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for building a modern OCR pipeline that handles varied fonts and layouts.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	Design the ML system for capturing which parts of an article readers pay attention to.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+ML10	H	Design the demand forecasting system for an e-commerce retailer covering millions of items with intermittent sales.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+ML10	H	Design the forecasting system for ride demand at airports that accounts for flight arrivals.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+ML10	H	Design the forecasting system for grocery demand that handles holidays and promotions.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+ML10	H	Design the forecasting system for order volume and courier supply in a delivery marketplace.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+ML10	M	How would you build a deep learning forecasting model for fashion demand with many new products and short histories?	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+ML10	H	Design the ML system for making causally valid forecasts when business actions such as pricing change demand.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+ML10	H	Design the ML system for predicting stock-out and spotting lost demand when items are unavailable.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+ML10	H	Design the system to forecast user activity metrics and detect anomalies in them.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+ML10	H	Design the ML system for forecasting flight prices and recommending when to buy.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+ML10	H	Design the anomaly detection system for equipment such as refrigeration units using sensor data.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+ML10	M	How would you use causal inference to estimate the impact of a product change when a randomized test is not possible?	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+ML10	M	How would you forecast the sales potential of a newly launched product with no history?	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+ML10	H	Design the ML system for predicting user churn and which customers are likely to upsell.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS04	H	Design an LLM-powered coding assistant that suggests code completions inside an editor.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS04	H	Design an LLM system that automatically reviews pull requests and tags them.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS04	H	Design an LLM system that diagnoses production incidents and proposes mitigations for cloud services.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS04	H	Design a system that converts natural language into queries over an observability dataset using an LLM.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS04	H	Design an internal AI assistant that answers employee questions across company knowledge sources.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS04	H	Design a customer support AI assistant that resolves common tickets and escalates hard ones.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS04	H	Design an LLM system that summarizes long team chat threads and conversations.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS04	H	Design an LLM-powered shopping assistant that helps users find products via dialogue.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS04	H	Design a voice-based system that fills a shopping cart through spoken conversation.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS04	H	Design an AI copilot that helps product managers with strategy and analysis.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS04	M	What are the hard problems you expect when shipping a product built on top of a general LLM, such as latency, reliability and evaluation?	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS04	H	Design a generative AI system that extracts structured information from unstructured customer notes.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS04	H	Design a platform that lets teams build, deploy and monitor many ML models company-wide.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS04	H	Design a marketing automation platform that uses ML to choose audiences, content and timing.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS04	H	Design a system that automates the playtesting of video games using learned agents.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS01	H	Design a model platform that serves hundreds of production ML models with versioning, monitoring and feature access.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS02	H	Design a data platform that ingests petabytes of events with minute-level latency for ML feature computation.	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS01	M	How would you operate and govern a portfolio of hundreds of models with consistent evaluation and ownership?	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+GA05	M	What data privacy and security controls would you build into an ML platform that trains on user data?	Engineer1999__A-Curated-List-of-ML-System-Design-Case-Studies:README.md
+MS03	H	How would you measure the difficulty of a reading passage for language learners, and how would you edit text to adjust its difficulty?	chiphuyen__machine-learning-systems-design:content/exercises.md
+MS03	H	Given a labelled dataset of credit card purchases, how would you build a fraud detection algorithm end to end?	chiphuyen__machine-learning-systems-design:content/exercises.md
+MS03	H	How would you suggest who to follow to a Twitter user, handle brand-new users, and what limits do data-driven recommenders have?	chiphuyen__machine-learning-systems-design:content/exercises.md
+MS03	H	How would you generate the list of related searches shown under a search engine query?	chiphuyen__machine-learning-systems-design:content/exercises.md
+MS03	H	How would you build a system that returns images for a text query, as in an image search engine?	chiphuyen__machine-learning-systems-design:content/exercises.md
+MS03	H	How would you build a system that suggests trending hashtags?	chiphuyen__machine-learning-systems-design:content/exercises.md
+MS03	H	How would you rank the many answers to a question on a Q and A site, and how computationally expensive is your model?	chiphuyen__machine-learning-systems-design:content/exercises.md
+MS03	H	How would you design the system that returns the top ten rental listings for a location search?	chiphuyen__machine-learning-systems-design:content/exercises.md
+MS03	H	How would you build an algorithm that completes the sentence you are typing in a messaging app?	chiphuyen__machine-learning-systems-design:content/exercises.md
+MS03	H	How would you show similar existing questions to a user who is typing a new question on a Q and A site?	chiphuyen__machine-learning-systems-design:content/exercises.md
+MS03	H	How would you design an algorithm to match riders for pooled rides?	chiphuyen__machine-learning-systems-design:content/exercises.md
+MS03	H	How would you estimate what percentage of high schools listed by users on a social network are real, and detect invalid ones at scale?	chiphuyen__machine-learning-systems-design:content/exercises.md
+MS03	H	How would you build a trigger-word detection system that spots a keyword in a ten-second audio clip?	chiphuyen__machine-learning-systems-design:content/exercises.md
+MS03	H	How would you predict whether a user stopped watching a TV show because they are tired of it or just taking a break?	chiphuyen__machine-learning-systems-design:content/exercises.md
+MS03	H	How would you estimate people's birthdays when they do not provide them, and what data would you use?	chiphuyen__machine-learning-systems-design:content/exercises.md
+MS03	H	How would you predict the price of a property listing and use it to decide whether to invest in a city?	chiphuyen__machine-learning-systems-design:content/exercises.md
+MS03	H	How would you suggest the one app a user is most likely to open first every time they unlock their phone?	chiphuyen__machine-learning-systems-design:content/exercises.md
+MS03	H	How would you map nicknames to real first names?	chiphuyen__machine-learning-systems-design:content/exercises.md
+MS03	H	How would you help an e-commerce company minimize the time customers take to complete a purchase?	chiphuyen__machine-learning-systems-design:content/exercises.md
+MS03	H	How would you build a chatbot that helps people book hotels?	chiphuyen__machine-learning-systems-design:content/exercises.md
+MS03	H	How would you train a model to decide whether a word like jaguar refers to an animal or a car in a sentence?	chiphuyen__machine-learning-systems-design:content/exercises.md
+MS03	H	How would you build a model to recognize whether an image shows a triangle, a circle or a square?	chiphuyen__machine-learning-systems-design:content/exercises.md
+MS03	H	Given only CIFAR-10, how would you build a model that detects whether an image belongs to one of its ten classes or to none?	chiphuyen__machine-learning-systems-design:content/exercises.md
+ML01	E	How does machine learning differ from traditional programming?	alirezadir__AIMLInterviews:ml-fundamental.md
+ML01	E	What are the different types of machine learning, and how do supervised, unsupervised, semi-supervised and weakly supervised learning differ?	alirezadir__AIMLInterviews:ml-fundamental.md
+ML01	M	Explain the bias-variance trade-off and how model complexity moves a model along it.	alirezadir__AIMLInterviews:ml-fundamental.md
+ML01	M	How do you diagnose overfitting versus underfitting from learning curves, and what do you do about each?	alirezadir__AIMLInterviews:ml-fundamental.md
+ML01	E	What is the difference between parametric and non-parametric algorithms, and give examples of each?	alirezadir__AIMLInterviews:ml-fundamental.md
+ML01	M	What is the difference between linear and nonlinear algorithms in practice, and how do you choose between them?	alirezadir__AIMLInterviews:ml-fundamental.md
+ML01	E	What are the stages of building a machine learning model from problem definition to deployment?	alirezadir__AIMLInterviews:ml-fundamental.md
+ML01	M	Why and how do you split data into training, validation and test sets, and what is each set used for?	alirezadir__AIMLInterviews:ml-fundamental.md
+ML01	M	What is cross-validation, how do you choose k in k-fold, and what are its limitations?	alirezadir__AIMLInterviews:ml-fundamental.md
+ML02	E	Explain logistic regression, its cost function and the role of the sigmoid.	alirezadir__AIMLInterviews:ml-fundamental.md
+ML02	M	Explain linear regression, least squares and residuals, and what happens with multivariate inputs.	alirezadir__AIMLInterviews:ml-fundamental.md
+ML02	M	Explain how a support vector machine finds its decision boundary and what a kernel SVM adds.	alirezadir__AIMLInterviews:ml-fundamental.md
+ML02	E	How does the k-nearest neighbors algorithm work, and how do you choose k and a distance metric?	alirezadir__AIMLInterviews:ml-fundamental.md
+ML02	E	How do k-means and k-nearest neighbors differ?	alirezadir__AIMLInterviews:ml-fundamental.md
+ML02	M	Explain linear discriminant analysis and how it relates to logistic regression.	alirezadir__AIMLInterviews:ml-fundamental.md
+ML02	M	How does Naive Bayes work, and why does it perform reasonably even though its independence assumption is violated?	alirezadir__AIMLInterviews:ml-fundamental.md
+ML03	E	How does a decision tree choose its splits, and when does it stop growing?	alirezadir__AIMLInterviews:ml-fundamental.md
+ML03	M	What is tree pruning and why is it needed?	alirezadir__AIMLInterviews:ml-fundamental.md
+ML03	M	Compare bagging and boosting and explain which one reduces variance and which reduces bias.	alirezadir__AIMLInterviews:ml-fundamental.md
+ML03	M	Explain how a random forest works and why it decorrelates trees.	alirezadir__AIMLInterviews:ml-fundamental.md
+ML03	M	Explain how AdaBoost, gradient boosting and XGBoost differ.	alirezadir__AIMLInterviews:ml-fundamental.md
+ML03	M	Compare tree-based models with neural networks for tabular data.	alirezadir__AIMLInterviews:ml-fundamental.md
+ML04	E	Explain k-means, its objective and its failure modes.	alirezadir__AIMLInterviews:ml-fundamental.md
+ML04	M	Compare centroid-based, hierarchical and density-based clustering, and when DBSCAN is preferable.	alirezadir__AIMLInterviews:ml-fundamental.md
+ML04	M	How do Gaussian mixture models differ from k-means and how does expectation maximization fit them?	alirezadir__AIMLInterviews:ml-fundamental.md
+ML04	M	Explain PCA and when you would use it, and compare it with ICA and t-SNE.	alirezadir__AIMLInterviews:ml-fundamental.md
+ML04	M	What is latent semantic analysis and how does it relate to the SVD?	alirezadir__AIMLInterviews:ml-fundamental.md
+ML04	M	What are hidden Markov models, and what are transition and emission probabilities?	alirezadir__AIMLInterviews:ml-fundamental.md
+ML04	H	How does the Viterbi algorithm decode the most likely hidden state sequence in an HMM?	alirezadir__AIMLInterviews:ml-fundamental.md
+ML05	M	How do you handle missing or corrupted data in a dataset, and how does the best approach depend on why values are missing?	alirezadir__AIMLInterviews:ml-fundamental.md
+ML05	M	How do you handle outliers, and how do they affect different models?	alirezadir__AIMLInterviews:ml-fundamental.md
+ML05	M	How do you deal with imbalanced data in practice, and which evaluation metrics do you switch to?	alirezadir__AIMLInterviews:ml-fundamental.md
+ML05	M	What are uniform, stratified and reservoir sampling and when is each appropriate?	alirezadir__AIMLInterviews:ml-fundamental.md
+ML05	M	What is data distribution shift and how does it affect a deployed model's performance?	alirezadir__AIMLInterviews:ml-fundamental.md
+ML05	M	What are the main feature selection methods and how do you assess feature importance?	alirezadir__AIMLInterviews:ml-fundamental.md
+ML05	M	Compare Euclidean, Manhattan, cosine and Mahalanobis distances and when each is appropriate.	alirezadir__AIMLInterviews:ml-fundamental.md
+ML06	E	Explain the confusion matrix and derive accuracy, precision, recall, specificity and F-score.	alirezadir__AIMLInterviews:ml-fundamental.md
+ML06	M	How do you choose among accuracy, precision, recall and F1 on an imbalanced dataset?	alirezadir__AIMLInterviews:ml-fundamental.md
+ML06	M	Explain the ROC curve and AUC, and how to pick an operating threshold.	alirezadir__AIMLInterviews:ml-fundamental.md
+ML06	M	When is precision-recall AUC more informative than ROC AUC?	alirezadir__AIMLInterviews:ml-fundamental.md
+ML06	M	How do you extend precision, recall and ROC metrics to multi-class problems, and how do macro and micro averaging differ?	alirezadir__AIMLInterviews:ml-fundamental.md
+ML07	E	What is gradient descent and how does it work, and how do batch, stochastic and mini-batch variants differ?	alirezadir__AIMLInterviews:ml-fundamental.md
+ML07	M	Compare momentum, RMSprop and Adam as extensions of gradient descent.	alirezadir__AIMLInterviews:ml-fundamental.md
+ML07	M	Explain L1 and L2 regularization and their effect on weights and sparsity.	alirezadir__AIMLInterviews:ml-fundamental.md
+ML07	M	What is the logistic loss and why is cross entropy appropriate for classification?	alirezadir__AIMLInterviews:ml-fundamental.md
+ML07	M	What is hinge loss and how does it lead to margin maximization in SVMs?	alirezadir__AIMLInterviews:ml-fundamental.md
+ML07	M	What is empirical risk minimization, and why is the risk called empirical?	alirezadir__AIMLInterviews:ml-fundamental.md
+ML08	M	Explain maximum likelihood estimation versus maximum a posteriori estimation and how priors act as regularizers.	alirezadir__AIMLInterviews:ml-fundamental.md
+ML08	M	What do p-values and R-squared tell you, and what do they not tell you?	alirezadir__AIMLInterviews:ml-fundamental.md
+ML08	M	What are common pitfalls when using statistical significance to judge a model or experiment?	alirezadir__AIMLInterviews:ml-fundamental.md
+DL01	E	Explain how a neural network works and what backpropagation computes.	alirezadir__AIMLInterviews:ml-fundamental.md
+DL01	M	How does deep learning differ from traditional machine learning, and when is each the better choice?	alirezadir__AIMLInterviews:ml-fundamental.md
+DL01	M	Which output activation would you use for classes that are not mutually exclusive, and why?	alirezadir__AIMLInterviews:ml-fundamental.md
+DL02	M	How do you apply dropout in an LSTM, and why can naive dropout hurt recurrent connections?	alirezadir__AIMLInterviews:ml-fundamental.md
+DL03	E	What is a convolutional neural network and why does weight sharing help for images?	alirezadir__AIMLInterviews:ml-fundamental.md
+DL03	M	What is transfer learning and how do you use it in practice for vision tasks?	alirezadir__AIMLInterviews:ml-fundamental.md
+DL04	M	What is backpropagation through time and why does it lead to vanishing or exploding gradients in RNNs?	alirezadir__AIMLInterviews:ml-fundamental.md
+DL04	M	How do LSTM gates mitigate the vanishing gradient problem?	alirezadir__AIMLInterviews:ml-fundamental.md
+DL04	M	How does a sequence-to-sequence model work and what limitation motivated attention?	alirezadir__AIMLInterviews:ml-fundamental.md
+LLM01	M	Walk through a transformer block and explain why attention scores are divided by the square root of the key dimension.	alirezadir__AIMLInterviews:ml-fundamental.md
+LLM01	M	Compare multi-head, multi-query, grouped-query and multi-head latent attention in memory and throughput.	alirezadir__AIMLInterviews:ml-fundamental.md
+LLM01	M	Why did recent LLMs adopt grouped-query attention?	alirezadir__AIMLInterviews:ml-fundamental.md
+LLM01	M	What is FlashAttention and why does it make long-context training practical?	alirezadir__AIMLInterviews:ml-fundamental.md
+LLM01	M	Compare pre-norm and post-norm transformers and explain why RMSNorm and SwiGLU are common in modern LLMs.	alirezadir__AIMLInterviews:ml-fundamental.md
+LLM02	M	What is RoPE, and why are rotary embeddings preferred over learned absolute position embeddings?	alirezadir__AIMLInterviews:ml-fundamental.md
+LLM02	M	How do position interpolation and YaRN extend the context length of a pretrained model?	alirezadir__AIMLInterviews:ml-fundamental.md
+LLM02	M	How do byte-level BPE and SentencePiece differ, and how does vocabulary size affect model quality and cost?	alirezadir__AIMLInterviews:ml-fundamental.md
+LLM03	M	What is a mixture-of-experts model, how does routing work, and what is the difference between active and total parameters?	alirezadir__AIMLInterviews:ml-fundamental.md
+LLM03	M	What do the Chinchilla scaling laws say about compute-optimal training, and how do they affect model design today?	alirezadir__AIMLInterviews:ml-fundamental.md
+LLM03	M	What are emergent abilities in LLMs and why is their existence debated?	alirezadir__AIMLInterviews:ml-fundamental.md
+LLM04	M	What are the stages of an LLM training pipeline from pretraining through post-training?	alirezadir__AIMLInterviews:ml-fundamental.md
+LLM04	M	Why is next-token prediction on web-scale data a sufficient pretraining objective for general capabilities?	alirezadir__AIMLInterviews:ml-fundamental.md
+LLM05	M	How do greedy, beam, temperature, top-k and top-p decoding differ, and when would you use each?	alirezadir__AIMLInterviews:ml-fundamental.md
+LLM05	M	How does speculative decoding speed up generation without changing the output distribution?	alirezadir__AIMLInterviews:ml-fundamental.md
+LLM05	M	How does structured or constrained decoding force valid JSON output?	alirezadir__AIMLInterviews:ml-fundamental.md
+LLM06	M	What is the KV cache, why does it matter for inference, and how does its memory scale with context length and batch size?	alirezadir__AIMLInterviews:ml-fundamental.md
+LLM06	M	Explain INT8, INT4 and FP8 quantization and the trade-off between accuracy and latency, including KV cache quantization.	alirezadir__AIMLInterviews:ml-fundamental.md
+LLM06	M	Compare post-training quantization with quantization-aware training.	alirezadir__AIMLInterviews:ml-fundamental.md
+LLM06	M	How do PagedAttention and continuous batching raise serving throughput?	alirezadir__AIMLInterviews:ml-fundamental.md
+LLM06	M	What is the difference between the prefill and decode phases of LLM inference and how do they affect performance?	alirezadir__AIMLInterviews:ml-fundamental.md
+LLM06	M	Explain tensor, pipeline and sequence parallelism for serving large models.	alirezadir__AIMLInterviews:ml-fundamental.md
+LLM07	M	Why do classic metrics like BLEU fail for open-ended generation, and what do teams use instead?	alirezadir__AIMLInterviews:ml-fundamental.md
+LLM07	M	How do LLM-as-judge and pairwise win-rate evaluation work, and what biases do they have?	alirezadir__AIMLInterviews:ml-fundamental.md
+LLM07	M	How would you build a golden set and regression test suite for an LLM application?	alirezadir__AIMLInterviews:ml-fundamental.md
+LLM07	M	How do you evaluate agents with metrics such as tool-selection quality, step success and trajectory adherence?	alirezadir__AIMLInterviews:ml-fundamental.md
+LLM07	M	What do benchmarks such as MMLU, GPQA and SWE-bench measure, and what are their limitations?	alirezadir__AIMLInterviews:ml-fundamental.md
+LLM07	M	What causes hallucinations in LLMs and how can they be reduced?	alirezadir__AIMLInterviews:ml-fundamental.md
+FT01	M	What does SFT or instruction tuning need as data, and how do you build a high-quality instruction dataset?	alirezadir__AIMLInterviews:ml-fundamental.md
+FT01	M	When is full fine-tuning preferable to parameter-efficient fine-tuning, considering compute, storage and forgetting?	alirezadir__AIMLInterviews:ml-fundamental.md
+FT02	M	How do LoRA and QLoRA work, and what do rank and alpha control?	alirezadir__AIMLInterviews:ml-fundamental.md
+FT02	M	How would you pick the LoRA rank, learning rate, epochs and batch size for a new task?	alirezadir__AIMLInterviews:ml-fundamental.md
+FT02	M	Compare adapters, prefix tuning and prompt tuning with LoRA.	alirezadir__AIMLInterviews:ml-fundamental.md
+FT03	M	Compare SFT, RLHF with PPO, DPO, KTO, ORPO, SimPO, GRPO and RLVR in data requirements, extra models and cost.	alirezadir__AIMLInterviews:ml-fundamental.md
+FT03	M	Why does GRPO drop the critic network, and how does it estimate advantages from a group of samples?	alirezadir__AIMLInterviews:ml-fundamental.md
+FT03	M	How does DPO turn preference learning into a supervised loss, and what is the role of the reference model?	alirezadir__AIMLInterviews:ml-fundamental.md
+FT03	M	What is reinforcement learning with verifiable rewards and for which tasks does it work well?	alirezadir__AIMLInterviews:ml-fundamental.md
+FT03	M	What is reward hacking in RLHF and how do you mitigate it?	alirezadir__AIMLInterviews:ml-fundamental.md
+FT03	M	Why do modern post-training stacks layer SFT, preference optimization and RL instead of using one method?	alirezadir__AIMLInterviews:ml-fundamental.md
+FT04	M	How does inference-time scaling improve reasoning, and what are its costs?	alirezadir__AIMLInterviews:ml-fundamental.md
+FT05	M	When would you choose RAG, fine-tuning or long context to add knowledge to an LLM, and how do you combine them in practice?	alirezadir__AIMLInterviews:ml-fundamental.md
+FT05	M	How do you decide between calling a hosted LLM API and self-hosting an open model?	alirezadir__AIMLInterviews:ml-system-design.md
+GA01	M	What are zero-shot, few-shot and chain-of-thought prompting and how does self-consistency improve reasoning?	alirezadir__AIMLInterviews:ml-fundamental.md
+GA06	M	How does a vision-language model combine a vision encoder, a projector and an LLM, and how is it trained?	alirezadir__AIMLInterviews:ml-fundamental.md
+GA06	M	Compare contrastive dual encoders such as CLIP with adapter-based and cross-attention approaches to multimodal models.	alirezadir__AIMLInterviews:ml-fundamental.md
+GA06	M	Compare early and late fusion and native any-to-any multimodal models.	alirezadir__AIMLInterviews:ml-fundamental.md
+GA06	M	What is a vision-language-action model and how do discrete action tokens differ from flow-matching action heads?	alirezadir__AIMLInterviews:ml-fundamental.md
+DL05	M	Compare diffusion and autoregressive generation in likelihood, speed and use cases.	alirezadir__AIMLInterviews:ml-fundamental.md
+DL05	M	Explain latent diffusion, diffusion transformers and classifier-free guidance.	alirezadir__AIMLInterviews:ml-fundamental.md
+DL05	M	What is flow matching or rectified flow, and how does it reduce the number of sampling steps?	alirezadir__AIMLInterviews:ml-fundamental.md
+DL05	M	How can text be generated with diffusion or masked diffusion language models, and what are the trade-offs?	alirezadir__AIMLInterviews:ml-fundamental.md
+MS04	H	Design a RAG-based document question answering system over private company documents.	alirezadir__AIMLInterviews:MLSD/ml-system-design.md
+MS04	H	Design an LLM-powered customer support chatbot with guardrails and fallback to a human agent.	alirezadir__AIMLInterviews:MLSD/ml-system-design.md
+MS04	H	Design an agentic workflow assistant that plans, calls tools and keeps memory across sessions.	alirezadir__AIMLInterviews:MLSD/ml-system-design.md
+MS04	H	Design an enterprise semantic search system that returns synthesized answers with citations.	alirezadir__AIMLInterviews:MLSD/ml-system-design.md
+MS04	H	Design a code assistant or coding agent that uses retrieval over a repository, tool use and verification.	alirezadir__AIMLInterviews:MLSD/ml-system-design.md
+MS04	H	Design a system that generates and summarizes content at scale in batch with safety filtering.	alirezadir__AIMLInterviews:MLSD/ml-system-design.md
+MS04	H	Design a recommendation system where an LLM acts as a ranker or a feature generator.	alirezadir__AIMLInterviews:MLSD/ml-system-design.md
+MS04	M	How would you structure the nine-step ML system design framework for a GenAI application, and what changes compared with a classical ML system?	alirezadir__AIMLInterviews:MLSD/ml-system-design.md
+MS04	M	How would you budget context tokens for a RAG system and handle the case where no answer exists in the corpus?	alirezadir__AIMLInterviews:MLSD/ml-system-design.md
+MS04	M	What reliability patterns such as timeouts, retries, fallbacks, queues and circuit breakers apply to an LLM service?	alirezadir__AIMLInterviews:MLSD/ml-system-design.md
+MS04	M	How would you design guardrails for an LLM product covering input filtering, output filtering, PII and grounding checks?	alirezadir__AIMLInterviews:MLSD/ml-system-design.md
+MS04	M	How would you account for and reduce cost and latency in a production LLM application using caching, routing and streaming?	alirezadir__AIMLInterviews:MLSD/ml-system-design.md
+MS04	M	What would you monitor in a production LLM system, such as quality drift, retrieval hit rate and cost per request?	alirezadir__AIMLInterviews:MLSD/ml-system-design.md
+RAG01	M	Explain the RAG triad of faithfulness, answer relevance and context relevance and how each is measured.	alirezadir__AIMLInterviews:ml-fundamental.md
+RAG03	M	How would you choose and configure a vector index such as HNSW or IVF-PQ for a large RAG corpus?	alirezadir__AIMLInterviews:MLSD/ml-system-design.md
+RAG04	M	When do hybrid dense and keyword retrieval, cross-encoder reranking and query rewriting help a RAG system?	alirezadir__AIMLInterviews:MLSD/ml-system-design.md
+RAG05	M	What do multi-hop, agentic RAG and GraphRAG add over a basic RAG pipeline, and when are they worth the cost?	alirezadir__AIMLInterviews:MLSD/ml-system-design.md
+RAG06	M	Which retrieval metrics such as recall at k, MRR and nDCG would you track for a RAG retriever, and how do they relate to end-to-end answer quality?	alirezadir__AIMLInterviews:ml-fundamental.md
+GA03	M	What failure modes do agents have, such as loops, hallucinated tools and unrecoverable errors, and how do you handle them?	alirezadir__AIMLInterviews:MLSD/ml-system-design.md
+GA04	M	How would you run offline evaluation, online A/B testing and regression testing for an LLM feature?	alirezadir__AIMLInterviews:MLSD/ml-system-design.md
+CODE01	E	Implement a numerically stable softmax and cross-entropy loss in NumPy.	alirezadir__AIMLInterviews:MLC/ml-coding.md
+CODE01	M	Implement linear regression with gradient descent using vectorized NumPy.	alirezadir__AIMLInterviews:MLC/ml-coding.md
+CODE01	M	Implement logistic regression with gradient descent and handle numerical stability.	alirezadir__AIMLInterviews:MLC/ml-coding.md
+CODE01	M	Implement k-nearest neighbors classification with vectorized distance computation.	alirezadir__AIMLInterviews:MLC/ml-coding.md
+CODE01	M	Implement k-means clustering from scratch and discuss its convergence.	alirezadir__AIMLInterviews:MLC/ml-coding.md
+CODE01	M	Implement the best split search of a decision tree using Gini impurity.	alirezadir__AIMLInterviews:MLC/ml-coding.md
+CODE01	M	Implement principal component analysis using the SVD.	alirezadir__AIMLInterviews:MLC/ml-coding.md
+CODE01	M	Implement a 2D convolution layer from scratch and reason about output shapes.	alirezadir__AIMLInterviews:MLC/ml-coding.md
+CODE01	M	Implement binary classification metrics and ROC AUC from predicted scores.	alirezadir__AIMLInterviews:MLC/ml-coding.md
+CODE01	M	Implement reservoir sampling for a stream of unknown length.	alirezadir__AIMLInterviews:MLC/ml-coding.md
+CODE01	M	Implement a linear SVM trained with hinge loss.	alirezadir__AIMLInterviews:MLC/ml-coding.md
+CODE01	E	Implement the perceptron learning rule.	alirezadir__AIMLInterviews:MLC/ml-coding.md
+CODE01	H	Implement a feedforward neural network with backpropagation using only NumPy.	alirezadir__AIMLInterviews:MLC/ml-coding.md
+CODE01	M	Implement macro and micro averaged multiclass metrics from a confusion matrix.	alirezadir__AIMLInterviews:MLC/ml-coding.md
+CODE01	M	Implement a multinomial Naive Bayes text classifier with smoothing.	alirezadir__AIMLInterviews:MLC/ml-coding.md
+CODE01	M	Implement matrix factorization for recommendations trained with SGD.	alirezadir__AIMLInterviews:MLC/ml-coding.md
+CODE01	H	Implement one gradient boosting step that fits a regression tree to residuals.	alirezadir__AIMLInterviews:MLC/ml-coding.md
+CODE01	E	Implement a train, validation and test split that avoids leakage and supports stratification.	alirezadir__AIMLInterviews:MLC/ml-coding.md
+CODE01	E	Implement feature standardization using only training statistics.	alirezadir__AIMLInterviews:MLC/ml-coding.md
+CODE01	M	Implement missing value imputation and handling of unseen categories.	alirezadir__AIMLInterviews:MLC/ml-coding.md
+CODE01	M	Implement uniform, weighted and stratified sampling with reproducible seeds.	alirezadir__AIMLInterviews:MLC/ml-coding.md
+CODE01	M	Implement sample-weighted losses and streaming metrics that aggregate across distributed workers.	alirezadir__AIMLInterviews:MLC/ml-coding.md
+CODE01	M	Implement TF-IDF from scratch.	alirezadir__AIMLInterviews:MLC/ml-coding.md
+CODE01	M	Implement scaled dot-product attention with masking.	alirezadir__AIMLInterviews:MLC/ml-coding.md
+CODE01	E	Implement the learning and application steps of byte-pair encoding.	alirezadir__AIMLInterviews:MLC/ml-coding.md
+CODE01	E	Build a causal attention mask for autoregressive decoding.	alirezadir__AIMLInterviews:MLC/ml-coding.md
+CODE01	E	Implement sinusoidal positional encoding.	alirezadir__AIMLInterviews:MLC/ml-coding.md
+CODE01	M	Implement temperature, top-k and top-p sampling.	alirezadir__AIMLInterviews:MLC/ml-coding.md
+CODE01	M	Implement an append-only KV cache for autoregressive attention.	alirezadir__AIMLInterviews:MLC/ml-coding.md
+CODE01	M	Implement padding and attention masks for a batch of variable-length token sequences.	alirezadir__AIMLInterviews:MLC/ml-coding.md
+CODE01	M	Implement a LoRA update for a linear layer.	alirezadir__AIMLInterviews:MLC/ml-coding.md
+CODE01	M	Implement a symmetric contrastive loss for paired embeddings.	alirezadir__AIMLInterviews:MLC/ml-coding.md
+CODE01	M	Implement exact cosine top-k retrieval for a RAG system.	alirezadir__AIMLInterviews:MLC/ml-coding.md
+CODE01	H	Implement the direct preference optimization loss.	alirezadir__AIMLInterviews:MLC/ml-coding.md
+CODE01	E	Implement the classifier-free guidance combination of conditional and unconditional predictions.	alirezadir__AIMLInterviews:MLC/ml-coding.md
+CODE01	E	Implement validation of JSON tool arguments against a schema.	alirezadir__AIMLInterviews:MLC/ml-coding.md
+CODE01	M	Implement a permission-aware tool registry for an LLM agent.	alirezadir__AIMLInterviews:MLC/ml-coding.md
+CODE01	M	Implement a planner and executor for an agent with a clean boundary and tracing.	alirezadir__AIMLInterviews:MLC/ml-coding.md
+CODE01	M	Implement retry logic with idempotency keys for tool calls with side effects.	alirezadir__AIMLInterviews:MLC/ml-coding.md
+CODE01	M	Implement sliding-window conversation memory with a token budget.	alirezadir__AIMLInterviews:MLC/ml-coding.md
+CODE01	H	Implement a bounded agent tool-use loop with termination and safety checks.	alirezadir__AIMLInterviews:MLC/ml-coding.md
+CODE01	M	Write a PyTorch training and evaluation loop with gradient clipping and checkpointing.	alirezadir__AIMLInterviews:MLC/pytorch-ml-coding.md
+CODE01	M	Implement a custom PyTorch Dataset and collate function for variable-length data.	alirezadir__AIMLInterviews:MLC/pytorch-ml-coding.md
+CODE01	M	Implement precision, recall and F1 in PyTorch tensors without loops.	alirezadir__AIMLInterviews:MLC/pytorch-ml-coding.md
+DL07	M	Explain how PyTorch autograd builds and traverses the computation graph, and what detach and no_grad do.	alirezadir__AIMLInterviews:MLC/pytorch-ml-coding.md
+DL07	M	What is the difference between view, reshape and contiguous in PyTorch tensors, and when does a copy occur?	alirezadir__AIMLInterviews:MLC/pytorch-ml-coding.md
+DL07	M	How does broadcasting work in tensor operations, and what shape bugs does it commonly hide?	alirezadir__AIMLInterviews:MLC/pytorch-ml-coding.md
+DL07	M	Why must you call optimizer zero_grad, and what happens if you accumulate gradients deliberately?	alirezadir__AIMLInterviews:MLC/pytorch-ml-coding.md
+DL07	M	What is the difference between model.eval and torch.no_grad, and what goes wrong if you forget either at inference?	alirezadir__AIMLInterviews:MLC/pytorch-ml-coding.md
+DL07	M	How would you debug a PyTorch training run whose loss stays flat or becomes NaN?	alirezadir__AIMLInterviews:MLC/pytorch-ml-coding.md
+DL07	M	How do DataLoader workers, batch size and pinned memory affect input pipeline throughput?	alirezadir__AIMLInterviews:MLC/pytorch-ml-coding.md
+DL07	M	How would you write unit tests for a PyTorch training utility and check shapes, dtypes and determinism?	alirezadir__AIMLInterviews:MLC/pytorch-ml-coding.md
+DL07	M	How do you make PyTorch experiments reproducible, and what sources of nondeterminism remain on a GPU?	alirezadir__AIMLInterviews:MLC/pytorch-ml-coding.md
+DL07	M	How do you save and load a model for inference versus resume training, including optimizer state?	alirezadir__AIMLInterviews:MLC/pytorch-ml-coding.md
+DL02	M	How do you debug a neural network that overfits a small batch but fails to generalize?	alirezadir__AIMLInterviews:MLC/pytorch-ml-coding.md
+DL02	M	What is mixed precision training and what numerical issues does loss scaling address?	alirezadir__AIMLInterviews:MLC/pytorch-ml-coding.md
+DL02	M	How do batch size and learning rate interact, and how would you scale them together?	alirezadir__AIMLInterviews:MLC/pytorch-ml-coding.md

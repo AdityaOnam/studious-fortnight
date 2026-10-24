@@ -1,0 +1,300 @@
+Q011576	GA03	M	When would you choose Pydantic AI over LangGraph for a Python service?
+Q011577	DROP	-	offtopic
+Q011578	DROP	-	offtopic
+Q011579	GA03	M	What does a typed agent framework actually buy you in production?
+Q011580	DROP	-	notq
+Q011581	DROP	-	notq
+Q011582	DROP	-	notq
+Q011583	DROP	-	notq
+Q011584	GA03	M	Given how fast agent frameworks churn, how do you decide whether to use one at all?
+Q011585	GA04	H	An agent's cost per task rose 40% and its tone changed overnight, with no code or dependency change on your side. What happened, and how do you make this impossible to miss next time?
+Q011586	GA04	H	Design a model registry that survives divergent deprecation calendars across vendors and clouds.
+Q011587	RAG02	M	Why would you still use AWS Textract or Azure AI Document Intelligence when vision LLMs exist?
+Q011588	RAG02	M	How do you handle a 500-page PDF with vision models efficiently?
+Q011589	RAG02	H	You need to parse 5M pages a month for RAG ingestion. Would you use a frontier VLM, a specialist API, or a self-hosted model?
+Q011590	DROP	-	notq
+Q011591	MS04	H	How would you design infrastructure for 1M LLM queries per day?
+Q011592	LLM06	H	How would you evaluate a new accelerator or serving platform for your fleet?
+Q011593	DROP	-	notq
+Q011594	GA04	M	How do you test prompt changes before production?
+Q011595	GA04	M	What triggers should cause an automatic rollback of an LLM deployment?
+Q011596	GA04	M	Your provider is retiring the model your product runs on in 60 days. How do you migrate safely?
+Q011597	DROP	-	notq
+Q011598	DROP	-	notq
+Q011599	DROP	-	notq
+Q011600	GA04	H	Rate-limit errors are your top production failure. How does an LLM gateway help, and how could it make things worse?
+Q011601	GA04	M	When is a full LLM gateway overkill, and what would you do instead?
+Q011602	GA05	M	Your LLM gateway holds every provider key. How do you secure it?
+Q011603	GA04	H	How do you fail over a long-running agent conversation to another provider?
+Q011604	GA04	M	Your LLM bill doubled month over month with flat traffic. How do you find and fix it?
+Q011605	GA04	M	Why do AI products have worse gross margins than SaaS, and what do engineers do about it?
+Q011606	GA04	H	A team wants to move a 300K-token-context workload from one frontier model to another because both list at the same price ($2/$10 per million tokens). What do you check?
+Q011607	DROP	-	notq
+Q011608	DROP	-	notq
+Q011609	GA05	M	How do you defend against prompt injection?
+Q011610	DROP	-	dup
+Q011611	GA05	H	A regulated customer requires zero data retention, but the frontier model you want requires 30-day retention for misuse monitoring. How do you resolve it?
+Q011612	RAG06	M	How do you implement multi-tenant isolation in a RAG system?
+Q011613	GA05	M	How do you manage API keys for an LLM service?
+Q011614	GA02	H	An agent calls tools on five MCP servers on a user's behalf. How do you authorize it?
+Q011615	DROP	-	notq
+Q011616	RAG06	M	How do you prevent hallucination in a production RAG system?
+Q011617	DROP	-	notq
+Q011618	DROP	-	dup
+Q011619	GA05	M	Design a guardrail system for a customer service chatbot.
+Q011620	DROP	-	notq
+Q011621	GA01	M	When would you use Self-Consistency vs Best-of-N?
+Q011622	FT03	M	How do you prevent reward hacking in Best-of-N?
+Q011623	LLM07	M	Your panel of three LLM judges agrees on 95% of verdicts. Is that good news?
+Q011624	DROP	-	notq
+Q011625	GA04	M	How do you design for high availability in LLM systems?
+Q011626	SD05	M	What is the difference between a circuit breaker and a retry?
+Q011627	DROP	-	notq
+Q011628	DROP	-	notq
+Q011629	GA04	H	Your provider shipped a fix under the same model ID and your quality metrics moved. How do you detect and handle silent model changes?
+Q011630	DROP	-	notq
+Q011631	DROP	-	notq
+Q011632	DROP	-	notq
+Q011633	GA05	H	How do you make a production LLM system EU AI Act ready without building a separate compliance stack?
+Q011634	GA05	M	What is the difference between the EU AI Act and the NIST AI RMF, and when does each matter?
+Q011635	GA05	H	Your agent did something harmful to a third party's system. Walk through your reporting obligations and how you would design the incident process.
+Q011636	GA03	M	GitHub now lets an AI reviewer's approval count toward required reviews. Would you turn it on?
+Q011637	DROP	-	notq
+Q011638	DROP	-	notq
+Q011639	DROP	-	notq
+Q011640	DROP	-	notq
+Q011641	DROP	-	notq
+Q011642	DROP	-	notq
+Q011643	DROP	-	notq
+Q011644	DROP	-	notq
+Q011645	DROP	-	notq
+Q011646	DROP	-	notq
+Q011647	DROP	-	notq
+Q011648	DROP	-	notq
+Q011649	DROP	-	notq
+Q011650	DROP	-	notq
+Q011651	LLM07	M	What are the limitations of LLM-as-judge?
+Q011652	DROP	-	notq
+Q011653	LLM07	H	Your eval pipeline runs a cheap judge on all traffic and escalates low-confidence cases to a frontier judge. A reviewer says the escalation is not buying accuracy. How do you check, and what do you change?
+Q011654	DROP	-	notq
+Q011655	DROP	-	notq
+Q011656	GA04	M	What metrics would you track for a production LLM system?
+Q011657	GA04	M	How do you detect quality degradation in production?
+Q011658	GA04	H	After a routine dependency upgrade, your LLM dashboards go quiet: fewer spans, lower token counts. Traffic and the provider bill are unchanged. What happened, and how do you stop it from happening again?
+Q011659	DROP	-	notq
+Q011660	DROP	-	notq
+Q011661	LLM07	M	A vendor says their model scores 90% on SWE-bench Verified. What questions do you ask before believing it predicts your coding-agent quality?
+Q011662	LLM07	M	Why have benchmarks like MMLU and HumanEval stopped being useful for ranking frontier models, and what replaced them?
+Q011663	LLM07	M	How would you use Arena (formerly LMArena) Elo responsibly when choosing a model for a chat product?
+Q011664	LLM07	M	A launch post claims 99.9% on ARC-AGI-3 and 81.8% on OSWorld 2.1. How do you read those numbers?
+Q011665	DROP	-	notq
+Q011666	DROP	-	notq
+Q011667	DROP	-	notq
+Q011668	DROP	-	notq
+Q011669	RAG01	M	Describe three RAG patterns and when to use each.
+Q011670	GA04	M	What reliability patterns would you use for a production LLM system?
+Q011671	DROP	-	notq
+Q011672	DROP	-	notq
+Q011673	GA04	M	What is the biggest anti-pattern you see in LLM applications?
+Q011674	GA03	M	How do you avoid agent runaway costs?
+Q011675	DROP	-	notq
+Q011676	DROP	-	notq
+Q011677	DROP	-	notq
+Q011678	DROP	-	notq
+Q011679	DROP	-	notq
+Q011680	DROP	-	notq
+Q011681	DROP	-	notq
+Q011682	DROP	-	notq
+Q011683	DROP	-	notq
+Q011684	DROP	-	unfixable
+Q011685	DROP	-	unfixable
+Q011686	DROP	-	unfixable
+Q011687	MS04	M	How do you prevent hallucinated financial data in an LLM-based financial assistant?
+Q011688	DROP	-	unfixable
+Q011689	DROP	-	unfixable
+Q011690	DROP	-	unfixable
+Q011691	DROP	-	unfixable
+Q011692	DROP	-	notq
+Q011693	MS04	H	How should a coding agent handle tasks that require changes across 20+ files?
+Q011694	GA03	M	What if the agent gets stuck in an infinite retry loop?
+Q011695	MS04	M	How do you prevent a coding agent from introducing security vulnerabilities?
+Q011696	RAG03	M	In a multi-tenant RAG system, why not use one vector database per tenant?
+Q011697	GA05	H	In a multi-tenant system, what if a bug in your ORM bypasses the tenant filter?
+Q011698	SD02	M	How do you handle a tenant who wants to export all their data from a multi-tenant system?
+Q011699	DROP	-	unfixable
+Q011700	DROP	-	unfixable
+Q011701	MS04	M	In a multilingual LLM customer-support system, why not translate to English and back?
+Q011702	MS04	M	In a customer-support AI, what if the AI keeps apologizing but never actually helps?
+Q011703	MS04	M	How does a customer-support AI handle a customer who insists on talking to a human?
+Q011704	GA05	M	How do you handle customers who try to jailbreak a customer-support AI?
+Q011705	MS04	M	In a contract data extraction system, what do you do if the extraction confidence is low?
+Q011706	MS04	M	How do you handle contracts with non-standard layouts in a contract extraction system?
+Q011707	MS04	M	How do you handle contracts where key terms are defined in exhibits in a contract extraction system?
+Q011708	MS03	M	Why not just use an LLM for everything in a recommendation system?
+Q011709	MS04	M	How do you prevent the LLM from hallucinating facts about movies in a movie recommendation system?
+Q011710	ML10	M	What if a user's taste changes rapidly in a recommender system?
+Q011711	ML10	M	How do you A/B test recommendation algorithms?
+Q011712	FT05	M	Why would you choose RAG over fine-tuning for a regulatory compliance assistant?
+Q011713	DROP	-	notq
+Q011714	MS04	M	How do you handle regulations that require human judgment in a regulatory compliance AI system?
+Q011715	MS04	M	In a regulatory compliance RAG system, how do you handle the FDA updating a regulation mid-month?
+Q011716	MS04	M	How do you explain an AI system's reasoning to regulators during an audit?
+Q011717	DROP	-	notq
+Q011718	GA06	M	How do you handle medical abbreviations and jargon in a clinical speech-to-text documentation system?
+Q011719	GA06	M	In a voice-based clinical documentation system, what if the nurse makes a correction mid-sentence?
+Q011720	MS04	M	How do you ensure a clinical documentation AI does not miss critical information?
+Q011721	MS03	M	In a fraud detection system, why combine ML with rules instead of using only ML?
+Q011722	MS03	M	In a fraud detection system, why use an LLM for explanation instead of SHAP/LIME?
+Q011723	MS03	M	How do you handle model latency spikes in a real-time fraud detection system?
+Q011724	MS03	M	How does a fraud detection system handle coordinated fraud attacks?
+Q011725	MS03	M	How do you balance fraud prevention with customer experience?
+Q011726	MS04	M	How do you handle documents with mixed permissions in an enterprise RAG system?
+Q011727	MS04	M	How does an enterprise RAG system handle real-time collaboration documents (Google Docs, live Confluence pages)?
+Q011728	GA05	H	How do you prevent an enterprise RAG system from becoming a leaky abstraction for unauthorized data?
+Q011729	DROP	-	unfixable
+Q011730	DROP	-	unfixable
+Q011731	DROP	-	notq
+Q011732	DROP	-	notq
+Q011733	DROP	-	notq
+Q011734	DROP	-	notq
+Q011735	DROP	-	notq
+Q011736	DROP	-	notq
+Q011737	DROP	-	notq
+Q011738	FT05	M	Your team wants to build an internal AI assistant. Should you build on OpenClaw, OpenHands, or build custom with Claude Code + MCP?
+Q011739	MS04	H	How would you design a system that lets non-technical users automate desktop tasks using AI?
+Q011740	DROP	-	offtopic
+Q011741	GA03	H	Design an always-on personal agent that keeps working while the user is away. What does it need beyond a chat agent?
+Q011742	GA05	M	Compare sandboxed vs. unsandboxed execution for AI agents. When would you choose each?
+Q011743	DROP	-	notq
+Q011744	MS04	H	Design a system that lets a customer support agent answer questions using data from Zendesk, Salesforce, and an internal knowledge base.
+Q011745	GA05	M	How would you prevent an AI agent from causing damage through tool calls?
+Q011746	GA02	M	Explain the trade-offs between vision-based computer use and API-based tool calling.
+Q011747	DROP	-	notq
+Q011748	DROP	-	notq
+Q011749	DROP	-	notq
+Q011750	DROP	-	notq
+Q011751	DROP	-	unfixable
+Q011752	DROP	-	unfixable
+Q011753	GA05	M	How do you handle tool execution safety in a personal AI agent?
+Q011754	GA03	M	How do you manage agent memory without a vector database service?
+Q011755	GA03	M	How do you handle session continuity across multiple messaging channels in a personal AI agent?
+Q011756	GA03	M	How would you add a vector database for an agent's long-term memory?
+Q011757	DROP	-	unfixable
+Q011758	GA04	M	How would you handle rate limiting to control LLM costs?
+Q011759	DROP	-	notq
+Q011760	DROP	-	notq
+Q011761	DROP	-	notq
+Q011762	GA02	M	Compare computer-use agents with Selenium for web automation. When would you choose each?
+Q011763	GA02	H	A vendor says its computer-use model scores 81.8% on OSWorld. How do you turn that into a production capacity plan?
+Q011764	GA02	M	You need to give an LLM agent access to 200 internal tools. How do you handle schema overload?
+Q011765	GA03	M	Design a testing strategy for a tool-use agent that handles customer support.
+Q011766	GA02	H	Your extraction service forces a tool call to get JSON back. After moving to the newest Claude model, every request returns HTTP 400. What happened, and how do you fix it without losing the schema guarantee?
+Q011767	DROP	-	notq
+Q011768	DROP	-	notq
+Q011769	DROP	-	notq
+Q011770	DROP	-	notq
+Q011771	DROP	-	notq
+Q011772	DROP	-	notq
+Q011773	DROP	-	notq
+Q011774	DROP	-	notq
+Q011775	DROP	-	notq
+Q011776	DROP	-	notq
+Q011777	DROP	-	notq
+Q011778	DROP	-	notq
+Q011779	DROP	-	notq
+Q011780	GA06	H	Walk me through the latency budget of a voice agent. Where do the milliseconds go, and what is the single biggest lever?
+Q011781	GA06	H	Chained pipeline, single speech-to-speech model, or a duplex front end with a backend: how do you choose for a voice agent?
+Q011782	GA06	H	Design the backbone of a service that turns a script into a narrated, music-backed video. What are the hard parts?
+Q011783	GA04	M	How do you regression-test a generative pipeline when outputs are not reproducible?
+Q010756	DROP	-	notq
+Q010757	MS04	E	What is AI system design?
+Q010758	DROP	-	hr
+Q010759	RAG01	E	What is RAG (Retrieval-Augmented Generation)?
+Q010760	GA03	E	What are AI agents and how are they different from chatbots?
+Q010761	GA02	M	What is MCP (Model Context Protocol) and how does it compare to A2A?
+Q010762	FT05	M	Which LLM should I use in production: Claude, GPT, Gemini, or open-source?
+Q010763	LLM07	M	How do I evaluate an LLM or RAG system in production?
+Q010764	DROP	-	dup
+Q010765	RAG05	E	What is agentic RAG?
+Q010766	DROP	-	notq
+Q010767	DROP	-	notq
+Q010768	DROP	-	hr
+Q010769	DROP	-	notq
+Q010770	DROP	-	notq
+Q010771	DROP	-	notq
+Q010772	DROP	-	notq
+Q010773	DROP	-	notq
+Q010774	DROP	-	notq
+Q010775	DROP	-	notq
+Q010776	DROP	-	notq
+Q010777	DROP	-	notq
+Q010778	DROP	-	notq
+Q010779	DROP	-	notq
+Q010780	DROP	-	notq
+Q010781	DROP	-	notq
+Q010782	DROP	-	notq
+Q010783	DROP	-	notq
+Q010784	DROP	-	notq
+Q010785	DROP	-	notq
+Q010786	DROP	-	notq
+Q010787	DROP	-	notq
+Q010788	DROP	-	notq
+Q010789	DROP	-	notq
+Q010790	DROP	-	notq
+Q010791	DROP	-	notq
+Q010792	DROP	-	notq
+Q010793	DROP	-	notq
+Q010794	DROP	-	notq
+Q010795	DROP	-	notq
+Q010796	DROP	-	notq
+Q010797	DROP	-	notq
+Q010798	DROP	-	hr
+Q010799	DROP	-	hr
+Q010800	DROP	-	hr
+Q010702	DROP	-	notq
+Q010703	DROP	-	notq
+Q010704	DROP	-	notq
+Q010705	DROP	-	notq
+Q010706	DROP	-	notq
+Q010707	DROP	-	notq
+Q010708	DROP	-	notq
+Q010709	DROP	-	notq
+Q010710	DROP	-	notq
+Q010711	DROP	-	notq
+Q010712	DROP	-	notq
+Q010713	DROP	-	notq
+Q010714	DROP	-	notq
+Q010715	DROP	-	notq
+Q010716	LLM07	E	What is error analysis in the context of evaluating LLM applications?
+Q010717	DROP	-	notq
+Q010718	DROP	-	notq
+Q010719	DROP	-	notq
+Q010720	DROP	-	notq
+Q010721	LLM07	M	When should you stop reviewing traces during error analysis of an LLM application?
+Q010722	DROP	-	notq
+Q010723	DROP	-	notq
+Q010724	DROP	-	notq
+Q010725	DROP	-	notq
+Q010726	DROP	-	notq
+Q010727	DROP	-	notq
+Q010728	DROP	-	notq
+Q010729	DROP	-	notq
+Q010730	DROP	-	notq
+Q010731	DROP	-	notq
+Q010732	DROP	-	notq
+Q010733	DROP	-	notq
+Q010734	DROP	-	notq
+Q010735	DROP	-	notq
+Q010736	DROP	-	notq
+Q010737	DROP	-	notq
+Q010738	DROP	-	notq
+Q010739	DROP	-	notq
+Q010740	DROP	-	notq
+Q010741	DROP	-	notq
+Q010742	DROP	-	notq
+Q010743	DROP	-	notq
+Q010744	DROP	-	notq
+Q010745	DROP	-	notq
+Q010746	DROP	-	notq
+Q010747	DROP	-	notq
+Q010748	DROP	-	notq

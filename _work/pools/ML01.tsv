@@ -1,0 +1,144 @@
+Q000931	E	What do you understand by the terms bias and variance in machine learning?
+Q000932	M	How do bias and variance contribute to the overall error in a predictive model?
+Q000933	E	Can you explain the difference between a high-bias model and a high-variance model?
+Q000934	E	What is the bias-variance trade-off?
+Q000935	M	Why is it impossible to simultaneously minimize both bias and variance?
+Q000936	M	How does model complexity relate to bias and variance?
+Q000937	M	What could be the potential causes of high variance in a model?
+Q000938	M	What might be the reasons behind a model's high bias?
+Q000939	M	How would you diagnose bias and variance issues using learning curves?
+Q000940	E	What are learning curves?
+Q000941	M	What is the expected test error, and how does it relate to bias and variance?
+Q000942	H	How do you use cross-validation to estimate bias and variance?
+Q000943	M	What techniques are used to reduce bias in machine learning models?
+Q000944	M	Can you list some methods to lower variance in a model without increasing bias?
+Q001020	E	How does a classification algorithm learn from data?
+Q001022	M	What are the differences between generative and discriminative models?
+Q001025	M	What is the "Curse of Dimensionality" and how does it affect classification?
+Q001141	E	What is meant by the "Curse of Dimensionality" in the context of Machine Learning?
+Q001142	M	Explain how the Curse of Dimensionality affects distance measurements in high-dimensional spaces.
+Q001143	E	What are some common problems encountered in high-dimensional data analysis?
+Q001144	M	Discuss the concept of sparsity in relation to the Curse of Dimensionality.
+Q001145	M	How does the Curse of Dimensionality impact the training of machine learning models?
+Q001146	M	Can you provide a simple example illustrating the Curse of Dimensionality using the volume of a hypercube?
+Q001172	E	Define data mining and explain its importance in the modern data-driven world.
+Q001173	E	What is the difference between data mining and data analysis?
+Q001174	E	How does data mining relate to machine learning?
+Q001175	E	Explain the concept of Knowledge Discovery in Databases (KDD).
+Q001176	E	What are the common tasks performed in data mining?
+Q001177	M	Describe the CRISP-DM process in data mining.
+Q001178	E	What are the types of data that can be mined?
+Q001207	E	What is Machine Learning and how does it differ from traditional programming?
+Q001208	E	Explain the difference between Supervised Learning and Unsupervised Learning.
+Q001209	E	What is the difference between Classification and Regression problems?
+Q001210	E	Describe the concept of Overfitting and Underfitting in ML models.
+Q001214	M	Describe the difference between Parametric and Non-Parametric models.
+Q001305	E	What are the potential issues caused by high-dimensional data?
+Q001510	E	Can you explain the difference between supervised and unsupervised learning, with examples of where K-Means clustering fits in?
+Q001535	M	How does the curse of dimensionality affect K-NN, and how can it be mitigated?
+Q001756	E	What is meant by overfitting and underfitting in machine learning models?
+Q001805	M	Explain the trade-offs between bias and variance.
+Q002179	E	What is supervised learning?
+Q002180	E	Distinguish between supervised and unsupervised learning.
+Q002181	E	What are the types of problems that can be solved with supervised learning?
+Q002184	E	Explain the concept of overfitting and underfitting in machine learning models.
+Q002185	M	What methods can be used to prevent overfitting?
+Q002186	M	Discuss the bias-variance tradeoff.
+Q002258	E	What is transfer learning and how does it differ from traditional machine learning?
+Q002259	M	Can you explain the concept of domain and task in the context of transfer learning?
+Q002260	E	What are the benefits of using transfer learning techniques?
+Q002261	M	In which scenarios is transfer learning most effective?
+Q002262	M	Describe the difference between transductive transfer learning and inductive transfer learning.
+Q002263	M	Explain the concept of negative transfer. When can it occur?
+Q002267	M	How can transfer learning be deployed in small data scenarios?
+Q002271	M	What is one-shot learning and how does it relate to transfer learning?
+Q002272	M	Explain the differences between few-shot learning and zero-shot learning.
+Q002274	M	Discuss the concept of self-taught learning within transfer learning.
+Q002276	E	What is unsupervised learning and how does it differ from supervised learning?
+Q002289	M	What is the curse of dimensionality and how does it affect machine learning models?
+Q003961	H	Given a black box machine learning algorithm that you can't modify, how could you improve its error?
+Q003963	E	What is transfer learning?
+Q003965	E	Can you state Tom Mitchell's definition of learning and discuss T, P and E?
+Q003966	E	What are the different types of tasks encountered in Machine Learning?
+Q003967	E	What are supervised, unsupervised, semi-supervised, self-supervised, multi-instance learning, and reinforcement learning?
+Q003968	M	Loosely, how can supervised learning be converted into unsupervised learning and vice versa?
+Q003972	E	Discuss training error, test error, generalization error, overfitting, and underfitting.
+Q003973	M	Compare representational capacity vs. effective capacity of a model.
+Q003974	E	What are nonparametric models? What is nonparametric learning?
+Q003975	M	What is an ideal model? What is Bayes error? What are the sources of Bayes error?
+Q003976	E	What is the no free lunch theorem in connection to Machine Learning?
+Q004033	E	What is representation learning? Why is it useful?
+Q004034	M	What is the relation between representation learning and deep learning?
+Q004035	E	What is one-shot and zero-shot learning? Give examples.
+Q004036	H	What trade-offs does representation learning have to consider?
+Q004050	E	Describe bias and variance with examples.
+Q004053	M	Write the formulae for training error and generalization error. Point out the differences.
+Q004054	H	State the uniform convergence theorem and derive it.
+Q004055	H	What is the sample complexity bound of the uniform convergence theorem?
+Q004056	H	What is the error bound of the uniform convergence theorem?
+Q004057	M	What is the bias-variance trade-off theorem?
+Q004058	H	From the bias-variance trade-off, can you derive the bound on training set size?
+Q004059	M	What is the VC dimension?
+Q004060	H	What does the training set size depend on for a finite and an infinite hypothesis set? Compare and contrast.
+Q004061	M	What is the VC dimension for an n-dimensional linear classifier?
+Q004063	H	Considering that Empirical Risk Minimization is an NP-hard problem, how do logistic regression and SVM loss work?
+Q004065	M	How do you make a trade-off between bias and variance?
+Q004079	E	Describe the curse of dimensionality with examples.
+Q004080	H	What is local constancy or smoothness prior or regularization?
+Q004257	E	What is the difference between predictive/discriminative and generative AI models?
+Q004337	E	What is supervised machine learning?
+Q004401	E	What are the different types of machine learning techniques?
+Q004402	E	What is the difference between supervised and unsupervised learning?
+Q004403	E	What is semi-supervised learning?
+Q004404	E	What are the stages of building machine learning models?
+Q004405	M	Can you explain the bias-variance trade-off in machine learning?
+Q004406	E	What is overfitting and how do you prevent it?
+Q005196	E	What is machine learning?
+Q005197	E	What is the difference between supervised and unsupervised learning?
+Q005199	E	What is the difference between classification and regression?
+Q005200	M	Explain overfitting and underfitting. How can you prevent them?
+Q005209	M	Explain the curse of dimensionality and how to address it.
+Q005270	E	What is a generative model, and how does it differ from a discriminative model?
+Q005386	M	How do you choose the right machine learning algorithm?
+Q005402	E	Explain the bias-variance tradeoff.
+Q005454	E	Explain over- and under-fitting and how to combat them.
+Q005456	E	Can you explain the differences between supervised, unsupervised, and reinforcement learning?
+Q005457	E	What is the difference between a generative and a discriminative model?
+Q005458	E	What is the Turing test?
+Q005488	M	How do you combat the curse of dimensionality?
+Q006289	E	What are bias and variance, and what is their relation to modeling data?
+Q006302	M	What is an inductive bias?
+Q006645	E	Compare discriminative and generative models.
+Q006607	M	What is a learning curve?
+Q006651	E	What is the curse of dimensionality?
+Q006652	M	Is more data always better?
+Q007109	E	What is the difference between predictive/discriminative AI and generative AI?
+Q011949	E	Define the bias-variance trade-off and discuss the relationship between the two.
+Q011951	M	Distinguish regularization from validation: when is each the right tool?
+Q011958	M	Justify using a neural network for a given problem: what do you need to know about the network, dataset, timeline and business context?
+Q011959	M	Do 1 million Seattle ride trips suffice to build an accurate ETA prediction model? How would you decide?
+Q012020	M	Explain the bias-variance trade-off, cross-validation, and the curse of dimensionality.
+Q012585	E	What are bias and variance in a machine learning model, and explain the bias-variance trade-off.
+Q012594	E	Define and compare parametric and non-parametric models and give two examples of each.
+Q012603	E	Define the curse of dimensionality and how to solve it.
+Q012610	M	What is active learning? Discuss one strategy for it.
+Q007222	M	Explain the bias-variance tradeoff. How do you tell which one is hurting your model?
+Q007223	M	Your validation loss is much lower than your training loss. What could cause that?
+Q007225	M	How do you detect overfitting and underfitting in practice, and what do you do about each?
+Q007228	H	When would you accept some overfitting deliberately?
+Q007256	M	Define supervised, unsupervised, and self-supervised learning. Where does each stage of modern LLM training fit?
+Q007368	H	What is double descent, and how does it change the classical story about model size and overfitting?
+Q007369	H	Where does the implicit bias of SGD enter the double descent story?
+Q007370a	H	How can adding training data hurt model performance? Walk through the mechanism.
+Q007370b	H	Does double descent contradict the bias-variance decomposition, or just the classical capacity narrative?
+Q007609	H	What is grokking, and does it have any bearing on how you actually train models?
+Q007610	H	What continuous proxy metric would you watch during a fine-tune that looks plateaued?
+D03690	E	How does machine learning differ from traditional programming?
+D03691	E	What are the different types of machine learning, and how do supervised, unsupervised, semi-supervised and weakly supervised learning differ?
+D03692	M	Explain the bias-variance trade-off and how model complexity moves a model along it.
+D03693	M	How do you diagnose overfitting versus underfitting from learning curves, and what do you do about each?
+D03694	E	What is the difference between parametric and non-parametric algorithms, and give examples of each?
+D03695	M	What is the difference between linear and nonlinear algorithms in practice, and how do you choose between them?
+D03696	E	What are the stages of building a machine learning model from problem definition to deployment?
+D03697	M	Why and how do you split data into training, validation and test sets, and what is each set used for?
+D03698	M	What is cross-validation, how do you choose k in k-fold, and what are its limitations?

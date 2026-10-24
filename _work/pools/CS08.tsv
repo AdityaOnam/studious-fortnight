@@ -1,0 +1,191 @@
+Q000415	M	Explain the TLS handshake.
+Q000416	M	What is the difference between a cookie, a session and a token (JWT)?
+Q000421	M	What is the difference between an IDS and an IPS? What are the types of firewalls?
+Q000572	M	IAM user vs role: which should services use?
+Q000587	E	Explain the CIA triad.
+Q000588	E	What is the difference between encryption, hashing and encoding?
+Q000589	E	Symmetric vs asymmetric encryption: when is each used?
+Q000590	M	How does HTTPS work? Walk through the TLS handshake.
+Q000591	M	What is a digital signature? How is it different from encryption?
+Q000592	M	What is a digital certificate and why do we trust it?
+Q000593	M	Why are MD5 and SHA-1 considered broken? What should be used instead?
+Q000594	M	What is salting in password hashing? Why do it?
+Q000595	M	What is XSS? What are its types and how is it prevented?
+Q000596	E	What is SQL injection and how do you prevent it?
+Q000597	M	What is the difference between XSS and CSRF?
+Q000598	M	What is CORS? Is it a security feature?
+Q000599	M	Which security headers would you set and why?
+Q000600	E	What is the OWASP Top 10? Name several entries.
+Q000601	M	What is a DDoS attack and how is it mitigated?
+Q000602	M	What is a man-in-the-middle (MITM) attack and what stops it?
+Q000604	M	How should passwords be stored? What should password rules look like?
+Q000605	M	What is MFA? Why can SMS-based MFA be weak?
+Q000606	E	What is the difference between a virus, worm, trojan and ransomware?
+Q000607	E	What is the difference between phishing and spear phishing? How do organizations fight it?
+Q000608	M	What are the phases of penetration testing? What is the difference between red team, pentest and bug bounty?
+Q000609	E	What are CVE and CVSS?
+Q000610	M	What is the 3-2-1 backup rule and why does it matter for ransomware?
+Q000710	M	How do password managers work?
+Q000711	M	Are passkeys shaping a passwordless future?
+Q000713	M	How do digital signatures work?
+Q000716	M	How does Google Authenticator work?
+Q000717	E	What is SSO (Single Sign-On)?
+Q000773	M	Why does HTTPS switch to symmetric encryption during data transmission?
+Q000786	M	How should you store a password and salt?
+Q000787	M	How should you validate a password?
+Q000790	M	If HTTPS is safe, how can tools like Fiddler capture network packets sent via HTTPS?
+Q000791	M	How are network packets hijacked?
+Q000804	M	What can an OAuth token do?
+Q000831	M	How can you prevent SQL injection using Java PreparedStatement and CallableStatement?
+Q000832	E	What is HTTPS/SSL and why does it matter?
+Q000835	E	What are the differences between symmetric and asymmetric encryption?
+Q000853	M	What does my ISP know when I use Tor?
+Q000895	M	Describe the concept of OAuth in relation to API security.
+Q001126	E	What is cryptography, and what are its main goals?
+Q001127	E	Explain the difference between symmetric and asymmetric cryptography.
+Q001128	E	What is a cryptographic hash function, and what properties must it have?
+Q001129	M	Describe the concept of public key infrastructure (PKI).
+Q001130	M	What is a digital signature, and how does it work?
+Q001131	M	Can you explain what a nonce is and how it is used in cryptography?
+Q001132	M	What does it mean for a cryptographic algorithm to be "computationally secure"?
+Q001133	M	Describe the concept of perfect secrecy and name an encryption system that achieves it.
+Q001134	M	What are substitution and permutation in the context of encryption algorithms?
+Q001135	M	Explain the basic principle behind the AES encryption algorithm.
+Q001136	M	What is the Data Encryption Standard (DES), and why is it considered insecure today?
+Q001137	M	Describe the differences between RSA and ECC (Elliptic Curve Cryptography).
+Q001138	M	How does a stream cipher differ from a block cipher?
+Q001139	H	Can you describe the Feistel cipher structure?
+Q001140	M	What are the key differences between DES and 3DES?
+Q002291	E	What is web security, and why is it important?
+Q002292	E	What is HTTPS and how does it differ from HTTP?
+Q002294	E	What are SSL and TLS, and what role do they play in web security?
+Q002295	M	How do SSL certificates work, and what is the purpose of a Certificate Authority (CA)?
+Q002296	E	What is the difference between encryption and hashing?
+Q002297	M	Define the concept of a secure session and explain how it is established.
+Q002298	E	What are some common web security vulnerabilities?
+Q002299	M	Explain the Cross-Site Scripting (XSS) attack and how to prevent it.
+Q002301	M	What is SQL Injection and how can you defend against it?
+Q002302	M	Describe what Cross-Site Request Forgery (CSRF) is and how to prevent it.
+Q002303	M	Explain the Same-Origin Policy and its importance in web security.
+Q002304	M	What is Clickjacking, and what measures can prevent it?
+Q002305	M	How can web cookies compromise security, and how do you safeguard against these risks?
+Q002306	M	What is a Man-in-the-Middle (MitM) attack and how can it be prevented?
+Q002307	M	Describe the concept of session management in web security.
+Q002315	M	What are the security considerations when using WebSockets?
+Q002959	M	What security testing approaches are essential for REST APIs?
+Q002993	E	What is the difference between authentication and authorization?
+Q002994	M	Why is Bearer token authentication preferred over Basic authentication?
+Q002995	M	How do JWT tokens work and what are their advantages?
+Q002996	E	What is the difference between access tokens and refresh tokens?
+Q002997	M	How do you implement role-based access control in APIs?
+Q002998	M	What are OAuth 2.0 scopes and how are they used?
+Q002999	M	How should you handle token expiration in client applications?
+Q003000	M	What security considerations apply to API keys?
+Q003002	H	What is the best way to handle authorization for hierarchical resources?
+Q003003	M	API keys vs JWTs: when and why would you use each?
+Q003004	M	Which OAuth flows suit native apps vs SPAs?
+Q003005	M	How do you rotate and revoke tokens safely?
+Q003006	M	How do you secure tokens in browsers and mobile apps?
+Q003007	M	What are the pros and cons of mTLS compared to OAuth?
+Q003039	M	How does the CORS preflight work?
+Q003040	M	Why should you avoid Access-Control-Allow-Origin: * with cookies?
+Q003041	H	How do you configure CORS dynamically per tenant?
+Q003042	M	In a CORS preflight response, which headers must be echoed back?
+Q003043	M	How do you debug CORS issues in the browser?
+Q003059	M	What strategies help prevent error information disclosure vulnerabilities?
+Q003081	M	What CORS headers are needed for a cross-origin API request?
+Q003085	M	What security headers should always be included in API responses?
+Q003087	E	What is the difference between the Authorization and Authentication headers?
+Q003115	M	Compare session cookies, JWT, and OAuth 2.0; when would you choose each?
+Q003123	H	How do you implement token introspection for opaque tokens?
+Q003124	M	How do you validate a JWT on the server?
+Q003125	M	What lifetimes and storage approaches suit access tokens vs refresh tokens?
+Q003126	M	How do you implement logout with stateless JWTs?
+Q003127	M	What is the risk of alg=none in JWTs and how do you prevent it?
+Q003128	M	When should you choose opaque tokens over JWTs?
+Q003141	M	Which OAuth flow would you use for a mobile app and why?
+Q003142	M	How do PKCE and the state parameter improve OAuth security?
+Q003143	M	Token introspection vs JWT validation: what are the differences?
+Q003144	M	How do you design granular OAuth scopes?
+Q003145	H	How would you revoke tokens across microservices?
+Q003155	M	What are the security considerations for pagination?
+Q003166	M	How do you protect login endpoints specifically?
+Q003173	M	How do you secure and authenticate real-time connections?
+Q003196	M	How do you secure SOAP vs REST vs GraphQL endpoints?
+Q003214	M	How do you secure complex query parsing in an API?
+Q003216	M	What are the essential security headers for REST APIs and their purposes?
+Q003217	M	How do you implement proper authentication vs authorization in REST APIs?
+Q003218	M	What is the difference between symmetric and asymmetric encryption in API security?
+Q003220	M	What are the security considerations for API versioning?
+Q003222	M	What is the OWASP API Security Top 10 and how do you address these risks?
+Q003224	M	What are the security implications of CORS and how do you configure it safely?
+Q003228	M	What is the difference between stateful and stateless authentication?
+Q003244	M	What security considerations apply to URL design?
+Q003247	M	How do you secure webhooks?
+Q003515	E	Why do both the front end and the back end need to perform data validation?
+Q003516	M	Why can a forgotten password only be reset and not retrieved in its original form?
+Q003676	M	How is the session key material derived in an RSA handshake versus an ECDHE handshake?
+Q003677	M	Why did TLS 1.3 remove static RSA key exchange?
+Q003679	M	How do attacks such as IP spoofing, SYN flood, and DDoS work?
+Q003680	M	What is the principle behind a TCP SYN flood attack?
+Q003941	E	What is the difference between a session and a token?
+Q003934	M	How do you log out when using JWT?
+Q003935	E	What is the difference between authentication and authorization?
+Q003938	M	Why does cookie-based authentication need more attention to CSRF?
+Q003939	M	How do you perform authentication with JWT? How do you prevent a JWT from being tampered with?
+Q003940	M	What is the difference between parsing a JWT and validating a JWT?
+Q006354	E	What is SQL injection?
+Q006505	M	How does OAuth 2.0 work?
+Q006506	E	Why is it called an SSL certificate if SSL is deprecated?
+Q006507	E	Why was SSL so important?
+Q012476	M	How do databases store passwords securely?
+D01098	E	What is cross-site scripting, and how do stored, reflected and DOM-based XSS differ?
+D01099	M	How do you defend against XSS: output encoding, CSP, HttpOnly cookies and input validation?
+D01100	M	What is a CSRF attack and why does it work even though the attacker cannot read the response?
+D01101	M	How do CSRF tokens, SameSite cookies and Origin checks each prevent CSRF?
+D01102	E	What is SQL injection and how do prepared statements prevent it?
+D01103	M	Why is escaping input a weaker defense than parameterized queries against SQL injection?
+D01104	M	What is blind SQL injection and how can attackers extract data without seeing query results?
+D01105	M	What is a denial-of-service attack, how does DDoS differ, and what layers of defense can mitigate volumetric and application-layer attacks?
+D01106	M	How does HTTPS authenticate a server using certificates and certificate authorities?
+D01107	M	What does HTTPS provide in terms of confidentiality, authentication and integrity, and how is integrity protected?
+D01108	M	What is a man-in-the-middle attack and how does certificate validation or pinning defend against it?
+D01109	M	What is the same-origin policy and how does CORS relax it safely?
+D01110	M	What is the difference between hashing, encryption and encoding, and when should each be used?
+D01111	M	How should a web application store user passwords and why are salts and slow hash functions important?
+D01112	M	What are the trade-offs between server-side sessions and stateless tokens such as JWT for authentication?
+D01113	M	How can session fixation and session hijacking happen, and how do you prevent them?
+D01114	H	How would you secure a login endpoint against brute force, credential stuffing and enumeration of valid accounts?
+D01615	M	What is the CORS mechanism and why does the browser enforce the same-origin policy?
+D01685	E	What is SQL injection and how does an attacker exploit it?
+D01686	M	How do prepared statements and parameterized queries prevent SQL injection?
+D01687	M	What defense-in-depth measures besides parameterization reduce SQL injection risk (least privilege, input validation, ORM usage)?
+D01688	E	What is Cross-Site Scripting (XSS) and what are reflected, stored and DOM-based variants?
+D01689	M	How do you prevent XSS using output encoding, CSP and HttpOnly cookies?
+D01690	E	What is Cross-Site Request Forgery (CSRF) and why does it work?
+D01691	M	How do CSRF tokens and SameSite cookies defend against CSRF?
+D01692	M	How do CSRF and XSS differ in terms of what trust they exploit?
+D01693	E	How do symmetric and asymmetric encryption differ, and what are the strengths and weaknesses of each?
+D01694	M	How does a hybrid scheme combine public-key and symmetric encryption for key exchange?
+D01695	M	How do digital signatures work and what do they guarantee?
+D01696	M	What is a certificate authority and how does the chain of trust work?
+D01697	E	What is a JWT and what are its three parts?
+D01698	M	How does the signature of a JWT prevent tampering, and why should sensitive data not be placed in the payload?
+D01699	M	How do access and refresh tokens work together, and why is the access token short-lived?
+D01700	M	What are the drawbacks of stateless JWT authentication, such as revocation and token theft, and how can they be mitigated?
+D01701	M	Compare session-based and token-based authentication.
+D01702	M	What are the weaknesses of API key authentication?
+D01703	E	What is OAuth 2.0 and what problem does it solve?
+D01704	M	Walk through the OAuth 2.0 authorization code flow and the roles of resource owner, client, authorization server and resource server.
+D01705	M	What is the difference between authentication and authorization, and how does OAuth differ from OpenID Connect?
+D01706	M	What does secure coding mean, and what common vulnerabilities (injection, broken authentication, sensitive data exposure) should developers guard against?
+D01707	M	How should user passwords be stored securely, and why use salted slow hashes instead of encryption?
+D01848	M	How does a filter-chain-based authentication and authorization framework process a request?
+D01849	M	Compare role-based and permission-based access control.
+D01850	M	How would you implement social login with a third-party identity provider and what are the security considerations?
+D01987	M	Explain the SYN flood attack. How do SYN cookies and backlog tuning mitigate it?
+D01988	M	How do UDP flood, HTTP flood and DNS flood attacks work, and how do you defend against each?
+D01989	M	What is IP spoofing and why does it enable reflection and amplification attacks?
+D01990	M	What is a TCP reset attack and how can an attacker forge a RST packet?
+D01991	M	How does a man-in-the-middle attack work and how do HTTPS and certificate validation prevent it?
+D01992	H	How would you design a layered defence against a large DDoS attack on a public web service?

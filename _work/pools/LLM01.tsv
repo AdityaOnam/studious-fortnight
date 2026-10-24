@@ -1,0 +1,283 @@
+Q001005	M	How do transformers, the architecture behind ChatGPT, work?
+Q001011	M	Explain the concept of attention mechanisms in GPT models.
+Q001268	M	How does a Transformer architecture function, and in what context is it typically used?
+Q001650	M	Describe the architecture of a transformer model that is commonly used in LLMs.
+Q001652	M	Can you explain the concept of attention mechanisms in transformer models?
+Q001657	M	What is the role of transformers in achieving parallelization in LLMs?
+Q003327	M	What is the computational complexity of self-attention in the Transformer model?
+Q003328	M	How do Transformer models address the vanishing gradient problem?
+Q003342	E	What is the role of self-attention in the Transformer model, and why is it called "self-attention"?
+Q003343	E	What is the purpose of the encoder in a transformer model?
+Q003344	E	What is the purpose of the decoder in a transformer model?
+Q003345	M	How does the encoder-decoder structure work at a high level in the Transformer model?
+Q003346	M	What is the purpose of scaling in the self-attention mechanism in the Transformer model?
+Q003347	M	Why does the Transformer model use multiple self-attention heads instead of a single self-attention head?
+Q003348	M	How are the outputs of multiple heads combined and projected back in multi-head attention in the Transformer model?
+Q003349	M	How does masked self-attention differ from regular self-attention, and where is it used in a Transformer?
+Q003351	M	What is cross-attention in the Transformer decoder, and how does it differ from self-attention in the encoder?
+Q003352	E	What is the softmax function, and where is it applied in the Transformer model?
+Q003353	E	What is the purpose of residual (skip) connections in Transformer model layers?
+Q003354	E	Why is layer normalization used, and where is it applied in a Transformer?
+Q003356	M	What are the fundamental limitations of the Transformer model?
+Q003357	M	How do transformers address the limitations of traditional deep learning models like CNNs and RNNs?
+Q003358	M	How does the Transformer model address the vanishing gradient problem?
+Q003359	M	What is the purpose of the position-wise feed-forward sublayer in the Transformer model?
+Q003484	E	What is the functional difference between an encoder and a decoder in the Transformer?
+Q004318	M	Explain the concept of attention (and self-attention) in LLMs.
+Q004320	M	What are the disadvantages of the self-attention mechanism in LLMs?
+Q004321	M	What is the difference between encoder, decoder, and encoder-decoder architectures in LLMs?
+Q004422a	M	Walk through a transformer block.
+Q004424	M	Compare MHA, MQA, and GQA. Why did Llama adopt GQA?
+Q004653	M	What is the Transformer architecture and how does it work?
+Q004654	E	What are the key components of the Transformer architecture?
+Q004655	H	Walk me through what happens, step by step, in one forward pass of a decoder-only Transformer.
+Q004660	E	Explain the Query (Q), Key (K), and Value (V) in attention.
+Q004661	E	What is self-attention, and how does it work in Transformers?
+Q004662	M	What is cross attention in Transformers?
+Q004663	M	Why do we scale the dot product attention by sqrt(d_k) in the Transformer architecture?
+Q004664	E	What is causal masking?
+Q004665	M	What is multi-head attention? Why use multiple attention heads?
+Q004666	E	What are feed-forward networks in LLMs?
+Q004677	E	What are skip connections (residual connections) in Transformers?
+Q004686	M	What is Flash Attention?
+Q004689	M	How does Sliding Window Attention work?
+Q004690	H	How do attention sinks work?
+Q004692	M	Explain RMSNorm (Root Mean Square Layer Normalization).
+Q004693	M	Why do modern Transformers use Pre-LayerNorm (Pre-Norm) instead of Post-LayerNorm?
+Q005291	M	What is the Transformer architecture, and what makes it different from CNNs and RNNs?
+Q005292	E	What is the attention mechanism in deep learning, and why is it significant?
+Q005293	M	What is the basic difference between LSTM and Transformers?
+Q005297	M	What are the advantages of Transformers over traditional sequence-to-sequence models?
+Q005298	M	What are the limitations of Transformers, and how can they be addressed?
+Q005299	M	What is BERT, and how does it improve language understanding?
+Q005325	M	What does each Transformer block learn?
+Q005331	M	How does the Transformer architecture improve LLM performance over RNNs?
+Q005332	M	How does attention help capture long-range dependencies?
+Q005341	M	Why does attention use softmax?
+Q005928	M	Is FlashAttention compatible with ALiBi?
+Q005960	M	What are the differences between MHA, MQA, and GQA, and why do inference systems commonly use GQA?
+Q005961	M	What does the feed-forward network (FFN) do in a Transformer, and why is SwiGLU so common?
+Q005962	M	How are Pre-Norm, Post-Norm, and RMSNorm related?
+Q005963	M	Why does FlashAttention speed up attention computation, and what are its core optimization strategies?
+Q005965	M	How does the gating mechanism of SwiGLU and GLU differ from a standard FFN with ReLU/GELU?
+Q005966	M	What is Multi-head Latent Attention (MLA), and why did DeepSeek-V3 use it instead of GQA?
+Q005970	M	How do LayerNorm and RMSNorm differ, and why do modern LLMs mostly use RMSNorm?
+Q005972	M	What are the engineering implementation details of cross-attention, and why does it connect the encoder and decoder?
+Q005973	H	What is attention sink, and why does gated attention mitigate it?
+Q005974	M	What is linear attention, and how does it fundamentally differ from standard self-attention?
+Q006809	M	Why do we divide by √d_k in scaled dot-product attention? Give the exact variance argument.
+Q006938c	M	How does FlashAttention reduce memory usage?
+Q006962	M	A teammate removes the 1/√d_k scaling from a custom attention to "simplify," and now training loss plateaus immediately with tiny gradients. What is the best diagnosis?
+Q006963	M	Why use 12 heads of d_head=64 rather than one head of d=768, given identical FLOPs?
+Q006964	M	Your from-scratch transformer compiles and runs but never learns; the attention weights look nearly uniform and loss is flat. Which bug is most consistent with this?
+Q006965	M	Going from a 2k to a 16k context, your single-GPU prefill latency and memory grow far more than 8x. What does the senior answer name?
+Q006966	M	What makes it possible inside attention for a model to generate text left-to-right while being trained efficiently on all positions at once?
+Q006972	M	If you shuffle the order of tokens in a prompt and positional encoding is removed, the attention scores are unchanged. What property does this demonstrate?
+Q006973	H	You scale a from-scratch decoder from 12 to 48 layers using post-norm and no warm-up; loss spikes and diverges in the first few hundred steps. What is the fastest principled fix?
+Q006974	M	Why does an LLM use LayerNorm/RMSNorm rather than BatchNorm, given BatchNorm's success in CNNs?
+Q006976	M	In a Llama-style model most FLOPs are not in attention. Where are they, and what is the modern variant of that component?
+Q006977	M	Post-norm sometimes reaches a lower final loss, so why does everyone ship pre-norm?
+Q006978	E	In a pre-norm transformer block, which tensor is carried forward on the residual stream to the next sublayer?
+Q006984	H	At 8k+ context attention is the latency bottleneck on an A100 and you are running a hand-written three-loop attention kernel. What is the highest-impact change, and why is it safe?
+Q006985	M	You deploy a single-layer sliding-window attention model and users report it can answer about recent text but fails whenever the needed fact is far earlier in a long document. What is the best explanation?
+Q006988	M	Tracing a forward pass, what does the (B, n_head, T, T) attention tensor imply at scale?
+Q006991	H	Why do open-weight models almost always ship GQA while a frontier lab might train MHA at the same size?
+Q007169	M	Can you provide a detailed explanation of the concept of self-attention?
+Q007170	H	Explain the disadvantages of the self-attention mechanism and how you can overcome them.
+Q007172	M	Explain the Transformer architecture in detail.
+Q007173	M	What are some of the advantages of using a transformer instead of an LSTM?
+Q007174	M	What is the difference between local attention and global attention?
+Q007175	H	What makes transformers heavy on computation and memory, and how can we address this?
+Q007219	H	Explain the dimensions of each layer in a multi-head attention block of a transformer.
+Q007220	H	How do you make sure that an attention layer focuses on the right part of the input?
+Q011190	M	Explain why transformer attention is O(n²) and what alternatives exist.
+Q011195	M	Why do modern LLMs use Pre-LN instead of Post-LN?
+Q011196	M	What is the difference between MHA, MQA, and GQA?
+Q011204	M	Why do we scale by the square root of d_k in scaled dot-product attention?
+Q011206	M	Explain the attention mechanism and why it scales quadratically.
+Q011209	H	How does Flash Attention achieve O(n) memory?
+Q011211	M	Walk me through the forward pass of a transformer.
+Q011216	M	Explain GQA and why it matters for serving.
+Q011784	M	Explain scaled dot-product attention and why the 1/sqrt(d_k) scaling factor matters.
+Q011786	M	What are Multi-Query Attention (MQA) and Grouped-Query Attention (GQA), and what do they trade away?
+Q011787	H	What is Multi-head Latent Attention (MLA) and why did DeepSeek introduce it?
+Q011788	H	Explain FlashAttention. It does not reduce FLOPs, so why is it faster?
+Q011797	M	Why is LayerNorm placed pre-block in modern transformers, and what is RMSNorm?
+Q011798	H	Explain SwiGLU and why gated activations replaced ReLU/GELU in modern LLM MLP blocks.
+Q011799	H	Walk me through what happens, tensor by tensor, in one forward pass of a decoder-only transformer.
+Q011901	E	What are the key components of a Transformer model and why does each matter?
+Q011903	M	Walk me through the matrix manipulations relevant to LLM architectures.
+Q011930	M	Explain self-attention. What is its computational complexity, and what are your options when contexts get long?
+Q012022a	E	What is Attention in machine learning models?
+Q012508	M	What is the difference between self-attention and target-attention?
+Q012512	M	Describe the computation formula of an FFN block that uses a GLU (gated linear unit).
+Q012513	M	Describe the computation formula of a GLU block that uses GeLU.
+Q012514	M	Describe the computation formula of a GLU block that uses Swish.
+Q012515	M	Why does attention use scaled dot-product rather than plain dot-product?
+Q012559	E	What is a transformer architecture, and why is it widely used in natural language processing tasks?
+Q012560	E	Explain the key components of a transformer model.
+Q012561	M	How does the attention mechanism help transformers capture long-range dependencies in sequences?
+Q012562	M	What are the limitations of transformers, and what are some potential solutions?
+Q012564	E	What is BERT (Bidirectional Encoder Representations from Transformers), and how does it improve language understanding tasks?
+Q007267	H	If the KV cache makes decoding recurrent anyway, where does the transformer's advantage over RNNs actually show up?
+Q007273	H	Why does SwiGLU usually use a hidden size of about 8/3 × d instead of 4 × d?
+Q007307	H	Why do pre-norm transformers tolerate less warmup than post-norm transformers?
+Q007313	H	Why does batch norm generally underperform layer norm even in encoder-only transformers, where autoregressive decoding isn't an issue?
+Q007314	M	What does RMSNorm remove compared with LayerNorm, and why is that OK?
+Q007319	M	Why does attention divide by √d_k, and what happens without it?
+Q007382	H	Sliding-window attention reintroduces locality as an inductive bias. Does that make it strictly worse than full attention on quality, and how would you measure it?
+Q007383	M	Why is permutation equivariance a problem for attention but not for convolution?
+Q007405	E	Why did transformers replace RNNs and LSTMs for language modeling?
+Q007406	M	What inference-time cost do transformers pay that RNNs don't?
+Q007407	M	Why does causal masking make training so sample-efficient per forward pass?
+Q007409	M	Walk me through what happens inside a single transformer decoder block.
+Q007410	M	Roughly what fraction of a transformer block's parameters are in the MLP vs attention?
+Q007411	M	Why do residual connections matter more as depth grows?
+Q007413	E	Explain self-attention step by step. What exactly are Q, K, and V?
+Q007415	M	What is the computational complexity of computing the attention score matrix in self-attention, and what does that imply for long contexts?
+Q007418	M	What is QK-norm and why did some recent models adopt it?
+Q007419	H	What happens to gradients when softmax saturates? Walk me through the Jacobian.
+Q007420	H	Would you expect attention scaling issues to be worse with larger or smaller head dimensions?
+Q007421	M	What is causal masking, why is it needed, and how is it implemented?
+Q007422	M	Why does the attention mask go before the softmax rather than after?
+Q007423	M	What is a prefix LM and when is bidirectional prompt attention useful?
+Q007424	H	How does FlashAttention exploit the causal structure for speed?
+Q007425	M	Why does the transformer use multiple attention heads instead of one large one?
+Q007426	H	What is an induction head and why does it matter for in-context learning?
+Q007427	H	If many attention heads are redundant, what architectural optimisations does that motivate?
+Q007428	M	Does multi-head attention cost more FLOPs than single-head attention at equal d_model?
+Q007429	M	Compare encoder-only, decoder-only, and encoder-decoder architectures. What is each used for?
+Q007430	M	Why do embedding models still use bidirectional attention?
+Q007457	M	What does the feed-forward network in a transformer block actually do, and why is SwiGLU the default now?
+Q007458	H	Where does the FFN stop dominating FLOPs and attention take over?
+Q007472	M	Pre-norm vs post-norm: what is the difference and why did everyone move to pre-norm? And why RMSNorm?
+Q007473	H	Why does warmup interact with post-norm?
+Q007475	M	Beyond the two block positions (pre-norm and post-norm), where else do norms appear in modern transformer architectures (for example QK-norm, final norm)?
+Q007491	M	Attention is O(n²) in sequence length. Where does that actually bite in practice: prefill or decode?
+Q007493	M	What does sliding-window attention give up?
+Q007494	H	Why doesn't FlashAttention change the asymptotic FLOP complexity of attention?
+Q007495	M	Explain FlashAttention's core idea. What does it optimise, and what doesn't it change?
+Q007496	H	Walk me through the online softmax rescaling in FlashAttention. Why is recomputation faster than storing the attention matrix?
+Q007497	M	How does FlashAttention interact with causal masking?
+Q007510	M	What are MQA and GQA, and why do they exist?
+Q007512	H	How does the GQA uptraining recipe work?
+Q007513	H	What does multi-head latent attention (MLA) do differently from MQA and GQA?
+Q007532	H	Would you expect attention sinks in an encoder-only model?
+Q007533	M	Explain sliding-window attention and hybrid local/global attention stacks. What do you gain and what do you give up?
+Q007534	H	How would you choose the local-to-global attention ratio for a code model versus a chat model?
+Q007536	H	What is Multi-head Latent Attention, and how is it actually different from GQA?
+Q007561	H	What are attention sinks, and how do they connect to the lost-in-the-middle problem?
+Q007599	H	How does GQA change the parameter and bandwidth budgets differently?
+Q008157	H	How do FlashAttention varlen kernels avoid materializing the block-diagonal mask for packed sequences?
+Q008581	M	What does FlashAttention actually do, and how is it different from PagedAttention?
+Q009190a	M	Why did transformers displace RNNs for language modelling?
+Q009459	H	Explain Multi-head Latent Attention (MLA). What problem does it solve and what does it cost?
+Q009461	H	How does Multi-head Latent Attention interact with tensor parallelism across the head dimension?
+Q009616	M	Where does dropout conventionally go in a multi-head attention implementation, and why?
+Q009617	M	How do you modify multi-head attention for grouped-query attention? What changes and what does it buy at inference?
+Q009816	H	Mistral 7B shipped with grouped-query attention and sliding-window attention. What does each buy you, and what does each cost?
+Q009856	H	In Multi-head Latent Attention (MLA), why does RoPE complicate the low-rank factorisation, and how is that usually resolved?
+Q009857	M	In what regime would plain GQA still be the pragmatic choice over MLA?
+Q009930	M	Explain self-attention. What is its computational complexity, and what are your options when contexts get long?
+Q009931	M	Why is the dot product divided by √d_k in scaled dot-product attention?
+Q009932	M	Why is LayerNorm used rather than BatchNorm in transformers?
+Q010174	H	What does FlashAttention actually optimize? It doesn't reduce FLOPs, so why is it faster?
+Q010175	H	Why does the FlashAttention backward pass recompute attention instead of caching it?
+Q010301	H	When using top-k sparse attention, how would you choose the top-k budget, and what symptom tells you it is too small?
+Q010302	H	Where would you place sparse-attention layers in a hybrid sparse/dense attention stack, and how would you test that choice?
+D00001	E	Why does self-attention scale quadratically with sequence length, and which part of the computation causes it?
+D00002	M	What alternatives to full attention exist for long sequences, and what does each give up?
+D00003	E	Why is the dot product of queries and keys divided by the square root of the key dimension?
+D00004	M	What would happen to the softmax distribution and gradients if you removed the scaling factor in scaled dot-product attention?
+D00005	E	Explain the roles of queries, keys and values in attention and why separate projections are used for each.
+D00006	M	Why do transformers use multiple attention heads instead of one large head of the same total dimension?
+D00007	M	How does a causal mask work in a decoder-only model, and why must it be applied before the softmax?
+D00008	M	Compare multi-head, multi-query and grouped-query attention in terms of quality, KV cache size and decode speed.
+D00009	M	Why has the industry moved from multi-head attention to grouped-query attention for most large models?
+D00010	H	How would you convert an existing multi-head attention checkpoint into a grouped-query attention model with minimal retraining?
+D00011	M	What problem does multi-head latent attention solve, and how does it differ from grouped-query attention?
+D00012	M	Why is standard attention memory-bound rather than compute-bound on modern GPUs?
+D00013	M	Explain how FlashAttention reduces memory traffic without changing the mathematical result of attention.
+D00014	H	Walk through the online softmax trick used inside FlashAttention and why tiling is possible.
+D00015	M	What does FlashAttention-2 change in work partitioning compared to the first version, and why does it help?
+D00016	H	Why do newer FlashAttention versions depend on specific GPU generations, and how does low-precision FP8 attention affect accuracy?
+D00017	M	How does sliding window attention reduce cost, and how can information still propagate beyond the window?
+D00018	M	Compare sparse attention and linear attention approximations. Why have they not fully replaced softmax attention?
+D00019	H	What is an attention sink, and why do streaming-inference methods keep the first few tokens in cache?
+D00020	M	Why do modern LLMs use pre-layer-norm instead of post-layer-norm, and what training behavior does each produce?
+D00021	M	What is RMSNorm, how does it differ from LayerNorm, and why do most recent LLMs use it?
+D00022	M	What is the role of the feed-forward network in a transformer block, and roughly what fraction of parameters does it hold?
+D00023	M	Explain gated feed-forward variants such as SwiGLU and why they are preferred over ReLU or GELU MLPs.
+D00024	M	Why do residual connections allow very deep transformers to train, and what is the gradient-flow argument?
+D00025	E	Walk me through a full forward pass of a decoder-only transformer from token IDs to next-token probabilities.
+D00026	M	What changed architecturally between GPT-2 and Llama-style models?
+D00027	M	What are the trade-offs of tying the input embedding matrix to the output projection?
+D00028	M	How does cross-attention differ from self-attention, and where does it appear in encoder-decoder models?
+D00029	M	Contrast BERT, GPT and T5 in terms of architecture, pretraining objective and typical use cases.
+D00030	M	Why did decoder-only models win over encoder-decoder models for general-purpose LLMs, and where do encoder-decoder models still make sense?
+D00031	M	For a given model, how do the compute shares of attention and the feed-forward layers change as sequence length grows?
+D00032	H	How would you estimate FLOPs and activation memory for one transformer layer given batch size, sequence length and hidden size?
+D00033	M	What are the typical stages of a transformer pretraining loss curve, and how would you diagnose a plateau or spike?
+D00034	M	What is a state-space model such as Mamba, and why are hybrid SSM-transformer models appealing?
+D00035	M	Why does the token embedding layer often need special treatment during training and fine-tuning?
+D03749	M	Walk through a transformer block and explain why attention scores are divided by the square root of the key dimension.
+D03750	M	Compare multi-head, multi-query, grouped-query and multi-head latent attention in memory and throughput.
+D03751	M	Why did recent LLMs adopt grouped-query attention?
+D03752	M	What is FlashAttention and why does it make long-context training practical?
+D03753	M	Compare pre-norm and post-norm transformers and explain why RMSNorm and SwiGLU are common in modern LLMs.
+D04447	H	Explain the low-rank argument for why bidirectional attention may limit the expressiveness of an encoder-style model compared with causal attention.
+D04490	M	Write the formula for the Transformer FFN block and explain what role the FFN plays beyond attention.
+D04491	M	Why do SwiGLU and GeGLU feed-forward blocks use three weight matrices, and how is the hidden dimension adjusted to keep parameter count comparable?
+D04492	M	What empirical evidence supports gated FFN variants over ReLU FFNs in LLMs?
+D04493	E	Describe the scaled dot-product attention computation step by step, including shapes of Q, K, V and the output.
+D04494	M	Why is the dot product scaled by the square root of d_k? What goes wrong in the softmax gradient if it is not?
+D04495	M	Why does the variance of the dot product grow with dimension, and how does that tie to softmax saturation?
+D04496	M	Why does self-attention use separate Q, K, V projections rather than comparing raw embeddings directly?
+D04497	M	Why is multi-head attention used instead of a single large attention head? What does each head learn?
+D04498	M	How does the total compute of multi-head attention compare to single-head attention with the same model dimension?
+D04499	M	What is the time and memory complexity of self-attention with respect to sequence length, and where does the bottleneck lie in practice?
+D04500	E	Explain what each module in a Transformer encoder and decoder does, including Add and Norm.
+D04501	M	What is fed into the Transformer decoder during training versus inference, and what is teacher forcing?
+D04502	M	How does masked self-attention in the decoder prevent information leakage, and how is the mask applied numerically?
+D04503	M	How does cross-attention in an encoder-decoder Transformer differ from self-attention, and where do Q, K and V come from?
+D04504	M	Why can a Transformer encoder be fully parallelized across positions while the decoder is only parallel during training?
+D04505	M	Why did the Transformer replace RNN-based seq2seq models? Discuss the two main limitations of seq2seq.
+D04506	M	Compare Transformers and RNNs for feature extraction in terms of path length between distant tokens and parallel computation.
+D04507	M	What is the role of residual connections in a Transformer and what happens to training without them?
+D04508	M	Compare batch norm, layer norm, instance norm and group norm. Why is layer norm used in Transformers?
+D04509	M	Contrast Post-LN and Pre-LN Transformers in terms of gradient flow, warmup requirements and final performance.
+D04510	M	What is RMSNorm, how does it differ from LayerNorm, and why do recent LLMs adopt it?
+D04511	H	Why does Post-LN often require learning-rate warmup while Pre-LN does not? Explain through the scale of gradients near the output layer.
+D04512	M	What is DeepNorm or similar and why might very deep Transformers need a modified residual scaling?
+D04513	M	Where does the non-linearity in a Transformer block come from?
+D04514	E	Explain Multi-Query Attention and Grouped-Query Attention. How do they differ from multi-head attention?
+D04515	M	How do MQA and GQA change KV-cache size and memory bandwidth during decoding, and what quality cost do they carry?
+D04516	M	How would you convert an existing multi-head checkpoint into a GQA model (uptraining), and what is mean-pooling of KV heads?
+D04517	H	Given n_heads=32 and n_kv_heads=8, compute the KV cache per token per layer and explain how query heads share K/V in the attention kernel.
+D04518	M	What is FlashAttention and why is it faster than standard attention even though FLOPs are unchanged?
+D04519	H	Explain tiling and online softmax in FlashAttention and how the backward pass avoids storing the full attention matrix.
+D04520	M	What does IO-awareness mean for GPU kernels, and how do HBM and SRAM hierarchy shape attention implementation?
+D04521	M	What are sparse, sliding-window and linear attention variants, and what accuracy trade-offs do they make?
+D04522	E	What are the two pretraining tasks in BERT, and what does each teach the model?
+D04525	M	What is the purpose of the [CLS] token in BERT and how is its output used for classification?
+D04527	M	How does BERT distinguish different senses of a polysemous word?
+D04528	M	Why is ELMo called shallowly bidirectional while BERT is deeply bidirectional?
+D04529	M	What are the differences between BERT and the original Transformer encoder?
+D04530	M	How do you process documents longer than BERT's 512-token limit during fine-tuning and inference?
+D04531	M	What are the strengths and limitations of BERT, such as the pretrain-finetune mismatch and the independence assumption among masked tokens?
+D04532	M	What improvements did RoBERTa make over BERT (dynamic masking, no NSP, more data), and why do they matter?
+D04533	M	How does ALBERT reduce parameters (factorized embedding, cross-layer sharing) and why replace NSP with sentence-order prediction?
+D04534	M	What does SpanBERT change in the masking strategy and training objective, and which tasks benefit?
+D04535	M	Compare autoregressive and autoencoding pretraining. How does XLNet's permutation language model try to combine them?
+D04540	M	Why does LLaMA apply normalization on the input of each sub-layer rather than the output?
+D04600	M	Why is the Transformer's lack of recurrence both a strength and a weakness for modelling very long sequences?
+D04601	M	What are the differences between BERT, GPT and T5 pretraining and when would you use each for downstream tasks?
+D04602	M	Explain how softmax saturation affects gradients in attention and how scaling mitigates it.
+D04899	M	If you double the sequence length, how do the attention FLOPs and the activation memory change in standard and FlashAttention?
+D04900	M	Explain why decoding with a KV cache costs O(n) per step in attention while recomputation costs O(n squared).
+D04901	M	Count the parameters of a decoder-only Transformer given vocabulary size, hidden size, number of layers and FFN expansion.
+D04902	M	Why is the FFN intermediate dimension typically 4x the hidden size, and why does SwiGLU use about 8/3x?
+D04903	M	Why are embeddings sometimes tied between input and output layers, and what are the benefits and risks?
+D04904	M	How are attention heads typically distributed across hidden dimension, and what happens to representational capacity if head dimension is too small?
+D04905	M	What are attention sinks and why do streaming LLMs keep the first few tokens in the cache?
+D04906	M	How does sliding-window attention enlarge the effective receptive field across stacked layers?

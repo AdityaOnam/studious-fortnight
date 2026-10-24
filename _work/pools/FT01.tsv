@@ -1,0 +1,190 @@
+Q001007	E	Explain the significance of fine-tuning in language models.
+Q001015	M	How can you fine-tune a pre-trained model like GPT-3 for a specific task?
+Q001660	M	Can you mention any domain-specific adaptations of LLMs?
+Q002270	M	Describe the process of fine-tuning a pre-trained neural network.
+Q003335	M	What is gradient accumulation, and how does it help with fine-tuning large models?
+Q003336	M	What are the possible options to speed up LLM fine-tuning?
+Q003397	E	What are the different types of LLM fine-tuning?
+Q003398	E	What role does instruction tuning play in improving an LLM's usability?
+Q003400	M	How do you prevent overfitting during fine-tuning?
+Q003401	M	What is catastrophic forgetting, and why is it a concern in fine-tuning?
+Q003402	M	What are the strengths and limitations of full fine-tuning?
+Q004527	M	How do you fine-tune a pretrained model?
+Q004838	E	What is fine-tuning, and when should you fine-tune an LLM?
+Q004842	E	How does fine-tuning work?
+Q004849	E	What is instruction tuning, and why is it important for chat models?
+Q004850	M	How do you prepare a dataset for fine-tuning an LLM?
+Q004851	M	What is catastrophic forgetting, and how do you prevent it during fine-tuning?
+Q004853	M	How do you evaluate a fine-tuned model's performance?
+Q004855	M	What are the key hyperparameters for fine-tuning (learning rate, epochs, batch size, LoRA rank)?
+Q004857	M	How do you fine-tune a model for a specific domain (legal, medical, finance)?
+Q004858	M	What is continual pre-training, and when would you use it?
+Q004865	M	Your fine-tuned LLM produces factually wrong outputs due to training data quality issues. How do you fix it?
+Q004867	M	Your fine-tuned model memorized training data verbatim instead of learning patterns. How do you fix overfitting?
+Q004868	M	Your fine-tuned LLM forgot its general capabilities after domain-specific fine-tuning. How do you fix catastrophic forgetting?
+Q005301	M	Explain transfer learning in the context of Transformers.
+Q005326	E	What is pre-training vs fine-tuning in LLMs?
+Q006005	M	What is training data packing, and why must attention masks and loss masks be handled correctly?
+Q006818	M	How do you evaluate a fine-tuned model?
+Q006903	M	Your fine-tune lifted task accuracy on support tickets but MMLU dropped 6 points. What does a senior engineer do?
+Q006905	H	You have 2M scraped instruction pairs, and a competitor shipped a strong model trained on about 8k curated ones. Where do you start?
+Q006906	M	Your synthetic SFT set scores great on your in-distribution eval but the model is brittle on slightly unusual real queries. What is the most likely cause?
+Q006907	M	After a fine-tune the model sometimes never stops generating, or echoes the prompt back, even though the data and loss curve looked fine. What is the first thing to check?
+Q006908	M	Two expert annotators persistently disagree on about 12% of your legal SFT labels. What is the senior move?
+Q006926	M	You have 50k support tickets. What is the strongest data move before fine-tuning a 7B model?
+Q006927	M	How do you prove the fine-tune got better, not just different?
+Q007180	E	What is fine-tuning, and why is it needed?
+Q007181	M	In which scenarios do we need to fine-tune an LLM?
+Q007183	H	How do you improve a model so that it answers only if there is sufficient context to do so?
+Q007184	M	How do you create fine-tuning datasets for Q&A?
+Q007185	M	How do you set hyperparameters for fine-tuning?
+Q007189	E	What is catastrophic forgetting in LLMs?
+Q011270	M	Why use continued pretraining instead of just putting domain data in the SFT set?
+Q011271	M	How do you prevent a model from "unlearning" general capabilities during fine-tuning?
+Q011794	M	Explain the difference between pre-training, supervised fine-tuning and preference optimisation.
+Q011843	M	What is catastrophic forgetting and how do you mitigate it during fine-tuning?
+Q011964	H	Walk me through a post-training recipe to turn a pretrained base model into a personalised assistant.
+Q011976	M	After fine-tuning on a customer's task, target accuracy is up but the model got worse at everything else. What happened and what do you do?
+Q011997	H	A model unifies a thinking mode and a non-thinking mode with a caller-settable thinking budget. How would you train that, and how would you serve it?
+Q012373	E	What is fine-tuning in the context of LLMs, and why is it performed instead of just using the base pre-trained model with prompting?
+Q012378	M	What is catastrophic forgetting, and how can it be mitigated during fine-tuning?
+Q012381	M	What are some common challenges encountered when fine-tuning LLMs?
+Q012382	M	How do you evaluate the performance of a fine-tuned LLM?
+Q012383	E	What frameworks or libraries are used for LLM fine-tuning?
+Q012407	E	What comes after the pretraining phase of an LLM, and why is it necessary?
+Q012521	M	For domain-model continued pretraining, how can you make the model learn more knowledge during pretraining?
+Q012522	M	What are the requirements for the instruction and data input format when fine-tuning a domain model?
+Q012567	M	Explain the concept of transfer learning and how it can be applied to transformers.
+Q012496	M	How does fine-tuning work?
+Q007227	M	Your SFT loss is decreasing nicely but users say the model got worse. What happened?
+Q007270b	H	How do you decide whether to feed an embedding into a gradient-boosted tree model versus fine-tuning the encoder end to end?
+Q007334	M	You're adapting a pretrained model to a new task. What do you freeze, what do you train, and how do you decide?
+Q007335a	M	You fine-tuned a model and it got better at your task but worse at everything else. Diagnose and fix.
+Q007527	H	Why does SFT on new facts encourage hallucination?
+Q007556	H	How would you structure fine-tuning data so a set of product facts is retrievable from any direction?
+Q007685	M	What can fine-tuning do that in-context learning fundamentally can't?
+Q007771	H	Why is fine-tuning unreliable for knowledge injection, mechanistically?
+Q007772	H	How would you build a fine-tuning dataset from production traffic without licensing or privacy problems?
+Q008013	E	What actually happens during supervised fine-tuning? What role do chat templates and special tokens play?
+Q008014	M	Your fine-tuned model never stops generating. What are the top three suspects?
+Q008015	M	Why can training a base versus an instruct checkpoint give different results on the same data?
+Q008016	E	What is loss masking in SFT, and why do you mask the prompt tokens?
+Q008017	M	How would you verify loss masking is correct before launching an SFT run?
+Q008018	M	In a multi-turn SFT dataset, would you train on all assistant turns or only the final one? What is the tradeoff?
+Q008019	E	How much data do you need to fine-tune a model? Quality versus quantity?
+Q008020	M	You have 100k scraped examples of mixed quality. What is your pipeline before training?
+Q008021	M	How would you detect that near-duplicates in the fine-tuning data are hurting you?
+Q008029	E	What is catastrophic forgetting in fine-tuning, and how do you mitigate it?
+Q008030	M	How would you choose the mixing ratio of general data to task data when fine-tuning?
+Q008031	M	Your task metric improves after fine-tuning but users report the model got "dumber." What is your diagnostic plan?
+Q008032	E	What are the key hyperparameters for fine-tuning, and what are sensible starting values?
+Q008034	M	Your fine-tuning loss curve has a spike at step 50 and never recovers. What do you check?
+Q008035	M	How do you tell that a fine-tune is overfitting? What are the signals?
+Q008036	H	Your eval loss rises after epoch 1 but human raters prefer the epoch-3 checkpoint. Which do you ship and why?
+Q008037	M	How do duplicated training examples masquerade as extra epochs?
+Q008042	M	Would you fine-tune a base model or an instruct model? How does that choice change your data and your recipe?
+Q008043	H	If you fine-tune an instruct model and its multi-turn behaviour degrades, how would you detect that before shipping?
+Q008044	H	What would you do differently if the base model and instruct model have different tokenizers?
+Q008045	M	Why do you deduplicate fine-tuning data, and how would you actually do it?
+Q008046	M	Why is MinHash preferred over pairwise cosine similarity for deduplication at scale?
+Q008047	M	How would you pick the Jaccard threshold for near-duplicate removal rather than just taking 0.8 on faith?
+Q008080	M	How do you evaluate a model before and after fine-tuning?
+Q008081	M	Your fine-tune improves the task metric by 15% but drops an internal instruction-following eval by 5%. Do you ship it?
+Q008083	M	What is the difference between continued pretraining and SFT? When do you need domain knowledge injection?
+Q008084	H	Why does SFT inject knowledge so poorly compared to continued pretraining?
+Q008085	H	Design the data mixture for adapting an 8B model to clinical notes. What fractions and why?
+Q008086	H	How would you check that continued pretraining actually added knowledge rather than style?
+Q008097	H	You are fine-tuning on a domain full of jargon and someone suggests adding new tokens to the tokenizer. What can go wrong, and how do you handle vocabulary changes correctly?
+Q008098	H	How would you verify after training that newly added tokens actually learned anything?
+Q008099	H	What breaks if you add tokens to a model whose embeddings are tied and quantized to 4-bit?
+Q008106	H	You have 500k instruction examples of mixed quality and compute budget to train on 20k. How do you choose the 20k?
+Q008107	H	When selecting instruction data with an LLM judge, how would you handle the case where your judge model and your target model share a base, so the judge systematically prefers its own style?
+Q008108	H	What changes in instruction data selection if the 500k examples come from 4 different sources with very different quality profiles?
+Q008115	H	You are fine-tuning a reasoning model that writes a thinking block before its final answer. How do you build the SFT data, and what breaks if you train on final answers only?
+Q008116	H	Your domain experts gave you answer-only labels. How do you get reasoning traces without inventing reasoning the experts never used?
+Q008117	H	How would you shorten a reasoning model's thinking without losing accuracy?
+Q008139	M	A team fine-tuned a model on 300 noisy examples and says "it feels better". What do you ask for?
+Q008140	H	How do you future-proof a fine-tuning investment against base-model churn?
+Q008144	H	Your fine-tuned model's training loss looked great, but outputs in production are worse than the base model. Walk me through your debugging process.
+Q008145	H	What single artefact would you log at training time to make debugging a fine-tuned model's production regressions easy later?
+Q008146	M	How do you catch a chat template mismatch between training and serving in CI before deploy?
+Q008147	H	Design an end-to-end fine-tuning pipeline for a customer-support model at a mid-size company. Walk me through data, training, eval, deployment and iteration.
+Q008150	H	How do you prevent feedback-loop bias when training on the model's own accepted drafts?
+Q008151	H	How do you construct the data mixture for a fine-tune to prevent capability regressions, and how do you validate the mixture?
+Q008152	M	Why does interleaving data mixtures beat sequential training phases in fine-tuning?
+Q008153	H	When fine-tuning with a data mixture, your general-data slice fixes MMLU but the task metric drops 3 points. What are your options?
+Q008154	M	How does the right data mixture ratio change between SFT and continued pretraining?
+Q008155	M	Explain sequence packing in SFT. What is the attention contamination problem and how is it solved?
+Q008156	H	Why is cross-sequence attention contamination from packing worse on templated datasets than on diverse ones?
+Q008158	M	What breaks if you pack sequences in SFT but forget to reset position IDs?
+Q008188	H	What changes when you fine-tune a mixture-of-experts model instead of a dense one?
+Q008189	H	Would you freeze or train the router for a 5k-example SFT run of an MoE model, and what evidence would change your mind?
+Q008868	H	You fine-tuned a model on narrow, harmless-looking domain data and it now complies with requests it used to refuse. Why does that happen, and how do you ship fine-tunes safely?
+Q008869	H	A customer wants to fine-tune your hosted model on their own data. Which safety checks do you run, and which do you require them to run?
+Q008945	M	When do you fine-tune a VLM instead of prompting it, and what exactly do you unfreeze?
+Q008947	H	What does your held-out set need to contain to detect catastrophic forgetting on a document-extraction LoRA?
+Q009436	M	Your fine-tuned model regressed on general instruction-following. What happened and what do you do?
+Q009715	M	What problem do chat templates solve, and what goes wrong when they're ignored?
+Q009716	M	How would you test for a chat-template mismatch across your LLM serving fleet?
+Q009722	M	When do you step up from LoRA to full fine-tuning despite the cost?
+Q009847	M	After fine-tuning on a customer's task, target-task accuracy is up but the model got worse at everything else. What happened and what do you do?
+Q010074	H	A regional government wants an assistant in a low-resource language with only a few thousand sentences of clean text. How do you adapt a model to it?
+Q010511	M	Your fine-tuned model regressed on general instruction-following. What happened?
+D00213	E	What is fine-tuning, and what problems does it solve that prompting alone cannot?
+D00214	M	When should you fine-tune a model instead of improving the prompt, and what are the signs you are fine-tuning prematurely?
+D00215	M	Compare full-parameter fine-tuning with parameter-efficient fine-tuning in cost, quality and risk.
+D00216	M	What is the quality hierarchy of SFT data, and why does a small high-quality set often beat a large noisy one?
+D00217	M	How would you prepare and quality-check a fine-tuning dataset from raw support transcripts?
+D00218	M	What is continued pretraining, and why use it instead of mixing domain text into the SFT set?
+D00219	M	What is catastrophic forgetting, and how do you prevent a model from losing general capabilities during fine-tuning?
+D00220	M	How do you pick the learning rate for fine-tuning, and why is it usually much lower than for pretraining?
+D00221	M	What is chat template mismatch in fine-tuning, and how does it silently ruin results?
+D00222	M	What is training data packing, and what bugs arise from cross-sample attention leakage or incorrect loss masks?
+D00223	M	How do you tell whether a fine-tuned model is overfitting, leaking test data, or simply showing evaluation noise?
+D00224	M	How would you evaluate a fine-tuned model against the base model and a strong prompted baseline?
+D00225	M	Your roadmap says to fine-tune a hosted model on support transcripts next year. What should you check about provider fine-tuning availability and model lifecycle?
+D00226	M	What is knowledge editing, and how does it differ from fine-tuning, RAG and machine unlearning?
+D00227	M	How do ROME, MEMIT and MEND edit facts in a model, and how would you evaluate whether an edit succeeded?
+D00228	M	How do you handle OOM errors during fine-tuning without changing the model?
+D00229	M	What does it mean to be able to fine-tune on a customer's data when the data contains regulated or personal information?
+D00230	M	How do you decide the number of epochs and detect when to stop SFT?
+D00231	M	How do DDP, FSDP and ZeRO differ in what they replicate or shard during fine-tuning?
+D03777	M	What does SFT or instruction tuning need as data, and how do you build a high-quality instruction dataset?
+D03778	M	When is full fine-tuning preferable to parameter-efficient fine-tuning, considering compute, storage and forgetting?
+D04543	M	How was Alpaca built using self-instruct data, and what risks come with training on model-generated instructions?
+D04544	M	Describe the self-instruct data generation pipeline: seed tasks, instruction generation, filtering and deduplication.
+D04545	M	What was the Code Llama infilling (fill-in-the-middle) task and how is the training data formatted for it?
+D04598	M	How many tokens or examples are typically needed for SFT, and why does quality often matter more than quantity?
+D04612	E	What does an SFT dataset record look like for instruction tuning, and how do single-turn and multi-turn formats differ?
+D04615	M	How many examples do you need to fine-tune an LLM for a given task, and how would you determine the point of diminishing returns?
+D04616	M	Where would you source data for domain-specific continued pretraining and instruction tuning, and how would you vet its quality?
+D04682	M	Why do we need incremental (continued) pretraining of a base model on domain text, and when is it preferable to SFT alone?
+D04683	M	What preparation is needed for continued pretraining: data collection, cleaning, tokenization, mixing ratio and learning-rate setting?
+D04684	M	What learning-rate and warmup strategy do you use when continuing pretraining of a converged model so you do not destabilize it?
+D04685	M	How is an incremental-pretraining pipeline organized end to end, from raw domain documents to a checkpoint ready for SFT?
+D04693	M	How much GPU memory does full-parameter fine-tuning of a 7B model need with Adam in mixed precision, and what drives the estimate?
+D04694	M	After SFT a model seems to have gotten worse or dumber. What are the likely causes and how would you diagnose them?
+D04695	M	How would you construct a high-quality instruction-tuning dataset: sources, diversity, formatting, deduplication and quality filtering?
+D04696	M	What is the LIMA hypothesis and how does it influence how much SFT data you collect?
+D04697	M	After training on domain data, general ability degrades. How do you reduce forgetting of general capabilities?
+D04698	M	How do you mix replay data from the general distribution with domain data, and how do you pick the ratio?
+D04699	M	How can continued pretraining be made to inject more domain knowledge, for example via data mixing, repeated exposure and curriculum?
+D04700	M	Should SFT start from a base model or from an already chat-tuned model? Discuss trade-offs.
+D04701	M	What requirements does an instruction format impose when fine-tuning a domain model (templates, special tokens, loss masking)?
+D04702	M	Why is it typical to compute the SFT loss only on assistant tokens, and what goes wrong if you train on the prompt too?
+D04703	M	How would you build an evaluation set for a domain-tuned model, and how do you keep it from leaking into the training data?
+D04704	M	Is injecting new knowledge better done in pretraining or in SFT? What does the evidence say about SFT teaching knowledge versus style?
+D04706	M	How would you fine-tune a model for multi-turn dialogue, and how do you construct training samples from conversations?
+D04707	M	What is catastrophic forgetting in fine-tuned LLMs and what techniques (replay, regularization, LoRA, EWC) limit it?
+D04708	E	How do pretraining and SFT differ in objective, data, scale and learning-rate regime?
+D04709	M	SFT with a larger dataset starts to give out-of-memory errors. What do you change, and why does memory scale this way?
+D04710	M	How can you optimize SFT samples, e.g. packing, length bucketing, dropping low-quality or contradictory examples?
+D04711	M	What does sequence packing do in SFT, and what attention-masking issue must you handle?
+D04712	M	How would you run hyperparameter experiments for fine-tuning (learning rate, epochs, batch size, rank) with limited compute?
+D04713	M	How many epochs should SFT run, and how do you detect over-training of an instruction-tuned model?
+D04714	M	What are the benefits of instruction tuning for zero-shot generalization to unseen tasks?
+D04929	M	What are the benefits and risks of fine-tuning with synthetic data generated by a stronger model?
+D04930	M	How do you evaluate that a fine-tuned model has not regressed on safety and general capabilities?
+D04931	M	What are the differences between continued pretraining, SFT and RLHF in terms of data, loss and what each changes in the model?
+D04932	M	When fine-tuning a chat model for a narrow task, how do you keep the system prompt and chat template consistent between training and inference?
+D04933	M	What is the effect of fine-tuning learning rate that is too high on a pretrained LLM, and how would you recognize it from training curves?

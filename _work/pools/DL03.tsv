@@ -1,0 +1,105 @@
+Q001047	E	What is a Convolutional Neural Network (CNN)?
+Q001048	E	Can you explain the structure of a typical CNN architecture?
+Q001049	E	How does convolution work in the context of a CNN?
+Q001050	E	What is the purpose of pooling in a CNN, and what are the different types?
+Q001053	M	Can you describe what is meant by 'depth' in a convolutional layer?
+Q001054	M	How do CNNs deal with overfitting?
+Q001055	E	What is the difference between a fully connected layer and a convolutional layer?
+Q001056	E	What is feature mapping in CNNs?
+Q001058	M	How does parameter sharing work in convolutional layers?
+Q001059	E	Why are CNNs particularly well-suited for image recognition tasks?
+Q001060	M	Explain the concept of receptive fields in the context of CNNs.
+Q001061	M	What is local response normalization, and why might it be used in a CNN?
+Q001063	M	Can you explain what a stride is and how it affects the output size of the convolution layer?
+Q001064	M	How do dilated convolutions differ from regular convolutions?
+Q001065	E	What is computer vision and how does it relate to human vision?
+Q001066	E	Describe the key components of a computer vision system.
+Q001067	E	Explain the concept of image segmentation in computer vision.
+Q001068	E	What is the difference between image processing and computer vision?
+Q001069	M	How does edge detection work in image analysis?
+Q001070	E	Discuss the role of convolutional neural networks (CNNs) in computer vision.
+Q001071	M	What is the significance of depth perception in computer vision applications?
+Q001072	M	Explain the challenges of object recognition in varied lighting and orientations.
+Q001073	E	What are the common image preprocessing steps in a computer vision pipeline?
+Q001074	M	How does image resizing affect model performance?
+Q001075	E	What are some techniques to reduce noise in an image?
+Q001076	E	Explain how image augmentation can improve the performance of a vision model.
+Q001077	M	Discuss the concept of color spaces and their importance in image processing.
+Q001078	M	What are feature descriptors, and why are they important in computer vision?
+Q001079	M	Explain the Scale-Invariant Feature Transform (SIFT) algorithm.
+Q001267	M	What is the significance of Residual Networks (ResNets)?
+Q001802	E	What is the difference between fully connected and convolutional layers in a network?
+Q001809	M	What are skip connections and residual blocks in neural networks?
+Q002266	E	What role do pre-trained models play in transfer learning?
+Q002268	E	What are feature extractors in the context of transfer learning?
+Q002275	E	What are the common pre-trained models available for use in transfer learning?
+Q004133	M	How would you automatically caption an image?
+Q004375	M	Are CNNs resistant to rotations? What happens to the predictions of a CNN if an image is rotated?
+Q004376	E	What are augmentations? Why do we need them?
+Q004377	E	What kind of augmentations do you know?
+Q004378	E	What kind of CNN architectures for classification do you know?
+Q004379	M	What is object detection? Do you know any architectures for that?
+Q004380	M	What is object segmentation? Do you know any architectures for that?
+Q004517	M	How do you implement transfer learning?
+Q004420	E	What is a convolutional neural network (CNN) and how does it work?
+Q004421	E	What is transfer learning and how is it used in practice?
+Q005268	M	What is parameter sharing in deep learning?
+Q005280	E	Explain convolutional neural networks (CNNs).
+Q005281	E	Explain filters in a CNN.
+Q005282	E	Explain stride in a CNN.
+Q005283	E	Explain padding in a CNN.
+Q005284	E	Explain pooling in a CNN.
+Q005285	E	Explain fully connected layers in a CNN.
+Q005295	E	Explain transfer learning and when to use it.
+Q005314	E	What is computer vision, and why is it important?
+Q005315	E	What is image segmentation, and what are its applications?
+Q005316	E	What is object detection, and how does it differ from image classification?
+Q005317	M	What are the steps to build an image recognition system?
+Q005318	M	What are the challenges in real-time object tracking?
+Q005319	E	What is feature extraction in computer vision?
+Q005320	E	What is OCR, and what are its main applications?
+Q005321	M	How does a CNN differ from traditional neural networks in computer vision?
+Q005324	M	How can Transformers be used for computer vision tasks?
+Q005381	M	Describe how you would implement an image classification system.
+Q005474	M	What is the significance of residual networks?
+Q005479	M	Describe how convolution works. What changes if your inputs are grayscale vs RGB images? What determines the shape of the next layer?
+Q005480	M	Why do we use convolutions for images rather than just fully connected layers?
+Q005481	M	What makes CNNs translation invariant?
+Q005482	M	Why do we have max-pooling in classification CNNs?
+Q005483	M	Why would you use many small convolutional kernels such as 3x3 rather than a few large ones?
+Q005484	M	Why do segmentation CNNs typically have an encoder-decoder structure?
+Q005486	M	How would you remove outliers when trying to estimate a flat plane from noisy samples?
+Q005487	H	How does image registration work? Compare sparse vs. dense optical flow.
+Q005732	M	How would you create a model to recognize whether an image is a triangle, a circle, or a square?
+Q005733	H	Given only the CIFAR-10 dataset, how would you build a model to recognize whether an image belongs to one of the 10 CIFAR-10 classes or not?
+Q012046	H	How would you design the neural network architecture for multi-camera 3D object detection without lidar?
+Q012545	M	Can you explain the parameter sharing concept in deep learning?
+Q012546	E	Describe the architecture of a typical Convolutional Neural Network (CNN).
+Q012550	M	Discuss in what context it is recommended to use transfer learning and when it is not.
+Q012553	M	Is it a good idea to use a CNN to classify 1D signals?
+Q012558	M	What is a depthwise separable layer and what are its advantages?
+Q012568	M	How can transformers be used for tasks other than natural language processing, such as computer vision?
+Q012569	E	Explain the concept of image segmentation and its applications.
+Q012570	M	Describe the steps involved in building an image recognition system.
+Q012571	M	What are the challenges in implementing real-time object tracking?
+Q012572	E	Can you explain the concept of feature extraction in computer vision?
+Q012573	E	What is optical character recognition (OCR), and what are its main applications?
+Q012574	E	How does a convolutional neural network (CNN) differ from a traditional neural network in the context of computer vision?
+Q012575	E	What is the purpose of data augmentation in computer vision, and what techniques can be used?
+Q012577	M	Can fully connected layers be replaced with convolutional and pooling layers?
+Q000698	M	How do Google and Apple Maps blur license plates and faces?
+Q010203	H	Why carry lidar, radar and cameras rather than cameras alone in a self-driving system? Where would you fuse them?
+Q010204	H	How would you detect a slowly drifting lidar-to-camera extrinsic calibration in production before it causes a miss?
+Q010205	H	Under a cost mandate, which sensor modality would you drop first in a self-driving system, and what does that cost you in the safety case?
+Q010564	M	When would a classic CNN classifier beat a vision-language model outright?
+D03466	M	Compare two-stage detectors such as Faster R-CNN with one-stage detectors such as YOLO or SSD in accuracy, speed and use cases.
+D03467	M	What is non-maximum suppression and why is it needed in object detection?
+D03468	M	How does the DETR model differ from anchor-based detectors?
+D03469	M	What is the difference between semantic segmentation and instance segmentation?
+D03470	M	How do 3D object detectors from point clouds differ from 2D image detectors, and why are they computationally heavy?
+D03471	M	How does multi-object tracking work using Kalman filters or deep association methods like DeepSORT?
+D03472	M	Why is focal loss useful for one-stage detectors, and what problem does it solve?
+D03473	M	How would you evaluate an object detector using IoU and mean average precision?
+D03482	M	How would you preprocess video for a model, including frame sampling, resizing and normalization?
+D03744	E	What is a convolutional neural network and why does weight sharing help for images?
+D03745	M	What is transfer learning and how do you use it in practice for vision tasks?

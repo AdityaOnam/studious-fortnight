@@ -1,0 +1,183 @@
+Q010522	LLM07	M	How do you detect judge-human disagreement systematically when using an LLM as a judge?
+Q010523	GA04	H	What would make you trust offline evals enough to skip an A/B test for a small prompt change?
+Q010524	GA04	M	How does monitoring an LLM application differ from monitoring a classical model in production?
+Q010525a	GA04	H	Refusal rate doubled overnight with no deploy on your side. Walk me through how you would investigate it.
+Q010525b	LLM07	M	How often do you re-calibrate an LLM judge, and against what?
+Q010526	FT04	M	When would you distill an LLM into a smaller model, and what does that pipeline look like?
+Q010527	FT04	H	When distilling an LLM into a smaller model served behind a cascade, how do you pick the confidence threshold for the cascade?
+Q010528	FT04	H	In distillation, the teacher model is wrong in a systematic way on one class. What do you do?
+Q010529	GA04	M	MLOps versus LLMOps: what is genuinely different, and what is just rebranding?
+Q010530	GA04	H	What does a rollback look like when an LLM regression came from the model provider rather than your own deploy?
+Q010531	GA04	M	Which MLOps tool in a classical ML stack maps to nothing in an LLMOps stack?
+Q010532	DROP	-	offtopic
+Q010533	DROP	-	unfixable
+Q010534	DROP	-	unfixable
+Q010535	FT03	H	A team wants to run reinforcement fine-tuning on an open-weights model to make an extraction agent more reliable. Whose job is that, and how do you decide whether to do it at all?
+Q010536	FT03	M	During reinforcement fine-tuning, training reward keeps climbing but human-rated quality is flat. What is happening?
+Q010537	FT03	H	How would you measure pass@k on the base model before committing GPU budget to reinforcement fine-tuning?
+Q010538	DL02	H	In an AI-assisted coding round where you fix a training and eval pipeline with an assistant, what ML bugs do assistants write or miss, and how do you catch them in the time available?
+Q010539	ML05	M	An assistant's fix lifted validation accuracy from 81% to 96%. What do you check before believing it?
+Q010540	DROP	-	unfixable
+Q010541	MS01	M	Your PM wants AI-powered summarization in the app. Walk me through the on-device versus cloud decision.
+Q010542	MS01	M	What usage or cost data would flip your decision between on-device and cloud inference for an AI summarization feature?
+Q010543	MS01	M	If an on-device summarization model is noticeably worse than the cloud one, what do you do?
+Q010544	LLM06	M	Will a 3B-parameter model run on users' phones? Do the maths.
+Q010545	LLM06	M	How does the KV cache size scale if you increase the context window 4x?
+Q010546	DROP	-	frontend
+Q010547	DROP	-	frontend
+Q010548	DROP	-	frontend
+Q010549	DROP	-	unfixable
+Q010550	DROP	-	frontend
+Q010551	DROP	-	frontend
+Q010552	MS01	M	Your on-device model file is 800MB. How does it get onto users' devices?
+Q010553	DROP	-	frontend
+Q010554	MS01	H	How do you roll back a bad model that is already deployed on 10M devices?
+Q010555	DROP	-	frontend
+Q010556	DROP	-	frontend
+Q010557	MS04	H	Design a hybrid architecture where some LLM requests run on-device and some go to the cloud. How does the router decide?
+Q010558	GA04	H	In a hybrid on-device/cloud LLM architecture, the on-device path succeeds but produces a bad answer. How would you even know?
+Q010559	GA05	M	For AI summaries of users' private messages, legal asks "can we ever see the summaries?" How do you answer?
+Q010560	GA05	H	What changes in the design of AI summaries of private messages if the messages are end-to-end encrypted?
+Q010561	DROP	-	frontend
+Q010562	DROP	-	frontend
+Q010563	DROP	-	frontend
+Q010564	DL03	M	When would a classic CNN classifier beat a vision-language model outright?
+Q010565	DROP	-	frontend
+Q010566	GA04	H	Your LLM judge says quality is fine but retry rates spiked in the field. What do you look at?
+Q010567	DROP	-	unfixable
+Q010568	MS04	H	Design an in-app assistant that can take actions in your app (for example "book it", "send it to Sam").
+Q010569	GA03	H	The user backgrounds the app while an agent is mid-plan with two actions already executed. Walk me through how you resume. Which tools would you let auto-execute, and why?
+Q010570	DROP	-	frontend
+Q010571	CS02	H	An assistant's fix compiles and passes tests, but you suspect a data race. How do you prove it either way?
+Q010572	DROP	-	offtopic
+Q010573	GA04	H	Your feature runs on an OS-provided model. An OS update shipped a new model version and quality changed overnight, though you released nothing. How do you detect it, and how do you design so it does not hurt next time?
+Q010574	GA04	H	A new model version is better on average but worse for two of your supported languages. Do you ship the variant, hold it back, or route those locales elsewhere?
+Q010575	DROP	-	unfixable
+Q010576	GA04	H	Walk me through how you would take an AI feature from idea to production in two weeks. What does v1 actually look like?
+Q010577	GA04	M	When taking an AI feature to production in two weeks, what would make you cut streaming from v1?
+Q010578	DROP	-	unfixable
+Q010579	FT05	M	When is an LLM the wrong tool? Give real examples where you would push back on a PM.
+Q010580	FT05	M	A PM insists on "AI-powered" for marketing reasons. What do you build?
+Q010581	FT05	M	Where have you seen an LLM replace something that should have stayed deterministic?
+Q010582	SD04	H	How do you build streaming into a chat UI end-to-end? Walk me through the pieces and the gotchas.
+Q010583	SD04	M	How would you implement a stop button correctly for a streaming LLM chat?
+Q010584	GA02	M	What changes if you add tool calls in the middle of a streamed LLM response?
+Q010585	GA02	M	How do you get reliable structured output (JSON) from a model, and what happens when it fails anyway?
+Q010586	GA02	M	How do you catch the case where an LLM's JSON output is valid but the values are wrong?
+Q010587	LLM07	M	What is your eval for an LLM extraction feature?
+Q010588	GA04	M	For an LLM feature, your P50 latency is fine but P99 is 30 seconds. What do you look at?
+Q010589	GA04	M	When would you accept worse quality for speed in an LLM feature?
+Q010590	GA04	M	How do you think about cost for an LLM feature? Estimate one for me.
+Q010591	GA04	H	Your CFO says cut inference spend by 70% without killing quality. What is your plan, and how do you prove quality held?
+Q010592	GA04	M	How does caching interact with personalised prompts?
+Q010593	LLM07	H	You do not have an eval team. How do you know your LLM feature actually works, and keeps working?
+Q010594	LLM07	M	How many eval examples do you need before you would trust a model swap?
+Q010595	LLM07	M	Your LLM judge says 95% pass but users are complaining. What is broken?
+Q010596	GA04	M	A teammate edited the prompt in production and quality dropped. How do you fix the immediate problem and the process problem?
+Q010597	LLM07	M	The eval suite passed but users still complained. What does that tell you about the suite?
+Q010598	GA04	M	How do you handle prompt changes needed for a model upgrade?
+Q010599	RAG01	H	Design the smallest RAG system that could work for "chat with our docs." When do you need more, and when is RAG the wrong call?
+Q010600	RAG06	M	Retrieval came back with the right document but the model still hallucinated. Why?
+Q010601	RAG06	M	How do you handle documents in a RAG system that update daily?
+Q010602	GA03	M	When do you build an agent versus a fixed workflow when a PM wants "an agent"?
+Q010603	GA03	H	How do you evaluate an agent? What does a test case even look like?
+Q010604	GA03	M	What is your escalation design when an agent stalls mid-task?
+Q010605	GA05	H	Your AI feature can call tools such as search, email, and database writes. What does prompt injection mean for your design?
+Q010606	GA05	M	Does moving instructions to the system prompt solve prompt injection?
+Q010607	GA05	M	How would you red-team an LLM feature with tool access before launch?
+Q010608	LLM07	M	Models hallucinate. How do you design the product around that, not just the prompt?
+Q010609	LLM07	M	How would you measure your hallucination rate in production?
+Q010610	LLM07	M	When is showing confidence scores to users a bad idea?
+Q010611	MS04	M	A take-home says: "Build a tool that answers questions over our public docs. You have a weekend." How do you approach it, and what do you deliberately skip?
+Q010612	DROP	-	hr
+Q010613	MS04	M	After building a docs question-answering tool over a weekend, what would you build in week two?
+Q010614	DROP	-	hr
+Q010615	DROP	-	offtopic
+Q010616	DROP	-	hr
+Q010617	GA02	H	The PM says: "Users should be able to use our product from inside ChatGPT and Claude." What do you build, and what changes about how you design the product?
+Q010618	GA05	H	An injected instruction from another MCP server's output makes the model call your "delete_project" tool. Which layer stops it?
+Q010619	LLM07	M	Our chatbot gives a different answer every time. How do you test something non-deterministic?
+Q010620	ML08	H	How many samples do you need before calling a 3-point drop in an LLM eval pass rate a regression?
+Q010621	DROP	-	unfixable
+Q010622	LLM07	H	Design the eval harness for an LLM feature we are shipping, treating it as you would design a test framework.
+Q010623	LLM07	M	Where should an LLM eval harness live (pytest plugin, standalone service, vendor tool), and why?
+Q010624	LLM07	M	How do you keep a golden eval set from going stale as the product evolves?
+Q010625	LLM07	M	Exact-match assertions are useless for LLM output. What do you actually assert on an LLM response?
+Q010626	LLM07	H	How do you pick and maintain the similarity threshold when asserting on LLM responses using embedding similarity?
+Q010627	LLM07	M	When property-based assertions on an LLM response pass but the answer is still wrong, what catches that?
+Q010628	LLM07	M	LLM-judge agreement with humans is 90%. Is that good enough to block releases on?
+Q010629	LLM07	H	How do you version the LLM judge itself so a judge-prompt change does not masquerade as a product regression?
+Q010630	GA04	M	A one-line system-prompt change is in a PR. What runs before it merges, and what blocks it?
+Q010631	GA04	M	A system-prompt change improves the targeted behaviour but drops an unrelated eval tag by 4%. Do you ship it?
+Q010632	GA04	M	When a system-prompt change causes a regression in unrelated evals, who owns fixing it, the prompt author or QA?
+Q010633	LLM05	M	We set temperature to 0. The outputs are deterministic now, right?
+Q010634	LLM07	M	How does the non-determinism of LLM outputs change your definition of a "flaky test"?
+Q010635	GA04	M	Would you cache model outputs in CI, and what does that trade away?
+Q010636	LLM07	M	Where does your golden eval dataset come from, and how do you stop it rotting?
+Q010637	GA05	H	How do you get PII-laden production conversations into an eval set legally and safely?
+Q010638	LLM07	M	When using synthetic eval cases, who reviews them and what fraction get rejected?
+Q010639	GA05	H	Red-team our LLM feature. What is your adversarial test plan?
+Q010640	GA05	H	How do you red-team the indirect injection path when retrieval content comes from customer data you cannot read?
+Q010641	GA05	M	What is an acceptable attack-success-rate to ship an LLM feature with?
+Q010642	LLM07	H	You need 5,000 test inputs and have 50. How do you use an LLM to generate test data without fooling yourself?
+Q010643	LLM07	M	How would you measure the diversity of an LLM-generated test set?
+Q010644	LLM07	M	When is synthetic test data outright inappropriate?
+Q010645	RAG06	M	How do you test a RAG pipeline? Where do you draw the test boundaries?
+Q010646	RAG06	M	Recall@5 improved but end-to-end answer quality dropped in a RAG system. What happened?
+Q010647	RAG06	M	How do you keep the retrieval eval honest when the corpus updates weekly?
+Q010648	GA03	H	How do you regression-test a fix to step 7 of a long multi-step agent run without paying for steps 1-6 on every run?
+Q010649	GA05	H	What does a prompt-injection test suite look like when tool results are the attack channel?
+Q010650	GA04	M	Eval suites are slow, cost real money, and are noisy. How do you put one in CI without making everyone hate you?
+Q010651a	GA04	H	A flaky LLM judge is blocking merges every few days. Walk me through the triage.
+Q010651b	GA04	H	How do you handle eval velocity when 30 engineers push prompt changes daily?
+Q010652	DROP	-	offtopic
+Q010653	CS06	M	An AI-generated test suite has 95% coverage and all tests are green. What do you check before trusting it?
+Q010654	CS06	M	Would you gate merges on mutation score, and at what cost?
+Q010655	GA03	H	We want an AI agent to maintain our end-to-end test suite by generating tests from the running app and auto-healing the ones that break. What is your position, and what guardrails do you put on it?
+Q010656	GA03	H	An auto-healed test locator passes on both builds but now targets a different button with the same accessible name. How would you catch that?
+Q010657	GA03	M	What auto-heal rate would make you stop trusting a test, and what do you do with it?
+Q010658	GA02	H	Our agent depends on MCP servers owned by three other teams. How do you test so a change on their side does not silently break our agent?
+Q010659	GA02	M	A provider adds an optional parameter to a tool and tool-selection accuracy drops 6%. Whose bug is it, and who fixes it?
+Q010660	GA02	H	How do you test tool description changes without paying for full agent evals on every provider commit?
+Q010661	GA05	H	Walk me through the OWASP Top 10 for LLM Applications. For a product that is an agent reading customer emails and taking actions, which entries dominate and why?
+Q010662	GA05	M	Which OWASP Top 10 for LLM Applications risks can you meaningfully test in CI versus only catch in red-teaming?
+Q010663	GA05	M	If an LLM agent only reads email and never acts, how does your OWASP LLM risk priority list change?
+Q010664	GA05	H	Is prompt injection solved? How do you defend a system whose core input-validation problem has no clean fix?
+Q010665	GA05	H	Where would you spend a fixed latency budget: a better input classifier or stricter output handling?
+Q010666	GA05	H	How do you know your prompt-injection classifier is not itself being bypassed?
+Q010667	GA05	H	Explain indirect prompt injection, and what architectural defences actually raise the bar beyond guardrail classifiers.
+Q010668	GA05	H	What breaks in the dual-LLM pattern when the task genuinely needs the agent to act on the content of the untrusted data?
+Q010669	GA05	M	How would you detect an indirect prompt-injection attempt in production logs?
+Q010670	GA05	M	What is the "lethal trifecta" for LLM agents, and how would you use it in a design review?
+Q010671	GA05	H	Why is a markdown image in an agent's rendered output a data exfiltration channel, and how do you close it?
+Q010672	GA05	H	How do you keep the lethal trifecta from reassembling as users add MCP servers over time?
+Q010673	GA05	H	Design a permission model for an agent that can call our internal APIs as tools.
+Q010674	GA05	H	How do you handle an agent action that is reversible in theory (such as a refund) but costly in practice?
+Q010675	GA03	H	Where does an agent permission model put the boundary between agent autonomy and approval fatigue for the human in the loop?
+Q010676	GA05	M	What is the difference between a jailbreak and a prompt injection? Why does the distinction matter operationally?
+Q010677	GA05	M	Who is on the hook when a jailbroken model, invoked through your product, produces harmful output: you or the model provider?
+Q010678	GA05	M	How would a red team test for jailbreaks and prompt injection separately?
+Q010679	GA05	H	Walk me through the supply chain risks in a model artifact, and how you would vet a third-party model before deploying it.
+Q010680	GA05	H	How would you retrofit hash pinning and provenance checks into an existing pipeline that currently pulls "latest" from a public model hub?
+Q010681	GA05	H	What is your incident response if a model you are already serving is later found to be compromised upstream?
+Q010682	GA05	M	A team wants to add a third-party MCP server to give their agent a new capability. What do you check before approving it?
+Q010683	GA05	H	How do you monitor an already-approved MCP server for behaviour drift over time?
+Q010684	GA05	H	Would you accept a closed-source MCP server you cannot fully audit, and under what compensating controls?
+Q010685	GA05	H	Design the guardrail layer for a customer-facing chat product. What goes in, and what does it cost you?
+Q010686	GA05	H	How would you tune a guardrail classifier threshold, and what business tradeoff does that threshold actually encode?
+Q010687	GA05	H	What is your plan when the guardrail model itself becomes a target, with attackers probing its blind spots?
+Q010688	GA05	M	How do you run red-teaming for an LLM product, and how does it differ from a traditional penetration test?
+Q010689	GA05	H	How do you red-team an indirect injection vector that requires a specific, hard-to-guess document format to trigger?
+Q010690	GA05	M	Who owns red-teaming in your org, security or the AI product team, and why does that choice matter?
+Q010691	GA05	H	Design the PII-handling pipeline for an LLM feature that processes customer support transcripts.
+Q010692	GA05	H	What breaks in a PII-handling pipeline when the redaction model itself makes a mistake and misses an identifier?
+Q010693	GA05	H	How do you handle a customer's right-to-deletion request against a fine-tuning dataset that has already been used to train a model?
+Q010694	GA05	M	How would you prepare an LLM feature for a compliance or security audit?
+Q010695	GA05	M	How do you keep model and system cards from going stale when the underlying model or prompt changes weekly?
+Q010696	GA05	M	What is the gap between "we have a policy" and "we have evidence" for an AI system, and how do you close it?
+Q010697	GA05	H	Engineers run coding agents with shell access inside a sandbox, and a team says the sandbox makes the agent too slow to be useful. What do you relax first, and what never?
+Q010698	GA05	H	How would you detect that a developer's local coding agent has been hijacked?
+Q010699	MS04	H	We want an LLM agent to triage our SAST findings and review PRs for vulnerabilities. How would you design it, and how would you know it works?
+Q010700	GA03	M	How do you stop an LLM PR-review agent's comments from becoming noise that developers learn to ignore?
+Q010701	GA03	M	Would you let an LLM security agent auto-fix low-severity findings, and with what controls?
+Q007221	DROP	-	hr

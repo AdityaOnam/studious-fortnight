@@ -1,0 +1,303 @@
+Q009322	GA03	M	How would you decide, at runtime, whether a subtask is safe to parallelise in a multi-agent system?
+Q009323	GA03	M	In a multi-agent setup, what signal tells the primary model it should escalate rather than guess?
+Q009324	MS04	H	Design the execution environment for thousands of concurrent cloud coding agents. It must survive an agent waiting forty minutes for CI.
+Q009325	MS04	H	In an execution environment for cloud coding agents, what is your rollback granularity, and how do you avoid a snapshot chain that grows without bound?
+Q009326	GA05	H	How would you scope credentials so a prompt-injected coding agent cannot push to an unrelated repository?
+Q009327	GA03	H	How would you evaluate an autonomous software engineering agent? Explain why SWE-bench pass rates mislead.
+Q009328	GA03	H	How would you detect that your agent is gaming the evaluator rather than solving the task?
+Q009329	GA03	M	What single metric would you show a customer instead of a benchmark score when evaluating an autonomous software engineering agent?
+Q009330	GA03	H	Your coding agent spends over half its first turn just finding the relevant code. How do you fix that?
+Q009331	RAG04	H	When training a code-retrieval component for an agent with a retrieval reward, why weight precision over recall?
+Q009332	RAG03	M	When retrieving code for a coding agent, when would you still keep an embedding index around?
+Q009333	GA02	H	Design the tool schema for a coding agent. How many tools, and how do you handle tool errors?
+Q009334	GA02	H	How would you version tool schemas without invalidating every saved agent trajectory?
+Q009335	GA04	M	What would you log per tool call to debug an agent run three days later?
+Q009336	GA03	H	An asynchronous cloud coding agent and an in-editor coding agent are different products. What actually changes between them, technically?
+Q009337	GA03	M	Between an asynchronous cloud coding agent and an in-editor coding agent, which would you ship a new tool to first, and why?
+Q009338	GA03	M	How would you decide whether a task should be handed off from the IDE to an asynchronous agent session?
+Q009339	DROP	-	dup
+Q009340	FT03	H	How would you detect reward hacking in aggregate, before a human notices it in production, when training an agent with RL?
+Q009341	FT03	M	When training an agent with RL on code tasks, what do you do about flaky tests polluting the reward signal?
+Q009342	GA04	H	Your new agent version scores higher on every benchmark, but internal users say it got worse. Find the problem.
+Q009343	GA04	M	Your new agent version scores higher on every benchmark but internal users say it got worse. How would you ship it safely while you investigate?
+Q009344	GA04	M	When a new agent version wins on benchmarks but user sentiment says it got worse, what would make you override user sentiment and ship anyway?
+Q009345	DROP	-	offtopic
+Q009346	DROP	-	hr
+Q009347	GA04	M	What would you measure to distinguish a real productivity gain from an AI coding agent from work simply moving from writing to reviewing?
+Q009348	GA05	H	An autonomous agent has write access to a customer's repository, CI credentials and network access. What is your threat model?
+Q009349	GA05	M	How would you test an autonomous agent's prompt-injection defences continuously rather than once?
+Q009350	GA05	M	What would you do differently for a federal or air-gapped deployment of an autonomous coding agent?
+Q009351	FT03	H	You want one agent model that runs at several effort levels, trading capability for cost. How do you design the RL reward, and how do you set the cost penalty?
+Q009352	GA04	M	How would you expose effort levels of an agent model to customers so they do not all pick the maximum?
+Q009353	FT03	M	What changes in an RL reward for an agent if success is graded, such as partial test passes, rather than binary?
+Q009354	RAG04	H	You have an embedding model and a reranker. Why sell both? Design the two-stage retrieval pipeline and explain when the reranker earns its latency.
+Q009355	RAG04	M	How would you pick the candidate depth (top-100 vs top-1000) of a two-stage retrieval pipeline empirically?
+Q009356	RAG04	M	What breaks if documents exceed the reranker's max sequence length?
+Q009357	CODE01	M	Write a parser that consumes a streamed LLM response (server-sent events) arriving in arbitrary network chunks and yields complete JSON events.
+Q009358	CODE01	H	Make a streamed LLM response parser async and add a per-event timeout so a stalled stream fails fast. How do you test the chunk-boundary edge cases deterministically?
+Q009359	SD06	H	Design a token-based rate limiter for a multi-tenant LLM API. Implement the core, then explain what changes when it is distributed.
+Q009360	SD01	H	A tenant sends 500 concurrent requests to a token-based rate limiter, and each passes the check before any reconciles. What is the failure and the fix?
+Q009361	SD01	M	How do you rate-limit fairly across a tenant's sub-organisations?
+Q009362	RAG06	H	An enterprise customer wants to deploy your RAG system but has no labelled data. How do you evaluate it before and after launch?
+Q009363	LLM07	M	Your LLM judge and humans agree only 70% of the time. What do you do?
+Q009364	RAG06	M	How do you detect eval-set staleness as the document corpus of a RAG system grows?
+Q009365	RAG06	H	After a RAG customer 10x'd their indexed documents and retrieval quality dropped, a brute-force check shows ANN recall is fine and the gold documents are in the top-100 but not the top-5. What do you do next?
+Q009366	RAG06	M	What monitoring would have caught a retrieval-quality drop after a 10x growth in indexed documents before the customer did?
+Q009367	MS04	H	Design an agent that automates an enterprise workflow, for example drafting responses to RFPs using internal documents and a CRM. What does "enterprise-grade" add?
+Q009368	GA03	H	How do you evaluate the approval-gate UX of an enterprise agent? What metric says the human is a real check, not a rubber stamp?
+Q009369	MS01	M	What changes when the customer wants an enterprise workflow agent deployed air-gapped?
+Q009370	MS04	H	A bank wants the whole stack (model, RAG, agents) deployed air-gapped on their own GPUs. What actually changes versus your SaaS deployment?
+Q009371	GA04	H	A customer running an air-gapped deployment reports a quality regression after an update and cannot share any prompts. How do you debug?
+Q009372	GA04	M	How do you handle model deprecation across dozens of air-gapped installs?
+Q009373	LLM03	H	Why is a sparse MoE with roughly 10x more total than active parameters a good fit for private enterprise deployment, and where does it hurt?
+Q009374	LLM06	H	Dense 30B versus MoE with 25B active parameters on a single 80GB GPU: how do you decide for a specific customer?
+Q009375	DROP	-	dup
+Q009376	RAG03	H	In semantic search over roughly 100M documents using binary-quantized embeddings with rescoring, how do you pick the rescoring depth empirically?
+Q009377	RAG03	M	Where does recall loss from binary-quantized retrieval show up in RAG quality metrics?
+Q009378	FT05	M	A customer has 50 labelled examples and wants to fine-tune anyway. What do you tell them?
+Q009379	FT05	M	When does a long cached system prompt beat a fine-tune economically?
+Q009380	RAG06	H	How would you evaluate multilingual retrieval quality when a customer's employees query in French and Korean over mostly-English documents?
+Q009381	RAG04	H	In multilingual retrieval evals, reranking helps Korean-query-to-English-document retrieval much more than English-to-English. Why might that be?
+Q009382	RAG06	M	How do you gather realistic non-English queries before launching a multilingual retrieval system?
+Q009383	DROP	-	hr
+Q009384	MS04	H	A regulated customer wants a coding agent built on an open-weight coding model small enough to run on a single GPU, entirely inside their network. How do you decide whether it is good enough, and what does the deployment look like?
+Q009385	FT05	M	A small open-weight coding model resolves 35% of internal tasks against 60% for a frontier API the customer cannot use. Is it worth deploying?
+Q009386	LLM07	M	How do you stop eval tasks from leaking into any later fine-tuning data?
+Q009387	MS04	H	Design a next-edit prediction ("tab") system for a code editor that must feel instant, with sub-100ms perceived latency, for millions of daily users. Walk through the stack.
+Q009388	LLM06	H	In a low-latency next-edit prediction serving system, how do you cancel in-flight GPU work cheaply when the user keeps typing?
+Q009389	LLM06	H	What breaks in a KV-cache scheme for code completion when the user edits the middle of a file rather than appending?
+Q009390	MS04	H	How would you index a 100k-file monorepo so an AI editor can retrieve relevant context, and keep the index fresh as the user edits?
+Q009391	RAG05	M	When does retrieval lose to just stuffing a long-context model?
+Q009392	RAG04	M	How do you evaluate retrieval quality for code specifically?
+Q009393	MS04	H	An AI model is streaming a multi-file edit while the user keeps typing in one of those files. How do you apply the edits without corrupting the buffer?
+Q009394	MS04	H	How does your design for applying streamed AI edits to an editor buffer change for two users plus an agent (three writers)?
+Q009395	MS04	M	How do you make a multi-file AI edit apply atomically undoable?
+Q009396	SD07	M	Implement the core of a text buffer for an editor with efficient insert/delete at arbitrary positions and fast line lookup. What data structure do you pick?
+Q009397	CS07	M	Where does a piece-table text buffer degrade, for example when long editing sessions fragment the pieces?
+Q009398	CS07	M	In an editor text buffer, how would you store line-start offsets to keep line lookup O(log n) after edits?
+Q009399	GA03	H	Your agent model outputs an edited version of a 500-line file. Applying it verbatim is slow and error-prone. How do you make "apply" fast and reliable?
+Q009400	LLM05	M	Why does speculative decoding preserve exactness of the target model's distribution?
+Q009401	GA03	H	When does the split of planning with a frontier model and applying edits with a small model break down?
+Q009402	LLM07	H	How do you evaluate a code-editing model before shipping it? Design the offline and online eval story for tab or agent edits.
+Q009403	LLM07	M	For an AI code-completion model, acceptance rate went up 2% but retained characters went down. What happened?
+Q009404	RAG06	M	How do you evaluate retrieval separately from generation for a code-editing assistant?
+Q009405	MS04	H	An agent needs to iterate on code (run builds, tests, lints) without disturbing what the user sees in their editor. How do you architect that?
+Q009406	GA05	M	What syscall and network policy do you set for a test-execution sandbox used by a coding agent?
+Q009407	MS04	H	How would you extend a local sandboxed code-iteration agent to cloud agents running remotely on a repo the user does not have checked out, and to handing a session from cloud back to local?
+Q009408	MS04	M	When diffing repository snapshots (path to content) by content hash for incremental indexing, how do you handle renames where a content hash matches at a new path?
+Q009409	MS04	M	When using a Merkle tree of file hashes for incremental repository indexing, where would you persist the tree so a restart does not rescan the repo?
+Q009410	RAG05	M	Long context windows keep getting cheaper. Why not drop retrieval and stuff the whole repo into context for every request?
+Q009411	GA01	M	How does prompt caching change the long-context-versus-retrieval cost analysis for agent loops specifically?
+Q009412	LLM05	E	What repository size makes stuffing the whole repo into an LLM's context physically impossible today?
+Q009413	GA03	H	Design the harness for an agent that makes multi-file changes from a natural-language task. How do you keep it from wrecking a codebase?
+Q009414	GA03	M	How do you decide when a coding agent should ask a clarifying question versus proceed?
+Q009415	GA04	M	What telemetry tells you that the agent harness, not the model, is the bottleneck?
+Q009416	DROP	-	hr
+Q009417	DROP	-	hr
+Q009418	DROP	-	hr
+Q009419	LLM06	M	When serving a custom code-completion model to millions of users, GPU utilisation is 35% but P99 latency is fine. Do you chase the utilisation?
+Q009420	LLM06	H	How does speculative decoding interact with continuous batching?
+Q009421	FT03	H	You train an agentic coding model with reinforcement learning on long-horizon tasks. Design the RL environment and the reward: what does the agent see, what counts as success, and how do you stop it gaming the reward?
+Q009422	FT03	M	Training reward rises steadily but the held-out benchmark is flat. What do you check first?
+Q009423	FT03	H	How do you assign credit across a 300-action trajectory in agent RL training?
+Q009424	CS02	M	Implement a thread-safe batching logger: many producer threads call log(msg), and a background thread flushes batches of up to 100 messages every second or when full, whichever comes first.
+Q009425	CS02	H	In a thread-safe batching logger, what changes if the sink can fail? Where do retries live and what happens to ordering?
+Q009426	CS02	M	How would you drop messages under overload in a batching logger without blocking producers?
+Q009427	MS02	H	You have a stream of billions of events and need the top-K most frequent keys with bounded memory. An exact answer is impossible. What do you do?
+Q009428	MS02	H	In a streaming top-K frequent keys computation, how do you handle a single key so hot that it skews one partition?
+Q009429	MS02	M	What changes in a streaming top-K frequent keys computation for a sliding 5-minute window?
+Q009430	MS02	M	In a Spark job that joins a 2 TB fact table to a 50 GB dimension table, when does broadcasting make things worse?
+Q009431	MS02	M	In a Spark join of a large fact table to a large dimension table, how does a shuffle-hash join differ from a sort-merge join?
+Q009432	MS04	H	Design a RAG system over an enterprise's data: 10M documents in object storage plus structured tables, with per-user access controls. Walk through the architecture and how you would evaluate it.
+Q009433	RAG01	M	How do you keep a RAG index fresh within minutes of a document changing?
+Q009434	MS04	H	Where does an enterprise RAG design built for 10M documents break at 100M documents?
+Q009435	FT05	H	When would you fine-tune a model instead of using RAG or prompt engineering, and if you do fine-tune, LoRA or full fine-tuning?
+Q009436	FT01	M	Your fine-tuned model regressed on general instruction-following. What happened and what do you do?
+Q009437	FT05	M	How much training data do you need before fine-tuning beats few-shot prompting?
+Q009438	LLM06	M	When diagnosing a jump in an LLM endpoint's p99 latency, how does continuous batching change the analysis versus static batching?
+Q009439	LLM06	M	To control LLM endpoint p99 latency, what would you cap first, input tokens or output tokens, and why?
+Q009440	MS04	H	Design a Text2SQL agent for business users querying a warehouse with 5,000 tables. What is hard, and how do you evaluate it?
+Q009441	DROP	-	unfixable
+Q009442	MS04	M	How do you stop a Text2SQL agent from producing plausible-but-wrong joins between tables that share column names?
+Q009443	GA04	H	Take a working GenAI agent prototype to production for an enterprise. What is your checklist between demo and launch?
+Q009444	GA04	M	When taking a GenAI agent prototype to production, which checklist items do you cut when the customer wants to launch in three weeks?
+Q009445	GA04	M	How do you decide the quality bar is met for launching a GenAI agent, and who signs off?
+Q009446	CS03	M	Given a list of allowed IP ranges as CIDR blocks plus explicit deny ranges, implement is_allowed(ip) efficiently for millions of checks per second.
+Q009447	CS02	M	For a CIDR-based IP allow/deny list whose rules update every few seconds while lookups continue, how do you swap rules safely under concurrency?
+Q009448	CS07	M	When does a trie beat binary search for CIDR-based IP allow-list lookups?
+Q009449	FT05	H	A customer insists on fine-tuning an open model on their support tickets because "we want our own model." You think RAG over their knowledge base solves it. What do you do?
+Q009450	FT05	M	In a bake-off, RAG and fine-tuning score the same. What do you recommend and why?
+Q009451	FT05	M	What if the executive mandate really is just "we must say we trained a model"?
+Q009452	SD03	H	A Spark Structured Streaming job reads Kafka and writes with foreachBatch into Postgres, and the customer wants exactly-once delivery. What do you build?
+Q009453	MS02	M	In a Spark Structured Streaming pipeline, what does a Delta transaction log give you that a plain Parquet directory sink cannot?
+Q009454	GA04	H	An agent you shipped for a customer four months ago runs on a base model the provider is deprecating in 60 days. How do you swap the model without regressing quality, and what had to be in place beforehand for that to be possible?
+Q009455	GA04	M	A challenger model wins overall but loses on your two most important customer slices. What do you ship?
+Q009456	LLM07	M	How large does the eval set need to be before you would trust a small score difference?
+Q009457	SD02	H	An agent needs durable operational state (conversation memory, pending human approvals, idempotency records for tool calls) and the business wants analytics over all of it. With managed Postgres next to your lakehouse (Delta) tables, how do you split the data and why?
+Q009458a	GA05	M	A user invokes the right to be forgotten. How do you carry the deletion through every data store of an agent platform?
+Q009458b	SD03	M	Two workers pick up the same approved agent action at once. What prevents double execution?
+Q009459	LLM01	H	Explain Multi-head Latent Attention (MLA). What problem does it solve and what does it cost?
+Q009460	LLM06	H	Why does decode become memory-bandwidth-bound rather than FLOP-bound, and how does that change your kernel priorities?
+Q009461	LLM01	H	How does Multi-head Latent Attention interact with tensor parallelism across the head dimension?
+Q009462	LLM03	H	Walk through DeepSeekMoE. How is it different from a standard top-2 MoE like Mixtral?
+Q009463	LLM03	H	Why do fine-grained experts make load balancing harder in MoE models?
+Q009464	LLM04	H	Where would you place shared versus routed experts across devices to minimise communication?
+Q009465	LLM03	H	DeepSeek-V3 uses auxiliary-loss-free load balancing. What was wrong with the auxiliary loss, and how does the bias trick work?
+Q009466	LLM03	H	In auxiliary-loss-free MoE load balancing, how would you set the bias update step size, and what happens if it is too aggressive?
+Q009467	LLM03	H	Does auxiliary-loss-free load balancing in MoE remove the need for any balancing signal during inference?
+Q009468	LLM04	M	What is multi-token prediction (MTP) and why train with it?
+Q009469	LLM05	H	How does MTP-based speculative decoding compare to using a separate small draft model?
+Q009470	LLM05	M	What acceptance rate do you need for speculative decoding to be a net win?
+Q009471	FT03	M	Explain GRPO. Why did DeepSeek drop the value network that PPO uses?
+Q009472	FT03	H	In GRPO, how does group size trade off against variance and cost?
+Q009473	FT03	M	In GRPO and RLHF-style training, where does the KL-to-reference term matter most, and what breaks if you drop it?
+Q009474	FT03	H	R1-Zero was trained with reinforcement learning and essentially no supervised fine-tuning first. What did that show, and why did the full R1 add SFT back?
+Q009475	FT03	M	What reward-hacking failure modes would you watch for with rule-based rewards?
+Q009476	FT03	H	In R1-Zero-style RL training, why does language mixing emerge, and how would you penalise it without hurting reasoning?
+Q009477	LLM04	H	FP8 training at 671B scale is hard. What actually breaks in low precision, and how do you make it stable?
+Q009478	LLM04	H	In FP8 training, why is per-tensor scaling insufficient and per-block scaling enough?
+Q009479	LLM04	H	Which tensors would you never put in FP8 in large-model training, and why keep FP32 master weights?
+Q009480	LLM06	H	When serving a 671B-parameter MoE model, how do you decide the expert-parallel degree versus the tensor-parallel degree?
+Q009481	LLM06	M	What metric tells you experts are imbalanced when serving an MoE model in production, and what is your mitigation?
+Q009482	CODE01	H	Implement top-k MoE routing with a shared expert in PyTorch, and point out where the efficiency and correctness traps are.
+Q009483a	CODE01	H	How do you rewrite the per-expert inner loop of a top-k MoE routing implementation as a grouped matmul?
+Q009483b	LLM03	H	How does token dropping at capacity interact with the auxiliary-loss-free load-balancing bias in MoE routing?
+Q009484	FT04	H	How do you build a training dataset without triggering model collapse when a lot of your data is synthetic?
+Q009485	FT04	H	How would you measure diversity loss quantitatively in a model trained on synthetic data before it shows up in benchmarks?
+Q009486	FT04	M	When is self-generated data safe to train on and when is it poison?
+Q009487	LLM04	H	DualPipe overlaps computation and communication in training. Why is that overlap the whole game at this scale, and what is the trade-off?
+Q009488	LLM04	H	Where does the extra memory in DualPipe come from, and how would you bound it?
+Q009489	LLM04	M	When is pipeline parallelism the wrong tool versus more tensor or data parallelism?
+Q009490	LLM04	H	A lab claims frontier-class results at a fraction of the usual training cost. If an interviewer asks "how is that even possible," what is your structured answer?
+Q009491	LLM04	H	Of the levers behind low-cost frontier LLM training, which generalise to a lab with different hardware, and which are specific to one GPU setup?
+Q009492	LLM04	M	What is missing from a single "training cost" number for an LLM?
+Q009493	LLM05	H	DeepSeek-V4 serves a native 1M-token context. MLA already shrinks the KV cache, so why was it not enough, and how does V4's hybrid compressed attention work?
+Q009494	LLM05	H	In a sparse or compressed attention scheme with a block indexer for 1M-token contexts, how would you detect the indexer silently dropping the block a query needed?
+Q009495	LLM06	H	How does sequence-axis KV compression interact with prefix caching for agent sessions that keep appending tool output?
+Q009496	GA06	H	Budget the end-to-end latency for a real-time voice agent. Why is time-to-first-audio a different problem from an LLM's time-to-first-token?
+Q009497	GA06	M	In a real-time voice agent latency budget, which term would you attack first if p50 is fine but p99 is 2.5 s?
+Q009498	GA06	M	How does the latency budget of a voice agent change over PSTN telephony rather than WebRTC?
+Q009499	GA06	H	How would you moderate a speech-to-speech agent's output without transcribing it?
+Q009500	GA06	M	What would make you migrate a shipped cascaded ASR plus LLM plus TTS voice agent to a native speech-to-speech model?
+Q009501	GA06	H	Design barge-in for a voice agent. What breaks if you get it wrong?
+Q009502	GA06	H	How do you tune the backchannel threshold in a voice agent's barge-in handling without a labelled dataset?
+Q009503	GA06	M	What changes in a voice agent's barge-in handling when the caller is on a speakerphone in a car?
+Q009504	GA06	H	Walk through streaming TTS. How do you chunk input text, and how do you size the jitter buffer?
+Q009505	GA06	H	How would you make jitter buffer sizing adaptive in streaming TTS without oscillating?
+Q009506	GA06	M	Where do you meter characters for billing in a streaming TTS service when a stream is cancelled halfway?
+Q009507	GA05	H	Design the safety stack for voice cloning, covering consent, watermarking, and abuse response.
+Q009508	GA05	H	A journalist submits audio that your classifier says is synthetic, but the account trace is empty. What do you tell them?
+Q009509	GA05	M	How would you handle a legitimate voice actor whose voice clone is later revoked?
+Q009510	GA06	H	There is no single correct output for an utterance. How do you evaluate speech synthesis quality at scale?
+Q009511	GA06	H	How do you build a regression suite for a TTS system that catches a prosody regression an ASR-based WER check would pass?
+Q009512	GA06	M	How many CMOS raters do you need to detect a small change in speech quality?
+Q009513	GA04	M	For an AI agent that schedules hospital appointments, how do you decide when to stop reviewing 100% of outcomes?
+Q009514	GA04	M	What is your rollback plan if a hospital appointment-scheduling agent misbooks a slot at 2am?
+Q009515	SD04	H	In a service that proxies streaming TTS audio from an upstream provider, how do you propagate a mid-stream upstream failure to a client that already received a 200 and some audio?
+Q009516	SD01	M	In a streaming TTS proxy service, where would you add a cache, and what is the cache key for a voice plus text pair?
+Q009517	GA06	H	Design the dubbing pipeline: an English video becomes Spanish, with the same speakers and the same timing.
+Q009518	GA06	H	In a video dubbing pipeline, two speakers overlap for four seconds. What does your pipeline do?
+Q009519	GA06	M	In a dubbing pipeline, how do you handle a proper noun that should not be translated but must be pronounced natively?
+Q009520	GA06	M	A bank wants account numbers read in groups of four with pauses by a TTS system. Where does that logic live, the text normaliser or the model?
+Q009521	GA06	M	How do you version a customer's pronunciation lexicon for TTS without regressing their old audio?
+Q009522	DROP	-	hr
+Q009523	DROP	-	offtopic
+Q009524	GA06	H	Serving real-time TTS is a different capacity problem from serving a text LLM. Why, and how do you plan capacity?
+Q009525	SD05	M	How would you drain a region for a deploy of a real-time TTS service without dropping live calls?
+Q009526	SD01	H	What is your admission-control policy for real-time TTS serving when demand exceeds real-time capacity by 20%?
+Q009527	GA04	H	A customer's voice agent runs on an older real-time TTS model, and product wants the newer, more expressive one. How do you decide, and how do you roll it out?
+Q009528	DROP	-	unfixable
+Q009529	GA05	M	How would you guardrail emotion tags in a TTS voice agent without flattening delivery?
+Q009530	GA06	H	What is a vision-language-action model, and how is it different from an LLM with tools?
+Q009531	GA06	M	Where do discrete tool calls still make sense on a humanoid robot that uses a vision-language-action model?
+Q009532	GA06	H	What would you have to give up to make a VLA fully autoregressive over single actions instead of action chunks?
+Q009533	GA06	H	A humanoid control system splits into a large slow model and a small fast one. Why not run a single end-to-end network?
+Q009534	GA06	H	In a dual-system VLA with a slow large model (S2) and a fast small model (S1), what happens to behaviour if S2 stalls for a full second?
+Q009535	GA06	H	In a dual-system VLA with a slow model (S2) and a fast model (S1), how would you decide whether a new capability belongs in S2, S1, or the data?
+Q009536	GA06	H	If the slow semantic reasoning model of a humanoid robot is moved off-board to the cloud, how would you measure whether staleness is actually hurting task success?
+Q009537	GA06	M	If the slow semantic reasoning model of a humanoid robot runs in the cloud, what onboard fallback would you ship for a network partition?
+Q009538	GA06	M	Explain action chunking. Why predict a sequence of future actions instead of the next one?
+Q009539	GA06	M	How would you choose the action chunk length empirically?
+Q009540	GA06	M	In action-chunked robot control, what signal would trigger an early replan, and what does replanning too eagerly cost you?
+Q009541	ML11	H	Behaviour cloning on teleoperation data has a well-known failure mode. What is it, and what do you do about it on a real humanoid?
+Q009542	ML11	H	In behaviour cloning, how do you decide which failure states are worth the cost of collecting corrections for?
+Q009543	ML11	H	Why can adding more expert-quality data sometimes fail to fix the compounding-error problem of behaviour cloning at all?
+Q009544	MS02	H	Design the teleoperation data pipeline for robot learning. Why is data collection the bottleneck in robotics rather than compute?
+Q009545	MS02	M	How would you detect a systematically bad teleoperation operator without watching every episode?
+Q009546	MS02	M	What would make you accept a lower-quality episode into a robot imitation-learning training set?
+Q009547	ML11	H	You have 10 hours of demonstrations for a new robot task and budget for 50 more. How do you decide what to collect, and what return do you expect?
+Q009548	ML11	M	How would you tell whether a plateau in imitation learning is a data problem or a model-capacity problem?
+Q009549	ML11	M	Would you rather have 50 hours of demonstrations on one task or 10 hours each on five related tasks, and why?
+Q009550	ML11	H	A whole-body controller trained entirely in simulation has to run on real hardware. What transfers, what does not, and how do you close the gap?
+Q009551	ML11	M	How would you tell an overfit-to-sim failure from a genuinely under-trained policy?
+Q009552	ML11	M	In sim-to-real training, why does randomising latency matter more than it sounds like it should?
+Q009553	ML06	H	How do you evaluate a manipulation policy when every trial costs robot time and every failure has physical consequences?
+Q009554	ML06	M	How would you build a regression suite for a robot policy that stays meaningful as the policy improves?
+Q009555	ML06	M	What would you do if a robot policy improved throughput 10 percent and raised near-miss events 5 percent?
+Q009556	DROP	-	unfixable
+Q009557	MS01	H	How would you A/B a robot policy across a fleet without exposing customers to a regression?
+Q009558	GA05	H	Design the safety architecture for a learned whole-body robot policy operating near people.
+Q009559	GA05	H	How would you validate the runtime safety monitors of a learned whole-body robot policy?
+Q009560	GA05	M	What changes in the safety architecture of a learned robot policy when the robot walks rather than stands at a fixed station?
+Q009561	ML11	H	Where does reinforcement learning fit on top of imitation learning for manipulation, and what makes the reward the hard part?
+Q009562	ML11	H	How would you use the failed episodes that imitation learning throws away?
+Q009563	ML11	H	What safeguards would let you run online RL on a real humanoid at all?
+Q009564	ML11	H	A lab reports that pretraining on human video lifted zero-shot success in unseen homes from 9 to 56 percent. How do you get robot-useful pretraining from video that contains no robot actions, and how would you stress-test that claim?
+Q009565	ML11	H	Which embodiment differences between a human and a humanoid robot would most limit transfer from human video, and how would you measure them?
+Q009566	ML11	H	How would you decide the ratio of human-video pretraining compute to robot adaptation data for the next model?
+Q009567	MS04	H	Design permission-aware retrieval for enterprise search. Users must never see results they cannot access in the source system.
+Q009568	MS04	H	In permission-aware enterprise search, how fast must an access revocation take effect, and what is your SLA mechanism?
+Q009569	GA05	H	Where can permission information still leak in permission-aware enterprise search even with correct document filtering (facet counts, related-people suggestions, agent memory)?
+Q009570	RAG04	M	When does BM25 beat dense embeddings on enterprise data, and how would you combine them?
+Q009571	RAG03	H	Your embedding model upgrade improves offline recall but requires re-embedding a billion chunks. How do you roll it out?
+Q009572	RAG04	H	How do you tune the lexical/dense balance in hybrid search per tenant without per-tenant training data?
+Q009573	MS04	H	Design a connector framework that syncs content and permissions from 100+ SaaS apps into one search index.
+Q009574	MS02	H	A source API offers no change feed and rate-limits you to 10 QPS over 20M documents. What is your freshness story?
+Q009575	MS02	M	How do you detect a data connector silently missing updates (reconciliation, sampling audits)?
+Q009576	FT05	M	Why is RAG the right architecture for an enterprise assistant instead of fine-tuning on the company's data? Where does RAG break?
+Q009577	FT05	M	Where would you still fine-tune in an enterprise RAG product (query understanding, rerankers, embedding models: components, not knowledge)?
+Q009578	RAG06	M	How do you stop the model from answering from parametric memory when retrieval returns nothing relevant?
+Q009579	MS03	H	You have dozens of ranking signals and a brand-new tenant with zero interaction data. How do you rank, and how do you improve?
+Q009580	ML06	H	How would you detect that ranking quality regressed for one tenant without being able to read their queries?
+Q009581	MS03	M	Click data says users prefer stale-but-familiar documents. Do you follow the clicks?
+Q009582	RAG06	H	Design the evaluation framework for an enterprise AI assistant when you cannot look at customer data.
+Q009583	LLM07	M	Your LLM judge model updates and every groundedness score shifts by 5 points. What now?
+Q009584	GA03	M	How do you evaluate multi-step agent runs, not just single answers?
+Q009585	RAG02	H	How would you chunk and embed heterogeneous enterprise content: Slack threads, Jira tickets, Google Docs, PDFs?
+Q009586	RAG02	M	How do you handle a 400-message Slack thread that resolves an incident in a RAG index: one chunk, many chunks, or a summary chunk?
+Q009587	RAG03	M	When would you maintain multiple embedding spaces instead of one?
+Q009588	GA03	H	Design an agent that takes actions in enterprise tools (file a Jira ticket, draft an email) on a user's behalf. How do you handle permissions and evaluate it?
+Q009589	GA05	H	An enterprise agent needs data the user can see but the action target cannot contain (cross-visibility leaks in ticket text). What do you do?
+Q009590	GA02	M	How do you regression-test 100+ agent tools without 100 live sandboxes?
+Q009591	RAG04	H	When merging ranked results from N connector shards where scores are not comparable (different BM25 statistics), how do you merge them?
+Q009592	RAG04	M	When merging ranked results from N shards, how does the approach change with pagination (for example, fetching results 90-100)?
+Q009593	GA04	H	Walk through the latency budget of a RAG query: query understanding, retrieval, rerank, LLM answer. Where do you spend and where do you cut?
+Q009594	GA04	M	In a RAG query pipeline, where do you put timeouts and what degrades gracefully: drop the reranker, or drop a slow shard?
+Q009595	LLM06	M	How would you cut TTFT for a generated answer by half without changing models?
+Q009596	RAG05	H	An enterprise search ranking leans on a knowledge graph of people, content and activity. How would you build that graph, and how does it improve retrieval beyond embedding similarity?
+Q009597	RAG05	H	How do you resolve the same person or project across ten systems with no shared identifier when building an enterprise knowledge graph?
+Q009598	RAG05	M	In an enterprise search knowledge graph of people, content and activity, which graph features would you disable for a tenant that has enabled only one connector?
+Q009599	GA03	H	Design agent orchestration across dozens of connected SaaS systems. Where is authorization enforced, and why can it not live in the model?
+Q009600	GA05	M	A tool returns data the user can see but the target system's other viewers cannot. What does the agent orchestrator do?
+Q009601	GA03	M	How would you tell tool-selection failures apart from planning failures in production agent traces?
+Q009602	GA04	H	Employees across a 20,000-person company build their own agents in a no-code builder. Design the governance layer: what is checked before an agent goes live, what is enforced at run time, and how do you know an agent is worth keeping?
+Q009603	GA04	M	A popular employee-built agent's owner leaves the company. What happens to the agent?
+Q009604	GA05	H	How would you detect prompt-injection exposure in an agent definition without executing it?
+Q009605	MS02	H	When approximating top-K frequent items over an unbounded stream with probabilistic sketches on 1,000 workers, how would you merge the sketches and what happens to the error bound?
+Q009606	MS02	M	When computing approximate stream statistics with sketches, how do you handle a rotating window of the last hour?
+Q009607	ML09	M	Derive the gradient of cross-entropy loss with softmax inputs, and explain why we fuse them numerically.
+Q009608	ML07	M	How does the gradient of softmax cross-entropy loss change with label smoothing?
+Q009609	LLM04	H	Why can the loss computation for a large-vocabulary LM dominate memory, and what do fused kernels (for example, chunked cross-entropy) do about it?
+Q009610	ML08	M	On average, how many fair coin flips until you see HHH?
+Q009611	ML08	M	How would you estimate the expected number of fair coin flips until HHH by simulation, and how many trials until the standard error of your estimate is under 0.01?
+Q009612	ML09	M	Explain the SVD and give two places it shows up in modern deep learning.
+Q009613	ML09	H	What is the cost of a full SVD on a 4096x4096 matrix, and what would you use instead if you only need the top 10 singular vectors?
+Q009614	ML09	M	Why is the spectral norm of a weight matrix relevant to Lipschitz bounds?
+Q009615	CODE01	M	Implement multi-head self-attention from scratch, without nn.MultiheadAttention, and make it causal.
+Q009616	LLM01	M	Where does dropout conventionally go in a multi-head attention implementation, and why?
+Q009617	LLM01	M	How do you modify multi-head attention for grouped-query attention? What changes and what does it buy at inference?
+Q009618a	CODE01	M	Implement nucleus (top-p) sampling.
+Q009618b	LLM05	M	What failure mode of top-k sampling does top-p (nucleus) sampling fix?
+Q009619	LLM05	H	Why can top-p=1.0, temperature=1.0 still produce degenerate repetition, and what mitigations exist?
+Q009620	LLM06	H	How do you make sampling reproducible across batch sizes on GPU?
+Q009621	LLM04	H	Your pretraining loss suddenly diverges at step 300k of a long run. Diagnose and fix it.

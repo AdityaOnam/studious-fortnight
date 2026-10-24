@@ -1,0 +1,8 @@
+Q001179	offscope
+Q001483	offscope
+Q001484	offscope
+Q001480	offscope
+Q009544	offscope
+Q009545	offscope
+Q009546	offscope
+Q009727	offscope

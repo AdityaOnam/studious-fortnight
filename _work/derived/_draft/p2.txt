@@ -1,0 +1,257 @@
+FT01|E|What is fine-tuning, and what problems does it solve that prompting alone cannot?|G:docs/07-model-training/README.md
+FT01|M|When should you fine-tune a model instead of improving the prompt, and what are the signs you are fine-tuning prematurely?|A:03-training-and-adaptation/02-fine-tuning-strategies.md
+FT01|M|Compare full-parameter fine-tuning with parameter-efficient fine-tuning in cost, quality and risk.|G:docs/07-model-training/README.md
+FT01|M|What is the quality hierarchy of SFT data, and why does a small high-quality set often beat a large noisy one?|A:03-training-and-adaptation/02-fine-tuning-strategies.md
+FT01|M|How would you prepare and quality-check a fine-tuning dataset from raw support transcripts?|G:docs/07-model-training/README.md
+FT01|M|What is continued pretraining, and why use it instead of mixing domain text into the SFT set?|A:03-training-and-adaptation/02-fine-tuning-strategies.md
+FT01|M|What is catastrophic forgetting, and how do you prevent a model from losing general capabilities during fine-tuning?|G:docs/07-model-training/README.md
+FT01|M|How do you pick the learning rate for fine-tuning, and why is it usually much lower than for pretraining?|A:03-training-and-adaptation/02-fine-tuning-strategies.md
+FT01|M|What is chat template mismatch in fine-tuning, and how does it silently ruin results?|G:docs/01-basic-concepts/README.md
+FT01|M|What is training data packing, and what bugs arise from cross-sample attention leakage or incorrect loss masks?|G:docs/07-model-training/README.md
+FT01|M|How do you tell whether a fine-tuned model is overfitting, leaking test data, or simply showing evaluation noise?|G:docs/07-model-training/README.md
+FT01|M|How would you evaluate a fine-tuned model against the base model and a strong prompted baseline?|A:03-training-and-adaptation/02-fine-tuning-strategies.md
+FT01|M|Your roadmap says to fine-tune a hosted model on support transcripts next year. What should you check about provider fine-tuning availability and model lifecycle?|A:03-training-and-adaptation/02-fine-tuning-strategies.md
+FT01|M|What is knowledge editing, and how does it differ from fine-tuning, RAG and machine unlearning?|G:docs/07-model-training/README.md
+FT01|M|How do ROME, MEMIT and MEND edit facts in a model, and how would you evaluate whether an edit succeeded?|G:docs/07-model-training/README.md
+FT01|M|How do you handle OOM errors during fine-tuning without changing the model?|G:docs/07-model-training/README.md
+FT01|M|What does it mean to be able to fine-tune on a customer's data when the data contains regulated or personal information?|A:16-case-studies/19-customer-distillation-pipeline.md
+FT01|M|How do you decide the number of epochs and detect when to stop SFT?|G:docs/07-model-training/README.md
+FT01|M|How do DDP, FSDP and ZeRO differ in what they replicate or shard during fine-tuning?|G:docs/07-model-training/README.md
+FT02|E|How does LoRA work, and why does a low-rank update reduce trainable parameters so much?|A:03-training-and-adaptation/03-lora-qlora-peft.md
+FT02|M|How do the LoRA rank and alpha hyperparameters affect capacity and training dynamics?|G:docs/07-model-training/README.md
+FT02|M|Why is LoRA alpha often set to twice the rank?|A:03-training-and-adaptation/03-lora-qlora-peft.md
+FT02|M|Which modules should you attach LoRA adapters to, and what is the effect of targeting only attention versus all linear layers?|A:03-training-and-adaptation/03-lora-qlora-peft.md
+FT02|M|What does QLoRA add to LoRA, and what memory savings does it achieve?|G:docs/07-model-training/README.md
+FT02|M|Walk through the memory math of fine-tuning a 70B model with QLoRA versus full fine-tuning.|G:docs/07-model-training/README.md
+FT02|M|What is DoRA and why would you use it over standard LoRA?|A:03-training-and-adaptation/03-lora-qlora-peft.md
+FT02|M|What are VeRA and rank-stabilized LoRA, and what problems do they address?|A:03-training-and-adaptation/03-lora-qlora-peft.md
+FT02|M|Compare LoRA, adapters, prefix tuning and prompt tuning.|G:docs/07-model-training/README.md
+FT02|M|Can LoRA adapters be merged into base weights, and what are the implications for serving and quantization?|A:03-training-and-adaptation/03-lora-qlora-peft.md
+FT02|H|Design a platform that serves hundreds of tenant-specific LoRA adapters on shared GPUs, including adapter swapping and isolation.|A:16-case-studies/17-multi-tenant-fine-tuning-platform.md
+FT02|M|Why might LoRA at a moderate rank be a better default than full fine-tuning for a multi-tenant platform?|A:16-case-studies/17-multi-tenant-fine-tuning-platform.md
+FT02|M|How do you handle a base-model upgrade that breaks existing tenant adapters?|A:16-case-studies/17-multi-tenant-fine-tuning-platform.md
+FT02|M|What integrity controls would you put on adapter artifacts such as signing and checksums?|A:16-case-studies/17-multi-tenant-fine-tuning-platform.md
+FT03|E|What is RLHF, and what are its three stages?|G:docs/07-model-training/README.md
+FT03|M|How is a reward model trained from pairwise preference data, and what loss is used?|G:docs/07-model-training/README.md
+FT03|M|Why does PPO-based RLHF need a KL penalty against the reference model?|G:docs/07-model-training/README.md
+FT03|M|How does DPO remove the need for an explicit reward model, and what assumptions does it make?|A:03-training-and-adaptation/04-rlhf-and-dpo.md
+FT03|M|Why is DPO often preferred over RLHF with PPO, and when is PPO still better?|A:03-training-and-adaptation/04-rlhf-and-dpo.md
+FT03|M|How is preference data collected, what does it cost, and what quality problems arise in annotation?|G:docs/07-model-training/README.md
+FT03|M|What is the alignment tax, and how do you measure it?|A:03-training-and-adaptation/04-rlhf-and-dpo.md
+FT03|M|What is reward hacking, and how do you detect and prevent it in best-of-N and RL training?|A:13-reliability-and-safety/02-ensemble-methods.md
+FT03|M|What is RLVR and why is it more stable than reward-model RLHF for reasoning?|A:03-training-and-adaptation/08-rlvr-and-reasoning-models.md
+FT03|M|Explain GRPO: how it computes advantages without a value model, and one known failure mode.|A:03-training-and-adaptation/08-rlvr-and-reasoning-models.md
+FT03|M|How do DAPO and GSPO differ from GRPO, and what instabilities do they target?|G:docs/07-model-training/README.md
+FT03|M|What is the credit assignment problem in LLM RL, and how do token-level and sequence-level rewards differ?|G:docs/07-model-training/README.md
+FT03|M|What stability problems appear in RL training of LLMs and how would you diagnose them?|G:docs/07-model-training/README.md
+FT03|H|You want RL on a domain with no programmatic verifier and plan to use a rubric-scored judge as the reward. What can go wrong?|A:03-training-and-adaptation/08-rlvr-and-reasoning-models.md
+FT03|M|Does RL add new capability or just sharpen sampling from the base model? What evidence would distinguish the two?|A:03-training-and-adaptation/08-rlvr-and-reasoning-models.md
+FT03|M|What is a process reward model, and how does it differ from an outcome reward model for agents?|G:docs/15-advanced-topics/README.md
+FT03|H|Design a process reward model for a customer-support agent: what do you score, and how do you avoid degenerate reward?|A:00-interview-prep/01-question-bank.md
+FT03|M|Compare the post-training pipelines SFT then DPO versus SFT then GRPO and when to choose each.|G:docs/07-model-training/README.md
+FT03|M|What is online alignment, and how does it differ from offline preference optimization?|A:03-training-and-adaptation/04-rlhf-and-dpo.md
+FT03|M|How does Constitutional AI or RLAIF replace human preference labels, and what are its risks?|A:03-training-and-adaptation/06-synthetic-data-generation.md
+FT03|M|What is rejection sampling fine-tuning, and how does it compare with DPO and GRPO?|G:docs/07-model-training/README.md
+FT03|M|Why is a single alignment technique not a safety guarantee, and how do you layer defenses?|G:docs/09-ai-safety-evaluation/README.md
+FT03|M|Your safety monitor reads the model's chain of thought. A new model card reports reduced monitorability. What changes in your safety design?|A:03-training-and-adaptation/08-rlvr-and-reasoning-models.md
+FT04|E|What is knowledge distillation, and why can a distilled small model beat a same-size model trained from scratch?|A:03-training-and-adaptation/05-knowledge-distillation.md
+FT04|M|Compare hard-label, soft-label and on-policy distillation.|A:03-training-and-adaptation/05-knowledge-distillation.md
+FT04|M|What is temperature scaling in soft-label distillation and why does it matter?|A:03-training-and-adaptation/05-knowledge-distillation.md
+FT04|M|How would you distill reasoning ability into a small model, and why is collecting long chain-of-thought for SFT not enough?|G:docs/07-model-training/README.md
+FT04|M|What is self-distillation via rejection sampling, and when is it useful?|A:03-training-and-adaptation/05-knowledge-distillation.md
+FT04|M|What are the legal and technical risks of distilling a closed API model into an open-weight student?|A:03-training-and-adaptation/05-knowledge-distillation.md
+FT04|M|What is a model distillation attack through an API, and how would you defend against extraction?|G:docs/09-ai-safety-evaluation/README.md
+FT04|H|Design a customer-specific distillation pipeline from production traces to a canary-deployed student model.|A:16-case-studies/19-customer-distillation-pipeline.md
+FT04|M|Why should distillation data come from real production traces rather than purely synthetic prompts?|A:16-case-studies/19-customer-distillation-pipeline.md
+FT04|M|What happens to a student model when the teacher is upgraded, and how often should you re-distill?|A:16-case-studies/19-customer-distillation-pipeline.md
+FT04|M|How do teacher hallucinations get baked into the student, and how do you filter them?|A:16-case-studies/19-customer-distillation-pipeline.md
+FT04|M|A customer spends fifty thousand dollars per month on a frontier model. How would you quote a distillation project, including payback?|A:00-interview-prep/01-question-bank.md
+FT04|M|When does distillation not make sense?|A:16-case-studies/19-customer-distillation-pipeline.md
+FT04|M|What is quantization-aware distillation and why combine the two?|A:03-training-and-adaptation/05-knowledge-distillation.md
+FT04|M|What is test-time scaling, and how does it trade inference compute for accuracy?|G:docs/01-basic-concepts/README.md
+FT04|M|What is Extended Thinking with a token budget, and how do you decide the budget per task?|G:docs/15-advanced-topics/README.md
+FT04|M|Why does continual learning in a deployed agent risk catastrophic forgetting, and what mitigations exist?|A:08-memory-and-state/03-long-term-memory.md
+FT04|M|How does an online training loop let a product model keep improving from user feedback, and what are its risks?|G:docs/07-model-training/README.md
+FT04|M|What is a data flywheel for an AI product, and how do you build one safely?|G:docs/05-ai-agent-basics/README.md
+FT04|M|How do you evaluate the quality of synthetic instruction data and prevent a loss of diversity?|A:03-training-and-adaptation/06-synthetic-data-generation.md
+FT05|M|How do you decide between prompt engineering, RAG, tool calling and fine-tuning for a given problem?|G:docs/02-prompt-engineering/README.md
+FT05|M|When would you choose RAG over fine-tuning, and when the reverse?|A:00-interview-prep/01-question-bank.md
+FT05|M|Can RAG and fine-tuning be combined, and what does each contribute in a combined system?|G:docs/03-rag-system/README.md
+FT05|M|Why is RAG better than fine-tuning for a regulated knowledge base that changes monthly?|A:16-case-studies/12-compliance-automation.md
+FT05|M|When does many-shot in-context learning substitute for fine-tuning?|A:05-prompting-and-context/02-few-shot-and-icl.md
+FT05|M|How do you decide when to use a frontier API model versus self-host an open-weight model?|A:02-model-landscape/04-model-selection-guide.md
+FT05|M|What are the limitations of fine-tuning that interviewers commonly probe?|G:docs/02-prompt-engineering/README.md
+FT05|M|Build versus buy versus framework: how do you decide for an LLM platform component?|A:09-frameworks-and-tools/08-framework-selection-guide.md
+FT05|M|A client wants better quality, lower latency and lower cost at once. How do you negotiate the trade-offs?|G:docs/26-forward-deployed-engineer/README.md
+FT05|M|How do you decide whether a problem is suitable for an LLM at all, or better handled by rules or classical ML?|G:docs/15-advanced-topics/README.md
+FT05|M|When should an agent be downgraded to a deterministic workflow?|G:docs/27-project-experience/README.md
+FT05|M|Provider model versions now change weekly. How do you keep model selection current without breaking production?|A:02-model-landscape/04-model-selection-guide.md
+FT05|M|How do sovereign-AI and data-residency requirements change your model hosting choice?|A:02-model-landscape/01-model-taxonomy.md
+FT05|M|How does a cheaper open-weight model with frontier-level quality change your production architecture decisions?|A:00-interview-prep/01-question-bank.md
+FT05|M|A regulated customer requires zero data retention but the best model requires 30-day retention. What are your options?|A:12-security-and-access/01-llm-security.md
+FT05|M|Your cost model for next year uses today's per-token prices. What will it get wrong?|A:02-model-landscape/03-pricing-and-costs.md
+FT05|M|How do you decide whether a skill or a RAG corpus should supply a given piece of agent knowledge?|G:docs/14-mcp-skill-systems/README.md
+RAG01|E|What is retrieval-augmented generation, and why use it instead of relying on model weights alone?|G:docs/03-rag-system/README.md
+RAG01|E|Walk through the full RAG pipeline, separating the offline indexing flow from the online query flow.|G:docs/03-rag-system/README.md
+RAG01|M|Describe the taxonomy of naive, advanced, agentic and graph RAG and what each adds.|A:06-retrieval-systems/01-rag-fundamentals.md
+RAG01|M|Why would you still use RAG if frontier models offer million-token contexts?|A:06-retrieval-systems/01-rag-fundamentals.md
+RAG01|M|Someone proposes replacing your RAG pipeline by loading all documents into a one-million-token context on every call. How do you evaluate that?|A:00-interview-prep/01-question-bank.md
+RAG01|M|Where is the cache-read break-even between long context with prompt caching and RAG?|A:06-retrieval-systems/14-production-rag-at-scale.md
+RAG01|M|When does compiling knowledge once into a wiki or summaries beat both RAG and an agentic retrieval loop?|A:06-retrieval-systems/08-agentic-rag.md
+RAG01|M|What limits naive RAG, and what is the retrieval quality gap in practice?|A:06-retrieval-systems/01-rag-fundamentals.md
+RAG01|M|How do poisoned sources threaten a RAG pipeline, and what defenses exist?|A:06-retrieval-systems/01-rag-fundamentals.md
+RAG01|M|Why do you need a vector database for RAG, and why can't a relational database do the job?|G:docs/03-rag-system/README.md
+RAG01|M|Search results are relevant but the model ignores them and answers from training data. How do you fix this?|A:00-interview-prep/01-question-bank.md
+RAG01|M|How do you assemble and order the final context from retrieved chunks, including citations?|A:06-retrieval-systems/14-production-rag-at-scale.md
+RAG01|M|What is context compression in RAG, and what are LLM-based, embedding-based and rerank-based approaches?|G:docs/03-rag-system/README.md
+RAG01|M|What is LLMLingua-style prompt compression, and what accuracy risks does it carry?|G:docs/20-rag-advanced-optimization/README.md
+RAG01|M|How do you reduce the cost of a RAG system?|G:docs/03-rag-system/README.md
+RAG01|M|When does a RAG system fail on enterprise use cases, and how do you choose an enhancement?|G:docs/20-rag-advanced-optimization/README.md
+RAG01|M|How do you update a RAG knowledge base dynamically with batch, real-time or versioned updates?|G:docs/03-rag-system/README.md
+RAG01|M|Compare Parent-Document Retrieval and Sentence Window Retrieval.|G:docs/03-rag-system/README.md
+RAG01|M|How do you handle conflicting information across retrieved chunks?|G:docs/20-rag-advanced-optimization/README.md
+RAG01|M|What is a semantic cache for RAG, how do you pick the similarity threshold, and how do you invalidate entries?|G:docs/03-rag-system/README.md
+RAG01|M|Design the layered caching architecture for a production RAG system.|A:06-retrieval-systems/14-production-rag-at-scale.md
+RAG01|M|When should a RAG request skip retrieval entirely, and how would you build the router that decides?|A:06-retrieval-systems/14-production-rag-at-scale.md
+RAG01|M|How would you design a four-path query router for a RAG system, and what signals feed it?|A:06-retrieval-systems/14-production-rag-at-scale.md
+RAG01|M|How do you optimize RAG latency using parallel retrieval, batched embedding and streaming?|A:06-retrieval-systems/14-production-rag-at-scale.md
+RAG01|M|A RAG project interviewer asks for the biggest challenge you faced. How would you structure your answer technically?|G:docs/20-rag-advanced-optimization/README.md
+RAG01|M|How do you handle ambiguous or multi-meaning user queries in RAG?|G:docs/20-rag-advanced-optimization/README.md
+RAG01|M|Why must the indexing and query pipelines of an enterprise RAG system be separated?|G:docs/20-rag-advanced-optimization/README.md
+RAG01|M|How do you tune cost per query in RAG using tiered models, progressive detail and cost guardrails?|A:06-retrieval-systems/14-production-rag-at-scale.md
+RAG01|M|What is the difference between Defensible RAG and ordinary RAG, and what structural problems does it address?|G:docs/20-rag-advanced-optimization/README.md
+RAG02|E|How do you choose chunk size and overlap, and how do they affect retrieval quality?|G:docs/03-rag-system/README.md
+RAG02|M|Why is fixed-size chunking with overlap problematic in production?|A:06-retrieval-systems/02-chunking-strategies.md
+RAG02|M|Compare recursive, semantic and structure-aware chunking.|A:06-retrieval-systems/02-chunking-strategies.md
+RAG02|M|What is hierarchical parent-child chunking, and when does it help?|A:06-retrieval-systems/02-chunking-strategies.md
+RAG02|M|What is late chunking, and how does it differ from contextual retrieval?|A:06-retrieval-systems/10-contextual-retrieval.md
+RAG02|M|Explain Anthropic-style contextual retrieval and when you would skip it.|A:06-retrieval-systems/10-contextual-retrieval.md
+RAG02|M|A knowledge base of fifty thousand documents needs contextual chunk enrichment. How do you control the ingestion cost?|A:06-retrieval-systems/10-contextual-retrieval.md
+RAG02|M|How would you chunk source code, tables and layout-heavy PDFs differently?|A:06-retrieval-systems/02-chunking-strategies.md
+RAG02|M|Why is the recursive character text splitter a common default, and when should you not use it?|G:docs/20-rag-advanced-optimization/README.md
+RAG02|M|What is semantic chunking, and what do recent studies say about its benefit over fixed-size chunks?|G:docs/20-rag-advanced-optimization/README.md
+RAG02|M|Many retrieval failures are really chunking failures. How do you recognize them?|A:06-retrieval-systems/14-production-rag-at-scale.md
+RAG02|M|How do you parse mixed PDFs, Word and HTML documents for a RAG knowledge base?|G:docs/27-project-experience/README.md
+RAG02|M|How do you extract and retrieve information from complex PDF tables?|G:docs/03-rag-system/README.md
+RAG02|M|Why do you still need OCR engines when vision-language models can read pages?|A:10-document-processing/01-ocr-and-layout.md
+RAG02|M|How would you route pages to the cheapest parsing tier that still works?|A:06-retrieval-systems/15-data-engineering-for-ai.md
+RAG02|H|You must parse five million pages a month of mixed born-digital and scanned documents for RAG. Which parser mix and cost controls do you use?|A:10-document-processing/01-ocr-and-layout.md
+RAG02|M|How do you process a 500-page PDF with vision models efficiently?|A:10-document-processing/01-ocr-and-layout.md
+RAG02|M|How do you recover reading order and logical structure from complex layouts?|A:10-document-processing/01-ocr-and-layout.md
+RAG02|M|How would you handle low-quality scans and handwriting in an ingestion pipeline?|A:10-document-processing/01-ocr-and-layout.md
+RAG02|M|Why is deduplication one of the most important stages in a data pipeline for AI?|A:06-retrieval-systems/15-data-engineering-for-ai.md
+RAG02|M|How do you handle PII, consent and governance during ingestion for RAG or fine-tuning?|A:06-retrieval-systems/15-data-engineering-for-ai.md
+RAG02|M|How do you handle document updates and version management in a RAG knowledge base?|G:docs/27-project-experience/README.md
+RAG02|M|How would you handle mixed-permission documents during chunking so that access control still holds?|A:16-case-studies/15-knowledge-management.md
+RAG02|M|How do you tune tokenizer-aligned chunking so chunks fit embedding model limits?|A:01-foundations/02-tokenization-deep-dive.md
+RAG03|E|What is an embedding and what does 1536 dimensions mean for retrieval?|G:docs/03-rag-system/README.md
+RAG03|M|How do embedding models learn semantic similarity through contrastive training?|A:01-foundations/05-embeddings-and-vector-spaces.md
+RAG03|M|Compare cosine similarity, dot product and Euclidean distance, and say when each is appropriate.|A:01-foundations/05-embeddings-and-vector-spaces.md
+RAG03|M|Compare bi-encoders, cross-encoders and late-interaction models in cost and accuracy.|A:06-retrieval-systems/11-late-interaction-colbert.md
+RAG03|M|What is a Matryoshka embedding, and why choose one for a billion-vector index?|A:06-retrieval-systems/03-embedding-models.md
+RAG03|M|How do binary and int8 quantization reduce vector storage, and what recall do you lose?|A:06-retrieval-systems/03-embedding-models.md
+RAG03|M|What is the vocabulary mismatch problem in embedding-based retrieval?|A:06-retrieval-systems/03-embedding-models.md
+RAG03|M|What is asymmetric retrieval, and how do query and document prefixes address it?|A:06-retrieval-systems/09-advanced-retrieval-patterns.md
+RAG03|M|How would you choose and compare embedding models for a domain-specific corpus?|A:01-foundations/05-embeddings-and-vector-spaces.md
+RAG03|M|How do you fine-tune an embedding model, and when is it worth it?|G:docs/03-rag-system/README.md
+RAG03|H|You need to upgrade the embedding model behind a 500M-vector index. How do you do it with no downtime?|A:06-retrieval-systems/03-embedding-models.md
+RAG03|M|What is embedding drift, and how do you detect and mitigate it?|G:docs/20-rag-advanced-optimization/README.md
+RAG03|M|How do multimodal embeddings such as CLIP and SigLIP create a shared space for text and images?|A:06-retrieval-systems/12-multimodal-rag.md
+RAG03|M|Why not simply ask an LLM to judge relevance instead of using embeddings for first-stage retrieval?|A:01-foundations/05-embeddings-and-vector-spaces.md
+RAG03|M|Explain how HNSW works and when you would not use it.|A:06-retrieval-systems/04-vector-databases.md
+RAG03|M|How do the HNSW parameters M, efConstruction and efSearch affect recall, latency and memory?|G:docs/06-vector-index-optimization/README.md
+RAG03|M|Compare IVF, IVF-PQ and HNSW and when to choose each.|G:docs/20-rag-advanced-optimization/README.md
+RAG03|M|How does product quantization compress vectors, and what error does it introduce?|A:06-retrieval-systems/04-vector-databases.md
+RAG03|M|When would you use a disk-based index such as DiskANN over a RAM-based HNSW index?|A:06-retrieval-systems/04-vector-databases.md
+RAG03|M|What distinguishes ScaNN from IVF-PQ and HNSW?|G:docs/06-vector-index-optimization/README.md
+RAG03|M|How does binary quantization differ from product quantization?|G:docs/06-vector-index-optimization/README.md
+RAG03|M|Why is metadata filtering often the bottleneck in vector databases, and what are pre-filter, post-filter and in-graph filtering?|A:06-retrieval-systems/04-vector-databases.md
+RAG03|M|How do you monitor and tune a vector index in production for recall and latency?|G:docs/06-vector-index-optimization/README.md
+RAG03|M|How would you choose between Pinecone and a self-hosted vector solution?|A:06-retrieval-systems/04-vector-databases.md
+RAG03|M|When is pgvector the right choice, and how do you combine vector similarity with business conditions?|G:docs/06-vector-index-optimization/README.md
+RAG03|H|How would you migrate a vector database without downtime or retrieval regression?|G:docs/06-vector-index-optimization/README.md
+RAG03|M|How do you handle multi-tenancy in a vector database: namespaces, per-tenant shards or row-level security?|A:06-retrieval-systems/04-vector-databases.md
+RAG03|M|How do you plan capacity for a vector index with hundreds of millions of vectors, including memory tiers and replicas?|A:06-retrieval-systems/14-production-rag-at-scale.md
+RAG03|M|How do you design an embedding service for large-scale RAG with cost optimization?|G:docs/10-production-deployment/README.md
+RAG03|M|What indexing trade-offs matter when you shard vectors across nodes?|A:06-retrieval-systems/14-production-rag-at-scale.md
+RAG04|E|When would you use hybrid search instead of pure dense retrieval?|A:06-retrieval-systems/05-hybrid-search.md
+RAG04|M|Why does BM25 still matter next to dense embeddings?|A:06-retrieval-systems/10-contextual-retrieval.md
+RAG04|M|Why is reciprocal rank fusion safer than adding raw scores from different retrievers?|A:06-retrieval-systems/05-hybrid-search.md
+RAG04|M|How do you tune the balance between dense and sparse in hybrid search, including query-adaptive weights?|A:06-retrieval-systems/05-hybrid-search.md
+RAG04|M|When would you pick learned sparse models like SPLADE over BM25 plus dense?|A:06-retrieval-systems/05-hybrid-search.md
+RAG04|M|Describe multi-path retrieval and RAG-Fusion: how are queries rewritten and results fused?|G:docs/03-rag-system/README.md
+RAG04|M|How does multi-tenant keyword scoring distort BM25 statistics, and how do you avoid it?|A:06-retrieval-systems/05-hybrid-search.md
+RAG04|M|Why is a cross-encoder fundamentally more accurate than a bi-encoder reranker?|A:06-retrieval-systems/06-reranking-strategies.md
+RAG04|M|How do you decide how many candidates to pass to the reranker?|A:06-retrieval-systems/06-reranking-strategies.md
+RAG04|M|When would you use an LLM as a reranker, and how do listwise and pointwise approaches differ?|A:06-retrieval-systems/06-reranking-strategies.md
+RAG04|M|How do you rerank when the query is extremely long?|A:06-retrieval-systems/06-reranking-strategies.md
+RAG04|M|When would you skip reranking altogether?|A:00-interview-prep/01-question-bank.md
+RAG04|M|How does ColBERT's MaxSim scoring work, and why is it better than single-vector similarity?|A:06-retrieval-systems/11-late-interaction-colbert.md
+RAG04|M|ColBERT stores one vector per token. How does it scale and what are the storage trade-offs?|A:06-retrieval-systems/11-late-interaction-colbert.md
+RAG04|H|For a legal search system with five million documents, decide between a dense bi-encoder, ColBERT and a hybrid with reranking.|A:06-retrieval-systems/11-late-interaction-colbert.md
+RAG04|M|What do ColBERTv2 and PLAID change about index size and speed?|A:06-retrieval-systems/11-late-interaction-colbert.md
+RAG04|M|What do ColPali and ColQwen do differently from text-based late-interaction retrieval?|G:docs/06-vector-index-optimization/README.md
+RAG04|M|Describe query rewriting strategies: contextual rewrite, expansion, HyDE and multi-query.|G:docs/03-rag-system/README.md
+RAG04|M|Why is HyDE risky for some applications?|A:06-retrieval-systems/09-advanced-retrieval-patterns.md
+RAG04|M|How does query decomposition help with multi-part questions?|A:06-retrieval-systems/09-advanced-retrieval-patterns.md
+RAG04|M|How does contextual retrieval compare to HyDE for improving retrieval quality?|A:06-retrieval-systems/10-contextual-retrieval.md
+RAG04|M|How do you improve recall when retrieval results are irrelevant?|G:docs/03-rag-system/README.md
+RAG04|M|What retrieval metrics would you compute to evaluate a retriever on a golden query set?|A:06-retrieval-systems/13-rag-evaluation-patterns.md
+RAG04|M|How do you diversify results after reranking and apply business rules without hurting relevance?|A:06-retrieval-systems/06-reranking-strategies.md
+RAG04|M|How do you choose a reranker model and tune its latency?|G:docs/12-frameworks-tools/README.md
+RAG04|M|How do you add metadata filters and recency weighting to ranking in enterprise search?|A:16-case-studies/15-knowledge-management.md
+RAG05|M|What is GraphRAG, and when does it genuinely beat vector RAG?|A:06-retrieval-systems/07-graph-rag.md
+RAG05|M|Why is entity extraction the bottleneck of GraphRAG indexing?|A:06-retrieval-systems/07-graph-rag.md
+RAG05|M|How does community summarization let GraphRAG answer aggregate questions that exceed the context window?|A:06-retrieval-systems/07-graph-rag.md
+RAG05|M|What is the maintenance tail of a knowledge graph, and when does it outweigh the benefits?|A:06-retrieval-systems/07-graph-rag.md
+RAG05|M|How would you build a knowledge graph for GraphRAG from unstructured documents?|G:docs/20-rag-advanced-optimization/README.md
+RAG05|M|What is the graph-as-reranker pattern?|A:06-retrieval-systems/07-graph-rag.md
+RAG05|M|How does agentic RAG differ from advanced RAG, and what does it cost in determinism?|A:06-retrieval-systems/08-agentic-rag.md
+RAG05|M|Explain Self-RAG and corrective RAG, and how they decide whether to retrieve or to re-retrieve.|A:06-retrieval-systems/08-agentic-rag.md
+RAG05|M|How does multi-hop reasoning work in an agentic retrieval loop?|G:docs/03-rag-system/README.md
+RAG05|M|What is the reasoning-retrieval balance in agentic RAG, and how do you stop it from over-searching?|A:06-retrieval-systems/08-agentic-rag.md
+RAG05|M|What new failure modes does agentic RAG introduce compared to a linear pipeline?|A:06-retrieval-systems/14-production-rag-at-scale.md
+RAG05|M|How would you implement adaptive retrieval where effort scales with query complexity?|A:06-retrieval-systems/14-production-rag-at-scale.md
+RAG05|M|What is the co-cheating trap when training search agents?|A:06-retrieval-systems/08-agentic-rag.md
+RAG05|M|How does a self-healing RAG system detect and recover from bad retrieval?|G:docs/20-rag-advanced-optimization/README.md
+RAG05|M|Design a multimodal RAG system for a financial research platform with charts, tables and text.|A:06-retrieval-systems/12-multimodal-rag.md
+RAG05|M|How would you answer a query that needs both a chart on one page and a table on another?|A:06-retrieval-systems/12-multimodal-rag.md
+RAG05|H|Users want to query a 10,000-hour video library. How do you design and cost multimodal retrieval over it?|A:06-retrieval-systems/12-multimodal-rag.md
+RAG05|M|How does ColPali-style page-as-image retrieval compare with a parse-then-embed pipeline?|A:06-retrieval-systems/12-multimodal-rag.md
+RAG05|M|How do you build a dual representation of charts and diagrams for retrieval?|A:06-retrieval-systems/12-multimodal-rag.md
+RAG05|M|How do image-text multimodal RAG systems index and retrieve mixed content?|G:docs/03-rag-system/README.md
+RAG05|M|What is state-aware or agentic retrieval, and how does it differ from standard retrieval?|G:docs/20-rag-advanced-optimization/README.md
+RAG05|M|When should an agent's memory store use a vector database and when a knowledge graph?|A:08-memory-and-state/03-long-term-memory.md
+RAG05|M|How do you enforce permission-aware retrieval without leaking the existence of restricted documents?|A:16-case-studies/15-knowledge-management.md
+RAG05|M|How would you design a hierarchical or multi-index strategy for a large heterogeneous corpus?|A:06-retrieval-systems/14-production-rag-at-scale.md
+RAG06|E|What is the RAG triad, and which failures does each dimension expose?|A:06-retrieval-systems/13-rag-evaluation-patterns.md
+RAG06|M|How are RAGAS faithfulness and context precision computed under the hood?|A:06-retrieval-systems/13-rag-evaluation-patterns.md
+RAG06|M|What are the four core RAGAS metrics and how would you optimize each?|G:docs/09-ai-safety-evaluation/README.md
+RAG06|M|Compare RAGAS, TruLens, DeepEval and UpTrain and when to use each.|G:docs/09-ai-safety-evaluation/README.md
+RAG06|M|How do you evaluate the retriever, reranker and generator separately?|A:06-retrieval-systems/13-rag-evaluation-patterns.md
+RAG06|M|How do you evaluate a RAG system when you have no ground-truth answers?|A:06-retrieval-systems/13-rag-evaluation-patterns.md
+RAG06|M|How do you build a golden test set for RAG, including synthetic query generation?|A:06-retrieval-systems/13-rag-evaluation-patterns.md
+RAG06|M|Your RAG evaluation pipeline costs five hundred dollars a day in judge calls. How do you reduce it?|A:06-retrieval-systems/13-rag-evaluation-patterns.md
+RAG06|M|What is the full RAG evaluation lifecycle from offline metrics to production monitoring?|G:docs/09-ai-safety-evaluation/README.md
+RAG06|M|Users report sometimes-wrong answers. How do you systematically diagnose the RAG system?|A:06-retrieval-systems/13-rag-evaluation-patterns.md
+RAG06|M|Your RAG system works great on test data but fails in production. What do you check?|A:00-interview-prep/01-question-bank.md
+RAG06|M|When retrieval returns irrelevant documents but the LLM still gives a plausible answer, how do you detect and prevent it?|A:06-retrieval-systems/14-production-rag-at-scale.md
+RAG06|M|Your RAG costs tripled in a month with no increase in volume. How do you investigate?|A:06-retrieval-systems/14-production-rag-at-scale.md
+RAG06|M|How do you debug a RAG system that gives poor answers: where do you look first?|G:docs/03-rag-system/README.md
+RAG06|M|What should happen when RAG hallucinates despite retrieved context?|G:docs/03-rag-system/README.md
+RAG06|M|Which production signals and alerts would you set up for a RAG system?|G:docs/03-rag-system/README.md
+RAG06|M|How do you detect retrieval quality drift and index drift after launch?|A:06-retrieval-systems/13-rag-evaluation-patterns.md
+RAG06|M|How do you do canary releases and rollbacks for retrieval strategy changes?|G:docs/10-production-deployment/README.md
+RAG06|M|Changing the embedding model improves some queries and hurts others. How do you manage this see-saw effect?|G:docs/20-rag-advanced-optimization/README.md
+RAG06|M|What is context poisoning in RAG, and how can a knowledge base defend against it?|G:docs/06-vector-index-optimization/README.md
+RAG06|M|What is indirect prompt injection in RAG, and how do you build a layered defense?|A:00-interview-prep/01-question-bank.md
+RAG06|M|Someone floods public sources with fake posts to steer your RAG answers. What stops it?|A:16-case-studies/06-real-time-search.md
+RAG06|M|How do you prevent hallucinated numbers in a financial RAG assistant?|A:16-case-studies/06-real-time-search.md
+RAG06|M|How do you handle stale data and the freshness requirement in a real-time RAG system?|A:16-case-studies/06-real-time-search.md
+RAG06|M|What failure modes arise when the same RAG system serves multiple tenants?|A:06-retrieval-systems/14-production-rag-at-scale.md
+RAG06|M|What tenant leaks does a metadata filter fail to stop?|A:06-retrieval-systems/14-production-rag-at-scale.md
+RAG06|M|How do you test that permission-aware retrieval cannot be bypassed?|G:docs/20-rag-advanced-optimization/README.md
+RAG06|M|Which failure taxonomy would you use when classifying RAG errors during error analysis?|A:06-retrieval-systems/14-production-rag-at-scale.md
+RAG06|M|How do you run error analysis on a RAG system using open coding and axial coding?|A:ai_evals_comprehensive_study_guide.md
+RAG06|M|How would you build a BM25 baseline and synthetic queries to quantify retrieval quality before tuning embeddings?|A:ai_evals_comprehensive_study_guide.md
+RAG06|M|How do you set up regression gates in CI for RAG quality?|A:06-retrieval-systems/13-rag-evaluation-patterns.md

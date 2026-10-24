@@ -1,0 +1,316 @@
+Q007403	DROP	-	unfixable
+Q007404	DROP	-	notq
+Q007222	ML01	M	Explain the bias-variance tradeoff. How do you tell which one is hurting your model?
+Q007223	ML01	M	Your validation loss is much lower than your training loss. What could cause that?
+Q007224	DROP	-	dup
+Q007225	ML01	M	How do you detect overfitting and underfitting in practice, and what do you do about each?
+Q007226	DL02	M	Why start debugging a training pipeline by overfitting a single batch?
+Q007227	FT01	M	Your SFT loss is decreasing nicely but users say the model got worse. What happened?
+Q007228	ML01	H	When would you accept some overfitting deliberately?
+Q007229	ML07	M	Compare L1 and L2 regularization. Why does L1 produce sparse weights?
+Q007230	ML07	E	What is elastic net and when would you use it?
+Q007231	DROP	-	dup
+Q007232	DL02	M	Why exclude LayerNorm parameters from weight decay?
+Q007233	DL02	E	How does dropout work, and what changes between training and inference?
+Q007234	LLM04	M	Why do large pretraining runs set dropout to 0?
+Q007235	DL07	M	What does model.eval() change in PyTorch besides dropout?
+Q007236	DL02	H	How would you use MC dropout to get uncertainty estimates?
+Q007237	ML06	M	Walk me through train/validation/test splits. When do you use cross-validation, and when is it a bad idea?
+Q007238	ML05	M	When the same user appears in both the training and validation splits, how does that failure show up in the metrics?
+Q007239	ML06	M	What is nested cross-validation for?
+Q007240	LLM07	M	How would you decontaminate an LLM eval set?
+Q007241	ML06	E	Explain precision, recall, and F1. Give a concrete case where 99% accuracy means the model is useless.
+Q007242	ML06	M	Why is F1 the harmonic mean rather than the arithmetic mean of precision and recall?
+Q007243	ML06	M	Your model's precision is 0.95 but the product team is unhappy. What would you check?
+Q007244	ML06	M	How do micro- and macro-averaged F1 differ on an imbalanced multiclass problem?
+Q007245	ML06	E	What is the difference between parameters and hyperparameters? How do you tune hyperparameters efficiently?
+Q007246	ML06	M	Why sample the learning rate log-uniformly during hyperparameter search?
+Q007247	ML06	M	If you can afford only 20 training runs, how do you allocate them for hyperparameter tuning?
+Q007248	ML06	M	Is the number of training epochs a parameter or a hyperparameter, and what about a learned temperature like CLIP's?
+Q007249	DL02	M	What is the difference between batch, mini-batch, and stochastic gradient descent? What does batch size actually change?
+Q007250	DL02	M	You double the batch size. What do you do to the learning rate and why?
+Q007251	DL02	H	What is gradient accumulation actually equivalent to, and where does the equivalence break (for example with BatchNorm)?
+Q007252	DL02	M	Why might a huge batch size hurt generalization?
+Q007253	RAG03	M	What are embeddings? Compare cosine similarity, dot product, and Euclidean distance. When does the choice matter?
+Q007254a	RAG03	H	Why does normalizing make Euclidean distance and cosine similarity equivalent? Show it.
+Q007254b	RAG03	M	When would dot product beat cosine similarity in a recommender?
+Q007255	RAG03	M	What breaks if you index cosine-trained embeddings with an L2 metric without normalizing?
+Q007256	ML01	M	Define supervised, unsupervised, and self-supervised learning. Where does each stage of modern LLM training fit?
+Q007257	FT03	M	Is a reward model trained with supervised learning or with RL?
+Q007258	LLM04	M	Why is next-token prediction such a powerful pretext task compared to, say, autoencoding?
+Q007259	FT03	M	Where does RLAIF or constitutional-style feedback fit in the taxonomy of supervised, unsupervised, and self-supervised learning?
+Q007260	ML03	M	Random forest vs gradient boosting: how does each work, and why do tree ensembles still beat neural networks on tabular data?
+Q007261	ML03	H	Why does CatBoost's ordered target encoding exist, and what leakage does it prevent?
+Q007262	ML06	M	How would you get calibrated probabilities out of a boosted tree model?
+Q007263	ML05	E	What is feature scaling? Compare normalization and standardization, and say which models actually need it.
+Q007264	ML07	H	Why does an unscaled feature ruin L2 regularization but not L1's sparsity property in the same way?
+Q007265	MS01	M	Where in a PyTorch serving path would you put the feature scaler so that it cannot drift from training?
+Q007266	DL04	M	Walk me from RNNs to LSTMs to transformers. Why did attention win?
+Q007267	LLM01	H	If the KV cache makes decoding recurrent anyway, where does the transformer's advantage over RNNs actually show up?
+Q007268	DL04	H	Why does the LSTM's additive cell state help gradients when the gates themselves are multiplicative?
+Q007269	ML05	M	What is the difference between feature engineering and representation learning? Where does hand-engineering still earn its keep today?
+Q007270a	ML05	M	Give an example of a hand-engineered feature that a model could never have learned on its own, and explain why.
+Q007270b	FT01	H	How do you decide whether to feed an embedding into a gradient-boosted tree model versus fine-tuning the encoder end to end?
+Q007271	DL01	M	Why does a neural network need non-linear activation functions, and how did the field move from sigmoid to ReLU to GELU-style activations?
+Q007272	DL01	M	How would you detect dead ReLUs in a trained network?
+Q007273	LLM01	H	Why does SwiGLU usually use a hidden size of about 8/3 × d instead of 4 × d?
+Q007274	DL01	M	Why is sigmoid still the right output activation for a multi-label classifier?
+Q007275	ML05	M	What is data leakage? Give three subtle examples and explain how you would detect them.
+Q007276a	ML05	M	Your model gets 0.99 AUC on a fraud problem. Walk me through your audit.
+Q007276b	ML05	M	How does k-fold cross-validation make preprocessing leakage worse if done naively?
+Q007277	LLM07	M	How would you check whether an LLM has memorized your eval set?
+Q007278	ML06	M	ROC-AUC vs PR-AUC: what does each measure, and why does ROC-AUC look deceptively good on imbalanced data?
+Q007279	ML06	H	Why is linear interpolation between points on a precision-recall curve invalid?
+Q007280	ML06	M	Your ROC-AUC improved but your PR-AUC dropped. What happened?
+Q007281	ML06	M	How do you choose the final operating threshold for production?
+Q007282	ML06	M	What does it mean for a classifier to be calibrated? How do you measure and fix miscalibration?
+Q007283	ML06	M	Why does temperature scaling leave accuracy and AUC unchanged?
+Q007284	ML06	H	How does class imbalance interact with calibration under resampling?
+Q007285	LLM07	H	How would you calibrate an LLM judge that outputs a 1-10 score?
+Q007286	ML05	M	Your fraud dataset is 0.5% positive. Walk me through your strategy for handling the imbalance.
+Q007287	ML05	H	You oversampled and now the predicted probabilities are inflated. Why, and how do you correct them?
+Q007288	ML05	M	When is undersampling actually preferable?
+Q007289	ML06	H	How do delayed fraud labels (for example, chargebacks arriving 60 days later) change your evaluation?
+Q007290	DL02	M	Explain momentum and Adam. What problem does each solve over vanilla SGD?
+Q007291	DL02	M	Why does Adam need bias correction, and what happens without it?
+Q007292	DL02	H	Why does SGD with momentum still often beat Adam on convnets?
+Q007293	LLM04	M	What is the memory footprint of Adam for a 7B-parameter model, and how do you reduce it?
+Q007294	DL02	M	Adam vs AdamW: what exactly is "decoupled weight decay", and why did AdamW become the transformer default?
+Q007295	DL02	H	Why is weight decay equivalent to L2 regularization under SGD but not under Adam?
+Q007296	DROP	-	dup
+Q007297	DL02	H	What happens to the effective weight decay as the learning rate is cosine-annealed to near zero?
+Q007298	DL02	M	Why do transformer training recipes use learning-rate warmup, and what does the rest of the schedule look like?
+Q007299a	DL02	H	What actually goes wrong if you skip learning-rate warmup? Describe the failure signature in the loss and gradient-norm curves.
+Q007299b	DL02	H	Why does a cosine-to-zero learning-rate schedule interact badly with wanting to resume training?
+Q007300	LLM04	H	How would you set the peak learning rate for a model 10x bigger?
+Q007301	DL01	M	Explain backpropagation to a strong software engineer who has never done ML. Why is it efficient?
+Q007302	LLM04	M	Why is training memory so much larger than inference memory?
+Q007303	LLM04	M	What is activation checkpointing and what is its compute overhead?
+Q007304	LLM04	M	Where does the 6ND estimate of training FLOPs come from?
+Q007305	DL01	M	What are vanishing and exploding gradients? What causes them, and what does modern architecture design do about them?
+Q007306	DL01	H	Why exactly does the residual connection's Jacobian I + ∂f/∂x fix gradient flow?
+Q007307	LLM01	H	Why do pre-norm transformers tolerate less warmup than post-norm transformers?
+Q007308	DROP	-	dup
+Q007309	DL01	M	Why can't you initialize all weights to zero? What do Xavier and He initialization actually do?
+Q007310a	DL01	H	Derive why fan_in appears in the variance formula for the weight initialization of a linear layer.
+Q007310b	DL01	H	Why do residual networks need an extra 1/√N scaling in their initialization?
+Q007311	DL01	H	What breaks if you initialize a transformer with std 0.2 instead of 0.02?
+Q007312	DL02	M	Batch norm vs layer norm: how does each work, and why do transformers use layer norm?
+Q007313	LLM01	H	Why does batch norm generally underperform layer norm even in encoder-only transformers, where autoregressive decoding isn't an issue?
+Q007314	LLM01	M	What does RMSNorm remove compared with LayerNorm, and why is that OK?
+Q007315	ML07	M	Derive cross-entropy loss from first principles. Why is it the right loss for classification and language modeling?
+Q007316a	ML07	H	Show that softmax plus cross-entropy gives the gradient p − y.
+Q007316b	ML07	M	What does label smoothing change in the softmax cross-entropy gradient?
+Q007317	LLM07	M	Why is perplexity the exponential of cross-entropy, and what does a perplexity of 8 mean concretely?
+Q007318	DL01	M	Explain softmax and the temperature parameter. How do you compute softmax stably, and where does temperature show up across ML?
+Q007319	LLM01	M	Why does attention divide by √d_k, and what happens without it?
+Q007320	LLM05	H	Why is low temperature not the same as top-k truncation?
+Q007321	DL01	M	What breaks numerically if you compute log(softmax(z)) naively?
+Q007322	ML04	M	Compare PCA, t-SNE and UMAP. When would you use each, and how do people misread these plots?
+Q007323a	RAG03	H	You need to cut a 3072-dimensional embedding index in half without hurting recall. Walk me through your options and how you would validate the choice.
+Q007323b	ML04	M	Why can UMAP transform new points when t-SNE cannot?
+Q007324	ML08	M	Your new model scores 87.2% on the test set and the incumbent scores 86.5%. Do you ship it?
+Q007325	ML08	H	How would you set up the evaluation so that a 0.7 point difference is detectable, and is that a good use of budget?
+Q007326	ML08	H	Your test set has 5 examples per user across 200 users. What breaks in a naive bootstrap?
+Q007327	MS02	M	What is training-serving skew? How do you detect it and how do you design it out?
+Q007328a	MS02	H	Give a concrete example of a point-in-time join and show where the naive version leaks.
+Q007328b	MS01	H	Your PSI (population stability index) alert fires on one feature. How do you tell a real upstream change from a broken pipeline?
+Q007329	ML08	H	In an A/B test of a new model, your metric is revenue per user, which is heavy-tailed and mostly zero. What does that do to your sample size and what would you do about it?
+Q007330	ML08	M	How would you detect a novelty effect in an A/B test rather than assume one?
+Q007331	ML05	M	About 10% of your training labels are wrong. What happens, and what do you do about it?
+Q007332	ML05	M	Inter-annotator agreement (Cohen's kappa) on your labeling task is 0.55. What does that tell you, and what do you do next?
+Q007333	ML05	H	How would you distinguish a genuinely hard example from a mislabelled one in your high-loss bucket?
+Q007334	FT01	M	You're adapting a pretrained model to a new task. What do you freeze, what do you train, and how do you decide?
+Q007335a	FT01	M	You fine-tuned a model and it got better at your task but worse at everything else. Diagnose and fix.
+Q007335b	FT02	H	Why does LoRA resist catastrophic forgetting more than full fine-tuning at the same effective learning rate?
+Q007336	ML06	M	What goes wrong when you validate a model on time-ordered data, and how do you do it properly?
+Q007337	ML06	H	Your walk-forward validation folds show wildly different scores. What does that tell you and what do you report to stakeholders?
+Q007338	MS02	H	How do you build a training set when a key feature's values get restated 3 days after the fact?
+Q007339	ML04	M	How do you choose k in clustering, and how do you evaluate a clustering when you have no labels?
+Q007340	ML04	M	Silhouette score says k=2 but the product team needs about 10 actionable segments. What do you do?
+Q007341	ML04	H	Why do high-dimensional Euclidean distances concentrate, and what does that do to k-means specifically?
+Q007342	ML08	H	What is conformal prediction, and how would you use it to put a statistical guarantee on a classifier's or an LLM pipeline's outputs?
+Q007343	ML08	H	Why is there an (n+1) correction in the quantile used in conformal prediction?
+Q007344	ML08	H	How would you get conformal prediction coverage that holds per class rather than on average?
+Q007345	ML08	H	Traffic shifts after a product launch. What happens to conformal prediction coverage, and how would you detect it?
+Q007346	ML06	H	Two features are 0.95 correlated and both show near-zero permutation importance. What is going on, and how do you report it?
+Q007347	ML06	M	Why might two SHAP tools give different values for the same model?
+Q007348	ML07	M	Why is MSE a bad loss for classification, even though it "works"? Connect it to the probabilistic view of loss functions.
+Q007349a	ML07	H	Derive the p − y gradient for logistic loss and show where the cancellation happens.
+Q007349b	ML06	M	When would you use the Brier score deliberately?
+Q007350	ML07	M	What loss corresponds to Laplace noise, and when would you prefer it?
+Q007351	RAG03	M	Explain contrastive learning and the InfoNCE loss. How are modern embedding models (CLIP, text retrievers) actually trained?
+Q007352	RAG03	H	Why do larger batches help contrastive training but matter less for standard supervised training?
+Q007353	RAG03	H	How do hard negatives change what the embedding space learns?
+Q007354	RAG03	H	How would you build the training set for a code-search embedding model?
+Q007355	ML07	M	Beyond L1/L2: explain early stopping, data augmentation, and label smoothing as regularizers. What is regularization, really?
+Q007356a	ML07	H	Why is early stopping approximately equivalent to L2 regularization for quadratic losses? Give the intuition.
+Q007356b	ML05	M	When does data augmentation hurt?
+Q007357	FT04	H	Why does label smoothing conflict with knowledge distillation?
+Q007358	MS01	M	What kinds of distribution shift exist, and how would you monitor a deployed model, classical or LLM-based, for them?
+Q007359	MS01	M	How do you distinguish concept drift from a data-pipeline bug?
+Q007360	MS01	H	If only the label prior has shifted, can you fix it without retraining?
+Q007361	RAG03	H	When does cosine similarity mislead you? Discuss embedding-space pathologies relevant to retrieval systems.
+Q007362	RAG06	H	How would you detect hubness in a production RAG system?
+Q007363	RAG04	M	Why does a cross-encoder beat bi-encoder cosine similarity, and why not use it for first-stage retrieval?
+Q007364	RAG03	H	What do alignment and uniformity mean in the Wang and Isola framing of contrastive learning?
+Q007365	ML07	M	What is maximum likelihood estimation? Show how it generates the standard loss functions, and where the Bayesian view (MAP) connects to regularization.
+Q007366a	ML07	M	Derive MSE from the Gaussian likelihood explicitly.
+Q007366b	ML08	M	Why does MLE with a single observation of a rare event give pathological probabilities, and what is the fix?
+Q007367	FT03	H	From the maximum likelihood/MAP viewpoint, what role does the KL penalty play in RLHF?
+Q007368	ML01	H	What is double descent, and how does it change the classical story about model size and overfitting?
+Q007369	ML01	H	Where does the implicit bias of SGD enter the double descent story?
+Q007370a	ML01	H	How can adding training data hurt model performance? Walk through the mechanism.
+Q007370b	ML01	H	Does double descent contradict the bias-variance decomposition, or just the classical capacity narrative?
+Q007371	LLM04	H	Your LLM pretraining loss just spiked. Talk me through training stability: gradient clipping, mixed precision, and your debugging playbook.
+Q007372	LLM04	H	Why does bf16 remove the need for loss scaling? What is the actual bit-level difference from fp16?
+Q007373	LLM04	H	Why use a lower Adam β₂ for LLM training?
+Q007374	LLM04	H	Gradient clipping fires on 40% of training steps. What do you change?
+Q007375	ML06	H	Design the evaluation for a fraud model at 0.1% prevalence, end to end: metrics, thresholding, validation protocol, and monitoring.
+Q007376	ML10	H	How exactly does the selective-labels problem bias naive retraining of a fraud model?
+Q007377	ML06	H	In a fraud-detection system, the ops team's review capacity halves. What changes in your metric and threshold?
+Q007378	ML08	H	How do you A/B test a new fraud model when the intervention itself changes the labels you observe?
+Q007379	ML06	H	Your model hits 0.87 AUC offline, you launch it, and the business metric doesn't move. Debug it.
+Q007380	ML06	H	Your model hits 0.87 AUC offline and the business metric doesn't move after launch. If online AUC matches offline and the intervention is randomized, what explanation is left, and how do you quantify it?
+Q007381	ML10	H	How would you have caught the "predicting churn instead of persuadability" mistake before launch?
+Q007382	LLM01	H	Sliding-window attention reintroduces locality as an inductive bias. Does that make it strictly worse than full attention on quality, and how would you measure it?
+Q007383	LLM01	M	Why is permutation equivariance a problem for attention but not for convolution?
+Q007384	ML10	H	Your churn model has 0.9 AUC. Product wants to send retention discounts to the top 5% of predicted churners. Why might that be a bad plan?
+Q007385	ML10	H	You have no budget for a randomized holdout when evaluating a retention-discount targeting model. What is your next best option and what assumption are you buying?
+Q007386	ML10	H	Why does an S-learner tend to underestimate treatment effects?
+Q007387	LLM06	H	Your model meets quality targets but runs at 4s p95 latency, and you need 400ms with 10x the throughput. Design the compression plan.
+Q007388	LLM06	H	Your 4-bit quantized model matches on aggregate benchmarks but users complain. How do you find what broke?
+Q007389	DROP	-	dup
+Q007390	ML05	H	You have 10M unlabelled examples and budget for 20k labels. How do you spend it?
+Q007391	ML05	H	How do you estimate the true error rate of 10M model-generated labels from an audit sample, and how big does the sample need to be?
+Q007392	ML05	H	Your uncertainty sampling in active learning keeps surfacing the same ambiguous case. What does that tell you about the task, not the model?
+Q007393	ML03	M	Why do ensembles work, when are they worth the cost, and where do they show up in LLM systems?
+Q007394	LLM07	H	Self-consistency with 8 samples helps on maths but barely moves open-ended generation. Why?
+Q007395	DL02	H	What is the Muon optimizer, how does it differ from AdamW, and why have some frontier pretraining runs adopted it?
+Q007396	DL02	H	Why might switching to Muon to fine-tune an AdamW-pretrained model go badly?
+Q007397	LLM04	H	How does QK-clip differ from QK-norm?
+Q007398	LLM04	H	What does Muon's need for the full weight matrix do to ZeRO or FSDP sharding?
+Q007399	LLM07	H	What is superposition in neural networks, and how do sparse autoencoders try to recover interpretable features from it? Where have they fallen short?
+Q007400	LLM07	H	Why does feature sparsity make superposition cheap?
+Q007401	LLM07	H	A sparse autoencoder feature fires on deception-related text. What would you need before calling it a deception detector?
+Q007402	LLM07	H	When would you choose a linear probe over a sparse autoencoder?
+Q007405	LLM01	E	Why did transformers replace RNNs and LSTMs for language modeling?
+Q007406	LLM01	M	What inference-time cost do transformers pay that RNNs don't?
+Q007407	LLM01	M	Why does causal masking make training so sample-efficient per forward pass?
+Q007408	DL04	M	What are state-space models trying to recover from RNNs?
+Q007409	LLM01	M	Walk me through what happens inside a single transformer decoder block.
+Q007410	LLM01	M	Roughly what fraction of a transformer block's parameters are in the MLP vs attention?
+Q007411	LLM01	M	Why do residual connections matter more as depth grows?
+Q007412	LLM03	M	What changes in a transformer decoder block for a mixture-of-experts model?
+Q007413	LLM01	E	Explain self-attention step by step. What exactly are Q, K, and V?
+Q007414	DROP	-	dup
+Q007415	LLM01	M	What is the computational complexity of computing the attention score matrix in self-attention, and what does that imply for long contexts?
+Q007416	LLM06	M	In a decoder generating token-by-token, which of Q, K, V get cached and why?
+Q007417	DROP	-	dup
+Q007418	LLM01	M	What is QK-norm and why did some recent models adopt it?
+Q007419	LLM01	H	What happens to gradients when softmax saturates? Walk me through the Jacobian.
+Q007420	LLM01	H	Would you expect attention scaling issues to be worse with larger or smaller head dimensions?
+Q007421	LLM01	M	What is causal masking, why is it needed, and how is it implemented?
+Q007422	LLM01	M	Why does the attention mask go before the softmax rather than after?
+Q007423	LLM01	M	What is a prefix LM and when is bidirectional prompt attention useful?
+Q007424	LLM01	H	How does FlashAttention exploit the causal structure for speed?
+Q007425	LLM01	M	Why does the transformer use multiple attention heads instead of one large one?
+Q007426	LLM01	H	What is an induction head and why does it matter for in-context learning?
+Q007427	LLM01	H	If many attention heads are redundant, what architectural optimisations does that motivate?
+Q007428	LLM01	M	Does multi-head attention cost more FLOPs than single-head attention at equal d_model?
+Q007429	LLM01	M	Compare encoder-only, decoder-only, and encoder-decoder architectures. What is each used for?
+Q007430	LLM01	M	Why do embedding models still use bidirectional attention?
+Q007431	DROP	-	dup
+Q007432	LLM03	M	If you were building a translation system today, would you pick an encoder-decoder or a decoder-only LLM, and on what criteria?
+Q007433	LLM04	E	What is the difference between causal language modeling and masked language modeling as pretraining objectives?
+Q007434	LLM04	M	What is exposure bias and how much does it matter in practice?
+Q007435	LLM04	H	Why does in-context learning emerge from next-token prediction?
+Q007436	LLM04	M	When would you still pretrain or fine-tune with masked language modeling today?
+Q007437	LLM02	E	Why do LLMs use subword tokenization instead of whole words or raw characters?
+Q007438	LLM02	M	How does byte-level BPE guarantee there are no out-of-vocabulary strings?
+Q007439	LLM02	M	What is the effect of tokenizer choice on multilingual pricing and quality?
+Q007440	LLM02	H	Why hasn't character- or byte-level modeling replaced BPE yet?
+Q007441	LLM02	M	Why do LLMs famously miscount the number of r's in "strawberry"?
+Q007442	LLM02	M	Why does asking the model to spell the word first fix the letter-counting error?
+Q007443	LLM02	M	What other task categories fail for the same root cause as letter counting in LLMs?
+Q007444	LLM02	M	How would a byte-level model differ on letter-counting tasks?
+Q007445	LLM05	E	What does the temperature parameter actually do? Give the formula.
+Q007446	LLM05	M	Why can temperature 0 still produce different outputs across identical API calls?
+Q007447	LLM05	M	If you increase temperature, why do you usually also want min-p or top-p?
+Q007448	LLM07	M	What temperature would you use for an LLM-as-judge evaluation and why?
+Q007449	LLM05	E	Compare greedy decoding, top-k sampling, and top-p (nucleus) sampling.
+Q007450	LLM05	H	Why does greedy decoding loop, mechanistically?
+Q007451	LLM05	M	When does top-p fail and how does min-p fix it?
+Q007452	LLM05	H	Why is sampled text at temperature 1 often worse than the model's "true" distribution would suggest?
+Q007453	LLM06	E	What is the KV cache and why does it make generation fast?
+Q007454	DROP	-	dup
+Q007455	LLM06	M	What is prefix caching and when does it save money?
+Q007456	LLM06	M	Why can't you cache the queries too in the KV cache?
+Q007457	LLM01	M	What does the feed-forward network in a transformer block actually do, and why is SwiGLU the default now?
+Q007458	LLM01	H	Where does the FFN stop dominating FLOPs and attention take over?
+Q007459	LLM03	M	Why does MoE swap out the FFN rather than attention?
+Q007460	LLM02	M	What is weight tying, and why do some models tie the embedding and output matrices while others do not?
+Q007461	LLM02	H	How does the vocabulary size decision interact with the weight-tying decision?
+Q007462	LLM02	H	What happens to a weight-tied model if you want to extend the vocabulary post hoc?
+Q007463	LLM05	M	Explain speculative decoding. Why doesn't it change the model's output distribution?
+Q007464	LLM06	M	How would you measure whether speculative decoding is actually helping in a live serving deployment?
+Q007465	LLM05	H	What acceptance rate do you need for speculative decoding to break even?
+Q007466	FT05	M	What is in-context learning, and how do you decide between it and fine-tuning?
+Q007467	GA01	H	If wrong labels barely hurt in-context learning, what does that imply about how you should choose few-shot examples?
+Q007468	FT05	M	When does in-context learning fail where fine-tuning succeeds?
+Q007469	LLM07	M	What does perplexity measure, and why can't you compare it across models with different tokenizers?
+Q007470a	LLM07	E	Convert a loss of 2.0 nats per token into perplexity.
+Q007470b	LLM07	H	Tokenizer A averages 3.5 bytes per token and tokenizer B averages 4.5. How do you compare the losses of models using them?
+Q007471	LLM07	H	Why might a better model show higher perplexity on your eval set?
+Q007472	LLM01	M	Pre-norm vs post-norm: what is the difference and why did everyone move to pre-norm? And why RMSNorm?
+Q007473	LLM01	H	Why does warmup interact with post-norm?
+Q007474	DL02	H	What does normalization do to the loss landscape geometry?
+Q007475	LLM01	M	Beyond the two block positions (pre-norm and post-norm), where else do norms appear in modern transformer architectures (for example QK-norm, final norm)?
+Q007476	LLM02	M	Walk me through the BPE training algorithm step by step.
+Q007477	LLM02	M	Why does pre-tokenization matter in BPE? What would go wrong without word-boundary constraints?
+Q007478	LLM02	M	Why do "the" and " the" (with a leading space) need to be separate tokens?
+Q007479	LLM02	M	How does unigram-LM tokenization differ conceptually from BPE?
+Q007480	LLM02	M	Compare BPE, WordPiece, SentencePiece, and byte-level BPE.
+Q007481	LLM02	M	Why does SentencePiece encode whitespace explicitly, and what property does that buy?
+Q007482	LLM02	E	What is byte-fallback in tokenization?
+Q007483	LLM02	H	Given the same vocabulary size, why might unigram-LM produce more linguistically natural segmentations than BPE?
+Q007484	LLM02	M	What are the tradeoffs in choosing vocabulary size?
+Q007485	LLM02	M	What are glitch tokens and what causes them?
+Q007486	LLM02	H	Why does weight-tying the embedding and LM head matter more for small models?
+Q007487	LLM02	H	How would you evaluate whether a tokenizer serves your target languages well?
+Q007488	LLM02	M	Why does single-digit number tokenization improve arithmetic in LLMs?
+Q007489	LLM02	M	If your product targets Southeast Asian languages, what tokenizer-related things would you check before choosing a model?
+Q007490	LLM02	M	How would tokenization affect a code-diff-generation feature?
+Q007491	LLM01	M	Attention is O(n²) in sequence length. Where does that actually bite in practice: prefill or decode?
+Q007492	LLM06	H	Why is decode memory-bandwidth-bound? Walk me through the arithmetic intensity.
+Q007493	LLM01	M	What does sliding-window attention give up?
+Q007494	LLM01	H	Why doesn't FlashAttention change the asymptotic FLOP complexity of attention?
+Q007495	LLM01	M	Explain FlashAttention's core idea. What does it optimise, and what doesn't it change?
+Q007496	LLM01	H	Walk me through the online softmax rescaling in FlashAttention. Why is recomputation faster than storing the attention matrix?
+Q007497	LLM01	M	How does FlashAttention interact with causal masking?
+Q007498	LLM02	M	How do sinusoidal positional encodings work, and how do they compare to learned positional embeddings?
+Q007499	LLM02	M	Why is relative position more useful than absolute position for language?
+Q007500a	LLM02	H	Show why a fixed offset is a linear transform of a sinusoidal positional encoding.
+Q007500b	LLM02	H	Why does adding position to token embeddings entangle content and position, and why does that matter?
+Q007501	LLM02	M	Explain RoPE. What is the rotation intuition and why did it become the default?
+Q007502a	LLM02	H	Prove that the RoPE attention score depends only on m−n for a single 2D pair.
+Q007502b	LLM02	H	Why is RoPE applied to Q and K but not V?
+Q007503	LLM02	H	How do position interpolation and YaRN manipulate RoPE's frequencies?
+Q007504	LLM02	M	How does ALiBi encode position, and what is its claim to fame?
+Q007505	LLM02	H	Why does ALiBi extrapolate where RoPE doesn't?
+Q007506	LLM02	H	What is the cost of ALiBi's recency prior for retrieval-heavy tasks?
+Q007507	LLM02	H	Why do high-frequency RoPE dimensions need no interpolation when extending context length?
+Q007508	LLM05	H	Why does long-context extension usually still require some fine-tuning on long documents?
+Q007509	LLM05	M	How would you verify the usable context length of a model before shipping?
+Q007510	LLM01	M	What are MQA and GQA, and why do they exist?
+Q007511	LLM06	H	Why is decode throughput bounded by memory bandwidth, and how does GQA change the arithmetic?
+Q007512	LLM01	H	How does the GQA uptraining recipe work?
+Q007513	LLM01	H	What does multi-head latent attention (MLA) do differently from MQA and GQA?
+Q007514	LLM06	M	Derive the KV cache memory formula and compute it for a concrete model.
+Q007515	LLM06	M	How does PagedAttention reduce waste, and what problem does fragmentation cause?
+Q007516	DROP	-	unfixable
+Q007517	LLM06	H	How does sliding-window attention change the KV cache memory formula?
+Q007518	LLM05	M	Explain min-p sampling and repetition/frequency penalties. When do standard sampling settings fail?
+Q007519	LLM05	H	Why does top-p specifically break down at high temperature?
+Q007520	LLM05	M	How would you generate guaranteed-valid JSON: sampling settings or constrained decoding?
+Q007521	LLM05	H	Why do repetition penalties operate on tokens rather than words, and what artifacts does that cause?

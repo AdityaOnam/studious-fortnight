@@ -1,0 +1,647 @@
+# OUTLINE of donnemartin__system-design-primer
+
+
+## FILE README-ja.md  (76 KB)
+- システム設計入門
+  - 動機・目的
+    - 大規模システムの設計を学ぶ
+    - オープンソースコミュニティから学ぶ
+    - システム設計面接課題に備える
+  - 暗記カード
+    - コーディング技術課題用の問題: 練習用インタラクティブアプリケーション
+  - コントリビュート
+  - システム設計目次
+  - 学習指針
+  - システム設計面接にどのようにして臨めばいいか
+    - ステップ 1: そのシステム使用例の概要、制約、推計値等を聞き出し、まとめる
+    - ステップ 2: より高レベルのシステム設計を組み立てる
+    - ステップ 3: 核となるコンポーネントを設計する
+    - ステップ 4: システム設計のスケール
+    - ちょっとした暗算問題
+    - 文献とその他の参考資料
+  - システム設計課題例とその解答
+    - Pastebin.com (もしくは Bit.ly) を設計する
+    - Twitterタイムライン&検索 (もしくはFacebookフィード&検索)を設計する
+    - ウェブクローラーの設計
+    - Mint.comの設計
+    - SNSサービスのデータ構造を設計する
+    - 検索エンジンのキー/バリュー構造を設計する
+    - Amazonのカテゴリ毎の売り上げランキングを設計する
+    - AWS上で100万人規模のユーザーを捌くサービスを設計する
+  - オブジェクト指向設計問題と解答
+  - システム設計トピックス: まずはここから
+    - ステップ 1: スケーラビリティに関する動画を観て復習する
+    - ステップ 2: スケーラビリティに関する資料を読んで復習する
+    - 次のステップ
+  - パフォーマンス vs スケーラビリティ
+    - その他の参考資料、ページ
+  - レイテンシー vs スループット
+    - その他の参考資料、ページ
+  - 可用性 vs 一貫性
+    - CAP 理論
+    - その他の参考資料、ページ
+  - 一貫性パターン
+    - 弱い一貫性
+    - 結果整合性
+    - 強い一貫性
+    - その他の参考資料、ページ
+  - 可用性パターン
+    - フェイルオーバー
+    - 短所: フェイルオーバー
+    - レプリケーション
+  - ドメインネームシステム
+    - 欠点: DNS
+    - その他の参考資料、ページ
+  - コンテンツデリバリーネットワーク(Content delivery network)
+    - プッシュCDN
+    - プルCDN
+    - 欠点: CDN
+    - その他の参考資料、ページ
+  - ロードバランサー
+    - Layer 4 ロードバランシング
+    - Layer 7 ロードバランシング
+    - 水平スケーリング
+    - 欠点: ロードバランサー
+    - その他の参考資料、ページ
+  - リバースプロキシ(webサーバー)
+    - ロードバランサー vs リバースプロキシ
+    - 欠点: リバースプロキシ
+    - その他の参考資料、ページ
+  - アプリケーション層
+    - マイクロサービス
+    - サービスディスカバリー
+    - 欠点: アプリケーション層
+    - その他の参考資料、ページ
+  - データベース
+    - リレーショナルデータベースマネジメントシステム (RDBMS)
+    - NoSQL
+    - SQLか？NoSQLか？
+  - キャッシュ
+    - クライアントキャッシング
+    - CDNキャッシング
+    - Webサーバーキャッシング
+    - データベースキャッシング
+    - アプリケーションキャッシング
+
+## FILE README-zh-Hans.md  (64 KB)
+- 系统设计入门
+  - 目的
+    - 学习如何设计大型系统
+    - 从开源社区学习
+    - 为系统设计的面试做准备
+  - 抽认卡
+    - 代码资源：互动式编程挑战
+  - 贡献
+  - 系统设计主题的索引
+  - 学习指引
+  - 如何处理一个系统设计的面试题
+    - 第一步：描述使用场景，约束和假设
+    - 第二步：创造一个高层级的设计
+    - 第三步：设计核心组件
+    - 第四步：扩展设计
+    - 预估计算量
+    - 相关资源和延伸阅读
+  - 系统设计的面试题和解答
+    - 设计 Pastebin.com (或者 Bit.ly)
+    - 设计 Twitter 时间线和搜索 (或者 Facebook feed 和搜索)
+    - 设计一个网页爬虫
+    - 设计 Mint.com
+    - 为一个社交网络设计数据结构
+    - 为搜索引擎设计一个 key-value 储存
+    - 设计按类别分类的 Amazon 销售排名
+    - 在 AWS 上设计一个百万用户级别的系统
+  - 面向对象设计的面试问题及解答
+  - 系统设计主题：从这里开始
+    - 第一步：回顾可扩展性（scalability）的视频讲座
+    - 第二步：回顾可扩展性文章
+    - 接下来的步骤
+  - 性能与可扩展性
+    - 来源及延伸阅读
+  - 延迟与吞吐量
+    - 来源及延伸阅读
+  - 可用性与一致性
+    - CAP 理论
+    - 来源及延伸阅读
+  - 一致性模式
+    - 弱一致性
+    - 最终一致性
+    - 强一致性
+    - 来源及延伸阅读
+  - 可用性模式
+    - 故障切换
+    - 缺陷：故障切换
+    - 复制
+  - 域名系统
+    - 缺陷:DNS
+    - 来源及延伸阅读
+  - 内容分发网络（CDN）
+    - CDN 推送（push）
+    - CDN 拉取（pull）
+    - 缺陷：CDN
+    - 来源及延伸阅读
+  - 负载均衡器
+    - 四层负载均衡
+    - 七层负载均衡器
+    - 水平扩展
+    - 缺陷：负载均衡器
+    - 来源及延伸阅读
+  - 反向代理（web 服务器）
+    - 负载均衡器与反向代理
+    - 不利之处：反向代理
+    - 来源及延伸阅读
+  - 应用层
+    - 微服务
+    - 服务发现
+    - 不利之处：应用层
+    - 来源及延伸阅读
+  - 数据库
+    - 关系型数据库管理系统（RDBMS）
+    - NoSQL
+    - SQL 还是 NoSQL
+  - 缓存
+    - 客户端缓存
+    - CDN 缓存
+    - Web 服务器缓存
+    - 数据库缓存
+    - 应用缓存
+
+## FILE README-zh-TW.md  (86 KB)
+- 系統設計入門
+  - 動機
+    - 學習如何設計大型系統
+    - 從開放原始碼社群中學習
+    - 準備系統設計的面試
+  - 學習單字卡
+    - 程式設計學習資源：互動式程式學習設計
+  - 如何貢獻
+  - 系統設計主題的索引
+  - 學習指南
+  - 如何解決一個系統設計的面試題目
+    - 第一步：描述使用的場景、限制及假設
+    - 第二步：建立一個高階的設計
+    - 第三步： 設計核心的元件
+    - 第四步：評估你的設計
+    - 快速有效的進行估算
+    - 相關資源與延伸閱讀
+  - 系統設計面試問題與解答
+    - 設計 Pastebin.com (或 Bit.ly)
+    - 設計一個像是 Twitter 的 timeline (或 Facebook feed)設計一個 Twitter 搜尋功能 (or Facebook 搜尋功能)
+    - 設計一個爬蟲系統
+    - 設計 Mint.com 網站
+    - 設計一個社交網站的資料結構
+    - 設計一個搜尋引擎使用的鍵值儲存資料結構
+    - 設計一個根據產品分類的亞馬遜銷售排名
+    - 在 AWS 上設計一個百萬用戶等級的系統
+  - 物件導向設計面試問題與解答
+  - 系統設計主題：從這裡開始
+    - 第一步：複習關於可擴展性的影片講座
+    - 第二步：複習關於可擴展性的文章
+    - 下一步
+  - 效能與可擴展性
+    - 來源及延伸閱讀
+  - 延遲與吞吐量
+    - 來源及延伸閱讀
+  - 可用性與一致性
+    - CAP 理論
+    - 來源及延伸閱讀
+  - 一致性模式
+    - 弱一致性
+    - 最終一致性
+    - 強一致性
+    - 來源及延伸閱讀
+  - 可用性模式
+    - 容錯轉移
+    - 缺點：容錯轉移
+    - 複寫機制
+  - 域名系統
+    - DNS 的缺點
+    - 來源及延伸閱讀
+  - 內容傳遞網路(CDN)
+    - 推送式 CDNs
+    - 拉取式 CDNs
+    - CDN 的缺點
+    - 來源及延伸閱讀
+  - 負載平衡器
+    - 第四層負載平衡
+    - 第七層負載平衡
+    - 水平擴展
+    - 負載平衡器的缺點
+    - 來源及延伸閱讀
+  - 反向代理(網頁伺服器)
+    - 負載平衡器與反向代理伺服器
+    - 反向代理伺服器的缺點
+    - 來源與延伸閱讀
+  - 應用層
+    - 微服務
+    - 服務發現
+    - 應用層的缺點
+    - 來源與延伸閱讀
+  - 資料庫
+    - 關連式資料庫管理系統(RDBMS)
+    - NoSQL
+    - SQL 或 NoSQL
+  - 快取
+    - 客戶端快取
+    - CDN 快取
+    - 網站伺服器快取
+    - 資料庫快取
+    - 應用程式快取
+
+## FILE README.md  (107 KB)
+- The System Design Primer
+  - Motivation
+    - Learn how to design large-scale systems
+    - Learn from the open source community
+    - Prep for the system design interview
+  - Anki flashcards
+    - Coding Resource: Interactive Coding Challenges
+  - Contributing
+  - Index of system design topics
+  - Study guide
+  - How to approach a system design interview question
+    - Step 1: Outline use cases, constraints, and assumptions
+    - Step 2: Create a high level design
+    - Step 3: Design core components
+    - Step 4: Scale the design
+    - Back-of-the-envelope calculations
+    - Source(s) and further reading
+  - System design interview questions with solutions
+    - Design Pastebin.com (or Bit.ly)
+    - Design the Twitter timeline and search (or Facebook feed and search)
+    - Design a web crawler
+    - Design Mint.com
+    - Design the data structures for a social network
+    - Design a key-value store for a search engine
+    - Design Amazon's sales ranking by category feature
+    - Design a system that scales to millions of users on AWS
+  - Object-oriented design interview questions with solutions
+  - System design topics: start here
+    - Step 1: Review the scalability video lecture
+    - Step 2: Review the scalability article
+    - Next steps
+  - Performance vs scalability
+    - Source(s) and further reading
+  - Latency vs throughput
+    - Source(s) and further reading
+  - Availability vs consistency
+    - CAP theorem
+    - Source(s) and further reading
+  - Consistency patterns
+    - Weak consistency
+    - Eventual consistency
+    - Strong consistency
+    - Source(s) and further reading
+  - Availability patterns
+    - Fail-over
+    - Disadvantage(s): failover
+    - Replication
+    - Availability in numbers
+  - Domain name system
+    - Disadvantage(s): DNS
+    - Source(s) and further reading
+  - Content delivery network
+    - Push CDNs
+    - Pull CDNs
+    - Disadvantage(s): CDN
+    - Source(s) and further reading
+  - Load balancer
+    - Layer 4 load balancing
+    - Layer 7 load balancing
+    - Horizontal scaling
+    - Disadvantage(s): load balancer
+    - Source(s) and further reading
+  - Reverse proxy (web server)
+    - Load balancer vs reverse proxy
+    - Disadvantage(s): reverse proxy
+    - Source(s) and further reading
+  - Application layer
+    - Microservices
+    - Service Discovery
+    - Disadvantage(s): application layer
+    - Source(s) and further reading
+  - Database
+    - Relational database management system (RDBMS)
+    - NoSQL
+    - SQL or NoSQL
+  - Cache
+    - Client caching
+    - CDN caching
+    - Web server caching
+    - Database caching
+
+## FILE solutions/system_design/mint/README-zh-Hans.md  (13 KB)
+- 设计 Mint.com
+  - 第一步：简述用例与约束条件
+    - 用例
+    - 限制条件与假设
+  - 第二步：概要设计
+  - 第三步：设计核心组件
+    - 用例：用户连接到一个财务账户
+    - 用例：服务从账户中提取交易
+    - 用例：服务推荐预算
+  - 第四步：设计扩展
+  - 其它要点
+    - 缓存
+    - 异步与微服务
+    - 通信
+    - 安全性
+    - 延迟数值
+    - 持续探讨
+
+## FILE solutions/system_design/mint/README.md  (20 KB)
+- Design Mint.com
+  - Step 1: Outline use cases and constraints
+    - Use cases
+    - Constraints and assumptions
+  - Step 2: Create a high level design
+  - Step 3: Design core components
+    - Use case: User connects to a financial account
+    - Use case: Service extracts transactions from the account
+    - Use case: Service recommends a budget
+  - Step 4: Scale the design
+  - Additional talking points
+    - Caching
+    - Asynchronism and microservices
+    - Communications
+    - Security
+    - Latency numbers
+    - Ongoing
+
+## FILE solutions/system_design/pastebin/README-zh-Hans.md  (11 KB)
+- 设计 Pastebin.com (或者 Bit.ly)
+  - 第一步：概述用例和约束
+    - 用例
+    - 约束和假设
+  - 第二步：创建一个高层次设计
+  - 第三步：设计核心组件
+    - 用例：用户输入一段文本，然后得到一个随机生成的链接
+    - 用例：用户输入一个 paste 的 url 后可以看到它存储的内容
+    - 用例： 服务跟踪分析页面
+    - 用例： 服务删除过期的 pastes
+  - 第四步：扩展这个设计
+  - 额外的话题
+    - NoSQL
+    - 缓存
+    - 异步和微服务
+    - 通信
+    - 安全
+    - 延迟数字
+    - 持续进行
+
+## FILE solutions/system_design/pastebin/README.md  (15 KB)
+- Design Pastebin.com (or Bit.ly)
+  - Step 1: Outline use cases and constraints
+    - Use cases
+    - Constraints and assumptions
+  - Step 2: Create a high level design
+  - Step 3: Design core components
+    - Use case: User enters a block of text and gets a randomly generated link
+    - Use case: User enters a paste's url and views the contents
+    - Use case: Service tracks analytics of pages
+    - Use case: Service deletes expired pastes
+  - Step 4: Scale the design
+  - Additional talking points
+    - Caching
+    - Asynchronism and microservices
+    - Communications
+    - Security
+    - Latency numbers
+    - Ongoing
+
+## FILE solutions/system_design/query_cache/README-zh-Hans.md  (9 KB)
+- 设计一个键-值缓存来存储最近 web 服务查询的结果
+  - 第一步：简述用例与约束条件
+    - 用例
+    - 限制条件与假设
+  - 第二步：概要设计
+  - 第三步：设计核心组件
+    - 用例：用户发送了一次请求，命中了缓存
+  - 第四步：架构扩展
+    - 将内存缓存扩大到多台机器
+  - 其它要点
+    - SQL 缩放模式
+    - 缓存
+    - 异步与微服务
+    - 通信
+    - 安全性
+    - 延迟数值
+    - 持续探讨
+
+## FILE solutions/system_design/query_cache/README.md  (13 KB)
+- Design a key-value cache to save the results of the most recent web server queries
+  - Step 1: Outline use cases and constraints
+    - Use cases
+    - Constraints and assumptions
+  - Step 2: Create a high level design
+  - Step 3: Design core components
+    - Use case: User sends a request resulting in a cache hit
+  - Step 4: Scale the design
+    - Expanding the Memory Cache to many machines
+  - Additional talking points
+    - SQL scaling patterns
+    - Caching
+    - Asynchronism and microservices
+    - Communications
+    - Security
+    - Latency numbers
+    - Ongoing
+
+## FILE solutions/system_design/sales_rank/README-zh-Hans.md  (10 KB)
+- 为 Amazon 设计分类售卖排行
+  - 第一步：简述用例与约束条件
+    - 用例
+    - 限制条件与假设
+  - 第二步：概要设计
+  - 第三步：设计核心组件
+    - 用例：服务需要根据分类计算上周最受欢迎的商品
+    - 用例：用户需要根据分类浏览上周中最受欢迎的商品
+  - 第四步：架构扩展
+  - 其它要点
+    - 缓存
+    - 异步与微服务
+    - 通信
+    - 安全性
+    - 延迟数值
+    - 持续探讨
+
+## FILE solutions/system_design/sales_rank/README.md  (14 KB)
+- Design Amazon's sales rank by category feature
+  - Step 1: Outline use cases and constraints
+    - Use cases
+    - Constraints and assumptions
+  - Step 2: Create a high level design
+  - Step 3: Design core components
+    - Use case: Service calculates the past week's most popular products by category
+    - Use case: User views the past week's most popular products by category
+  - Step 4: Scale the design
+  - Additional talking points
+    - Caching
+    - Asynchronism and microservices
+    - Communications
+    - Security
+    - Latency numbers
+    - Ongoing
+
+## FILE solutions/system_design/scaling_aws/README-zh-Hans.md  (10 KB)
+- 在 AWS 上设计支持百万级到千万级用户的系统
+  - 第 1 步：用例和约束概要
+    - 用例
+    - 约束和假设
+  - 第 2 步：创建高级设计方案
+  - 第 3 步：设计核心组件
+    - 用例：用户进行读写请求
+  - 第 4 步：扩展设计
+    - 用户+
+    - 用户+++
+    - 用户+++
+    - 用户++++
+    - 用户+++++
+  - 额外的话题
+    - SQL 扩展模式
+    - 缓存
+    - 异步性和微服务
+    - 沟通
+    - 安全性
+    - 延迟数字指标
+    - 正在进行
+
+## FILE solutions/system_design/scaling_aws/README.md  (19 KB)
+- Design a system that scales to millions of users on AWS
+  - Step 1: Outline use cases and constraints
+    - Use cases
+    - Constraints and assumptions
+  - Step 2: Create a high level design
+  - Step 3: Design core components
+    - Use case: User makes a read or write request
+  - Step 4: Scale the design
+    - Users+
+    - Users++
+    - Users+++
+    - Users++++
+    - Users+++++
+  - Additional talking points
+    - SQL scaling patterns
+    - Caching
+    - Asynchronism and microservices
+    - Communications
+    - Security
+    - Latency numbers
+    - Ongoing
+
+## FILE solutions/system_design/social_graph/README-zh-Hans.md  (10 KB)
+- 为社交网络设计数据结构
+  - 第 1 步：用例和约束概要
+    - 用例
+    - 约束和假设
+  - 第 2 步：创建高级设计方案
+  - 第 3 步：设计核心组件
+    - 用例： 用户搜索某人并查看到被搜人的最短路径
+  - 第 4 步：扩展设计
+  - 额外的话题
+    - SQL 扩展模式
+    - 缓存
+    - 异步性和微服务
+    - 沟通
+    - 安全性
+    - 延迟数字指标
+    - 正在进行
+
+## FILE solutions/system_design/social_graph/README.md  (15 KB)
+- Design the data structures for a social network
+  - Step 1: Outline use cases and constraints
+    - Use cases
+    - Constraints and assumptions
+  - Step 2: Create a high level design
+  - Step 3: Design core components
+    - Use case: User searches for someone and sees the shortest path to the searched person
+  - Step 4: Scale the design
+  - Additional talking points
+    - SQL scaling patterns
+    - Caching
+    - Asynchronism and microservices
+    - Communications
+    - Security
+    - Latency numbers
+    - Ongoing
+
+## FILE solutions/system_design/twitter/README-zh-Hans.md  (10 KB)
+- 设计推特时间轴与搜索功能
+  - 第一步：简述用例与约束条件
+    - 用例
+    - 限制条件与假设
+  - 第二步：概要设计
+  - 第三步：设计核心组件
+    - 用例：用户发表了一篇推特
+    - 用例：用户浏览主页时间轴
+    - 用例：用户浏览用户时间轴
+    - 用例：用户搜索关键词
+  - 第四步：架构扩展
+  - 其它要点
+    - 缓存
+    - 异步与微服务
+    - 通信
+    - 安全性
+    - 延迟数值
+    - 持续探讨
+
+## FILE solutions/system_design/twitter/README.md  (16 KB)
+- Design the Twitter timeline and search
+  - Step 1: Outline use cases and constraints
+    - Use cases
+    - Constraints and assumptions
+  - Step 2: Create a high level design
+  - Step 3: Design core components
+    - Use case: User posts a tweet
+    - Use case: User views the home timeline
+    - Use case: User views the user timeline
+    - Use case: User searches keywords
+  - Step 4: Scale the design
+  - Additional talking points
+    - Caching
+    - Asynchronism and microservices
+    - Communications
+    - Security
+    - Latency numbers
+    - Ongoing
+
+## FILE solutions/system_design/web_crawler/README-zh-Hans.md  (11 KB)
+- 设计一个网页爬虫
+  - 第一步：简述用例与约束条件
+    - 用例
+    - 限制条件与假设
+  - 第二步： 概要设计
+  - 第三步：设计核心组件
+    - 用例：爬虫服务抓取一系列网页
+    - 处理重复内容
+    - 抓取结果更新策略
+    - 用例：用户输入搜索词后，可以看到相关的搜索结果列表，列表每一项都包含由网页爬虫生成的页面标题及摘要
+  - 第四步：架构扩展
+  - 其它要点
+    - SQL 扩展模式
+    - 缓存
+    - 异步与微服务
+    - 通信
+    - 安全性
+    - 延迟数值
+    - 持续探讨
+
+## FILE solutions/system_design/web_crawler/README.md  (16 KB)
+- Design a web crawler
+  - Step 1: Outline use cases and constraints
+    - Use cases
+    - Constraints and assumptions
+  - Step 2: Create a high level design
+  - Step 3: Design core components
+    - Use case: Service crawls a list of urls
+    - Handling duplicates
+    - Determining when to update the crawl results
+    - Use case: User inputs a search term and sees a list of relevant pages with titles and snippets
+  - Step 4: Scale the design
+  - Additional talking points
+    - SQL scaling patterns
+    - Caching
+    - Asynchronism and microservices
+    - Communications
+    - Security
+    - Latency numbers
+    - Ongoing

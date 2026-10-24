@@ -1,0 +1,300 @@
+Q003287	SD06	H	Design an Airbnb booking system.
+Q003288	MS03	H	Design search and recommendation for Airbnb.
+Q003289	SD06	H	Design Twitter.
+Q003290	DROP	-	notq
+Q003291	SD01	E	What is load balancing?
+Q003292	DROP	-	notq
+Q003293	DROP	-	notq
+Q003294	DROP	-	notq
+Q003295	DROP	-	notq
+Q003296	DROP	-	notq
+Q003297	DROP	-	notq
+Q003298	DROP	-	notq
+Q003299	DROP	-	notq
+Q003300	DROP	-	notq
+Q003301	DROP	-	notq
+Q003302	DROP	-	notq
+Q003303	DROP	-	notq
+Q003304	DROP	-	notq
+Q003305	DROP	-	notq
+Q003307	DROP	-	notq
+Q003306	DROP	-	notq
+Q003308	SD06	H	Design a distributed cache system.
+Q003309	DROP	-	notq
+Q003310	DROP	-	notq
+Q003311	DROP	-	notq
+Q003312	DROP	-	notq
+Q003313	SD06	H	Design a real-time analytics dashboard.
+Q003314	DROP	-	notq
+Q003315	DROP	-	notq
+Q003316	DROP	-	notq
+Q003317	SD06	H	Design a notification system for millions of users.
+Q003318	SD06	H	Design a global file storage system (Dropbox-like).
+Q003319	SD06	H	Design an inventory management system.
+Q003320	SD06	H	Design a supply chain tracking system.
+Q003321	SD06	H	Design a warehouse management system.
+Q003322	DROP	-	notq
+Q003323	DROP	-	notq
+Q003324	DROP	-	notq
+Q003325	DROP	-	notq
+Q003494	DROP	-	hr
+Q003495	DROP	-	hr
+Q003496	DROP	-	hr
+Q003497	DROP	-	hr
+Q003498	DROP	-	hr
+Q003499	DROP	-	hr
+Q003500	DROP	-	hr
+Q003501	DROP	-	hr
+Q003502	DROP	-	hr
+Q003503	DROP	-	hr
+Q003504	DROP	-	hr
+Q003505	DROP	-	hr
+Q003506	CS07	M	Why is there only pass-by-value in Java?
+Q003507	CS03	M	What is the difference between TCP keepalive and HTTP keep-alive?
+Q003508	CS03	M	If you can ping a host, does a TCP connection to it definitely succeed?
+Q003509	CS03	E	Can TCP and UDP use the same port?
+Q003510	CS03	M	What is the maximum number of TCP connections a host can maintain?
+Q003511	DROP	-	dsa
+Q003512	CS04	M	How is a SQL statement executed in MySQL?
+Q003513	CS04	M	Are MySQL auto-increment primary keys always continuous?
+Q003514	CS05	M	Can Redis be used as a message queue? How would you implement it?
+Q003515	CS08	E	Why do both the front end and the back end need to perform data validation?
+Q003516	CS08	M	Why can a forgotten password only be reset and not retrieved in its original form?
+Q003517	SD03	M	How do you design a distributed ID generator?
+Q003651	DROP	-	offtopic
+Q003652	DROP	-	offtopic
+Q003653	DROP	-	hr
+Q003654	DROP	-	offtopic
+Q003521	LLM05	M	How do tokens, the context window, temperature, and top-p each affect an LLM's behavior?
+Q003522	GA02	M	Why can't structured output rely on the prompt alone? What problems do JSON Schema, function calling, and server-side validation each solve?
+Q003523	GA03	M	What is the difference between an agent and a workflow? How do observation, planning, action, and reflection work together in an agent loop?
+Q003524	DROP	-	dup
+Q003525	DROP	-	dup
+Q003526	GA04	H	How do you evaluate an AI application? How do golden sets, LLM-as-judge, online canary releases, and trace replay fit together?
+Q003541	DROP	-	dup
+Q003527	GA03	M	What is the relationship between AI workflows and agents?
+Q003528	GA03	E	What is short-term (working) memory in an AI agent?
+Q003529	GA03	M	How can you use Markdown to store an agent's memory?
+Q003530	GA03	M	Why can Markdown be used as agent memory?
+Q003531	GA01	M	What tools are used in context engineering?
+Q003532	DROP	-	offtopic
+Q003533	GA02	E	Does MCP expose only Tools as capabilities?
+Q003534	GA02	M	How do you choose between stdio and Streamable HTTP transports in MCP?
+Q003535	DROP	-	notq
+Q003536	DROP	-	notq
+Q003537	GA02	M	What should you watch out for when writing an MCP server?
+Q003538	GA03	M	What is the difference between a multi-agent system and a multi-stage prompt chain?
+Q003539	DROP	-	unfixable
+Q003540	SD03	M	Why does a lease also need a fencing token?
+Q003542	DROP	-	dup
+Q003543	DROP	-	notq
+Q003544	GA03	M	What is the relationship between workflows, graphs, and loops?
+Q003545	DROP	-	notq
+Q003546	GA03	M	How do you choose the update strategy for state in a graph-based agent workflow?
+Q003518	GA01	M	What is context engineering, and how does it differ from prompt engineering?
+Q003519	GA02	M	What is the Model Context Protocol (MCP), and how does it relate to function calling and agents?
+Q003520	DROP	-	dup
+Q003607	GA04	M	Why do LLM API calls need retries, rate limiting, fallback, and structured output validation?
+Q003547	GA03	E	What is an AI agent, and how does it differ from an ordinary chatbot?
+Q003548	GA03	E	How do you interpret the formula Agent = LLM + Planning + Memory + Tools?
+Q003549	GA02	M	Why is the tool description so important when registering tools for an agent?
+Q003550	GA03	M	When should you use a pure agent, and when a workflow or an agentic workflow?
+Q003551	GA03	M	Which team-shared agent memories suit Git and code review, and which are better kept in a database?
+Q003552	GA01	E	What problems do the four prompt elements Role, Task, Context, and Format each solve?
+Q003553	GA01	M	Why is optimizing only the prompt not enough in agent scenarios?
+Q003554	GA02	E	What problem does MCP solve, and why is it often compared to USB-C for AI?
+Q003555	GA02	E	What are an MCP client, an MCP server, and a host?
+Q003556	GA02	E	What problems do MCP Tools, Resources, and Prompts each solve?
+Q003557	GA02	M	What is the difference between MCP and function calling?
+Q003558	GA05	M	What security governance is needed for a production-grade MCP server?
+Q003559	GA02	M	What are Agent Skills, and what are the boundaries between them and prompts, MCP, and function calling?
+Q003560	GA03	H	How does skill routing work, and why is it similar to RAG but with a different goal?
+Q003561	GA03	M	What is harness engineering, and how does it relate to prompt engineering and context engineering?
+Q003562	GA03	M	Why is it said that Agent = Model + Harness?
+Q003563	DROP	-	unfixable
+Q003564	GA03	M	What is the difference between a graph loop and an agent loop?
+Q003565	GA03	M	What triggers the next round of an outer loop: a CI event, a scheduled task, a goal check, or manual approval?
+Q003566	GA03	H	What is the difference between an outer loop and the agent loop inside a single task, and how are state and verification results handed over between them?
+Q003567	GA03	M	How do you distinguish RAG, memory, context, and state in an agent system?
+Q003568	GA02	M	What are function calling, MCP, and agents each responsible for?
+Q003569	GA03	M	How do you set exit boundaries for an agent loop?
+Q003570	GA04	M	How should you conduct a post-mortem of bad cases in an agent project?
+Q003571	GA04	M	How can you use traces to reconstruct an agent's execution process?
+Q003572	GA03	M	Why use an agent rather than a RAG Q&A system or a workflow?
+Q003573	GA03	M	What are the boundaries between the model, tools, memory, RAG, and state in an agent system?
+Q003574	GA05	H	Where are the trust boundaries between RAG content, tool results, MCP servers, and long-term memory?
+Q003575	GA03	M	What information do RAG, memory, and tools each manage, and why should they be governed separately?
+Q003576	GA04	M	Why does a production environment need an LLM gateway, and what problems arise when business services call model APIs directly?
+Q003577	GA04	M	What is the difference between an LLM gateway and an LLM router?
+Q003578	GA04	M	How can token costs be attributed to tenants, users, features, models, and prompt versions?
+Q003579	GA05	M	Why can't tool descriptions and prompts replace backend permission checks?
+Q003580	GA04	M	How do you control the cost and runtime of AI evaluations in CI?
+Q003581	GA06	E	What are ASR, LLM, TTS, and VAD each responsible for in a voice system?
+Q003582	GA06	M	What are the pros and cons of a cascaded ASR + LLM + TTS pipeline versus a native speech-to-speech model?
+Q003583	LLM02	M	What is a token, and why do Chinese, English, and code consume different numbers of tokens?
+Q003584	LLM05	M	What is the lost-in-the-middle problem, and how can it be mitigated in long-context scenarios?
+Q003585	LLM05	M	Why can an LLM's output still be non-deterministic even when temperature is set to 0?
+Q003586	GA04	M	Why does streaming improve user experience, and does it reduce total latency or token cost?
+Q003587	GA02	M	What is the difference between JSON mode and Structured Outputs?
+Q003588	DROP	-	dup
+Q003589	GA02	M	What is the relationship between an MCP tool and an ordinary HTTP API?
+Q003590	GA02	M	Is an Agent Skill the same thing as function calling?
+Q003591	LLM07	M	Why can't you evaluate the quality of an AI application using only public benchmarks?
+Q003592	GA03	M	Why is evaluating agents more complex than evaluating ordinary Q&A and RAG?
+Q003593	DROP	-	dup
+Q003594	GA04	H	When an upstream model hits RPM or TPM limits, how should a model gateway queue requests, degrade, or switch models?
+Q003595	GA04	H	After changing the model or modifying the prompt, how do you validate the effect using offline evaluation, trace replay, and online canary release?
+Q003596	RAG03	M	How do you choose an embedding model in a RAG system, and why?
+Q003597	DROP	-	dup
+Q003598	RAG03	M	Why can an ANN algorithm accept results that are not 100% exact?
+Q003599	RAG03	M	What is the difference between HNSW and IVFFLAT?
+Q003600	RAG03	H	How do you tune HNSW's ef_search parameter, and what happens when it is increased or decreased?
+Q003601	RAG03	H	If vector data grows from 1 million to 100 million, what architectural changes are needed?
+Q003602	RAG03	M	Why choose PostgreSQL + pgvector, and when should you switch to a dedicated vector database?
+Q003603	RAG04	M	What problems do chunking strategy, metadata, hybrid search, query rewriting, and reranking each solve in RAG retrieval?
+Q003604	RAG04	M	What is hybrid search, and how are BM25 and vector retrieval fused?
+Q003605	RAG05	M	What problem does GraphRAG solve, and how does it differ from standard vector RAG?
+Q003606	RAG04	M	If the correct document enters the candidate pool but always ranks outside the top K, should you adjust recall or introduce reranking?
+Q003612	GA02	M	What problems do function calling, tool calling, and MCP each solve?
+Q003608	DROP	-	dup
+Q003609	GA03	M	In agent evaluation, what are a task, a trial, a grader, and a transcript?
+Q003610	GA04	M	What is the evaluation harness responsible for in an AI application?
+Q003611	GA04	H	How do you evaluate an AI application when the current time and web search results keep changing?
+Q003613	GA02	M	What is the relationship between function calling, MCP tools, HTTP APIs, and Agent Skills?
+Q003614	GA02	M	How does function calling map to an HTTP API?
+Q003615	DROP	-	dup
+Q003616	DROP	-	notq
+Q003617	DROP	-	notq
+Q003624	DROP	-	dup
+Q003618	RAG01	M	How do you update a RAG knowledge base without rebuilding everything?
+Q003619	RAG04	M	How do you choose between an LLM reranker and a dedicated reranker?
+Q003620	DROP	-	dup
+Q003621	DROP	-	dup
+Q003622	RAG03	H	Under what circumstances does a pgvector HNSW index fail or degrade into a slower scan?
+Q003623	DROP	-	dup
+Q003650	GA04	H	How should you split a single agent request into spans, and how do you preserve the trace across threads and services?
+Q003625	GA04	M	What are the differences between metrics, logs, traces, evaluation, and audit?
+Q003626	GA04	M	How do you distinguish a trace, span, session, run, and attempt?
+Q003627	DROP	-	dup
+Q003628	GA04	M	Has OpenTelemetry standardized agent spans?
+Q003629	GA04	M	How can you use traces to locate common AI bad cases?
+Q003630	GA04	M	Is it acceptable to store full prompts and tool results in traces?
+Q003631	DROP	-	offtopic
+Q003632	DROP	-	dup
+Q003633	DROP	-	dup
+Q003634	GA04	M	What is the relationship between tracing and evaluation?
+Q003635	DROP	-	unfixable
+Q003636	GA04	M	What is the relationship between an LLM gateway and RAG, agents, and MCP?
+Q003637	GA04	M	Do you really need an LLM gateway?
+Q003638	MS04	H	How would you design a production-grade LLM gateway?
+Q003639	GA04	M	How do you choose between a self-built gateway, LiteLLM, Cloudflare AI Gateway, Kong AI Gateway, and similar routers?
+Q003640	GA04	M	How do you measure how well an LLM gateway is doing?
+Q003641	GA05	M	Why do agents expand the security risks of LLMs?
+Q003642	GA05	M	What is the difference between prompt injection, indirect injection, and jailbreaks?
+Q003643	GA05	M	Why is writing "do not obey external instructions" in the system prompt not enough?
+Q003644	DROP	-	offtopic
+Q003645	GA05	M	Why is function calling still unsafe even when a schema is defined?
+Q003646	GA05	M	Is MCP secure once OAuth is used?
+Q003647	DROP	-	notq
+Q003648	DROP	-	notq
+Q003649	DROP	-	notq
+Q003655	CS03	E	What are the OSI seven-layer model and the TCP/IP four-layer model? What problem does each layer solve?
+Q003656	CS03	M	How does TCP ensure reliable transmission, and how do you choose between TCP and UDP?
+Q003659	DROP	-	dsa
+Q003657	DROP	-	dsa
+Q003658	DROP	-	dsa
+Q003660	DROP	-	dsa
+Q003661	DROP	-	dsa
+Q003662	DROP	-	dsa
+Q003663	DROP	-	dsa
+Q003668	CS04	M	Why are B-trees and B+ trees suitable for database indexes?
+Q003669	DROP	-	dsa
+Q003664	DROP	-	offtopic
+Q003665	CS07	M	Why must you override both equals() and hashCode() when using a custom object as a key?
+Q003666	CS07	M	How does Java's LinkedHashMap implement an LRU cache?
+Q003667	DROP	-	unfixable
+Q003670	CS07	M	Why does a skip list reduce lookup from O(n) to O(log n) on average?
+Q003690	DROP	-	dup
+Q003691	CS03	M	Why does TIME_WAIT exist, and how do you troubleshoot a large number of TIME_WAIT connections?
+Q003692	DROP	-	dup
+Q003671	DROP	-	unfixable
+Q003672	DROP	-	dup
+Q003673	CS03	M	Why does DNS usually use UDP, and when does it switch to TCP?
+Q003674	SD04	M	With HTTP/2, is RPC still needed?
+Q003675	SD04	M	Is gRPC simply HTTP/2 plus Protobuf?
+Q003676	CS08	M	How is the session key material derived in an RSA handshake versus an ECDHE handshake?
+Q003677	CS08	M	Why did TLS 1.3 remove static RSA key exchange?
+Q003678	DROP	-	dup
+Q003679	CS08	M	How do attacks such as IP spoofing, SYN flood, and DDoS work?
+Q003680	CS08	M	What is the principle behind a TCP SYN flood attack?
+Q003681	DROP	-	dup
+Q003682	CS03	E	What is the difference between a cookie and a session?
+Q003683	CS03	M	Why is TCP byte-stream-oriented while UDP is message-oriented?
+Q003684	CS03	M	In the second step of the TCP handshake, why does the server send back a SYN in addition to the ACK?
+Q003685	CS03	M	Why can't the server's ACK and FIN be combined in TCP connection termination, making it a three-way close?
+Q003686	CS03	M	Why must the client wait 2*MSL (maximum segment lifetime) after the fourth wave before entering the CLOSED state?
+Q003687	DROP	-	dup
+Q003688	CS03	E	What is an IP address, and how does IP addressing work?
+Q003689	CS03	E	What is NAT, and what are the benefits of NAT firewalls?
+Q003693	DROP	-	dup
+Q003694	CS03	M	Why can the Nagle algorithm and delayed ACK make small packets slower?
+Q003695	DROP	-	dup
+Q003696	DROP	-	dup
+Q003697	DROP	-	dup
+Q003698	CS03	E	What is TCP keepalive?
+Q003699	CS03	M	How is a TCP connection established, and if HTTPS is used, what does the TLS handshake do?
+Q003700	CS03	M	After the browser receives the HTML, how does it continue loading resources such as CSS, JS, and images and render the page?
+Q003701	CS03	M	What really happens when you navigate to a URL?
+Q003713	CS02	M	What problems do mutexes, semaphores, condition variables, spinlocks, and futexes each solve?
+Q003702	CS01	M	Why is a page fault sometimes normal behavior and sometimes turns into a SIGSEGV?
+Q003703	CS01	M	What do VSZ, RSS, and PSS each represent?
+Q003704	CS01	M	What is a TCB, and how does it relate to a PCB?
+Q003705	CS01	M	What is the difference between load average and CPU utilization?
+Q003706	DROP	-	dup
+Q003707	CS01	M	What is the TLB for, and what is the address translation flow when a TLB is used?
+Q003708	CS01	M	What is the relationship between memory overcommit and the OOM killer?
+Q003709	CS01	M	What is the difference between select, poll, and epoll?
+Q003710	CS01	M	What is the difference between mmap, sendfile, and splice?
+Q003711	DROP	-	unfixable
+Q003712	CS01	E	What do fork, exec, and wait each do in Linux?
+Q003716	CS04	E	How should you understand the execution order of WHERE, GROUP BY, HAVING, and ORDER BY in SQL?
+Q003717	DROP	-	dup
+Q003718	DROP	-	dup
+Q003719	CS04	M	How do you analyze a SQL execution plan using EXPLAIN?
+Q003720	DROP	-	dup
+Q003721	CS05	M	What business scenarios are MongoDB and Elasticsearch each suited for?
+Q003714	CS04	E	What are a database, a database management system, a database system, and a database administrator?
+Q003715	CS04	E	What are a tuple, key, candidate key, primary key, foreign key, prime attribute, and non-prime attribute?
+Q003723	CS05	M	What is the difference between MongoDB and MySQL?
+Q003724	CS05	M	What do read concern and write concern each control in MongoDB?
+Q003722	CS05	M	Is MongoDB's WiredTiger storage engine based on an LSM tree or a B+ tree?
+Q003731	CS04	M	How does InnoDB implement snapshot reads using MVCC, undo logs, and Read View?
+Q003732	DROP	-	dup
+Q003733	CS04	M	How can MySQL be restored to a specific point in time using a full backup, binlog, and PITR?
+Q003734	SD02	H	What are the options for synchronizing MySQL data to Elasticsearch, and how do you handle full sync, incremental sync, out-of-order events, and data reconciliation?
+Q003735	CS04	M	How do you locate the cause of a slow SQL query layer by layer, from table design and indexes to SQL writing and execution plans?
+Q003736	DROP	-	dup
+Q003737	DROP	-	dup
+Q003738	DROP	-	dup
+Q003739	CS04	M	What are the differences between binlog, redo log, and undo log, and what problem does two-phase commit solve?
+Q003740	DROP	-	dup
+Q003741	DROP	-	dup
+Q003742	CS04	E	How should you choose between DATETIME and TIMESTAMP?
+Q003725	CS04	E	What is the difference between CHAR and VARCHAR?
+Q003726	CS04	E	What is the difference between DECIMAL and FLOAT/DOUBLE?
+Q003727	CS04	M	Why is it not recommended to use TEXT and BLOB?
+Q003728	CS04	M	How do you choose between MyISAM and InnoDB?
+Q003729	CS04	M	Why does InnoDB not use a B-tree as its index data structure?
+Q003730	DROP	-	dup
+Q003743	CS05	M	What are the differences between RDB, AOF, AOF rewrite, and hybrid persistence in Redis?
+Q003744	CS05	M	Why can Redis block, and how do you locate slow commands, big keys, hot keys, and the impact of persistence?
+Q003745	DROP	-	dup
+Q003746	DROP	-	dup
+Q003747	CS05	M	What is the difference between Redis master-replica replication, Sentinel, and Cluster?
+Q003748	CS05	M	Is it better to store object data in Redis as a String or a Hash?
+Q003749	CS05	M	Is it better to store shopping cart information in Redis as a String or a Hash?
+Q003750	CS05	M	Why does the Redis sorted set use a skip list instead of a balanced tree, red-black tree, or B+ tree?
+Q003751	CS05	M	How do you count page UV using HyperLogLog?
+Q003752	CS05	E	What are Redis's strategies for deleting expired keys?
+Q003753	CS05	M	How is the leader elected in a Redis Sentinel cluster?
+Q003754	CS05	M	Why does a Redis Cluster have 16384 hash slots?

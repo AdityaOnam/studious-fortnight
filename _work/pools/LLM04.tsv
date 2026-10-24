@@ -1,0 +1,218 @@
+Q001013	M	Describe the training process of a GPT model.
+Q001014	M	What are some common issues faced during the training of large language models?
+Q001016	M	Discuss the cost and resource implications of training models like GPT-3.
+Q001654	M	Discuss the significance of pre-training and fine-tuning in the context of LLMs.
+Q003337	E	What is the difference between causal language modeling and masked language modeling?
+Q003340	M	What is model parallelism, and how is it used in LLM pre-training?
+Q003341	E	What is the significance of self-supervised learning in LLM pretraining?
+Q003355	M	What is cross-entropy loss, and how is it applied during transformer training?
+Q003396	E	What are the different phases in LLM development?
+Q004259	M	How are Large Language Models trained?
+Q004714	M	Explain the difference between autoregressive and masked language modeling.
+Q005072	M	Your AI training produces massive carbon emissions. How do you reduce environmental impact?
+Q005114	E	What is model parallelism vs data parallelism in distributed training?
+Q005115	M	What is tensor parallelism, and how does it help serve large models?
+Q005116	M	What is pipeline parallelism?
+Q005135	H	What is FSDP (Fully Sharded Data Parallel), and how does it differ from DeepSpeed ZeRO?
+Q005300	M	How are Transformers trained (pre-training and fine-tuning)?
+Q005327	M	What are some challenges in training LLMs?
+Q005925	M	How is an LLM trained? Describe the three-stage pipeline of pretraining, SFT, and alignment (RLHF/DPO).
+Q005971	M	What typical phases does the loss curve go through when training a Transformer, and how do you diagnose problems?
+Q006007	M	What problems do DDP, FSDP, and ZeRO each solve?
+Q007216	M	What is the FP8 data type and what are its advantages?
+Q007217	H	How do you train an LLM with low-precision training without compromising accuracy?
+Q011267	M	What is the "curriculum" in LLM pretraining?
+Q011268	H	Estimate the compute to pretrain a 70B dense model on 15T tokens.
+Q011437	M	Why is deduplication one of the most important stages in an AI data pipeline?
+Q011806	H	Compare tensor, pipeline, data, sequence and expert parallelism. When do you combine them?
+Q011953	H	Design the training setup for a model that doesn't fit on one accelerator, say 70B parameters on a pod.
+Q011985	H	DeepSeek claims frontier-class results at a fraction of the usual training cost. How is that possible?
+Q012400	E	What is the primary objective of the pretraining phase for a Large Language Model (LLM)?
+Q012402	M	What kind of data is typically used for pretraining LLMs, and what are the considerations regarding data quality and scale?
+Q012404	M	What are some of the major challenges encountered during LLM pretraining?
+Q012511	M	Does repeating tokens in the pretraining data affect model performance?
+Q012516	M	In the MLM task, 15% of tokens are randomly selected, of which 80% are replaced with [MASK], 10% are left unchanged and 10% are replaced with a random word. What is the reason for this?
+Q012517	H	Can you train Vicuna 65B with 4 V100 32GB GPUs?
+Q012518	H	How do pipeline parallelism and ZeRO stage 2+ work together?
+Q012519	E	What is tensor parallelism (intra-layer parallelism)?
+Q012520	M	Compare data parallelism, tensor parallelism and pipeline parallelism.
+Q012563	M	How are transformers trained, and what is the role of pre-training and fine-tuning?
+Q007234	M	Why do large pretraining runs set dropout to 0?
+Q007258	M	Why is next-token prediction such a powerful pretext task compared to, say, autoencoding?
+Q007293	M	What is the memory footprint of Adam for a 7B-parameter model, and how do you reduce it?
+Q007300	H	How would you set the peak learning rate for a model 10x bigger?
+Q007302	M	Why is training memory so much larger than inference memory?
+Q007303	M	What is activation checkpointing and what is its compute overhead?
+Q007304	M	Where does the 6ND estimate of training FLOPs come from?
+Q007371	H	Your LLM pretraining loss just spiked. Talk me through training stability: gradient clipping, mixed precision, and your debugging playbook.
+Q007372	H	Why does bf16 remove the need for loss scaling? What is the actual bit-level difference from fp16?
+Q007373	H	Why use a lower Adam β₂ for LLM training?
+Q007374	H	Gradient clipping fires on 40% of training steps. What do you change?
+Q007397	H	How does QK-clip differ from QK-norm?
+Q007398	H	What does Muon's need for the full weight matrix do to ZeRO or FSDP sharding?
+Q007433	E	What is the difference between causal language modeling and masked language modeling as pretraining objectives?
+Q007434	M	What is exposure bias and how much does it matter in practice?
+Q007435	H	Why does in-context learning emerge from next-token prediction?
+Q007436	M	When would you still pretrain or fine-tune with masked language modeling today?
+Q007526	M	Describe the modern LLM training pipeline: pretraining, mid-training, SFT, RL.
+Q007545	M	What is multi-token prediction as a training objective, and what does it buy you?
+Q007547	H	How would you weight the auxiliary losses across the t+2, t+3 heads in multi-token prediction?
+Q007597	M	Where do the parameters and FLOPs actually live in a transformer? Walk me through the budget.
+Q007598	H	Derive the 6ND training-FLOP estimate. At what context length does attention compute overtake MLP compute for this architecture?
+Q008121	H	Explain gradient accumulation, gradient checkpointing, and ZeRO/FSDP, and how you would combine them for a real training run.
+Q008122	M	Why does ZeRO-1 add almost no communication overhead while ZeRO-3 does?
+Q008123	M	When is gradient checkpointing a bad trade-off?
+Q008987	H	If you had one frontier multimodal pretraining run, what data-mixture questions would you have to answer?
+Q009196	H	You are training a large model across hundreds of accelerators. Compare data, tensor, and pipeline parallelism. When do you combine them?
+Q009197	M	In distributed training of a large model, where does gradient accumulation fit?
+Q009198	M	Why does activation checkpointing trade compute for memory, and when is it not worth it?
+Q009289	M	What changes in training and serving if you move from int8 to fp8 on newer hardware?
+Q009464	H	Where would you place shared versus routed experts across devices to minimise communication?
+Q009468	M	What is multi-token prediction (MTP) and why train with it?
+Q009477	H	FP8 training at 671B scale is hard. What actually breaks in low precision, and how do you make it stable?
+Q009478	H	In FP8 training, why is per-tensor scaling insufficient and per-block scaling enough?
+Q009479	H	Which tensors would you never put in FP8 in large-model training, and why keep FP32 master weights?
+Q009487	H	DualPipe overlaps computation and communication in training. Why is that overlap the whole game at this scale, and what is the trade-off?
+Q009488	H	Where does the extra memory in DualPipe come from, and how would you bound it?
+Q009489	M	When is pipeline parallelism the wrong tool versus more tensor or data parallelism?
+Q009490	H	A lab claims frontier-class results at a fraction of the usual training cost. If an interviewer asks "how is that even possible," what is your structured answer?
+Q009491	H	Of the levers behind low-cost frontier LLM training, which generalise to a lab with different hardware, and which are specific to one GPU setup?
+Q009492	M	What is missing from a single "training cost" number for an LLM?
+Q009609	H	Why can the loss computation for a large-vocabulary LM dominate memory, and what do fused kernels (for example, chunked cross-entropy) do about it?
+Q009621	H	Your pretraining loss suddenly diverges at step 300k of a long run. Diagnose and fix it.
+Q009622	M	When a pretraining run's loss suddenly diverges and you roll back to a checkpoint, why does deterministic, resumable data ordering matter?
+Q009623	H	When a pretraining run's loss diverges, what would make you choose to restart the run entirely rather than roll back to a checkpoint?
+Q009627	H	Design the training setup for a model that doesn't fit on one accelerator, say a 70B-parameter model on a pod of accelerators.
+Q009628	H	Where does communication become the bottleneck as you scale data parallelism, and what does gradient accumulation change?
+Q009629	H	How would you decide between wider tensor parallelism and deeper pipeline parallelism?
+Q009735	M	When building a web-scale pretraining corpus, why can a benchmark suite mislead you at small scale?
+Q009764	H	What breaks when you scale LLM training from 8 GPUs to thousands, and how do modern stacks deal with it?
+Q009765	M	How do you pick the tensor-parallel x pipeline-parallel x data-parallel layout for a given cluster topology?
+Q009831	M	Which batch-size and sequence-length terms drive activation memory in LLM training?
+Q009864	H	When training a trillion-parameter model, attention logits can blow up and destabilise the run. What is going on, and how does something like MuonClip address it?
+Q009865	H	Why do orthogonalised optimizer updates (as in Muon) help efficiency but potentially worsen attention-logit instability?
+Q009866	M	What would you monitor during a training run to catch attention-logit growth before it becomes a loss spike?
+Q010012	M	In near-duplicate web page detection with shingling, how do you pick the shingle size, and what breaks with unigrams?
+Q010013	H	In near-duplicate detection, the same story rewritten by two outlets has different shingles but the same facts. Is that a duplicate, and whose problem is it?
+Q010044	H	In repository-level fill-in-the-middle training for a code model, how would you order context files so the most relevant ones survive context truncation?
+Q010045	H	Why can naive fill-in-the-middle (FIM) masking accidentally leak the middle into the suffix, and how do you prevent it?
+Q010196	H	A customer's distributed training job runs efficiently for 3 hours and then degrades. What does that suggest?
+Q010197	H	What monitoring would you build so a GPU platform catches distributed-training efficiency degradation before the customer does?
+Q010255	H	You are training on tens of thousands of GPUs and hardware fails constantly. How do you keep goodput high?
+Q010256	H	How would you decide checkpoint frequency quantitatively for large-scale training with frequent hardware failures?
+Q010257	H	What changes in large-scale distributed training when the cluster spans buildings with different network tiers?
+Q010258	M	If the loss recovers on its own after a spike in a large pretraining run, do you still act?
+Q010259	H	How do you distinguish a recoverable loss spike from a poisoned run that requires restarting from an earlier checkpoint?
+Q010260	H	Design a deduplication pipeline for a web-scale pretraining corpus. It has to run as a streaming process.
+Q010261	H	How do you dedup eval sets against the training corpus (decontamination), and why is that a different problem from corpus deduplication?
+Q010262	H	In a MinHash-based deduplication pipeline, what breaks if you parallelize by document rather than by band?
+Q010268	H	GLM's pre-training objective is autoregressive blank infilling. How does it differ from BERT and GPT, and why was it argued to unify understanding and generation?
+Q010269	H	In GLM's autoregressive blank-infilling objective, why does span prediction order matter?
+Q010270	H	How would you adapt the span-length distribution of a blank-infilling pretraining objective if you cared mostly about long-form generation?
+D00075	E	What is the causal language modeling objective, and how does it differ from masked language modeling?
+D00076	M	What loss function is used for pretraining, and how do cross-entropy and perplexity relate?
+D00077	M	Why is deduplication of pretraining data important, and how do MinHash and SimHash work?
+D00078	M	Describe a pretraining data pipeline: sources, filtering, deduplication, quality scoring and mixing.
+D00079	M	What is a data curriculum in pretraining, and why might ordering or mixing proportions matter?
+D00080	M	What is the data wall, and how does synthetic data change the pretraining picture?
+D00081	M	What are the risks of training on model-generated data, and what is model collapse?
+D00082	M	How do you ensure the quality of a ten-million-row synthetic dataset before using it for training?
+D00083	M	What is evol-instruct style data generation, and what diversity problems can it introduce?
+D00084	M	Estimate the compute needed to pretrain a 70B dense model on 15T tokens, and explain the formula you use.
+D00085	H	A 7B model needs how much GPU memory for training with Adam in mixed precision? Break down weights, gradients, optimizer states and activations.
+D00086	M	How do you convert parameter count to inference memory for different precisions, and what is the KV cache overhead on top?
+D00087	M	Compare data parallelism, tensor parallelism and pipeline parallelism, and say when you combine them.
+D00088	M	What do ZeRO stages 1, 2 and 3 shard, and how does FSDP relate?
+D00089	M	What is activation checkpointing, and what compute-for-memory trade does it make?
+D00090	M	Training hits out-of-memory errors. List the levers you would pull in order and the cost of each.
+D00091	M	What are loss spikes in large-scale training, and how do teams detect and recover from them?
+D00092	M	Compare BF16, FP8 and FP4 training: what range and precision issues arise at each level?
+D00093	M	How do learning rate, warmup, gradient clipping and effective batch size interact in large-model training?
+D00094	M	What is sequence packing, and why must attention masks and loss masks be handled correctly with it?
+D00095	M	What is a typical failure when a training job loses a GPU node mid-run, and how should checkpointing be designed?
+D00096	H	How would you design fault tolerance and resume logic for a multi-week, thousand-GPU training run?
+D00097	M	Why does the Chinchilla compute-optimal recipe not tell you the right model size for a product that will serve billions of requests?
+D00098	M	How does the cost of data contamination in pretraining corpora show up in benchmark scores?
+D03760	M	What are the stages of an LLM training pipeline from pretraining through post-training?
+D03761	M	Why is next-token prediction on web-scale data a sufficient pretraining objective for general capabilities?
+D04443	E	What training objectives are used for large language models, and how do causal LM, masked LM and span-corruption objectives differ?
+D04523	M	In BERT masked LM, why are 15 percent of tokens selected and why is only 80 percent of them replaced with [MASK] while 10 percent are random and 10 percent unchanged?
+D04524	M	How does BERT's masked language modelling differ from CBOW in word2vec?
+D04593	M	Does repeating pretraining data for multiple epochs hurt LLM performance? What does empirical evidence say about the number of useful epochs?
+D04594	M	Why would a team consider multi-epoch training on the same corpus, and what degradation mechanisms (memorization, overfitting) arise?
+D04595	M	Can dropout or other regularization reduce the harm of repeated data in pretraining?
+D04617	M	What open pretraining corpora exist, and what filtering, deduplication and quality steps do web-scale corpora undergo?
+D04618	M	Why is near-duplicate removal (MinHash/LSH) important in pretraining data, and what harm do duplicates cause?
+D04619	M	How would you mix general, code, and domain data when continuing pretraining a base model on a vertical domain?
+D04620	M	How do you estimate how much GPU memory a model of N billion parameters needs for inference and for full-precision training?
+D04621	M	Can you train a 65B-parameter model on four 32GB GPUs? Reason through weights, gradients, optimizer states and activations.
+D04622	M	How do you measure GPU utilization and model FLOPs utilization (MFU) during training, and what is a healthy MFU?
+D04623	M	Training across nodes is slower than expected. How would you check interconnect bandwidth, NVLink topology and NCCL configuration?
+D04624	E	What is TF32 and how many bits are used for sign, exponent and mantissa compared with FP32, FP16 and BF16?
+D04625	M	Compare FP16 and BF16 for LLM training. Why is BF16 usually more stable and when would loss scaling still be needed?
+D04626	M	How does mixed-precision training keep FP32 master weights, and what is dynamic loss scaling?
+D04627	E	What are the main parallelism strategies for training LLMs, and what problem does each solve?
+D04628	E	Explain data parallelism. What gets replicated, what gets split, and what is communicated each step?
+D04629	M	Why is PyTorch DataParallel (DP) inferior to DistributedDataParallel (DDP)?
+D04630	M	Explain how DDP uses bucketed ring all-reduce to overlap gradient communication with backward computation.
+D04631	M	What are the collective communication primitives (broadcast, scatter, reduce, all-reduce, all-gather, reduce-scatter) and where is each used in training?
+D04632	M	How is all-reduce implemented as reduce-scatter plus all-gather, and what is the per-GPU communication volume of ring all-reduce?
+D04633	M	What is the difference between point-to-point and collective communication, and which does pipeline parallelism rely on?
+D04634	M	How does PyTorch FSDP differ from DDP, and what are its memory and communication trade-offs?
+D04635	M	Describe the three ZeRO stages and what each one partitions (optimizer states, gradients, parameters).
+D04636	H	For a model with Psi parameters trained with Adam in mixed precision, derive the per-GPU memory for ZeRO-0/1/2/3 with N GPUs.
+D04637	H	Why does ZeRO-3 increase communication volume to about 1.5x that of DDP, while ZeRO-1 and ZeRO-2 do not?
+D04638	M	What do ZeRO-Offload and ZeRO-Infinity do, and when do they make sense?
+D04639	M	Why does the optimizer state take 12 bytes per parameter with mixed-precision Adam (FP32 weights, momentum, variance)?
+D04640	M	What does the DeepSpeed config typically control (stage, offload, bucket size, gradient accumulation, micro-batch), and how would you tune it for throughput?
+D04641	M	What is gradient accumulation and how do micro-batch size, global batch size and the number of GPUs relate?
+D04642	M	What is activation checkpointing (gradient checkpointing) and what is the compute-memory trade-off?
+D04643	M	Explain CPU offloading and compute-communication overlapping as training optimizations.
+D04644	E	What is pipeline parallelism, and why is naive pipeline parallelism inefficient?
+D04645	M	Explain micro-batching in GPipe and derive the pipeline bubble fraction for K stages and M micro-batches.
+D04646	M	Compare GPipe and 1F1B schedules in terms of bubble size and peak activation memory.
+D04647	M	What does the interleaved 1F1B schedule in Megatron-LM change, and what extra cost does it introduce?
+D04648	M	What are PipeDream, PipeDream-2BW and PipeDream-Flush, and how do they handle weight versions and staleness?
+D04649	M	How do you partition layers across pipeline stages to balance load, and what happens when the embedding or LM head makes stages unequal?
+D04650	E	What is tensor parallelism, and how does it differ from pipeline parallelism?
+D04651	M	Explain column-parallel and row-parallel linear layers and how Megatron-LM partitions an MLP block with only one all-reduce in forward.
+D04652	M	How does Megatron-LM split self-attention across GPUs, and why does the number of heads constrain the TP degree?
+D04653	M	Why is tensor parallelism usually confined to a single node?
+D04654	M	Compare 1D, 2D, 2.5D and 3D tensor parallelism in memory use and communication.
+D04655	M	What problem does sequence parallelism solve in tensor-parallel training, and which activations does it partition?
+D04656	H	Explain ring attention or context parallelism for training with very long sequences. How is attention computed when K/V are sharded?
+D04657	M	How are DP, TP and PP combined into 3D parallelism, and how do you map each to the cluster topology?
+D04658	H	You have 1024 GPUs across 128 nodes of 8 GPUs and must train a 175B model. Choose TP, PP and DP sizes and justify them.
+D04659	M	Why can ZeRO-3 underperform 3D parallelism at thousand-GPU scale?
+D04660	M	Why is ZeRO-3 over slow commodity Ethernet impractical for large models?
+D04661	M	Can pipeline parallelism be combined with ZeRO-2 or ZeRO-3, and why is that generally discouraged?
+D04662	M	Given a single node with several GPUs, how do you choose between DDP, ZeRO, PP and TP depending on whether the model fits on one GPU?
+D04663	M	Given multiple nodes with slow inter-node network, which combination of parallelism strategies would you pick and why?
+D04664	M	What is expert parallelism for MoE models, and what role does all-to-all communication play?
+D04665	H	How do you combine expert parallelism with data and tensor parallelism, and what are the load-imbalance and communication pitfalls?
+D04666	M	What is automatic parallelism (Alpa, GSPMD, FlexFlow, Mesh-TensorFlow), and what search space do these systems explore?
+D04667	M	How does Alpa decompose the problem into inter-operator and intra-operator parallelism?
+D04668	M	What do Megatron-LM, DeepSpeed, FairScale and Colossal-AI each offer, and how would you choose among them?
+D04669	M	How did BLOOM and Megatron-Turing NLG combine DeepSpeed and Megatron to train at scale?
+D04670	M	What are the main practical problems in training LLMs: compute cost, data quality, long training time, loss spikes, bias?
+D04671	H	A large training run suddenly shows a loss spike followed by divergence. What would you check and what mitigations would you apply?
+D04672	M	A single GPU is all you have for fine-tuning a 7B model. What memory-saving techniques make that feasible?
+D04673	M	How do you speed up data-parallel training when communication starts to dominate step time?
+D04674	M	What is synchronous versus asynchronous gradient updates in data parallelism, and why do LLM trainings use synchronous?
+D04675	M	If a worker in a multi-node training job fails mid-run, how do you recover without losing days of progress?
+D04676	M	What is a straggler in distributed training and how do you detect and mitigate one?
+D04677	M	What is the arithmetic for training FLOPs of a transformer (6ND), and how do you use it to estimate training time on a cluster?
+D04678	M	How does activation memory scale with batch size, sequence length and layers, and which parts dominate in long-context training?
+D04686	M	How do you decide whether to train a domain LLM from scratch, continue pretraining, or only fine-tune?
+D04687	H	How would you design a data curation pipeline for pretraining a new LLM, covering language ID, quality classifiers, PII removal and decontamination?
+D04918	M	How do you choose the global batch size and learning rate for large-scale pretraining, and what is the critical batch size?
+D04919	M	Why is Adam's epsilon and beta2 setting important for stability in large-model training?
+D04920	M	What is the cost of recomputation in activation checkpointing in terms of extra forward FLOPs, and how does selective recomputation reduce it?
+D04921	M	Estimate the all-reduce time for gradients of a 7B model in BF16 across 8 GPUs with 300 GB/s links.
+D04922	M	What is overlapping of communication and computation, and what prevents perfect overlap in ZeRO-3?
+D04923	M	How does heterogeneous-memory training (GPU, CPU, NVMe) change achievable model sizes, and what throughput penalty does it add?
+D04924	M	What is the bubble ratio when using 8 pipeline stages and 32 micro-batches, and how would you reduce it?
+D04925	M	Why does pipeline parallelism require careful handling of activation memory in the first stages under 1F1B?
+D04926	M	Why does expert parallelism require all-to-all, and how does its cost scale with the number of nodes?
+D04927	M	Which parallelism dimension should be placed on the fastest interconnect, and why?
+D04928	M	How would you decide the order and sizes of TP, PP, DP and EP given model shape, GPU memory and network bandwidth?

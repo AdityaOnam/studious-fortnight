@@ -1,0 +1,191 @@
+Q000656	H	How do big keys impact Redis persistence?
+Q000658	M	How has the Redis architecture evolved?
+Q000659	M	How does Redis persist data?
+Q000660	E	How can Redis be used?
+Q000661	M	Why is Redis so fast?
+Q000760	M	How do we analyze the impact of big keys in Redis?
+Q001766	E	What is MongoDB and what are its main features?
+Q001767	E	How does MongoDB differ from relational databases?
+Q001768	E	Can you describe the structure of data in MongoDB?
+Q001769	E	What is a document in MongoDB?
+Q001770	E	How is data stored in collections in MongoDB?
+Q001771	E	Describe what a MongoDB database is.
+Q001773	M	How does MongoDB provide high availability and disaster recovery?
+Q001774	E	What are indexes in MongoDB, and why are they used?
+Q001775	E	What is the role of the _id field in MongoDB documents?
+Q001776	E	How do you create a new MongoDB collection?
+Q001777	E	What is the syntax to insert a document into a MongoDB collection?
+Q001778	E	Describe how to read data from a MongoDB collection.
+Q001779	E	How do you update documents in MongoDB?
+Q001780	E	What are the MongoDB commands for deleting documents?
+Q001825	E	What are the different types of NoSQL databases, with an example of each?
+Q001832	E	List some NoSQL databases and the primary use cases they address.
+Q001833	E	How does a key-value store operate, and can you give a use-case example?
+Q001834	M	What strategies can be used to scale key-value stores for high demand or large data volumes?
+Q001835	M	What are some drawbacks of key-value stores compared to other NoSQL types?
+Q001836	M	Name a scenario where a key-value store might not be the best fit.
+Q001837	E	What makes a document in a NoSQL database different from a row in a relational database?
+Q001838	M	How does indexing work in document-oriented databases?
+Q001839	E	Give an example of a query in a document-oriented database.
+Q001840	E	Suggest a typical application for a document-oriented database.
+Q002035	E	What is Redis and what do you use it for?
+Q002036	E	How does Redis store data?
+Q002037	E	What data types can you store in Redis?
+Q002038	M	What is a Redis key and how should you structure it for best performance?
+Q002039	E	How do you set an expiration on Redis keys?
+Q002040	E	What do the commands SET and GET do in Redis?
+Q002041	M	How does Redis handle data persistence?
+Q002042	M	Explain the difference between RDB and AOF persistence strategies in Redis.
+Q002043	M	How would you implement a simple counter in Redis?
+Q002044	E	What are hashes in Redis and how do you use them?
+Q002045	M	How do you handle atomic operations in Redis?
+Q002046	E	What are lists in Redis and what are some common operations you can perform on them?
+Q002047	M	Can you describe the Pub/Sub model and how it is implemented in Redis?
+Q002048	M	What is pipelining in Redis and when would you use it?
+Q002050	E	What are the different types of Redis databases?
+Q002647	M	Can you use SQL with NoSQL databases?
+Q003514	M	Can Redis be used as a message queue? How would you implement it?
+Q003721	M	What business scenarios are MongoDB and Elasticsearch each suited for?
+Q003723	M	What is the difference between MongoDB and MySQL?
+Q003724	M	What do read concern and write concern each control in MongoDB?
+Q003722	M	Is MongoDB's WiredTiger storage engine based on an LSM tree or a B+ tree?
+Q003743	M	What are the differences between RDB, AOF, AOF rewrite, and hybrid persistence in Redis?
+Q003744	M	Why can Redis block, and how do you locate slow commands, big keys, hot keys, and the impact of persistence?
+Q003747	M	What is the difference between Redis master-replica replication, Sentinel, and Cluster?
+Q003748	M	Is it better to store object data in Redis as a String or a Hash?
+Q003749	M	Is it better to store shopping cart information in Redis as a String or a Hash?
+Q003750	M	Why does the Redis sorted set use a skip list instead of a balanced tree, red-black tree, or B+ tree?
+Q003751	M	How do you count page UV using HyperLogLog?
+Q003752	E	What are Redis's strategies for deleting expired keys?
+Q003753	M	How is the leader elected in a Redis Sentinel cluster?
+Q003754	M	Why does a Redis Cluster have 16384 hash slots?
+Q003755	E	What is Redis pipelining?
+Q003756	M	Why does Redis use a skip list instead of a red-black tree?
+Q003757	M	Why does Redis use a skip list for its sorted set (zset) instead of a B+ tree?
+Q003805	H	Can Redis Sentinel failover guarantee RPO=0? What role does the quorum play in the election?
+Q003843	M	What expiration policies does Redis have, and how do you choose one?
+Q006336	E	What is the use of OLAP?
+Q006337	E	What is a measure in OLAP?
+Q006338	E	What are dimensions in OLAP?
+Q006339	E	What are levels in dimensions?
+Q006340	E	What are fact tables and dimension tables in OLAP?
+Q012206	H	Design and implement RocksDB.
+D01184	E	What data types does Redis support and what is a typical use case for each?
+D01185	M	How does Redis implement its dictionary and how does incremental rehashing avoid long pauses?
+D01186	M	What is a skip list, why does Redis use it for sorted sets, and how does it compare with a balanced tree?
+D01187	M	How would you implement a leaderboard with Redis sorted sets?
+D01188	M	How would you use Redis as a counter, a message queue, a session cache and a lookup table, and what are the limits of each?
+D01189	M	What are the differences between Redis and Memcached regarding data types, persistence, clustering and memory management?
+D01190	M	How does Redis expire keys: lazy deletion versus periodic deletion?
+D01191	M	Which eviction policies does Redis offer and how do you choose among LRU, LFU and TTL-based policies?
+D01192	M	Compare RDB snapshots and AOF logging in terms of durability, recovery time, file size and performance impact.
+D01193	M	How does Redis fork-based snapshotting use copy-on-write, and what risks does it pose to latency and memory?
+D01194	M	What guarantees do Redis transactions (MULTI/EXEC) give, and how do they differ from relational ACID transactions?
+D01195	M	Why is Redis fast even though it executes commands on a single thread?
+D01196	M	Explain the Redis event model: file events, time events and the event loop.
+D01197	M	How does Redis master-slave replication work, from full sync to command propagation?
+D01198	M	What does Sentinel do in a Redis deployment and how does it handle failover?
+D01199	M	How does Redis Cluster shard data using hash slots, and what happens during resharding?
+D01200	M	How would you design a simple forum with Redis for article votes, ranking and de-duplicated likes?
+D01201	M	A single Redis key is hit by a huge fraction of traffic. How do you handle hot keys and big keys?
+D01680	M	What is Redis and why is it so fast for caching workloads?
+D01681	M	Which data structures does Redis support, and which use cases fit lists, sets, sorted sets and hashes?
+D01682	M	Compare Redis RDB snapshots and AOF persistence.
+D01683	M	How would you use Redis to implement a distributed lock, and what pitfalls exist?
+D01684	M	What eviction policies does Redis offer when memory is full?
+D02193	E	What is Redis and what are its main use cases beyond caching?
+D02194	M	Why is Redis so fast despite being single-threaded for command execution?
+D02195	M	Compare Redis and Memcached: data types, persistence, threading model and clustering.
+D02196	M	Why use a distributed cache like Redis instead of a local in-process cache? What are the trade-offs?
+D02197	E	Which data types does Redis provide and what is a typical use case for each?
+D02198	M	How is the Redis String type implemented internally (SDS), and why not use plain C strings?
+D02199	M	Should you store an object as a Redis String (serialized) or as a Hash? Compare the trade-offs.
+D02200	M	Would you store a shopping cart as a String or a Hash in Redis? Justify the design.
+D02201	M	How would you implement a leaderboard in Redis and what commands would you use?
+D02202	H	Why does Redis implement sorted sets with a skip list rather than a balanced tree, red-black tree or B+ tree?
+D02203	M	Which internal encodings does Redis use for small versus large lists, hashes, sets and sorted sets, and why switch between them?
+D02204	M	How would you implement a lottery system using Redis Sets?
+D02205	M	How can a Bitmap be used to count daily active users or track user check-ins, and what are its memory characteristics?
+D02206	M	What is HyperLogLog, what error rate does it have, and how would you use it to count unique page visitors?
+D02207	M	How would you check whether an element is definitely not in a huge set using Redis? What are the trade-offs of the options?
+D02208	M	How does Redis GEO store locations and answer nearby-search queries?
+D02209	M	Describe how to implement a distributed lock with Redis. What are the pitfalls around expiry, ownership and clock drift?
+D02210	H	A Redis distributed lock expires while the holder is still working. How do you prevent this, and what does a watchdog or fencing token do?
+D02211	M	Can Redis be used as a message queue? Compare Lists, Pub/Sub and Streams for this purpose.
+D02212	M	What problems do Redis Streams solve compared with Lists and Pub/Sub, and how do consumer groups provide acknowledgement?
+D02213	M	How would you implement delayed tasks with Redis? Compare sorted sets, key expiry notifications and dedicated delay-queue libraries.
+D02214	E	What is the difference between RDB and AOF persistence in Redis?
+D02215	M	Does creating an RDB snapshot block the main thread? Explain the difference between SAVE and BGSAVE and the role of fork and copy-on-write.
+D02216	M	Why does Redis AOF log commands after executing them instead of before, and what are the consequences?
+D02217	M	Compare the AOF fsync policies always, everysec and no. What data can be lost in each?
+D02218	M	What is AOF rewrite, why is it needed, and how does it work without blocking clients?
+D02219	M	What is hybrid RDB-AOF persistence and what problem does it solve on restart?
+D02220	M	How would you choose between RDB, AOF or both for a given workload, and what do you monitor in production?
+D02221	M	How does Redis check the integrity of a truncated or corrupted AOF file and recover from it?
+D02222	M	Describe Redis's threading model before and after version 6.0. What work did the multithreading in 6.0 parallelise?
+D02223	M	Why did Redis avoid multithreading for command execution for so long, and what background threads does it have?
+D02224	M	How does Redis use I/O multiplexing and an event loop to serve many clients on one thread?
+D02225	M	Why do we set expiration times on cached keys, and how does Redis decide that a key has expired?
+D02226	M	Compare lazy deletion, periodic deletion and active expiry in Redis. What are the weaknesses of each?
+D02227	M	What happens when a large number of keys expire at the same time, and how do you avoid it?
+D02228	M	List Redis eviction policies such as allkeys-lru, volatile-ttl and allkeys-lfu. How would you choose one?
+D02229	M	How does Redis approximate LRU instead of maintaining an exact LRU list, and why?
+D02230	M	What is a Redis transaction (MULTI/EXEC), and is it atomic or durable? How do errors inside a transaction behave?
+D02231	M	How do WATCH and Lua scripts address the limitations of Redis transactions?
+D02232	M	How do pipelining and batch commands reduce latency in Redis, and what are the limits of batching in cluster mode?
+D02233	M	What is a bigkey in Redis, what harm does it cause, and how do you find and fix it?
+D02234	M	What is a hot key and how do you detect and mitigate it in a Redis cluster?
+D02235	M	What are slow queries in Redis, which commands are risky (KEYS, HGETALL, SMEMBERS) and what are safe alternatives?
+D02236	M	What causes Redis memory fragmentation, how do you detect it from INFO, and how can it be reduced?
+D02237	H	Redis latency suddenly spikes. List the possible blocking causes (O(n) commands, persistence, swap, big keys, network, CPU contention) and how you would diagnose each.
+D02238	M	Why can FLUSHALL or deleting a huge key block Redis and what does lazy free (UNLINK) change?
+D02239	M	How can swap and CPU contention with other processes affect Redis latency?
+D02240	M	What is cache penetration and what are the solutions (null caching, Bloom filter, validation)?
+D02241	M	What is a cache breakdown (hot key expiry) and how do you prevent a stampede on a single key?
+D02242	M	What is a cache avalanche and how do you protect a database from it?
+D02243	H	How do you keep the cache and the database consistent? Compare update-then-delete, delete-then-update and delayed double delete.
+D02244	H	Design a cache consistency mechanism using binlog subscription or message queues. What failure scenarios remain?
+D02245	M	How does Redis master-replica replication work, including full and partial resynchronisation?
+D02246	M	What does Redis Sentinel provide and how does it elect a new master during failover?
+D02247	M	How does Redis Cluster shard data using hash slots? What happens during resharding or when a node fails?
+D02248	M	What are the trade-offs between Redis Cluster, Sentinel and client-side sharding?
+D02249	M	What conventions would you adopt for using Redis in production, such as key naming, TTLs and avoiding big values?
+D02250	M	Why is a skip list used for sorted sets? Describe search, insertion and the probabilistic level assignment.
+D02251	E	What is MongoDB and how is its data stored (documents, collections, BSON)?
+D02252	M	What kinds of applications are a good fit for MongoDB, and which are not?
+D02253	M	Compare the MongoDB document model with relational tables in terms of embedding versus referencing data.
+D02254	M	Is the WiredTiger storage engine based on an LSM tree or a B+ tree, and what does that imply for read and write performance?
+D02255	M	What is the MongoDB aggregation pipeline and which stages (match, group, lookup, sort) would you use for a report?
+D02256	M	Does MongoDB support multi-document transactions, and what are their costs and limitations?
+D02257	M	How does MongoDB compress data on disk and what are the trade-offs between compression algorithms?
+D02258	M	What index types does MongoDB support (single field, compound, multikey, text, geospatial, TTL)?
+D02259	M	Does field order matter in a MongoDB compound index, and does the left-prefix rule apply?
+D02260	M	What is a TTL index and when would you use one?
+D02261	M	What is a covered query in MongoDB and what conditions must be satisfied for it?
+D02262	M	How do MongoDB replica sets provide high availability, and how are elections and write concern related?
+D02263	M	How does sharding work in MongoDB? How do you choose a shard key and what happens with a poor choice?
+D02264	M	Why can an inverted index make full-text search faster than a B+ tree index in a relational database?
+D02265	M	Why use Elasticsearch alongside MySQL, and what consistency guarantees does the search index lose compared with the primary store?
+D02266	M	How does a Bloom filter work and what false-positive and false-negative properties does it have?
+D02267	M	How do you size a Bloom filter given the expected number of elements and target false-positive rate?
+D02268	M	Why can items not be deleted from a standard Bloom filter, and how do counting Bloom filters or cuckoo filters help?
+D02269	M	Where are Bloom filters useful in databases and caches, such as LSM-tree reads or cache penetration protection?
+D02350	M	What is an LSM tree and how does it differ from a B+ tree for write-heavy workloads?
+D02351	M	When would you choose Redis Streams, Kafka or a database table to implement a job queue?
+D02352	M	How would you design a rate limiter or counter using Redis atomic operations and expiry?
+D02353	M	Which metrics from the Redis INFO command would you alert on in production?
+D02354	M	How would you handle a Redis master failure that loses the most recent writes under asynchronous replication?
+D02355	M	What are Redis Modules and what capabilities, such as search or Bloom filters, do they add?
+D02356	M	How does cache warming help avoid a cold-start load spike on the database?
+D04051	M	Explain how Redis persists data with RDB snapshots and AOF, and when you would combine them.
+D04052	M	How do very large keys in Redis affect persistence, replication, and latency?
+D04053	M	Describe how Redis evolved from a single node to persistence, replication, Sentinel, and Cluster.
+D04054	M	How does Redis Cluster partition keys using hash slots and what happens when a node fails?
+D04055	M	Why is Redis so fast despite being largely single-threaded?
+D04056	M	Which Redis data structures would you use for leaderboards, rate limiters, and queues?
+D04057	M	Compare Memcached and Redis. When would Memcached be the better choice?
+D04058	M	How does a Memcached client decide which server to talk to, and how do large deployments avoid cache stampedes and cross-region staleness?
+D04059	M	How does a pub-sub feature in Redis support a simple chat application, and what are its delivery guarantees?
+D04060	M	How does a document database like MongoDB differ in data modeling from a relational schema, and when does embedding beat referencing?
+D04061	M	Explain how wide-column stores like Cassandra achieve high write throughput and tunable consistency.
+D04062	M	How do object versus block versus file storage differ in how data is addressed?

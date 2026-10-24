@@ -1,0 +1,251 @@
+Q003399	E	What role does alignment tuning play in improving an LLM's usability?
+Q003490	H	How do you choose between on-policy methods, off-policy methods, and DPO?
+Q003491	M	What are the differences in principle between PPO, GRPO, and DPO?
+Q003492	M	What are the suitable use cases for PPO, GRPO, and DPO respectively?
+Q004427	H	Compare SFT, DPO, GRPO, and RLVR in terms of data requirements, what extra models each needs, and when to use each.
+Q004428	H	Why does GRPO drop the critic network, and how does it estimate advantage?
+Q004705	H	After RLHF alignment, your LLM became safer but lost capability on hard tasks. How do you manage the alignment tax?
+Q004706	H	Your RLHF-trained LLM is gaming the reward model instead of being genuinely helpful. How do you fix reward hacking?
+Q004845	M	Explain the difference between pre-training, supervised fine-tuning (SFT), and preference optimization (RLHF/DPO).
+Q004846	M	What is RLHF (Reinforcement Learning from Human Feedback), and how is it used to align LLMs?
+Q004847	M	What is Deep RL from Human Preferences, the paper that started RLHF?
+Q004848	H	Why did DPO displace PPO-based RLHF at many labs? When is online RL still better?
+Q004860	M	What is the difference between SFT (Supervised Fine-Tuning) and alignment training?
+Q004861	M	What is RLAIF (RL from AI Feedback), and how does it differ from RLHF?
+Q004862	M	What is Constitutional AI, and how does it differ from RLHF?
+Q004863	H	What is RLVR (Reinforcement Learning with Verifiable Rewards), and when does it beat a learned reward model?
+Q004869	M	Your RLHF preference data has low annotator agreement. How do you ensure data quality?
+Q005031	E	What is AI alignment, and why is it important?
+Q006003	M	What is DPO, and how does it differ from RLHF?
+Q006004	H	What are DAPO and GSPO, and how do they differ from GRPO?
+Q006008	M	What are the mainstream post-training pipelines, and how do you choose between SFT→DPO and SFT→GRPO?
+Q006009	M	How does rejection sampling fine-tuning work, and how does it differ from DPO and GRPO?
+Q006107	M	What is a Process Reward Model (PRM), and why is process reward more important than outcome reward for agent reasoning?
+Q006914	M	You are aligning a customer-support chat model to a preferred tone and refusal style, with a small team and limited GPU budget. Which approach fits best and why?
+Q006915	M	In an interview you are asked to explain DPO. What is the one-sentence core that signals real understanding?
+Q006916	H	You are building a model that must solve multi-step math and verify tool-call success. Why might PPO/RLHF beat DPO here?
+Q006918	M	After heavy DPO the model is more on-tone but its answers feel repetitive and slightly shallower factually. What is happening and what do you do?
+Q006919	M	What are the failure modes of RLHF compared with the failure modes of DPO?
+Q006933a	M	Explain RLHF (SFT, reward model, PPO).
+Q006933b	M	How do DPO and PPO differ at the algorithm level?
+Q006934	H	What is GRPO and why did DeepSeek-R1 use it over PPO?
+Q007191	M	At which stage would you decide to go for a preference alignment type of method rather than SFT?
+Q007192	E	What is RLHF, and how is it used?
+Q007193	M	What is the reward hacking issue in RLHF?
+Q007194	M	Explain the different preference alignment methods.
+Q010877	H	How do you prevent reward hacking when using Best-of-N?
+Q010969	H	Design a Process Reward Model (PRM) for a customer-support agent. What signals do you score, and how do you avoid degenerate reward?
+Q011276	M	Why is DPO often preferred over RLHF/PPO?
+Q011277	M	What is the risk of the "alignment tax"?
+Q011286	H	Does RL add capability or only sharpen sampling?
+Q011289	M	What is RLVR, and why does it scale more stably than RLHF for reasoning?
+Q011290	M	Explain GRPO and one of its known failure modes.
+Q011291	H	You want to run RL on a domain with no programmatic verifier, so you plan to use a rubric-scored judge as the reward. What goes wrong, and how do you guard against it?
+Q011622	M	How do you prevent reward hacking in Best-of-N?
+Q011837	M	Walk me through RLHF end to end: reward model, policy optimisation, KL penalty.
+Q011838	M	What is DPO and why did it displace PPO-based RLHF at many labs? When is online RL still better?
+Q011839	H	Explain GRPO and why dropping the value network matters at scale.
+Q011845	M	What is RLVR (RL with verifiable rewards) and where does it beat a learned reward model?
+Q011846	M	Explain reward hacking in RLHF and how labs address it.
+Q011861	M	What is Constitutional AI and how does it differ from RLHF? What is RLAIF?
+Q011983	H	DeepSeek R1-Zero was trained with RL and essentially no SFT first. What did that show, and why did full R1 add SFT back?
+Q011989	H	Kimi K1.5 scaled RL for reasoning without a process reward model or tree search. Why deliberately keep the RL recipe that simple?
+Q011993	H	Why does long-horizon agentic RL need a disaggregated, asynchronous design rather than a colocated-synchronous one?
+Q012000	M	Reasoning models are trained with RL using verifiable rewards on maths and code. Why is that preferred over PPO with a learned reward model for these domains?
+Q012006	H	A model ships hybrid think/non-think modes and was post-trained with SFT then RLVR. How would you build that, and why RLVR over vanilla RLHF?
+Q012082	H	Design an end-to-end pipeline producing RLHF preference data for a frontier lab: 100k prompt-response comparisons a week, with quality guarantees.
+Q012384	E	What is preference alignment in LLMs, and why is it important?
+Q012385	M	When should you use preference alignment methods instead of supervised fine-tuning (SFT)?
+Q012386	M	What is Direct Preference Optimization (DPO), and how does it differ from RLHF?
+Q012387	M	What is "reward hacking" in RLHF and how does it impact preference tuning?
+Q012388	M	How would you address potential biases in human preference data?
+Q012389	M	How would you evaluate the success of preference alignment methods?
+Q012391	M	What metrics or strategies would you use to compare preference-tuned LLMs?
+Q012392	M	How does preference tuning affect generalization in LLMs?
+Q012393	E	What is RLHF, and why is it used for fine-tuning Large Language Models?
+Q012394	E	Can you describe the typical three stages of the RLHF process?
+Q012395	M	What kind of data is needed for training the reward model in RLHF? How is it typically collected?
+Q012396	H	Why is Proximal Policy Optimization (PPO) often used in the RL fine-tuning stage of RLHF? What is the role of the KL divergence penalty?
+Q012397	M	What are some challenges or limitations of RLHF?
+Q012398	M	How do you evaluate the success of an RLHF-trained model?
+Q012399	M	What are some alternatives or recent advancements beyond the standard RLHF process?
+Q012523	H	PPO training keeps four models in memory at once (two being trained, two used for inference), which demands heavy compute. How can this problem be addressed?
+Q007257	M	Is a reward model trained with supervised learning or with RL?
+Q007259	M	Where does RLAIF or constitutional-style feedback fit in the taxonomy of supervised, unsupervised, and self-supervised learning?
+Q007367	H	From the maximum likelihood/MAP viewpoint, what role does the KL penalty play in RLHF?
+Q007523	H	Why does RLHF hurt calibration?
+Q007528	M	What does the KL constraint in RLHF prevent?
+Q007529	H	Why did verifiable rewards unlock reasoning gains that preference-based RLHF didn't?
+Q007582	H	Why can RLHF increase confident hallucination?
+Q007586	H	Why do verifiable rewards matter so much? What goes wrong when RL-training reasoning against a learned preference reward?
+Q007587	M	How does GRPO differ from PPO?
+Q007603	H	Walk me through training a reasoning model with RLVR. Why GRPO instead of PPO, and what breaks in practice?
+Q007604	H	How would you construct the prompt curriculum for RLVR training to avoid degenerate groups?
+Q007605	H	If RLVR mostly elicits existing capability, what does that imply about where to spend your next dollar?
+Q008038	M	Walk through the classic RLHF pipeline end to end.
+Q008039	M	Why use pairwise preferences instead of absolute ratings in RLHF?
+Q008040	M	What breaks if you skip SFT and run PPO on the base model?
+Q008041	M	Where does DPO short-circuit the RLHF pipeline?
+Q008048	M	What is the difference between an outcome reward model and a process reward model, and when do you need each?
+Q008049	H	How would you generate process reward model labels without human annotators, and what bias does that introduce?
+Q008050	H	Why might a process reward model used as a best-of-N reranker degrade as N grows?
+Q008060	M	How do you train a reward model? Explain the preference data and the Bradley-Terry loss.
+Q008061	M	Why sample reward model training responses from the SFT model rather than another model?
+Q008062	H	How would you detect and correct length bias in a reward model?
+Q008063	M	Explain PPO in the RLHF context. Why is there a KL penalty against a reference model?
+Q008064	H	What do you monitor during a PPO run to catch failure early?
+Q008065	M	Why does PPO clip probability ratios instead of just taking a bigger learning rate?
+Q008066	M	What is reward hacking? Give concrete examples and mitigations.
+Q008067	H	Reward is climbing steadily during your RLHF run. What evidence distinguishes genuine improvement from reward hacking?
+Q008068	H	How would you harden a unit-test reward against gaming?
+Q008069	M	Explain DPO. What is the key insight that lets it skip the reward model and the RL loop?
+Q008070	M	In DPO, what role does beta play and what happens at very small or very large values?
+Q008071	H	In the DPO derivation, why does the partition function term cancel, and why does that matter?
+Q008072	H	What is lost by never sampling from the policy during DPO training?
+Q008073	M	DPO versus PPO-style RLHF: when would you choose each?
+Q008074	H	Why does off-policy data limit DPO's ceiling?
+Q008075	H	Design an iterative DPO loop. Where does its extra signal come from?
+Q008076	H	When would best-of-n sampling with a reward model beat both DPO and PPO?
+Q008077	M	Give one-liners on IPO, KTO, and ORPO: what problem does each solve, and when would you pick it?
+Q008078	H	Why does DPO's implicit reward margin grow unboundedly and why is that bad?
+Q008079	M	You have 500k thumbs-up/down events from production. Which preference-tuning method would you use and why?
+Q008109	M	Walk through actually collecting preference data. What are the logistics, and where does it go wrong?
+Q008110	H	Your vendor delivers 50k preference pairs with a Krippendorff's alpha of 0.45. What do you do?
+Q008111	H	How would you design preference data collection differently if the task is code review rather than open-ended chat?
+Q008112	H	How do you evaluate a reward model? Why is held-out pairwise accuracy not enough?
+Q008113	H	How would you decide when to retrain the reward model during a long RLHF run?
+Q008114	H	What would a best-of-N curve that is flat from N=1 tell you about a reward model?
+Q008125	M	Explain GRPO. Why has it displaced PPO for reasoning RL?
+Q008126	H	What happens to GRPO's gradient on prompts the model always (or never) solves, and what does that imply for data curation?
+Q008127	M	Why is the KL-to-reference term still needed with verifiable rewards?
+Q008128	M	Why are math and code so RL-friendly? Explain verifiable rewards and the R1-style training recipe.
+Q008129	H	How do you stop a code-RL model from gaming the unit tests?
+Q008130	M	Why did pure-RL R1-Zero produce messy outputs, and what does the cold-start SFT fix?
+Q008131	H	What is the equivalent of a verifiable reward for a domain like legal drafting?
+Q008132	M	What are RLAIF and Constitutional AI? How does AI feedback replace human feedback?
+Q008134	H	If the AI labeller in RLAIF is the same model family being trained, what failure loops does that risk?
+Q008135	M	What is the "alignment tax"? How does preference tuning cause over-refusal, and how do you manage it?
+Q008137	H	Why does a single scalar reward tend to over-weight harmlessness, and what is the alternative?
+Q008162	H	Your DPO run improves win rate against the SFT model, but outputs are longer, waffly and hedge constantly. Debug it.
+Q008163	H	Why do both chosen and rejected log probabilities decrease during DPO, and when is that actually fine?
+Q008168	H	You are running GRPO with a verifier reward on a code task. Reward climbs steadily, but outputs get shorter and more repetitive and held-out pass rate drops. What is happening?
+Q008169	H	How would you design a verifier that is genuinely hard to hack for a code task?
+Q008170	H	Why does entropy collapse specifically hurt GRPO more than it hurts PPO?
+Q008174	H	You want to RL-train an agent for a multi-turn tool-use task, and the only reward you have is whether the final task succeeded. How do you make that work?
+Q008175	H	How would you RL-train an agent on a task where success is only checkable by a human?
+Q008176	H	Why is trajectory-level advantage tolerable when RL-training a multi-turn agent with only a final-success reward, and at what horizon does it stop working?
+Q008180	H	Your RL loop samples rollouts with a fast inference engine and trains with FSDP. Why do the two disagree on token log-probs, and what do you do about it?
+Q008181	H	How would you tell training-inference mismatch apart from a learning rate that is simply too high?
+Q008182	H	What does going fully asynchronous buy you in RL throughput, and what does it cost in correctness?
+Q008183	H	Why is training-inference mismatch worse for MoE models in RL?
+Q008191	H	Why is routing a source of noise in RL on MoE models?
+Q008512	H	How is RLHF reward hacking formally the same problem as Goodhart's law in evaluation, and what do the mitigations share?
+Q008539	H	Your team wants to reuse the eval suite's graders as the reward signal for reinforcement fine-tuning. What changes?
+Q008540	M	Your grader agrees with humans 90% of the time on natural outputs. Is that enough to use it as a reward?
+Q008541	H	How would you tell whether a policy is exploiting the judge rather than genuinely improving?
+Q008779	M	What do RLHF, DPO, and Constitutional AI/RLAIF actually do for safety, and why can't a system prompt replace them?
+Q008780	E	What is the one-line difference between RLHF and RLAIF?
+Q008781	M	Why is DPO replacing PPO in a lot of alignment pipelines?
+Q009227	M	Explain Constitutional AI. What does it buy you over vanilla RLHF, and what does it not solve?
+Q009228	M	How does RLAIF preference data differ in failure modes from human preference data?
+Q009229	M	Where would you still insist on human labels in preference-data collection?
+Q009247	H	A model's guiding constitution moves from a list of principles towards explained reasoning with a priority order. What does that shift change, and how would you test whether it worked?
+Q009340	H	How would you detect reward hacking in aggregate, before a human notices it in production, when training an agent with RL?
+Q009341	M	When training an agent with RL on code tasks, what do you do about flaky tests polluting the reward signal?
+Q009351	H	You want one agent model that runs at several effort levels, trading capability for cost. How do you design the RL reward, and how do you set the cost penalty?
+Q009353	M	What changes in an RL reward for an agent if success is graded, such as partial test passes, rather than binary?
+Q009421	H	You train an agentic coding model with reinforcement learning on long-horizon tasks. Design the RL environment and the reward: what does the agent see, what counts as success, and how do you stop it gaming the reward?
+Q009422	M	Training reward rises steadily but the held-out benchmark is flat. What do you check first?
+Q009423	H	How do you assign credit across a 300-action trajectory in agent RL training?
+Q009471	M	Explain GRPO. Why did DeepSeek drop the value network that PPO uses?
+Q009472	H	In GRPO, how does group size trade off against variance and cost?
+Q009473	M	In GRPO and RLHF-style training, where does the KL-to-reference term matter most, and what breaks if you drop it?
+Q009474	H	R1-Zero was trained with reinforcement learning and essentially no supervised fine-tuning first. What did that show, and why did the full R1 add SFT back?
+Q009475	M	What reward-hacking failure modes would you watch for with rule-based rewards?
+Q009476	H	In R1-Zero-style RL training, why does language mixing emerge, and how would you penalise it without hurting reasoning?
+Q009723	M	Explain DPO to someone who knows PPO-based RLHF. When would you still choose an online RL method?
+Q009724	M	What does beta trade off in DPO?
+Q009725	H	How would you detect reward hacking in an online RL run?
+Q009752	H	Walk me through a post-training recipe to turn a pretrained base model into a personalized assistant.
+Q009753	M	Where does reward hacking show up concretely in post-training, and how do you detect it?
+Q009869	H	Why might you deliberately keep the RL recipe for reasoning simple, scaling RL without a process reward model or tree search?
+Q009870	M	What can go wrong with reward design when you skip a process reward model and reward only final correctness?
+Q009871	H	Why does long context reduce the need for explicit search at training time in RL for reasoning models?
+Q010049	H	How would you stop a code policy trained with reinforcement learning from hard-coding test outputs to pass the checker?
+Q010050	H	When does a learned reward model still earn its keep despite the reward-hacking risk?
+Q010073	H	How would you design a verifier for an Indic-language instruction-following task where there is no single correct string?
+Q010098	H	Design an end-to-end pipeline that produces RLHF preference data for a frontier-lab customer: 100k prompt-response comparisons a week, with quality guarantees.
+Q010099	H	How does an RLHF preference-data pipeline design change when the customer requires that their data never train other customers' models?
+Q010110	H	Compare SFT, RLHF, DPO, and RLVR for improving an instruction-tuned model. What data does each need, and when would you pick which?
+Q010111	H	Your DPO run improved chat evals but regressed math. What are your hypotheses?
+Q010112	H	What makes a good RL environment for LLM training, concretely?
+Q010123	H	In an RL environment, training reward is climbing while the held-out replay score is flat. What do you check first?
+Q010124	H	How do you decide a task belongs in an RL environment at all, rather than in an SFT set?
+Q010280	H	Why does long-horizon agentic RL need a disaggregated, asynchronous training design rather than a colocated-synchronous one?
+Q010281	H	In asynchronous agentic RL training, how stale can rollouts get before training destabilises, and how would you bound it?
+Q010282	M	Why is reward design harder for multi-step agentic tasks than for single-answer maths?
+Q010293	M	For a reasoning model, describe reinforcement learning with verifiable rewards (RLVR) and how you would design the reward. How does it differ from classic RLHF?
+Q010294	H	How do you handle sparse reward on long reasoning chains in RLVR?
+Q010295	H	What reward-hacking behaviours occur against unit-test rewards, and how do you defend against them?
+Q010535	H	A team wants to run reinforcement fine-tuning on an open-weights model to make an extraction agent more reliable. Whose job is that, and how do you decide whether to do it at all?
+Q010536	M	During reinforcement fine-tuning, training reward keeps climbing but human-rated quality is flat. What is happening?
+Q010537	H	How would you measure pass@k on the base model before committing GPU budget to reinforcement fine-tuning?
+D00246	E	What is RLHF, and what are its three stages?
+D00247	M	How is a reward model trained from pairwise preference data, and what loss is used?
+D00248	M	Why does PPO-based RLHF need a KL penalty against the reference model?
+D00249	M	How does DPO remove the need for an explicit reward model, and what assumptions does it make?
+D00250	M	Why is DPO often preferred over RLHF with PPO, and when is PPO still better?
+D00251	M	How is preference data collected, what does it cost, and what quality problems arise in annotation?
+D00252	M	What is the alignment tax, and how do you measure it?
+D00253	M	What is reward hacking, and how do you detect and prevent it in best-of-N and RL training?
+D00254	M	What is RLVR and why is it more stable than reward-model RLHF for reasoning?
+D00255	M	Explain GRPO: how it computes advantages without a value model, and one known failure mode.
+D00256	M	How do DAPO and GSPO differ from GRPO, and what instabilities do they target?
+D00257	M	What is the credit assignment problem in LLM RL, and how do token-level and sequence-level rewards differ?
+D00258	M	What stability problems appear in RL training of LLMs and how would you diagnose them?
+D00259	H	You want RL on a domain with no programmatic verifier and plan to use a rubric-scored judge as the reward. What can go wrong?
+D00260	M	Does RL add new capability or just sharpen sampling from the base model? What evidence would distinguish the two?
+D00261	M	What is a process reward model, and how does it differ from an outcome reward model for agents?
+D00262	H	Design a process reward model for a customer-support agent: what do you score, and how do you avoid degenerate reward?
+D00263	M	Compare the post-training pipelines SFT then DPO versus SFT then GRPO and when to choose each.
+D00264	M	What is online alignment, and how does it differ from offline preference optimization?
+D00265	M	How does Constitutional AI or RLAIF replace human preference labels, and what are its risks?
+D00266	M	What is rejection sampling fine-tuning, and how does it compare with DPO and GRPO?
+D00267	M	Why is a single alignment technique not a safety guarantee, and how do you layer defenses?
+D00268	M	Your safety monitor reads the model's chain of thought. A new model card reports reduced monitorability. What changes in your safety design?
+D03782	M	Compare SFT, RLHF with PPO, DPO, KTO, ORPO, SimPO, GRPO and RLVR in data requirements, extra models and cost.
+D03783	M	Why does GRPO drop the critic network, and how does it estimate advantages from a group of samples?
+D03784	M	How does DPO turn preference learning into a supervised loss, and what is the role of the reference model?
+D03785	M	What is reinforcement learning with verifiable rewards and for which tasks does it work well?
+D03786	M	What is reward hacking in RLHF and how do you mitigate it?
+D03787	M	Why do modern post-training stacks layer SFT, preference optimization and RL instead of using one method?
+D04613	M	What data format does a reward model need, and how does it differ from SFT data?
+D04614	M	What data does PPO training consume in an RLHF pipeline (prompts, rollouts, rewards), and how are prompts sampled?
+D04791	E	Give a high-level description of RLHF and its three stages: SFT, reward modelling and RL optimization.
+D04792	M	How is a reward model trained from pairwise human preferences using the Bradley-Terry loss?
+D04793	M	Does the reward model need to be the same size or family as the policy model? What trade-offs are there?
+D04794	M	What are practical shortcomings of RLHF, such as reward hacking, annotation noise and training instability?
+D04795	M	Human preference data is expensive. What strategies reduce annotation cost, such as AI feedback and active selection?
+D04796	M	The SFT-RM-PPO pipeline is long and slow to iterate. How would you shorten it?
+D04797	M	PPO for LLMs involves four models (actor, critic, reference, reward). What does each do, and how would you reduce the compute and memory burden?
+D04798	M	Why is a KL penalty against the reference model added during RLHF, and what happens if the coefficient is too small or too large?
+D04799	H	Walk through the RLHF PPO actor loss: ratio, clipping, advantage and per-token KL reward. How is the critic loss defined?
+D04800	M	How is the reward assigned per token in RLHF (terminal reward plus KL shaping), and why does the critic matter for credit assignment?
+D04801	M	Why can the critic or value head in LLM PPO be unstable, and what are options like GRPO that remove it?
+D04802	M	What is reward hacking in RLHF? Give examples and describe how you would detect and mitigate it.
+D04803	E	What is Direct Preference Optimization and how does it avoid training an explicit reward model?
+D04804	H	Derive the DPO loss from the KL-regularized reward-maximization objective and show how the optimal policy gives an implicit reward.
+D04805	M	Compare DPO and PPO-based RLHF in stability, compute, data requirements and final quality.
+D04806	M	What is the role of beta in DPO, and what failure modes occur such as decreasing chosen likelihood or length exploitation?
+D04807	M	What are IPO, KTO and other DPO variants and what problem does each target?
+D04808	M	Is DPO on-policy? What difference does it make if the preference pairs come from a different model than the one being trained?
+D04809	M	What is the Bradley-Terry model and what assumptions does it make about human preferences?
+D04938	M	Why do RLHF-trained models tend to produce longer outputs, and how would you counter length bias in reward models and DPO?
+D04939	M	How do you check a reward model is reliable before using it for RL, e.g. held-out preference accuracy and out-of-distribution robustness?
+D04940	M	What is rejection sampling fine-tuning (best-of-n) as an alternative to PPO, and when is it enough?
+D04941	M	What is RLAIF or constitutional AI and how does it reduce reliance on human labels?
+D04942	M	Compare outcome reward models and process reward models for reasoning tasks.
+D04943	M	What is GRPO and how does it estimate advantages without a learned value function?
+D04944	M	What is reinforcement learning with verifiable rewards and which task types suit it?
+D04945	M	Why is the reference model kept frozen during RLHF and DPO, and what would happen if it were updated every step?
+D04946	M	How would you debug an RLHF run in which the reward rises steadily but human evaluation shows quality getting worse?

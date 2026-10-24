@@ -1,0 +1,305 @@
+Q000360a	CS04	E	What is the difference between a primary key, a unique key, and a foreign key?
+Q000360b	CS04	E	What is the difference between DELETE, TRUNCATE, and DROP?
+Q000361	CS04	M	Explain the normal forms from 1NF to BCNF with an example of each.
+Q000362a	CS04	M	What are the ACID properties of a database transaction?
+Q000362b	CS04	M	What are the four transaction isolation levels, and which of dirty reads, non-repeatable reads, and phantom reads does each allow?
+Q000363a	CS04	E	What is the difference between a clustered and a non-clustered index?
+Q000363b	CS04	M	Why do databases use B+ trees for indexes?
+Q000364a	CS04	M	Write a SQL query to find the Nth highest salary.
+Q000364b	CS04	M	Write a SQL query to delete duplicate rows from a table.
+Q000365a	SD03	M	Explain the CAP theorem.
+Q000365b	SD02	M	What are the trade-offs between SQL and NoSQL databases?
+Q000366	CS06	E	What is the difference between encapsulation and abstraction?
+Q000367	CS06	M	What are the differences between method overloading and overriding, including the rules for each and how static methods behave?
+Q000368	CS06	M	What is the difference between an abstract class and an interface, and when would you use each?
+Q000369	CS06	M	What is the diamond problem, and how do Java and C++ solve it?
+Q000370	CS06	E	Explain the SOLID principles with an example of each.
+Q000371	CS06	M	Explain and implement the Singleton (thread-safe), Factory, Observer, and Strategy design patterns.
+Q000613	CS03	M	How does NAT work, and how did it enable the growth of the Internet?
+Q000614	DROP	-	frontend
+Q000615	CS03	M	What makes HTTP/2 faster than HTTP/1?
+Q000616	DROP	-	frontend
+Q000617	CS03	E	What are the differences between WAN, LAN, PAN, and MAN?
+Q000618	DROP	-	frontend
+Q000619	SD04	E	How does a REST API work?
+Q000620	DROP	-	offtopic
+Q000621	DROP	-	offtopic
+Q000622	CS03	E	What are the components of a URL?
+Q000623	SD01	E	What is a load balancer?
+Q000624	SD04	M	How do we perform pagination in API design?
+Q000625	SD04	M	How do you design effective and safe APIs?
+Q000626	SD05	M	How do you design secure access to a web API?
+Q000627	SD04	E	What does an API gateway do?
+Q000628	DROP	-	offtopic
+Q000629	SD06	H	How would you design Stack Overflow?
+Q000630	MS03	H	How does Twitter recommend the "For You" timeline in 1.5 seconds?
+Q000631	SD06	H	How does YouTube handle massive video uploads?
+Q000632	SD06	M	How does a typical push notification system work?
+Q000633	SD06	H	How does Netflix scale push messaging?
+Q000634	DROP	-	frontend
+Q000635	DROP	-	offtopic
+Q000636	SD06	H	What is the journey of a message in Slack?
+Q000637	SD02	H	How does Discord store trillions of messages?
+Q000638	GA03	E	What is an AI agent?
+Q000639	LLM03	M	How does ChatGPT work?
+Q000640	SD02	M	How do you upload a large file to S3?
+Q000641	SD03	M	Can Kafka lose messages?
+Q000642	SD02	M	What are the top use cases of object stores?
+Q000643	SD02	M	How do you decide which type of database to use?
+Q000644	SD02	M	What is a serverless database?
+Q000645	DROP	-	offtopic
+Q000646	DROP	-	offtopic
+Q000647	DROP	-	dup
+Q000648	SD02	M	How do you implement the read replica pattern?
+Q000649	CS04	E	What does ACID mean?
+Q000650	CS04	E	How do SQL joins work?
+Q000651	DROP	-	dup
+Q000652	CS03	M	What happens when you type a URL into your browser?
+Q000653	DROP	-	notq
+Q000654	SD05	E	What is the ELK stack and why is it popular?
+Q000655	SD01	E	Why are Content Delivery Networks (CDNs) so popular?
+Q000656	CS05	H	How do big keys impact Redis persistence?
+Q000657	SD01	M	How can cache systems go wrong?
+Q000658	CS05	M	How has the Redis architecture evolved?
+Q000659	CS05	M	How does Redis persist data?
+Q000660	CS05	E	How can Redis be used?
+Q000661	CS05	M	Why is Redis so fast?
+Q000662	DROP	-	notq
+Q000663	DROP	-	dup
+Q000664	SD01	E	Which latency numbers should you know?
+Q000665	DROP	-	offtopic
+Q000666	DROP	-	offtopic
+Q000667	SD06	M	How does scan-to-pay work?
+Q000668	DROP	-	notq
+Q000669	SD03	M	How do you avoid double payment?
+Q000670	SD06	M	How do Apple Pay and Google Pay work?
+Q000671	SD06	M	How does VISA work when swiping a credit card?
+Q000672	SD06	M	How does an ACH payment work?
+Q000673	DROP	-	offtopic
+Q000674	SD04	M	Is microservice architecture a silver bullet?
+Q000675	DROP	-	notq
+Q000676	DROP	-	frontend
+Q000677	CS07	E	How do computer programs run?
+Q000678	CS09	M	How do companies ship code to production?
+Q000679	CS07	M	How does garbage collection work?
+Q000680	DROP	-	offtopic
+Q000681	SD06	H	How do you avoid crawling duplicate URLs at Google scale?
+Q000682	CS07	M	How do C++, Java, and Python programs run (compiled versus interpreted)?
+Q000683	SD05	M	How does AWS Lambda work behind the scenes?
+Q000684	SD03	M	How do you detect node failures in distributed systems?
+Q000685	SD03	H	Why did Meta, Google, and Amazon stop using leap seconds?
+Q000686	DROP	-	dup
+Q000687	CS09	M	Monorepo vs. microrepo: which is best?
+Q000688	DROP	-	dup
+Q000689	SD05	M	How do we manage configurations in a system?
+Q000690	SD03	M	How do we incorporate event sourcing into systems?
+Q000691	SD03	M	Why use a distributed lock?
+Q000692	SD05	M	How do you transform a system to be cloud native?
+Q000693	CS06	E	What do the acronyms CAP, BASE, SOLID, and KISS mean?
+Q000694	SD05	M	How do you design for high availability?
+Q000695	SD05	E	What is cloud native?
+Q000696	DROP	-	offtopic
+Q000697	CS03	M	How is email delivered?
+Q000698	DL03	M	How do Google and Apple Maps blur license plates and faces?
+Q000699	SD06	M	How would you build a simple chat application with Redis?
+Q000700	SD04	M	How do you design a system for internationalization?
+Q000701	SD06	H	How would you design Google Docs?
+Q000702	DROP	-	dup
+Q000703	SD02	M	What happens when you upload a file to Amazon S3?
+Q000704	SD06	M	How do search engines work?
+Q000705	CS09	M	How does Terraform turn code into cloud infrastructure?
+Q000706	CS09	M	DevOps vs NoOps: what is the difference?
+Q000707	SD01	M	Why is Nginx so popular?
+Q000708	CS09	E	What is Kubernetes (k8s)?
+Q000709	CS09	E	How does Docker work?
+Q000710	CS08	M	How do password managers work?
+Q000711	CS08	M	Are passkeys shaping a passwordless future?
+Q000712	SD05	M	How do you design a secure system?
+Q000713	CS08	M	How do digital signatures work?
+Q000714	SD05	M	How do we manage sensitive data in a system?
+Q000715	CS03	M	How does a VPN work?
+Q000716	CS08	M	How does Google Authenticator work?
+Q000717	CS08	E	What is SSO (Single Sign-On)?
+Q000718	CS03	M	How does HTTPS work?
+Q000719	CS03	M	How does a Domain Name System (DNS) lookup work?
+Q000720	DROP	-	notq
+Q000721	DROP	-	notq
+Q000722	DROP	-	notq
+Q000723	DROP	-	notq
+Q000724	DROP	-	notq
+Q000725	DROP	-	offtopic
+Q000726	DROP	-	notq
+Q000727	DROP	-	notq
+Q000728	DROP	-	notq
+Q000729	SD02	E	What is database sharding?
+Q000730	DROP	-	offtopic
+Q000731	SD01	M	What algorithms should you know before taking system design interviews?
+Q000732	DROP	-	notq
+Q000733	SD04	H	Why did Amazon Prime Video monitoring move from serverless to a monolith, and how did it save 90% of cost?
+Q000734	DROP	-	offtopic
+Q000735	DROP	-	unfixable
+Q000736	DROP	-	notq
+Q000737	CS02	H	How do we implement a non-blocking queue, and what are the differences between blocking and non-blocking algorithms?
+Q000738	DROP	-	dup
+Q000739	SD03	M	Is the CAP theorem really useful?
+Q000740	SD03	M	How does Change Data Capture work?
+Q000741	DROP	-	notq
+Q000742	SD01	M	What is the issue with simple hashing for distributing data across servers?
+Q000743	SD01	M	How is consistent hashing used in the real world?
+Q000744	DROP	-	notq
+Q000745	DROP	-	unfixable
+Q000746	DROP	-	dsa
+Q000747	DROP	-	unfixable
+Q000748	DROP	-	offtopic
+Q000749	DROP	-	offtopic
+Q000750	DROP	-	notq
+Q000751	SD06	M	What happens behind the scenes when we shop online?
+Q000752	SD02	E	What is an object store?
+Q000753	DROP	-	unfixable
+Q000754	DROP	-	offtopic
+Q000755	DROP	-	notq
+Q000756	DROP	-	unfixable
+Q000757	DROP	-	notq
+Q000758	DROP	-	notq
+Q000759	DROP	-	notq
+Q000760	CS05	M	How do we analyze the impact of big keys in Redis?
+Q000761	DROP	-	notq
+Q000762	DROP	-	notq
+Q000763	DROP	-	notq
+Q000764	SD05	E	What does availability mean when you design a system?
+Q000765	SD05	E	What is sensitive data?
+Q000766	DROP	-	unfixable
+Q000767	DROP	-	dup
+Q000768	DROP	-	notq
+Q000769	DROP	-	unfixable
+Q000770	DROP	-	unfixable
+Q000771	DROP	-	unfixable
+Q000772	DROP	-	unfixable
+Q000773	CS08	M	Why does HTTPS switch to symmetric encryption during data transmission?
+Q000774	DROP	-	unfixable
+Q000775	DROP	-	dup
+Q000776	DROP	-	notq
+Q000777	DROP	-	notq
+Q000778	DROP	-	offtopic
+Q000779	DROP	-	offtopic
+Q000780	DROP	-	dup
+Q000781	DROP	-	notq
+Q000782	DROP	-	notq
+Q000783	SD04	M	How do we properly deal with HTTP errors on the browser side, and how do we handle them correctly on the server side when the client is at fault?
+Q000784	DROP	-	frontend
+Q000785	DROP	-	frontend
+Q000786	CS08	M	How should you store a password and salt?
+Q000787	CS08	M	How should you validate a password?
+Q000788	SD02	M	How can we optimize performance when uploading large files to an object storage service such as S3?
+Q000789	DROP	-	notq
+Q000790	CS08	M	If HTTPS is safe, how can tools like Fiddler capture network packets sent via HTTPS?
+Q000791	CS08	M	How are network packets hijacked?
+Q000792	DROP	-	frontend
+Q000793	CS07	E	Explain the Java Collections Framework.
+Q000794	SD01	E	Why do we need a cache?
+Q000795	DROP	-	notq
+Q000796	DROP	-	offtopic
+Q000797	DROP	-	notq
+Q000798	DROP	-	unfixable
+Q000799	DROP	-	dup
+Q000800	SD01	M	What are the most popular cache eviction strategies, and how do they work?
+Q000801	CS06	M	What distinguishes the MVC, MVP, MVVM, MVVM-C, and VIPER architecture patterns from each other?
+Q000802	DROP	-	notq
+Q000803	DROP	-	notq
+Q000804	CS08	M	What can an OAuth token do?
+Q000805	SD04	M	How do microservices collaborate and interact with each other?
+Q000806	DROP	-	notq
+Q000807	DROP	-	notq
+Q000808	SD06	H	Given a radius and a location, how would you return a list of nearby restaurants?
+Q000809	SD02	H	How are restaurant locations stored in the database so that a location-based service can return nearby restaurants efficiently?
+Q000810	SD06	H	How do you get nearby businesses with a quadtree?
+Q000811	DROP	-	notq
+Q000812	DROP	-	notq
+Q000813	DROP	-	notq
+Q000814	DROP	-	offtopic
+Q000815	SD02	M	What is a time-series database (TSDB), and how is it different from a relational database?
+Q000816	CS04	E	What is a database, and what are some common types of databases?
+Q000817	SD03	E	What are some common message queues, and what are they used for?
+Q000818	DROP	-	notq
+Q000819	DROP	-	unfixable
+Q000820	DROP	-	notq
+Q000821	DROP	-	dup
+Q000822	DROP	-	unfixable
+Q000823	CS03	M	How is data sent over the network, and why do we need so many layers in the OSI model?
+Q000824	SD02	M	Are serverless databases the future, and how do they differ from traditional cloud databases?
+Q000825	SD06	H	In a simulation shooter game, characters A, B, and C open fire in sequence during a big fight; how does the game server transmit the states to the game clients?
+Q000826	DROP	-	notq
+Q000827	DROP	-	notq
+Q000828	DROP	-	notq
+Q000829	CS09	E	How do you create a Docker container using a Dockerfile?
+Q000830	CS03	E	What is the difference between a URI, a URL, and a URN?
+Q000831	CS08	M	How can you prevent SQL injection using Java PreparedStatement and CallableStatement?
+Q000832	CS08	E	What is HTTPS/SSL and why does it matter?
+Q000833	CS03	M	What is SSL offloading?
+Q000834	DROP	-	frontend
+Q000835	CS08	E	What are the differences between symmetric and asymmetric encryption?
+Q000836	CS07	M	What is string interning?
+Q000837	DROP	-	dup
+Q000838	DROP	-	offtopic
+Q000839	CS07	E	What are the main differences between Java and C++?
+Q000840	CS07	E	What is the difference between HashMap and Hashtable in Java?
+Q000841	DROP	-	notq
+Q000842	CS02	M	How is Java's ThreadLocal implemented under the hood?
+Q000843	CS01	E	What is the difference between a symbolic link and a hard link?
+Q000844	SD02	M	How do you create a unique row ID in sharded databases?
+Q000845	SD03	M	How do you do distributed locking?
+Q000846	DROP	-	dup
+Q000847	CS09	E	What is a build tool?
+Q000848	DROP	-	offtopic
+Q000849	CS03	M	Active vs passive FTP mode: which one is more secure?
+Q000850	CS03	E	How does DHCP work?
+Q000851	CS03	E	What is the DORA process in DHCP?
+Q000852	CS03	E	What is a DHCP server?
+Q000853	CS08	M	What does my ISP know when I use Tor?
+Q000854	DROP	-	notq
+Q000886	SD04	E	What is an API and what are its main purposes?
+Q000887	SD04	E	What is the difference between an API and a web service?
+Q000888	SD04	E	What are the principles of a RESTful API?
+Q000889	SD04	E	How does a SOAP API differ from a REST API?
+Q000890	SD04	E	What is an API endpoint?
+Q000891	SD04	E	What are the common HTTP methods used in a REST API, and what does each method do?
+Q000892	SD04	M	How do you version an API?
+Q000893	SD04	M	What is idempotence in the context of API design, and why is it important?
+Q000894	SD01	M	What is API rate limiting, and why might it be used?
+Q000895	CS08	M	Describe the concept of OAuth in relation to API security.
+Q000896	SD04	M	What strategies would you use to ensure the backward compatibility of an API?
+Q000897	CS03	E	What are some common response codes that an API might return, and what do they signify?
+Q000898	SD04	M	How can you design an API to be easily consumable by clients?
+Q000899	SD04	M	When designing an API, how would you document it for end-users?
+Q000900	SD04	M	What considerations might influence how you paginate API responses?
+Q000916	SD05	M	What is the difference between availability and reliability in the context of a software system?
+Q000917	SD05	M	How do you define system availability, and what are the key components to measure it?
+Q000918	SD05	E	What is the concept of "Five Nines" and how does it relate to system availability?
+Q000919	SD05	M	How does redundancy contribute to the reliability of a system?
+Q000920	SD05	E	What is a single point of failure (SPOF), and how can it be mitigated?
+Q000921	SD05	M	Discuss the significance of Mean Time Between Failures (MTBF) in reliability engineering.
+Q000922	SD05	M	What is the role of Mean Time to Repair (MTTR) in maintaining system availability?
+Q000923	SD05	M	What is the difference between high availability (HA) and fault tolerance (FT)?
+Q000924	SD05	H	How would you architect a system for high availability?
+Q000925	SD05	M	What design patterns are commonly used to improve system availability?
+Q000926	SD05	M	How can load balancing improve system availability, and what are some of its potential pitfalls?
+Q000927	SD05	M	Explain the role of health checks in maintaining an available system.
+Q000928	SD05	E	What is the purpose of the circuit breaker pattern in a distributed system?
+Q000929	SD05	M	What are some key indicators you would monitor to ensure system reliability?
+Q000930	SD05	M	How do you implement a monitoring system that accurately reflects system availability?
+Q000947	CS07	E	What is Big-O notation?
+Q000948	CS07	E	Explain the difference between Big-O, Big-Theta, and Big-Omega notations.
+Q000949	CS07	E	Describe the role of constants and lower-order terms in Big-O analysis.
+Q000950	CS07	M	Give examples of how amortized analysis can provide a more balanced complexity measure.
+Q000951	CS07	M	Describe how the coefficients of higher-order terms affect Big-O notation in practical scenarios.
+Q000952	CS07	H	Explain how probabilistic algorithms can have a different Big-O notation compared to deterministic ones.
+Q000953	CS07	E	Discuss the Big-O space complexity of using linked lists.
+Q000954	CS07	M	Compare the Big-O complexities of various sorting algorithms.
+Q000955	CS07	E	Evaluate the Big-O time complexity of binary search.
+Q000956	DROP	-	unfixable
+Q000957	CS07	M	Discuss the Big-O complexities of tree operations, including binary search trees and AVL trees.
+Q000958	CS07	M	Discuss the time and space complexities of various heap operations.
+Q000959	CS07	E	What is a bitwise operation?
+Q000960	CS07	E	Why use bitwise operations?
+Q000961	CS07	E	What are some real-world applications of bitwise operators?
+Q000962	CS07	E	What is a bitwise AND operation, and how can it be used to check if a number is odd or even?

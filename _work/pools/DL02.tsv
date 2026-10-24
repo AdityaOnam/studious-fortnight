@@ -1,0 +1,87 @@
+Q001262	E	How do dropout layers help prevent overfitting?
+Q001455	M	Describe the difference between Adagrad, RMSprop, and Adam optimizers.
+Q001457	M	How can gradient clipping help in training deep learning models?
+Q001723	M	Describe the Checkpoint design pattern in the context of machine learning training.
+Q001806	E	What is regularization in neural networks, and why is it used?
+Q001807	E	What are dropout layers, and how do they help in preventing overfitting?
+Q001808	M	How do batch normalization layers work, and what problem do they solve?
+Q001880	M	Discuss the Adam optimization algorithm and its key features.
+Q003487	M	When does label smoothing help?
+Q003957	M	How will you implement dropout during the forward and backward pass?
+Q003958	M	What do you do if neural network training loss or testing loss stays constant?
+Q004007	H	Adam and RMSProp adjust the size of gradients based on previously seen gradients. Do they inherently perform gradient clipping? If not, why?
+Q004009	M	Can we do Batch Normalization in RNNs? If not, what is the alternative?
+Q004037	H	What is greedy layer-wise unsupervised pretraining (GLUP)? Why greedy? Why layer-wise? Why unsupervised? Why pretraining?
+Q004038	M	What are the purposes of greedy layer-wise unsupervised pretraining?
+Q004039	H	Why does unsupervised pretraining work?
+Q004040	H	When does unsupervised pretraining work? Under which circumstances?
+Q004041	H	Why might unsupervised pretraining act as a regularizer?
+Q004042	H	What is the disadvantage of unsupervised pretraining compared to other forms of unsupervised learning?
+Q004043	H	How do you control the regularizing effect of unsupervised pretraining?
+Q004044	H	How do you select the hyperparameters of each stage of greedy layer-wise unsupervised pretraining?
+Q004372	E	What is the learning rate?
+Q004373	E	What happens when the learning rate is too large? Too small?
+Q004374	M	How do we decide when to stop training a neural net?
+Q004486	M	When should a learning-rate scheduler step?
+Q004502	E	What are optimizers, and how are they used in PyTorch?
+Q004504	M	How do you implement learning-rate scheduling?
+Q004506	M	How does gradient clipping work, and why is it useful?
+Q004508	M	How do you monitor and reduce overfitting?
+Q004509	M	What is batch normalization, and how does it affect training?
+Q004511	M	What common training problems occur, and how do you debug them?
+Q005193	E	Explain epoch, batch, batch size, and iteration.
+Q005252	M	Explain the RMSprop optimizer.
+Q005253	M	What is the Adagrad optimizer?
+Q005258	E	Can you name and explain a few hyperparameters used for training a neural network?
+Q005263	E	What is dropout, and why is it effective?
+Q005264	M	What is the effect of dropout on training and inference speed?
+Q005265	M	What is L1/L2 regularization, and how does it affect a neural network?
+Q005266	M	What is batch normalization, and why is it used?
+Q005267	M	What are the hyperparameters for batch normalization that can be optimized?
+Q005340	M	What is dropout, and how is it applied in LLMs?
+Q005390	M	What strategies would you use to optimize the training time for a deep learning model?
+Q005467	M	What is momentum with respect to neural network optimization?
+Q005473	M	What is batch normalization and why does it work?
+Q006006	M	How do learning rate, warmup, gradient clipping, and effective batch size interact?
+Q012036	M	Summarize the differences and benefits of the Adam optimizer compared with other methods for neural-network image classification.
+Q012509	M	What learning-rate warm-up strategy is used when training BERT, and why?
+Q012542	M	You are using a deep neural network for a prediction task. After training, you notice that it is strongly overfitting the training set and performs poorly on the test set. What can you do to reduce overfitting?
+Q012543	E	Why should we use Batch Normalization?
+Q012548	M	When training an artificial neural network, what could be the reason why the loss does not decrease in a few epochs?
+Q012555	M	What might happen if you set the momentum hyperparameter too close to 1 (e.g., 0.9999) when using an SGD optimizer?
+Q012556	M	What are the hyperparameters that can be optimized for the batch normalization layer?
+Q012557	M	What is the effect of dropout on the training and prediction speed of your deep learning model?
+Q012578	M	What is the justification for the number of layers and number of neurons chosen in a neural network? Given how hard these are to tune, can a pre-trained model be used?
+Q007226	M	Why start debugging a training pipeline by overfitting a single batch?
+Q007232	M	Why exclude LayerNorm parameters from weight decay?
+Q007233	E	How does dropout work, and what changes between training and inference?
+Q007236	H	How would you use MC dropout to get uncertainty estimates?
+Q007249	M	What is the difference between batch, mini-batch, and stochastic gradient descent? What does batch size actually change?
+Q007250	M	You double the batch size. What do you do to the learning rate and why?
+Q007251	H	What is gradient accumulation actually equivalent to, and where does the equivalence break (for example with BatchNorm)?
+Q007252	M	Why might a huge batch size hurt generalization?
+Q007290	M	Explain momentum and Adam. What problem does each solve over vanilla SGD?
+Q007291	M	Why does Adam need bias correction, and what happens without it?
+Q007292	H	Why does SGD with momentum still often beat Adam on convnets?
+Q007294	M	Adam vs AdamW: what exactly is "decoupled weight decay", and why did AdamW become the transformer default?
+Q007295	H	Why is weight decay equivalent to L2 regularization under SGD but not under Adam?
+Q007297	H	What happens to the effective weight decay as the learning rate is cosine-annealed to near zero?
+Q007298	M	Why do transformer training recipes use learning-rate warmup, and what does the rest of the schedule look like?
+Q007299a	H	What actually goes wrong if you skip learning-rate warmup? Describe the failure signature in the loss and gradient-norm curves.
+Q007299b	H	Why does a cosine-to-zero learning-rate schedule interact badly with wanting to resume training?
+Q007312	M	Batch norm vs layer norm: how does each work, and why do transformers use layer norm?
+Q007395	H	What is the Muon optimizer, how does it differ from AdamW, and why have some frontier pretraining runs adopted it?
+Q007396	H	Why might switching to Muon to fine-tune an AdamW-pretrained model go badly?
+Q007474	H	What does normalization do to the loss landscape geometry?
+Q009830	M	Why is fp32 master-weight storage kept in mixed-precision training?
+Q009912	M	Why did BF16 largely replace FP16 with loss scaling for training?
+Q009913	M	A model runs fine in FP32 but produces garbage after conversion to lower precision. If the same symptom appears only for some prompts, what does that tell you?
+Q010538	H	In an AI-assisted coding round where you fix a training and eval pipeline with an assistant, what ML bugs do assistants write or miss, and how do you catch them in the time available?
+D03743	M	How do you apply dropout in an LSTM, and why can naive dropout hurt recurrent connections?
+D03874	M	How do you debug a neural network that overfits a small batch but fails to generalize?
+D03875	M	What is mixed precision training and what numerical issues does loss scaling address?
+D03876	M	How do batch size and learning rate interact, and how would you scale them together?
+D04610	M	Compare SGD, momentum, RMSProp, Adagrad and Adam update rules and when each is appropriate.
+D04611	M	What is the effect of the learning rate on SGD convergence, and how do schedules like cosine decay with warmup help LLM training?
+D04979	M	Why does a Transformer need learning-rate warmup, and what happens to Adam's second-moment estimate early in training?
+D04980	M	What is gradient clipping by global norm and why is it standard in LLM training?

@@ -1,0 +1,322 @@
+Q005166	M	Implement an LRU cache with O(1) get/put, then add per-entry TTL.
+Q005167	H	Implement a token-bucket rate limiter for an LLM API where cost scales with tokens, then make it distributed.
+Q011888	M	Implement an LRU cache with O(1) get/put, then add TTL.
+Q011889	M	Implement a token-bucket rate limiter, then make it distributed.
+Q011894	M	Build core business logic for a toy banking application, with a specification that grows across four progressive levels.
+Q011895	M	Build an in-memory database: SET/GET/DELETE first, then filtered scans, then TTL with timestamps, then file compaction.
+Q011896	M	Design and create a task scheduler.
+Q011897	M	Build an object-oriented system for managing courses, grades and students.
+Q011898	M	Write a web crawler over a domain: first synchronous, then make it async.
+Q011899	H	Build a rate limiter. Requirements are added incrementally: per-tenant limits, burst allowances, then a sliding window. How do you keep the code from collapsing?
+Q011921	M	Design and implement an in-memory key-value store supporting set, transactional begin, commit and abort.
+Q011922	M	Create a database ORM, step by step.
+Q011937a	H	Design an in-memory database.
+Q011973	M	Build an in-memory key-value store with SET/GET/DELETE, then add transactions with BEGIN/COMMIT/ROLLBACK, including nested transactions.
+Q000478	H	How would you design a parking lot, an elevator system, or an LRU cache (low-level design)?
+Q005559	M	Design synchronized queue consumers.
+Q005596	M	How do you answer a low-level design interview problem?
+Q005597	M	Design a vending machine.
+Q005598	M	Design a traffic signal control system.
+Q005599	M	Design a coffee vending machine.
+Q005600	M	Design a task management system.
+Q005601	M	Design a Tic Tac Toe game.
+Q005602	M	Design a pub-sub system.
+Q005603	M	Design an elevator system.
+Q005604	M	Design a car rental system.
+Q005605	M	Design an online auction system.
+Q005606	M	Design a hotel management system.
+Q005607	M	Design a digital wallet service.
+Q005608	M	Design an airline management system.
+Q005609	M	Design a library management system.
+Q005610	M	Design a social network like Facebook.
+Q005611	M	Design a restaurant management system.
+Q005612	M	Design a concert ticket booking system.
+Q005613	M	Design a Snake and Ladder game.
+Q005614	H	Design a ride-sharing service like Uber.
+Q005615	H	Design a course registration system.
+Q005616	H	Design a movie ticket booking system.
+Q005617	H	Design an online shopping system like Amazon.
+Q005618	H	Design an online stock brokerage system.
+Q005619	H	Design a music streaming service like Spotify.
+Q005620	H	Design an online food delivery service like Swiggy.
+Q005621	H	Design a thread-safe cache with TTL.
+Q005622	H	Design a thread-safe blocking queue.
+Q005623	H	Design a concurrent Bloom filter.
+Q005869	M	Design a call center.
+Q005878	M	Design a deck of cards.
+Q005886	M	Design an online chat.
+Q005888	M	Design a parking lot.
+Q012124	H	Design a subscription-based sports website that can display scores, game status, and history for any game.
+Q012125	H	Design an online card game such as poker.
+Q012126	H	Design a geographically partitioned multi-player card game that supports multiple players and multiple games at a time.
+Q012128	H	Design a task planner. Different types of tasks are present: bug, feature, and story, each with their own attributes. A sprint is a collection of tasks.
+Q012129	M	Implement a finite state machine.
+Q012130	H	Design a system like Jira.
+Q012132	H	Design a stock exchange system.
+Q012133	H	Design a car rental system like Zoomcar.
+Q012134	H	Design a billing and auctioning system similar to eBay.
+Q012135	H	Design a Q&A application like the product Q&A on Amazon or Walmart.
+Q012141	H	Design a learning management system.
+Q012142	H	Design a survey system similar to Google Forms or SurveyMonkey.
+Q012143	H	Design a calendar application similar to Google Calendar.
+Q012144	M	Design a guitar inventory system.
+Q012145	H	Design a stock trading system.
+Q012147	H	Design a JSON parser from scratch.
+Q012149	H	Design a home automation system to remotely control all the switches and devices in a home.
+Q012150	H	Design a maps navigator client for different transportation types.
+Q012154	M	Design and implement a logger library that applications can use to log messages.
+Q012155	H	Design a configuration management system.
+Q012156	H	Design Amazon's comments filtering system.
+Q012158	H	Design an applicant tracking system (ATS) like Greenhouse.
+Q012159	H	Design a logistics system.
+Q012160	H	Design a message queueing system.
+Q012161	M	Create your own queue that holds messages in the form of JSON, without using standard library queues.
+Q012167	H	Design a unit testing application.
+Q012173	H	Design a warehouse management system.
+Q012177	H	Design an application for restaurants or malls to efficiently handle the waiting queue and optimally assign tables.
+Q012194	H	Design an in-memory database that supports operations such as adding and removing tables.
+Q012200	H	Design a limit order book for a trading system.
+Q012201	M	Design a cache mechanism.
+Q012202	H	Design a personal stock and investment portfolio system.
+Q012204	H	Design a generic coupon and promo code system.
+Q012205	M	Design a quizzing app.
+Q012209	H	Design a service to view, add, and remove viewers of a document, like the feature in Google Docs.
+Q012210	H	Design an online auction system.
+Q012211	H	Design a system for storing chemicals with their constituents in an efficiently retrievable format.
+Q012212	H	Design an appointment booking system for a hospital where each doctor can open slots independently for any time period.
+Q012216	M	Design a bill summary feature.
+Q012217	H	Design a learning app where teachers can upload content and students can view it.
+Q012221	H	Design a business rules engine.
+Q012223	M	Design an SMS validator system.
+Q012228	H	Implement a wide column store like Cassandra, with support for secondary indexes.
+Q012229	M	Design an online music recommendation system that suggests songs according to user taste.
+Q012230	M	Design a system that recommends a set of songs from a music library to a user based on their preferences (matching genre, singer, tempo), taking into account their current playlist.
+Q012232	M	Design a test-taking website where users can register and log in, take tests, and see their past test scores and rankings.
+Q012234	M	Design a service that shows a heatmap of food delivery agents (as in Swiggy or Zomato) at a given time.
+Q012235	M	Design a service that returns the recently viewed listings of a user on a website (for example, a user who looked at hotels in Bangalore).
+Q012236	M	Design a Jackpot Machine.
+Q012237	M	Design a Bar Graph Library.
+Q012238	M	Design a notification service that takes a list of users and a message and notifies them, where users can be of different types such as delivery agents, employees, and end users of the app.
+Q012239	H	Design a backend system for a new enterprise application, FlipFit, being launched by Flipkart.
+Q012240	H	Design a scheduler that accepts 10 scheduling requests at a time and can execute 100 jobs at a time, where the jobs are HTTP requests.
+Q012241	M	Design a system that keeps track of leaders of a contest, such as a referral leaderboard.
+Q012242	H	Design a key-value store and an index.
+Q012243	M	Design an analytics system with a dashboard that displays all machines and whether they have good or bad (valid or invalid) certificates.
+Q012244	M	Design a service that calls any given endpoint at a fixed interval.
+Q012245	M	Design a system where a user can create alerts on stock options.
+Q012246	M	Design a UUID generator.
+Q012249	M	Design a cache module that is generic, reusable, and easy to integrate across various modules within an organization.
+Q012250	M	Design a library management system.
+Q012251	M	Design an API rate limiter.
+Q009214	M	Design a rate limiter that can be extended with new requirements: per-tenant limits, burst allowances, then a sliding window. How do you keep the code from collapsing?
+Q009396	M	Implement the core of a text buffer for an editor with efficient insert/delete at arbitrary positions and fast line lookup. What data structure do you pick?
+Q010054	M	Extend an LRU cache design to LFU (least-frequently-used). What changes?
+Q010106	H	Build the task-lifecycle core of an annotation platform. Start simple, then support consensus of k annotators, then priority re-review, then annotator cooldowns.
+Q010108	M	How would you persist the task-lifecycle state of an annotation platform so that a crashed worker's assignment times out?
+Q010235	M	Build an in-memory key-value store with SET/GET/DELETE, then add transactions with BEGIN/COMMIT/ROLLBACK, including nested transactions.
+Q010236	H	In an in-memory key-value store with transactions, how would you add consistent iteration over all keys in the middle of a transaction?
+Q010238	M	Implement an LRU cache with O(1) get/put. Now add per-entry TTL.
+D02841	M	Design a parking lot system (class design / OOD). Support multiple floors, vehicle types, spot allocation, ticketing and fee calculation.
+D02842	M	In a parking lot design, how would you make the spot-allocation policy pluggable (nearest to entrance, cheapest, by vehicle size) without changing the core classes?
+D02843	H	In your parking lot design, how do you prevent two vehicles from being assigned the same spot when multiple entry gates operate concurrently?
+D02844	M	How would you extend a parking lot design to support different pricing models such as hourly, daily, peak-hour and EV-charging surcharges?
+D02845	M	Design a Q&A platform like Stack Overflow (class design / OOD). Cover questions, answers, comments, tags, votes and reputation.
+D02846	H	In a Stack Overflow style design, how would you model voting and reputation so the logic is extensible and safe under concurrent votes?
+D02847	M	How would you design tag-based search and the accepted-answer workflow in a Q&A platform class model?
+D02848	E	Design a vending machine (class design / OOD). Support item selection, payment, dispensing and change return.
+D02849	M	Which design pattern fits a vending machine's behaviour that changes with its current state, and how would you model the states and transitions?
+D02850	H	How would you handle failure scenarios in a vending machine design, such as insufficient change, item stuck, or cancellation after partial payment?
+D02851	M	How would you extend a vending machine design to support multiple payment methods (coins, notes, card, UPI) and restocking by an operator?
+D02852	M	Design a logging framework (class design / OOD) with log levels, multiple output destinations and configurable formatting.
+D02853	H	How would you make a logging framework thread-safe and non-blocking for application threads, and which patterns would you apply?
+D02854	M	Which design patterns appear in a typical logging framework (chain of responsibility, singleton, strategy, observer) and what role does each play?
+D02855	M	How would you support runtime-changeable log levels and per-package loggers in a logging framework design?
+D02856	M	Design a traffic signal control system for an intersection (class design / OOD) with configurable durations and emergency vehicle handling.
+D02857	H	How would you model emergency-vehicle preemption and guarantee safe signal transitions in a traffic light controller design?
+D02858	M	How would you extend a traffic signal design to adapt signal durations to real-time traffic density across multiple intersections?
+D02859	M	Design a coffee vending machine (class design / OOD) that supports multiple beverages, customizable recipes and ingredient inventory.
+D02860	M	How would you use the decorator or builder pattern to model customizable beverage add-ons in a coffee machine design?
+D02861	H	How would you handle concurrent orders and ingredient depletion in a coffee machine design, including low-stock alerts?
+D02862	M	Design a task management system like Trello or Jira (class design / OOD) with tasks, users, priorities, status and assignments.
+D02863	M	How would you model task state transitions, subtasks and dependencies in a task management system without hard-coding the workflow?
+D02864	H	How would you add notifications, activity history and undo to a task management system design, and which patterns would you choose?
+D02865	M	Design an ATM (class design / OOD) covering card authentication, balance inquiry, cash withdrawal and deposit.
+D02866	M	Which pattern would you use to model ATM transaction types and ATM states, and why?
+D02867	H	How would you ensure that an ATM withdrawal is atomic and consistent with the bank backend if the network fails mid-transaction?
+D02868	M	How does an ATM design decide which denominations to dispense, and how would you make the dispensing strategy extensible?
+D02869	M	Design a professional networking platform like LinkedIn (class design / OOD) with profiles, connections, posts, jobs and messaging.
+D02870	H	How would you model connection requests, degrees of connection and job recommendations in a LinkedIn style class design?
+D02871	M	How would you design the notification and feed-update mechanism for a professional network at the class level?
+D02872	E	Design an LRU cache (class design / OOD) with get and put in constant time.
+D02873	M	Which data structures back an O(1) LRU cache and why is each one necessary?
+D02874	H	How would you make an LRU cache thread-safe while keeping contention low, and what are the trade-offs between a single lock, lock striping and a concurrent design?
+D02875	M	How would you generalize an LRU cache design into a cache with pluggable eviction policies such as LFU, FIFO and TTL-based?
+D02876	M	How would you add per-entry TTL expiry and a write-through or write-back backing store to a cache class design?
+D02877	E	Design a Tic Tac Toe game (class design / OOD) with players, board and win detection.
+D02878	M	How would you generalize a Tic Tac Toe design to an N x N board with K in a row and determine a winner in O(1) per move?
+D02879	M	How would you extend a Tic Tac Toe design to support an AI player and a human player behind a common interface?
+D02880	M	Design an in-memory publish-subscribe system (class design / OOD) with topics, publishers and subscribers.
+D02881	H	How would you design delivery guarantees, ordering and slow-subscriber handling in an in-memory pub-sub system?
+D02882	H	How do you make an in-memory pub-sub broker thread-safe so that publishing never blocks on slow subscribers?
+D02883	M	How would you add message filtering, subscription by pattern and unsubscription at runtime to a pub-sub class design?
+D02884	M	Design an elevator system for a building (class design / OOD) with multiple elevators, floor requests and a dispatcher.
+D02885	H	What scheduling strategies could an elevator controller use to assign requests to cars, and how do you keep the strategy replaceable?
+D02886	M	Which pattern models an elevator's movement states (idle, moving up, moving down, door open), and how are transitions handled?
+D02887	H	How would you handle concurrent hall calls and in-car requests, overload and emergency stops in an elevator design?
+D02888	M	Design a car rental system (class design / OOD) with vehicles, reservations, pricing, payments and branches.
+D02889	H	How would you prevent double-booking of a vehicle for overlapping date ranges in a car rental design?
+D02890	M	How would you support different pricing rules such as per-day, per-kilometre, insurance add-ons and late fees in a rental system model?
+D02891	M	Design an online auction system (class design / OOD) with listings, bidding, auction closing and winner selection.
+D02892	H	How do you handle two bids arriving at the same instant or a last-second bid in an online auction design?
+D02893	M	How would you support different auction types (English, Dutch, sealed-bid) using the strategy pattern in an auction design?
+D02894	M	Design a hotel management system (class design / OOD) with rooms, bookings, check-in/check-out, housekeeping and billing.
+D02895	H	How would you model room availability search and overlapping reservations in a hotel booking design to avoid overbooking?
+D02896	M	How would you design room types and dynamic pricing in a hotel management class model?
+D02897	M	Design a digital wallet service (class design / OOD) with accounts, top-ups, transfers and transaction history.
+D02898	H	How would you guarantee atomic, deadlock-free money transfers between two wallets in a class-level design?
+D02899	H	How would you make wallet operations idempotent so that retries do not double-debit?
+D02900	M	How would you model multi-currency support and transaction limits in a digital wallet design?
+D02901	M	Design an airline management system (class design / OOD) covering flights, schedules, seat reservation, crew and passengers.
+D02902	H	How would you design seat selection so that two passengers cannot reserve the same seat concurrently in an airline booking model?
+D02903	M	How would you model flight search with layovers and fare classes in an airline system class design?
+D02904	E	Design a library management system (class design / OOD) with books, members, lending, returns and fines.
+D02905	M	How would you model multiple copies of the same book, reservations and waiting lists in a library system?
+D02906	M	How would you design the fine calculation and notification flow in a library management system so new rules can be added easily?
+D02907	M	Design a social network like Facebook (class design / OOD) with users, friends, posts, comments, likes and a news feed.
+D02908	H	How would you design the news feed generation and privacy settings in a social network class model?
+D02909	M	How would the observer pattern apply to notifications for likes and comments in a social network design?
+D02910	M	Design a restaurant management system (class design / OOD) with tables, reservations, orders, kitchen workflow and billing.
+D02911	M	How would you model the order lifecycle from placement to kitchen preparation to serving and billing in a restaurant system?
+D02912	H	How would you assign tables to waiting parties and handle merged or split tables in a restaurant system design?
+D02913	M	Design a concert ticket booking system (class design / OOD) with events, seat maps, holds and payments.
+D02914	H	How would you implement temporary seat holds with expiry in a ticket booking design and release them if payment fails?
+D02915	H	How do you prevent overselling when thousands of users try to book the same seats at the same time in a ticket booking class design?
+D02916	M	Design a live cricket scoring and information system like CricInfo (class design / OOD) with matches, innings, overs, balls and scorecards.
+D02917	H	How would you design live score updates and commentary delivery to many viewers in a cricket scoring model?
+D02918	M	How would you model player and team statistics aggregation in a sports scoring system so new statistics can be added easily?
+D02919	M	Design an expense-sharing application like Splitwise (class design / OOD) with groups, equal, exact and percentage splits, and balances.
+D02920	H	How would you implement debt simplification to minimize the number of settlement transactions in an expense-sharing design?
+D02921	M	How would you apply the strategy pattern to different split types in an expense-sharing application?
+D02922	M	How would you handle rounding errors and currency in an expense-splitting design?
+D02923	M	Design a chess game (class design / OOD) with board, pieces, moves, turns and game-end conditions.
+D02924	H	How would you model piece movement rules, check, checkmate and special moves like castling and en passant in a chess class design?
+D02925	M	How would you add move history, undo and replay to a chess game design, and which patterns would you use?
+D02926	M	How would you extend a chess design to support network play, a clock and an AI opponent?
+D02927	E	Design a Snake and Ladder game (class design / OOD) with players, board, dice and snakes and ladders.
+D02928	M	How would you make the dice, board size and winning rule configurable in a Snake and Ladder design?
+D02929	M	How would you handle snakes and ladders that chain into each other and invalid board configurations?
+D02930	M	Design a ride-sharing service like Uber (class design / OOD) with riders, drivers, ride requests, matching, pricing and payments.
+D02931	H	How would you design pluggable driver-matching and surge pricing strategies in a ride-sharing class model?
+D02932	H	How would you handle concurrent ride requests competing for the same nearby driver in a ride-sharing design?
+D02933	M	How would the state pattern model the lifecycle of a ride from requested to completed or cancelled?
+D02934	M	Design a university course registration system (class design / OOD) with courses, students, prerequisites, capacity and waitlists.
+D02935	H	How would you handle concurrent enrollment into a course with limited capacity and automatically promote waitlisted students?
+D02936	M	How would you model prerequisite and schedule-conflict validation in a course registration system?
+D02937	M	Design a movie ticket booking system like BookMyShow (class design / OOD) with cinemas, screens, shows, seats and bookings.
+D02938	H	How do you design seat locking, timeout release and payment confirmation so that no seat is double-booked in a movie booking system?
+D02939	M	How would you model city-wise cinema search, show timings and dynamic pricing in a movie ticket booking design?
+D02940	M	Design an online shopping system like Amazon (class design / OOD) with catalog, cart, orders, payments, inventory and shipping.
+D02941	H	How would you design inventory reservation and order placement so stock never goes negative under concurrent checkouts?
+D02942	M	How would you design the order state machine and shipping integration in an e-commerce class model?
+D02943	M	How would you structure discounts, coupons and tax calculation in a shopping cart design to keep pricing rules extensible?
+D02944	M	Design an online stock brokerage system (class design / OOD) with accounts, portfolios, buy and sell orders and an order book.
+D02945	H	How would you design order matching for market and limit orders in a brokerage or exchange class model?
+D02946	H	How would you ensure price-time priority and thread safety in an order book implementation?
+D02947	M	Design a music streaming service like Spotify (class design / OOD) with songs, playlists, users, playback and recommendations.
+D02948	M	How would you model playback queue, shuffle and repeat behaviours with the strategy or state pattern in a music player design?
+D02949	M	How would you design the recommendation hook so different algorithms can be plugged into a music streaming model?
+D02950	M	Design a food delivery service like Swiggy (class design / OOD) with restaurants, menus, orders, delivery partners and tracking.
+D02951	H	How would you design delivery partner assignment and order-status tracking in a food delivery class model?
+D02952	M	How would you support promotions, surge fees and order cancellations in a food delivery design?
+D02953	M	Design a caller-ID and spam-detection service like Truecaller (class design / OOD) with contacts, number lookup and spam reporting.
+D02954	M	Design a package locker service (class design / OOD) that assigns a locker of sufficient size to each package and handles pickup codes.
+D02955	M	How would you choose a locker for a package when multiple sizes are available, and how would you handle expiry of uncollected packages?
+D02956	M	Design a JSON parser from scratch that validates and parses at the same time and supports nested string key-value objects.
+D02957	H	How would you design a parser for untrusted JSON input so it fails safely on malformed input and resists deeply nested or oversized payloads?
+D02958	M	Design a CSV parser (class design / OOD) that handles quoting, escaped delimiters and malformed rows.
+D02959	M	Design an in-memory text editor with display, insert, delete, copy, paste, undo and redo commands.
+D02960	M	Which design pattern gives you undo and redo in a text editor, and how would you structure the command history?
+D02961	H	How would you support multi-level undo and redo efficiently for large documents, and what are the memory trade-offs between command and memento approaches?
+D02962	M	Implement a configurable finite state machine library with one start state, multiple end states, runtime-added transitions and per-state notification toggles.
+D02963	H	How would you design a generic finite state machine so that states and transitions can be added at runtime without breaking running instances?
+D02964	M	Design a Jira-like issue tracker (class design / OOD) with stories, features, bugs, subtasks, sprints and status changes.
+D02965	M	How would you generate sprint reports such as delayed tasks, tasks per user and sprint summary in an issue tracker design without bloating the core classes?
+D02966	M	Design a task planner that supports different task types (bug, feature, story) with type-specific attributes and a sprint as a collection of tasks.
+D02967	M	Design a stock exchange matching engine (class design / OOD) that matches buy and sell orders and outputs executed trades.
+D02968	H	How would you design a limit order book data structure to support add, cancel and match operations efficiently?
+D02969	H	How would you ensure fairness and determinism in an order matching engine when orders arrive concurrently?
+D02970	M	Design a car rental application like Zoomcar (class design / OOD) with vehicles, locations, availability and bookings.
+D02971	M	Design an eBay-style billing and auction system (class design / OOD) where sellers pay listing and sale fees and buyers bid.
+D02972	M	Design a product Q&A system as on e-commerce sites (class design / OOD) with questions, answers, voting and moderation.
+D02973	M	Design a push notification service (class design / OOD) that receives events from a promotions team and sends to iOS, Android and email channels.
+D02974	M	How would you design a notification system so that adding a new delivery channel does not require changing existing code?
+D02975	H	How do you add retries, rate limiting, user preferences and deduplication to a notification class design?
+D02976	M	Design a simple suggestion system (class design / OOD) that recommends items based on user behaviour.
+D02977	H	Design and implement a simplified Java garbage collector with Eden, Tenured and Permanent regions and collection rounds that promote surviving objects.
+D02978	M	Design a calendar application like Google Calendar (class design / OOD) with events, invitations, accept and reject states and per-user calendars.
+D02979	H	How would you find a common free time slot for a set of users in a calendar design, and what is the complexity?
+D02980	M	How would you model recurring events and time zones in a calendar class design?
+D02981	M	Design a guitar inventory system (class design / OOD) with searchable instruments by attributes.
+D02982	M	How would you design flexible attribute-based search for an inventory system so new criteria do not require new methods?
+D02983	M	Design a payment system (class design / OOD) with multiple payment methods, transactions, refunds and statuses.
+D02984	H	How would you design a payment gateway class model with pluggable processors, retry logic and idempotent charge requests?
+D02985	M	Design a chat application like WhatsApp (class design / OOD) with users, one-to-one and group conversations, and message status.
+D02986	M	Design a home automation system (class design / OOD) to remotely control switches and devices with extensible device types.
+D02987	M	Design a maps navigation client (class design / OOD) that builds a route between two points for walking, driving, bus and cycling.
+D02988	M	How would the strategy pattern help a navigation client support different transport modes and routing preferences?
+D02989	M	Design a meeting room scheduler (class design / OOD) that books a free room for a time interval, notifies attendees and shows booking history.
+D02990	H	How would you detect room availability and interval conflicts efficiently when there are many meeting rooms and bookings?
+D02991	M	Design a configuration management system (class design / OOD) with add, delete, search and subscription to configuration updates.
+D02992	M	Design an in-memory message queue where publishers produce JSON messages and subscribers register regex filters and callbacks at runtime.
+D02993	H	How would you support dependency ordering among subscribers (A must process after B) and retries on processing failure in an in-memory message queue?
+D02994	H	How would you detect and prevent circular dependencies between subscribers in a dependency-aware message queue design?
+D02995	M	Design a mock interview matching platform like Pramp (class design / OOD).
+D02996	M	Design an applicant tracking system (class design / OOD) with job postings, candidates, pipeline stages and recruiters.
+D02997	M	Design a logistics system (class design / OOD) with shipments, hubs, vehicles and tracking.
+D02998	M	Design an employee management platform (class design / OOD) with payroll, benefits and IT provisioning modules.
+D02999	M	Design a unit-testing framework (class design / OOD) that discovers tests, runs them and reports results.
+D03000	M	Design an inventory management system (class design / OOD) with stock levels, reorder points and multiple warehouses.
+D03001	M	Design a warehouse management system (class design / OOD) with receiving, putaway, picking and shipping.
+D03002	M	Design a restaurant waiting-queue system (class design / OOD) that assigns tables efficiently to waiting parties.
+D03003	M	Design an online assessment platform (class design / OOD) for timed exams with question banks, attempts and scoring.
+D03004	M	Design a survey application like Google Forms (class design / OOD) with question types, responses and analytics.
+D03005	M	Design a learning management system (class design / OOD) with courses, lessons, enrollments and progress tracking.
+D03006	M	Design a generic coupon and promo code system (class design / OOD) supporting percentage and flat discounts, minimum cart sizes, customer and merchant targeting, and usage limits.
+D03007	H	How would you design composable coupon rules so combinations of conditions and discount types can be added without code changes in a promo system?
+D03008	H	How would you enforce a per-user usage limit on coupons under concurrent redemption in a coupon system?
+D03009	M	Design a distributed unique ID generator in the style of Twitter Snowflake (class design / OOD).
+D03010	H	How do you handle clock skew, sequence overflow and worker-id assignment in a Snowflake-style ID generator?
+D03011	M	Design an in-memory database with tables, indexing and basic queries (class design / OOD).
+D03012	H	How would you add secondary indexes and transaction support to an in-memory database design?
+D03013	M	Design an in-memory data streaming service (class design / OOD) with topics, partitions, producers and consumer offsets.
+D03014	M	Design a system exposing save-number and get-median operations where get-median is the most frequent call.
+D03015	M	Which data structures give an efficient running median, and how would you scale it for a high write rate?
+D03016	M	Design an e-commerce product review and rating system (class design / OOD).
+D03017	M	Design an online book reader system (class design / OOD) with users, libraries, bookmarks and reading sessions.
+D03018	M	Design a ride-sharing matching component where drivers offer rides with seats and riders request rides, and the best overlapping match is chosen.
+D03019	M	Design an airport runway allocation service (class design / OOD) that assigns a free runway to landing planes.
+D03020	H	How do you ensure a runway is never allocated to two aircraft at once, and what happens when none is available?
+D03021	M	Design a card game platform (class design / OOD) with players, tables, decks, turns and scoring.
+D03022	M	Design a rate limiter library (class design / OOD) that supports multiple algorithms and per-client limits.
+D03023	H	How would you design a rate limiter class so the algorithm (token bucket, sliding window, fixed window) is swappable and the limiter is thread-safe?
+D03024	M	Design an in-memory file system (class design / OOD) with directories, files, create, list, read and delete operations.
+D03025	H	Which pattern models files and directories uniformly in an in-memory file system, and how would you add permissions and search?
+D03026	M	Design a spreadsheet engine (class design / OOD) with cells, formulas and dependency recalculation.
+D03027	H	How would you detect cyclic references and recompute dependent cells efficiently in a spreadsheet class design?
+D03028	M	Design a URL shortener at the class level (class design / OOD) with key generation, storage and expiry.
+D03029	M	Design a scheduler library (class design / OOD) that runs jobs at given times or intervals using a worker pool.
+D03030	M	Design an electronic signature workflow (class design / OOD) with documents, signers, ordering and audit trail.
+D03031	E	What steps would you follow in a low-level design interview, from clarifying requirements to the final class diagram?
+D03032	M	How do you identify the core entities, relationships and responsibilities when given a vague object-oriented design problem?
+D03033	M	How do you decide between modelling a concept as an enum, an interface with implementations, or a class hierarchy in an OOD problem?
+D03034	M	How do you decide which design patterns to apply in a low-level design problem without over-engineering?
+D03035	M	What is the difference between a low-level design interview, a machine coding round and a high-level design interview?
+D03036	M	How do you incorporate concurrency considerations into a low-level design after the single-threaded model is complete?
+D03037	M	How do you handle extensibility questions such as add a new vehicle type or a new payment method after you present your design?
+D03038	M	How do you keep your low-level design testable, and what would you mock when unit testing the core classes?
+D03039	M	Which diagrams would you draw in a low-level design interview, and what does each one communicate?
+D03040	H	Walk through how you would refactor a god-class in a low-level design into cohesive classes using SOLID principles.
+D03041	M	How do you model the boundary between domain objects and service or manager classes in an OOD solution?
+D03042	M	When should a low-level design use a singleton for services such as a manager or controller, and what testing problems does it cause?
+D03043	M	How do you design for idempotency and failure handling in a low-level design that involves payments or bookings?
+D03044	M	What are common mistakes candidates make in object-oriented design interviews, and how can they be avoided?

@@ -1,0 +1,300 @@
+Q008722	GA05	M	Why is markdown image rendering a classic data exfiltration channel in LLM applications, and how do you close it?
+Q008723	GA05	M	In the lethal trifecta (private data access, untrusted content, external communication), which leg is usually easiest to remove in practice?
+Q008724	GA05	M	How does connecting multiple MCP servers accidentally create the lethal trifecta?
+Q008725	GA05	E	What does "treat all model output as untrusted" mean, and why?
+Q008726	GA05	M	Your model returns a markdown link that the frontend renders. What is the risk and the fix?
+Q008727	GA05	M	How is executing model-generated SQL different from a normal injection bug, and how is it the same?
+Q008728	GA05	H	Where in an agent loop does tainted model output cause the most damage?
+Q008729	GA05	E	What is data leakage in an LLM system, and what are the main channels?
+Q008730	GA05	M	Which data leakage channels in an LLM system do teams most often forget?
+Q008731	GA05	M	How does a shared prompt cache leak data across tenants?
+Q008732	GA05	M	What is the difference between "vendor doesn't train on my data" and "zero data retention"?
+Q008733	GA05	E	What is excessive agency in the OWASP LLM Top 10, and what are its three sub-types?
+Q008734	GA05	M	Which of the three sub-types of excessive agency do you see most often in real code reviews, and why?
+Q008735	GA05	H	If a product genuinely needs an agent to send email autonomously, how do you reduce agency without removing the feature?
+Q008736	GA05	M	Explain the confused deputy problem, and why an LLM agent is close to a worst case for it.
+Q008737	GA05	H	How does the confused deputy framing change your design compared to just calling it prompt injection?
+Q008738	GA05	H	What would ambient authority look like in a concrete agent you have built, and how would you remove it?
+Q008739	GA03	M	What is the difference between a kill switch and a circuit breaker for an agent, and why do you need both?
+Q008740	GA03	M	What would you alert on to catch a runaway agent before the circuit breaker trips?
+Q008741	GA03	H	How do you make sure an agent's kill switch actually works when you need it, given it is never exercised in normal operation?
+Q008742	GA05	M	What is a denial-of-wallet attack, and how do you defend against it?
+Q008743	GA04	H	How would you set per-user quotas for an LLM product if legitimate power users are 50x heavier than the median user?
+Q008744	GA04	M	Where does per-tenant cost attribution have to live in an LLM system so that you can detect a denial-of-wallet attack?
+Q008745	GA05	M	What is memory poisoning in an agent, and why is it worse than a one-shot prompt injection?
+Q008746	GA05	H	How would you audit an existing agent memory store to find out if it has already been poisoned?
+Q008747	GA03	H	Should an agent be allowed to write to its own long-term memory at all, and what changes if the memory is shared across a team?
+Q008748	GA05	M	What is slopsquatting, and how do you stop a coding agent from installing a package that does not exist?
+Q008749	GA05	H	How would you find out, after the fact, whether an agent-authored change pulled in a squatted package?
+Q008750	GA05	H	Slopsquatting-style hallucination also applies to container images and API endpoints. Which parts of the package defence carry over?
+Q008751	GA05	H	Design a defence-in-depth strategy for a customer-facing agent that reads user data and can take actions.
+Q008752	GA05	H	If you could only implement two layers of a defence-in-depth strategy for a customer-facing agent, which two would you choose and why?
+Q008753	GA05	M	How do you keep input classifiers in a guardrail layer from adding 500ms of latency?
+Q008754	GA05	H	Where does a defence-in-depth design for an LLM agent still fail, and is that residual risk acceptable?
+Q008755	GA05	M	Walk through the main jailbreak techniques conceptually. Why does safety training fail against them?
+Q008756	GA05	M	Why does many-shot jailbreaking get more effective as context windows grow?
+Q008757	GA05	H	What does the transferability of GCG adversarial suffixes tell you about the nature of the vulnerability?
+Q008758	GA05	M	As an app developer, why can't you rely on the model provider having patched all known jailbreak techniques?
+Q008759	GA05	H	Design the guardrail layer for an LLM product. How do you manage the latency and false-positive costs?
+Q008760	GA05	H	How do you guardrail a streaming response without killing the user experience?
+Q008761	GA05	H	Where would you spend a strict latency budget of 150ms total overhead for guardrails?
+Q008762	GA05	M	How do you decide the threshold trade-off between missed attacks and blocked good requests in a guardrail?
+Q008763	GA05	M	How do you handle PII in an LLM pipeline end to end?
+Q008764	GA05	M	After redacting PII before sending text to an LLM, how do you re-insert the real names into the model's answer?
+Q008765	GA05	M	Why is fine-tuning on PII a deletion nightmare?
+Q008766	GA05	M	Which channel do teams most often forget to redact PII from in an LLM pipeline?
+Q008767	GA05	M	What is training data memorisation and extraction, and why does it matter for a deployed product?
+Q008768	GA05	M	Why does deduplication reduce memorisation of training data so much?
+Q008769	FT05	M	How does training data memorisation influence a RAG-versus-fine-tuning decision for private data?
+Q008770	GA05	M	What is membership inference, and when is it itself the harm?
+Q008771	GA05	M	What security risks does connecting third-party tools (e.g., MCP servers) introduce, and how do you mitigate them?
+Q008772	GA05	M	How is a poisoned tool description different from injecting text into a document?
+Q008773	GA05	M	What is a rug pull in the context of MCP servers, and how do you defend against it specifically?
+Q008774	GA05	M	Why is a stdio MCP server more dangerous than a remote HTTP one?
+Q008775	GA05	M	Explain the model supply-chain risks: pickle vs safetensors, weights provenance, dependencies.
+Q008776	GA05	M	Why exactly is unpickling dangerous, and what does safetensors change?
+Q008777	GA05	M	What is a model backdoor, and why can't you just inspect the weights to find it?
+Q008778	GA05	M	What does 'trust_remote_code=True' do, and when is it acceptable?
+Q008779	FT03	M	What do RLHF, DPO, and Constitutional AI/RLAIF actually do for safety, and why can't a system prompt replace them?
+Q008780	FT03	E	What is the one-line difference between RLHF and RLAIF?
+Q008781	FT03	M	Why is DPO replacing PPO in a lot of alignment pipelines?
+Q008782	GA05	M	What is over-refusal, and how do you manage the helpfulness-versus-safety tension?
+Q008783	GA05	M	How would you build an eval that catches over-refusal?
+Q008784	GA05	M	Why can't you optimise the refusal rate in isolation?
+Q008785	GA05	H	Where would you set the refusal operating point for a security-research assistant versus a mental-health chatbot?
+Q008786	LLM07	M	How do you treat hallucination as a safety and product risk rather than just a quality issue?
+Q008787	LLM07	M	Why does verifying citations require checking the source text, not just that a citation exists?
+Q008788	LLM07	M	How would you train or prompt a model to abstain?
+Q008789	LLM07	M	Which is safer for a medical FAQ: a fluent guess or an "I can't answer that" response?
+Q008790	GA05	H	How can an attacker poison training data or plant a backdoor in a model, and how would you catch it?
+Q008791	GA05	H	If you inherit an open-weights model from a hub, what would actually convince you it has no backdoor?
+Q008792	GA05	M	How does poisoning a RAG index differ, operationally, from poisoning fine-tuning data?
+Q008793	RAG06	M	What are the security weaknesses specific to vector stores and embeddings, and how do you mitigate them?
+Q008794	RAG06	H	When enforcing access permissions in a RAG system, why is post-filtering after retrieval a correctness problem and not just a performance one?
+Q008795	RAG06	H	How would you handle a document whose permissions change after it has been embedded and indexed?
+Q008796	GA02	H	How do you design tool permissions for an agent, and how do you stop human approval gates from becoming rubber-stamping?
+Q008797	GA03	H	How would you decide the auto-approve threshold for a refund agent?
+Q008798	GA03	H	What do you show a user who is approving something they cannot realistically evaluate, like a generated SQL migration?
+Q008799	GA05	M	How should an agent authenticate to downstream systems? Compare a shared service account with acting on behalf of the user.
+Q008800	GA05	H	How do you handle a legitimate background agent that runs when no user is present, so there is no user token to delegate?
+Q008801	GA05	H	What breaks in the on-behalf-of-user authentication model when the agent needs to call a third-party MCP server that does its own OAuth?
+Q008802	GA05	H	After a user invokes their right to erasure, how would you verify that an unlearning method worked, and why is that harder than it sounds?
+Q008803	GA05	M	After a user invokes their right to erasure and you delete their row, where else does the user's data survive, given caches, traces, eval sets and backups?
+Q008804	GA05	H	Walk me through how you would threat-model a new agent before it ships.
+Q008805	GA05	H	What does STRIDE miss for an AI system that MITRE ATLAS catches, and vice versa?
+Q008806	GA05	M	How do you keep a threat model alive rather than a launch artifact nobody opens again?
+Q008807	GA05	M	Beyond text in a chat box, what channels can indirect prompt injection arrive through, and how do you sanitise them?
+Q008808	DROP	-	unfixable
+Q008809	GA05	H	How does defending against indirect prompt injection change for an image, where you cannot separate the text out to scan it?
+Q008810	FT05	M	Hosted model API or self-hosted open weights: how do you make the security and privacy call?
+Q008811	GA05	H	What would you need to see in a vendor's zero-data-retention terms before you would put regulated data through them?
+Q008812	FT05	H	At what utilisation does self-hosting an LLM start winning on cost, and how does that change the security argument?
+Q008813	GA05	M	OWASP now publishes a Top 10 for Agentic Applications alongside the LLM Top 10. What does the agentic list add, and how do you use the two together in a review?
+Q008814	GA05	H	Which OWASP agentic Top 10 (ASI) categories would you expect to dominate findings for a single-agent support bot, and which only appear once you add a second agent?
+Q008815	GA05	H	How would you test for OWASP agentic ASI09 failures when the failure happens in the human, not the system?
+Q008816	GA05	H	Design a secure architecture for an agent that reads untrusted web/email content and has access to a user's private data. How do you defeat prompt injection by construction?
+Q008817	GA05	H	In a CaMeL-style dual-LLM design, what does the quarantined LLM return, and why can't its output steer the planner?
+Q008818	GA05	H	What flow policy specifically stops exfiltration in CaMeL?
+Q008819	GA05	H	What flexibility do you give up with a CaMeL-style secure agent design, and when is that cost unacceptable?
+Q008820	GA05	H	Design a red-teaming programme for an LLM product: manual vs automated, pre-launch vs continuous, and how findings feed back.
+Q008821	GA05	M	Why isn't automated red teaming enough on its own?
+Q008822	GA05	M	What triggers a re-test of an LLM product after launch?
+Q008823	GA05	H	How exactly does a red-team finding become a regression eval, and why is that step non-negotiable?
+Q008824	GA05	M	What safety evals and benchmarks should you know, and what are their limitations?
+Q008825	GA05	M	Why did StrongREJECT need to exist given HarmBench already did?
+Q008826	GA05	M	Why must a safety benchmark be paired with an over-refusal benchmark?
+Q008827	GA05	H	How do you build an eval for harms specific to your product?
+Q008828	GA05	E	What is the difference between a model card and a system card?
+Q008829	GA05	M	If you are building a résumé-screening tool for the EU, which EU AI Act risk tier are you in and what does that force you to build?
+Q008830	GA05	H	How do you reconcile "log everything for audit" with "retain nothing for privacy"?
+Q008831	GA05	M	Why does a markdown image tag exfiltrate data without any user click?
+Q008832	GA05	M	Which single mitigation against markdown-image data exfiltration is most robust, and why?
+Q008833	GA05	H	How would a markdown-image exfiltration attack adapt if you block images but allow links?
+Q008834	GA05	H	How do you achieve per-tenant isolation and data privacy in a multi-tenant RAG/agent SaaS?
+Q008835	GA05	H	What is the failure mode of the "shared index + tenant_id filter" approach, and how do you harden it?
+Q008836	GA05	M	How does a semantic cache leak data across tenants?
+Q008837	GA05	M	Why does fine-tuning on tenant data complicate isolation and deletion?
+Q008838	GA05	H	You are doing a security review of a coding agent that executes model-generated code. What is your threat model and what controls do you apply?
+Q008839	GA05	M	Why is blocking network egress the highest-leverage single control for a code-executing agent?
+Q008840	GA05	M	Why must credentials never live inside a code-execution sandbox even if the task "needs" them?
+Q008841	GA05	M	When a code-executing agent's generated code stdout goes back to the model, what is the risk?
+Q008842	GA05	H	Where is the line between the model provider's safety responsibility and the application developer's? Whose job is each control?
+Q008843	GA05	H	Give one control that is unambiguously the model provider's and one that is unambiguously the application developer's. Why can't the provider fix prompt injection for you?
+Q008844	GA05	H	If the provider's model gets jailbroken, whose incident is it, and does the answer depend on your architecture?
+Q008845	GA05	H	A customer reports that another tenant's data appeared in their results. If your logs do not record tenant ID per retrieval, what do you tell the customer, and how do you bound the incident?
+Q008846	GA05	M	Why are semantic caches particularly dangerous for cross-tenant data leaks compared to exact-match caches?
+Q008847	GA04	H	Design end-to-end observability and containment for a fleet of production agents.
+Q008848	GA04	H	How do you build a behavioural baseline for an agent fleet where legitimate agent behaviour changes every time someone edits a prompt?
+Q008849	GA04	M	For a production agent fleet, which monitoring signals would you page a human for at 3am, and which are dashboard-only?
+Q008850	GA05	H	What security problems appear in a multi-agent system that do not exist with a single agent?
+Q008851	GA05	H	How would you implement taint propagation across agent messages in a framework that has no concept of it?
+Q008852	GA05	H	Does a critic or judge agent reading the same context provide any real safety benefit, or is it theatre?
+Q008853	GA05	H	You suspect someone is distilling your model through your public API. How would you detect it and what can you actually do?
+Q008854	GA05	H	Restricting logprobs breaks legitimate use cases like classification and eval scoring. How do you decide that tradeoff?
+Q008855	GA05	H	If you fingerprint a suspect model via canaries, what would you need for that to hold up as evidence?
+Q008856	GA05	H	Your production assistant has started quoting wrong prices to customers. Is it an attack or a bug, and how do you find out?
+Q008857	GA05	M	Where else in an LLM product would you apply the rule "never let the model generate the number"?
+Q008858	GA05	H	If a production assistant quoting wrong prices turns out to be injection via a supplier catalogue feed, what changes structurally?
+Q008859	GA05	H	You are asked to ship an LLM-assisted CV screening feature. How do you approach fairness, and what do you tell the product team?
+Q008860	GA05	H	How would you evidence human oversight to an auditor when reviewers approve nearly everything?
+Q008861	GA05	H	If counterfactual name-swapping shows a consistent delta in an LLM CV screener, is redaction sufficient, or does that just hide the proxy?
+Q008862	GA03	H	Your agent buys things on behalf of users. Design the authorisation trail so a disputed transaction is resolvable.
+Q008863	GA03	H	A user's constraint said "under 200" and the purchasing agent found the item at 195 plus an 18 delivery fee. Whose reading binds, and where in your design is that decided?
+Q008864	GA03	H	What changes in an agent purchasing system when the counterparty is also an agent and no human is present on either side?
+Q008865	GA05	H	A customer asks you to prove which of their documents your model wrote. What can you actually deliver?
+Q008866	GA05	H	Your logged hash of model output misses because the customer reformatted the document before sending it. What do you tell them, and what would you have needed to build to answer differently?
+Q008867	GA05	H	If a regulator requires synthetic output to be labelled, does an invisible watermark satisfy that, or do you owe a visible disclosure as well?
+Q008868	FT01	H	You fine-tuned a model on narrow, harmless-looking domain data and it now complies with requests it used to refuse. Why does that happen, and how do you ship fine-tunes safely?
+Q008869	FT01	H	A customer wants to fine-tune your hosted model on their own data. Which safety checks do you run, and which do you require them to run?
+Q008870	GA05	H	How would you design out-of-domain probes that would actually catch emergent misalignment rather than just domain regressions?
+Q008871	GA05	H	How would you secure a browser agent that acts inside the user's logged-in browser?
+Q008872	GA05	H	The task genuinely needs a browser agent to read an email and then act on a different site. How do you keep that useful without rebuilding the cross-origin bridge?
+Q008873	GA05	H	What would you show the user at a confirmation step of a browser agent so that they can actually evaluate it rather than click through?
+Q008874	LLM07	H	Can you rely on monitoring a reasoning model's chain of thought as a safety control?
+Q008875	LLM07	H	Your chain-of-thought monitor's hit rate dropped sharply after a model upgrade. Is the new model safer, or is something else going on, and how would you tell?
+Q008876	LLM07	H	Should chain-of-thought monitor flags ever block an action automatically, and what would that do to the monitor's value over time?
+Q009015	DROP	-	notq
+Q008877	GA06	M	Walk me through how a modern VLM gets an image into an LLM.
+Q008878	GA06	M	Why can you get away with training only the projector in stage 1 of VLM training?
+Q008879	GA06	M	What breaks if you use a randomly initialized vision encoder instead of CLIP in a VLM?
+Q008880	GA06	M	How does a VLM handle an image whose aspect ratio does not match the vision encoder's training resolution?
+Q008881	GA06	E	What is CLIP, how is it trained, and why did it become the foundation for so much multimodal work?
+Q008882	GA06	M	Why do large batches matter so much for contrastive learning?
+Q008883	GA06	H	How would you use CLIP to build a zero-shot content moderation filter, and where would it fail?
+Q008884	DROP	-	dup
+Q008885	GA06	M	How do images become tokens in a VLM, and why does image resolution drive inference cost?
+Q008886	GA06	H	You are processing receipts and the model misreads totals. Walk me through how you would decide whether to raise resolution or change approach. Why does a resampler-based model (fixed 64 tokens per image) struggle with dense documents?
+Q008887	GA06	M	How would you estimate the monthly bill for a screenshot-heavy agent?
+Q008888	GA06	M	What do vision-language models reliably get wrong?
+Q008889	GA06	H	Why does contrastive pretraining specifically produce weak spatial reasoning in vision-language models?
+Q008890	GA06	H	How would you detect numeric hallucination by a vision-language model in production without humans reviewing every document?
+Q008891	GA06	H	Which common vision-language model failure modes have reasoning models improved, and which persist?
+Q008892	DL05	M	Give me the intuition for how diffusion models generate images.
+Q008893	DL05	M	What exactly does a diffusion network predict (noise, the clean image, or something else), and does it matter?
+Q008894	DL05	M	Why can diffusion samplers skip most of the 1000 training steps?
+Q008895	DL05	M	What does the noise schedule in a diffusion model trade off?
+Q008896	GA06	M	How does Whisper work, and why is it so robust compared to earlier ASR systems?
+Q008897	GA06	H	Why does Whisper hallucinate on silence, and how would you guard against it in production?
+Q008898	GA06	H	How would you build streaming transcription from a 30-second-window batch model like Whisper?
+Q008899	GA06	M	What does weak supervision mean in the context of Whisper, and why did it beat curated data?
+Q008900	GA06	M	What does "grounding" mean for a VLM, and how does a model actually output a bounding box?
+Q008901	GA06	H	How would you evaluate VLM grounding quality, and why is IoU a poor fit for a document-redaction use case?
+Q008902	GA06	H	If a VLM gives you a bounding box that is close but consistently shifted down and right, what would you check first?
+Q008903	GA06	M	What is the modality gap in CLIP-style embedding spaces, and when does it actually bite you?
+Q008904	GA06	H	How would mean-centring per modality change your CLIP retrieval results, and what could it break?
+Q008905	GA06	H	If you had to compare "how similar is this image to this caption" against "how similar is this image to that image" in one ranking, how would you make the scores comparable?
+Q008906	GA06	M	What is WER, and why is it a misleading metric for a voice product?
+Q008907	GA06	H	How would you build an entity error rate metric for speech recognition without hand-labelling thousands of hours?
+Q008908	GA06	M	Why did SigLIP's sigmoid loss displace CLIP's softmax contrastive loss as the default vision encoder pretraining?
+Q008909	GA06	H	Why does a learnable bias term matter for the sigmoid loss specifically?
+Q008910	GA06	H	If you were pretraining a vision encoder for dense document text rather than natural images, what would you change about the recipe?
+Q008911	MS04	H	Design a document-extraction system. When do you use an OCR pipeline versus sending pages to a VLM?
+Q008912	GA06	H	How do you catch a VLM confidently misreading a dollar amount?
+Q008913	MS04	H	In a document-extraction system, where does human-in-the-loop go, and how do you decide the confidence threshold?
+Q008914	MS04	H	How does the OCR-versus-VLM calculus in a document-extraction system change at 10M pages per month?
+Q008915	GA06	M	How would you reliably extract tables and charts from documents?
+Q008916	GA06	H	A VLM returns a beautifully formatted table with one hallucinated row. What catches it?
+Q008917	FT05	H	When would you fine-tune a small model for table extraction instead of prompting a frontier VLM?
+Q008918	GA06	H	How do you evaluate chart extraction when ground truth is only the image?
+Q008919	DL05	M	Why do latent diffusion? Walk me through the components of a Stable-Diffusion-style system.
+Q008920	DL05	H	Why use 4 (or 16) latent channels in latent diffusion rather than compressing harder?
+Q008921	DL05	M	What does moving from U-Net to DiT buy in a diffusion model?
+Q008922	DL05	H	Where does ControlNet-style conditioning hook into a latent diffusion architecture?
+Q008923	DL05	M	Explain classifier-free guidance. What actually happens when you turn the guidance scale up?
+Q008924	DL05	H	Why does high classifier-free guidance hurt diversity specifically?
+Q008925	DL05	M	How do negative prompts work mechanically in diffusion models?
+Q008926	DL05	H	Why do guidance-distilled diffusion models generate at CFG of about 1?
+Q008927	DL05	M	Compare diffusion and autoregressive approaches to image generation. Why did autoregressive come back?
+Q008928	DL05	H	Why do omni-models render text in images so much better?
+Q008929	DL05	H	What does the discrete tokenizer bottleneck in autoregressive image generation depend on?
+Q008930	DL05	H	If you needed 100ms generation for a live preview feature, which image generation model family would you use and what tricks would you apply?
+Q008931	MS04	H	Design a production voice agent. Cover pipeline vs speech-to-speech, the latency budget, and interruption handling.
+Q008932	GA06	H	Where do you put safety filtering in a speech-to-speech architecture with no text midpoint?
+Q008933	GA06	M	How do you evaluate a voice agent end to end?
+Q008934	GA06	H	When a user interrupts a voice agent mid-tool-call, what state do you roll back?
+Q008935	GA06	M	How do models understand video, and what are the current limits?
+Q008936	GA06	H	How would you build "find when the package was delivered" over 24 hours of doorbell footage without ingesting 24 hours of tokens?
+Q008937	GA06	M	Why is counting event repetitions in video so hard for video-understanding models?
+Q008938	GA06	M	When does sampling video at 1 fps break down?
+Q008939	MS03	H	Build text-to-image search over 100M product images. Walk me through the design.
+Q008940	MS03	H	How do you mine hard negatives from click logs without poisoning training with position bias?
+Q008941	MS03	M	A merchandiser complains that "red dress" surfaces orange dresses in text-to-image product search. What is your debug path?
+Q008942	MS03	H	When is a caption-then-BM25 pipeline actually better than embedding search for image retrieval?
+Q008943	LLM02	H	In M-RoPE (multimodal rotary position embeddings), why does giving text tokens identical t, h, w indices matter when grafting it onto an already-trained LLM?
+Q008944	LLM02	H	How would you extend the M-RoPE position scheme to a document with 50 pages where page identity matters?
+Q008945	FT01	M	When do you fine-tune a VLM instead of prompting it, and what exactly do you unfreeze?
+Q008946	FT05	H	How would you decide between fine-tuning a 7B open VLM and just prompting a frontier model, given a fixed budget?
+Q008947	FT01	H	What does your held-out set need to contain to detect catastrophic forgetting on a document-extraction LoRA?
+Q008948	GA02	H	You are building a computer-use agent. Design the perception layer: screenshots, coordinates, accessibility tree.
+Q008949	GA02	H	How would you handle an app with no accessibility tree and a canvas-rendered UI in a computer-use agent?
+Q008950	GA04	M	What would you log so that you can debug a failed 40-step computer-use agent trajectory after the fact?
+Q008951	MS04	H	Design a pipeline that turns about 100k hours per month of call recordings into searchable, analysable data. What are the stages and where does it go wrong?
+Q008952	MS04	H	How would you evaluate a call-recording transcription and analysis pipeline end to end when you have no reference transcripts for your own calls?
+Q008953	MS04	M	Where would you put a human in the loop in a call-recording analysis pipeline, given the volume?
+Q008954	GA05	H	Your agent reads screenshots and PDFs supplied by users. How do you defend against instructions hidden inside images?
+Q008955	GA05	M	How would you test your defences against instructions hidden inside images and PDFs processed by an agent?
+Q008956	GA05	H	Design a red-team suite for image-borne prompt injection. If the business insists the agent must both read attachments and reply to emails, what is the minimum viable containment?
+Q008957	GA06	H	Your voice agent both cuts users off mid-sentence and leaves awkward dead air. Diagnose and fix.
+Q008958	GA06	H	How would you collect labelled data to train a semantic turn detector for your domain?
+Q008959	GA06	H	Speculative generation in a voice agent wastes tokens on cancellation. How would you decide whether it is worth it?
+Q008960	GA06	H	A marketplace wants AI-generated lifestyle photos of sellers' own products. How do you keep the product itself accurate: LoRA, IP-Adapter, ControlNet, or an editing model?
+Q008961	GA06	H	How would you harmonise lighting and shadows when compositing original product pixels into a generated scene?
+Q008962	GA06	M	A seller uploads one blurry photo. Which approaches for generating product lifestyle images still work, and what do you tell the seller?
+Q008963	GA06	H	How would you detect that an image editing model subtly changed the text on a product label?
+Q008964	GA06	H	When should a VLM hand off to a dedicated vision model, such as a detector, segmenter or tracker, instead of answering from pixels itself?
+Q008965	FT04	H	How would you distil a VLM's labels into a small classifier without inheriting its systematic errors?
+Q008966	GA06	H	A safety-compliance camera system must flag missing harnesses. Sketch the specialist-first pipeline and where the VLM sits. What breaks when the detector and the VLM disagree, and who wins?
+Q008967	RAG05	H	Design multimodal RAG over 50k PDFs full of tables, charts, and diagrams. Where does ColPali-style retrieval fit?
+Q008968	RAG03	H	How do you keep multi-vector (ColPali-style) storage from exploding at 5M pages?
+Q008969	RAG05	H	When is caption-and-embed strictly better than ColPali for multimodal document retrieval?
+Q008970	RAG06	H	How do you evaluate whether chart-dependent questions are actually being answered from the chart in a multimodal RAG system?
+Q008971	GA06	M	How do you evaluate multimodal systems, covering both understanding and generation?
+Q008972	LLM07	M	Your VLM-judge agrees with humans 70% of the time. Is it usable?
+Q008973	LLM07	H	How would you detect that a benchmark leaked into a vendor's training data?
+Q008974	GA06	H	Compare VLM projector/adapter designs: MLP vs resampler vs cross-attention. How does the choice interact with the training recipe?
+Q008975	GA06	H	Why did resampler-based VLMs underperform on DocVQA?
+Q008976	GA06	H	When would you unfreeze the vision encoder in a VLM, and what can go wrong?
+Q008977	GA06	H	How does the token-per-image count change multi-image and video capability in a VLM?
+Q008978	GA04	H	When processing 10M document pages per month with a model cascade, how do you decide the escalation threshold?
+Q008979	GA04	H	In a document-processing cascade, at what accuracy delta does the frontier model justify 20x the cost?
+Q008980	GA04	H	How does the document-processing cascade design change if 40% of pages are handwritten?
+Q008981	GA06	M	How does modern TTS work, and what makes speech generation hard in a real-time product?
+Q008982	GA06	H	Why does sentence-chunked streaming TTS sound choppy, and how do you fix it?
+Q008983	GA06	H	How would you automatically regression-test TTS quality in CI?
+Q008984	GA06	H	What changes when TTS moves inside a speech-to-speech omni-model?
+Q008985	GA06	H	Adapter-based VLMs vs natively multimodal (early-fusion) models: what is the real tradeoff?
+Q008986	GA06	H	Why does a shared softmax over mixed-modality tokens cause training instability?
+Q008987	LLM04	H	If you had one frontier multimodal pretraining run, what data-mixture questions would you have to answer?
+Q008988	GA06	H	Where do adapter-based multimodal models still beat natively multimodal ones on benchmarks, and why?
+Q008989	GA05	H	A user screenshots an AI-generated image. What survives, C2PA or SynthID, and why?
+Q008990	GA05	H	How do you evaluate an NSFW classifier before launch, and what base-rate math matters?
+Q008991	GA05	H	What changes for an image-generation open-weights release where you do not control inference?
+Q008992	GA06	H	Your VLM extracts invoice fields at about 91% per-field accuracy. The customer needs 99% and you cannot fine-tune the model. What do you do?
+Q008993	GA06	H	How would you set the abstention threshold for invoice field extraction without a large labelled set?
+Q008994	GA06	H	What changes in an invoice extraction system if the customer's 99% accuracy requirement is per-document rather than per-field?
+Q008995	FT04	H	Does test-time compute help on visual tasks? Where does it help, where does it not, and how would you actually use it?
+Q008996	GA06	H	How would you build a crop-and-zoom tool loop for a VLM, and what stops it looping forever?
+Q008997	FT04	H	Given a fixed budget, would you spend it on more image tokens or more reasoning tokens, and how do you decide empirically?
+Q008998	GA06	H	You need one embedding space for your own domain: product photos, spec sheets as PDFs, and text queries. Off-the-shelf CLIP is not good enough. How do you build it?
+Q008999	GA06	H	How would you detect and handle false negatives in click-mined training data for a multimodal embedding model?
+Q009000	ML06	H	Your offline Recall@10 improves 8 points but the A/B test is flat. What are the likely explanations?
+Q009001	LLM06	H	You are self-hosting a VLM for a document pipeline and throughput is a third of what you projected from the LLM's specs. Why, and what do you do?
+Q009002	GA06	H	How would you decide the pixel budget per document class rather than globally for a VLM document pipeline?
+Q009003	DL05	H	How do text-to-video models like Veo or Sora work, and why is video generation so much more expensive than image generation?
+Q009004	DL05	H	Why does a causal 3D VAE make joint image and video training possible?
+Q009005	DL05	H	You must cut video generation cost 10x for a preview feature. Which levers do you pull first and what quality do you lose?
+Q009006	GA06	H	How would you evaluate temporal consistency of generated video automatically?
+Q009007	GA06	H	What is a vision-language-action (VLA) model, and how do you turn a VLM into a robot policy that runs at control frequency?
+Q009008	GA06	H	Why does co-training on web vision-language data matter for a VLA model when you only care about robot success?
+Q009009	GA06	H	What goes wrong when a VLA action chunk is executed open-loop and the scene changes mid-chunk?
+Q009010	GA06	H	How would you compare two VLA checkpoints fairly with only 50 real-robot trials each?
+Q009011	GA06	H	How does a full-duplex speech model listen and talk at the same time, and when would you choose one over a turn-based voice pipeline?
+Q009012	GA06	H	Why does distilling the first codebook towards semantic features help a speech language model?
+Q009013	GA06	H	How would you add a safety filter to a full-duplex speech model without reintroducing turn latency?
+Q009014	GA06	H	What training data would you need to teach a full-duplex speech model backchannelling, and how would you get it?
+Q009016	DROP	-	notq
+Q009140	DROP	-	notq
+Q009017	DROP	-	notq
+Q009018	DROP	-	hr
+Q009019	DROP	-	hr
+Q009020	DROP	-	hr

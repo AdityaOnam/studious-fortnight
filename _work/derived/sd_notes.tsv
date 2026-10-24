@@ -1,0 +1,564 @@
+SD01	E	What is the difference between vertical and horizontal scaling, and when would you choose each?	karanpratapsingh__system-design:Scalability
+SD01	M	Why is a stateless application tier easier to scale horizontally than a stateful one, and how do you move session state out of the web servers?	donnemartin__system-design-primer:Application layer
+SD01	M	What is the difference between performance problems and scalability problems, and how can you tell which one your system has?	donnemartin__system-design-primer:Performance vs scalability
+SD01	E	Explain latency versus throughput and why optimizing one can hurt the other.	donnemartin__system-design-primer:Latency vs throughput
+SD01	M	What are the main trade-offs between scaling a database vertically and scaling it horizontally?	ByteByteGoHq__system-design-101:10-system-design-tradeoffs
+SD01	M	Walk through how a simple single-server website evolves to support millions of users, and what bottleneck you fix at each step.	ByteByteGoHq__system-design-101:how-to-scale-a-website-to-support-millions-of-users
+SD01	M	At what point do you separate the application server and the database onto different machines, and what does that change for failure modes?	ByteByteGoHq__system-design-101:how-to-scale-a-website
+SD01	H	Your site grows from 1,000 to 10 million users. Describe the order in which you would introduce load balancers, replicas, caches, CDN, and sharding, and why.	donnemartin__system-design-primer:Scaling to millions of users on AWS
+SD01	E	What does a load balancer do and why is it needed in a horizontally scaled system?	karanpratapsingh__system-design:Load Balancing
+SD01	M	Compare Layer 4 and Layer 7 load balancing. What can each one see and what can each one do?	donnemartin__system-design-primer:Load balancer
+SD01	M	Compare round robin, weighted round robin, least connections, least response time, and IP hash as load-balancing algorithms. When does each fail?	ByteByteGoHq__system-design-101:top-6-load-balancing-algorithms
+SD01	M	Why can least-connections or latency-based balancing cause a herd effect when several load balancers act on the same stale information?	puncsky__system-design-and-architecture:designing-l7-load-balancer
+SD01	H	Explain the power-of-two-choices algorithm. Why does it balance load nearly as well as global least-loaded selection with far less coordination?	puncsky__system-design-and-architecture:designing-l7-load-balancer
+SD01	H	Why is distributing requests evenly not the same as distributing load evenly, and how can a balancer use real-time backend load feedback?	puncsky__system-design-and-architecture:designing-l7-load-balancer
+SD01	M	Is the load balancer itself a single point of failure? How do you make it highly available?	karanpratapsingh__system-design:Redundant load balancers
+SD01	M	Compare active-active and active-passive configurations for load balancers or server clusters.	karanpratapsingh__system-design:Clustering
+SD01	M	What is the difference between a load balancer and a reverse proxy, and can one component play both roles?	donnemartin__system-design-primer:Load balancer vs reverse proxy
+SD01	M	Compare forward proxy and reverse proxy with an example of each.	karanpratapsingh__system-design:Proxy
+SD01	E	What benefits does a reverse proxy provide besides load balancing, such as TLS termination, compression, and static content?	donnemartin__system-design-primer:Reverse proxy
+SD01	M	How would you design sticky sessions, and what problems do they introduce for scaling and failover?	donnemartin__system-design-primer:Load balancer
+SD01	E	What is a CDN and what problems does it solve?	karanpratapsingh__system-design:CDN
+SD01	M	Compare push CDNs and pull CDNs. Which would you choose for a rarely changing site versus a large catalog of content?	donnemartin__system-design-primer:Content delivery network
+SD01	M	How does a CDN decide which edge server serves a user, and what happens on a CDN cache miss?	ByteByteGoHq__system-design-101:how-does-cdn-work
+SD01	M	How do you invalidate or update content already cached on CDN edges, and what are the trade-offs of using TTLs versus versioned URLs?	donnemartin__system-design-primer:CDN disadvantages
+SD01	M	What are the disadvantages and costs of using a CDN, and when is it not worth it?	donnemartin__system-design-primer:CDN disadvantages
+SD01	E	Name the common caching layers between a user and a database and what each caches.	donnemartin__system-design-primer:Cache
+SD01	E	What is a cache hit ratio and how would you improve a low one?	karanpratapsingh__system-design:Cache hit and Cache miss
+SD01	M	Compare cache-aside, read-through, write-through, write-around, and write-back caching strategies.	ByteByteGoHq__system-design-101:top-5-caching-strategies
+SD01	M	What are the failure modes of cache-aside, and how can stale data appear?	donnemartin__system-design-primer:Cache-aside
+SD01	M	Why is write-back caching risky, and how would you reduce the chance of data loss?	karanpratapsingh__system-design:Write-back cache
+SD01	M	Compare read-through and write-through caches. Which combinations give stronger consistency?	ByteByteGoHq__system-design-101:10-system-design-tradeoffs
+SD01	M	Compare LRU, LFU, FIFO, and random eviction. What workload makes LRU perform badly?	karanpratapsingh__system-design:Eviction policies
+SD01	M	Why do some caches use approximate or segmented variants of LRU such as 2Q or TinyLFU instead of strict LRU?	ByteByteGoHq__system-design-101:most-popular-cache-eviction
+SD01	H	Cache invalidation is called one of the hard problems in computer science. What makes it hard and what strategies keep caches reasonably fresh?	donnemartin__system-design-primer:Cache invalidation
+SD01	M	What is a cache stampede or thundering herd, and how do you prevent it for a hot key that expires?	ByteByteGoHq__system-design-101:how-can-cache-systems-go-wrong
+SD01	M	What is cache penetration, and how do null caching and Bloom filters protect the database from queries for nonexistent keys?	ByteByteGoHq__system-design-101:cache-miss-attack
+SD01	M	What is cache breakdown versus cache avalanche, and how do you mitigate each?	ByteByteGoHq__system-design-101:how-can-cache-systems-go-wrong
+SD01	M	If your cache cluster goes down completely, what happens to the database, and how do you design for it?	ByteByteGoHq__system-design-101:how-can-cache-systems-go-wrong
+SD01	H	You have a hot key receiving a huge fraction of read traffic that overloads a single cache node. How do you diagnose and fix it?	ByteByteGoHq__system-design-101:cache systems
+SD01	M	Compare a local in-process cache with a distributed cache and a global cache. What are the consistency and cost trade-offs?	karanpratapsingh__system-design:Distributed Cache
+SD01	M	What are the trade-offs of putting a cache in the application server versus a separate cache tier versus in front of the web tier?	puncsky__system-design-and-architecture:key-value-cache
+SD01	M	How do you decide what to cache and what TTL to use for different kinds of data?	ByteByteGoHq__system-design-101:things-to-consider-when-using-cache
+SD01	H	How would you measure whether adding a cache actually helps a service, and what could make it harmful?	ByteByteGoHq__system-design-101:things-to-consider-when-using-cache
+SD01	M	Explain consistent hashing and why it avoids massive data movement when nodes are added or removed compared with hash modulo N.	karanpratapsingh__system-design:Consistent Hashing
+SD01	M	What are virtual nodes in consistent hashing and what problems do they solve?	karanpratapsingh__system-design:Virtual Nodes
+SD01	H	How does a consistent-hash ring handle node failure and replication of keys to successor nodes? What happens to the load on neighbors?	karanpratapsingh__system-design:Consistent Hashing
+SD01	M	What are hot spots in a hash-partitioned system, and how can you mitigate them?	karanpratapsingh__system-design:Consistent Hashing
+SD01	E	Why do we rate limit APIs, and where in the architecture would you place a rate limiter?	karanpratapsingh__system-design:Rate Limiting
+SD01	M	Compare token bucket, leaky bucket, fixed window, sliding window log, and sliding window counter rate limiting.	karanpratapsingh__system-design:Rate Limiting Algorithms
+SD01	M	What is the boundary burst problem with fixed-window rate limiting and how do other algorithms fix it?	karanpratapsingh__system-design:Rate Limiting Algorithms
+SD01	H	How would you implement a rate limiter that is accurate across many API gateway nodes? Discuss race conditions and synchronization costs.	karanpratapsingh__system-design:Rate Limiting in Distributed Systems
+SD01	M	What should a rate-limited client receive, and how should well-behaved clients react?	karanpratapsingh__system-design:Rate Limiting
+SD01	M	Why do we use back-of-the-envelope estimation in a design interview, and which numbers should you memorize?	donnemartin__system-design-primer:Back-of-the-envelope calculations
+SD01	M	Which latency numbers should every engineer know, such as memory reference, SSD read, datacenter round trip, and cross-continent round trip? What design decisions follow from them?	ByteByteGoHq__system-design-101:which-latency-numbers-should-you-know
+SD01	M	How would you estimate daily storage growth and peak queries per second for a service with a given number of daily active users?	donnemartin__system-design-primer:Back-of-the-envelope calculations
+SD01	E	How many seconds are in a day, and how do you quickly convert monthly request counts into requests per second?	donnemartin__system-design-primer:Back-of-the-envelope calculations
+SD01	M	How do you estimate cache memory needed using the 80/20 rule?	karanpratapsingh__system-design:URL Shortener Cache
+SD01	M	What are the best ways to improve API performance, such as pagination, caching, compression, connection pooling, and asynchronous logging?	ByteByteGoHq__system-design-101:top-5-common-ways-to-improve-api-performance
+SD01	M	Why does connection pooling improve throughput, and what happens when the pool is misconfigured?	ByteByteGoHq__system-design-101:top-5-common-ways-to-improve-api-performance
+SD01	M	List common causes of 100 percent CPU usage on a server and how you would investigate each.	ByteByteGoHq__system-design-101:top-9-cases-behind-100-cpu-usage
+SD01	M	Which website performance metrics matter most, such as TTFB, FCP, LCP, and TTI, and how would you improve them?	ByteByteGoHq__system-design-101:top-9-website-performance-metrics
+SD01	M	Compare synchronous and asynchronous processing for a user request. When would you offload work to a background queue?	ByteByteGoHq__system-design-101:10-system-design-tradeoffs
+SD01	M	When would you choose batch processing over stream processing, and what are the latency and complexity trade-offs?	ByteByteGoHq__system-design-101:10-system-design-tradeoffs
+SD01	M	What are the 8 common production problems such as read-heavy load, write-heavy load, single point of failure, and high latency, and the standard remedy for each?	ByteByteGoHq__system-design-101:8-common-system-design-problems
+SD01	M	Compare stateful and stateless services. How does each affect scaling, deployment, and failure recovery?	ByteByteGoHq__system-design-101:10-system-design-tradeoffs
+SD01	H	Which design trade-offs do you consider most often, such as consistency versus availability, normalization versus denormalization, and sync versus async, and how do you argue for one side in an interview?	ByteByteGoHq__system-design-101:10-system-design-tradeoffs
+SD01	M	What is DNS-based load balancing and what are its limitations, such as TTL caching and lack of health awareness?	karanpratapsingh__system-design:Load Balancing DNS
+SD01	M	What is the difference between a monolith being scaled by cloning and a service being scaled by splitting functionality, as in the AKF scale cube?	donnemartin__system-design-primer:Application layer
+SD01	M	Explain the four layers of the system design interview approach: requirements, estimation, data and API design, then high-level and detailed design.	karanpratapsingh__system-design:System Design Interviews
+SD01	M	How would you design for graceful degradation when traffic exceeds capacity?	donnemartin__system-design-primer:Availability patterns
+CS03	E	What is the difference between TCP and UDP, and when would you pick each?	karanpratapsingh__system-design:TCP vs UDP
+CS03	M	Explain the TCP three-way handshake and connection teardown. Why is a handshake needed at all?	karanpratapsingh__system-design:TCP
+CS03	M	How do TCP flow control and congestion control differ?	karanpratapsingh__system-design:TCP
+CS03	M	What are the top use cases for UDP, and why do real-time applications tolerate its unreliability?	ByteByteGoHq__system-design-101:top-4-most-popular-use-cases-for-udp
+CS03	M	What does the OSI model describe, and why does it still matter for debugging?	karanpratapsingh__system-design:OSI Model
+CS03	M	At which OSI layers do switches, routers, load balancers, and firewalls operate, and what information do they use to make decisions?	karanpratapsingh__system-design:OSI Model
+CS03	E	Explain the difference between IPv4 and IPv6 and why IPv6 adoption matters.	ByteByteGoHq__system-design-101:ipv4-vs-ipv6
+CS03	E	What is the difference between public, private, static, and dynamic IP addresses?	karanpratapsingh__system-design:IP
+CS03	M	Describe how a DNS lookup works from a browser through resolver, root, TLD, and authoritative servers.	karanpratapsingh__system-design:Domain Name System
+CS03	M	What is the difference between recursive and iterative DNS queries?	karanpratapsingh__system-design:DNS Query Types
+CS03	E	Explain the DNS record types A, AAAA, CNAME, MX, NS, TXT, and SRV.	ByteByteGoHq__system-design-101:dns-record-types
+CS03	M	How does DNS caching work, and what are the risks of long and short TTLs during a failover?	karanpratapsingh__system-design:DNS Caching
+CS03	M	What disadvantages does DNS have as an infrastructure component, such as propagation delay and DDoS exposure?	donnemartin__system-design-primer:Disadvantages DNS
+CS03	M	Walk through everything that happens from typing a URL into a browser to seeing a rendered page.	donnemartin__system-design-primer:Domain name system
+CS03	M	How does HTTPS establish a secure connection, and how is the symmetric session key negotiated?	ByteByteGoHq__system-design-101:how-does-https-work
+CS03	M	Is HTTPS actually safe? What attacks remain possible against a TLS connection?	ByteByteGoHq__system-design-101:is-https-safe
+CS03	M	What is mutual TLS and when would you use it between services?	karanpratapsingh__system-design:SSL, TLS, mTLS
+CS03	M	Compare HTTP long polling, WebSockets, and Server-Sent Events. When would you use each?	karanpratapsingh__system-design:Long polling, WebSockets, SSE
+CS03	M	How does a WebSocket connection start with an HTTP upgrade and what are the challenges of scaling many persistent connections?	karanpratapsingh__system-design:WebSockets
+CS03	M	Compare polling and webhooks for learning about events in another system.	ByteByteGoHq__system-design-101:polling-vs-webhooks
+CS03	M	Compare TCP, HTTP, WebSocket, gRPC, and other common network protocols and where each is typically used.	ByteByteGoHq__system-design-101:8-popular-network-protocols
+CS03	M	Compare cookies, sessions, JWT, and PASETO for tracking authenticated users.	ByteByteGoHq__system-design-101:cookies-vs-sessions-vs-jwt-vs-paseto
+CS03	E	What is the difference between cookies and sessions?	ByteByteGoHq__system-design-101:cookies-vs-sessions
+CS03	M	When would you use a VPN, and how does one create a secure tunnel?	ByteByteGoHq__system-design-101:how-does-a-vpn-work
+CS03	M	How does SSH authenticate a user and encrypt a session?	ByteByteGoHq__system-design-101:how-does-ssh-work
+CS03	M	What are the top firewall use cases and where does a firewall sit in a network architecture?	ByteByteGoHq__system-design-101:top-6-firewall-use-cases
+CS03	M	Describe a typical AWS network layout with VPC, public and private subnets, NAT, internet gateway, and security groups.	ByteByteGoHq__system-design-101:typical-aws-network-architecture
+CS03	E	What is the difference between big-endian and little-endian byte order and when does it matter in networking?	ByteByteGoHq__system-design-101:big-endian-vs-little-endian
+CS03	M	Why is HTTP/2 or HTTP/3 faster than HTTP/1.1 for loading modern web pages?	karanpratapsingh__system-design:Networking
+SD02	M	How do you decide between SQL and NoSQL for a new service? Which questions about data and access patterns drive the decision?	ByteByteGoHq__system-design-101:how-do-you-decide-which-type-of-database-to-use
+SD02	M	Compare relational, document, key-value, wide-column, graph, and time-series databases and give a good use case for each.	ByteByteGoHq__system-design-101:types-of-databases
+SD02	M	When is a graph database a better choice than a relational database with join tables?	karanpratapsingh__system-design:Graph databases
+SD02	M	Why are time-series databases suited to metrics and monitoring workloads compared to a general-purpose relational database?	ByteByteGoHq__system-design-101:choose-the-right-database-for-metric-collecting-system
+SD02	M	What are the use cases and limits of object storage versus block storage versus file storage?	karanpratapsingh__system-design:Storage
+SD02	M	Describe common use cases for object stores such as S3 and what they are bad at.	ByteByteGoHq__system-design-101:top-6-use-cases-of-object-stores
+SD02	E	What is RAID and how do RAID 0, 1, 5, 6, and 10 trade off capacity, performance, and fault tolerance?	karanpratapsingh__system-design:RAID
+SD02	M	What are HDFS and its design assumptions, and when is a distributed file system appropriate?	karanpratapsingh__system-design:HDFS
+SD02	M	Compare master-slave and master-master replication, including what happens when the primary fails.	karanpratapsingh__system-design:Database Replication
+SD02	M	Compare synchronous and asynchronous replication in terms of durability, latency, and availability.	karanpratapsingh__system-design:Synchronous vs Asynchronous replication
+SD02	M	Describe the read replica pattern and the problem replication lag causes for read-your-writes behavior.	ByteByteGoHq__system-design-101:read-replica-pattern
+SD02	H	A user places an order and immediately cannot see it because the read hit a lagging replica. What are several ways to fix this?	ByteByteGoHq__system-design-101:read-replica-pattern
+SD02	M	How would you route reads and writes to primary and replicas: in application code or through database middleware? Compare the options.	ByteByteGoHq__system-design-101:database-middleware
+SD02	M	In master-slave replication, what happens to writes if the master fails before replicating, and how do you promote a replica safely?	donnemartin__system-design-primer:Database replication
+SD02	E	What is sharding and how does it differ from replication?	karanpratapsingh__system-design:Sharding
+SD02	M	Compare vertical partitioning and horizontal partitioning of a table.	ByteByteGoHq__system-design-101:vertical-partitioning-vs-horizontal-partitioning
+SD02	M	Compare hash-based, range-based, list-based, and composite sharding. Which hot spot problems does each have?	karanpratapsingh__system-design:Partitioning criteria
+SD02	M	What are the top data sharding algorithms and how do they differ in rebalancing cost?	ByteByteGoHq__system-design-101:top-4-data-sharding-algorithms
+SD02	H	What are the downsides of sharding, such as cross-shard joins, rebalancing, and hotspots, and how do you mitigate them?	karanpratapsingh__system-design:Sharding
+SD02	H	How would you choose a shard key for a social app so that common queries stay on one shard and no shard becomes a hot spot?	ByteByteGoHq__system-design-101:a-crash-course-in-database-sharding
+SD02	H	You must reshard from 8 to 16 shards with no downtime. Describe a safe approach.	ByteByteGoHq__system-design-101:key-concepts-to-understand-database-sharding
+SD02	M	What is database federation and when would you split databases by function?	karanpratapsingh__system-design:Database Federation
+SD02	M	How do you route a query to the correct partition? Compare client-side routing, proxy-based routing, and a coordinator.	puncsky__system-design-and-architecture:data-partition-and-routing
+SD02	M	How would you partition data in a system when a single user's data may grow unbounded or a single entity becomes a hot key?	puncsky__system-design-and-architecture:data-partition-and-routing
+SD02	E	What does normalization achieve and what are the first three normal forms?	karanpratapsingh__system-design:Normalization
+SD02	M	When would you deliberately denormalize a schema, and what consistency burdens does that create?	karanpratapsingh__system-design:Denormalization
+SD02	M	What are materialized views, and when would you use them for read-heavy dashboards?	karanpratapsingh__system-design:Materialized views
+SD02	M	What is the N+1 query problem and how do you detect and fix it?	karanpratapsingh__system-design:N+1 query problem
+SD02	M	Explain how database indexes speed up reads and what they cost on writes and storage.	karanpratapsingh__system-design:Indexes
+SD02	M	What is the difference between dense and sparse indexes?	karanpratapsingh__system-design:Indexes
+SD02	M	Compare B-tree indexes with LSM-tree based storage for read-heavy and write-heavy workloads.	ByteByteGoHq__system-design-101:b-tree-vs-lsm-tree
+SD02	M	What does a cheat sheet for database performance include, such as indexing, query rewrite, caching, and connection pooling?	ByteByteGoHq__system-design-101:a-cheatsheet-on-database-performance
+SD02	M	Why can a database become the bottleneck in a high-write system, and what are your options: queues, LSM engines, sharding, batching?	ByteByteGoHq__system-design-101:8-common-system-design-problems
+SD02	E	Explain ACID and BASE and the trade-off between them.	karanpratapsingh__system-design:ACID and BASE
+SD02	M	Compare strong, weak, and eventual consistency and give an example of a system suited to each.	donnemartin__system-design-primer:Consistency patterns
+SD02	M	What is read-your-writes, monotonic reads, and causal consistency, and how can you provide them over eventually consistent storage?	puncsky__system-design-and-architecture:replica-and-consistency
+SD02	M	What are the common patterns for achieving eventual consistency, such as event-based, background sync, saga, and CQRS?	ByteByteGoHq__system-design-101:top-eventual-consistency-patterns
+SD02	M	What do you mean by a hotspot account in a payment system, and how can you increase throughput on it?	ByteByteGoHq__system-design-101:handling-hotspot-accounts
+SD02	M	Why would you split a hot balance into sub-accounts or use a cache-first balance, and what risks does each introduce?	ByteByteGoHq__system-design-101:handling-hotspot-accounts
+SD02	M	Compare UUID, Snowflake, database auto-increment, database segments, and Redis counters as unique ID generators.	ByteByteGoHq__system-design-101:explaining-5-unique-id-generators
+SD02	H	Design a unique ID generator that works across many machines with roughly sortable IDs. What happens if a clock moves backwards?	ByteByteGoHq__system-design-101:unique-id-generator
+SD02	M	Why can random UUIDs as primary keys hurt database insert performance?	ByteByteGoHq__system-design-101:explaining-5-unique-id-generators
+SD02	M	How does change data capture work and what problems does it solve for keeping caches, search indexes, and warehouses in sync?	ByteByteGoHq__system-design-101:change-data-capture
+SD02	M	How would you keep a search index such as Elasticsearch consistent with the primary database?	ByteByteGoHq__system-design-101:top-6-elasticsearch-use-cases
+SD02	M	What are the top use cases of Elasticsearch and what makes it a poor primary store?	ByteByteGoHq__system-design-101:top-6-elasticsearch-use-cases
+SD02	M	How does a modern search engine process crawling, indexing, and query serving? What is an inverted index?	ByteByteGoHq__system-design-101:how-do-search-engines-work
+SD02	M	Compare data lakes, data warehouses, and operational databases and when each is used.	ByteByteGoHq__system-design-101:storage-systems-overview
+SD02	M	What is a serverless database and what trade-offs come with it?	ByteByteGoHq__system-design-101:what-is-serverless-db
+SD02	M	How do you decide between scaling a single PostgreSQL-style database up and moving to a distributed database?	ByteByteGoHq__system-design-101:is-postgresql-eating-the-database-world
+SD02	M	What are the main data management approaches in a microservice architecture: database per service, shared database, and API composition?	ByteByteGoHq__system-design-101:how-do-we-manage-data
+SD02	M	How do you perform queries that span multiple services' data in a microservice architecture without distributed joins?	karanpratapsingh__system-design:Microservices
+SD02	M	What is a data pipeline and what are the typical stages from ingestion to serving?	ByteByteGoHq__system-design-101:data-pipelines-overview
+SD02	M	Describe the Lambda architecture and the problems of maintaining both batch and speed layers.	puncsky__system-design-and-architecture:lambda-architecture
+SD02	M	Compare stream and batch processing frameworks and how they evolved.	puncsky__system-design-and-architecture:stream-and-batch-processing
+SD02	M	Why did Facebook build a dedicated graph store (TAO) instead of continuing with a look-aside cache over MySQL?	puncsky__system-design-and-architecture:facebook-tao
+SD02	H	How would you design a graph-aware cache layer that supports read-after-write consistency across multiple data centers?	puncsky__system-design-and-architecture:facebook-tao
+SD02	M	How does a Bitcask-style key-value store handle writes, reads, deletes, and compaction on a single machine?	puncsky__system-design-and-architecture:kv-store-with-external-storage
+SD02	H	Design a single-node, write-optimized key-value store whose values do not fit in memory. How do you recover the index after a crash?	puncsky__system-design-and-architecture:kv-store-with-external-storage
+SD02	M	What distinguishes the four kinds of NoSQL stores: key-value, document, column-oriented, and graph?	puncsky__system-design-and-architecture:four-kinds-of-no-sql
+SD02	M	What does 3NF mean in practice, and what is a database proxy used for in front of a relational database?	puncsky__system-design-and-architecture:relational-database
+SD02	M	Compare document, key-value, and wide column databases for storing user activity feeds.	karanpratapsingh__system-design:NoSQL databases
+SD02	M	What are the database challenges at scale, such as large data volume, high concurrency, and hot rows?	karanpratapsingh__system-design:Databases challenges
+SD02	M	What does a multi-model database offer and what are its trade-offs?	karanpratapsingh__system-design:Multi-model databases
+SD02	M	How do you store and serve a large binary asset such as photos or videos, and why not store the blobs in the relational database?	puncsky__system-design-and-architecture:designing-facebook-photo-storage
+SD02	H	How would you reduce the metadata overhead of storing billions of small photos on a file system?	puncsky__system-design-and-architecture:designing-facebook-photo-storage
+CS04	E	Explain the four ACID properties with a bank transfer example.	ByteByteGoHq__system-design-101:what-does-acid-mean
+CS04	M	What are the transaction isolation levels and which anomalies does each allow?	ByteByteGoHq__system-design-101:what-are-database-isolation-levels
+CS04	M	Compare pessimistic and optimistic locking. When would each be a better fit?	ByteByteGoHq__system-design-101:pessimistic-vs-optimistic-locking
+CS04	M	What are the different kinds of database locks, such as shared, exclusive, row, table, and intent locks?	ByteByteGoHq__system-design-101:what-are-the-differences-among-database-locks
+CS04	M	What is a database deadlock, how does it occur, and how do systems detect and resolve it?	ByteByteGoHq__system-design-101:what-is-a-deadlock
+CS04	M	How is a SQL statement executed inside a database, from parsing to execution plan?	ByteByteGoHq__system-design-101:how-is-a-sql-statement-executed
+CS04	M	Explain the differences between inner, left, right, and full outer joins and how the database may execute them.	ByteByteGoHq__system-design-101:how-do-sql-joins-work
+CS04	E	What are the life-cycle states of a database transaction?	karanpratapsingh__system-design:Transactions
+CS04	M	What are the dependencies, keys, and anomalies that motivate normalization?	karanpratapsingh__system-design:Normalization and Denormalization
+CS04	M	Why can a query still be slow even if an index exists on the filtered column?	karanpratapsingh__system-design:Indexes
+CS05	M	Explain how Redis persists data with RDB snapshots and AOF, and when you would combine them.	ByteByteGoHq__system-design-101:how-does-redis-persist-data
+CS05	M	How do very large keys in Redis affect persistence, replication, and latency?	ByteByteGoHq__system-design-101:how-do-big-keys-impact-redis-persistence
+CS05	M	Describe how Redis evolved from a single node to persistence, replication, Sentinel, and Cluster.	ByteByteGoHq__system-design-101:how-redis-architecture-evolve
+CS05	M	How does Redis Cluster partition keys using hash slots and what happens when a node fails?	ByteByteGoHq__system-design-101:how-redis-architecture-evolve
+CS05	M	Why is Redis so fast despite being largely single-threaded?	ByteByteGoHq__system-design-101:the-ultimate-redis-101
+CS05	M	Which Redis data structures would you use for leaderboards, rate limiters, and queues?	ByteByteGoHq__system-design-101:the-ultimate-redis-101
+CS05	M	Compare Memcached and Redis. When would Memcached be the better choice?	puncsky__system-design-and-architecture:designing-memcached
+CS05	M	How does a Memcached client decide which server to talk to, and how do large deployments avoid cache stampedes and cross-region staleness?	puncsky__system-design-and-architecture:designing-memcached
+CS05	M	How does a pub-sub feature in Redis support a simple chat application, and what are its delivery guarantees?	ByteByteGoHq__system-design-101:build-a-simple-chat-application
+CS05	M	How does a document database like MongoDB differ in data modeling from a relational schema, and when does embedding beat referencing?	karanpratapsingh__system-design:Document databases
+CS05	M	Explain how wide-column stores like Cassandra achieve high write throughput and tunable consistency.	karanpratapsingh__system-design:Wide column databases
+CS05	M	How do object versus block versus file storage differ in how data is addressed?	karanpratapsingh__system-design:Storage
+SD03	E	State the CAP theorem and explain why partition tolerance is not really optional in a distributed system.	karanpratapsingh__system-design:CAP Theorem
+SD03	M	Why is the common "pick two of three" framing of CAP misleading?	puncsky__system-design-and-architecture:replica-and-consistency
+SD03	M	What does CAP theorem really say about consistency and availability during a network partition, and how do CP and AP systems behave differently?	ByteByteGoHq__system-design-101:cap-theorem-one-of-the-most-misunderstood-terms
+SD03	M	What does PACELC add to CAP and why does it matter when there is no partition?	karanpratapsingh__system-design:PACELC Theorem
+SD03	M	Give examples of databases that behave as CP and AP, and explain what each does when a partition occurs.	karanpratapsingh__system-design:CAP Theorem
+SD03	M	Is Kafka an AP or CP system? Which settings change its behavior?	puncsky__system-design-and-architecture:what-is-apache-kafka
+SD03	M	Explain how consensus algorithms such as Paxos or Raft elect a leader and replicate a log.	puncsky__system-design-and-architecture:replica-and-consistency
+SD03	M	How does a quorum read and write (R + W > N) provide consistency, and what are the failure scenarios?	puncsky__system-design-and-architecture:replica-and-consistency
+SD03	M	What is leader election, and what problems arise with split brain?	karanpratapsingh__system-design:Clustering challenges
+SD03	M	How do heartbeat-based failure detectors work, and how do push, pull, and quorum variants differ?	ByteByteGoHq__system-design-101:how-do-we-detect-node-failures
+SD03	M	How does gossip-based failure detection scale compared with centralized heartbeating?	ByteByteGoHq__system-design-101:how-do-we-detect-node-failures
+SD03	M	Why do we need a distributed lock, and what can go wrong if the lock holder pauses or the lock expires?	ByteByteGoHq__system-design-101:why-do-we-need-to-use-a-distributed-lock
+SD03	H	Design a safe distributed lock using Redis or a consensus system. How do fencing tokens prevent stale lock holders from corrupting data?	ByteByteGoHq__system-design-101:why-do-we-need-to-use-a-distributed-lock
+SD03	M	Why can't you rely on wall-clock timestamps for ordering events across machines, and what alternatives exist?	puncsky__system-design-and-architecture:replica-and-consistency
+SD03	E	What does idempotency mean in an API or message consumer, and why does it matter in distributed systems?	karanpratapsingh__system-design:Idempotency
+SD03	M	How do idempotency keys work in a payment API, and how would you store and expire them?	karanpratapsingh__system-design:Idempotency keys
+SD03	M	What are the top cases in which you must apply idempotency?	ByteByteGoHq__system-design-101:top-6-cases-to-apply-idempotency
+SD03	H	Explain why exactly-once delivery is practically impossible and how at-least-once delivery combined with idempotent processing gets you effectively-once.	ByteByteGoHq__system-design-101:how-to-avoid-double-payment
+SD03	M	Compare at-most-once, at-least-once, and exactly-once delivery semantics. Where does each fit?	ByteByteGoHq__system-design-101:delivery-semantics
+SD03	M	What is the difference between a message broker, a message queue, and an event streaming platform?	karanpratapsingh__system-design:Message Brokers
+SD03	M	Compare the point-to-point queue and publish-subscribe models.	karanpratapsingh__system-design:Message Queues and Publish-Subscribe
+SD03	M	What are dead-letter queues and poison-pill messages, and how should consumers handle them?	karanpratapsingh__system-design:Message Queues
+SD03	M	What is backpressure in a queue-based system and how can you apply it?	karanpratapsingh__system-design:Backpressure
+SD03	M	How does a queue guarantee ordering, and how does partitioning in Kafka affect ordering guarantees?	karanpratapsingh__system-design:Message Queues Ordering
+SD03	M	Why is Kafka fast, considering sequential I/O, zero-copy, batching, and page cache?	ByteByteGoHq__system-design-101:why-is-kafka-fast
+SD03	M	Describe Kafka's architecture of topics, partitions, replicas, brokers, consumer groups, and offsets.	puncsky__system-design-and-architecture:what-is-apache-kafka
+SD03	M	How does Kafka tolerate broker failures, and what are the roles of ISR and leader replicas?	puncsky__system-design-and-architecture:what-is-apache-kafka
+SD03	H	Can Kafka lose messages? Describe the settings on the producer, broker, and consumer sides that determine whether it can.	ByteByteGoHq__system-design-101:can-kafka-lose-messages
+SD03	M	How would you commit consumer offsets to avoid both lost and duplicate processing?	ByteByteGoHq__system-design-101:can-kafka-lose-messages
+SD03	M	Compare blocking and non-blocking queues, and bounded versus unbounded queues, in terms of backpressure and memory.	ByteByteGoHq__system-design-101:blocking-vs-non-blocking-queue
+SD03	M	Compare the four common types of queues: FIFO, priority, delay, and dead-letter queues.	ByteByteGoHq__system-design-101:4-most-commonly-used-types-of-queues
+SD03	M	Describe the six common cloud messaging patterns including async request-reply, claim check, priority queue, competing consumers, pub-sub, and saga.	ByteByteGoHq__system-design-101:top-6-cloud-messaging-patterns
+SD03	M	What is the claim check pattern and when do you use it instead of sending big payloads through a broker?	ByteByteGoHq__system-design-101:top-6-cloud-messaging-patterns
+SD03	M	What are the competing consumers pattern's guarantees, and what does it sacrifice?	ByteByteGoHq__system-design-101:top-6-cloud-messaging-patterns
+SD03	M	Explain event sourcing and compare it with ordinary event-driven architecture.	karanpratapsingh__system-design:Event Sourcing
+SD03	M	What are the benefits and challenges of event sourcing, such as snapshots, schema evolution, and replay?	ByteByteGoHq__system-design-101:how-do-we-incorporate-event-sourcing
+SD03	M	What is CQRS, and when does separating read and write models help or hurt?	karanpratapsingh__system-design:CQRS
+SD03	M	Why is two-phase commit often avoided in modern distributed systems, and what problems does it have?	karanpratapsingh__system-design:Two-Phase commit
+SD03	M	What does the three-phase commit add over 2PC, and does it fully solve the blocking problem?	karanpratapsingh__system-design:Three-Phase commit
+SD03	M	Explain the saga pattern with choreography and orchestration, and how compensating transactions work.	karanpratapsingh__system-design:Sagas
+SD03	M	Compare orchestration and choreography for coordinating microservices.	ByteByteGoHq__system-design-101:orchestration-vs-choreography
+SD03	H	A saga step in the middle fails after earlier steps have committed. How do you design compensations when they themselves might fail?	karanpratapsingh__system-design:Sagas problems
+SD03	M	What is the outbox pattern and what problem does it solve between a database commit and message publication?	karanpratapsingh__system-design:Event-Driven Architecture
+SD03	M	What are the common patterns used in event-driven architecture, such as event notification, event-carried state transfer, and event sourcing?	karanpratapsingh__system-design:EDA Patterns
+SD03	M	How do you handle failures and retries in a message consumer without causing duplicate side effects?	ByteByteGoHq__system-design-101:how-do-we-retry-on-failures
+SD03	M	What is the Lambda architecture and the Kappa architecture, and when is each used?	puncsky__system-design-and-architecture:lambda-architecture
+SD03	M	Compare replication strategies for fault tolerance: active-passive failover, active-active, and quorum-based replication.	donnemartin__system-design-primer:Availability patterns
+SD04	E	Compare REST, GraphQL, and gRPC and when you would choose each.	karanpratapsingh__system-design:REST, GraphQL, gRPC
+SD04	M	What are the problems GraphQL solves, such as over-fetching and under-fetching, and what new problems does it introduce?	karanpratapsingh__system-design:GraphQL
+SD04	M	How does GraphQL work in the real world, including N+1 resolver queries and caching?	ByteByteGoHq__system-design-101:how-does-graphql-work-in-the-real-world
+SD04	M	Why is gRPC usually faster than REST over JSON, and what limits its use from browsers?	karanpratapsingh__system-design:gRPC
+SD04	M	What constraints define a RESTful API, and what are the common mistakes in naming resources and using HTTP verbs?	karanpratapsingh__system-design:REST
+SD04	M	What are the key practices in a cheat sheet for API design, such as versioning, pagination, error handling, and idempotency?	ByteByteGoHq__system-design-101:a-cheat-sheet-for-api-designs
+SD04	M	Compare offset-based and cursor-based pagination. Why does offset pagination degrade on large datasets?	ByteByteGoHq__system-design-101:a-cheat-sheet-for-api-designs
+SD04	M	How do you version an API without breaking existing clients?	ByteByteGoHq__system-design-101:a-cheat-sheet-for-api-designs
+SD04	M	Which HTTP methods are idempotent and safe, and how should you make POST requests safe to retry?	karanpratapsingh__system-design:Idempotency in HTTP
+SD04	M	What is an API gateway, and what cross-cutting concerns should it handle?	karanpratapsingh__system-design:API Gateway
+SD04	M	What is the Backend for Frontend pattern and when is it worth using?	karanpratapsingh__system-design:Backend For Frontend
+SD04	E	Compare monolith, modular monolith, and microservices architectures.	karanpratapsingh__system-design:Monoliths and Microservices
+SD04	M	What are the pitfalls of microservices, such as the distributed monolith, and how do you avoid them?	karanpratapsingh__system-design:Beware of the distributed monolith
+SD04	M	Why might a team be better off not adopting microservices?	karanpratapsingh__system-design:Why you don't need microservices
+SD04	M	Why did a video quality monitoring team move from serverless microservices back to a monolith and save around 90 percent in cost? What does this teach about architecture choices?	ByteByteGoHq__system-design-101:amazon-prime-video-monitoring-service
+SD04	M	Compare microservices and SOA.	karanpratapsingh__system-design:Microservices vs SOA
+SD04	M	What are the best practices for building microservices, such as independent deployability, ownership, and observability?	ByteByteGoHq__system-design-101:9-best-practices-for-building-microservices
+SD04	M	What are the essential components of a production microservice application beyond business services?	ByteByteGoHq__system-design-101:9-essential-components-of-a-production-microservice
+SD04	M	What does a typical microservice architecture look like end to end?	ByteByteGoHq__system-design-101:what-does-a-typical-microservice-architecture-look-like
+SD04	M	How do clients discover service instances? Compare client-side and server-side discovery and self versus third-party registration.	karanpratapsingh__system-design:Service Discovery
+SD04	M	What is a service mesh and what problems does it solve compared with putting the logic in client libraries?	karanpratapsingh__system-design:Service mesh
+SD04	M	What are the key concepts of domain-driven design such as bounded context, aggregate, entity, and value object?	ByteByteGoHq__system-design-101:8-key-concepts-in-ddd
+SD04	M	How does DDD help you decide where service boundaries should be drawn?	ByteByteGoHq__system-design-101:key-terms-in-domain-driven-design
+SD04	M	Compare layered, event-driven, microkernel, microservices, and space-based architectures.	puncsky__system-design-and-architecture:introduction-to-architecture
+SD04	M	What are the six software architectural patterns you should know, and what is each best at?	ByteByteGoHq__system-design-101:6-software-architectural-patterns
+SD04	M	What is an enterprise service bus and why did the industry move away from it?	karanpratapsingh__system-design:Enterprise Service Bus
+SD04	M	What is an N-tier architecture and how do 1-tier, 2-tier, and 3-tier differ?	karanpratapsingh__system-design:N-tier architecture
+SD04	M	What are the 12 factors of a cloud-native app and which are most often violated?	ByteByteGoHq__system-design-101:the-12-factor-app
+SD04	M	What are common cloud-native anti-patterns and how do they hurt?	ByteByteGoHq__system-design-101:cloud-native-anti-patterns
+SD04	M	Compare polling, long polling, WebSockets, and webhooks for pushing updates to clients.	karanpratapsingh__system-design:Long polling, WebSockets, SSE
+SD04	M	How would you design a payment webhook callback so it is reliable and secure?	puncsky__system-design-and-architecture:designing-payment-webhook
+SD04	M	How should the design of an e-commerce workflow handle order splitting across warehouses?	ByteByteGoHq__system-design-101:e-commerce-workflow
+SD04	M	How do cloud design patterns such as bulkhead, circuit breaker, and retry help an application?	puncsky__system-design-and-architecture:cloud-design-patterns
+SD04	M	How would you handle multiple tenants and internationalization such as time zones, currencies, and text in a global application?	ByteByteGoHq__system-design-101:how-do-we-design-a-system-for-internationalization
+SD04	M	How do you manage configuration across environments and services?	ByteByteGoHq__system-design-101:how-do-we-manage-configurations
+SD04	M	Which components make up a good experiment (A/B testing) platform?	ByteByteGoHq__system-design-101:experiment-platform-architecture
+SD04	M	Why do client-side architecture patterns such as MVC, MVP, MVVM, and VIPER exist and how do they differ?	puncsky__system-design-and-architecture:ios-architecture-patterns-revisited
+SD04	M	Compare orchestration with a workflow engine versus plain event choreography for long-running business processes.	ByteByteGoHq__system-design-101:orchestration-vs-choreography
+SD04	M	How do application servers separate from the web tier, and what are the disadvantages of an extra application layer?	donnemartin__system-design-primer:Application layer
+SD05	E	What are SLA, SLO, and SLI, and how do they relate?	karanpratapsingh__system-design:SLA, SLO, SLI
+SD05	M	How would you choose SLIs and set an SLO for a user-facing API?	karanpratapsingh__system-design:SLA, SLO, SLI
+SD05	M	Explain the nines of availability, and how to compute the availability of components in sequence versus in parallel.	karanpratapsingh__system-design:Availability
+SD05	M	What is the difference between high availability and fault tolerance, and between availability and reliability?	karanpratapsingh__system-design:Availability vs Reliability
+SD05	M	Compare fail-over strategies such as active-passive and active-active and the data loss risks of each.	donnemartin__system-design-primer:Fail-over
+SD05	M	How do you design for high availability across the layers: DNS, load balancer, application, database, and storage?	ByteByteGoHq__system-design-101:how-do-we-design-for-high-availability
+SD05	M	What are the key patterns in a cheat sheet for designing fault-tolerant systems?	ByteByteGoHq__system-design-101:a-cheat-sheet-for-designing-fault-tolerant-systems
+SD05	M	Explain the circuit breaker pattern with its closed, open, and half-open states.	karanpratapsingh__system-design:Circuit breaker
+SD05	M	What retry strategies exist? Compare linear, exponential, and jittered backoff, and explain why jitter matters.	ByteByteGoHq__system-design-101:how-do-we-retry-on-failures
+SD05	H	How can retries make an outage worse, and what mechanisms such as budgets, timeouts, and circuit breakers prevent retry storms?	ByteByteGoHq__system-design-101:how-do-we-retry-on-failures
+SD05	M	How do timeouts, bulkheads, and load shedding contribute to resilience?	ByteByteGoHq__system-design-101:cheat-sheet-for-designing-fault-tolerant-systems
+SD05	M	What do RTO and RPO mean, and how do they drive disaster recovery strategy choices?	karanpratapsingh__system-design:Disaster recovery
+SD05	M	Compare backup and restore, pilot light, warm standby, and multi-site active-active disaster recovery strategies.	ByteByteGoHq__system-design-101:cloud-disaster-recovery-strategies
+SD05	M	Compare cold, warm, and hot sites for disaster recovery.	karanpratapsingh__system-design:Disaster recovery
+SD05	M	What are logs, metrics, and traces and how do they complement each other?	ByteByteGoHq__system-design-101:logging-tracing-metrics
+SD05	M	What is the ELK stack and why is it popular for centralized logging?	ByteByteGoHq__system-design-101:what-is-elk-stack
+SD05	M	Compare the push and pull model for a metrics system, such as Prometheus-style scraping versus agents pushing.	puncsky__system-design-and-architecture:designing-a-metric-system
+SD05	M	How would you alert on business metrics such as a sudden drop in sign-up conversion without alert fatigue?	puncsky__system-design-and-architecture:designing-a-metric-system
+SD05	M	Explain OAuth 2.0 roles and the authorization code flow, and what OpenID Connect adds.	karanpratapsingh__system-design:OAuth 2.0 and OIDC
+SD05	M	Compare the common OAuth 2.0 flows and when each should be used.	ByteByteGoHq__system-design-101:oauth-20-flows
+SD05	M	Compare session-based authentication with JWT. What are the revocation and scaling issues of each?	ByteByteGoHq__system-design-101:session-based-authentication-vs-jwts
+SD05	M	Compare SAML with OAuth 2.0 and OpenID Connect, and describe how single sign-on works.	karanpratapsingh__system-design:SSO
+SD05	M	What are the top four forms of authentication mechanisms for APIs and when would you use each?	ByteByteGoHq__system-design-101:top-4-forms-of-authentication
+SD05	M	How do you design a permission system? Compare ACL, DAC, MAC, RBAC, and ABAC.	ByteByteGoHq__system-design-101:how-do-we-design-a-permission-system
+SD05	M	How should passwords be stored, and what is the role of salting and slow hashing?	ByteByteGoHq__system-design-101:how-to-store-passwords-in-the-database
+SD05	M	How do passkeys work and why are they more phishing-resistant than passwords?	ByteByteGoHq__system-design-101:is-passkey-shaping-a-passwordless-future
+SD05	M	How does two-factor authentication such as TOTP work?	ByteByteGoHq__system-design-101:how-does-google-authenticator-work
+SD05	M	What is the difference between encoding, encryption, hashing, and tokenization?	ByteByteGoHq__system-design-101:encoding-vs-encryption-vs-tokenization
+SD05	M	What are the key steps in a cheat sheet to build secure APIs?	ByteByteGoHq__system-design-101:a-cheatsheet-to-build-secure-apis
+SD05	M	How do you design a secure system overall, from network, application, data, and operational standpoints?	ByteByteGoHq__system-design-101:how-do-we-design-a-secure-system
+SD05	M	How do you manage sensitive data and secrets in a system, including encryption at rest and in transit?	ByteByteGoHq__system-design-101:how-do-we-manage-sensitive-data
+SD05	M	How would you mitigate a DDoS attack on a public service?	ByteByteGoHq__system-design-101:top-network-security-cheatsheet
+SD05	M	Compare blue-green, canary, rolling, and recreate deployment strategies.	ByteByteGoHq__system-design-101:kubernetes-deployment-strategies
+SD05	M	How would you roll out a risky change to a live system with the ability to roll back quickly?	ByteByteGoHq__system-design-101:how-to-deploy-services
+SD05	M	What are the main stages of a CI/CD pipeline and what quality gates should be present?	ByteByteGoHq__system-design-101:cicd-pipeline-explained
+SD05	M	Compare virtual machines and containers and when you would use each.	karanpratapsingh__system-design:VMs and Containers
+SD05	M	What are the main Kubernetes service types and when do you use each?	ByteByteGoHq__system-design-101:top-4-kubernetes-service-types
+SD05	M	What are the top Kubernetes design patterns, such as sidecar and ambassador?	ByteByteGoHq__system-design-101:top-10-k8s-design-patterns
+SD05	M	How does AWS Lambda run code behind the scenes and what causes cold starts?	ByteByteGoHq__system-design-101:how-does-aws-lambda-work
+SD05	M	What are the hidden costs of the cloud that engineers often overlook when designing systems?	ByteByteGoHq__system-design-101:hidden-costs-of-the-cloud
+SD05	M	What are the Docker best practices you must know for production images?	ByteByteGoHq__system-design-101:9-docker-best-practices
+SD05	M	What is the difference between DevOps, SRE, and platform engineering?	ByteByteGoHq__system-design-101:devops-vs-sre-vs-platform-engg
+SD05	M	How would you handle a cascading failure in which one slow dependency exhausts threads across upstream services?	ByteByteGoHq__system-design-101:cheat-sheet-for-designing-fault-tolerant-systems
+SD05	M	How do you monitor a system so you detect issues before users report them?	ByteByteGoHq__system-design-101:logging-tracing-metrics
+SD05	M	How does a CDN help protect an origin against traffic spikes and attacks?	ByteByteGoHq__system-design-101:why-are-cdn-so-popular
+SD05	M	What is the role of reconciliation in a payment system, and why do you need it even if the system claims exactly-once semantics?	ByteByteGoHq__system-design-101:reconciliation-in-payment
+SD05	M	Explain double-entry bookkeeping and why a ledger should be append-only.	ByteByteGoHq__system-design-101:reconciliation-in-payment
+SD06	M	Design a URL shortening service such as bit.ly that supports creating short links and redirecting to the original URL.	karanpratapsingh__system-design:URL Shortener
+SD06	M	In a URL shortener, how would you generate unique short keys: hashing and truncating, base62 encoding of a counter, or a pre-generated key service? Compare the options.	karanpratapsingh__system-design:URL Shortener Key Generation Service
+SD06	H	How do you handle hash collisions and avoid two app servers handing out the same short key in a URL shortener?	karanpratapsingh__system-design:URL Shortener KGS
+SD06	M	Estimate the storage, bandwidth, and cache size for a URL shortener that creates 100 million links per month with a 100:1 read-to-write ratio.	karanpratapsingh__system-design:URL Shortener Estimation
+SD06	M	Should a URL shortener redirect with HTTP 301 or 302, and how does the choice affect analytics and caching?	puncsky__system-design-and-architecture:designing-a-url-shortener
+SD06	M	Which database would you use for a URL shortener and how would you partition it as it grows to billions of rows?	karanpratapsingh__system-design:URL Shortener Data Partitioning
+SD06	M	How would you expire and clean up old or deleted short URLs without hurting performance?	karanpratapsingh__system-design:URL Shortener Database cleanup
+SD06	M	How do you support custom aliases, link analytics, and abuse prevention in a URL shortener?	karanpratapsingh__system-design:URL Shortener Metrics and Security
+SD06	M	Design Pastebin where users upload a block of text and get a link, with optional expiration.	donnemartin__system-design-primer:Design Pastebin
+SD06	M	Where would you store paste contents versus metadata in Pastebin, and why would you use an object store for the content?	donnemartin__system-design-primer:Design Pastebin
+SD06	M	How does a Pastebin service track page view analytics and delete expired pastes at scale?	donnemartin__system-design-primer:Design Pastebin
+SD06	M	Design a service for creating and viewing pastes that sustains 40 reads per second per write. Where do the bottlenecks appear at 10x growth?	donnemartin__system-design-primer:Design Pastebin Scale
+SD06	M	Design the Twitter home timeline and search for hundreds of millions of users.	donnemartin__system-design-primer:Design Twitter timeline and search
+SD06	H	Compare fan-out on write and fan-out on read for a social news feed. How would you handle celebrity accounts with millions of followers?	donnemartin__system-design-primer:Design Twitter timeline
+SD06	M	How would you store the home timeline for each user in a cache, and how large can that cache get?	donnemartin__system-design-primer:Design Twitter timeline
+SD06	M	Design the data model and API for posting a tweet, following a user, and fetching a newsfeed.	karanpratapsingh__system-design:Twitter API design
+SD06	M	How would you rank items in a newsfeed using recency, engagement, and relationship signals?	karanpratapsingh__system-design:Twitter Ranking Algorithm
+SD06	M	How would you design tweet search so that new tweets are searchable within seconds?	donnemartin__system-design-primer:Design Twitter search
+SD06	M	How would you support retweets and mutual friends computation in a Twitter-like system?	karanpratapsingh__system-design:Twitter Retweets and Mutual friends
+SD06	M	Which entities would you shard in a Twitter-like system and by what keys, and how do you serve trending topics?	karanpratapsingh__system-design:Twitter Data Partitioning
+SD06	M	How would you deliver notifications for mentions, likes, and new followers at the scale of a social network?	karanpratapsingh__system-design:Twitter Notifications
+SD06	M	Design a feed system for an Instagram or Pinterest style product that mixes photos from followed accounts and recommendations.	puncsky__system-design-and-architecture:crack-the-system-design-interview
+SD06	M	Design Pinterest: pins, boards, following users, and a home feed.	puncsky__system-design-and-architecture:crack-the-system-design-interview
+SD06	M	Design a chat application like WhatsApp, Facebook Messenger, or Discord that supports one-to-one and group messaging.	karanpratapsingh__system-design:WhatsApp
+SD06	M	How do you deliver messages in real time to online users and store them for offline users in a chat system?	karanpratapsingh__system-design:WhatsApp Real-time messaging
+SD06	M	How would you implement message delivery and read receipts, and "last seen" presence in a chat system?	karanpratapsingh__system-design:WhatsApp Last seen and Read receipts
+SD06	H	How would you guarantee messages are delivered in order and exactly once from the user's point of view in a chat system?	ByteByteGoHq__system-design-101:how-do-we-design-a-chat-application
+SD06	M	How would you scale persistent WebSocket connections to hundreds of millions of concurrent users in a chat system?	karanpratapsingh__system-design:WhatsApp Architecture
+SD06	M	How do you design group chat with thousands of members, including fan-out and ordering?	ByteByteGoHq__system-design-101:how-do-we-design-a-chat-application
+SD06	M	Which database would you choose for chat message storage, and how would you partition it?	karanpratapsingh__system-design:WhatsApp Data Partitioning
+SD06	M	How would you store and serve media attachments in a chat system and how would end-to-end encryption change the design?	karanpratapsingh__system-design:WhatsApp Media access
+SD06	M	Design a simple chat application using Redis pub-sub and sorted sets, and discuss its limits.	ByteByteGoHq__system-design-101:build-a-simple-chat-application
+SD06	M	Design Netflix or YouTube: users upload or watch videos, with search, comments, and recommendations.	karanpratapsingh__system-design:Netflix
+SD06	M	Describe the video upload pipeline: transcoding into multiple resolutions and codecs, chunking, and storing the results.	karanpratapsingh__system-design:Netflix Video processing
+SD06	M	How does adaptive bitrate streaming work, and what does the server need to produce for it?	ByteByteGoHq__system-design-101:how-to-stream-video-over-http
+SD06	M	How would you use CDNs and regional caches to serve popular video content and reduce origin load?	karanpratapsingh__system-design:Netflix CDN
+SD06	M	How would geo-blocking and licensing restrictions fit in a video streaming platform?	karanpratapsingh__system-design:Netflix Geo-blocking
+SD06	M	Estimate storage and egress bandwidth for a video platform with 200 million users watching an hour a day.	karanpratapsingh__system-design:Netflix Estimation
+SD06	M	Design the service that stores viewing history and playback position and the currently active viewers on an account.	puncsky__system-design-and-architecture:how-to-design-netflix-view-state-service
+SD06	H	Why would you store active view state in memory partitioned by account, and how do you cope with node failure and hot partitions?	puncsky__system-design-and-architecture:how-to-design-netflix-view-state-service
+SD06	M	How does live streaming differ from video on demand architecturally? Walk through capture, encoding, segmenting, and CDN delivery.	ByteByteGoHq__system-design-101:live-streaming-explained
+SD06	M	Compare RTMP, HLS, and DASH for live streaming.	ByteByteGoHq__system-design-101:live-streaming-explained
+SD06	M	Design a video search and recommendation capability for a streaming service.	karanpratapsingh__system-design:Netflix Search and Recommendations
+SD06	M	Design a ride-sharing service such as Uber that matches riders to nearby drivers.	karanpratapsingh__system-design:Uber
+SD06	H	How would you track driver locations in real time and find nearby drivers efficiently? Compare geohash and quadtree approaches.	karanpratapsingh__system-design:Uber Location Tracking
+SD06	M	How does ride matching work and how would you avoid assigning one driver to two riders?	karanpratapsingh__system-design:Uber Ride Matching
+SD06	M	Estimate location update traffic for 5 million drivers sending a location every 4 seconds, and how would you store it?	karanpratapsingh__system-design:Uber Estimation
+SD06	M	How would a ride-sharing backend decide between microservices for dispatch, payment, trip, user profile, and notifications?	puncsky__system-design-and-architecture:designing-uber
+SD06	M	What happens when the dispatch service times out or a driver rejects the request? Describe failure handling in a ride-hailing system.	puncsky__system-design-and-architecture:designing-uber
+SD06	M	How would you handle surge pricing and payment for a completed trip in a ride-sharing system?	karanpratapsingh__system-design:Uber Payments
+SD06	M	Design a proximity service such as Yelp that returns nearby businesses for a location and radius.	ByteByteGoHq__system-design-101:proximity-service
+SD06	M	Explain geohashing and quadtrees and their trade-offs for geospatial indexing, especially for uneven density.	karanpratapsingh__system-design:Geohashing and Quadtrees
+SD06	M	Design a simplified Google Maps with location, map rendering, and navigation services.	ByteByteGoHq__system-design-101:design-google-maps
+SD06	M	How are map tiles produced, stored, and served efficiently at multiple zoom levels?	ByteByteGoHq__system-design-101:design-google-maps
+SD06	M	How would a navigation service compute top-K routes and estimate travel time with live traffic?	ByteByteGoHq__system-design-101:design-google-maps
+SD06	M	Design a web crawler that discovers and fetches billions of pages.	donnemartin__system-design-primer:Design a web crawler
+SD06	M	How does a crawler avoid fetching duplicate URLs and detect pages with duplicate content?	donnemartin__system-design-primer:Design a web crawler duplicates
+SD06	H	How would you build a crawler's URL frontier that respects politeness per host while prioritizing important pages?	donnemartin__system-design-primer:Design a web crawler
+SD06	M	How does a web crawler decide when to recrawl a page, and how do you handle crawler traps?	donnemartin__system-design-primer:Design a web crawler
+SD06	M	How do you handle robots.txt and rate limits per domain in a crawler?	donnemartin__system-design-primer:Design a web crawler
+SD06	M	How would you build the index and the query service on top of crawled pages to return titles and snippets?	donnemartin__system-design-primer:Design a web crawler search
+SD06	M	Design a basic search engine from crawling to indexing to ranked retrieval.	ByteByteGoHq__system-design-101:how-do-search-engines-work
+SD06	M	Design a key-value store to cache the results of recent web server queries, such as search queries.	donnemartin__system-design-primer:Design query cache
+SD06	M	How would you implement an LRU cache backed by a hash map and linked list, and then scale it across machines?	donnemartin__system-design-primer:Design query cache
+SD06	M	How would you shard an in-memory query cache and keep it consistent when the underlying results are updated?	donnemartin__system-design-primer:Design query cache
+SD06	M	Design a distributed cache like Memcached. How does the client pick a server, and how do you keep it fresh and available?	puncsky__system-design-and-architecture:designing-memcached
+SD06	M	Design a distributed key-value store with replication and tunable consistency.	puncsky__system-design-and-architecture:kv-store
+SD06	H	Design a distributed key-value store similar to Dynamo. How do you handle partitioning, replication, conflict resolution, and failure detection?	puncsky__system-design-and-architecture:replica-and-consistency
+SD06	M	Design Mint.com: a service that connects to users' financial accounts, extracts transactions, and recommends budgets.	donnemartin__system-design-primer:Design Mint.com
+SD06	M	How would a personal finance aggregator categorize transactions and pull from thousands of banks reliably?	donnemartin__system-design-primer:Design Mint.com
+SD06	M	How would you design budget notifications and daily transaction extraction for millions of accounts, and prioritize active users?	donnemartin__system-design-primer:Design Mint.com
+SD06	M	Design the data structures and services for a social network so a user can see the shortest connection path to another user.	donnemartin__system-design-primer:Design social network data structures
+SD06	M	How would you do a bidirectional breadth-first search on a social graph that is sharded across machines?	donnemartin__system-design-primer:Design social network data structures
+SD06	M	Design Amazon's sales rank by category for the most popular products of the past week.	donnemartin__system-design-primer:Design Amazon sales rank
+SD06	M	How would you compute category rankings using a map-reduce job and serve them from a read store?	donnemartin__system-design-primer:Design Amazon sales rank
+SD06	H	Design a system that scales from one user to millions of users on AWS. What do you add at each growth stage?	donnemartin__system-design-primer:Design system scaling on AWS
+SD06	M	Design a typeahead or autocomplete service that returns suggestions as the user types.	puncsky__system-design-and-architecture:designing-typeahead-search
+SD06	H	How would you build a typeahead index with tries or inverted indexes, rank suggestions, and refresh them with new trending queries?	puncsky__system-design-and-architecture:designing-typeahead-search
+SD06	M	How can a layered architecture with browser cache, web tier, and result aggregator achieve very low-latency typeahead results?	puncsky__system-design-and-architecture:designing-typeahead-search
+SD06	M	How would you personalize typeahead suggestions by social-network distance while keeping new accounts immediately searchable?	puncsky__system-design-and-architecture:designing-typeahead-search
+SD06	M	Design a notification service that sends push, SMS, and email to millions of users.	puncsky__system-design-and-architecture:designing-smart-notification
+SD06	M	Design a stock price alert system for 3 million users and several thousand stocks that notifies users of 5 and 10 percent moves.	puncsky__system-design-and-architecture:designing-smart-notification
+SD06	M	How would you avoid duplicate or delayed notifications and respect user preferences and quiet hours in a notification service?	puncsky__system-design-and-architecture:designing-smart-notification
+SD06	M	How would you add priority handling and retries for third-party delivery providers in a notification service?	ByteByteGoHq__system-design-101:top-6-cloud-messaging-patterns
+SD06	M	Design a rate limiter as a standalone service shared by many APIs.	karanpratapsingh__system-design:Rate Limiting
+SD06	H	Design a distributed rate limiter that is accurate under bursts, has minimal latency overhead, and degrades gracefully when its store fails.	karanpratapsingh__system-design:Rate Limiting in Distributed Systems
+SD06	M	Design an L7 load balancer that handles millions of requests per second and uses backend load feedback.	puncsky__system-design-and-architecture:designing-l7-load-balancer
+SD06	M	Design an API gateway for a large microservice platform.	karanpratapsingh__system-design:API Gateway
+SD06	M	Design a stock exchange order matching system supporting market, limit, and stop-loss orders.	puncsky__system-design-and-architecture:designing-stock-exchange
+SD06	H	How would you achieve low latency and strict ordering in an order matching engine while staying highly available?	puncsky__system-design-and-architecture:designing-stock-exchange
+SD06	M	How do you handle fill-or-kill and time-bounded orders in a stock exchange design, and how do you publish market data to millions of clients?	puncsky__system-design-and-architecture:designing-stock-exchange
+SD06	M	Design a payment system for an e-commerce site that handles payment events, orders, wallet, and ledger.	ByteByteGoHq__system-design-101:payment-system
+SD06	H	How would you ensure a customer is never charged twice in a payment system when requests time out or are retried?	ByteByteGoHq__system-design-101:how-to-avoid-double-payment
+SD06	M	Design a PayPal or Cash App style money transfer system with deposits, payouts, and transfers between accounts.	puncsky__system-design-and-architecture:designing-paypal-money-transfer
+SD06	H	How do you keep a money transfer system strongly consistent across a ledger, wallet, and external banks while tolerating failures?	puncsky__system-design-and-architecture:designing-paypal-money-transfer
+SD06	M	How would you deduplicate non-idempotent payment operations under at-least-once delivery?	puncsky__system-design-and-architecture:designing-paypal-money-transfer
+SD06	M	Design the flow for a credit card swipe at a merchant, from card network to issuing bank, and how the card network earns revenue.	ByteByteGoHq__system-design-101:how-does-visa-work
+SD06	M	Compare the four ways QR code payments work and how a mobile wallet payment such as Apple Pay protects card details.	ByteByteGoHq__system-design-101:4-ways-of-qr-code-payment
+SD06	M	Describe the architecture of a real-time payments scheme such as UPI and what makes it interoperable.	ByteByteGoHq__system-design-101:unified-payments-interface-upi
+SD06	M	How does an international bank-to-bank messaging system such as SWIFT route payments and settle them?	ByteByteGoHq__system-design-101:swift-payment-messaging-system
+SD06	M	Design a digital wallet and compare a wallet at a traditional bank with a wallet on a blockchain.	ByteByteGoHq__system-design-101:digital-wallet-in-traditional-banks-vs-wallet-in-blockchain
+SD06	M	Design a webhook delivery service that notifies merchants when a payment succeeds.	puncsky__system-design-and-architecture:designing-payment-webhook
+SD06	H	How would you build webhooks with at-least-once delivery, signed payloads, exponential retries, and a circuit breaker for broken receivers?	puncsky__system-design-and-architecture:designing-payment-webhook
+SD06	M	Design a metrics and monitoring system that collects counters, timers, and conversion rates and supports dashboards and alerts.	puncsky__system-design-and-architecture:designing-a-metric-system
+SD06	M	How would you store and downsample metrics in a time-series database to keep long-term data cheap?	puncsky__system-design-and-architecture:designing-a-metric-system
+SD06	M	Design a hotel booking system such as Airbnb with search by location and dates and reservations.	puncsky__system-design-and-architecture:designing-airbnb
+SD06	H	How do you prevent double booking of the same room for the same dates when many users book concurrently?	puncsky__system-design-and-architecture:designing-airbnb
+SD06	M	Design a ticket booking system such as BookMyShow or Ticketmaster, including handling flash-sale traffic for popular events.	puncsky__system-design-and-architecture:designing-airbnb
+SD06	M	Design an email system like Gmail. What happens when one user sends an email to another across providers?	ByteByteGoHq__system-design-101:design-gmail
+SD06	M	Design a photo storage service for billions of images with low-latency reads.	puncsky__system-design-and-architecture:designing-facebook-photo-storage
+SD06	M	Design a social graph store like TAO optimized for read-heavy workloads with a 500:1 read-to-write ratio.	puncsky__system-design-and-architecture:facebook-tao
+SD06	M	Design a file storage and sync service similar to Dropbox with chunking, deduplication, and sync conflict resolution.	ByteByteGoHq__system-design-101:storage-systems-overview
+SD06	M	Design an unique ID generator service for a distributed system with millions of IDs per second.	ByteByteGoHq__system-design-101:unique-id-generator
+SD06	M	Design a distributed lock service for coordinating workers across many machines.	ByteByteGoHq__system-design-101:why-do-we-need-to-use-a-distributed-lock
+SD06	M	Design an A/B testing and experiment platform: setup, variant assignment, instrumentation, and analysis.	ByteByteGoHq__system-design-101:possible-experiment-platform-architecture
+SD06	M	Design a marketing automation platform that forecasts customer lifetime value, allocates budget, and places bids across ad channels.	puncsky__system-design-and-architecture:lyft-marketing-automation
+SD06	M	Design a log aggregation and search system for thousands of servers.	ByteByteGoHq__system-design-101:what-is-elk-stack
+SD06	M	Design a permission and access control service that serves authorization checks for many products.	ByteByteGoHq__system-design-101:how-do-we-design-a-permission-system
+SD06	M	Design a single sign-on system for an enterprise with multiple applications.	karanpratapsingh__system-design:SSO
+SD06	M	Design an e-commerce platform covering catalog, inventory, cart, orders, payment, and delivery.	ByteByteGoHq__system-design-101:e-commerce-workflow
+SD06	H	How would you prevent overselling inventory during a flash sale on an e-commerce platform?	ByteByteGoHq__system-design-101:e-commerce-workflow
+SD06	M	Design a leaderboard that supports real-time ranking for millions of players.	ByteByteGoHq__system-design-101:the-ultimate-redis-101
+SD06	M	Design a real-time analytics pipeline that ingests clickstream events and shows near-real-time dashboards.	ByteByteGoHq__system-design-101:data-pipelines-overview
+SD06	M	Design a ChatGPT-like conversational service. What are the main components for serving requests at scale?	ByteByteGoHq__system-design-101:how-does-chatgpt-work
+SD06	M	Design a job scheduler or task queue service that runs delayed and recurring jobs reliably.	karanpratapsingh__system-design:Message Queues Task Queues
+SD06	M	Design a content delivery network. How do edge caches, origin shielding, and request routing work?	ByteByteGoHq__system-design-101:what-is-cdn
+SD06	M	Design a cloud file or object store like S3 with durability across failures.	ByteByteGoHq__system-design-101:explain-the-top-6-use-cases-of-object-stores
+SD06	M	Design a stream processing system that computes rolling aggregates with exactly-once semantics.	puncsky__system-design-and-architecture:stream-and-batch-processing
+SD06	M	Design a system that blurs license plates and faces in street-level imagery at scale.	ByteByteGoHq__system-design-101:blur-license-plates-street-view
+SD06	M	In a system design interview, what are the clarifying questions you should ask about scale, consistency, and failure handling before designing anything?	karanpratapsingh__system-design:System Design Interviews Requirements
+SD06	M	How would you structure a 45-minute system design interview answer from requirements to bottlenecks?	donnemartin__system-design-primer:How to approach a system design interview
+SD06	M	What steps do you follow to identify and resolve bottlenecks in a design after drawing the high-level architecture?	karanpratapsingh__system-design:Identify and resolve bottlenecks
+SD06	M	Which consistency model would you pick for a news feed, a bank balance, and a shopping cart, and why?	donnemartin__system-design-primer:Consistency patterns
+SD06	M	For a given Design X prompt, how would you decide which components can be eventually consistent and which require strong consistency?	donnemartin__system-design-primer:Consistency patterns
+SD06	M	For a high-traffic read-heavy design such as a URL shortener, what would your failure handling plan look like for cache, database, and app server outages?	karanpratapsingh__system-design:URL Shortener bottlenecks
+SD06	M	For a real-time service such as chat or ride sharing, how would you handle the loss of an entire data center?	karanpratapsingh__system-design:Design bottlenecks
+MS03	M	Design a real-time fraud detection system that blocks account takeover and botnet logins using risk scores and a rule engine.	puncsky__system-design-and-architecture:fraud-detection-with-semi-supervised-learning
+MS03	M	Why would you use semi-supervised learning for fraud detection in an adversarial setting where labels are scarce?	puncsky__system-design-and-architecture:fraud-detection-with-semi-supervised-learning
+MS03	H	How do you handle feature evolution when attackers adapt to your fraud model, and how do you combine online scoring with offline retraining?	puncsky__system-design-and-architecture:fraud-detection-with-semi-supervised-learning
+MS03	M	Which signals would you use to detect login attacks of increasing difficulty: single IP, many IPs per device, distributed IPs, and targeted accounts?	puncsky__system-design-and-architecture:fraud-detection-with-semi-supervised-learning
+MS03	M	Design a personalized content recommendation system for a news or short-video feed.	puncsky__system-design-and-architecture:designing-a-recommendation-system
+MS03	M	How do you define and measure user satisfaction for a recommender when click-through rate alone is misleading?	puncsky__system-design-and-architecture:designing-a-recommendation-system
+MS03	M	Which algorithms would you combine in a recommender, such as collaborative filtering, logistic regression, GBDT, factorization machines, and DNNs?	puncsky__system-design-and-architecture:designing-a-recommendation-system
+MS03	M	How do recall (candidate generation) strategies reduce latency in a recommender, and how do they interact with ranking?	puncsky__system-design-and-architecture:designing-a-recommendation-system
+MS03	M	How would you handle cold start for new users and new content in a recommendation system, for example using trending signals and content analysis?	puncsky__system-design-and-architecture:designing-a-recommendation-system
+MS03	M	How would you train a recommendation model continuously with real-time feedback at large scale?	puncsky__system-design-and-architecture:designing-a-recommendation-system
+MS03	M	How would you extract semantic tags and categories from articles and use them as features for ranking?	puncsky__system-design-and-architecture:designing-a-recommendation-system
+MS03	M	Design a ranking service for a social news feed that mixes learned relevance with business constraints such as frequency caps.	karanpratapsingh__system-design:Twitter Ranking Algorithm
+MS03	M	How would you design a content moderation pipeline that mixes automated models with human review?	puncsky__system-design-and-architecture:designing-a-recommendation-system
+MS04	H	Design an always-on AI agent as a long-lived service that can be woken by messages, schedules, and webhooks.	puncsky__system-design-and-architecture:designing-always-on-agent
+MS04	H	Why should an agent loop run on the server and not inside the sandbox VM, and what state must be durable across crashes?	puncsky__system-design-and-architecture:designing-always-on-agent
+MS04	M	How do durable workflow engines differ from plain job queues for multi-hour or multi-day agent tasks?	puncsky__system-design-and-architecture:designing-always-on-agent
+MS04	M	How would you let an agent sleep when idle and wake on triggers while keeping compute cost low?	puncsky__system-design-and-architecture:designing-always-on-agent
+MS04	M	How would you design approval gates for irreversible agent actions such as sending emails or making payments?	puncsky__system-design-and-architecture:designing-always-on-agent
+MS04	M	How would you isolate an agent's code execution environment with microVMs, and what must never be placed in the model context?	puncsky__system-design-and-architecture:designing-always-on-agent
+MS04	M	How should an agent system prioritize and deduplicate concurrent triggers from multiple channels?	puncsky__system-design-and-architecture:designing-always-on-agent
+MS04	M	How do you manage long-running agent context through compaction and long-term memory while preserving prompt cache hits?	puncsky__system-design-and-architecture:designing-always-on-agent
+MS04	M	How do you prevent untrusted inputs such as emails and web pages from being treated as user instructions in an agent system?	puncsky__system-design-and-architecture:designing-always-on-agent
+MS04	M	Describe the layers of an agent system from application to hardware, and what the harness, serving system, and runtime each contribute.	puncsky__system-design-and-architecture:agent-system-layers
+GA03	M	What are the logical components inside a single agent, such as planning, context, memory, tools, and subagents?	puncsky__system-design-and-architecture:agent-system-layers
+GA03	M	Why is building agents a systems problem rather than only a modeling problem?	puncsky__system-design-and-architecture:agent-system-layers
+GA05	M	Why does flexibility in an agent introduce security risk, and how would you constrain tool permissions?	puncsky__system-design-and-architecture:agent-system-layers
+SD04	M	What is the difference between synchronous and asynchronous communication between services, and when should you use message queues, task queues, or back pressure?	donnemartin__system-design-primer:Asynchronism
+SD04	M	Compare TCP, UDP, RPC, and REST as communication mechanisms for internal services.	donnemartin__system-design-primer:Communication
+SD04	M	Why use RPC between internal services instead of REST, and what are RPC's disadvantages?	donnemartin__system-design-primer:Remote procedure call
+SD04	M	What are the benefits and drawbacks of REST for public APIs, and what are the typical verbs and idempotency expectations?	donnemartin__system-design-primer:Representational state transfer
+SD02	M	What is the difference between SQL scaling patterns such as master-slave replication, federation, sharding, denormalization, and SQL tuning? When do you apply each?	donnemartin__system-design-primer:SQL scaling patterns
+SD02	M	When might you choose a NoSQL store over SQL for reasons like flexible schemas, large volume of data, or very high throughput?	donnemartin__system-design-primer:SQL or NoSQL
+SD02	M	What are the pros and cons of full-text search engines versus database indexes for search queries?	donnemartin__system-design-primer:Search engine
+SD01	M	What is the difference between database caching, application caching, web server caching, and client caching?	donnemartin__system-design-primer:Cache
+SD01	M	What are the disadvantages of caching, such as cache invalidation complexity and the need for application code changes?	donnemartin__system-design-primer:Disadvantages cache
+SD05	M	What does availability in numbers look like for two components in parallel versus in sequence when each has 99.9 percent availability?	donnemartin__system-design-primer:Availability in numbers
+SD05	M	What are the disadvantages of fail-over, such as added hardware, complexity, and the potential for data loss?	donnemartin__system-design-primer:Disadvantages failover
+SD03	M	What is the difference between weak, eventual, and strong consistency, and where do DNS, memcached, and relational databases fall?	donnemartin__system-design-primer:Consistency patterns
+SD04	M	What are the disadvantages of a microservices approach, such as operational complexity and cross-service debugging?	donnemartin__system-design-primer:Microservices
+SD04	M	What are the disadvantages of a service discovery system, and how do Consul, etcd, and Zookeeper address health checking and key-value lookup?	donnemartin__system-design-primer:Service discovery
+SD01	M	Why does a reverse proxy simplify security, compression, SSL termination, and static content serving, and what are its disadvantages?	donnemartin__system-design-primer:Reverse proxy
+SD06	M	Design Dropbox-like blob metadata service. How do you represent files, versions, and chunks in the metadata store?	ByteByteGoHq__system-design-101:storage-systems-overview
+SD06	M	Design a video call or conferencing service. How does media flow between participants, and when is a media server needed?	ByteByteGoHq__system-design-101:8-popular-network-protocols
+SD06	M	Design a food delivery service that matches orders to restaurants and couriers and tracks deliveries.	karanpratapsingh__system-design:Uber Ride Matching
+SD06	M	Design a distributed job scheduler that sends scheduled reminders for reservations using a priority queue.	puncsky__system-design-and-architecture:designing-airbnb
+SD06	M	Design a recommendation-driven ad delivery platform with budget pacing and bidding.	puncsky__system-design-and-architecture:lyft-marketing-automation
+SD06	M	Design a global leaderboard of the most popular products per category that updates periodically.	donnemartin__system-design-primer:Design Amazon sales rank
+SD06	M	Design an event-driven order processing pipeline in which inventory, payment, and shipping are separate services.	ByteByteGoHq__system-design-101:orchestration-vs-choreography
+SD06	M	Design a read-heavy social media profile service that serves 500 reads per write with a graph-aware cache layer.	puncsky__system-design-and-architecture:facebook-tao
+SD06	M	Design a real-time collaborative document editor such as Google Docs, including conflict handling.	karanpratapsingh__system-design:Long polling, WebSockets, SSE
+SD06	H	Design a multi-region deployment of a user-facing service. How do you route traffic, replicate data, and handle region failure?	ByteByteGoHq__system-design-101:cloud-disaster-recovery-strategies
+SD06	M	Design a system that sends scheduled emails or reminders to millions of users reliably at the right time.	puncsky__system-design-and-architecture:designing-airbnb
+SD06	M	Design a URL shortener and a Pastebin as one platform. What components can be shared between them?	donnemartin__system-design-primer:Design Pastebin
+SD06	M	Design a web analytics service that counts page views per URL at very high write volume.	karanpratapsingh__system-design:URL Shortener Metrics and Analytics
+SD06	M	In a Twitter-like feed, what consistency guarantees do users expect for their own tweets versus other people's tweets, and how do you provide them?	donnemartin__system-design-primer:Design Twitter timeline
+SD06	H	In a news feed system, how would you handle the failure of the cache that stores precomputed timelines? Describe recovery and the load impact on the database.	donnemartin__system-design-primer:Design Twitter timeline
+SD06	M	At 10x the traffic, which components of a fan-out-on-write feed would break first, and how would you scale them?	donnemartin__system-design-primer:Design Twitter timeline scale
+SD06	M	How would you handle a user deleting a post or blocking another user in a precomputed feed design?	karanpratapsingh__system-design:Twitter Newsfeed
+SD06	M	In a chat system, what consistency model applies to message ordering within a conversation versus across conversations?	karanpratapsingh__system-design:WhatsApp
+SD06	H	In a chat system, a user's phone goes offline mid-send and reconnects on another network. How do you avoid lost, duplicate, or reordered messages?	karanpratapsingh__system-design:WhatsApp
+SD06	M	When a chat server holding thousands of WebSocket connections crashes, how do clients reconnect and how is state restored?	karanpratapsingh__system-design:WhatsApp Architecture
+SD06	M	In a ride-sharing service, what happens if the location service is partially down? How does matching degrade?	karanpratapsingh__system-design:Uber High-level design
+SD06	H	At peak demand a city has 100,000 concurrent ride requests. How do you scale the matching service and avoid hot geographic cells?	karanpratapsingh__system-design:Uber Ride Matching
+SD06	M	In a ride-sharing system, how do you keep the trip state consistent across rider app, driver app, and the backend when connectivity is flaky?	puncsky__system-design-and-architecture:designing-uber
+SD06	M	What consistency does a URL shortener need for newly created links, and how do replicas and caches affect that?	karanpratapsingh__system-design:URL Shortener
+SD06	H	How would you make a URL shortener resilient to the loss of its key generation service or its primary database?	karanpratapsingh__system-design:URL Shortener KGS
+SD06	M	How would you scale the URL shortener to 100x traffic, including handling a viral link that is accessed millions of times per minute?	karanpratapsingh__system-design:URL Shortener bottlenecks
+SD06	M	In a video streaming platform, how do you handle a failed transcoding job in the middle of a long video?	karanpratapsingh__system-design:Netflix Video processing
+SD06	M	In a video platform, how would you handle a sudden surge for a newly released popular title with cold CDN caches?	karanpratapsingh__system-design:Netflix CDN
+SD06	M	How would you ensure uploaded videos are durable and not lost if a storage node fails in a video platform?	karanpratapsingh__system-design:Netflix Media streaming and storage
+SD06	H	In a web crawler, how do you recover from a crash without refetching everything, and how do you keep the frontier consistent across workers?	donnemartin__system-design-primer:Design a web crawler
+SD06	M	How would you scale a crawler's duplicate detection when the number of seen URLs reaches tens of billions?	donnemartin__system-design-primer:Design a web crawler duplicates
+SD06	M	For a typeahead service, how fresh must suggestions be, and what is the cost of serving slightly stale results?	puncsky__system-design-and-architecture:designing-typeahead-search
+SD06	M	How would you scale a typeahead service to hundreds of thousands of queries per second without a cache stampede on rare prefixes?	puncsky__system-design-and-architecture:designing-typeahead-search
+SD06	M	For a notification service, how do you guarantee at-least-once delivery without spamming users on retries?	puncsky__system-design-and-architecture:designing-smart-notification
+SD06	M	What happens in a notification system when a downstream provider such as an SMS gateway is down for an hour?	puncsky__system-design-and-architecture:designing-smart-notification
+SD06	M	At 10x scale, how would you shard and parallelize a notification pipeline to send to 100 million devices in minutes?	puncsky__system-design-and-architecture:designing-smart-notification
+SD06	M	For a rate limiter service, what should happen if the rate limiter store is unreachable: fail open or fail closed? Justify.	karanpratapsingh__system-design:Rate Limiting
+SD06	M	For a rate limiter shared by multiple regions, how would you balance accuracy against cross-region latency?	karanpratapsingh__system-design:Rate Limiting in Distributed Systems
+SD06	M	In a payment system, what happens if the payment provider times out after the charge actually succeeded? How do you recover?	ByteByteGoHq__system-design-101:how-to-avoid-double-payment
+SD06	H	How would you design a payment system to survive crashes between updating the payment record, wallet, and ledger?	ByteByteGoHq__system-design-101:payment-system
+SD06	M	How would a payment system support scale on peak days like Black Friday without sacrificing correctness?	ByteByteGoHq__system-design-101:handling-hotspot-accounts
+SD06	M	How do you design payment systems for multi-currency settlements and reporting?	puncsky__system-design-and-architecture:designing-paypal-money-transfer
+SD06	M	For a stock exchange, how do you recover the order book state after the matching engine crashes?	puncsky__system-design-and-architecture:designing-stock-exchange
+SD06	M	In a booking system, how would you handle holds on inventory that expire if the user does not complete payment?	puncsky__system-design-and-architecture:designing-airbnb
+SD06	H	In a flash-sale ticketing system, how do you manage a queue of millions of waiting users while preventing overselling and bot abuse?	puncsky__system-design-and-architecture:designing-airbnb
+SD06	M	For a distributed cache, how would you handle a node failure without sending a surge of queries to the database?	puncsky__system-design-and-architecture:designing-memcached
+SD06	M	For a distributed cache across regions, how do you keep caches consistent when the database is updated in one region?	puncsky__system-design-and-architecture:designing-memcached
+SD06	M	In a key-value store, how would you recover the in-memory index after a restart and how does compaction affect read latency?	puncsky__system-design-and-architecture:kv-store-with-external-storage
+SD06	M	For a metrics system, how do you handle high-cardinality labels and bursty ingestion without overwhelming storage?	puncsky__system-design-and-architecture:designing-a-metric-system
+SD06	M	For a metrics pipeline, what happens to alerting if the ingestion pipeline is delayed, and how do you detect your own monitoring failing?	puncsky__system-design-and-architecture:designing-a-metric-system
+SD06	M	For a social graph service, how do you keep friend counts and mutual friend queries consistent and fast?	donnemartin__system-design-primer:Design social network data structures
+SD06	M	In Mint-style transaction aggregation, how do you handle a bank API that is slow, rate limited, or returns inconsistent data?	donnemartin__system-design-primer:Design Mint.com
+SD06	M	For a proximity service, how do you handle dense urban areas with many points of interest versus sparse regions?	ByteByteGoHq__system-design-101:proximity-service
+SD06	M	How would you update the location index in a proximity or ride-sharing service when objects move frequently?	ByteByteGoHq__system-design-101:proximity-service
+SD06	M	For a maps service, how would you refresh map tiles and traffic data without a full rebuild?	ByteByteGoHq__system-design-101:design-google-maps
+SD06	M	For a search engine design, how do you shard and replicate the inverted index, and how do you merge results across shards?	ByteByteGoHq__system-design-101:how-do-search-engines-work
+SD06	M	For an e-mail system, how do you handle spam filtering, large attachments, and mailbox storage growth?	ByteByteGoHq__system-design-101:design-gmail
+SD06	M	For a photo or file storage system, how do you protect against silent data corruption and ensure durability?	puncsky__system-design-and-architecture:designing-facebook-photo-storage
+SD06	M	For a file sync service, how do you handle two clients editing the same file offline?	ByteByteGoHq__system-design-101:storage-systems-overview
+SD06	M	For a unique ID generator, what are the failure modes when machine IDs are misconfigured or clocks drift?	ByteByteGoHq__system-design-101:unique-id-generator
+SD06	M	For a webhook service, how do you protect merchants from replay attacks and ensure each event is processed once?	puncsky__system-design-and-architecture:designing-payment-webhook
+SD06	M	For a webhook service, how do you protect your own infrastructure from slow or malicious receivers?	puncsky__system-design-and-architecture:designing-payment-webhook
+SD06	M	For an experiment platform, how do you keep variant assignment consistent for a user across sessions and devices?	ByteByteGoHq__system-design-101:possible-experiment-platform-architecture
+SD06	M	For a stock price alert system, how do you avoid sending the same alert twice when a price oscillates around a threshold?	puncsky__system-design-and-architecture:designing-smart-notification
+SD06	M	For a leaderboard with millions of players, how would you handle ties, sharding by score range, and querying a user's rank?	ByteByteGoHq__system-design-101:the-ultimate-redis-101
+SD06	M	For any Design X, how would you present a data model and API first, and why does that matter before drawing boxes?	karanpratapsingh__system-design:System Design Interviews Data model design
+SD06	M	When asked to design a system, how would you explain the choice between SQL and NoSQL for its main data?	karanpratapsingh__system-design:URL Shortener database choice
+SD06	M	When the interviewer says the system must now support 100x more traffic, what is your process for finding and relieving the next bottleneck?	karanpratapsingh__system-design:Identify and resolve bottlenecks

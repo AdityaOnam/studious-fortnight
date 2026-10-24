@@ -1,0 +1,300 @@
+Q001369	ML06	M	What are some challenges faced when trying to implement explainability in AI?
+Q001370	ML06	M	How does explainable AI (XAI) relate to model transparency, and why is it needed in sensitive applications?
+Q001371	ML06	M	What are some of the trade-offs between model accuracy and explainability?
+Q001372	ML06	E	What are model-agnostic methods in explainable AI (XAI), and can you give an example?
+Q001373	ML06	M	How do model-specific methods differ from model-agnostic methods for explainability?
+Q001374	ML06	M	What are the advantages and disadvantages of using LIME (Local Interpretable Model-Agnostic Explanations)?
+Q001375	ML06	M	Can you explain what SHAP (Shapley Additive exPlanations) is and when it is used?
+Q001376	ML06	E	What is feature importance, and how can it help in explaining model predictions?
+Q001377	ML06	E	Explain the concept of decision trees in the context of interpretability.
+Q001378	ML06	E	How can the coefficients of a linear model be interpreted?
+Q001379	ML06	M	What role does the Partial Dependence Plot (PDP) play in model interpretation?
+Q001380	ML06	M	Describe the use of counterfactual explanations in explainable AI (XAI).
+Q001381	ML06	H	How can the activation maximization technique in neural networks be used for interpretability?
+Q001382	ML05	E	What is feature engineering and how does it impact the performance of machine learning models?
+Q001383	ML05	E	List different types of features commonly used in machine learning.
+Q001384	ML05	E	Explain the differences between feature selection and feature extraction.
+Q001385	ML05	M	What are some common challenges you might face when engineering features?
+Q001386	ML05	E	Describe the process of feature normalization and standardization.
+Q001387	ML05	M	Why is it important to understand the domain knowledge while performing feature engineering?
+Q001388	ML05	M	How does feature scaling affect the performance of gradient descent?
+Q001389	ML05	E	Explain the concept of one-hot encoding and when you might use it.
+Q001390	ML04	E	What is dimensionality reduction and how can it be beneficial in machine learning?
+Q001391	ML05	E	How do you handle categorical variables in a dataset?
+Q001392	ML05	E	What are filter methods in feature selection and when are they used?
+Q001393	ML05	E	Explain what wrapper methods are in the context of feature selection.
+Q001394	ML05	M	Describe embedded methods for feature selection and their benefits.
+Q001395	ML05	M	How does a feature's correlation with the target variable influence feature selection?
+Q001396	ML05	E	What is the purpose of using Recursive Feature Elimination (RFE)?
+Q001397	DL05	E	What are Generative Adversarial Networks (GANs)?
+Q001398	DL05	E	Could you describe the architecture of a basic GAN?
+Q001399	DL05	E	Explain the roles of the generator and discriminator in a GAN.
+Q001400	DL05	M	How do GANs handle the generation of new, unseen data?
+Q001401	DL05	M	What loss functions are commonly used in GANs and why?
+Q001402	DL05	M	How is the training process different for the generator and discriminator in a GAN?
+Q001403	DL05	M	What is mode collapse in GANs, and why is it problematic?
+Q001404	DL05	H	Can you describe the concept of Nash equilibrium in the context of GANs?
+Q001405	DL05	M	How can we evaluate the performance and quality of GANs?
+Q001406	DL05	M	What are some challenges in training GANs?
+Q001407	DL05	M	Explain the idea behind Conditional GANs (cGANs) and their uses.
+Q001408	DL05	M	What are Deep Convolutional GANs (DCGANs) and how do they differ from basic GANs?
+Q001409	DL05	H	Can you discuss the architecture and benefits of Wasserstein GANs (WGANs)?
+Q001410	DL05	M	Describe the concept of CycleGAN and its application to image-to-image translation.
+Q001411	DL05	M	Explain how GANs can be used for super-resolution imaging (SRGANs).
+Q001412	ML07	E	What is a genetic algorithm (GA) and how is it inspired by biological evolution?
+Q001413	ML07	E	Can you explain the terms chromosome, gene, and allele in the context of genetic algorithms?
+Q001414	ML07	E	Describe the process of selection in genetic algorithms.
+Q001415	ML07	E	Explain crossover and mutation operations in genetic algorithms.
+Q001416	ML07	E	What is a fitness function in the context of a genetic algorithm?
+Q001417	ML07	M	How does a genetic algorithm differ from other optimization techniques?
+Q001418	ML07	E	What are the typical stopping conditions for a genetic algorithm?
+Q001419	ML07	M	How can genetic algorithms be applied to combinatorial optimization problems?
+Q001420	ML07	M	What is elitism in genetic algorithms and why might it be used?
+Q001421	ML07	M	How do penalty functions work in genetic algorithms?
+Q001422	ML07	M	Explain the concept of genetic drift in genetic algorithms.
+Q001423	ML07	M	What is a multi-objective genetic algorithm?
+Q001424	DROP	-	offtopic
+Q001425	DROP	-	offtopic
+Q001426	DROP	-	offtopic
+Q001443	ML07	E	What is gradient descent?
+Q001444	ML07	E	What are the main variants of gradient descent algorithms?
+Q001445	ML07	E	Explain the importance of the learning rate in gradient descent.
+Q001446	ML07	E	How does gradient descent help in finding the local minimum of a function?
+Q001447	ML07	M	What challenges arise when using gradient descent on non-convex functions?
+Q001448	ML07	E	Explain the purpose of using gradient descent in machine learning models.
+Q001449	ML07	E	Describe the concept of the cost function and its role in gradient descent.
+Q001450	ML07	E	Explain what a derivative tells us about the cost function in the context of gradient descent.
+Q001451	ML07	E	What is batch gradient descent, and when would you use it?
+Q001452	ML07	M	Discuss the concept of stochastic gradient descent (SGD) and its advantages and disadvantages.
+Q001453	ML07	E	What is mini-batch gradient descent, and how does it differ from other variants?
+Q001454	ML07	M	Explain how momentum can help in accelerating gradient descent.
+Q001455	DL02	M	Describe the difference between Adagrad, RMSprop, and Adam optimizers.
+Q001456	DL01	M	What is the problem of vanishing gradients, and how does it affect gradient descent?
+Q001457	DL02	M	How can gradient clipping help in training deep learning models?
+Q001475	MS02	E	What is Hadoop and what are its core components?
+Q001476	MS02	M	Explain the concept of the Hadoop Distributed File System (HDFS) and its architecture.
+Q001477	MS02	M	How does the MapReduce programming model work in Hadoop?
+Q001478	MS02	M	What is YARN, and how does it improve Hadoop's resource management?
+Q001479	MS02	M	Explain the role of the Namenode and Datanode in HDFS.
+Q001480	MS02	M	What is the Rack Awareness algorithm in HDFS, and why is it important?
+Q001481	DROP	-	dup
+Q001482	MS02	M	What are some of the characteristics that differentiate Hadoop from traditional RDBMS?
+Q001483	MS02	M	How can you secure a Hadoop cluster? Name some of the security mechanisms available.
+Q001484	MS02	M	Describe the role of HBase in the Hadoop ecosystem.
+Q001485	MS02	E	What is Apache Hive and what types of problems does it solve?
+Q001486	DROP	-	offtopic
+Q001487	DROP	-	offtopic
+Q001488	DROP	-	offtopic
+Q001489	DROP	-	offtopic
+Q001490	SD03	M	What is Apache ZooKeeper and why is it important for Hadoop?
+Q001491	DROP	-	dup
+Q001509	ML04	E	What is K-Means clustering, and why is it used?
+Q001510	ML01	E	Can you explain the difference between supervised and unsupervised learning, with examples of where K-Means clustering fits in?
+Q001511	ML04	E	What are centroids in the context of K-Means?
+Q001512	ML04	E	Describe the algorithmic steps of the K-Means clustering method.
+Q001513	ML04	M	What is the role of distance metrics in K-Means, and which distances can be used?
+Q001514	ML04	M	How do you decide on the number of clusters (k) in a K-Means algorithm?
+Q001515	ML04	M	What are some methods for initializing the centroids in K-Means clustering?
+Q001516	ML04	M	Can K-Means clustering be used for categorical data? If so, how?
+Q001517	ML04	M	Explain the term cluster inertia (within-cluster sum-of-squares).
+Q001518	ML04	M	What are some limitations of K-Means clustering?
+Q001519	ML04	M	How does K-Means clustering react to non-spherical cluster shapes?
+Q001520	ML04	M	How do you handle outliers in the K-Means algorithm?
+Q001521	ML04	M	Discuss the concept and importance of feature scaling in K-Means clustering.
+Q001522	ML04	M	Why is K-Means clustering considered a greedy algorithm?
+Q001523	ML02	E	What is K-Nearest Neighbors (K-NN) in the context of machine learning?
+Q001524	ML02	E	How does the K-NN algorithm work for classification problems?
+Q001525	ML02	E	Explain how K-NN can be used for regression.
+Q001526	ML02	M	What does the K in K-NN stand for, and how do you choose its value?
+Q001527	ML02	E	List the pros and cons of using the K-NN algorithm.
+Q001528	ML02	M	In what kind of situations is K-NN not an ideal choice?
+Q001529	ML02	M	How does the choice of distance metric affect the K-NN algorithm's performance?
+Q001530	ML02	M	What are the effects of feature scaling on the K-NN algorithm?
+Q001531	ML02	M	How does K-NN handle multi-class problems?
+Q001532	ML02	M	Can K-NN be used for feature selection? If yes, explain how.
+Q001533	DROP	-	dup
+Q001534	ML02	M	What are the differences between weighted K-NN and standard K-NN?
+Q001535	ML01	M	How does the curse of dimensionality affect K-NN, and how can it be mitigated?
+Q001536	ML02	M	Discuss the impact of imbalanced datasets on the K-NN algorithm.
+Q001537	RAG03	H	How would you explain the concept of locality-sensitive hashing and its relation to K-NN?
+Q001538	DL07	E	What is Keras and how does it relate to TensorFlow?
+Q001539	DL07	E	Can you explain the concept of a deep learning framework?
+Q001540	DL07	E	What are the core components of a Keras model?
+Q001541	DL07	E	How do you configure a neural network in Keras?
+Q001542	DL07	E	Explain the difference between the Sequential and Functional APIs in Keras.
+Q001543	DL07	E	Describe how you would install and set up Keras in a Python environment.
+Q001544	DL07	E	What are some advantages of using Keras over other deep learning frameworks?
+Q001545	DL07	E	How do you save and load models in Keras?
+Q001546	DL07	E	What is the purpose of the Dense layer in Keras?
+Q001547	DL07	M	How would you implement a Convolutional Neural Network in Keras?
+Q001548	DL07	M	Can you describe how Recurrent Neural Networks are different from feedforward networks and how to implement one in Keras?
+Q001549	DROP	-	dup
+Q001550	DL07	E	Explain the purpose of dropout layers and how to use them in Keras.
+Q001551	DL07	M	How do you use Batch Normalization in a Keras model?
+Q001552	DL07	M	What is a custom layer in Keras and how would you implement one?
+Q001553	DL07	M	Discuss how you would construct a residual network (ResNet) in Keras.
+Q001587	ML03	M	What is LightGBM and how does it differ from other gradient boosting frameworks?
+Q001588	ML03	M	How does LightGBM handle categorical features differently from other tree-based algorithms?
+Q001589	ML03	M	Can you explain the concept of Gradient Boosting and how LightGBM utilizes it?
+Q001590	DROP	-	dup
+Q001591	ML03	M	What are some of the advantages of LightGBM over XGBoost or CatBoost?
+Q001592	ML03	M	How does LightGBM achieve faster training and lower memory usage?
+Q001593	ML03	M	Explain the histogram-based approach used by LightGBM.
+Q001594	ML03	M	Discuss the types of tree learners available in LightGBM.
+Q001595	ML03	M	What is meant by leaf-wise tree growth in LightGBM, and how is it different from depth-wise growth?
+Q001596	ML03	M	Explain how LightGBM deals with overfitting.
+Q001597	ML03	H	What are feature parallelism and data parallelism in the context of LightGBM?
+Q001598	ML03	H	How do Gradient-based One-Side Sampling (GOSS) and Exclusive Feature Bundling (EFB) contribute to LightGBM's performance?
+Q001599	ML03	M	Explain the role of the learning rate in the LightGBM algorithm.
+Q001600	ML03	M	How would you tune the number of leaves or maximum depth of trees in LightGBM?
+Q001601	ML03	M	What is the significance of the min_data_in_leaf parameter in LightGBM?
+Q001602	ML03	M	Discuss the impact of using a large versus small bagging_fraction in LightGBM.
+Q001603	ML09	E	What is a vector and how is it used in machine learning?
+Q001604	ML09	E	Explain the difference between a scalar and a vector.
+Q001605	ML09	E	What is a matrix and why is it central to linear algebra?
+Q001606	ML09	E	Explain the concept of a tensor in the context of machine learning.
+Q001607	ML09	E	How do you perform matrix addition and subtraction?
+Q001608	ML09	E	What are the properties of matrix multiplication?
+Q001609	ML09	E	Define the transpose of a matrix.
+Q001610	ML09	E	Explain the dot product of two vectors and its significance in machine learning.
+Q001611	ML09	E	What is the cross product of vectors and when is it used?
+Q001612	ML09	E	How do you calculate the norm of a vector and what does it represent?
+Q001613	ML09	E	Define the concept of orthogonality in linear algebra.
+Q001614	ML09	E	What is the determinant of a matrix and what information does it provide?
+Q001615	ML09	E	Can you explain what an eigenvector and eigenvalue are?
+Q001616	ML09	E	How is the trace of a matrix defined and what is its relevance?
+Q001617	ML09	E	What is a diagonal matrix and how is it used in linear algebra?
+Q001618	ML02	E	What is linear regression and how is it used in predictive modeling?
+Q001619	ML02	E	Can you explain the difference between simple linear regression and multiple linear regression?
+Q001620	ML02	E	What assumptions are made in linear regression modeling?
+Q001621	ML02	E	How do you interpret the coefficients of a linear regression model?
+Q001622	ML02	E	What is the role of the intercept term in a linear regression model?
+Q001623	ML06	E	What are the common metrics to evaluate a linear regression model's performance?
+Q001624	ML02	M	Explain the concept of homoscedasticity in linear regression. Why is it important?
+Q001625	ML02	M	What is multicollinearity and how can it affect a regression model?
+Q001626	ML02	M	How is hypothesis testing used in the context of linear regression?
+Q001627	ML02	M	What do you understand by the term normality of residuals in linear regression?
+Q001628	ML05	M	Describe the steps involved in preprocessing data for linear regression analysis.
+Q001629	ML05	E	How do you deal with missing values when preparing data for linear regression?
+Q001630	ML05	M	What feature selection methods can be used prior to building a regression model?
+Q001631	ML05	E	How is feature scaling relevant to linear regression?
+Q001632	DROP	-	dup
+Q001633	ML05	E	Explain the concept of data splitting into training and test sets.
+Q001634	MS01	E	What is MLOps and how does it differ from traditional software development operations?
+Q001635	MS01	E	Define the term lifecycle within the context of MLOps.
+Q001636	MS01	E	Describe the typical stages of the machine learning lifecycle.
+Q001637	MS01	M	What are the key components of a robust MLOps infrastructure?
+Q001638	MS01	M	How does MLOps facilitate reproducibility in machine learning projects?
+Q001639	MS02	M	What role does data versioning play in MLOps?
+Q001640	MS01	M	Explain Continuous Integration (CI) and Continuous Deployment (CD) within an MLOps context.
+Q001641	MS01	M	Discuss the importance of monitoring and logging in MLOps.
+Q001642	MS01	E	What tools and platforms are commonly used for implementing MLOps?
+Q001643	MS01	M	How do containerization technologies like Docker contribute to MLOps practices?
+Q001644	MS01	E	Describe the function of model registries in MLOps.
+Q001645	MS01	M	What are the challenges associated with model deployment and how does MLOps address them?
+Q001646	MS01	M	How does MLOps support model scalability and distribution?
+Q001647	MS02	M	Discuss feature stores and their importance in MLOps workflows.
+Q001648	MS02	M	Explain the concept of a data pipeline and its role in MLOps.
+Q001649	LLM03	E	What are Large Language Models (LLMs) and how do they work?
+Q001650	LLM01	M	Describe the architecture of a transformer model that is commonly used in LLMs.
+Q001651	LLM03	M	What are the main differences between LLMs and traditional statistical language models?
+Q001652	LLM01	M	Can you explain the concept of attention mechanisms in transformer models?
+Q001653	LLM02	E	What are positional encodings in the context of LLMs?
+Q001654	LLM04	M	Discuss the significance of pre-training and fine-tuning in the context of LLMs.
+Q001655	LLM05	M	How do LLMs handle context and long-term dependencies in text?
+Q001656	DROP	-	notq
+Q001657	LLM01	M	What is the role of transformers in achieving parallelization in LLMs?
+Q001658	LLM03	E	What are some prominent applications of LLMs today?
+Q001659	LLM03	M	How is GPT-4 different from its predecessors like GPT-3 in terms of capabilities and applications?
+Q001660	FT01	M	Can you mention any domain-specific adaptations of LLMs?
+Q001661	DL06	E	How do LLMs contribute to the field of sentiment analysis?
+Q001662	FT04	M	Describe how LLMs can be used in the generation of synthetic text.
+Q001663	DL06	E	In what ways can LLMs be utilized for language translation?
+Q001664	GA03	M	Discuss the application of LLMs in conversational AI and chatbots.
+Q001665	DROP	-	notq
+Q001685	ML02	E	What is logistic regression and how does it differ from linear regression?
+Q001686	ML02	E	Can you explain the concept of the logit function in logistic regression?
+Q001687	ML02	E	How is logistic regression used for classification tasks?
+Q001688	ML02	E	What is the sigmoid function and why is it important in logistic regression?
+Q001689	ML02	M	Discuss the probability interpretations of logistic regression outputs.
+Q001690	ML02	M	What are the assumptions made by logistic regression models?
+Q001691	ML02	M	How does logistic regression perform feature selection?
+Q001692	ML02	M	Explain the concept of odds and odds ratio in the context of logistic regression.
+Q001693	ML02	M	How do you interpret the coefficients of a logistic regression model?
+Q001694	ML07	M	Describe maximum likelihood estimation as it applies to logistic regression.
+Q001695	ML05	E	How do you handle categorical variables in logistic regression?
+Q001696	ML02	M	Can logistic regression be used for more than two classes? If so, how?
+Q001697	ML02	M	Discuss the consequences of multicollinearity in logistic regression.
+Q001698	ML07	M	Explain regularization in logistic regression. What are L1 and L2 penalties?
+Q001699	ML06	M	How would you assess the goodness-of-fit of a logistic regression model?
+Q001717	MS01	E	What are Machine Learning Design Patterns?
+Q001718	MS01	E	Can you explain the concept of the Baseline design pattern in machine learning?
+Q001719	MS02	M	Describe the Feature Store design pattern and its advantages.
+Q001720	MS01	M	How does the Pipelines design pattern help in structuring ML workflows?
+Q001721	MS02	M	Discuss the purpose of the Replay design pattern in machine learning.
+Q001722	ML03	M	Explain the Model Ensemble design pattern and when you would use it.
+Q001723	DL02	M	Describe the Checkpoint design pattern in the context of machine learning training.
+Q001724	MS01	M	What is the Batch Serving design pattern and where is it applied?
+Q001725	MS02	M	Explain the Transformation design pattern and its significance in data preprocessing.
+Q001726	ML07	M	How does the Regularization design pattern help in preventing overfitting?
+Q001727	MS01	M	What is the Workload Isolation design pattern and why is it important?
+Q001728	MS01	M	Describe the Shadow Model design pattern and when it should be used.
+Q001729	DROP	-	dup
+Q001730	MS02	M	Explain the Data Versioning design pattern and its role in model reproducibility.
+Q001731	MS01	M	How is the Evaluation Store design pattern applied to keep track of model performances?
+Q001732	MS01	M	What is the Adaptation design pattern and how does it use historical data?
+Q001733	MS01	E	What is MLOps and how does it differ from DevOps?
+Q001734	MS01	E	Can you explain the MLOps lifecycle and its key stages?
+Q001735	MS01	E	What are some of the benefits of implementing MLOps practices in a machine learning project?
+Q001736	MS01	E	What is a model registry and what role does it play in MLOps?
+Q001737	DROP	-	dup
+Q001738	MS02	E	What are feature stores, and why are they important in MLOps?
+Q001739	MS01	M	Explain the concept of continuous integration and continuous delivery (CI/CD) in the context of machine learning.
+Q001740	MS02	M	What is DataOps and how does it relate to MLOps?
+Q001741	MS01	E	Describe the significance of experiment tracking in MLOps.
+Q001742	MS01	E	What are some popular tools and platforms used for MLOps?
+Q001743	MS01	M	How do containerization and virtualization technologies support MLOps practices?
+Q001744	MS01	E	What is the role of cloud computing in MLOps?
+Q001745	MS01	H	How would you design a scalable machine learning infrastructure?
+Q001746	MS01	M	What considerations are important when choosing a computation resource for training machine learning models?
+Q001747	MS01	M	Explain environment reproducibility and its challenges in MLOps.
+Q001748	MS01	M	How does infrastructure as code (IaC) support machine learning operations?
+Q001749	ML06	E	What is model evaluation in the context of machine learning?
+Q001750	ML05	E	Explain the difference between training, validation, and test datasets.
+Q001751	ML06	E	What is cross-validation, and why is it used?
+Q001752	ML06	E	Define precision, recall, and F1-score.
+Q001753	ML06	E	What do you understand by the term confusion matrix?
+Q001754	ML06	M	Explain the concept of the ROC curve and AUC.
+Q001755	ML06	M	Why is accuracy not always the best metric for model evaluation?
+Q001756	ML01	E	What is meant by overfitting and underfitting in machine learning models?
+Q001757	DROP	-	notq
+Q001758	DROP	-	notq
+Q001759	ML06	M	How can learning curves help in model evaluation?
+Q001760	ML06	M	What is the difference between explained variance and R-squared?
+Q001761	ML06	E	How do you evaluate a regression model's performance?
+Q001762	ML06	E	What metrics would you use to evaluate a classifier's performance?
+Q001763	ML06	E	Explain the use of the Mean Squared Error (MSE) in regression models.
+Q001764	ML06	M	How is the Area Under the Precision-Recall Curve (AUPRC) beneficial?
+Q001765	ML06	M	What is the distinction between macro-average and micro-average in classification metrics?
+Q001781	ML02	M	Explain Bayes' Theorem and how it applies to the Naive Bayes algorithm.
+Q001782	ML02	E	Can you list and describe the types of Naive Bayes classifiers?
+Q001783	ML02	E	What is the naive assumption in the Naive Bayes classifier?
+Q001784	ML02	M	How does the Naive Bayes classifier handle categorical and numerical features?
+Q001785	ML02	M	Why is the Naive Bayes classifier a good choice for text classification tasks?
+Q001786	ML02	M	Explain the concept of class conditional independence in Naive Bayes.
+Q001787	ML02	E	What are the advantages and disadvantages of using a Naive Bayes classifier?
+Q001788	ML02	M	How does the Multinomial Naive Bayes classifier differ from the Gaussian Naive Bayes classifier?
+Q001789	ML02	M	Why do we often use log probabilities instead of probabilities in Naive Bayes computation?
+Q001790	ML02	M	Explain how a Naive Bayes classifier can be used for spam detection.
+Q001791	ML02	M	How would you deal with missing values when implementing a Naive Bayes classifier?
+Q001792	ML02	M	What role does Laplace smoothing (additive smoothing) play in Naive Bayes?
+Q001793	ML02	M	Can Naive Bayes be used for regression tasks? Why or why not?
+Q001794	ML02	M	How does Naive Bayes perform in terms of model interpretability compared to other classifiers?
+Q001795	DL01	E	What is a neural network, and how does it resemble human brain functionality?
+Q001796	DL01	E	Elaborate on the structure of a basic artificial neuron.
+Q001797	DL01	E	Describe the architecture of a multi-layer perceptron (MLP).
+Q001798	DL04	E	How does a feedforward neural network differ from recurrent neural networks (RNNs)?
+Q001799	DL01	E	What is backpropagation, and why is it important in neural networks?
+Q001800	DL01	E	Explain the role of an activation function. Give examples of some common activation functions.
+Q001801	DL01	E	Describe the concept of deep learning in relation to neural networks.
+Q001802	DL03	E	What is the difference between fully connected and convolutional layers in a network?

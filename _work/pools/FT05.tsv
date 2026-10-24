@@ -1,0 +1,142 @@
+Q003330	M	When should you prefer task-specific fine-tuning over prompt engineering?
+Q003403	M	When might prompt engineering be preferred over task-specific fine-tuning?
+Q003404	M	When should you use fine-tuning vs. RAG?
+Q004262	M	How do you estimate the cost of running an API-based / closed-source LLM vs. an open-source LLM (self-hosted)?
+Q004280	M	Discuss the case for RAG vs. full fine-tuning.
+Q004426	M	When would you choose RAG vs fine-tuning vs long-context?
+Q004678	M	What is the difference between open-source and closed-source LLMs? When would you choose one over the other?
+Q004700	M	Your LLM coding assistant generates outdated code using deprecated libraries. How do you fix it?
+Q004771	M	Compare RAG vs fine-tuning. When would you use each?
+Q005131	M	What are the cost trade-offs between self-hosted and API-based AI inference?
+Q005172	M	How do you decide whether a problem needs AI or a traditional software solution?
+Q005175	M	How do you decide between using an LLM API vs self-hosting an open-source model?
+Q005344	M	Explain prompting, Retrieval-Augmented Generation (RAG), and fine-tuning.
+Q005943	M	How do you decide whether a problem should be solved with prompt tuning, retrieval, tool calling, or fine-tuning?
+Q006039	M	Should an enterprise self-host an LLM inference cluster or use a cloud provider's managed API, and how should it decide?
+Q006097	M	How do RAG and Skills differ, and what does it mean that RAG supplies "knowledge" while Skills supply "process"?
+Q006183	M	How do you choose between RAG and SFT, and when should you use RAG instead of SFT?
+Q006238	M	When should you not use an LLM in a project, or downgrade from an agent to a workflow?
+Q006875	M	Should powerful AI systems be open-weight or closed? Argue your position.
+Q006901	M	A team wants a support assistant that answers from a knowledge base that changes weekly and must cite the document it used. What is the strongest primary lever: prompting, RAG, or fine-tuning?
+Q006902	M	A model answers factually fine but won't reliably emit your strict JSON tool schema and ignores your house tone, even with a careful prompt and examples. What is the best durable fix?
+Q006904	M	A latency-critical, high-volume classifier uses a 2,000-token few-shot prompt per call, and the labels are stable. What is the strongest optimisation?
+Q006925	H	For a support assistant with house voice, strict format, and a tool schema, over weekly-changing tickets, what is the right primary architecture?
+Q006935a	M	When do you fine-tune versus use RAG versus better prompts?
+Q006935b	M	Give an example where you would not fine-tune despite having data.
+Q007024	M	"RAG or fine-tuning to make the model answer from our internal wiki?" What is the strongest opening answer?
+Q007125	M	When should you use fine-tuning instead of RAG?
+Q007126	M	What are the architecture patterns for customizing an LLM with proprietary data?
+Q007182	M	How do you make the decision to fine-tune?
+Q010803	M	When would you choose RAG over fine-tuning, and vice versa?
+Q010834	M	How do you choose between frontier LLMs (for example Claude, GPT, and Gemini models) for a production workload?
+Q010886	M	When would you choose fine-tuning over prompt engineering?
+Q010925	M	Open-weight models now reach frontier quality at dramatically lower cost. How does this change your production architecture decisions?
+Q010983	M	A major lab releases a closed-weight model after previously being open-weight, and pauses the release of its largest open model over capability concerns. What does this mean for your open-source model strategy?
+Q011002	M	When should an agent skill graduate to fine-tuning?
+Q011157	M	What is the difference between RAG and fine-tuning?
+Q011169	M	Should I use an open-source model?
+Q011238	M	How would you select a model for a production RAG system?
+Q011240	M	Explain the tradeoffs between proprietary and open source models.
+Q011242	M	You want to launch a hosted coding assistant on an open-weight model. How do you choose one?
+Q011256	M	When would you recommend self-hosting versus using APIs?
+Q011260	M	How do you choose between OpenAI, Anthropic, and Google models for a production application?
+Q011313	M	When is a self-hosted GPU cluster cheaper than an API?
+Q011321	M	When would you choose local or on-device inference over a cloud API?
+Q011322	M	You are shipping an AI feature in an iOS app. Do you bundle your own model or use Apple's Foundation Models?
+Q011568	M	Why are open-weight coding models important for enterprise?
+Q011712	M	Why would you choose RAG over fine-tuning for a regulatory compliance assistant?
+Q011738	M	Your team wants to build an internal AI assistant. Should you build on OpenClaw, OpenHands, or build custom with Claude Code + MCP?
+Q010762	M	Which LLM should I use in production: Claude, GPT, Gemini, or open-source?
+Q012071	M	When would you fine-tune instead of using RAG or prompt engineering, and if you do, LoRA or full fine-tuning?
+Q012072	M	A customer insists on fine-tuning an open model on their support tickets because "we want our own model." You think RAG solves it. What do you do?
+Q012426	M	When should you use RAG instead of fine-tuning an LLM?
+Q012495	M	How do you build a domain expert AI?
+Q007466	M	What is in-context learning, and how do you decide between it and fine-tuning?
+Q007468	M	When does in-context learning fail where fine-tuning succeeds?
+Q007600	M	Open-weights vs closed-weights models: how do you think about the tradeoff as an engineer in 2026?
+Q007601a	H	Sketch the break-even math for self-hosting a 70B-class model versus API pricing.
+Q007601b	M	What contractual and data-governance questions matter when sending regulated data to a closed API?
+Q007615	H	Where would you draw the line at which fine-tuning beats retrieval for factual content?
+Q007616	H	What would change your mind about knowledge editing (directly editing facts into the model)?
+Q007770	M	How do you decide when to stop prompt engineering and fine-tune instead?
+Q007773	M	What would make you undo a fine-tune and go back to prompting?
+Q007812	M	When would you choose RAG vs long-context stuffing vs fine-tuning?
+Q007813	H	How does prompt caching change the RAG-vs-long-context economics?
+Q007814	M	Your corpus is 500 pages and updates monthly. Would you pick RAG, long-context stuffing, or fine-tuning?
+Q007815	M	When would you use RAG and fine-tuning together?
+Q008009	E	When would you fine-tune a model instead of using prompting or RAG?
+Q008010	M	Your PM says "fine-tune it on our docs so it knows our product." How do you respond?
+Q008011	M	What evaluation would you build before deciding whether to fine-tune?
+Q008012	M	When would you do both RAG and fine-tuning?
+Q008138	M	When is fine-tuning the wrong call? Describe failure modes you would warn a team about.
+Q008141	M	Hosted fine-tuning APIs vs training it yourself: how do you decide?
+Q008142	M	What clauses do you check in a provider's fine-tuning terms before uploading data?
+Q008143	H	What breaks when you migrate a hosted fine-tune to open weights?
+Q008148	H	In a fine-tuning pipeline for a customer-support model, where does RAG sit in training data versus serving, and why must they match?
+Q008149	M	When would you ship the prompted baseline instead of a fine-tuned model?
+Q008619	M	When deciding between self-hosting an open-weights model and calling a provider, what monthly token volume would make you re-evaluate?
+Q008620	M	How do provisioned-throughput offerings change the calculus of self-hosting an open-weights model versus calling a provider?
+Q008769	M	How does training data memorisation influence a RAG-versus-fine-tuning decision for private data?
+Q008810	M	Hosted model API or self-hosted open weights: how do you make the security and privacy call?
+Q008812	H	At what utilisation does self-hosting an LLM start winning on cost, and how does that change the security argument?
+Q008917	H	When would you fine-tune a small model for table extraction instead of prompting a frontier VLM?
+Q008946	H	How would you decide between fine-tuning a 7B open VLM and just prompting a frontier model, given a fixed budget?
+Q009057	M	How do you decide between building in-house, buying a vendor product, and calling a model API?
+Q009058	M	When would fine-tuning your own model beat a frontier API?
+Q009063	M	At what scale does self-hosting an LLM beat API pricing?
+Q009100	M	How do you choose between candidate models when there is no time for a full bake-off?
+Q009204	M	For a browser-operating agent, how would you use RL or fine-tuning on trajectories versus prompting a general model?
+Q009235	M	When do you recommend fine-tuning versus fixing retrieval to reduce hallucinations in a RAG assistant?
+Q009378	M	A customer has 50 labelled examples and wants to fine-tune anyway. What do you tell them?
+Q009379	M	When does a long cached system prompt beat a fine-tune economically?
+Q009385	M	A small open-weight coding model resolves 35% of internal tasks against 60% for a frontier API the customer cannot use. Is it worth deploying?
+Q009435	H	When would you fine-tune a model instead of using RAG or prompt engineering, and if you do fine-tune, LoRA or full fine-tuning?
+Q009437	M	How much training data do you need before fine-tuning beats few-shot prompting?
+Q009449	H	A customer insists on fine-tuning an open model on their support tickets because "we want our own model." You think RAG over their knowledge base solves it. What do you do?
+Q009450	M	In a bake-off, RAG and fine-tuning score the same. What do you recommend and why?
+Q009451	M	What if the executive mandate really is just "we must say we trained a model"?
+Q009576	M	Why is RAG the right architecture for an enterprise assistant instead of fine-tuning on the company's data? Where does RAG break?
+Q009577	M	Where would you still fine-tune in an enterprise RAG product (query understanding, rerankers, embedding models: components, not knowledge)?
+Q009790	M	An enterprise customer wants the model to "know our business." Prompting, RAG, or fine-tuning: how do you decide?
+Q009791	M	A customer insists on fine-tuning for prestige reasons rather than need. What do you do?
+Q009804	M	At what point does fine-tuning your own small model beat paying for a frontier model?
+Q009827	M	A customer with 2,000 pages of internal PDFs insists on fine-tuning because "we don't want our data leaving in prompts". How do you respond?
+Q009949	M	For an assistant over a customer's internal document corpus, when would fine-tuning on the corpus actually be defensible?
+Q009950	M	For an assistant over a customer's internal document corpus, how does your choice between RAG and fine-tuning change if p95 latency must be under 500 ms?
+Q010190	M	When would you tell a customer not to self-host an LLM at all?
+Q010191	H	A customer wants to migrate from a proprietary frontier-model API to an open model. How do you run that engagement?
+Q010441	H	A customer's CISO says no data can leave their network. How does that constrain your LLM architecture, and what are the options?
+Q010442a	H	A customer picks a self-hosted model, then complains quality is worse than the ChatGPT demo they saw. How do you handle it?
+Q010507	M	Classify support tickets into 40 categories: LLM API, fine-tuned small model, or classical classifier? How do you decide?
+Q010508	M	For a 40-category ticket classifier, does a taxonomy that changes quarterly flip your choice between an LLM API, a fine-tuned small model, and a classical classifier?
+Q010510	M	When do you fine-tune versus prompt-engineer versus use RAG?
+Q010512	M	How do you evaluate whether RAG or fine-tuning closed the gap?
+Q010579	M	When is an LLM the wrong tool? Give real examples where you would push back on a PM.
+Q010580	M	A PM insists on "AI-powered" for marketing reasons. What do you build?
+Q010581	M	Where have you seen an LLM replace something that should have stayed deterministic?
+D00289	M	How do you decide between prompt engineering, RAG, tool calling and fine-tuning for a given problem?
+D00290	M	When would you choose RAG over fine-tuning, and when the reverse?
+D00291	M	Can RAG and fine-tuning be combined, and what does each contribute in a combined system?
+D00292	M	Why is RAG better than fine-tuning for a regulated knowledge base that changes monthly?
+D00293	M	When does many-shot in-context learning substitute for fine-tuning?
+D00294	M	How do you decide when to use a frontier API model versus self-host an open-weight model?
+D00295	M	What are the limitations of fine-tuning that interviewers commonly probe?
+D00296	M	Build versus buy versus framework: how do you decide for an LLM platform component?
+D00297	M	A client wants better quality, lower latency and lower cost at once. How do you negotiate the trade-offs?
+D00298	M	How do you decide whether a problem is suitable for an LLM at all, or better handled by rules or classical ML?
+D00299	M	When should an agent be downgraded to a deterministic workflow?
+D00300	M	Provider model versions now change weekly. How do you keep model selection current without breaking production?
+D00301	M	How do sovereign-AI and data-residency requirements change your model hosting choice?
+D00302	M	How does a cheaper open-weight model with frontier-level quality change your production architecture decisions?
+D00303	M	A regulated customer requires zero data retention but the best model requires 30-day retention. What are your options?
+D00304	M	Your cost model for next year uses today's per-token prices. What will it get wrong?
+D00305	M	How do you decide whether a skill or a RAG corpus should supply a given piece of agent knowledge?
+D03789	M	When would you choose RAG, fine-tuning or long context to add knowledge to an LLM, and how do you combine them in practice?
+D03790	M	How do you decide between calling a hosted LLM API and self-hosting an open model?
+D04454	M	When would you choose a BERT-style encoder over a decoder-only LLM such as LLaMA for a production NLP task?
+D04455	M	Does every vertical domain need its own domain-specific LLM? What would you weigh before deciding between a general model and a specialized one?
+D04705	M	To make a model proficient in a specific industry's knowledge, would you continue pretraining, fine-tune, use RAG, or combine them?
+D04815	M	How do you inject domain knowledge into an LLM: prompting, RAG, continued pretraining or fine-tuning?
+D04828	M	Compare RAG and SFT for adding knowledge. When would you choose each or combine them?
+D04829	M	Which factors (update frequency, data privacy, latency, cost, hallucination risk) decide RAG versus fine-tuning for an enterprise Q&A product?
+D04976	H	A startup with limited GPU budget wants a domain-specific assistant. Lay out a decision tree among prompting, RAG, LoRA fine-tuning and continued pretraining.

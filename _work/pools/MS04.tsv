@@ -1,0 +1,265 @@
+Q004896	H	Design a real-time voice AI agent.
+Q004897	H	Design ChatGPT: training to serving (end to end).
+Q004898	H	Design a RAG system (chat with your documents).
+Q004899	H	Design an enterprise RAG assistant over 10M documents with per-user permissions.
+Q004900	H	Design memory for a personal AI assistant.
+Q004901	H	Design a deep research agent.
+Q004902	H	Design a multi-agent customer support system.
+Q004903	H	Design an on-device AI assistant.
+Q004904	H	Design a multimodal search system (text, image, video).
+Q004905	H	Design an LLM inference platform (vLLM-as-a-service).
+Q004906	H	Design an LLM evaluation platform.
+Q004907	H	Design a text-to-image generation service (Midjourney-like).
+Q004908	H	Design a music generation service (Suno-like).
+Q004909	H	Design a video generation service (Sora-like).
+Q004910	H	Design an AI coding agent.
+Q004911	H	Design a code generation and review system.
+Q004914	H	Design an AI-powered email assistant.
+Q004915	H	Design a medical diagnosis assistant using AI.
+Q004917	H	Design an AI-powered data extraction pipeline from unstructured documents.
+Q004918	H	Design a text-to-SQL system over a data warehouse with thousands of tables.
+Q004919	H	Design a personalized learning assistant.
+Q004920	H	Design an AI system for automated code migration.
+Q004921	H	Design an AI-powered legal document review system.
+Q004922	H	Design a conversational AI system with memory across sessions.
+Q004931	H	Design an AI gateway/proxy for managing LLM access across an organization.
+Q004933	H	How do you approach capacity planning for an AI system?
+Q004934	H	Design a multi-tenant AI chatbot platform where each business gets a custom chatbot.
+Q004935	H	Design an AI meeting summarizer system for thousands of meetings daily.
+Q004938	H	Design an AI-powered document processing pipeline for financial institutions.
+Q004941	H	Design an AI voice assistant architecture.
+Q004942	H	Design a multi-agent workflow system where agents collaborate on complex tasks.
+Q004943	H	Design a real-time AI transcription system for concurrent audio streams.
+Q005730	H	How would you design a question answering system that can extract an answer from a large collection of documents given a user query?
+Q005763	H	Build a chatbot to help people book hotels.
+Q006035	H	How would you design an LLM API gateway, including multi-model routing and A/B testing?
+Q006042	H	How do you design and deploy an embedding service for large-scale RAG, including embedding API cost optimization and vector index version management?
+Q006192	H	How do you design an enterprise production RAG system, and why must the two pipelines be separated?
+Q006235	H	How would you design a hybrid architecture with a Go backend and a Python AI service, and why should Go handle business logic while Python handles AI orchestration?
+Q006239	H	How would you build an MVP from 0 to 1 for a vertical-industry AI project (such as for a law firm), and which modules would you build first?
+Q006778	H	Design an agentic workflow with a planner/executor and tools.
+Q006780	H	Design an AI candidate sourcing system with 750M profiles, semantic search, and under 500 ms latency.
+Q006781	H	Design a coding agent (SWE-bench-style).
+Q006783	H	Design an LLM evaluation pipeline.
+Q006784	H	Design a hallucination-free banking chatbot.
+Q006785	H	Design LLM inference at scale.
+Q006786	H	Design a RAG system over 10M documents.
+Q006787	H	Design a semantic search engine.
+Q006788	H	Design a customer support bot (RAG plus actions).
+Q006798	M	For an LLM customer-support system, what is the online metric (deflection, CSAT, task completion) and its counter-metric (escalation rate, false-refusal rate, hallucination rate)?
+Q006804	H	In a RAG/LLM serving system, what breaks first at 10x traffic: the GPU queue, vector index RAM, the reranker, or the database?
+Q006805	H	How do you degrade gracefully under a traffic spike rather than fall over in an LLM serving system?
+Q007057	H	Design a Q&A assistant over our internal docs. What is the strongest first move?
+Q007061	H	A new B2B customer asks for the assistant over their private wiki, with exact part-number queries common, about 3M docs, a 1.5 s budget, strict isolation, and weekly doc updates. What is the defensible end-to-end design?
+Q010817	H	How do you handle multi-tenant RAG systems?
+Q010924	H	Explain how you would design a system that uses an AI coding agent as a CI/CD component for automated bug fixing.
+Q010976	H	In a multi-tenant RAG system, you are choosing between Pinecone namespaces, Weaviate per-tenant shards, and pgvector with Row-Level Security. Which fails first under noisy-neighbor pressure, and which fails first under an audit?
+Q010991	H	Design a real-time fraud detection system with a hard p99 latency requirement of under 500ms, using both ML rules and an LLM-RAG layer. Walk through the latency budget breakdown.
+Q011309	H	How do you handle "noisy neighbors" in a multi-tenant LLM cluster?
+Q011310	H	A single malformed request crashed a vLLM replica and every tenant on it lost service. What is the design lesson?
+Q011311	H	Design a premium low-latency tier for an agent product that needs very high tokens per second per user.
+Q011320	M	A team prototyped on Ollama and wants to ship it as a shared API. What changes and why?
+Q011421	H	Design a RAG system for a financial research platform that needs to answer questions about earnings reports containing text, tables, and charts.
+Q011423	H	Users want to ask questions across a 10,000-hour library of training videos. How do you design and cost it?
+Q011434	H	Design a RAG system that serves 10,000 queries per second across 500 tenants with a p99 latency of 2 seconds.
+Q011591	H	How would you design infrastructure for 1M LLM queries per day?
+Q011687	M	How do you prevent hallucinated financial data in an LLM-based financial assistant?
+Q011693	H	How should a coding agent handle tasks that require changes across 20+ files?
+Q011695	M	How do you prevent a coding agent from introducing security vulnerabilities?
+Q011701	M	In a multilingual LLM customer-support system, why not translate to English and back?
+Q011702	M	In a customer-support AI, what if the AI keeps apologizing but never actually helps?
+Q011703	M	How does a customer-support AI handle a customer who insists on talking to a human?
+Q011705	M	In a contract data extraction system, what do you do if the extraction confidence is low?
+Q011706	M	How do you handle contracts with non-standard layouts in a contract extraction system?
+Q011707	M	How do you handle contracts where key terms are defined in exhibits in a contract extraction system?
+Q011709	M	How do you prevent the LLM from hallucinating facts about movies in a movie recommendation system?
+Q011714	M	How do you handle regulations that require human judgment in a regulatory compliance AI system?
+Q011715	M	In a regulatory compliance RAG system, how do you handle the FDA updating a regulation mid-month?
+Q011716	M	How do you explain an AI system's reasoning to regulators during an audit?
+Q011720	M	How do you ensure a clinical documentation AI does not miss critical information?
+Q011726	M	How do you handle documents with mixed permissions in an enterprise RAG system?
+Q011727	M	How does an enterprise RAG system handle real-time collaboration documents (Google Docs, live Confluence pages)?
+Q011739	H	How would you design a system that lets non-technical users automate desktop tasks using AI?
+Q011744	H	Design a system that lets a customer support agent answer questions using data from Zendesk, Salesforce, and an internal knowledge base.
+Q010757	E	What is AI system design?
+Q011876	H	Design a code assistant: repo indexing, context assembly, edit application, evaluation.
+Q011877	H	Design a customer-support agent that can take real actions, with escalation to humans.
+Q011878	H	Design semantic search over a large product catalogue.
+Q011880	H	Design a document-intelligence pipeline: scanned PDFs in, structured fields out, at 10M documents.
+Q011881	H	Design a Text-to-SQL system over a warehouse with thousands of tables.
+Q011882	H	Design a meeting assistant: recording, diarisation, summary, action items, integrations.
+Q011883	H	Design an LLM gateway: routing across providers, failover, caching, budgets and rate limits.
+Q011884	H	Design the serving stack for a consumer chat assistant at hundreds of millions of users.
+Q011906	H	Design a chat assistant service like Claude.
+Q011907	H	Design a system that enables a large language model to handle multiple questions in a single thread.
+Q011934	H	How would you build an LLM-powered enterprise search system?
+Q011941	H	An enterprise customer says "We want AI to automate our claims processing." As the engineer in the room, what do the first two weeks look like?
+Q011954	H	Design the serving system for a multimodal assistant (text and image in, streaming text out) at hundreds of millions of users.
+Q011980	H	A bank wants the whole stack (model, RAG, agents) deployed air-gapped on their own GPUs. What actually changes versus a SaaS deployment?
+Q011994	H	Design an end-to-end cloud service that lets users delegate multi-step phone tasks ("order my usual coffee") to an autonomous agent. Cover architecture and failure modes.
+Q012005	H	Design cross-lingual RAG: the knowledge base is in English and Hindi, but users ask in Tamil, Telugu or transliterated Hinglish.
+Q012007	H	Design a real-time voice agent for a citizen helpline in Hindi and three regional languages, targeting sub-250 ms perceived latency over a phone line.
+Q012009	H	A state agency wants to move a paper-and-call-centre welfare-scheme service onto a multilingual assistant, on-prem for data residency. How do you scope and ship it?
+Q012012	H	Design a Copilot feature that answers questions over a user's work email, documents and meetings, without ever leaking content the user can't access.
+Q012013	H	Design an agent that can take actions in a spreadsheet ("insert a pivot table of Q3 sales by region"): orchestration, tools and failure handling.
+Q012065	H	Design an LLM-powered customer-support assistant on top of an existing help centre, with escalation to humans.
+Q012087	H	Design a retrieval pipeline pulling from 100B web pages with sub-second latency and freshness guarantees.
+Q012088	H	Design a ranking system combining BM25, dense retrieval and LLM reranking across multiple indexes.
+Q012089	H	Design a hybrid browser architecture combining on-device privacy with cloud AI assistance.
+Q012090	H	How does an answer engine handle breaking news, such as a query about something that happened 20 minutes ago?
+Q012099	H	Design a next-edit prediction (tab completion) system for a code editor that must feel instant (sub-100 ms perceived latency) for millions of daily users.
+Q012100	H	How would you index a 100k-file monorepo so an AI editor can retrieve relevant context, and keep the index fresh as the user edits?
+Q012101	H	Your agent model outputs an edited version of a 500-line file. Applying it verbatim is slow and error-prone. How do you make "apply" fast and reliable?
+Q012110	H	Design a service that turns a clinical conversation into draft orders (labs, imaging, referrals, prescriptions) via tool calls against the EHR.
+Q003638	H	How would you design a production-grade LLM gateway?
+Q012494	H	Design a personal AI chat assistant.
+Q012499	H	Design a knowledge Q&A system.
+Q007950	H	Design retrieval for a multi-tenant SaaS product where users have different document permissions.
+Q007951	H	In a permission-aware retrieval system, a document's sharing settings change every few minutes. How does your design keep up?
+Q008354	H	You are building a multi-tenant agent platform. Tenants bring their own MCP servers and their own data. What isolates them?
+Q008356	H	How do you let tenants in a multi-tenant agent platform share a common tool set without sharing the prompt cache?
+Q008366	H	Design the memory and personalisation layer for an assistant serving millions of users. What do you store, when do you summarise versus retrieve, and how do you evaluate memory quality?
+Q008367	H	How do you handle a user correcting a fact the memory system extracted wrongly?
+Q008680	H	Design a multi-provider LLM gateway: routing, fallbacks, and the pitfalls teams hit.
+Q008911	H	Design a document-extraction system. When do you use an OCR pipeline versus sending pages to a VLM?
+Q008913	H	In a document-extraction system, where does human-in-the-loop go, and how do you decide the confidence threshold?
+Q008914	H	How does the OCR-versus-VLM calculus in a document-extraction system change at 10M pages per month?
+Q008931	H	Design a production voice agent. Cover pipeline vs speech-to-speech, the latency budget, and interruption handling.
+Q008951	H	Design a pipeline that turns about 100k hours per month of call recordings into searchable, analysable data. What are the stages and where does it go wrong?
+Q008952	H	How would you evaluate a call-recording transcription and analysis pipeline end to end when you have no reference transcripts for your own calls?
+Q008953	M	Where would you put a human in the loop in a call-recording analysis pipeline, given the volume?
+Q009149	M	In a clinical note generation system, how would you detect a medication change that contradicts the patient's chart?
+Q009150	H	A generated clinical note contains a medication the patient never mentioned. Treating that as a safety incident, how do you detect it before a clinician sees it?
+Q009151	H	Your hallucination verifier itself has a false-negative rate. How do you set its operating point?
+Q009152	H	How would you catch omissions in generated notes, which no entailment check will ever surface?
+Q009153	H	Clinicians will not sign what they cannot verify. How would you build span-level provenance from every line of a generated note back to the conversation?
+Q009154	M	A sentence in a generated note summarises three separate moments in the visit. How do you present its provenance?
+Q009155	M	What happens to span-level provenance when a generated note is regenerated after an edit?
+Q009159	H	Edit rate is the obvious measure of clinician trust in generated notes. What does it hide, and what would you instrument instead?
+Q009160	M	How would you automatically distinguish a style edit from a correctness edit?
+Q009161	M	A health system reports high satisfaction with generated notes but rising post-signature amendments. What is your hypothesis?
+Q009162	H	Turn a clinical conversation into billable diagnosis codes. What is the accuracy bar, and how do you build to it?
+Q009163	M	How would you monitor for systematic over-coding drift across a health system?
+Q009164	M	What do you do when the conversation supports a condition but the patient chart contradicts it?
+Q009168	M	In an ambient note-generation system where the note should be ready before the clinician leaves, what breaks first when a specialty's visits run 90 minutes instead of 15?
+Q009169	M	Would you stream a generated note to the clinician section by section, and what does that cost you in coherence?
+Q009170	M	Walk me through writing a finished note back into an EHR such as Epic. What goes wrong?
+Q009173	H	Design a service that turns a clinical conversation into draft orders: labs, imaging, referrals, prescriptions. Assume tool calls against the EHR.
+Q009174	M	In a service that drafts clinical orders from a conversation, what does the system do when the clinician mentions a drug the patient is allergic to?
+Q009175	H	How would you evaluate a draft-order generation system end to end, given that a missed order and a spurious order have very different costs?
+Q009176	H	Nurses chart structured flowsheet rows across a twelve-hour shift, not one narrative note per visit. How would you adapt an ambient pipeline built for physician visits to draft flowsheet entries?
+Q009177	M	A nurse describes the patient in bed A while standing at bed B. How does an ambient charting system know which patient is meant?
+Q009178	M	How would you onboard a site whose flowsheet template has hundreds of custom rows?
+Q009181	H	Design a multi-tenant inference platform that serves many foundation models to thousands of customers (Bedrock-shaped).
+Q009182	M	How do you handle a 10x traffic spike on one model in a multi-tenant inference platform?
+Q009183	M	In a multi-tenant inference platform, where does prompt caching fit, and what is the leak risk across tenants?
+Q009184	H	Design an enterprise assistant that answers questions over a company's internal documents, respecting per-user permissions.
+Q009185	M	In an enterprise document assistant, how do you handle a document whose ACL is broader than its content should be?
+Q009186	M	What changes in an enterprise document assistant when the corpus is 100M documents across 50 connectors?
+Q009219	H	Design the serving stack for a Claude-scale LLM API. Maximise GPU utilisation without wrecking p99 latency.
+Q009221	M	In an LLM serving stack, how do you handle one tenant sending 200k-token contexts?
+Q009256	H	Design the routing layer that decides whether a user request is handled on-device, by a first-party server model, or by a third-party model.
+Q009257	M	How do you keep the model router itself cheap enough to run on every request?
+Q009258	H	How do you detect that the on-device model is silently producing worse answers than the server model would have?
+Q009324	H	Design the execution environment for thousands of concurrent cloud coding agents. It must survive an agent waiting forty minutes for CI.
+Q009325	H	In an execution environment for cloud coding agents, what is your rollback granularity, and how do you avoid a snapshot chain that grows without bound?
+Q009367	H	Design an agent that automates an enterprise workflow, for example drafting responses to RFPs using internal documents and a CRM. What does "enterprise-grade" add?
+Q009370	H	A bank wants the whole stack (model, RAG, agents) deployed air-gapped on their own GPUs. What actually changes versus your SaaS deployment?
+Q009384	H	A regulated customer wants a coding agent built on an open-weight coding model small enough to run on a single GPU, entirely inside their network. How do you decide whether it is good enough, and what does the deployment look like?
+Q009387	H	Design a next-edit prediction ("tab") system for a code editor that must feel instant, with sub-100ms perceived latency, for millions of daily users. Walk through the stack.
+Q009390	H	How would you index a 100k-file monorepo so an AI editor can retrieve relevant context, and keep the index fresh as the user edits?
+Q009393	H	An AI model is streaming a multi-file edit while the user keeps typing in one of those files. How do you apply the edits without corrupting the buffer?
+Q009394	H	How does your design for applying streamed AI edits to an editor buffer change for two users plus an agent (three writers)?
+Q009395	M	How do you make a multi-file AI edit apply atomically undoable?
+Q009405	H	An agent needs to iterate on code (run builds, tests, lints) without disturbing what the user sees in their editor. How do you architect that?
+Q009407	H	How would you extend a local sandboxed code-iteration agent to cloud agents running remotely on a repo the user does not have checked out, and to handing a session from cloud back to local?
+Q009408	M	When diffing repository snapshots (path to content) by content hash for incremental indexing, how do you handle renames where a content hash matches at a new path?
+Q009409	M	When using a Merkle tree of file hashes for incremental repository indexing, where would you persist the tree so a restart does not rescan the repo?
+Q009432	H	Design a RAG system over an enterprise's data: 10M documents in object storage plus structured tables, with per-user access controls. Walk through the architecture and how you would evaluate it.
+Q009434	H	Where does an enterprise RAG design built for 10M documents break at 100M documents?
+Q009440	H	Design a Text2SQL agent for business users querying a warehouse with 5,000 tables. What is hard, and how do you evaluate it?
+Q009442	M	How do you stop a Text2SQL agent from producing plausible-but-wrong joins between tables that share column names?
+Q009567	H	Design permission-aware retrieval for enterprise search. Users must never see results they cannot access in the source system.
+Q009568	H	In permission-aware enterprise search, how fast must an access revocation take effect, and what is your SLA mechanism?
+Q009573	H	Design a connector framework that syncs content and permissions from 100+ SaaS apps into one search index.
+Q009633	H	Design the serving system for a multimodal assistant (text and image input, streaming text output) at hundreds of millions of users.
+Q009681	H	Design an agent that takes a draft NDA and returns a redlined Word document reflecting the firm's playbook, not a chat response.
+Q009686	H	In a batch LLM document-review workflow, the client adds three questions after the batch has run. What re-runs and what does not?
+Q009687	H	How would the design of a batch LLM document-review workflow change if turnaround had to be under ten minutes?
+Q009732	H	Design a serverless inference layer where any of thousands of hosted models can receive a request at any moment.
+Q009778	H	Design a Copilot feature that answers questions over a user's work email, documents, and meetings without ever leaking content the user can't access.
+Q009779	M	In an enterprise Copilot over a user's documents, how do you handle a document shared with the user mid-conversation? When does it become answerable?
+Q009832	H	Design an on-prem deployment of an open-weight model for a European bank that cannot send data to any external API.
+Q009833	H	A bank has 4x A100 80GB in total. What model and quantization do you pick for an on-prem LLM deployment, and how many concurrent users does that support?
+Q009841	H	Build a service that takes a user question, enriches it with data from a third-party API, and answers via a chat-model API. How do you structure it?
+Q009938	H	Design the serving stack for a ChatGPT-scale consumer assistant: hundreds of millions of weekly users, streaming chat, multiple model tiers.
+Q009953	H	An enterprise customer says "We want AI to automate our claims processing." You're the engineer in the room. What do the first two weeks look like?
+Q009970	H	Build RAG over a customer's documents where access control is row- and document-level. How do you guarantee a user never sees restricted content in an answer?
+Q009980	H	Your platform must support multiple LLM providers, including deployments in restricted environments where only some models are available. How do you architect model selection?
+Q009986	H	How do you evaluate text-to-query accuracy when the customer can't share their data?
+Q009995	H	Design an answer engine: a user types a question and gets a cited, streamed answer. Your end-to-end budget is 3 seconds to a complete short answer.
+Q009997	M	What changes in an answer-engine design if 30% of queries are follow-ups in an existing conversation?
+Q010066	H	Design a real-time voice agent for a citizen helpline in Hindi and three regional languages, targeting sub-250 ms perceived latency over a phone line. What is the architecture?
+Q010092	H	A state agency wants to move a paper-and-call-centre welfare-scheme service onto a multilingual assistant, on-prem for data residency. How do you scope and ship it?
+Q010127	H	Design a customer-facing agent for an airline that can cancel and rebook flights. How do you keep it from violating fare policy?
+Q010186	H	Design a serverless inference platform serving 100+ open models on a shared GPU fleet.
+Q010187a	H	In a serverless inference platform, a new 400B MoE model launches and traffic grows 100x in an hour. Walk through what happens.
+Q010187b	H	How do you run engine upgrades (a new vLLM or kernel version) across a GPU inference fleet without breaking SLOs?
+Q010227	H	Design a system that finds driving segments similar to a given one across the entire fleet archive.
+Q010228	H	In a system that searches a fleet archive for similar driving segments, how would you handle a query where the interesting thing is what did not happen, such as a pedestrian who nearly stepped out?
+Q010252	H	Design the serving stack for a consumer chatbot with real-time search over a social-media firehose.
+Q010254	H	For a chatbot with real-time search over a social-media firehose, what is your backpressure strategy when the firehose spikes 10x during a live event?
+Q010305	H	Design the backend for a customer-facing chatbot. Walk me through the request path.
+Q010367	H	Design the data platform for a company-wide AI assistant.
+Q010368	M	In a company-wide AI assistant, where does text-to-SQL fit versus RAG over documentation?
+Q010369	M	Which single component of a company-wide AI assistant's data platform would you build first to de-risk the design?
+Q010385	H	Leadership wants an agent that answers business questions straight from the warehouse. What does the data platform need before you would let it?
+Q010386	M	An agent and a finance dashboard disagree on last quarter's revenue. How do you find out which is right?
+Q010387	M	How do you stop agent query load from blowing the data warehouse budget?
+Q010402	H	Design an internal LLM gateway for about 40 product teams. What does "platform as product" mean concretely here?
+Q010403	M	A team demands a model that is not in your LLM gateway's catalog, today. What is the path?
+Q010404	H	An internal LLM gateway becomes a single point of failure. What is the availability story?
+Q010557	H	Design a hybrid architecture where some LLM requests run on-device and some go to the cloud. How does the router decide?
+Q010568	H	Design an in-app assistant that can take actions in your app (for example "book it", "send it to Sam").
+Q010611	M	A take-home says: "Build a tool that answers questions over our public docs. You have a weekend." How do you approach it, and what do you deliberately skip?
+Q010613	M	After building a docs question-answering tool over a weekend, what would you build in week two?
+Q010699	H	We want an LLM agent to triage our SAST findings and review PRs for vulnerabilities. How would you design it, and how would you know it works?
+D03648	H	Design an LLM-powered coding assistant that suggests code completions inside an editor.
+D03649	H	Design an LLM system that automatically reviews pull requests and tags them.
+D03650	H	Design an LLM system that diagnoses production incidents and proposes mitigations for cloud services.
+D03651	H	Design a system that converts natural language into queries over an observability dataset using an LLM.
+D03652	H	Design an internal AI assistant that answers employee questions across company knowledge sources.
+D03653	H	Design a customer support AI assistant that resolves common tickets and escalates hard ones.
+D03654	H	Design an LLM system that summarizes long team chat threads and conversations.
+D03655	H	Design an LLM-powered shopping assistant that helps users find products via dialogue.
+D03656	H	Design a voice-based system that fills a shopping cart through spoken conversation.
+D03657	H	Design an AI copilot that helps product managers with strategy and analysis.
+D03658	M	What are the hard problems you expect when shipping a product built on top of a general LLM, such as latency, reliability and evaluation?
+D03659	H	Design a generative AI system that extracts structured information from unstructured customer notes.
+D03660	H	Design a platform that lets teams build, deploy and monitor many ML models company-wide.
+D03661	H	Design a marketing automation platform that uses ML to choose audiences, content and timing.
+D03662	H	Design a system that automates the playtesting of video games using learned agents.
+D03800	H	Design a RAG-based document question answering system over private company documents.
+D03801	H	Design an LLM-powered customer support chatbot with guardrails and fallback to a human agent.
+D03802	H	Design an agentic workflow assistant that plans, calls tools and keeps memory across sessions.
+D03803	H	Design an enterprise semantic search system that returns synthesized answers with citations.
+D03804	H	Design a code assistant or coding agent that uses retrieval over a repository, tool use and verification.
+D03805	H	Design a system that generates and summarizes content at scale in batch with safety filtering.
+D03806	H	Design a recommendation system where an LLM acts as a ranker or a feature generator.
+D03807	M	How would you structure the nine-step ML system design framework for a GenAI application, and what changes compared with a classical ML system?
+D03808	M	How would you budget context tokens for a RAG system and handle the case where no answer exists in the corpus?
+D03809	M	What reliability patterns such as timeouts, retries, fallbacks, queues and circuit breakers apply to an LLM service?
+D03810	M	How would you design guardrails for an LLM product covering input filtering, output filtering, PII and grounding checks?
+D03811	M	How would you account for and reduce cost and latency in a production LLM application using caching, routing and streaming?
+D03812	M	What would you monitor in a production LLM system, such as quality drift, retrieval hit rate and cost per request?
+D04345	H	Design an always-on AI agent as a long-lived service that can be woken by messages, schedules, and webhooks.
+D04346	H	Why should an agent loop run on the server and not inside the sandbox VM, and what state must be durable across crashes?
+D04347	M	How do durable workflow engines differ from plain job queues for multi-hour or multi-day agent tasks?
+D04348	M	How would you let an agent sleep when idle and wake on triggers while keeping compute cost low?
+D04349	M	How would you design approval gates for irreversible agent actions such as sending emails or making payments?
+D04350	M	How would you isolate an agent's code execution environment with microVMs, and what must never be placed in the model context?
+D04351	M	How should an agent system prioritize and deduplicate concurrent triggers from multiple channels?
+D04352	M	How do you manage long-running agent context through compaction and long-term memory while preserving prompt cache hits?
+D04353	M	How do you prevent untrusted inputs such as emails and web pages from being treated as user instructions in an agent system?
+D04354	M	Describe the layers of an agent system from application to hardware, and what the harness, serving system, and runtime each contribute.
+D04840	H	Design a question-answering system over a company knowledge base with documents and wikis of mixed formats and access rights.

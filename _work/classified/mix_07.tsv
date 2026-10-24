@@ -1,0 +1,301 @@
+Q009021	DROP	-	hr
+Q009022	DROP	-	hr
+Q009023	DROP	-	hr
+Q009024	DROP	-	hr
+Q009025	DROP	-	hr
+Q009026	MS01	M	How would you explain to a non-technical stakeholder why a model aced the demo but failed in production?
+Q009027	DROP	-	hr
+Q009028	DROP	-	hr
+Q009029	DROP	-	hr
+Q009030	DROP	-	hr
+Q009031	DROP	-	hr
+Q009032	DROP	-	hr
+Q009033	DROP	-	hr
+Q009034	DROP	-	hr
+Q009035	DROP	-	hr
+Q009036	DROP	-	hr
+Q009037	DROP	-	hr
+Q009038	DROP	-	hr
+Q009039	DROP	-	hr
+Q009040	DROP	-	hr
+Q009041	DROP	-	hr
+Q009042	DROP	-	hr
+Q009043	DROP	-	hr
+Q009044	DROP	-	hr
+Q009045	DROP	-	hr
+Q009046	DROP	-	hr
+Q009047	DROP	-	hr
+Q009048	DROP	-	hr
+Q009049	DROP	-	hr
+Q009050	DROP	-	hr
+Q009051	LLM07	M	How do you know your LLM-as-judge evaluator is trustworthy?
+Q009052	DROP	-	hr
+Q009053	LLM07	M	How large does an eval set need to be before differences between two versions of an LLM feature are statistically meaningful?
+Q009054	DROP	-	hr
+Q009055	DROP	-	hr
+Q009056	GA04	M	What monitoring do you consider mandatory for LLM features in production?
+Q009057	FT05	M	How do you decide between building in-house, buying a vendor product, and calling a model API?
+Q009058	FT05	M	When would fine-tuning your own model beat a frontier API?
+Q009059	GA04	M	How do you debug non-deterministic bugs in LLM systems?
+Q009060	GA04	M	How do you write regression tests for behaviour that is correct only 95% of the time?
+Q009061	GA04	M	A bug in an LLM system appears in production but never replays locally. What could be different?
+Q009062	DROP	-	hr
+Q009063	FT05	M	At what scale does self-hosting an LLM beat API pricing?
+Q009064	LLM06	M	What would you try next to cut LLM inference costs by another 50%?
+Q009065	DROP	-	hr
+Q009066	GA01	M	How do you handle a prompt that must change for a model upgrade and behaves differently on both models?
+Q009067	GA04	M	Who should be allowed to change prompts in production on your team, and what gates those changes?
+Q009068	DROP	-	hr
+Q009069	GA04	M	How do you keep an eval set aligned with drifting production traffic?
+Q009070	GA04	M	Which user signals would you weight most when evaluating an LLM feature, given how biased explicit feedback is?
+Q009071	GA04	M	How do you decide when an AI prototype is ready for production?
+Q009072	LLM07	M	What is the minimum viable eval before launching an LLM feature?
+Q009073	GA04	M	How does the bar for production readiness change between an internal AI tool and a customer-facing feature?
+Q009074	DROP	-	unfixable
+Q009075	DROP	-	unfixable
+Q009076	DROP	-	hr
+Q009077	DROP	-	hr
+Q009078	DROP	-	hr
+Q009079	DROP	-	hr
+Q009080	ML05	M	How would you measure inter-annotator agreement before committing to an ML project?
+Q009081	ML05	M	When is a noisy label set still good enough to build on?
+Q009082	DROP	-	hr
+Q009083	GA04	M	How would you page on a regression that only affects 2% of traffic of an LLM feature?
+Q009084	DROP	-	hr
+Q009085	DROP	-	hr
+Q009086	DROP	-	hr
+Q009087	DROP	-	hr
+Q009088	DROP	-	hr
+Q009089	DROP	-	hr
+Q009090	ML08	M	How would you measure the impact of an AI feature when a holdout group is not politically possible?
+Q009091	ML08	M	What do you do when the headline metric of an experiment looks great but a guardrail metric moves the wrong way?
+Q009092	DROP	-	hr
+Q009093	DROP	-	hr
+Q009094	DROP	-	hr
+Q009095	DROP	-	hr
+Q009096	DROP	-	hr
+Q009097	DROP	-	hr
+Q009098	GA05	M	How do you distinguish a safety issue from a quality issue in an AI feature?
+Q009099	DROP	-	hr
+Q009100	FT05	M	How do you choose between candidate models when there is no time for a full bake-off?
+Q009101	LLM07	M	What do you do when model-comparison eval results are ambiguous?
+Q009102	DROP	-	hr
+Q009103	DROP	-	dup
+Q009104	DROP	-	hr
+Q009105	GA05	M	A stakeholder wants to send sensitive customer data (PII) to a third-party model API, saying the business need justifies it. What do you do?
+Q009106	GA05	H	How would you build a PII redaction layer for data sent to a model API, and how would you evaluate it (its recall on PII, and the cost of a miss)?
+Q009107	GA05	M	Does a provider's "no training on API data" policy fully address the risk of sending sensitive data to a third-party model API?
+Q009108	GA05	M	What changes if the sensitive data sent to a third-party model API is health records?
+Q009109	DROP	-	hr
+Q009110	DROP	-	hr
+Q009111	DROP	-	hr
+Q009112	GA04	H	Your model provider deprecates the model your product depends on, with 90 days' notice. How would you handle the migration?
+Q009113	GA04	M	How do you keep prompts portable across model providers without sinking to lowest-common-denominator capability?
+Q009114	GA04	M	How would you handle a model deprecation with 30 days' notice instead of 90?
+Q009115	DROP	-	hr
+Q009116	DROP	-	hr
+Q009117	GA04	H	Your assistant's answer quality regressed and nobody noticed for three weeks. How would you structure the postmortem document?
+Q009118	GA04	M	How would you sample production traffic for quality scoring without a labelling budget that scales with traffic?
+Q009119	GA04	M	What would make you page on an answer-quality regression rather than catch it in a weekly review?
+Q009120	DROP	-	hr
+Q009121	DROP	-	hr
+Q009122	DROP	-	offtopic
+Q009123	DROP	-	hr
+Q009124	RAG06	H	How would you enforce per-user access control at retrieval time without rebuilding the index per user?
+Q009125	DROP	-	hr
+Q009126	DROP	-	hr
+Q009127	DROP	-	unfixable
+Q009128	DROP	-	unfixable
+Q009129	DROP	-	hr
+Q009130	DROP	-	hr
+Q009131	DROP	-	hr
+Q009132	DROP	-	hr
+Q009133	GA03	M	How do you decide which agent actions need human approval without making the agent useless?
+Q009134	DROP	-	unfixable
+Q009135	DROP	-	hr
+Q009136	DROP	-	hr
+Q009137	DROP	-	hr
+Q009138	DROP	-	hr
+Q009139	DROP	-	hr
+Q009141	GA06	H	How would you build and improve an ASR system for a clinic room with two or three speakers, background noise, accents, and a vocabulary full of drug names?
+Q009142	GA06	M	How would you handle a clinician and patient code-switching mid-sentence in ASR?
+Q009143	MS01	M	What is your rollout plan for a new ASR model across hundreds of health systems?
+Q009144	GA06	M	Why does speaker diarisation matter clinically, and how would you attribute roles rather than just cluster voices?
+Q009145	GA06	H	How would you evaluate diarisation quality in a way that correlates with clinical note errors rather than with DER?
+Q009146	GA06	M	What changes in speaker diarisation for clinical visits when an interpreter is present?
+Q009147	GA06	H	A patient's chart already lists their medications. How would you use that to improve transcription of drug names, and how would you keep it from backfiring?
+Q009148	GA06	M	In contextual ASR biasing with a patient's medication list, how would you size the bias list, and what do you drop first when it gets too long?
+Q009149	MS04	M	In a clinical note generation system, how would you detect a medication change that contradicts the patient's chart?
+Q009150	MS04	H	A generated clinical note contains a medication the patient never mentioned. Treating that as a safety incident, how do you detect it before a clinician sees it?
+Q009151	MS04	H	Your hallucination verifier itself has a false-negative rate. How do you set its operating point?
+Q009152	MS04	H	How would you catch omissions in generated notes, which no entailment check will ever surface?
+Q009153	MS04	H	Clinicians will not sign what they cannot verify. How would you build span-level provenance from every line of a generated note back to the conversation?
+Q009154	MS04	M	A sentence in a generated note summarises three separate moments in the visit. How do you present its provenance?
+Q009155	MS04	M	What happens to span-level provenance when a generated note is regenerated after an edit?
+Q009156	LLM07	H	Two good clinicians write different notes for the same visit. How do you evaluate note quality at all?
+Q009157	LLM07	H	Your automated judge and your clinicians disagree on a slice of notes. How do you work out which one is wrong?
+Q009158	LLM07	M	How would you evaluate a note type you have no annotated data for?
+Q009159	MS04	H	Edit rate is the obvious measure of clinician trust in generated notes. What does it hide, and what would you instrument instead?
+Q009160	MS04	M	How would you automatically distinguish a style edit from a correctness edit?
+Q009161	MS04	M	A health system reports high satisfaction with generated notes but rising post-signature amendments. What is your hypothesis?
+Q009162	MS04	H	Turn a clinical conversation into billable diagnosis codes. What is the accuracy bar, and how do you build to it?
+Q009163	MS04	M	How would you monitor for systematic over-coding drift across a health system?
+Q009164	MS04	M	What do you do when the conversation supports a condition but the patient chart contradicts it?
+Q009165	GA05	H	PHI is in every audio file, transcript, and note in a clinical documentation system. How does that shape the architecture, and what can you send to a third-party model API?
+Q009166	GA05	M	A new frontier model would clearly improve note quality but the vendor will not sign a BAA. What are your options?
+Q009167	GA05	M	How would you prove to an auditor that a specific patient's audio was deleted on schedule?
+Q009168	MS04	M	In an ambient note-generation system where the note should be ready before the clinician leaves, what breaks first when a specialty's visits run 90 minutes instead of 15?
+Q009169	MS04	M	Would you stream a generated note to the clinician section by section, and what does that cost you in coherence?
+Q009170	MS04	M	Walk me through writing a finished note back into an EHR such as Epic. What goes wrong?
+Q009171	SD03	H	How do you make EHR write-back idempotent when the EHR returns a timeout with no result?
+Q009172	MS01	M	What is your rollback story if a bad model version wrote 5,000 notes overnight?
+Q009173	MS04	H	Design a service that turns a clinical conversation into draft orders: labs, imaging, referrals, prescriptions. Assume tool calls against the EHR.
+Q009174	MS04	M	In a service that drafts clinical orders from a conversation, what does the system do when the clinician mentions a drug the patient is allergic to?
+Q009175	MS04	H	How would you evaluate a draft-order generation system end to end, given that a missed order and a spurious order have very different costs?
+Q009176	MS04	H	Nurses chart structured flowsheet rows across a twelve-hour shift, not one narrative note per visit. How would you adapt an ambient pipeline built for physician visits to draft flowsheet entries?
+Q009177	MS04	M	A nurse describes the patient in bed A while standing at bed B. How does an ambient charting system know which patient is meant?
+Q009178	MS04	M	How would you onboard a site whose flowsheet template has hundreds of custom rows?
+Q009179	DROP	-	hr
+Q009180	DROP	-	hr
+Q009181	MS04	H	Design a multi-tenant inference platform that serves many foundation models to thousands of customers (Bedrock-shaped).
+Q009182	MS04	M	How do you handle a 10x traffic spike on one model in a multi-tenant inference platform?
+Q009183	MS04	M	In a multi-tenant inference platform, where does prompt caching fit, and what is the leak risk across tenants?
+Q009184	MS04	H	Design an enterprise assistant that answers questions over a company's internal documents, respecting per-user permissions.
+Q009185	MS04	M	In an enterprise document assistant, how do you handle a document whose ACL is broader than its content should be?
+Q009186	MS04	M	What changes in an enterprise document assistant when the corpus is 100M documents across 50 connectors?
+Q009187	SD01	H	Find the top-K most frequent items in a high-volume event stream with bounded memory.
+Q009188	SD01	M	How do you get the top-K most frequent items over a sliding 5-minute window in an event stream?
+Q009189	SD01	M	When would you use exact counting sharded over hosts instead of an approximate top-K algorithm?
+Q009190a	LLM01	M	Why did transformers displace RNNs for language modelling?
+Q009190b	LLM06	M	What exactly does the KV cache buy you at inference time?
+Q009191	LLM06	M	Why does grouped-query attention shrink the KV cache, and what does it trade off?
+Q009192	LLM06	M	How does prefix/prompt caching relate to the KV cache?
+Q009193	GA04	H	Your LLM endpoint's p99 latency doubled after a deploy, but the model weights did not change. Walk me through your debugging.
+Q009194	GA04	M	If an LLM endpoint's p99 latency doubled but p50 is flat, what does that tell you?
+Q009195	GA04	M	What alarm would have caught a p99 latency regression in an LLM endpoint before customers noticed?
+Q009196	LLM04	H	You are training a large model across hundreds of accelerators. Compare data, tensor, and pipeline parallelism. When do you combine them?
+Q009197	LLM04	M	In distributed training of a large model, where does gradient accumulation fit?
+Q009198	LLM04	M	Why does activation checkpointing trade compute for memory, and when is it not worth it?
+Q009199	GA04	H	How would you decide an LLM-powered assistant is ready to launch to millions of customers?
+Q009200	LLM07	M	Your LLM judge and your human raters disagree 20% of the time. What do you do?
+Q009201	GA04	M	Which single online metric would you alarm on first for a newly launched LLM assistant?
+Q009202	GA03	H	Design an agent that operates a web browser to complete multi-step tasks. How do you make it reliable enough to ship?
+Q009203	GA03	M	Websites A/B-test and change layouts constantly. How does a browser-operating agent stay robust?
+Q009204	FT05	M	For a browser-operating agent, how would you use RL or fine-tuning on trajectories versus prompting a general model?
+Q009205	CODE01	M	Implement scaled dot-product attention with a causal mask in NumPy.
+Q009206	CODE01	H	Modify scaled dot-product attention for grouped-query attention. How does the causal mask interact with a KV cache at inference?
+Q009207	DROP	-	unfixable
+Q009208	LLM07	M	After reducing the cost of an LLM workload, how do you prove quality did not regress?
+Q009209	DROP	-	hr
+Q009210	DROP	-	hr
+Q009211	DROP	-	hr
+Q009212	DROP	-	hr
+Q009213	DROP	-	hr
+Q009214	SD07	M	Design a rate limiter that can be extended with new requirements: per-tenant limits, burst allowances, then a sliding window. How do you keep the code from collapsing?
+Q009215	CS02	M	How do you make a rate limiter safe under concurrent calls?
+Q009216	SD01	H	What changes when a rate limiter must be shared across processes (Redis, atomicity, clock skew)?
+Q009217	GA04	M	A provider offers a 50%-discount batch API with 24h latency. When do you switch to it for running an LLM call over 50,000 documents?
+Q009218	GA04	M	When running an LLM call over 50,000 documents, how would you checkpoint safely if two runs might execute concurrently?
+Q009219	MS04	H	Design the serving stack for a Claude-scale LLM API. Maximise GPU utilisation without wrecking p99 latency.
+Q009220	GA04	M	Where does prompt caching change the cost model of an LLM API, and what invalidates a cached prefix?
+Q009221	MS04	M	In an LLM serving stack, how do you handle one tenant sending 200k-token contexts?
+Q009222	GA03	H	What matters more for an agentic coding tool: the model or the harness? Design the agent loop.
+Q009223	GA03	M	When would you add a second agent (subagents) versus giving one agent more turns?
+Q009224	GA03	M	How do you stop an agent from looping on a failing test forever?
+Q009225	DROP	-	dup
+Q009226	LLM07	M	How do you keep a golden eval set from going stale as the product changes?
+Q009227	FT03	M	Explain Constitutional AI. What does it buy you over vanilla RLHF, and what does it not solve?
+Q009228	FT03	M	How does RLAIF preference data differ in failure modes from human preference data?
+Q009229	FT03	M	Where would you still insist on human labels in preference-data collection?
+Q009230	GA05	H	Your agent reads inbound email and can send replies and search internal docs. Walk me through the prompt-injection attack surface and your defences.
+Q009231	GA05	H	Does a quarantined/privileged model split still hold when the agent needs to quote the inbound email in its reply?
+Q009232	GA05	M	What is your policy when prompt-injection defences conflict with task success?
+Q009233	RAG06	H	An enterprise customer says an LLM hallucinates too much in their RAG-based knowledge assistant. As the applied engineer on the account, what do you do in the first 48 hours?
+Q009234	RAG06	M	A customer demands "zero hallucinations" in the contract. How do you respond?
+Q009235	FT05	M	When do you recommend fine-tuning versus fixing retrieval to reduce hallucinations in a RAG assistant?
+Q009236	GA03	H	Design a memory system for a long-running agent: sessions end, but the user expects it to remember decisions from weeks ago.
+Q009237	GA03	M	In an agent memory system, how does the user correct a wrong memory, and how do you propagate that correction?
+Q009238	GA03	M	In a multi-user shared agent with memory, how do you decide whose memories are whose?
+Q009239	DROP	-	hr
+Q009240	DROP	-	hr
+Q009241	DROP	-	hr
+Q009242	DROP	-	hr
+Q009243	DROP	-	hr
+Q009244	GA02	H	Design the tool surface for a coding agent: which tools exist, what their schemas look like, and how results come back.
+Q009245	GA02	M	When would you split one consolidated agent tool into two?
+Q009246	GA02	M	How would you measure whether a tool-surface change actually improved an agent, and on what eval set?
+Q009247	FT03	H	A model's guiding constitution moves from a list of principles towards explained reasoning with a priority order. What does that shift change, and how would you test whether it worked?
+Q009248	GA05	M	Where would you still choose a hard rule over model judgement in your own product, and why?
+Q009249	LLM07	H	How would you detect a model producing good-sounding reasons that do not actually drive its behaviour?
+Q009250	LLM06	H	You need to run a ~3B-parameter language model on a phone with tight memory and power budgets. What changes versus serving the same model in a datacenter?
+Q009251	LLM03	H	Which on-device constraints would make you choose a different architecture (for example, fewer, wider layers versus deeper)?
+Q009252	LLM06	M	When would you give up on on-device inference and route the request to a server model instead?
+Q009253	LLM06	H	Explain post-training quantization versus quantization-aware training. What breaks when you push weights to 2-4 bits, and how do you recover quality?
+Q009254	LLM06	H	How would you decide the quantization bit-width per layer with a fixed 1 GB budget?
+Q009255	FT02	M	What does 2-bit quantization do to the fine-tuning story for downstream teams?
+Q009256	MS04	H	Design the routing layer that decides whether a user request is handled on-device, by a first-party server model, or by a third-party model.
+Q009257	MS04	M	How do you keep the model router itself cheap enough to run on every request?
+Q009258	MS04	H	How do you detect that the on-device model is silently producing worse answers than the server model would have?
+Q009259	FT02	H	You have one on-device base model but a dozen features: summarisation, rewriting, reply suggestions, tone adjustment. How do you specialise without shipping a dozen models?
+Q009260	FT02	M	How do you update one feature's adapter on an on-device model without a full OS release?
+Q009261	FT02	M	What breaks in per-feature adapters if the base model is re-quantized between releases?
+Q009262	LLM06	M	Estimate the KV-cache memory for a 3B on-device model at 4k context, and name the levers that shrink it.
+Q009263	LLM06	M	Which KV-cache memory lever would you try first if you needed 2x headroom for a new on-device feature?
+Q009264	LLM06	H	What does int4 KV-cache quantization do to long-context retrieval quality, and how would you measure it?
+Q009265	GA05	H	How would you improve an on-device model using signals from user devices without collecting user content?
+Q009266	GA05	M	How do you debug a locale-specific quality regression when you cannot read any user prompts?
+Q009267	GA05	H	Where does the differential-privacy epsilon budget actually bind in a design that learns from on-device signals?
+Q009268	LLM05	M	How would you make nucleus (top-p) sampling deterministic for reproducible on-device tests?
+Q009269	LLM05	M	What changes in nucleus (top-p) sampling if the logits arrive quantized to int8?
+Q009270	LLM05	H	Your on-device model must emit valid, schema-conforming tool calls. How do you guarantee validity rather than hope for it?
+Q009271	GA02	H	How do you evaluate semantic (not syntactic) tool-call accuracy without logging user requests?
+Q009272	LLM05	H	How do constrained decoding and speculative decoding interact?
+Q009273	LLM07	H	Your differential-privacy proxy metrics for notification summarisation look flat but journalists post screenshots of bad summaries. What went wrong in your eval design?
+Q009274	GA05	M	How do you decide that a category (for example, breaking news) should not be summarised at all?
+Q009275	LLM06	H	How do you catch a time-to-first-token regression across thousands of device/OS combinations before shipping?
+Q009276	LLM06	M	For a prefix cache in on-device inference, what versions it, and how big is it allowed to get?
+Q009277	DROP	-	hr
+Q009278	DROP	-	hr
+Q009279	GA02	M	When a user utterance matches no installed intent, what does a voice assistant system do, and what does the user hear?
+Q009280	GA04	H	How would you measure end-to-end action accuracy across third-party apps without logging what people actually asked for?
+Q009281	LLM06	H	Your new on-device model is a 20B sparse model whose full weights live in flash, with only 1-4B parameters active at a time. How do you serve it on a phone?
+Q009282	LLM03	M	In a sparse model with only 1-4B active parameters, how would you decide how often to reselect the active experts during a long generation?
+Q009283	LLM06	M	What does flash-based sparse-weight serving do to your time-to-first-token budget on a cold start after the OS has evicted the cache?
+Q009284	LLM06	H	If you moved to an open-source base model with GQA-8, which KV-cache reduction techniques can you still apply post hoc and which need pretraining?
+Q009285	LLM07	H	How would you measure that local attention layers are not silently degrading persona recall at turn 150 of a conversation?
+Q009286	LLM06	H	What happens to the prefix-cache hit rate when a user edits a message at turn 40, and how do you keep the rest of the branch usable?
+Q009287	LLM06	M	Would you replicate a prefix cache across serving nodes or shard requests by prefix hash, and why?
+Q009288	LLM07	H	How would you detect that int8 training has degraded a specific behaviour, like staying in character, when aggregate evals show parity?
+Q009289	LLM04	M	What changes in training and serving if you move from int8 to fp8 on newer hardware?
+Q009290	LLM06	H	Estimate what one chat message costs to serve, and say which lever moves that cost most.
+Q009291	LLM06	M	How does a long-context feature that raises average dialogue length change the per-message serving cost?
+Q009292	LLM06	M	When building the prompt for the next turn of a conversation under a prefix cache, where do you insert retrieved older turns without breaking the cache boundary?
+Q009293	LLM06	M	How would you unit-test that a refactor did not silently drop the prefix-cache hit rate?
+Q009294	GA03	M	A conversation runs past the context window. What do you keep, and how do you decide?
+Q009295	GA03	M	How do you handle a user deliberately contradicting a stored fact as part of the roleplay?
+Q009296	GA03	M	In a tiered conversation-memory design with four tiers, how do you split the context budget across tiers, and how would you tune it empirically?
+Q009297	LLM07	M	Users complain that characters drift out of persona. How would you build a persona scorer so it does not just reward verbosity?
+Q009298	GA04	M	If persona drift correlates with higher user retention, what do you do?
+Q009299	GA05	H	Design the safety system for open-ended character chat.
+Q009300	GA05	H	Users will try to jailbreak via the character definition itself, which is user-authored and cached across many users. How do you defend that surface?
+Q009301	GA05	M	What is the latency budget for each layer of a chat safety system, and which layer do you drop first under load?
+Q009302	GA05	M	When is intervening during decoding better than filtering the finished reply?
+Q009303	GA05	H	How would you keep a safety classifier head calibrated as the base model is post-trained?
+Q009304	GA05	M	What breaks about a decoding-time safety approach if you move to an open-source base model you did not train?
+Q009305	GA05	H	Design age assurance for a platform where the under-18 experience is fundamentally different.
+Q009306	GA05	H	How do you evaluate an age-prediction model when you cannot obtain ground-truth ages for most of the population?
+Q009307	GA05	M	What is your policy when the age-signal model and the verification vendor disagree?
+Q009308	MS03	H	Engagement metrics and wellbeing metrics disagree. How do you build a system that resolves that?
+Q009309	MS03	H	Your recommendation model is trained on engagement labels. How would you change the training objective, not just the launch gate?
+Q009310	MS03	M	What do you do when a wellbeing guardrail metric regresses but only for a small, highly engaged cohort?
+Q009311	MS03	H	Design discovery and search across millions of user-created characters.
+Q009312	MS03	M	How do you collapse thousands of near-duplicate versions of the same popular character in search without erasing the creators who made the good ones?
+Q009313	MS03	M	What offline metric would you trust enough to gate a launch of a character search and discovery system?
+Q009314	DL05	H	An open-source image model has been post-trained so a user's character stays recognisable across art styles. How would you build and evaluate that identity consistency?
+Q009315	DL05	M	How would you detect the copy-through failure of an identity-preserving image model in production without a human looking at every image?
+Q009316	DL05	M	What changes in an identity-preserving image model if creators want their character's identity locked so other users cannot restyle it?
+Q009317	GA03	H	You have eight hours to build a coding agent from scratch. Describe what you build and, more importantly, what you cut.
+Q009318	GA03	M	If you had more time to extend a from-scratch coding agent, which single tool would you add first, and why that one?
+Q009319	GA03	M	How would you stop a coding agent from looping on the same failing edit three times?
+Q009320	GA03	H	A long-running agent drifts after two hours. How would you evaluate a context-compaction model, given that its errors only show up hours later?
+Q009321	GA03	H	What would you checkpoint so that a resumed agent session is genuinely equivalent to an uninterrupted one?

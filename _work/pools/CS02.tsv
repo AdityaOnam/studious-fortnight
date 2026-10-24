@@ -1,0 +1,403 @@
+Q006036	M	How do you use the worker pool pattern in Go to handle highly concurrent LLM requests, and what are the common pitfalls?
+Q006224	M	What are best practices for Python asyncio / async-await in AI applications?
+Q006228	M	How does the Python GIL affect AI applications, and how can multiprocessing be used to work around it?
+Q006745	M	When can parallelism make your algorithms run faster?
+Q006746	M	When can parallelism make your algorithms run slower?
+Q011890	M	Write an async batch processor over an API with concurrency limits, retries with jitter and error isolation.
+Q012068	M	Implement a thread-safe batching logger: many producer threads call log(msg); a background thread flushes batches of up to 100 messages every second or when full.
+Q000216	E	What are the advantages of multithreading?
+Q000217	M	When is multithreading particularly useful?
+Q000230	E	What is CPU scheduling?
+Q000234	E	What is the ready queue?
+Q000235	E	Why is CPU scheduling needed?
+Q000236	M	Why is Round Robin scheduling useful?
+Q000240	M	Explain FCFS, SJF, Round Robin, and Priority Scheduling.
+Q000241	M	Why is FCFS scheduling non-preemptive?
+Q000243	M	Why can SJF scheduling be efficient?
+Q000246	E	What is the difference between preemptive and non-preemptive scheduling?
+Q000249	M	Why is preemptive scheduling useful?
+Q000251	M	What happens if a process blocks?
+Q000252	M	Why does starvation occur in CPU scheduling?
+Q000253	M	How can starvation be prevented?
+Q000254	M	Why is aging needed in scheduling?
+Q000255	M	How does aging work?
+Q000257	M	How do you calculate waiting time and turnaround time?
+Q000261	E	What does turnaround time include in CPU scheduling?
+Q000263	E	What is a race condition?
+Q000265	E	Why is a race condition called a "race"?
+Q000266	M	How can race conditions be prevented?
+Q000267	E	What is a critical section?
+Q000268	E	Why is a critical section important?
+Q000270	M	Is a critical section always protected by a lock?
+Q000271	E	Why do we need a mutex?
+Q000272	E	How does a mutex work?
+Q000273	M	What happens when another thread tries to acquire a locked mutex?
+Q000274	M	How can mutex deadlocks be avoided?
+Q000275	E	What is a semaphore?
+Q000276	E	Why do we need a semaphore?
+Q000277	E	How does a semaphore work?
+Q000279	M	Why can't we simply use a mutex to manage three identical resources?
+Q000280	M	When should you use a mutex?
+Q000281	M	When should you use a semaphore?
+Q000282	M	What happens if we use a mutex instead of a semaphore to manage a limited pool of resources?
+Q000283	M	What happens if we use Semaphore(3) to protect a shared counter?
+Q000284	M	Why do we need monitors?
+Q000285	M	Why is wait() special in a monitor?
+Q000289	M	How is a monitor different from a mutex?
+Q000290	M	Can a monitor use a mutex internally?
+Q000291	M	How can deadlock be prevented or handled in an operating system?
+Q000292	M	Why is deadlock difficult to debug?
+Q000293	E	What are the four necessary conditions for deadlock?
+Q000295	M	How do the four deadlock conditions work together?
+Q000299	M	What is a safe state in deadlock avoidance?
+Q000300	M	What happens after a deadlock is detected?
+Q000378	M	What is the critical section problem?
+Q000379	M	What is a spinlock? When is it preferable?
+Q000380	M	Explain the producer-consumer (bounded buffer) problem.
+Q000381	M	What is the dining philosophers problem? How do you fix the deadlock?
+Q000382	E	What is a deadlock? State the four necessary conditions.
+Q000383	M	What is the difference between deadlock prevention, avoidance and detection?
+Q000384	M	Explain the Banker's algorithm.
+Q000385	M	Compare FCFS, SJF and Round Robin scheduling. What is the convoy effect?
+Q000386	E	Define turnaround time, waiting time and response time.
+Q000387	E	What is starvation? How is it fixed?
+Q000351	M	What is the difference between a mutex, a semaphore and a spinlock?
+Q000737	H	How do we implement a non-blocking queue, and what are the differences between blocking and non-blocking algorithms?
+Q000842	M	How is Java's ThreadLocal implemented under the hood?
+Q001080	E	What is concurrency in programming and how does it differ from parallelism?
+Q001081	E	Can you explain race conditions and provide an example where one might occur?
+Q001082	E	What is a critical section in the context of concurrent programming?
+Q001083	M	How does an operating system ensure mutual exclusion in concurrent processes?
+Q001084	M	Can you describe the concept of atomicity in relation to concurrency?
+Q001085	M	How does a deadlock occur and what are common strategies to prevent it?
+Q001086	M	What is a livelock and how is it different from a deadlock?
+Q001087	M	Can you explain the producer-consumer problem and how can it be addressed using concurrency mechanisms?
+Q001090	E	What is a thread pool and why might you use one?
+Q001093	M	What are the benefits and disadvantages of using many small threads vs. a few large threads?
+Q001094	E	What is a mutex and how does it work?
+Q001095	E	What are semaphores and how do they differ from mutexes?
+Q002010	M	Why are non-blocking I/O operations a necessity in Reactive Programming, and what problems do they solve?
+Q002689	M	Explain the difference between Executor and ExecutorService in Java.
+Q002696	M	How do you make a collection thread-safe in Java?
+Q002767	M	How do you make an ArrayList thread-safe?
+Q002791	E	What is the difference between extending Thread and implementing Runnable?
+Q002792	M	How do you prevent deadlock in multithreaded applications?
+Q002793	M	What is the difference between synchronized and volatile?
+Q002794	M	Explain the Producer-Consumer problem and its solution.
+Q002795	E	What are thread pools and why are they useful?
+Q002808	M	How do you implement a thread-safe queue?
+Q002822	M	What happens if you access static variables from multiple threads?
+Q002861	M	Why is ordering important in the dining philosophers problem?
+Q002862	M	What is the difference between the first and second readers-writers problem solutions?
+Q002863	M	In the sleeping barber problem, why do we need the access_seats semaphore?
+Q002864	M	How would you modify the producer-consumer solution to handle multiple producers and consumers?
+Q002865	M	What happens if you swap the order of the sem_wait() calls in the producer-consumer solution?
+Q002866	E	What is the convoy effect in FCFS scheduling?
+Q002867	M	Why is SJF optimal for average waiting time?
+Q002868	E	What are the advantages and disadvantages of Round Robin scheduling?
+Q002869	M	How do you choose the optimal time quantum for Round Robin?
+Q002870	M	What is priority inversion and how can it be solved?
+Q002871	E	What is a race condition and how can it be prevented?
+Q002873	M	What are the advantages and disadvantages of Peterson's algorithm?
+Q002874	M	When would you use a spinlock vs a mutex?
+Q002875	H	What is the ABA problem in concurrent programming?
+Q002877	E	What are the four conditions necessary for deadlock to occur?
+Q002878	M	What is the difference between deadlock prevention and deadlock avoidance?
+Q002879	M	Explain the Banker's Algorithm with an example.
+Q002880	M	How do you detect deadlock in a system?
+Q002881	M	What are the trade-offs between different deadlock handling approaches?
+Q002893	M	How do you handle race conditions in shared memory?
+Q002915	E	What is the difference between multithreading and multiprocessing?
+Q002923	E	What is the difference between a binary semaphore and a mutex?
+Q002924	M	Can a semaphore value be negative?
+Q002925	M	What happens if you call sem_post() more times than sem_wait()?
+Q002926	M	How do you prevent priority inversion with semaphores?
+Q002927	M	What is a spurious wakeup and how do you handle it?
+Q003713	M	What problems do mutexes, semaphores, condition variables, spinlocks, and futexes each solve?
+Q003872	H	Why does AQS use a variant of the CLH lock queue?
+Q003873	H	Why do nodes in AQS need different states?
+Q003874	M	Why is the wait() method not defined in the Thread class?
+Q003875	E	Can you call the run method of the Thread class directly?
+Q003876	M	What optimizations were made to synchronized after JDK 1.6? How does lock escalation work?
+Q003877	M	Why is the key of a ThreadLocal Entry designed as a weak reference?
+Q003878	E	What is the relationship between Callable and Future?
+Q003880	M	What is the relationship between happens-before and the JMM?
+Q003881	H	In AQS, how are cancelled nodes generated in shouldParkAfterFailedAcquire, and when is a node's waitStatus set to -1?
+Q003882	M	Can synchronized still be used in JDK 21 with virtual threads?
+Q003883	M	What is the Reactor model, and how does it differ from Proactor?
+Q004252	E	What is a deadlock? What conditions must hold for a deadlock to occur?
+Q004254	E	What are a semaphore and a mutex? Define a binary semaphore.
+Q006248	M	Why use multithreading for work that could be handled with multiple processes?
+Q006249	E	What is a deadlock, and what are its four conditions?
+Q006250	E	What are a mutex and a semaphore, and what is the difference between them?
+Q009215	M	How do you make a rate limiter safe under concurrent calls?
+Q009424	M	Implement a thread-safe batching logger: many producer threads call log(msg), and a background thread flushes batches of up to 100 messages every second or when full, whichever comes first.
+Q009425	H	In a thread-safe batching logger, what changes if the sink can fail? Where do retries live and what happens to ordering?
+Q009426	M	How would you drop messages under overload in a batching logger without blocking producers?
+Q009447	M	For a CIDR-based IP allow/deny list whose rules update every few seconds while lookups continue, how do you swap rules safely under concurrency?
+Q010107	M	In an annotation platform, two annotators submit the same task simultaneously from different workers. Where is the race condition, and how do you fix it?
+Q010237	M	What changes in an in-memory key-value store with transactions if two threads share the store?
+Q010571	H	An assistant's fix compiles and passes tests, but you suspect a data race. How do you prove it either way?
+D00949	E	Name the main CPU scheduling algorithms for batch systems and compare them (FCFS, SJF, shortest remaining time).
+D00950	M	How do round robin and multilevel feedback queue scheduling work, and how do you choose the time quantum?
+D00951	M	Why is SJF optimal for average waiting time, and why is it impractical in general?
+D00952	M	What distinguishes real-time scheduling from interactive scheduling, and what is priority inversion?
+D00953	M	How can starvation occur in priority scheduling, and what is aging?
+D00954	E	What is a critical section, and what properties must a correct mutual exclusion solution have?
+D00955	E	What is the difference between synchronization and mutual exclusion?
+D00956	M	What is a semaphore, and how does a binary semaphore differ from a mutex?
+D00957	M	What is a monitor, and how does it improve on semaphores for writing correct concurrent code?
+D00958	M	Implement the producer-consumer problem with semaphores. Why does the order of wait operations matter?
+D00959	M	Explain the dining philosophers problem and at least two ways to avoid deadlock in it.
+D00960	M	Explain the readers-writers problem and the trade-off between reader preference and writer preference.
+D00961	M	What are the different ways threads can be synchronized (mutex, condition variable, semaphore, event, read-write lock)?
+D00962	E	What are the four necessary conditions for deadlock?
+D00963	M	What are the four strategies for dealing with deadlock, and why does a general-purpose OS often just ignore it?
+D00964	M	How do you prevent deadlock by breaking each of the four necessary conditions? Which is practical?
+D00965	M	Explain the banker's algorithm and what a safe state means.
+D00966	M	How does deadlock detection with a resource allocation graph work, and how does it handle multiple instances of a resource?
+D00967	M	How would you recover from a deadlock once detected: what are the options and their costs?
+D00968	H	Two services intermittently hang under load and thread dumps show threads waiting on locks. How would you confirm a lock-ordering deadlock and fix it?
+D00969	E	What is a race condition? Give an example involving a shared counter.
+D00970	M	What is the difference between a livelock, a deadlock and starvation?
+D00971	E	Explain the five Unix I/O models: blocking, non-blocking, I/O multiplexing, signal-driven and asynchronous.
+D00972	M	Which of the five I/O models are synchronous and which are asynchronous, and why?
+D00973	M	Compare select, poll and epoll in terms of scalability, data copying and the number of file descriptors.
+D00974	M	What is the difference between level-triggered and edge-triggered modes in epoll, and what pitfalls does edge-triggered mode have?
+D00975	M	In what scenarios is epoll not much better than select, and why?
+D00976	M	How would you design a high-concurrency server using the Reactor pattern with I/O multiplexing and a worker thread pool?
+D00977	M	Why can one thread with epoll serve thousands of connections while a thread-per-connection model cannot?
+D00978	E	What are the different ways to create a thread in Java and what are the trade-offs of Runnable versus extending Thread?
+D00979	M	What is the difference between Runnable and Callable, and how does a Future obtain the result?
+D00980	M	What is a daemon thread and when would you use one?
+D00981	M	How does thread interruption work in Java, and how should a task respond to it?
+D00982	M	Compare synchronized and ReentrantLock: features, fairness, interruptibility and when to choose each.
+D00983	M	What do wait(), notify() and notifyAll() do, and why must wait be called in a loop while holding the monitor?
+D00984	M	What is the difference between sleep() and wait() with respect to locks and wake-up?
+D00985	M	Describe the lifecycle states of a Java thread and what causes transitions between BLOCKED, WAITING and TIMED_WAITING.
+D00986	M	How do CountDownLatch, CyclicBarrier and Semaphore differ, and when would you use each?
+D00987	M	What is the idea behind AbstractQueuedSynchronizer and how does it implement locks and synchronizers?
+D00988	M	How does a BlockingQueue simplify producer-consumer designs, and what are the differences among bounded, unbounded and synchronous queues?
+D00989	M	What is the fork/join framework and how does work stealing improve CPU utilization?
+D00990	M	How do you size a thread pool for CPU-bound versus I/O-bound workloads?
+D00991	M	What happens when a thread pool's queue is full and the maximum threads are running? Compare common rejection policies.
+D00992	H	Explain the Java memory model: main memory versus working memory, atomicity, visibility, ordering and the happens-before rules.
+D00993	M	What does volatile guarantee and what does it not guarantee? Why is count++ on a volatile field still unsafe?
+D00994	M	What is instruction reordering and how do memory barriers prevent surprising results?
+D00995	M	Why does double-checked locking need a volatile field in the singleton pattern?
+D00996	M	What are the main techniques for achieving thread safety: immutability, mutual exclusion, non-blocking and thread-local storage?
+D00997	M	What is compare-and-swap, how do atomic classes use it, and what is the ABA problem?
+D00998	M	Compare optimistic non-blocking synchronization with pessimistic locking under low and high contention.
+D00999	M	Explain lock optimizations used by a VM: spinning, lock elision, lock coarsening, lightweight and biased locking.
+D01000	M	What is ThreadLocal, how is it implemented, and what memory-leak risk does it carry in thread pools?
+D01001	M	What are good practices for multithreaded code: naming threads, minimizing lock scope, preferring concurrent collections?
+D01002	M	What is the Python GIL, why does it exist, and which workloads does it hurt?
+D01003	M	Can Python threads use multiple CPU cores? What are the alternatives for CPU-bound parallelism?
+D01004	M	Why is the GIL placed at the interpreter level instead of using fine-grained locks, and what trade-off did that make?
+D01005	M	Is a statement such as x += 1 thread-safe in CPython despite the GIL? Explain.
+D01006	M	Describe the difference between pessimistic and optimistic locking in databases and in application code.
+D01007	M	What is a read-write lock and when does it help or hurt throughput?
+D01523	E	Why do we need CPU scheduling and what is the goal of a scheduler?
+D01524	M	What is the difference between preemptive and non-preemptive scheduling?
+D01525	M	Compare FCFS, SJF, SRTF, priority and round-robin scheduling.
+D01526	M	What is the convoy effect in FCFS scheduling?
+D01527	M	How does the choice of time quantum affect round-robin scheduling?
+D01528	M	What is starvation in priority scheduling and how does aging address it?
+D01529	M	What is a multilevel feedback queue and what problems does it solve?
+D01530	E	Define CPU utilization, throughput, turnaround time, waiting time and response time as scheduling criteria.
+D01531	M	Why is SJF provably optimal for average waiting time, and why can it not be implemented exactly in practice?
+D01532	E	What is a deadlock?
+D01533	E	What are the four necessary conditions for deadlock?
+D01534	M	How can deadlock be prevented by breaking each of the necessary conditions?
+D01535	M	Explain how the Banker's algorithm avoids deadlock and what a safe state is.
+D01536	M	How is deadlock detected using a resource allocation graph, and how can the system recover?
+D01537	M	Why do many general-purpose operating systems simply ignore deadlocks (the ostrich approach)?
+D01538	M	How can two threads deadlock with two locks, and how do you fix it with lock ordering?
+D01539	E	What is a race condition?
+D01540	M	Give an example of a race condition on a shared counter and explain how to eliminate it.
+D01541	E	What is a critical section and what three properties must a correct solution satisfy?
+D01542	E	What is the difference between a mutex and a semaphore?
+D01543	M	What is the difference between a binary semaphore and a mutex regarding ownership?
+D01544	M	How would you use semaphores to solve the producer-consumer problem?
+D01545	M	What is the readers-writers problem and how do you avoid starving writers?
+D01546	M	Explain the dining philosophers problem and one way to avoid deadlock in it.
+D01547	M	What is a monitor and how does it differ from a raw semaphore?
+D01548	M	What is the difference between a spinlock and a blocking mutex, and when is each appropriate?
+D01549	H	What is priority inversion and how do priority inheritance protocols address it?
+D01550	M	What is busy waiting and why is it usually undesirable?
+D01551	M	What does it mean for an operation to be atomic, and how do compare-and-swap instructions support lock-free programming?
+D01552	M	What is a reentrant lock and why does reentrancy matter?
+D01553	M	What is the difference between a lock on an object instance and a lock on a class in Java synchronized methods?
+D01554	M	What are the states in a Java thread lifecycle and what causes transitions between them?
+D01555	M	What is the difference between extending Thread and implementing Runnable, and why is the latter generally preferred?
+D01556	M	What does the volatile keyword guarantee in Java, and what does it not guarantee?
+D01557	M	What is the difference between wait/notify and sleep, and why must wait be called inside a synchronized block?
+D01558	M	What is a daemon thread and when would you use one?
+D01559	M	What is a thread pool and why is it better than creating a new thread per task?
+D01560	M	What does thread safety mean, and what techniques make a class thread-safe?
+D01561	M	Compare blocking and non-blocking I/O, and synchronous and asynchronous I/O, using the four combinations.
+D01562	M	In a non-blocking synchronous model, what does the caller do while waiting, and why is polling wasteful?
+D01563	H	How do select, poll and epoll differ, and why is epoll more scalable for many connections?
+D01874	M	What does the Java memory model's happens-before relationship guarantee between threads?
+D01875	M	What is the difference between concurrency and parallelism?
+D01876	M	When is multithreading beneficial for CPU-bound versus I/O-bound workloads?
+D01877	M	What is the thundering herd problem and how can it be mitigated in locks or caches?
+D02059	E	What are the common CPU scheduling algorithms (FCFS, SJF, round robin, priority, multilevel feedback queue) and their trade-offs?
+D02060	M	Which metrics do schedulers optimise (throughput, turnaround, response time, fairness) and why do they conflict?
+D02061	M	Why can SJF cause starvation and how does aging solve it?
+D02062	M	How does the Linux CFS scheduler pick the next task, and what motivated the move toward EEVDF?
+D02063	M	What events cause a task to leave the CPU: blocking, time slice expiry, preemption, exit?
+D02064	M	What is the difference between load average and CPU utilisation? Can load be high while CPU is idle?
+D02065	M	You receive a CPU alert on a production host. How do you determine whether user code, kernel, I/O wait or run-queue contention is responsible?
+D02066	E	What is a critical section and what properties must a solution to the critical-section problem satisfy?
+D02067	E	What are the ways threads synchronise with each other, and when do you use each?
+D02068	M	Compare mutex, spinlock and semaphore. When is spinning better than sleeping?
+D02069	M	What is a condition variable and why must it always be used together with a mutex and a while-loop predicate check?
+D02070	M	What is a futex and how does it avoid system calls in the uncontended case?
+D02071	M	How do atomic instructions such as compare-and-swap form the foundation of locks and lock-free structures?
+D02072	H	Why do locks also provide memory-ordering guarantees, and what can go wrong with unsynchronised reads of shared data?
+D02073	M	What is priority inversion, how can it occur with locks, and how do priority inheritance protocols prevent it?
+D02074	M	What are the common mistakes when using locks, such as holding a lock across blocking I/O or forgetting to unlock on error paths?
+D02075	E	What is a deadlock and what are the four necessary conditions for it?
+D02076	M	Describe deadlock prevention, avoidance, detection and recovery, and give an example technique of each.
+D02077	M	How does the banker's algorithm avoid deadlock and what are its practical limitations?
+D02078	M	How do you detect a deadlock using a wait-for graph or resource allocation graph?
+D02079	M	What is the difference between deadlock, livelock and starvation? Give an example of each.
+D02080	M	A service hangs with no CPU usage. How do you determine whether it is a deadlock using thread dumps?
+D02081	M	What coding practices reduce deadlock risk, such as lock ordering, timeouts and not calling unknown code while holding a lock?
+D02082	M	How can deadlocks arise in a database, and how do databases detect and resolve them?
+D02083	M	Show how two threads acquiring two locks in opposite order can deadlock, and explain why a global lock ordering removes the problem.
+D02298	E	What is a race condition and how does it arise when two threads increment a shared counter?
+D02299	M	Explain the producer-consumer problem and how to solve it with semaphores or a mutex plus condition variables.
+D02300	M	Explain the dining philosophers problem. What strategies avoid deadlock and starvation?
+D02301	M	Describe the readers-writers problem and the trade-off between reader and writer preference.
+D02302	M	What is a counting semaphore versus a binary semaphore, and how does a binary semaphore differ from a mutex?
+D02303	M	Why do spinlocks make sense on multicore but not on single-core systems?
+D02304	M	What is a thread pool and why is it preferred over creating a thread per request? How do you size one for CPU-bound versus I/O-bound work?
+D02305	M	Why does a lock-free algorithm based on CAS suffer from the ABA problem, and how can it be mitigated?
+D02306	M	How do cooperative and preemptive scheduling differ, and what are the implications for coroutine-based runtimes?
+D02307	M	What is lock contention, and how can you reduce it by shrinking critical sections or sharding locks?
+D02308	M	How does the time quantum in round robin scheduling affect throughput and response time?
+D02309	M	What is CPU affinity and why might pinning threads to cores improve performance?
+D02310	H	A service shows high load average but low CPU utilisation. What can cause this and how do you find the culprit?
+D02311	M	Why can two threads on different cores see stale values of a shared variable, and what do memory barriers do?
+D02312	M	How do lock timeouts and retry strategies help with application-level deadlock avoidance?
+D02676	E	What is the difference between a process and a thread, and why are threads called lightweight?
+D02677	M	How does a user-level language thread relate to an operating system kernel thread, and what are the common mapping models?
+D02678	E	Describe the typical states in a thread lifecycle and the transitions between them.
+D02679	M	What is a thread context switch, and what does it cost?
+D02680	M	Compare sleep and wait: which releases the lock, who wakes the thread, and why is wait defined on objects rather than threads?
+D02681	E	What happens if you call a thread run method directly instead of starting the thread?
+D02682	E	What is the difference between concurrency and parallelism, and between synchronous and asynchronous execution?
+D02683	M	Does multithreading help on a single-core CPU? When can adding threads make a program slower?
+D02684	M	What problems can multithreading introduce, such as deadlocks, memory leaks and context-switch overhead?
+D02685	E	What does it mean for code to be thread-safe, and what are the common sources of thread-unsafety?
+D02686	E	What are the four necessary conditions for deadlock?
+D02687	M	How do you prevent deadlocks using lock ordering, lock timeouts and resource allocation strategies?
+D02688	M	How can you detect a deadlock in a running program or production process?
+D02689	H	Two threads transfer money between two accounts in opposite directions and occasionally hang. Explain why and fix it.
+D02690	M	Why is a memory model needed at the language level, and what problems do CPU caches and instruction reordering cause?
+D02691	M	Explain the three properties of concurrent programs: atomicity, visibility and ordering.
+D02692	M	What is the happens-before relation, and what are the main rules that establish it?
+D02693	M	How does the working-memory versus main-memory abstraction of a language memory model differ from the runtime heap and stack layout?
+D02694	M	What types of instruction reordering exist, and how can reordering break correctness in double-checked locking?
+D02695	M	What guarantees does a volatile variable provide, and what does it not provide?
+D02696	M	How does volatile enforce visibility and prohibit reordering, using memory barriers?
+D02697	M	Why does volatile not make a compound increment operation atomic?
+D02698	M	Explain double-checked locking for a singleton and why the instance field must be volatile.
+D02699	E	What is the difference between optimistic and pessimistic locking, and when is each appropriate?
+D02700	M	How can optimistic locking be implemented with version numbers and with compare-and-swap?
+D02701	M	How does compare-and-swap work at the hardware level, and why is it atomic?
+D02702	M	What is the ABA problem and how do version stamps or tagged references address it?
+D02703	M	What are the drawbacks of CAS under high contention, and why can it be limited to a single variable?
+D02704	M	How do atomic classes and adder-style accumulators achieve better throughput than a single contended atomic counter?
+D02705	M	What categories of atomic classes are provided for primitives, arrays, references and field updaters, and when would you use each?
+D02706	M	What is a spin lock, and in what situations is spinning better or worse than blocking?
+D02707	M	Explain how a read-write lock works and when it outperforms a plain mutex.
+D02708	M	What is lock reentrancy and why is it needed?
+D02709	M	How does a monitor-based synchronized block work at the bytecode level with enter and exit instructions?
+D02710	M	Explain lock escalation in a managed runtime: biased, lightweight and heavyweight locks, and why biased locking was removed.
+D02711	M	Compare synchronized and volatile.
+D02712	M	Compare an intrinsic monitor lock and an explicit reentrant lock in terms of features, fairness, interruptibility and condition support.
+D02713	M	What is a fair lock versus an unfair lock, and why is the unfair variant usually faster?
+D02714	M	What is an interruptible lock acquisition and when would you want it?
+D02715	M	Why can a read lock not be upgraded to a write lock, while a write lock can be downgraded?
+D02716	M	How does an optimistic read in a stamped lock work, and why can it outperform a read-write lock?
+D02717	M	What is a condition variable, and how do await and signal differ from wait and notify on a monitor?
+D02718	M	What is the core idea of an abstract queued synchronizer built on a state variable and a CLH-style wait queue?
+D02719	H	Walk through how a thread acquires an exclusive lock in a queue-based synchronizer: CAS on state, enqueueing, parking and wake-up on release.
+D02720	M	What is the difference between exclusive and shared modes in a queued synchronizer?
+D02721	M	How does a queued synchronizer handle cancelled waiters in its queue, and what is the role of wait-status flags?
+D02722	M	Why do fair locks have lower throughput than non-fair locks?
+D02723	M	How does a semaphore work, and how would you use one to limit concurrent access to a resource?
+D02724	M	How does a countdown latch differ from a cyclic barrier, and when is each reusable?
+D02725	H	How would you implement a custom non-reentrant mutex or a bounded resource gate on top of a synchronizer framework?
+D02726	M	How is reentrancy tracked in a reentrant lock, and what happens when the hold count reaches zero?
+D02727	M	What is thread-local storage, and how is it implemented internally with a per-thread map?
+D02728	M	How can thread-local variables cause memory leaks, particularly with thread pools and weak-referenced keys?
+D02729	M	How does a thread-local map handle hash collisions, resizing and stale entry cleanup?
+D02730	M	How can you propagate thread-local context to child threads or to tasks submitted to a thread pool?
+D02731	M	Why must you clean up thread-local state at the end of a task in a pooled thread environment?
+D02732	E	Why use a thread pool instead of creating a thread per task?
+D02733	M	Explain the core parameters of a configurable thread pool: core size, max size, queue, keep-alive and rejection policy.
+D02734	M	Describe the exact order in which a thread pool uses core threads, the queue and extra threads when tasks arrive.
+D02735	M	Why are the factory-method built-in thread pools discouraged in production?
+D02736	M	Compare the rejection policies: abort, caller-runs, discard and discard-oldest, and when you would use each.
+D02737	M	Can caller-runs rejection provide backpressure, and what are its risks?
+D02738	M	What happens to a worker thread when a task throws an uncaught exception, and why are exceptions in async tasks easily lost?
+D02739	M	Compare bounded and unbounded queues for a thread pool, and the failure modes of each.
+D02740	M	How do you size a thread pool for CPU-bound versus I/O-bound workloads?
+D02741	H	How would you size a thread pool and its queue given downstream capacity limits and a latency SLO?
+D02742	M	Why should different workloads use isolated thread pools?
+D02743	M	Does cancelling a task or hitting a timeout actually stop the running thread? How do you make tasks cooperatively cancellable?
+D02744	M	What metrics should you monitor on a thread pool in production?
+D02745	M	How do you gracefully shut down a thread pool, and what is the difference between shutdown and an immediate shutdown?
+D02746	M	How would you dynamically adjust thread pool parameters at runtime, and what are the limits of doing so?
+D02747	H	How would you design a thread pool that executes tasks by priority?
+D02748	M	Why name threads in a pool, and how does it help diagnosing production problems?
+D02749	M	Do core threads in a pool ever get reclaimed, and what state is an idle worker in?
+D02750	M	What are the lifecycle states of a thread pool, and how does a worker thread loop pull tasks?
+D02751	M	What is the difference between a future and a completable future, and what limitations of blocking futures does the latter address?
+D02752	M	How would you run two independent async tasks and combine their results into a third task that depends on both?
+D02753	M	How do you handle failures in a chain of async tasks, and how does exception propagation work?
+D02754	M	Why should async tasks run on a custom executor rather than the shared default pool?
+D02755	M	How do you wait for many async tasks and apply a timeout without blocking indefinitely?
+D02756	M	What is a virtual thread and how does it differ from a platform thread?
+D02757	M	Why are virtual threads well suited to I/O-bound workloads but not CPU-bound ones?
+D02758	M	How does a virtual thread get mounted on and unmounted from a carrier thread, and what is pinning?
+D02759	M	Should virtual threads be pooled, and how do you limit downstream concurrency without a thread pool?
+D02760	M	Are virtual threads the same as coroutines? How do they compare with reactive programming?
+D02761	M	What caveats arise when using thread-locals or connection pools with a very large number of lightweight threads?
+D02762	H	How would you migrate a service from a fixed platform thread pool to per-task lightweight threads, and what would you re-verify?
+D02763	M	How would you diagnose lightweight-thread pinning and thread dumps in production?
+D02764	M	How does a copy-on-write list achieve thread safety, and what are the costs of writes and the consistency of iteration?
+D02765	M	In which scenarios is a copy-on-write collection a good choice, and when is it a bad one?
+D02766	M	Compare array-backed and linked blocking queues in terms of bounding, locking and throughput.
+D02767	M	How does a bounded blocking queue use a lock and two conditions to implement blocking put and take?
+D02768	M	What are the differences between offer, put, add and timed-offer methods on a blocking queue?
+D02769	M	How does a blocking queue differ from a non-blocking concurrent queue such as a lock-free linked queue?
+D02770	M	How does a delay queue return elements only after their delay expires, and how does it differ from a timer?
+D02771	H	Implement a producer-consumer pipeline with a bounded buffer and explain the conditions that prevent lost wakeups.
+D02772	M	What is a concurrent skip list and when is it preferable to a concurrent hash map?
+D02773	M	How does a priority blocking queue differ from a plain priority queue?
+D03045	M	Print FooBar alternately using two threads. Which synchronization primitives would you use and why?
+D03046	M	Design a solution that prints zero, even and odd numbers in a fixed interleaved order using three threads.
+D03047	M	How would you implement a multithreaded FizzBuzz with separate threads for fizz, buzz, fizzbuzz and number output?
+D03048	M	Build a thread-safe H2O molecule builder where two hydrogen threads and one oxygen thread must bond together. Which primitive is the best fit?
+D03049	H	Design a thread-safe cache with TTL expiry. How would you handle expiry cleanup and concurrent reads and writes?
+D03050	H	Design a concurrent hash map. How do lock striping, per-bucket locks and lock-free approaches differ?
+D03051	H	Design a thread-safe blocking queue. How do you implement it with locks and condition variables and avoid lost wake-ups?
+D03052	H	Design a concurrent Bloom filter. How would you make bit-set updates thread-safe without a global lock?
+D03053	M	How would you implement a multithreaded merge sort, and when does parallelism stop paying off?
+D03054	M	What is the difference between coarse-grained and fine-grained locking, and when does each pay off?
+D03055	M	What is a reentrant lock and what problem does it solve compared to a non-reentrant mutex?
+D03056	M	When would you choose try-lock or timed locking over blocking lock acquisition?
+D03057	M	How does compare-and-swap enable lock-free algorithms, and what is the ABA problem?
+D03058	M	What is livelock, how does it differ from deadlock, and how can it be resolved?
+D03059	M	What is the signaling pattern in concurrent programming and when would you use condition variables instead of busy waiting?
+D03060	M	How does the reader-writer pattern improve throughput over a plain mutex, and what are the risks of writer starvation?
+D03061	M	How does a thread pool improve performance, and how do you size it for CPU-bound versus I/O-bound workloads?
+D03062	M	Describe the producer-consumer pattern and how bounded queues provide back-pressure.
+D03063	E	What is the difference between concurrency and parallelism?
+D03064	E	What are the states in a thread lifecycle and which events cause transitions between them?
+D03065	M	What is a race condition and a critical section, and how do you reduce the size of a critical section?

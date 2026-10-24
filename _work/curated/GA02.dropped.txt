@@ -1,0 +1,5 @@
+Q006059	offscope
+D00575	offscope
+Q007209	offscope
+Q011545	offscope
+Q009279	offscope

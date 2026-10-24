@@ -1,0 +1,224 @@
+Q001537	H	How would you explain the concept of locality-sensitive hashing and its relation to K-NN?
+Q003436	E	What are embeddings, and how are they utilized in RAG retrieval?
+Q003437	M	What are the key considerations when choosing an embedding model for a RAG system?
+Q003438	E	What is a vector database, and how is it utilized in RAG retrieval?
+Q003439	M	What are the typical distance metrics used for similarity search in vector databases, and why are they chosen?
+Q003444	M	How can fine-tuning embedding models improve the retriever's performance in RAG?
+Q003445	H	What advantages does quantization offer over dimensionality reduction for scaling embeddings?
+Q003455	E	What role does cosine similarity play in relevant chunk retrieval within a RAG pipeline?
+Q003493	M	How does FAISS implement efficient approximate nearest neighbor (ANN) search?
+Q004285	E	Explain the concept of a vector embedding.
+Q004287	E	What are embedding models?
+Q004288	M	How do embedding models work in the context of systems with LLMs?
+Q004289	M	What are the different types of text embeddings?
+Q004290	M	How do you train an embedding model?
+Q004291	M	Explain the concept of contrastive learning in the context of embedding models.
+Q004293	M	Explain the intuition behind single-vector dense representations.
+Q004297	M	How do you benchmark the performance of an embedding model?
+Q004298	M	How do you pick an embedding model for a specific use case?
+Q004299	E	What is a vector database?
+Q004300	E	How are vector databases different from traditional databases?
+Q004301	M	How does a vector database work?
+Q004302	M	What are the different strategies for searching in a vector database or index?
+Q004303	M	Explain the concept of clustering in the context of vector retrieval, and its relation to the search space.
+Q004304	H	Compare various vector databases and indexes based on a set of criteria, and decide which one is best for a given use case.
+Q004305	M	Explain the concept of quantization in the context of vectors.
+Q004306	M	Explain the concept of locality-sensitive hashing (LSH) within the context of vector retrieval.
+Q004307	M	Explain the concept of product quantization within the context of vector retrieval.
+Q004308	M	Explain the concept of inverted indices within the context of vector retrieval.
+Q004309	M	Explain the concept of Hierarchical Navigable Small Worlds (HNSW) within the context of vector retrieval.
+Q004310	M	Explain some of the distance and similarity metrics used in vector retrieval.
+Q004314	H	How do you achieve fast search in large-scale systems?
+Q004755	E	What are embedding models, and how do they convert text to vectors?
+Q004756	M	How do you choose an embedding model for your RAG system?
+Q004775	H	How do you scale a RAG system to millions of documents?
+Q004779	M	Your RAG retrieval is too slow with a large knowledge base. How do you speed it up?
+Q004782	M	Your RAG system fails on domain-specific jargon. How do you fix it?
+Q004870	E	What are embeddings in the context of AI engineering?
+Q004872	M	What is Contrastive Learning, and how is it used to train embedding models?
+Q004873	E	What is the difference between sparse and dense embeddings?
+Q004874	E	Explain cosine similarity, dot product, and Euclidean distance for vector search.
+Q004875	E	What is a vector database, and how does it differ from a traditional database?
+Q004876	M	How does Approximate Nearest Neighbor (ANN) search work?
+Q004877	H	Compare HNSW, IVF, and flat indexes. How do you pick one, and what does recall@k cost in latency?
+Q004878	M	How does an embedding cache work?
+Q004880	M	What is embedding dimensionality, and how does it affect performance and cost?
+Q004881	M	How do you handle embedding drift when the embedding model is updated?
+Q004883	M	How do you index and query multi-tenant data in a vector database?
+Q004884	M	What is quantization of embeddings, and how does it reduce storage costs?
+Q004885	M	How do you benchmark and evaluate embedding model quality?
+Q004886	E	What is the role of metadata in vector databases?
+Q004887	H	How do you handle large-scale vector search with billions of vectors?
+Q004889	M	How do you fine-tune an embedding model for a specific domain?
+Q004890	M	Your vector database for RAG is consuming too much memory. How do you reduce it?
+Q004891	M	Your vector database cannot scale to millions of embeddings. How do you fix the bottleneck?
+Q004892	M	Your new embedding model has different dimensions from the existing vectors in production. How do you handle the mismatch?
+Q005342	E	What does a vector database store for LLM usage?
+Q005994	M	What is DiskANN, what problem does it solve, and how do you choose between it and HNSW?
+Q005997	M	What is binary quantization, and how does it differ from product quantization (PQ)?
+Q005999	M	What is ScaNN, and how does it fundamentally differ from IVF-PQ and HNSW?
+Q006194	M	How do HNSW and IVF-PQ differ, and how do you choose a vector search index?
+Q006795	M	What embedding dimension, index, and rerank depth would you choose for a retrieval system?
+Q006970	M	Why can't you just feed a decoder LLM's internal token vectors into a vector DB for semantic search?
+Q007022	M	A teammate proposes fixing weak RAG answers by upgrading to the largest available embedding model. What is the senior response?
+Q007025	M	Your retriever's recall@20 is stuck at 0.86 and tuning chunking has not moved it. You are on HNSW with default parameters. What is worth trying first?
+Q007026	M	You are serving 50M chunks and the vector index won't fit in your RAM budget. Which move shrinks the footprint without re-embedding the corpus?
+Q007046	H	You must serve 800M vectors but your RAM budget is tight. Which index choice fits, and what is the cost?
+Q007049	M	A 4-person startup is launching a B2B RAG product with about 2M vectors per customer and a strict data-residency requirement. Should it build or buy the vector store?
+Q007050	M	You upgrade your embedding model and push the new vectors into the existing live index alongside the old ones. What happens?
+Q007058	M	How would you size the index for 50M chunks of 1,536-dimensional embeddings on HNSW?
+Q007065	M	Explain ANN search and HNSW indexing.
+Q007066	M	Where do embeddings fail: negation, temporal reasoning, precision?
+Q007137	E	What are vector embeddings, and what is an embedding model?
+Q007138	E	How is an embedding model used in the context of LLM applications?
+Q007139	M	What is the difference between embedding short and long content?
+Q007140	M	How do you benchmark embedding models on your data?
+Q007141	H	Suppose you are working with an OpenAI embedding model and, after benchmarking, accuracy is low. How would you further improve the accuracy of the embedding-based search model?
+Q007142	H	Walk me through the steps of improving a sentence transformer model used for embedding.
+Q007143	E	How does a vector database differ from traditional databases?
+Q007144	M	Explain the difference between a vector index, a vector DB, and vector plugins.
+Q007145	M	You are working on a project with a small dataset of customer reviews and need to find similar reviews. The priority is perfect accuracy in finding the most similar reviews, and search speed is not a primary concern. Which search strategy would you choose and why?
+Q007146	M	Explain vector search strategies like clustering and locality-sensitive hashing.
+Q007147	H	How does clustering reduce the search space? When does it fail and how can we mitigate these failures?
+Q007148	M	Explain the random projection index.
+Q007149	M	Explain the locality-sensitive hashing (LSH) indexing method.
+Q007150	M	Explain the product quantization (PQ) indexing method.
+Q007151	H	Compare different vector indexes and, given a scenario, explain which vector index you would use for a project.
+Q007152	M	How would you decide the ideal search similarity metric for a use case?
+Q007153	M	Explain the different types of filtering in a vector DB and the challenges associated with them.
+Q007154	M	How do you decide the best vector database for your needs?
+Q010823	M	Explain vector database indexing algorithms.
+Q010863	M	Explain the tradeoffs between different vector database options.
+Q010912	M	Explain the tradeoffs between different embedding models for RAG.
+Q011158	M	What is the best vector database?
+Q011221	M	How do embedding models learn semantic similarity?
+Q011224	M	How do you handle embedding drift when updating embedding models?
+Q011225	M	How do you choose dimensions for embeddings?
+Q011360	M	What is the "vocabulary mismatch" problem in embeddings?
+Q011361	H	Why would you choose a Matryoshka model for a 1-billion-vector index?
+Q011362	H	You need to upgrade the embedding model behind a 500M-vector index. How do you do it without downtime?
+Q011363	M	Why not use general-purpose databases for vector search?
+Q011368	M	How would you choose between Pinecone and a self-hosted solution?
+Q011369	M	Explain how HNSW works and when you would not use it.
+Q011370	H	When would you use a disk-based index (like DiskANN) over a RAM-based index (HNSW)?
+Q011371	H	Why is metadata filtering often the bottleneck in vector databases?
+Q011372	H	How do you handle multi-tenancy in a vector database?
+Q011399	M	What is the "asymmetric retrieval" problem?
+Q011696	M	In a multi-tenant RAG system, why not use one vector database per tenant?
+Q011820	H	What causes semantic drift in embedding search and how do you detect it?
+Q011822	M	Compare HNSW, IVF-PQ and flat indexes. How do you pick, and what does recall@k cost in latency?
+Q012423	E	What is the role of embedding models in RAG systems?
+Q012533	E	How does LangChain handle embeddings and vector stores?
+Q003596	M	How do you choose an embedding model in a RAG system, and why?
+Q003598	M	Why can an ANN algorithm accept results that are not 100% exact?
+Q003599	M	What is the difference between HNSW and IVFFLAT?
+Q003600	H	How do you tune HNSW's ef_search parameter, and what happens when it is increased or decreased?
+Q003601	H	If vector data grows from 1 million to 100 million, what architectural changes are needed?
+Q003602	M	Why choose PostgreSQL + pgvector, and when should you switch to a dedicated vector database?
+Q003622	H	Under what circumstances does a pgvector HNSW index fail or degrade into a slower scan?
+Q012504	H	How does a vector database search billions of vectors in milliseconds?
+Q007253	M	What are embeddings? Compare cosine similarity, dot product, and Euclidean distance. When does the choice matter?
+Q007254a	H	Why does normalizing make Euclidean distance and cosine similarity equivalent? Show it.
+Q007254b	M	When would dot product beat cosine similarity in a recommender?
+Q007255	M	What breaks if you index cosine-trained embeddings with an L2 metric without normalizing?
+Q007323a	H	You need to cut a 3072-dimensional embedding index in half without hurting recall. Walk me through your options and how you would validate the choice.
+Q007351	M	Explain contrastive learning and the InfoNCE loss. How are modern embedding models (CLIP, text retrievers) actually trained?
+Q007352	H	Why do larger batches help contrastive training but matter less for standard supervised training?
+Q007353	H	How do hard negatives change what the embedding space learns?
+Q007354	H	How would you build the training set for a code-search embedding model?
+Q007361	H	When does cosine similarity mislead you? Discuss embedding-space pathologies relevant to retrieval systems.
+Q007364	H	What do alignment and uniformity mean in the Wang and Isola framing of contrastive learning?
+Q007819	H	How do you version a RAG pipeline so you can re-embed safely when you change the embedding model?
+Q007828	M	How does a bi-encoder embedding model work at retrieval time, and what is the key limitation of that architecture?
+Q007830	M	What are hard negatives and why do they matter when training an embedding model?
+Q007831	M	Why do embedding models handle negation badly?
+Q007832	M	How would you choose an embedding model? What role does MTEB play, and what are its limits?
+Q007833	H	Your domain is medical device manuals. How do you build an evaluation set for choosing an embedding model without labelers?
+Q007834	M	When is a self-hosted open-weights embedding model clearly better than an API?
+Q007835	M	What breaks when you change embedding models and forget to re-embed the corpus?
+Q007836	E	When do you need approximate nearest neighbour search instead of exact search?
+Q007837	M	How exactly would you measure the recall your ANN index achieves?
+Q007838	H	Your p99 latency doubled after deleting 30% of vectors from the vector index. What happened?
+Q007839	M	At what point does the ANN index's RAM cost push you to quantization?
+Q007847	M	Which distance metric should you use for embedding search (cosine, dot product, or Euclidean), and does the choice actually matter?
+Q007848	M	If your index reports Euclidean distance but your embedding model is cosine-trained, when would you actually see a quality difference?
+Q007859	M	Many embedding models tell you to prefix queries and documents differently, or to pass a task instruction. Why, and what goes wrong if you ignore it?
+Q007860	H	How would you detect, from production data alone, that the index was built without the document prefix?
+Q007861	H	If the embedding instruction lives only on the query side, what can you tune without reindexing, and how would you test it?
+Q007868	M	What are the tradeoffs of embedding dimensionality, and what are Matryoshka embeddings?
+Q007869	M	Why must you renormalize Matryoshka embeddings after truncating them?
+Q007870	H	How would you combine Matryoshka truncation with int8 or binary quantization?
+Q007871	M	At what corpus scale does embedding dimensionality start dominating your infrastructure bill?
+Q007872	M	When would you fine-tune your embedding model, and how would you actually do it?
+Q007873	M	Why are hard negatives essential when fine-tuning an embedding model? What happens with only random negatives?
+Q007874	M	Fine-tuned embedder versus fine-tuned reranker: how do you choose?
+Q007875	H	How do you roll out a new embedding model against a 50M-chunk live index with zero downtime?
+Q007876	M	Explain how HNSW works, and what the M and ef parameters control.
+Q007877	M	Why does a highly selective metadata filter hurt HNSW specifically?
+Q007878	M	What happens to search quality after deleting 40% of vectors from an HNSW index?
+Q007879	H	How would you tune HNSW M and ef differently for a 99%-recall offline job versus a 20ms-p99 online API?
+Q007880	M	Compare HNSW, IVF, and product quantization. What are the recall, latency, and memory tradeoffs?
+Q007881	M	Why does IVF need retraining as data drifts but HNSW doesn't?
+Q007882	H	Sketch the memory math for 1B 768-dimensional vectors under float32, int8, and PQ-96. When would binary quantization with rescoring beat PQ?
+Q007883	M	How do you choose a vector database? Compare pgvector, dedicated vector stores, and search engines.
+Q007884	M	What consistency bugs appear when the vector index is a separate system from the document store?
+Q007885	M	Your queries use a tenant filter with 5% selectivity. How does that change your vector database choice?
+Q007886	M	When is Elasticsearch's BM25 maturity worth its operational weight?
+Q007887	M	How does metadata filtering interact with ANN indexes? Explain pre-filtering versus post-filtering.
+Q007889	H	Design indexing for 10k tenants where the largest has 10M vectors and the median has 5k. How does your vector DB decide between filtered ANN and brute force, and what would a cost model look at?
+Q007979	H	A better embedding model ships and you have 400M chunks indexed. How would you decide whether the new model is worth the reindex, concretely?
+Q007980	H	During an embedding model migration, what breaks if the dual-write window has a gap and some documents are only in the old index?
+Q007990	H	Your vector index will not fit on one machine. How do you shard it, and what breaks?
+Q007991	H	With 20 shards and a scatter-gather query, how do you keep p99 from being dominated by the slowest shard?
+Q007992	H	In a sharded vector search, how much do you over-fetch per shard, and how would you determine that number?
+Q008968	H	How do you keep multi-vector (ColPali-style) storage from exploding at 5M pages?
+Q009332	M	When retrieving code for a coding agent, when would you still keep an embedding index around?
+Q009376	H	In semantic search over roughly 100M documents using binary-quantized embeddings with rescoring, how do you pick the rescoring depth empirically?
+Q009377	M	Where does recall loss from binary-quantized retrieval show up in RAG quality metrics?
+Q009571	H	Your embedding model upgrade improves offline recall but requires re-embedding a billion chunks. How do you roll it out?
+Q009587	M	When would you maintain multiple embedding spaces instead of one?
+Q009792	M	When would you fine-tune an embedding model instead of the LLM?
+Q010016	M	When embedding millions of text chunks through an embedding service, the service starts returning 429s under your concurrency. How does the batcher adapt?
+Q010229	M	In a similarity-search system over driving segments, what breaks when you swap the embedding encoder for a better one?
+Q010314	H	Your product has 10M docs and 5,000 tenants for semantic search. Do you use one index or a per-tenant index?
+Q010316	M	Do we need a dedicated vector database, or is pgvector enough? How do you decide?
+Q010317	H	How do you keep pgvector search fast while the same instance takes heavy writes?
+Q010318	H	What breaks when you re-embed with a new model, and how do you roll that out with zero downtime?
+Q010352	H	During a re-embedding backfill of 200M vectors, the backfill is 60% done and the provider deprecates the old model's endpoint. What now?
+Q010379	H	How do you enforce document-level permissions and right-to-be-forgotten in a vector store?
+D00359	E	What is an embedding and what does 1536 dimensions mean for retrieval?
+D00360	M	How do embedding models learn semantic similarity through contrastive training?
+D00361	M	Compare cosine similarity, dot product and Euclidean distance, and say when each is appropriate.
+D00362	M	Compare bi-encoders, cross-encoders and late-interaction models in cost and accuracy.
+D00363	M	What is a Matryoshka embedding, and why choose one for a billion-vector index?
+D00364	M	How do binary and int8 quantization reduce vector storage, and what recall do you lose?
+D00365	M	What is the vocabulary mismatch problem in embedding-based retrieval?
+D00366	M	What is asymmetric retrieval, and how do query and document prefixes address it?
+D00367	M	How would you choose and compare embedding models for a domain-specific corpus?
+D00368	M	How do you fine-tune an embedding model, and when is it worth it?
+D00369	H	You need to upgrade the embedding model behind a 500M-vector index. How do you do it with no downtime?
+D00370	M	What is embedding drift, and how do you detect and mitigate it?
+D00371	M	How do multimodal embeddings such as CLIP and SigLIP create a shared space for text and images?
+D00372	M	Why not simply ask an LLM to judge relevance instead of using embeddings for first-stage retrieval?
+D00373	M	Explain how HNSW works and when you would not use it.
+D00374	M	How do the HNSW parameters M, efConstruction and efSearch affect recall, latency and memory?
+D00375	M	Compare IVF, IVF-PQ and HNSW and when to choose each.
+D00376	M	How does product quantization compress vectors, and what error does it introduce?
+D00377	M	When would you use a disk-based index such as DiskANN over a RAM-based HNSW index?
+D00378	M	What distinguishes ScaNN from IVF-PQ and HNSW?
+D00379	M	How does binary quantization differ from product quantization?
+D00380	M	Why is metadata filtering often the bottleneck in vector databases, and what are pre-filter, post-filter and in-graph filtering?
+D00381	M	How do you monitor and tune a vector index in production for recall and latency?
+D00382	M	How would you choose between Pinecone and a self-hosted vector solution?
+D00383	M	When is pgvector the right choice, and how do you combine vector similarity with business conditions?
+D00384	H	How would you migrate a vector database without downtime or retrieval regression?
+D00385	M	How do you handle multi-tenancy in a vector database: namespaces, per-tenant shards or row-level security?
+D00386	M	How do you plan capacity for a vector index with hundreds of millions of vectors, including memory tiers and replicas?
+D00387	M	How do you design an embedding service for large-scale RAG with cost optimization?
+D00388	M	What indexing trade-offs matter when you shard vectors across nodes?
+D03479	M	Compare tree-based, LSH and clustering-based approximate nearest neighbor methods.
+D03814	M	How would you choose and configure a vector index such as HNSW or IVF-PQ for a large RAG corpus?
+D04833	M	How should the index be built: which embedding model, which similarity metric, and what index structure for millions of chunks?
+D04843	M	How does a dual-encoder differ from a cross-encoder for retrieval, and why are they combined in a retrieve-then-rerank pipeline?
+D04845	M	How does hard-negative mining improve a dense retriever's training?
+D04967	M	How do you choose an embedding model for a domain with specialized vocabulary, and when does fine-tuning embeddings pay off?

@@ -1,0 +1,425 @@
+GA01|E|What are the essential elements of a good prompt, and how do intent and constraints differ?|A:05-prompting-and-context/01-prompt-engineering-fundamentals.md
+GA01|M|Why do system prompts carry more weight than user prompts, and what is the instruction hierarchy?|A:05-prompting-and-context/01-prompt-engineering-fundamentals.md
+GA01|M|How do delimiters and structured sections in a prompt reduce ambiguity and injection risk?|A:05-prompting-and-context/01-prompt-engineering-fundamentals.md
+GA01|M|What makes a good system prompt for a stable agent, and what sections would you include?|G:docs/02-prompt-engineering/README.md
+GA01|E|What is chain-of-thought prompting, and why does it help on multi-step problems?|A:05-prompting-and-context/03-chain-of-thought.md
+GA01|M|How do you use chain-of-thought in a latency-critical production system?|A:05-prompting-and-context/03-chain-of-thought.md
+GA01|M|How do you prompt reasoning models differently from standard models?|G:docs/02-prompt-engineering/README.md
+GA01|M|Explain self-consistency prompting and how it improves reasoning accuracy.|G:docs/02-prompt-engineering/README.md
+GA01|M|What is Tree-of-Thought, and when is it significantly better than chain-of-thought?|A:05-prompting-and-context/04-tree-of-thought.md
+GA01|M|What is the main drawback of Tree-of-Thought in a consumer app, and do you still need it with reasoning models?|A:05-prompting-and-context/04-tree-of-thought.md
+GA01|M|What is Auto-CoT, and how does it reduce the need for hand-written examples?|G:docs/02-prompt-engineering/README.md
+GA01|M|What is Chain-of-Verification and how does it reduce hallucination?|G:docs/02-prompt-engineering/README.md
+GA01|M|How do you pick few-shot examples, and why not put all fifty available examples in the prompt?|A:05-prompting-and-context/02-few-shot-and-icl.md
+GA01|M|What is label bias in in-context learning, and how does example ordering affect outputs?|A:05-prompting-and-context/02-few-shot-and-icl.md
+GA01|M|Compare dynamic and static few-shot selection and when to use each.|G:docs/02-prompt-engineering/README.md
+GA01|M|What are ReAct prompting's limitations, and how do you mitigate them in practice?|G:docs/02-prompt-engineering/README.md
+GA01|M|How do structured outputs differ from JSON mode and from function calling?|G:docs/02-prompt-engineering/README.md
+GA01|M|Why is JSON mode more reliable than asking for JSON in the prompt?|A:05-prompting-and-context/06-structured-generation.md
+GA01|M|What is the risk of requesting too many structured fields in a single call, and how does multi-stage extraction help?|A:05-prompting-and-context/06-structured-generation.md
+GA01|M|How do you handle validation failures from structured output, including retry with correction?|A:13-reliability-and-safety/01-guardrails.md
+GA01|M|An extraction pipeline forced a tool call to get JSON. After a model upgrade every request returns an error. What changed and how do you fix it?|A:05-prompting-and-context/06-structured-generation.md
+GA01|M|How do OpenAI, Anthropic and Google structured output mechanisms differ, and how do you choose?|G:docs/05-ai-agent-basics/README.md
+GA01|M|What is prompt caching, and how do you order prompt content to maximize hit rate?|G:docs/02-prompt-engineering/README.md
+GA01|M|How do you tell whether prompt caching actually saves money for a given workload?|G:docs/01-basic-concepts/README.md
+GA01|M|What are cache breakpoints, and how do you design them when tools or system prompts change mid-session?|A:17-tool-use-and-computer-agents/05-building-tool-agents.md
+GA01|M|How does prefix caching change how you design system prompts?|A:08-memory-and-state/02-short-term-context.md
+GA01|M|What is context engineering and how does it differ from prompt engineering?|A:05-prompting-and-context/05-context-engineering.md
+GA01|M|What are the core context engineering techniques: compaction, just-in-time loading, note-taking and sub-agent isolation?|A:05-prompting-and-context/05-context-engineering.md
+GA01|M|Explain the write, select, compress and isolate framework for agent context management.|G:docs/05-ai-agent-basics/README.md
+GA01|M|An agent works on short tasks but degrades on long ones. How do you diagnose and fix it?|A:05-prompting-and-context/05-context-engineering.md
+GA01|M|How do you budget context across system prompt, tools, history and retrieved documents?|G:docs/10-production-deployment/README.md
+GA01|M|How do you manage token budgets as conversations grow, with compression that keeps key information?|G:docs/02-prompt-engineering/README.md
+GA01|M|A gateway falls back to a different model mid-conversation and quality drops. What context-related issues could be involved?|A:05-prompting-and-context/05-context-engineering.md
+GA01|M|How do reasoning effort and thinking controls differ across providers, and how do you choose an effort level?|A:05-prompting-and-context/05-context-engineering.md
+GA01|M|Why is thinking bound to the conversation in append-only context, and what does that imply for caching?|A:05-prompting-and-context/05-context-engineering.md
+GA01|M|How does DSPy turn prompting into programming with signatures and optimizers?|A:05-prompting-and-context/07-prompt-optimization-dspy.md
+GA01|M|What is a teleprompter or optimizer in DSPy, and what does metric-driven optimization require?|A:05-prompting-and-context/07-prompt-optimization-dspy.md
+GA01|M|What is the biggest drawback of DSPy in production?|A:09-frameworks-and-tools/05-dspy.md
+GA01|M|When would you use GEPA instead of MIPROv2 for prompt optimization?|A:09-frameworks-and-tools/05-dspy.md
+GA01|M|How do you version prompts in production and detect prompt drift?|G:docs/02-prompt-engineering/README.md
+GA01|M|How would you run A/B tests and offline regression tests for prompt changes?|G:docs/02-prompt-engineering/README.md
+GA01|M|What is composable prompt design and how does it lower maintenance cost?|G:docs/02-prompt-engineering/README.md
+GA01|M|How do you prompt a model to honestly refuse when it does not know instead of making things up?|G:docs/02-prompt-engineering/README.md
+GA01|M|What is wrong with God prompts, vague instructions and missing output formats?|A:15-ai-design-patterns/02-anti-patterns.md
+GA01|M|How do you evaluate prompt frameworks such as LangSmith, Braintrust and Promptfoo?|G:docs/02-prompt-engineering/README.md
+GA01|M|What is a golden dataset, and how do you build and maintain one?|G:docs/02-prompt-engineering/README.md
+GA01|E|What is prompt injection and how does it differ from prompt leakage?|G:docs/02-prompt-engineering/README.md
+GA01|M|How do you prevent system prompt leakage?|G:docs/02-prompt-engineering/README.md
+GA01|M|How do you debug a prompt that behaves inconsistently across inputs?|G:docs/15-advanced-topics/README.md
+GA01|M|Rate limits and pricing now vary by model tier. How does that change your prompt design?|A:02-model-landscape/03-pricing-and-costs.md
+GA02|E|How does function calling work end to end, from schema to result feedback?|G:docs/05-ai-agent-basics/README.md
+GA02|M|What makes a high-precision tool definition for an LLM, and what schema design rules matter most?|A:17-tool-use-and-computer-agents/05-building-tool-agents.md
+GA02|M|How do you handle failure in tool calls: parameter errors, timeouts and fallbacks?|G:docs/05-ai-agent-basics/README.md
+GA02|M|Design retry strategy for tool failures including exponential backoff with jitter and a circuit breaker.|G:docs/05-ai-agent-basics/README.md
+GA02|M|How do you return structured errors to the model so it can self-correct?|G:docs/05-ai-agent-basics/README.md
+GA02|M|How do you handle parallel tool calls with dependencies, timeouts and mixed success?|G:docs/05-ai-agent-basics/README.md
+GA02|M|What is programmatic tool calling and when is it better than model-orchestrated chaining?|A:17-tool-use-and-computer-agents/05-building-tool-agents.md
+GA02|M|You must give an agent access to 200 internal tools. How do you handle schema overload?|A:17-tool-use-and-computer-agents/05-building-tool-agents.md
+GA02|M|How does dynamic tool search help, and how do you change tools mid-session without losing the cache?|A:17-tool-use-and-computer-agents/05-building-tool-agents.md
+GA02|M|How would you version tools and keep backwards compatibility?|A:17-tool-use-and-computer-agents/05-building-tool-agents.md
+GA02|M|What are the three testing layers for a tool-using agent?|A:17-tool-use-and-computer-agents/05-building-tool-agents.md
+GA02|M|Design a testing strategy for a customer-support tool-using agent.|A:17-tool-use-and-computer-agents/05-building-tool-agents.md
+GA02|M|How do you measure and trace tool-call quality, for example with BFCL-style evaluation?|G:docs/05-ai-agent-basics/README.md
+GA02|E|What is the Model Context Protocol, and what integration problem does it solve?|G:docs/14-mcp-skill-systems/README.md
+GA02|M|What are MCP's three core primitives and what is each for?|G:docs/14-mcp-skill-systems/README.md
+GA02|M|Describe MCP's client, server and transport layers and how a request flows through them.|G:docs/14-mcp-skill-systems/README.md
+GA02|M|Compare MCP stdio, SSE and streamable HTTP transports and when to use each.|G:docs/14-mcp-skill-systems/README.md
+GA02|M|How do MCP and plain function calling differ, and when should you not use MCP?|G:docs/14-mcp-skill-systems/README.md
+GA02|M|How does MCP address the too-many-tools problem?|A:07-agentic-systems/03-tool-use-and-mcp.md
+GA02|M|Why should tool logic be separated from the agent app via MCP servers?|A:07-agentic-systems/03-tool-use-and-mcp.md
+GA02|M|How does the MCP authorization flow work with OAuth 2.1, protected resource metadata and audience binding?|G:docs/14-mcp-skill-systems/README.md
+GA02|M|What changed with the stateless revision of MCP, and what is the migration impact for servers running behind sticky sessions?|A:07-agentic-systems/03-tool-use-and-mcp.md
+GA02|M|What is MCP sampling and why does it allow server-side agentic behavior?|G:docs/14-mcp-skill-systems/README.md
+GA02|M|What are MCP roots and how do they bound file access?|G:docs/14-mcp-skill-systems/README.md
+GA02|M|What are MCP tasks, triggers and server cards, and what problems do they solve?|G:docs/14-mcp-skill-systems/README.md
+GA02|M|How do JSON-RPC error codes work in MCP and how should servers surface errors?|G:docs/14-mcp-skill-systems/README.md
+GA02|M|How do you monitor an MCP server in production?|G:docs/14-mcp-skill-systems/README.md
+GA02|M|How does an agent coordinate several MCP servers with overlapping tools?|G:docs/14-mcp-skill-systems/README.md
+GA02|M|Compare skills and tools: what does a skill package that a tool does not?|G:docs/13-multi-agent-systems/README.md
+GA02|M|What is progressive disclosure for agent skills, and why not load every skill into context?|G:docs/05-ai-agent-basics/README.md
+GA02|M|What are the key MCP attack vectors: tool poisoning, confused deputy, token passthrough and SSRF?|G:docs/14-mcp-skill-systems/README.md
+GA02|H|Your agent connects to a dozen third-party MCP servers over OAuth. How do you stop one malicious server from abusing credentials intended for another?|A:07-agentic-systems/03-tool-use-and-mcp.md
+GA02|M|How do stdio-based MCP launches lead to command injection, and how do you migrate away safely?|A:16-case-studies/20-mcp-knowledge-agent.md
+GA02|H|Design a secure multi-tenant MCP server on the stateless protocol, covering state handles, authorization and rate limiting.|A:00-interview-prep/01-question-bank.md
+GA02|M|How would you build an enterprise MCP gateway for audit, authorization and routing?|G:docs/14-mcp-skill-systems/README.md
+GA02|M|How do you authorize an agent that calls tools on five MCP servers on a user's behalf?|A:12-security-and-access/02-access-control.md
+GA02|M|How do MCP and A2A work together in a production multi-agent system?|A:07-agentic-systems/03-tool-use-and-mcp.md
+GA02|M|What do the OWASP MCP and agent top-10 lists add beyond the traditional web top-10?|G:docs/14-mcp-skill-systems/README.md
+GA02|M|How would you protect a database tool from agent-driven SQL injection?|A:07-agentic-systems/09-agentic-security-and-sandboxing.md
+GA02|M|How do you make an agent that can execute arbitrary Python code safe?|A:00-interview-prep/01-question-bank.md
+GA02|M|What is a code interpreter tool, and where does it sit in sandbox-versus-privilege decisions?|A:17-tool-use-and-computer-agents/02-architecture-patterns.md
+GA02|M|How does a computer-use agent's screenshot, reason, act loop work?|A:17-tool-use-and-computer-agents/04-computer-use-agents.md
+GA02|M|Compare vision-based computer use with API-based tool calling.|A:17-tool-use-and-computer-agents/02-architecture-patterns.md
+GA02|M|Compare computer-use agents with Selenium-style scripted automation. When do you pick each?|A:17-tool-use-and-computer-agents/04-computer-use-agents.md
+GA02|M|What errors are specific to computer-use agents: misclicks, stale screenshots, scaling mismatches and unexpected dialogs?|A:17-tool-use-and-computer-agents/04-computer-use-agents.md
+GA02|M|A vendor says its computer-use model scores about 82 percent on a desktop benchmark. How do you turn that into a capacity plan?|A:17-tool-use-and-computer-agents/04-computer-use-agents.md
+GA02|M|What does the latency and cost per action look like for computer-use agents, and how do you optimize it?|A:17-tool-use-and-computer-agents/04-computer-use-agents.md
+GA02|H|A client has 500 insurance claim PDFs per day to enter into a legacy portal with no API. Design the automation.|A:17-tool-use-and-computer-agents/04-computer-use-agents.md
+GA02|M|How do you design the action space and data loop for a GUI agent?|G:docs/21-multimodal-agents/README.md
+GA02|M|What unique challenges do mobile GUI agents face compared to desktop agents?|G:docs/21-multimodal-agents/README.md
+GA02|M|When is a sandboxed environment mandatory for tool-using agents and what are the isolation options?|A:17-tool-use-and-computer-agents/07-safety-and-governance.md
+GA02|M|Compare Docker, gVisor, WebAssembly and Firecracker for agent sandboxing.|A:17-tool-use-and-computer-agents/07-safety-and-governance.md
+GA02|M|How do you prevent an AI agent from causing damage through tool calls?|A:17-tool-use-and-computer-agents/02-architecture-patterns.md
+GA02|M|How would you design a tool-using agent that automates invoice processing for thousands of invoices per day?|A:17-tool-use-and-computer-agents/06-use-cases-and-case-studies.md
+GA02|M|Explain tool-composition patterns: LLM-orchestrated, programmatic and server-side composition.|A:17-tool-use-and-computer-agents/05-building-tool-agents.md
+GA02|M|What is the Responses API versus an assistants-style API, and how do they manage state and tools?|G:docs/12-frameworks-tools/README.md
+GA02|M|How do you choose SSE versus WebSocket for streaming LLM or agent output?|G:docs/05-ai-agent-basics/README.md
+GA02|M|How would you implement streaming of tool calls and partial results to a front end?|A:07-agentic-systems/03-tool-use-and-mcp.md
+GA03|E|What is an AI agent and what are its core components?|G:docs/05-ai-agent-basics/README.md
+GA03|M|How do agents differ from workflows and from simple chatbots? Where does each belong?|A:00-interview-prep/01-question-bank.md
+GA03|M|What are the four components of a trustworthy agent: model, harness, tools and environment?|G:docs/05-ai-agent-basics/README.md
+GA03|M|Why do people say the model sets the ceiling and the harness sets the floor?|G:docs/05-ai-agent-basics/README.md
+GA03|M|What are agency levels and how do you choose how much autonomy to grant?|A:07-agentic-systems/01-agent-fundamentals.md
+GA03|M|Why is a reasoning model better suited to agency than a standard LLM?|A:07-agentic-systems/01-agent-fundamentals.md
+GA03|M|How do you prevent agentic drift in long-running tasks?|A:07-agentic-systems/01-agent-fundamentals.md
+GA03|E|Explain the ReAct loop and its main failure modes.|A:00-interview-prep/01-question-bank.md
+GA03|M|ReAct versus Plan-and-Solve versus ReWOO: when do you use each?|A:07-agentic-systems/02-reasoning-loops-react-and-beyond.md
+GA03|M|How does inference-time scaling relate to agentic loops?|A:07-agentic-systems/02-reasoning-loops-react-and-beyond.md
+GA03|M|What is Reflexion, and how does it differ from plain self-reflection?|G:docs/22-agent-planning-reflection/README.md
+GA03|M|How do LATS and tree-search planning differ from Reflexion?|G:docs/22-agent-planning-reflection/README.md
+GA03|M|What is a generator-evaluator architecture and why does reflection help?|G:docs/22-agent-planning-reflection/README.md
+GA03|M|What is dynamic replanning and when should it be triggered?|G:docs/22-agent-planning-reflection/README.md
+GA03|M|How do you prevent infinite recursion during task decomposition?|A:07-agentic-systems/06-planning-and-decomposition.md
+GA03|M|Why is plan revision often more expensive than plan generation?|A:07-agentic-systems/06-planning-and-decomposition.md
+GA03|M|Why should an agent clarify requirements before decomposing a task?|A:07-agentic-systems/06-planning-and-decomposition.md
+GA03|M|How does CRITIC-style grounded verification differ from self-reflection?|G:docs/22-agent-planning-reflection/README.md
+GA03|M|Why must the verifier be separate from the producer in an agent loop, and where should budget enforcement live?|A:07-agentic-systems/12-loop-engineering.md
+GA03|M|Should a verifier tell the agent why it rejected the work?|A:07-agentic-systems/12-loop-engineering.md
+GA03|M|When is an agent loop actively harmful, and how do you convert a non-converging loop into a useful one?|A:07-agentic-systems/12-loop-engineering.md
+GA03|M|An agent called a broken tool 400 times in five minutes. Diagnose it and design the fix.|A:07-agentic-systems/12-loop-engineering.md
+GA03|M|Your agent takes 47 LLM calls to finish a task that should take 5. How do you debug that?|A:00-interview-prep/01-question-bank.md
+GA03|M|How do you stop an agent from entering a dead loop?|G:docs/05-ai-agent-basics/README.md
+GA03|M|Why is traditional try/catch exception handling insufficient for agentic systems?|A:07-agentic-systems/07-error-handling-and-recovery.md
+GA03|M|How do you catch silent failures where a tool returns success but the data is wrong?|A:07-agentic-systems/07-error-handling-and-recovery.md
+GA03|M|What are stateful rollbacks and checkpoints in an agent workflow?|A:07-agentic-systems/07-error-handling-and-recovery.md
+GA03|M|What are kill switches and containment time, and why must containment be out-of-band?|A:07-agentic-systems/09-agentic-security-and-sandboxing.md
+GA03|M|Explain the agent memory hierarchy: working, episodic, semantic and procedural memory.|A:07-agentic-systems/05-agent-memory-and-state.md
+GA03|M|Why is the context window alone insufficient for a staff-level agent architecture?|A:07-agentic-systems/05-agent-memory-and-state.md
+GA03|M|Why not use a one-million-token context window for all agent memory?|A:08-memory-and-state/01-memory-architectures.md
+GA03|M|How would you design procedural memory for a production agent?|A:07-agentic-systems/05-agent-memory-and-state.md
+GA03|M|When does episodic memory become a liability rather than an asset?|A:07-agentic-systems/05-agent-memory-and-state.md
+GA03|M|How do you handle conflicting memories in an agentic system?|A:07-agentic-systems/05-agent-memory-and-state.md
+GA03|M|How do you prevent memory poisoning when an agent can write to its own long-term store?|A:07-agentic-systems/05-agent-memory-and-state.md
+GA03|M|Design a consolidation policy for moving episodic memories into semantic memory.|A:07-agentic-systems/05-agent-memory-and-state.md
+GA03|M|A benchmark shows your agent performs better with memory turned off. What do you do?|A:07-agentic-systems/05-agent-memory-and-state.md
+GA03|H|Your memory store holds fifty million memories across ten thousand tenants. How do you guarantee cross-tenant isolation?|A:07-agentic-systems/05-agent-memory-and-state.md
+GA03|M|How would you instrument production to catch hallucinated memory writes before they propagate?|A:07-agentic-systems/05-agent-memory-and-state.md
+GA03|M|How do you choose between a vector database and a knowledge graph for long-term agent memory?|A:08-memory-and-state/03-long-term-memory.md
+GA03|M|When would you store agent memory as files rather than in a vector database?|A:08-memory-and-state/01-memory-architectures.md
+GA03|M|How do you avoid memory fatigue where an agent surfaces too many irrelevant past details?|A:08-memory-and-state/04-agentic-memory-mem0.md
+GA03|M|Why use a dedicated memory layer like Mem0 instead of a custom script writing to Postgres?|A:08-memory-and-state/04-agentic-memory-mem0.md
+GA03|M|How do memory pruning, decay and privacy rules work in long-term memory design?|A:08-memory-and-state/03-long-term-memory.md
+GA03|M|How do you handle privacy leakage in a global semantic memory tier?|A:08-memory-and-state/01-memory-architectures.md
+GA03|M|What is the difference between the model's context window and the application's context window?|A:08-memory-and-state/02-short-term-context.md
+GA03|M|Compare sliding windows and summarization for short-term context, and design a thousand-turn conversation strategy.|G:docs/05-ai-agent-basics/README.md
+GA03|M|What is a semantic cache versus a provider prompt cache, and should you use both?|A:08-memory-and-state/05-semantic-caching.md
+GA03|M|What is semantic drift in caching and how do you prevent it?|A:08-memory-and-state/05-semantic-caching.md
+GA03|M|Why can a semantic cache cost more than a raw LLM call at low volume?|A:08-memory-and-state/05-semantic-caching.md
+GA03|M|Design a semantic cache that works in production, including thresholds, TTL and invalidation.|A:00-interview-prep/01-question-bank.md
+GA03|M|Why use a graph-based state machine like LangGraph instead of a simple while loop for agents?|A:08-memory-and-state/06-state-management-patterns.md
+GA03|M|How do you prevent state bloat in long-running agent sessions?|A:08-memory-and-state/06-state-management-patterns.md
+GA03|M|What are checkpointing, time-travel and fork/join in agent state management?|A:08-memory-and-state/06-state-management-patterns.md
+GA03|M|Checkpointing is not durable execution. What do production agents still lack after checkpointing?|G:docs/22-agent-planning-reflection/README.md
+GA03|M|Why are naive retries and checkpoints insufficient for an agent with side effects?|A:07-agentic-systems/11-durable-execution.md
+GA03|M|When is durable execution overkill, and what would you use instead?|A:07-agentic-systems/11-durable-execution.md
+GA03|M|Would you build an agent on Temporal or rent a managed agent runtime?|A:07-agentic-systems/11-durable-execution.md
+GA03|M|How do you design a multi-agent system, and when is multi-agent actually warranted?|A:00-interview-prep/01-question-bank.md
+GA03|M|What are the failure modes of a supervisor multi-agent architecture?|A:07-agentic-systems/04-multi-agent-orchestration.md
+GA03|M|How do you choose between a sequence of chains and a multi-agent graph?|A:07-agentic-systems/04-multi-agent-orchestration.md
+GA03|M|Compare commander, peer-to-peer and hybrid multi-agent collaboration modes.|G:docs/13-multi-agent-systems/README.md
+GA03|M|Why can a critic or verifier agent improve quality but also cause problems?|G:docs/13-multi-agent-systems/README.md
+GA03|M|When would you use multi-agent debate versus a mixture of agents?|A:00-interview-prep/01-question-bank.md
+GA03|M|How do you decide whether a published multi-agent research result is worth building?|G:docs/13-multi-agent-systems/README.md
+GA03|M|When do you define a multi-agent workflow in code versus letting a coordinator model delegate?|A:07-agentic-systems/04-multi-agent-orchestration.md
+GA03|M|How do you prevent infinite loops where agents keep talking to each other without solving the task?|A:09-frameworks-and-tools/07-autogen-crewai.md
+GA03|M|What are common multi-agent anti-patterns in production, and how would you split a customer-ticket workflow?|G:docs/13-multi-agent-systems/README.md
+GA03|M|When would you use A2A versus keeping all agents inside one framework?|A:07-agentic-systems/04-multi-agent-orchestration.md
+GA03|M|How do A2A task lifecycles and agent cards enable discovery and delegation?|G:docs/13-multi-agent-systems/README.md
+GA03|M|Where do the responsibilities of RAG, agents, MCP and A2A begin and end?|G:docs/13-multi-agent-systems/README.md
+GA03|M|How do you divide responsibilities and decompose tasks hierarchically among agents?|G:docs/13-multi-agent-systems/README.md
+GA03|M|How do you control quality, latency and cost when orchestrating agents dynamically at runtime?|G:docs/13-multi-agent-systems/README.md
+GA03|M|What are the benefits and bottlenecks of massively parallel agents?|G:docs/13-multi-agent-systems/README.md
+GA03|M|How would you design a policy engine, permission model and audit trail for multi-agent systems?|G:docs/13-multi-agent-systems/README.md
+GA03|M|How do you pass trace IDs across agents for distributed tracing?|G:docs/23-agent-observability/README.md
+GA03|M|How do you design a human-in-the-loop system that does not fatigue the human operator?|A:07-agentic-systems/08-human-in-the-loop-patterns.md
+GA03|M|What is the over-reliance risk in human-in-the-loop designs, and how do you mitigate approval laundering?|A:07-agentic-systems/08-human-in-the-loop-patterns.md
+GA03|M|You gate agent actions with a classifier that can run, deny or defer to a human. How do you set and monitor thresholds?|A:07-agentic-systems/08-human-in-the-loop-patterns.md
+GA03|M|When should an agent pause for human confirmation, and how would you implement interrupts in LangGraph?|G:docs/05-ai-agent-basics/README.md
+GA03|M|How do you evaluate an agent when the environment is non-deterministic such as the open web?|A:07-agentic-systems/10-evaluating-agentic-systems.md
+GA03|M|Why is meandering a critical failure in agent design, and what metrics expose it?|A:07-agentic-systems/10-evaluating-agentic-systems.md
+GA03|M|Define task success rate, action success rate and unit cost per task for agents.|A:07-agentic-systems/10-evaluating-agentic-systems.md
+GA03|M|What does it mean when an agent games its evaluation harness, and how do you detect it?|A:07-agentic-systems/10-evaluating-agentic-systems.md
+GA03|M|How do you quantitatively evaluate overall agent performance beyond prompt-level scoring?|G:docs/05-ai-agent-basics/README.md
+GA03|M|What are the mainstream agent benchmarks and what does each measure?|G:docs/05-ai-agent-basics/README.md
+GA03|M|How would you do trajectory grading with agent-as-judge, and what new failure modes does it add?|A:00-interview-prep/01-question-bank.md
+GA03|M|How do you control the ROI of an AI agent, and which metrics matter?|G:docs/05-ai-agent-basics/README.md
+GA03|M|Why would you use LangGraph rather than a managed agent runtime?|A:09-frameworks-and-tools/02-langgraph-orchestration.md
+GA03|M|How do you handle state overload in a graph with twenty or more nodes?|A:09-frameworks-and-tools/02-langgraph-orchestration.md
+GA03|M|What is the difference between LangChain and LangGraph, and when do you choose each?|G:docs/12-frameworks-tools/README.md
+GA03|M|What is the main benefit of LCEL over traditional chains, and how do you keep a LangChain system lean?|A:09-frameworks-and-tools/01-langchain-deep-dive.md
+GA03|M|How do LlamaIndex and LangChain workflows differ and how do you choose between them?|A:09-frameworks-and-tools/04-llamaindex.md
+GA03|M|When would you choose CrewAI instead of LangGraph?|A:09-frameworks-and-tools/07-autogen-crewai.md
+GA03|M|When is a typed agent framework such as Pydantic AI a better choice than LangGraph?|A:09-frameworks-and-tools/11-pydantic-ai-and-mastra.md
+GA03|M|With every lab shipping its own agent SDK, how do you avoid lock-in?|A:09-frameworks-and-tools/08-framework-selection-guide.md
+GA03|M|How would you build a system that works across OpenAI, Anthropic and local open-weight models?|A:09-frameworks-and-tools/08-framework-selection-guide.md
+GA03|M|Given framework churn, how do you decide whether to use a framework at all?|A:09-frameworks-and-tools/12-navigating-framework-churn.md
+GA03|M|How do you pin, lock and isolate dependencies to survive fast-moving AI frameworks?|A:09-frameworks-and-tools/12-navigating-framework-churn.md
+GA03|M|An agent's cost per task rose 40 percent and its tone changed overnight with no code change. What happened?|A:09-frameworks-and-tools/12-navigating-framework-churn.md
+GA03|M|Why is AutoGen in maintenance mode and what does the move to a merged agent framework mean for existing code?|A:09-frameworks-and-tools/07-autogen-crewai.md
+GA03|M|Compare Dify, Coze, n8n and similar low-code agent platforms against code-first frameworks.|G:docs/15-advanced-topics/README.md
+GA03|M|How would you design an enterprise AI agent platform similar to a low-code agent builder?|G:docs/27-project-experience/README.md
+GA03|M|How do coding agents like Claude Code, Cursor and Copilot differ in architecture and workflow?|A:09-frameworks-and-tools/09-claude-code.md
+GA03|M|What is a CLAUDE.md-style project manifest and why is it important for coding agents?|A:09-frameworks-and-tools/09-claude-code.md
+GA03|M|How do you run a coding agent safely in CI, and how do you control its cost?|A:09-frameworks-and-tools/09-claude-code.md
+GA03|M|Is it safe to run a coding agent in auto-approval mode on developer laptops?|A:09-frameworks-and-tools/09-claude-code.md
+GA03|M|How would you test an AI coding agent in CI?|A:09-frameworks-and-tools/10-opencoderguide.md
+GA03|M|Would you let an AI reviewer's approval count toward required reviews?|A:09-frameworks-and-tools/10-opencoderguide.md
+GA03|M|What is fill-in-the-middle and why does it matter for code completion models?|G:docs/17-ai-coding-tools/README.md
+GA03|M|What is SWE-bench, how does it score coding agents, and how can benchmarks be gamed?|G:docs/17-ai-coding-tools/README.md
+GA03|M|How does a coding agent's plan, execute, test and fix loop work?|G:docs/17-ai-coding-tools/README.md
+GA03|M|Why are open-weight coding models important for enterprises?|A:09-frameworks-and-tools/10-opencoderguide.md
+GA03|M|What are the architecture and security concerns of an always-on personal agent with its own compute?|A:17-tool-use-and-computer-agents/01-tool-use-landscape.md
+GA03|M|Design an always-on personal agent that keeps working while the user is away.|A:17-tool-use-and-computer-agents/01-tool-use-landscape.md
+GA03|M|Compare sandboxed and unsandboxed execution for AI agents.|A:17-tool-use-and-computer-agents/01-tool-use-landscape.md
+GA03|M|What risks come from skill or plugin ecosystems for agents, given that static detection has a ceiling?|A:17-tool-use-and-computer-agents/03-openclaw-deep-dive.md
+GA03|M|What vendor risks arise when your agent product depends on a third-party subscription policy?|A:17-tool-use-and-computer-agents/03-openclaw-deep-dive.md
+GA03|M|What is the eternal intern problem for agents, and how does continual learning address it?|G:docs/05-ai-agent-basics/README.md
+GA03|M|Should a team build an internal assistant on an open-source personal agent platform or build custom?|A:17-tool-use-and-computer-agents/01-tool-use-landscape.md
+GA03|M|What is Voyager-style lifelong learning and how does a skill library accumulate?|G:docs/22-agent-planning-reflection/README.md
+GA03|M|Design a skill system for a fleet of internal agents. How do skills differ from MCP tools and fine-tuning?|A:00-interview-prep/01-question-bank.md
+GA03|M|Your computer-use agent passes demos but fails 30 percent of real workflows. What is your reliability plan?|A:00-interview-prep/01-question-bank.md
+GA03|M|Your agent performs well for 5 minutes but degrades past 30 minutes of autonomous work. How do you fix it with context engineering?|A:00-interview-prep/01-question-bank.md
+GA04|E|What should you trace in an LLM application, and what makes a complete trace?|A:ai_evals_comprehensive_study_guide.md
+GA04|M|How is LLM observability different from conventional service observability?|A:14-evaluation-and-observability/02-observability.md
+GA04|M|What metrics would you track for a production LLM system across operational, quality and cost dimensions?|A:14-evaluation-and-observability/02-observability.md
+GA04|M|How do you detect quality degradation in production?|A:14-evaluation-and-observability/02-observability.md
+GA04|M|After a routine dependency upgrade your LLM dashboards go quiet. Traffic is the same. What do you suspect?|A:14-evaluation-and-observability/02-observability.md
+GA04|M|How does agent observability differ from general LLM monitoring?|G:docs/23-agent-observability/README.md
+GA04|M|How do you integrate OpenTelemetry into an agent system for traces and spans?|G:docs/23-agent-observability/README.md
+GA04|M|From a wrong answer, how do you trace back to the responsible model, knowledge source, skill, tool or agent node?|G:docs/23-agent-observability/README.md
+GA04|M|How do you detect abnormal agent behavior such as loops or runaway calls?|G:docs/23-agent-observability/README.md
+GA04|M|How do you set SLAs and alert rules for an agent service?|G:docs/23-agent-observability/README.md
+GA04|M|How would you perform root cause analysis from an agent trace?|G:docs/23-agent-observability/README.md
+GA04|M|How do you detect output quality decline and semantic drift in production agents?|G:docs/23-agent-observability/README.md
+GA04|M|How would you structure agent logs so they are searchable and analyzable?|G:docs/23-agent-observability/README.md
+GA04|M|How do you justify the cost of an observability platform like LangSmith?|A:09-frameworks-and-tools/03-langsmith-observability.md
+GA04|M|Why is trace attribution critical for a staff-level engineer working on LLM systems?|A:09-frameworks-and-tools/03-langsmith-observability.md
+GA04|M|How do you choose between observability platforms such as Langfuse, Phoenix, LangSmith and Opik?|G:docs/23-agent-observability/README.md
+GA04|M|How do you evaluate voice agents, and what is the accuracy-experience trade-off?|G:docs/23-agent-observability/README.md
+GA04|M|What are error analysis, open coding and axial coding for LLM products, and why must PMs and QAs take part?|A:ai_evals_comprehensive_study_guide.md
+GA04|M|What is theoretical saturation in error analysis, and how many traces should you review?|A:ai_evals_comprehensive_study_guide.md
+GA04|M|When do you use code-based evaluators instead of LLM judges?|A:ai_evals_comprehensive_study_guide.md
+GA04|M|How do you evaluate multi-step pipelines at the state level and analyze failure distributions?|A:ai_evals_comprehensive_study_guide.md
+GA04|M|How do you evaluate multi-turn conversations, and which metrics matter?|A:ai_evals_comprehensive_study_guide.md
+GA04|M|What is the difference between error analysis and automated evals, and when should each be prioritized?|A:00-interview-prep/01-question-bank.md
+GA04|M|Your eval scores keep improving but production complaints stay flat. How do you diagnose it?|A:00-interview-prep/01-question-bank.md
+GA04|M|How do you set up evals as a team culture without engineers gaming the metrics?|A:00-interview-prep/01-question-bank.md
+GA04|M|What is a test harness, and how does it differ from test scripts?|G:docs/28-test-harness-evaluation/README.md
+GA04|M|What is the difference between mock, stub, fake and spy, and when would you use each in LLM app tests?|G:docs/28-test-harness-evaluation/README.md
+GA04|M|How do you isolate tests from databases, networks, time and files?|G:docs/28-test-harness-evaluation/README.md
+GA04|M|How do you handle flaky tests, especially in LLM-dependent code?|G:docs/28-test-harness-evaluation/README.md
+GA04|M|Offline eval scores are high but online performance dropped. How do you debug it?|G:docs/28-test-harness-evaluation/README.md
+GA04|M|How do you prevent evaluation sets from being memorized or leaked into training or prompts?|G:docs/28-test-harness-evaluation/README.md
+GA04|M|Why can an agent harness replay not simply re-call real APIs, and how does replay differ from checkpointing?|G:docs/18-big-tech-interview-questions/README.md
+GA04|M|How do you prove a prompt or skill change did not regress quality?|G:docs/28-test-harness-evaluation/README.md
+GA04|M|How do you design a CI pipeline for LLM applications, with static checks, golden sets and LLM evaluation?|A:11-infrastructure-and-mlops/02-cicd.md
+GA04|M|How do you test prompt changes before production?|A:11-infrastructure-and-mlops/02-cicd.md
+GA04|M|What triggers should cause automatic rollback of an LLM deployment?|A:11-infrastructure-and-mlops/02-cicd.md
+GA04|M|Your provider is retiring the model your product runs on in 60 days. How do you migrate safely?|A:11-infrastructure-and-mlops/02-cicd.md
+GA04|M|How do canary and shadow deployments work for LLM changes?|A:11-infrastructure-and-mlops/02-cicd.md
+GA04|M|Why are model migrations treated as deploys, and how do you gate them?|A:11-infrastructure-and-mlops/02-cicd.md
+GA04|M|Your provider shipped a fix under the same model ID and your quality metrics moved. How do you detect and handle it?|A:13-reliability-and-safety/03-reliability-patterns.md
+GA04|M|What is an AI gateway, and what does it add beyond calling providers directly?|A:11-infrastructure-and-mlops/03-ai-gateways-and-model-routing.md
+GA04|M|Rate-limit errors are your top production failure. How does a gateway help, and how could it make things worse?|A:11-infrastructure-and-mlops/03-ai-gateways-and-model-routing.md
+GA04|M|When is a full gateway overkill?|A:11-infrastructure-and-mlops/03-ai-gateways-and-model-routing.md
+GA04|M|Your gateway holds every provider key. How do you secure it?|A:11-infrastructure-and-mlops/03-ai-gateways-and-model-routing.md
+GA04|M|How do you fail over a long-running agent conversation to another provider?|A:11-infrastructure-and-mlops/03-ai-gateways-and-model-routing.md
+GA04|M|How do you design a model router that picks the cheapest model meeting a quality bar?|A:00-interview-prep/01-question-bank.md
+GA04|M|How do you build the labels for a request-level router and avoid feedback loops?|A:00-interview-prep/01-question-bank.md
+GA04|M|What is a cascade pattern of models and how do you decide the escalation signal?|A:02-model-landscape/04-model-selection-guide.md
+GA04|M|How would you design rate limiting and backpressure for an LLM API, including token-based limits?|G:docs/10-production-deployment/README.md
+GA04|M|Design a multi-provider LLM architecture for 99.9 percent availability.|A:00-interview-prep/01-question-bank.md
+GA04|M|What is request hedging and when does it pay off?|A:13-reliability-and-safety/03-reliability-patterns.md
+GA04|M|Your 40-step agent platform depends on one provider that just had four outages in four days. How do you design for provider failure?|A:00-interview-prep/01-question-bank.md
+GA04|M|Design a model registry that survives divergent deprecation calendars across vendors.|A:09-frameworks-and-tools/12-navigating-framework-churn.md
+GA04|M|Your LLM bill doubled month over month with flat traffic. How do you find and fix it?|A:11-infrastructure-and-mlops/04-finops-and-token-economics.md
+GA04|M|Your LLM costs are ten times higher than expected. Walk me through the investigation.|A:00-interview-prep/01-question-bank.md
+GA04|M|Why do AI products have worse gross margins than typical SaaS, and what can engineers do?|A:11-infrastructure-and-mlops/04-finops-and-token-economics.md
+GA04|M|Why does the top cost lever tend to be caching, and how do batch and async tiers change the economics?|A:11-infrastructure-and-mlops/04-finops-and-token-economics.md
+GA04|M|A team wants to move a 300K-token-context workload to another provider because list prices match. What hidden pricing factors might change the bill?|A:11-infrastructure-and-mlops/04-finops-and-token-economics.md
+GA04|M|How do you attribute cost to features and tenants and set budget alerts?|A:11-infrastructure-and-mlops/01-llm-infrastructure.md
+GA04|M|How would you design a token-budget system that stops agents from running away with cost?|G:docs/23-agent-observability/README.md
+GA04|M|How do you design infrastructure for one million LLM queries per day?|A:11-infrastructure-and-mlops/01-llm-infrastructure.md
+GA04|M|How do you plan capacity and elastic scaling for LLM applications?|G:docs/10-production-deployment/README.md
+GA04|M|How would you evaluate a new accelerator or serving platform for your fleet?|A:11-infrastructure-and-mlops/01-llm-infrastructure.md
+GA04|M|What is the difference between LLMOps and MLOps?|G:docs/10-production-deployment/README.md
+GA04|M|How do you implement streaming output, and how do SSE and WebSocket differ?|G:docs/10-production-deployment/README.md
+GA04|M|Which memory leaks commonly occur in production agents and how do you track them?|G:docs/10-production-deployment/README.md
+GA04|M|How do you use worker pools to handle high-concurrency LLM requests in Go?|G:docs/10-production-deployment/README.md
+GA04|M|When you must use asyncio for batched LLM calls, how do you handle timeouts, cancellation and backpressure?|G:docs/24-python-engineering/README.md
+GA04|M|How do you make an LLM client testable and swappable using protocols and dependency injection?|G:docs/24-python-engineering/README.md
+GA04|M|How does the Python GIL affect AI services, and how do you work around it?|G:docs/24-python-engineering/README.md
+GA04|M|How would you stream an LLM response through FastAPI with server-sent events?|G:docs/24-python-engineering/README.md
+GA04|M|How should an application treat retries and hedging when the provider also enforces rate limits?|A:13-reliability-and-safety/03-reliability-patterns.md
+GA04|M|What does it take to design degradation levels for an LLM product under outage or overload?|A:13-reliability-and-safety/03-reliability-patterns.md
+GA04|M|How do bulkheads, circuit breakers and timeouts layer together in an LLM client?|A:13-reliability-and-safety/03-reliability-patterns.md
+GA04|M|What is the difference between a circuit breaker and a retry?|A:13-reliability-and-safety/03-reliability-patterns.md
+GA04|M|How do you design a feedback loop for continuous improvement of an LLM product?|A:00-interview-prep/01-question-bank.md
+GA04|M|How do you handle model updates and deprecations from providers over the life of a product?|A:00-interview-prep/01-question-bank.md
+GA04|M|How do you secure LangGraph production debugging with time travel and checkpointing?|G:docs/12-frameworks-tools/README.md
+GA04|M|How do you handle token counting for cost control and context planning?|A:00-interview-prep/01-question-bank.md
+GA05|E|What is prompt injection, and why is it harder to sanitize than SQL injection?|A:05-prompting-and-context/08-prompt-injection-defense.md
+GA05|M|What is indirect prompt injection and why is it especially dangerous in RAG and agent systems?|A:05-prompting-and-context/08-prompt-injection-defense.md
+GA05|M|How does the dual-LLM defense pattern work?|A:05-prompting-and-context/08-prompt-injection-defense.md
+GA05|M|How could a prompt injection spread from one agent to many, and how would you test for it?|A:05-prompting-and-context/08-prompt-injection-defense.md
+GA05|M|How do multi-step injections defeat single-payload defenses?|A:07-agentic-systems/09-agentic-security-and-sandboxing.md
+GA05|M|What does injection detection not buy you, and what must back it up?|A:13-reliability-and-safety/01-guardrails.md
+GA05|M|How do you design a layered defense against indirect injection for agents that read untrusted web content?|A:00-interview-prep/01-question-bank.md
+GA05|M|How would you design a browsing agent that has payment authority while resisting injected instructions in trusted data fields?|A:00-interview-prep/01-question-bank.md
+GA05|M|What are the OWASP top 10 risks for LLM applications and for agentic AI?|A:12-security-and-access/01-llm-security.md
+GA05|M|How do you build a threat model for a RAG or agent application?|G:docs/09-ai-safety-evaluation/README.md
+GA05|M|How do you design a system where one user's prompt cannot leak to another user?|A:00-interview-prep/01-question-bank.md
+GA05|M|What data-leak paths exist in an LLM app: training data, RAG, system prompts and API retention?|A:12-security-and-access/01-llm-security.md
+GA05|M|What is model extraction through an API and how would you detect and limit it?|A:12-security-and-access/01-llm-security.md
+GA05|M|What are training-data memorization and extraction attacks, and how do you evaluate exposure?|G:docs/09-ai-safety-evaluation/README.md
+GA05|M|How do you handle insecure output handling, such as rendering model output as HTML or executing it?|A:12-security-and-access/01-llm-security.md
+GA05|M|How do you handle user privacy data and PII in LLM applications?|G:docs/09-ai-safety-evaluation/README.md
+GA05|M|How do you prevent harmful content generation and abuse of an AI app?|G:docs/09-ai-safety-evaluation/README.md
+GA05|M|What are the layers of a guardrail architecture, and where does each check run?|A:13-reliability-and-safety/01-guardrails.md
+GA05|M|Design a guardrail system for a customer-service chatbot.|A:13-reliability-and-safety/01-guardrails.md
+GA05|M|How would you implement guardrails for an autonomous agent that can take real-world actions?|A:00-interview-prep/01-question-bank.md
+GA05|M|How do guardrail models such as Llama Guard and Prompt Guard compare, and how do you deploy them?|G:docs/09-ai-safety-evaluation/README.md
+GA05|M|Compare NeMo Guardrails and Guardrails AI.|A:13-reliability-and-safety/01-guardrails.md
+GA05|M|How do jailbreak benchmarks like HarmBench and JailbreakBench work, and how is attack success rate computed?|G:docs/09-ai-safety-evaluation/README.md
+GA05|M|How do you turn scattered jailbreak samples into a recurring automated red-team harness?|G:docs/09-ai-safety-evaluation/README.md
+GA05|M|How do you build a red-team set without leaking it into training or overfitting?|G:docs/09-ai-safety-evaluation/README.md
+GA05|M|How do you calibrate an LLM judge for safety evaluations?|G:docs/09-ai-safety-evaluation/README.md
+GA05|M|How do multimodal jailbreaks and image injection work, and how do you defend against them?|G:docs/09-ai-safety-evaluation/README.md
+GA05|M|What is LLM text watermarking and how do you evaluate it beyond detectability?|G:docs/09-ai-safety-evaluation/README.md
+GA05|M|How do you secure a multi-tenant RAG system against cross-tenant leakage?|A:12-security-and-access/01-llm-security.md
+GA05|M|Design tenant isolation across data, prompts and caches for an LLM service.|A:12-security-and-access/02-access-control.md
+GA05|M|How do you manage API keys for an LLM service, including rotation and workload identity?|A:12-security-and-access/02-access-control.md
+GA05|M|Compare RBAC and ABAC for LLM systems, and how would you model model-level permissions?|A:12-security-and-access/02-access-control.md
+GA05|M|How do you sandbox agent actions with microVMs or containers, and why does least privilege matter?|A:07-agentic-systems/09-agentic-security-and-sandboxing.md
+GA05|M|Why is instruction hierarchy critical for agent security?|A:07-agentic-systems/09-agentic-security-and-sandboxing.md
+GA05|M|What is capability-based access control for agents and how do allowlists compare with denylists?|A:17-tool-use-and-computer-agents/07-safety-and-governance.md
+GA05|M|What is exfiltration without an attacker, and how can agents leak data on their own?|A:07-agentic-systems/09-agentic-security-and-sandboxing.md
+GA05|M|What audit logging is required for accountable agent actions?|A:17-tool-use-and-computer-agents/07-safety-and-governance.md
+GA05|M|Why do agent frameworks suffer remote code execution vulnerabilities, and how do you defend systematically?|G:docs/09-ai-safety-evaluation/README.md
+GA05|M|How do you defend against supply-chain attacks on agent plugins, skills and auto-run hooks?|A:00-interview-prep/01-question-bank.md
+GA05|M|How would you vet a third-party fine-tuned open-weight model for supply-chain trust?|A:00-interview-prep/01-question-bank.md
+GA05|M|A coding agent passed tests and a human approved the diff, yet internal data ended up public. How could that happen?|A:16-case-studies/07-autonomous-coding-agent.md
+GA05|M|How do you handle the tension between zero data retention and provider safety retention?|A:12-security-and-access/01-llm-security.md
+GA05|M|What does a regulation such as the EU AI Act require engineers to implement for an LLM product?|A:13-reliability-and-safety/04-ai-governance-and-compliance.md
+GA05|M|How do the EU AI Act and the NIST AI RMF differ and when does each matter?|A:13-reliability-and-safety/04-ai-governance-and-compliance.md
+GA05|M|Your agent did something harmful to a third party's system. What are your reporting obligations and what do you change?|A:13-reliability-and-safety/04-ai-governance-and-compliance.md
+GA05|M|How do you handle AI-generated content disclosure, copyright and privacy compliance?|G:docs/10-production-deployment/README.md
+GA05|M|How do you design access control for a dual-use capability in your own product?|A:00-interview-prep/01-question-bank.md
+GA05|M|How do you make an agent's telemetry safe so it cannot silently upload sensitive data?|A:00-interview-prep/01-question-bank.md
+GA05|M|How do you detect and handle bias in LLM outputs?|G:docs/01-basic-concepts/README.md
+GA05|M|How do you handle approval laundering, over-reliance and operator fatigue in agent oversight?|A:07-agentic-systems/08-human-in-the-loop-patterns.md
+GA05|M|What are Behavioral Dispositions in LLM evaluation and why do agents behave differently under pressure?|A:17-tool-use-and-computer-agents/07-safety-and-governance.md
+GA05|M|How should an Agent gateway handle identity, permission, isolation and audit responsibilities?|G:docs/09-ai-safety-evaluation/README.md
+GA05|M|What is continuous authorization for agents and what are signed agent manifests?|G:docs/14-mcp-skill-systems/README.md
+GA06|E|What is a vision-language model and how are its components arranged?|G:docs/21-multimodal-agents/README.md
+GA06|M|How does CLIP train image and text encoders contrastively?|G:docs/11-multimodal-ai/README.md
+GA06|M|How does CLIP enable zero-shot classification and what are its limitations?|G:docs/11-multimodal-ai/README.md
+GA06|M|How do BLIP and BLIP-2 differ from CLIP, and what is the Q-Former?|G:docs/11-multimodal-ai/README.md
+GA06|M|How does LLaVA connect a visual encoder to an LLM?|G:docs/11-multimodal-ai/README.md
+GA06|M|What is a Perceiver Resampler and how does it compare to linear projection?|G:docs/21-multimodal-agents/README.md
+GA06|M|How does a multimodal agent handle multi-image input differently than single-image?|G:docs/21-multimodal-agents/README.md
+GA06|M|How do SigLIP and CLIP compare for retrieval embeddings?|A:06-retrieval-systems/12-multimodal-rag.md
+GA06|M|How do you build an image-text retrieval system with multimodal models?|G:docs/11-multimodal-ai/README.md
+GA06|M|What are common visual hallucinations in VLMs, and how do you detect and reduce them?|G:docs/21-multimodal-agents/README.md
+GA06|M|What is spatial grounding and why is it hard for VLMs?|G:docs/21-multimodal-agents/README.md
+GA06|M|How do you evaluate multimodal models and agents, and which benchmarks matter?|G:docs/11-multimodal-ai/README.md
+GA06|M|How does a video-understanding agent process long videos?|G:docs/21-multimodal-agents/README.md
+GA06|M|Compare fixed-frame sampling with agentic processing for video.|A:06-retrieval-systems/12-multimodal-rag.md
+GA06|M|Design an invoice recognition and reimbursement agent.|G:docs/21-multimodal-agents/README.md
+GA06|M|How do you design the tool set for a vision agent?|G:docs/21-multimodal-agents/README.md
+GA06|M|How does an image-generation sub-agent work, and how do you evaluate generation accuracy and diversity?|G:docs/11-multimodal-ai/README.md
+GA06|M|How does an image-editing agent differ from a text-to-image agent?|G:docs/21-multimodal-agents/README.md
+GA06|M|How do you regression-test a generative media pipeline when outputs are not reproducible?|A:19-multimodal-generation/01-multimodal-generation.md
+GA06|H|Design a service that turns a script into a narrated, music-backed video. What are the hard problems?|A:19-multimodal-generation/01-multimodal-generation.md
+GA06|M|How do provenance and watermarking apply to generated media pipelines?|A:19-multimodal-generation/01-multimodal-generation.md
+GA06|M|How do you handle multimodal inputs in a complex AI workflow, with degradation paths?|G:docs/15-advanced-topics/README.md
+GA06|M|How do you route between models to build a low-latency multimodal agent?|G:docs/11-multimodal-ai/README.md
+GA06|M|What are the trade-offs of an on-device multimodal model such as a small open-weight VLM?|G:docs/11-multimodal-ai/README.md
+GA06|M|How do vision LLMs extract layout and structure from documents, and when do you still prefer specialist APIs?|A:10-document-processing/01-ocr-and-layout.md
+GA06|M|What is an omni model with a thinker-talker architecture and why does it matter for voice and vision?|G:docs/11-multimodal-ai/README.md
+GA06|M|How do audio and VLA models integrate with vision-language models in an agent?|G:docs/21-multimodal-agents/README.md
+GA06|M|Compare the three voice-agent architectures: chained pipeline, speech-to-speech and duplex front end with a backend.|A:18-voice-and-audio-agents/01-realtime-voice-agents.md
+GA06|M|Walk through the latency budget of a voice agent and the single biggest lever.|A:18-voice-and-audio-agents/01-realtime-voice-agents.md
+GA06|M|How do turn detection and barge-in work in a voice agent?|A:18-voice-and-audio-agents/01-realtime-voice-agents.md
+GA06|M|Why is end-of-turn detection on 8 kHz telephone audio hard, and how do you distinguish a pause from an end of turn?|A:00-interview-prep/01-question-bank.md
+GA06|M|How do you design tool execution for voice so a mid-call correction never double-books?|A:00-interview-prep/01-question-bank.md
+GA06|M|How do you design for voice sessions that exceed model connection or session limits?|A:00-interview-prep/01-question-bank.md
+GA06|M|How do you capture exact identifiers such as member IDs and dates of birth reliably over voice?|A:00-interview-prep/01-question-bank.md
+GA06|M|Build a cost model for one million voice minutes per month across architecture options.|A:00-interview-prep/01-question-bank.md
+GA06|M|What would a release gate for a voice agent include?|A:00-interview-prep/01-question-bank.md
+GA06|M|How do you decide which languages a voice agent can actually launch in?|A:00-interview-prep/01-question-bank.md
+GA06|M|What consent, disclosure and opt-out handling does an outbound AI calling product need?|A:00-interview-prep/01-question-bank.md
+GA06|M|How do you threat-model a banking voice agent against audio injection and cloned voices?|A:00-interview-prep/01-question-bank.md
+GA06|M|Where should speech recognition run for a healthcare voice assistant: cloud under an agreement or on-premises?|A:16-case-studies/13-voice-ai-healthcare.md
+GA06|M|How do speaker diarization and medical entity extraction fit a clinical note pipeline?|A:16-case-studies/13-voice-ai-healthcare.md
+GA06|M|How would you integrate generated clinical notes with an EHR using FHIR?|A:16-case-studies/13-voice-ai-healthcare.md
+GA06|M|How do you handle noisy audio environments in speech pipelines?|A:16-case-studies/13-voice-ai-healthcare.md
+MS01|M|What is the end-to-end MLOps process, and how would you implement CI/CD for models?|G:docs/10-production-deployment/README.md
+MS01|M|How do you detect data drift for an LLM application in production?|G:docs/10-production-deployment/README.md
+MS01|M|How would you monitor model health in production and what would trigger retraining?|G:docs/10-production-deployment/README.md
+MS01|M|How do you build eval-gated CI/CD, including golden-set rotation and judge-drift detection?|A:16-case-studies/18-eval-gated-cicd.md
+MS01|M|What per-PR eval budget and caching strategies keep CI evals affordable?|A:16-case-studies/18-eval-gated-cicd.md
+MS01|M|How do you version datasets, prompts, models and judges for reproducibility?|A:11-infrastructure-and-mlops/02-cicd.md
+MS01|M|When do you choose self-hosted inference over managed APIs for infrastructure reasons?|G:docs/10-production-deployment/README.md
+MS01|M|What deployment sandboxes exist for enterprise agents, such as serverless isolates or microVMs?|G:docs/10-production-deployment/README.md
+MS01|M|How do you deploy agent containers versus run them directly on a host?|G:docs/05-ai-agent-basics/README.md
+MS01|M|How do you build a model lifecycle process that survives provider deprecations?|A:11-infrastructure-and-mlops/01-llm-infrastructure.md
+MS01|M|How do you plan disaster recovery for an LLM application with multiple providers?|A:11-infrastructure-and-mlops/01-llm-infrastructure.md
+MS01|M|How do you decide an inference engine and orchestration layer for a given workload?|A:04-inference-optimization/06-serving-infrastructure.md
+MS01|M|How do you instrument and control a fleet that spans multiple accelerator vendors?|A:11-infrastructure-and-mlops/01-llm-infrastructure.md
+MS01|M|How do you run a controlled rollout for a retrieval or prompt change with rollback criteria?|G:docs/10-production-deployment/README.md
+MS01|M|What is a queue-based architecture for LLM requests and when do you need one?|A:11-infrastructure-and-mlops/01-llm-infrastructure.md
+MS01|M|How do you design an AI task queue that avoids timeouts and keeps ordering guarantees?|G:docs/25-system-design-ai/README.md
+MS01|M|How would you debug a production LLM service whose behaviour changed overnight with no code deploy?|A:09-frameworks-and-tools/12-navigating-framework-churn.md
+MS01|M|What happens when a vendor retires a model mid-quarter and your evals depend on it as judge?|A:16-case-studies/18-eval-gated-cicd.md

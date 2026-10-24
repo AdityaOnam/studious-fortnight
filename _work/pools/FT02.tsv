@@ -1,0 +1,129 @@
+Q003331	E	What is LoRA, and how does it work at a high level?
+Q003332	M	What is QLoRA, and how does it differ from LoRA?
+Q003333	M	When would you use QLoRA instead of standard LoRA?
+Q003334	M	How would you handle LLM fine-tuning on consumer hardware with limited GPU memory?
+Q003481	M	How do you choose between LoRA (low-rank decomposition) and full fine-tuning?
+Q004429	M	What is LoRA / QLoRA and when would you use PEFT over full fine-tuning?
+Q004839	E	Explain the difference between full fine-tuning and parameter-efficient fine-tuning (PEFT).
+Q004840	M	What is LoRA (Low-Rank Adaptation), and how does it work?
+Q004841	M	What is QLoRA, and how does it enable fine-tuning on consumer hardware?
+Q004843	M	Explain Prefix Tuning and Prompt Tuning. How are they different from LoRA?
+Q004844	E	What is adapter-based fine-tuning?
+Q004856	H	Do the GPU memory math for full fine-tuning a 7B model in bf16 with Adam. Now with LoRA and QLoRA.
+Q004859	M	How do you merge multiple LoRA adapters?
+Q004866	M	You must choose between LoRA and full fine-tuning for a domain-specific assistant. How do you decide?
+Q006002	M	How do you choose LoRA hyperparameters, and how do rank r and alpha affect performance?
+Q006910	H	Why can a rank-8 B·A update approximate a full fine-tune of a 12,288-dimensional attention weight?
+Q006911	M	Your LoRA fine-tune (q_proj and v_proj, r=16) consistently lands about 3 points below a full fine-tune on the held-out set, and the data is clean. What do you try first?
+Q006912	M	You need to fine-tune a 33B model with a single 48GB GPU. What is the defensible approach, and what cost should you flag?
+Q006913	M	When is full (or near-full) fine-tuning genuinely worth its cost over LoRA?
+Q006931a	E	What is the difference between LoRA and full fine-tuning?
+Q006931b	M	Explain QLoRA. Why does it use 4-bit quantization?
+Q006932	E	What is PEFT and what are its techniques (LoRA, adapters, prefix tuning, prompt tuning)?
+Q007186	H	How do you estimate infrastructure requirements for fine-tuning an LLM?
+Q007187	M	How do you fine-tune an LLM on consumer hardware?
+Q007188	M	What are the different categories of PEFT methods?
+Q007190	M	What are the different re-parameterized methods for fine-tuning?
+Q011274	M	Why is the LoRA alpha parameter usually set to 2x the rank?
+Q011275	M	What is DoRA, and why would you use it over standard LoRA?
+Q011283	M	Why do we use NF4 instead of standard Float4 for QLoRA?
+Q011840	M	Explain the LoRA decomposition mathematically. Why does it work, and how do you choose the rank r?
+Q011841	M	How does QLoRA achieve its memory reduction, and what are the quantization trade-offs?
+Q011842	M	Compare LoRA, prefix tuning, prompt tuning and full fine-tuning. When would you choose each?
+Q011844	H	Do the GPU memory maths for full fine-tuning a 7B model in bf16 with Adam. Now with LoRA.
+Q012031	H	You have one on-device base model but a dozen features: summarization, rewriting, reply suggestions, tone adjustment. How do you specialise without shipping a dozen models?
+Q012374	M	Can you compare full fine-tuning with Parameter-Efficient Fine-Tuning (PEFT) methods? What are the pros and cons of each?
+Q012377	M	Explain Low-Rank Adaptation (LoRA). How does it work, and what are its key hyperparameters?
+Q012379	M	How do you choose the right fine-tuning strategy (full fine-tuning vs. a specific PEFT method) for a given task and resource constraints?
+Q007335b	H	Why does LoRA resist catastrophic forgetting more than full fine-tuning at the same effective learning rate?
+Q008022	M	Full fine-tuning versus parameter-efficient fine-tuning: how do you choose?
+Q008023	M	How would you detect that LoRA is underfitting versus the data being the problem?
+Q008024	M	Your LoRA model matches full fine-tuning on the target task. Is there any reason to still prefer full fine-tuning?
+Q008025	M	Explain how LoRA works: the math, and what r and alpha mean.
+Q008026	M	In LoRA, why initialize B to zero rather than initializing both matrices randomly?
+Q008027	M	If doubling the LoRA rank r doesn't improve quality, what does that tell you?
+Q008028	M	What breaks if LoRA alpha is way too large relative to r?
+Q008033	M	Why do LoRA runs tolerate roughly 10x higher learning rate than full fine-tuning?
+Q008051	M	Which modules do you target with LoRA, how do you pick the rank, and what are the actual memory savings?
+Q008052	H	Why does low-rank-many-modules beat high-rank-few-modules at equal parameter count in LoRA?
+Q008053	M	When would you also train the embedding layer when using LoRA?
+Q008054	M	How does adapter merging work, and how do multi-LoRA serving and hot-swapping work in production?
+Q008055	H	Why is merging a LoRA adapter into a 4-bit quantized base model problematic?
+Q008056	H	How would you design serving for 500 tenant-specific fine-tunes with skewed traffic?
+Q008057	M	Explain QLoRA: NF4, double quantization, and paged optimizers. What do you give up?
+Q008058	H	Why are normal-distribution quantiles the right levels for weight quantization in NF4?
+Q008059	H	Your QLoRA adapter evaluates worse when served on the fp16 base model. Why, and what would you do?
+Q008093	M	Do the GPU memory math: why can't you full-fine-tune a 7B model on a single 24 GB GPU with Adam?
+Q008094	H	Where does 8-bit Adam save memory and what is the risk?
+Q008095	H	Redo the fine-tuning memory math for LoRA at r=16. What is now the dominant memory term?
+Q008096	H	Why keep fp32 master weights at all in bf16 training?
+Q008100	H	DoRA, rsLoRA, and LoRA+ all claim to improve on vanilla LoRA. What does each actually change, and when would you reach for them?
+Q008101	H	Why does DoRA still merge cleanly into the base weights at inference?
+Q008102	M	If DoRA beats LoRA on your eval by 0.4 points but costs 30% more training time, how do you decide?
+Q008118	H	Why does LoRA hold up so well for RL fine-tuning, even at very low rank, when the same rank can underfit a large SFT run?
+Q008119	H	If RL needs so little capacity, why do labs still run full-parameter RL?
+Q008120	H	How would you test whether an SFT stage is capacity-limited by its LoRA rank rather than by data?
+Q008124	M	What changes when you add LoRA to a training setup that uses gradient accumulation and gradient checkpointing?
+Q008160	H	Why can serving a QLoRA-trained adapter on an fp16 base shift model behaviour?
+Q008190	H	How would you pick which experts to put LoRA on when fine-tuning an MoE model?
+Q008629	H	You need to serve 200 customer-specific fine-tunes of the same 8B base model. How do you do that on a handful of GPUs, and what breaks first?
+Q008630	H	Why can't a shared system prompt's KV cache be reused across two different LoRA adapters?
+Q008631	M	When would you merge an adapter into the base weights and serve it as its own model instead?
+Q009255	M	What does 2-bit quantization do to the fine-tuning story for downstream teams?
+Q009259	H	You have one on-device base model but a dozen features: summarisation, rewriting, reply suggestions, tone adjustment. How do you specialise without shipping a dozen models?
+Q009260	M	How do you update one feature's adapter on an on-device model without a full OS release?
+Q009261	M	What breaks in per-feature adapters if the base model is re-quantized between releases?
+Q009721	M	When fine-tuning an 8B model on a single 24 GB GPU, which modules do you target with LoRA, and why does rank matter less than people expect?
+Q009829	H	What does it take, memory-wise, to fine-tune a 7B model? Compare full fine-tuning, LoRA, and QLoRA.
+Q010395	H	What changes when one LLM deployment serves LoRA adapters for ten teams?
+D00232	E	How does LoRA work, and why does a low-rank update reduce trainable parameters so much?
+D00233	M	How do the LoRA rank and alpha hyperparameters affect capacity and training dynamics?
+D00234	M	Why is LoRA alpha often set to twice the rank?
+D00235	M	Which modules should you attach LoRA adapters to, and what is the effect of targeting only attention versus all linear layers?
+D00236	M	What does QLoRA add to LoRA, and what memory savings does it achieve?
+D00237	M	Walk through the memory math of fine-tuning a 70B model with QLoRA versus full fine-tuning.
+D00238	M	What is DoRA and why would you use it over standard LoRA?
+D00239	M	What are VeRA and rank-stabilized LoRA, and what problems do they address?
+D00240	M	Compare LoRA, adapters, prefix tuning and prompt tuning.
+D00241	M	Can LoRA adapters be merged into base weights, and what are the implications for serving and quantization?
+D00242	H	Design a platform that serves hundreds of tenant-specific LoRA adapters on shared GPUs, including adapter swapping and isolation.
+D00243	M	Why might LoRA at a moderate rank be a better default than full fine-tuning for a multi-tenant platform?
+D00244	M	How do you handle a base-model upgrade that breaks existing tenant adapters?
+D00245	M	What integrity controls would you put on adapter artifacts such as signing and checksums?
+D03779	M	How do LoRA and QLoRA work, and what do rank and alpha control?
+D03780	M	How would you pick the LoRA rank, learning rate, epochs and batch size for a new task?
+D03781	M	Compare adapters, prefix tuning and prompt tuning with LoRA.
+D04688	E	What is parameter-efficient fine-tuning and why is it needed compared with full fine-tuning?
+D04689	M	What are the advantages of PEFT in terms of memory, storage per task, catastrophic forgetting and deployment?
+D04690	M	Compare the families of PEFT methods: additive (adapters, prompts), selective (BitFit), and reparameterization (LoRA).
+D04691	M	What are known limitations of current PEFT methods, such as lower ceiling on knowledge injection or hyperparameter sensitivity?
+D04692	M	What best practices would you follow when choosing and configuring a PEFT method for a new task?
+D04715	M	What is BitFit and how few parameters does it train? When might it be enough?
+D04716	M	How does prefix tuning prepend trainable vectors to each layer's keys and values, and why use a reparameterization MLP during training?
+D04717	M	Compare prompt tuning, prefix tuning, P-tuning and P-tuning v2. What scale effects do they show?
+D04718	M	Why does prompt tuning approach full fine-tuning only for very large models, and how does P-tuning v2 address smaller models?
+D04719	M	What are the inference-time costs of prompt-based PEFT, and how do they reduce usable context length?
+D04720	M	How does an adapter module work (down-projection, nonlinearity, up-projection, residual), and where is it inserted in a Transformer layer?
+D04721	M	What do AdapterFusion and AdapterDrop add, and why would you drop adapters in lower layers?
+D04722	M	What do MAM Adapter and UniPELT propose in terms of unifying PEFT designs?
+D04723	M	What latency penalty do adapters add at inference compared with LoRA, and why?
+D04724	E	Explain LoRA. What is the low-rank decomposition, which matrices are trained, and how are they initialized?
+D04725	M	Why is LoRA's B matrix initialized to zero and A random, and what does that guarantee at the start of training?
+D04726	M	How do rank r and the scaling factor alpha interact, and how would you tune them?
+D04727	M	Which weight matrices in a Transformer should LoRA target (q, k, v, o, MLP), and what does evidence say about the impact?
+D04728	M	How can LoRA weights be merged into the base model for zero inference overhead, and what are the downsides when serving many adapters?
+D04729	M	Calculate the number of trainable parameters when adding LoRA with rank 8 to the q and v projections of a 32-layer model with hidden size 4096.
+D04730	M	What is the hypothesis of low intrinsic dimensionality behind LoRA, and when does it fail?
+D04731	M	How does AdaLoRA allocate rank adaptively across layers and what importance score does it use?
+D04732	M	What are the three key ideas of QLoRA (NF4, double quantization, paged optimizers), and why does it save memory?
+D04733	M	Why is the NF4 data type suited to normally distributed pretrained weights?
+D04734	M	Compare memory of full fine-tuning, LoRA and QLoRA for a 65B model, and where the savings come from.
+D04735	M	What quality gap, if any, does LoRA have versus full fine-tuning on reasoning-heavy or knowledge-heavy tasks?
+D04736	M	How do you serve hundreds of LoRA adapters on a shared base model efficiently?
+D04737	M	Summarize delta tuning: how do addition-based, specification-based and reparameterization-based methods differ?
+D04738	M	What is a verbalizer and a template in prompt learning, and why does prompt learning with masked LMs work well in few-shot settings?
+D04739	M	What is a connection between different PEFT methods from a unified-view perspective?
+D04934	M	Why is LoRA often less prone to forgetting than full fine-tuning, and what does the LoRA Learns Less and Forgets Less result suggest?
+D04935	M	How would you decide LoRA rank for a task of known complexity and dataset size?
+D04936	M	What is the practical difference between merging a LoRA into the base weights versus keeping it as a runtime adapter?
+D04937	M	What memory does QLoRA save relative to LoRA, and where does de-quantization cost compute?

@@ -1,0 +1,230 @@
+Q001910	E	What is probability, and how is it used in machine learning?
+Q001911	E	Define the terms 'sample space' and 'event' in probability.
+Q001912	E	What is the difference between discrete and continuous probability distributions?
+Q001913	E	Explain the differences between joint, marginal, and conditional probabilities.
+Q001914	E	What does it mean for two events to be independent?
+Q001916	E	Describe Bayes' Theorem and provide an example of how it's used.
+Q001917	E	What is a probability density function (PDF)?
+Q001918	E	What is the role of the cumulative distribution function (CDF)?
+Q001919	M	Explain the Central Limit Theorem and its significance in machine learning.
+Q001920	E	What is the Law of Large Numbers?
+Q001921	E	Define expectation, variance, and covariance.
+Q001922	E	What are the characteristics of a Gaussian (Normal) distribution?
+Q001923	M	Explain the utility of the Binomial distribution in machine learning.
+Q001924	M	How does the Poisson distribution differ from the Binomial distribution?
+Q001925	M	What is the relevance of the Bernoulli distribution in machine learning?
+Q002162	E	What is the difference between descriptive and inferential statistics?
+Q002163	E	Define and distinguish between population and sample in statistics.
+Q002164	E	Explain what a "distribution" is in statistics, and give examples of common distributions.
+Q002165	E	What is the Central Limit Theorem and why is it important in statistics?
+Q002166	E	Describe what a p-value is and what it signifies about the statistical significance of a result.
+Q002167	E	How is a p-value calculated?
+Q002168	M	What does the term "statistical power" refer to?
+Q002169	E	Explain the concepts of Type I and Type II errors in hypothesis testing.
+Q002171	M	What is the significance level in a hypothesis test and how is it chosen?
+Q002172	E	Define confidence interval and its importance in statistics.
+Q002173	E	What is a null hypothesis and an alternative hypothesis?
+Q002174	E	What is Bayes' Theorem, and how is it used in statistics?
+Q002177	E	What is the Law of Large Numbers, and how does it relate to statistics?
+Q002178	E	What is the role of the Binomial distribution in statistics?
+Q003981	M	What are point estimation and function estimation in the context of Machine Learning? What is the relation between them?
+Q003984	M	Why is maximum likelihood the preferred estimator in ML?
+Q003985	H	Under what conditions does the maximum likelihood estimator guarantee consistency?
+Q004045	E	What are deterministic algorithms?
+Q004046	E	What are Las Vegas algorithms?
+Q004047	E	What are deterministic approximate algorithms?
+Q004048	E	What are Monte Carlo algorithms?
+Q004052	H	What are the union bound and Hoeffding's inequality?
+Q004102	M	What are the differences between the Bayesian and Frequentist approaches to Machine Learning?
+Q004104	M	How do Bayesian methods do automatic feature selection?
+Q004106	M	When would you use Bayesian methods instead of Frequentist methods (e.g., small dataset, large feature set)?
+Q004113	M	Describe the t-test in the context of machine learning.
+Q004189	M	Compare "Frequentist probability" vs. "Bayesian probability".
+Q004190	E	What is a random variable?
+Q004191	E	What is a probability distribution?
+Q004192	E	What is a probability mass function?
+Q004193	E	What is a probability density function?
+Q004194	E	What is a joint probability distribution?
+Q004195	E	What are the conditions for a function to be a probability mass function?
+Q004196	E	What are the conditions for a function to be a probability density function?
+Q004197	E	What is a marginal probability? Given the joint probability function, how do you calculate it?
+Q004198	E	What is conditional probability? Given the joint probability function, how do you calculate it?
+Q004199	E	State the chain rule of conditional probabilities.
+Q004200	E	What are the conditions for independence and conditional independence of two random variables?
+Q004201	E	What are expectation, variance and covariance?
+Q004202	M	Compare covariance and independence.
+Q004203	M	What is the covariance for a vector of random variables?
+Q004204	E	What is a Bernoulli distribution? Calculate the expectation and variance of a random variable that follows a Bernoulli distribution.
+Q004205	E	What is a multinoulli distribution?
+Q004206	E	What is a normal distribution?
+Q004207	M	Why is the normal distribution a default choice for a prior over a set of real numbers?
+Q004208	E	What is the central limit theorem?
+Q004209	E	What are the exponential and Laplace distributions?
+Q004210	M	What are the Dirac distribution and the empirical distribution?
+Q004211	M	What is a mixture of distributions?
+Q004212	E	Name two common examples of mixtures of distributions.
+Q004213	H	Is a Gaussian mixture model a universal approximator of densities?
+Q004215	E	Write the formula for Bayes' rule.
+Q004217	H	If two random variables are related in a deterministic way, how are their PDFs related?
+Q004222	M	What are structured probabilistic models or graphical models?
+Q004223	M	In the context of structured probabilistic models, what are directed and undirected models? How are they represented?
+Q004224	M	What are cliques in undirected structured probabilistic models?
+Q004225	E	What are the population mean and the sample mean?
+Q004226	E	What are the population standard deviation and the sample standard deviation?
+Q004227	M	Why does the population standard deviation have N degrees of freedom while the sample standard deviation has N-1? In other words, why is it 1/N inside the root for the population s.d. and 1/(N-1) for the sample s.d.?
+Q004228	M	What is the formula for calculating the standard deviation of the sample mean?
+Q004229	E	What is a confidence interval?
+Q004230	E	What is standard error?
+Q004340	E	What is the normal distribution? Why do we care about it?
+Q005364	M	What is A/B testing in the context of ML?
+Q005403	E	Explain different probability distributions (Normal, Binomial, Poisson, Uniform).
+Q005404	E	What is the normal distribution and its functions?
+Q005405	E	What is an exponential distribution?
+Q005406	E	What is the binomial distribution?
+Q005407	E	What is the Bernoulli distribution?
+Q005408	E	What is the multinomial distribution?
+Q005409	E	What is the lognormal distribution?
+Q005410	E	What is a logistic distribution?
+Q005411	E	What is the gamma distribution and its functions?
+Q005412	M	When would you use a Poisson distribution over a binomial distribution?
+Q005413	E	What is the variance?
+Q005414	E	Explain the difference between mean, median, and mode.
+Q005415	E	What is the difference between correlation and covariance?
+Q005416	E	What does a correlation coefficient of +1, 0, and -1 indicate?
+Q005417	E	Explain correlation vs causation.
+Q005418	E	What are Type I and Type II errors?
+Q005419	E	What is a p-value? What does statistical significance mean?
+Q005420	M	Explain p-values and their limitations.
+Q005421	M	What is hypothesis testing, and when is it used in ML?
+Q005422	M	What statistical tests would you use to compare two models?
+Q005423	M	How do you assess if a feature is statistically significant?
+Q005424	E	What is a confidence interval, and how is it used?
+Q005425	E	What are z-score and t-score? When do you use each?
+Q005426	M	Explain Bayes' theorem. How is it relevant to Naive Bayes or Bayesian methods?
+Q005429	M	Explain the Bayesian vs frequentist approach in statistics.
+Q005430	E	What is the Central Limit Theorem (CLT)? Why is it important?
+Q005431	E	What are sampling techniques?
+Q005432	M	What is the bootstrap method, and how is it used?
+Q006288	M	What is statistical power?
+Q006293	E	Describe the differences between box plots and histograms and their use cases.
+Q006641	E	Let A and B be events on the same sample space, with P(A) = 0.6 and P(B) = 0.7. Can these two events be disjoint?
+Q006642	M	Given that Alice has 2 kids, at least one of which is a girl, what is the probability that both kids are girls?
+Q006643	M	A group of 60 students is randomly split into 3 classes of equal size. All partitions are equally likely. Jack and Jill are two students belonging to that group. What is the probability that Jack and Jill will end up in the same class?
+Q006587	E	What is the exponential distribution?
+Q006588	E	What is the Bernoulli distribution?
+Q006589	E	What is the logistic distribution?
+Q006590	E	What is hypothesis testing?
+Q006591	E	What is the Central Limit Theorem and why is it important?
+Q006592	E	What is sampling? How many sampling methods do you know?
+Q006593	E	What is an example of a data set with a non-Gaussian distribution?
+Q006625	M	When you split a population for A/B testing, what are some reasons you could see a significant difference between the control and variant groups?
+Q006626	E	If you draw 2 cards from a shuffled 52-card deck, what is the probability that you will have a pair?
+Q006631	M	How would you design an A/B test for a website homepage?
+Q006633	M	What product metrics do you construct? How do you tell if your experiment is successful?
+Q006634	M	What trends in the data indicate that a given market is healthy? What does price tell you?
+Q006647	M	How would you explain an A/B test to an engineer with no statistics background? How would you explain a linear regression?
+Q006648	E	How would you explain a confidence interval to an engineer with no statistics background? What does 95% confidence mean?
+Q006654	M	How can you make sure that you don't analyze something that ends up meaningless?
+Q006655	M	What is the role of trial and error in data analysis? What is the role of making a hypothesis before diving in?
+Q006674	H	You have 5000 people who rank 10 sushis in terms of saltiness. How would you aggregate this data to estimate the true saltiness rank of each sushi?
+Q006709	H	Bobo the amoeba has a 25%, 25%, and 50% chance of producing 0, 1, or 2 offspring, respectively. Each of Bobo's descendants has the same probabilities. What is the probability that Bobo's lineage dies out?
+Q006710	E	In any 15-minute interval, there is a 20% probability that you will see at least one shooting star. What is the probability that you see at least one shooting star in the period of an hour?
+Q006711	M	How can you generate a random number between 1 and 7 with only a die?
+Q006712	M	How can you get a fair coin toss if someone hands you a coin that is weighted to come up heads more often than tails?
+Q006713	H	You have a 50-50 mixture of two normal distributions with the same standard deviation. How far apart do the means need to be for this distribution to be bimodal?
+Q006714	M	Given draws from a normal distribution with known parameters, how can you simulate draws from a uniform distribution?
+Q006716	M	A group of couples decide to have children until they have their first girl, after which they stop having children. What is the expected gender ratio of the children born? What is the expected number of children each couple will have?
+Q006717	E	How many ways can you split 12 people into 3 teams of 4?
+Q006718	M	You call 2 UberX's and 3 Lyfts. If the time each takes to reach you is IID, what is the probability that all the Lyfts arrive first? What is the probability that all the UberX's arrive first?
+Q006719	E	A program prints the numbers from 1 to 300, but prints Fizz instead if the number is divisible by 3, Buzz if divisible by 5, and FizzBuzz if divisible by both 3 and 5. What is the total number of numbers that are Fizzed, Buzzed, or FizzBuzzed?
+Q006720	M	On a dating site, users can select 5 out of 24 adjectives to describe themselves. A match is declared between two users if they match on at least 4 adjectives. If Alice and Bob randomly pick adjectives, what is the probability that they form a match?
+Q006721	M	A lazy high school senior types up applications and envelopes for n different colleges, but puts the applications randomly into the envelopes. What is the expected number of applications that went to the right college?
+Q006722	M	If you have a very tall father, on average what would you expect the height of his son to be: taller, equal, or shorter? What if you had a very short father?
+Q006723	M	What is the expected number of coin flips until you get two heads in a row? What is the expected number of coin flips until you get two tails in a row?
+Q006724	M	Suppose we play a game where I keep flipping a coin until I get heads. If the first time I get heads is on the nth flip, then I pay you 2^(n-1) dollars. How much would you pay me to play this game?
+Q006725	M	You have two coins, one fair that comes up heads with probability 1/2, and one biased that comes up heads with probability 3/4. You randomly pick a coin and flip it twice, and get heads both times. What is the probability that you picked the fair coin?
+Q006726	M	You have a 0.1% chance of picking up a coin with both heads, and a 99.9% chance of picking up a fair coin. You flip your coin and it comes up heads 10 times. What is the chance that you picked up the fair coin, given what you observed?
+Q006727	M	What would be good metrics of success for an advertising-driven consumer product (BuzzFeed, YouTube, Google Search)? For a service-driven consumer product (Uber, Flickr, Venmo)?
+Q006728	M	What would be good metrics of success for a productivity tool (Evernote, Asana, Google Docs)? For a MOOC (edX, Coursera, Udacity)?
+Q006729	M	What would be good metrics of success for a product that offers in-app purchases (Zynga, Angry Birds, other gaming apps)?
+Q006730	M	A certain metric is going down or up more than you expect. How would you try to identify the cause of the change?
+Q006731	M	Growth in the total number of tweets sent has been slow this month. What data would you look at to determine the cause of the problem?
+Q006732	M	You are a restaurant approached by Groupon to run a deal. What data would you ask from them in order to determine whether or not to do the deal?
+Q006733	H	You are tasked with improving the efficiency of a subway system. Where would you start?
+Q006735	H	How would you measure the impact that sponsored stories on Facebook News Feed have on user engagement? How would you determine the optimum balance between sponsored stories and organic content in a user's News Feed?
+Q006737	H	Say you are Netflix. How would you determine which original series you should invest in and create?
+Q006738	M	What kinds of services would find churn (a metric that tracks how many customers leave the service) helpful? How would you calculate churn?
+Q006739	H	Suppose you are scheduling content for a television content provider. How would you determine the best times to schedule content?
+Q006754	M	In an A/B test, how can you check whether assignment to the various buckets was truly random?
+Q006755	M	What might be the benefits of running an A/A test, where two buckets are exposed to the exact same product?
+Q006756	M	What would be the hazards of letting users sneak a peek at the other bucket in an A/B test?
+Q006757	M	What would be some issues if blogs decide to cover one of your experimental groups?
+Q006758	M	How would you conduct an A/B test on an opt-in feature?
+Q006759	M	How would you run an A/B test for many variants, say 20 or more?
+Q006760	M	How would you run an A/B test if the observations are extremely right-skewed?
+Q006761	M	You have two different experiments that both change the sign-up button on your website, and you want to test them at the same time. What should you keep in mind?
+Q006762	E	What is a p-value? What is the difference between type-1 and type-2 error?
+Q006763	M	You are Airbnb and you want to test the hypothesis that a greater number of photographs increases the chances that a buyer selects the listing. How would you test this hypothesis?
+Q006764	H	How would you design an experiment to determine the impact of latency on user engagement?
+Q006768	M	What is unbiasedness as a property of an estimator? Is this always a desirable property when performing inference? What about in data analysis or predictive modeling?
+Q006769	E	What is selection bias?
+Q012025	M	Explain how you would design and evaluate an A/B test. What is a p-value and how do you interpret it here?
+Q012026	M	What is Maximum Likelihood Estimation and how does it differ from Bayesian inference?
+Q012623	M	You and your friend are playing a game with a fair coin. The two of you keep tossing the coin until the sequence HH or TH shows up. If HH shows up first, you win; if TH shows up first, your friend wins. What is the probability of you winning the game?
+Q012624	M	If you roll a die three times, what is the probability of getting two consecutive threes?
+Q012625	H	Suppose you have ten fair dice. If you throw them simultaneously at random, what is the probability that the sum of all the top faces is divisible by six?
+Q012626	M	If you have three draws from a uniformly distributed random variable between 0 and 2, what is the probability that the median of the three numbers is greater than 1.5?
+Q012627	M	Assume you have a deck of 100 cards with values ranging from 1 to 100 and you draw two cards randomly without replacement. What is the probability that the value of one of them is double the other?
+Q012628	E	What is the difference between the Bernoulli and Binomial distributions?
+Q012629	M	If there are 30 people in a room, what is the probability that everyone has a different birthday?
+Q012630	M	Assume two coins, one fair and the other unfair. You pick one at random, flip it five times, and observe tails all five times. What is the probability that you are flipping the unfair coin?
+Q012631	M	Assume you take a stick of length 1 and break it uniformly at random into three parts. What is the probability that the three pieces can be used to form a triangle?
+Q012632	M	Say you draw a circle and choose two chords at random. What is the probability that those chords will intersect?
+Q012633	M	If there is a 15% probability that you see at least one airplane in a five-minute interval, what is the probability that you see at least one airplane in a period of half an hour?
+Q012634	M	Say you are given an unfair coin with an unknown bias towards heads or tails. How can you generate fair odds using this coin?
+Q012635	M	Discuss some methods you would use to estimate the parameters of a probability distribution.
+Q012636	M	You have 40 cards in four colors: 10 red, 10 green, 10 blue and 10 yellow, each numbered 1 to 10. When you pick two cards without replacement, what is the probability that the two cards are neither of the same color nor of the same number?
+Q012637	E	Can you explain the difference between frequentist and Bayesian probability approaches?
+Q012638	E	Explain the difference between probability and likelihood.
+Q012665	M	Explain the central limit theorem and give examples of when you can use it in a real-world problem.
+Q012666	M	Briefly explain A/B testing and its application. What are some common pitfalls encountered in A/B testing?
+Q012667	E	Describe briefly hypothesis testing and the p-value in layman's terms, and give a practical application for them.
+Q012668	M	Given a left-skewed distribution that has a median of 60, what conclusions can we draw about the mean and the mode of the data?
+Q012669	E	What is the meaning of selection bias and how can it be avoided?
+Q012670	M	Explain the long-tailed distribution and provide three examples of relevant phenomena that have long tails. Why are they important in classification and regression problems?
+Q012671	E	What is the meaning of KPI in statistics?
+Q012672	M	Say you flip a coin 10 times and observe only one head. What would be the null hypothesis and p-value for testing whether the coin is fair or not?
+Q012673	M	You are testing hundreds of hypotheses, each with a t-test. What considerations would you take into account?
+Q012674	E	What general conditions must be satisfied for the central limit theorem to hold?
+Q012675	E	What is skewness? Discuss two methods to measure it.
+Q012676	M	Discuss the Chi-square test, ANOVA, and the t-test.
+Q012677	M	Say you have two subsets of a dataset for which you know their means and standard deviations. How do you calculate the blended mean and standard deviation of the total dataset? Can you extend it to K subsets?
+Q012678	E	What is the relationship between the significance level and the confidence level in statistics?
+Q012679	E	What is the Law of Large Numbers in statistics and how can it be used in data science?
+Q012680	M	What is the difference between a confidence interval and a prediction interval, and how do you calculate them?
+Q012681	E	What are the differences between the z-test and t-test?
+Q012683	M	Given a specific dataset, how do you calculate the t-statistic or z-statistic?
+Q007324	M	Your new model scores 87.2% on the test set and the incumbent scores 86.5%. Do you ship it?
+Q007325	H	How would you set up the evaluation so that a 0.7 point difference is detectable, and is that a good use of budget?
+Q007326	H	Your test set has 5 examples per user across 200 users. What breaks in a naive bootstrap?
+Q007329	H	In an A/B test of a new model, your metric is revenue per user, which is heavy-tailed and mostly zero. What does that do to your sample size and what would you do about it?
+Q007330	M	How would you detect a novelty effect in an A/B test rather than assume one?
+Q007342	H	What is conformal prediction, and how would you use it to put a statistical guarantee on a classifier's or an LLM pipeline's outputs?
+Q007343	H	Why is there an (n+1) correction in the quantile used in conformal prediction?
+Q007344	H	How would you get conformal prediction coverage that holds per class rather than on average?
+Q007345	H	Traffic shifts after a product launch. What happens to conformal prediction coverage, and how would you detect it?
+Q007366b	M	Why does MLE with a single observation of a rare event give pathological probabilities, and what is the fix?
+Q007378	H	How do you A/B test a new fraud model when the intervention itself changes the labels you observe?
+Q007796	M	Why is a paired test the right choice for comparing two prompt variants?
+Q007988	H	Why does interleaving reach significance faster than an A/B test on the same traffic?
+Q008417	M	How many examples would you need to detect a 3-point improvement in an eval pass rate?
+Q009090	M	How would you measure the impact of an AI feature when a holdout group is not politically possible?
+Q009091	M	What do you do when the headline metric of an experiment looks great but a guardrail metric moves the wrong way?
+Q009610	M	On average, how many fair coin flips until you see HHH?
+Q009611	M	How would you estimate the expected number of fair coin flips until HHH by simulation, and how many trials until the standard error of your estimate is under 0.01?
+Q009763	H	How would you design the holdback experiment to measure long-term advertiser value, not just next-day revenue?
+Q010520	M	How do you power an A/B test when only 5% of sessions touch the feature?
+Q010620	H	How many samples do you need before calling a 3-point drop in an LLM eval pass rate a regression?
+D03737	M	Explain maximum likelihood estimation versus maximum a posteriori estimation and how priors act as regularizers.
+D03738	M	What do p-values and R-squared tell you, and what do they not tell you?
+D03739	M	What are common pitfalls when using statistical significance to judge a model or experiment?

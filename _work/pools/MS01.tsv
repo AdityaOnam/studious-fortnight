@@ -1,0 +1,123 @@
+Q001634	E	What is MLOps and how does it differ from traditional software development operations?
+Q001635	E	Define the term lifecycle within the context of MLOps.
+Q001636	E	Describe the typical stages of the machine learning lifecycle.
+Q001637	M	What are the key components of a robust MLOps infrastructure?
+Q001638	M	How does MLOps facilitate reproducibility in machine learning projects?
+Q001640	M	Explain Continuous Integration (CI) and Continuous Deployment (CD) within an MLOps context.
+Q001641	M	Discuss the importance of monitoring and logging in MLOps.
+Q001642	E	What tools and platforms are commonly used for implementing MLOps?
+Q001643	M	How do containerization technologies like Docker contribute to MLOps practices?
+Q001644	E	Describe the function of model registries in MLOps.
+Q001645	M	What are the challenges associated with model deployment and how does MLOps address them?
+Q001646	M	How does MLOps support model scalability and distribution?
+Q001717	E	What are Machine Learning Design Patterns?
+Q001718	E	Can you explain the concept of the Baseline design pattern in machine learning?
+Q001720	M	How does the Pipelines design pattern help in structuring ML workflows?
+Q001724	M	What is the Batch Serving design pattern and where is it applied?
+Q001727	M	What is the Workload Isolation design pattern and why is it important?
+Q001728	M	Describe the Shadow Model design pattern and when it should be used.
+Q001731	M	How is the Evaluation Store design pattern applied to keep track of model performances?
+Q001732	M	What is the Adaptation design pattern and how does it use historical data?
+Q001733	E	What is MLOps and how does it differ from DevOps?
+Q001734	E	Can you explain the MLOps lifecycle and its key stages?
+Q001735	E	What are some of the benefits of implementing MLOps practices in a machine learning project?
+Q001736	E	What is a model registry and what role does it play in MLOps?
+Q001739	M	Explain the concept of continuous integration and continuous delivery (CI/CD) in the context of machine learning.
+Q001741	E	Describe the significance of experiment tracking in MLOps.
+Q001742	E	What are some popular tools and platforms used for MLOps?
+Q001743	M	How do containerization and virtualization technologies support MLOps practices?
+Q001744	E	What is the role of cloud computing in MLOps?
+Q001745	H	How would you design a scalable machine learning infrastructure?
+Q001746	M	What considerations are important when choosing a computation resource for training machine learning models?
+Q001747	M	Explain environment reproducibility and its challenges in MLOps.
+Q001748	M	How does infrastructure as code (IaC) support machine learning operations?
+Q004524	M	How can PyTorch support real-time inference?
+Q004525	M	When would you convert a model to ONNX?
+Q004526	H	How would you deploy a model as a REST API?
+Q004536	M	How do you improve experiment reproducibility?
+Q004547	M	How would you refactor a monolithic ML script into clean modules?
+Q004557	M	What should a training loop log?
+Q004559	M	What changes before moving notebook code into production?
+Q004949	M	Explain the AI product lifecycle from ideation to production.
+Q005171	E	What is AI engineering, and how does it differ from machine learning engineering?
+Q005184	M	How would you handle a situation where your AI system's quality degrades over time?
+Q005387	M	What is model drift, and how do you handle it?
+Q005391	M	How do you deploy an ML model in production?
+Q005392	M	How do you monitor a model's performance in production?
+Q005393	M	How would you deploy a model with low-latency requirements?
+Q005394	M	What are the common challenges when deploying ML models?
+Q005396	M	How do you ensure your model is scalable and performs well with large datasets?
+Q005400	E	Explain MLOps and its key components.
+Q005446	M	What would you do if a model performs well in testing but poorly in production?
+Q006796	M	Should model serving be synchronous (chat), asynchronous (queue), batch (nightly), or streaming?
+Q006801	H	What is the business KPI for a deployed LLM system, and what proxy signals fire before labels arrive (prediction-distribution drift, calibration, staleness, cost per request)?
+Q006802	M	What rollout order (shadow, canary, full) and which rollback layers (model, config, feature) would you use when deploying an LLM system?
+Q007013	M	You are about to ship a new agent version and want to measure its real-world behaviour with zero user risk before serving any of its output. Which rollout stage should you use?
+Q007092	M	You are configuring autoscaling for a vLLM deployment on GKE. Which scaling signal should you use?
+Q007093	M	How would you monitor a deployed ranking model in production?
+Q007095	M	You set up a Kolmogorov-Smirnov drift test on a feature with about 200,000 daily samples, and it fires a drift alarm almost every day. What is going on and what is the fix?
+Q007097	M	You want to validate a new fraud model on real traffic distributions without risking a single wrong customer decision. Which rollout step fits?
+Q007098	M	You roll back a bad model by swapping the weights to the previous version, but predictions stay degraded for several minutes. What is the most likely cause?
+Q007099	M	For a fraud model, how often would you retrain, and what shows the most judgment in answering this?
+Q011095	M	How do you handle a model that performs poorly in production?
+Q011123	M	How do you evaluate model quality in production?
+Q011173	M	How do you detect and handle model drift in production?
+Q012049	M	How would you detect and handle distribution shift between fleet data and your training set?
+Q012066	M	How do you monitor a deployed ranking model for drift, and what triggers a retrain?
+Q012622	M	What is the difference between concept drift and data drift, and how do you overcome each of them?
+Q003845	E	What is MLOps?
+Q012497	E	What is AI infrastructure?
+Q012500	M	How do ML systems work, from data to deployment?
+Q007265	M	Where in a PyTorch serving path would you put the feature scaler so that it cannot drift from training?
+Q007328b	H	Your PSI (population stability index) alert fires on one feature. How do you tell a real upstream change from a broken pipeline?
+Q007358	M	What kinds of distribution shift exist, and how would you monitor a deployed model, classical or LLM-based, for them?
+Q007359	M	How do you distinguish concept drift from a data-pipeline bug?
+Q007360	H	If only the label prior has shifted, can you fix it without retraining?
+Q008644	M	When does on-device or edge inference make sense, and what actually constrains it?
+Q008645	M	How do you decide where the local/cloud routing boundary sits for on-device inference?
+Q008646	M	What breaks about your evaluation and observability story when inference runs on the user's device?
+Q009026	M	How would you explain to a non-technical stakeholder why a model aced the demo but failed in production?
+Q009143	M	What is your rollout plan for a new ASR model across hundreds of health systems?
+Q009172	M	What is your rollback story if a bad model version wrote 5,000 notes overnight?
+Q009369	M	What changes when the customer wants an enterprise workflow agent deployed air-gapped?
+Q009557	H	How would you A/B a robot policy across a fleet without exposing customers to a regression?
+Q009834	M	How do you handle model updates in an on-prem LLM deployment without regressions?
+Q009849	M	What would you monitor post-deployment for a fine-tuned model?
+Q010222	H	How do you keep a safety case current when the model is retrained every few weeks?
+Q010388	H	Five teams share a cluster of 64 GPUs. A team requests 16 GPUs "for a deadline" and uses 3. What does the system do about it?
+Q010389	H	How do you handle a multi-node training job on spot capacity?
+Q010390	M	When do you use spot GPUs, and how do you run workloads on them without getting burned?
+Q010391	H	Spot capacity for your GPU type dries up region-wide for a day. What happens to your training queue?
+Q010392	H	How do you decide between one reserved H100 node and three spot A100 nodes for the same budget?
+Q010408	M	A new model version rolled out and quality is bad. Walk me through the rollback. What is different from rolling back code?
+Q010409	H	Quality regressed after a model rollout but only for one language. Does your canary design catch that?
+Q010410	M	A provider retires the old model version in 30 days. What is the plan?
+Q010453	H	Your LLM pilot succeeded. Walk me through what changes when you take it to production for 5,000 users.
+Q010455	M	The model provider deprecates your model mid-rollout. What is your process?
+Q010541	M	Your PM wants AI-powered summarization in the app. Walk me through the on-device versus cloud decision.
+Q010542	M	What usage or cost data would flip your decision between on-device and cloud inference for an AI summarization feature?
+Q010543	M	If an on-device summarization model is noticeably worse than the cloud one, what do you do?
+Q010552	M	Your on-device model file is 800MB. How does it get onto users' devices?
+Q010554	H	How do you roll back a bad model that is already deployed on 10M devices?
+D00877	M	What is the end-to-end MLOps process, and how would you implement CI/CD for models?
+D00878	M	How do you detect data drift for an LLM application in production?
+D00879	M	How would you monitor model health in production and what would trigger retraining?
+D00880	M	How do you build eval-gated CI/CD, including golden-set rotation and judge-drift detection?
+D00881	M	What per-PR eval budget and caching strategies keep CI evals affordable?
+D00882	M	How do you version datasets, prompts, models and judges for reproducibility?
+D00883	M	When do you choose self-hosted inference over managed APIs for infrastructure reasons?
+D00884	M	What deployment sandboxes exist for enterprise agents, such as serverless isolates or microVMs?
+D00885	M	How do you deploy agent containers versus run them directly on a host?
+D00886	M	How do you build a model lifecycle process that survives provider deprecations?
+D00887	M	How do you plan disaster recovery for an LLM application with multiple providers?
+D00888	M	How do you decide an inference engine and orchestration layer for a given workload?
+D00889	M	How do you instrument and control a fleet that spans multiple accelerator vendors?
+D00890	M	How do you run a controlled rollout for a retrieval or prompt change with rollback criteria?
+D00891	M	What is a queue-based architecture for LLM requests and when do you need one?
+D00892	M	How do you design an AI task queue that avoids timeouts and keeps ordering guarantees?
+D00893	M	How would you debug a production LLM service whose behaviour changed overnight with no code deploy?
+D00894	M	What happens when a vendor retires a model mid-quarter and your evals depend on it as judge?
+D03478	M	What is the role of an embedding generation service, an indexing service and a nearest neighbor service in a retrieval-based prediction pipeline?
+D03487	M	What is the difference between covariate shift, label shift and concept drift, and how do you statistically detect each?
+D03663	H	Design a model platform that serves hundreds of production ML models with versioning, monitoring and feature access.
+D03665	M	How would you operate and govern a portfolio of hundreds of models with consistent evaluation and ownership?

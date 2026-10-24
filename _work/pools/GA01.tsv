@@ -1,0 +1,244 @@
+Q003386	E	What is Chain-of-Thought (CoT) prompting, and when is it most useful?
+Q003387	E	What is prompt engineering, and why is it important for LLMs?
+Q003388	E	What is the difference between zero-shot and few-shot prompting?
+Q003389	M	What are the different approaches for choosing examples for few-shot prompting?
+Q003390	M	Why is context length important when designing prompts for LLMs?
+Q003391	E	What is a system prompt, and how does it differ from a user prompt?
+Q003392	M	What is In-Context Learning (ICL), and how is few-shot prompting related?
+Q003393	M	What is self-consistency prompting, and how does it improve reasoning?
+Q004268	E	What are some elements that make up a prompt?
+Q004269	E	What are some common prompt engineering techniques?
+Q004270	M	Explain the concept of in-context learning.
+Q004271	M	When does in-context learning fail?
+Q004272	M	What would be a good methodology for designing prompts for a specific task?
+Q004273	M	What LLM prompting framework produces the best outputs?
+Q004276	E	What prompt engineering concept is known to enhance reasoning capabilities in LLMs?
+Q004695	M	Your LLM keeps ignoring your instructions. How do you make it follow structured output formats?
+Q004698	M	Your LLM generates responses that are too verbose. How do you control response length?
+Q004719	E	What is prompt engineering, and why is it critical for AI applications?
+Q004720	E	Explain zero-shot, one-shot, and few-shot prompting with examples.
+Q004721	M	What is chain-of-thought (CoT) prompting, and when should you use it?
+Q004722	M	Explain self-consistency prompting and how it improves reasoning.
+Q004723	M	What is tree-of-thought prompting?
+Q004724	M	What is ReAct (Reasoning + Acting) prompting, and how does it work?
+Q004725	E	What is a system prompt, and how does it influence model behavior?
+Q004726	M	How do you structure prompts for consistent structured output (JSON, XML)?
+Q004730	M	What is the difference between prompt engineering and prompt tuning?
+Q004731	M	What is a prompt template, and how do you design one for production use?
+Q004732	M	How do you handle multi-turn conversations with LLMs?
+Q004733	E	What is role prompting, and when is it effective?
+Q004734	M	What is prompt chaining, and how do you design a chain of prompts for complex tasks?
+Q004735	M	How do you evaluate and iterate on prompt quality?
+Q004736	M	What are meta-prompts, and how can they be used to generate prompts?
+Q004737	M	What are the common failure modes in prompting, and how do you debug them?
+Q004738	M	How do you handle edge cases and adversarial inputs in prompt design?
+Q004741	M	How do you handle multi-language prompting effectively?
+Q004742	M	Your few-shot prompting gives inconsistent results across similar inputs. How do you stabilize it?
+Q004743	M	Your LLM classification system is too sensitive to prompt wording changes. How do you reduce prompt sensitivity?
+Q004746	M	Your chain-of-thought prompting is not improving LLM accuracy on reasoning tasks. What do you fix?
+Q004747	M	Your AI system works in English but fails for other languages. How do you add multilingual support?
+Q004748	M	Your zero-shot cross-lingual transfer from English fails on other languages. How do you fix it?
+Q004945	M	How does prompt caching work?
+Q005328	E	What is zero-shot learning in the context of LLMs?
+Q005924	E	What is in-context learning? What is the difference between zero-shot and few-shot?
+Q005929	E	What is Chain of Thought (CoT) prompting?
+Q005932	M	How do you write a system prompt that makes an agent more stable, and what elements must it contain?
+Q005933	M	What is context engineering, and how do you handle the "lost in the middle" problem in long contexts?
+Q005936	M	Dynamic few-shot vs static few-shot prompting: when should you use each?
+Q005939	M	What is composable prompt design, and how does it reduce maintenance complexity?
+Q005941	M	How can prompt caching further optimize token cost, and how do you quantify the actual benefit?
+Q005946	M	What is DSPy, how does it fundamentally differ from hand-written prompts, and when should you use it?
+Q005950	M	What is Self-Refine, and how does it differ from CoVe and Reflexion?
+Q005952	M	How does Chain of Density work, and when should you use it instead of ordinary summarization?
+Q005953	M	What is a prompt chaining workflow, and how does it differ from simple CoT?
+Q006056	E	What is prompt caching, and why does it significantly reduce API cost?
+Q006067	M	Why is a prompt template engine important in production, and how do you write chat prompt templates and few-shot templates in LangChain?
+Q006207	M	What is Tree of Thoughts (ToT), how does it differ from CoT and ReAct, and when is tree search not worth the cost?
+Q006834	M	Why can a strict output schema hurt accuracy, and how do you fix it?
+Q006835	M	How many few-shot examples should you use, and do ordering effects matter?
+Q006946	M	Your system prompt has grown to 1,500 tokens of accumulated rules and examples; latency is erratic and a small edit just caused an unpredicted regression. What is the best move?
+Q006947	M	You need 4 few-shot examples in a high-traffic feature and you also want provider prompt caching to help. Where do the examples go?
+Q006949	M	A math-word-problem feature is about 70% accurate with direct answers, and you can afford a moderate cost increase. What gives the biggest reliable lift?
+Q007116	E	Explain the basic structure of a prompt in prompt engineering.
+Q007117	E	Explain the types of prompt engineering.
+Q007118	M	What are some aspects to keep in mind while using few-shot prompting?
+Q007119	E	What are some strategies to write a good prompt?
+Q007120	M	What is hallucination, and how can it be controlled using prompt engineering?
+Q007121	M	How can you improve the reasoning ability of an LLM through prompt engineering?
+Q007122	H	How can you improve LLM reasoning if your chain-of-thought prompt fails?
+Q010866	M	What is DSPy and when would you use it?
+Q010926	H	Explain provider-level prompt caching and how you would architect a system to maximize cache hit rate.
+Q010997	H	Your agent performs well on short tasks but degrades badly past 30 minutes of autonomous work. Diagnose and fix it using context engineering.
+Q010998	H	How do you evaluate that context compaction is not losing critical facts?
+Q011165	E	What is context engineering?
+Q011170	E	What is prompt caching?
+Q011324	M	Why do system prompts carry more weight than user prompts in modern LLMs?
+Q011325	E	What is "step-by-step" prompt optimization?
+Q011328	M	Why not just provide all 50 examples we have in the prompt?
+Q011329	M	What is "label bias" in in-context learning?
+Q011331	M	Why does chain-of-thought improve performance on mathematical word problems?
+Q011332	M	How do you handle chain-of-thought in a production environment where latency is critical?
+Q011335	M	When is Tree-of-Thought significantly better than simple chain-of-thought?
+Q011336	M	What is the main drawback of Tree-of-Thought in a consumer-facing app?
+Q011337	H	Do you still need explicit Tree-of-Thought prompting when the model is already a reasoning model?
+Q011347	M	How does DSPy solve the "fragility" of prompt engineering?
+Q011348	M	What is a "teleprompter" in the context of DSPy?
+Q011513	M	What is the difference between the model context window and the application context window?
+Q011514	M	How does prefix caching change how you design system prompts?
+Q011541	M	Why is DSPy considered "anti-prompt engineering"?
+Q011542	M	What is the biggest drawback of using DSPy in a production environment?
+Q011543	H	When would you use GEPA or Flex instead of MIPROv2?
+Q011559	M	Why do we see a trend towards "programming" (DSPy) instead of "prompting"?
+Q011621	M	When would you use Self-Consistency vs Best-of-N?
+Q012532	E	How do you modify prompt templates in LangChain?
+Q003531	M	What tools are used in context engineering?
+Q003518	M	What is context engineering, and how does it differ from prompt engineering?
+Q003552	E	What problems do the four prompt elements Role, Task, Context, and Format each solve?
+Q003553	M	Why is optimizing only the prompt not enough in agent scenarios?
+Q003914	E	What does a badly structured prompt look like?
+Q007467	H	If wrong labels barely hurt in-context learning, what does that imply about how you should choose few-shot examples?
+Q007606	H	There's a line of work claiming in-context learning is implicit gradient descent. What's the claim, what's the evidence, and does it change what you do?
+Q007607	H	How would you test whether a specific task is being selected versus genuinely learned in context?
+Q007608	H	Does the task-vector view of in-context learning suggest anything about how to compress long system prompts?
+Q007632	E	What's the difference between zero-shot and few-shot prompting, and when would you use each?
+Q007633	M	How many few-shot examples is typically enough before returns diminish?
+Q007634	M	How would you measure whether few-shot examples are actually helping versus just adding tokens?
+Q007635	H	Why can few-shot CoT examples hurt a reasoning model?
+Q007636	E	Explain the system, user, and assistant roles. What belongs in each?
+Q007637	M	When would you deliberately fabricate an assistant turn in the prompt?
+Q007638	M	How do OpenAI's 'developer' role and instruction-hierarchy training relate to the system, user, and assistant roles?
+Q007639	M	What happens to system-prompt adherence over a 50-turn conversation?
+Q007640	E	What is chain-of-thought prompting? When does it help, and when is it unnecessary or harmful?
+Q007641	M	How would you decide empirically whether chain-of-thought is worth the latency for a given task?
+Q007642	M	What does it mean for a chain of thought to be "unfaithful"?
+Q007643	M	How does chain-of-thought relate to test-time compute scaling?
+Q007644	E	What is zero-shot CoT, and why did "Let's think step by step" become famous?
+Q007645	M	If a phrase can unlock accuracy, how would you search for better phrases systematically?
+Q007646	M	Why do you think RL-trained reasoning made the "Let's think step by step" trick obsolete?
+Q007647	M	Would you ever still use zero-shot CoT prompting in 2026, and where?
+Q007648	M	What are the most common prompt anti-patterns you'd flag in a code review?
+Q007649	M	How would you refactor a 60-rule mega-prompt without regressing behaviour?
+Q007650	M	Why do negations sometimes work fine in prompts, and when is "never do X" appropriate?
+Q007651	M	How do you detect contradictions in a prompt systematically?
+Q007652	E	What is "context engineering," and how is it different from prompt engineering?
+Q007654	H	How does context engineering interact with prompt caching, and where do they conflict?
+Q007655	M	Who owns context engineering when the "prompt" is assembled by five different subsystems?
+Q007656	M	When would you ask for JSON, XML tags, or markdown as your output format?
+Q007662	M	How do you build a prompt template, and what can go wrong when you inject variables into it?
+Q007663	M	How would you unit test a prompt template?
+Q007664	M	Where would you put a per-user personalisation string so it does not destroy your prompt cache?
+Q007672	M	Where would you place the conversation summary and the recent turns to keep prefix caching effective?
+Q007674	M	Your model's answers are consistently too long. How do you control output length reliably?
+Q007675	M	Why does asking an LLM for exactly 100 words rarely produce 100 words?
+Q007676	M	How would you shorten model answers without losing a caveat that legal requires?
+Q007678	M	How do you select and order few-shot examples? What are the known pitfalls?
+Q007679	M	Your 5-shot classifier over-predicts one class. What do you check first?
+Q007680	H	When is it deliberately correct to match the few-shot example label distribution to a skewed real-world prior?
+Q007681	M	How would you test few-shot example ordering sensitivity cheaply?
+Q007682	M	Why does in-context learning work at all when the model's weights don't change?
+Q007683	M	What does the random-label result in in-context learning imply about how you should invest in example quality?
+Q007684	M	Why does in-context learning improve with model scale?
+Q007686	M	Explain self-consistency. When is it worth the cost?
+Q007687	M	How would you apply the self-consistency idea to code generation where outputs are long?
+Q007688a	H	Design an adaptive self-consistency scheme that spends more samples only on hard inputs.
+Q007688b	H	Why do errors tend to be uncorrelated across samples in self-consistency, and when would that assumption break?
+Q007689	M	When would you decompose a task into multiple prompts instead of one? Explain least-to-most prompting.
+Q007690	M	How do you stop error cascades in a multi-stage prompt pipeline?
+Q007691	H	Given a fixed latency budget, how do you decide between one big reasoning-model call and a three-stage pipeline?
+Q007692	M	How would you evaluate the task decomposition step itself in a multi-prompt pipeline?
+Q007705	M	You have a 200k-token context with instructions and 50 documents. Where do you put what, and why?
+Q007708	H	How does document ordering interact with prompt caching when the document set is semi-stable?
+Q007709	M	How does prompt caching work, and how should it change the way you structure prompts?
+Q007710	H	Dynamic few-shot retrieval versus static examples: how does prompt caching change that calculus?
+Q007713	M	Walk me through your process for systematically improving a prompt that's underperforming.
+Q007719	M	Your Japanese users report overly casual tone from the LLM. What do you change?
+Q007727	H	Design an example store for dynamic few-shot selection. What do you get, and what does it cost you?
+Q007728	M	How would you keep a mislabelled example from silently degrading production in a dynamic few-shot system?
+Q007729	H	When would bucketed static examples beat true per-request retrieval of few-shot examples?
+Q007733	M	When is prompt compression worth it, and how would you do it?
+Q007734	M	Why might token-level prompt compression hurt an extraction task more than a summarisation task?
+Q007747	M	The model does not know what day it is. How do you handle dates, recency and the knowledge cutoff in your prompts?
+Q007748	M	Where exactly would you put the current date in the prompt so it does not hurt your cache hit rate?
+Q007750	M	A user insists on a fact the model believes is false and that is newer than its training data. What should happen?
+Q007762	H	Explain DSPy-style programmatic prompt optimization. When would you use it over manual iteration?
+Q007763	H	How does bootstrapped-demo selection differ from retrieval-based dynamic few-shot?
+Q007764	H	What goes wrong when optimising a prompt against an LLM judge?
+Q007766	H	What is meta-prompting? How would you use a model to improve your prompts, and what are the pitfalls?
+Q007767	H	Why do model-rewritten prompts tend to get longer, and why is that bad?
+Q007768	H	How would you set up an automated prompt-search loop without overfitting the eval set?
+Q007769	H	When would you trust a meta-prompt improvement enough to ship it?
+Q007778	M	How do reasoning models change prompting practice? What transfers and what becomes obsolete?
+Q007781	H	How do you debug a wrong answer when you can't see the raw chain of thought?
+Q008230	H	What happens to your prompt cache when a reasoning model's thinking blocks enter the message history?
+Q008244	M	How does prompt caching change the cost math for bloated tool results?
+Q008285	H	An MCP server sends a list-changed notification mid-session. What happens to your prompt cache?
+Q008289	H	Your agent's prompt cache hit rate is 20% when you expected 90%. Walk me through the debugging.
+Q008290	M	You must inject the current time into an agent's prompt because it reasons about deadlines. Where does it go, given prompt caching?
+Q008345	M	What is context pollution in agents, and how do you deal with it?
+Q008346	H	How would you detect context self-poisoning in agent traces automatically?
+Q008347	H	What makes a compaction prompt good at dropping poisoned context but keeping decisions?
+Q008572	M	Why does inserting the current date at the top of a system prompt destroy prompt caching?
+Q008573	M	How does prefix caching interact with per-user personalisation?
+Q009066	M	How do you handle a prompt that must change for a model upgrade and behaves differently on both models?
+Q009411	M	How does prompt caching change the long-context-versus-retrieval cost analysis for agent loops specifically?
+Q009797	M	Prompt caching conflicts with per-user personalised system prompts. How do you structure the prompt to keep cache hits?
+Q009862	M	Where in the prompt do you place retrieved RAG documents if you want both good grounding and prompt-cache reuse?
+D00470	E	What are the essential elements of a good prompt, and how do intent and constraints differ?
+D00471	M	Why do system prompts carry more weight than user prompts, and what is the instruction hierarchy?
+D00472	M	How do delimiters and structured sections in a prompt reduce ambiguity and injection risk?
+D00473	M	What makes a good system prompt for a stable agent, and what sections would you include?
+D00474	E	What is chain-of-thought prompting, and why does it help on multi-step problems?
+D00475	M	How do you use chain-of-thought in a latency-critical production system?
+D00476	M	How do you prompt reasoning models differently from standard models?
+D00477	M	Explain self-consistency prompting and how it improves reasoning accuracy.
+D00478	M	What is Tree-of-Thought, and when is it significantly better than chain-of-thought?
+D00479	M	What is the main drawback of Tree-of-Thought in a consumer app, and do you still need it with reasoning models?
+D00480	M	What is Auto-CoT, and how does it reduce the need for hand-written examples?
+D00481	M	What is Chain-of-Verification and how does it reduce hallucination?
+D00482	M	How do you pick few-shot examples, and why not put all fifty available examples in the prompt?
+D00483	M	What is label bias in in-context learning, and how does example ordering affect outputs?
+D00484	M	Compare dynamic and static few-shot selection and when to use each.
+D00485	M	What are ReAct prompting's limitations, and how do you mitigate them in practice?
+D00486	M	How do structured outputs differ from JSON mode and from function calling?
+D00487	M	Why is JSON mode more reliable than asking for JSON in the prompt?
+D00488	M	What is the risk of requesting too many structured fields in a single call, and how does multi-stage extraction help?
+D00489	M	How do you handle validation failures from structured output, including retry with correction?
+D00490	M	An extraction pipeline forced a tool call to get JSON. After a model upgrade every request returns an error. What changed and how do you fix it?
+D00491	M	How do OpenAI, Anthropic and Google structured output mechanisms differ, and how do you choose?
+D00492	M	What is prompt caching, and how do you order prompt content to maximize hit rate?
+D00493	M	How do you tell whether prompt caching actually saves money for a given workload?
+D00494	M	What are cache breakpoints, and how do you design them when tools or system prompts change mid-session?
+D00495	M	How does prefix caching change how you design system prompts?
+D00496	M	What is context engineering and how does it differ from prompt engineering?
+D00497	M	What are the core context engineering techniques: compaction, just-in-time loading, note-taking and sub-agent isolation?
+D00498	M	Explain the write, select, compress and isolate framework for agent context management.
+D00499	M	An agent works on short tasks but degrades on long ones. How do you diagnose and fix it?
+D00500	M	How do you budget context across system prompt, tools, history and retrieved documents?
+D00501	M	How do you manage token budgets as conversations grow, with compression that keeps key information?
+D00502	M	A gateway falls back to a different model mid-conversation and quality drops. What context-related issues could be involved?
+D00503	M	How do reasoning effort and thinking controls differ across providers, and how do you choose an effort level?
+D00504	M	Why is thinking bound to the conversation in append-only context, and what does that imply for caching?
+D00505	M	How does DSPy turn prompting into programming with signatures and optimizers?
+D00506	M	What is a teleprompter or optimizer in DSPy, and what does metric-driven optimization require?
+D00507	M	What is the biggest drawback of DSPy in production?
+D00508	M	When would you use GEPA instead of MIPROv2 for prompt optimization?
+D00509	M	How do you version prompts in production and detect prompt drift?
+D00510	M	How would you run A/B tests and offline regression tests for prompt changes?
+D00511	M	What is composable prompt design and how does it lower maintenance cost?
+D00512	M	How do you prompt a model to honestly refuse when it does not know instead of making things up?
+D00513	M	What is wrong with God prompts, vague instructions and missing output formats?
+D00514	M	How do you evaluate prompt frameworks such as LangSmith, Braintrust and Promptfoo?
+D00515	M	What is a golden dataset, and how do you build and maintain one?
+D00516	E	What is prompt injection and how does it differ from prompt leakage?
+D00517	M	How do you prevent system prompt leakage?
+D00518	M	How do you debug a prompt that behaves inconsistently across inputs?
+D00519	M	Rate limits and pricing now vary by model tier. How does that change your prompt design?
+D03791	M	What are zero-shot, few-shot and chain-of-thought prompting and how does self-consistency improve reasoning?
+D04837	M	What does a good RAG prompt template contain to ensure grounded, citable answers and graceful handling of insufficient context?
+D04862	E	What is chain-of-thought prompting and how does it differ from standard few-shot prompting?
+D04863	M	Why does chain-of-thought prompting improve complex reasoning, and what is its essence?
+D04864	M	For which kinds of tasks does chain-of-thought help, and for which does it not help or hurt?
+D04865	M	What are the limitations of chain-of-thought, such as unfaithful reasoning and dependence on model scale?
+D04866	M	How do self-consistency, zero-shot CoT and least-to-most prompting extend basic CoT?
+D04974	M	How do few-shot example selection and ordering affect in-context learning performance?
+D04975	M	Why can prompting with exemplars of reasoning improve accuracy even when the exemplars contain mistakes?

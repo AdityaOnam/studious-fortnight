@@ -1,0 +1,300 @@
+Q004729	GA04	M	How do you optimize prompts for cost and latency?
+Q004730	GA01	M	What is the difference between prompt engineering and prompt tuning?
+Q004731	GA01	M	What is a prompt template, and how do you design one for production use?
+Q004732	GA01	M	How do you handle multi-turn conversations with LLMs?
+Q004733	GA01	E	What is role prompting, and when is it effective?
+Q004734	GA01	M	What is prompt chaining, and how do you design a chain of prompts for complex tasks?
+Q004735	GA01	M	How do you evaluate and iterate on prompt quality?
+Q004736	GA01	M	What are meta-prompts, and how can they be used to generate prompts?
+Q004737	GA01	M	What are the common failure modes in prompting, and how do you debug them?
+Q004738	GA01	M	How do you handle edge cases and adversarial inputs in prompt design?
+Q004739	LLM05	M	What is the "lost in the middle" problem in long-context prompting?
+Q004740	GA02	M	What are output parsers, and why are they needed for production applications?
+Q004741	GA01	M	How do you handle multi-language prompting effectively?
+Q004742	GA01	M	Your few-shot prompting gives inconsistent results across similar inputs. How do you stabilize it?
+Q004743	GA01	M	Your LLM classification system is too sensitive to prompt wording changes. How do you reduce prompt sensitivity?
+Q004744	GA05	M	Your chatbot's system prompt containing proprietary business logic is being leaked by users. How do you prevent it?
+Q004745	GA05	M	Your LLM agent is vulnerable to prompt injection that reveals the system prompt. How do you defend it?
+Q004746	GA01	M	Your chain-of-thought prompting is not improving LLM accuracy on reasoning tasks. What do you fix?
+Q004747	GA01	M	Your AI system works in English but fails for other languages. How do you add multilingual support?
+Q004748	GA01	M	Your zero-shot cross-lingual transfer from English fails on other languages. How do you fix it?
+Q004749	RAG01	E	What is Retrieval-Augmented Generation (RAG), and why is it important?
+Q004750	RAG01	E	Explain the architecture of a basic RAG system.
+Q004751	RAG01	E	What are the key components of a RAG pipeline?
+Q004752	RAG02	M	What are chunking strategies, and how do you choose the right chunk size?
+Q004753	RAG02	M	Compare fixed-size chunking, semantic chunking, and recursive chunking.
+Q004754	RAG02	M	What is Contextual Retrieval, and how does it improve RAG?
+Q004755	RAG03	E	What are embedding models, and how do they convert text to vectors?
+Q004756	RAG03	M	How do you choose an embedding model for your RAG system?
+Q004757	RAG04	M	What is hybrid search, and why is it better than pure vector search?
+Q004758	RAG04	M	What is re-ranking, and how does it improve RAG retrieval quality?
+Q004759	RAG04	H	What is ColBERT, and how does late interaction retrieval work?
+Q004760	RAG04	H	Compare reranker architectures: cross-encoder, ColBERT, and LLM-based rerankers.
+Q004761	RAG05	M	How do you handle multi-document and multi-hop questions in RAG?
+Q004762	RAG06	M	What is the "lost in the middle" problem in RAG systems?
+Q004763	RAG06	M	How do you evaluate a RAG system? Explain faithfulness, relevance, and context precision/recall.
+Q004764	RAG05	H	Explain Self-RAG. How does the model decide when to retrieve?
+Q004765	RAG05	M	What is GraphRAG, and when would you use it over traditional RAG?
+Q004766	RAG02	M	How do you handle structured data (tables, SQL databases) in a RAG pipeline?
+Q004767	RAG06	M	What are the common failure modes of RAG systems, and how do you debug them?
+Q004768	RAG06	M	How do you handle document updates and maintain freshness in a RAG system?
+Q004769	RAG06	M	How do you optimize RAG for latency in production?
+Q004770	RAG04	M	What is the role of metadata filtering in RAG systems?
+Q004771	FT05	M	Compare RAG vs fine-tuning. When would you use each?
+Q004772	RAG05	M	Long context windows keep getting cheaper. When should you use retrieval (RAG) vs putting everything in the context window?
+Q004773	RAG04	M	What is query transformation in RAG (HyDE, query decomposition, step-back prompting)?
+Q004774	RAG01	M	How do you implement citation and source attribution in RAG?
+Q004775	RAG03	H	How do you scale a RAG system to millions of documents?
+Q004776	RAG02	M	What is parent-child chunking, and how does it improve retrieval?
+Q004777	RAG06	M	Your RAG system is hallucinating despite having the right context. How do you fix it?
+Q004778	RAG02	M	Your RAG chunk overlap causes redundant results. How do you reduce redundancy?
+Q004779	RAG03	M	Your RAG retrieval is too slow with a large knowledge base. How do you speed it up?
+Q004780	RAG06	M	Your RAG system returns duplicate results. How do you deduplicate?
+Q004781	RAG06	H	Your RAG system needs per-user access control on internal documents. How do you implement it?
+Q004782	RAG03	M	Your RAG system fails on domain-specific jargon. How do you fix it?
+Q004783	RAG05	M	Your text-only RAG system now needs to handle images and tables. How do you extend it?
+Q004784	RAG06	M	Your RAG knowledge base gets updated frequently and needs versioning. How do you manage it?
+Q004785	RAG05	M	Your RAG system fails on multi-hop questions that require combining multiple facts. How do you fix it?
+Q004786	RAG06	M	Your enterprise RAG system returns contradictory answers from different source documents. How do you resolve conflicts?
+Q004787	DROP	-	dup
+Q004788	RAG02	M	Your RAG system struggles with PDF documents containing tables and layouts. How do you fix PDF parsing?
+Q004789	GA03	E	What is an AI agent, and how does it differ from a simple LLM call?
+Q004790	GA03	M	What matters more for an agentic coding tool like Claude Code: the model or the harness?
+Q004791	GA03	M	Explain the ReAct (Reasoning + Acting) agent architecture.
+Q004792	GA03	M	What is the Plan-and-Execute agent pattern?
+Q004793	GA02	E	What is tool use (function calling) in LLMs, and how does it enable agents?
+Q004794	GA02	M	What is the difference between structured output and function calling?
+Q004795	GA02	M	How do you design and define tools for an AI agent?
+Q004796	GA02	M	How does an agent decide when to call a tool versus answering from its own knowledge?
+Q004797	GA03	E	What is the difference between single-agent and multi-agent systems?
+Q004798	GA03	M	When do multi-agent systems break down, and when is a single agent the better choice?
+Q004799	GA02	M	What is Model Context Protocol (MCP), and how does it standardize tool integration?
+Q004800	GA02	M	How does MCP differ from traditional function calling?
+Q004801	GA03	E	What are AI SubAgents?
+Q004802	GA03	E	What are the different types of agent memory (short-term, long-term, episodic)?
+Q004803	GA03	M	How do you handle agent failures and implement error recovery?
+Q004804	GA03	M	What is an agent loop, and how does it decide when to stop?
+Q004805	GA03	M	How does context compaction work?
+Q004806	GA03	M	How do AI agents communicate?
+Q004807	GA03	E	What are Agent Skills?
+Q004808	GA03	M	How do you evaluate and test AI agents?
+Q004809	GA05	M	What are the security risks of agentic systems, and how do you mitigate them?
+Q004810	GA05	H	Your agent reads untrusted content (emails, web pages, documents) and can call tools. How do you prevent indirect prompt injection and data exfiltration?
+Q004811	GA03	E	What is the difference between reactive and proactive agents?
+Q004812	GA04	M	How do you manage token consumption and cost in long-running agent workflows?
+Q004813	GA03	M	What is the human-in-the-loop pattern for agents, and when is it needed?
+Q004814	GA05	M	How do you implement guardrails for AI agents to prevent harmful actions?
+Q004815	GA03	M	What is agent reflection, and how does it improve agent performance?
+Q004816	GA03	M	What is the difference between code-generating agents and tool-calling agents?
+Q004817	GA06	M	How do you handle multi-modal inputs and outputs in agentic systems?
+Q004818	GA03	M	How do you implement state management in complex agent workflows?
+Q004819	GA03	M	How do you build a customer support agent with escalation logic?
+Q004820	GA03	M	What is agent orchestration, and how do you implement it?
+Q004821	DROP	-	offtopic
+Q004822	GA02	H	How do you build a code execution agent safely using sandboxed environments?
+Q004823	GA03	M	Your AI agent is stuck in an infinite loop. How do you detect and break the cycle?
+Q004824	GA03	M	Your AI agent gets conflicting answers from different tools. How does it reconcile them?
+Q004825	GA04	M	Your AI agent burns too many tokens per task. How do you reduce token consumption?
+Q004826	GA04	M	Your AI agent keeps exceeding its budget per task. How do you enforce budget limits?
+Q004827	GA02	M	Your AI agent hallucinates tool capabilities and passes wrong inputs. How do you fix it?
+Q004828	GA05	M	Your AI agent deleted a production database. How do you prevent irreversible actions?
+Q004829	GA02	M	Your AI agent has many tools, but keeps picking the wrong one. How do you improve tool selection?
+Q004830	GA03	M	Your AI agent takes too long to complete a task. How do you speed it up?
+Q004831	GA03	H	Your long-running agent drifts after hours and confidently works on the wrong thing. How do you diagnose and fix it?
+Q004832	GA02	M	Your LLM selects the right tool but extracts the wrong parameters. How do you fix parameter extraction?
+Q004833	GA02	M	How do computer-use agents work?
+Q004834	GA02	M	How do browser agents work?
+Q004835	GA03	E	How does LangChain work?
+Q004836	GA03	M	How does LangGraph work?
+Q004837	DROP	-	offtopic
+Q004838	FT01	E	What is fine-tuning, and when should you fine-tune an LLM?
+Q004839	FT02	E	Explain the difference between full fine-tuning and parameter-efficient fine-tuning (PEFT).
+Q004840	FT02	M	What is LoRA (Low-Rank Adaptation), and how does it work?
+Q004841	FT02	M	What is QLoRA, and how does it enable fine-tuning on consumer hardware?
+Q004842	FT01	E	How does fine-tuning work?
+Q004843	FT02	M	Explain Prefix Tuning and Prompt Tuning. How are they different from LoRA?
+Q004844	FT02	E	What is adapter-based fine-tuning?
+Q004845	FT03	M	Explain the difference between pre-training, supervised fine-tuning (SFT), and preference optimization (RLHF/DPO).
+Q004846	FT03	M	What is RLHF (Reinforcement Learning from Human Feedback), and how is it used to align LLMs?
+Q004847	FT03	M	What is Deep RL from Human Preferences, the paper that started RLHF?
+Q004848	FT03	H	Why did DPO displace PPO-based RLHF at many labs? When is online RL still better?
+Q004849	FT01	E	What is instruction tuning, and why is it important for chat models?
+Q004850	FT01	M	How do you prepare a dataset for fine-tuning an LLM?
+Q004851	FT01	M	What is catastrophic forgetting, and how do you prevent it during fine-tuning?
+Q004852	DROP	-	dup
+Q004853	FT01	M	How do you evaluate a fine-tuned model's performance?
+Q004854	FT04	M	What is synthetic data generation, and how do you use it for fine-tuning?
+Q004855	FT01	M	What are the key hyperparameters for fine-tuning (learning rate, epochs, batch size, LoRA rank)?
+Q004856	FT02	H	Do the GPU memory math for full fine-tuning a 7B model in bf16 with Adam. Now with LoRA and QLoRA.
+Q004857	FT01	M	How do you fine-tune a model for a specific domain (legal, medical, finance)?
+Q004858	FT01	M	What is continual pre-training, and when would you use it?
+Q004859	FT02	M	How do you merge multiple LoRA adapters?
+Q004860	FT03	M	What is the difference between SFT (Supervised Fine-Tuning) and alignment training?
+Q004861	FT03	M	What is RLAIF (RL from AI Feedback), and how does it differ from RLHF?
+Q004862	FT03	M	What is Constitutional AI, and how does it differ from RLHF?
+Q004863	FT03	H	What is RLVR (Reinforcement Learning with Verifiable Rewards), and when does it beat a learned reward model?
+Q004864	FT04	M	What is knowledge distillation for fine-tuning, and what are the legal considerations?
+Q004865	FT01	M	Your fine-tuned LLM produces factually wrong outputs due to training data quality issues. How do you fix it?
+Q004866	FT02	M	You must choose between LoRA and full fine-tuning for a domain-specific assistant. How do you decide?
+Q004867	FT01	M	Your fine-tuned model memorized training data verbatim instead of learning patterns. How do you fix overfitting?
+Q004868	FT01	M	Your fine-tuned LLM forgot its general capabilities after domain-specific fine-tuning. How do you fix catastrophic forgetting?
+Q004869	FT03	M	Your RLHF preference data has low annotator agreement. How do you ensure data quality?
+Q004870	RAG03	E	What are embeddings in the context of AI engineering?
+Q004871	DROP	-	dup
+Q004872	RAG03	M	What is Contrastive Learning, and how is it used to train embedding models?
+Q004873	RAG03	E	What is the difference between sparse and dense embeddings?
+Q004874	RAG03	E	Explain cosine similarity, dot product, and Euclidean distance for vector search.
+Q004875	RAG03	E	What is a vector database, and how does it differ from a traditional database?
+Q004876	RAG03	M	How does Approximate Nearest Neighbor (ANN) search work?
+Q004877	RAG03	H	Compare HNSW, IVF, and flat indexes. How do you pick one, and what does recall@k cost in latency?
+Q004878	RAG03	M	How does an embedding cache work?
+Q004879	DROP	-	dup
+Q004880	RAG03	M	What is embedding dimensionality, and how does it affect performance and cost?
+Q004881	RAG03	M	How do you handle embedding drift when the embedding model is updated?
+Q004882	GA06	M	What are multi-modal embeddings, and how are they generated?
+Q004883	RAG03	M	How do you index and query multi-tenant data in a vector database?
+Q004884	RAG03	M	What is quantization of embeddings, and how does it reduce storage costs?
+Q004885	RAG03	M	How do you benchmark and evaluate embedding model quality?
+Q004886	RAG03	E	What is the role of metadata in vector databases?
+Q004887	RAG03	H	How do you handle large-scale vector search with billions of vectors?
+Q004888	DROP	-	dup
+Q004889	RAG03	M	How do you fine-tune an embedding model for a specific domain?
+Q004890	RAG03	M	Your vector database for RAG is consuming too much memory. How do you reduce it?
+Q004891	RAG03	M	Your vector database cannot scale to millions of embeddings. How do you fix the bottleneck?
+Q004892	RAG03	M	Your new embedding model has different dimensions from the existing vectors in production. How do you handle the mismatch?
+Q004893	RAG06	M	Your vector search returns irrelevant results despite high similarity scores. How do you fix it?
+Q004894	DROP	-	dup
+Q004895	RAG04	M	Your semantic search fails for short queries. How do you improve it?
+Q004896	MS04	H	Design a real-time voice AI agent.
+Q004897	MS04	H	Design ChatGPT: training to serving (end to end).
+Q004898	MS04	H	Design a RAG system (chat with your documents).
+Q004899	MS04	H	Design an enterprise RAG assistant over 10M documents with per-user permissions.
+Q004900	MS04	H	Design memory for a personal AI assistant.
+Q004901	MS04	H	Design a deep research agent.
+Q004902	MS04	H	Design a multi-agent customer support system.
+Q004903	MS04	H	Design an on-device AI assistant.
+Q004904	MS04	H	Design a multimodal search system (text, image, video).
+Q004905	MS04	H	Design an LLM inference platform (vLLM-as-a-service).
+Q004906	MS04	H	Design an LLM evaluation platform.
+Q004907	MS04	H	Design a text-to-image generation service (Midjourney-like).
+Q004908	MS04	H	Design a music generation service (Suno-like).
+Q004909	MS04	H	Design a video generation service (Sora-like).
+Q004910	MS04	H	Design an AI coding agent.
+Q004911	MS04	H	Design a code generation and review system.
+Q004912	MS03	H	Design a content moderation system using AI.
+Q004913	MS03	H	Design a real-time AI recommendation system.
+Q004914	MS04	H	Design an AI-powered email assistant.
+Q004915	MS04	H	Design a medical diagnosis assistant using AI.
+Q004916	MS03	H	Design a fraud detection system powered by LLMs.
+Q004917	MS04	H	Design an AI-powered data extraction pipeline from unstructured documents.
+Q004918	MS04	H	Design a text-to-SQL system over a data warehouse with thousands of tables.
+Q004919	MS04	H	Design a personalized learning assistant.
+Q004920	MS04	H	Design an AI system for automated code migration.
+Q004921	MS04	H	Design an AI-powered legal document review system.
+Q004922	MS04	H	Design a conversational AI system with memory across sessions.
+Q004923	GA04	H	How do you design for latency vs quality trade-offs in AI systems?
+Q004924	GA04	M	How do you implement caching strategies for LLM applications?
+Q004925	GA04	M	How do you design rate limiting and cost management for AI APIs?
+Q004926	GA04	M	How do you handle failover and fallback strategies for AI systems?
+Q004927	SD05	H	How do you design an AI system for high availability and fault tolerance?
+Q004928	SD05	H	How do you design an AI system that gracefully degrades when the model is unavailable?
+Q004929	SD05	H	What are the key considerations for multi-region deployment of AI systems?
+Q004930	MS03	H	Design an AI-powered search engine for an e-commerce platform.
+Q004931	MS04	H	Design an AI gateway/proxy for managing LLM access across an organization.
+Q004932	DROP	-	dup
+Q004933	MS04	H	How do you approach capacity planning for an AI system?
+Q004934	MS04	H	Design a multi-tenant AI chatbot platform where each business gets a custom chatbot.
+Q004935	MS04	H	Design an AI meeting summarizer system for thousands of meetings daily.
+Q004936	MS03	H	Design an AI notification system that prioritizes instead of broadcasting.
+Q004937	MS03	H	Design an AI-powered anomaly detection system for cloud infrastructure.
+Q004938	MS04	H	Design an AI-powered document processing pipeline for financial institutions.
+Q004939	MS03	H	Design an AI dynamic pricing engine.
+Q004940	MS03	H	Design an AI resume screening system that handles 100K applications per week.
+Q004941	MS04	H	Design an AI voice assistant architecture.
+Q004942	MS04	H	Design a multi-agent workflow system where agents collaborate on complex tasks.
+Q004943	MS04	H	Design a real-time AI transcription system for concurrent audio streams.
+Q004944	MS03	H	Design an AI-powered live streaming content moderation system.
+Q004945	GA01	M	How does prompt caching work?
+Q004946	LLM06	H	Why is prefill compute-bound and decode memory-bandwidth-bound?
+Q004947	LLM06	H	What is chunked prefill, and why does it improve tail latency under mixed traffic?
+Q004948	LLM06	H	What is prefill-decode disaggregation, and when does it pay off?
+Q004949	MS01	M	Explain the AI product lifecycle from ideation to production.
+Q004950	GA04	M	What is LLMOps, and how does it differ from traditional MLOps?
+Q004951	LLM06	M	How do you serve LLMs in production?
+Q004952	LLM06	E	What is model quantization?
+Q004953	LLM06	H	Explain post-training quantization (PTQ) vs quantization-aware training (QAT). What breaks when you push weights to 2-4 bits?
+Q004954	GA04	M	How do you monitor LLM applications in production?
+Q004955	GA04	E	What is LLM observability?
+Q004956	GA05	M	What are guardrails for LLMs, and how do you implement them?
+Q004957	GA05	M	How do you implement content filtering for AI outputs?
+Q004958	GA04	M	How do you estimate the cost of running an AI-powered feature in production?
+Q004959	GA04	M	How do you optimize LLM inference costs in production?
+Q004960	GA04	M	How do you implement A/B testing for LLM systems?
+Q004961	GA04	M	What is CI/CD for AI applications, and how does it differ from traditional CI/CD?
+Q004962	GA04	M	How do you version and manage prompts in production?
+Q004963	GA04	M	What is model versioning, and how do you handle model rollbacks?
+Q004964	GA04	M	How do you implement rate limiting and throttling for LLM APIs?
+Q004965	GA04	M	How do you handle model updates and migrations without downtime?
+Q004966	GA04	M	What is the role of feature flags in AI deployments?
+Q004967	GA04	M	How do you implement logging and tracing for LLM applications?
+Q004968	GA05	M	How do you handle PII and sensitive data in LLM inputs and outputs?
+Q004969	GA04	M	What is a gateway pattern for LLM API management?
+Q004970	LLM06	M	How does token streaming work?
+Q004971	GA04	M	How do you implement streaming responses for real-time AI applications?
+Q004972	LLM06	M	How does SGLang work?
+Q004973	LLM06	M	How does TensorRT-LLM work?
+Q004974	LLM06	M	How does llama.cpp run LLMs on everyday hardware?
+Q004975	LLM06	E	How does Ollama work?
+Q004976	LLM06	H	When would you choose vLLM vs SGLang vs TensorRT-LLM?
+Q004977	GA04	M	What are the key SLAs and metrics for production AI systems (latency, throughput, availability)?
+Q004978	GA04	M	How do you implement fallback strategies when the primary model is unavailable or rate-limited?
+Q004979	GA02	M	How do you implement structured output from LLMs reliably in production?
+Q004980	LLM05	M	How do you handle long contexts efficiently in production (context compression, prefix caching)?
+Q004981	GA04	M	What is semantic routing, and how do you implement it in a multi-model system?
+Q004982	GA05	M	How do you manage secrets and API keys securely in LLM applications?
+Q004983	GA04	M	Your LLM API has latency spikes during peak hours. How do you stabilize it?
+Q004984	GA04	M	Your LLM endpoint's p99 latency doubled after a deploy with no model change. How do you diagnose it?
+Q004985	GA04	M	Your LLM costs are too high in production. How do you reduce costs without degrading quality?
+Q004986	GA04	M	Your application is hitting LLM provider rate limits during peak hours. How do you handle it?
+Q004987	GA04	M	Your application depends on one LLM provider. How do you switch providers without downtime?
+Q004988	GA04	M	Your AI system handles 100 requests/sec but crashes at 5000. How do you scale for concurrent requests?
+Q004989	GA04	M	A traffic spike brings down your AI system. How do you handle peak traffic?
+Q004990	GA04	M	One LLM provider outage took down your entire system. How do you eliminate single points of failure?
+Q004991	GA04	M	Your multi-LLM pipeline fails when one model in the chain breaks. How do you handle orchestration failure?
+Q004992	GA04	M	Your AI pipeline has zero visibility into which step is failing. How do you add observability?
+Q004993	LLM06	M	You quantized your LLM, but accuracy dropped significantly. How do you minimize quantization loss?
+Q004994	GA04	M	One failing AI component can take down your entire platform. How do you design graceful degradation?
+Q004995	LLM07	M	What is evaluation-driven development for AI applications?
+Q004996	DROP	-	notq
+Q004997	LLM07	M	How do you evaluate LLM outputs? What metrics do you use?
+Q004998	LLM07	M	Explain BLEU, ROUGE, and BERTScore. When would you use each?
+Q004999	LLM07	M	What is G-Eval, and how does it use LLMs for evaluation?
+Q005000	LLM07	M	What is LLM-as-a-judge evaluation, and what are its limitations?
+Q005001	LLM07	M	How do you conduct human evaluation for AI systems?
+Q005002	GA05	M	What is red teaming, and how do you red team an LLM application?
+Q005003	LLM07	M	How do you detect and measure hallucinations in LLM outputs?
+Q005004	GA05	M	What is adversarial testing for AI systems?
+Q005005	LLM07	M	How do you build a regression test suite for AI applications?
+Q005006	LLM07	M	What are benchmark suites (MMLU, HumanEval, GSM8K), and how do you interpret them?
+Q005007	LLM07	M	What is benchmark contamination, and how do you guard against it?
+Q005008	LLM07	H	Your new model version scores higher on every benchmark, but users say it got worse. Why does this happen, and how do you find the problem?
+Q005009	DROP	-	dup
+Q005010	GA03	M	How do you evaluate the quality of AI agents?
+Q005011	GA03	H	How would you evaluate an autonomous coding agent? Why can SWE-bench pass rates be misleading?
+Q005012	LLM07	M	What is the difference between offline and online evaluation for AI systems?
+Q005013	LLM07	M	How do you measure factual consistency in LLM outputs?
+Q005014	LLM07	M	How do you evaluate multi-turn conversation quality?
+Q005015	LLM07	M	What is the role of golden datasets in AI evaluation?
+Q005016	LLM07	H	How do you build an eval set when there is no labelled ground truth and domain experts are expensive?
+Q005017	GA04	M	How do you implement continuous evaluation for production AI systems?
+Q005018	GA05	M	How do you evaluate bias in AI model outputs?
+Q005019	LLM07	M	How do you compare two models or prompts in a statistically rigorous way?
+Q005020	LLM07	M	How do you evaluate the robustness of an LLM application across input variations?
+Q005021	LLM07	M	What are the key differences between evaluating traditional ML vs LLM applications?
+Q005022	LLM07	H	How do you set up an evaluation framework from scratch for a new LLM application?
+Q005023	GA05	M	Your model passes one fairness metric but fails another. How do you handle conflicting audit results?
+Q005024	GA05	M	Your model was fair at deployment, but became biased 6 months later. How do you monitor continuously?
+Q005025	GA05	M	An external auditor cannot reproduce your model's results. How do you ensure audit reproducibility?
+Q005026	GA05	M	How do you structure red teaming for an LLM chatbot before launch?
+Q005027	GA05	H	How do you red team a multimodal model where text-only safety tests miss cross-modal attacks?
+Q005028	LLM07	M	What are hallucinations in LLMs, and how do you mitigate them?

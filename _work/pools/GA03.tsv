@@ -1,0 +1,591 @@
+Q001664	M	Discuss the application of LLMs in conversational AI and chatbots.
+Q003482	M	How do you choose between ReAct and Plan-and-Execute agents?
+Q004707	M	Your chatbot loses context after 10 turns in a conversation. How do you maintain a long conversation context?
+Q004708	M	Your chatbot fails when users switch topics mid-conversation. How do you handle topic switches?
+Q004789	E	What is an AI agent, and how does it differ from a simple LLM call?
+Q004790	M	What matters more for an agentic coding tool like Claude Code: the model or the harness?
+Q004791	M	Explain the ReAct (Reasoning + Acting) agent architecture.
+Q004792	M	What is the Plan-and-Execute agent pattern?
+Q004797	E	What is the difference between single-agent and multi-agent systems?
+Q004798	M	When do multi-agent systems break down, and when is a single agent the better choice?
+Q004801	E	What are AI SubAgents?
+Q004802	E	What are the different types of agent memory (short-term, long-term, episodic)?
+Q004803	M	How do you handle agent failures and implement error recovery?
+Q004804	M	What is an agent loop, and how does it decide when to stop?
+Q004805	M	How does context compaction work?
+Q004806	M	How do AI agents communicate?
+Q004807	E	What are Agent Skills?
+Q004808	M	How do you evaluate and test AI agents?
+Q004811	E	What is the difference between reactive and proactive agents?
+Q004813	M	What is the human-in-the-loop pattern for agents, and when is it needed?
+Q004815	M	What is agent reflection, and how does it improve agent performance?
+Q004816	M	What is the difference between code-generating agents and tool-calling agents?
+Q004818	M	How do you implement state management in complex agent workflows?
+Q004819	M	How do you build a customer support agent with escalation logic?
+Q004820	M	What is agent orchestration, and how do you implement it?
+Q004823	M	Your AI agent is stuck in an infinite loop. How do you detect and break the cycle?
+Q004824	M	Your AI agent gets conflicting answers from different tools. How does it reconcile them?
+Q004830	M	Your AI agent takes too long to complete a task. How do you speed it up?
+Q004831	H	Your long-running agent drifts after hours and confidently works on the wrong thing. How do you diagnose and fix it?
+Q004835	E	How does LangChain work?
+Q004836	M	How does LangGraph work?
+Q005010	M	How do you evaluate the quality of AI agents?
+Q005011	H	How would you evaluate an autonomous coding agent? Why can SWE-bench pass rates be misleading?
+Q005192	H	You need to choose between a complex agentic system that scores 15% better on benchmarks, or a simpler RAG pipeline that is easier to maintain. How do you decide?
+Q005944	M	What are the core differences between LangGraph and LangChain, and when should you use each?
+Q005975	M	What is the difference between Plan-and-Execute and ReAct?
+Q005977	M	How do you evaluate an agent's capabilities, and what are the mainstream benchmarks?
+Q005978	M	What is the Reflexion self-reflection mechanism, and how does it differ from ReAct?
+Q005979	M	How does AutoGPT work, and how does it differ from an ordinary agent?
+Q005982	M	What does it mean that Agent = Model + Harness + Tools + Environment?
+Q005985	M	What is Voyager, and why is embodied lifelong learning an important direction for agents?
+Q005986	E	What are the differences and relationships between workflows, agents, and tools?
+Q005992	M	How do you design human-in-the-loop interaction for an AI agent?
+Q005993	M	What stages has agent engineering evolved through, and how do you choose between workflows and autonomous agents?
+Q006023	H	What is agent harness engineering, and how do you put LLM-as-a-Judge, trajectory analysis, and chaos engineering into practice for evaluating and testing agents?
+Q006058	M	How do LangGraph and Semantic Kernel compare as agent frameworks, and how do you choose between them?
+Q006060	H	How do you do production monitoring for LangGraph, and how are time-travel debugging, checkpointing, and human-in-the-loop interrupts implemented? How does LangSmith complement them?
+Q006061	M	How do you choose among production agent frameworks such as LangGraph, Claude Agent SDK, CrewAI, AutoGen/AG2, Semantic Kernel, LlamaIndex Agents, and Pydantic AI?
+Q006064	M	How do you design short-term versus long-term memory for an agent, and what technology choices exist for each?
+Q006068	M	How does AutoGen implement conversational multi-agent collaboration?
+Q006069	M	How does CrewAI implement role-driven agent collaboration?
+Q006070	H	How do you design a policy engine, permissions, and auditing for a multi-agent system?
+Q006071	M	What are the responsibility boundaries between RAG, agents, MCP, and A2A?
+Q006072	M	How do you use the A2A protocol for agent discovery, task delegation, and status queries?
+Q006073	H	How would you design a hybrid A2A + MCP architecture?
+Q006095	M	What are ACP (Agent Commerce Protocol) and UCP (Universal Commerce Protocol), and how do MCP, A2A, ACP, and UCP together form a complete agent technology stack?
+Q006103	H	When one agent connects to multiple MCP servers at once, how do you orchestrate their collaboration and resolve conflicts?
+Q006105	E	What is an agentic workflow, and how does it differ from a traditional AI application?
+Q006117	E	What is the "agent mode" of AI coding tools, and how does it differ from ordinary code completion?
+Q006152	M	How would you implement a code review agent using ReAct?
+Q006153	M	What is the difference between A2A and ordinary agent invocation?
+Q006155	M	How do agents communicate in a multi-agent system, and how do you handle conflicts?
+Q006158	H	How do you design LangGraph State, checkpoints, and thread_id, and how do you resume accurately after an interruption?
+Q006159	M	How do you write a reducer when two parallel nodes update 'messages' at the same time in LangGraph?
+Q006160	H	Why can't an agent harness replay simply re-call real APIs, and how does replay differ from checkpoint recovery?
+Q006195	H	How do you build the training data, action space, and evaluation loop for a GUI agent, and when must it request human takeover?
+Q006201	E	What is the core difference between a copilot and an agent, and why are planning and reflection needed?
+Q006202	M	What is Plan-and-Solve, and how does it differ from ReAct?
+Q006203	H	What is LATS (Language Agent Tree Search), and how does it differ from Reflexion?
+Q006204	M	How do AutoGen and CrewAI differ, and what is the "commander pattern" for multi-agent collaboration?
+Q006205	M	What is an agent memory architecture, and what scenarios suit flat vector, episodic, graph, and hybrid architectures? What are Mem0, Zep, Letta, and LOCOMO?
+Q006208	M	What production problems do node caching and deferred nodes in LangGraph solve?
+Q006210	H	Checkpointing is not durable execution: what are the three core things missing for durable agent execution?
+Q006211	M	How do you combine retry, timeout, and error handlers for fault tolerance in LangGraph?
+Q006220	M	How do you use LangGraph's native features to debug an agent, and what role does a checkpoint play in practical debugging?
+Q006234	H	How do the four layers of an AI application architecture (agent, tool layer, data layer, and harness) work together, and how do you choose among the options?
+Q006814	M	When is an agentic approach the wrong solution?
+Q006845	M	Your agent retrieves a 50k-token document early in a task, and three steps later it seems to forget its original goal. What is the most likely cause and fix?
+Q006846	M	You add a "think" tool to a policy-heavy refund agent but see almost no improvement. What is the most likely reason?
+Q006847	M	You are building a coding agent where several agents would edit the same repository in parallel. Should it be single-agent or multi-agent?
+Q006848	M	When does adding Reflexion-style self-critique actually improve an agent?
+Q006850	M	A PM asks you to spec an agent that takes an incoming support email and either answers it, issues a refund, or escalates to a human. What is the right first architecture?
+Q006851	H	Each step of your ReAct agent is about 95% reliable in isolation, yet end-to-end success on 15-step tasks is poor. What is going on, and what is the structural fix?
+Q006852	M	Your agent occasionally runs up a large bill by re-issuing slightly reworded versions of the same failing search for many steps, even though the harness has a max-steps cap. What is missing?
+Q006858	H	Your agent needs to work on a task that spans far more than one context window. What is the right architecture?
+Q006860	M	Your long-running agent occasionally crashes mid-task and loses hours of work, and restarting begins from scratch. What is the best fix?
+Q006862a	E	What is the difference between an AI agent and a simple LLM call?
+Q006862b	M	What makes a system truly agentic, and what doesn't?
+Q006863a	M	When would you choose a multi-agent system over a single agent?
+Q006863b	M	How do you debug failures across interacting agents?
+Q006869	M	Orchestration vs choreography for multi-agent systems: what are the tradeoffs?
+Q006881	M	Your agent's final answers look fine, but its cost is creeping up and some runs take many extra tool calls. Which eval surfaces this?
+Q006882	M	You are reporting reliability for a customer-facing support agent. Which metric should the SLA use?
+Q006883	M	You inherit an agent with no evals and a vague "make it better" mandate. What is the right first move?
+Q006892	H	How do you build an evaluation harness for an agent? Design an eval suite for a coding agent covering three metric categories.
+Q006893	M	Outcome vs trajectory evaluation of agents: when does each fail?
+Q007204	E	Explain the basic concepts of an agent and the types of strategies available to implement agents.
+Q007205	E	Why do we need agents, and what are some common strategies to implement them?
+Q007206	M	Explain ReAct prompting and its advantages.
+Q007207	M	Explain the Plan-and-Execute prompting strategy.
+Q010824	E	What is the difference between an agent and a workflow?
+Q010825	M	Explain the ReAct pattern.
+Q010828	H	How would you design a multi-agent system?
+Q010831	H	How do you handle long-running agent tasks?
+Q010832	M	What is flow engineering?
+Q010882	H	When would you use Multi-Agent Debate vs Mixture of Agents?
+Q010883	M	When should you use LangChain vs build from scratch?
+Q010900	H	Your agent takes 47 LLM calls to complete a task that should take 5. How do you debug this?
+Q010962	H	When does your agent actually need a memory layer beyond a long context window?
+Q010970	M	When do you use A2A vs MCP, and how do they compose?
+Q010982	H	An experiment ran an LLM as an autonomous shop manager for an extended period. What does it teach about the limits of LLM agency, and how does it shape your production agent design?
+Q011018	M	How do you keep an internal registry of agent plugins from becoming a bottleneck?
+Q011025	M	What stays in-house no matter which agent harness you rent?
+Q011162	E	What is the difference between an agent and a chatbot?
+Q011164	M	What is the best agent framework?
+Q011180	E	What is the difference between short-term and long-term memory in agents?
+Q011181	M	How does a knowledge graph help an AI agent?
+Q011340	H	An agent works fine for short tasks but degrades on long-running ones. How do you fix it?
+Q011440	M	Why is a reasoning model (like Claude Opus 5.5 or GPT-6 Astra) better for agentic work than a standard LLM?
+Q011441	H	How do you prevent "agentic drift" in long-running tasks?
+Q011442	M	When would you use a reasoning loop (ReAct) vs. a Plan-and-Solve architecture?
+Q011452	M	How do MCP and A2A work together in a production multi-agent system?
+Q011457	M	What are the main failure modes of a "supervisor" multi-agent architecture?
+Q011458	M	How do you choose between a "sequence of chains" and a "multi-agent graph"?
+Q011459	M	When would you use A2A for multi-agent orchestration versus keeping all agents in a single framework?
+Q011460	M	When do you define a multi-agent workflow in code, and when do you let a coordinator model delegate?
+Q011466	H	How do you handle "conflicting memories" in an agentic system?
+Q011467	M	Why is the context window alone insufficient for a production agent architecture?
+Q011468	H	How would you design procedural memory for a production AI agent?
+Q011469	H	When does episodic memory become a liability rather than an asset?
+Q011472	H	Walk me through the consolidation policy you would design for the episodic-to-semantic memory transition. When does an episode become a fact?
+Q011473	H	A benchmark shows your agent does better with memory turned off. What do you do?
+Q011474	H	Your agent's memory store has 50M memories across 10K tenants. How do you guarantee cross-tenant isolation, and what is your blast radius if isolation fails?
+Q011475	H	HaluMem shows memory hallucinations accumulate at write time, then propagate. How would you instrument production memory to catch this?
+Q011476	H	TTT-E2E compresses context into weights via test-time training. Where does this fit in an agent memory hierarchy, and what new failure mode does it introduce?
+Q011477	M	How do you prevent an agent from infinite recursion during task decomposition?
+Q011478	H	Why is plan revision often more expensive than plan generation?
+Q011480	M	Why is traditional exception handling (try/catch) insufficient for agentic systems?
+Q011481	H	How do you handle "silent failures" (where the tool returns 200 OK but the data is wrong)?
+Q011484	H	How do you design a human-in-the-loop system that doesn't fatigue the human operator?
+Q011485	M	What is the "over-reliance" risk in human-in-the-loop systems, and how do you mitigate it?
+Q011486	H	You gate agent actions with a classifier that can run, deny, or defer to a human. How do you set and monitor the defer threshold?
+Q011493	H	How do you evaluate an agent when the environment is non-deterministic (e.g., the web)?
+Q011494	M	Why is "meandering" (taking too many steps) a critical failure in agent design?
+Q011500	H	Why are naive retries and checkpoints insufficient for a production agent with side effects?
+Q011501	H	When is durable execution overkill for an agent, and what would you use instead?
+Q011502	H	Would you build your agent on Temporal or rent a managed agent runtime like the OpenAI Agents API or Claude Managed Agents?
+Q011505	M	Define the agent loop, and explain when a loop is actively harmful.
+Q011506	H	Why must the verifier be separate from the producer in an agent loop, and where should budget enforcement live?
+Q011507	H	What is loopmaxxing, and how do you convert a non-converging agent loop into a useful one?
+Q011508	M	Should the verifier tell the agent why it rejected the work?
+Q011509	H	Explain context rot and your full mitigation stack for a multi-hour agent loop.
+Q011510	M	Why not just use a 1M-token context window for all agent memory?
+Q011512	M	When would you store agent memory as files instead of in a vector database?
+Q011515	M	How do you choose between a vector DB and a knowledge graph for long-term memory?
+Q011516	M	What is "catastrophic forgetting" in the context of learned agentic memory?
+Q011519	M	Why use a dedicated service like Mem0 instead of a custom Python script that writes to Postgres?
+Q011520	M	How do you handle "memory fatigue" where an agent brings up too many irrelevant past details?
+Q011524	M	Why use a graph-based state machine (LangGraph) instead of a simple while loop for agents?
+Q011525	M	How do you prevent "state bloat" in long-running agent sessions?
+Q011526	H	Your team edits a bad turn in LangGraph and replays from that checkpoint. After switching to Claude Opus 5.5, replays start failing with 400 errors. What happened?
+Q011528	M	What is the main benefit of LCEL over traditional Python chains (sequences of function calls)?
+Q011529	M	LangChain is often criticized for being "too bloated." How do you architect a lean production system with it?
+Q011532	M	Why use LangGraph instead of a managed agent runtime such as the OpenAI Agents API or Claude Managed Agents?
+Q011533	M	How do you handle "state overload" in a graph with 20+ nodes?
+Q011539	M	LangChain and LlamaIndex now both have graph/workflow features. How do you choose between them?
+Q011544	M	Why would a senior engineer choose Semantic Kernel over LangChain?
+Q011546	M	When would you use CrewAI instead of LangGraph?
+Q011547	M	Microsoft moved AutoGen to maintenance mode in favor of the Agent Framework. How does this affect existing AutoGen deployments?
+Q011548	M	How do you prevent "infinite loops" where agents keep talking to each other without solving the task?
+Q011549	M	When would you hand the agent loop to a managed runtime such as the OpenAI Agents API or Claude Managed Agents?
+Q011576	M	When would you choose Pydantic AI over LangGraph for a Python service?
+Q011579	M	What does a typed agent framework actually buy you in production?
+Q011584	M	Given how fast agent frameworks churn, how do you decide whether to use one at all?
+Q011636	M	GitHub now lets an AI reviewer's approval count toward required reviews. Would you turn it on?
+Q011674	M	How do you avoid agent runaway costs?
+Q011694	M	What if the agent gets stuck in an infinite retry loop?
+Q011741	H	Design an always-on personal agent that keeps working while the user is away. What does it need beyond a chat agent?
+Q011754	M	How do you manage agent memory without a vector database service?
+Q011755	M	How do you handle session continuity across multiple messaging channels in a personal AI agent?
+Q011756	M	How would you add a vector database for an agent's long-term memory?
+Q011765	M	Design a testing strategy for a tool-use agent that handles customer support.
+Q010760	E	What are AI agents and how are they different from chatbots?
+Q011826	M	Explain the ReAct pattern and what it solves over chain-of-thought alone.
+Q011830	M	How does multi-agent orchestration work, and when does it break down?
+Q011831	H	Design memory for a long-running agent: what do you store, where, and how do you retrieve it?
+Q011832	M	How does an agent decide when to call a tool versus answer from its own knowledge?
+Q011833	M	What makes an agent loop terminate correctly? How do you bound cost and steps?
+Q011834	H	How do you make an agent's actions reversible, or at least auditable, in a production system?
+Q011835	H	Design human-in-the-loop approval for an agent that takes consequential actions.
+Q011836	H	Your agent drifts after a long run and confidently works on the wrong thing. Diagnose it.
+Q011856	M	How would you evaluate an agent, as opposed to a single model response?
+Q011979	H	Design an agent that automates an enterprise workflow, say, drafting RFP responses from internal documents and a CRM. What does "enterprise-grade" add?
+Q011990	H	How would you evaluate whether an agentic model is actually good, beyond a single benchmark number?
+Q012084	H	How would you benchmark an LLM agent's tool use, say, for enterprise workflows composing 10+ APIs?
+Q012098	H	Design an agentic AI system that can autonomously adapt to new tasks.
+Q012117	H	Design an LLM agent that files and updates work orders in a customer's ERP, performing real writes to a production system. How do you make that safe?
+Q012372	M	What are the advantages of agentic AI compared to a RAG chatbot, and how would you convince the business of them?
+Q012524	M	How do you build LLM-based agents?
+Q012528	M	How can task decomposition be approached in LLM agents?
+Q012531	E	How does LangChain call LLMs to generate responses?
+Q000638	E	What is an AI agent?
+Q003523	M	What is the difference between an agent and a workflow? How do observation, planning, action, and reflection work together in an agent loop?
+Q003527	M	What is the relationship between AI workflows and agents?
+Q003528	E	What is short-term (working) memory in an AI agent?
+Q003529	M	How can you use Markdown to store an agent's memory?
+Q003530	M	Why can Markdown be used as agent memory?
+Q003538	M	What is the difference between a multi-agent system and a multi-stage prompt chain?
+Q003544	M	What is the relationship between workflows, graphs, and loops?
+Q003546	M	How do you choose the update strategy for state in a graph-based agent workflow?
+Q003547	E	What is an AI agent, and how does it differ from an ordinary chatbot?
+Q003548	E	How do you interpret the formula Agent = LLM + Planning + Memory + Tools?
+Q003550	M	When should you use a pure agent, and when a workflow or an agentic workflow?
+Q003551	M	Which team-shared agent memories suit Git and code review, and which are better kept in a database?
+Q003560	H	How does skill routing work, and why is it similar to RAG but with a different goal?
+Q003561	M	What is harness engineering, and how does it relate to prompt engineering and context engineering?
+Q003562	M	Why is it said that Agent = Model + Harness?
+Q003564	M	What is the difference between a graph loop and an agent loop?
+Q003565	M	What triggers the next round of an outer loop: a CI event, a scheduled task, a goal check, or manual approval?
+Q003566	H	What is the difference between an outer loop and the agent loop inside a single task, and how are state and verification results handed over between them?
+Q003567	M	How do you distinguish RAG, memory, context, and state in an agent system?
+Q003569	M	How do you set exit boundaries for an agent loop?
+Q003572	M	Why use an agent rather than a RAG Q&A system or a workflow?
+Q003573	M	What are the boundaries between the model, tools, memory, RAG, and state in an agent system?
+Q003575	M	What information do RAG, memory, and tools each manage, and why should they be governed separately?
+Q003592	M	Why is evaluating agents more complex than evaluating ordinary Q&A and RAG?
+Q003609	M	In agent evaluation, what are a task, a trial, a grader, and a transcript?
+Q012491	M	How do you design your own AI agent?
+Q012492	M	How does the Agent-to-Agent (A2A) protocol work?
+Q012498	H	How do you build AI agents that resume instead of starting over when they fail?
+Q012501	M	How does an AI research agent work?
+Q012502	M	How does a real-time AI agent work?
+Q007653	M	In an agent that reads large files, what specific mechanisms keep the context window clean?
+Q007671	M	Your chatbot starts losing the thread after about ten turns. What are your options for managing conversation history?
+Q007673	M	What breaks when you summarise a conversation that contains tool calls and their results?
+Q007693	M	Describe the ReAct pattern. How does it relate to modern native tool calling?
+Q007694	M	How do you stop a ReAct-style agent that keeps retrying a failing tool?
+Q007695	M	Why does interleaving reasoning and acting beat plan-everything-then-execute, and when does plan-first win?
+Q007735	M	How would you decide between compressing conversation history and offloading it to a file?
+Q007744	M	How is a system prompt for a long-running agent different from one for a single-shot feature?
+Q007745	M	How would you write a stop condition for an open-ended research task for an agent?
+Q007746	M	What would you do if an agent kept asking the human too often after you added escalation rules?
+Q007751	M	How would you decide whether a rule belongs in the repository instruction file, a linter config, or a skill loaded on demand?
+Q007752	M	How would you detect that a repository instruction file for a coding agent has gone stale?
+Q007758	H	What is context rot, and what compaction strategies do you use in long-running agents?
+Q007759	H	How do you detect context rot with metrics rather than vibes?
+Q007760	H	What must a compaction summary preserve for a coding agent specifically?
+Q007761	H	Why can keeping failed attempts in context be valuable, and how do you keep them without amplifying self-conditioning?
+Q007782	H	Design a token budget for an agent with a 200k context window. How do you allocate it, and how do you enforce it?
+Q007783	H	How would you find the quality-versus-context-length curve for your agent?
+Q007785	H	Design memory that persists across sessions for an assistant. How is it different from managing context within a session?
+Q007787	H	What is your policy when a retrieved memory contradicts what the user just said in this turn?
+Q007797	M	When should you split an agent into sub-agents, and what do you pass between them?
+Q007798	H	How would you detect that two sub-agents made conflicting implicit decisions?
+Q007799	M	What would make you collapse a multi-agent system back into a single loop?
+Q007804	H	You are running a reasoning model in a multi-turn tool-use loop. What do you do with its reasoning between calls, and what breaks if you drop it?
+Q007805	H	Your context compaction job runs on a timer and sometimes fires mid tool-use turn. What breaks, and how do you fix it?
+Q007806	H	How do zero-data-retention requirements change how you carry reasoning between calls?
+Q008177	M	A vendor shows you 90% agent success on their own environment suite. What do you ask before buying?
+Q008179	H	At what point is a live staging environment cheaper than maintaining a mock environment for agent training?
+Q008192	E	What is the difference between a workflow and an agent?
+Q008193	M	Where on the workflow-to-agent spectrum would you place a RAG chatbot that can optionally issue a search query?
+Q008194	M	Can a system be a workflow at the top level with agents inside it?
+Q008195	M	When should you NOT build an agent?
+Q008196	M	A PM wants an "agent" for invoice processing with fixed extraction fields. What do you build?
+Q008197	M	How would you retrofit an over-agentic system into a workflow?
+Q008198	M	Walk me through the core agent loop. What are the components and stop conditions?
+Q008199	M	Where would you put permission checks in the agent loop?
+Q008200	H	How would you make an agent loop resumable after a process crash?
+Q008206	M	How do you test an agent without real side effects?
+Q008216	M	What is ReAct, and how relevant is it in 2026?
+Q008217	M	If reasoning models think internally anyway, is an explicit scratchpad/think tool still useful in an agent?
+Q008218	H	How does ReAct's myopia show up in a coding agent, concretely?
+Q008228	M	When should you use a reasoning model inside an agent loop, and when is it a waste of money?
+Q008229	H	How would you measure whether a reasoning model is actually earning its cost at a given step of an agent?
+Q008246	M	Your agent's context window fills up mid-task. What are your options?
+Q008247	H	What specifically goes into a good compaction summary for a coding agent?
+Q008248	H	How do you evaluate that context compaction isn't losing critical state?
+Q008249	M	Distinguish working memory from persistent memory in agent design.
+Q008250	M	Would you implement agent memory as vector search or as files the agent greps, and why?
+Q008251	M	How do you prevent one bad "memory" from degrading every future session?
+Q008252	M	Compare plan-then-execute with reactive (ReAct-style) execution. When does each win?
+Q008253	M	How would you represent an agent's plan, as prose in context or a structured todo tool, and why?
+Q008254	H	What would your replanning trigger design be for a plan-then-execute agent?
+Q008255	M	When do reflection / self-critique loops actually help, and what do they cost?
+Q008256	M	Should the critic in a reflection loop be a different model than the generator?
+Q008257	M	Where would you insert reflection in a coding agent's loop: every step, or at commit boundaries?
+Q008258	M	Explain the orchestrator-worker / subagent pattern. What is the real benefit?
+Q008259	M	What should a subagent's result schema contain for a research task?
+Q008260	M	When would you give a worker agent write access versus keeping all writes in the orchestrator?
+Q008261	M	When does multi-agent beat single-agent, and when does it make things worse?
+Q008262	H	How would you parallelize a large refactor safely, if not with concurrent write-agents?
+Q008263	M	What coordination failures would you expect to see in multi-agent traces?
+Q008264	M	What are handoffs in multi-agent systems, and how do they differ from orchestration?
+Q008265	M	How do you evaluate routing quality in a handoff system?
+Q008266	H	What happens to in-flight tool approvals or permissions across an agent handoff?
+Q008274	M	How do you evaluate an agent? Compare trajectory evals and final-outcome evals.
+Q008275	H	How do you build the resettable environment for evaluating an agent that touches three external SaaS APIs?
+Q008276	M	What rubric items would you give an LLM judge for a support agent?
+Q008277	M	Explain pass@k vs pass^k. Why does the distinction matter for production agents?
+Q008278	H	Your agent has pass@1 of 80% and pass^4 of 40%. What does that tell you and what do you try first?
+Q008279	H	When is best-of-n with a verifier a legitimate way to convert pass@k into pass^1?
+Q008281	H	How do you keep human approval gates from destroying UX on a 50-step agent task?
+Q008282	M	Who approves when an agent runs unattended overnight?
+Q008286	M	Your agent needs to remember things across sessions. Would you use a vector store or rolling summarisation? Defend the choice.
+Q008287	M	How do you handle an agent memory that becomes false, like a user changing their address?
+Q008288	M	How would you evaluate whether your agent's memory layer is helping at all?
+Q008295	H	You are splitting a research agent into an orchestrator and subagents. Design the interface: what exactly crosses the boundary in each direction?
+Q008296	H	A subagent returns a summary containing a subtle hallucination and the orchestrator cannot tell. How do you defend against this?
+Q008297	M	When would you let a subagent spawn its own subagents?
+Q008298	H	Design the human approval flow for an agent that files expense reports. Where do the gates go, and how do you stop people from clicking through them?
+Q008299	M	In an agent approval flow, the approver is on holiday and the report is time-sensitive. What does your system do?
+Q008300	H	How do you audit that a human approval of an agent action was meaningful rather than reflexive?
+Q008307	M	What are Agent Skills, and when do you package knowledge as a skill rather than a tool, an MCP server, or retrieval?
+Q008308	M	A skill's instructions conflict with your system prompt. Which should win, and how do you make that predictable?
+Q008309	M	How would you evaluate whether an Agent Skill improves outcomes rather than just being loaded?
+Q008313	H	The user hits Stop while your agent is in the middle of a tool call. What should happen, and how do you design streaming and cancellation for an agent UI?
+Q008314	H	The user hits Stop on an agent, then types "actually, carry on". What does the agent do with the half-finished work?
+Q008316	H	Walk me through the compounding-error math for agents, and what it implies for design.
+Q008317	H	How does verification-before-done interact with the compounding-error math for agents?
+Q008318	H	Given a fixed budget, when do you spend it on a better model versus recovery machinery for an agent?
+Q008330	H	How do you build agents that survive long-horizon tasks, with hours or days of execution?
+Q008331	H	For a long-running agent, what exactly goes into the checkpoint, the full message array or summarised state, and what are the tradeoffs on resume?
+Q008332	H	How do you handle a tool version change in the middle of a long-running agent run?
+Q008339	H	Your agent gets stuck in loops or gives up too early. Diagnose and fix both.
+Q008340	H	How do you distinguish a productive retry from a loop programmatically?
+Q008341	M	What is the right behaviour when the agent correctly determines a task is impossible?
+Q008348	M	Should you build your agent on a framework or roll the loop yourself? Defend a position.
+Q008349	M	Which single piece of agent framework infrastructure would you pay for first, and why?
+Q008350	M	How would you structure agent code so you can swap frameworks later?
+Q008363	H	Your agent handles multi-turn conversations where users change their minds, and static test cases can't cover that. Build me an evaluation environment.
+Q008364	H	Your agent overfits to the evaluation simulator's quirks and regresses in production. How do you detect that?
+Q008365	H	How many scenarios do you need before the pass^k number means anything?
+Q008369	H	MCP connects an agent to tools. What does A2A solve that MCP does not, and how do the two compose?
+Q008370	H	A peer agent's Agent Card advertises a skill it turns out to do badly. How would you find that out, and what do you do about it?
+Q008371	H	Would you ever put A2A between two agents inside your own company, and what would justify the overhead?
+Q008372	H	You are exposing one of your agents to another company's agent. What crosses the boundary, and what do you refuse to expose?
+Q008373	H	A peer agent returns an artifact that is subtly wrong and your agent acts on it. Who is accountable, and what would have caught it?
+Q008374	H	How would you rate-limit a peer agent whose legitimate traffic is genuinely spiky?
+Q008376	H	What does a human approval prompt actually look like when the unit of action is a script?
+Q008377	H	Your agent solves the same class of task 500 times a week and never gets better at it. How would you make it learn, without fine-tuning?
+Q008378	H	How would you stop two learned procedures in an agent's memory from contradicting each other?
+Q008379	H	What would make you delete a learned procedure that is still being retrieved and still succeeding?
+Q008385	H	How does the agent decide between waiting on a long-running task and continuing with other work?
+Q008497	M	How do you evaluate agents? Compare trajectory-based and outcome-based approaches.
+Q008498	H	How do you eval an agent whose tools hit non-resettable third-party APIs?
+Q008527	H	How would you build a deterministic replay harness for agent evals, and what does it genuinely buy you?
+Q008528	M	In a replay harness for agent evals, how do you detect that your recordings have gone stale?
+Q008529	H	Where does a mocked sandbox for agent evals stop being worth its maintenance cost?
+Q008542	H	Your agent now runs tasks that take hours and hundreds of steps. How do you evaluate and observe it?
+Q008543	H	How do you write milestones for an agent task with many valid paths without punishing the unconventional ones?
+Q008544	M	Your agent's success rate at four-hour tasks doubled after a model upgrade, but cost per success tripled. Is that a win?
+Q008691	H	Why is input token growth in an agent loop roughly quadratic in steps, and what would you change to flatten it?
+Q008739	M	What is the difference between a kill switch and a circuit breaker for an agent, and why do you need both?
+Q008740	M	What would you alert on to catch a runaway agent before the circuit breaker trips?
+Q008741	H	How do you make sure an agent's kill switch actually works when you need it, given it is never exercised in normal operation?
+Q008747	H	Should an agent be allowed to write to its own long-term memory at all, and what changes if the memory is shared across a team?
+Q008797	H	How would you decide the auto-approve threshold for a refund agent?
+Q008798	H	What do you show a user who is approving something they cannot realistically evaluate, like a generated SQL migration?
+Q008862	H	Your agent buys things on behalf of users. Design the authorisation trail so a disputed transaction is resolvable.
+Q008863	H	A user's constraint said "under 200" and the purchasing agent found the item at 195 plus an 18 delivery fee. Whose reading binds, and where in your design is that decided?
+Q008864	H	What changes in an agent purchasing system when the counterparty is also an agent and no human is present on either side?
+Q009133	M	How do you decide which agent actions need human approval without making the agent useless?
+Q009202	H	Design an agent that operates a web browser to complete multi-step tasks. How do you make it reliable enough to ship?
+Q009203	M	Websites A/B-test and change layouts constantly. How does a browser-operating agent stay robust?
+Q009222	H	What matters more for an agentic coding tool: the model or the harness? Design the agent loop.
+Q009223	M	When would you add a second agent (subagents) versus giving one agent more turns?
+Q009224	M	How do you stop an agent from looping on a failing test forever?
+Q009236	H	Design a memory system for a long-running agent: sessions end, but the user expects it to remember decisions from weeks ago.
+Q009237	M	In an agent memory system, how does the user correct a wrong memory, and how do you propagate that correction?
+Q009238	M	In a multi-user shared agent with memory, how do you decide whose memories are whose?
+Q009294	M	A conversation runs past the context window. What do you keep, and how do you decide?
+Q009295	M	How do you handle a user deliberately contradicting a stored fact as part of the roleplay?
+Q009296	M	In a tiered conversation-memory design with four tiers, how do you split the context budget across tiers, and how would you tune it empirically?
+Q009317	H	You have eight hours to build a coding agent from scratch. Describe what you build and, more importantly, what you cut.
+Q009318	M	If you had more time to extend a from-scratch coding agent, which single tool would you add first, and why that one?
+Q009319	M	How would you stop a coding agent from looping on the same failing edit three times?
+Q009320	H	A long-running agent drifts after two hours. How would you evaluate a context-compaction model, given that its errors only show up hours later?
+Q009321	H	What would you checkpoint so that a resumed agent session is genuinely equivalent to an uninterrupted one?
+Q009322	M	How would you decide, at runtime, whether a subtask is safe to parallelise in a multi-agent system?
+Q009323	M	In a multi-agent setup, what signal tells the primary model it should escalate rather than guess?
+Q009327	H	How would you evaluate an autonomous software engineering agent? Explain why SWE-bench pass rates mislead.
+Q009328	H	How would you detect that your agent is gaming the evaluator rather than solving the task?
+Q009329	M	What single metric would you show a customer instead of a benchmark score when evaluating an autonomous software engineering agent?
+Q009330	H	Your coding agent spends over half its first turn just finding the relevant code. How do you fix that?
+Q009336	H	An asynchronous cloud coding agent and an in-editor coding agent are different products. What actually changes between them, technically?
+Q009337	M	Between an asynchronous cloud coding agent and an in-editor coding agent, which would you ship a new tool to first, and why?
+Q009338	M	How would you decide whether a task should be handed off from the IDE to an asynchronous agent session?
+Q009368	H	How do you evaluate the approval-gate UX of an enterprise agent? What metric says the human is a real check, not a rubber stamp?
+Q009399	H	Your agent model outputs an edited version of a 500-line file. Applying it verbatim is slow and error-prone. How do you make "apply" fast and reliable?
+Q009401	H	When does the split of planning with a frontier model and applying edits with a small model break down?
+Q009413	H	Design the harness for an agent that makes multi-file changes from a natural-language task. How do you keep it from wrecking a codebase?
+Q009414	M	How do you decide when a coding agent should ask a clarifying question versus proceed?
+Q009584	M	How do you evaluate multi-step agent runs, not just single answers?
+Q009588	H	Design an agent that takes actions in enterprise tools (file a Jira ticket, draft an email) on a user's behalf. How do you handle permissions and evaluate it?
+Q009599	H	Design agent orchestration across dozens of connected SaaS systems. Where is authorization enforced, and why can it not live in the model?
+Q009601	M	How would you tell tool-selection failures apart from planning failures in production agent traces?
+Q009682	H	How would you make an agent's document edits idempotent when the agent is re-run on a document it already edited?
+Q009683	M	What is your rollback story when a user rejects half of an agent's redlines and asks for another pass?
+Q009799	H	Design an agent that can take actions in a spreadsheet (for example, "insert a pivot table of Q3 sales by region"), covering orchestration, tools, and failure handling.
+Q009800	M	When do you split an agent into multiple specialised agents versus one agent with more tools?
+Q009801	M	How do you regression-test an agent when the underlying model version changes?
+Q009846	M	How do you regression-test an agent before a model upgrade?
+Q009941	H	You're building a production agent that calls tools (function calling). What makes the loop reliable enough to ship?
+Q009943	M	When would you split one agent into multiple agents?
+Q009967	H	Design an LLM agent that files and updates work orders in a customer's ERP, with real writes to a production system. How do you make that safe?
+Q009975	H	How do you evaluate an LLM workflow before and after giving it access to production operations?
+Q010027	H	For a long-running research agent, how do you show progress and let the user steer mid-task without restarting?
+Q010113	H	How would you benchmark an LLM agent's tool use, say for enterprise workflows composing 10+ APIs?
+Q010114	H	An agent scores 90% pass@1 on your benchmark and fails constantly in the customer's staging environment. What did your benchmark miss?
+Q010115	H	How do you inject and score mid-episode failures when benchmarking an agent's tool use?
+Q010128	M	How does a customer-facing agent handle the customer changing their goal mid-flow?
+Q010133	H	The space of possible conversations is effectively infinite. How do you evaluate a conversational agent before launch?
+Q010134	H	Where does the simulated-user approach for evaluating conversational agents systematically diverge from real users?
+Q010136	H	Your agent passes 92% of eval tasks. Why might that number be misleading, and what would you measure instead?
+Q010141	H	You are handed a small unfamiliar agent codebase. Users report it sometimes confirms an order that was never actually placed. How do you debug it?
+Q010142	M	An agent's order API returns 200 but the order silently fails downstream. What do you do?
+Q010143	H	How would you write a regression test for a non-deterministic reproduction of an agent bug?
+Q010144	H	Design the human-handoff path for a customer-service agent. When should it escalate, and what does a good handoff look like?
+Q010145	M	How do you detect an "unproductive loop" in an agent programmatically?
+Q010146	M	Should a customer-service agent stay in the loop after handoff, for example by drafting replies for the human?
+Q010162	H	An agent builds and edits customer agents from plain-English instructions, SOPs and call transcripts. How do you stop it shipping a broken or unsafe agent?
+Q010285	M	For a GUI-operating agent, why is verifying state after each action more important than a perfect plan up front?
+Q010299	M	In a cloud-based phone-automation agent product, where do you draw the line for actions that require user confirmation?
+Q010300	H	How do you keep a GUI agent working when a target app redesigns its UI?
+Q010312	H	How would you checkpoint a 20-step agent job so a worker crash does not restart it from step 1?
+Q010326	H	How do you resume a 12-step agent run after a deploy restarts every worker?
+Q010427	H	Leadership wants coding agents running unattended in CI: fixing flaky tests, bumping dependencies, drafting PRs from tickets. You own the platform. What guardrails do you build?
+Q010429	M	How do you measure whether agent-authored PRs are worth the review time they consume?
+Q010443	H	A customer wants your agent to take write actions in their ERP, such as creating purchase orders and updating records. How do you design and stage that safely?
+Q010444	H	A customer says approval queues defeat the purpose of an agent and wants full autonomy now. What data would change your position?
+Q010445	M	How do you test an agent's write path without touching the production ERP?
+Q010569	H	The user backgrounds the app while an agent is mid-plan with two actions already executed. Walk me through how you resume. Which tools would you let auto-execute, and why?
+Q010602	M	When do you build an agent versus a fixed workflow when a PM wants "an agent"?
+Q010603	H	How do you evaluate an agent? What does a test case even look like?
+Q010604	M	What is your escalation design when an agent stalls mid-task?
+Q010648	H	How do you regression-test a fix to step 7 of a long multi-step agent run without paying for steps 1-6 on every run?
+Q010655	H	We want an AI agent to maintain our end-to-end test suite by generating tests from the running app and auto-healing the ones that break. What is your position, and what guardrails do you put on it?
+Q010656	H	An auto-healed test locator passes on both builds but now targets a different button with the same accessible name. How would you catch that?
+Q010657	M	What auto-heal rate would make you stop trusting a test, and what do you do with it?
+Q010675	H	Where does an agent permission model put the boundary between agent autonomy and approval fatigue for the human in the loop?
+Q010700	M	How do you stop an LLM PR-review agent's comments from becoming noise that developers learn to ignore?
+Q010701	M	Would you let an LLM security agent auto-fix low-severity findings, and with what controls?
+D00578	E	What is an AI agent and what are its core components?
+D00579	M	How do agents differ from workflows and from simple chatbots? Where does each belong?
+D00580	M	What are the four components of a trustworthy agent: model, harness, tools and environment?
+D00581	M	Why do people say the model sets the ceiling and the harness sets the floor?
+D00582	M	What are agency levels and how do you choose how much autonomy to grant?
+D00583	M	Why is a reasoning model better suited to agency than a standard LLM?
+D00584	M	How do you prevent agentic drift in long-running tasks?
+D00585	E	Explain the ReAct loop and its main failure modes.
+D00586	M	ReAct versus Plan-and-Solve versus ReWOO: when do you use each?
+D00587	M	How does inference-time scaling relate to agentic loops?
+D00588	M	What is Reflexion, and how does it differ from plain self-reflection?
+D00589	M	How do LATS and tree-search planning differ from Reflexion?
+D00590	M	What is a generator-evaluator architecture and why does reflection help?
+D00591	M	What is dynamic replanning and when should it be triggered?
+D00592	M	How do you prevent infinite recursion during task decomposition?
+D00593	M	Why is plan revision often more expensive than plan generation?
+D00594	M	Why should an agent clarify requirements before decomposing a task?
+D00595	M	How does CRITIC-style grounded verification differ from self-reflection?
+D00596	M	Why must the verifier be separate from the producer in an agent loop, and where should budget enforcement live?
+D00597	M	Should a verifier tell the agent why it rejected the work?
+D00598	M	When is an agent loop actively harmful, and how do you convert a non-converging loop into a useful one?
+D00599	M	An agent called a broken tool 400 times in five minutes. Diagnose it and design the fix.
+D00600	M	Your agent takes 47 LLM calls to finish a task that should take 5. How do you debug that?
+D00601	M	How do you stop an agent from entering a dead loop?
+D00602	M	Why is traditional try/catch exception handling insufficient for agentic systems?
+D00603	M	How do you catch silent failures where a tool returns success but the data is wrong?
+D00604	M	What are stateful rollbacks and checkpoints in an agent workflow?
+D00605	M	What are kill switches and containment time, and why must containment be out-of-band?
+D00606	M	Explain the agent memory hierarchy: working, episodic, semantic and procedural memory.
+D00607	M	Why is the context window alone insufficient for a staff-level agent architecture?
+D00608	M	Why not use a one-million-token context window for all agent memory?
+D00609	M	How would you design procedural memory for a production agent?
+D00610	M	When does episodic memory become a liability rather than an asset?
+D00611	M	How do you handle conflicting memories in an agentic system?
+D00612	M	How do you prevent memory poisoning when an agent can write to its own long-term store?
+D00613	M	Design a consolidation policy for moving episodic memories into semantic memory.
+D00614	M	A benchmark shows your agent performs better with memory turned off. What do you do?
+D00615	H	Your memory store holds fifty million memories across ten thousand tenants. How do you guarantee cross-tenant isolation?
+D00616	M	How would you instrument production to catch hallucinated memory writes before they propagate?
+D00617	M	How do you choose between a vector database and a knowledge graph for long-term agent memory?
+D00618	M	When would you store agent memory as files rather than in a vector database?
+D00619	M	How do you avoid memory fatigue where an agent surfaces too many irrelevant past details?
+D00620	M	Why use a dedicated memory layer like Mem0 instead of a custom script writing to Postgres?
+D00621	M	How do memory pruning, decay and privacy rules work in long-term memory design?
+D00622	M	How do you handle privacy leakage in a global semantic memory tier?
+D00623	M	What is the difference between the model's context window and the application's context window?
+D00624	M	Compare sliding windows and summarization for short-term context, and design a thousand-turn conversation strategy.
+D00625	M	What is a semantic cache versus a provider prompt cache, and should you use both?
+D00626	M	What is semantic drift in caching and how do you prevent it?
+D00627	M	Why can a semantic cache cost more than a raw LLM call at low volume?
+D00628	M	Design a semantic cache that works in production, including thresholds, TTL and invalidation.
+D00629	M	Why use a graph-based state machine like LangGraph instead of a simple while loop for agents?
+D00630	M	How do you prevent state bloat in long-running agent sessions?
+D00631	M	What are checkpointing, time-travel and fork/join in agent state management?
+D00632	M	Checkpointing is not durable execution. What do production agents still lack after checkpointing?
+D00633	M	Why are naive retries and checkpoints insufficient for an agent with side effects?
+D00634	M	When is durable execution overkill, and what would you use instead?
+D00635	M	Would you build an agent on Temporal or rent a managed agent runtime?
+D00636	M	How do you design a multi-agent system, and when is multi-agent actually warranted?
+D00637	M	What are the failure modes of a supervisor multi-agent architecture?
+D00638	M	How do you choose between a sequence of chains and a multi-agent graph?
+D00639	M	Compare commander, peer-to-peer and hybrid multi-agent collaboration modes.
+D00640	M	Why can a critic or verifier agent improve quality but also cause problems?
+D00641	M	When would you use multi-agent debate versus a mixture of agents?
+D00642	M	How do you decide whether a published multi-agent research result is worth building?
+D00643	M	When do you define a multi-agent workflow in code versus letting a coordinator model delegate?
+D00644	M	How do you prevent infinite loops where agents keep talking to each other without solving the task?
+D00645	M	What are common multi-agent anti-patterns in production, and how would you split a customer-ticket workflow?
+D00646	M	When would you use A2A versus keeping all agents inside one framework?
+D00647	M	How do A2A task lifecycles and agent cards enable discovery and delegation?
+D00648	M	Where do the responsibilities of RAG, agents, MCP and A2A begin and end?
+D00649	M	How do you divide responsibilities and decompose tasks hierarchically among agents?
+D00650	M	How do you control quality, latency and cost when orchestrating agents dynamically at runtime?
+D00651	M	What are the benefits and bottlenecks of massively parallel agents?
+D00652	M	How would you design a policy engine, permission model and audit trail for multi-agent systems?
+D00653	M	How do you pass trace IDs across agents for distributed tracing?
+D00654	M	How do you design a human-in-the-loop system that does not fatigue the human operator?
+D00655	M	What is the over-reliance risk in human-in-the-loop designs, and how do you mitigate approval laundering?
+D00656	M	You gate agent actions with a classifier that can run, deny or defer to a human. How do you set and monitor thresholds?
+D00657	M	When should an agent pause for human confirmation, and how would you implement interrupts in LangGraph?
+D00658	M	How do you evaluate an agent when the environment is non-deterministic such as the open web?
+D00659	M	Why is meandering a critical failure in agent design, and what metrics expose it?
+D00660	M	Define task success rate, action success rate and unit cost per task for agents.
+D00661	M	What does it mean when an agent games its evaluation harness, and how do you detect it?
+D00662	M	How do you quantitatively evaluate overall agent performance beyond prompt-level scoring?
+D00663	M	What are the mainstream agent benchmarks and what does each measure?
+D00664	M	How would you do trajectory grading with agent-as-judge, and what new failure modes does it add?
+D00665	M	How do you control the ROI of an AI agent, and which metrics matter?
+D00666	M	Why would you use LangGraph rather than a managed agent runtime?
+D00667	M	How do you handle state overload in a graph with twenty or more nodes?
+D00668	M	What is the difference between LangChain and LangGraph, and when do you choose each?
+D00669	M	What is the main benefit of LCEL over traditional chains, and how do you keep a LangChain system lean?
+D00670	M	How do LlamaIndex and LangChain workflows differ and how do you choose between them?
+D00671	M	When would you choose CrewAI instead of LangGraph?
+D00672	M	When is a typed agent framework such as Pydantic AI a better choice than LangGraph?
+D00673	M	With every lab shipping its own agent SDK, how do you avoid lock-in?
+D00674	M	How would you build a system that works across OpenAI, Anthropic and local open-weight models?
+D00675	M	Given framework churn, how do you decide whether to use a framework at all?
+D00676	M	How do you pin, lock and isolate dependencies to survive fast-moving AI frameworks?
+D00677	M	An agent's cost per task rose 40 percent and its tone changed overnight with no code change. What happened?
+D00678	M	Why is AutoGen in maintenance mode and what does the move to a merged agent framework mean for existing code?
+D00679	M	Compare Dify, Coze, n8n and similar low-code agent platforms against code-first frameworks.
+D00680	M	How would you design an enterprise AI agent platform similar to a low-code agent builder?
+D00681	M	How do coding agents like Claude Code, Cursor and Copilot differ in architecture and workflow?
+D00682	M	What is a CLAUDE.md-style project manifest and why is it important for coding agents?
+D00683	M	How do you run a coding agent safely in CI, and how do you control its cost?
+D00684	M	Is it safe to run a coding agent in auto-approval mode on developer laptops?
+D00685	M	How would you test an AI coding agent in CI?
+D00686	M	Would you let an AI reviewer's approval count toward required reviews?
+D00687	M	What is fill-in-the-middle and why does it matter for code completion models?
+D00688	M	What is SWE-bench, how does it score coding agents, and how can benchmarks be gamed?
+D00689	M	How does a coding agent's plan, execute, test and fix loop work?
+D00690	M	Why are open-weight coding models important for enterprises?
+D00691	M	What are the architecture and security concerns of an always-on personal agent with its own compute?
+D00692	M	Design an always-on personal agent that keeps working while the user is away.
+D00693	M	Compare sandboxed and unsandboxed execution for AI agents.
+D00694	M	What risks come from skill or plugin ecosystems for agents, given that static detection has a ceiling?
+D00695	M	What vendor risks arise when your agent product depends on a third-party subscription policy?
+D00696	M	What is the eternal intern problem for agents, and how does continual learning address it?
+D00697	M	Should a team build an internal assistant on an open-source personal agent platform or build custom?
+D00698	M	What is Voyager-style lifelong learning and how does a skill library accumulate?
+D00699	M	Design a skill system for a fleet of internal agents. How do skills differ from MCP tools and fine-tuning?
+D00700	M	Your computer-use agent passes demos but fails 30 percent of real workflows. What is your reliability plan?
+D00701	M	Your agent performs well for 5 minutes but degrades past 30 minutes of autonomous work. How do you fix it with context engineering?
+D03818	M	What failure modes do agents have, such as loops, hallucinated tools and unrecoverable errors, and how do you handle them?
+D04355	M	What are the logical components inside a single agent, such as planning, context, memory, tools, and subagents?
+D04356	M	Why is building agents a systems problem rather than only a modeling problem?
+D04810	E	What is an LLM agent, and what components distinguish it from a plain chatbot?
+D04811	M	What key capabilities do LLM agents need (planning, memory, tool use, reflection) and how are they implemented?
+D04812	M	What types of LLM agents exist (reactive, plan-and-execute, goal-driven, multi-agent), and when is each suitable?
+D04813	M	What gives an LLM agent autonomy, and how do you bound it safely?
+D04814	M	How would you construct an agent on top of an LLM, covering prompting, tool schema, loop control and stop conditions?
+D04816	M	What are the layers of LLM agent techniques: prompt engineering, external tools, decomposition, feedback loops, single and multi-agent?
+D04817	M	What are the main design components of a goal-oriented agent architecture (central executive, memory, sensory, motor, learning, world model)?
+D04818	M	How do short-term and long-term memory differ in an agent and how is each realized (context window, vector store, summarization)?
+D04819	M	Why are seemingly simple problems (arithmetic, planning, long-horizon tasks) hard for LLM agents, and how do you mitigate compounding errors?
+D04820	M	What is the benefit of task decomposition and recomposition in agents, e.g. chain-of-thought, tree-of-thought or plan-and-solve?
+D04821	M	How does feedback or self-reflection improve agent outputs, and what are its limits?
+D04822	M	When does a multi-agent setup help over a single agent and what coordination problems does it introduce?
+D04823	H	How would you evaluate an LLM agent on long-horizon tasks, and which failure categories would you track?
+D04869	E	What is LangChain and what are its core modules (models, prompts, chains, memory, agents, retrievers)?
+D04870	M	What is a LangChain agent, and how does it choose and execute tools?
+D04871	M	What are the benefits and drawbacks of using an orchestration framework like LangChain in production versus calling model APIs directly?
+D04872	M	How would you build a knowledge Q&A application with LangChain: loaders, splitters, embeddings, vector store, retriever and chain?
+D04873	M	How does conversation memory work in an LLM application and what are its options (buffer, window, summary)?
+D04971	M	How does the ReAct loop interleave reasoning and acting, and what failure modes does it have?
+D04972	M	What are good stopping and loop-detection strategies for agents that can call tools repeatedly?
+D04973	M	Where should a human approve actions in an agent workflow, and how do you decide which actions need approval?

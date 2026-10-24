@@ -1,0 +1,269 @@
+Q003395	M	How would you structure a prompt to ensure the LLM output is in a specific format, like JSON?
+Q004274	M	Suppose you want an LLM to output JSON or YAML or any other structure. How would you ensure the output is parsable?
+Q004740	M	What are output parsers, and why are they needed for production applications?
+Q004793	E	What is tool use (function calling) in LLMs, and how does it enable agents?
+Q004794	M	What is the difference between structured output and function calling?
+Q004795	M	How do you design and define tools for an AI agent?
+Q004796	M	How does an agent decide when to call a tool versus answering from its own knowledge?
+Q004799	M	What is Model Context Protocol (MCP), and how does it standardize tool integration?
+Q004800	M	How does MCP differ from traditional function calling?
+Q004822	H	How do you build a code execution agent safely using sandboxed environments?
+Q004827	M	Your AI agent hallucinates tool capabilities and passes wrong inputs. How do you fix it?
+Q004829	M	Your AI agent has many tools, but keeps picking the wrong one. How do you improve tool selection?
+Q004832	M	Your LLM selects the right tool but extracts the wrong parameters. How do you fix parameter extraction?
+Q004833	M	How do computer-use agents work?
+Q004834	M	How do browser agents work?
+Q004979	M	How do you implement structured output from LLMs reliably in production?
+Q005931	M	What are Structured Outputs / JSON Mode, and how do they differ from function calling?
+Q005984	M	What is BFCL (Berkeley Function Calling Leaderboard), and how do you systematically evaluate function calling quality?
+Q006059	M	How does the OpenAI Responses API manage conversations and tools, and how does it relate to the older Assistants API?
+Q006074	M	What is the difference between Agent Skills and Tools?
+Q006075	E	What is the Model Context Protocol (MCP), and what integration problem does it solve?
+Q006077	M	What are the similarities and differences between MCP and the OpenAI Tools API / GPTs?
+Q006081	H	What enterprise-readiness issues must MCP address, including audit trails, enterprise authentication, and gateway patterns?
+Q006082	M	What is the MCP Sampling primitive, and why does it let a server exhibit agentic behavior?
+Q006084	M	What types of MCP clients exist, how do internal and external clients differ, and how is the sampling callback implemented?
+Q006085	H	How does the MCP authorization flow work, and how do PRM (Protected Resource Metadata), OAuth 2.1, and DPoP work together?
+Q006086	M	What is an MCP Server Card, and how does it let AI applications automatically discover and evaluate server capabilities?
+Q006087	M	What are MCP Triggers and Events, and why do they let an AI agent move from passive response to proactive awareness?
+Q006088	M	What is the MCP Registry, and how do you publish and distribute enterprise MCP servers?
+Q006089	M	What is "Skills over MCP", and why does it let an AI agent dynamically compose multiple tool capabilities?
+Q006098	M	How can MCP serve as a cross-language tool bus, for example wrapping business tools in Go and registering and calling them uniformly from Python?
+Q006099	H	What is a Skill in an AI application, how do you design its three-part structure (input definition, processing and tool calls, structured output), and how do you handle versioning and regression evaluation?
+Q006100	M	MCP communicates over JSON-RPC 2.0. What are the standard error codes, and how should a server handle errors and diagnostics?
+Q006101	M	What is a Root in MCP, and what is its role in file access control and multi-workspace scenarios?
+Q006102	M	How do you choose an MCP transport, and which production scenarios suit stdio, SSE, and Streamable HTTP?
+Q006225	M	How is Pydantic v2 used for structured LLM outputs, and how does it work?
+Q006837	M	How do you handle invalid or partial JSON from an LLM in production?
+Q006843	M	A tool hits a transient upstream 503. What should it return so that the agent loop behaves well?
+Q006853	M	You are building one embedded agent with a single, latency-sensitive tool surface and sensitive local credentials. Should you use MCP or in-process tools?
+Q006857	M	After connecting eight MCP servers, your single agent's tool selection gets noticeably worse and its prompt grew. What is the best explanation?
+Q006864	M	Your agent keeps picking the wrong tool. How do you improve tool selection?
+Q006867	M	Explain MCP (Model Context Protocol). When would you use MCP over a custom tool bus?
+Q006868	H	Walk me through an MCP handshake between a Claude client and a Postgres MCP server.
+Q006940	M	You set temperature=0 and parse the model's reply with json.loads(). It works in dev, then crashes intermittently in production. What is the best explanation and fix?
+Q006951	M	A downstream service consumes the model's JSON and occasionally throws a parse error in production. What is the strongest fix?
+Q006952	M	With strict structured outputs on, you still occasionally get JSON that ends mid-object with stop_reason="max_tokens". What is happening and what is the right response?
+Q006953	M	An agent has grown to 90 strict tool definitions; the model increasingly calls the wrong tool (with perfectly valid arguments) and latency is up. What is the strongest fix?
+Q006954	M	Your extraction schema requires owner: str (non-null). On documents with no owner, the model invents a plausible name. What is the best fix?
+Q007008	M	Strict structured output is on, so the JSON is always valid, yet the extracted "owner" field is wrong on about 30% of documents. Where is the problem and what is the fix?
+Q007020	M	How would you evaluate the reliability of an MCP wrapper around an internal API?
+Q007208	M	Explain the OpenAI functions (function calling) strategy.
+Q007209	M	Explain the difference between OpenAI functions and LangChain agents.
+Q010827	M	How do you implement tool use / function calling?
+Q010899	M	Explain the Model Context Protocol (MCP) and why it matters for production agents.
+Q010928	H	Explain the Model Context Protocol (MCP) remote transport and authorization model, and the security risks of running MCP servers in production.
+Q010999	H	Your computer-use agent passes demos but fails 30% of real workflows in production. Walk through your reliability engineering plan.
+Q011000	M	When do you choose a computer-use agent over an API integration?
+Q011001	H	Design a skill system for a fleet of internal agents using Agent Skills. How do skills differ from MCP tools and from fine-tuning?
+Q011007	H	What breaks if a client retries an MCP call against a server that already applied the side effect?
+Q011019	H	How do you migrate an existing stateful MCP server fleet to a stateless core without breaking old clients?
+Q011163	E	What is MCP (Model Context Protocol)?
+Q011343	M	Why is "JSON mode" more reliable than prompt-based JSON requests?
+Q011344	M	What is the risk of asking an LLM for too many structured fields at once?
+Q011450	M	How does MCP solve the "too many tools" problem (schema overload)?
+Q011451	M	Why is it important to separate tool logic from the agent app using MCP servers?
+Q011530	H	A structured-extraction chain worked on Claude Opus 5 and started failing with HTTP 400 after the team switched the model ID to Opus 5.5. What happened, and what is the fix?
+Q011545	M	What is the "function calling" abstraction in Semantic Kernel?
+Q011614	H	An agent calls tools on five MCP servers on a user's behalf. How do you authorize it?
+Q011746	M	Explain the trade-offs between vision-based computer use and API-based tool calling.
+Q011762	M	Compare computer-use agents with Selenium for web automation. When would you choose each?
+Q011763	H	A vendor says its computer-use model scores 81.8% on OSWorld. How do you turn that into a production capacity plan?
+Q011764	M	You need to give an LLM agent access to 200 internal tools. How do you handle schema overload?
+Q011766	H	Your extraction service forces a tool call to get JSON back. After moving to the newest Claude model, every request returns HTTP 400. What happened, and how do you fix it without losing the schema guarantee?
+Q010761	M	What is MCP (Model Context Protocol) and how does it compare to A2A?
+Q011827	M	How do you handle tool-call errors, timeouts and retries in an agentic loop?
+Q011828	M	What is MCP (Model Context Protocol) and how does it differ from traditional function calling?
+Q011829	M	How many tools is too many? How do you design tool schemas an LLM can actually use correctly?
+Q011933	M	You are building a production agent that calls tools (function calling). What makes the loop reliable enough to ship?
+Q003522	M	Why can't structured output rely on the prompt alone? What problems do JSON Schema, function calling, and server-side validation each solve?
+Q003533	E	Does MCP expose only Tools as capabilities?
+Q003534	M	How do you choose between stdio and Streamable HTTP transports in MCP?
+Q003537	M	What should you watch out for when writing an MCP server?
+Q003519	M	What is the Model Context Protocol (MCP), and how does it relate to function calling and agents?
+Q003549	M	Why is the tool description so important when registering tools for an agent?
+Q003554	E	What problem does MCP solve, and why is it often compared to USB-C for AI?
+Q003555	E	What are an MCP client, an MCP server, and a host?
+Q003556	E	What problems do MCP Tools, Resources, and Prompts each solve?
+Q003557	M	What is the difference between MCP and function calling?
+Q003559	M	What are Agent Skills, and what are the boundaries between them and prompts, MCP, and function calling?
+Q003568	M	What are function calling, MCP, and agents each responsible for?
+Q003587	M	What is the difference between JSON mode and Structured Outputs?
+Q003589	M	What is the relationship between an MCP tool and an ordinary HTTP API?
+Q003590	M	Is an Agent Skill the same thing as function calling?
+Q003612	M	What problems do function calling, tool calling, and MCP each solve?
+Q003613	M	What is the relationship between function calling, MCP tools, HTTP APIs, and Agent Skills?
+Q003614	M	How does function calling map to an HTTP API?
+Q007657	H	Why does regex or schema-heavy constrained decoding sometimes hurt answer quality, and how do you mitigate it?
+Q007658	M	How would you make streaming output usable when the format is JSON?
+Q007696	M	What does the Observation step in ReAct imply for how you design tool output formats?
+Q007697	M	How do you design good tool/function definitions for an LLM? What makes tool calling fail?
+Q007698	M	An agent keeps picking the wrong one of two similar tools. What are your first three fixes?
+Q007699	M	How do you handle a tool that returns 100k tokens of JSON?
+Q007700	M	When should the model ask a clarifying question instead of calling a tool with guessed arguments?
+Q007730	M	How should tool results be formatted before they go back into the model's context?
+Q007731	M	How would you decide the truncation limit for a given tool's output?
+Q007732	M	Why is a paginated tool result better than a truncated one for an agent, given both hide data?
+Q007754	H	Compare JSON mode with schema-constrained decoding. How does constrained decoding actually enforce the schema?
+Q007755	H	Why can constrained decoding change the output distribution, not just filter invalid outputs?
+Q007756	H	How would you implement constrained decoding for a non-JSON DSL?
+Q007757	M	Function-calling arguments vs. structured output: when to use which?
+Q007945	M	How does MCP change how you would expose retrieval tools to the model?
+Q007996	H	You are exposing retrieval as a tool to an agent over MCP. How does designing a tool interface differ from designing a retrieval API?
+Q007997	H	How would you propagate and verify end-user identity through an MCP tool call to the retrieval filter?
+Q007998	H	How do you evaluate a retrieval tool, given that the metric is now "did the agent's task succeed" rather than recall@k?
+Q008201	M	How does function/tool calling actually work mechanically, end to end?
+Q008202	M	What happens if you return tool results in a different order than the calls?
+Q008203	H	Why do providers use constrained decoding for tool arguments but not for choosing which tool to call?
+Q008204	M	A teammate says "the model executes the tool." What is wrong with that, and why does the distinction matter?
+Q008205	M	Where would you implement human approval for a 'delete_records' tool, in the prompt or the executor, and why?
+Q008207	M	Explain parallel tool calls and tool-choice forcing. When would you use each?
+Q008208	M	How would you handle one failure among five parallel tool calls?
+Q008209	M	Why might you force 'required' tool choice on the first iteration of an agent loop but 'auto' afterward?
+Q008210	E	What is MCP and what problem does it solve?
+Q008211	M	If you are building a single-model internal product, does MCP buy you anything over plain function calling?
+Q008212	M	How does an MCP host handle two servers exposing identically named tools?
+Q008213	M	Describe MCP's architecture and its primitives.
+Q008214	H	Why does MCP sampling route through the host instead of the server calling a model API directly?
+Q008215	M	When would you expose data as an MCP resource instead of a "search" tool?
+Q008219	M	What makes a good tool definition? Give concrete design rules.
+Q008220	M	How would you detect that two tools are being confused by the model in production?
+Q008221	M	Your agent's tool count just hit 40. What do you do?
+Q008222	M	Why do we need MCP at all? Why not just hand the model an OpenAPI spec and let it call REST endpoints?
+Q008223	M	Your company already has 200 internal REST services. Would you write 200 MCP servers?
+Q008224	M	How would you decide the granularity of MCP servers relative to endpoints?
+Q008225	M	You are designing an MCP server. How do you decide whether something should be a tool, a resource, or a prompt?
+Q008226	M	Your MCP server exposes a 500 MB log file as a resource. What goes wrong, and how do you restructure it?
+Q008227	M	When would you use MCP resource templates rather than fixed URIs?
+Q008231	M	Your agent charged a customer's card twice. The trace shows one tool call. What happened, and how do you prevent it?
+Q008232	H	The model itself decides to call a charge tool twice because it forgot it already did. Does an idempotency key save you?
+Q008233	H	How do you handle a tool that is not idempotent and cannot be made so?
+Q008234	M	What does strict mode on a tool schema guarantee, and what does it leave to you?
+Q008235	H	Your extraction schema has 40 fields and uses keywords strict mode rejects. What do you do?
+Q008236	M	Would you ever turn strict mode off for a tool, and why?
+Q008237	M	How should tool errors be surfaced to the model?
+Q008238	M	Should transient infrastructure errors (timeouts, 502s) even reach the model, or be retried silently by the executor?
+Q008239	M	How would you measure whether your tool error messages are working?
+Q008240	M	Consolidated vs granular tools: how do you decide?
+Q008241	M	How does per-call latency change the decision between consolidated and granular tools?
+Q008242	H	Design the tool set for an agent that manages a Postgres database. Where do you consolidate?
+Q008243	M	How do you make tool outputs token-efficient, and why does it matter so much for agents?
+Q008245	M	When is truncating tool outputs actively dangerous?
+Q008267	M	Compare MCP's transports. When would you choose each?
+Q008268	H	Why was mandatory long-lived SSE a problem for serverless MCP deployments?
+Q008269	H	How does session state work over MCP's Streamable HTTP transport if the server is stateless?
+Q008270	H	You maintain an MCP server with clients on three different protocol revisions. How do you handle negotiation and deprecation?
+Q008283	H	You have connected six MCP servers. There are now 130 tool definitions and about 45k tokens of schema in context before the user says a word. What do you do?
+Q008284	H	How would you build a search_tools tool for dynamic tool discovery without adding a round trip to every task?
+Q008301	H	What are MCP's sampling and elicitation primitives for, and why does hardly anyone use them?
+Q008302	H	You are writing an MCP host. Would you enable sampling for third-party servers, and what controls would you put on it?
+Q008310	H	What are MCP Apps, and what do they change about an MCP server's security model?
+Q008311	H	When a user filters a chart in an MCP App's UI and then asks the model about "these results", how does the model know what they are?
+Q008327	M	Why are computer-use / browser agents so much harder to make reliable than API-based agents?
+Q008328	M	Given a choice of DOM access vs screenshots for a browser agent, what does DOM access fix and what does it not fix?
+Q008329	H	How would you evaluate a computer-use agent beyond task success rate?
+Q008342	M	What is tool-call hallucination, and how do you defend against it?
+Q008343	H	Why is a fabricated-but-valid ID worse than a call to a nonexistent tool?
+Q008344	H	Does strict/constrained decoding eliminate tool-call hallucination?
+Q008375	H	When an agent writes code against an API instead of calling exposed function definitions, at how many tools or how large a result does the code API start paying for itself?
+Q008380	H	How does authorisation work for a remote MCP server, and what do teams get wrong when they implement it?
+Q008381	H	Your MCP server needs to call three upstream SaaS APIs on behalf of the user. How do you obtain and store those tokens?
+Q008382	H	An agent runs unattended overnight and a token expires mid-run. What happens?
+Q008383	H	A tool call takes twenty minutes, or needs the user's answer halfway through. How do you model that over MCP now that the protocol is stateless?
+Q008384	H	The user answers an MCP elicitation an hour later and the signed state has expired. What should the server do?
+Q008626	M	How do you handle streaming when the model is emitting tool calls or structured JSON?
+Q008627	H	Where do you put schema validation when the model streams a 10-item JSON array you want to render progressively?
+Q008628	H	How do you prevent a tool from executing twice when a stream retry replays the tool call?
+Q008796	H	How do you design tool permissions for an agent, and how do you stop human approval gates from becoming rubber-stamping?
+Q008948	H	You are building a computer-use agent. Design the perception layer: screenshots, coordinates, accessibility tree.
+Q008949	H	How would you handle an app with no accessibility tree and a canvas-rendered UI in a computer-use agent?
+Q009244	H	Design the tool surface for a coding agent: which tools exist, what their schemas look like, and how results come back.
+Q009245	M	When would you split one consolidated agent tool into two?
+Q009246	M	How would you measure whether a tool-surface change actually improved an agent, and on what eval set?
+Q009271	H	How do you evaluate semantic (not syntactic) tool-call accuracy without logging user requests?
+Q009279	M	When a user utterance matches no installed intent, what does a voice assistant system do, and what does the user hear?
+Q009333	H	Design the tool schema for a coding agent. How many tools, and how do you handle tool errors?
+Q009334	H	How would you version tool schemas without invalidating every saved agent trajectory?
+Q009590	M	How do you regression-test 100+ agent tools without 100 live sandboxes?
+Q009717	M	What are the pitfalls of putting tool-call schemas inside chat templates?
+Q009811	H	Two providers register a tool called "search" in an LLM tool registry. How does the registry resolve that, and what name does the model actually see?
+Q009812	M	In an LLM tool-calling system, where does per-user permission enforcement belong: the tool, a decorator, or the downstream service?
+Q009844	M	How does function calling actually work with an LLM, and how do you make it reliable enough for production agents?
+Q009845	M	Parallel tool calls: when do they help and what do they break?
+Q009942	M	How do you evaluate a change to a tool description in a function-calling agent?
+Q009992	H	A customer wants agents running on other vendors' platforms to read and act on their ontology over MCP. How do you expose it without losing the governance that made the ontology worth building?
+Q009994	M	Which actions would you refuse to expose over MCP at all, and why?
+Q010336	M	Your service consumes structured JSON from an LLM. How do you make that reliable?
+Q010337	H	An LLM returns a valid but wrong value in 2% of structured-output responses and schema checks pass. What do you do?
+Q010338	M	How do you version the output schema when the prompt and the consuming code deploy separately?
+Q010339	M	An agent can call your internal APIs as tools. What are the security and reliability implications for those endpoints?
+Q010341	M	How do you safely test new tools against a live agent?
+Q010345	M	How do you change a tool's schema when customer agents already depend on the old one?
+Q010346	M	A customer's agent calls your search tool 50 times per task. Do you throttle it or redesign the tool?
+Q010463	M	An LLM ticket-classification pipeline using structured outputs misclassifies urgent tickets as low priority. What is your fastest fix within the hour?
+Q010467	M	A vendor's MCP server exposes sixty tools and you need four. How do you constrain it?
+Q010584	M	What changes if you add tool calls in the middle of a streamed LLM response?
+Q010585	M	How do you get reliable structured output (JSON) from a model, and what happens when it fails anyway?
+Q010586	M	How do you catch the case where an LLM's JSON output is valid but the values are wrong?
+Q010617	H	The PM says: "Users should be able to use our product from inside ChatGPT and Claude." What do you build, and what changes about how you design the product?
+Q010658	H	Our agent depends on MCP servers owned by three other teams. How do you test so a change on their side does not silently break our agent?
+Q010659	M	A provider adds an optional parameter to a tool and tool-selection accuracy drops 6%. Whose bug is it, and who fixes it?
+Q010660	H	How do you test tool description changes without paying for full agent evals on every provider commit?
+D00520	E	How does function calling work end to end, from schema to result feedback?
+D00521	M	What makes a high-precision tool definition for an LLM, and what schema design rules matter most?
+D00522	M	How do you handle failure in tool calls: parameter errors, timeouts and fallbacks?
+D00523	M	Design retry strategy for tool failures including exponential backoff with jitter and a circuit breaker.
+D00524	M	How do you return structured errors to the model so it can self-correct?
+D00525	M	How do you handle parallel tool calls with dependencies, timeouts and mixed success?
+D00526	M	What is programmatic tool calling and when is it better than model-orchestrated chaining?
+D00527	M	You must give an agent access to 200 internal tools. How do you handle schema overload?
+D00528	M	How does dynamic tool search help, and how do you change tools mid-session without losing the cache?
+D00529	M	How would you version tools and keep backwards compatibility?
+D00530	M	What are the three testing layers for a tool-using agent?
+D00531	M	Design a testing strategy for a customer-support tool-using agent.
+D00532	M	How do you measure and trace tool-call quality, for example with BFCL-style evaluation?
+D00533	E	What is the Model Context Protocol, and what integration problem does it solve?
+D00534	M	What are MCP's three core primitives and what is each for?
+D00535	M	Describe MCP's client, server and transport layers and how a request flows through them.
+D00536	M	Compare MCP stdio, SSE and streamable HTTP transports and when to use each.
+D00537	M	How do MCP and plain function calling differ, and when should you not use MCP?
+D00538	M	How does MCP address the too-many-tools problem?
+D00539	M	Why should tool logic be separated from the agent app via MCP servers?
+D00540	M	How does the MCP authorization flow work with OAuth 2.1, protected resource metadata and audience binding?
+D00541	M	What changed with the stateless revision of MCP, and what is the migration impact for servers running behind sticky sessions?
+D00542	M	What is MCP sampling and why does it allow server-side agentic behavior?
+D00543	M	What are MCP roots and how do they bound file access?
+D00544	M	What are MCP tasks, triggers and server cards, and what problems do they solve?
+D00545	M	How do JSON-RPC error codes work in MCP and how should servers surface errors?
+D00546	M	How do you monitor an MCP server in production?
+D00547	M	How does an agent coordinate several MCP servers with overlapping tools?
+D00548	M	Compare skills and tools: what does a skill package that a tool does not?
+D00549	M	What is progressive disclosure for agent skills, and why not load every skill into context?
+D00550	M	What are the key MCP attack vectors: tool poisoning, confused deputy, token passthrough and SSRF?
+D00551	H	Your agent connects to a dozen third-party MCP servers over OAuth. How do you stop one malicious server from abusing credentials intended for another?
+D00552	M	How do stdio-based MCP launches lead to command injection, and how do you migrate away safely?
+D00553	H	Design a secure multi-tenant MCP server on the stateless protocol, covering state handles, authorization and rate limiting.
+D00554	M	How would you build an enterprise MCP gateway for audit, authorization and routing?
+D00555	M	How do you authorize an agent that calls tools on five MCP servers on a user's behalf?
+D00556	M	How do MCP and A2A work together in a production multi-agent system?
+D00557	M	What do the OWASP MCP and agent top-10 lists add beyond the traditional web top-10?
+D00558	M	How would you protect a database tool from agent-driven SQL injection?
+D00559	M	How do you make an agent that can execute arbitrary Python code safe?
+D00560	M	What is a code interpreter tool, and where does it sit in sandbox-versus-privilege decisions?
+D00561	M	How does a computer-use agent's screenshot, reason, act loop work?
+D00562	M	Compare vision-based computer use with API-based tool calling.
+D00563	M	Compare computer-use agents with Selenium-style scripted automation. When do you pick each?
+D00564	M	What errors are specific to computer-use agents: misclicks, stale screenshots, scaling mismatches and unexpected dialogs?
+D00565	M	A vendor says its computer-use model scores about 82 percent on a desktop benchmark. How do you turn that into a capacity plan?
+D00566	M	What does the latency and cost per action look like for computer-use agents, and how do you optimize it?
+D00567	H	A client has 500 insurance claim PDFs per day to enter into a legacy portal with no API. Design the automation.
+D00568	M	How do you design the action space and data loop for a GUI agent?
+D00569	M	What unique challenges do mobile GUI agents face compared to desktop agents?
+D00570	M	When is a sandboxed environment mandatory for tool-using agents and what are the isolation options?
+D00571	M	Compare Docker, gVisor, WebAssembly and Firecracker for agent sandboxing.
+D00572	M	How do you prevent an AI agent from causing damage through tool calls?
+D00573	M	How would you design a tool-using agent that automates invoice processing for thousands of invoices per day?
+D00574	M	Explain tool-composition patterns: LLM-orchestrated, programmatic and server-side composition.
+D00575	M	What is the Responses API versus an assistants-style API, and how do they manage state and tools?
+D00576	M	How do you choose SSE versus WebSocket for streaming LLM or agent output?
+D00577	M	How would you implement streaming of tool calls and partial results to a front end?

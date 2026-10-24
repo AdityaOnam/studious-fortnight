@@ -1,0 +1,319 @@
+Q001490	M	What is Apache ZooKeeper and why is it important for Hadoop?
+Q006164	M	A Java service's retry caused a Python service to create two tickets. What is the root cause and how do you fix it?
+Q012119	H	Design a sync system between two employee record systems.
+Q000447	M	Explain the CAP theorem.
+Q000365a	M	Explain the CAP theorem.
+Q000641	M	Can Kafka lose messages?
+Q000669	M	How do you avoid double payment?
+Q000684	M	How do you detect node failures in distributed systems?
+Q000685	H	Why did Meta, Google, and Amazon stop using leap seconds?
+Q000690	M	How do we incorporate event sourcing into systems?
+Q000691	M	Why use a distributed lock?
+Q000739	M	Is the CAP theorem really useful?
+Q000740	M	How does Change Data Capture work?
+Q000817	E	What are some common message queues, and what are they used for?
+Q000845	M	How do you do distributed locking?
+Q000982	H	How would you handle cache synchronization in a distributed environment?
+Q000986	E	What is the CAP Theorem and why is it important for distributed systems?
+Q000987	E	How does the CAP Theorem define consistency in the context of a distributed system?
+Q000988	E	What does availability mean in the CAP Theorem?
+Q000989	E	Explain partition tolerance in a distributed system as stated by the CAP Theorem.
+Q000990	M	Give an example of a real system that favors consistency over availability.
+Q000992	M	Can you name a system that prefers availability over consistency?
+Q000993	E	What is meant by "eventual consistency" in the context of the CAP Theorem?
+Q000994	M	What trade-offs might you have to make in a distributed system design due to the CAP Theorem?
+Q000995	H	How would you design a system that requires high availability and what trade-offs would you have to make according to the CAP Theorem?
+Q000996	M	If a system is experiencing a partition (network failure), what strategies can you employ to maintain service?
+Q000997	H	Considering the CAP Theorem, how would you approach building a distributed system that handles sensitive financial transactions?
+Q000998	H	Describe a scenario where a system may switch from being CA to AP during its operation due to external factors.
+Q000999	H	How do quorums help in achieving consistency or availability in distributed systems, and how is this related to the CAP Theorem?
+Q001000	M	How do modern databases like Cassandra or DynamoDB address the challenges posed by the CAP Theorem?
+Q001001	H	Explain how concepts like idempotency, commutativity, and convergence are important in designs that are influenced by the CAP Theorem.
+Q001709	H	What strategies can be employed to manage transactions across multiple microservices?
+Q001716	H	How do you ensure data consistency across microservices?
+Q002014	H	Which transport layer technology would you recommend for a Reactive System's asynchronous communication, and why?
+Q002016	M	What is Event Sourcing, and how does it benefit Reactive Systems?
+Q002111	H	How would you handle transaction management in a SOA system?
+Q002578	M	Why can't a distributed system guarantee all three CAP properties?
+Q002579	M	How do modern databases handle CAP trade-offs?
+Q002581	M	Can you give examples of CP vs AP systems in practice?
+Q002582	M	How does the CAP theorem relate to ACID properties?
+Q003107	M	How do you implement idempotency for POST?
+Q003109	M	How do you handle idempotency key storage and TTL?
+Q003110	M	What race conditions must you avoid when implementing API idempotency?
+Q003111	H	How does idempotency interact with eventual consistency?
+Q003131	H	How do you implement the saga pattern with REST endpoints?
+Q003132	H	How do you handle partial failures across services?
+Q003234	M	How do you handle idempotency in stateless APIs?
+Q003517	M	How do you design a distributed ID generator?
+Q003540	M	Why does a lease also need a fencing token?
+Q003774	M	What is the relationship between CAP and BASE? In which scenarios is eventual consistency appropriate?
+Q003785	H	How does ZooKeeper's ZAB protocol handle message broadcast, leader-follower synchronization and crash recovery?
+Q003787	M	How does the ZAB protocol relate to Raft and Paxos?
+Q003770	M	Why should a Redis distributed lock have an expiration time, and why use a Lua script to release the lock atomically?
+Q003771	M	Why do some systems need a leader while others are better off using gossip to propagate state?
+Q003793	E	What do C, A and P in the CAP theorem stand for, and why can partition tolerance usually not be given up?
+Q003794	H	Why is Paxos hard to understand? What is the difference between Basic Paxos and Multi-Paxos?
+Q003814	M	How do Exchange, Queue, Binding and Routing Key work together in RabbitMQ?
+Q003837	M	What types of exchanges does RabbitMQ have, and which scenarios suit each?
+Q003818	M	What is the difference between Kafka and Disruptor?
+Q003819	M	What is the role of ZooKeeper in Kafka?
+Q003820	M	Can Kafka be used without ZooKeeper?
+Q003821	M	When using Kafka with enable.auto.commit set to false and committing offsets manually, when is the right time to commit the offset?
+Q003822	M	How do you configure Kafka so that no messages are lost?
+Q003823	E	What do At Most Once, At Least Once and Exactly Once delivery semantics mean?
+Q003824	M	Why does At Least Once delivery easily produce duplicate messages, and how can a consumer ensure idempotent processing?
+Q003825	E	What are the responsibilities of Topic, Partition, Replica, Consumer Group and Offset in Kafka?
+Q003826	M	Why does Kafka only guarantee ordering within a single partition, and how should a business key be chosen?
+Q003827	H	What is the relationship between Leader, Follower, ISR, HW and LEO in Kafka?
+Q003828	H	What problems do Kafka's idempotent producer and transactions solve? Can exactly-once cover an external database?
+Q003829	M	Why does Kafka 4.0 support only KRaft, and how does it differ from the earlier ZooKeeper mode?
+Q003830	M	What are the responsibilities of NameServer, Broker, Producer, Consumer and Proxy in RocketMQ?
+Q003831	M	What data do CommitLog, ConsumeQueue and IndexFile store in RocketMQ?
+Q003833	M	Is persisting the exchange, queue and message enough to guarantee that no message is lost in RabbitMQ?
+Q003834	M	What scenarios suit RabbitMQ Classic Queues, Quorum Queues and Streams respectively?
+Q003835	H	How do Kafka, RocketMQ and RabbitMQ differ in message model, throughput, latency, replay and operations?
+Q003836	E	What are a broker node, a queue and an exchange in RabbitMQ?
+Q003838	M	In what form are the queues within a topic stored in RocketMQ?
+Q003839	M	What are synchronous and asynchronous disk flushing, and how do they affect durability?
+Q005864	M	What is the difference between a message queue and a task queue?
+Q006469	M	Why do we need distributed transactions?
+Q006470	M	In a distributed transaction using two-phase commit, what happens if one of the participant nodes crashes?
+Q006471	M	In a distributed transaction using two-phase commit, what happens if the coordinator itself crashes?
+Q006472	M	Why is the pre-commit phase helpful in three-phase commit?
+Q006496	M	Why do we need idempotency?
+Q006525	E	Why use a message queue for notifications?
+Q012207	H	Design and develop ZooKeeper using RocksDB and Google's Bigtable.
+Q012303	M	Why is deduplication a concern when delivering events to external endpoints?
+Q012304	M	What if the external system's endpoint is not idempotent?
+Q012343	E	Why use Apache Kafka?
+Q012344	M	Why is Kafka so fast?
+Q012346	M	How does Kafka tolerate faults?
+Q012348	M	Is Kafka an AP or CP system in the CAP theorem?
+Q012465	M	How can an API prevent double payments using idempotency?
+Q012480	M	How do message queues work?
+Q009171	H	How do you make EHR write-back idempotent when the EHR returns a timeout with no result?
+Q009452	H	A Spark Structured Streaming job reads Kafka and writes with foreachBatch into Postgres, and the customer wants exactly-once delivery. What do you build?
+Q009458b	M	Two workers pick up the same approved agent action at once. What prevents double execution?
+Q009928	M	In a webhook delivery system, what happens when a customer's endpoint is up but takes 30 seconds to respond?
+Q009929	H	How do you migrate the retry schedule of a webhook delivery system without dropping in-flight events?
+D01232	E	What are the three guarantees in the CAP theorem and why can't a distributed system provide all three during a partition?
+D01233	M	Give examples of systems that choose CP versus AP and the behavior users see during a partition.
+D01234	M	What does the PACELC extension add to CAP?
+D01235	M	What are basically available, soft state and eventual consistency in BASE, and how can eventual consistency be made tolerable to users?
+D01236	M	Why is a distributed lock needed, and how would you implement one using a database unique index?
+D01237	M	How do you implement a distributed lock with Redis SET NX and expiry, and what goes wrong if the lock expires while the holder is still working?
+D01238	H	Explain the RedLock algorithm and the criticism that it is unsafe without fencing tokens.
+D01239	M	How does a ZooKeeper-style distributed lock with ordered ephemeral nodes avoid the thundering herd?
+D01240	M	Compare database, Redis and ZooKeeper based distributed locks on correctness, performance and failure behavior.
+D01241	M	What is the two-phase commit protocol, and what are its blocking and single-point-of-failure problems?
+D01242	M	Compare 2PC, TCC, Saga and the local message table pattern for distributed transactions.
+D01243	M	How would you keep an order service and an inventory service consistent without a distributed transaction?
+D01244	M	Explain the roles in Paxos (proposer, acceptor, learner) and the two phases of a proposal.
+D01245	M	Why does Paxos require a majority quorum and what is the role of proposal numbers?
+D01246	H	Explain Raft leader election, including terms, randomized timeouts and what happens with split votes.
+D01247	M	How does Raft replicate its log and when is an entry considered committed?
+D01248	M	Why is Raft considered easier to understand than Paxos and what design choices make it so?
+D01249	E	Why do systems use message queues, and what are the point-to-point and publish-subscribe models?
+D01250	M	How do message queues enable asynchronous processing, peak shaving and decoupling? What do they cost in complexity?
+D01251	M	How do you ensure no message is lost at the producer, the broker and the consumer?
+D01252	M	How do you guarantee message ordering in a partitioned queue, and what do you give up?
+D01253	M	What is the difference between at-most-once, at-least-once and exactly-once delivery, and how do you achieve effectively-once processing?
+D01254	M	How would you make a message consumer idempotent?
+D01255	M	A queue backlog grows to millions of messages. How do you diagnose and drain it safely?
+D02357	E	What is a distributed system, and how does it differ from a cluster or a microservice architecture?
+D02358	M	Why can a distributed system not rely on a single global clock, and what problems does this cause for ordering events?
+D02359	M	Why is partial failure the defining difficulty of distributed systems compared with a single-node program?
+D02360	M	Why does having no instantaneous global view of state make debugging and reasoning about distributed systems hard?
+D02363	M	What new classes of problems appear when you move from a single-node monolith to a distributed system, and which basic capabilities do you need to add?
+D02364	M	Explain the CAP theorem and why the popular "pick any two of three" framing is misleading.
+D02365	M	During a network partition, what concrete behaviour does a CP system exhibit versus an AP system?
+D02366	M	Is it meaningful to say a system is CA? Explain why partition tolerance is not optional in practice.
+D02367	H	How would you apply CAP thinking per feature inside one product, for example choosing different consistency for payments and for a product-view counter?
+D02368	M	What does the "consistency" in CAP mean, and how does it differ from the consistency in ACID?
+D02369	M	What does the "availability" in CAP precisely require, and how does it differ from the everyday notion of high availability?
+D02370	E	What are the three elements of BASE theory and how does BASE relate to ACID?
+D02371	M	Why is BASE often described as a practical extension of CAP trade-offs, and what does eventual consistency mean for application code?
+D02372	M	Compare strong consistency, weak consistency and eventual consistency, and give an example of a product feature suited to each.
+D02373	H	Give a real-world system for which you would choose CP and one for which you would choose AP, and justify the choice including failure behaviour.
+D02374	M	What is the Byzantine Generals Problem and how do Byzantine faults differ from ordinary crash faults?
+D02375	H	Why do oral messages require at least 3m+1 nodes to tolerate m traitors, and how do signed messages change that bound?
+D02376	M	What properties must a consensus protocol satisfy, and why does agreement on a value not imply that the system can keep making progress?
+D02377	M	Why do most internal data-center consensus systems like Raft and Paxos assume crash faults only, and when would you need a Byzantine fault tolerant protocol?
+D02378	M	Explain Basic Paxos: the roles, the prepare and accept phases, and what the proposal number is used for.
+D02379	H	Why can Basic Paxos suffer from livelock with competing proposers, and how do practical systems mitigate it?
+D02380	H	How does Paxos guarantee safety once a value has been chosen, even when proposers and acceptors crash and restart?
+D02381	M	What problem does Multi-Paxos solve relative to Basic Paxos, and how does a stable leader reduce the message cost per decision?
+D02382	M	Compare Paxos and Raft in terms of understandability, leader handling, log replication and membership change.
+D02385	E	What are the three node roles in Raft, and how does a node transition between them?
+D02386	M	Walk through a Raft leader election, including terms, randomized election timeouts and the majority vote requirement.
+D02387	M	How does Raft replicate log entries, and when is an entry considered committed?
+D02388	H	Explain the Raft Log Matching Property and how a new leader repairs a follower whose log diverges from its own.
+D02389	H	Why does Raft restrict leader election to candidates with sufficiently up-to-date logs?
+D02390	H	Why does a Raft leader only commit entries from its own term by counting replicas, and what anomaly would otherwise be possible?
+D02391	M	What happens to a Raft cluster during a network partition that isolates the current leader from the majority?
+D02392	M	Why are consensus clusters usually deployed with an odd number of nodes, and how many failures can a 5-node cluster tolerate?
+D02393	M	What is split brain in a replicated cluster, and how do quorum-based majority rules prevent it?
+D02394	M	Explain the two modes of the ZAB protocol, broadcast and crash recovery, and what happens when a leader fails.
+D02395	M	What are ZXID and epoch used for in a leader-based atomic broadcast protocol?
+D02396	M	Compare ZAB and Raft with respect to how they order writes and recover after a leader crash.
+D02397	M	Is a system with a single leader necessarily a single point of failure? Explain how leader-based systems stay available.
+D02398	H	Why is a majority quorum not a complete answer to split brain, and what additional mechanisms like epochs, leases and fencing tokens are needed?
+D02399	H	Explain what a lease guarantees and why it cannot prove that an old lease holder has actually stopped acting.
+D02400	H	What is a fencing token, and how does a storage service use it to reject writes from a stale lock holder?
+D02401	M	When would you choose leader and quorum coordination versus a decentralized gossip approach for sharing cluster state?
+D02402	H	Three instances of a service each run a scheduled job but the job must run only once per tick. Design the coordination mechanism and discuss its failure modes.
+D02403	M	How does the gossip protocol spread information, and why does it scale well with the number of nodes?
+D02404	M	Compare anti-entropy and rumor-mongering as gossip dissemination modes.
+D02405	M	What are the main drawbacks of gossip protocols, such as convergence delay, redundant messages and Byzantine behaviour?
+D02406	M	Where is gossip used in real systems, for example for failure detection and membership, and why is it a good fit?
+D02411	E	What is a distributed transaction and why can a local database transaction not cover it?
+D02412	M	Explain two-phase commit step by step and identify its main weaknesses.
+D02413	M	What blocking problem arises in 2PC when the coordinator fails after the prepare phase?
+D02414	M	How does three-phase commit try to fix 2PC, and why is it rarely used in practice?
+D02415	M	What is TCC (Try-Confirm-Cancel) and what must each of the three operations guarantee?
+D02416	H	What are the empty rollback, hanging and idempotency problems in TCC, and how do you handle them?
+D02417	M	Explain the Saga pattern and compare orchestration versus choreography.
+D02418	M	Compare TCC and Saga in terms of isolation, development cost and suitability for long-running business flows.
+D02419	M	How does a transactional message or a local message table achieve eventual consistency across services?
+D02420	M	What is the best-effort notification pattern for distributed consistency, and when is it appropriate?
+D02421	H	An order service must deduct inventory and charge payment in two separate services. Which distributed transaction approach would you pick and how do you handle compensation failures?
+D02422	M	What is the difference between rigid transactions and flexible transactions, and what trade-off does each make?
+D02423	H	Compare 2PC, TCC, Saga, and message-based eventual consistency across consistency strength, performance and implementation complexity.
+D02424	E	Why do we need distributed locks when a local lock already exists in each process?
+D02425	M	Does every multi-instance deployment require a distributed lock? Give alternatives such as unique constraints or optimistic locking.
+D02426	M	What properties should a correct distributed lock have, including mutual exclusion, deadlock freedom, reentrancy and fault tolerance?
+D02427	M	How do you implement a minimal distributed lock on Redis, and why must acquisition and expiry be set atomically?
+D02428	M	Why must a distributed lock have an expiry time, and what goes wrong if the lock holder outlives it?
+D02429	H	How does a watchdog or automatic lease renewal work, and what failure scenarios can it still not prevent?
+D02430	M	Why should the unlock operation verify the lock owner, and why must the check-and-delete be atomic?
+D02431	H	Is a single-node Redis lock safe under master-replica failover? Discuss the multi-node Redlock approach and its criticisms.
+D02432	M	How is a reentrant distributed lock implemented, and what extra state must be stored?
+D02433	M	How does a ZooKeeper-based distributed lock work with ephemeral sequential nodes, and why is watching only the predecessor node better than watching all nodes?
+D02434	M	Compare Redis-based and ZooKeeper or etcd-based distributed locks in terms of safety, performance and failure handling.
+D02435	H	A client holds a distributed lock, pauses for a long garbage collection, and resumes after its lease expired. How can the resource protect itself?
+D02436	E	What requirements must a distributed ID generator satisfy, such as uniqueness, ordering, high throughput and availability?
+D02437	M	Compare auto-increment database IDs, segment (number range) allocation, UUID and Snowflake for generating distributed IDs.
+D02438	M	Explain how the database segment mode reduces database load when generating IDs, and what happens when a segment is exhausted?
+D02439	M	Describe the bit layout of a Snowflake ID and explain what the timestamp, machine ID and sequence bits do.
+D02440	H	What problems does clock rollback cause for Snowflake-style ID generators, and how can you defend against them?
+D02441	M	Why are random UUIDs poor primary keys for B+ tree indexed tables, and what alternatives exist?
+D02442	H	Design an ID generation service for a platform with thousands of order creations per second across multiple data centers.
+D02443	M	How would you design the structure of an order number so that it is unique, roughly sortable and does not leak business volume?
+D02445	H	Design a short URL service, focusing on how you generate short unique codes and avoid collisions.
+D02466	E	What is ZooKeeper and what coordination problems is it designed to solve?
+D02467	M	Explain the ZooKeeper data model, znode types and how ephemeral and sequential nodes are used.
+D02468	M	How does a watcher work in a coordination service, and what are its delivery semantics and limitations?
+D02469	M	How does session management work in a coordination service, and what happens to ephemeral nodes when a session expires?
+D02470	M	Why is an even number of nodes in a majority-quorum cluster no better than the next lower odd number?
+D02471	M	How would you implement leader election, naming service, and group membership on top of a coordination service like ZooKeeper?
+D02472	M	Compare ZooKeeper and etcd in terms of consensus protocol, data model and typical use cases.
+D02473	M	Which consistency guarantees does ZooKeeper provide for reads and writes, and why can a read from a follower be stale?
+D02576	E	What is a message queue and what problems does it solve in a distributed system?
+D02577	M	Explain how a message queue enables asynchronous processing, peak shaving and decoupling.
+D02578	M	What new problems does introducing a message queue create for a system, such as availability, consistency and complexity?
+D02579	M	How do you ensure no message is lost across producer, broker and consumer?
+D02580	M	How do you handle duplicate message delivery, and what does at-least-once versus at-most-once versus exactly-once mean?
+D02581	M	A queue backlog of millions of messages builds up. How do you diagnose and drain it?
+D02582	M	How do you guarantee ordering of messages in a distributed queue, and what does it cost in parallelism?
+D02583	M	Compare the point-to-point queue model and the publish-subscribe topic model.
+D02584	M	What is the difference between using RPC and a message queue to communicate between services?
+D02585	M	How would you choose between Kafka, RabbitMQ and a cloud queue for a given workload?
+D02586	M	How does Kafka partitioning and consumer groups provide scalability, and what limits the parallelism of one consumer group?
+D02587	M	How does Kafka replication with leader, followers and ISR provide durability?
+D02588	H	Which Kafka configurations (acks, replication factor, min in-sync replicas, retries, commit strategy) are needed to avoid message loss?
+D02589	M	How does Kafka guarantee ordering and what does it mean that order is only per partition?
+D02590	M	How does Kafka avoid duplicate consumption, including idempotent producers and transactional semantics?
+D02591	M	What is a consumer group rebalance, why is it risky, and how can you reduce its impact?
+D02592	M	What happens when a consumer fails to process a message, and how do you design retry topics and a dead-letter queue?
+D02593	M	Why did Kafka move away from depending on an external coordination service?
+D02594	M	Why is Kafka able to achieve high throughput with sequential disk I/O, page cache and zero-copy?
+D02595	M	Compare synchronous and asynchronous disk flush and synchronous and asynchronous replication in a message broker.
+D02596	M	How do transactional messages implement distributed transactions in a message broker, including the half message and check-back steps?
+D02597	M	How do delayed and scheduled messages work in a broker?
+D02598	M	Compare push and pull consumption models in a message queue.
+D02599	M	What is replay (rewind) consumption by offset or time and when is it useful?
+D02600	M	Why does a broker cluster need a name or metadata service for routing, and what happens when it fails?
+D02601	M	Explain the exchange, binding and queue model in an AMQP broker, and the differences between direct, fanout, topic and headers exchanges.
+D02602	M	What is a dead-letter queue, what causes messages to be dead-lettered, and how do you use it to implement delayed messages?
+D02603	M	How do publisher confirms, durable queues and consumer acknowledgements together provide reliability in an AMQP broker?
+D02604	M	How do you provide high availability for a message broker, using mirrored or quorum queues?
+D02605	M	What is a priority queue, and what are its drawbacks in a message broker?
+D02606	M	What metrics should you monitor on a message broker in production, such as queue depth, consumer lag and unacknowledged messages?
+D02607	M	What is the difference between JMS and AMQP?
+D02608	M	What is a ring buffer based in-process queue like Disruptor, and why can it be faster than a blocking queue?
+D02609	M	How does cache-line padding avoid false sharing in a high-throughput lock-free queue?
+D02610	M	Compare wait strategies in a high-performance ring buffer, such as blocking, sleeping, yielding and busy-spin.
+D02611	M	How does an in-process queue like Disruptor differ from a distributed message queue like Kafka?
+D02619	M	Compare single-node scheduling approaches such as Timer, ScheduledExecutorService, DelayQueue and a time wheel.
+D02620	M	How does a hashed time wheel schedule large numbers of timers efficiently?
+D02621	H	Design a distributed task scheduler that guarantees a job runs exactly once per tick across many nodes and recovers from node failure.
+D02622	M	How can Redis or a message queue be used to implement delayed or scheduled tasks, and what are the limitations?
+D02623	M	What features should a distributed scheduling framework offer, such as sharding, failover, retries and misfire handling?
+D03242	M	Given a remote queue that removes and returns the head on each fetch and offers no protection against concurrent consumers, design a way to synchronize consumers so each element is processed once.
+D03243	H	How would you implement a distributed lock for queue consumers, and what happens if the lock holder crashes mid-processing?
+D03244	H	Compare a lease-based distributed lock, a single-leader consumer and partitioning the queue for synchronizing consumers.
+D03250	H	How would you ingest hashtag updates asynchronously and cope with hot hashtags in a stream-processing pipeline?
+D03278	H	How would you orchestrate a DAG of video transcoding tasks with retries, idempotency and parallel chunk processing?
+D03288	H	Design a message broker on top of a SQL database that supports multiple producers and consumers, exactly-one-consumer delivery, optional message expiry and high throughput.
+D03289	H	How can you use SELECT FOR UPDATE SKIP LOCKED or equivalent mechanisms to build a safe queue on a relational database, and what are the throughput limits?
+D03290	H	How would you implement visibility timeouts, retries and dead-letter handling in a SQL-backed message broker?
+D03291	M	Design a distributed task scheduler that executes one-time and cron-style recurring tasks within 10 seconds of their scheduled time.
+D03292	H	How would you partition scheduled tasks across workers and avoid double execution after a worker failure in a distributed scheduler?
+D03293	H	How would you store and efficiently scan for due tasks in a scheduler: time-bucketed tables, delay queues, hierarchical timing wheels or sorted sets?
+D03294	M	How would you handle recurring task rescheduling, missed runs and clock drift in a distributed cron service?
+D03301	H	How would you ingest billions of impression events per day with a streaming pipeline and still answer ad hoc time-range unique counts in seconds?
+D03305	M	How would a file sync service notify other devices of changes in near real time, and how would you keep their state consistent?
+D03310	H	How would you batch and aggregate clap events to cut write amplification while keeping the count visible in near real time?
+D03311	H	How would you fan out updates to 10,000 readers of one article over WebSockets or SSE, and how would you scale connection servers?
+D03313	H	How would you implement change-data-capture and subscription routing in a realtime database, and keep subscribers consistent after reconnecting?
+D03315	H	How would you guarantee message ordering and delivery in a real-time channel messaging system when clients reconnect frequently?
+D03320	M	How would you ensure your design is free of deadlocks, and how do you reduce the throughput impact of locks?
+D04063	E	State the CAP theorem and explain why partition tolerance is not really optional in a distributed system.
+D04064	M	Why is the common "pick two of three" framing of CAP misleading?
+D04065	M	What does CAP theorem really say about consistency and availability during a network partition, and how do CP and AP systems behave differently?
+D04066	M	What does PACELC add to CAP and why does it matter when there is no partition?
+D04067	M	Give examples of databases that behave as CP and AP, and explain what each does when a partition occurs.
+D04068	M	Is Kafka an AP or CP system? Which settings change its behavior?
+D04069	M	Explain how consensus algorithms such as Paxos or Raft elect a leader and replicate a log.
+D04070	M	How does a quorum read and write (R + W > N) provide consistency, and what are the failure scenarios?
+D04071	M	What is leader election, and what problems arise with split brain?
+D04072	M	How do heartbeat-based failure detectors work, and how do push, pull, and quorum variants differ?
+D04073	M	How does gossip-based failure detection scale compared with centralized heartbeating?
+D04074	M	Why do we need a distributed lock, and what can go wrong if the lock holder pauses or the lock expires?
+D04075	H	Design a safe distributed lock using Redis or a consensus system. How do fencing tokens prevent stale lock holders from corrupting data?
+D04076	M	Why can't you rely on wall-clock timestamps for ordering events across machines, and what alternatives exist?
+D04077	E	What does idempotency mean in an API or message consumer, and why does it matter in distributed systems?
+D04078	M	How do idempotency keys work in a payment API, and how would you store and expire them?
+D04079	M	What are the top cases in which you must apply idempotency?
+D04080	H	Explain why exactly-once delivery is practically impossible and how at-least-once delivery combined with idempotent processing gets you effectively-once.
+D04081	M	Compare at-most-once, at-least-once, and exactly-once delivery semantics. Where does each fit?
+D04082	M	What is the difference between a message broker, a message queue, and an event streaming platform?
+D04083	M	Compare the point-to-point queue and publish-subscribe models.
+D04084	M	What are dead-letter queues and poison-pill messages, and how should consumers handle them?
+D04085	M	What is backpressure in a queue-based system and how can you apply it?
+D04086	M	How does a queue guarantee ordering, and how does partitioning in Kafka affect ordering guarantees?
+D04087	M	Why is Kafka fast, considering sequential I/O, zero-copy, batching, and page cache?
+D04088	M	Describe Kafka's architecture of topics, partitions, replicas, brokers, consumer groups, and offsets.
+D04089	M	How does Kafka tolerate broker failures, and what are the roles of ISR and leader replicas?
+D04090	H	Can Kafka lose messages? Describe the settings on the producer, broker, and consumer sides that determine whether it can.
+D04091	M	How would you commit consumer offsets to avoid both lost and duplicate processing?
+D04092	M	Compare blocking and non-blocking queues, and bounded versus unbounded queues, in terms of backpressure and memory.
+D04093	M	Compare the four common types of queues: FIFO, priority, delay, and dead-letter queues.
+D04094	M	Describe the six common cloud messaging patterns including async request-reply, claim check, priority queue, competing consumers, pub-sub, and saga.
+D04095	M	What is the claim check pattern and when do you use it instead of sending big payloads through a broker?
+D04096	M	What are the competing consumers pattern's guarantees, and what does it sacrifice?
+D04097	M	Explain event sourcing and compare it with ordinary event-driven architecture.
+D04098	M	What are the benefits and challenges of event sourcing, such as snapshots, schema evolution, and replay?
+D04099	M	What is CQRS, and when does separating read and write models help or hurt?
+D04100	M	Why is two-phase commit often avoided in modern distributed systems, and what problems does it have?
+D04101	M	What does the three-phase commit add over 2PC, and does it fully solve the blocking problem?
+D04102	M	Explain the saga pattern with choreography and orchestration, and how compensating transactions work.
+D04103	M	Compare orchestration and choreography for coordinating microservices.
+D04104	H	A saga step in the middle fails after earlier steps have committed. How do you design compensations when they themselves might fail?
+D04105	M	What is the outbox pattern and what problem does it solve between a database commit and message publication?
+D04106	M	What are the common patterns used in event-driven architecture, such as event notification, event-carried state transfer, and event sourcing?
+D04107	M	How do you handle failures and retries in a message consumer without causing duplicate side effects?
+D04108	M	What is the Lambda architecture and the Kappa architecture, and when is each used?
+D04109	M	Compare replication strategies for fault tolerance: active-passive failover, active-active, and quorum-based replication.
+D04369	M	What is the difference between weak, eventual, and strong consistency, and where do DNS, memcached, and relational databases fall?

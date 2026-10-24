@@ -1,0 +1,4072 @@
+# OUTLINE of ombharatiya__ai-system-design-guide
+
+
+## FILE CONTRIBUTING.md  (2 KB)
+- Contributing
+  - What to contribute
+  - How to propose changes
+  - Style conventions
+  - Quality bar
+
+## FILE COURSES.md  (18 KB)
+- 🎓 Recommended AI Courses & Learning Paths
+  - Table of Contents
+  - Foundation: LLMs & Transformers <a name="foundation"></a>
+  - RAG Pipelines <a name="rag"></a>
+  - Agentic AI & Multi-Agent Systems <a name="agents"></a>
+  - Context & Memory Management <a name="context-memory"></a>
+  - AI Evaluations & Observability <a name="evals"></a>
+  - Prompt Engineering & Context Engineering <a name="prompting"></a>
+  - Fine-tuning & Adaptation <a name="finetuning"></a>
+  - Inference Optimization & MLOps <a name="mlops"></a>
+  - AI Safety & Guardrails <a name="safety"></a>
+  - Coding Agents & Developer AI Tools <a name="coding-agents"></a>
+  - For PMs & Non-Engineers <a name="pm-track"></a>
+  - YouTube Channels & Free Content <a name="free"></a>
+  - Learning Path Suggestions <a name="paths"></a>
+    - 🛤️ Path: "I'm new to AI and want to build things fast"
+    - 🛤️ Path: "I want to understand LLMs deeply"
+    - 🛤️ Path: "I want to build production-ready AI evaluation"
+    - 🛤️ Path: "I'm a PM learning to contribute to AI product quality"
+    - 🛤️ Path: "I want to deploy coding agents in my team"
+  - How to Stay Current
+
+## FILE GLOSSARY.md  (47 KB)
+- AI System Design Glossary
+  - A
+  - B
+  - C
+  - D
+  - E
+  - F
+  - G
+  - H
+  - I
+  - J
+  - K
+  - L
+  - M
+  - N
+  - O
+  - P
+  - Q
+  - R
+  - S
+  - T
+  - V
+  - W
+  - X
+  - Z
+
+## FILE PATTERNS.md  (11 KB)
+- AI Design Patterns Quick Reference
+  - Retrieval Patterns
+  - Generation Patterns
+  - Agent Patterns
+  - Agentic Coding Patterns (2026)
+  - Reliability Patterns
+  - Caching Patterns
+  - Security Patterns
+  - Evaluation Patterns
+  - Cost Optimization Patterns
+  - Anti-Patterns to Avoid
+  - Pattern Selection Guide
+
+## FILE README.md  (28 KB)
+- 🧠 AI System Design Guide
+    - The Complete Interview & Production Reference
+  - 📚 Quick Navigation
+    - Pick a path
+  - 🎯 Why This Guide
+  - 🎯 What This Guide Is (and Is Not)
+  - 📖 Guide Structure
+    - Chapters by AI System Lifecycle Stage
+  - 🔥 Featured Case Studies
+  - 🔬 Bonus Deep-Dive Guides
+  - 🎓 For Interview Prep
+  - ❓ Frequently Asked Questions
+    - What is AI system design?
+    - How do I prepare for an AI engineering interview?
+    - What is RAG (Retrieval-Augmented Generation)?
+    - What are AI agents and how are they different from chatbots?
+    - What is MCP (Model Context Protocol) and how does it compare to A2A?
+    - Which LLM should I use in production: Claude, GPT, Gemini, or open-source?
+    - How do I evaluate an LLM or RAG system in production?
+    - How do I build a multi-tenant RAG system safely?
+    - What is agentic RAG?
+    - Is this guide free? Can I contribute?
+    - How often is this guide updated?
+    - Can I use this guide if I am transitioning from backend, QA, PM, or EM into AI?
+  - 🔄 Living Book
+  - 🤝 Contributing
+  - 👋 Stay Connected
+  - 📄 License
+
+## FILE RESEARCH-RADAR.md  (52 KB)
+- Research Radar
+  - Table of Contents
+  - How to Use This Page
+  - The Big Shifts
+  - 1. Context Engineering Becomes a Systems Discipline
+  - 2. The Limits of Test-Time Compute
+  - 3. RL Post-Training: What It Actually Does
+  - 4. Latent and Alternative Reasoning
+  - 5. Efficient Long-Context Architecture
+  - 6. Agent Reliability and Failure Modes
+  - 7. Agent and Memory Security
+  - 8. AI Control and the Evaluation Frontier
+  - 9. Memory and Retrieval Advances
+  - 10. Multimodal: World Models, VLAs, and Omni
+  - 11. Smaller, Cheaper, Faster
+  - 12. Test-Time Training: Learning at Inference
+  - 13. Skill Engineering: SKILL.md as a Portability Layer
+  - 14. Graph Engineering and the Orchestration Consensus
+  - 15. Recursive Self-Improvement: When the Loop Optimizes Itself
+  - A 90-Day Learning Path
+  - How This Maps to the Guide
+
+## FILE TRANSITION_GUIDE.md  (30 KB)
+- 🔄 Transitioning to AI Engineering Roles
+  - Who This Guide Is For
+  - The AI Role Landscape
+  - Transition Paths by Current Role
+    - 1. 🖥️ Backend Engineer → AI Engineering
+    - 2. 🎨 Frontend Engineer → AI Product Engineering
+    - 3. 🧪 QA Engineer → AI Eval Engineer
+    - 4. 📋 Product Manager → AI Product Manager
+    - 5. 👨‍💼 Engineering Manager → AI Engineering Manager
+    - 6. 🛠️ DevOps / Platform Engineer → MLOps / AI Infrastructure Engineer
+    - 7. 📊 Data Engineer → AI Data / Feature Engineer
+  - 📊 Role Comparison Overview
+  - 🗺️ Which Repo Sections Map to What
+  - 📚 Recommended Starter Courses by Role
+  - Common Mistakes to Avoid
+  - The 2026 Market: Why Experience Is Your Advantage
+  - How to Get Hired
+
+## FILE ai_evals_complete_guide_langwatch_langfuse.md  (151 KB)
+- AI Evals For Engineers, PMs & QAs: Complete Study Guide
+  - Table of Contents
+  - Chapter 1: What Are AI Evals and Why You Need Them
+    - Simple Definition
+    - Why Everyone Needs Evals
+    - The Three Core Truths About Evals
+    - The AI Development Cycle is the Scientific Method
+    - What Can Go Wrong Without Evals?
+    - For PMs: Why This Is Your Job
+    - For QAs: Your New Superpower
+  - Chapter 2: Setting Up Observability
+    - What is a Trace?
+    - Example of a Complete Trace
+    - What Information to Capture
+    - Choosing an Observability Platform
+    - Setting Up LangWatch (Open-Source, Cloud or Self-Hosted)
+    - Setting Up Langfuse (Open-Source, Cloud or Self-Hosted)
+    - Creating and Managing Prompts
+    - Uploading Test Datasets
+    - Key Principle
+  - Chapter 3: Error Analysis: The Secret Sauce
+    - What is Error Analysis?
+    - Why PMs and QAs MUST Do This (Not Just Engineers)
+    - Step 1: Generate Diverse Test Queries
+    - Step 2: Review 100 Traces and Take Notes (Open Coding)
+    - Step 3: Categorize Errors Using Axial Coding
+    - Step 4: Label Your Errors with LLM Assistance
+    - Step 5: Count and Prioritize
+    - Why This Changes Everything
+    - The "Theoretical Saturation" Concept
+    - For PMs/QAs: Your Error Analysis Checklist
+  - Chapter 4: Building LLM-as-a-Judge Evaluators
+    - What is LLM-as-a-Judge?
+    - When to Use LLM-as-a-Judge
+    - The Complete LLM Judge Workflow
+    - Step 1: Generate Traces
+    - Step 2: Label Ground Truth Data
+    - Step 3: Split Data (Train / Dev / Test)
+    - Step 4: Build Your Judge Prompt
+    - Why Binary Scores Work Best
+    - Step 5: Validate on Dev Set
+    - The Metrics That Actually Matter
+    - Real Results: Why Iteration Matters
+    - Target Metrics
+    - Iterating on Your Judge Prompt
+    - Step 6: Final Evaluation on Test Set
+    - Step 7: Run on All Traces at Scale
+    - LLM-as-Judge Across Different Domains
+  - Chapter 5: Code-Based Evaluators
+    - What Are Code-Based Evals?
+    - When to Use Code-Based Evals
+    - Example 1: Check for Markdown in Text Messages
+    - Example 2: Validate Tool Calls
+    - Example 3: Validate Required Information in Tour Confirmations
+    - Benefits of Code-Based Evals
+    - Combining Code-Based and LLM-Based Evals
+    - Testing Your Code-Based Evals
+  - Chapter 6: RAG System Evaluation
+    - What is RAG?
+    - Why RAG Needs Special Evaluation
+    - Building a BM25 Retrieval Engine
+    - Generating Synthetic Queries for RAG Testing
+    - Evaluating Retrieval Quality
+    - Running RAG Experiments
+    - Diagnosing RAG Failures
+    - Improving RAG Performance
+  - Chapter 7: Multi-Step Pipeline Evaluation
+    - What is a Multi-Step Pipeline?
+    - The 7-State Recipe Bot Pipeline
+    - Why State-Level Evaluation Matters
+    - Building State-Level Evaluators
+    - Running State-Level Evaluations
+    - Analyzing Failure Distribution
+    - Using LLM to Synthesize Improvement Strategies
+    - For PMs/QAs: Pipeline Evaluation Without Code
+  - Chapter 8: Multi-Turn Conversation Evaluation
+    - Why Multi-Turn Is Different
+    - Strategies for Multi-Turn Evaluation
+    - Key Metrics for Multi-Turn
+  - Chapter 9: Production Evals: Safety, Guardrails & Monitoring
+
+## FILE ai_evals_comprehensive_study_guide.md  (127 KB)
+- AI Evals For Engineers, PMs & QAs: Complete Study Guide
+  - Table of Contents
+  - Chapter 1: What Are AI Evals and Why You Need Them
+    - Simple Definition
+    - Why Everyone Needs Evals
+    - The Three Core Truths About Evals
+    - The AI Development Cycle is the Scientific Method
+    - What Can Go Wrong Without Evals?
+    - For PMs: Why This Is Your Job
+    - For QAs: Your New Superpower
+  - Chapter 2: Setting Up Observability
+    - What is a Trace?
+    - Example of a Complete Trace
+    - What Information to Capture
+    - Choosing an Observability Platform
+    - Setting Up Phoenix (Free, Self-Hosted)
+    - Setting Up Langfuse (Open-Source, Cloud or Self-Hosted)
+    - Creating and Managing Prompts
+    - Uploading Test Datasets
+    - Key Principle
+  - Chapter 3: Error Analysis: The Secret Sauce
+    - What is Error Analysis?
+    - Why PMs and QAs MUST Do This (Not Just Engineers)
+    - Step 1: Generate Diverse Test Queries
+    - Step 2: Review 100 Traces and Take Notes (Open Coding)
+    - Step 3: Categorize Errors Using Axial Coding
+    - Step 4: Label Your Errors with LLM Assistance
+    - Step 5: Count and Prioritize
+    - Why This Changes Everything
+    - The "Theoretical Saturation" Concept
+    - For PMs/QAs: Your Error Analysis Checklist
+  - Chapter 4: Building LLM-as-a-Judge Evaluators
+    - What is LLM-as-a-Judge?
+    - When to Use LLM-as-a-Judge
+    - The Complete LLM Judge Workflow
+    - Step 1: Generate Traces
+    - Step 2: Label Ground Truth Data
+    - Step 3: Split Data (Train / Dev / Test)
+    - Step 4: Build Your Judge Prompt
+    - Why Binary Scores Work Best
+    - Step 5: Validate on Dev Set
+    - The Metrics That Actually Matter
+    - Real Results: Why Iteration Matters
+    - Target Metrics
+    - Iterating on Your Judge Prompt
+    - Step 6: Final Evaluation on Test Set
+    - Step 7: Run on All Traces at Scale
+    - LLM-as-Judge Across Different Domains
+  - Chapter 5: Code-Based Evaluators
+    - What Are Code-Based Evals?
+    - When to Use Code-Based Evals
+    - Example 1: Check for Markdown in Text Messages
+    - Example 2: Validate Tool Calls
+    - Example 3: Validate Required Information in Tour Confirmations
+    - Benefits of Code-Based Evals
+    - Combining Code-Based and LLM-Based Evals
+    - Testing Your Code-Based Evals
+  - Chapter 6: RAG System Evaluation
+    - What is RAG?
+    - Why RAG Needs Special Evaluation
+    - Building a BM25 Retrieval Engine
+    - Generating Synthetic Queries for RAG Testing
+    - Evaluating Retrieval Quality
+    - Running RAG Experiments
+    - Diagnosing RAG Failures
+    - Improving RAG Performance
+  - Chapter 7: Multi-Step Pipeline Evaluation
+    - What is a Multi-Step Pipeline?
+    - The 7-State Recipe Bot Pipeline
+    - Why State-Level Evaluation Matters
+    - Building State-Level Evaluators
+    - Running State-Level Evaluations
+    - Analyzing Failure Distribution
+    - Using LLM to Synthesize Improvement Strategies
+    - For PMs/QAs: Pipeline Evaluation Without Code
+  - Chapter 8: Multi-Turn Conversation Evaluation
+    - Why Multi-Turn Is Different
+    - Strategies for Multi-Turn Evaluation
+    - Key Metrics for Multi-Turn
+  - Chapter 9: Production Evals: Safety, Guardrails & Monitoring
+
+## FILE 00-interview-prep/01-question-bank.md  (408 KB)
+- AI System Design Interview Question Bank
+  - Coverage at a Glance
+  - Table of Contents
+  - RAG Architecture Questions
+    - Q1: Walk me through the architecture of a production RAG system
+    - Q2: When would you choose RAG over fine-tuning, and vice versa?
+    - Q3: How do you handle the "lost in the middle" problem?
+    - Q4: Explain chunking strategies and when to use each
+    - Q5: How would you evaluate a RAG system?
+    - Q6: Describe hybrid search and when you would use it
+    - Q7: How do you handle multi-tenant RAG systems?
+    - Q8: What is reranking and when would you skip it?
+    - Q9: How would you handle documents with tables, charts, and images?
+    - Q10: Explain vector database indexing algorithms
+  - Agentic Systems Questions
+    - Q11: What is the difference between an agent and a workflow?
+    - Q12: Explain the ReAct pattern
+    - Q13: How do you implement tool use / function calling?
+    - Q14: How would you design a multi-agent system?
+    - Q15: Explain the Model Context Protocol (MCP)
+    - Q16: How do you handle long-running agent tasks?
+    - Q17: What is flow engineering?
+  - Model Selection Questions
+    - Q18: How do you choose between Claude Sonnet 5.5, GPT-6.1 Sol, and Gemini 3.8 Flash for a production workload?
+    - Q19: When would you use a small language model vs a frontier model?
+    - Q20: Explain reasoning models and controllable thinking. When are they worth the cost?
+    - Q21: How do you evaluate and compare embedding models?
+  - Optimization Questions
+    - Q22: Explain the KV cache and why it matters
+    - Q23: What is speculative decoding and when would you use it?
+    - Q24: Compare batching strategies for LLM serving
+    - Q25: How do you optimize LLM inference costs?
+    - Q26: Explain quantization techniques for LLM deployment
+  - Evaluation Questions
+    - Q27: How do you evaluate LLM outputs when there is no ground truth?
+    - Q28: Explain the RAGAS evaluation framework
+    - Q29: How do you detect and handle hallucinations?
+  - Production and MLOps Questions
+    - Q30: How do you implement observability for LLM applications?
+    - Q31: Describe CI/CD for LLM applications
+    - Q32: How do you handle rate limits and quotas?
+    - Q33: Describe strategies for LLM application security
+  - Tooling and Lifecycle Questions
+    - Q34: Explain the tradeoffs between different vector database options
+    - Q35: How do you handle model updates and deprecations from providers?
+    - Q36: What is DSPy and when would you use it?
+    - Q37: How do you design a feedback loop for continuous improvement?
+    - Q38: Explain token counting and why it matters
+    - Q39: How do you evaluate and compare RAG systems objectively?
+  - Ensemble Methods Questions
+    - Q40: When would you use Self-Consistency vs Best-of-N sampling?
+    - Q41: How do you prevent reward hacking when using Best-of-N?
+    - Q42: Design an evaluation system for comparing two LLMs on open-ended tasks.
+    - Q43: What is the difference between ensemble learning and model arbitration?
+    - Q44: When would you use Multi-Agent Debate vs Mixture of Agents?
+    - Q45: When should you use LangChain vs build from scratch?
+    - Q46: How do you manage context window limits with long conversations?
+    - Q47: How do you defend against prompt injection attacks?
+    - Q48: When would you choose fine-tuning over prompt engineering?
+    - Q49: How do you optimize latency for real-time LLM applications?
+  - System Design Scenarios
+    - Scenario 1: Design a customer support chatbot
+    - Scenario 2: Design a document processing pipeline
+    - Scenario 3: Design a RAG system for enterprise search
+    - Scenario 4: Design a code assistant
+    - Scenario 5: Design an AI-powered content moderation system
+  - Advanced Questions (December 2025)
+    - Q50: Explain Model Context Protocol (MCP) and why it matters for production agents
+    - Q51: Your agent takes 47 LLM calls to complete a task that should take 5. How do you debug this?
+    - Q52: When would you choose a reasoning model (o3, DeepSeek-R1) over a standard model (GPT-5.2)?
+    - Q53: How do you prevent prompt injection in a system that accepts user input?
+    - Q54: Explain the difference between Agentic RAG and traditional RAG
+    - Q55: Your RAG system works great on test data but fails in production. What do you check?
+    - Q56: How do you implement guardrails for an autonomous agent that can take real-world actions?
+    - Q57: Explain KV Cache and why it matters for inference optimization
+    - Q58: Design a system where one user's prompt cannot leak to another user
+    - Q59: Your LLM costs are 10x higher than expected. Walk through your investigation
+    - Q60: How would you evaluate whether an LLM is hallucinating?
+    - Q61: Explain the tradeoffs between different embedding models for RAG
+    - Q62: Your search results are relevant but the LLM ignores them and answers from its training data. How do you 
+
+## FILE 00-interview-prep/02-answer-frameworks.md  (21 KB)
+- Answer Frameworks for AI System Design Interviews
+  - Table of Contents
+  - System Design Framework (SPIDER)
+    - S - Scope and Clarify
+    - P - Prioritize Requirements
+    - I - Initial Architecture
+    - D - Deep Dive into Critical Paths
+    - E - Evaluation and Observability
+    - R - Reliability and Scale
+  - Worked Example: SPIDER in a 45-Minute Session
+  - Concept Explanation Framework (ETA)
+    - E - Explain Simply
+    - T - Technical Details
+    - A - Applications and Tradeoffs
+  - Tradeoff Analysis Framework
+    - Step 1: State the Options Clearly
+    - Step 2: Define Evaluation Criteria
+    - Step 3: Analyze Each Option
+    - Step 4: Make a Recommendation with Reasoning
+  - Debugging and Troubleshooting Framework
+    - Step 1: Gather Information
+    - Step 2: Form Hypotheses
+    - Step 3: Describe Diagnostic Approach
+    - Step 4: Propose Fixes and Verification
+  - Behavioral Questions Framework (STAR-L)
+    - S - Situation
+    - T - Task
+    - A - Action
+    - R - Result
+    - L - Learnings
+  - Handling Unknown Topics
+    - If You Do Not Know At All
+    - If You Know Partially
+    - If You Know the Concept but Not Details
+  - Common Mistakes and How to Avoid Them
+    - Mistake 1: Jumping to Solutions
+    - Mistake 2: Ignoring Cost
+    - Mistake 3: Not Discussing Failure Modes
+    - Mistake 4: Overcomplicating
+    - Mistake 5: Not Asking for Feedback
+  - Quick Reference: Signals of Strong Answers
+  - Anti-Patterns to Avoid
+  - Key Takeaways
+
+## FILE 00-interview-prep/03-common-pitfalls.md  (20 KB)
+- Common Pitfalls in AI System Design Interviews
+  - Table of Contents
+  - Architecture Pitfalls
+    - Pitfall 1: Skipping the Data Pipeline
+    - Pitfall 2: One-Size-Fits-All Model Selection
+    - Pitfall 3: Ignoring the Evaluation Layer
+    - Pitfall 4: Underestimating Multi-Tenancy Complexity
+    - Pitfall 5: No Graceful Degradation
+  - Technical Knowledge Pitfalls
+    - Pitfall 6: Confusing Embedding and Generation Models
+    - Pitfall 7: Misunderstanding Context Windows
+    - Pitfall 8: Not Understanding Token Economics
+    - Pitfall 9: Shallow Understanding of RAG Components
+    - Pitfall 10: Treating Prompts as Magic
+  - Communication Pitfalls
+    - Pitfall 11: Monologuing Without Interaction
+    - Pitfall 12: Not Leading with Structure
+    - Pitfall 13: Technical Jargon Without Explanation
+    - Pitfall 14: Defending Wrong Answers
+  - Interview Strategy Pitfalls
+    - Pitfall 15: Solving a Different Problem
+    - Pitfall 16: Not Managing Time
+    - Pitfall 17: Not Drawing
+  - AI-Specific Pitfalls
+    - Pitfall 18: Treating AI Components as Black Boxes
+    - Pitfall 19: Ignoring Hallucination Risk
+    - Pitfall 20: Security as an Afterthought
+  - Checklists for Self-Review
+    - Before the Interview
+    - During the Interview
+    - After Each Section
+
+## FILE 00-interview-prep/04-whiteboard-exercises.md  (49 KB)
+- Whiteboard Exercises for AI System Design
+  - Table of Contents
+  - Exercise 1: Enterprise RAG System
+    - Problem Statement
+    - Time Allocation (35 minutes)
+    - Solution Walkthrough
+  - Exercise 2: Customer Support Chatbot
+    - Problem Statement
+    - Solution Highlights
+  - Exercise 3: Code Review Assistant
+    - Problem Statement
+    - Solution Highlights
+  - Exercise 4: Document Processing Pipeline
+    - Problem Statement
+    - Solution Highlights
+  - Exercise 5: Real-Time Content Moderation
+    - Problem Statement
+    - Solution Highlights
+  - Exercise 6: Multi-Tenant AI Platform
+    - Problem Statement
+    - Solution Highlights
+  - Exercise 7: Semantic Search at Scale
+    - Problem Statement
+    - Solution Highlights
+  - Exercise 8: Evaluation Pipeline for a Production LLM Product
+    - Problem Statement
+    - Clarifying Questions to Ask
+    - Solution Walkthrough
+    - What Distinguishes Strong Candidates
+  - Exercise 9: Memory and State for a Long-Running Agent
+    - Problem Statement
+    - Clarifying Questions to Ask
+    - Solution Walkthrough
+    - What Distinguishes Strong Candidates
+  - Exercise 10: Inference Batching Service on a Single GPU
+    - Problem Statement
+    - Clarifying Questions to Ask
+    - Solution Walkthrough
+    - What Distinguishes Strong Candidates
+  - Tips for Whiteboard Exercises
+    - Drawing Tips
+    - Common Patterns to Know
+    - Phrases That Signal Strong Candidates
+    - Time Management
+    - Rehearse With Someone Else Drawing the Clock
+
+## FILE 00-interview-prep/05-behavioral-for-ai-roles.md  (23 KB)
+- Behavioral Questions for AI/ML Roles
+  - Table of Contents
+  - Why Behavioral Questions Matter for AI Roles
+  - AI-Specific Behavioral Themes
+    - Theme 1: Handling Ambiguity
+    - Theme 2: Managing Expectations
+    - Theme 3: Dealing with Failure
+    - Theme 4: Cross-Functional Collaboration
+    - Theme 5: Responsible AI
+    - Theme 6: Customer-Facing Deployment
+  - Question Categories and Examples
+    - Leadership and Influence
+    - Technical Decision Making
+    - Past-Project Technical Deep Dive
+    - Project Challenges
+    - Collaboration and Conflict
+    - Growth and Learning
+  - Sample Answers Using STAR-L
+    - Example 1: Handling Ambiguity
+    - Example 2: Managing Failed Expectations
+    - Example 3: Ethical Concern
+    - Example 4: Cross-Functional Collaboration
+    - Example 5: Being Wrong and Walking It Back
+    - Example 6: Raising a Concern That Was Dismissed
+  - Questions to Ask Your Interviewers
+    - About the Team
+    - About the Tech
+    - About the Culture
+    - About Growth
+    - About Compensation and Leveling (for later-stage conversations)
+  - Red Flags to Avoid
+  - Practicing Out Loud
+  - Preparation Checklist
+
+## FILE 00-interview-prep/06-job-market-trends-2026.md  (54 KB)
+- AI Job Market Trends - October 2026
+  - Table of Contents
+  - The Three Headline Shifts
+    - 1. The market is paradoxically hot and cold.
+    - 2. The title is collapsing; the work is fragmenting.
+    - 3. Forward Deployed Engineer is the breakout role of 2026.
+  - Role Taxonomy in 2026
+    - Established titles (still hiring strongly)
+    - NEW titles since 2025
+    - Roles disappearing or consolidating
+  - Skills by Career Level
+    - L4-L5 (Mid-level IC, 3-5 yrs)
+    - L6-L7 (Senior / Staff)
+    - L8+ (Principal / Leadership IC)
+    - Manager track (EM / Director)
+    - PM track (AI PM / AI TPM)
+  - What Job Listings Actually Require
+    - Must-Have (called out as required across 100+ postings)
+    - Nice-to-Have (explicitly listed as "plus" or "bonus")
+    - Top Tech Stack in Listings (May 2026)
+    - By Company Tier
+    - Non-Technical Requirements
+  - Compensation Reality
+    - Compensation insight
+  - Geographic & Industry Distribution
+  - Interview Process Patterns
+    - AI-role specifics
+    - AI tools in the loop: check the policy per round
+    - Frontier-lab specifics
+  - Emerging Roles to Watch
+    - Forward Deployed Engineer (FDE)
+    - AI Evaluation Engineer
+    - Agentic Systems Engineer
+    - AI Reliability Engineer
+    - AI Security Engineer / LLM Red Team Specialist
+    - MCP Engineer
+  - Strategic Takeaways
+  - References
+    - Q3 2026 market signals
+    - FDE, evaluator, and credential programs
+    - Hiring market reports
+    - Compensation data
+    - Frontier-lab career sources
+    - Interview process sources
+    - Emerging role coverage
+    - Compliance & regulation
+
+## FILE 00-interview-prep/07-faq.md  (35 KB)
+- Frequently Asked Questions: AI Engineering, RAG, and Agents
+  - Table of Contents
+  - General
+    - What is an AI engineer?
+    - What is the difference between an AI engineer and an ML engineer?
+    - How do I become an AI engineer?
+    - What programming language should I learn for AI engineering?
+    - Is AI engineering a good career?
+    - Where can I get a mock AI system design interview or mentorship?
+  - RAG
+    - What is RAG?
+    - How does RAG work?
+    - Is RAG dead because of long context windows?
+    - What is the difference between RAG and fine-tuning?
+    - What is the best vector database?
+    - What is contextual retrieval?
+    - What is hybrid search?
+    - What is GraphRAG?
+    - What is the best chunk size for RAG?
+  - Agents
+    - What is an AI agent?
+    - What is the difference between an agent and a chatbot?
+    - What is MCP (Model Context Protocol)?
+    - What is the best agent framework?
+    - What is agentic RAG?
+    - How do computer-use agents work?
+    - What is context engineering?
+    - What are Agent Skills?
+  - Models
+    - What is the best LLM right now?
+    - How much does Claude / GPT / Gemini / DeepSeek cost?
+    - What is the difference between Claude Opus and Claude Sonnet?
+    - Should I use an open-source model?
+    - What is prompt caching?
+  - Evaluation
+    - How do you evaluate an LLM?
+    - What is LLM-as-judge?
+    - What is the best LLM observability tool?
+    - What is RAGAS?
+    - How do you detect and handle model drift in production?
+  - Inference
+    - What is vLLM?
+    - What is the difference between vLLM and SGLang?
+    - What is TensorRT-LLM?
+    - How do you optimize LLM inference cost?
+    - What is speculative decoding?
+    - What is a token budget and how do you enforce it?
+    - How do you design fallbacks across multiple LLM providers?
+  - Memory
+    - What is the best AI agent memory framework?
+    - What is the difference between short-term and long-term memory in agents?
+    - How does a knowledge graph help an AI agent?
+  - Security
+    - What is prompt injection?
+    - How do you prevent prompt injection?
+    - What is OWASP LLM Top 10?
+    - What is sandboxing in AI agents?
+  - Related Reading
+
+## FILE 00-interview-prep/README.md  (6 KB)
+- AI System Design Interview Preparation
+  - Before You Start
+  - Read in Order
+  - Role-Specific Prep Paths
+  - Files in This Folder
+  - Practice With a Real Interviewer
+  - Companion Resources
+  - Key Takeaways
+
+## FILE 01-foundations/01-llm-internals.md  (25 KB)
+- LLM Internals
+  - Table of Contents
+  - The Transformer Revolution
+  - Architecture Variants
+    - Decoder-Only (Most LLMs Today)
+    - Encoder-Only (BERT-style)
+    - Encoder-Decoder (The Return of the Encoder)
+  - Mixture of Experts (MoE)
+    - Key MoE Nuances for System Design:
+  - Scaling Laws: Training vs. Inference Optimal
+  - Native Multimodality
+  - Self-Attention Mechanism
+    - The Intuition
+    - The Math
+    - Why Scale by √d_k?
+    - Attention Complexity
+  - Multi-Head Attention
+    - Grouped Query Attention (GQA)
+  - Position Encodings
+    - Sinusoidal (Original Transformer)
+    - Learned Absolute
+    - Rotary Position Embedding (RoPE)
+    - ALiBi (Attention with Linear Biases)
+    - Position Encoding Comparison
+  - Feed-Forward Networks
+    - Activation Functions
+    - GLU Variants
+  - Layer Normalization
+    - Pre-LN vs Post-LN
+    - RMSNorm
+  - Putting It All Together
+  - Key Numbers to Know
+    - Model Sizes
+    - Memory Requirements
+    - Compute Requirements
+  - Key Takeaways
+  - Interview Questions
+    - Q: Explain why transformer attention is O(n²) and what alternatives exist.
+    - Q: What is the KV cache and why does it matter for serving?
+    - Q: Why do modern LLMs use Pre-LN instead of Post-LN?
+    - Q: What is the difference between MHA, MQA, and GQA?
+  - References
+
+## FILE 01-foundations/02-tokenization-deep-dive.md  (21 KB)
+- Tokenization Deep Dive
+  - Table of Contents
+  - Why Tokenization Matters
+    - For System Design
+    - For Understanding LLM Behavior
+  - Tokenization Algorithms
+    - Byte Pair Encoding (BPE)
+    - WordPiece
+    - Unigram (SentencePiece)
+    - Comparison
+  - Vocabulary Design Tradeoffs
+    - Vocabulary Size
+    - Character vs Subword vs Word
+    - Byte-Level BPE
+  - Special Tokens
+    - Chat Templates
+  - Multilingual Tokenization
+    - The Challenge
+    - Solutions
+  - Multimodal Tokenization (pixels-to-tokens)
+    - Image Tokenization (Vision Transformers)
+    - Audio/Video Tokenization
+  - Token Counting for Cost Estimation
+    - Quick Estimation Rules
+    - Accurate Counting
+    - Reasoning Tokens
+    - Cost Calculation
+  - Common Tokenization Issues
+    - Issue 1: Token Boundary Misalignment
+    - Issue 2: Inconsistent Tokenization
+    - Issue 3: Code and Structured Data
+    - Issue 4: Whitespace Handling
+  - Practical Tokenization Patterns
+    - Pattern 1: Context Window Management
+    - Pattern 2: Chunking at Token Boundaries
+    - Pattern 3: Token Budget Allocation
+  - Interview Questions
+    - Q: Why do LLMs struggle with simple character counting?
+    - Q: How would you estimate token count for cost planning?
+    - Q: What happens when switching tokenizers between models?
+    - Q: How do you handle tokenization for RAG chunking?
+  - References
+
+## FILE 01-foundations/03-attention-mechanisms.md  (25 KB)
+- Attention Mechanisms
+  - Table of Contents
+  - Attention Fundamentals
+    - The Core Idea
+    - Query, Key, Value Framework
+  - Scaled Dot-Product Attention
+    - Why Scale by Square Root of d_k?
+    - Causal Masking
+  - Multi-Head Attention
+    - Head Count Patterns
+  - Attention Patterns
+    - What Attention Learns
+    - Visualizing Attention
+  - Efficient Attention Variants
+    - Sparse Attention
+    - Linear Attention
+    - Complexity Comparison
+    - Hybrid and Sparse Attention in 2026 Open Models
+  - Flash Attention
+    - The Problem It Solves
+    - How It Works
+    - FlashAttention-2 (Work Partitioning)
+    - FlashAttention-3 (FP8 & H100 Optimization)
+    - FlashAttention-4 (Hopper and Blackwell)
+  - Multi-head Latent Attention (MLA)
+  - KV Cache Optimizations & Context Caching
+    - Context Caching (System-level)
+    - Sliding Window Attention (SWA)
+    - Multi-Query Attention (MQA)
+    - Grouped-Query Attention (GQA)
+    - Comparison
+  - Practical Implications
+    - For System Design
+    - Prefill vs Decode
+    - Context Length Scaling
+  - Interview Questions
+    - Q: Explain the attention mechanism and why it scales quadratically.
+    - Q: What is the KV cache and why is it critical for serving?
+    - Q: Compare MHA, GQA, and MQA.
+    - Q: How does Flash Attention achieve O(n) memory?
+    - Q: How would you size the KV cache for a new 2026 open-weight model?
+  - References
+
+## FILE 01-foundations/04-transformer-architecture.md  (19 KB)
+- Transformer Architecture
+  - Table of Contents
+  - Architecture Overview
+  - Input Processing
+    - Token Embedding
+    - Position Information
+  - The Transformer Block
+    - Pre-Norm Structure
+    - Attention Component
+    - Feed-Forward Network
+    - RMSNorm
+  - Output Processing
+    - Final Normalization
+    - Language Model Head
+    - Getting Predictions
+  - Untied vs. Tied Embeddings
+  - Modern Architecture Variations
+    - Llama 2/3 Architecture
+    - Mistral 7B Architecture
+    - Mixture of Experts (MoE) & Hybrid Architectures
+    - Multi-head Latent Attention (MLA) Integration
+    - Comparison of Choices
+  - Scaling Properties
+    - Parameter Counts
+    - Compute Requirements
+    - Scaling Laws
+  - Architecture Comparison Table
+  - Interview Questions
+    - Q: Walk me through the forward pass of a transformer.
+    - Q: What is the difference between pre-norm and post-norm?
+    - Q: Explain GQA and why it matters for serving.
+    - Q: What changed between GPT-2 and Llama 2?
+  - References
+
+## FILE 01-foundations/05-embeddings-and-vector-spaces.md  (25 KB)
+- Embeddings and Vector Spaces
+  - Table of Contents
+  - What Are Embeddings
+  - Embedding Model Architectures
+    - Word Embeddings (Historical)
+    - Contextual Embeddings
+    - Sentence/Document Embeddings
+    - Bi-Encoder Architecture
+    - Cross-Encoder Architecture
+  - Training Objectives
+    - Contrastive Learning
+    - Training Data Sources
+    - Instruction-Tuned Embeddings
+  - Distance Metrics
+    - Cosine Similarity
+    - Dot Product
+    - Euclidean Distance
+    - Metric Selection
+  - Embedding Model Comparison
+    - Hosted Models (October 2026)
+    - Open Source Models
+    - Selection Criteria
+  - Matryoshka and Adaptive Dimensions
+    - The Idea
+    - Why It Matters
+    - Models with Matryoshka Support
+    - Using Matryoshka Embeddings
+  - Late Chunking and Late Interaction
+    - Late Chunking
+    - Late Interaction (ColBERT)
+  - Quantization for Scale
+  - Practical Considerations
+    - Batch Processing
+    - Chunking for Embeddings
+    - Normalization
+    - Caching
+  - Embedding Drift and Versioning
+    - The Problem
+    - Consequences
+    - Mitigation Strategies
+  - Interview Questions
+    - Q: How do embedding models learn semantic similarity?
+    - Q: When would you use ColBERT over a bi-encoder?
+    - Q: How do you handle embedding drift when updating models?
+    - Q: How do you choose dimensions for embeddings?
+    - Q: Why not just ask an LLM to judge relevance instead of using embeddings?
+  - References
+
+## FILE 01-foundations/06-inference-pipeline.md  (30 KB)
+- Inference Pipeline
+  - Table of Contents
+  - Generation Basics
+    - The Generation Loop
+  - Prefill and Decode Phases
+    - Prefill Phase
+    - Decode Phase
+    - Why This Matters
+    - Disaggregated Prefill and Decode
+  - Sampling Strategies
+    - Greedy Decoding
+    - Temperature Sampling
+    - Top-K Sampling
+    - Top-P (Nucleus) Sampling
+    - Common Configurations
+    - Repetition Penalties
+    - Sampling Controls on Hosted Frontier Models
+  - Stopping Conditions
+    - EOS Token
+    - Max Tokens
+    - Stop Sequences
+  - Speculative Decoding
+  - Latency Metrics
+    - Time to First Token (TTFT)
+    - Tokens Per Second (TPS)
+    - Speed Is a Priced Tier
+    - Total Latency
+    - Throughput
+    - Goodput and Pareto Curves
+  - Memory and Compute Requirements
+    - Model Weights
+    - KV Cache
+    - Total GPU Memory
+    - FLOPs per Token
+  - Streaming
+    - Server-Sent Events (SSE)
+    - Benefits
+    - Implementation Details
+  - Production Considerations
+    - Batching for Throughput
+    - Continuous Batching and Prefix Caching
+    - Multi-LoRA Serving
+    - Request Prioritization
+    - Timeout Handling
+    - Graceful Degradation
+    - Cost Tracking
+  - Interview Questions
+    - Q: Explain the difference between prefill and decode phases.
+    - Q: How do temperature and top-p affect generation?
+    - Q: How do you get reproducible outputs when the API no longer accepts temperature?
+    - Q: What determines TTFT vs TPS?
+    - Q: How would you estimate GPU requirements for serving a model?
+  - References
+
+## FILE 02-model-landscape/01-model-taxonomy.md  (129 KB)
+- Model Taxonomy
+  - Table of Contents
+  - Model Categories
+    - By Capability Level (October 2026)
+    - By Reasoning Mode (October 2026)
+  - Frontier Models (October 2026)
+    - Claude Opus 5.5 (Anthropic) - September 2026 NEW
+    - Claude Sonnet 5.5 (Anthropic) - September 2026 NEW
+    - Claude Fable 5.1 and Mythos 5.1 (Anthropic) - September 2026 NEW
+    - Claude 5.5 / 5.1 Migration Checklist
+    - Claude Haiku 4.5 (Anthropic) - Still the Only Haiku
+    - Claude Opus 5 (Anthropic) - July 2026, SUPERSEDED by Opus 5.5
+    - Claude Sonnet 5 (Anthropic) - June 2026, SUPERSEDED by Sonnet 5.5
+    - Claude Fable 5 (Anthropic) - June 2026, SUPERSEDED by Fable 5.1
+    - Claude Mythos 5 (Anthropic) - June 2026, SUPERSEDED by Mythos 5.1
+    - Claude Opus 4.8 (Anthropic) - May 2026, Legacy
+    - Claude Opus 4.7 (Anthropic) - April 2026, Legacy
+    - Claude Mythos Preview (Anthropic) - SUCCEEDED BY MYTHOS 5 AND 5.1
+    - Claude Opus 4.6 (Anthropic) - February 2026, Legacy
+    - Claude Sonnet 4.6 (Anthropic) - February 2026, Legacy
+    - GPT-6 Astra (OpenAI) - September 2026 NEW
+    - GPT-6 Sol and GPT-6 Luna (OpenAI) - September 2026 NEW
+    - GPT-6.1 Sol (OpenAI) - September 2026 NEW
+    - GPT-5.4 (OpenAI) - March 2026
+    - GPT-5.4-mini (OpenAI) - March 2026
+    - GPT-5.4 Pro (OpenAI) - March 2026
+    - GPT-5.6 Sol / Terra / Luna (OpenAI) - GA July 9, 2026 (Sol and Luna superseded by GPT-6)
+    - GPT-5.6-Cyber (OpenAI) - August 2026 (restricted)
+    - Capability-Tiered Access Programs (October 2026)
+    - GPT-5.5 (OpenAI) - April 2026
+    - GPT-5.5 Instant (OpenAI) - May 2026
+    - OpenAI Voice Models: GPT-Live-1, GPT-Realtime-2.1, Transcription (October 2026)
+    - Gemini 4 Argon (Google) - ANNOUNCED September 30, 2026, NOT GA
+    - Gemini 3.8 Flash (Google) - September 2026 NEW
+    - Gemini 3.1 Pro Preview (Google) - February 2026
+    - Gemini Flash and Flash-Lite Lineup (Google)
+    - Gemini 3.2 Flash (Google) - May 2026, Historical
+    - Gemini Deep Research / Deep Research Max (Google) - April 2026
+    - Gemini Robotics-ER 1.6 (Google DeepMind) - April 2026
+    - Gemini 3.7 Flash (Google) - August 2026, SUPERSEDED by 3.8 Flash
+    - Grok 4.7 (SpaceXAI) - September 2026 NEW
+    - Grok 4.6 (SpaceXAI) - August 2026, SUPERSEDED by Grok 4.7
+    - Grok 4 (xAI) - RETIRED on the xAI API
+    - MAI-Thinking-1 (Microsoft) - August 2026 NEW (public preview)
+    - Model Comparison: Frontier and Workhorse Tiers (October 2026)
+    - Production Heritage & Maturity
+    - Retirement Calendar (as of October 1, 2026)
+  - Open Source Models
+    - Open-Weight Standings (October 2026)
+    - Llama 4 Family (Meta) - April 2025
+    - Llama 3.x Family (Meta) - Previous Generation
+    - DeepSeek Family
+    - Moonshot Kimi Family
+    - Alibaba Qwen Family
+    - Mistral Family
+    - Google Gemma Family
+    - Zhipu / Z.ai GLM Family
+    - Thinking Machines Inkling - July 2026
+    - Meta Muse Spark (Closed Weights) - April 2026 STRATEGIC SHIFT
+    - Xiaomi MiMo-V2.6 - September 2026 NEW
+    - Other Open-Weight Families to Know (October 2026)
+    - The Open-Weight Licensing Split (August to October 2026)
+    - Small and On-Device Models (October 2026)
+  - Specialized Models
+    - Coding (October 2026)
+    - Reasoning & Math
+    - Long Context (1M+)
+  - Embedding Models
+    - API Embedding Models (October 2026)
+    - Open Source Embedding Models
+    - Embedding Selection Guide
+  - Model Selection Framework
+    - Decision Tree
+    - Semantic Routing
+  - Sovereign AI and Data Residency
+    - Cost Comparison at Scale (October 2026)
+  - Capability Comparison
+    - Benchmark Snapshot (October 2026)
+    - Task-Specific Recommendations (October 2026)
+  - Interview Questions
+
+## FILE 02-model-landscape/02-capability-assessment.md  (26 KB)
+- Capability Assessment
+  - Table of Contents
+  - Why Benchmarks Are Not Enough
+    - The Benchmark Problem
+    - What Benchmarks Tell You
+    - Reading a Vendor Benchmark Table (October 2026)
+  - Evaluation Dimensions
+    - Dimension 1: Task Performance
+    - Dimension 2: Agentic Mastery
+    - Dimension 3: Reasoning Reliability
+    - Reasoning Calibration
+    - Dimension 4: Context Recall
+  - Internal Elo-based Evaluation
+  - Building Custom Evaluations
+    - Step 1: Define Evaluation Criteria
+    - Step 2: Create Test Set
+    - Step 3: Implement Evaluation
+    - Step 4: LLM-as-Judge
+  - Common Evaluation Pitfalls
+    - Pitfall 1: Small Test Set
+    - Pitfall 2: Ambiguous Ground Truth
+    - Pitfall 3: Evaluation Set Leakage
+    - Pitfall 4: Ignoring Variance
+    - Pitfall 5: Cost Blindness
+    - Pitfall 6: Evaluating a Different System Than You Ship
+    - Pitfall 7: Eval Awareness
+  - Practical Assessment Process
+    - Week 1: Setup and Initial Filtering
+    - Week 2: Deep Evaluation
+    - Week 3: Production Validation
+    - Decision Template
+  - A/B Testing Models
+    - When to A/B Test
+    - A/B Test Design
+    - Metrics to Track
+  - Interview Questions
+    - Q: How would you evaluate models for a customer support chatbot?
+    - Q: What is wrong with using MMLU to compare models for your use case?
+    - Q: A vendor reports 99.9% on ARC-AGI-3 for its new model. ARC Prize's own harness shows 62.7% for the same mod
+  - References
+
+## FILE 02-model-landscape/03-pricing-and-costs.md  (62 KB)
+- Pricing and Costs
+  - Table of Contents
+  - Pricing Models
+    - Token-Based Pricing
+    - The Multipliers on Top of the Rate Card (October 2026)
+    - Volume and Commitment Pricing
+  - Current API Pricing
+    - October 2026 Pricing
+    - Retirement and Price-Change Calendar: Q4 2026 and Early 2027
+    - Earlier 2026 Price History
+  - Cost Calculation
+    - Basic Cost Formula
+    - Example Cost Calculations
+    - Monthly Cost Projection
+  - Cost Optimization Strategies
+    - Strategy 1: Model Routing
+    - Strategy 2: Prompt Optimization
+    - Strategy 3: Caching
+    - Strategy 4: Batch Processing and Service Tiers
+    - Strategy 5: Output Length Control
+    - Strategy 6: Prompt-Length Routing
+    - Cost Optimization Summary
+  - Context Caching Economics
+  - Self-Hosting & GPU Cloud Arbitrage
+    - When Self-Hosting Makes Sense
+    - Self-Hosting Cost Components
+    - GPU Requirements by Model Size
+    - Decision Framework
+  - Total Cost of Ownership
+    - TCO Components
+    - Example TCO Comparison
+  - Interview Questions
+    - Q: How would you optimize costs for a high-volume RAG application?
+    - Q: When would you recommend self-hosting vs using APIs?
+    - Q: Your cost model for next year uses today's per-token prices. What will it get wrong?
+  - References
+
+## FILE 02-model-landscape/04-model-selection-guide.md  (26 KB)
+- Model Selection Guide
+  - Table of Contents
+  - Selection Framework
+    - Decision Tree (October 2026)
+    - Key Selection Factors
+  - Capability Comparison
+    - Frontier Model Comparison (October 2026)
+    - Budget Model Comparison
+    - Open-Weight Models
+  - Use Case Mapping
+    - By Application Type (October 2026)
+    - By Constraint
+  - Cost Analysis
+    - Cost Modeling (October 2026)
+    - Cost Comparison Example
+  - Operational Considerations
+    - Rate Limits and Quotas
+    - Reliability Patterns
+    - Abstraction Layer
+  - Multi-Model Strategies
+    - Model Routing
+    - Cascade Pattern
+  - Interview Questions
+    - Q: How do you choose between OpenAI, Anthropic, and Google models for a production application?
+    - Q: When would you self-host vs use API providers?
+    - Q: Model versions now ship weekly. How do you keep model selection current without breaking production?
+  - References
+
+## FILE 03-training-and-adaptation/01-pretraining-basics.md  (8 KB)
+- Pretraining Basics
+  - Table of Contents
+  - The Pretraining Objective
+  - Data Curriculum and Quality
+    - Token Budgets at the Frontier
+    - Data Mixture Standard
+  - Scaling Laws: Training vs. Inference Optimal
+    - The Chinchilla Paradigm (2022-2024)
+    - The Inference-Optimal Paradigm
+  - Computational Requirements
+  - Training Stability
+    - 1. Loss Spikes
+    - 2. Precision: BF16, FP8, and FP4
+  - Interview Questions
+    - Q: Why train an 8B model on 15T tokens if Chinchilla says 160B tokens is optimal?
+    - Q: What is the "curriculum" in LLM pretraining?
+    - Q: Estimate the compute to pretrain a 70B dense model on 15T tokens.
+  - References
+
+## FILE 03-training-and-adaptation/02-fine-tuning-strategies.md  (8 KB)
+- Fine-Tuning Strategies
+  - Table of Contents
+  - When to Fine-Tune
+  - Supervised Fine-Tuning (SFT)
+    - The Quality Hierarchy
+  - Continued Pretraining (Domain Adaptation)
+  - PEFT vs. Full-Parameter
+  - Hyperparameter Tuning
+    - 1. Learning Rate (LR)
+    - 2. Rank (r) for LoRA
+    - 3. Packaged Training (Packing)
+  - Where Fine-Tuning Runs
+  - Interview Questions
+    - Q: Why use Continued Pretraining instead of just putting domain data in the SFT set?
+    - Q: How do you prevent a model from "unlearning" general capabilities during fine-tuning?
+    - Q: Your roadmap says "fine-tune GPT on our support transcripts in Q1 2027." What do you change?
+  - References
+
+## FILE 03-training-and-adaptation/03-lora-qlora-peft.md  (6 KB)
+- LoRA, QLoRA, and PEFT
+  - Table of Contents
+  - The PEFT Revolution
+  - LoRA Mechanics
+    - Principal Nuance: Target Modules
+  - QLoRA: 4-bit Fine-Tuning
+  - Advanced Variants
+    - 1. DoRA (Weight-Decomposed Low-Rank Adaptation)
+    - 2. VeRA (Vector-based Random Matrix Adaptation)
+    - 3. RS-LoRA (Rank-Stabilized LoRA)
+  - Multi-LoRA Serving (Adapters)
+  - Interview Questions
+    - Q: Why is the LoRA alpha parameter usually set to 2x the rank?
+    - Q: What is DoRA, and why would you use it over standard LoRA?
+  - References
+
+## FILE 03-training-and-adaptation/04-rlhf-and-dpo.md  (7 KB)
+- RLHF and DPO (Alignment)
+  - Table of Contents
+  - The Alignment Problem
+  - RLHF: The Foundation
+  - DPO: Direct Preference Optimization
+    - How it Works:
+    - The Multi-Stage Alignment Pattern:
+  - Online Alignment
+  - Alignment for Reasoning Models
+  - Rubric Rewards: RL Beyond Verifiable Domains
+  - Interview Questions
+    - Q: Why is DPO often preferred over RLHF/PPO?
+    - Q: What is the risk of "Alignment Tax"?
+  - References
+
+## FILE 03-training-and-adaptation/05-knowledge-distillation.md  (10 KB)
+- Knowledge Distillation
+  - Table of Contents
+  - The Teacher-Student Paradigm
+  - How Distillation Works
+    - 1. Hard Label Distillation
+    - 2. Soft Label Distillation (Temperature Scaling)
+    - 3. On-Policy Distillation
+  - Feature vs. Output Distillation
+    - Output Distillation (Standard)
+    - Feature/Hidden State Distillation
+  - Self-Distillation via Rejection Sampling
+  - Quantization-Aware Distillation
+  - Distillation as a Threat: Extraction via API
+  - Interview Questions
+    - Q: Why is a distilled 8B model better than an 8B model trained from scratch on the same tokens?
+    - Q: What are the risks of distilling a closed API model into an open-weight student?
+  - References
+
+## FILE 03-training-and-adaptation/06-synthetic-data-generation.md  (6 KB)
+- Synthetic Data Generation
+  - Table of Contents
+  - After the "Data Wall": The Synthetic Shift
+  - Evol-Instruct Pattern
+  - Constitutional AI & AI Feedback (RLAIF)
+  - Verifiable Synthetic Data
+  - De-biasing and Diversity
+  - Provenance and Licensing
+  - Interview Questions
+    - Q: What is the risk of "Model Collapse" when training on synthetic data?
+    - Q: How do you ensure the *quality* of a synthetic dataset of 10 million rows?
+  - References
+
+## FILE 03-training-and-adaptation/07-quantization-deep-dive.md  (10 KB)
+- Quantization Deep Dive
+  - Table of Contents
+  - The Precision-Performance Tradeoff
+  - Quantization Methods
+    - 1. NF4 (NormalFloat4)
+    - 2. AWQ (Activation-aware Weight Quantization)
+    - 3. FP8
+    - 4. FP4: NVFP4 and MXFP4
+  - File and Serving Formats
+    - GGUF (llama.cpp)
+    - EXL2 / EXL3 (ExLlama)
+    - Datacenter serving formats
+  - KV Cache Quantization (The VRAM Saver)
+  - Quantization-Aware Training (QAT)
+  - Interview Questions
+    - Q: Why do we use NF4 instead of standard Float4 for QLoRA?
+    - Q: How does AWQ differ from GPTQ?
+    - Q: The team wants to move serving from FP8 to NVFP4 to cut cost. What do you check?
+  - References
+
+## FILE 03-training-and-adaptation/08-rlvr-and-reasoning-models.md  (25 KB)
+- Training Reasoning Models: RLVR and GRPO
+  - Table of Contents
+  - RLVR: Reinforcement Learning with Verifiable Rewards
+  - GRPO
+  - Reward Design and Failure Modes
+  - Monitorability: Do Not Train Against the Chain of Thought
+  - Does RL Add Capability or Sharpen Sampling?
+  - Distillation: The Cheaper Path
+  - Practical Guidance
+  - Interview Questions
+    - Q: What is RLVR, and why does it scale more stably than RLHF for reasoning?
+    - Q: Explain GRPO and one of its known failure modes.
+    - Q: You want RL on a domain with no programmatic verifier, so you plan a rubric-scored judge as the reward. Wha
+    - Q: Your agent's safety monitor reads the model's chain of thought. The vendor's new model card reports much hi
+  - References
+
+## FILE 04-inference-optimization/01-inference-fundamentals.md  (8 KB)
+- Inference Fundamentals
+  - Table of Contents
+  - The Two Phases of Inference
+    - 1. The Prefill Phase (Prompt Processing)
+    - 2. The Decode Phase (Token Generation)
+  - Bottlenecks: Compute-Bound vs. Memory-Bound
+  - Performance Metrics
+    - Measure on the Pareto Curve, Not at Batch 1
+  - Hardware-Enabled Optimizations (FP8 and FP4)
+  - Interview Questions
+    - Q: Why is LLM generation slower than classification?
+    - Q: How do you optimize TTFT vs. TPOT?
+    - Q: A vendor pitches an accelerator at "3,000 tokens per second." How do you evaluate it?
+  - References
+
+## FILE 04-inference-optimization/02-kv-cache-and-context-caching.md  (11 KB)
+- KV Cache and Context Caching
+  - Table of Contents
+  - The KV Cache Problem
+  - GQA: Grouped Query Attention
+  - Context Caching (Self-hosted)
+    - Tiered KV Storage
+  - API-level Context Caching (Prompt Caching)
+  - KV Compression and Compact Architectures
+  - Interview Questions
+    - Q: How does PagedAttention help with KV Cache management? (Simplified)
+    - Q: Why is Context Caching better than RAG for a 50k token document?
+    - Q: Your capacity plan used `2 × layers × kv_heads × head_dim × bytes` per token for every model in the fleet. 
+  - References
+
+## FILE 04-inference-optimization/03-speculative-decoding.md  (9 KB)
+- Speculative Decoding
+  - Table of Contents
+  - The Core Concept
+  - Draft-Verify Paradigm
+  - Drafters in 2026: Heads, MTP, Diffusion, DSpark
+  - Lookahead, N-gram, and Suffix Decoding
+  - Load-Aware Speculation (Adaptive Verification)
+  - Interview Questions
+    - Q: Why doesn't Speculative Decoding work well for high-temperature creative writing?
+    - Q: How do draft heads (Medusa, EAGLE-3, native MTP) differ from a separate draft model?
+    - Q: "Speculative decoding hurts throughput at large batch, so turn it off in production." Do you agree?
+  - References
+
+## FILE 04-inference-optimization/04-batching-strategies.md  (7 KB)
+- Batching Strategies
+  - Table of Contents
+  - Static vs. Dynamic Batching
+  - Continuous Batching (Iteration-level)
+  - In-Flight Batching (Prefill-Decode Fusion)
+  - Chunked Prefill
+  - Disaggregated Prefill and Decode
+  - Interview Questions
+    - Q: Why is Continuous Batching superior to Static Batching for LLMs?
+    - Q: What is a "stall" in LLM serving, and how does Chunked Prefill mitigate it?
+    - Q: When does disaggregated prefill/decode beat chunked prefill on one pool?
+  - References
+
+## FILE 04-inference-optimization/05-paged-attention.md  (5 KB)
+- PagedAttention
+  - Table of Contents
+  - The Contiguous Memory Problem
+  - How PagedAttention Works (vLLM)
+  - Managing Virtual Memory (Block Manager)
+  - KV Cache Sharing (Copy-on-Write)
+  - Interview Questions
+    - Q: Why does PagedAttention significantly increase throughput?
+    - Q: Explain the "Block Table" in the context of vLLM.
+  - References
+
+## FILE 04-inference-optimization/06-serving-infrastructure.md  (25 KB)
+- Serving Infrastructure
+  - Table of Contents
+  - The Inference Gateway
+  - Model Parallelism
+    - 1. Tensor Parallelism (TP)
+    - 2. Pipeline Parallelism (PP)
+    - 3. Expert Parallelism (EP)
+    - 4. Context Parallelism (CP)
+    - 5. Attention-FFN Disaggregation (experimental)
+  - Multi-GPU Orchestration
+  - Streaming and Long-Lived Connections
+  - Inference Engines (October 2026)
+    - vLLM: The Default Open Engine
+    - SGLang: Prefix-Heavy and Structured Workloads
+    - TensorRT-LLM: Peak NVIDIA Throughput
+    - Orchestration Above the Engine: Dynamo and llm-d
+    - MoE-Aware Serving (Llama 4 Maverick, DeepSeek V4, Kimi K3)
+    - Premium Latency Tiers: Cross-Chip Disaggregation
+    - Decision Framework: Engine per Workload
+    - Operational Posture
+  - Interview Questions
+    - Q: Why is Tensor Parallelism preferred over Pipeline Parallelism for low-latency serving?
+    - Q: How do you handle "Noisy Neighbors" in a multi-tenant LLM cluster?
+    - Q: A single malformed request crashed a vLLM replica and every tenant on it lost service. What is the design l
+    - Q: Design a premium low-latency tier for an agent product that needs very high tokens per second per user.
+  - References
+
+## FILE 04-inference-optimization/07-cost-optimization-playbook.md  (12 KB)
+- Cost Optimization Playbook
+  - Table of Contents
+  - The Unit Economics of AI
+  - Model Cascading (Efficiency Tiers)
+  - Small Language Models (SLMs) for Production
+    - The Price Floor: GPT-6 Luna and DeepSeek V4.1-Flash
+  - Service Tiers and Price Multipliers
+  - Spot Instance Strategies
+    - GPU Pricing in 2026: Up, and Longer Terms Are Cheaper
+  - The "Token Tax" Optimization
+  - Interview Questions
+    - Q: How do you justify the cost of an AI system to a CFO?
+    - Q: When is a self-hosted individual GPU cluster cheaper than an API?
+  - References
+
+## FILE 04-inference-optimization/08-diffusion-llms.md  (13 KB)
+- Diffusion Language Models
+  - Table of Contents
+  - How They Work
+  - The Speed Advantage and the Tradeoff
+  - Diffusion Systems in 2026
+  - Hybrids: Draft with Diffusion, Verify with AR
+  - Where Diffusion Wins and Where AR Still Wins
+  - Maturity and What to Do Today
+  - Interview Questions
+    - Q: How does a diffusion language model differ from an autoregressive one, and where is that an advantage?
+    - Q: If diffusion LLMs are faster, why hasn't everyone switched?
+  - References
+
+## FILE 04-inference-optimization/09-on-device-and-edge-deployment.md  (19 KB)
+- On-Device and Edge Deployment
+  - Table of Contents
+  - The Runtime Stack
+  - Platform Models: Apple Foundation Models
+  - Why Ollama Is Not a Production Server
+  - When Local Beats Cloud (and When It Does Not)
+  - Quantization for Local Serving
+  - Hardware
+    - Small Models Specialize
+  - Prototype to Production
+  - Interview Questions
+    - Q: A team prototyped on Ollama and wants to ship it as a shared API. What changes and why?
+    - Q: When would you choose local or on-device inference over a cloud API?
+    - Q: You are shipping an AI feature in an iOS app. Do you bundle your own model or use Apple's Foundation Models
+  - References
+
+## FILE 05-prompting-and-context/01-prompt-engineering-fundamentals.md  (10 KB)
+- Prompt Engineering Fundamentals
+  - Table of Contents
+  - The Core Philosophy: Intent + Constraint
+  - The Instruction Hierarchy
+  - Role Prompting
+  - Instruction Clarity and Delimiters
+  - Zero-Shot vs. Few-Shot Efficiency
+  - Determinism Without Temperature
+  - Interview Questions
+    - Q: Why do system prompts carry more weight than user prompts in modern LLMs?
+    - Q: What is the "Step-by-Step" prompt optimization?
+    - Q: The API rejects `temperature` now. How do you make outputs reproducible enough to test?
+  - References
+
+## FILE 05-prompting-and-context/02-few-shot-and-icl.md  (7 KB)
+- Few-Shot and In-Context Learning (ICL)
+  - Table of Contents
+  - The Anatomy of a Few-Shot Example
+  - How many examples?
+  - Many-Shot ICL vs. Fine-Tuning
+  - Dynamic Example Selection
+  - The Importance of Labeling Nuance
+  - Advanced ICL: Analogy and "Few-Shot CoT"
+  - Interview Questions
+    - Q: Why not just provide all 50 examples we have in the prompt?
+    - Q: What is "Label Bias" in In-Context Learning?
+  - References
+
+## FILE 05-prompting-and-context/03-chain-of-thought.md  (10 KB)
+- Chain-of-Thought (CoT)
+  - Table of Contents
+  - The CoT Revolution
+  - Zero-Shot vs. Programmatic CoT
+  - The Rise of "Thinking" Models
+  - CoT as a Monitoring Signal
+  - Self-Correction and Verification
+  - When CoT Fails (Over-thinking)
+  - Interview Questions
+    - Q: Why does CoT improve performance on mathematical word problems?
+    - Q: How do you handle CoT in a production environment where latency is critical?
+    - Q: Your safety team wants to monitor a coding agent by reading its chain of thought. What do you tell them?
+  - References
+
+## FILE 05-prompting-and-context/04-tree-of-thought.md  (6 KB)
+- Tree-of-Thought (ToT)
+  - Table of Contents
+  - The Tree vs. The Chain
+  - The ToT Loop: Propose, Evaluate, Search
+  - Self-Correction & Backtracking
+  - MCTS and Search-as-Service
+  - Interview Questions
+    - Q: When is ToT significantly better than simple CoT?
+    - Q: What is the main drawback of Tree-of-Thought in a consumer-facing app?
+    - Q: Do you still need explicit ToT when the model is already a reasoning model?
+  - References
+
+## FILE 05-prompting-and-context/05-context-engineering.md  (24 KB)
+- Context Engineering
+  - Table of Contents
+  - The Long Context Paradigm (1M+ Tokens)
+  - Agentic Context Engineering
+    - Context Rot: Why Context Is a Finite Resource
+    - The Five Core Techniques
+    - Compaction
+    - Just-in-Time Loading
+    - Structured Note-Taking (Agentic Memory)
+    - Sub-Agent Isolation
+  - Append-Only Context: Thinking Is Bound to the Conversation
+  - Reasoning Effort and Thinking Controls
+    - Claude (Opus 5.5, Sonnet 5.5, Fable 5.1): Adaptive Thinking + Effort
+    - OpenAI (GPT-6.1 Sol, GPT-6 Astra): Reasoning Effort
+    - Gemini (3.8 Flash): Thinking Level
+    - Choosing an Effort Level
+  - Lost-in-the-Middle
+  - Context Budgeting & Token Awareness
+  - Prompt Caching Economics
+  - Contextual Compression
+  - Interview Questions
+    - Q: When would you choose Long Context over RAG?
+    - Q: How do you handle the high TTFT associated with million-token prompts?
+    - Q: An agent works fine for short tasks but degrades on long-running ones. How do you fix it?
+    - Q: Your gateway falls back from Claude Opus 5.5 to another model mid-conversation, and both quality and error 
+  - References
+
+## FILE 05-prompting-and-context/06-structured-generation.md  (9 KB)
+- Structured Generation
+  - Table of Contents
+  - The JSON Mode Revolution
+  - Function Calling & Tool Use
+  - Constrained Decoding (CFG & Regex)
+  - Multi-Stage Extraction Pattern
+  - Validation & Formatting Errors
+  - Interview Questions
+    - Q: Why is "JSON Mode" more reliable than prompt-based JSON requests?
+    - Q: What is the risk of asking an LLM for too many structured fields at once?
+    - Q: Your extraction pipeline forced a tool call to get JSON from Claude, and after moving to Opus 5.5 every req
+  - References
+
+## FILE 05-prompting-and-context/07-prompt-optimization-dspy.md  (7 KB)
+- Prompt Optimization (DSPy)
+  - Table of Contents
+  - The DSPy Philosophy: Programming vs. Prompting
+  - Signatures & Modules
+  - Teleprompters (Optimizers)
+  - The "Prompt as Weight" Analogy
+  - Metric-Driven Optimization
+  - Interview Questions
+    - Q: How does DSPy solve the "fragility" of prompt engineering?
+    - Q: What is a "Teleprompter" in the context of DSPy?
+  - References
+
+## FILE 05-prompting-and-context/08-prompt-injection-defense.md  (11 KB)
+- Prompt Injection and Defense
+  - Table of Contents
+  - What is Prompt Injection?
+  - The Dual-LLM Defense Pattern
+  - Input Isolation (XML & Markers)
+  - Jailbreak-Aware Output Filtering
+  - Agentic Security: Privilege Escalation
+  - Injections That Spread
+  - Interview Questions
+    - Q: Why is "Prompt Sanitization" harder than "SQL Sanitization"?
+    - Q: What is the "Indirect Prompt Injection" risk in RAG systems?
+    - Q: How could a prompt injection spread from one agent to many, and how would you test for it?
+  - References
+
+## FILE 06-retrieval-systems/01-rag-fundamentals.md  (11 KB)
+- RAG Fundamentals
+  - Table of Contents
+  - The Core Philosophy: Grounding vs. Training
+  - The RAG Taxonomy
+    - 1. Naive RAG (Retrieve-then-Generate)
+    - 2. Advanced RAG (Multi-Stage)
+    - 3. Agentic RAG (Loop-based)
+    - 4. GraphRAG (Structured context)
+  - RAG vs. Long Context (The "Hybrid Era")
+    - The Break-Even Moved
+  - The Retrieval Quality Gap
+  - Poisoned Sources
+  - Interview Questions
+    - Q: Why would you still use RAG if frontier models ship 1M-token contexts?
+    - Q: What is "Agentic RAG" and how does it differ from "Advanced RAG"?
+  - Key Takeaways
+  - References
+
+## FILE 06-retrieval-systems/02-chunking-strategies.md  (8 KB)
+- Chunking Strategies
+  - Table of Contents
+  - The Retrieval-Context Tension
+  - Recursive Structure Splitting
+  - Semantic Chunking
+  - Hierarchical (Parent-Child) Chunking
+  - Late Chunking and Contextualized Chunk Embeddings
+  - Content-Specific Strategies
+    - 1. Code Chunking
+    - 2. Table Chunking
+    - 3. PDF/Layout Chunking
+  - Interview Questions
+    - Q: Why is fixed-size chunking with overlap problematic for production systems?
+    - Q: What is "Contextual Retrieval" (the Anthropic pattern)?
+  - References
+
+## FILE 06-retrieval-systems/03-embedding-models.md  (13 KB)
+- Embedding Models
+  - Table of Contents
+  - The Embedding Frontier: Matryoshka Embeddings
+  - Late Interaction: ColBERT v2
+  - Binary and Int8 Quantization
+  - Model Selection Criteria
+  - Shared and Asymmetric Embedding Spaces
+  - Multimodal Embeddings
+  - Interview Questions
+    - Q: What is the "Vocabulary Mismatch" problem in embeddings?
+    - Q: Why would you choose a Matryoshka model for a 1-billion-vector index?
+    - Q: You need to upgrade the embedding model behind a 500M-vector index. How do you do it without downtime?
+  - References
+
+## FILE 06-retrieval-systems/04-vector-databases.md  (31 KB)
+- Vector Databases
+  - Table of Contents
+  - What Is a Vector Database
+    - Core Capabilities
+    - Why Not General Databases?
+  - Vector Search Fundamentals
+    - Exact vs Approximate Search
+    - Distance Metrics
+    - Recall vs Latency Tradeoff
+  - Indexing Algorithms
+    - HNSW (Hierarchical Navigable Small World)
+    - DiskANN (SSD-based)
+    - IVF (Inverted File Index)
+    - Product Quantization (PQ)
+    - Low-Bit and Rotation-Based Quantization
+    - Flat Index (Brute Force)
+    - Algorithm Comparison
+  - Competitive Landscape
+    - Vector-Native (Dedicated)
+    - General-Purpose (Plugin/Extension)
+    - Where the Market Moved in 2026
+  - Detailed Database Comparison
+    - Feature Matrix
+  - Metadata Filtering
+  - Query Patterns
+    - Pattern 1: Simple Semantic Search
+    - Pattern 2: Filtered Search
+    - Pattern 3: Hybrid Search (Dense + Sparse)
+    - Pattern 4: Multi-Vector Query
+  - Production Operations
+    - Capacity Planning
+    - Index Maintenance
+    - High Availability
+    - Patching
+    - Monitoring
+  - Managed vs Self-Hosted (TCO Analysis)
+    - Cost Comparison
+    - Managed Service Pricing (indicative, always verify on provider pages)
+    - Managed RAG Pipelines (Build vs. Buy)
+    - Self-Hosted Costs
+    - Decision: Managed vs Self-Hosted
+  - Selection Framework
+    - Decision Tree
+    - Evaluation Criteria
+    - Proof of Concept Checklist
+  - Interview Questions
+    - Q: How would you choose between Pinecone and a self-hosted solution?
+    - Q: Explain how HNSW works and when you would not use it.
+    - Q: When would you use a Disk-based index (like DiskANN) over a RAM-based index (HNSW)?
+    - Q: Why is metadata filtering often the bottleneck in vector databases?
+    - Q: How do you handle multi-tenancy in a vector database?
+  - References
+
+## FILE 06-retrieval-systems/05-hybrid-search.md  (22 KB)
+- Hybrid Search
+  - Table of Contents
+  - Why Hybrid Search
+    - Query Type Analysis
+    - The Gap Problem
+  - Dense vs Sparse Retrieval
+    - Dense (Semantic) Retrieval
+    - Sparse (Keyword) Retrieval
+    - Head-to-Head Comparison
+  - Hybrid Search Architectures
+    - Architecture 1: Parallel Retrieval with Fusion
+    - Architecture 2: Native Hybrid (Single System)
+    - Architecture 3: Staged Retrieval
+  - Fusion Methods
+    - Reciprocal Rank Fusion (RRF)
+    - Weighted Score Fusion
+    - Relative Score Fusion
+    - Fusion Method Comparison
+  - Learned Sparse Embeddings (SPLADE)
+    - SPLADE Implementation
+  - Implementation Patterns
+    - Pattern 1: Elasticsearch + Vector DB
+    - Pattern 2: Native Hybrid with Weaviate
+  - Tuning and Optimization
+    - Alpha Tuning
+    - Query-Adaptive Alpha
+    - Diversity and Business Rules
+    - Retrieval Depth
+  - Production Considerations
+    - Latency Budget
+    - Multi-Tenant Keyword Scoring
+    - Caching Strategy
+    - Fallback Strategy
+  - Interview Questions
+    - Q: When would you use hybrid search over pure dense search?
+    - Q: Why is Reciprocal Rank Fusion (RRF) safer than "Simple Score Addition"?
+    - Q: When would you choose SPLADE over the standard BM25 + Dense Hybrid approach?
+    - Q: How do you balance dense vs sparse in hybrid search?
+  - References
+
+## FILE 06-retrieval-systems/06-reranking-strategies.md  (23 KB)
+- Reranking Strategies
+  - Table of Contents
+  - Why Reranking
+    - The Quality Gap
+    - Example
+  - Reranking Architectures
+    - Bi-Encoder vs Cross-Encoder
+    - Two-Stage Pipeline
+    - Multi-Stage Pipeline
+  - Reranking Models
+    - Cross-Encoder Models
+    - Using Cross-Encoders
+    - Cohere Rerank
+    - Model Selection Guide
+  - Implementation Patterns
+    - Pattern 1: Basic Reranking
+    - Pattern 2: Batched Reranking
+    - Pattern 3: Async Reranking
+  - When to Rerank
+    - Cost-Benefit Analysis
+    - Decision Framework
+    - Inference Time Tradeoffs
+    - Optimal Candidate Count
+  - LLM-Based Reranking
+    - Using LLMs as Rerankers
+    - Listwise vs Pointwise LLM Reranking
+    - Sliding Window for Many Documents
+  - SLM Distillation
+  - Production Considerations
+    - Latency Optimization
+    - After the Reranker: Diversity and Business Rules
+    - Caching Reranker Results
+    - Fallback Strategy
+  - Interview Questions
+    - Q: Why is a Cross-Encoder fundamentally more accurate than a Bi-Encoder?
+    - Q: How do you decide how many candidates to rerank?
+    - Q: When would you use LLM-based reranking?
+    - Q: How do you handle reranking for extremely long queries (e.g., a whole paragraph)?
+  - References
+
+## FILE 06-retrieval-systems/07-graph-rag.md  (13 KB)
+- GraphRAG
+  - Table of Contents
+  - When GraphRAG Actually Wins (and When It Doesn't)
+    - Workloads Where GraphRAG Is the Right Tool
+    - Decision Flow
+    - The Maintenance Tail
+  - Graph as Reranker Pattern
+    - Pattern Flow
+    - Recent Variants (2024 to 2026)
+  - The Limitations of Vector RAG
+  - GraphRAG Architecture
+  - Community Summarization
+  - Entity-Relationship Retrieval
+  - When to Use GraphRAG
+  - Interview Questions
+    - Q: Why is the "Extraction" phase the bottleneck for GraphRAG?
+    - Q: How does GraphRAG solve the "Context Window" limit for aggregate questions?
+  - References
+
+## FILE 06-retrieval-systems/08-agentic-rag.md  (11 KB)
+- Agentic RAG
+  - Table of Contents
+  - Linear vs. Agentic RAG
+  - Self-RAG (Self-Reflection)
+  - Corrective RAG (CRAG)
+  - Multi-Hop Reasoning Loops
+  - Agentic Filtering and Plan Revision
+  - Adaptive Retrieval Effort
+  - Compile-Once Knowledge
+  - Training Search Agents: The Co-Cheating Trap
+  - Interview Questions
+    - Q: What is the "Reasoning-Retrieval Balance" in Agentic RAG?
+    - Q: Why does Agentic RAG often lead to higher quality but lower "Reliability" (Determinism)?
+    - Q: When would you compile knowledge up front instead of running an agentic retrieval loop?
+  - References
+
+## FILE 06-retrieval-systems/09-advanced-retrieval-patterns.md  (5 KB)
+- Advanced Retrieval Patterns
+  - Table of Contents
+  - Query Decomposition (Multi-Query)
+  - Hypothetical Document Embeddings (HyDE)
+  - Contextual Retrieval (The Anthropic Pattern)
+  - Iterative Document Enrichment
+  - In-Context Reranking
+  - Interview Questions
+    - Q: Why is HyDE (Hypothetical Document Embedding) risky for some applications?
+    - Q: What is the "Asymmetric Retrieval" problem?
+  - References
+
+## FILE 06-retrieval-systems/10-contextual-retrieval.md  (27 KB)
+- Contextual Retrieval
+  - Table of Contents
+  - The Problem: Context Dilution
+  - How Contextual Retrieval Works
+  - Contextual Embeddings
+    - How It Improves Retrieval
+    - The Vector Space Shift
+  - Contextual BM25
+    - Why BM25 Still Matters
+    - Performance Gains (Cumulative)
+  - The Full Pipeline: Hybrid + Reranking
+    - Reciprocal Rank Fusion (RRF) for Combining Results
+  - Implementation Patterns
+    - Pattern 1: Basic Contextual Retrieval (Python)
+    - Pattern 2: Cost-Optimized with Prompt Caching
+    - Pattern 3: Contextual Chunk Headers (Lightweight Alternative)
+  - Cost Considerations
+    - Contextualization Costs
+    - When to Use Contextual Retrieval
+  - Contextual Retrieval vs. Other Approaches
+    - Contextual Retrieval vs. Late Chunking
+    - Contextualized Chunk Embedding Models
+  - Production Architecture
+    - Reference Architecture: Contextual RAG at Scale
+    - Scaling Considerations
+  - Interview Questions
+    - Q: Explain Anthropic's Contextual Retrieval. When would you use it and when would you skip it?
+    - Q: A knowledge base of 50,000 documents needs Contextual Retrieval. How do you manage the ingestion cost?
+    - Q: How does Contextual Retrieval compare to HyDE for improving retrieval quality?
+  - References
+
+## FILE 06-retrieval-systems/11-late-interaction-colbert.md  (27 KB)
+- Late Interaction & ColBERT
+  - Table of Contents
+  - The Retrieval Architecture Spectrum
+    - How Each Architecture Processes a Query-Document Pair
+  - ColBERT Architecture
+    - Encoding Phase
+    - Offline vs. Online Computation
+  - MaxSim: The Core Scoring Mechanism
+    - How MaxSim Works
+    - Worked Example
+    - Why MaxSim Outperforms Single-Vector Similarity
+  - ColBERTv2 and PLAID Indexing
+    - ColBERTv2 Improvements (2021)
+    - PLAID: The Indexing Engine
+  - Multi-Vector in General-Purpose Vector DBs (MUVERA)
+    - Compressing the Vectors Themselves
+  - Late Interaction vs. Alternatives
+    - Comprehensive Comparison
+    - When ColBERT Wins
+  - Implementation with RAGatouille
+    - Basic Usage
+    - Integration with LangChain
+    - Other ColBERT Libraries and Integrations
+  - Production Deployment Patterns
+    - Pattern 1: ColBERT as Primary Retriever
+    - Pattern 2: ColBERT as Reranker (Most Common)
+    - Pattern 3: Hybrid (ColBERT + BM25 + Dense)
+    - Storage and Infrastructure Considerations
+  - When to Choose ColBERT
+    - Decision Framework
+    - ColBERT vs. Dense Retrieval vs. Hybrid Search
+  - Interview Questions
+    - Q: Explain the difference between bi-encoders, cross-encoders, and late interaction models. When would you cho
+    - Q: ColBERT stores one vector per token. How does it scale, and what are the storage tradeoffs?
+    - Q: You are designing a legal document search system with 5M documents. The team is debating between dense bi-e
+  - References
+
+## FILE 06-retrieval-systems/12-multimodal-rag.md  (31 KB)
+- Multi-Modal RAG
+  - Table of Contents
+  - Why Text-Only RAG Fails
+  - Architecture Patterns
+    - Pattern 1: Unified Embedding Space
+    - Pattern 2: Modality-Specific Retrieval with Fusion
+    - Pattern 3: Vision-First (Page-as-Image)
+  - Multi-Modal Embedding Strategies
+    - CLIP (Contrastive Language-Image Pretraining)
+    - SigLIP / SigLIP 2
+    - Comparison for RAG
+    - Embedding Strategy Decision
+  - Vision-Language Models for Document Understanding
+    - VLM Options for Document Understanding
+    - VLM-Augmented Ingestion Pipeline
+  - ColPali and Vision-Based Retrieval
+    - How ColPali Works
+    - ColPali vs. Traditional Pipeline
+    - ColPali Family
+    - ViDoRe Benchmark Results
+  - Table Extraction and Structured Data Retrieval
+    - Strategy 1: VLM-Based Extraction
+    - Strategy 2: Specialized Table Parsers
+    - Strategy 3: Table-Aware Chunking
+  - Chart and Diagram Understanding
+    - Chart Types and Extraction Approaches
+    - Dual-Representation Strategy
+  - Video: Fixed Sampling vs Agentic Processing
+  - Production Architecture
+    - Full Multi-Modal RAG Pipeline
+    - Scaling Considerations
+  - Implementation Example
+    - End-to-End Multi-Modal RAG with ColPali + VLM
+  - System Design Interview Angle
+    - Q: Design a RAG system for a financial research platform that needs to answer questions about earnings reports
+    - Q: How would you handle a query that requires information from BOTH a chart and a table on different pages?
+    - Q: Users want to ask questions across a 10,000-hour library of training videos. How do you design and cost it?
+  - References
+
+## FILE 06-retrieval-systems/13-rag-evaluation-patterns.md  (34 KB)
+- RAG Evaluation Patterns
+  - Table of Contents
+  - The RAG Triad
+    - Dimension 1: Context Relevance
+    - Dimension 2: Groundedness (Faithfulness)
+    - Dimension 3: Answer Relevance
+    - Triad Failure Modes
+  - RAGAS Framework and Metrics
+    - Core RAGAS Metrics
+    - How RAGAS Faithfulness Works (Under the Hood)
+    - How RAGAS Context Precision Works
+    - RAGAS vs. Ground-Truth Metrics
+  - Component-Level Evaluation
+    - Retriever Evaluation
+    - Separate the Embedder from the Index
+    - Generator Evaluation
+    - Reranker Evaluation
+  - LLM-as-Judge for RAG
+    - How It Works
+    - Known Biases and Mitigations
+    - Best Practices for LLM-as-Judge
+    - A Third Judge Tier: Typed Decision Models
+  - Building Golden Test Sets
+    - Building Process
+    - Golden Set Composition Guidelines
+    - Synthetic Test Generation with RAGAS
+  - Automated Regression Testing
+    - CI/CD Integration
+    - Quality Gates
+  - Production Monitoring
+    - Key Production Signals
+    - Retrieval Quality Drift
+  - Cost of Evaluation at Scale
+    - Cost per Query (Full RAG Triad)
+    - Scaling Strategy
+  - Tools Comparison
+    - Framework Overview
+    - When to Use What
+    - Custom Evaluator Pattern
+  - System Design Interview Angle
+    - Q: You deployed a RAG system and users report that answers are sometimes wrong. How do you systematically diag
+    - Q: How do you evaluate a RAG system when you do not have ground-truth answers?
+    - Q: Your RAG evaluation pipeline costs $500/day in LLM judge calls. How do you reduce it?
+  - References
+
+## FILE 06-retrieval-systems/14-production-rag-at-scale.md  (69 KB)
+- Production RAG at Scale
+  - Table of Contents
+  - RAG vs Long Context
+    - The Decision Matrix
+    - Head-to-Head Comparison
+    - The "Lost in the Middle" Problem
+    - The Cache-Read Break-Even
+    - Best Practice: The Hybrid Pattern
+    - A Third Option: Compile the Knowledge Once
+  - Query Routing and Classification
+    - The Four-Path Router
+    - Classification Signals
+    - Implementation: Lightweight Router
+    - Domain-Specific Routing
+  - Semantic Caching for RAG
+    - Three-Layer Caching Architecture
+    - Semantic Cache Implementation
+    - Cache Invalidation Strategies
+  - Multi-Index Strategies
+    - Index Partitioning Patterns
+    - When to Use Each Pattern
+    - Hierarchical Index Strategy
+  - RAG Pipeline Optimization
+    - Sequential vs Optimized Pipeline
+    - Parallel Retrieval
+    - Batched Embedding
+    - Streaming Generation with Early Retrieval
+  - Corrective RAG: Self-Checking Retrieval
+    - The CRAG Decision Loop
+    - Implementation
+    - Self-RAG: Critic Tokens
+  - Adaptive Retrieval
+    - The Retrieval Decision Tree
+    - Query Complexity Estimator
+    - Token-Budget Aware Retrieval
+    - Adaptive Effort as a Managed Feature
+  - Cost Optimization Patterns
+    - Cost Breakdown of a Typical RAG Query
+    - Tiered Model Strategy
+    - Progressive Detail Pattern
+    - Cost Guardrails
+    - Build vs Buy: Managed RAG Unit Prices
+  - Failure Modes and Debugging
+    - The RAG Failure Taxonomy
+    - Many Retrieval Failures Are Chunking Failures
+    - Debugging Checklist
+    - Agentic RAG Failure Modes
+  - Monitoring and Alerting
+    - The RAG Monitoring Stack
+    - Key Metrics and Alerts
+    - End-to-End Trace Logging
+    - Automated Quality Sampling
+  - Scaling to Millions of Documents
+    - Scaling Dimensions
+    - Ingestion Pipeline at Scale
+    - Sharding Strategies
+    - Index Maintenance
+    - Re-Embedding Without Downtime
+    - Memory Tiers and Quantization
+    - Read Replicas for Retrieval
+  - Multi-Tenant RAG Isolation
+    - Three Isolation Models
+    - Security: Defense in Depth
+    - Leaks the Tenant Filter Does Not Stop
+    - Tenant-Aware Ingestion
+    - Noisy Neighbor Prevention
+  - Real-World Architecture Examples
+    - Example 1: Customer Support RAG
+    - Example 2: Enterprise Knowledge Platform
+    - Example 3: Legal Document Analysis
+  - System Design Interview Angle
+    - Q: Design a RAG system that serves 10,000 queries per second across 500 tenants with a p99 latency of 2 second
+    - Q: How do you handle the case where a RAG system retrieves irrelevant documents but the LLM generates a plausi
+    - Q: Your RAG system's costs have tripled over the last month with no increase in query volume. How do you diagn
+  - References
+
+## FILE 06-retrieval-systems/15-data-engineering-for-ai.md  (22 KB)
+- Data Engineering for AI
+  - Table of Contents
+  - The Shared Pipeline
+  - Ingestion
+    - Route Pages to the Cheapest Tier That Works
+  - Cleaning and Normalization
+  - Deduplication
+  - PII, Consent, and Governance
+  - Quality Filtering and Enrichment
+  - Pipelines and Orchestration
+  - Data for Fine-Tuning
+  - Failure Modes
+  - Interview Questions
+    - Q: Why is deduplication one of the most important stages in an AI data pipeline?
+    - Q: How do you keep eval results honest against data contamination?
+    - Q: You need to parse 5 million pages of mixed born-digital PDFs, scans and office files for RAG. How do you de
+  - References
+
+## FILE 07-agentic-systems/01-agent-fundamentals.md  (6 KB)
+- Agent Fundamentals
+  - Table of Contents
+  - The Agent Formula
+  - System 1 vs. System 2 Thinking
+  - Agency Levels
+  - Core Components
+    - 1. The Reasoning Model (The Executive)
+    - 2. Tools (The Limbs)
+    - 3. Memory (The Experience)
+  - The Agent Lifecycle
+  - Interview Questions
+    - Q: Why is a "Reasoning Model" (like Claude Opus 5.5 or GPT-6 Astra) better for agency than a standard LLM?
+    - Q: How do you prevent "Agentic Drift" in long-running tasks?
+  - References
+
+## FILE 07-agentic-systems/02-reasoning-loops-react-and-beyond.md  (4 KB)
+- Reasoning Loops: ReAct and Beyond
+  - Table of Contents
+  - The Evolution of the Loop
+  - ReAct: Reasoning + Acting
+  - Self-Reflexion Loops
+  - Plan-and-Solve
+  - Flow Engineering (LangGraph)
+  - Interview Questions
+    - Q: When would you use a "Reasoning Loop" (ReAct) vs. a "Plan-and-Solve" architecture?
+    - Q: What is "Inference-Time Scaling" and how does it relate to Agentic Loops?
+  - References
+
+## FILE 07-agentic-systems/03-tool-use-and-mcp.md  (63 KB)
+- Tool Use and MCP
+  - Table of Contents
+  - The Tool-Use Mechanism
+  - Model Context Protocol (MCP)
+    - Why MCP?
+  - Defining High-Precision Tools
+  - MCP vs. OpenAI Function Calling
+  - Streaming Tool Calls
+  - The 2025 Revisions: Streamable HTTP and Auth
+    - 1. Streamable HTTP Transport
+    - 2. OAuth 2.1 Authorization
+  - MCP 2026-07-28: The Stateless Rewrite
+    - How MCP Got Here
+    - Three Generations of MCP, Compared
+    - Multi Round-Trip Requests (MRTR)
+    - What Is Deprecated or Removed
+    - The Extensions Framework
+    - Migration Checklist
+  - MCP Extensions and Ecosystem (October 2026)
+    - What the August 22 Roadmap Prioritizes
+    - Skills over MCP
+  - Agent Plugins
+    - How the Three Layers Fit
+  - Agent-to-Agent Protocol (A2A)
+    - What A2A Solves
+    - Technical Foundation
+    - A2A Task Lifecycle
+    - Industry Adoption
+  - The Protocol Landscape: Tools, Agents, and Payments
+    - How They Complement Each Other
+    - The Commerce Layer
+  - A2A v1.0 and MCP in Production
+    - Composition Pattern: Support Agent Delegating Refunds
+    - MCP 2026 Roadmap Highlights: Both Shipped
+    - MCP Production Hardening
+    - State-Handle Hijacking: The Stateless Core's New Attack Surface
+    - OAuth Mix-Up: The Multi-Server Client Is the Confused Deputy
+    - SDK Defaults and Per-Tool Authorization
+    - Defense-in-Depth Checklist for Production MCP
+  - Computer-Use Tools (Anthropic)
+  - Context7: Live Documentation MCP
+  - Interview Questions
+    - Q: How does MCP solve the "Too Many Tools" problem (Schema Overload)?
+    - Q: Why is it important to separate "Tool Logic" from the "Agent App" using MCP servers?
+    - Q: How do MCP and A2A work together in a production multi-agent system?
+    - Q: Your agent connects to a dozen third-party MCP servers over OAuth. How do you stop one malicious server fro
+  - References
+
+## FILE 07-agentic-systems/04-multi-agent-orchestration.md  (15 KB)
+- Multi-Agent Orchestration
+  - Table of Contents
+  - Why Multi-Agent?
+  - The Supervisor Pattern (Hierarchical)
+  - Swarms (The OpenAI Pattern)
+  - The Pipeline Pattern (Workflows as Code)
+  - Graph-Based Orchestration (2026 Dominant Pattern)
+    - Why Graphs Won
+    - Framework Support
+    - The Paperclip Pattern (Hierarchical Agents at Scale)
+  - Cross-Vendor Agent Orchestration via A2A
+  - The 2026 Framework Landscape for Multi-Agent
+  - State Management
+  - Peer-to-Peer (P2P) Debate
+  - Interview Questions
+    - Q: What are the main failure modes of a "Supervisor" multi-agent architecture?
+    - Q: How do you choose between a "Sequence of Chains" and a "Multi-Agent Graph"?
+    - Q: When would you use A2A for multi-agent orchestration versus keeping all agents in a single framework?
+    - Q: When do you define a multi-agent workflow in code, and when do you let a coordinator model delegate?
+  - References
+
+## FILE 07-agentic-systems/05-agent-memory-and-state.md  (40 KB)
+- Agent Memory and State
+  - Table of Contents
+  - The Memory Hierarchy
+    - Practical Properties of Each Tier
+  - Short-Term: The Reasoning Trace
+  - Episodic Memory: Past Experiences
+  - Semantic Memory: The Persona
+  - Procedural Memory: Learned Skills and Workflows
+  - Tradeoffs: Where Does Fact X Go?
+    - Tier-selection table
+    - Cost tradeoffs
+    - The graduation rule
+    - When to curate: write time, sleep time, or read time
+  - Production Implementations
+  - Failure Modes and Mitigations
+    - 1. Memory poisoning via prompt injection
+    - 2. Stale facts
+    - 3. Conflicting facts
+    - 4. Memory drift
+    - 5. Hallucinated memory writes
+    - 6. Cross-tenant leakage
+    - 7. Memory-induced reasoning traps
+  - Mem0 and Agentic Personalization
+  - Interview Questions
+    - Q: How do you handle "Conflicting Memories" in an agentic system?
+    - Q: Why is the "Context Window" alone insufficient for a staff-level Agent architecture?
+    - Q: How would you design procedural memory for a production AI agent?
+    - Q: When does episodic memory become a liability rather than an asset?
+    - Q: How do you prevent memory poisoning when agents can write to their own long-term store?
+    - Q: Memory tier selection: where would you put each of these and why? (a) the user's API rate limit, (b) the st
+    - Q: Walk me through the consolidation policy you would design for episodic-to-semantic transition. When does an
+    - Q: A benchmark shows your agent does better with memory turned off. What do you do?
+    - Q: Your agent's memory store has 50M memories across 10K tenants. How do you guarantee cross-tenant isolation 
+    - Q: HaluMem shows memory hallucinations accumulate at write time, then propagate. How would you instrument prod
+    - Q: TTT-E2E compresses context into weights via test-time training. Where does this fit in the L1-L4 hierarchy,
+  - References
+    - Production Frameworks
+    - Research (2023-2026)
+    - Safety, Poisoning, and Hallucinations
+    - Infrastructure
+
+## FILE 07-agentic-systems/06-planning-and-decomposition.md  (6 KB)
+- Planning and Decomposition
+  - Table of Contents
+  - The Planning Spectrum
+  - Static vs. Dynamic Planning
+    - Static (Plan-and-Solve)
+    - Dynamic (Adaptive)
+  - Clarify Before You Decompose
+  - CoT and Reasoning Models
+  - Recursive Task Decomposition
+  - Tree Search (MCTS)
+  - Interview Questions
+    - Q: How do you prevent an agent from "Infinite Recursion" during task decomposition?
+    - Q: Why is "Plan Revision" often more expensive than "Plan Generation"?
+  - References
+
+## FILE 07-agentic-systems/07-error-handling-and-recovery.md  (7 KB)
+- Error Handling and Recovery
+  - Table of Contents
+  - Taxonomy of Agent Failures
+  - Self-Correction Loops
+  - Stateful Rollbacks (Checkpointing)
+  - The "Stuck in a Loop" Fix
+  - Kill Switches and Containment Time
+  - Graceful Degradation
+  - Interview Questions
+    - Q: Why is traditional "Exception Handling" (Try/Catch) insufficient for Agentic Systems?
+    - Q: How do you handle "Silent Failures" (Where the tool returns 200 OK but the data is wrong)?
+  - References
+
+## FILE 07-agentic-systems/08-human-in-the-loop-patterns.md  (14 KB)
+- Human-in-the-Loop Patterns
+  - Table of Contents
+  - The HITL Spectrum
+  - Interrupts and Breakpoints
+  - Policy-Gated Autonomy
+  - Approval Laundering
+  - Time-Travel Debugging (State Editing)
+  - Co-Reasoning (Shared Scratchpads)
+  - Confidence-Based Escalation
+  - Interview Questions
+    - Q: How do you design an HITL system that doesn't "Fatigue" the human operator?
+    - Q: What is the "Over-Reliance" risk in HITL, and how do you mitigate it?
+    - Q: You gate agent actions with a classifier that can run, deny, or defer to a human. How do you set and monito
+  - References
+
+## FILE 07-agentic-systems/09-agentic-security-and-sandboxing.md  (26 KB)
+- Agentic Security and Sandboxing
+  - Table of Contents
+  - The Agentic Attack Surface
+  - Action Sandboxing (MicroVMs and Containers)
+  - Permission Scoping (Minimum Agency)
+  - Model-in-the-Middle (Proxy Security)
+  - Audit Logging for Accountability
+  - The 2026 Threat Landscape: What Changed
+    - The Developer Workstation Became the Target
+    - Multi-Step Injection Defeats Single-Payload Defenses
+    - Skills and Plugins Are an Injection Surface With a Detection Ceiling
+    - Agents Have Taken Unsanctioned Action Against Real Third Parties
+    - Agents Exfiltrate Without an Attacker
+    - Containment Has to Be Out-of-Band
+    - Exploit Timelines Collapsed
+  - Interview Questions
+    - Q: How do you protect a database tool from "Agent-driven SQL Injection"?
+    - Q: Why is "Instruction Hierarchy" critical for agentic security?
+    - Q: Your evaluation agents run long cyber tasks. A monitor alarmed 12 minutes into a run, but the run was only 
+  - References
+
+## FILE 07-agentic-systems/10-evaluating-agentic-systems.md  (14 KB)
+- Evaluating Agentic Systems
+  - Table of Contents
+  - The Evaluation Shift
+  - Trajectory Benchmarks
+  - Eval Integrity: When the Agent Games the Harness
+  - Key Metrics
+    - 1. Task Success Rate (TSR)
+    - 2. Action Success Rate (ASR)
+    - 3. Unit Cost per Task
+  - LLM-as-Judge for Step Quality
+  - Production Evaluation
+  - Interview Questions
+    - Q: How do you evaluate an agent when the environment is non-deterministic (e.g., the web)?
+    - Q: Why is "Meandering" (taking too many steps) a critical failure in Staff-level Agent design?
+    - Q: Your coding agent's benchmark score jumped 15 points after a model upgrade. How do you know it is real?
+  - References
+
+## FILE 07-agentic-systems/11-durable-execution.md  (18 KB)
+- Durable Execution for Long-Running Agents
+  - Table of Contents
+  - Why Agents Break the Normal Failure Model
+  - The Durable-Execution Model
+  - Tools
+  - Mapping Durable Execution onto Agent Loops
+  - Managed Agent Runtimes: Renting the Durable Loop
+  - When You Need It
+  - Do You Need Durable Execution?
+  - Interview Questions
+    - Q: Why are naive retries and checkpoints insufficient for a production agent with side effects?
+    - Q: When is durable execution overkill, and what would you use instead?
+    - Q: Would you build your agent on Temporal or rent a managed agent runtime like the OpenAI Agents API or Claude
+  - References
+
+## FILE 07-agentic-systems/12-loop-engineering.md  (34 KB)
+- Loop Engineering
+  - Table of Contents
+  - From Prompting to Loop Engineering
+  - The Lineage: ReAct to Loop Engineering
+  - The Inner Agent Loop
+  - The Four Levels of Loops
+    - When Loop 4 Turns on Itself: Recursive Self-Improvement
+  - Loop Patterns
+  - Termination and Budget Control
+  - Context and Memory in Long Loops
+  - Verification and Grading
+  - Anti-Patterns
+  - Metrics That Matter
+  - The Maturity Ladder
+  - Interview Questions
+    - Q: Define the agent loop, and explain when a loop is actively harmful.
+    - Q: Why must the verifier be separate from the producer, and where should budget enforcement live?
+    - Q: An agent called a broken tool 400 times in five minutes. Diagnose and design the fix.
+    - Q: What is loopmaxxing, and how do you convert a non-converging loop into a useful one?
+    - Q: Should the verifier tell the agent why it rejected the work?
+    - Q: Explain context rot and your full mitigation stack for a multi-hour loop.
+  - References
+
+## FILE 07-agentic-systems/README.md  (5 KB)
+- Agentic Systems
+  - Chapter Order
+  - Reference Architecture
+  - Files in This Folder
+  - Companion Chapters
+  - Key Takeaways
+
+## FILE 08-memory-and-state/01-memory-architectures.md  (9 KB)
+- Memory Architectures
+  - Table of Contents
+  - The Three-Tiered Hierarchy
+  - Tier 1: Working Memory (L1)
+  - Tier 2: Episodic Memory (L2)
+  - Tier 3: Semantic Memory (L3)
+  - File-Based Memory: Retrieval by Path
+  - Memory Consolidation Patterns
+  - Interview Questions
+    - Q: Why not just use a 1M-token context window for all memory (L1-L3)?
+    - Q: How do you handle "Privacy Leakage" in Tier 3 (Global Semantic Memory)?
+    - Q: When would you store agent memory as files instead of in a vector database?
+  - References
+
+## FILE 08-memory-and-state/02-short-term-context.md  (6 KB)
+- Short-Term Context Management
+  - Table of Contents
+  - The Context Lifecycle
+  - KV Cache Tiling
+  - Prefix Caching
+  - Sliding Windows vs. Summarization
+  - Contextual Compression
+  - Interview Questions
+    - Q: What is the difference between "Model Context Window" and "Application Context Window"?
+    - Q: How does "Prefix Caching" change how you design System Prompts?
+  - References
+
+## FILE 08-memory-and-state/03-long-term-memory.md  (7 KB)
+- Long-Term Memory
+  - Table of Contents
+  - Episodic Memory: The Personal Log
+  - Semantic Memory: The Fact Store
+  - Hybrid Vector-Graph Storage
+  - Memory Pruning and Decay
+  - Privacy and Multi-Tenancy
+  - Interview Questions
+    - Q: How do you choose between a Vector DB and a Knowledge Graph for long-term memory?
+    - Q: What is "Catastrophic Forgetting" in the context of learned agentic memory?
+  - References
+
+## FILE 08-memory-and-state/04-agentic-memory-mem0.md  (8 KB)
+- Agentic Memory with Mem0
+  - Table of Contents
+  - The Mem0 Philosophy
+  - How it Works: The Digest Loop
+  - Self-Updating Memories
+  - Integrating Mem0 with LangGraph
+  - Personalization at Scale
+  - Choosing a Memory Layer
+  - Interview Questions
+    - Q: Why use a dedicated service like Mem0 instead of a custom Python script that writes to Postgres?
+    - Q: How do you handle "Memory Fatigue" where an agent brings up too many irrelevant past details?
+  - References
+
+## FILE 08-memory-and-state/05-semantic-caching.md  (8 KB)
+- Semantic Caching
+  - Table of Contents
+  - Exact Cache vs. Semantic Cache
+  - Semantic Cache vs. Provider Prompt Cache
+  - The Semantic Matching Pipeline
+  - RedisVL and GPTCache
+  - Evaluation: Hit Rate vs. Semantic Drift
+  - Multimodal Semantic Caching
+  - Interview Questions
+    - Q: What is "Semantic Drift" in caching, and how do you prevent it?
+    - Q: Why is a Semantic Cache sometimes *more* expensive than a raw LLM call at low volume?
+    - Q: You already use provider prompt caching. Should you also add a semantic cache?
+  - References
+
+## FILE 08-memory-and-state/06-state-management-patterns.md  (8 KB)
+- State Management Patterns
+  - Table of Contents
+  - The State Object
+  - State Machines (LangGraph)
+  - Checkpointing and Resume
+  - Where State Lives
+  - Parallel State (Fork/Join)
+  - Time-Travel (State Rewriting)
+  - Interview Questions
+    - Q: Why use a "Graph-based" State Machine (LangGraph) instead of a simple "While loop" for agents?
+    - Q: How do you prevent "State Bloat" in long-running agent sessions?
+    - Q: Your team edits a bad turn in LangGraph and replays from that checkpoint. After switching to Claude Opus 5.
+  - References
+
+## FILE 09-frameworks-and-tools/01-langchain-deep-dive.md  (13 KB)
+- LangChain Deep Dive
+  - Table of Contents
+  - The LangChain Stack
+  - LCEL: Programming with Pipes
+  - Standard Abstractions
+    - 1. Runnables
+    - 2. Tools & Tool-Calling
+    - 3. Output Parsers and Structured Output
+  - Managing Complexity
+  - LangChain Modularity Push
+    - Package Tiering as Shipped
+    - Standard JSON Schema Across Validation Libraries
+    - When to Use Just `langchain-core` vs Full LangChain
+    - Migration Notes for Existing Code
+  - Interview Questions
+    - Q: What is the main benefit of LCEL over traditional Python "Chains" (sequences of function calls)?
+    - Q: LangChain is often criticized for being "too bloated." How do you architect a lean production system with i
+    - Q: A structured-extraction chain worked on Claude Opus 5 and started failing with HTTP 400 after the team swit
+  - References
+
+## FILE 09-frameworks-and-tools/02-langgraph-orchestration.md  (6 KB)
+- LangGraph Orchestration
+  - Table of Contents
+  - The Graph Philosophy
+  - Cyclic vs. Acyclic
+  - State Management
+  - Persistence and Checkpointing
+  - Multi-Agent Patterns
+  - Interview Questions
+    - Q: Why use LangGraph instead of a managed agent runtime such as the OpenAI Agents API or Claude Managed Agents
+    - Q: How do you handle "State Overload" in a graph with 20+ nodes?
+  - References
+
+## FILE 09-frameworks-and-tools/03-langsmith-observability.md  (7 KB)
+- LangSmith Observability
+  - Table of Contents
+  - The Observability Pyramid
+  - Tracing and Trajectories
+  - Unit Testing for LLMs (Datasets)
+  - Automated Evaluators
+  - A/B Testing
+  - September 2026 Platform Changes
+  - Interview Questions
+    - Q: Why is "Trace Attribution" critical for Staff-level engineers?
+    - Q: How do you justify the cost of an observability platform like LangSmith?
+  - References
+
+## FILE 09-frameworks-and-tools/04-llamaindex.md  (12 KB)
+- LlamaIndex
+  - Table of Contents
+  - The Data Framework Philosophy
+  - LlamaIndex Workflows
+  - Advanced Indexing
+  - LlamaCloud and Managed Ingestion
+    - Strategic Signal: The Company Is Betting on Parsing
+  - Agents as Tools
+  - LlamaIndex Workflows: Event-Driven Application Framework
+    - What Changed Architecturally
+    - The Event-Driven Mental Model
+    - Workflows vs LangGraph
+    - Real-World Posture
+  - Interview Questions
+    - Q: LangChain and LlamaIndex now both have "Graph/Workflow" features. How do you choose?
+    - Q: What is the "Property Graph" in LlamaIndex and why is it superior to basic Vector RAG?
+  - References
+
+## FILE 09-frameworks-and-tools/05-dspy.md  (9 KB)
+- DSPy: Programming Language Models
+  - Table of Contents
+  - The Programming Paradigm
+  - Signatures: Describing the Task
+  - Optimizers: MIPROv2, GEPA, and Flex
+  - Output Constraints: Refine and BestOfN
+  - Managing Model Drift
+  - DSPy 3.3 and 3.4 Changes
+  - Interview Questions
+    - Q: Why is DSPy considered "Anti-Prompt Engineering"?
+    - Q: What is the biggest drawback of using DSPy in a production environment?
+    - Q: When would you use GEPA or Flex instead of MIPROv2?
+  - References
+
+## FILE 09-frameworks-and-tools/06-semantic-kernel.md  (5 KB)
+- Semantic Kernel
+  - Table of Contents
+  - Enterprise DNA
+  - Plugins and Function Calling
+  - Memory and Connectors
+  - Multi-Language Support
+  - Interview Questions
+    - Q: Why would a Staff Engineer choose Semantic Kernel over LangChain?
+    - Q: What is the "Function Calling" abstraction in Semantic Kernel?
+  - References
+
+## FILE 09-frameworks-and-tools/07-autogen-crewai.md  (23 KB)
+- Microsoft Agent Framework, CrewAI, and the Agent SDK Landscape
+  - Table of Contents
+  - CrewAI: The Manager Perspective
+    - CrewAI Flows
+    - CrewAI 1.14 and 1.15: Competing on Durability
+  - Microsoft Agent Framework (AutoGen's Successor)
+    - The Merger: AutoGen + Semantic Kernel = Agent Framework
+    - Migration Path
+    - Key Capabilities
+  - The Agent SDK Landscape
+    - Claude Agent SDK (Anthropic)
+    - OpenAI Agents SDK
+    - OpenAI AgentKit (Partly Winding Down)
+    - OpenAI Apps SDK
+    - Google Agent Development Kit (ADK)
+    - Other Agent SDKs
+  - Managed Agent Runtimes
+  - Swarms and P2P
+  - Framework Comparison Matrix
+  - Interview Questions
+    - Q: When would you use CrewAI instead of LangGraph?
+    - Q: Microsoft moved AutoGen to maintenance mode in favor of the Agent Framework. How does this affect existing 
+    - Q: How do you prevent "Infinite Loops" where agents keep talking to each other without solving the task?
+    - Q: When would you hand the agent loop to a managed runtime such as the OpenAI Agents API or Claude Managed Age
+  - References
+
+## FILE 09-frameworks-and-tools/08-framework-selection-guide.md  (15 KB)
+- Framework Selection Guide
+  - Table of Contents
+  - The Framework Landscape
+    - Orchestration & Agent Frameworks
+    - Agent SDKs (Lab-Specific)
+    - Managed Agent Runtimes
+    - Coding Agents
+  - The Decision Matrix
+    - Core Orchestration
+    - Agent SDKs (choose based on your primary model provider)
+    - Coding Agents
+  - Build vs. Buy vs. Framework
+  - Anti-Patterns to Avoid
+  - Staff-Level Recommendation
+  - Interview Questions
+    - Q: Why do we see a trend towards "Programming" (DSPy) instead of "Prompting"?
+    - Q: If you had to build a system that works across OpenAI, Anthropic, and local open-weight models, how would y
+    - Q: With every AI lab shipping its own agent SDK (Claude Agent SDK, OpenAI Agents SDK, Google ADK), how do you 
+  - References
+
+## FILE 09-frameworks-and-tools/09-claude-code.md  (30 KB)
+- Claude Code: The Autonomous Coding Agent
+  - Table of Contents
+  - What Claude Code Is
+  - Core Architecture
+  - Core Tools
+    - 1. Shell Execution (`Bash`)
+    - 2. File Operations (`Read`, `Edit`, `Write`; the API's text editor tool)
+    - 3. Computer and Browser Use (optional)
+  - The CLAUDE.md Manifest Pattern
+  - Running Claude Code
+    - Interactive Mode
+    - Headless Mode (for scripting)
+    - Python SDK (Claude Agent SDK)
+  - Sub-Agents and Parallelism
+  - Custom MCP Integration
+  - Safety and Permission Model
+    - Configuration
+    - Production Safety Rules
+    - Enterprise Controls
+  - Production Use: CI Pipelines
+    - GitHub Actions Integration
+    - Cost Model for CI
+  - Comparison: Claude Code vs Alternatives
+    - Coding-Agent Benchmarks (late September 2026)
+  - Interview Questions
+    - Q: How does Claude Code differ from GitHub Copilot?
+    - Q: What is CLAUDE.md and why is it critical?
+    - Q: How do you safely run Claude Code in production CI?
+    - Q: Your team wants to run Claude Code in auto mode on developer laptops. Is that safe?
+    - Q: How do you handle the cost of Claude Code for high-volume CI?
+  - References
+
+## FILE 09-frameworks-and-tools/10-opencoderguide.md  (34 KB)
+- OpenCoder: AI Coding Agents Landscape
+  - Table of Contents
+  - The AI Coding Landscape (2026)
+  - Open-Weight Coding Models
+    - The Current Open-Weight Frontier (October 2026)
+    - Older Small Models Still Used for Completions
+    - Open Model Selection Guide
+  - AI-Native IDEs
+    - Cursor
+    - Windsurf (Cognition)
+    - GitHub Copilot (Microsoft/OpenAI)
+    - Google Antigravity
+  - Open-Source Coding Agents
+    - OpenCode
+    - Codex CLI (OpenAI)
+    - OpenHands (formerly OpenDevin)
+    - Aider (Legacy)
+    - Cline (VS Code Extension)
+  - Benchmark Deep Dive
+    - Current Coding Benchmarks
+    - Historical: HumanEval+ and LiveCodeBench (2025 snapshot)
+  - Cost Comparison
+    - Closed API vs. Open Self-Hosted
+  - Selection Guide
+    - Quick Decision Tree
+    - Comparison Matrix
+  - Production Architecture
+    - Enterprise Coding Agent Platform
+    - Key Production Decisions
+  - Interview Questions
+    - Q: How do you choose between Claude Code, Cursor, and OpenHands?
+    - Q: Why are open-weight coding models important for enterprise?
+    - Q: How would you design the testing strategy for an AI coding agent in CI?
+    - Q: GitHub now lets Copilot code review approvals count toward required reviews. Would you turn it on?
+  - References
+
+## FILE 09-frameworks-and-tools/11-pydantic-ai-and-mastra.md  (18 KB)
+- Pydantic AI and Mastra: Typed Agent Frameworks (2026)
+  - Table of Contents
+  - What These Frameworks Are
+  - Pydantic AI: Typed Agents in Python
+    - Current State
+    - Why Teams Pick It
+    - When Pydantic AI Is the Right Choice
+    - When It Is Not
+  - Mastra: TypeScript-First Agents
+    - Current State
+    - Why Teams Pick It
+    - When Mastra Is the Right Choice
+    - When It Is Not
+  - Comparison with LangGraph
+  - Choosing a Framework
+  - Production References
+  - Interview Questions
+    - Q: When would you choose Pydantic AI over LangGraph for a Python service?
+    - Q: Is Mastra a Vercel AI SDK replacement?
+    - Q: Pydantic AI 2.0 changed what the `openai:` model prefix means. Why should a staff engineer care about a one
+    - Q: What does "typed agent framework" actually buy you in production?
+  - References
+
+## FILE 09-frameworks-and-tools/12-navigating-framework-churn.md  (28 KB)
+- Navigating Framework Churn
+  - Table of Contents
+  - The Trigger: Why a Course Breaks on a Fresh Install
+  - What Actually Changed
+    - The October 2026 Snapshot
+    - LlamaIndex
+    - LangChain
+    - Haystack
+  - Why Courses and Tutorials Go Stale
+  - Is This Tutorial Current? A 30-Second Check
+  - Surviving Churn: Pin, Lock, Isolate
+  - Framework vs Raw SDK vs Thin Layer
+  - What Transfers Across Versions
+  - Migrating When You Must Upgrade
+  - A Durable-Learning Playbook
+  - Interview Questions
+    - Q: A teammate followed a six-month-old LlamaIndex tutorial and it fails on import. Walk me through what happen
+    - Q: Given how fast these frameworks churn, how do you decide whether to use one at all?
+    - Q: An agent's cost per task rose 40% and its tone changed overnight, with no code or dependency change on your
+    - Q: Design a model registry that survives divergent deprecation calendars across vendors and clouds.
+  - References
+
+## FILE 10-document-processing/01-ocr-and-layout.md  (14 KB)
+- OCR and Layout Analysis
+  - Table of Contents
+  - The Three Tiers: OCR Engines, Parsing VLMs, Frontier VLMs
+  - Vision-LLM Layout Extraction
+  - Tiered Parsing and Block-Level Locators
+  - Reading Order and Logical Structure
+  - Handling Low-Quality Scans and Handwriting
+  - Cost and Latency Tradeoffs
+  - Interview Questions
+    - Q: Why would you still use AWS Textract or Azure AI Document Intelligence when vision LLMs exist?
+    - Q: How do you handle a 500-page PDF with vision models efficiently?
+    - Q: You need to parse 5M pages a month for RAG ingestion. Frontier VLM, specialist API, or self-hosted?
+  - References
+
+## FILE 11-infrastructure-and-mlops/01-llm-infrastructure.md  (44 KB)
+- LLM Infrastructure
+  - Table of Contents
+  - Deployment Options
+    - API vs Self-Hosted
+    - When to Use API Providers
+    - Self-Hosting Options
+  - Serving Architecture
+    - Single Model Serving
+    - Multi-Model Serving
+    - Model Router Pattern
+  - Scaling Patterns
+    - Horizontal Scaling
+    - GPU Scaling for Self-Hosted
+    - Queue-Based Architecture
+  - Cost Management
+    - Cost Tracking
+    - Cost Optimization Strategies
+    - Budget Alerts
+  - Monitoring and Alerting
+    - Key Metrics
+    - Alert Configuration
+  - Disaster Recovery
+    - Multi-Provider Failover
+    - Model Lifecycle Is a DR Concern
+    - Graceful Degradation
+  - AI Accelerator Landscape
+    - NVIDIA: Vera Rubin NVL72 and Blackwell Ultra
+    - Cross-Chip Prefill and Decode
+    - AMD MI455X and Helios Rack
+    - Google TPU and Custom Inference Silicon
+    - AWS Trainium3 and the Anthropic $100B+ Deal
+    - Cerebras IPO (May 2026)
+    - Tenstorrent Galaxy Blackhole
+    - Stargate and the Scale of Cloud Commitments
+    - A Three-Tier Fleet Strategy
+    - Take-Aways for Capacity Planning
+  - Interview Questions
+    - Q: How would you design infrastructure for 1M LLM queries per day?
+    - Q: When would you self-host vs use API providers?
+    - Q: How would you evaluate a new accelerator or serving platform for your fleet?
+  - References
+
+## FILE 11-infrastructure-and-mlops/02-cicd.md  (24 KB)
+- CI/CD for LLM Applications
+  - Table of Contents
+  - LLM CI/CD Challenges
+    - What Makes LLM Deployments Different
+    - Change Types
+  - Pipeline Architecture
+    - Full Pipeline
+  - Testing Stages
+    - Stage 1: Static Validation
+    - Stage 2: Unit Tests
+    - Stage 3: Golden Set Tests
+    - Stage 4: LLM Evaluation
+    - Stage 5: Supply-Chain and Agent-Config Gates
+  - Quality Gates
+    - Gate Configuration
+  - Deployment Strategies
+    - Canary Deployment
+    - Shadow Deployment
+    - Model Migrations Are Deploys
+  - Rollback Procedures
+    - Automated Rollback
+  - Interview Questions
+    - Q: How do you test prompt changes before production?
+    - Q: What triggers should cause automatic rollback?
+    - Q: Your provider is retiring the model your product runs on in 60 days. How do you migrate safely?
+  - References
+
+## FILE 11-infrastructure-and-mlops/03-ai-gateways-and-model-routing.md  (26 KB)
+- AI Gateways and Model Routing
+  - Table of Contents
+  - What an AI Gateway Is
+  - Routing Strategies
+  - Fallback and Reliability
+  - The 2026 Tool Landscape
+  - Architecture Patterns
+  - Securing the Gateway
+  - Do You Need a Gateway Yet?
+  - Interview Questions
+    - Q: Rate-limit errors are your top production failure. How does a gateway help, and how could it make things wo
+    - Q: When is a full gateway overkill, and what would you do instead?
+    - Q: Your gateway holds every provider key. How do you secure it?
+    - Q: How do you fail over a long-running agent conversation to another provider?
+  - References
+
+## FILE 11-infrastructure-and-mlops/04-finops-and-token-economics.md  (24 KB)
+- FinOps and Token Economics
+  - Table of Contents
+  - The Cost Model
+    - Price Structure Beyond the Per-Token Rate
+  - Caching: The Top Cost Lever
+  - Batch and Async Economics
+  - The FinOps Discipline
+  - Structural Cost Decisions
+  - Cost Anti-Patterns
+  - Interview Questions
+    - Q: Your LLM bill doubled month over month with flat traffic. How do you find and fix it?
+    - Q: Why do AI products have worse gross margins than SaaS, and what do engineers do about it?
+    - Q: A team wants to move a 300K-token-context workload from Claude Sonnet 5.5 to GPT-6 Sol because both list at
+  - References
+
+## FILE 12-security-and-access/01-llm-security.md  (44 KB)
+- LLM Security
+  - Table of Contents
+  - LLM Security Landscape
+    - New Threat Categories
+    - OWASP Top 10 for LLM Applications (2025)
+  - Prompt Injection
+    - What Is Prompt Injection
+    - Types of Prompt Injection
+    - Injection Examples
+    - Mitigation Strategies
+  - Data Leakage
+    - Sources of Leakage
+    - Preventing Training Data Leakage
+    - Preventing RAG Data Leakage
+    - Preventing System Prompt Leakage
+    - Provider Data Retention and ZDR
+    - Model Extraction via the API
+  - Output Security
+    - Insecure Output Handling
+    - Safe Output Handling
+    - Output Validation
+  - Access Control
+    - Multi-Tenant Security
+    - Rate Limiting
+    - Tool Permission Control
+  - Defense in Depth
+    - Layered Security Architecture
+    - Implementation
+  - Securing the AI Stack Itself
+  - Security Testing
+    - Prompt Injection Tests
+    - Red Team Testing
+  - May 2026: The Offensive-Defensive AI Arms Race Inflection
+    - Timeline of the Week
+    - What Changed in the Threat Model
+    - Defensive Tooling That Became Standard
+    - The Attacker-Defender Loop in Production
+    - What Followed: Gated Capability and Containment (August to September 2026)
+  - Indirect Prompt Injection (IPI) Defense in Depth
+    - Layered Defense Architecture
+    - Defense Pipeline
+  - Interview Questions
+    - Q: How do you defend against prompt injection?
+    - Q: How do you handle multi-tenant data security in RAG?
+    - Q: A regulated customer requires zero data retention, but the frontier model you want requires 30-day retentio
+  - References
+
+## FILE 12-security-and-access/02-access-control.md  (22 KB)
+- Access Control for LLM Systems
+  - Table of Contents
+  - Access Control Requirements
+    - Security Dimensions
+    - LLM-Specific Concerns
+  - Authentication Patterns
+    - API Key Authentication
+    - JWT with Scopes
+    - Workload Identity Instead of Static Keys
+  - Authorization Models
+    - Role-Based Access Control (RBAC)
+    - Attribute-Based Access Control (ABAC)
+    - Model-Level Permissions
+  - Agent and Tool Authorization
+  - Tenant Isolation
+    - Data Isolation Patterns
+    - Prompt Isolation
+    - Cache Isolation
+  - API Key Management
+    - Key Lifecycle
+    - Key Rotation
+  - Audit and Compliance
+    - Audit Logging
+    - Compliance Reports
+  - Interview Questions
+    - Q: How do you implement multi-tenant isolation in a RAG system?
+    - Q: How do you manage API keys for an LLM service?
+    - Q: An agent calls tools on five MCP servers on a user's behalf. How do you authorize it?
+  - References
+
+## FILE 13-reliability-and-safety/01-guardrails.md  (41 KB)
+- Guardrails and Safety
+  - Table of Contents
+  - Why Guardrails Matter
+    - The Reliability Challenge
+    - Risk Categories
+    - Guardrails Are Becoming Legal Requirements
+  - Types of Guardrails
+    - Defense in Depth
+  - Input Guardrails
+    - Topic Classification
+    - PII Detection
+    - Input Length and Rate Limiting
+  - Output Guardrails
+    - Content Safety Filter
+    - Relevance Check
+    - Factuality Check (for RAG)
+  - Prompt Injection Defense
+    - Detection
+    - Mitigation Strategies
+    - What Detection Does Not Buy You
+  - Hallucination Mitigation
+    - Multi-Layer Approach
+    - Abstention Strategy
+  - Structured Output Validation
+    - JSON Schema Validation
+    - Retry with Correction
+  - Action Safety
+    - Action Validation
+    - Sandbox Execution
+  - Fallback Strategies
+    - Graceful Degradation
+    - Provider Safeguards and Refusals
+    - Human Escalation
+  - Guardrail Architecture
+    - Layered Pipeline
+    - Guardrail Metrics
+  - Guardrail Frameworks
+    - NeMo Guardrails (NVIDIA)
+    - Guardrails AI
+    - Choosing Where Each Check Runs
+  - Interview Questions
+    - Q: How do you prevent hallucination in a production RAG system?
+    - Q: How do you protect an LLM application from prompt injection?
+    - Q: Design a guardrail system for a customer service chatbot.
+  - References
+
+## FILE 13-reliability-and-safety/02-ensemble-methods.md  (25 KB)
+- Ensemble Methods for LLM Reliability
+  - Table of Contents
+  - Why Ensembles Matter
+    - Ensemble Methods Taxonomy
+  - Evaluation Ensembles
+    - Panel of LLM Judges (PoLL)
+    - Pairwise Comparison with Positional Debiasing
+  - Generation Ensembles
+    - Self-Consistency (Majority Voting)
+    - Sampling Controls Are Disappearing
+    - Best-of-N with Reward Model
+  - Multi-Agent Patterns
+    - Multi-Agent Debate
+    - Mixture of Agents (MoA)
+    - Cascades and Cross-Family Critique
+  - Ensemble vs Arbitration
+    - Conceptual Distinction
+    - Decision Framework
+  - Cost-Accuracy Tradeoffs
+    - Ensemble Cost Matrix
+    - When NOT to Use Ensembles
+  - Interview Questions
+    - Q: When would you use Self-Consistency vs Best-of-N?
+    - Q: How do you prevent reward hacking in Best-of-N?
+    - Q: Your panel of three LLM judges agrees on 95% of verdicts. Is that good news?
+  - References
+
+## FILE 13-reliability-and-safety/03-reliability-patterns.md  (29 KB)
+- Reliability Patterns
+  - Table of Contents
+  - Reliability Challenges
+    - LLM-Specific Failure Modes
+    - Reliability Targets
+  - Retry Patterns
+    - Exponential Backoff with Jitter
+    - Retryable vs Non-Retryable Errors
+    - Handling Safety Refusals
+  - Circuit Breaker
+    - Implementation
+    - Usage with LLM Client
+  - Bulkhead Pattern
+    - Isolating Resources
+  - Timeout Strategies
+    - Layered Timeouts
+    - Adaptive Timeouts
+  - Graceful Degradation
+    - Degradation Levels
+  - Multi-Provider Failover
+    - Provider Manager
+    - Request Hedging
+  - Interview Questions
+    - Q: How do you design for high availability in LLM systems?
+    - Q: What is the difference between circuit breaker and retry?
+    - Q: Your provider shipped a fix under the same model ID and your quality metrics moved. How do you detect and h
+  - References
+
+## FILE 13-reliability-and-safety/04-ai-governance-and-compliance.md  (43 KB)
+- AI Governance and Compliance
+  - Table of Contents
+  - The EU AI Act
+    - What Actually Took Effect on August 2, 2026
+    - Beyond the AI Act: The Digital Services Act
+  - NIST AI RMF and the GenAI Profile
+  - ISO 42001 and Assurance
+  - The US Landscape
+  - Frontier-Lab Safety Frameworks
+  - What Engineers Actually Implement
+  - A Compliance Checklist
+  - Interview Questions
+    - Q: How do you make a production LLM system EU AI Act ready without building a separate compliance stack?
+    - Q: What is the difference between the EU AI Act and the NIST AI RMF, and when does each matter?
+    - Q: Your agent did something harmful to a third party's system. Walk through your reporting obligations and how
+    - Q: GitHub now lets an AI reviewer's approval count toward required reviews. Would you turn it on?
+  - References
+
+## FILE 14-evaluation-and-observability/01-llm-evaluation.md  (40 KB)
+- LLM Evaluation
+  - Table of Contents
+  - Why LLM Evaluation Is Hard
+    - The Fundamental Challenge
+    - Multiple Dimensions of Quality
+  - Evaluation Dimensions
+    - Core Dimensions
+    - Task-Specific Dimensions
+  - Automated Evaluation Methods
+    - Exact Match
+    - Contains Keywords
+    - Semantic Similarity
+    - ROUGE (Summarization)
+    - Code Execution
+  - LLM-as-Judge
+    - Basic Judge Prompt
+    - Pairwise Comparison
+    - Judge Calibration
+  - Human Evaluation
+    - When to Use Human Evaluation
+    - Annotation Guidelines
+    - Inter-Annotator Agreement
+  - RAG-Specific Evaluation
+    - RAGAS Metrics
+    - Faithfulness Evaluation
+    - Context Relevance
+  - Building Evaluation Pipelines
+    - Evaluation Dataset Structure
+    - Automated Evaluation Pipeline
+    - Keep the Grader Out of Reach
+  - Production Monitoring
+    - Key Metrics to Track
+    - Online Evaluation
+    - Drift Detection
+    - Drift You Did Not Ship
+  - 2026 Eval Evolution: Beyond LLM-as-Judge
+    - The Layered Judge Architecture
+    - Galileo Luna-2: Distilled Judges at Scale
+    - Decision-Model Judges and the Limits of Cascades
+    - Sierra tau-bench and Its Successors
+    - Agent-as-Judge: Trajectory Grading
+    - HaluMem: Operation-Level Hallucination Benchmark
+    - A Production Eval Stack
+    - Take-Aways for Interviews
+  - Interview Questions
+    - Q: How would you evaluate a RAG system?
+    - Q: What are the limitations of LLM-as-judge?
+    - Q: Your eval pipeline runs a cheap judge on all traffic and escalates low-confidence cases to a frontier judge
+  - References
+
+## FILE 14-evaluation-and-observability/02-observability.md  (24 KB)
+- LLM Observability
+  - Table of Contents
+  - Why LLM Observability is Different
+  - The Three Pillars
+    - Logging
+    - Metrics
+    - Traces
+    - When Instrumentation Goes Silent
+  - Key Metrics
+    - Operational Metrics
+    - Quality Metrics
+    - Cost Metrics
+  - Quality Monitoring
+    - Sampling Strategy
+    - Drift Detection
+  - Cost Tracking
+    - Real-Time Cost Calculation
+    - Cost Attribution
+  - Alerting Strategy
+    - Alert Configuration
+    - Alert Prioritization
+  - Observability Tools
+    - LLM-Specific Tools
+    - Integration Example: Langfuse (Python SDK v4)
+  - Interview Questions
+    - Q: What metrics would you track for a production LLM system?
+    - Q: How do you detect quality degradation in production?
+    - Q: After a routine dependency upgrade, your LLM dashboards go quiet: fewer spans, lower token counts. Traffic 
+  - References
+
+## FILE 14-evaluation-and-observability/03-benchmarks-and-leaderboards.md  (54 KB)
+- Benchmarks and Leaderboards
+  - Table of Contents
+  - How to Read This Page
+  - The Capability Map
+    - General Knowledge and Language
+    - Frontier Reasoning
+    - Mathematics
+    - Coding
+    - Agentic and Tool Use
+    - Long Context
+    - Multimodal
+    - Factuality and Instruction Following
+    - Human Preference
+  - Reading Benchmarks Critically
+    - Saturation
+    - Contamination
+    - Harness and Scaffold Variance
+    - The Leaderboard Illusion
+    - The Benchmark-to-Production Gap
+    - Composite Indices
+  - A Practical Checklist
+  - Which Benchmarks Matter in 2026
+  - Interview Questions
+    - Q: A vendor says their model scores 90% on SWE-bench Verified. What questions do you ask before believing it p
+    - Q: Why have benchmarks like MMLU and HumanEval stopped being useful for ranking frontier models, and what repl
+    - Q: How would you use Arena (formerly LMArena) Elo responsibly when choosing a model for a chat product?
+    - Q: A launch post claims 99.9% on ARC-AGI-3 and 81.8% on OSWorld 2.1. How do you read those numbers?
+  - References
+
+## FILE 15-ai-design-patterns/01-design-patterns.md  (21 KB)
+- AI Design Patterns
+  - Table of Contents
+  - RAG Patterns
+    - Pattern: Naive RAG
+    - Pattern: Advanced RAG
+    - Pattern: Parent-Child Retrieval
+    - Pattern: Self-RAG
+    - Pattern: Corrective RAG (CRAG)
+  - Agent Patterns
+    - Pattern: ReAct
+    - Pattern: Plan-and-Execute
+    - Pattern: Critic/Verifier
+    - Pattern: Hierarchical Agents
+  - Optimization Patterns
+    - Pattern: Cascading Models
+    - Pattern: Speculative Execution
+    - Pattern: Caching Layers
+  - Reliability Patterns
+    - Pattern: Retry with Fallback
+    - Pattern: Circuit Breaker
+    - Pattern: Bulkhead
+  - Cost Patterns
+    - Pattern: Token Budget
+    - Pattern: Cost Tracking Decorator
+  - Interview Questions
+    - Q: Describe three RAG patterns and when to use each.
+    - Q: What reliability patterns would you use for a production LLM system?
+  - References
+
+## FILE 15-ai-design-patterns/02-anti-patterns.md  (18 KB)
+- AI Anti-Patterns
+  - Table of Contents
+  - Architecture Anti-Patterns
+    - The God Prompt
+    - Single Provider Dependency
+    - Premature Fine-Tuning
+  - RAG Anti-Patterns
+    - Retrieve Everything
+    - No Chunking Strategy
+    - Ignoring Metadata
+  - Agent Anti-Patterns
+    - Infinite Loop Risk
+    - Unsafe Tool Access
+    - Agent Without Memory
+  - Prompting Anti-Patterns
+    - Vague Instructions
+    - No Output Format
+  - Evaluation Anti-Patterns
+    - Vibes-Based Evaluation
+    - Training on Test Set
+    - Leaderboard-Driven Model Choice
+  - Production Anti-Patterns
+    - No Rate Limiting
+    - No Caching
+    - Floating Model Defaults
+  - Interview Questions
+    - Q: What is the biggest anti-pattern you see in LLM applications?
+    - Q: How do you avoid agent runaway costs?
+
+## FILE 16-case-studies/01-enterprise-rag.md  (25 KB)
+- Case Study: Enterprise RAG System
+  - Table of Contents
+  - Problem Statement
+    - Scenario
+    - Current Pain Points
+  - Requirements Analysis
+    - Functional Requirements
+    - Non-Functional Requirements
+    - Security Requirements
+  - System Architecture
+    - High-Level Architecture
+    - Technology Choices (October 2026)
+  - Component Deep Dives
+    - Document Ingestion Pipeline
+    - Query Processing
+    - Hybrid Retrieval
+    - Generation with Long Context
+  - Scaling Considerations
+    - Handling 500K Documents
+    - Handling 500 Concurrent Users
+    - Caching Strategy
+  - Cost Analysis
+    - Monthly Cost Estimate (500 Users, 100 Queries/User/Day, October 2026 List Prices)
+    - Cost Optimization Opportunities
+  - Lessons Learned
+    - What Worked Well
+    - Challenges Encountered
+    - What We Would Do Differently
+  - Interview Walkthrough
+    - How to Present This in an Interview
+
+## FILE 16-case-studies/02-conversational-agent.md  (19 KB)
+- Case Study: Customer Support Conversational Agent
+  - Table of Contents
+  - Problem Statement
+  - Requirements Analysis
+    - Functional Requirements
+    - Non-Functional Requirements
+    - Security Requirements
+  - Architecture Design
+    - High-Level Architecture
+    - Conversation Flow
+  - Component Deep Dives
+    - Intent Classification
+    - Knowledge Base (Hybrid Retrieval Plus Rerank)
+    - Response Generation (Tiered: Claude Haiku 4.5 and Sonnet 5.5)
+  - Reliability Patterns
+    - Confidence-Based Escalation
+    - Multi-Turn Memory
+  - Evaluation and Monitoring
+    - Quality Metrics
+    - Dashboard Metrics
+  - Cost Analysis
+    - Per-Conversation Cost Breakdown (October 2026 List Prices)
+    - Monthly Cost Projection
+  - Lessons Learned
+    - What Worked
+    - What Did Not Work Initially
+    - Recommendations
+  - Interview Walkthrough
+  - References
+
+## FILE 16-case-studies/03-financial-analysis.md  (19 KB)
+- Case Study: Financial Analysis with Ensemble Verification
+  - Table of Contents
+  - Problem Statement
+  - Requirements Analysis
+    - Accuracy Requirements
+    - Compliance Requirements
+  - Architecture Design
+    - High-Level Pipeline
+    - Data Flow
+  - Ensemble Pipeline
+    - Stage 1: Multimodal Data Extraction (Gemini 3.8 Flash)
+    - Stage 2: Analysis Generation (Claude Opus 5.5)
+    - Stage 3a: Reasoning Audit (GPT-6.1 Sol)
+    - Stage 3b: Fact Verification with Multi-Agent Debate
+  - Quality Gates
+    - Automated Quality Checks
+    - Human Review Interface
+  - Results and Metrics
+    - Performance Comparison
+    - Quality Metrics
+    - Cost Breakdown (October 2026 List Prices)
+  - Interview Walkthrough
+  - Key Learnings
+  - References
+
+## FILE 16-case-studies/04-code-assistant.md  (22 KB)
+- Case Study: AI Code Assistant
+  - Table of Contents
+  - Problem Statement
+  - Requirements Analysis
+    - Functional Requirements
+    - Quality Requirements
+  - Architecture Design
+    - High-Level Architecture
+    - Context Assembly
+  - Code Generation Pipeline
+    - Completion Service
+    - Generation Service (Agentic Refactors)
+    - Model Provider Strategy
+  - Quality Assurance
+    - Multi-Stage Verification
+    - Acceptance Optimization
+  - Performance Optimization
+    - Latency Optimization
+    - Caching Strategy
+  - Results and Metrics
+    - Performance Results
+    - Cost Analysis (October 2026)
+  - Interview Walkthrough
+  - References
+
+## FILE 16-case-studies/05-content-moderation.md  (20 KB)
+- Case Study: Content Moderation at Scale
+  - Table of Contents
+  - Problem Statement
+  - Requirements Analysis
+    - Content Categories
+    - Accuracy Requirements
+  - Architecture Design
+    - High-Level Architecture
+    - Processing Tiers
+  - Classification Pipeline
+    - Tier 1: Fast Filters
+    - Tier 2: Self-Hosted Safety Classifiers
+    - Tier 3: Nuanced LLM Review (Gemini 3.8 Flash)
+  - Human-in-the-Loop
+    - Review Queue Management
+    - Moderator Interface
+  - Adversarial Robustness
+    - Evasion Techniques and Defenses
+    - Defensive Pipeline
+    - Provenance and AI-Generated Content
+  - Results and Metrics
+    - Performance Comparison
+    - Cost Analysis (October 2026, per Day at 10M Posts)
+  - Interview Walkthrough
+  - References
+
+## FILE 16-case-studies/06-real-time-search.md  (7 KB)
+- Case Study: Real-Time AI Search Engine
+  - The Problem
+  - The Interview Question
+  - Solution Architecture
+  - Key Design Decisions
+    - 1. Why Kafka for Ingestion?
+    - 2. Why Hybrid Search (Vector + Full-Text)?
+    - 3. Why a Small Model Instead of a Frontier Model?
+  - Handling the Freshness Requirement
+  - Cost Analysis
+  - Interview Follow-Up Questions
+  - Key Takeaways for Interviews
+
+## FILE 16-case-studies/07-autonomous-coding-agent.md  (15 KB)
+- Case Study: Autonomous Coding Agent
+  - The Problem
+  - The Interview Question
+  - Solution Architecture
+  - Key Design Decisions
+    - 1. Why Separate Planner and Coder Agents?
+    - 2. Why E2B Sandbox Instead of Local Execution?
+    - 3. Which Model, and Why Cost per Task Beats Price per Token
+  - The Codebase Understanding Problem
+  - The Self-Correction Loop
+  - Cost Breakdown
+  - Containment: Lessons from 2026 Incidents
+  - Interview Follow-Up Questions
+  - Key Takeaways for Interviews
+
+## FILE 16-case-studies/08-multi-tenant-saas.md  (9 KB)
+- Case Study: Multi-Tenant AI SaaS Platform
+  - The Problem
+  - The Interview Question
+  - Solution Architecture
+  - Key Design Decisions
+    - 1. Hybrid Isolation: Namespace vs Physical
+    - 2. Defense in Depth for Data Isolation
+    - 3. Why Not One Vector DB Per Tenant?
+  - The Data Ingestion Pipeline
+  - Handling the Compliance Requirements
+    - SOC 2 Type II
+    - GDPR Right to Deletion
+    - Data Residency
+  - Cost Analysis (500 Tenants)
+  - Interview Follow-Up Questions
+  - Key Takeaways for Interviews
+
+## FILE 16-case-studies/09-customer-support-automation.md  (10 KB)
+- Case Study: AI-Powered Customer Support
+  - The Problem
+  - The Interview Question
+  - Solution Architecture
+  - Key Design Decisions
+    - 1. Three-Tier Routing (Auto / Hybrid / Escalate)
+    - 2. Tool-Based Resolution, Not Pure Generation
+    - 3. Why Safety Check Before Send?
+  - The Escalation Intelligence
+  - Multilingual Support
+  - Human Takeover (Mid-Conversation)
+  - Cost Analysis
+  - Interview Follow-Up Questions
+  - Key Takeaways for Interviews
+
+## FILE 16-case-studies/10-document-intelligence.md  (9 KB)
+- Case Study: Document Intelligence Pipeline
+  - The Problem
+  - The Interview Question
+  - Solution Architecture
+  - Key Design Decisions
+    - 1. Tiered Parsing: A Parsing VLM for Every Page, a Frontier VLM for Hard Pages
+    - 2. Parallel Extractors vs Single-Pass
+    - 3. Cross-Field Validation
+  - Handling 200-Page Documents
+  - Multilingual Handling
+  - Cost Breakdown
+  - Interview Follow-Up Questions
+  - Key Takeaways for Interviews
+
+## FILE 16-case-studies/11-recommendation-engine.md  (7 KB)
+- Case Study: AI-Powered Recommendation Engine
+  - The Problem
+  - The Interview Question
+  - Solution Architecture
+  - Key Design Decisions
+    - 1. Why Not Just Use LLM for Everything?
+    - 2. Explanation Caching
+    - 3. Cold-Start Handling
+  - The Personalized Explanation Challenge
+  - Latency Budget
+  - Interview Follow-Up Questions
+  - Key Takeaways for Interviews
+
+## FILE 16-case-studies/12-compliance-automation.md  (7 KB)
+- Case Study: Regulatory Compliance Automation
+  - The Problem
+  - The Interview Question
+  - Solution Architecture
+  - Key Design Decisions
+    - 1. Claim Extraction Before Compliance Check
+    - 2. Why RAG Over Fine-Tuning for Regulations?
+    - 3. Conservative Flagging Strategy
+  - The Precedent Database
+  - The Audit Trail Requirement
+  - Handling Images and Video
+  - Cost Analysis
+  - Interview Follow-Up Questions
+  - Key Takeaways for Interviews
+
+## FILE 16-case-studies/13-voice-ai-healthcare.md  (13 KB)
+- Case Study: Voice AI Assistant for Healthcare
+  - The Problem
+  - The Interview Question
+  - Solution Architecture
+  - Key Design Decisions
+    - 1. Where ASR Runs: Cloud Under a BAA, or On-Prem
+    - 2. Speaker Diarization: Who Said What
+    - 3. Medical NER for Structured Extraction
+  - Handling Noisy Environments
+  - The Structured Note Format
+  - EHR Integration (FHIR)
+  - Latency Budget
+  - Measuring Success
+  - Interview Follow-Up Questions
+  - Key Takeaways for Interviews
+
+## FILE 16-case-studies/14-fraud-detection.md  (7 KB)
+- Case Study: Real-Time Fraud Detection
+  - The Problem
+  - The Interview Question
+  - Solution Architecture
+  - Key Design Decisions
+    - 1. Why ML + Rules, Not Just ML?
+    - 2. Three-Way Decision: Approve / Escalate / Reject
+    - 3. Why LLM for Explanation, Not SHAP/LIME?
+  - Feature Engineering for Speed
+  - Handling Evolving Fraud Patterns
+  - Interview Follow-Up Questions
+  - Key Takeaways for Interviews
+
+## FILE 16-case-studies/15-knowledge-management.md  (7 KB)
+- Case Study: Enterprise Knowledge Management
+  - The Problem
+  - The Interview Question
+  - Solution Architecture
+  - Key Design Decisions
+    - 1. Permission-Aware Retrieval
+    - 2. Recency-Weighted Ranking
+    - 3. Knowledge Gap Detection
+  - Multi-Source Synchronization
+  - Handling Conflicting Information
+  - Cost Analysis
+  - Interview Follow-Up Questions
+  - Key Takeaways for Interviews
+
+## FILE 16-case-studies/16-computer-use-agent-production.md  (22 KB)
+- Case Study: Production Computer-Use Agent
+  - The Business Problem
+  - Architecture
+    - Components
+    - Data flow
+  - Key Design Decisions
+    - 1. Ephemeral microVM per task, not a shared sandbox
+    - 2. Two-tier human confirmation
+    - 3. Agent-card signed identity, not shared session cookies
+    - 4. Indirect-prompt-injection defense at the read layer
+    - 5. Action whitelist over action blocklist
+    - 6. Real numbers from production
+    - 7. Why not a Selenium farm
+    - 8. Why we still keep contractors on payroll
+  - Action Approval State Machine
+  - Failure Modes and Mitigations
+    - F1: Browser DOM mutation breaks the workflow
+    - F2: Stuck-in-modal loop
+    - F3: Receipt-PDF IPI
+    - F4: Wrong-tenant cross-bleed
+    - F5: Audit-log gap
+    - F6: Cost runaway from a buggy task
+    - F7: Operator fatigue on the medium-risk queue
+    - F8: Receipt-image content extraction failures
+    - F9: Vendor model deprecation mid-cycle
+    - F10: Browser crash leaves orphaned VM
+  - Operational Considerations
+    - Monitoring
+    - Cost model
+    - On-call playbook
+    - Deployment topology
+    - Quarterly review ritual
+  - What Strong Interview Candidates Cover
+  - References
+
+## FILE 16-case-studies/17-multi-tenant-fine-tuning-platform.md  (21 KB)
+- Case Study: Multi-Tenant Fine-Tuning Platform
+  - The Business Problem
+  - Architecture
+    - Components
+    - Data flow at training time
+    - Data flow at serving time
+  - Key Design Decisions
+    - 1. LoRA r=16 over full fine-tuning
+    - 2. Adapter swap budget and the noisy-neighbor problem
+    - 3. Per-tenant eval suite as the gate
+    - 4. Training-time isolation via Kubernetes namespaces plus network policy
+    - 5. Serving-time isolation: shared GPU is okay, KV cache is not
+    - 6. Model lifecycle and base-model refresh
+    - 7. Why r=16 specifically
+    - 8. Cold start engineering
+  - Tenant Lifecycle Sequence
+  - Failure Modes and Mitigations
+    - F1: Adapter quality regression after retrain
+    - F2: Cross-tenant data bleed at training time
+    - F3: Adapter cache thrash under traffic spike
+    - F4: Bad training data poisons the adapter
+    - F5: Base-model upgrade breaks legacy adapters
+    - F6: Cost runaway in training plane
+    - F7: GPU node failure mid-training
+    - F8: Adapter signing key rotation breaks legacy clients
+    - F9: Tenant cross-contamination via shared eval infrastructure
+    - F10: Adapter version sprawl
+    - F11: Adapter checksum mismatch on serving load
+  - Operational Considerations
+    - Monitoring and SLOs
+    - Cost model
+    - On-call playbook
+    - Onboarding ritual
+    - Tenant offboarding
+    - Compliance posture
+  - What Strong Interview Candidates Cover
+  - References
+
+## FILE 16-case-studies/18-eval-gated-cicd.md  (19 KB)
+- Case Study: Eval-Gated CI/CD for an AI Product
+  - The Business Problem
+  - Architecture
+    - Components
+    - Data flow
+  - Key Design Decisions
+    - 1. Golden-set construction and rotation
+    - 2. Train/dev/test split for the judge
+    - 3. Statistical correction with judgy
+    - 4. Failure-mode taxonomy as the assertion surface
+    - 5. Per-PR eval budget
+    - 6. Judge-prompt drift detection
+    - 7. Caching the eval pipeline
+    - 8. PR-level instrumentation
+  - CI Pipeline Sequence
+  - Failure Modes and Mitigations
+    - F1: Judge prompt drift goes unnoticed
+    - F2: Eval set becomes overfit
+    - F3: Single PR runs a corner of the eval that misses regressions
+    - F4: Cost overrun from accidental full-runs
+    - F5: Block-rate too high; developers learn to ignore
+    - F6: Holdout set leakage into training or prompts
+    - F7: Judge model deprecation
+    - F8: Eval runner queue saturation
+  - Operational Considerations
+    - Monitoring
+    - Cost model
+    - On-call playbook
+    - Quarterly review
+    - Auditor pack
+    - Why we do not use a single composite quality score
+  - What Strong Interview Candidates Cover
+  - References
+
+## FILE 16-case-studies/19-customer-distillation-pipeline.md  (19 KB)
+- Case Study: Customer-Specific Distillation Pipeline
+  - The Business Problem
+  - Architecture
+    - Components
+    - Data flow
+  - Key Design Decisions
+    - 1. Distill on real production traces, not synthetic data
+    - 2. Reject-sample with human spot-check
+    - 3. Chain-of-thought distillation where it pays
+    - 4. Eval-set construction with human labeling
+    - 5. Canary rollout and shadow traffic
+    - 6. Re-distillation cadence
+    - 7. When distillation does NOT make sense
+    - 8. Quantization choice
+    - 9. Privacy considerations on training data
+  - Cost and Payback
+  - Distillation Pipeline
+  - Failure Modes and Mitigations
+    - F1: Teacher upgrade renders student stale
+    - F2: Distribution shift between training and serving
+    - F3: Teacher hallucinations baked into student
+    - F4: Cost regression from over-routing to teacher
+    - F5: Canary rollout misses a tail regression
+    - F6: Compliance violation: training data residency
+    - F7: Catastrophic forgetting on rarely-seen tasks
+    - F8: Cost-tracking failure across teacher and student
+  - Operational Considerations
+    - Monitoring
+    - Cost model
+    - On-call playbook
+    - Comparative eval cadence
+    - Re-distillation ritual
+    - Customer-facing communication
+  - What Strong Interview Candidates Cover
+  - References
+
+## FILE 16-case-studies/20-mcp-knowledge-agent.md  (25 KB)
+- Case Study: Enterprise MCP Knowledge Agent
+  - The Business Problem
+  - Architecture
+    - Components
+    - Data flow
+  - Key Design Decisions
+    - 1. Per-tenant scoping with audience binding (RFC 8707)
+    - 2. HTTP-based MCP by default; sandboxed STDIO only for legacy internal tools
+    - 3. Tool-argument content filter
+    - 4. Tool-result output validator with trust-tagging
+    - 5. Rate limiting per identity, not per IP
+    - 6. Audit logging is the legal record
+    - 7. Slack: official remote server, third-party auth
+    - 8. Per-MCP-server scoping
+    - 9. Why we did not build this on a single vector index
+    - 10. Use the stateless revision's routing headers at the gateway
+  - Sample Query Sequence
+  - Failure Modes and Mitigations
+    - F1: Token replay across MCP servers
+    - F2: IPI via Confluence page or Slack thread
+    - F3: STDIO launch-path injection
+    - F4: Permission escalation through aggregation
+    - F5: Audit log gap during pod restart
+    - F6: Rate-limit bypass via tool composition
+    - F7: MCP server or SDK upgrade incompatibility
+    - F8: Compromised internal MCP server
+    - F9: A vulnerable community server in the pool
+    - F10: OAuth mix-up through a third-party server
+  - Operational Considerations
+    - Monitoring and SLOs
+    - Cost model
+    - On-call playbook
+    - Monthly red-team cadence
+    - Compliance and audit
+    - Migration plan for STDIO MCP servers
+  - What Strong Interview Candidates Cover
+  - References
+
+## FILE 17-tool-use-and-computer-agents/01-tool-use-landscape.md  (54 KB)
+- The 2026 Tool-Use and Computer Agent Landscape
+  - Table of Contents
+  - Ecosystem Overview
+  - Category Taxonomy
+    - 1. Local Agents (Self-Hosted, User-Controlled)
+    - 2. Cloud Agents (Vendor-Hosted, API-Driven)
+    - 3. IDE Agents (Editor-Integrated, Context-Aware)
+    - 4. Computer-Use Agents (Vision-Based, GUI-Driven)
+    - 5. Managed and Persistent Agents (Vendor-Run Harness, Own Identity)
+  - OpenClaw: The Viral Personal AI Agent
+    - What It Is
+    - How It Works
+    - Workspace Files
+    - Security Concerns
+  - OpenHands: Autonomous Developer Agent
+    - What It Is
+    - Architecture of the v1.x OpenHands Agent (pre-Agent Canvas)
+  - Open Interpreter: Local Code Execution
+    - What It Is
+    - Architecture
+    - When to Use Open Interpreter
+  - Claude Computer Use: Vision-Based Automation
+    - What It Is
+    - The Vision-Action Loop
+    - Available Tools
+    - 2026 Enhancements
+    - Performance Trajectory
+  - Claude Code: The Terminal Agent
+    - What It Is
+    - Architecture
+  - IDE Agents: Cursor, Windsurf, Cline
+    - Cursor
+    - Windsurf
+    - Cline
+    - GitHub Copilot
+    - IDE Agent Architecture Comparison
+  - Comparison Matrix
+  - Market Trends and Adoption (2026)
+    - The Numbers
+    - Key Trends
+  - System Design Interview Angle
+  - Interview Questions
+    - Q: Your team wants to build an internal AI assistant. Should you build on OpenClaw, OpenHands, or build custom
+    - Q: How would you design a system that lets non-technical users automate desktop tasks using AI?
+    - Q: Why did OpenClaw grow faster than any open-source project in history? What does this tell you about the mar
+    - Q: Design an always-on personal agent that keeps working while the user is away. What does it need beyond a ch
+    - Q: Compare sandboxed vs. unsandboxed execution for AI agents. When would you choose each?
+  - References
+
+## FILE 17-tool-use-and-computer-agents/02-architecture-patterns.md  (42 KB)
+- Architecture Patterns for Tool-Use Agents
+  - Table of Contents
+  - Pattern 1: Function/Tool Calling
+    - Architecture
+    - The Three Steps in Detail
+    - Code Example: MCP Server + Client
+    - When to Use This Pattern
+    - Trade-offs
+  - Pattern 2: Vision-Based Automation
+    - Architecture
+    - The Observe-Reason-Act Cycle
+    - Batch Actions and Element References
+    - Code Example: Computer Use Loop
+    - When to Use This Pattern
+    - Trade-offs
+  - Pattern 3: Local Code Execution
+    - Architecture
+    - The NL-Code-Execute-Observe Cycle
+    - Code Example: Code Execution Agent
+    - When to Use This Pattern
+    - Trade-offs
+  - Pattern 4: Multi-Agent Tool Orchestration
+    - Architecture
+    - Orchestration Strategies
+    - Cost Optimization: The Plan-and-Execute Advantage
+  - Sandboxed vs. Unsandboxed Execution
+    - Comparison
+    - Sandbox Implementation Options
+    - The 2026 Consensus
+  - State Management Across Tool Calls
+    - State Management Patterns
+    - Implementation: Session State
+  - Error Handling and Retry Patterns
+    - Error Taxonomy
+    - Retry Pattern Implementation
+    - The Self-Correction Loop
+  - MCP Integration Patterns
+    - Pattern A: Direct MCP Connection
+    - Pattern B: Multi-Server Fan-Out
+    - Pattern C: MCP Gateway (Enterprise)
+    - MCP Roadmap Gaps
+  - Architecture Decision Tree
+    - Hybrid Architectures
+  - System Design Interview Angle
+    - 1. Pattern Selection
+    - 2. Sandbox Boundary
+    - 3. State Strategy
+    - 4. Error Budget
+    - 5. Cost Model
+  - Interview Questions
+    - Q: Design a system that lets a customer support agent answer questions using data from Zendesk, Salesforce, an
+    - Q: How would you prevent an AI agent from causing damage through tool calls?
+    - Q: Explain the trade-offs between vision-based computer use and API-based tool calling.
+  - References
+
+## FILE 17-tool-use-and-computer-agents/03-openclaw-deep-dive.md  (56 KB)
+- OpenClaw Deep Dive: The Open-Source Personal AI Agent
+  - Table of Contents
+  - What Is OpenClaw
+  - History
+    - The Naming Timeline
+    - The Creator
+    - Why It Went Viral
+  - Architecture
+    - High-Level Overview
+    - Core Components
+  - The AgentSkills System
+    - How Skills Work
+    - SKILL.md Format
+    - Skill Resolution Order
+    - Selective Injection
+    - Creating a Custom Skill
+    - Community Skills Ecosystem
+  - LLM Provider Configuration
+    - Configuration File
+    - Provider Selection Strategy
+    - Model Routing Within OpenClaw
+  - Messaging Platform Integrations
+    - Supported Platforms
+    - Unified Context Across Channels
+  - Security Model
+    - Security Philosophy
+    - Permission Layers
+    - Sandbox Isolation
+    - Critical Security Warnings
+    - Hardening Checklist
+  - Deployment Patterns
+    - Option 1: Local Install (Fastest Start)
+    - Option 2: Docker (Recommended for Production)
+    - Option 3: Cloud VPS (Always-On)
+    - Production Architecture
+    - Nginx Configuration for Remote Access
+  - Performance Optimization and Scaling
+    - Memory Guidelines
+    - Context Window Management
+    - Skill Optimization
+    - Latency Reduction
+  - Real-World Use Cases
+    - 1. Development Workflow Orchestrator
+    - 2. Email Triage at Scale
+    - 3. Home Automation Hub
+    - 4. Content Production Pipeline
+    - 5. CI/CD Monitoring
+    - 6. Automated Client Onboarding
+  - Limitations and When NOT to Use OpenClaw
+    - Known Limitations
+    - When NOT to Use OpenClaw
+  - The 2026 Anthropic Subscription-Policy Incident
+    - Timeline of the Incident
+    - What It Means Architecturally
+    - Vendor-Risk Checklist
+  - Comparison with Alternatives
+    - Choosing the Right Tool
+  - Getting Started
+    - Minimal Setup (5 Minutes)
+    - Connect Your First Channel (Telegram)
+    - Install Your First Skill
+    - Verify Everything Works
+  - System Design Interview Angle
+    - Prompt: "Design a Personal AI Assistant Platform Like OpenClaw"
+    - Requirements Gathering
+    - High-Level Design
+    - Key Design Decisions
+    - Scaling Discussion
+    - Follow-up Questions an Interviewer Might Ask
+  - References
+
+## FILE 17-tool-use-and-computer-agents/04-computer-use-agents.md  (42 KB)
+- Computer-Use Agents
+  - Table of Contents
+  - What Are Computer-Use Agents?
+    - The Landscape (2026)
+    - What Differs Between Vendor APIs
+  - The Screenshot-Reason-Act Loop
+  - Claude Computer Use: Tools and API
+    - The Tools
+    - API Request and Response Shape
+    - The Browser Toolset
+  - Architecture: Sandboxed Environments
+    - Standard Architecture: Docker + VNC
+    - Managed Alternatives
+    - Key Environment Components
+  - Browser vs Desktop Automation
+  - Comparison with Traditional Automation
+  - When Computer-Use Beats API Calls
+  - Error Handling and Recovery
+    - 1. Misclicks (Wrong Coordinates)
+    - 2. Stale Screenshots
+    - 3. Infinite Loops
+    - 4. Unexpected Dialogs
+    - 5. Resolution and Scaling Mismatches
+    - 6. Partial Batches
+    - Error Handling Pattern
+  - Performance: Latency, Cost, Throughput
+    - Latency Breakdown
+    - Cost Per Action
+    - Throughput Optimization
+  - Benchmarks: Reading the Numbers
+  - Real-World Applications
+  - Security Considerations
+  - Code Examples
+    - Minimal Agent Loop
+    - Dockerfile for Sandboxed Environment
+  - Interview Questions
+    - Q: A client has 500 insurance claim PDFs per day that must be entered into a legacy web portal with no API. De
+    - Q: Compare computer-use agents with Selenium for web automation. When would you choose each?
+    - Q: A vendor says its computer-use model scores 81.8% on OSWorld. How do you turn that into a production capaci
+  - References
+
+## FILE 17-tool-use-and-computer-agents/05-building-tool-agents.md  (31 KB)
+- Building Tool-Use Agents
+  - Table of Contents
+  - Designing Tool Schemas for LLMs
+    - Anatomy of a Good Tool Definition
+    - Schema Design Rules
+  - MCP Server Creation
+    - MCP Architecture
+    - TypeScript MCP Server (SDK v2)
+    - Python MCP Server (SDK v2, MCPServer)
+    - Deployment Modes
+  - Tool Registration and Discovery
+    - Static Registration
+    - Dynamic Discovery (Tool Search)
+    - Changing Tools Mid-Session Without Losing the Cache
+    - MCP Discovery Protocol
+  - Input Validation and Output Formatting
+    - Input Validation Layers
+    - Output Formatting
+  - Tool Composition: Chaining Tools
+    - Pattern 1: LLM-Orchestrated Chaining
+    - Pattern 2: Programmatic Tool Calling
+    - Pattern 3: Server-Side Composition
+    - When to Use Each
+  - Building Custom Agent Skills
+  - Creating Function-Calling Endpoints
+  - Testing Tool-Use Agents
+    - Three Testing Layers
+    - Unit Tests for Tools
+    - Eval Suites for Agent Behavior
+  - Observability for Tool Use
+    - Key Metrics
+    - Tracing Architecture
+  - Common Mistakes and Anti-Patterns
+  - Tool Versioning and Backwards Compatibility
+  - Interview Questions
+    - Q: You need to give an LLM agent access to 200 internal tools. How do you handle schema overload?
+    - Q: Design a testing strategy for a tool-use agent that handles customer support.
+    - Q: Your extraction service forces a tool call to get JSON back. After moving to the newest Claude model, every
+  - References
+
+## FILE 17-tool-use-and-computer-agents/06-use-cases-and-case-studies.md  (40 KB)
+- Use Cases and Case Studies for Tool-Using Agents
+  - Table of Contents
+  - Category 1: Developer Productivity
+    - Code Generation and Refactoring
+    - Deployment Automation
+    - From One Agent to Fleets
+    - What Makes This Category Work
+  - Category 2: Business Process Automation
+    - Document Processing
+    - Data Entry and Reconciliation
+    - What Makes This Category Work
+    - What Makes This Category Risky
+  - Category 3: Customer-Facing Agents
+    - Customer Support
+    - Sales and Lead Qualification
+    - Customer Onboarding
+    - The Reputational Risk
+  - Category 4: IT Operations
+    - Monitoring and Alerting
+    - Incident Response
+    - Infrastructure Management
+    - Why This Category Requires Extra Caution
+  - Category 5: Research and Analysis
+    - Data Analysis
+    - Market Research
+    - What Makes This Category Unique
+  - Category 6: Persistent Agents With Their Own Computer
+  - Case Study: Enterprise OpenClaw Deployment
+    - Background
+    - The Deployment
+    - Architecture
+    - Results
+    - What Went Wrong
+    - Lessons
+  - Case Study: Claude Computer Use for Legacy Migration
+    - Background
+    - The Approach
+    - Architecture
+    - Results
+    - What Went Wrong
+    - Lessons
+  - Case Study: Multi-Agent Financial Compliance
+    - Background
+    - The System
+    - Results
+    - What Went Wrong
+    - Lessons
+  - ROI Calculations and Metrics
+    - The ROI Framework for Tool-Using Agents
+    - Typical Cost Structure (Per Agent, Monthly)
+    - Metrics That Matter
+    - Break-Even Analysis
+  - Failure Cases and Lessons Learned
+    - Failure 1: The Replit Database Deletion (July 2025)
+    - Failure 2: Salesforce Agent Failures (Late 2025)
+    - Failure 3: OpenClaw Security Incidents (Early 2026)
+    - Failure 4: Memory Injection Attacks (November 2025)
+    - Failure 5: PixelLeak, Agents Publish What They Were Told to Attach (September 2026)
+  - System Design Interview Angle
+    - Q: "Design a tool-using agent system for automating invoice processing at a company that receives 5,000 invoic
+    - Q: "Design an always-on personal agent for knowledge workers: it lives in Slack and email, has its own compute
+  - References
+
+## FILE 17-tool-use-and-computer-agents/07-safety-and-governance.md  (72 KB)
+- Safety and Governance for Tool-Using Agents
+  - Table of Contents
+  - The AI Agent Safety Landscape in 2026
+  - OWASP Top 10 Risks for Agentic AI
+    - Why This Matters for System Design
+  - Behavioral Safety: Agents Under Pressure
+    - The Study
+    - The Results
+    - Implications for System Design
+    - Newer Evidence (2026)
+  - Prompt Injection in Tool-Use Contexts
+    - Attack Surface for Tool-Using Agents
+    - Indirect Injection Through Tool Outputs
+    - Cross-Tool Contamination
+    - Defenses
+  - Data Exfiltration and Leakage
+    - Exfiltration Patterns
+    - Defenses
+  - Wrong Tool Invocation and Cascading Failures
+    - How Cascading Failures Happen
+    - Wrong Tool Selection
+    - Defenses
+  - Sandboxing Strategies
+    - Technology Comparison
+    - Docker Containers
+    - gVisor
+    - WebAssembly (WASM)
+    - Firecracker MicroVMs
+    - Recommendation for Tool-Using Agents
+    - What the Sandbox Must Also Cover
+  - Permission Models
+    - Capability-Based Access Control
+    - Agent Identity
+    - Allowlists vs. Denylists
+    - Tiered Authorization Model
+  - Human-in-the-Loop Approval Gates
+    - Effective HITL Design
+    - The Risk Classifier Is Now a Product
+    - HITL Anti-Patterns
+  - Rate Limiting and Resource Quotas
+    - Rate Limits to Implement
+    - Resource Quotas
+  - Output Validation and Safety Filters
+    - Validation Layers
+    - The Firewall Model
+  - Audit Logging and Compliance
+    - What to Log
+    - Log Architecture
+    - Key Requirements
+  - Kill Switches and Emergency Shutdown
+    - Kill Switch Hierarchy
+    - Implementation Requirements
+  - Enterprise Governance Frameworks
+    - McKinsey Framework
+    - Databricks AI Security Framework (DASF v3.0)
+    - Governance Maturity Model
+  - Testing for Safety
+    - Red-Teaming
+    - Adversarial Testing Framework
+    - Stress Testing
+  - Regulatory Landscape
+    - EU AI Act Implications for Agentic Systems
+    - United States
+    - Practical Compliance Requirements
+  - Defense-in-Depth Architecture
+    - Why Defense-in-Depth Matters
+  - Real Incidents and Post-Mortems
+    - Incident 1: npm Worms Plant Coding-Agent Auto-Run Hooks (2026)
+    - Incident 2: Self-Replicating Prompt Injections in Simulation (2026)
+    - Incident 3: Meta Alignment Director's Agent Deletes Her Inbox (2026)
+    - Incident 4: AI Agent Blackmail (2026)
+    - Incident 5: OpenAI Evaluation Models Breach Hugging Face (July 2026)
+    - Incident 6: OpenAI Research Agent and Services Australia (2026)
+    - Incident 7: Harness Supply Chain, Plugin4Shell and GitSpawn (September 2026)
+    - Incident 8: The MCP Server Advisory Wave (August to October 2026)
+  - System Design Interview Angle
+    - Q: "How would you make this agent system safe for production?"
+    - Q: "What is the most dangerous attack on a tool-using agent?"
+    - Q: "Your monitoring flagged an agent exfiltrating data 12 minutes into a run, but the run was only stopped 2.5
+  - References
+
+## FILE 18-voice-and-audio-agents/01-realtime-voice-agents.md  (43 KB)
+- Real-Time Voice Agents
+  - Table of Contents
+  - The Three Architectures
+  - Choosing an Architecture
+  - The Stack
+  - Turn Detection and Barge-In
+  - Latency Budgets
+  - Cost per Minute
+  - Telephony
+  - Session Limits and State
+  - Tools Mid-Conversation
+  - Production Concerns
+  - Evaluation
+  - Regulation and Disclosure
+  - Honest Maturity
+  - Interview Questions
+    - Q: Walk me through the latency budget of a voice agent. Where do the milliseconds go, and what is the single b
+    - Q: Chained pipeline, single speech-to-speech model, or a duplex front end with a backend: how do you choose?
+  - References
+
+## FILE 19-multimodal-generation/01-multimodal-generation.md  (22 KB)
+- Multimodal Generation
+  - Table of Contents
+  - Production Pipeline Patterns
+  - Provenance and Safety
+  - Evaluating Generative Quality
+  - The Model Landscape
+  - Interview Questions
+    - Q: Design the backbone of a service that turns a script into a narrated, music-backed video. What are the hard
+    - Q: How do you regression-test a generative pipeline when outputs are not reproducible?
+  - References

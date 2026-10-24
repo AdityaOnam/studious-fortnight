@@ -1,0 +1,429 @@
+Q006162	H	How can a Java main site reliably integrate a Python agent service, and at which layer should authentication, SSE, timeouts and circuit breaking, and observability sit?
+Q006227	M	How do you implement a streaming SSE endpoint in FastAPI, and how does it differ from WebSocket?
+Q006297	E	Can you explain what REST is?
+Q006880	M	Design the .proto for a gRPC GenerateReport RPC in a financial report generation service, with a request (params, template ID) and a server-streaming response that streams tokens for TTFT/UX.
+Q011909	H	Design APIs for developers to access an LLM provider's models securely and efficiently.
+Q000484	M	Monolith vs microservices: what are the DevOps implications?
+Q000619	E	How does a REST API work?
+Q000624	M	How do we perform pagination in API design?
+Q000625	M	How do you design effective and safe APIs?
+Q000627	E	What does an API gateway do?
+Q000674	M	Is microservice architecture a silver bullet?
+Q000700	M	How do you design a system for internationalization?
+Q000733	H	Why did Amazon Prime Video monitoring move from serverless to a monolith, and how did it save 90% of cost?
+Q000783	M	How do we properly deal with HTTP errors on the browser side, and how do we handle them correctly on the server side when the client is at fault?
+Q000805	M	How do microservices collaborate and interact with each other?
+Q000886	E	What is an API and what are its main purposes?
+Q000887	E	What is the difference between an API and a web service?
+Q000888	E	What are the principles of a RESTful API?
+Q000889	E	How does a SOAP API differ from a REST API?
+Q000890	E	What is an API endpoint?
+Q000891	E	What are the common HTTP methods used in a REST API, and what does each method do?
+Q000892	M	How do you version an API?
+Q000893	M	What is idempotence in the context of API design, and why is it important?
+Q000896	M	What strategies would you use to ensure the backward compatibility of an API?
+Q000898	M	How can you design an API to be easily consumable by clients?
+Q000899	M	When designing an API, how would you document it for end-users?
+Q000900	M	What considerations might influence how you paginate API responses?
+Q001335	E	What is Domain-Driven Design (DDD) and what are its core principles?
+Q001336	M	How does DDD differ from traditional data-driven or service-driven approaches?
+Q001337	M	What is the difference between the Domain Model and the Data Model in DDD?
+Q001338	M	Can you explain what Bounded Contexts are in DDD, and why they are important?
+Q001339	M	What strategies can you use to define Bounded Contexts in a large system?
+Q001340	M	How do you integrate multiple Bounded Contexts within a single system?
+Q001341	M	Why is Ubiquitous Language important in DDD, and how do you establish it?
+Q001342	M	What is the role of Entities in DDD, and how do they differ from Value Objects?
+Q001343	M	How would you identify Aggregates in a domain model, and what boundary rules apply to them?
+Q001344	M	Can you explain what a Domain Event is and give an example of when it might be used?
+Q001345	M	How do Repositories function in DDD and what is their main responsibility?
+Q001346	M	What is the difference between a Repository and a Service in DDD?
+Q001347	H	How would you handle complex domain logic that involves multiple entities and value objects?
+Q001348	M	Can you delineate the role of a Domain Service versus an Application Service?
+Q001349	H	What considerations are there for implementing Aggregates to ensure transactional consistency?
+Q001458	E	What is GraphQL and how does it differ from REST?
+Q001460	M	Explain the main components of the GraphQL architecture.
+Q001461	E	Can you describe the structure of a GraphQL query?
+Q001462	E	What are the core features of GraphQL?
+Q001463	E	What is a GraphQL schema and why is it important?
+Q001465	E	Explain the concept of fields in GraphQL.
+Q001466	E	How does GraphQL handle data types?
+Q001467	E	In GraphQL, what are queries and mutations?
+Q001468	E	Describe how you would fetch data with a GraphQL query.
+Q001469	E	What are scalar types in GraphQL?
+Q001470	M	Explain the role of resolvers in GraphQL.
+Q001471	M	What are the advantages of using GraphQL over other API query languages?
+Q001472	E	How do you pass arguments to fields in GraphQL queries?
+Q001473	E	What is a fragment in GraphQL and how is it used?
+Q001474	M	How does GraphQL handle caching?
+Q001572	E	Can you explain what is meant by layering in the context of software architecture and its benefits?
+Q001573	E	Describe the three typical layers you might find in a three-tiered application architecture and their responsibilities.
+Q001574	M	How does middleware facilitate decoupling of components in a system?
+Q001575	E	What are some common functionalities provided by middleware in a layered architecture?
+Q001576	M	Give an example of a middleware solution that provides service orchestration.
+Q001577	E	Explain the concept of a service layer and its purpose in a layered architecture.
+Q001578	M	Describe how middleware can support both synchronous and asynchronous communication patterns.
+Q001579	M	How do Object Request Brokers (ORBs) differ from Message Oriented Middleware (MOM)?
+Q001580	M	In what scenario would you choose an Enterprise Service Bus (ESB)?
+Q001581	M	When would you use Remote Procedure Call (RPC) middleware, and what advantages does it offer?
+Q001582	M	Explain how middleware systems support data format transformations between disparate technologies.
+Q001700	E	What is a microservice and how does it differ from a monolithic architecture?
+Q001702	M	Can you describe the principles behind the microservices architecture?
+Q001703	E	What are the main benefits of using microservices?
+Q001704	M	What are some of the challenges you might face when designing a microservices architecture?
+Q001705	M	How do microservices communicate with each other?
+Q001706	M	What is the best way to implement microservices?
+Q001707	M	What is Domain-Driven Design (DDD) and how is it related to microservices?
+Q001708	H	How would you decompose a monolithic application into microservices?
+Q001710	M	Explain the concept of 'Bounded Context' in the microservices architecture.
+Q001712	M	What design patterns are commonly used in microservices architectures?
+Q001713	M	Can you describe the API Gateway pattern and its benefits?
+Q001715	M	What is a 'Service Mesh'? How does it aid in managing microservices?
+Q002003	M	What are the defining characteristics of a Reactive System according to the Reactive Manifesto?
+Q002004	M	How is back-pressure implemented in Reactive Systems to manage data flow?
+Q002005	M	Contrast elasticity with scalability, with specific examples, as they pertain to Reactive Systems.
+Q002011	H	In what ways can Domain-Driven Design (DDD) principles enhance the design of a Reactive System?
+Q002012	H	Provide an example of a system that is reactive without fulfilling all the Reactive Manifesto traits. Why does it qualify?
+Q002015	M	Explain the role of Reactive Systems in processing continuous data streams, providing industry use cases.
+Q002017	M	Differentiate between hot and cold reactive streams, with examples of use cases.
+Q002018	M	Compare synchronous request-response communication with reactive message-driven communication in terms of scalability.
+Q002096	E	What are the core principles of Service-Oriented Architecture (SOA)?
+Q002097	M	What is the difference between SOA and a microservices architecture?
+Q002098	E	Explain the concept of a service contract in SOA.
+Q002099	M	How does SOA facilitate service reusability?
+Q002100	E	What is loose coupling in SOA and why is it important?
+Q002102	M	What do you understand by service orchestration and service choreography in the context of SOA?
+Q002104	M	How does SOA differ from traditional monolithic application architectures?
+Q002105	E	What role does a service registry play in SOA?
+Q002106	M	What factors do you consider when designing a service interface in SOA?
+Q002107	M	Explain how versioning of services is handled in a SOA environment.
+Q002108	M	Describe a scenario in which you might opt for synchronous communication over asynchronous communication in SOA.
+Q002109	E	What are some of the common data formats used for service communication in SOA?
+Q002110	M	What is an Enterprise Service Bus (ESB) and how does it support SOA?
+Q002112	E	What is the difference between software architecture and software design?
+Q002114	M	Define a system quality attribute and its importance in software architecture.
+Q002115	E	Describe the concept of a software architectural pattern.
+Q002116	E	What is the layered architectural pattern?
+Q002117	M	What are the elements of a good software architecture?
+Q002121	M	How are cross-cutting concerns addressed in software architecture?
+Q002122	E	Describe the Model-View-Controller (MVC) architectural pattern.
+Q002123	M	Define Microservices architecture and contrast it with Monolithic architecture.
+Q002319	M	Can WebSockets be used for broadcasting messages to multiple clients? If so, how?
+Q002320	M	What is the difference between WebSockets and Server-Sent Events (SSE)?
+Q002322	M	What fallback mechanisms can be used if WebSockets are not supported by a browser or server?
+Q002705	M	How do you handle exceptions in microservices architectures?
+Q002938	M	How do you document pagination, errors, and auth in API documentation?
+Q002939	M	How do you ensure API documentation stays current?
+Q002940	M	How do you version OpenAPI specs?
+Q002941	M	How do you generate SDKs from OpenAPI specs?
+Q002942	M	Why use an API gateway in microservices?
+Q002943	M	How do you implement authentication at the API gateway vs in the services?
+Q002944	M	Where should rate limiting be placed, at the API gateway or in the service?
+Q002945	M	How do you handle canary releases via an API gateway?
+Q002946	M	Compare API gateway to service mesh features.
+Q002953	M	What are the different types of API testing and when would you use each?
+Q002954	M	How do you test authentication and authorization in REST APIs?
+Q002955	M	What strategies help ensure API contract compatibility during testing?
+Q002956	M	How do you implement effective performance testing for APIs?
+Q002957	M	What are the best practices for test data management in API testing?
+Q002958	M	How do you test error handling and edge cases in APIs?
+Q002961	M	What approaches help test APIs with external dependencies?
+Q002962	M	How do you measure and improve API test coverage?
+Q002963	E	Why is API versioning important?
+Q002968	M	What are the main API versioning strategies and their trade-offs?
+Q002969	M	How do you handle backward compatibility when evolving APIs?
+Q002970	M	What is the difference between semantic versioning and date-based versioning for APIs?
+Q002971	M	How do you properly deprecate an API version?
+Q002972	M	What versioning strategy works best for microservices?
+Q002973	M	How do you version APIs when clients have different update cycles?
+Q002974	M	What is the recommended approach for versioning REST APIs in production?
+Q002975	H	How do you handle database schema changes across API versions?
+Q002976	M	What are the challenges of maintaining multiple API versions?
+Q002977	M	How do you implement version negotiation in REST APIs?
+Q002978	E	Is every API a web service? Explain.
+Q002979	M	Compare REST, SOAP, and gRPC as web services.
+Q002980	M	When is a non-web API preferable?
+Q002981	M	How does network transport affect API design?
+Q002982	M	How do you secure APIs vs web services?
+Q002983	M	What trade-offs exist between gRPC and REST?
+Q002984	E	Give examples of APIs that are not web services.
+Q002985	M	How do you expose a non-web API as a web service?
+Q002986	M	What does protocol-agnostic API design mean?
+Q002987	M	How would you migrate SOAP services to REST?
+Q002988	M	When should you choose an asynchronous pattern for an API operation?
+Q002989	M	How do you track and resume long-running jobs in an API?
+Q002990	M	How do you secure job status endpoints?
+Q002991	M	How do you handle failures and retries for asynchronous API jobs?
+Q002992	M	How do you estimate and report progress of long-running jobs?
+Q003001	M	How do you implement proper session management in stateless APIs?
+Q003008	H	How do you design idempotent bulk operations?
+Q003009	M	When should you choose 200 vs 207 for bulk results?
+Q003010	M	How do you handle validation and transactions for bulk operations?
+Q003011	M	How do you paginate bulk input, and what batching strategies exist?
+Q003012	M	How do you stream large bulk results?
+Q003032	M	How can content negotiation be used for API versioning?
+Q003036	M	How do you implement language negotiation in REST APIs?
+Q003037	M	What are the performance implications of content negotiation?
+Q003038	M	How should mobile vs desktop clients handle content negotiation differently?
+Q003044	M	What are the differences between PUT and PATCH, and when should you use each?
+Q003045	M	How do you handle partial updates safely?
+Q003046	M	How do you design bulk CRUD endpoints?
+Q003047	M	How do you prevent lost updates in concurrent edits?
+Q003048	M	What HTTP headers improve the ergonomics of CRUD APIs?
+Q003049	M	How do you structure validation errors for good UX?
+Q003050	M	What are the trade-offs between JSON Schema and custom validators?
+Q003051	M	Where should validation live in a layered architecture?
+Q003052	M	How do you validate nested arrays and objects?
+Q003053	M	How do you keep validation and OpenAPI specs in sync?
+Q003054	M	What makes a good error response in REST APIs?
+Q003055	M	How do you handle validation errors with multiple field issues?
+Q003061	M	What is the best practice for API versioning in error responses?
+Q003062	M	How do you handle errors in bulk/batch operations?
+Q003063	M	What error handling considerations apply to asynchronous operations?
+Q003064	M	What are the trade-offs between multipart uploads and direct-to-storage uploads?
+Q003065	M	How do you resume interrupted downloads and uploads?
+Q003069	M	How do you design a consistent filtering API?
+Q003070	M	How do you prevent abuse of filtering and sorting queries?
+Q003071	M	What can go wrong with pagination and sorting consistency?
+Q003072	M	How do you implement sparse fieldsets and projections?
+Q003073	M	How would you expose complex search vs simple filters?
+Q003074	M	What problems does HATEOAS solve, and when is it overkill?
+Q003075	M	How do you version and document link relations?
+Q003076	M	Compare HATEOAS with out-of-band API documentation.
+Q003077	M	How would you test presence and correctness of hypermedia links?
+Q003079	M	How do you implement API versioning using headers?
+Q003082	M	How should rate limiting information be communicated through headers?
+Q003090	M	When would you use POST vs PUT for creating resources?
+Q003092	M	How do you handle bulk operations in REST?
+Q003094	M	How should you handle non-CRUD operations in REST?
+Q003100	M	How do you handle partial failures in bulk operations?
+Q003104	M	How do you indicate that a long-running operation has started?
+Q003112	M	Explain REST constraints. Which ones are most often compromised in practice and why?
+Q003113	M	Map CRUD to HTTP methods; when is POST vs PUT appropriate?
+Q003114	M	How do you design clean resource URLs, and when should you use path vs query parameters?
+Q003118	E	Why is JSON preferred for most web APIs?
+Q003119	M	How do you validate JSON vs XML payloads?
+Q003120	M	When would you still choose XML today?
+Q003121	M	How do you implement content negotiation to serve JSON and XML?
+Q003122	M	What are the pros and cons of JSON vs XML in performance and tooling?
+Q003129	M	Sync vs async communication between microservices: when and why?
+Q003130	M	How do you avoid tight coupling between services?
+Q003133	M	What versioning and compatibility strategies apply to internal vs external APIs?
+Q003134	M	How do you keep API mocks in sync with API contracts?
+Q003135	M	When should you use static vs dynamic API mocks?
+Q003136	M	How do you simulate rate limiting, delays, and errors in API mocks?
+Q003138	M	How do you transition from mocks to real services?
+Q003148	M	What are the main differences between offset-based and cursor-based pagination?
+Q003149	M	Why does offset-based pagination become slow with large offsets?
+Q003150	M	How do you handle pagination when the underlying data changes?
+Q003151	M	What is the best way to implement pagination for search results?
+Q003153	H	What pagination strategy works best for real-time data streams?
+Q003154	M	How should you handle pagination in mobile applications?
+Q003156	M	How do you implement pagination for aggregated or grouped data?
+Q003157	H	What is the best approach for paginating across multiple data sources?
+Q003158	E	When should you use path vs query parameters?
+Q003160	M	How do you represent actions in REST paths?
+Q003161	M	How do you design complex filtering in an API?
+Q003162	M	How do you validate and document parameters in OpenAPI?
+Q003170	M	When would you choose SSE over WebSockets?
+Q003171	H	How do you scale WebSockets horizontally?
+Q003172	M	How do you resume streams after disconnects?
+Q003174	M	What are the trade-offs of long polling under load?
+Q003175	M	Why prefer a top-level object over a top-level array in JSON responses?
+Q003176	M	How would you design a consistent pagination response shape?
+Q003177	M	Compare JSON Patch vs JSON Merge Patch.
+Q003178	M	How do you design error envelopes that are both machine- and human-readable?
+Q003179	M	How do you pragmatically embed links (HATEOAS) in API responses?
+Q003182	M	What is HATEOAS and why is it considered the highest level of REST maturity?
+Q003183	M	How does the Uniform Interface constraint improve API design?
+Q003184	M	What makes an API truly RESTful vs just REST-like?
+Q003185	M	How does the cacheable constraint improve API performance?
+Q003186	M	Why is the layered system constraint important for modern APIs?
+Q003187	E	What are the benefits of the client-server constraint?
+Q003188	M	How do you design URLs that follow REST principles?
+Q003189	E	What is the difference between REST and RESTful?
+Q003190	M	When would you choose GraphQL over REST?
+Q003191	M	How does caching differ between REST and GraphQL?
+Q003192	M	What advantages does SOAP offer in enterprise scenarios?
+Q003193	M	How do you prevent N+1 issues in GraphQL?
+Q003194	M	Compare versioning strategies in REST vs GraphQL.
+Q003195	M	Can REST be strongly typed like GraphQL? How?
+Q003197	M	How would you wrap a SOAP service to present a REST API?
+Q003198	M	What are typical performance pitfalls in REST, GraphQL, and SOAP APIs?
+Q003199	M	How do you evolve API schemas and contracts over time?
+Q003200	M	What makes an API RESTful?
+Q003202	M	How would you refactor /createUser and /updateUser endpoints into a RESTful design?
+Q003203	M	When would you choose RPC over REST?
+Q003204	E	Why is statelessness important in REST?
+Q003205	M	How do you handle actions like "approve" and "cancel" with REST paths?
+Q003206	M	What are the downsides of action-based endpoints?
+Q003207	H	How do you evolve a non-RESTful API to REST without breaking clients?
+Q003208	M	Are HATEOAS and REST required together? Explain.
+Q003209	M	Give examples of cache-friendly REST patterns.
+Q003211	M	When should you add a dedicated search endpoint vs using filters?
+Q003212	M	How do you design facets and aggregations in API responses?
+Q003213	M	How do you avoid deep paging performance issues?
+Q003226	E	What does stateless communication mean in REST APIs?
+Q003227	M	How does statelessness improve API scalability?
+Q003229	M	How do you handle user context in stateless APIs?
+Q003230	M	What are the challenges of implementing stateless APIs?
+Q003231	M	How do you implement pagination in a stateless manner?
+Q003232	M	How does caching work with stateless APIs?
+Q003233	M	What is wrong with storing conversation state on the server?
+Q003235	M	Can you have real-time features in stateless APIs?
+Q003236	E	Why should REST URLs use nouns instead of verbs?
+Q003237	M	How do you handle nested resources in URL design?
+Q003238	E	What is the difference between using hyphens and underscores in URLs?
+Q003240	M	What are the best practices for URL versioning?
+Q003241	M	How do you design URLs for filtering and searching?
+Q003242	E	Should you use singular or plural nouns for collections?
+Q003243	M	How do you handle file uploads and downloads in URL design?
+Q003245	M	How do you design URLs for complex queries and reports?
+Q003246	M	How do you ensure webhook reliability and idempotency?
+Q003248	M	How do you handle client downtime gracefully when delivering webhooks?
+Q003249	M	What admin tools help troubleshoot webhooks?
+Q003250	M	Compare polling vs webhooks vs SSE.
+Q003674	M	With HTTP/2, is RPC still needed?
+Q003675	M	Is gRPC simply HTTP/2 plus Protobuf?
+Q003776	M	What is the difference between a configuration center and a service registry, and how would you choose a configuration center?
+Q003788	M	What are the differences between ZooKeeper, Eureka and Nacos when used as a service registry?
+Q003767	M	What is the difference between RPC and HTTP? Why is RPC commonly used for internal service calls?
+Q003768	M	What are the boundaries between an API gateway and Nginx, a load balancer, and a BFF?
+Q003798	M	Why is gRPC considered an RPC framework, and why is it built on HTTP/2?
+Q003810	M	When using a token to prevent duplicate submissions, what are the risks in the order of consuming the token and executing the business logic?
+Q003844	H	How would you approach building a module or a complete system from scratch?
+Q003919	M	In RESTful API design, how should resource paths, HTTP methods and status codes be used?
+Q003920	M	What options exist for real-time message push on the web? How do you choose between short polling, SSE and WebSocket?
+Q003921	E	What is the difference between REST and a RESTful API?
+Q005827	M	Why do you prefer REST over RPC?
+Q005828	M	When are RPC-ish approaches more appropriate than REST?
+Q005829	M	What are the drawbacks of using REST?
+Q005830	M	Why use REST for internal use and not RPC?
+Q006257	E	What are microservices (MSA)?
+Q006270	M	If a WAS can also act as a web server, why are the web server and the WAS separated?
+Q006478	E	Why do we need an API Gateway?
+Q006480	M	When should you use the Backend For Frontend (BFF) pattern?
+Q006490	M	Which API technology is better: REST, GraphQL, or gRPC?
+Q006499	E	Why do we need service discovery?
+Q012196	H	How would you design an API whose response combines the responses from three other microservices?
+Q012292	E	Why do we need software architecture?
+Q012311	M	In a microservices architecture, how do services find each other?
+Q012474	M	How does an API gateway work?
+Q012482	M	How does a remote procedure call (RPC) work?
+Q012483	M	How does the sidecar pattern work?
+Q012488	M	How do webhooks work?
+Q008556	M	Why do LLM products stream responses, and how does streaming actually work over HTTP?
+Q008558	M	What breaks when you put a naive CDN or proxy in front of server-sent events (SSE)?
+Q009515	H	In a service that proxies streaming TTS audio from an upstream provider, how do you propagate a mid-stream upstream failure to a client that already received a 200 and some audio?
+Q009710	H	How would you roll out a new KV-cache API across 300 model architectures in a library without breaking downstream forks?
+Q009711	M	When is backwards compatibility worth more than a better API?
+Q010306	M	In a streaming chatbot backend, how does a client resume if the SSE connection drops mid-answer?
+Q010324	M	An agent task takes 2-10 minutes. How do you design the API for clients kicking off and tracking these jobs?
+Q010325	M	For an API that runs long agent jobs and notifies clients by webhook, what happens when the client's webhook endpoint is down for an hour?
+Q010582	H	How do you build streaming into a chat UI end-to-end? Walk me through the pieces and the gotchas.
+Q010583	M	How would you implement a stop button correctly for a streaming LLM chat?
+D01460	M	What benefits and costs come from building a system as microservices rather than a monolith?
+D01461	M	What is the difference between REST and RPC style APIs?
+D01462	M	How would you version and paginate a public REST API?
+D01631	M	What are the main differences between a monolithic and a microservices architecture?
+D01632	M	What new problems does moving to microservices introduce (distributed transactions, latency, observability, deployment)?
+D01633	M	How should service boundaries be decided when splitting a monolith?
+D01634	H	Your team runs a large monolith and wants to migrate to microservices incrementally. How would you plan and execute it?
+D01635	M	What is the purpose of an API gateway and what cross-cutting concerns does it handle?
+D01636	M	Compare REST with RPC-style APIs in terms of coupling and ease of evolution.
+D01866	M	Compare WebSockets, long polling and server-sent events for real-time updates.
+D01867	M	How should an API handle idempotency for retries of POST requests?
+D02362	M	When would you split a monolithic e-commerce application into distributed services, and when would you deliberately keep it as a monolith?
+D02446	E	What is an RPC framework, and how does an RPC call travel from client stub to server implementation?
+D02447	M	Why use RPC when HTTP already exists, and what are the trade-offs between RPC and REST APIs?
+D02448	H	How would you design an RPC framework from scratch, including serialization, transport, service discovery and load balancing?
+D02449	M	Compare common RPC serialization formats such as JSON, Protobuf, Thrift and Hessian.
+D02450	M	What are the roles of a registry, provider and consumer in a service registration and discovery architecture?
+D02451	M	What is a plugin or SPI mechanism in a microkernel architecture, and how does it let you extend default behavior without modifying core code?
+D02453	M	What is an API gateway, and what responsibilities does it take on in a microservice architecture?
+D02454	M	How do you make an API gateway highly available and avoid it becoming a bottleneck?
+D02455	M	What cross-cutting features are typically implemented at the gateway, such as authentication, rate limiting, routing and logging?
+D02456	H	Explain a two-tier gateway architecture with a traffic gateway and a business gateway, and why teams adopt it.
+D02457	M	How does a gateway implement dynamic routing without restarts?
+D02458	M	What is the difference between route predicates and filters in a gateway, and how do global and per-route filters differ?
+D02459	M	Why did gateways move from blocking thread-per-request models to non-blocking designs?
+D02460	M	What problems does a centralized configuration center solve compared with config files in each service?
+D02461	M	Compare push, long-polling and pull mechanisms for propagating configuration changes to clients.
+D02462	H	How should a client survive a configuration center outage, including local snapshots and startup order?
+D02463	M	What is the difference between a configuration center and a service registry, and where does Kubernetes ConfigMap fit?
+D02464	M	What features does a production configuration center need, such as versioning, gray release, rollback, audit and permissions?
+D02465	H	Design a configuration center that supports millions of config reads and near real-time updates across thousands of clients.
+D02474	M	When should you split a monolith into microservices, and what are the main costs introduced?
+D02475	M	How do you decide microservice boundaries, and how do domain-driven design concepts such as bounded context help?
+D02476	M	How do you handle data consistency when each microservice owns its own database?
+D02477	M	Compare synchronous and asynchronous communication between microservices and the failure modes of each.
+D02478	M	How does service discovery work in a dynamic environment where instances scale up and down?
+D02481	H	How would you migrate a large monolith to microservices incrementally without a big-bang rewrite?
+D02482	M	What is the difference between orchestration and choreography in microservice workflows?
+D02521	E	What is idempotency for an API, and which HTTP methods are idempotent by definition?
+D02522	M	Describe several techniques to make a write endpoint idempotent, such as unique index, dedup table, token and optimistic lock.
+D02523	M	How does a one-time token mechanism prevent duplicate submissions, and what races does it need to handle?
+D02524	H	Design idempotent handling for a payment callback that the provider may deliver multiple times and out of order.
+D02525	M	How would you test and verify that an idempotency scheme actually works under concurrency and retries?
+D02526	M	How can a unique business key combined with a status check guard against duplicate processing of messages?
+D02565	M	What are the trade-offs between offset pagination and cursor pagination from an API design perspective?
+D02612	H	Design a flash-sale or ticketing system that uses a queue to absorb the traffic spike and keeps inventory consistent.
+D02614	M	Compare short polling, long polling, SSE and WebSocket for pushing real-time messages to a browser.
+D02615	M	What are the advantages of Server-Sent Events over WebSocket for one-way server push, and when is WebSocket better?
+D02616	H	Design a real-time notification push system to millions of connected web clients, covering connection management and scaling.
+D02617	M	How would you route messages to the right gateway node when users are connected to many WebSocket servers?
+D02618	M	What is MQTT and when is it preferred over HTTP-based push for devices?
+D02624	M	What is a state machine and in which business domains does it reduce complexity?
+D02625	M	How should workflow definitions be separated from running workflow instances, and how do you converge parallel branches?
+D02626	M	Why are retries in a workflow engine unsafe without idempotent steps?
+D02627	M	What are the key principles of designing a RESTful API, including resource naming, HTTP methods and status codes?
+D02628	M	What is HATEOAS and is it worth the cost in practice?
+D02629	M	How do you design filtering, sorting and pagination parameters for a REST collection endpoint?
+D02630	M	What is the difference between GET and POST, and which properties like safety and idempotency matter for API design?
+D02631	M	Compare cookies and sessions, and how do sessions work with multiple server nodes?
+D02632	M	What is the difference between a server-side forward and a client-side redirect?
+D02633	M	Why must a request handler object shared across threads (such as a servlet) be written to be thread-safe?
+D04110	E	Compare REST, GraphQL, and gRPC and when you would choose each.
+D04111	M	What are the problems GraphQL solves, such as over-fetching and under-fetching, and what new problems does it introduce?
+D04112	M	How does GraphQL work in the real world, including N+1 resolver queries and caching?
+D04113	M	Why is gRPC usually faster than REST over JSON, and what limits its use from browsers?
+D04114	M	What constraints define a RESTful API, and what are the common mistakes in naming resources and using HTTP verbs?
+D04115	M	What are the key practices in a cheat sheet for API design, such as versioning, pagination, error handling, and idempotency?
+D04116	M	Compare offset-based and cursor-based pagination. Why does offset pagination degrade on large datasets?
+D04117	M	How do you version an API without breaking existing clients?
+D04118	M	Which HTTP methods are idempotent and safe, and how should you make POST requests safe to retry?
+D04119	M	What is an API gateway, and what cross-cutting concerns should it handle?
+D04120	M	What is the Backend for Frontend pattern and when is it worth using?
+D04121	E	Compare monolith, modular monolith, and microservices architectures.
+D04122	M	What are the pitfalls of microservices, such as the distributed monolith, and how do you avoid them?
+D04123	M	Why might a team be better off not adopting microservices?
+D04124	M	Why did a video quality monitoring team move from serverless microservices back to a monolith and save around 90 percent in cost? What does this teach about architecture choices?
+D04125	M	Compare microservices and SOA.
+D04126	M	What are the best practices for building microservices, such as independent deployability, ownership, and observability?
+D04127	M	What are the essential components of a production microservice application beyond business services?
+D04128	M	What does a typical microservice architecture look like end to end?
+D04129	M	How do clients discover service instances? Compare client-side and server-side discovery and self versus third-party registration.
+D04130	M	What is a service mesh and what problems does it solve compared with putting the logic in client libraries?
+D04131	M	What are the key concepts of domain-driven design such as bounded context, aggregate, entity, and value object?
+D04132	M	How does DDD help you decide where service boundaries should be drawn?
+D04133	M	Compare layered, event-driven, microkernel, microservices, and space-based architectures.
+D04134	M	What are the six software architectural patterns you should know, and what is each best at?
+D04135	M	What is an enterprise service bus and why did the industry move away from it?
+D04136	M	What is an N-tier architecture and how do 1-tier, 2-tier, and 3-tier differ?
+D04137	M	What are the 12 factors of a cloud-native app and which are most often violated?
+D04138	M	What are common cloud-native anti-patterns and how do they hurt?
+D04139	M	Compare polling, long polling, WebSockets, and webhooks for pushing updates to clients.
+D04140	M	How would you design a payment webhook callback so it is reliable and secure?
+D04141	M	How should the design of an e-commerce workflow handle order splitting across warehouses?
+D04142	M	How do cloud design patterns such as bulkhead, circuit breaker, and retry help an application?
+D04143	M	How would you handle multiple tenants and internationalization such as time zones, currencies, and text in a global application?
+D04144	M	How do you manage configuration across environments and services?
+D04145	M	Which components make up a good experiment (A/B testing) platform?
+D04146	M	Why do client-side architecture patterns such as MVC, MVP, MVVM, and VIPER exist and how do they differ?
+D04147	M	Compare orchestration with a workflow engine versus plain event choreography for long-running business processes.
+D04148	M	How do application servers separate from the web tier, and what are the disadvantages of an extra application layer?
+D04358	M	What is the difference between synchronous and asynchronous communication between services, and when should you use message queues, task queues, or back pressure?
+D04359	M	Compare TCP, UDP, RPC, and REST as communication mechanisms for internal services.
+D04360	M	Why use RPC between internal services instead of REST, and what are RPC's disadvantages?
+D04361	M	What are the benefits and drawbacks of REST for public APIs, and what are the typical verbs and idempotency expectations?
+D04370	M	What are the disadvantages of a microservices approach, such as operational complexity and cross-service debugging?
+D04371	M	What are the disadvantages of a service discovery system, and how do Consul, etcd, and Zookeeper address health checking and key-value lookup?

@@ -1,0 +1,120 @@
+## Quantization fundamentals
+- [E] What is quantization in LLMs, and why do we quantize models for deployment? {Q012408,Q012409,Q012419,Q004531,Q004952,Q007015b,Q006936a}
+- [E] How does quantization reduce model size, and how much memory does INT8 or INT4 save for a given parameter count? {Q012411}
+- [E] What are the main types of quantization (PTQ vs QAT, weight-only vs weight-and-activation, static vs dynamic, symmetric vs asymmetric)? {Q012410,Q010850,D04757}
+- [E] What is weight-only quantization, what is activation quantization, and how do they differ? {Q012415,Q012416,Q012418,Q008565}
+- [E] What is calibration in quantization, and how does your choice of calibration data matter? {Q012417}
+- [E] What is mixed precision (for example FP16), and why is it used during inference? {Q003380}
+- [M] Why do many serving stacks prefer BF16 over FP16 for inference, and when does FP16 still win? {GEN}
+- [M] What is the trade-off between accuracy and performance in quantization, and how does it affect latency and memory? {Q003364,Q012412,Q012413}
+- [M] Compare FP16, BF16, INT8, and INT4 for LLM inference in memory, speed, and quality. Why is INT8 not always faster in practice? {D04756,Q005125,D03766}
+- [H] Why does moderate quantization cause only a small accuracy loss in LLMs, and when does that stop being true? {Q007201}
+- [M] Why does weight-only quantization speed up decode but barely help prefill? {Q009839,Q010087}
+- [H] Why does W4A16 quantization barely help a high-batch serving deployment? {Q008566}
+- [M] What do quantization granularity choices (per-tensor, per-channel, group-wise) change in accuracy and kernel cost? {GEN}
+- [M] What is the difference between static and dynamic activation quantization, and what does each cost at runtime? {GEN}
+- [H] Where does dequantization happen at runtime for weight-only schemes, and why are fused dequant-GEMM kernels needed? {GEN}
+- [M] Why is quantizing activations harder than quantizing weights, and how does that shape architecture choices? {Q007539}
+- [H] What are activation outliers, and why do they make W8A8 quantization harder than W4A16? How do SmoothQuant and LLM.int8() address them? {Q008567,Q008606,D04758}
+## Quantization schemes and formats
+- [E] What is GPTQ, and why is it important for LLM quantization? {Q012414}
+- [M] How does AWQ differ from GPTQ in how it chooses what to protect and how it quantizes? {Q011284,D00141,D04759}
+- [M] GPTQ vs AWQ vs GGUF vs bitsandbytes NF4 vs INT8 vs FP8: when would you use each, and how do you pick a scheme for a deployment? {Q006936b,Q008605}
+- [M] Why does QLoRA use NF4 rather than a standard 4-bit format? {D00142}
+- [H] Compare FP16, BF16, FP8, INT8, INT4, and FP4 for serving. What breaks at each step down? {Q011805,Q009897,Q010180,Q004430,D00140}
+- [H] How does FP8 improve inference throughput on H100 GPUs? {Q006937}
+- [M] On H100s you want lower memory and higher matmul throughput for a Llama-class model with minimal accuracy work. What is the best quantization choice? {Q006987}
+- [M] Blackwell GPUs run NVFP4 natively. How does it differ from INT4 weight-only quantization, and when would you serve a model in it? {Q009921}
+- [M] Why does a non-uniform floating-point grid such as NVFP4 suit weight distributions better than INT4's uniform grid? {Q009922}
+- [H] How does serving a 70B model change on a Blackwell-class GPU with FP4 support? {Q009891}
+- [H] The team wants to move serving from FP8 to NVFP4 to cut cost. What do you check, and what would you measure for a latency-sensitive chat product? {Q011285,D00143,Q009923}
+- [H] How does serving a large MoE model change if the customer only has 8x A100 80 GB, which has no FP8 tensor cores? {Q009851}
+- [H] Why might you still choose 2 GPUs with FP8 over 1 GPU with INT4 for serving a large model? {Q008561}
+- [H] You must deploy a 70B model on 8x A100 40GB GPUs. Walk through the precision choice and the strongest plan. {Q006920}
+- [M] Where would you spend a 2x quantization win when serving an LLM: fewer chips per instance, or longer context? {Q009644}
+- [H] How would you decide the quantization bit-width per layer under a fixed 1 GB model budget? {Q009254}
+- [H] What is post-training quantization versus quantization-aware training, and what breaks when you push weights to 2-4 bits? {Q004953,Q012030,Q009253,D03767}
+- [M] When would you accept the cost of quantization-aware training over post-training quantization? {Q009899,D00145}
+- [M] What is KV cache quantization, when is it the right lever, and why is it usually quantized separately from the weights? {Q008608,Q009898,Q010181}
+- [H] Why are keys more sensitive to quantization than values in the KV cache, and how can the error be compensated? {Q008609,D00144}
+- [H] How does grouped-query attention interact with KV cache quantization? {Q009750}
+## Validating and debugging quantized models
+- [M] You quantized your LLM but accuracy dropped significantly. How do you minimize the quantization loss? {Q004993}
+- [M] A BF16 fine-tune passed your quality gates and you quantize it to INT4 for serving. What is the disciplined final step? {Q006930}
+- [M] What would make you reject a 4-bit quantized model that passes perplexity and aggregate benchmark checks? {Q008607,Q007540}
+- [H] Your 4-bit model matches on aggregate benchmarks, but users complain. How do you find what broke? {Q007388}
+- [H] A customer says the FP8 endpoint "feels dumber" but your evals show parity. What do you do? {Q009916,Q010182}
+- [H] You must quantize a model for a customer's hardware. How do you choose a scheme, and how do you prove quality has not regressed? {Q009838}
+- [M] Why does quantization hurt long generations more than short ones? {Q007541}
+- [M] What accuracy and speed trade-offs do you expect from 4-bit weight-only quantization of a 7B model, and how would you validate it? {D04951}
+- [H] How would you detect that quantization has damaged a few rarely routed experts more than the rest of an MoE model? {Q009852}
+- [H] What does INT4 KV cache quantization do to long-context retrieval quality, and how would you measure it? {Q009264}
+- [M] When would you serve two precisions of the same model behind a router? {Q009840}
+- [M] How can poorly chosen calibration data cause a quantized model to fail on production traffic? {GEN}
+## Pruning, distillation, and on-device inference
+- [M] What are structured versus unstructured sparsity in LLMs, and why is unstructured sparsity hard to accelerate? {D04760}
+- [M] What is 2:4 structured sparsity, what hardware does it need, and what speedup is realistic? {GEN}
+- [M] How does knowledge distillation produce a smaller serving model, and when is distillation preferred over quantization? {D04761,D00171}
+- [H] Your model meets quality targets but runs at 4s p95 latency, and you need 400ms with 10x the throughput. Design the compression plan. {Q007387}
+- [M] How does LLM inference speed compare on CPU versus GPU, and when is CPU inference acceptable? {D04762}
+- [M] How do you optimize LLM inference for edge and mobile deployment? {Q005124}
+- [H] How do you deploy a capable assistant on cost-sensitive or on-device hardware without a datacentre GPU? Walk through the efficiency toolkit. {Q012004,Q010086}
+- [H] You need to run a roughly 3B-parameter model on a phone with tight memory and power budgets. Do the maths and say what changes versus datacenter serving. {Q009250,Q010544}
+- [M] Estimate the KV cache memory for a 3B on-device model at 4k context and name the levers that shrink it. {Q009262}
+- [M] Which KV cache memory lever would you try first if you needed 2x headroom for a new on-device feature? {Q009263}
+- [M] When would you give up on on-device inference and route the request to a server model, and what do you give up by going on-device? {Q009252,D00164}
+- [H] A new on-device model is a 20B sparse model whose weights live in flash, with only 1-4B parameters active at a time. How do you serve it on a phone? {Q009281}
+- [M] What do Ray Serve or MLC LLM add for deployment, and when would you use them for edge devices? {D04771}
+## Dense model parallelism for inference
+- [M] What is model sharding, and when would you use it for inference? {Q005129}
+- [H] What are the challenges of performing distributed inference across multiple GPUs? {Q003377}
+- [M] How are tensor, pipeline, and sequence parallelism used at inference time, and when is each preferred? {D04753,D03770,Q008616}
+- [H] How is tensor parallelism sharded, how costly is the AllReduce communication per layer, and when should you use DP, PP, or EP instead? {Q006015,D00148}
+- [M] Why is tensor parallelism preferred over pipeline parallelism for low-latency serving? {Q011308,D00147}
+- [H] Why does TP=8 spread across two 4-GPU nodes over Ethernet perform terribly? {Q008617}
+- [H] How do pipeline bubbles show up in inference, and how does micro-batching help? {GEN}
+- [H] Design the parallelism strategy for serving a 405B-parameter dense model. What goes where among TP, PP, and EP, and why? {Q012040,Q009909}
+- [H] How does the serving layout change when the NVLink domain grows from 8 GPUs to a 72-GPU rack, as with GB200 NVL72-class systems? {Q008700,Q009910}
+- [H] What are context parallelism and ring attention, and why does context parallelism help prefill far more than decode? {D00149,D00152,Q006019,Q008698}
+- [H] Why can DeepSeek-style MLA models not use standard tensor-parallel layouts without KV duplication, and how does MLA compare with GQA under TP? {D00150,Q007537}
+- [M] How do you decide how many GPUs of 80 GB you need to serve a 70B model in FP16, and which parallelism do you use? {D04950}
+## Mixture-of-experts inference
+- [M] How does MoE inference change batching, communication, and memory planning compared with a dense model? {D00165,Q008618}
+- [H] How does serving a large sparse MoE model differ from serving a dense one, and what does expert parallelism change? {Q008685}
+- [H] For MoE inference, how do you choose between expert parallelism and tensor parallelism? {Q006017,Q009480}
+- [H] Where does an MoE model sit on the roofline compared with a dense model of the same active-parameter count? {Q008595}
+- [H] Why does low traffic hurt an MoE deployment more than a dense one of similar quality? {Q008686}
+- [H] Why is batched MoE inference trickier than dense inference, given expert imbalance within a batch? {Q010035,Q010272}
+- [H] How would you detect and quantify expert imbalance in production, and what happens to p99 latency when the routing histogram shifts? {Q008687,Q009481,Q009660,Q010199}
+- [H] How would you pick an MoE capacity factor from production traffic rather than from the training config? {Q009659}
+- [H] How would you serve a large MoE model when expert selection is data-dependent? {Q009658}
+- [H] Why does wide expert parallelism free HBM for KV cache, and how does that change achievable batch size? {Q008701}
+- [H] Serve a DeepSeek-V3-class MoE (671B total, about 37B active) on Blackwell GPUs. How do you lay it out, and why does expert parallelism change the economics? {Q010198,Q010200}
+- [H] How does the parallelism strategy change for a 400B MoE with about 30B active parameters? {Q009911}
+- [H] Serving a 70B dense model with 8-bit weights versus a sparse MoE of the same total parameter count: how does the analysis change? {Q009643}
+- [H] Dense 30B versus an MoE with 25B active parameters on a single 80 GB GPU: how do you decide for a specific customer? {Q009374}
+- [H] What optimization problems are specific to MoE models in inference frameworks, and how do speculative decoding and PD separation work with MoE? {Q006179}
+## Serving frameworks, hardware, and benchmarking
+- [E] What are the main LLM inference engines available, and what does each aim to optimize? {Q003383}
+- [M] How does SGLang work, and what is the difference between vLLM and SGLang? {Q004972,Q011174}
+- [M] How does TensorRT-LLM make a model faster, and when will it not help? {Q004973,Q012039,Q009894}
+- [M] How does llama.cpp run LLMs on everyday hardware, and how does Ollama build on it? {Q004974,Q004975}
+- [M] Why is Ollama not a production inference server, and why are GGUF-style formats unsuited to datacenter serving? {D00163,D00146}
+- [M] How are HuggingFace TGI and vLLM related, and what are their strengths and weaknesses? {Q006172,D04752}
+- [M] Besides vLLM, SGLang, and TensorRT-LLM, what other inference frameworks exist, and how do you choose by hardware? {Q006173,D04750}
+- [H] When would you choose vLLM vs SGLang vs TensorRT-LLM vs a custom stack? {Q004976,Q010188,Q011810,Q008613,D00153}
+- [M] Your workload is mostly shared-system-prompt or multi-call agentic programs emitting strict JSON. Which serving stack fits best, and why? {Q008614,Q006924}
+- [M] What does a vendor-tuned stack like TensorRT-LLM buy over a portable engine, and what does it cost when you want to add AMD capacity? {Q008615}
+- [M] What does changing the attention backend actually change for you operationally? {Q008583}
+- [H] A new LLM architecture ships with an attention variant no inference-engine kernel supports. What happens on day zero, and what is the fallback? {Q009740}
+- [M] How would you verify that a fused or compiled inference engine is numerically equivalent enough to the source model? {Q009895}
+- [M] What is your process when a TensorRT engine turns out slower than the PyTorch baseline? {Q009896}
+- [H] How would you design a reproducible benchmark to choose between inference frameworks for a customer? {Q006170,Q010189,D00155}
+- [H] A vendor pitches an accelerator at "3,000 tokens per second." How do you evaluate that claim, and how would you evaluate a new serving platform for your fleet? {Q011296,D00156,Q011592,Q008643}
+- [M] How do you select GPUs for LLM inference? {Q005107}
+- [M] How do you choose inference hardware among NVIDIA GPUs, AMD, TPUs, and cloud silicon like Inferentia and Trainium? {Q008641}
+- [M] Compare A100, H100, H200, and B200 for LLM inference. Which specification matters most for decode? {GEN}
+- [M] How does an LPU or other SRAM-based accelerator work, and at what model size does an SRAM-only design start to win? {Q005111,Q009641}
+- [H] On a GPU you batch to amortise weight reads. What is the batching calculus on an SRAM-only accelerator? {Q009651}
+- [H] Why might one GPU with more HBM beat two smaller GPUs with the same total memory for LLM inference? {Q008642}
+- [M] How do you share a GPU or manage GPU memory when serving multiple models (MIG, MPS, time slicing)? {Q005128}

@@ -1,0 +1,163 @@
+Q000858	E	Explain the concept of outliers and their impact on a dataset.
+Q001024	M	How would you handle categorical features in a classification problem?
+Q001147	M	What role does feature selection play in mitigating the Curse of Dimensionality?
+Q001152	M	Discuss the differences between feature extraction and feature selection in the context of high-dimensional data.
+Q001180	E	Why is data preprocessing an important step in data mining?
+Q001181	E	What are the common data preprocessing techniques?
+Q001182	E	Explain the concept of data cleaning and why it is necessary.
+Q001184	M	How does data transformation differ from data normalization?
+Q001186	E	How do you handle missing values in a dataset?
+Q001187	M	What are the methods for outlier detection during data preprocessing?
+Q001188	E	What is data preprocessing in the context of machine learning?
+Q001189	E	Why is data cleaning essential before model training?
+Q001190	E	What are common data quality issues you might encounter?
+Q001191	E	Explain the difference between structured and unstructured data.
+Q001192	E	What is the role of feature scaling, and when do you use it?
+Q001195	M	Describe different types of data normalization techniques.
+Q001196	E	What is data augmentation, and how can it be useful?
+Q001198	E	Explain the concept of data encoding and why it is important.
+Q001200	M	What is the difference between imputation and deletion of missing values?
+Q001201	M	Describe the pros and cons of mean, median, and mode imputation.
+Q001202	M	How does K-Nearest Neighbors imputation work?
+Q001203	M	When would you recommend using regression imputation?
+Q001205	M	How do missing values impact machine learning models?
+Q001206	E	What is one-hot encoding, and when should it be used?
+Q001216	E	Explain the concept of Feature Engineering and its significance in ML.
+Q001218	M	Explain the difference between Feature Scaling and Normalization.
+Q001221	E	What is Feature Selection and what are its techniques?
+Q001308	E	What is feature selection, and how is it different from feature extraction?
+Q001382	E	What is feature engineering and how does it impact the performance of machine learning models?
+Q001383	E	List different types of features commonly used in machine learning.
+Q001384	E	Explain the differences between feature selection and feature extraction.
+Q001385	M	What are some common challenges you might face when engineering features?
+Q001386	E	Describe the process of feature normalization and standardization.
+Q001387	M	Why is it important to understand the domain knowledge while performing feature engineering?
+Q001388	M	How does feature scaling affect the performance of gradient descent?
+Q001389	E	Explain the concept of one-hot encoding and when you might use it.
+Q001391	E	How do you handle categorical variables in a dataset?
+Q001392	E	What are filter methods in feature selection and when are they used?
+Q001393	E	Explain what wrapper methods are in the context of feature selection.
+Q001394	M	Describe embedded methods for feature selection and their benefits.
+Q001395	M	How does a feature's correlation with the target variable influence feature selection?
+Q001396	E	What is the purpose of using Recursive Feature Elimination (RFE)?
+Q001628	M	Describe the steps involved in preprocessing data for linear regression analysis.
+Q001629	E	How do you deal with missing values when preparing data for linear regression?
+Q001630	M	What feature selection methods can be used prior to building a regression model?
+Q001631	E	How is feature scaling relevant to linear regression?
+Q001633	E	Explain the concept of data splitting into training and test sets.
+Q001695	E	How do you handle categorical variables in logistic regression?
+Q001750	E	Explain the difference between training, validation, and test datasets.
+Q001885	E	How do you handle missing data in a DataFrame?
+Q001891	E	Describe how you would convert categorical data into numeric format.
+Q002083	E	How do you handle missing values in a dataset using Scikit-Learn?
+Q002086	E	How can you scale features in a dataset using Scikit-Learn?
+Q002089	E	How do you encode categorical variables using Scikit-Learn?
+Q002090	M	What are the strategies provided by Scikit-Learn to handle imbalanced datasets?
+Q002091	E	How do you split a dataset into training and testing sets using Scikit-Learn?
+Q002093	M	What preprocessing steps would you take before inputting data into a machine learning algorithm?
+Q002094	M	Explain how 'Imputer' works in Scikit-Learn for dealing with missing data.
+Q002095	E	How do you normalize or standardize data with Scikit-Learn?
+Q002154	M	How do you handle missing values in a SQL dataset?
+Q002160	M	How can you extract time-based features from a SQL datetime field for use in a Machine Learning model?
+Q002161	M	What are SQL Window Functions and how can they be used for Machine Learning feature engineering?
+Q002182	E	Describe how training and testing datasets are used in supervised learning.
+Q004072	E	Why is feature selection required?
+Q004073	E	Describe some feature selection methods.
+Q004074	M	What is the forward feature selection method? What are its advantages and disadvantages?
+Q004075	M	What is the backward feature selection method? What are its advantages and disadvantages?
+Q004076	M	What is the filter feature selection method? Describe two of them.
+Q004344	M	Why do we need to split our data into three parts: train, validation, and test?
+Q004360	E	What is feature selection? Why do we need it?
+Q004515	E	What is data augmentation, and how is it implemented?
+Q004523	M	How do you handle imbalanced classes?
+Q004540	M	How would you design a reusable preprocessing component?
+Q004541	E	What is data leakage, and how do you prevent it during preprocessing?
+Q004398	M	How do you choose among techniques for handling imbalanced datasets?
+Q004407	E	Why and how do you split data into train, test, and validation sets?
+Q004410	E	How do you handle missing or corrupted data in a dataset?
+Q005186	M	How would you approach building an AI feature with limited labeled data?
+Q005231	E	What is feature engineering?
+Q005232	E	What is one-hot encoding? When should you use it?
+Q005233	E	How do you deal with missing data?
+Q005234	E	How do you handle outliers?
+Q005235	E	Explain feature scaling. Why is it needed?
+Q005236	E	How do you handle categorical features?
+Q005237	E	Explain feature selection vs feature extraction.
+Q005238	M	How would you create new features from existing ones?
+Q005239	M	How do you approach a dataset with highly imbalanced classes?
+Q005240	M	How do you select features for a model?
+Q005241	E	Why and how do you split data into train, test, and validation sets?
+Q005322	E	What is data augmentation, and what techniques are commonly used?
+Q005389	M	How do you deal with noisy data in machine learning models?
+Q005445	M	How would you approach a project with limited labeled data?
+Q005462	E	What is data normalization and why do we need it?
+Q005463	E	What is an imbalanced dataset? Can you list some ways to deal with it?
+Q005464	E	What is data augmentation? Can you give some examples?
+Q005465	E	When should you use label encoding vs. one-hot encoding?
+Q005492	E	Why do we need a validation set and a test set? What is the difference between them?
+Q006281	E	Why do you use feature selection?
+Q006287	M	How do you deal with unbalanced binary classification?
+Q006291	M	What are some ways to make your model more robust to outliers?
+Q006295	E	How do you deal with outliers in your data?
+Q006296	M	How do you deal with sparse data?
+Q006601	M	How do you inspect missing data, and when does it matter?
+Q006619c	M	If you have a large number of predictors, how do you handle them?
+Q006653	E	What are the advantages of plotting your data before performing analysis?
+Q006656	M	How can you determine which features are the most important in your model?
+Q006657	M	How do you deal with some of your predictors being missing?
+Q006660	M	Suppose you are given an unfeasible number of predictors in a predictive modeling task. What are some ways to make the prediction more feasible?
+Q006661	M	Suppose you have a feasible number of predictors, but you are fairly sure you do not need all of them. How would you perform feature selection on the dataset?
+Q006680	M	What could be some issues if the distribution of the test data is significantly different from the distribution of the training data?
+Q006687	M	Why might it be preferable to include fewer predictors over many?
+Q006708	M	You want to run a regression to predict the probability of a flight delay, but flights with delays of up to 12 hours are distorting your model. How can you address this?
+Q007088	M	A teammate wants to ship a new feature purely because it lifts held-out AUC by 6 points. What should you check first?
+Q011929	E	How do you handle missing data in Pandas?
+Q012024	M	How do you handle data imbalance, collinearity, feature selection and regularization?
+Q012037	M	A network confuses pugs and pit bulls and some training labels are wrong. How do you modify the model and the data?
+Q012047	M	How do you handle extreme class imbalance in rare-event detection (e.g. a child running into the road)?
+Q012048	M	Explain how you would auto-label a fleet dataset and what quality controls you would put on it.
+Q012083	M	Your annotators have no ground truth because the tasks are subjective preference judgments. How do you measure and improve label quality?
+Q012581	E	Mention three ways to make your model robust to outliers.
+Q012586	E	Mention three ways to handle missing or corrupted data in a dataset.
+Q012597	M	You are building a binary classifier and find that the data is imbalanced. What should you do to handle this situation?
+Q012648	M	What are some common ways to handle missing data in Python, and which method do you prefer and why?
+Q007238	M	When the same user appears in both the training and validation splits, how does that failure show up in the metrics?
+Q007263	E	What is feature scaling? Compare normalization and standardization, and say which models actually need it.
+Q007269	M	What is the difference between feature engineering and representation learning? Where does hand-engineering still earn its keep today?
+Q007270a	M	Give an example of a hand-engineered feature that a model could never have learned on its own, and explain why.
+Q007275	M	What is data leakage? Give three subtle examples and explain how you would detect them.
+Q007276a	M	Your model gets 0.99 AUC on a fraud problem. Walk me through your audit.
+Q007276b	M	How does k-fold cross-validation make preprocessing leakage worse if done naively?
+Q007286	M	Your fraud dataset is 0.5% positive. Walk me through your strategy for handling the imbalance.
+Q007287	H	You oversampled and now the predicted probabilities are inflated. Why, and how do you correct them?
+Q007288	M	When is undersampling actually preferable?
+Q007331	M	About 10% of your training labels are wrong. What happens, and what do you do about it?
+Q007332	M	Inter-annotator agreement (Cohen's kappa) on your labeling task is 0.55. What does that tell you, and what do you do next?
+Q007333	H	How would you distinguish a genuinely hard example from a mislabelled one in your high-loss bucket?
+Q007356b	M	When does data augmentation hurt?
+Q007390	H	You have 10M unlabelled examples and budget for 20k labels. How do you spend it?
+Q007391	H	How do you estimate the true error rate of 10M model-generated labels from an audit sample, and how big does the sample need to be?
+Q007392	H	Your uncertainty sampling in active learning keeps surfacing the same ambiguous case. What does that tell you about the task, not the model?
+Q009080	M	How would you measure inter-annotator agreement before committing to an ML project?
+Q009081	M	When is a noisy label set still good enough to build on?
+Q009962	M	Subject-matter experts say the sensor data is too noisy to trust. What do you do in week one of the ML project?
+Q010100	M	In a data-annotation pipeline, what breaks when a new task type launches and there are no gold tasks yet?
+Q010101	H	Your annotators have no ground truth because the tasks are subjective preference judgments. How do you measure and improve label quality?
+Q010102	H	Your inter-annotator kappa is 0.45 on a task the customer insists is objective. Walk through your diagnosis. When would you fire an annotator versus retrain them?
+Q010118	H	Some annotators are pasting your tasks into ChatGPT and submitting the output. How do you detect and handle it?
+Q010119	H	How do you estimate what fraction of already-delivered annotation data is contaminated by LLM-generated content?
+Q010120	M	A customer asks for a "human-written guarantee" on annotation data. What can you honestly promise?
+Q010125	H	A robotics customer's policy gets worse after your third batch of training data. How do you establish whether your data caused it?
+Q010126	H	In robot manipulation data collection, what changes when two of the three embodiments have different gripper kinematics?
+Q010451	M	Experts disagree with each other on 20% of the golden set. What do you do?
+Q010539	M	An assistant's fix lifted validation accuracy from 81% to 96%. What do you check before believing it?
+D03483	M	Why must you compute scaling statistics and imputation values on the training split only?
+D03484	M	What sampling methods exist, such as random, stratified, reservoir and importance sampling, and when is each used?
+D03485	M	What is the difference between non-probability and probability sampling, and what biases does each introduce?
+D03719	M	How do you handle missing or corrupted data in a dataset, and how does the best approach depend on why values are missing?
+D03720	M	How do you handle outliers, and how do they affect different models?
+D03721	M	How do you deal with imbalanced data in practice, and which evaluation metrics do you switch to?
+D03722	M	What are uniform, stratified and reservoir sampling and when is each appropriate?
+D03723	M	What is data distribution shift and how does it affect a deployed model's performance?
+D03724	M	What are the main feature selection methods and how do you assess feature importance?
+D03725	M	Compare Euclidean, Manhattan, cosine and Mahalanobis distances and when each is appropriate.

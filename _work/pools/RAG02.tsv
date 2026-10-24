@@ -1,0 +1,126 @@
+Q003413	M	How do you choose the chunk size for a RAG system?
+Q003414	M	What are the potential consequences of having chunks that are too large versus chunks that are too small?
+Q003424	M	What are the different chunk enhancement techniques in RAG?
+Q003425	M	What are the pros and cons of chunk enhancement techniques in RAG?
+Q003426	E	What are some common chunking methods used in RAG?
+Q003427	M	What are the criteria to choose a specific chunking method in RAG?
+Q003428	M	How does the chunking strategy differ when dealing with structured documents (like PDFs with tables and figures) versus plain text documents?
+Q003454	E	What is the purpose of overlap during chunking in a RAG pipeline?
+Q004281	E	Explain the concept of chunking and its importance to RAG systems.
+Q004282	M	Explain the intuition behind chunk sizes using an example.
+Q004283	M	If you embed each page as a chunk (about 450 tokens per page), what do you do when the information you need is spread across multiple pages?
+Q004284	M	What are the different chunking strategies used in RAG systems and how do you evaluate your chunking strategy?
+Q004752	M	What are chunking strategies, and how do you choose the right chunk size?
+Q004753	M	Compare fixed-size chunking, semantic chunking, and recursive chunking.
+Q004754	M	What is Contextual Retrieval, and how does it improve RAG?
+Q004766	M	How do you handle structured data (tables, SQL databases) in a RAG pipeline?
+Q004776	M	What is parent-child chunking, and how does it improve retrieval?
+Q004778	M	Your RAG chunk overlap causes redundant results. How do you reduce redundancy?
+Q004788	M	Your RAG system struggles with PDF documents containing tables and layouts. How do you fix PDF parsing?
+Q005956	M	What are Parent-Document Retrieval and Sentence Window Retrieval?
+Q006191	M	Why is the Recursive Character Text Splitter considered the best default chunking strategy, and when should you not use it?
+Q006237	M	How does your RAG knowledge base perform document parsing and content extraction, and how do you handle different formats such as PDF, Word, and HTML?
+Q007027	M	A retrieved chunk says "revenue grew 3% over the previous quarter," but the model can't tell which company or quarter, and the right chunk often doesn't rank for "ACME Q2 2023 revenue." What is the strongest fix?
+Q007029	M	You need to change your chunk size and contextualization prompt on a live 1 TB index. What is the safe rollout?
+Q007031	M	When indexing a codebase, answers to "where is parseConfig defined?" keep missing or returning fragments, and your splitter is fixed-size 512 tokens. What is the best fix?
+Q007032	M	Your corpus is mostly scanned PDFs with tables. Recall is poor and answers garble numeric facts. Where do you look first?
+Q007127	E	What is chunking, and why do we chunk our data?
+Q007128	M	What factors influence chunk size?
+Q007129	E	What are the different types of chunking methods?
+Q007130	M	How do you find the ideal chunk size?
+Q007131	H	What is the best method to digitize and chunk complex documents like annual reports?
+Q007132	M	How do you handle tables during chunking?
+Q007133	M	How do you handle a very large table for better retrieval?
+Q007134	M	How do you handle list items during chunking?
+Q007135	H	How do you build a production-grade document processing and indexing pipeline?
+Q007136	M	How do you handle graphs and charts in RAG?
+Q010808	M	Explain chunking strategies and when to use each.
+Q010820	M	How would you handle documents with tables, charts, and images?
+Q011065	E	Why chunk documents at all in a RAG system?
+Q011066	M	When should you use semantic chunking?
+Q011161	M	What is the best chunk size for RAG?
+Q011203	M	How do you handle tokenization for RAG chunking?
+Q011357	M	Why is fixed-size chunking with overlap problematic for production systems?
+Q011358	M	What is "Contextual Retrieval" (the Anthropic pattern)?
+Q011409	M	Explain Anthropic's Contextual Retrieval. When would you use it and when would you skip it?
+Q011410	H	A knowledge base of 50,000 documents needs Contextual Retrieval. How do you manage the ingestion cost?
+Q011439	H	You need to parse 5 million pages of mixed born-digital PDFs, scans and office files for RAG. How do you design it for cost?
+Q011587	M	Why would you still use AWS Textract or Azure AI Document Intelligence when vision LLMs exist?
+Q011588	M	How do you handle a 500-page PDF with vision models efficiently?
+Q011589	H	You need to parse 5M pages a month for RAG ingestion. Would you use a frontier VLM, a specialist API, or a self-hosted model?
+Q011814	M	What chunking strategy would you use for a large technical documentation corpus, and why?
+Q011823	M	How do you handle tables, figures and multi-column PDFs in a retrieval pipeline?
+Q012108	M	How would you chunk and embed heterogeneous enterprise content: Slack threads, Jira tickets, Google Docs, PDFs?
+Q012424	E	What is "chunking" and why is it important in RAG?
+Q007820	M	What chunking strategies do you know, and how do you pick one?
+Q007821	M	How would you chunk source code differently from prose?
+Q007822	M	What breaks when you chunk a table row-by-row?
+Q007823	M	How do you A/B test two chunking strategies?
+Q007824	M	How do chunk size and overlap affect retrieval quality, and what numbers would you start with?
+Q007825	M	Why does a multi-topic chunk embed poorly? What is happening in vector space?
+Q007826	M	How does your chunking approach change for a corpus of tweets versus legal contracts?
+Q007827	M	What metric tells you your chunks are too big?
+Q007853	M	How would you detect that a document parser silently corrupted documents, at scale, without reading every page?
+Q007854	M	Which single automatic signal catches the most document parse failures per unit of effort?
+Q007855	M	When is a flagged page worth re-parsing with a VLM versus dropping it from the corpus?
+Q007856	E	What metadata would you attach to each chunk, and what does it buy you?
+Q007857	M	Which chunk metadata fields would you embed into the chunk text versus keep as filterable fields, and why?
+Q007858	M	How does storing the embedding model version in chunk metadata help during a model migration?
+Q007862	M	Everyone focuses on retrieval algorithms. What is actually the hardest part of building RAG over enterprise documents?
+Q007863	M	How do you measure document parsing quality at corpus scale?
+Q007864	H	A financial table answers most user questions. Walk through how you would ingest it. When is VLM-per-page parsing worth the cost?
+Q007865	M	Explain contextual retrieval. What problem does it solve, and how does late chunking relate?
+Q007866a	H	How does prompt caching make contextual retrieval affordable at 10M chunks? Sketch the cost math.
+Q007912	M	How do you make tables and charts in documents actually retrievable and answerable in a RAG system?
+Q007914	M	How do you evaluate table extraction quality specifically?
+Q007921	M	Your RAG corpus is full of near-duplicates: document versions, boilerplate, quoted email threads. How do you handle deduplication?
+Q007927	M	How does retrieval over a codebase differ from retrieval over prose?
+Q009585	H	How would you chunk and embed heterogeneous enterprise content: Slack threads, Jira tickets, Google Docs, PDFs?
+Q009586	M	How do you handle a 400-message Slack thread that resolves an incident in a RAG index: one chunk, many chunks, or a summary chunk?
+Q009675	M	What breaks in a RAG pipeline when the document is a scanned PDF rather than a native one?
+Q009688	H	How would you extend a legal-document chunker to handle documents with schedules and exhibits that are effectively separate documents?
+Q009689	M	What test would tell you a structure-aware chunker is better than fixed 512-token windows?
+Q009987	M	While building structured-field extraction from documents, halfway through you find a document type with a 30% error rate. What do you do?
+Q010017	M	How would you dedupe identical chunks before embedding, and how much does that save on real corpora?
+Q010082	M	Where does chunking need to change when documents mix English and Hindi on the same page?
+Q010347	H	Design the ingestion pipeline that gets 5 million internal documents into a RAG system.
+Q010348	H	How do you re-process everything when the chunking logic changes, without double-serving old and new chunks?
+Q010353	H	How does chunking-logic versioning interact with embedding versioning?
+Q010354	M	How do you decide on a chunking strategy, and how do you know your chunking is any good?
+Q010356	M	How do you chunk a 500-row table?
+Q010357	M	Why does deduplication matter more for an AI corpus than a warehouse, and how do you do it at scale?
+Q010358	H	Can you dedupe two near-duplicate documents that have different ACLs?
+Q010359	H	How do you tune the similarity threshold for near-duplicate detection without labels?
+Q010373	H	Document parsing at scale: PDFs, HTML, spreadsheets, email, scans. What breaks and how do you build for it?
+Q010374	H	How do you detect that a document-parser regression shipped, given the pipeline still runs green?
+Q010375	M	When is OCR plus vision-model parsing worth the cost?
+Q010456	H	A customer's "documents" turn out to be scanned PDFs, Excel exports with merged cells, and a 15-year-old SharePoint, while the RAG pilot assumed clean text. What do you do?
+D00335	E	How do you choose chunk size and overlap, and how do they affect retrieval quality?
+D00336	M	Why is fixed-size chunking with overlap problematic in production?
+D00337	M	Compare recursive, semantic and structure-aware chunking.
+D00338	M	What is hierarchical parent-child chunking, and when does it help?
+D00339	M	What is late chunking, and how does it differ from contextual retrieval?
+D00340	M	Explain Anthropic-style contextual retrieval and when you would skip it.
+D00341	M	A knowledge base of fifty thousand documents needs contextual chunk enrichment. How do you control the ingestion cost?
+D00342	M	How would you chunk source code, tables and layout-heavy PDFs differently?
+D00343	M	Why is the recursive character text splitter a common default, and when should you not use it?
+D00344	M	What is semantic chunking, and what do recent studies say about its benefit over fixed-size chunks?
+D00345	M	Many retrieval failures are really chunking failures. How do you recognize them?
+D00346	M	How do you parse mixed PDFs, Word and HTML documents for a RAG knowledge base?
+D00347	M	How do you extract and retrieve information from complex PDF tables?
+D00348	M	Why do you still need OCR engines when vision-language models can read pages?
+D00349	M	How would you route pages to the cheapest parsing tier that still works?
+D00350	H	You must parse five million pages a month of mixed born-digital and scanned documents for RAG. Which parser mix and cost controls do you use?
+D00351	M	How do you process a 500-page PDF with vision models efficiently?
+D00352	M	How do you recover reading order and logical structure from complex layouts?
+D00353	M	How would you handle low-quality scans and handwriting in an ingestion pipeline?
+D00354	M	Why is deduplication one of the most important stages in a data pipeline for AI?
+D00355	M	How do you handle PII, consent and governance during ingestion for RAG or fine-tuning?
+D00356	M	How do you handle document updates and version management in a RAG knowledge base?
+D00357	M	How would you handle mixed-permission documents during chunking so that access control still holds?
+D00358	M	How do you tune tokenizer-aligned chunking so chunks fit embedding model limits?
+D04830	M	What data acquisition and parsing steps are needed before indexing enterprise documents?
+D04831	M	How would you choose chunk size and overlap, and how does chunking affect retrieval recall and answer quality?
+D04832	M	Compare fixed-size, recursive, semantic and structure-aware chunking.
+D04965	M	How do you deal with tables, figures and scanned PDFs when ingesting documents for RAG?
+D04966	M	What metadata would you attach to each chunk and how does it help filtering and citation?

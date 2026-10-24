@@ -1,0 +1,300 @@
+Q002244	ML10	M	Why is stationarity important in time series analysis?
+Q002245	ML10	E	How do time series differ from cross-sectional data?
+Q002246	ML10	M	What is seasonality in time series analysis, and how do you detect it?
+Q002247	ML10	E	Explain the concept of trend in time series analysis.
+Q002248	ML10	M	Describe the difference between white noise and a random walk in time series.
+Q002249	ML10	M	What is meant by autocorrelation, and how is it quantified in time series?
+Q002250	ML10	M	Explain the purpose of differencing in time series analysis.
+Q002251	ML10	E	What is an AR (Autoregressive) model in time series?
+Q002252	ML10	E	Describe an MA (Moving Average) model and its use in time series.
+Q002253	ML10	M	Explain the ARMA (Autoregressive Moving Average) model.
+Q002254	ML10	M	How does the ARIMA (Autoregressive Integrated Moving Average) model extend the ARMA model?
+Q002255	ML10	M	What is the role of the ACF (autocorrelation function) and PACF (partial autocorrelation function) in time series analysis?
+Q002256	ML10	M	Discuss the importance of lag selection in ARMA/ARIMA models.
+Q002257	ML10	M	How is seasonality addressed in the SARIMA (Seasonal ARIMA) model?
+Q002258	ML01	E	What is transfer learning and how does it differ from traditional machine learning?
+Q002259	ML01	M	Can you explain the concept of domain and task in the context of transfer learning?
+Q002260	ML01	E	What are the benefits of using transfer learning techniques?
+Q002261	ML01	M	In which scenarios is transfer learning most effective?
+Q002262	ML01	M	Describe the difference between transductive transfer learning and inductive transfer learning.
+Q002263	ML01	M	Explain the concept of negative transfer. When can it occur?
+Q002264	DROP	-	dup
+Q002265	DROP	-	dup
+Q002266	DL03	E	What role do pre-trained models play in transfer learning?
+Q002267	ML01	M	How can transfer learning be deployed in small data scenarios?
+Q002268	DL03	E	What are feature extractors in the context of transfer learning?
+Q002269	DROP	-	notq
+Q002270	FT01	M	Describe the process of fine-tuning a pre-trained neural network.
+Q002271	ML01	M	What is one-shot learning and how does it relate to transfer learning?
+Q002272	ML01	M	Explain the differences between few-shot learning and zero-shot learning.
+Q002273	FT04	M	How do multi-task learning and transfer learning compare?
+Q002274	ML01	M	Discuss the concept of self-taught learning within transfer learning.
+Q002275	DL03	E	What are the common pre-trained models available for use in transfer learning?
+Q002276	ML01	E	What is unsupervised learning and how does it differ from supervised learning?
+Q002277	ML04	E	Name the main types of problems addressed by unsupervised learning.
+Q002278	ML04	E	Explain the concept of dimensionality reduction and why it is important.
+Q002279	ML04	E	What is clustering, and how can it be used to gain insights into data?
+Q002280	ML04	M	Can you discuss the differences between hard and soft clustering?
+Q002281	ML04	E	Describe the K-means clustering algorithm and how it operates.
+Q002282	ML04	M	What is the role of the silhouette coefficient in clustering analysis?
+Q002283	ML04	M	Explain the DBSCAN algorithm. What advantages does it offer over K-means?
+Q002284	ML04	M	How does the hierarchical clustering algorithm work, and when would you use it?
+Q002285	ML04	M	What is the difference between agglomerative and divisive hierarchical clustering?
+Q002286	ML04	M	Explain the working of Principal Component Analysis (PCA).
+Q002287	ML04	M	Describe t-Distributed Stochastic Neighbor Embedding (t-SNE) and its use cases.
+Q002288	ML04	M	How does Linear Discriminant Analysis (LDA) differ from PCA, and when would you use each?
+Q002289	ML01	M	What is the curse of dimensionality and how does it affect machine learning models?
+Q002290	ML04	M	Explain what an autoencoder is and how it can be used for dimensionality reduction.
+Q002323	ML03	E	What is XGBoost and why is it considered an effective machine learning algorithm?
+Q002324	ML03	M	Can you explain the differences between gradient boosting machines (GBM) and XGBoost?
+Q002325	ML03	M	How does XGBoost handle missing or null values in the dataset?
+Q002326	ML03	M	What is meant by regularization in XGBoost and how does it help in preventing overfitting?
+Q002327	ML03	M	How does XGBoost differ from random forests?
+Q002328	ML03	M	Explain the concept of gradient boosting. How does it work in the context of XGBoost?
+Q002329	ML03	M	What are the loss functions used in XGBoost for regression and classification problems?
+Q002330	ML03	M	How does XGBoost use tree pruning and why is it important?
+Q002331	ML03	M	Describe the role of shrinkage (learning rate) in XGBoost.
+Q002332	ML03	M	What are the core parameters in XGBoost that you often consider tuning?
+Q002333	ML03	M	Explain the importance of the max_depth parameter in XGBoost.
+Q002334	ML03	M	Discuss how to manage the trade-off between learning rate and n_estimators in XGBoost.
+Q002335	ML03	M	What is early stopping in XGBoost and how can it be implemented?
+Q002336	ML03	M	How does the objective function affect the performance of the XGBoost model?
+Q002337	ML03	M	Discuss how XGBoost can handle highly imbalanced datasets.
+Q002338	DROP	-	notq
+Q002339	DROP	-	notq
+Q002340	DROP	-	notq
+Q002341	DROP	-	notq
+Q002342	CODE01	H	Implement DDIM sampling with classifier-free guidance.
+Q002343	CODE01	H	Implement DDPM (denoising diffusion) from scratch.
+Q002344	CODE01	M	Implement K-means clustering in PyTorch.
+Q002345	CODE01	M	Implement logistic regression with gradient descent.
+Q002346	CODE01	E	Implement softmax from scratch.
+Q002347	CODE01	M	Implement 2D positional embeddings.
+Q002348	CODE01	H	Implement contrastive loss (InfoNCE) and a CLIP training loop.
+Q002349	CODE01	H	Implement DPO loss from scratch.
+Q002350	CODE01	H	Implement FSDP (Fully Sharded Data Parallel) from scratch.
+Q002351	DROP	-	dup
+Q002352	CODE01	H	Implement a KV cache for autoregressive generation.
+Q002353	CODE01	M	Implement LoRA on a linear layer.
+Q002354	CODE01	H	Implement PPO for RLHF.
+Q002355	CODE01	H	Implement Ring Attention for long contexts.
+Q002356	CODE01	H	Implement a selective state space model (Mamba block).
+Q002357	CODE01	M	Implement sliding window attention.
+Q002358	CODE01	H	Implement speculative decoding.
+Q002359	CODE01	E	Implement temperature sampling.
+Q002360	CODE01	E	Implement top-k sampling.
+Q002361	CODE01	M	Implement top-p (nucleus) sampling.
+Q002362	CODE01	H	Build a complete LLM inference engine.
+Q002363	CODE01	H	Implement continuous batching for LLM inference.
+Q002364	CODE01	M	Implement beam search for LLM decoding.
+Q002365	CODE01	M	Implement knowledge distillation.
+Q002366	CODE01	H	Implement a Vision Transformer with MAE pretraining.
+Q002367	CODE01	H	Implement a Swin Transformer block (shifted window attention).
+Q002368	CODE01	H	Implement a Mixture of Experts layer.
+Q002369	CODE01	M	Implement Adam from scratch.
+Q002370	CODE01	M	Implement AdamW from scratch.
+Q002371	CODE01	H	Implement gradient checkpointing.
+Q002372	CODE01	H	Implement Muon from scratch.
+Q002373	CODE01	H	Write a fused softmax kernel in Triton.
+Q002374	CODE01	M	Implement KNN in PyTorch.
+Q002375	CODE01	H	Implement FlashAttention-2 in Triton.
+Q002376	DROP	-	notq
+Q002377	DROP	-	notq
+Q002378	CODE01	M	Create embeddings out of an LLM.
+Q002379	DROP	-	notq
+Q002380	DROP	-	notq
+Q002381	DROP	-	notq
+Q002382	DROP	-	notq
+Q002383	DROP	-	notq
+Q002384	DROP	-	notq
+Q002385	DROP	-	notq
+Q002386	CODE01	M	Implement attention from scratch.
+Q002387	CODE01	M	Implement grouped-query attention (GQA).
+Q002388	DROP	-	notq
+Q002389	DROP	-	notq
+Q002390	DROP	-	notq
+Q002391	DROP	-	dup
+Q002392	DROP	-	notq
+Q002393	DROP	-	notq
+Q002394	DROP	-	notq
+Q002395	DROP	-	notq
+Q002396	CODE01	E	Implement RMS Norm.
+Q002397	CODE01	M	Implement RoPE (rotary positional embeddings) from scratch.
+Q002398	DROP	-	dup
+Q002399	DROP	-	notq
+Q002400	DROP	-	notq
+Q002401	DROP	-	notq
+Q002402	DROP	-	dup
+Q002403	CODE01	E	Implement a sinusoidal positional embedding class inheriting from nn.Module.
+Q002404	DROP	-	notq
+Q002405	DROP	-	notq
+Q002406	DROP	-	notq
+Q002407	DROP	-	notq
+Q002408	DROP	-	notq
+Q002409	DROP	-	unfixable
+Q002410	DROP	-	unfixable
+Q002411	CODE01	E	Implement Huber loss as a torch.nn.Module.
+Q002412	DROP	-	dup
+Q002413	CODE01	E	Implement a linear regression model class in PyTorch.
+Q002414	DROP	-	notq
+Q002415	CODE01	M	Implement a convolutional autoencoder in PyTorch.
+Q002416	DROP	-	notq
+Q002417	DROP	-	notq
+Q002418	DROP	-	notq
+Q002419	DROP	-	dup
+Q002420	CODE01	E	Implement a simple feedforward neural network using fully connected layers.
+Q002421	CODE01	E	Implement a CNN model in PyTorch.
+Q002422	DROP	-	unfixable
+Q002423	DROP	-	unfixable
+Q002424	CODE01	E	Implement an RNN model in PyTorch.
+Q002427	CODE01	M	Implement the generator and discriminator of a GAN in PyTorch.
+Q002428	DROP	-	dup
+Q002425	DROP	-	dup
+Q002426	CODE01	E	Implement a custom Learned-SiLU activation function.
+Q002429	DROP	-	dup
+Q002430	DROP	-	dup
+Q002431	DROP	-	dup
+Q002432	DROP	-	dup
+Q002433	DROP	-	dup
+Q002434	DROP	-	dup
+Q002435	CODE01	M	Implement an attention mechanism that computes attention weights between the encoder outputs and the current decoder hidden state in a seq2seq model.
+Q002436	DROP	-	dup
+Q002437	DROP	-	dup
+Q002438	DROP	-	dup
+Q002439	CODE01	M	Implement the multi-head self-attention mechanism.
+Q002440	CODE01	E	Implement the feed-forward layer used within Transformer blocks.
+Q002441	CODE01	H	Implement a 3D CNN (MedCNN) with Conv3D and ConvTranspose3d for downsampling and upsampling.
+Q002442	CODE01	M	Implement Dice loss for segmentation.
+Q002443	CODE01	M	Implement the AlexNet architecture.
+Q002444	DROP	-	notq
+Q002445	DROP	-	notq
+Q002446	CODE01	M	Implement a custom Conv2d class that mimics the behavior of nn.Conv2d.
+Q002447	CODE01	M	Implement a custom MaxPool2d class that mimics the behavior of nn.MaxPool2d.
+Q002448	CODE01	M	Implement an LSTM model using a custom LSTM layer.
+Q002449	DROP	-	notq
+Q002450	CODE01	E	Implement an LSTM model using the built-in LSTM layer.
+Q002451	DROP	-	dup
+Q002452	DROP	-	dup
+Q002453	DROP	-	dup
+Q002454	DROP	-	notq
+Q002455	DROP	-	dup
+Q002456	DROP	-	notq
+Q002457	DROP	-	dup
+Q002458	CODE01	H	Implement GRPO (Group Relative Policy Optimization).
+Q002459	DROP	-	notq
+Q002460	DROP	-	notq
+Q002461	DROP	-	dup
+Q002462	DROP	-	dup
+Q002463	DROP	-	notq
+Q002464	DROP	-	notq
+Q002465	DROP	-	dup
+Q002466	DROP	-	dup
+Q002467	DROP	-	notq
+Q002468	DROP	-	dup
+Q002469	DROP	-	dup
+Q002470	DROP	-	notq
+Q002471	DROP	-	dup
+Q002472	DROP	-	dup
+Q002473	DROP	-	notq
+Q002474	DROP	-	dup
+Q002475	DROP	-	dup
+Q002476	DROP	-	notq
+Q002477	DROP	-	dup
+Q002478	DROP	-	dup
+Q002479	DROP	-	notq
+Q002480	DROP	-	dup
+Q002481	DROP	-	notq
+Q002482	DROP	-	notq
+Q002483	DROP	-	notq
+Q002484	DROP	-	notq
+Q002485	DROP	-	notq
+Q002486	DROP	-	notq
+Q002487	DROP	-	notq
+Q002488	DROP	-	dup
+Q002489	CODE01	H	Implement FlashAttention-2 in pure PyTorch (the tiled algorithm with online softmax).
+Q002490	DROP	-	notq
+Q002491	DROP	-	notq
+Q002492	DROP	-	dup
+Q002493	DROP	-	dup
+Q002494	DROP	-	notq
+Q002495	DROP	-	notq
+Q002496	DROP	-	dup
+Q002497	DROP	-	dup
+Q002498	DROP	-	dup
+Q002499	DROP	-	dup
+Q002500	CODE01	M	Implement the online softmax algorithm in pure PyTorch.
+Q002501	DROP	-	dup
+Q002502	DROP	-	notq
+Q002503	DROP	-	dup
+Q002504	DROP	-	dup
+Q002505	DROP	-	notq
+Q002506	DROP	-	dup
+Q002507	DROP	-	notq
+Q002508	DROP	-	notq
+Q002509	DROP	-	notq
+Q002510	DROP	-	dup
+Q002511	DROP	-	notq
+Q002512	DROP	-	notq
+Q002513	DROP	-	notq
+Q002514	DROP	-	dup
+Q002515	DROP	-	dup
+Q002516	DROP	-	dup
+Q002517	DROP	-	dup
+Q002518	DROP	-	notq
+Q002519	DROP	-	notq
+Q002520	DROP	-	notq
+Q002521	DROP	-	dup
+Q002522	DROP	-	notq
+Q002523	DROP	-	notq
+Q002524	DROP	-	notq
+Q002525	DROP	-	notq
+Q002526	DROP	-	dup
+Q002527	DROP	-	dup
+Q002528	DROP	-	notq
+Q002529	DROP	-	notq
+Q002530	DROP	-	notq
+Q002531	DROP	-	dup
+Q002532	DROP	-	dup
+Q002533	DROP	-	notq
+Q002534	DROP	-	dup
+Q002535	DROP	-	dup
+Q002536	DROP	-	notq
+Q002537	DROP	-	notq
+Q002538	DROP	-	dup
+Q002539	DROP	-	dup
+Q002540	DROP	-	dup
+Q002541	DROP	-	notq
+Q002542	DROP	-	dup
+Q002543	DROP	-	dup
+Q002544	DROP	-	notq
+Q002545	DROP	-	dup
+Q002546	DROP	-	dup
+Q002547	DROP	-	notq
+Q002548	DROP	-	dup
+Q002549	DROP	-	dup
+Q002550	DROP	-	notq
+Q002551	DROP	-	notq
+Q002552	DROP	-	notq
+Q002553	DROP	-	notq
+Q002554	DROP	-	notq
+Q002555	DROP	-	dup
+Q002556	DROP	-	dup
+Q002557	DROP	-	notq
+Q002558	DROP	-	dup
+Q002559	DROP	-	dup
+Q002560	DROP	-	notq
+Q002561	DROP	-	dup
+Q003326	LLM02	M	CNNs and RNNs do not use positional embeddings. Why do transformers use positional embeddings?
+Q003327	LLM01	M	What is the computational complexity of self-attention in the Transformer model?
+Q003328	LLM01	M	How do Transformer models address the vanishing gradient problem?
+Q003329	LLM02	E	What is tokenization, and why is it necessary in LLMs?
+Q003330	FT05	M	When should you prefer task-specific fine-tuning over prompt engineering?
+Q003331	FT02	E	What is LoRA, and how does it work at a high level?
+Q003332	FT02	M	What is QLoRA, and how does it differ from LoRA?
+Q003333	FT02	M	When would you use QLoRA instead of standard LoRA?
+Q003334	FT02	M	How would you handle LLM fine-tuning on consumer hardware with limited GPU memory?
+Q003335	FT01	M	What is gradient accumulation, and how does it help with fine-tuning large models?
+Q003336	FT01	M	What are the possible options to speed up LLM fine-tuning?
+Q003337	LLM04	E	What is the difference between causal language modeling and masked language modeling?
+Q003338	LLM02	M	How do LLMs handle out-of-vocabulary (OOV) words?
+Q003339	LLM03	M	In the context of LLM pretraining, what is scaling law?

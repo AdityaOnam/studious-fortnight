@@ -1,0 +1,226 @@
+## Evaluation fundamentals and frameworks
+- [E] What is the RAG triad, and which failures does each dimension expose? How does an LLM judge fit into it? {D00439,Q004432}
+- [E] Why is reading a handful of sample answers not an adequate way to evaluate a RAG system? {GEN}
+- [M] How do you evaluate a RAG system end to end while separating retrieval quality from generation quality? {Q004317,Q007196,Q011817,D04841}
+- [M] Why evaluate the retriever and the generator separately instead of only measuring end-to-end answer quality? {Q008448}
+- [M] How do you evaluate the retriever, the reranker and the generator as separate components? {D00443}
+- [M] What are the four core RAGAS metrics, what does each measure, and how would you optimize each one? {Q006032,D00441,Q010857}
+- [M] How do RAGAS, TruLens, DeepEval and UpTrain compare, and when would you pick each? {Q006021,D00442}
+- [M] What is the difference between offline and online evaluation of a RAG system, and what does each one catch? {GEN}
+- [M] When do you need end-to-end answer-quality evals, and when are retrieval-only evals enough? {Q010378}
+- [M] Where does a typical RAG system lose the most quality, in retrieval or in generation, and how would you find out for yours? {Q007809}
+- [M] How do you test a RAG question-answering system, and where do you draw the test boundaries between ingestion, retrieval and generation? {Q010645,Q003917}
+- [M] Describe a full RAG evaluation lifecycle, from offline metrics through iterative optimization to production monitoring. {D00447,Q006022}
+- [M] "It works in the demo": how do you know a RAG system is production-ready? {Q007056}
+- [H] How do you set up regression gates in CI so a pipeline change cannot silently degrade RAG quality? {D00469}
+
+## Retrieval metrics: precision, recall and relevancy
+- [E] What does context precision measure in a RAG retriever, and how does it differ from context recall? {Q003469}
+- [M] What is the difference between hit rate, MRR and nDCG, and when would you prefer each for judging a RAG retriever? {GEN}
+- [M] Which retrieval metrics such as recall@k, precision@k, MRR and nDCG would you track, and how do they relate to end-to-end answer quality? {Q007062,D03817}
+- [M] How does Context Precision@K differ from standard precision@k in classical information retrieval? {Q003464}
+- [H] Why does Context Precision@K use a weighted sum with relevance indicators, and how does that reflect retriever ranking quality? {Q003465}
+- [M] Relevant chunks appear at positions 2, 4, 6 and 8 out of 10 retrieved. Compute Context Precision@10 and say what it tells you about the ranking. {Q003466}
+- [M] A RAG system achieves Context Precision@5 = 0.8. What scenarios could produce that score? {Q003467}
+- [M] How does Context Recall differ from classic IR recall, and why is it computed over ground-truth claims rather than counted documents? {Q003468}
+- [M] If a retriever has high context precision but low context recall, which kinds of user queries suffer most? {Q003470}
+- [M] When would you prioritize context precision over context recall, and how does that affect the generator? {Q003471}
+- [M] If context recall is consistently below 0.6, what are the likely root causes? {Q003473}
+- [H] Why optimize context precision and recall together, and what trade-offs appear when you push on one? {Q003474}
+- [H] Why is Context Relevancy reference-free while Context Precision and Recall need references, and when would you prefer it? {Q003475}
+- [M] Describe a case where a retriever has high Context Relevancy but low Context Precision. What does it imply? {Q003476}
+- [M] A retriever finds all relevant chunks but also many irrelevant ones, giving low context relevancy. How would you fix it? {Q003477}
+- [H] How would you measure the marginal value of each additional retrieved chunk to answer quality, and use it to choose k? {GEN}
+- [H] Why might recall@5 matter more than recall@20 even though your context window fits 20 chunks? {Q008453}
+- [H] Recall@100 is 95% but recall@5 after reranking is 60%. Where is the bug? {Q007956}
+- [H] Recall@10 is 95% but end-to-end correctness is 70%. Where do you look? {Q008449}
+- [H] Recall@5 improved but end-to-end answer quality dropped. What could have happened? {Q010646}
+- [H] Your new embedder improves nDCG but end-to-end RAG answers get worse. What mechanisms could explain that? {Q008452}
+- [H] How do retrieval metrics mislead when your golden set has incomplete relevance labels? {Q007957}
+
+## Faithfulness, groundedness and citations
+- [M] How does the Faithfulness metric assess the quality of a RAG generator, and how does RAGAS compute it under the hood? {Q003478,Q011425,D00440}
+- [M] How does RAGAS context precision work under the hood? {Q011426,D00440}
+- [E] What is the difference between faithfulness (grounded in the retrieved context) and factual correctness (true in the world)? Give an example where they diverge. {GEN}
+- [M] How does Response Relevancy differ from Context Relevancy, and why do you need both? {Q003410}
+- [M] How does the Response Relevancy metric tell you whether the generator addressed the user's query? {Q003411}
+- [M] What are the risks of relying solely on response relevancy, and how does adding faithfulness help? {Q003412}
+- [M] Why might a system have high Context Precision but low Faithfulness, and what would that say about the pipeline? {Q003479}
+- [M] How do LLM hallucinations lower the Faithfulness score, and what techniques would raise it? {Q003409}
+- [M] How do you measure whether an answer is grounded in the retrieved context, and automate it? {Q008454,Q010158}
+- [H] How would you cheaply monitor faithfulness on live traffic where there is no reference answer? {Q008455,Q009828}
+- [H] How would you break an answer into atomic claims for faithfulness scoring, and what goes wrong when the decomposition is poor? {GEN}
+- [H] When measuring faithfulness, a claim is supported by chunk A but contradicted by chunk B in the same context. What should the metric do? {Q008456}
+- [M] Your RAG system's faithfulness score is high but users say the answers are wrong. What is happening? {Q007959}
+- [H] The security team forbids sending data to any external LLM judge. How do you evaluate the faithfulness of a document Q&A system? {Q010121}
+- [M] How would you turn per-claim citations into an automated groundedness metric? {Q007737}
+- [M] How do you catch a correct claim that has the wrong citation attached? {Q007906}
+- [H] Design a citation-verification system so every claim in a generated answer is supported by its cited source. {Q012092,Q010001}
+- [H] A generated sentence synthesizes facts from three sources. How does per-claim citation verification handle multi-source composition? {Q010002}
+- [H] How do you handle a correct synthesis that no single cited passage supports? {Q009676}
+- [H] What are the latency and cost of per-claim entailment checking, and how would you reduce them? {Q007907}
+- [H] What is your latency budget for citation verification, and would you run it inline or stream the answer and revise afterwards? {Q009677}
+- [H] What is your fallback when the citation verifier and the generator disagree at serving time? {Q010003}
+
+## Golden sets, LLM judges and evaluation pipelines
+- [M] How do you build a golden evaluation set for RAG without months of labelling? {Q007961}
+- [M] How do you build the first golden set for a RAG product that has not launched and has no logs? {Q010377}
+- [M] How do you build a golden test set for RAG, including synthetic query generation? {D00445}
+- [M] How do you stratify a golden set by query type, difficulty, multi-hop and unanswerable cases so aggregate scores do not hide regressions? {GEN}
+- [H] You build a golden set by having an LLM write Q&A from chunks you hand-picked. Offline recall is 0.91 but production recall is 0.40. What went wrong? {Q007052}
+- [H] Why do synthetic queries overestimate retrieval quality, and how exactly do you counter it? {Q007962}
+- [H] A chunking change invalidated all chunk-ID labels in your golden set. How should the golden set have been designed? {Q007963,Q008450}
+- [H] How big must an evaluation set be to detect a 5-point recall difference, and how do you test significance when comparing two configurations? {Q007964}
+- [H] How do you keep the golden set from being overfit as engineers tune against it? {Q007986}
+- [M] How do you detect eval-set staleness as the document corpus grows? {Q009364}
+- [M] How do you keep the retrieval eval honest when the corpus updates weekly? {Q010647}
+- [M] How do you validate an LLM judge against human raters, and what agreement is good enough? {Q007960}
+- [M] Your LLM judge and your human labels agree only 70% of the time. What do you do? {Q007985}
+- [M] What biases do LLM judges have (position, verbosity, self-preference), and how do they distort RAG evaluation? {GEN}
+- [H] How do you evaluate a RAG system when you do not have ground-truth answers? {Q011429,D00444}
+- [H] Your RAG evaluation pipeline costs $500/day in LLM judge calls. How do you reduce it? {Q011430,D00446}
+- [M] How do you build a BM25 baseline and synthetic queries to quantify retrieval quality before tuning embeddings? {D00468}
+- [M] How do you evaluate that a chunker, parser or embedding-model change made retrieval better, not just different? {Q010315,Q010376}
+- [H] Your golden set says the new chunker is better but users complain answers got worse. What is your hypothesis list? {Q010355}
+- [H] How do you measure whether ingestion quality is hurting RAG answers, versus retrieval or generation? {Q010457}
+- [H] Design a retrieval evaluation harness the team will actually use. What runs, when, and what blocks a merge? {Q007984}
+- [H] You have thumbs-up/down and click logs from a live RAG product. How do you turn them into retrieval improvements? {Q007987}
+- [H] How would you avoid a feedback loop where the ranker only ever learns from documents it already ranks highly? {Q007989}
+- [H] An enterprise customer wants to deploy your RAG system but has no labelled data. How do you evaluate it before and after launch? {Q009362}
+
+## Evaluating special RAG settings
+- [M] How do you evaluate retrieval separately from generation for a code-editing assistant? {Q009404}
+- [M] How would you evaluate a RAG chatbot in multi-turn conversations where follow-up questions depend on history? {GEN}
+- [H] How do you evaluate an agentic RAG system when every run takes a different trajectory? {Q007943}
+- [H] How would you design the evaluation that decides whether the dense retrieval leg stays in an agentic search setup? {Q008003}
+- [H] How do you check that chart-dependent questions in a multimodal RAG system are really answered from the chart? {Q008970}
+- [H] How would you evaluate answer quality for an answer engine continuously and at scale, with automated and human signals? {Q012091,Q010021}
+- [H] How would you evaluate multilingual retrieval when employees query in French and Korean over mostly-English documents? {Q011978,Q009380}
+- [M] How do you gather realistic non-English queries before launching a multilingual retrieval system? {Q009382}
+- [H] How would you build an evaluation set for cross-lingual retrieval without native speakers for every language? {Q007932}
+- [H] Design the evaluation framework for an enterprise AI assistant when you cannot look at customer data. {Q009582}
+- [H] A research agent returns a memo citing an authority that has since been overruled. Where should that be caught? {Q009690}
+
+## Hallucination and abstention
+- [E] How does RAG help reduce hallucinations in LLMs? {Q012425}
+- [M] What is the difference between intrinsic and extrinsic hallucination in a RAG answer? {GEN}
+- [M] Your RAG system hallucinates even though the retrieved context contains the answer. How do you fix it? {Q004777,Q007810,D00453,Q010600}
+- [M] Why can telling the model to "only use the context" fail to stop hallucinations, and what else can you do? {GEN}
+- [H] Your search results are relevant but the LLM ignores them and answers from its training data. How do you fix this? {Q010913}
+- [M] What is the "lost in the middle" problem in RAG? {Q004762}
+- [M] How do you mitigate hallucinations caused by poorly ordered retrieved chunks in production? {Q006044}
+- [H] How does adding more retrieved chunks affect hallucination and faithfulness, and how do you find the right amount? {GEN}
+- [H] Retrieval returns irrelevant documents but the LLM still produces a plausible-sounding answer. How do you detect and prevent that? {Q011435,D00450}
+- [M] How do you prevent hallucination in a production RAG system? {Q011616}
+- [H] How do you detect and measure hallucinations in a production RAG system? {Q011850}
+- [H] Design a hallucination eval for a RAG product. What is the metric? {Q007583}
+- [M] How do you prevent hallucinated numbers in a financial RAG assistant? {D00461}
+- [H] An enterprise customer says their RAG knowledge assistant hallucinates too much. What do you do in the first 48 hours? {Q011915,Q009233}
+- [M] A customer demands "zero hallucinations" in the contract. How do you respond? {Q009234}
+- [M] Your QA system always produces an answer even when none exists in the context. How do you detect unanswerable questions? {Q004709}
+- [M] How do you handle the case where retrieval returns no results? {Q011069}
+- [M] How do you handle queries where all 50 retrieved candidates are bad? {Q010000}
+- [M] How do you stop the model from answering from parametric memory when retrieval returns nothing relevant? {Q009578}
+- [H] Your assistant must say "I don't know" when the corpus lacks the answer. How do you decide when to abstain and set the threshold? {Q008005}
+- [H] When the answer is not in the knowledge base at all, what should the agent do, and how do you detect this class of query at scale? {Q010157}
+- [H] How would you build near-miss unanswerable questions for evaluation without contaminating the corpus? {Q008006}
+- [M] The assistant's abstain rate doubled overnight with no deploy. What are your first three checks? {Q008007}
+- [M] Your enterprise RAG system returns contradictory answers from different source documents. How do you resolve the conflicts? {Q004786}
+- [H] An agent answers from a customer knowledge base with outdated and contradictory articles. How do you prevent confidently wrong answers? {Q010156}
+
+## Debugging poor RAG answers
+- [M] What are the common failure modes of production RAG systems, and how do you debug them? {Q004767,Q007968}
+- [M] Which three production failure modes would you build detection for first on a new system? {Q007969}
+- [M] Describe your approach to debugging a poor-performing RAG system. Where do you look first? {Q005177,D00452}
+- [M] What are the possible reasons a RAG retriever performs poorly, and what are the common challenges in RAG retrieval? {Q003429,Q003434}
+- [M] What symptoms show that a weak retriever is the bottleneck in a RAG system? {Q003430}
+- [M] What symptoms show that a weak generator LLM is the bottleneck even when retrieval is good? {Q003419}
+- [H] Users report that answers are sometimes wrong. How do you systematically diagnose and fix the system? {Q011427,D00448}
+- [M] Users complain a RAG chatbot gives confident but wrong answers. How do you find whether retrieval or generation is at fault? {D04969}
+- [H] When the gold document is missing from the top-k, how do you tell a parsing or chunking failure from an embedding failure or a ranking failure? {GEN}
+- [M] Which failure taxonomy would you use to classify RAG errors during error analysis? {D00466}
+- [M] How do you run error analysis on a RAG system using open coding and axial coding? {D00467}
+- [M] How do you decide whether to fix a bad answer with a prompt change, a retrieval change or a data change? {GEN}
+- [M] How do you decide whether a single bad answer warrants a pipeline change? {Q007967}
+- [M] In a RAG system the gold chunk was retrieved at rank 3 and the model still ignored it. What are the top three hypotheses? {Q007966}
+- [H] Your RAG system works well on test data but fails in production. What do you check? {Q010905,D00449}
+- [H] A client's RAG system gives inaccurate answers and you find retrieval is the problem. What steps do you take to improve it? {Q007158}
+- [M] Two weeks into a RAG project, retrieval hit rate is 55%. What is your triage order? {Q010122}
+- [H] A pilot RAG system gives wrong answers on a customer's contracts. How do you debug it? {Q010438}
+- [H] Retrieval hit rate is fine but users still distrust the RAG system. What do you look at? {Q010440}
+- [M] Your vector search returns irrelevant results despite high similarity scores. How do you fix it? {Q004893}
+- [M] Your RAG system returns duplicate or near-duplicate results. How do you deduplicate? {Q004780}
+- [H] How would you detect hubness in a production RAG system? {Q007362}
+- [H] After a customer 10x'd their indexed documents, retrieval quality dropped even though ANN recall is fine and gold documents are in the top-100 but not the top-5. What next? {Q009365}
+- [M] Answers to the same query differ across runs. How do you handle non-determinism when debugging and evaluating RAG? {GEN}
+
+## Freshness, versioning and index maintenance
+- [M] How do you keep a RAG index fresh as source documents are updated or deleted? {Q004768,Q007909,Q011824,D04970,Q010601,Q012428}
+- [M] How do you handle stale data and freshness requirements in a real-time RAG system? {D00462}
+- [M] Which data in a typical enterprise should bypass the RAG index entirely and be fetched live? {Q007911}
+- [M] How do you manage versioning when the knowledge base is updated frequently? {Q004784}
+- [M] Users report the assistant confidently cites a policy that was revised last month. What production gap does this reveal? {Q007108}
+- [H] Latency, throughput and individual retrievals look healthy, but users say answers are subtly out of date and dashboards are green. What is the likely failure and how would you have caught it? {Q007048}
+- [M] How do you handle time-sensitive queries such as "latest" or "current" when older documents outrank newer ones? {GEN}
+- [M] How do you use document timestamps and version metadata in ranking and in the prompt to avoid answering from a superseded document? {GEN}
+- [M] What is the re-indexing story for contextual retrieval when documents are edited? {Q007867}
+- [H] In a RAG index, a document's chunk count changes between versions. Walk through the failure and your fix. {Q007910}
+- [H] How do you verify that deletions have actually propagated to every index, cache and derived artifact? {Q007910}
+- [H] A source system's webhook was down for six hours. How do you detect and heal the gap in the vector index? {Q010350}
+- [H] A document must be removed for legal or privacy reasons. How do you guarantee it can no longer surface in answers? {GEN}
+- [M] What is embedding drift in a RAG system, and how do you detect and mitigate it? {Q006193}
+- [M] How do you detect retrieval quality drift and index drift after launch? {D00455}
+- [H] How would you continuously evaluate the freshness quality of an answer engine? {Q010006}
+
+## Security, access control and multi-tenancy
+- [M] Why does RAG turn every ingested document into an attack surface? {Q008712}
+- [M] How does prompt injection via retrieved documents work, and what actually mitigates it? {Q007970,D00459}
+- [M] What changes when an attacker controls a document in your RAG index? {Q007704}
+- [E] Should retrieved text be treated as data or as instructions, and how do you structure prompts and tooling to reflect that? {GEN}
+- [M] What is context poisoning, and how can a RAG knowledge base defend against it? {Q005998,D00458}
+- [H] Someone floods public sources with fake posts to steer your RAG answers. What stops it? {D00460}
+- [H] How would you red-team a RAG application for indirect prompt injection and measure the attack success rate? {GEN}
+- [H] Your guardrail blocks jailbreaks in the user prompt, but injecting documents into its context flips its judgments, and retrieved chunks are exactly such documents. What is the lesson? {Q007054}
+- [M] How can a RAG answer leak data through rendered markdown images or links, and how do you prevent it? {GEN}
+- [M] What are the security weaknesses specific to vector stores and embeddings, and how do you mitigate them? {Q008793}
+- [H] What are the main structural risks enterprise RAG faces, and how do you build a production-grade defense? {Q006189}
+- [M] How do you prevent personally identifiable information in indexed documents from leaking through answers? {GEN}
+- [M] Where in a RAG system should per-user document permissions be enforced, and why must it be there? {Q007055,Q007818}
+- [H] Why is post-filtering retrieved results by permission a correctness problem and not just a performance one? {Q008794}
+- [H] How would you enforce per-user access control at retrieval time without rebuilding the index per user? {Q004781,Q009124}
+- [H] Design permission-aware retrieval so users never see content they cannot access in the source system. {Q011821}
+- [H] How would you handle a document whose permissions change after it has been embedded and indexed? {Q008795,Q010351}
+- [H] A junior employee got an answer citing a restricted compensation document from a shared HR and finance index. What is the root cause and fix? {Q007107}
+- [M] A customer sees an answer referencing a document they cannot access. Which cache do you suspect and why? {Q007976}
+- [H] A summary generated last month cites a document the user has since lost access to. What happens? {Q009972}
+- [H] A mixed question needs a warehouse figure and a reason from a ticket the user may not be allowed to see. Where is access enforced on each path? {Q007938}
+- [M] A multi-tenant RAG system returns correct answers in testing. What is the highest-priority production risk to design against? {Q007047}
+- [M] How do you implement multi-tenant isolation in a RAG system? {Q011612}
+- [M] What failure modes arise when one RAG system serves multiple tenants, and which tenant leaks does a metadata filter fail to stop? {D00463,D00464}
+- [H] How do you continuously test for permission leaks in an access-controlled RAG system, not just at design time? {Q009971,Q010381,D00465}
+
+## Production monitoring, latency and cost
+- [M] Which production signals and alerts would you set up for a RAG system? {D00454}
+- [M] What SLOs would you define for a RAG service across quality, latency and freshness, and how would you measure them? {GEN}
+- [M] What monitoring would have caught a retrieval-quality drop after a 10x growth in indexed documents before the customer did? {Q009366}
+- [M] What must be in your traces to make triaging a wrong RAG answer take minutes, not hours? {Q007965}
+- [M] How do you sample production traffic for human review of RAG answers? {GEN}
+- [M] How do you reduce latency in a production RAG system? {Q004769,Q003431}
+- [M] A production RAG system responds slowly. How do you troubleshoot it systematically? {Q006156}
+- [H] Give a latency budget for a RAG request across embedding, retrieval, reranking and generation, and say where the biggest wins are. {GEN}
+- [H] Your RAG costs tripled over a month with no increase in query volume. How do you diagnose and fix it? {Q011436,D00451}
+- [H] Estimate the cost per query of a RAG pipeline that sends 8 chunks of 500 tokens to an LLM, and the extra cost of an LLM judge sampling 5% of traffic. {GEN}
+- [M] What quality risks does semantic caching introduce in RAG, such as stale or wrong answers, and how do you limit them? {GEN}
+- [H] What is self-healing RAG, and how do you implement self-detection and automatic recovery in production? {Q006188}
+- [M] How do you run canary releases and rollbacks for changes to the retrieval strategy? {D00456}
+- [M] You are swapping embedding vendors and offline RAGAS scores improve. What is the safest way to ship? {Q007051}
+- [H] Changing the embedding model improves some queries and hurts others. How do you manage this see-saw effect? {D00457}
+
+## Additional questions
+- [H] Why might a RAG system with perfect Context Recall still fail to produce accurate responses? How does the Faithfulness metric help diagnose this issue? {Q003408}
+- [H] Describe a scenario where a RAG system might achieve high Context Recall but still produce poor answers. What complementary metrics would you use alongside Context Recall to get a complete picture of retriever performance? {Q003472}
+- [M] How do you evaluate a RAG system? Explain faithfulness, relevance, and context precision/recall. {Q004763}
+- [M] How do you evaluate text-to-SQL when many different queries return the same correct result? {Q007937}
+- [M] How do you evaluate the generation side of RAG: faithfulness, relevance, and citation quality? {Q007958}
+- [H] How would you evaluate a validity check (for example, checking whether cited cases are still good law) in a legal research agent? {Q009691}
+- [H] In a legal research agent that checks citation validity, what do you do in a jurisdiction where you have no citator coverage? {Q009692}

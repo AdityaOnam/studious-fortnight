@@ -1,0 +1,87 @@
+Q000855	E	What is anomaly detection?
+Q000856	E	What are the main types of anomalies in data?
+Q000857	M	How does anomaly detection differ from noise removal?
+Q000859	M	What is the difference between supervised and unsupervised anomaly detection?
+Q000860	E	What are some real-world applications of anomaly detection?
+Q000861	M	What is the role of statistics in anomaly detection?
+Q000862	M	How do you handle high-dimensional data in anomaly detection?
+Q000863	M	What are some common statistical methods for anomaly detection?
+Q000864	M	Explain the working principle of k-NN (k-Nearest Neighbors) in anomaly detection.
+Q000865	M	Describe how cluster analysis can be used for detecting anomalies.
+Q000866	M	Explain how the Isolation Forest algorithm works.
+Q000867	E	Explain the concept of a Z-Score and how it is used in anomaly detection.
+Q000868	M	Describe the autoencoder approach for anomaly detection in neural networks.
+Q000869	M	How does Principal Component Analysis (PCA) help in identifying anomalies?
+Q002019	E	What is a recommendation system and how does it work?
+Q002020	E	Can you explain the difference between collaborative filtering and content-based recommendations?
+Q002021	M	What are the main challenges in building recommendation systems?
+Q002022	M	How do cold start problems impact recommendation systems and how can they be mitigated?
+Q002023	M	Discuss the importance of serendipity, novelty, and diversity in recommendation systems.
+Q002024	M	How do matrix factorization techniques work in recommendation engines?
+Q002025	E	What are the roles of user profiles and item profiles in a recommendation system?
+Q002026	E	Describe the concept of implicit versus explicit feedback in the context of recommendation systems.
+Q002027	E	Explain user-based and item-based collaborative filtering.
+Q002028	M	How would you implement a recommendation system using the k-NN algorithm?
+Q002029	M	What is the purpose of using Alternating Least Squares (ALS) in recommendation systems?
+Q002030	M	Can you describe Singular Value Decomposition (SVD) and its role in recommendations?
+Q002031	M	Explain the concept of a recommendation system using association rule mining.
+Q002032	M	What is a hybrid recommendation system and when would you use it?
+Q002034	M	Describe the use of deep learning in recommendation systems.
+Q002242	E	What is a time series?
+Q002243	M	In the context of time series, what is stationarity, and why is it important?
+Q002244	M	Why is stationarity important in time series analysis?
+Q002245	E	How do time series differ from cross-sectional data?
+Q002246	M	What is seasonality in time series analysis, and how do you detect it?
+Q002247	E	Explain the concept of trend in time series analysis.
+Q002248	M	Describe the difference between white noise and a random walk in time series.
+Q002249	M	What is meant by autocorrelation, and how is it quantified in time series?
+Q002250	M	Explain the purpose of differencing in time series analysis.
+Q002251	E	What is an AR (Autoregressive) model in time series?
+Q002252	E	Describe an MA (Moving Average) model and its use in time series.
+Q002253	M	Explain the ARMA (Autoregressive Moving Average) model.
+Q002254	M	How does the ARIMA (Autoregressive Integrated Moving Average) model extend the ARMA model?
+Q002255	M	What is the role of the ACF (autocorrelation function) and PACF (partial autocorrelation function) in time series analysis?
+Q002256	M	Discuss the importance of lag selection in ARMA/ARIMA models.
+Q002257	M	How is seasonality addressed in the SARIMA (Seasonal ARIMA) model?
+Q004387	M	How can we use clicks data as the training data for ranking algorithms?
+Q004388	M	Do you know how to use gradient boosting trees for ranking?
+Q004389	E	What is a recommender system?
+Q004390	M	How is time series different from the usual regression problem?
+Q005379	M	How would you approach a time series forecasting problem?
+Q005385	H	How would you build a system to detect anomalies in network traffic?
+Q006621	M	How do you find an anomaly in a distribution? How do you investigate whether a certain trend in a distribution is due to an anomaly?
+Q006673	H	You have 100 mathletes and 100 math problems. Each mathlete gets to choose 10 problems to solve. Given data on who got which problem correct, how would you rank the problems in terms of difficulty?
+Q006675	H	Given data on congressional bills and which congressional representatives co-sponsored them, how would you determine which other representatives are most similar to yours in voting behavior? How would you evaluate who is the most liberal? The most Republican? The most bipartisan?
+Q006688	H	Given training data on tweets and their retweets, how would you predict the number of retweets of a given tweet 7 days after posting, after observing only 2 days of data?
+Q007084	M	Your fraud model has 0.99 offline AUC but performs poorly in production. What is the most likely root cause given fraud's label dynamics?
+Q011710	M	What if a user's taste changes rapidly in a recommender system?
+Q011711	M	How do you A/B test recommendation algorithms?
+Q012056	M	Explain position bias in ranking data and how you would debias training.
+Q012611	M	What are the different approaches to implementing recommendation systems?
+Q012613	M	Can you explain the ARIMA model and its components?
+Q012614	M	What are the assumptions made by the ARIMA model?
+Q007376	H	How exactly does the selective-labels problem bias naive retraining of a fraud model?
+Q007381	H	How would you have caught the "predicting churn instead of persuadability" mistake before launch?
+Q007384	H	Your churn model has 0.9 AUC. Product wants to send retention discounts to the top 5% of predicted churners. Why might that be a bad plan?
+Q007385	H	You have no budget for a randomized holdout when evaluating a retention-discount targeting model. What is your next best option and what assumption are you buying?
+Q007386	H	Why does an S-learner tend to underestimate treatment effects?
+Q009743	M	In a short-video recommendation system, how do you handle cold-start for brand-new videos with zero engagement?
+D03460	M	What are the main approaches to candidate generation in a recommender system, and what are the trade-offs of each?
+D03461	M	Compare pointwise, pairwise and listwise learning to rank and when you would use each.
+D03462	M	Compare user-based and item-based collaborative filtering and matrix factorization.
+D03463	M	Explain how a two-tower retrieval model is trained and served, and what limits its expressiveness.
+D03464	M	What are the pros and cons of content-based recommendation compared with collaborative filtering?
+D03465	M	How do you handle position bias when training ranking models from click logs?
+D03635	H	Design the demand forecasting system for an e-commerce retailer covering millions of items with intermittent sales.
+D03636	H	Design the forecasting system for ride demand at airports that accounts for flight arrivals.
+D03637	H	Design the forecasting system for grocery demand that handles holidays and promotions.
+D03638	H	Design the forecasting system for order volume and courier supply in a delivery marketplace.
+D03639	M	How would you build a deep learning forecasting model for fashion demand with many new products and short histories?
+D03640	H	Design the ML system for making causally valid forecasts when business actions such as pricing change demand.
+D03641	H	Design the ML system for predicting stock-out and spotting lost demand when items are unavailable.
+D03642	H	Design the system to forecast user activity metrics and detect anomalies in them.
+D03643	H	Design the ML system for forecasting flight prices and recommending when to buy.
+D03644	H	Design the anomaly detection system for equipment such as refrigeration units using sensor data.
+D03645	M	How would you use causal inference to estimate the impact of a product change when a randomized test is not possible?
+D03646	M	How would you forecast the sales potential of a newly launched product with no history?
+D03647	H	Design the ML system for predicting user churn and which customers are likely to upsell.

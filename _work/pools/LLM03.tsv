@@ -1,0 +1,176 @@
+Q001002	E	What is ChatGPT and how does it relate to language models like GPT-3?
+Q001004	E	Explain the concept of a language model.
+Q001006	E	What differentiates ChatGPT from rule-based chatbots?
+Q001009	M	Give a detailed description of the GPT model architecture.
+Q001012	M	How does the decoder-only architecture of GPT facilitate language generation?
+Q001649	E	What are Large Language Models (LLMs) and how do they work?
+Q001651	M	What are the main differences between LLMs and traditional statistical language models?
+Q001658	E	What are some prominent applications of LLMs today?
+Q001659	M	How is GPT-4 different from its predecessors like GPT-3 in terms of capabilities and applications?
+Q003339	M	In the context of LLM pretraining, what is scaling law?
+Q003367	M	How can techniques like mixture-of-experts (MoE) optimize inference efficiency?
+Q003375	H	Would you prefer diffusion language models (DLMs) or autoregressive LLMs for latency-sensitive applications, and why?
+Q004258	E	What is a Large Language Model (LLM)?
+Q004324	M	Explain the concept of a mixture of experts (MoE) in LLMs.
+Q004437	M	What is a Mixture-of-Experts model? Distinguish active vs total parameters.
+Q004650	E	What are foundation models, and how have they changed AI engineering?
+Q004651	E	What is a Large Language Model (LLM), and how does it work?
+Q004652	M	What happens inside ChatGPT after you hit Enter?
+Q004667	E	What is Generative AI?
+Q004679	M	What is the difference between encoder-only, decoder-only, and encoder-decoder Transformer architectures?
+Q004683	M	What is Mixture of Experts (MoE), and how does it work in models like Mixtral?
+Q004684	E	What is the difference between dense and sparse models?
+Q004685	H	How does DeepSeek-V4 work?
+Q004694	M	What are scaling laws (Chinchilla), and how do they guide model size vs training data decisions?
+Q004713	E	What are autoregressive models?
+Q004715	H	What is Recursive Self-Improvement (RSI)?
+Q005330	E	What are some real-world applications of LLMs in business and tech?
+Q005923	M	Why are most mainstream LLMs decoder-only architectures?
+Q005926	M	What is a scaling law? What did the Chinchilla law correct?
+Q005959	M	What is a state space model (SSM), and what problem does it solve when hybridized with a Transformer?
+Q005967	M	What are scaling laws, and what does Chinchilla's "compute-optimal" mean?
+Q005969	M	Why have mainstream LLMs converged on the causal decoder-only architecture?
+Q007110	E	What is an LLM, and how are LLMs trained?
+Q007179	M	Explain the different types of LLM architecture and which type is best for which task.
+Q007214	E	What are mixture of experts (MoE) models?
+Q010839	M	When would you use a small language model vs a frontier model?
+Q011217	M	What changed between GPT-2 and Llama 2?
+Q011266	M	Why train an 8B model on 15T tokens if Chinchilla says 160B tokens is optimal?
+Q011316	M	How does a diffusion language model differ from an autoregressive one, and where is that an advantage?
+Q011317	M	If diffusion LLMs are faster, why hasn't everyone switched?
+Q011792	M	What do the Chinchilla scaling laws say, and how do they differ from earlier scaling intuitions?
+Q011793	M	What is a mixture-of-experts architecture and how does it scale capacity without scaling FLOPs?
+Q011902	H	Explain attention-free transformer architectures and their trade-offs.
+Q011905	H	How do scaling laws influence the safety evaluation of large models?
+Q011975	M	Explain how a Mixtral-style sparse mixture-of-experts model works. Why does a ~47B-parameter model run at roughly the cost of a ~13B one?
+Q011977	H	A flagship model is a sparse MoE with ~10x more total than active parameters. Why is that architecture a good fit for private enterprise deployment, and where does it hurt?
+Q011991	M	GLM-4.5 is an MoE with 355B total but 32B active parameters. Explain the economics: what does that split buy you and what does it cost?
+Q011992	H	What is Multi-Token Prediction (MTP), why add an MTP layer, and how does it help at inference time?
+Q011998	M	When would you pick a 30B MoE model with ~3B active parameters over a 32B dense model?
+Q012401	M	What are the common architectures used for LLM pretraining, and why are they preferred?
+Q012406	M	How does the scale of the model (number of parameters) and the dataset size impact the pretraining process and the resulting model?
+Q012505	M	What is the difference between a prefix LM and a causal LM?
+Q000639	M	How does ChatGPT work?
+Q007412	M	What changes in a transformer decoder block for a mixture-of-experts model?
+Q007432	M	If you were building a translation system today, would you pick an encoder-decoder or a decoder-only LLM, and on what criteria?
+Q007459	M	Why does MoE swap out the FFN rather than attention?
+Q007548	M	Mamba and state-space models were supposed to replace transformers. What actually happened, and why?
+Q007550	H	For an agent doing long tool-use trajectories, would you take a hybrid or a pure transformer architecture?
+Q007562	M	Compare Kaplan and Chinchilla scaling laws. What did Chinchilla change?
+Q007563	H	Why did Kaplan's learning-rate schedule choice bias the conclusion?
+Q007564	M	What does the training compute estimate C ≈ 6ND assume?
+Q007565	H	If high-quality data becomes the binding constraint, how does the optimal compute allocation shift?
+Q007566	M	Why do modern models train far past Chinchilla-optimal?
+Q007567	H	Sketch the total-cost-of-ownership optimisation that replaces Chinchilla's. How does distillation change the overtraining calculus?
+Q007568	M	Why is MoE another answer to the same economic pressure that drives training past Chinchilla-optimal?
+Q007569	M	What are "emergent abilities," and what is the mirage critique? Where does that debate land practically?
+Q007571	H	How does the emergent-abilities mirage debate affect scaling-law-based capability forecasts?
+Q007572	M	Does chain-of-thought change what appears emergent?
+Q007573	M	Explain Mixture-of-Experts: the router, top-k experts, total vs active parameters. Why does it win?
+Q007574	M	Why route per-token rather than per-sequence in Mixture-of-Experts?
+Q007575	M	What do experts in an MoE model actually specialise in, empirically?
+Q007576	H	Is a 47B-total/13B-active MoE comparable to a 13B dense model or a 47B dense model, and on what axis?
+Q007577	M	What goes wrong when training MoE models, and what is the inference memory caveat?
+Q007578	H	Why does the MoE load-balancing loss trade quality for stability?
+Q007579	H	What does expert parallelism do to inference latency tails?
+Q007580	H	When would you recommend a dense model over MoE despite MoE's training-compute win?
+Q007611	H	How does the mirage critique of emergent abilities connect to grokking?
+Q007622	H	What is superposition, and what have sparse autoencoders actually shown about what a model represents?
+Q007623	H	Why does sparsity make superposition cheap?
+Q007624	H	How would you check that an SAE feature is causally used by the model rather than merely correlated with an input property?
+Q007625	H	When would you reach for a linear probe instead of a sparse autoencoder?
+Q007626	H	How do diffusion language models generate text, and why haven't they displaced autoregressive models?
+Q007627	H	Why do tokens committed in the same denoising step risk being mutually inconsistent in a diffusion language model?
+Q007628	H	How does block-wise diffusion recover KV caching, and what does it give up?
+Q007629	H	Which product would you pilot a diffusion language model on first, and what would you measure?
+Q007630	H	Linear attention was written off for years. What do gated delta-rule layers like Gated DeltaNet change, and why are they showing up in hybrid models?
+Q009251	H	Which on-device constraints would make you choose a different architecture (for example, fewer, wider layers versus deeper)?
+Q009282	M	In a sparse model with only 1-4B active parameters, how would you decide how often to reselect the active experts during a long generation?
+Q009373	H	Why is a sparse MoE with roughly 10x more total than active parameters a good fit for private enterprise deployment, and where does it hurt?
+Q009462	H	Walk through DeepSeekMoE. How is it different from a standard top-2 MoE like Mixtral?
+Q009463	H	Why do fine-grained experts make load balancing harder in MoE models?
+Q009465	H	DeepSeek-V3 uses auxiliary-loss-free load balancing. What was wrong with the auxiliary loss, and how does the bias trick work?
+Q009466	H	In auxiliary-loss-free MoE load balancing, how would you set the bias update step size, and what happens if it is too aggressive?
+Q009467	H	Does auxiliary-loss-free load balancing in MoE remove the need for any balancing signal during inference?
+Q009483b	H	How does token dropping at capacity interact with the auxiliary-loss-free load-balancing bias in MoE routing?
+Q009749	H	Explain the architectural choices in a Llama-class model: why grouped-query attention, RoPE, and SwiGLU instead of the vanilla 2017 Transformer?
+Q009751	M	Why did later frontier models move toward MoE layers, and what does that do to serving?
+Q009766	H	What makes MoE training harder to load-balance than dense model training?
+Q009821	M	Explain how a Mixtral-style sparse mixture-of-experts model works. Why does a model with about 47B parameters run at the cost of a roughly 13B one?
+Q009822	H	Why is batched inference harder for MoE than for dense models (expert imbalance within a batch)?
+Q009823	M	When would you recommend a dense model over an MoE to a customer self-hosting on limited VRAM?
+Q009867	H	Why does expert imbalance in an MoE hurt more during training than during single-request inference?
+Q009868	M	How does a shared (always-on) expert change the routing dynamics in an MoE?
+Q009887	H	Why hybridise linear attention and full attention layers (for example, full attention in roughly one layer in four) instead of going all-linear or all-full, and what does it change about serving a 1M-token context?
+Q010036	H	How does expert-choice vs token-choice routing change the load-balancing story in MoE models?
+Q010057	H	A model interleaves Gated DeltaNet linear-attention layers with full gated-attention layers at about 3:1. Why build such a hybrid, and what does it change for long-context serving?
+Q010095	H	A model pairs an MLA-style attention stack with a 128-expert MoE (top-8 routing plus a shared expert, auxiliary-loss-free balancing). What does each choice buy you when serving 22 Indian languages?
+Q010096	H	How would you detect that tokens from one language are piling onto a few overloaded experts in an MoE model?
+Q010271	M	A Mixture-of-Experts model has 355B total but 32B active parameters. Explain the economics: what does that split buy you and what does it cost?
+Q010274b	H	Contrast auxiliary-loss load balancing with a loss-free approach in Mixture-of-Experts models.
+Q010275	H	In a Mixture-of-Experts model, what breaks if an expert receives zero tokens for many steps?
+Q010276	H	How does capacity factor / token dropping interact with load balancing in Mixture-of-Experts models?
+D00056	M	Explain mixture of experts: how routing works, what active versus total parameters mean, and why it saves compute.
+D00057	H	What are the system-design consequences of MoE models for memory, batching and expert load balancing at serving time?
+D00058	M	What auxiliary losses or techniques are used to keep MoE experts evenly utilized during training?
+D00059	M	Why is the KV cache of an MoE model not smaller than a dense model of equal attention size?
+D00060	M	What does the Chinchilla scaling law say about the optimal ratio of parameters to training tokens?
+D00061	H	Why would a team train an 8B model on trillions of tokens far beyond the compute-optimal point?
+D00062	M	Distinguish training-compute-optimal from inference-optimal scaling and explain when each matters.
+D00063	M	Are emergent abilities real phase transitions or artifacts of the metric chosen? How would you test that?
+D00064	M	When would you choose a small language model over a frontier model, and what tasks suit each?
+D00065	M	How do dense, MoE and hybrid attention architectures differ in what they optimize for?
+D00066	M	What is a diffusion language model, and where might it beat an autoregressive model?
+D00067	M	Why are diffusion language models not yet the default despite faster parallel decoding?
+D00068	M	What is native multimodality in an LLM compared to bolting a vision encoder onto a text model?
+D00069	H	How do you read a vendor model card to decide whether an open-weight license fits a commercial product you plan to resell as an API?
+D00070	M	How would you approach picking between a closed frontier model and an open-weight model when quality is close but cost differs widely?
+D00071	M	Why do reasoning models differ from standard chat models, and what are they trained to do differently?
+D00072	M	What is test-time compute, and how does a thinking budget control cost and quality?
+D00073	M	Why is the Transformer-SSM hybrid architecture attractive for long-context inference?
+D00074	H	A model advertises a 10M-token context window but scores poorly at 128K on a long-context benchmark. How do you advise a team planning to rely on it?
+D03757	M	What is a mixture-of-experts model, how does routing work, and what is the difference between active and total parameters?
+D03758	M	What do the Chinchilla scaling laws say about compute-optimal training, and how do they affect model design today?
+D03759	M	What are emergent abilities in LLMs and why is their existence debated?
+D04441	E	What is the difference between a prefix LM and a causal LM in terms of attention masks and which tokens can attend to which?
+D04442	M	What are the trade-offs between causal, prefix, and encoder-decoder language models for generation versus understanding tasks?
+D04444	M	What are emergent abilities in LLMs, and what competing explanations exist for why they appear at certain scales?
+D04445	H	Some researchers argue emergent abilities are an artifact of the metric chosen. How would you design an experiment to test that claim?
+D04446	M	Why have most modern LLMs converged on a decoder-only architecture rather than encoder-decoder?
+D04448	M	Why is decoder-only pretraining often said to give better zero-shot performance than encoder-decoder pretraining?
+D04450	M	Compare the encoder-only, encoder-decoder and decoder-only families, and give an example task where each is the best choice.
+D04456	E	What is the main idea of an autoregressive language model and how is its probability factorized?
+D04536	M	What is the GLM autoregressive blank-infilling objective and how does it unify understanding and generation?
+D04537	M	What changes did ChatGLM2 introduce relative to ChatGLM (FlashAttention, multi-query attention, longer context)?
+D04538	M	How do the ChatGLM family, LLaMA and GPT architectures differ in position encoding, masking and normalization?
+D04539	M	What architectural changes distinguish LLaMA from the original GPT/Transformer (RMSNorm pre-norm, SwiGLU, RoPE)?
+D04541	M	What changed between LLaMA 1, LLaMA 2 and LLaMA 3 in data size, context length, tokenizer vocabulary and attention?
+D04542	M	Why did LLaMA 3 invest heavily in data quality and filtering, and how does that interact with scaling-law predictions?
+D04546	H	Walk through a LLaMA-2 forward pass for one token during generation, naming each module from embedding to logits.
+D04577	M	What problem does the sparsely-gated mixture-of-experts layer solve, and how does the gating network select experts?
+D04578	M	What is noisy top-k gating and why is noise added to the gate logits?
+D04579	M	What is the shrinking batch problem in MoE training and how is it mitigated?
+D04580	M	Why does an MoE layer need an auxiliary load-balancing loss, and what happens to expert utilization without it?
+D04581	M	Describe the importance loss and load loss for balancing experts in sparsely-gated MoE.
+D04582	M	How does conditional computation let an MoE model have far more parameters than active FLOPs per token?
+D04583	M	How do GShard, Switch Transformer and GLaM differ in routing (top-2 vs top-1), capacity factor and expert placement?
+D04584	M	What is the capacity factor in Switch Transformers and what happens to tokens that overflow an expert?
+D04585	M	Why did Switch Transformer route each token to a single expert, and what stability tricks did it use (selective precision, small init)?
+D04586	M	Write down the Switch Transformer load-balancing auxiliary loss and explain what it penalizes.
+D04587	M	What is the router z-loss in ST-MoE and what instability does it address?
+D04588	M	What do experts specialize in according to ST-MoE analysis, and how does the number of experts affect pretraining and fine-tuning?
+D04589	M	Why are MoE models harder to fine-tune than dense models, and what remedies exist?
+D04590	M	Compare MoE versus dense models at equal active parameters or equal FLOPs in terms of quality, memory footprint and serving cost.
+D04591	H	How would you serve a large MoE model efficiently, given that every expert's weights must be resident even though only a few activate per token?
+D04592	M	How can MoE be used to make a dense model lighter, as in MoEBERT's conversion of FFNs into experts?
+D04596	M	According to compute-optimal scaling laws, how should model size and training tokens grow together for a fixed compute budget?
+D04597	H	Why do modern small models train on far more tokens than Chinchilla-optimal, and what changes when inference cost is included?
+D04599	M	What factors determine the performance of a pretrained model: parameters, data size, data quality, compute?
+D04603	M	What is the relationship between instruction following ability and model scale, and does chain-of-thought emerge only in large models?
+D04911	M	Why does the Switch routing use a softmax gate followed by top-1, and how do auxiliary losses interact with expert capacity?
+D04912	M	How does fine-grained expert segmentation and shared experts (DeepSeekMoE style) improve expert specialization?
+D04913	M	What is expert choice routing and how does it address load imbalance compared with token-choice routing?
+D04914	M	How do you count total versus active parameters in an MoE model, and which one governs memory versus FLOPs?
+D04915	H	Design the router for an MoE LLM that must avoid expert collapse, token dropping and communication hot-spots. What would you monitor?
+D04916	M	What is the Chinchilla finding and how does it revise the earlier Kaplan scaling law on how to split compute between parameters and tokens?
+D04917	M	How would you use small-scale experiments to predict the loss of a much larger model, and what could break the extrapolation?

@@ -1,0 +1,302 @@
+Q007522	LLM05	M	What are logprobs, and what are they useful for in production systems?
+Q007523	FT03	H	Why does RLHF hurt calibration?
+Q007524	GA04	H	Design a confidence-thresholded router using logprobs. What would you validate?
+Q007525	LLM05	H	Why is the probability of an answer not the same as the probability of a sequence?
+Q007526	LLM04	M	Describe the modern LLM training pipeline: pretraining, mid-training, SFT, RL.
+Q007527	FT01	H	Why does SFT on new facts encourage hallucination?
+Q007528	FT03	M	What does the KL constraint in RLHF prevent?
+Q007529	FT03	H	Why did verifiable rewards unlock reasoning gains that preference-based RLHF didn't?
+Q007530	LLM06	H	What is an attention sink, why does it exist, and what breaks if you evict it from the KV cache?
+Q007531	LLM06	H	How does a learned softmax bias change the quantization story for attention sinks?
+Q007532	LLM01	H	Would you expect attention sinks in an encoder-only model?
+Q007533	LLM01	M	Explain sliding-window attention and hybrid local/global attention stacks. What do you gain and what do you give up?
+Q007534	LLM01	H	How would you choose the local-to-global attention ratio for a code model versus a chat model?
+Q007535	LLM06	H	What does sliding-window attention do to prefix caching in a multi-turn agent?
+Q007536	LLM01	H	What is Multi-head Latent Attention, and how is it actually different from GQA?
+Q007537	LLM06	H	How does Multi-head Latent Attention (MLA) interact with tensor parallelism compared to GQA?
+Q007538	LLM06	H	Would you expect MLA or KV cache quantization to be the better first move on an existing GQA model?
+Q007539	LLM06	M	Why is quantizing activations harder than quantizing weights, and how does that shape architecture choices?
+Q007540	LLM06	M	You quantize weights to 4-bit and see no benchmark drop. What would make you distrust that result?
+Q007541	LLM06	M	Why does quantization hurt long generations more than short ones?
+Q007542	LLM07	H	A vendor advertises 1M context with 100% needle-in-a-haystack. What has that actually proven, and how would you evaluate long context properly?
+Q007543	LLM07	H	How would you construct hard distractors automatically from a customer's corpus for a long-context evaluation?
+Q007544	LLM07	H	In a long-context evaluation, what does an unanswerable-question false-positive rate tell you that accuracy does not?
+Q007545	LLM04	M	What is multi-token prediction as a training objective, and what does it buy you?
+Q007546	LLM05	H	Why does a multi-token prediction (MTP) draft head achieve higher acceptance than a separately trained 1B draft model in speculative decoding?
+Q007547	LLM04	H	How would you weight the auxiliary losses across the t+2, t+3 heads in multi-token prediction?
+Q007548	LLM03	M	Mamba and state-space models were supposed to replace transformers. What actually happened, and why?
+Q007549	LLM06	H	Why does prefix caching get harder with a recurrent state than with a KV cache?
+Q007550	LLM03	H	For an agent doing long tool-use trajectories, would you take a hybrid or a pure transformer architecture?
+Q007551	LLM07	M	Reasoning models expose a thinking budget or reasoning effort setting. How do you tune it, and what goes wrong?
+Q007552	GA04	H	How would you build the router that decides which requests get high reasoning effort?
+Q007553	GA04	H	What would you monitor in production to detect that your chosen reasoning budget has drifted out of calibration?
+Q007554	LLM07	M	What is the reversal curse, and what does it reveal about how LLMs store knowledge?
+Q007555	LLM07	H	Why does reversal work in context when it fails in weights?
+Q007556	FT01	H	How would you structure fine-tuning data so a set of product facts is retrievable from any direction?
+Q007557	LLM07	H	Would you expect a bidirectional encoder to show the same asymmetry as the reversal curse?
+Q007558	LLM05	M	What is "lost in the middle," and why doesn't a long context window equal reliable retrieval?
+Q007559	LLM07	H	How would you design an eval for usable context length on your workload?
+Q007560	LLM07	M	Why do needle-in-a-haystack results overstate long-context ability?
+Q007561	LLM01	H	What are attention sinks, and how do they connect to the lost-in-the-middle problem?
+Q007562	LLM03	M	Compare Kaplan and Chinchilla scaling laws. What did Chinchilla change?
+Q007563	LLM03	H	Why did Kaplan's learning-rate schedule choice bias the conclusion?
+Q007564	LLM03	M	What does the training compute estimate C ≈ 6ND assume?
+Q007565	LLM03	H	If high-quality data becomes the binding constraint, how does the optimal compute allocation shift?
+Q007566	LLM03	M	Why do modern models train far past Chinchilla-optimal?
+Q007567	LLM03	H	Sketch the total-cost-of-ownership optimisation that replaces Chinchilla's. How does distillation change the overtraining calculus?
+Q007568	LLM03	M	Why is MoE another answer to the same economic pressure that drives training past Chinchilla-optimal?
+Q007569	LLM03	M	What are "emergent abilities," and what is the mirage critique? Where does that debate land practically?
+Q007570	LLM07	H	Give a concrete task where the deployment metric is inherently discontinuous. What smooth proxy would you monitor?
+Q007571	LLM03	H	How does the emergent-abilities mirage debate affect scaling-law-based capability forecasts?
+Q007572	LLM03	M	Does chain-of-thought change what appears emergent?
+Q007573	LLM03	M	Explain Mixture-of-Experts: the router, top-k experts, total vs active parameters. Why does it win?
+Q007574	LLM03	M	Why route per-token rather than per-sequence in Mixture-of-Experts?
+Q007575	LLM03	M	What do experts in an MoE model actually specialise in, empirically?
+Q007576	LLM03	H	Is a 47B-total/13B-active MoE comparable to a 13B dense model or a 47B dense model, and on what axis?
+Q007577	LLM03	M	What goes wrong when training MoE models, and what is the inference memory caveat?
+Q007578	LLM03	H	Why does the MoE load-balancing loss trade quality for stability?
+Q007579	LLM03	H	What does expert parallelism do to inference latency tails?
+Q007580	LLM03	H	When would you recommend a dense model over MoE despite MoE's training-compute win?
+Q007581	LLM07	M	What are the root causes of hallucination, and what actually mitigates it?
+Q007582	FT03	H	Why can RLHF increase confident hallucination?
+Q007583	RAG06	H	Design a hallucination eval for a RAG product. What's the metric?
+Q007584	LLM07	M	When is a hallucination-shaped answer actually desirable (creative tasks), and how do you switch regimes?
+Q007585	LLM07	M	What are reasoning models, and how does test-time compute change the picture? When would you use one versus a standard model?
+Q007586	FT03	H	Why do verifiable rewards matter so much? What goes wrong when RL-training reasoning against a learned preference reward?
+Q007587	FT03	M	How does GRPO differ from PPO?
+Q007588	GA04	H	How would you decide a thinking budget per request class in production?
+Q007589	FT04	E	What is distillation, and how is it used in the LLM ecosystem?
+Q007590	FT04	H	Why do soft targets carry more information than hard labels? Can you formalise it?
+Q007591	FT04	H	When does on-policy distillation (student generates, teacher corrects/scores) beat plain imitation of teacher outputs?
+Q007592	FT04	H	How would you build a distillation data pipeline with quality filtering?
+Q007593	LLM05	M	Beam search is standard in machine translation. Why is it rarely used for open-ended LLM generation?
+Q007594	LLM05	H	Why does likelihood diverge from quality specifically for open-ended tasks? What's the entropy argument?
+Q007595	LLM05	H	Why does best-of-n with a reward model succeed where beam search fails?
+Q007596	LLM05	M	What is length bias in beam search?
+Q007597	LLM04	M	Where do the parameters and FLOPs actually live in a transformer? Walk me through the budget.
+Q007598	LLM04	H	Derive the 6ND training-FLOP estimate. At what context length does attention compute overtake MLP compute for this architecture?
+Q007599	LLM01	H	How does GQA change the parameter and bandwidth budgets differently?
+Q007600	FT05	M	Open-weights vs closed-weights models: how do you think about the tradeoff as an engineer in 2026?
+Q007601a	FT05	H	Sketch the break-even math for self-hosting a 70B-class model versus API pricing.
+Q007601b	FT05	M	What contractual and data-governance questions matter when sending regulated data to a closed API?
+Q007602	GA04	H	How do you design a system so the model layer stays swappable?
+Q007603	FT03	H	Walk me through training a reasoning model with RLVR. Why GRPO instead of PPO, and what breaks in practice?
+Q007604	FT03	H	How would you construct the prompt curriculum for RLVR training to avoid degenerate groups?
+Q007605	FT03	H	If RLVR mostly elicits existing capability, what does that imply about where to spend your next dollar?
+Q007606	GA01	H	There's a line of work claiming in-context learning is implicit gradient descent. What's the claim, what's the evidence, and does it change what you do?
+Q007607	GA01	H	How would you test whether a specific task is being selected versus genuinely learned in context?
+Q007608	GA01	H	Does the task-vector view of in-context learning suggest anything about how to compress long system prompts?
+Q007609	ML01	H	What is grokking, and does it have any bearing on how you actually train models?
+Q007610	ML01	H	What continuous proxy metric would you watch during a fine-tune that looks plateaued?
+Q007611	LLM03	H	How does the mirage critique of emergent abilities connect to grokking?
+Q007612	FT04	H	When does model merging work, and what's actually going on underneath?
+Q007613	FT04	H	Why does model merging inflate leaderboard scores more than real capability?
+Q007614	FT04	H	How would you decide merge coefficients without a huge eval budget?
+Q007615	FT05	H	Where would you draw the line at which fine-tuning beats retrieval for factual content?
+Q007616	FT05	H	What would change your mind about knowledge editing (directly editing facts into the model)?
+Q007617	LLM02	H	What's the case for tokenizer-free models, and why hasn't the tokenizer died yet?
+Q007618	LLM02	H	How would pricing and context accounting work for a model with no fixed token unit?
+Q007619	LLM02	H	Does dynamic patching in tokenizer-free models interact well or badly with prefix caching?
+Q007620	LLM05	H	After extending a model from 32k to 256k context with YaRN, how much short-context replay data would you mix in, and how would you pick that ratio?
+Q007621	LLM05	H	If disabling RoPE scaling restores short-prompt quality in a context-extended model, what's your next move?
+Q007622	LLM03	H	What is superposition, and what have sparse autoencoders actually shown about what a model represents?
+Q007623	LLM03	H	Why does sparsity make superposition cheap?
+Q007624	LLM03	H	How would you check that an SAE feature is causally used by the model rather than merely correlated with an input property?
+Q007625	LLM03	H	When would you reach for a linear probe instead of a sparse autoencoder?
+Q007626	LLM03	H	How do diffusion language models generate text, and why haven't they displaced autoregressive models?
+Q007627	LLM03	H	Why do tokens committed in the same denoising step risk being mutually inconsistent in a diffusion language model?
+Q007628	LLM03	H	How does block-wise diffusion recover KV caching, and what does it give up?
+Q007629	LLM03	H	Which product would you pilot a diffusion language model on first, and what would you measure?
+Q007630	LLM03	H	Linear attention was written off for years. What do gated delta-rule layers like Gated DeltaNet change, and why are they showing up in hybrid models?
+Q007631	LLM06	H	What does a recurrent state, rather than a KV cache, do to prefix caching in an agent workload?
+Q007632	GA01	E	What's the difference between zero-shot and few-shot prompting, and when would you use each?
+Q007633	GA01	M	How many few-shot examples is typically enough before returns diminish?
+Q007634	GA01	M	How would you measure whether few-shot examples are actually helping versus just adding tokens?
+Q007635	GA01	H	Why can few-shot CoT examples hurt a reasoning model?
+Q007636	GA01	E	Explain the system, user, and assistant roles. What belongs in each?
+Q007637	GA01	M	When would you deliberately fabricate an assistant turn in the prompt?
+Q007638	GA01	M	How do OpenAI's 'developer' role and instruction-hierarchy training relate to the system, user, and assistant roles?
+Q007639	GA01	M	What happens to system-prompt adherence over a 50-turn conversation?
+Q007640	GA01	E	What is chain-of-thought prompting? When does it help, and when is it unnecessary or harmful?
+Q007641	GA01	M	How would you decide empirically whether chain-of-thought is worth the latency for a given task?
+Q007642	GA01	M	What does it mean for a chain of thought to be "unfaithful"?
+Q007643	GA01	M	How does chain-of-thought relate to test-time compute scaling?
+Q007644	GA01	E	What is zero-shot CoT, and why did "Let's think step by step" become famous?
+Q007645	GA01	M	If a phrase can unlock accuracy, how would you search for better phrases systematically?
+Q007646	GA01	M	Why do you think RL-trained reasoning made the "Let's think step by step" trick obsolete?
+Q007647	GA01	M	Would you ever still use zero-shot CoT prompting in 2026, and where?
+Q007648	GA01	M	What are the most common prompt anti-patterns you'd flag in a code review?
+Q007649	GA01	M	How would you refactor a 60-rule mega-prompt without regressing behaviour?
+Q007650	GA01	M	Why do negations sometimes work fine in prompts, and when is "never do X" appropriate?
+Q007651	GA01	M	How do you detect contradictions in a prompt systematically?
+Q007652	GA01	E	What is "context engineering," and how is it different from prompt engineering?
+Q007653	GA03	M	In an agent that reads large files, what specific mechanisms keep the context window clean?
+Q007654	GA01	H	How does context engineering interact with prompt caching, and where do they conflict?
+Q007655	GA01	M	Who owns context engineering when the "prompt" is assembled by five different subsystems?
+Q007656	GA01	M	When would you ask for JSON, XML tags, or markdown as your output format?
+Q007657	GA02	H	Why does regex or schema-heavy constrained decoding sometimes hurt answer quality, and how do you mitigate it?
+Q007658	GA02	M	How would you make streaming output usable when the format is JSON?
+Q007659	LLM05	E	What do temperature and top_p actually do, and how do you choose them per task?
+Q007660	LLM05	M	Why does temperature 0 not guarantee identical outputs across identical requests?
+Q007661	LLM05	M	If you had to raise output diversity without raising error rate, what would you change instead of temperature?
+Q007662	GA01	M	How do you build a prompt template, and what can go wrong when you inject variables into it?
+Q007663	GA01	M	How would you unit test a prompt template?
+Q007664	GA01	M	Where would you put a per-user personalisation string so it does not destroy your prompt cache?
+Q007665	GA05	M	Should you treat your system prompt as a secret? What happens when it leaks?
+Q007666	GA05	M	How would you detect system prompt extraction attempts in production?
+Q007667	GA05	H	If not the prompt, where does the security boundary actually live in an agent with tools?
+Q007668	GA05	M	What is the difference between input guardrails and output guardrails, and why do you need both?
+Q007669	GA05	M	How would you keep an output guardrail from destroying your streaming latency?
+Q007670	GA05	M	What false-positive rate would you accept on an off-topic classifier, and how would you measure it?
+Q007671	GA03	M	Your chatbot starts losing the thread after about ten turns. What are your options for managing conversation history?
+Q007672	GA01	M	Where would you place the conversation summary and the recent turns to keep prefix caching effective?
+Q007673	GA03	M	What breaks when you summarise a conversation that contains tool calls and their results?
+Q007674	GA01	M	Your model's answers are consistently too long. How do you control output length reliably?
+Q007675	GA01	M	Why does asking an LLM for exactly 100 words rarely produce 100 words?
+Q007676	GA01	M	How would you shorten model answers without losing a caveat that legal requires?
+Q007677	LLM05	M	What happens to visible output when a reasoning model hits its token cap?
+Q007678	GA01	M	How do you select and order few-shot examples? What are the known pitfalls?
+Q007679	GA01	M	Your 5-shot classifier over-predicts one class. What do you check first?
+Q007680	GA01	H	When is it deliberately correct to match the few-shot example label distribution to a skewed real-world prior?
+Q007681	GA01	M	How would you test few-shot example ordering sensitivity cheaply?
+Q007682	GA01	M	Why does in-context learning work at all when the model's weights don't change?
+Q007683	GA01	M	What does the random-label result in in-context learning imply about how you should invest in example quality?
+Q007684	GA01	M	Why does in-context learning improve with model scale?
+Q007685	FT01	M	What can fine-tuning do that in-context learning fundamentally can't?
+Q007686	GA01	M	Explain self-consistency. When is it worth the cost?
+Q007687	GA01	M	How would you apply the self-consistency idea to code generation where outputs are long?
+Q007688a	GA01	H	Design an adaptive self-consistency scheme that spends more samples only on hard inputs.
+Q007688b	GA01	H	Why do errors tend to be uncorrelated across samples in self-consistency, and when would that assumption break?
+Q007689	GA01	M	When would you decompose a task into multiple prompts instead of one? Explain least-to-most prompting.
+Q007690	GA01	M	How do you stop error cascades in a multi-stage prompt pipeline?
+Q007691	GA01	H	Given a fixed latency budget, how do you decide between one big reasoning-model call and a three-stage pipeline?
+Q007692	GA01	M	How would you evaluate the task decomposition step itself in a multi-prompt pipeline?
+Q007693	GA03	M	Describe the ReAct pattern. How does it relate to modern native tool calling?
+Q007694	GA03	M	How do you stop a ReAct-style agent that keeps retrying a failing tool?
+Q007695	GA03	M	Why does interleaving reasoning and acting beat plan-everything-then-execute, and when does plan-first win?
+Q007696	GA02	M	What does the Observation step in ReAct imply for how you design tool output formats?
+Q007697	GA02	M	How do you design good tool/function definitions for an LLM? What makes tool calling fail?
+Q007698	GA02	M	An agent keeps picking the wrong one of two similar tools. What are your first three fixes?
+Q007699	GA02	M	How do you handle a tool that returns 100k tokens of JSON?
+Q007700	GA02	M	When should the model ask a clarifying question instead of calling a tool with guessed arguments?
+Q007701	GA05	M	How do you structure a prompt to be resistant to prompt injection from retrieved or user-supplied content?
+Q007702	GA05	M	How would you test a prompt's injection resistance systematically?
+Q007703	GA05	M	Rank by prompt injection risk: user chat input, retrieved internal docs, fetched web pages. Why?
+Q007704	RAG06	M	What changes when the attacker controls a document in your RAG index?
+Q007705	GA01	M	You have a 200k-token context with instructions and 50 documents. Where do you put what, and why?
+Q007706	LLM05	M	How would you detect lost-in-the-middle empirically in production?
+Q007707	RAG05	H	When is RAG-then-stuff worse than an agentic search-and-read loop over the corpus?
+Q007708	GA01	H	How does document ordering interact with prompt caching when the document set is semi-stable?
+Q007709	GA01	M	How does prompt caching work, and how should it change the way you structure prompts?
+Q007710	GA01	H	Dynamic few-shot retrieval versus static examples: how does prompt caching change that calculus?
+Q007711	GA04	H	Where would you place prompt-cache breakpoints in a multi-tenant agent with shared tools but per-user memory?
+Q007712	GA04	M	Your prompt cache hit rate dropped to near zero after a deploy. What do you look for?
+Q007713	GA01	M	Walk me through your process for systematically improving a prompt that's underperforming.
+Q007714	LLM07	M	How do you evaluate open-ended generation where there's no single right answer?
+Q007715	GA04	M	Your prompt scores 95% offline but users complain. What's broken?
+Q007716	GA04	M	How do you keep the eval set from going stale?
+Q007717	GA04	M	What changes when your product must handle prompts and content in multiple languages?
+Q007718	GA04	H	How would you build a minimal multilingual eval without native speakers on the team?
+Q007719	GA01	M	Your Japanese users report overly casual tone from the LLM. What do you change?
+Q007720	LLM02	M	When does tokenizer inefficiency justify a different model choice for specific language markets?
+Q007721	GA04	M	How do you version and govern prompts in production? If someone asks which prompt produced a bad output three weeks ago, can you answer?
+Q007722	GA04	M	Why is a prompt tested on one model not validated on a newer version of the same model?
+Q007723	GA04	M	How would you gate promotion of a prompt version on evals without blocking every small copy change?
+Q007724	GA04	M	You want to switch model providers and your prompts break. Why, and how would you have made them portable?
+Q007725	GA04	M	When migrating to a new model, what would you do first: re-tune the old prompt for the new model, or re-derive the prompt from the task spec?
+Q007726	GA04	M	How do you decide when a model or provider migration is done?
+Q007727	GA01	H	Design an example store for dynamic few-shot selection. What do you get, and what does it cost you?
+Q007728	GA01	M	How would you keep a mislabelled example from silently degrading production in a dynamic few-shot system?
+Q007729	GA01	H	When would bucketed static examples beat true per-request retrieval of few-shot examples?
+Q007730	GA02	M	How should tool results be formatted before they go back into the model's context?
+Q007731	GA02	M	How would you decide the truncation limit for a given tool's output?
+Q007732	GA02	M	Why is a paginated tool result better than a truncated one for an agent, given both hide data?
+Q007733	GA01	M	When is prompt compression worth it, and how would you do it?
+Q007734	GA01	M	Why might token-level prompt compression hurt an extraction task more than a summarisation task?
+Q007735	GA03	M	How would you decide between compressing conversation history and offloading it to a file?
+Q007736	RAG01	M	You have retrieved chunks and a question. How do you actually build the prompt? Assume some documents are irrelevant and two of them contradict each other.
+Q007737	RAG06	M	How would you turn per-claim citations into an automated groundedness metric?
+Q007738	RAG01	M	If recall matters and you must send 40 retrieved chunks to the LLM, what changes in the prompt?
+Q007739	GA05	M	Your model refuses requests that are perfectly legitimate. How do you diagnose and fix over-refusal?
+Q007740	GA05	M	How would you build a benign-but-scary eval set for a medical product without a clinician on the team?
+Q007741	GA05	M	When is over-refusal a signal that you picked the wrong model rather than the wrong prompt?
+Q007742	GA04	H	How would you tell context rot apart from a retrieval failure from a trace?
+Q007743	GA04	H	What do you do when an LLM failure only reproduces at 1 in 50 requests?
+Q007744	GA03	M	How is a system prompt for a long-running agent different from one for a single-shot feature?
+Q007745	GA03	M	How would you write a stop condition for an open-ended research task for an agent?
+Q007746	GA03	M	What would you do if an agent kept asking the human too often after you added escalation rules?
+Q007747	GA01	M	The model does not know what day it is. How do you handle dates, recency and the knowledge cutoff in your prompts?
+Q007748	GA01	M	Where exactly would you put the current date in the prompt so it does not hurt your cache hit rate?
+Q007749	LLM07	M	How would you build an eval that catches a model confidently answering about events after its knowledge cutoff?
+Q007750	GA01	M	A user insists on a fact the model believes is false and that is newer than its training data. What should happen?
+Q007751	GA03	M	How would you decide whether a rule belongs in the repository instruction file, a linter config, or a skill loaded on demand?
+Q007752	GA03	M	How would you detect that a repository instruction file for a coding agent has gone stale?
+Q007753	GA05	M	What permissions would you give an agent working in an untrusted repository?
+Q007754	GA02	H	Compare JSON mode with schema-constrained decoding. How does constrained decoding actually enforce the schema?
+Q007755	GA02	H	Why can constrained decoding change the output distribution, not just filter invalid outputs?
+Q007756	GA02	H	How would you implement constrained decoding for a non-JSON DSL?
+Q007757	GA02	M	Function-calling arguments vs. structured output: when to use which?
+Q007758	GA03	H	What is context rot, and what compaction strategies do you use in long-running agents?
+Q007759	GA03	H	How do you detect context rot with metrics rather than vibes?
+Q007760	GA03	H	What must a compaction summary preserve for a coding agent specifically?
+Q007761	GA03	H	Why can keeping failed attempts in context be valuable, and how do you keep them without amplifying self-conditioning?
+Q007762	GA01	H	Explain DSPy-style programmatic prompt optimization. When would you use it over manual iteration?
+Q007763	GA01	H	How does bootstrapped-demo selection differ from retrieval-based dynamic few-shot?
+Q007764	GA01	H	What goes wrong when optimising a prompt against an LLM judge?
+Q007765	GA04	H	How would you integrate prompt compilation into CI/CD?
+Q007766	GA01	H	What is meta-prompting? How would you use a model to improve your prompts, and what are the pitfalls?
+Q007767	GA01	H	Why do model-rewritten prompts tend to get longer, and why is that bad?
+Q007768	GA01	H	How would you set up an automated prompt-search loop without overfitting the eval set?
+Q007769	GA01	H	When would you trust a meta-prompt improvement enough to ship it?
+Q007770	FT05	M	How do you decide when to stop prompt engineering and fine-tune instead?
+Q007771	FT01	H	Why is fine-tuning unreliable for knowledge injection, mechanistically?
+Q007772	FT01	H	How would you build a fine-tuning dataset from production traffic without licensing or privacy problems?
+Q007773	FT05	M	What would make you undo a fine-tune and go back to prompting?
+Q007774	GA04	H	How would you A/B test a prompt change safely in production?
+Q007775	GA04	H	With sparse explicit user feedback, what proxy metrics have real signal, and how do you validate a proxy?
+Q007776	GA04	H	How do you test a prompt change inside a multi-step agent where one turn's output feeds the next?
+Q007777	GA04	H	The prompt variant wins the A/B test but loses offline. What do you do?
+Q007778	GA01	M	How do reasoning models change prompting practice? What transfers and what becomes obsolete?
+Q007779	GA04	H	How would you build a router that picks model and reasoning effort level per query?
+Q007780	DROP	-	dup
+Q007781	GA01	H	How do you debug a wrong answer when you can't see the raw chain of thought?
+Q007782	GA03	H	Design a token budget for an agent with a 200k context window. How do you allocate it, and how do you enforce it?
+Q007783	GA03	H	How would you find the quality-versus-context-length curve for your agent?
+Q007784	LLM02	M	Why does chars/4 break as a token estimate, and where does it break worst?
+Q007785	GA03	H	Design memory that persists across sessions for an assistant. How is it different from managing context within a session?
+Q007786	GA05	H	How would you detect memory poisoning in production for an LLM assistant?
+Q007787	GA03	H	What is your policy when a retrieved memory contradicts what the user just said in this turn?
+Q007788	GA05	H	Your agent reads web pages and can send email. How do you defend against indirect prompt injection?
+Q007789	GA05	H	Which leg of the lethal trifecta (private data, untrusted content, external communication) would you cut for a coding agent that reads GitHub issues?
+Q007790	GA05	M	Why is a prompt injection classifier a weak control rather than no control at all?
+Q007791	GA05	H	The system prompt says one thing, the user asks for another, and a retrieved document says a third. How do you design conflict resolution?
+Q007792	GA05	H	How would you build eval cases for instruction conflicts?
+Q007793	GA05	H	Why does instruction-hierarchy adherence degrade over a long conversation?
+Q007794	GA04	H	Your prompt change gained 3 points on the eval. How confident are you that it is real?
+Q007795	GA04	H	How would you construct a perturbation set for prompt evaluation without accidentally changing the task?
+Q007796	ML08	M	Why is a paired test the right choice for comparing two prompt variants?
+Q007797	GA03	M	When should you split an agent into sub-agents, and what do you pass between them?
+Q007798	GA03	H	How would you detect that two sub-agents made conflicting implicit decisions?
+Q007799	GA03	M	What would make you collapse a multi-agent system back into a single loop?
+Q007800	GA04	H	You moved a prompt from a hosted API to a self-hosted copy of the same open-weight model, and quality dropped below the hosted version. What do you check?
+Q007801	GA04	H	How would you build a regression test that fails when someone changes the chat template?
+Q007802	GA04	H	Why can a chat template that drops the system prompt still pass a casual smoke test?
+Q007803	GA04	H	Once the token sequences match between hosted and self-hosted serving and quality is still lower, what do you suspect next?
+Q007804	GA03	H	You are running a reasoning model in a multi-turn tool-use loop. What do you do with its reasoning between calls, and what breaks if you drop it?
+Q007805	GA03	H	Your context compaction job runs on a timer and sometimes fires mid tool-use turn. What breaks, and how do you fix it?
+Q007806	GA03	H	How do zero-data-retention requirements change how you carry reasoning between calls?
+Q007807	GA05	M	Why should you not use the model's reasoning as your audit trail?
+Q008008	DROP	-	dup
+Q007808	RAG01	E	What is RAG, and what problem does it actually solve?
+Q007809	RAG06	M	Where does a typical RAG system lose the most quality, retrieval or generation?
+Q007810	RAG06	M	If the model still hallucinates with perfect retrieved context in a RAG system, what do you do?
+Q007811	RAG01	M	How would you explain to a PM why RAG doesn't make hallucination impossible?
+Q007812	FT05	M	When would you choose RAG vs long-context stuffing vs fine-tuning?
+Q007813	FT05	H	How does prompt caching change the RAG-vs-long-context economics?
+Q007814	FT05	M	Your corpus is 500 pages and updates monthly. Would you pick RAG, long-context stuffing, or fine-tuning?
+Q007815	FT05	M	When would you use RAG and fine-tuning together?
+Q007816	RAG01	M	Walk me through every stage of a production RAG pipeline, from raw documents to a cited answer.
+Q007817	RAG01	M	Which stage of a RAG pipeline would you invest in first for a new system and why?
+Q007818	RAG06	M	Where do you put ACL enforcement in a RAG pipeline and why does it have to be there?
+Q007819	RAG03	H	How do you version a RAG pipeline so you can re-embed safely when you change the embedding model?
+Q007820	RAG02	M	What chunking strategies do you know, and how do you pick one?

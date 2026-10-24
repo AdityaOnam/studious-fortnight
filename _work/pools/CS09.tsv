@@ -1,0 +1,157 @@
+Q012368	E	How do you make a pull request?
+Q000480b	M	What are the stages of a CI/CD pipeline?
+Q000481	E	What is DevOps? Is it a role, a tool, or a culture?
+Q000482	E	Explain the DevOps lifecycle.
+Q000483	M	What is the difference between Continuous Integration, Continuous Delivery and Continuous Deployment?
+Q000485	E	What is the difference between git merge and git rebase?
+Q000486	M	What belongs in a CI pipeline?
+Q000488	M	Virtual machine vs container: how do they differ under the hood?
+Q000489	E	What is the difference between a Docker image and a container?
+Q000490	E	What is the difference between COPY and ADD in a Dockerfile?
+Q000491	M	What are multi-stage builds in Docker and why use them?
+Q000492	M	How do containers isolate processes?
+Q000493	E	What is Kubernetes and why did it win?
+Q000494	M	What is the difference between a pod and a container? What is the difference between a Deployment, a ReplicaSet and a pod?
+Q000495	M	Explain the Kubernetes Service types.
+Q000496	M	What is the difference between a ConfigMap and a Secret in Kubernetes? How are they used?
+Q000497	M	What happens when a Kubernetes pod crashes? What is self-healing?
+Q000498	M	What is Terraform state and why does it matter?
+Q000499	M	What is idempotency and why is it important in automation?
+Q000502	M	Explain the Prometheus and Grafana monitoring stack.
+Q000504	M	What are the DORA metrics?
+Q000561	E	What is cloud computing? What makes it different from a traditional data center?
+Q000562	E	What are the five NIST characteristics of cloud computing?
+Q000563	E	What is the difference between public, private and hybrid cloud?
+Q000564	E	What is virtualization? What are the types of hypervisors?
+Q000570	M	What are S3 storage classes and why do they exist?
+Q000574	M	What is a VPC? Walk through its main components.
+Q000575	M	What is serverless computing? What are its pros and cons?
+Q000576	M	What are cold starts in serverless and how do you mitigate them?
+Q000579	E	What is the difference between reserved, spot and on-demand instances?
+Q000580	M	What is vendor lock-in and how do you reduce it?
+Q000582	H	How would you migrate an on-premises application to the cloud? What are the 6 Rs of migration?
+Q000583	M	How do you keep cloud costs under control?
+Q000678	M	How do companies ship code to production?
+Q000687	M	Monorepo vs. microrepo: which is best?
+Q000705	M	How does Terraform turn code into cloud infrastructure?
+Q000706	M	DevOps vs NoOps: what is the difference?
+Q000708	E	What is Kubernetes (k8s)?
+Q000709	E	How does Docker work?
+Q000829	E	How do you create a Docker container using a Dockerfile?
+Q000847	E	What is a build tool?
+Q001288	E	What is DevOps and how does it enhance software delivery?
+Q001289	E	Can you describe the key principles of DevOps?
+Q001290	E	How do continuous integration and continuous deployment (CI/CD) relate to DevOps?
+Q001291	E	What are the benefits of DevOps in software development and operations?
+Q001292	E	Can you explain the concept of "Infrastructure as Code" (IaC)?
+Q001293	E	What is meant by "Shift Left" in DevOps?
+Q001294	E	How does version control support DevOps practices?
+Q001295	E	What role does automation play in DevOps?
+Q001296	M	What are the common metrics used to measure DevOps success?
+Q001297	E	How does DevOps differ from the Agile methodology?
+Q001298	E	What are some popular tools used in the DevOps ecosystem for version control?
+Q001300	E	Can you list some CI/CD tools commonly used in DevOps?
+Q001301	E	What containerization technologies are commonly used in DevOps?
+Q001302	E	Name some configuration management tools used in DevOps.
+Q001303	E	What monitoring tools are popular in DevOps?
+Q001319	E	What is Docker, and how is it different from virtual machines?
+Q001320	E	Can you explain what a Docker image is?
+Q001322	E	How does a Docker container differ from a Docker image?
+Q001323	E	What is Docker Hub, and what is it used for?
+Q001324	E	Explain the Dockerfile and its significance in Docker.
+Q001325	M	How does Docker use layers to build images?
+Q001326	E	What is the difference between the 'COPY' and 'ADD' commands in a Dockerfile?
+Q001327	E	What is the purpose of the '.dockerignore' file?
+Q001328	M	How would you go about creating a Docker image from an existing container?
+Q001329	M	In practice, how do you reduce the size of Docker images?
+Q001330	E	What command is used to run a Docker container from an image?
+Q001331	M	Can you explain what a Docker namespace is and its benefits?
+Q001332	E	What is a Docker volume, and when would you use it?
+Q001333	E	Explain the use and significance of the 'docker-compose' tool.
+Q001334	M	Can Docker containers running on the same host communicate with each other by default? If so, how?
+Q001427	E	What is Git and why is it used?
+Q001428	E	How does Git differ from other version control systems (VCS)?
+Q001429	E	What are some drawbacks of other version control systems compared to Git?
+Q001430	E	What is the difference between Git and GitHub?
+Q001431	E	What is a repository in Git?
+Q001432	E	Explain the concept of a commit in Git.
+Q001433	E	What is the difference between a working directory, staging area, and repository in Git?
+Q001434	E	Define branching in Git and its importance.
+Q001435	E	What is a 'HEAD' in Git?
+Q001436	E	What does the 'clone' operation in Git do?
+Q001437	M	How does Git store information?
+Q001438	E	How do you initialize a new Git repository?
+Q001439	E	Explain the purpose of the 'git status' command.
+Q001440	E	What does the 'git add' command do?
+Q001441	E	How do you create a commit in Git?
+Q001442	M	What information is contained in a commit object in Git?
+Q001554	E	What is Kubernetes, and why is it used for container orchestration?
+Q001556	M	Describe the roles of master and worker nodes in the Kubernetes architecture.
+Q001557	E	How do Pods facilitate the management of containers in Kubernetes?
+Q001558	M	What types of Services exist in Kubernetes, and how do they facilitate pod communication?
+Q001559	E	Explain the functionality of Namespaces in Kubernetes.
+Q001560	M	Differentiate between Deployments, StatefulSets, and DaemonSets.
+Q001561	M	How do ReplicaSets ensure pod availability?
+Q001562	E	What are Jobs in Kubernetes, and when is it suitable to use them?
+Q001563	E	How do Labels and Selectors work together in Kubernetes?
+Q001565	M	What would you consider when performing a rolling update in Kubernetes?
+Q001566	M	How do Services route traffic to pods in Kubernetes?
+Q001567	M	Describe the purpose of Ingress and its key components.
+Q001568	M	Explain Kubernetes DNS resolution for services.
+Q001569	M	What is the Container Network Interface (CNI), and how does it integrate with Kubernetes?
+Q001570	M	How do you implement Network Policies in Kubernetes, and what are their benefits?
+Q002960	M	How do you integrate API testing into CI/CD pipelines effectively?
+Q003137	M	How do API mocks help with CI/CD pipelines?
+Q003772	M	What should Liveness, Readiness and Startup probes each check?
+Q003841	H	How do you handle a CPU spike in production? How do you handle OOM? How do you investigate IO read/write spikes?
+Q003899	H	If CPU usage is low but the system load is high, which thread states and system metrics should you check?
+Q003944	E	What is the difference between Git merge and rebase? How should conflicts be handled?
+Q006504	E	Why do we need containers?
+D01427	E	What is the difference between centralized and distributed version control?
+D01428	M	Describe the three areas of Git (working directory, staging area, repository) and the commands that move changes between them.
+D01429	M	How is a Git branch implemented, and why is branching cheap?
+D01430	E	What is the difference between git merge and git rebase, and when should you not rebase?
+D01431	M	What is a fast-forward merge and when does Git create a merge commit instead?
+D01432	M	How do you resolve merge conflicts and what do the conflict markers mean?
+D01433	M	When would you use git stash and what happens to untracked files?
+D01434	M	What is the difference between git reset (soft, mixed, hard), git revert and git checkout for undoing changes?
+D01435	M	How does git fetch differ from git pull?
+D01436	M	Compare Git Flow, GitHub Flow and trunk-based development.
+D01437	M	How does .gitignore work, and why doesn't it affect files already tracked?
+D01438	M	You accidentally committed a secret and pushed it. What do you do?
+D01439	M	How would you find which commit introduced a bug using Git?
+D01440	M	What does git cherry-pick do and when is it appropriate?
+D01441	E	What problems does Docker solve, and how do containers differ from virtual machines?
+D01442	M	Compare containers and virtual machines on startup time, resource usage, isolation and security.
+D01443	M	Which Linux kernel features (namespaces, cgroups, union file systems) make containers possible?
+D01444	M	What is the difference between a Docker image and a container, and how do image layers work?
+D01445	M	How do you keep a Docker image small and its builds fast?
+D01446	M	How do containers help continuous integration and microservice deployment?
+D01447	M	How is data persisted in containers, and what is the difference between volumes and bind mounts?
+D01448	E	What does a typical Linux file permission string such as rwxr-xr-- mean, and how do chmod, umask and the sticky bit work?
+D01449	M	What are the differences between pipes and redirections, and what do 2>&1 and tee do?
+D01450	M	How do grep, awk and sed differ and what would you use each for in log analysis?
+D01451	M	How would you find the top 10 most frequent IP addresses in a large access log with shell commands?
+D01452	M	How do you inspect running processes, their states, CPU and memory usage using ps, top and similar tools?
+D01453	M	What do the process states R, S, D and Z mean in Linux?
+D01454	M	What does the PATH variable do and how does the shell search for commands?
+D01455	M	How do you find which process is listening on a given port and kill it?
+D01456	M	What does sudo do and why is running everything as root dangerous?
+D01457	M	A Linux server is slow. Walk through the commands you would run to check CPU, memory, disk and network.
+D01458	M	How do you compress and archive files on Linux, and how do tar, gzip and zip differ?
+D01459	M	What are basic regular expression elements such as anchors, quantifiers, groups and lookaheads, and what is catastrophic backtracking?
+D01755	M	What is DevOps and how does it change collaboration between development and operations?
+D01851	E	What do the Linux permission bits rwx mean for owner, group and others?
+D01852	M	How do you read and set permissions using chmod in symbolic and octal notation?
+D01853	M	What do the setuid, setgid and sticky bits do?
+D01854	M	How would you find which process is listening on a given port and kill it on Linux?
+D01855	M	How do grep, find, awk, sed and xargs combine in a pipeline to analyze log files?
+D01856	M	What is the difference between a foreground and a background process, and what do nohup and & do?
+D01857	M	How do stdin, stdout, stderr and redirection or pipes work in a shell?
+D01858	M	How do you check CPU, memory and disk usage on a Linux server?
+D01859	M	What is the difference between a zombie process and an orphan process?
+D01860	M	What is Docker and how do containers differ from virtual machines?
+D01861	M	What does a CI/CD pipeline automate and what stages does it commonly include?
+D01862	M	What are the DevOps practices of infrastructure as code and continuous monitoring?
+D01863	M	What is the difference between Git merge and rebase and when would you use each?
+D01864	M	What is a third-party library or service, and what risks come with depending on one?

@@ -1,0 +1,594 @@
+Q004729	M	How do you optimize prompts for cost and latency?
+Q004812	M	How do you manage token consumption and cost in long-running agent workflows?
+Q004825	M	Your AI agent burns too many tokens per task. How do you reduce token consumption?
+Q004826	M	Your AI agent keeps exceeding its budget per task. How do you enforce budget limits?
+Q004923	H	How do you design for latency vs quality trade-offs in AI systems?
+Q004924	M	How do you implement caching strategies for LLM applications?
+Q004925	M	How do you design rate limiting and cost management for AI APIs?
+Q004926	M	How do you handle failover and fallback strategies for AI systems?
+Q004950	M	What is LLMOps, and how does it differ from traditional MLOps?
+Q004954	M	How do you monitor LLM applications in production?
+Q004955	E	What is LLM observability?
+Q004958	M	How do you estimate the cost of running an AI-powered feature in production?
+Q004959	M	How do you optimize LLM inference costs in production?
+Q004960	M	How do you implement A/B testing for LLM systems?
+Q004961	M	What is CI/CD for AI applications, and how does it differ from traditional CI/CD?
+Q004962	M	How do you version and manage prompts in production?
+Q004963	M	What is model versioning, and how do you handle model rollbacks?
+Q004964	M	How do you implement rate limiting and throttling for LLM APIs?
+Q004965	M	How do you handle model updates and migrations without downtime?
+Q004966	M	What is the role of feature flags in AI deployments?
+Q004967	M	How do you implement logging and tracing for LLM applications?
+Q004969	M	What is a gateway pattern for LLM API management?
+Q004971	M	How do you implement streaming responses for real-time AI applications?
+Q004977	M	What are the key SLAs and metrics for production AI systems (latency, throughput, availability)?
+Q004978	M	How do you implement fallback strategies when the primary model is unavailable or rate-limited?
+Q004981	M	What is semantic routing, and how do you implement it in a multi-model system?
+Q004983	M	Your LLM API has latency spikes during peak hours. How do you stabilize it?
+Q004984	M	Your LLM endpoint's p99 latency doubled after a deploy with no model change. How do you diagnose it?
+Q004985	M	Your LLM costs are too high in production. How do you reduce costs without degrading quality?
+Q004986	M	Your application is hitting LLM provider rate limits during peak hours. How do you handle it?
+Q004987	M	Your application depends on one LLM provider. How do you switch providers without downtime?
+Q004988	M	Your AI system handles 100 requests/sec but crashes at 5000. How do you scale for concurrent requests?
+Q004989	M	A traffic spike brings down your AI system. How do you handle peak traffic?
+Q004990	M	One LLM provider outage took down your entire system. How do you eliminate single points of failure?
+Q004991	M	Your multi-LLM pipeline fails when one model in the chain breaks. How do you handle orchestration failure?
+Q004992	M	Your AI pipeline has zero visibility into which step is failing. How do you add observability?
+Q004994	M	One failing AI component can take down your entire platform. How do you design graceful degradation?
+Q005017	M	How do you implement continuous evaluation for production AI systems?
+Q005045	M	How do you implement audit trails and logging for AI decisions?
+Q005064	M	An auditor asks why your AI rejected a request 6 months ago, and you have no logs. How do you build audit trails?
+Q005126	M	How do you implement auto-scaling for AI workloads?
+Q005127	M	What is the role of load balancing in AI serving infrastructure?
+Q005130	M	How do you implement request queuing and priority scheduling for AI services?
+Q005132	M	How do you handle cold start latency for serverless AI deployments?
+Q005133	M	How do you implement model caching to reduce redundant computations?
+Q005134	M	What is the difference between synchronous and asynchronous inference, and when do you use each?
+Q005137	M	How do you monitor and profile LLM inference in production (TTFT, inter-token latency, GPU utilization)?
+Q005138	M	What is model routing at the infrastructure level, and how do you route requests based on complexity and cost?
+Q005173	M	How do you measure the ROI of an AI feature?
+Q005182	M	How do you approach cost optimization for an AI system that is exceeding budget?
+Q005935	M	How do you A/B test and evaluate different prompts in production?
+Q005940	M	What are prompt versioning and prompt drift, and how do you manage them in production?
+Q005942	M	How do you evaluate different prompt frameworks, e.g., LangSmith vs Braintrust vs Promptfoo?
+Q005948	M	What is prompt compression, and how does the LLMLingua family of methods work?
+Q005990	M	What is a data flywheel, and how do you build one in an agent product?
+Q005991	M	How do you evaluate and control the ROI of an AI agent, and what are the key metrics?
+Q006025	M	How do you choose an agent evaluation platform, and what use cases suit Braintrust, DeepEval, Weave, Langfuse, and Arize?
+Q006031	M	How do you implement streaming output for an LLM application, and how do you choose between SSE and WebSocket?
+Q006034	H	How do you implement rate limiting and circuit breaking for an LLM API, including token rate control and backpressure?
+Q006037	M	How does LLMOps differ from MLOps, and what must be operated after an LLM application goes live?
+Q006038	H	How do you design an LLM semantic cache, including similarity threshold and TTL, and how do you trade off hit rate against accuracy?
+Q006040	M	How do you govern the cost of LLM applications, and what cost controls are needed besides token metering?
+Q006041	H	How do you design a GenAI observability system for LLMs, and how is OpenTelemetry used?
+Q006045	M	How do you implement automatic multi-model failover, including failover chains and degradation strategies in production?
+Q006146	M	When using a coding agent, how do you control context, tokens, latency, and cost?
+Q006157	M	What problems must be solved to take a model API from integration to production deployment?
+Q006161	M	How do you anonymize replay data from online traces and move it into a regression set?
+Q006212	M	How do you use LangSmith to debug agents, and what advanced usage exists?
+Q006213	M	How do you monitor an agent's token consumption and cost, and what optimization strategies exist?
+Q006214	M	How do you use Arize Phoenix for open-source observability, and how does it differ from LangSmith?
+Q006215	M	How do you design SLAs and alerting rules for an agent, and what are the key thresholds?
+Q006216	M	How do you A/B test an agent, and what evaluation metrics are used?
+Q006218	M	How do you detect degradation in agent output quality, and what is semantic drift?
+Q006219	M	How do you do automated agent evaluation in production, and what is the right way to use LLM-as-a-Judge?
+Q006222	M	How do you choose an agent observability platform among LangSmith, Phoenix, Opik, and Galileo?
+Q006223	M	How do you find root causes from an agent's traces, and what are best practices for root cause analysis?
+Q006226	M	How do you implement a robust LLM retry mechanism in Python, including exponential backoff?
+Q006229	M	How do you test an LLM application using pytest and mocks?
+Q006231	M	How do you use asyncio and httpx to make batched concurrent calls to an LLM API, and how do you handle errors, retries, timeouts, and concurrency control in production?
+Q006797	M	In an LLM RAG serving system, what is the p99 latency budget for each stage (retrieve, rerank, generate, guardrail)?
+Q006803	M	How do you set the cost budget per request and per month for an LLM system?
+Q006821	E	What is the difference between LLMOps and MLOps?
+Q006836	M	How do you version, evaluate, and gate a prompt change?
+Q006844	M	Why would an agent's monthly bill grow much faster than the number of steps per task?
+Q006859	M	An interviewer asks how you know your agent is production-ready. What is the best answer?
+Q006861	M	Two weeks after launch, users report your agent "got worse," though you shipped nothing. What in your harness both prevents this and tells you what happened?
+Q006895	M	How do you build a regression test set for an LLM feature that ships weekly?
+Q006944	M	Users report your support bot "got noticeably worse this week," but you shipped nothing. What is the most likely cause and the right safeguard?
+Q006950	M	A teammate "fixed" a bad output by editing the prompt in the vendor console; a week later quality dropped on unrelated inputs and nobody can tell what changed. What practice would have prevented this?
+Q006993	M	Right after a launch, the provider starts returning 429s; your clients retry immediately, and the problem gets worse. What is the fix?
+Q006994	M	Which kinds of errors should an LLM API client not retry?
+Q006995	M	Your client streams responses and a call dies after streaming about 800 of an expected 1,000 tokens; your generic retry decorator re-fires the whole request. What is the problem and the better design?
+Q006996	M	An interactive LLM feature has a fat tail: p50 TTFT is 600ms but p99 is about 8s, and users hate the stragglers. Cost has some headroom. What is the strongest lever?
+Q006997	M	Your primary model is down so a circuit breaker fails over to a cheaper second-provider model. Availability recovers, but a week later you learn answer quality quietly dropped during the outage. What was missing?
+Q006998	M	Your prompt-cache hit rate is near 0% despite a large, seemingly stable system prompt. What is the most likely cause?
+Q007000	M	Which workload is semantic response caching most likely to help?
+Q007002	M	A feature sends a 1,200-token prompt (1,000 of it a stable system prefix) and returns about 250 tokens, on a frontier model at 200k requests/day. Where is the biggest cost win?
+Q007003	M	A high-volume extraction endpoint (shallow task, strict structured output) is on a reasoning model "for accuracy," and both cost and p99 latency are too high. What is the best move?
+Q007004	H	You add a cheap-to-expensive model cascade and savings look great at launch, but two months later spend is back up though traffic is flat. What is the most likely cause and the right instrumentation?
+Q007005	M	You are writing the first tests for an LLM service's probabilistic output. Which kind of test (ring) do you ship first?
+Q007010	M	Your agent passes every staging test but misbehaves in production. What is the most likely cause and fix?
+Q007011	M	What is typically the earliest signal that a prompt change quietly regressed your agent?
+Q007012	M	Cost per call on your agent has been flat for weeks, yet the monthly bill is climbing and tasks resolve at the same rate. What is happening?
+Q007016a	M	How does prompt caching work?
+Q007017	H	Build a prompt-versioning system.
+Q007018	H	Design tiered model routing that drops cost by 50% without regressing quality.
+Q007019	H	Where do you put an OpenTelemetry collector in a multi-agent mesh, and what spans do you emit?
+Q007091	M	A RAG chat assistant reuses a 1,500-token system prompt and retrieved context on every call. How do you cut cost and latency most effectively?
+Q007213	M	How do you optimize the cost of an overall LLM system?
+Q010859	M	How do you implement observability for LLM applications?
+Q010860	M	Describe CI/CD for LLM applications.
+Q010861	M	How do you handle rate limits and quotas?
+Q010864	M	How do you handle model updates and deprecations from providers?
+Q010867	M	How do you design a feedback loop for continuous improvement?
+Q010888	M	How do you optimize latency for real-time LLM applications?
+Q010909	H	Your LLM costs are 10x higher than expected. Walk through your investigation.
+Q010914	M	How do you handle version control for prompts in production?
+Q010918	H	Design a semantic cache that actually works in production.
+Q010922	M	When would you use extended or adaptive thinking vs standard mode in an LLM, and how do you control costs?
+Q010929	H	How would you design a semantic routing system that dynamically selects the cheapest model that can handle a query with acceptable quality?
+Q010952	H	Your production LLM application suddenly shows a 30% increase in hallucination rate after a model provider silently updated their model. How do you detect and respond?
+Q010956	H	How would you design a multi-provider LLM architecture for 99.9% availability?
+Q010981	M	A vendor changes its subscription terms so that usage limits no longer cover third-party agent harnesses, then announces and later pauses a replacement credit plan. What does this tell you about vendor lock-in risk in your AI architecture?
+Q010985	H	You are an Engineering Manager standing up an AI eval culture on a team. How do you set up evals so they actually drive better decisions, without engineers gaming the metrics?
+Q010992	H	How do you design code review processes for a world where a majority of pull requests are generated by AI agents?
+Q010996	H	How do you evaluate a model router that sends sensitive queries to a different model?
+Q011005	H	Design cost-aware multi-provider LLM routing given very different per-token prices across frontier models and low-cost models.
+Q011006	M	Where does semantic caching fit in a cost-aware multi-provider LLM routing design?
+Q011008	H	Your agent platform runs 40-step tasks on a single frontier provider, and that provider just logged four outages in four days. Design for provider failure.
+Q011009	H	How do you keep outputs consistent when steps of one task span two LLM providers?
+Q011011	H	Design a request-level model router that achieves frontier quality at significantly lower cost. Where do the training labels come from, and how do you avoid feedback loops?
+Q011012	M	Should model routing live in your product or in a generic gateway?
+Q011015	M	How do you detect a silent LLM API repricing before finance does?
+Q011024	M	How do you catch an SDK or harness upgrade that silently changes the model's behavior?
+Q011177	M	What is a token budget and how do you enforce it?
+Q011178	M	How do you design fallbacks across multiple LLM providers?
+Q011255	M	How would you optimize costs for a high-volume RAG application?
+Q011259	M	Your cost model for next year uses today's per-token prices. What will it get wrong?
+Q011264	M	Model versions now ship weekly. How do you keep model selection current without breaking production?
+Q011312	M	How do you justify the cost of an AI system to a CFO?
+Q011341	H	Your gateway falls back from one model to another mid-conversation, and both quality and error rates get worse. What is going on?
+Q011521	M	What is "semantic drift" in caching, and how do you prevent it?
+Q011522	M	Why is a semantic cache sometimes more expensive than a raw LLM call at low volume?
+Q011523	M	You already use provider prompt caching. Should you also add a semantic cache?
+Q011535	M	Why is trace attribution critical for senior engineers working on LLM applications?
+Q011536	M	How do you justify the cost of an observability platform like LangSmith?
+Q011560	H	If you had to build a system that works across OpenAI, Anthropic, and local open-weight models, how would you architect it?
+Q011561	H	With every AI lab shipping its own agent SDK (Claude Agent SDK, OpenAI Agents SDK, Google ADK), how do you avoid vendor lock-in?
+Q011569	H	How would you design the testing strategy for an AI coding agent in CI?
+Q011585	H	An agent's cost per task rose 40% and its tone changed overnight, with no code or dependency change on your side. What happened, and how do you make this impossible to miss next time?
+Q011586	H	Design a model registry that survives divergent deprecation calendars across vendors and clouds.
+Q011594	M	How do you test prompt changes before production?
+Q011595	M	What triggers should cause an automatic rollback of an LLM deployment?
+Q011596	M	Your provider is retiring the model your product runs on in 60 days. How do you migrate safely?
+Q011600	H	Rate-limit errors are your top production failure. How does an LLM gateway help, and how could it make things worse?
+Q011601	M	When is a full LLM gateway overkill, and what would you do instead?
+Q011603	H	How do you fail over a long-running agent conversation to another provider?
+Q011604	M	Your LLM bill doubled month over month with flat traffic. How do you find and fix it?
+Q011605	M	Why do AI products have worse gross margins than SaaS, and what do engineers do about it?
+Q011606	H	A team wants to move a 300K-token-context workload from one frontier model to another because both list at the same price ($2/$10 per million tokens). What do you check?
+Q011625	M	How do you design for high availability in LLM systems?
+Q011629	H	Your provider shipped a fix under the same model ID and your quality metrics moved. How do you detect and handle silent model changes?
+Q011656	M	What metrics would you track for a production LLM system?
+Q011657	M	How do you detect quality degradation in production?
+Q011658	H	After a routine dependency upgrade, your LLM dashboards go quiet: fewer spans, lower token counts. Traffic and the provider bill are unchanged. What happened, and how do you stop it from happening again?
+Q011670	M	What reliability patterns would you use for a production LLM system?
+Q011673	M	What is the biggest anti-pattern you see in LLM applications?
+Q011758	M	How would you handle rate limiting to control LLM costs?
+Q011783	M	How do you regression-test a generative pipeline when outputs are not reproducible?
+Q011812	H	Your p99 latency doubled after a deploy with no model change. Walk through the diagnosis.
+Q011851	H	Design the regression gate that decides whether a prompt or model change ships.
+Q011853	M	What observability does a production LLM system need: traces, spans, costs, feedback?
+Q011854	M	How do you manage prompt versioning and rollbacks in production?
+Q011855	H	Design online evaluation: what do you log, what do you sample, and what do you A/B test?
+Q011938	H	A customer says "the model got worse" after you upgraded model versions in their deployment. How do you verify and respond?
+Q012011	H	A Copilot chat feature has a p95 budget of 3 seconds to first useful content. Where does the time go, and how do you cut it?
+Q012073	H	An agent you shipped four months ago runs on a base model being deprecated in 60 days. How do you swap the model without regressing quality, and what had to be in place beforehand?
+Q012106	M	A new frontier model is released and scores better on your benchmarks. What happens before it reaches customers?
+Q012107	H	Estimate the cost and turnaround of running an LLM-based document diligence workflow over a 5,000-document data room, and say which lever you would pull first to reduce cost.
+Q003526	H	How do you evaluate an AI application? How do golden sets, LLM-as-judge, online canary releases, and trace replay fit together?
+Q003607	M	Why do LLM API calls need retries, rate limiting, fallback, and structured output validation?
+Q003570	M	How should you conduct a post-mortem of bad cases in an agent project?
+Q003571	M	How can you use traces to reconstruct an agent's execution process?
+Q003576	M	Why does a production environment need an LLM gateway, and what problems arise when business services call model APIs directly?
+Q003577	M	What is the difference between an LLM gateway and an LLM router?
+Q003578	M	How can token costs be attributed to tenants, users, features, models, and prompt versions?
+Q003580	M	How do you control the cost and runtime of AI evaluations in CI?
+Q003586	M	Why does streaming improve user experience, and does it reduce total latency or token cost?
+Q003594	H	When an upstream model hits RPM or TPM limits, how should a model gateway queue requests, degrade, or switch models?
+Q003595	H	After changing the model or modifying the prompt, how do you validate the effect using offline evaluation, trace replay, and online canary release?
+Q003610	M	What is the evaluation harness responsible for in an AI application?
+Q003611	H	How do you evaluate an AI application when the current time and web search results keep changing?
+Q003650	H	How should you split a single agent request into spans, and how do you preserve the trace across threads and services?
+Q003625	M	What are the differences between metrics, logs, traces, evaluation, and audit?
+Q003626	M	How do you distinguish a trace, span, session, run, and attempt?
+Q003628	M	Has OpenTelemetry standardized agent spans?
+Q003629	M	How can you use traces to locate common AI bad cases?
+Q003630	M	Is it acceptable to store full prompts and tool results in traces?
+Q003634	M	What is the relationship between tracing and evaluation?
+Q003636	M	What is the relationship between an LLM gateway and RAG, agents, and MCP?
+Q003637	M	Do you really need an LLM gateway?
+Q003639	M	How do you choose between a self-built gateway, LiteLLM, Cloudflare AI Gateway, Kong AI Gateway, and similar routers?
+Q003640	M	How do you measure how well an LLM gateway is doing?
+Q012503	H	How do you scale an AI app to 1 million users in production?
+Q007524	H	Design a confidence-thresholded router using logprobs. What would you validate?
+Q007552	H	How would you build the router that decides which requests get high reasoning effort?
+Q007553	H	What would you monitor in production to detect that your chosen reasoning budget has drifted out of calibration?
+Q007588	H	How would you decide a thinking budget per request class in production?
+Q007602	H	How do you design a system so the model layer stays swappable?
+Q007711	H	Where would you place prompt-cache breakpoints in a multi-tenant agent with shared tools but per-user memory?
+Q007712	M	Your prompt cache hit rate dropped to near zero after a deploy. What do you look for?
+Q007715	M	Your prompt scores 95% offline but users complain. What's broken?
+Q007716	M	How do you keep the eval set from going stale?
+Q007717	M	What changes when your product must handle prompts and content in multiple languages?
+Q007718	H	How would you build a minimal multilingual eval without native speakers on the team?
+Q007721	M	How do you version and govern prompts in production? If someone asks which prompt produced a bad output three weeks ago, can you answer?
+Q007722	M	Why is a prompt tested on one model not validated on a newer version of the same model?
+Q007723	M	How would you gate promotion of a prompt version on evals without blocking every small copy change?
+Q007724	M	You want to switch model providers and your prompts break. Why, and how would you have made them portable?
+Q007725	M	When migrating to a new model, what would you do first: re-tune the old prompt for the new model, or re-derive the prompt from the task spec?
+Q007726	M	How do you decide when a model or provider migration is done?
+Q007742	H	How would you tell context rot apart from a retrieval failure from a trace?
+Q007743	H	What do you do when an LLM failure only reproduces at 1 in 50 requests?
+Q007765	H	How would you integrate prompt compilation into CI/CD?
+Q007774	H	How would you A/B test a prompt change safely in production?
+Q007775	H	With sparse explicit user feedback, what proxy metrics have real signal, and how do you validate a proxy?
+Q007776	H	How do you test a prompt change inside a multi-step agent where one turn's output feeds the next?
+Q007777	H	The prompt variant wins the A/B test but loses offline. What do you do?
+Q007779	H	How would you build a router that picks model and reasoning effort level per query?
+Q007794	H	Your prompt change gained 3 points on the eval. How confident are you that it is real?
+Q007795	H	How would you construct a perturbation set for prompt evaluation without accidentally changing the task?
+Q007800	H	You moved a prompt from a hosted API to a self-hosted copy of the same open-weight model, and quality dropped below the hosted version. What do you check?
+Q007801	H	How would you build a regression test that fails when someone changes the chat template?
+Q007802	H	Why can a chat template that drops the system prompt still pass a casual smoke test?
+Q007803	H	Once the token sequences match between hosted and self-hosted serving and quality is still lower, what do you suspect next?
+Q007971	M	Break down the latency and cost budget of a RAG query. What do you optimise first?
+Q007972a	H	Your RAG system's p95 latency is 4s and product wants 1.5s. Walk through the cuts you would make, in order.
+Q007972b	H	How does prompt caching interact with per-user ACL'd context?
+Q007973	M	At what QPS does self-hosting the reranker beat the API?
+Q008178	H	How would you build a drift monitor that catches behaviour changes in a mocked service used for agent RL training, not just schema changes?
+Q008291	M	How would you measure cost per successful task rather than prompt cache hit rate?
+Q008292	M	How do you test an agent in CI (not evals), on every pull request, in under five minutes?
+Q008293	H	Your recorded-response test cassettes drift from real model behaviour and CI passes while production breaks. How do you detect that?
+Q008294	M	How do you write assertions for an agent whose output is legitimately different every run?
+Q008304	H	Your agent platform's bill jumped from $8k to $40k in a month and nobody knows why. How do you find out, and how do you make sure this never happens blind again?
+Q008305	H	One tenant is 60% of your agent platform's spend and 2% of revenue. What do you do technically?
+Q008306	H	How do you attribute the cost of a shared prompt cache across tenants?
+Q008315	M	How would you test agent cancellation behaviour in CI?
+Q008333	H	How do you engineer an agent for cost and latency without wrecking quality?
+Q008334	H	How do you decide which agent steps are safe for the cheap model: static rules or learned routing?
+Q008335	H	Why can aggressive history truncation increase cost in an agent?
+Q008336	M	What does good observability look like for an agent system?
+Q008337	H	How do you detect "silent degradation" in an agent, where success rate is stable but quality is dropping?
+Q008338	M	What would you redact from agent traces without destroying debuggability?
+Q008351	H	A customer reports the agent did something wrong three days ago. You have the trace. Can you reproduce it? How do you build a system where the answer is yes?
+Q008352	H	Storing full payloads for every agent run is expensive at scale. What is your retention policy?
+Q008353	H	How do you replay an agent run that involved a human approval and a 20-minute pause?
+Q008357	H	You want to change your agent's system prompt. How do you ship it without finding out from customers that you broke something?
+Q008360	H	Define SLOs for a customer support agent. Every span returns 200 and latency is fine. What do you actually alert on?
+Q008362	H	How do you set an error budget for something you only measure on a 2% sample?
+Q008404	M	What is the difference between guardrail metrics and quality metrics? Give examples of each.
+Q008405	M	How would you set the threshold for a guardrail metric like jailbreak rate: zero or nonzero?
+Q008406	H	Your helpfulness A/B test win ships and escalation rate rises 15%. What happened?
+Q008407	M	What should you log for every LLM call in production, and what are the pitfalls?
+Q008408	H	How would you implement "delete this user's data" when their text appears inside other logged prompts?
+Q008409	M	What would you log differently for a voice agent?
+Q008410	M	What is the difference between observability and evals for LLM applications?
+Q008411	M	Which of observability and evals would you build first on a brand new LLM feature, and why?
+Q008412	M	If your LLM observability bill got cut in half, what would you stop capturing?
+Q008422	M	What are OpenTelemetry's GenAI semantic conventions, and why should you care?
+Q008423	M	How would you attach an eval score to a span after the fact?
+Q008424	M	What would you do when a semantic convention you depend on changes names in a new release?
+Q008457	M	How do you wire evals into CI so that prompt or model changes can't silently regress quality?
+Q008458	M	A PR improves the target task but flips two unrelated eval cases to failing - what's your process?
+Q008459	M	How do you keep judge-based CI costs sane as the team's PR volume grows?
+Q008460	M	How do you evaluate an LLM feature online? Design the A/B test and name the implicit feedback signals you'd use.
+Q008461a	H	Thumbs-up rate went up but escalation rate also went up for an LLM feature - construct a story that explains both.
+Q008461b	M	When would you ship an LLM feature change on offline evals alone, without an A/B test?
+Q008476	M	You are swapping the model behind a live feature. Walk me through shadow, canary and A/B. When do you use each?
+Q008477	H	How would you shadow-test an agent that writes to a production database?
+Q008478	H	Your canary looks fine at 2% traffic and quality tanks at 50%. What happened?
+Q008479	M	How do you instrument cost and latency for an agentic feature, and what actually drives cost creep?
+Q008480	M	Your cost per task doubled but every per-call metric is flat. Where do you look?
+Q008481	H	How would you attribute LLM cost to a specific customer without high-cardinality metrics?
+Q008485	H	Design a human review queue for a production LLM feature. What gets reviewed, and how much?
+Q008486	M	How would you keep two human reviewers of LLM outputs consistent over six months?
+Q008487	M	What would you cut first if the human review budget for an LLM feature halved?
+Q008494	M	You add a router that sends easy queries to a cheap model and hard ones to a frontier model. How do you evaluate the router?
+Q008495	M	Your model router cuts cost 60% and aggregate quality drops 1 point. What else do you check before shipping?
+Q008496	M	How would you evaluate a cascade that tries the cheap model first and escalates on low confidence instead of routing up front?
+Q008505	H	Design the observability stack for a production LLM application. What does a good trace look like?
+Q008506	H	How do you trace streaming responses and attribute TTFT vs generation time?
+Q008507	H	What trace sampling policy keeps costs sane at 10M requests/day without losing the failures?
+Q008508	M	How do you monitor a deployed LLM system for drift? What kinds of drift matter?
+Q008509	M	Your canary is green but user complaints are rising - what's your canary missing?
+Q008510	H	How would you detect that a provider quietly changed a model behind a pinned version string?
+Q008516	M	A team ships prompt changes on vibes - the founder tries five favourite prompts and merges. How do you move them to eval maturity without halting shipping?
+Q008517a	M	The founder says "our users are the eval" - how do you respond?
+Q008517b	M	Which single metric would you put on the team dashboard first for an LLM product, and why that one?
+Q008536	H	Running your LLM judge on every production trace would cost more than the feature itself. How do you monitor quality online at scale?
+Q008557	M	How would you design retry behaviour for a streamed LLM response that dies at token 400 of 600?
+Q008562	M	Why do output tokens cost more than input tokens, and how should that shape how you build?
+Q008563	M	How do reasoning tokens change your cost model for an agentic loop?
+Q008564	M	When is it worth paying for more output tokens for chain-of-thought?
+Q008571	M	What is prompt (prefix) caching, and why is it one of the biggest cost levers available?
+Q008574	M	What's the difference between prompt (prefix) caching and semantic caching?
+Q008575	M	Your app is getting 429s from your LLM provider at peak traffic. How do you handle rate limits properly?
+Q008576	M	Why is full jitter better than plain exponential backoff?
+Q008577	M	Your retries are succeeding but P99 latency tripled - what's happening and what do you change?
+Q008580	M	How would you write a regression test for an LLM feature that cannot rely on exact output matching?
+Q008584	M	A user closes the tab halfway through a streamed response. What happens on the server, and what should happen?
+Q008585	M	How would you implement a resumable stream for an LLM response?
+Q008586	H	What is the cost signature in your metrics of client disconnects that are never detected?
+Q008587	M	Your production code reads the LLM response text but never checks 'finish_reason' (or 'stop_reason'). Why is that a bug, and what should you do with each stop reason?
+Q008589	M	Your length-stop rate doubled after a model upgrade with no prompt change: what happened, and what do you change?
+Q008590	M	Why do we obsess over P99 latency rather than the average, and what causes tail latency in LLM serving specifically?
+Q008591	M	Why does an agent workflow's end-to-end tail latency degrade faster than any single call's?
+Q008621	M	When would you use a batch API, and how do you design a pipeline around one?
+Q008622	M	How do you handle an LLM batch job that comes back 2% failed?
+Q008623	M	Your nightly LLM batch pipeline now needs 4-hour freshness - what changes?
+Q008624	M	What is semantic caching, how is it different from prompt/prefix caching, and what are its failure modes?
+Q008625a	H	Design the cache key for a semantic cache in a multi-tenant RAG product.
+Q008625b	H	How would you detect that your semantic cache similarity threshold is causing false hits in production?
+Q008632	M	How do you load test an LLM service so the numbers actually mean something?
+Q008633	H	Why does a closed-loop load test with 100 workers understate P99 latency?
+Q008634	M	How would you design the prompt corpus for a benchmark of an agentic workload?
+Q008650	M	Providers now sell the same model at several service tiers: standard, priority, flex or batch, and provisioned throughput. How do you decide which traffic goes where?
+Q008651	M	Your provisioned LLM capacity runs at 40% utilisation overnight: what do you route into it?
+Q008652	M	How do you decide whether a feature's P99 latency is worth paying priority-tier prices for?
+Q008655	H	Design the SLOs for a new LLM-powered feature. What do you promise, and how do you measure it?
+Q008656	M	Your LLM provider's P99 is worse than the SLO you want to offer - what are your options?
+Q008657	M	Why measure timeout-terminated requests inside the latency distribution?
+Q008662	M	What do you monitor in production LLM serving, and what pages someone at 3 a.m.?
+Q008664	M	What would you add to LLM serving monitoring for a multi-tenant platform?
+Q008665	H	Design the reliability layer for calls to an LLM provider: timeouts, retries, circuit breakers, idempotency.
+Q008666a	H	A stream dies at token 400 of a 600-token answer the user is reading - walk through exactly what happens.
+Q008666b	M	Why must fallback models be eval-gated rather than just API-compatible?
+Q008667	H	Traffic doubles overnight and you can't get more GPU capacity for a week. What are your graceful-degradation options?
+Q008669	M	How do you decide the priority order between free-tier chat and paid-tier background jobs when LLM capacity is constrained?
+Q008673	H	Your LLM bill tripled this quarter. Design a cost-engineering programme - attribution, cascades, context management.
+Q008674	H	How do you build a difficulty router for LLM requests without labelled data?
+Q008675	M	A model upgrade improved quality but doubled reasoning tokens - how do you decide whether to adopt it?
+Q008681	H	How do you run evals continuously across backends in an LLM gateway without exploding cost?
+Q008688	M	Why are requests-per-second quotas the wrong unit for a shared LLM platform, and what would you use instead?
+Q008689	H	How do you price internal chargeback when 60% of a tenant's input tokens are cache hits?
+Q008692	M	How would you alert on prefix cache hit rate without paging on every deploy?
+Q008693	M	What deploy-time check would catch a prompt-prefix change that breaks prefix caching before it ships?
+Q008743	H	How would you set per-user quotas for an LLM product if legitimate power users are 50x heavier than the median user?
+Q008744	M	Where does per-tenant cost attribution have to live in an LLM system so that you can detect a denial-of-wallet attack?
+Q008847	H	Design end-to-end observability and containment for a fleet of production agents.
+Q008848	H	How do you build a behavioural baseline for an agent fleet where legitimate agent behaviour changes every time someone edits a prompt?
+Q008849	M	For a production agent fleet, which monitoring signals would you page a human for at 3am, and which are dashboard-only?
+Q008950	M	What would you log so that you can debug a failed 40-step computer-use agent trajectory after the fact?
+Q008978	H	When processing 10M document pages per month with a model cascade, how do you decide the escalation threshold?
+Q008979	H	In a document-processing cascade, at what accuracy delta does the frontier model justify 20x the cost?
+Q008980	H	How does the document-processing cascade design change if 40% of pages are handwritten?
+Q009056	M	What monitoring do you consider mandatory for LLM features in production?
+Q009059	M	How do you debug non-deterministic bugs in LLM systems?
+Q009060	M	How do you write regression tests for behaviour that is correct only 95% of the time?
+Q009061	M	A bug in an LLM system appears in production but never replays locally. What could be different?
+Q009067	M	Who should be allowed to change prompts in production on your team, and what gates those changes?
+Q009069	M	How do you keep an eval set aligned with drifting production traffic?
+Q009070	M	Which user signals would you weight most when evaluating an LLM feature, given how biased explicit feedback is?
+Q009071	M	How do you decide when an AI prototype is ready for production?
+Q009073	M	How does the bar for production readiness change between an internal AI tool and a customer-facing feature?
+Q009083	M	How would you page on a regression that only affects 2% of traffic of an LLM feature?
+Q009112	H	Your model provider deprecates the model your product depends on, with 90 days' notice. How would you handle the migration?
+Q009113	M	How do you keep prompts portable across model providers without sinking to lowest-common-denominator capability?
+Q009114	M	How would you handle a model deprecation with 30 days' notice instead of 90?
+Q009117	H	Your assistant's answer quality regressed and nobody noticed for three weeks. How would you structure the postmortem document?
+Q009118	M	How would you sample production traffic for quality scoring without a labelling budget that scales with traffic?
+Q009119	M	What would make you page on an answer-quality regression rather than catch it in a weekly review?
+Q009193	H	Your LLM endpoint's p99 latency doubled after a deploy, but the model weights did not change. Walk me through your debugging.
+Q009194	M	If an LLM endpoint's p99 latency doubled but p50 is flat, what does that tell you?
+Q009195	M	What alarm would have caught a p99 latency regression in an LLM endpoint before customers noticed?
+Q009199	H	How would you decide an LLM-powered assistant is ready to launch to millions of customers?
+Q009201	M	Which single online metric would you alarm on first for a newly launched LLM assistant?
+Q009217	M	A provider offers a 50%-discount batch API with 24h latency. When do you switch to it for running an LLM call over 50,000 documents?
+Q009218	M	When running an LLM call over 50,000 documents, how would you checkpoint safely if two runs might execute concurrently?
+Q009220	M	Where does prompt caching change the cost model of an LLM API, and what invalidates a cached prefix?
+Q009280	H	How would you measure end-to-end action accuracy across third-party apps without logging what people actually asked for?
+Q009298	M	If persona drift correlates with higher user retention, what do you do?
+Q009335	M	What would you log per tool call to debug an agent run three days later?
+Q009342	H	Your new agent version scores higher on every benchmark, but internal users say it got worse. Find the problem.
+Q009343	M	Your new agent version scores higher on every benchmark but internal users say it got worse. How would you ship it safely while you investigate?
+Q009344	M	When a new agent version wins on benchmarks but user sentiment says it got worse, what would make you override user sentiment and ship anyway?
+Q009347	M	What would you measure to distinguish a real productivity gain from an AI coding agent from work simply moving from writing to reviewing?
+Q009352	M	How would you expose effort levels of an agent model to customers so they do not all pick the maximum?
+Q009371	H	A customer running an air-gapped deployment reports a quality regression after an update and cannot share any prompts. How do you debug?
+Q009372	M	How do you handle model deprecation across dozens of air-gapped installs?
+Q009415	M	What telemetry tells you that the agent harness, not the model, is the bottleneck?
+Q009443	H	Take a working GenAI agent prototype to production for an enterprise. What is your checklist between demo and launch?
+Q009444	M	When taking a GenAI agent prototype to production, which checklist items do you cut when the customer wants to launch in three weeks?
+Q009445	M	How do you decide the quality bar is met for launching a GenAI agent, and who signs off?
+Q009454	H	An agent you shipped for a customer four months ago runs on a base model the provider is deprecating in 60 days. How do you swap the model without regressing quality, and what had to be in place beforehand for that to be possible?
+Q009455	M	A challenger model wins overall but loses on your two most important customer slices. What do you ship?
+Q009513	M	For an AI agent that schedules hospital appointments, how do you decide when to stop reviewing 100% of outcomes?
+Q009514	M	What is your rollback plan if a hospital appointment-scheduling agent misbooks a slot at 2am?
+Q009527	H	A customer's voice agent runs on an older real-time TTS model, and product wants the newer, more expressive one. How do you decide, and how do you roll it out?
+Q009593	H	Walk through the latency budget of a RAG query: query understanding, retrieval, rerank, LLM answer. Where do you spend and where do you cut?
+Q009594	M	In a RAG query pipeline, where do you put timeouts and what degrades gracefully: drop the reranker, or drop a slow shard?
+Q009602	H	Employees across a 20,000-person company build their own agents in a no-code builder. Design the governance layer: what is checked before an agent goes live, what is enforced at run time, and how do you know an agent is worth keeping?
+Q009603	M	A popular employee-built agent's owner leaves the company. What happens to the agent?
+Q009635	H	How do you safely roll out a new LLM version under heavy production traffic (shadow traffic, interleaved evals, rollback)?
+Q009696	M	A new frontier model is released and it scores better on your benchmarks. What happens before it reaches customers?
+Q009698	M	How would you structure a model rollback so a customer mid-task is not switched to a different model underneath them?
+Q009699	H	Estimate the cost and turnaround of running an LLM diligence workflow over a 5,000-document data room, and say which lever you would pull first.
+Q009700	M	How would you decide the smaller-model routing boundary empirically?
+Q009701	M	What changes in an LLM deployment if the customer requires a specific processing region with lower capacity?
+Q009702	H	How would you instrument an LLM pipeline so that triaging a report of a missed clause takes minutes instead of a day?
+Q009704	H	Firms can customise prebuilt LLM agents, and one firm has built 400 of its own. You cannot hand-grade them all. How do you keep a bad customer-built agent from reaching a client?
+Q009706	H	How do you move thousands of customer-built agents to a new model without switching a customer mid-task?
+Q009777	M	How would you set the token budget for a voice reply on smart glasses versus a chat reply?
+Q009795	H	How do you detect quality regressions of an LLM feature post-launch without reading user content?
+Q009796	H	A Copilot chat feature has a p95 latency budget of 3 seconds to first useful content. Where does the time go, and how do you cut it?
+Q009798	M	What would you do differently for a 300 ms autocomplete latency budget (as in a code-completion assistant) compared with a chat feature?
+Q009802	H	Estimate the annual serving cost of adding an LLM summary feature for 100 million weekly active users, and explain how you'd cut it by 10x.
+Q009842	M	In an LLM service that enriches questions with a third-party API, what changes if that API rate-limits you at 10 requests per second?
+Q009863	M	How would you measure prompt-cache hit rate, and what would a low hit rate tell you?
+Q009925	M	How do you rate-limit by tokens-per-minute rather than requests-per-minute when you don't know the output token count upfront?
+Q009939	H	In a ChatGPT-scale serving stack, a new model version rolls out and regressions are reported only in one language. How does your design catch that?
+Q009944	H	An enterprise customer reports slow LLM responses. Token counts are unchanged and the canary is slow only at peak hours. What do you investigate next?
+Q009945	M	What dashboards should exist to catch an LLM response-latency degradation before the customer reports it?
+Q009946	M	A customer says "the model got worse" after you upgraded model versions in their deployment. How do you verify and respond?
+Q009969	M	How do you detect precision degradation of a production LLM agent after a model upgrade?
+Q009981	H	A workflow passes evals on the frontier model but fails on the air-gapped model. What are your options besides buying more GPUs?
+Q010005	H	How do you detect that a previously stable query has "gone hot" so you can invalidate its cache?
+Q010007	M	p50 time-to-first-token is unchanged and only p95 regressed. What does that tell you?
+Q010008	H	How do you set per-span latency budgets when different teams own different spans?
+Q010009	H	Implement a client pool over multiple LLM providers with failover: providers fail, time out, or rate-limit, and callers should just get a completion.
+Q010010	H	How does failover across LLM providers interact with streaming responses that are already half-sent to the user?
+Q010028	H	Which step types in a long-running agent would you never hand to a cheap model, and how would you prove that choice with data?
+Q010067	M	Where would you cache to cut latency for common queries in a real-time voice agent?
+Q010088	M	How would you decide, per query, whether to answer on-device or escalate to the cloud?
+Q010094	M	What is your rollout and monitoring plan for adding the fifth and sixth languages to a multilingual assistant?
+Q010129	M	For an airline customer-facing agent, what is your launch gate: which metric at what threshold?
+Q010139	H	After a foundation-model version upgrade, what monitoring would catch a regression in minutes instead of via next-day metrics?
+Q010140	M	How do you handle providers sunsetting the model version you are pinned to?
+Q010163	H	How would you tell a genuine improvement from overfitting to last week's failures?
+Q010183	H	Write the server-side handler for streaming token generation, handling client disconnects correctly.
+Q010184	H	How do you propagate a mid-stream engine failure to a client that already received an HTTP 200?
+Q010185	H	Where would you meter tokens for billing in a streaming LLM service, and do aborted requests bill for generated-but-undelivered tokens?
+Q010240	M	What would you cache in an LLM serving stack, and what is the invalidation story?
+Q010243	H	Design a rate limiter for an LLM API where cost scales with tokens, not requests.
+Q010244	H	How do you rate-limit fairly when one customer's requests all have 100k-token contexts?
+Q010245	H	Where does a token-based LLM API rate limiter sit relative to the inference scheduler's own admission control?
+Q010307	M	In a customer-facing chatbot backend, where do you enforce per-user spend limits in the request path?
+Q010308	M	LLM APIs are slow, expensive, and flaky. How does your retry strategy differ from retrying a normal REST dependency?
+Q010309	H	A timeout fires on an LLM API call but the provider actually completed the request and billed you. How do you detect and account for that?
+Q010310	M	When would you hedge LLM API requests (fire a second request before the first fails)?
+Q010311	M	When do you put a queue in front of LLM work, and what does that architecture look like?
+Q010313	M	Provider Batch API (50% cheaper, hours of latency) versus your own queue: when does each win?
+Q010319	M	How do you keep LLM costs under control in a multi-tenant product?
+Q010320a	H	In a multi-tenant LLM product, a tenant's spend doubled overnight. Walk me through the investigation.
+Q010320b	H	How do you prevent a retry storm from turning an incident into a five-figure LLM bill?
+Q010321	M	Design the caching strategy for an LLM-backed feature. What can you cache and what can't you?
+Q010322	M	How do you measure whether a semantic cache is serving wrong answers?
+Q010323	M	What cache hit rate target do you need before the complexity of an LLM cache pays for itself?
+Q010327	M	How would you build an abstraction over multiple LLM providers, and what breaks?
+Q010328	M	How do you run evals to certify a fallback model before wiring it into a multi-provider LLM abstraction?
+Q010329	M	Where does an LLM gateway live, as a library in each service or a standalone proxy, and why?
+Q010330	H	Your provider gives you 2M tokens/minute. How do you rate-limit your own users so you do not blow through it?
+Q010331	M	When rate-limiting by tokens, how do you handle a single request that is legitimately huge, such as a user uploading a 300-page PDF?
+Q010332	M	When one tenant is 60% of traffic, do you throttle them even when there is spare capacity?
+Q010333	M	What do you log and trace for an LLM-backed endpoint? How is it different from normal API observability?
+Q010334	M	Answer quality of an LLM feature "got worse" with no code deploy. What do you check, in order?
+Q010335	M	How would you detect a silent provider-side model change?
+Q010363	H	In a large LLM batch enrichment job, how do you re-enrich records when the prompt improves, without paying full price?
+Q010405	M	How do you put eval gates into CI/CD for prompts and model versions?
+Q010407	M	How do you eval-gate a provider-initiated model deprecation that forces you onto a new version?
+Q010411	M	Your primary model provider goes down. What does your incident response look like?
+Q010412	H	The fallback LLM provider's quota is half your peak load. Who gets cut, and where is that encoded?
+Q010413	M	How do you test LLM provider failover without causing an incident?
+Q010414	M	What is on your dashboard for an LLM serving platform, and what do you alert on?
+Q010415	M	For an LLM serving platform, which three alerts page a human at 3am, and which wait for morning?
+Q010416	M	How do you keep prompt/completion payloads out of logs while still being able to debug?
+Q010417	M	Nothing deployed and no infra alerts, but users say the AI feature "got worse." How do you detect and debug silent quality regressions?
+Q010418	M	Daily golden-set evals cost real money. How do you budget them?
+Q010419	H	The model provider denies changing anything, but your eval diff says otherwise. What do you do?
+Q010423b	M	How do you prove to an auditor which model version handled a given request last March?
+Q010452	M	How do you detect quality regression after a model version upgrade you do not control?
+Q010485	M	Your product adds thumbs up/down on assistant messages. What do you build, and where does the data go?
+Q010486	M	Most users never press thumbs up or down, so explicit feedback covers a small fraction of messages. How do you design around that sparsity?
+Q010514	M	How would you detect eval-prod mismatch after the fact from logs?
+Q010515	M	What is your process for keeping the golden set representative as traffic shifts?
+Q010518	M	How would you A/B test an LLM-powered feature, and how does it differ from testing a ranking-model change?
+Q010519	M	In an A/B test of an LLM feature, your thumbs-up rate is flat but edit distance on accepted outputs dropped 30%. Do you ship it?
+Q010523	H	What would make you trust offline evals enough to skip an A/B test for a small prompt change?
+Q010524	M	How does monitoring an LLM application differ from monitoring a classical model in production?
+Q010525a	H	Refusal rate doubled overnight with no deploy on your side. Walk me through how you would investigate it.
+Q010529	M	MLOps versus LLMOps: what is genuinely different, and what is just rebranding?
+Q010530	H	What does a rollback look like when an LLM regression came from the model provider rather than your own deploy?
+Q010531	M	Which MLOps tool in a classical ML stack maps to nothing in an LLMOps stack?
+Q010558	H	In a hybrid on-device/cloud LLM architecture, the on-device path succeeds but produces a bad answer. How would you even know?
+Q010566	H	Your LLM judge says quality is fine but retry rates spiked in the field. What do you look at?
+Q010573	H	Your feature runs on an OS-provided model. An OS update shipped a new model version and quality changed overnight, though you released nothing. How do you detect it, and how do you design so it does not hurt next time?
+Q010574	H	A new model version is better on average but worse for two of your supported languages. Do you ship the variant, hold it back, or route those locales elsewhere?
+Q010576	H	Walk me through how you would take an AI feature from idea to production in two weeks. What does v1 actually look like?
+Q010577	M	When taking an AI feature to production in two weeks, what would make you cut streaming from v1?
+Q010588	M	For an LLM feature, your P50 latency is fine but P99 is 30 seconds. What do you look at?
+Q010589	M	When would you accept worse quality for speed in an LLM feature?
+Q010590	M	How do you think about cost for an LLM feature? Estimate one for me.
+Q010591	H	Your CFO says cut inference spend by 70% without killing quality. What is your plan, and how do you prove quality held?
+Q010592	M	How does caching interact with personalised prompts?
+Q010596	M	A teammate edited the prompt in production and quality dropped. How do you fix the immediate problem and the process problem?
+Q010598	M	How do you handle prompt changes needed for a model upgrade?
+Q010630	M	A one-line system-prompt change is in a PR. What runs before it merges, and what blocks it?
+Q010631	M	A system-prompt change improves the targeted behaviour but drops an unrelated eval tag by 4%. Do you ship it?
+Q010632	M	When a system-prompt change causes a regression in unrelated evals, who owns fixing it, the prompt author or QA?
+Q010635	M	Would you cache model outputs in CI, and what does that trade away?
+Q010650	M	Eval suites are slow, cost real money, and are noisy. How do you put one in CI without making everyone hate you?
+Q010651a	H	A flaky LLM judge is blocking merges every few days. Walk me through the triage.
+Q010651b	H	How do you handle eval velocity when 30 engineers push prompt changes daily?
+D00702	E	What should you trace in an LLM application, and what makes a complete trace?
+D00703	M	How is LLM observability different from conventional service observability?
+D00704	M	What metrics would you track for a production LLM system across operational, quality and cost dimensions?
+D00705	M	How do you detect quality degradation in production?
+D00706	M	After a routine dependency upgrade your LLM dashboards go quiet. Traffic is the same. What do you suspect?
+D00707	M	How does agent observability differ from general LLM monitoring?
+D00708	M	How do you integrate OpenTelemetry into an agent system for traces and spans?
+D00709	M	From a wrong answer, how do you trace back to the responsible model, knowledge source, skill, tool or agent node?
+D00710	M	How do you detect abnormal agent behavior such as loops or runaway calls?
+D00711	M	How do you set SLAs and alert rules for an agent service?
+D00712	M	How would you perform root cause analysis from an agent trace?
+D00713	M	How do you detect output quality decline and semantic drift in production agents?
+D00714	M	How would you structure agent logs so they are searchable and analyzable?
+D00715	M	How do you justify the cost of an observability platform like LangSmith?
+D00716	M	Why is trace attribution critical for a staff-level engineer working on LLM systems?
+D00717	M	How do you choose between observability platforms such as Langfuse, Phoenix, LangSmith and Opik?
+D00718	M	How do you evaluate voice agents, and what is the accuracy-experience trade-off?
+D00719	M	What are error analysis, open coding and axial coding for LLM products, and why must PMs and QAs take part?
+D00720	M	What is theoretical saturation in error analysis, and how many traces should you review?
+D00721	M	When do you use code-based evaluators instead of LLM judges?
+D00722	M	How do you evaluate multi-step pipelines at the state level and analyze failure distributions?
+D00723	M	How do you evaluate multi-turn conversations, and which metrics matter?
+D00724	M	What is the difference between error analysis and automated evals, and when should each be prioritized?
+D00725	M	Your eval scores keep improving but production complaints stay flat. How do you diagnose it?
+D00726	M	How do you set up evals as a team culture without engineers gaming the metrics?
+D00727	M	What is a test harness, and how does it differ from test scripts?
+D00728	M	What is the difference between mock, stub, fake and spy, and when would you use each in LLM app tests?
+D00729	M	How do you isolate tests from databases, networks, time and files?
+D00730	M	How do you handle flaky tests, especially in LLM-dependent code?
+D00731	M	Offline eval scores are high but online performance dropped. How do you debug it?
+D00732	M	How do you prevent evaluation sets from being memorized or leaked into training or prompts?
+D00733	M	Why can an agent harness replay not simply re-call real APIs, and how does replay differ from checkpointing?
+D00734	M	How do you prove a prompt or skill change did not regress quality?
+D00735	M	How do you design a CI pipeline for LLM applications, with static checks, golden sets and LLM evaluation?
+D00736	M	How do you test prompt changes before production?
+D00737	M	What triggers should cause automatic rollback of an LLM deployment?
+D00738	M	Your provider is retiring the model your product runs on in 60 days. How do you migrate safely?
+D00739	M	How do canary and shadow deployments work for LLM changes?
+D00740	M	Why are model migrations treated as deploys, and how do you gate them?
+D00741	M	Your provider shipped a fix under the same model ID and your quality metrics moved. How do you detect and handle it?
+D00742	M	What is an AI gateway, and what does it add beyond calling providers directly?
+D00743	M	Rate-limit errors are your top production failure. How does a gateway help, and how could it make things worse?
+D00744	M	When is a full gateway overkill?
+D00745	M	Your gateway holds every provider key. How do you secure it?
+D00746	M	How do you fail over a long-running agent conversation to another provider?
+D00747	M	How do you design a model router that picks the cheapest model meeting a quality bar?
+D00748	M	How do you build the labels for a request-level router and avoid feedback loops?
+D00749	M	What is a cascade pattern of models and how do you decide the escalation signal?
+D00750	M	How would you design rate limiting and backpressure for an LLM API, including token-based limits?
+D00751	M	Design a multi-provider LLM architecture for 99.9 percent availability.
+D00752	M	What is request hedging and when does it pay off?
+D00753	M	Your 40-step agent platform depends on one provider that just had four outages in four days. How do you design for provider failure?
+D00754	M	Design a model registry that survives divergent deprecation calendars across vendors.
+D00755	M	Your LLM bill doubled month over month with flat traffic. How do you find and fix it?
+D00756	M	Your LLM costs are ten times higher than expected. Walk me through the investigation.
+D00757	M	Why do AI products have worse gross margins than typical SaaS, and what can engineers do?
+D00758	M	Why does the top cost lever tend to be caching, and how do batch and async tiers change the economics?
+D00759	M	A team wants to move a 300K-token-context workload to another provider because list prices match. What hidden pricing factors might change the bill?
+D00760	M	How do you attribute cost to features and tenants and set budget alerts?
+D00761	M	How would you design a token-budget system that stops agents from running away with cost?
+D00762	M	How do you design infrastructure for one million LLM queries per day?
+D00763	M	How do you plan capacity and elastic scaling for LLM applications?
+D00764	M	How would you evaluate a new accelerator or serving platform for your fleet?
+D00765	M	What is the difference between LLMOps and MLOps?
+D00766	M	How do you implement streaming output, and how do SSE and WebSocket differ?
+D00767	M	Which memory leaks commonly occur in production agents and how do you track them?
+D00768	M	How do you use worker pools to handle high-concurrency LLM requests in Go?
+D00769	M	When you must use asyncio for batched LLM calls, how do you handle timeouts, cancellation and backpressure?
+D00770	M	How do you make an LLM client testable and swappable using protocols and dependency injection?
+D00771	M	How does the Python GIL affect AI services, and how do you work around it?
+D00772	M	How would you stream an LLM response through FastAPI with server-sent events?
+D00773	M	How should an application treat retries and hedging when the provider also enforces rate limits?
+D00774	M	What does it take to design degradation levels for an LLM product under outage or overload?
+D00775	M	How do bulkheads, circuit breakers and timeouts layer together in an LLM client?
+D00776	M	What is the difference between a circuit breaker and a retry?
+D00777	M	How do you design a feedback loop for continuous improvement of an LLM product?
+D00778	M	How do you handle model updates and deprecations from providers over the life of a product?
+D00779	M	How do you secure LangGraph production debugging with time travel and checkpointing?
+D00780	M	How do you handle token counting for cost control and context planning?
+D03819	M	How would you run offline evaluation, online A/B testing and regression testing for an LLM feature?
+D04874	M	How would you make an LLM app that depends on a chain of prompts debuggable and observable?

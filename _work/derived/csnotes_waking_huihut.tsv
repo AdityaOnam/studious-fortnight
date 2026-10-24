@@ -1,0 +1,576 @@
+CS01	E	What are the four basic characteristics of an operating system: concurrency, sharing, virtualization and asynchrony?	CS-Notes:计算机操作系统 - 概述
+CS01	E	What are the main responsibilities of an operating system (process, memory, file and device management)?	CS-Notes:计算机操作系统 - 概述
+CS01	E	What is a system call, and why can't user programs simply call kernel functions directly?	CS-Notes:计算机操作系统 - 概述
+CS01	M	Walk through what happens at the hardware and kernel level when a user program invokes a system call such as read().	CS-Notes:计算机操作系统 - 概述
+CS01	M	Compare a monolithic kernel with a microkernel in terms of performance, isolation and fault tolerance.	CS-Notes:计算机操作系统 - 概述
+CS01	M	What is the difference between external interrupts, exceptions and traps, and which one does a system call use?	CS-Notes:计算机操作系统 - 概述
+CS01	E	What is the difference between user mode and kernel mode, and why does the CPU need both?	Waking-Up:Operating Systems
+CS01	M	Which events cause a switch from user mode to kernel mode?	Waking-Up:Operating Systems
+CS01	M	Explain the classes of exceptional control flow: traps, interrupts, faults and signals. How do they differ?	Waking-Up:Operating Systems
+CS01	E	What is the difference between a process and a thread? What resources does each own?	CS-Notes:计算机操作系统 - 进程管理
+CS01	M	Why is a context switch between threads of the same process cheaper than between two processes?	CS-Notes:计算机操作系统 - 进程管理
+CS01	M	What exactly is saved and restored during a context switch, and what hidden costs (cache, TLB) follow it?	CS-Notes:计算机操作系统 - 进程管理
+CS01	E	Describe the process state transition diagram: ready, running, waiting and the events that cause each transition.	CS-Notes:计算机操作系统 - 进程管理
+CS01	M	What is a process control block and what information does it contain?	CS-Notes:计算机操作系统 - 进程管理
+CS01	M	What is a coroutine and how does it differ from a thread in scheduling, stack usage and context-switch cost?	Waking-Up:Operating Systems
+CS01	M	Compare user-level threads, kernel-level threads and hybrid threading models.	CS-Notes:计算机操作系统 - 进程管理
+CS01	E	List the main inter-process communication mechanisms and when you would choose each.	CS-Notes:计算机操作系统 - 进程管理
+CS01	M	What is the difference between an anonymous pipe, a named pipe (FIFO) and a message queue?	CS-Notes:计算机操作系统 - 进程管理
+CS01	M	Why is shared memory the fastest IPC mechanism, and what extra problem does it introduce?	CS-Notes:计算机操作系统 - 进程管理
+CS01	M	How do two processes on different machines communicate, and how does that differ from local IPC?	CS-Notes:计算机操作系统 - 进程管理
+CS01	E	What is an orphan process and what is a zombie process? How does each get cleaned up?	CS-Notes:Linux
+CS01	M	How can a zombie process accumulate on a server, and how do you detect and prevent it?	CS-Notes:Linux
+CS01	M	What is SIGCHLD used for, and how do wait() and waitpid() differ?	CS-Notes:Linux
+CS01	M	What does fork() actually do, and how does copy-on-write make it cheap?	Waking-Up:Operating Systems
+CS01	E	What is virtual memory, and what problems does it solve?	CS-Notes:计算机操作系统 - 内存管理
+CS01	M	Explain how a virtual address is translated to a physical address in a paging system.	CS-Notes:计算机操作系统 - 内存管理
+CS01	M	What is a page table, and why are multi-level page tables used instead of a single flat one?	CS-Notes:计算机操作系统 - 内存管理
+CS01	M	What is a TLB, and what happens on a TLB miss versus a page fault?	CS-Notes:计算机操作系统 - 内存管理
+CS01	M	Describe the sequence of events when a page fault occurs and the page must be loaded from disk.	CS-Notes:计算机操作系统 - 内存管理
+CS01	E	Compare paging and segmentation. What are internal and external fragmentation?	CS-Notes:计算机操作系统 - 内存管理
+CS01	M	What is segmented paging and what advantages does it combine from both schemes?	CS-Notes:计算机操作系统 - 内存管理
+CS01	M	Explain the optimal, FIFO, LRU, second-chance and clock page replacement algorithms and compare them.	CS-Notes:计算机操作系统 - 内存管理
+CS01	M	What is Belady's anomaly and which page replacement algorithms suffer from it?	CS-Notes:计算机操作系统 - 内存管理
+CS01	M	What is thrashing, how do you detect it, and how can the OS mitigate it?	Waking-Up:Operating Systems
+CS01	M	How does the OS approximate LRU cheaply given hardware reference bits?	CS-Notes:计算机操作系统 - 内存管理
+CS01	M	What is a buffer overflow, how can it be exploited, and what mitigations (stack canaries, ASLR, NX) exist?	Waking-Up:Operating Systems
+CS01	M	Describe the layout of a process address space: text, data, BSS, heap and stack. Which grows in which direction?	huihut:内存分配和管理
+CS01	M	What is the difference between stack memory and heap memory in terms of allocation speed, lifetime and fragmentation?	huihut:内存分配和管理
+CS01	H	A server's memory usage keeps growing but heap profiling shows no leaks. What OS-level causes could explain it?	CS-Notes:计算机操作系统 - 内存管理
+CS01	M	What are the physical structure of a disk and the components of disk access time?	CS-Notes:计算机操作系统 - 设备管理
+CS01	M	Compare FCFS, shortest-seek-time-first and elevator (SCAN) disk scheduling. Which causes starvation?	CS-Notes:计算机操作系统 - 设备管理
+CS01	M	What is an inode and how does a Unix file system find the data blocks of a file?	CS-Notes:Linux
+CS01	M	What is the difference between a hard link and a soft link, and what happens to each when the original file is deleted?	CS-Notes:Linux
+CS01	M	Why do modern file systems use journaling, and what does a journal protect against?	CS-Notes:Linux
+CS01	M	What is a mount point, and how does the kernel combine multiple file systems into a single directory tree?	CS-Notes:Linux
+CS01	E	What are the stages of compiling a C program, from source to executable?	CS-Notes:计算机操作系统 - 链接
+CS01	M	Compare static linking and dynamic linking regarding binary size, memory sharing, updates and symbol resolution.	CS-Notes:计算机操作系统 - 链接
+CS01	M	What does an object file contain, and what does a linker do with relocatable object files?	CS-Notes:计算机操作系统 - 链接
+CS01	M	What is endianness and what is the difference between host byte order and network byte order?	huihut:主机字节序与网络字节序
+CS01	M	How can a program detect at runtime whether the machine is little-endian or big-endian?	huihut:主机字节序与网络字节序
+CS01	M	What are the main synchronization mechanisms available inside the Linux kernel?	huihut:Linux 内核的同步方式
+CS01	M	When is a spinlock preferable to a sleeping mutex, and when is it harmful?	huihut:Linux 内核的同步方式
+CS01	E	What is a boot loader and what does the machine do between power-on and the OS taking control?	CS-Notes:Linux
+CS01	M	Compare MBR and GPT partition tables.	CS-Notes:Linux
+CS02	E	Name the main CPU scheduling algorithms for batch systems and compare them (FCFS, SJF, shortest remaining time).	CS-Notes:计算机操作系统 - 进程管理
+CS02	M	How do round robin and multilevel feedback queue scheduling work, and how do you choose the time quantum?	CS-Notes:计算机操作系统 - 进程管理
+CS02	M	Why is SJF optimal for average waiting time, and why is it impractical in general?	CS-Notes:计算机操作系统 - 进程管理
+CS02	M	What distinguishes real-time scheduling from interactive scheduling, and what is priority inversion?	CS-Notes:计算机操作系统 - 进程管理
+CS02	M	How can starvation occur in priority scheduling, and what is aging?	Waking-Up:Operating Systems
+CS02	E	What is a critical section, and what properties must a correct mutual exclusion solution have?	CS-Notes:计算机操作系统 - 进程管理
+CS02	E	What is the difference between synchronization and mutual exclusion?	CS-Notes:计算机操作系统 - 进程管理
+CS02	M	What is a semaphore, and how does a binary semaphore differ from a mutex?	CS-Notes:计算机操作系统 - 进程管理
+CS02	M	What is a monitor, and how does it improve on semaphores for writing correct concurrent code?	CS-Notes:计算机操作系统 - 进程管理
+CS02	M	Implement the producer-consumer problem with semaphores. Why does the order of wait operations matter?	CS-Notes:计算机操作系统 - 进程管理
+CS02	M	Explain the dining philosophers problem and at least two ways to avoid deadlock in it.	CS-Notes:计算机操作系统 - 进程管理
+CS02	M	Explain the readers-writers problem and the trade-off between reader preference and writer preference.	CS-Notes:计算机操作系统 - 进程管理
+CS02	M	What are the different ways threads can be synchronized (mutex, condition variable, semaphore, event, read-write lock)?	Waking-Up:Operating Systems
+CS02	E	What are the four necessary conditions for deadlock?	CS-Notes:计算机操作系统 - 死锁
+CS02	M	What are the four strategies for dealing with deadlock, and why does a general-purpose OS often just ignore it?	CS-Notes:计算机操作系统 - 死锁
+CS02	M	How do you prevent deadlock by breaking each of the four necessary conditions? Which is practical?	CS-Notes:计算机操作系统 - 死锁
+CS02	M	Explain the banker's algorithm and what a safe state means.	CS-Notes:计算机操作系统 - 死锁
+CS02	M	How does deadlock detection with a resource allocation graph work, and how does it handle multiple instances of a resource?	CS-Notes:计算机操作系统 - 死锁
+CS02	M	How would you recover from a deadlock once detected: what are the options and their costs?	CS-Notes:计算机操作系统 - 死锁
+CS02	H	Two services intermittently hang under load and thread dumps show threads waiting on locks. How would you confirm a lock-ordering deadlock and fix it?	CS-Notes:计算机操作系统 - 死锁
+CS02	E	What is a race condition? Give an example involving a shared counter.	CS-Notes:Java 并发
+CS02	M	What is the difference between a livelock, a deadlock and starvation?	CS-Notes:计算机操作系统 - 死锁
+CS02	E	Explain the five Unix I/O models: blocking, non-blocking, I/O multiplexing, signal-driven and asynchronous.	CS-Notes:Socket
+CS02	M	Which of the five I/O models are synchronous and which are asynchronous, and why?	CS-Notes:Socket
+CS02	M	Compare select, poll and epoll in terms of scalability, data copying and the number of file descriptors.	CS-Notes:Socket
+CS02	M	What is the difference between level-triggered and edge-triggered modes in epoll, and what pitfalls does edge-triggered mode have?	CS-Notes:Socket
+CS02	M	In what scenarios is epoll not much better than select, and why?	CS-Notes:Socket
+CS02	M	How would you design a high-concurrency server using the Reactor pattern with I/O multiplexing and a worker thread pool?	Waking-Up:Operating Systems
+CS02	M	Why can one thread with epoll serve thousands of connections while a thread-per-connection model cannot?	Waking-Up:Operating Systems
+CS02	E	What are the different ways to create a thread in Java and what are the trade-offs of Runnable versus extending Thread?	CS-Notes:Java 并发
+CS02	M	What is the difference between Runnable and Callable, and how does a Future obtain the result?	CS-Notes:Java 并发
+CS02	M	What is a daemon thread and when would you use one?	CS-Notes:Java 并发
+CS02	M	How does thread interruption work in Java, and how should a task respond to it?	CS-Notes:Java 并发
+CS02	M	Compare synchronized and ReentrantLock: features, fairness, interruptibility and when to choose each.	CS-Notes:Java 并发
+CS02	M	What do wait(), notify() and notifyAll() do, and why must wait be called in a loop while holding the monitor?	CS-Notes:Java 并发
+CS02	M	What is the difference between sleep() and wait() with respect to locks and wake-up?	CS-Notes:Java 并发
+CS02	M	Describe the lifecycle states of a Java thread and what causes transitions between BLOCKED, WAITING and TIMED_WAITING.	CS-Notes:Java 并发
+CS02	M	How do CountDownLatch, CyclicBarrier and Semaphore differ, and when would you use each?	CS-Notes:Java 并发
+CS02	M	What is the idea behind AbstractQueuedSynchronizer and how does it implement locks and synchronizers?	CS-Notes:Java 并发
+CS02	M	How does a BlockingQueue simplify producer-consumer designs, and what are the differences among bounded, unbounded and synchronous queues?	CS-Notes:Java 并发
+CS02	M	What is the fork/join framework and how does work stealing improve CPU utilization?	CS-Notes:Java 并发
+CS02	M	How do you size a thread pool for CPU-bound versus I/O-bound workloads?	CS-Notes:Java 并发
+CS02	M	What happens when a thread pool's queue is full and the maximum threads are running? Compare common rejection policies.	CS-Notes:Java 并发
+CS02	H	Explain the Java memory model: main memory versus working memory, atomicity, visibility, ordering and the happens-before rules.	CS-Notes:Java 并发
+CS02	M	What does volatile guarantee and what does it not guarantee? Why is count++ on a volatile field still unsafe?	CS-Notes:Java 并发
+CS02	M	What is instruction reordering and how do memory barriers prevent surprising results?	CS-Notes:Java 并发
+CS02	M	Why does double-checked locking need a volatile field in the singleton pattern?	CS-Notes:设计模式 - 单例
+CS02	M	What are the main techniques for achieving thread safety: immutability, mutual exclusion, non-blocking and thread-local storage?	CS-Notes:Java 并发
+CS02	M	What is compare-and-swap, how do atomic classes use it, and what is the ABA problem?	CS-Notes:Java 并发
+CS02	M	Compare optimistic non-blocking synchronization with pessimistic locking under low and high contention.	CS-Notes:Java 并发
+CS02	M	Explain lock optimizations used by a VM: spinning, lock elision, lock coarsening, lightweight and biased locking.	CS-Notes:Java 并发
+CS02	M	What is ThreadLocal, how is it implemented, and what memory-leak risk does it carry in thread pools?	CS-Notes:Java 并发
+CS02	M	What are good practices for multithreaded code: naming threads, minimizing lock scope, preferring concurrent collections?	CS-Notes:Java 并发
+CS02	M	What is the Python GIL, why does it exist, and which workloads does it hurt?	Waking-Up:Python Handbook
+CS02	M	Can Python threads use multiple CPU cores? What are the alternatives for CPU-bound parallelism?	Waking-Up:Python Handbook
+CS02	M	Why is the GIL placed at the interpreter level instead of using fine-grained locks, and what trade-off did that make?	Waking-Up:Python Handbook
+CS02	M	Is a statement such as x += 1 thread-safe in CPython despite the GIL? Explain.	Waking-Up:Python Handbook
+CS02	M	Describe the difference between pessimistic and optimistic locking in databases and in application code.	Waking-Up:Database
+CS02	M	What is a read-write lock and when does it help or hurt throughput?	CS-Notes:计算机操作系统 - 进程管理
+CS03	E	Describe the five-layer, OSI and TCP/IP network models and what each layer is responsible for.	CS-Notes:计算机网络 - 概述
+CS03	M	How does data get encapsulated as it moves down the layers and decapsulated on the receiving host?	CS-Notes:计算机网络 - 概述
+CS03	M	Why did the Internet adopt TCP/IP over the OSI model, and in what ways does the layering still leak in practice?	CS-Notes:计算机网络 - 概述
+CS03	E	Compare circuit switching and packet switching. Why is the Internet packet-switched?	CS-Notes:计算机网络 - 概述
+CS03	E	What are the four components of packet delay: processing, queuing, transmission and propagation?	CS-Notes:计算机网络 - 概述
+CS03	M	Given a 1500-byte packet on a 100 Mbps link spanning 1000 km, compute transmission and propagation delay and say which dominates.	CS-Notes:计算机网络 - 概述
+CS03	M	What problems must a link layer solve: framing, transparent transmission and error detection?	CS-Notes:计算机网络 - 链路层
+CS03	M	How does CSMA/CD work, and why does it not apply to modern switched full-duplex Ethernet?	CS-Notes:计算机网络 - 链路层
+CS03	M	What is a MAC address and how does it differ from an IP address?	CS-Notes:计算机网络 - 链路层
+CS03	M	How does a learning switch build and use its forwarding table? How does it differ from a hub and a router?	CS-Notes:计算机网络 - 链路层
+CS03	M	What is a VLAN and why would you deploy one?	CS-Notes:计算机网络 - 链路层
+CS03	M	What fields does an IPv4 header contain and what are TTL, fragmentation offset and protocol used for?	CS-Notes:计算机网络 - 网络层
+CS03	E	Explain classful IP addressing, subnetting and CIDR.	CS-Notes:计算机网络 - 网络层
+CS03	M	Given the address 192.168.10.37/27, compute the network address, broadcast address and number of usable hosts.	Waking-Up:Computer Network
+CS03	M	Why was CIDR introduced and how does route aggregation reduce routing table sizes?	CS-Notes:计算机网络 - 网络层
+CS03	E	What is ARP, and how does a host find the MAC address of a destination in the same subnet?	Waking-Up:Computer Network
+CS03	M	What is ARP spoofing and how can it be mitigated?	Waking-Up:Computer Network
+CS03	M	How do ping and traceroute use ICMP and TTL to do their job?	CS-Notes:计算机网络 - 网络层
+CS03	E	What is NAT, why was it introduced, and what problems does it create for peer-to-peer applications?	Waking-Up:Computer Network
+CS03	M	How does NAT with port translation keep track of many internal hosts behind one public IP?	Waking-Up:Computer Network
+CS03	M	What is a VPN and how does tunneling protect traffic across the public Internet?	CS-Notes:计算机网络 - 网络层
+CS03	M	How does a router forward a packet: longest prefix match, next hop and TTL decrement?	CS-Notes:计算机网络 - 网络层
+CS03	M	Compare distance-vector routing (RIP) with link-state routing (OSPF). What is count-to-infinity?	Waking-Up:Computer Network
+CS03	M	Why is BGP used between autonomous systems while RIP and OSPF are used inside them?	CS-Notes:计算机网络 - 网络层
+CS03	E	What are the main differences between TCP and UDP, and when would you choose UDP?	Waking-Up:Computer Network
+CS03	M	What fields does a TCP header contain and what do sequence number, acknowledgment number and window size do?	CS-Notes:计算机网络 - 传输层
+CS03	E	Explain the TCP three-way handshake and what each segment contains.	CS-Notes:计算机网络 - 传输层
+CS03	M	Why does TCP need three handshake steps rather than two?	Waking-Up:Computer Network
+CS03	M	What is a SYN flood attack and how do SYN cookies defend against it?	Waking-Up:Computer Network
+CS03	E	Explain the TCP four-way connection teardown.	CS-Notes:计算机网络 - 传输层
+CS03	M	Why does the closing side stay in TIME_WAIT for 2 MSL, and what problems arise from many TIME_WAIT sockets?	CS-Notes:计算机网络 - 传输层
+CS03	M	A server shows thousands of connections stuck in CLOSE_WAIT. What does it indicate and how do you fix it?	CS-Notes:计算机网络 - 传输层
+CS03	M	Why does connection teardown need four segments while setup needs three?	Waking-Up:Computer Network
+CS03	M	How does TCP provide reliable delivery: sequence numbers, acknowledgments, retransmission and checksums?	Waking-Up:Computer Network
+CS03	M	How does TCP compute the retransmission timeout and what is Karn's algorithm trying to avoid?	CS-Notes:计算机网络 - 传输层
+CS03	M	Explain the TCP sliding window and how it differs from flow control and congestion control.	CS-Notes:计算机网络 - 传输层
+CS03	M	How does TCP flow control prevent a fast sender from overwhelming a slow receiver? What happens with a zero window?	Waking-Up:Computer Network
+CS03	M	Explain slow start, congestion avoidance, fast retransmit and fast recovery.	CS-Notes:计算机网络 - 传输层
+CS03	M	Why does packet loss crush TCP throughput on long-fat networks, and how do algorithms such as BBR differ from loss-based control?	Waking-Up:Computer Network
+CS03	M	How can an application maximize bandwidth utilization over TCP, given window sizes and RTT?	Waking-Up:Computer Network
+CS03	M	What are TCP sticky packets (message boundary problem), and how do application protocols deal with them?	CS-Notes:计算机网络 - 传输层
+CS03	M	What is Nagle's algorithm and delayed ACK, and how can they combine to hurt latency?	CS-Notes:计算机网络 - 传输层
+CS03	M	What is head-of-line blocking in TCP and how does QUIC address it?	Waking-Up:HTTP各版本
+CS03	E	How does the Domain Name System work, and how does recursive resolution differ from iterative resolution?	CS-Notes:计算机网络 - 应用层
+CS03	M	What does DNS caching involve (browser, OS, resolver) and how do TTLs influence propagation of changes?	CS-Notes:计算机网络 - 应用层
+CS03	M	Why does DNS mostly use UDP, and when does it switch to TCP?	CS-Notes:计算机网络 - 应用层
+CS03	M	What is DNS-based load balancing and what are its limitations?	CS-Notes:计算机网络 - 应用层
+CS03	E	What does DHCP do and how does a new host obtain an IP address?	CS-Notes:计算机网络 - 应用层
+CS03	M	Compare SMTP, POP3 and IMAP.	CS-Notes:计算机网络 - 应用层
+CS03	E	What happens, in as much detail as possible, from typing a URL in the browser to seeing the page?	Waking-Up:Computer Network
+CS03	M	In the URL-to-page flow, which protocols are involved at each layer, and where can caching shortcut the process?	CS-Notes:计算机网络 - 应用层
+CS03	E	What are the main HTTP methods and what is each used for?	CS-Notes:HTTP
+CS03	M	What is the difference between GET and POST regarding semantics, safety, idempotency, cacheability and parameter placement?	Waking-Up:Computer Network
+CS03	M	Explain safe and idempotent methods. Which standard methods are idempotent and why does it matter for retries?	CS-Notes:HTTP
+CS03	M	When would you use PUT versus PATCH versus POST for updating a resource?	CS-Notes:HTTP
+CS03	M	What is the HTTP OPTIONS method used for, and how does it relate to CORS preflight?	CS-Notes:HTTP
+CS03	E	What do the status code classes 1xx, 2xx, 3xx, 4xx and 5xx mean, and what are the most common codes in each?	Waking-Up:Computer Network
+CS03	M	What is the difference between 301 and 302 redirects, and between 302 and 307?	CS-Notes:HTTP
+CS03	M	What is the difference between 401 and 403, and between 502, 503 and 504?	CS-Notes:HTTP
+CS03	M	What is the difference between a 304 response and a 200 from cache, and how do conditional requests work?	CS-Notes:HTTP
+CS03	M	How does HTTP caching work with Cache-Control, ETag, Last-Modified, Expires and If-None-Match?	CS-Notes:HTTP
+CS03	M	Explain the difference between no-cache and no-store in Cache-Control.	CS-Notes:HTTP
+CS03	M	What are persistent connections and pipelining in HTTP/1.1, and why does pipelining rarely help?	CS-Notes:HTTP
+CS03	M	What are the problems of HTTP/1.x that HTTP/2 addresses?	CS-Notes:HTTP
+CS03	M	Explain HTTP/2 binary framing, multiplexing, header compression and server push.	CS-Notes:HTTP
+CS03	M	How does HTTP/3 over QUIC differ from HTTP/2 over TCP and what does it gain?	Waking-Up:HTTP各版本
+CS03	M	What did HTTP/1.1 add over HTTP/1.0?	CS-Notes:HTTP
+CS03	M	What are chunked transfer encoding and range requests, and what use cases do they serve?	CS-Notes:HTTP
+CS03	M	How does content negotiation work and which headers drive it?	CS-Notes:HTTP
+CS03	M	What does the Host header enable (virtual hosting) and why was it needed?	CS-Notes:HTTP
+CS03	M	What is the difference between a forward proxy, a reverse proxy and a tunnel proxy?	CS-Notes:HTTP
+CS03	M	What headers (X-Forwarded-For, Via) are used when a request passes through proxies, and why can they be spoofed?	CS-Notes:HTTP
+CS03	E	What is a cookie, and how does it differ from a session?	Waking-Up:Computer Network
+CS03	M	What are the Secure, HttpOnly, SameSite and Domain attributes of a cookie and what do they protect against?	CS-Notes:HTTP
+CS03	M	How is session state tracked between stateless HTTP requests? Compare cookie-based session IDs with token-based approaches.	CS-Notes:HTTP
+CS03	E	What are the differences between HTTP and HTTPS?	Waking-Up:Computer Network
+CS03	M	Walk through the TLS handshake and say how the symmetric session key is established.	CS-Notes:HTTP
+CS03	M	Why does HTTPS combine asymmetric and symmetric encryption instead of using only one?	CS-Notes:HTTP
+CS03	M	What disadvantages does HTTPS have (latency, CPU cost, certificate management) and how are they reduced?	CS-Notes:HTTP
+CS03	M	How does a non-blocking socket behave differently from a blocking one on read, write and connect?	CS-Notes:Socket
+CS03	M	What is a socket, and what is the sequence of system calls for a TCP server and a TCP client?	CS-Notes:Socket
+CS03	M	What does the listen backlog control, and what happens when it is exceeded?	CS-Notes:Socket
+CS03	M	What are WebSockets and how do they differ from long polling and server-sent events?	Waking-Up:Computer Network
+CS03	M	What is a RESTful API and what constraints define REST?	Waking-Up:Git-ComdLine-REST
+CS03	M	How should resource URIs, HTTP verbs and status codes be designed in a REST API?	Waking-Up:Git-ComdLine-REST
+CS03	M	How do multiplexing techniques such as TDM, FDM, statistical TDM and CDMA allow sharing of a channel?	CS-Notes:计算机网络 - 链路层
+CS03	M	What are the common well-known ports for HTTP, HTTPS, SSH, FTP, DNS and SMTP?	CS-Notes:计算机网络 - 应用层
+CS03	M	How do active and passive modes of FTP differ and why does passive mode work better behind firewalls?	CS-Notes:计算机网络 - 应用层
+CS03	H	Users report a website is slow only from one region. How would you use DNS, traceroute, TCP and HTTP-level tools to localize the problem?	CS-Notes:计算机网络 - 应用层
+CS03	H	A service sees many connection resets under load. What kernel, TCP and application-level causes would you investigate?	CS-Notes:计算机网络 - 传输层
+CS08	E	What is cross-site scripting, and how do stored, reflected and DOM-based XSS differ?	CS-Notes:攻击技术
+CS08	M	How do you defend against XSS: output encoding, CSP, HttpOnly cookies and input validation?	CS-Notes:攻击技术
+CS08	M	What is a CSRF attack and why does it work even though the attacker cannot read the response?	CS-Notes:攻击技术
+CS08	M	How do CSRF tokens, SameSite cookies and Origin checks each prevent CSRF?	CS-Notes:攻击技术
+CS08	E	What is SQL injection and how do prepared statements prevent it?	CS-Notes:攻击技术
+CS08	M	Why is escaping input a weaker defense than parameterized queries against SQL injection?	CS-Notes:攻击技术
+CS08	M	What is blind SQL injection and how can attackers extract data without seeing query results?	CS-Notes:攻击技术
+CS08	M	What is a denial-of-service attack, how does DDoS differ, and what layers of defense can mitigate volumetric and application-layer attacks?	CS-Notes:攻击技术
+CS08	M	How does HTTPS authenticate a server using certificates and certificate authorities?	CS-Notes:HTTP
+CS08	M	What does HTTPS provide in terms of confidentiality, authentication and integrity, and how is integrity protected?	CS-Notes:HTTP
+CS08	M	What is a man-in-the-middle attack and how does certificate validation or pinning defend against it?	CS-Notes:HTTP
+CS08	M	What is the same-origin policy and how does CORS relax it safely?	Waking-Up:Computer Network
+CS08	M	What is the difference between hashing, encryption and encoding, and when should each be used?	CS-Notes:HTTP
+CS08	M	How should a web application store user passwords and why are salts and slow hash functions important?	CS-Notes:攻击技术
+CS08	M	What are the trade-offs between server-side sessions and stateless tokens such as JWT for authentication?	Waking-Up:Computer Network
+CS08	M	How can session fixation and session hijacking happen, and how do you prevent them?	CS-Notes:集群
+CS08	H	How would you secure a login endpoint against brute force, credential stuffing and enumeration of valid accounts?	CS-Notes:系统设计基础
+CS04	E	What are the ACID properties of a transaction, and how does a database implement each of them?	CS-Notes:数据库系统原理
+CS04	M	How are atomicity and durability typically implemented with undo logs, redo logs and write-ahead logging?	CS-Notes:数据库系统原理
+CS04	E	What concurrency anomalies can occur: lost update, dirty read, non-repeatable read and phantom read?	CS-Notes:数据库系统原理
+CS04	M	What is the difference between a non-repeatable read and a phantom read, with an example of each?	Waking-Up:Database
+CS04	E	Describe the four SQL isolation levels and which anomalies each permits.	CS-Notes:数据库系统原理
+CS04	M	How are the isolation levels implemented in practice using locks or multi-version concurrency control?	Waking-Up:Database
+CS04	M	What is the default isolation level in common relational databases and why was it chosen?	CS-Notes:数据库系统原理
+CS04	M	What does AUTOCOMMIT do, and what risks arise when a connection leaves transactions open?	CS-Notes:数据库系统原理
+CS04	M	Compare row-level, page-level and table-level locking: granularity versus overhead and concurrency.	CS-Notes:数据库系统原理
+CS04	M	What are shared and exclusive locks, and what are intention locks used for?	CS-Notes:数据库系统原理
+CS04	M	Explain the three-level locking protocol and which anomalies each level prevents.	Waking-Up:Database
+CS04	M	What is two-phase locking, and how does it guarantee serializability? Why can it still deadlock?	Waking-Up:Database
+CS04	M	What are optimistic and pessimistic locking, and when is each appropriate?	Waking-Up:Database
+CS04	M	What is MVCC, and how do version numbers, undo logs and read views let readers avoid blocking writers?	CS-Notes:数据库系统原理
+CS04	M	What is the difference between a snapshot read and a current read?	CS-Notes:数据库系统原理
+CS04	M	Explain record locks, gap locks and next-key locks and how they prevent phantom reads at repeatable read.	CS-Notes:数据库系统原理
+CS04	M	Why can gap locking lead to unexpected lock waits or deadlocks on inserts?	CS-Notes:数据库系统原理
+CS04	M	How does a database detect a deadlock between transactions and what does it do about it?	CS-Notes:数据库系统原理
+CS04	H	Two concurrent transactions each check a balance and then withdraw. How could this produce a negative balance and how would you prevent it?	CS-Notes:数据库系统原理
+CS04	M	What are functional dependencies and how do they lead to update, insert and delete anomalies?	CS-Notes:数据库系统原理
+CS04	E	Explain 1NF, 2NF, 3NF and BCNF with examples of violations.	CS-Notes:数据库系统原理
+CS04	M	When is it reasonable to denormalize a schema, and what do you give up?	Waking-Up:Database
+CS04	M	What is the difference between a primary key, a candidate key, a super key and a foreign key?	CS-Notes:数据库系统原理
+CS04	M	How do you represent one-to-many, many-to-many and ternary relationships and subclass hierarchies from an ER diagram in relational tables?	CS-Notes:数据库系统原理
+CS04	E	What are the different types of SQL joins and how do inner, left, right and full outer joins differ?	Waking-Up:Database
+CS04	M	What is a self join and a natural join, and when would you use a self join?	CS-Notes:SQL 语法
+CS04	M	What is the difference between WHERE and HAVING, and between GROUP BY and ORDER BY?	CS-Notes:SQL 语法
+CS04	M	What is the difference between DELETE, TRUNCATE and DROP regarding rollback, speed, triggers and storage?	Waking-Up:Database
+CS04	M	What is the difference between UNION and UNION ALL?	CS-Notes:SQL 语法
+CS04	M	Write a SQL query to find the second highest salary in a table without using LIMIT-based tricks that fail on ties.	CS-Notes:SQL 练习
+CS04	M	Write a query to find employees who earn more than their managers.	CS-Notes:SQL 练习
+CS04	M	Write a query to find duplicate emails and then delete all but one record for each.	CS-Notes:SQL 练习
+CS04	M	Write a query that returns the highest paid employee in each department including ties.	CS-Notes:SQL 练习
+CS04	M	How would you find customers who have never placed an order? Compare the NOT IN, LEFT JOIN and NOT EXISTS approaches.	CS-Notes:SQL 练习
+CS04	M	Write a query to find numbers that appear at least three times consecutively in a log table.	CS-Notes:SQL 练习
+CS04	M	How would you rank scores with dense ranking using window functions versus without them?	CS-Notes:SQL 练习
+CS04	M	How would you swap every two adjacent seat IDs in a table using a single UPDATE or SELECT?	CS-Notes:SQL 练习
+CS04	M	What are views, and what are their benefits and limitations (updatability, performance)?	Waking-Up:Database
+CS04	M	What are stored procedures and what are their pros and cons compared with application-side logic?	Waking-Up:Database
+CS04	M	What is a database cursor and why can cursor-based row-by-row processing be slow?	Waking-Up:Database
+CS04	M	What are triggers, and what risks do they bring to maintainability and performance?	CS-Notes:SQL 语法
+CS04	E	Why is the B+ tree the standard index structure for relational databases, and how does it differ from a B tree?	CS-Notes:MySQL
+CS04	M	Compare B+ tree indexes with hash indexes: which queries does each support?	CS-Notes:MySQL
+CS04	M	Why are B+ trees preferred over balanced binary trees or red-black trees for disk-based indexes?	Waking-Up:Database
+CS04	M	What is a clustered index versus a secondary index, and why can a secondary index lookup need a second lookup?	CS-Notes:MySQL
+CS04	M	What is a covering index and how does it avoid table access?	CS-Notes:MySQL
+CS04	M	Explain the leftmost-prefix rule for composite indexes and how to decide the column order.	CS-Notes:MySQL
+CS04	M	In which situations will an index not be used (functions on columns, implicit casts, leading wildcards, OR)?	Waking-Up:Database
+CS04	M	When should you create an index, and when is indexing a column a bad idea?	Waking-Up:Database
+CS04	M	What are the write-side costs of indexes and how do too many indexes hurt a write-heavy workload?	CS-Notes:MySQL
+CS04	M	Which index types exist (primary, unique, full-text, spatial, prefix) and what is each good for?	Waking-Up:Database
+CS04	M	How do you read an EXPLAIN plan, and what do access types such as ALL, index, range, ref and const tell you?	CS-Notes:MySQL
+CS04	H	A query that was fast last week now takes seconds. How would you investigate using execution plans, statistics and indexes?	CS-Notes:MySQL
+CS04	M	How would you optimize a slow query that uses LIMIT with a large offset for pagination?	CS-Notes:MySQL
+CS04	M	What strategies can reduce data access cost: selecting fewer columns, avoiding SELECT *, caching and breaking down large joins?	CS-Notes:MySQL
+CS04	M	Why can splitting a join into multiple simple queries sometimes be faster?	CS-Notes:MySQL
+CS04	M	Compare InnoDB and MyISAM regarding transactions, locking granularity, crash recovery and foreign keys.	Waking-Up:Database
+CS04	M	What are the trade-offs between CHAR and VARCHAR, and between DATETIME and TIMESTAMP?	CS-Notes:MySQL
+CS04	M	Why should you avoid storing monetary values in floating-point types?	CS-Notes:MySQL
+CS04	M	What roles do the binary log, relay log and replication threads play in leader-follower replication?	CS-Notes:MySQL
+CS04	M	How does master-slave replication work, and how can read-write splitting use it?	Waking-Up:Database
+SD02	M	What problems can read-write splitting with asynchronous replication cause for read-your-writes consistency, and how do you mitigate them?	CS-Notes:MySQL
+SD02	M	Compare horizontal partitioning (sharding) and vertical partitioning of a database.	CS-Notes:MySQL
+SD02	M	What sharding strategies exist (range, hash, directory) and what are their trade-offs for hot spots and rebalancing?	CS-Notes:MySQL
+SD02	H	What problems appear after sharding: distributed transactions, cross-shard joins, global unique IDs, resharding? How would you handle each?	CS-Notes:MySQL
+SD02	M	How would you generate globally unique IDs across shards, and how do auto-increment, UUID and Snowflake IDs compare?	CS-Notes:MySQL
+SD02	E	What are the main differences between relational and non-relational databases, and how do you choose?	Waking-Up:Database
+SD02	M	What do BASE and eventual consistency mean, and how do they contrast with ACID?	CS-Notes:分布式
+SD02	H	How would you migrate a large production table to a sharded layout with zero downtime?	CS-Notes:MySQL
+CS05	E	What data types does Redis support and what is a typical use case for each?	CS-Notes:Redis
+CS05	M	How does Redis implement its dictionary and how does incremental rehashing avoid long pauses?	CS-Notes:Redis
+CS05	M	What is a skip list, why does Redis use it for sorted sets, and how does it compare with a balanced tree?	CS-Notes:Redis
+CS05	M	How would you implement a leaderboard with Redis sorted sets?	CS-Notes:Redis
+CS05	M	How would you use Redis as a counter, a message queue, a session cache and a lookup table, and what are the limits of each?	CS-Notes:Redis
+CS05	M	What are the differences between Redis and Memcached regarding data types, persistence, clustering and memory management?	CS-Notes:Redis
+CS05	M	How does Redis expire keys: lazy deletion versus periodic deletion?	CS-Notes:Redis
+CS05	M	Which eviction policies does Redis offer and how do you choose among LRU, LFU and TTL-based policies?	CS-Notes:Redis
+CS05	M	Compare RDB snapshots and AOF logging in terms of durability, recovery time, file size and performance impact.	CS-Notes:Redis
+CS05	M	How does Redis fork-based snapshotting use copy-on-write, and what risks does it pose to latency and memory?	CS-Notes:Redis
+CS05	M	What guarantees do Redis transactions (MULTI/EXEC) give, and how do they differ from relational ACID transactions?	CS-Notes:Redis
+CS05	M	Why is Redis fast even though it executes commands on a single thread?	CS-Notes:Redis
+CS05	M	Explain the Redis event model: file events, time events and the event loop.	CS-Notes:Redis
+CS05	M	How does Redis master-slave replication work, from full sync to command propagation?	CS-Notes:Redis
+CS05	M	What does Sentinel do in a Redis deployment and how does it handle failover?	CS-Notes:Redis
+CS05	M	How does Redis Cluster shard data using hash slots, and what happens during resharding?	CS-Notes:Redis
+CS05	M	How would you design a simple forum with Redis for article votes, ranking and de-duplicated likes?	CS-Notes:Redis
+CS05	M	A single Redis key is hit by a huge fraction of traffic. How do you handle hot keys and big keys?	CS-Notes:Redis
+SD01	E	What are cache hit rate, maximum size and eviction policy, and how do they interact when sizing a cache?	CS-Notes:缓存
+SD01	M	Where can caching occur between a user and the database (browser, CDN, reverse proxy, application, database)?	CS-Notes:缓存
+SD01	M	How does a CDN work, and which kinds of content benefit from one?	CS-Notes:缓存
+SD01	M	Explain cache penetration, cache breakdown and cache avalanche and the mitigation for each.	CS-Notes:缓存
+SD01	M	How do Bloom filters help against cache penetration, and what are the trade-offs of false positives?	CS-Notes:缓存
+SD01	M	How do you keep a cache consistent with the database? Compare cache-aside, write-through, write-behind and read-through.	CS-Notes:缓存
+SD01	M	Why is it usually safer to delete a cache entry than update it on a database write, and what race conditions remain?	CS-Notes:缓存
+SD01	M	What is the cache bottomless-pit phenomenon when adding more cache nodes, and how can it be reduced?	CS-Notes:缓存
+SD01	M	Compare hash distribution and range distribution of data across nodes.	CS-Notes:缓存
+SD01	E	Explain consistent hashing and why virtual nodes improve balance.	CS-Notes:缓存
+SD01	M	What fraction of keys move when a node is added to a modulo-hash cluster versus a consistent-hash ring?	CS-Notes:缓存
+SD01	M	Describe how an LRU cache is built and which data structures give O(1) get and put.	CS-Notes:缓存
+SD01	M	What are the drawbacks of plain LRU, and how do LFU, 2Q or ARC address them?	CS-Notes:缓存
+SD01	M	What is the CPU multi-level cache hierarchy and why does cache locality matter for performance?	CS-Notes:缓存
+SD01	E	Compare vertical and horizontal scaling, and explain how scalability differs from raw performance.	CS-Notes:系统设计基础
+SD01	M	What common metrics measure performance (response time, throughput, concurrency, percentiles) and why do tail latencies matter?	CS-Notes:系统设计基础
+SD01	M	What approaches help scale a stateless application tier versus a stateful storage tier?	CS-Notes:系统设计基础
+SD01	M	What is the difference between scalability and extensibility in a system?	CS-Notes:系统设计基础
+SD01	E	Compare load-balancing algorithms: round robin, weighted round robin, least connections, random and source-IP hash.	CS-Notes:集群
+SD01	M	What are the differences between layer-4 and layer-7 load balancing, and between NAT, direct routing and tunneling forwarding modes?	CS-Notes:集群
+SD01	M	How can a load balancer avoid becoming a single point of failure?	CS-Notes:集群
+SD01	M	How do you manage user sessions in a cluster: sticky sessions, session replication, a shared session store, or client-side tokens?	CS-Notes:集群
+SD01	M	What are the trade-offs of sticky sessions during failure and scale-in events?	CS-Notes:集群
+SD01	M	How do you do back-of-envelope sizing for an application with 100 million daily users?	CS-Notes:系统设计基础
+SD05	E	How is availability achieved through redundancy, and how do you measure it in nines?	CS-Notes:系统设计基础
+SD05	M	What is the difference between rate limiting, service degradation and circuit breaking, and when does each apply?	CS-Notes:系统设计基础
+SD05	M	How does a circuit breaker work and what are its states?	CS-Notes:系统设计基础
+SD05	M	What should be monitored in a production system to detect failures early (system, application, business metrics)?	CS-Notes:系统设计基础
+SD05	M	What are the main security considerations in a typical web system design: authentication, authorization, encryption and input validation?	CS-Notes:系统设计基础
+SD05	M	Compare the token bucket, leaky bucket and sliding window algorithms for rate limiting.	CS-Notes:系统设计基础
+SD03	E	What are the three guarantees in the CAP theorem and why can't a distributed system provide all three during a partition?	CS-Notes:分布式
+SD03	M	Give examples of systems that choose CP versus AP and the behavior users see during a partition.	CS-Notes:分布式
+SD03	M	What does the PACELC extension add to CAP?	CS-Notes:分布式
+SD03	M	What are basically available, soft state and eventual consistency in BASE, and how can eventual consistency be made tolerable to users?	CS-Notes:分布式
+SD03	M	Why is a distributed lock needed, and how would you implement one using a database unique index?	CS-Notes:分布式
+SD03	M	How do you implement a distributed lock with Redis SET NX and expiry, and what goes wrong if the lock expires while the holder is still working?	CS-Notes:分布式
+SD03	H	Explain the RedLock algorithm and the criticism that it is unsafe without fencing tokens.	CS-Notes:分布式
+SD03	M	How does a ZooKeeper-style distributed lock with ordered ephemeral nodes avoid the thundering herd?	CS-Notes:分布式
+SD03	M	Compare database, Redis and ZooKeeper based distributed locks on correctness, performance and failure behavior.	CS-Notes:分布式
+SD03	M	What is the two-phase commit protocol, and what are its blocking and single-point-of-failure problems?	CS-Notes:分布式
+SD03	M	Compare 2PC, TCC, Saga and the local message table pattern for distributed transactions.	CS-Notes:分布式
+SD03	M	How would you keep an order service and an inventory service consistent without a distributed transaction?	CS-Notes:分布式
+SD03	M	Explain the roles in Paxos (proposer, acceptor, learner) and the two phases of a proposal.	CS-Notes:分布式
+SD03	M	Why does Paxos require a majority quorum and what is the role of proposal numbers?	CS-Notes:分布式
+SD03	H	Explain Raft leader election, including terms, randomized timeouts and what happens with split votes.	CS-Notes:分布式
+SD03	M	How does Raft replicate its log and when is an entry considered committed?	CS-Notes:分布式
+SD03	M	Why is Raft considered easier to understand than Paxos and what design choices make it so?	CS-Notes:分布式
+SD03	E	Why do systems use message queues, and what are the point-to-point and publish-subscribe models?	CS-Notes:消息队列
+SD03	M	How do message queues enable asynchronous processing, peak shaving and decoupling? What do they cost in complexity?	CS-Notes:消息队列
+SD03	M	How do you ensure no message is lost at the producer, the broker and the consumer?	CS-Notes:消息队列
+SD03	M	How do you guarantee message ordering in a partitioned queue, and what do you give up?	CS-Notes:消息队列
+SD03	M	What is the difference between at-most-once, at-least-once and exactly-once delivery, and how do you achieve effectively-once processing?	CS-Notes:消息队列
+SD03	M	How would you make a message consumer idempotent?	CS-Notes:消息队列
+SD03	M	A queue backlog grows to millions of messages. How do you diagnose and drain it safely?	CS-Notes:消息队列
+CS06	E	What are the three pillars of object-oriented programming (encapsulation, inheritance, polymorphism) and what problem does each solve?	CS-Notes:面向对象思想
+CS06	M	What is the difference between compile-time and runtime polymorphism?	CS-Notes:面向对象思想
+CS06	M	When should you prefer composition over inheritance?	CS-Notes:面向对象思想
+CS06	M	What is the difference between an abstract class and an interface, and how do you decide which to use?	CS-Notes:Java 基础
+CS06	M	Explain the UML relationships: generalization, realization, association, aggregation, composition and dependency.	CS-Notes:面向对象思想
+CS06	M	What is the difference between aggregation and composition in terms of lifecycle ownership?	CS-Notes:面向对象思想
+CS06	E	Explain each of the SOLID principles with a short example of a violation.	CS-Notes:面向对象思想
+CS06	M	What does the Liskov substitution principle require, and why does a Square extending Rectangle violate it?	CS-Notes:面向对象思想
+CS06	M	What is dependency inversion and how does dependency injection relate to it?	CS-Notes:面向对象思想
+CS06	M	Explain the Law of Demeter, the principle of least knowledge and the principle of composite reuse.	CS-Notes:面向对象思想
+CS06	M	Why are overloading and overriding different, and what are the rules for each?	CS-Notes:Java 基础
+CS06	M	What makes code readable: naming, consistent style, comments that explain why, short functions and simple control flow?	CS-Notes:代码可读性
+CS06	M	How would you refactor a deeply nested conditional or very long function?	CS-Notes:代码可读性
+CS06	M	When are comments harmful, and what should good comments communicate?	CS-Notes:代码可读性
+CS06	E	What are design patterns, why do they help, and what is the risk of overusing them?	Waking-Up:Design Pattern
+CS06	M	How are design patterns classified into creational, structural and behavioral categories? Give two examples of each.	CS-Notes:设计模式
+CS06	E	Implement a thread-safe singleton and explain the trade-offs of eager, lazy, double-checked locking, holder and enum approaches.	CS-Notes:设计模式 - 单例
+CS06	M	How can a singleton be broken (reflection, serialization, multiple class loaders) and how do you defend against it?	CS-Notes:设计模式 - 单例
+CS06	M	Why is the singleton often considered an anti-pattern for testability, and what are alternatives?	CS-Notes:设计模式 - 单例
+CS06	M	What is the difference between simple factory, factory method and abstract factory?	CS-Notes:设计模式 - 工厂方法
+CS06	M	When would you choose abstract factory over factory method?	CS-Notes:设计模式 - 抽象工厂
+CS06	M	What problem does the builder pattern solve compared with telescoping constructors?	CS-Notes:设计模式 - 生成器
+CS06	M	When is the prototype pattern useful and what are the pitfalls of shallow versus deep copy in it?	CS-Notes:设计模式 - 原型模式
+CS06	M	What does the adapter pattern do, and how do object adapters differ from class adapters?	CS-Notes:设计模式 - 适配器
+CS06	M	How does the bridge pattern decouple abstraction from implementation, and how does it differ from adapter?	CS-Notes:设计模式 - 桥接
+CS06	M	When would you use the composite pattern, and how does it model tree structures such as a file system?	CS-Notes:设计模式 - 组合
+CS06	M	How does the decorator pattern add behavior without subclassing, and how does it differ from inheritance and proxy?	CS-Notes:设计模式 - 装饰
+CS06	M	What is the facade pattern and which design principle does it support?	CS-Notes:设计模式 - 外观
+CS06	M	Compare static proxy, dynamic proxy and the decorator pattern. Where are proxies used in practice?	CS-Notes:设计模式 - 代理
+CS06	M	How does the flyweight pattern reduce memory usage, and what is the difference between intrinsic and extrinsic state?	CS-Notes:设计模式 - 享元
+CS06	M	How does the chain of responsibility pattern work, and where do web frameworks use it (middleware, filters)?	CS-Notes:设计模式 - 责任链
+CS06	M	How does the command pattern enable undo, queuing and logging of operations?	CS-Notes:设计模式 - 命令
+CS06	M	What is the interpreter pattern and when is it worthwhile versus using a parser generator?	CS-Notes:设计模式 - 解释器
+CS06	M	How does the iterator pattern decouple traversal from the underlying collection, and what happens when a collection is modified during iteration?	CS-Notes:设计模式 - 迭代器
+CS06	M	What is the mediator pattern and how does it reduce coupling compared with direct object-to-object communication?	CS-Notes:设计模式 - 中介者
+CS06	M	How does the memento pattern save and restore object state without breaking encapsulation?	CS-Notes:设计模式 - 备忘录
+CS06	E	Explain the observer pattern, its push versus pull variants, and the risk of memory leaks from forgotten listeners.	CS-Notes:设计模式 - 观察者
+CS06	M	How does the observer pattern relate to publish-subscribe and event buses, and what differs in coupling?	CS-Notes:设计模式 - 观察者
+CS06	M	What is the state pattern and how does it replace large conditional statements?	CS-Notes:设计模式 - 状态
+CS06	M	What is the difference between the strategy pattern and the state pattern?	CS-Notes:设计模式 - 策略
+CS06	M	What is the template method pattern and how does it relate to the Hollywood principle?	CS-Notes:设计模式 - 模板方法
+CS06	M	What is the visitor pattern, what problem does double dispatch solve, and when does it become a burden?	CS-Notes:设计模式 - 访问者
+CS06	M	What is the null object pattern and what problems does it avoid?	CS-Notes:设计模式 - 空对象
+CS06	M	Which design patterns are used in a standard collections library (iterator, adapter, factory, decorator)?	CS-Notes:Java 容器
+CS06	M	Given a payment system that supports many payment methods and promotions, which patterns would you apply and why?	Waking-Up:Design Pattern
+CS06	M	What is the purpose of build tools and dependency managers, and how do they resolve version conflicts between transitive dependencies?	CS-Notes:构建工具
+CS06	M	What is the difference between a unit test, integration test and end-to-end test, and why does testable design matter?	CS-Notes:代码可读性
+CS07	E	What is the difference between a primitive type and its wrapper type, and what is autoboxing cost?	CS-Notes:Java 基础
+CS07	M	Why are strings immutable in Java and what benefits does this provide (hashing, thread safety, string pool)?	CS-Notes:Java 基础
+CS07	M	How do String, StringBuilder and StringBuffer differ in mutability and thread safety?	CS-Notes:Java 基础
+CS07	M	What is the string intern pool and how many objects does new String("abc") create?	CS-Notes:Java 基础
+CS07	M	Is Java pass-by-value or pass-by-reference? Explain with an example involving object references.	CS-Notes:Java 基础
+CS07	M	What is the contract between equals() and hashCode(), and what breaks if only one is overridden?	CS-Notes:Java 基础
+CS07	M	What is the difference between shallow copy and deep copy, and what are the pitfalls of clone()?	CS-Notes:Java 基础
+CS07	M	What do final and static mean on variables, methods and classes?	CS-Notes:Java 基础
+CS07	M	What is reflection, what is it used for, and what are its costs and risks?	CS-Notes:Java 基础
+CS07	M	What is the difference between checked and unchecked exceptions and when should each be used?	CS-Notes:Java 基础
+CS07	M	How do generics work with type erasure and what limitations does that bring?	CS-Notes:Java 基础
+CS07	M	What is a bounded wildcard in generics and what does PECS (producer extends, consumer super) mean?	CS-Notes:Java 基础
+CS07	M	How does serialization work, what does the transient keyword do and what are the security concerns?	CS-Notes:Java IO
+CS07	M	Compare blocking stream IO with NIO using channels, buffers and selectors.	CS-Notes:Java IO
+CS07	M	What are memory-mapped files and when are they faster than regular reads?	CS-Notes:Java IO
+CS07	M	What is the decorator pattern's role in the IO stream class hierarchy?	CS-Notes:Java IO
+CS07	M	Why does character encoding matter when converting between bytes and characters, and what causes garbled text?	CS-Notes:Java IO
+CS07	E	What are the memory regions of the Java virtual machine (heap, stack, method area, PC register, direct memory)?	CS-Notes:Java 虚拟机
+CS07	M	What can cause StackOverflowError versus OutOfMemoryError, and how would you debug each?	CS-Notes:Java 虚拟机
+CS07	M	How does the garbage collector decide an object is dead: reference counting versus reachability analysis?	CS-Notes:Java 虚拟机
+CS07	M	Explain strong, soft, weak and phantom references and a use case for each.	CS-Notes:Java 虚拟机
+CS07	M	Compare mark-sweep, mark-compact, copying and generational garbage collection algorithms.	CS-Notes:Java 虚拟机
+CS07	M	Why does generational GC split the heap into young and old generations and how does object promotion work?	CS-Notes:Java 虚拟机
+CS07	M	What are the differences between a minor GC and a full GC, and what triggers a full GC?	CS-Notes:Java 虚拟机
+CS07	M	Compare throughput-oriented collectors with low-pause collectors such as CMS and G1.	CS-Notes:Java 虚拟机
+CS07	M	What does stop-the-world mean, and how do concurrent collectors reduce pause times?	CS-Notes:Java 虚拟机
+CS07	H	An application suffers long GC pauses and frequent full GCs. How would you investigate and tune it?	CS-Notes:Java 虚拟机
+CS07	M	What are the phases of class loading: loading, linking, initialization?	CS-Notes:Java 虚拟机
+CS07	M	What is the parent delegation model of class loaders and why does it exist?	CS-Notes:Java 虚拟机
+CS07	M	When would you write a custom class loader?	CS-Notes:Java 虚拟机
+CS07	M	Describe the internal structure of ArrayList and how its growth strategy affects performance.	CS-Notes:Java 容器
+CS07	M	Compare ArrayList and LinkedList across random access, insertion, memory overhead and cache behavior.	CS-Notes:Java 容器
+CS07	M	Why is Vector considered obsolete and what does CopyOnWriteArrayList trade for lock-free reads?	CS-Notes:Java 容器
+CS07	H	Explain how a hash map is implemented: buckets, hash function, collision resolution, resizing and treeification of long chains.	CS-Notes:Java 容器
+CS07	M	Why must a hash map capacity be a power of two in some implementations, and how does it compute the bucket index?	CS-Notes:Java 容器
+CS07	M	What can go wrong with a hash map in a multithreaded environment, such as lost updates or infinite loops during resize?	CS-Notes:Java 容器
+CS07	M	How does a concurrent hash map achieve thread safety with segment locks or CAS plus per-bin locking?	CS-Notes:Java 容器
+CS07	M	How does LinkedHashMap preserve order and how can it implement an LRU cache?	CS-Notes:Java 容器
+CS07	M	What is a weak hash map and when would you use one?	CS-Notes:Java 容器
+CS07	M	What is the fail-fast behavior of collection iterators and how does it differ from fail-safe iteration?	CS-Notes:Java 容器
+CS07	M	Compare separate chaining with linear probing in hash tables: load factor, clustering and deletion.	CS-Notes:算法 - 符号表
+CS07	M	Why does a red-black tree guarantee logarithmic height and how does it differ from an AVL tree?	CS-Notes:算法 - 符号表
+CS07	M	Compare binary search trees, balanced trees and hash tables as symbol table implementations.	CS-Notes:算法 - 符号表
+CS07	M	What is amortized analysis and how does it justify the O(1) append cost of a dynamic array?	CS-Notes:算法 - 算法分析
+CS07	M	Why can an algorithm with a better big-O be slower in practice (large constants, cache misses)?	CS-Notes:算法 - 算法分析
+CS07	M	Compare stable and unstable sorting, in-place and out-of-place sorting, and where each matters.	CS-Notes:算法 - 排序
+CS07	M	Why is quicksort often faster than merge sort in practice despite a worse worst case, and how is the worst case avoided?	CS-Notes:算法 - 排序
+CS07	M	Which sorting algorithm would you choose for nearly sorted data, for linked lists, or for data too large for memory?	CS-Notes:算法 - 排序
+CS07	M	What is the difference between compiled and interpreted language implementations, and where does a VM-based runtime fit?	CS-Notes:Java 基础
+CS07	M	What does a just-in-time compiler do and how does it differ from ahead-of-time compilation?	CS-Notes:Java 虚拟机
+CS07	M	What is a Python generator and how does it differ from a list in memory use and laziness?	Waking-Up:Python Handbook
+CS07	M	What is the difference between a list and a tuple in Python, and why can only some be used as dictionary keys?	Waking-Up:Python Handbook
+CS07	M	How are Python lists and dictionaries implemented internally, and what are the complexities of their operations?	Waking-Up:Python Handbook
+CS07	M	What is a decorator in Python and how does it work with closures?	Waking-Up:Python Handbook
+CS07	M	How does Python manage memory: reference counting, cyclic garbage collection and generations?	Waking-Up:Python Handbook
+CS07	M	What is the difference between a shallow and a deep copy in Python? What happens when mutable objects are nested?	Waking-Up:Python Handbook
+CS07	M	What is the difference between == and is in Python, and why can small integers behave unexpectedly?	Waking-Up:Python Handbook
+CS07	M	What is a lambda expression in Python and what are its limitations?	Waking-Up:Python Handbook
+CS07	M	Why is a mutable default argument in a Python function a bug waiting to happen?	Waking-Up:Python Handbook
+CS07	E	What does the const keyword mean in C++ for variables, pointers, member functions and parameters?	huihut:const
+CS07	M	What is the difference between a pointer to const, a const pointer and a const pointer to const?	huihut:const
+CS07	M	What are the different uses of the static keyword in C and C++ (storage duration, linkage and class members)?	huihut:static
+CS07	M	What is the this pointer and how is it passed to non-static member functions?	huihut:this 指针
+CS07	M	How does inline differ from a macro, and when does the compiler ignore an inline request?	huihut:inline 内联函数
+CS07	M	What does volatile tell the compiler and why is it not a substitute for atomics or synchronization?	huihut:volatile
+CS07	M	What is the difference between assert and static_assert, and why shouldn't assert contain side effects?	huihut:assert()
+CS07	M	What does sizeof return for structs, and how do alignment and padding affect struct layout?	huihut:sizeof()
+CS07	M	How does reordering struct members change memory usage, and what is the effect of pack pragmas?	huihut:编译器扩展与标准对齐控制
+CS07	M	What are bit fields and what portability problems do they have?	huihut:位域
+CS07	M	What does extern "C" do and why is it needed when mixing C and C++ code?	huihut:extern 与 extern "C"
+CS07	M	Explain name mangling and why C++ needs it for function overloading.	huihut:extern 与 extern "C"
+CS07	M	What is the difference between struct and class in C++, and between a C struct and a C++ struct?	huihut:C++ 中 struct 和 class
+CS07	M	What is a union and how does it differ from a struct in memory layout? What is type punning?	huihut:union 联合
+CS07	M	How can you implement object-oriented behavior such as classes and virtual dispatch in plain C?	huihut:C 实现 C++ 类
+CS07	M	What does the explicit keyword prevent for constructors and conversion operators?	huihut:explicit（显式）关键字
+CS07	M	What are friend functions and classes and how do they affect encapsulation?	huihut:friend 友元类和友元函数
+CS07	M	What is a scoped enum (enum class) and what advantages does it have over a plain enum?	huihut:enum 枚举类型
+CS07	M	What does decltype do and how does it differ from auto?	huihut:decltype
+CS07	E	What is the difference between a pointer and a reference in C++?	huihut:引用
+CS07	M	What are lvalue references, rvalue references and forwarding references? What problem does move semantics solve?	huihut:引用
+CS07	M	When is std::move useful and what is the state of a moved-from object?	huihut:引用
+CS07	M	What is perfect forwarding and why is std::forward needed?	huihut:引用
+CS07	M	What are the dangers of preprocessor macros compared with inline functions, constexpr and templates?	huihut:宏
+CS07	M	Why is a constructor member initializer list preferred over assignment in the constructor body, and when is it required?	huihut:成员初始化列表
+CS07	M	In what order are class members initialized, and how does this interact with the initializer list?	huihut:成员初始化列表
+CS07	M	What does std::initializer_list enable and how does brace initialization prevent narrowing conversions?	huihut:initializer_list 列表初始化
+CS07	E	How do virtual functions work internally? Explain the vptr and the vtable.	huihut:虚函数指针、虚函数表
+CS07	M	When is the vptr set during construction, and why is calling a virtual function from a constructor a bad idea?	huihut:虚函数指针、虚函数表
+CS07	M	Why should a base class intended for polymorphic deletion have a virtual destructor?	huihut:虚析构函数
+CS07	M	What is a pure virtual function and an abstract class? Can a pure virtual function have a body?	huihut:纯虚函数
+CS07	M	Can constructors or static member functions be virtual, and can templates be virtual? Explain each.	huihut:类模板、成员模板、虚函数
+CS07	M	What is the diamond problem in multiple inheritance and how does virtual inheritance solve it?	huihut:虚继承
+CS07	M	How does virtual inheritance change object layout and the cost of accessing base members?	huihut:虚继承、虚函数
+CS07	M	What is object slicing and how can you avoid it?	huihut:多态
+CS07	M	What is the difference between overloading, overriding and hiding in C++ inheritance?	huihut:多态
+CS07	M	What are an abstract class, an interface class and an aggregate class in C++?	huihut:抽象类、接口类、聚合类
+CS07	M	What is the rule of three/five/zero, and why does a class owning raw resources need all of them?	huihut:面向对象
+CS07	M	Compare malloc/free with new/delete: constructors, type safety, failure behavior and mixing them.	huihut:内存分配和管理
+CS07	M	What is placement new and when is it used?	huihut:内存分配和管理
+CS07	M	What happens if you call new[] but release with delete (not delete[])?	huihut:内存分配和管理
+CS07	M	What is a memory leak, dangling pointer, wild pointer and double free? How would you detect each?	huihut:内存分配和管理
+CS07	M	Is delete this legal? Under what conditions is it safe?	huihut:delete this 合法吗？
+CS07	E	What is RAII and how does it provide exception-safe resource management?	huihut:智能指针
+CS07	E	Compare unique_ptr, shared_ptr and weak_ptr, including ownership semantics and overhead.	huihut:智能指针
+CS07	M	How does shared_ptr implement reference counting, and is it thread-safe?	huihut:智能指针
+CS07	M	How can shared_ptr cause a memory leak through cycles and how does weak_ptr fix it?	huihut:智能指针
+CS07	M	Why is make_shared preferred to constructing shared_ptr from new, and what is its downside?	huihut:智能指针
+CS07	M	Why was auto_ptr deprecated and what problem does unique_ptr solve differently?	huihut:智能指针
+CS07	M	When should you pass a smart pointer by value, by reference or pass a raw pointer to a function?	huihut:智能指针
+CS07	M	What are static_cast, dynamic_cast, const_cast and reinterpret_cast, and when is each safe?	huihut:强制类型转换运算符
+CS07	M	What is RTTI and how does dynamic_cast use it at runtime, and what is its cost?	huihut:运行时类型信息 (RTTI)
+CS07	M	How does exception handling interact with destructors and why must destructors not throw?	huihut:Effective C++
+CS07	M	What does noexcept mean and why does it matter for move operations in containers?	huihut:Effective C++
+CS07	M	Compare std::vector, std::list, std::deque and std::array in memory layout, iterator invalidation and use cases.	huihut:STL
+CS07	M	How does std::vector grow, and which operations invalidate iterators and references?	huihut:STL
+CS07	M	What data structures underlie std::map and std::unordered_map, and how do their complexities and ordering differ?	huihut:STL
+CS07	M	When would you use std::map versus std::unordered_map, and what do you need for a custom key type?	huihut:STL
+CS07	M	How does std::priority_queue work and which heap operations does it use?	huihut:STL
+CS07	M	How do templates differ from generics in Java, and what is code bloat?	huihut:类模板、成员模板、虚函数
+CS07	M	What is the erase-remove idiom and why is it needed for sequence containers?	huihut:STL
+CS07	M	Explain how the compilation model of C++ (headers, translation units, one definition rule) leads to linker errors.	huihut:extern 与 extern "C"
+CS07	M	What does the C++ memory model say about data races and how do std::atomic and memory orders help?	huihut:volatile
+CS07	H	A C++ service crashes intermittently with a segmentation fault in production. How do you find the root cause from a core dump?	huihut:内存分配和管理
+CS01	M	What is a deadlock in the Linux kernel context and which synchronization primitives (spinlock, semaphore, RCU) apply to it?	huihut:Linux 内核的同步方式
+CS09	E	What is the difference between centralized and distributed version control?	CS-Notes:Git
+CS09	M	Describe the three areas of Git (working directory, staging area, repository) and the commands that move changes between them.	CS-Notes:Git
+CS09	M	How is a Git branch implemented, and why is branching cheap?	CS-Notes:Git
+CS09	E	What is the difference between git merge and git rebase, and when should you not rebase?	CS-Notes:Git
+CS09	M	What is a fast-forward merge and when does Git create a merge commit instead?	CS-Notes:Git
+CS09	M	How do you resolve merge conflicts and what do the conflict markers mean?	CS-Notes:Git
+CS09	M	When would you use git stash and what happens to untracked files?	CS-Notes:Git
+CS09	M	What is the difference between git reset (soft, mixed, hard), git revert and git checkout for undoing changes?	Waking-Up:Git-ComdLine-REST
+CS09	M	How does git fetch differ from git pull?	Waking-Up:Git-ComdLine-REST
+CS09	M	Compare Git Flow, GitHub Flow and trunk-based development.	CS-Notes:Git
+CS09	M	How does .gitignore work, and why doesn't it affect files already tracked?	CS-Notes:Git
+CS09	M	You accidentally committed a secret and pushed it. What do you do?	CS-Notes:Git
+CS09	M	How would you find which commit introduced a bug using Git?	CS-Notes:Git
+CS09	M	What does git cherry-pick do and when is it appropriate?	Waking-Up:Git-ComdLine-REST
+CS09	E	What problems does Docker solve, and how do containers differ from virtual machines?	CS-Notes:Docker
+CS09	M	Compare containers and virtual machines on startup time, resource usage, isolation and security.	CS-Notes:Docker
+CS09	M	Which Linux kernel features (namespaces, cgroups, union file systems) make containers possible?	CS-Notes:Docker
+CS09	M	What is the difference between a Docker image and a container, and how do image layers work?	CS-Notes:Docker
+CS09	M	How do you keep a Docker image small and its builds fast?	CS-Notes:Docker
+CS09	M	How do containers help continuous integration and microservice deployment?	CS-Notes:Docker
+CS09	M	How is data persisted in containers, and what is the difference between volumes and bind mounts?	CS-Notes:Docker
+CS09	E	What does a typical Linux file permission string such as rwxr-xr-- mean, and how do chmod, umask and the sticky bit work?	CS-Notes:Linux
+CS09	M	What are the differences between pipes and redirections, and what do 2>&1 and tee do?	CS-Notes:Linux
+CS09	M	How do grep, awk and sed differ and what would you use each for in log analysis?	CS-Notes:Linux
+CS09	M	How would you find the top 10 most frequent IP addresses in a large access log with shell commands?	CS-Notes:Linux
+CS09	M	How do you inspect running processes, their states, CPU and memory usage using ps, top and similar tools?	CS-Notes:Linux
+CS09	M	What do the process states R, S, D and Z mean in Linux?	CS-Notes:Linux
+CS09	M	What does the PATH variable do and how does the shell search for commands?	CS-Notes:Linux
+CS09	M	How do you find which process is listening on a given port and kill it?	Waking-Up:Git-ComdLine-REST
+CS09	M	What does sudo do and why is running everything as root dangerous?	CS-Notes:Linux
+CS09	M	A Linux server is slow. Walk through the commands you would run to check CPU, memory, disk and network.	Waking-Up:Git-ComdLine-REST
+CS09	M	How do you compress and archive files on Linux, and how do tar, gzip and zip differ?	CS-Notes:Linux
+CS09	M	What are basic regular expression elements such as anchors, quantifiers, groups and lookaheads, and what is catastrophic backtracking?	CS-Notes:正则表达式
+SD04	M	What benefits and costs come from building a system as microservices rather than a monolith?	CS-Notes:Docker
+SD04	M	What is the difference between REST and RPC style APIs?	Waking-Up:Git-ComdLine-REST
+SD04	M	How would you version and paginate a public REST API?	Waking-Up:Git-ComdLine-REST
+SD06	H	Design a distributed lock service that clients across many machines can rely on.	CS-Notes:分布式
+SD06	H	Design a distributed cache such as a Redis-like key-value store, including partitioning, replication and eviction.	CS-Notes:缓存
+SD06	H	Design a message queue system that supports ordering, durability and consumer groups.	CS-Notes:消息队列
+SD06	H	Design a leaderboard for millions of players with real-time rank lookups.	CS-Notes:Redis
+SD06	H	Design a rate limiter that works across a cluster of API servers.	CS-Notes:系统设计基础
+SD06	H	Design a discussion forum that supports posting, upvotes and ranking by popularity at scale.	CS-Notes:Redis
+SD06	H	Design a flash-sale (seckill) system that handles a sudden burst of traffic without overselling.	CS-Notes:消息队列
+SD06	H	Design a session management system for a web application that runs on a cluster of servers.	CS-Notes:集群

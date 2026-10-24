@@ -1,0 +1,3 @@
+Q003969	vague
+Q005461	vague
+Q012587	hr

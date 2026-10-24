@@ -1,0 +1,477 @@
+Q004459	E	Design a registry for losses, optimizers, or preprocessing functions.
+Q004464	E	Design the errors raised for an invalid preprocessing input shape or dtype.
+Q004550	M	What makes an ML utility reusable without excessive abstraction?
+Q004551	M	Which input validation belongs at module boundaries in an ML codebase?
+Q004554	M	How should an ML codebase be structured for independent testing?
+Q006232	M	How can you use Protocols and dependency injection to make an LLM client testable and replaceable?
+Q012111	M	Implement a set of shape classes that compute area, then extend them to handle a new shape.
+Q000114	E	What is object-oriented programming and why is it used?
+Q000118	M	Is OOP always the best choice?
+Q000119	E	What are the four pillars of OOP?
+Q000120	E	Why is encapsulation useful?
+Q000122	E	Why is abstraction useful?
+Q000123	E	Why is inheritance useful?
+Q000124	M	How do the four pillars of OOP work together?
+Q000125	E	What is a class and what is an object?
+Q000126	M	Why is the class-object distinction important?
+Q000129	M	How is abstraction implemented?
+Q000131	E	What is the difference between abstraction and encapsulation?
+Q000134	M	What is the difference between inheritance and composition?
+Q000135	E	Why is polymorphism useful?
+Q000136	M	Does polymorphism require inheritance?
+Q000137	E	What is the difference between inheritance and polymorphism?
+Q000138	M	How does runtime polymorphism work?
+Q000139	M	Why is runtime polymorphism useful?
+Q000140	E	What is the main difference between compile-time and runtime polymorphism?
+Q000141	E	Why is method overloading useful?
+Q000143	M	How does method overriding work?
+Q000144	M	Can a method be both overloaded and overridden?
+Q000145	E	What is dynamic method dispatch?
+Q000146	M	How does dynamic method dispatch work?
+Q000147	M	Why is dynamic method dispatch useful?
+Q000148	E	What happens when an object is created (constructors)?
+Q000149	E	Why are constructors used?
+Q000151	E	What is a destructor?
+Q000153	E	Why are destructors used?
+Q000159	M	Does every programming language implement destructors the same way?
+Q000160	E	What is the difference between an interface and an abstract class?
+Q000161	M	When should you use inheritance rather than composition?
+Q000162	M	When should you use composition rather than inheritance?
+Q000163	M	What is the difference between association, aggregation, and composition?
+Q000164	E	What are access modifiers?
+Q000165	E	Why are access modifiers important?
+Q000166	E	What is 'this' / 'self' in a class?
+Q000168	M	When should static members be used?
+Q000169	E	What is the difference between class variables and instance variables?
+Q000170	M	When should you use class variables versus instance variables?
+Q000171	M	Why is composition often preferred over inheritance?
+Q000174	M	What is the Liskov Substitution Principle?
+Q000176	M	What does "substitutable" mean in the Liskov Substitution Principle?
+Q000178	E	What are the SOLID principles?
+Q000179	M	How do the five SOLID principles work together?
+Q000180	M	Explain the Dependency Inversion Principle with an example.
+Q000182	M	In the Dependency Inversion Principle, what exactly is being inverted?
+Q000183	E	What are coupling and cohesion?
+Q000184	M	Why is low coupling useful?
+Q000189	H	How would you design a class hierarchy for a real-world problem?
+Q000455	E	What is OOP? Why do we use it?
+Q000456	E	What is the difference between a class, an object and an instance?
+Q000457	E	Explain the four pillars of OOP with real-life examples.
+Q000458	E	What are the types of inheritance? Which languages allow multiple inheritance?
+Q000459	M	What is the diamond problem and how is it solved?
+Q000461	E	What are the types of constructors? What is a copy constructor?
+Q000463	M	Abstract class vs interface: when would you use each?
+Q000464	M	Can an abstract class have a constructor? Can it be instantiated?
+Q000465	M	What is the difference between static and instance members? What are the restrictions on static methods?
+Q000466	M	What is the difference between association, aggregation and composition?
+Q000467	M	Inheritance vs composition: which do you prefer and why?
+Q000468	M	Explain the SOLID principles with quick examples.
+Q000469	M	What is the Liskov Substitution Principle in practice?
+Q000470	E	What are coupling and cohesion? What should we aim for?
+Q000471	M	What is the Singleton pattern? How do you make it thread-safe?
+Q000472	M	What is the difference between the Factory and Abstract Factory patterns?
+Q000473	M	Explain the Observer and Strategy design patterns.
+Q000541	E	What is the difference between functional and non-functional requirements?
+Q000544	M	Explain black-box testing techniques.
+Q000545	M	What is white-box testing and code coverage?
+Q000546	E	What is the difference between smoke testing and sanity testing?
+Q000547	E	What is the difference between retesting and regression testing?
+Q000548	E	What is the difference between alpha and beta testing?
+Q000549	E	Explain the levels of software testing.
+Q000550	E	Explain the defect (bug) life cycle.
+Q000552	E	What is technical debt?
+Q000366	E	What is the difference between encapsulation and abstraction?
+Q000367	M	What are the differences between method overloading and overriding, including the rules for each and how static methods behave?
+Q000368	M	What is the difference between an abstract class and an interface, and when would you use each?
+Q000369	M	What is the diamond problem, and how do Java and C++ solve it?
+Q000370	E	Explain the SOLID principles with an example of each.
+Q000371	M	Explain and implement the Singleton (thread-safe), Factory, Observer, and Strategy design patterns.
+Q000693	E	What do the acronyms CAP, BASE, SOLID, and KISS mean?
+Q000801	M	What distinguishes the MVC, MVP, MVVM, MVVM-C, and VIPER architecture patterns from each other?
+Q001113	E	What is object-oriented programming in C++?
+Q001269	E	What is Dependency Injection and why is it used in modern software development?
+Q001270	M	Explain the concept of Inversion of Control (IoC) and how it relates to Dependency Injection.
+Q001271	E	What are the main advantages of using Dependency Injection in a software project?
+Q001272	M	Describe the impact of Dependency Injection on the maintainability of code.
+Q001273	M	Can you explain the Dependency Inversion Principle and how it differs from Dependency Injection?
+Q001275	M	Compare and contrast constructor injection versus setter injection.
+Q001276	M	When would you use method injection instead of constructor injection?
+Q001278	M	Can mixing different types of injection in the same class lead to issues? If so, what kind?
+Q001279	M	Is there a preferred type of dependency injection when working with immutable objects? Please explain.
+Q001280	M	How does each type of dependency injection affect the ease of unit testing?
+Q001281	M	What is a Dependency Injection container and what are its responsibilities?
+Q001284	M	What is the difference between a Dependency Injection container and a service locator?
+Q001285	M	How do you typically configure dependencies within a DI container?
+Q001286	M	Describe a situation where you should opt for a lightweight DI container over a full-fledged framework.
+Q001852	E	What is Object-Oriented Programming (OOP)?
+Q001853	E	What is the difference between procedural and Object-Oriented programming?
+Q001854	E	What is polymorphism? Explain overriding and overloading.
+Q001855	E	What is inheritance? Name some types of inheritance.
+Q001856	E	What is abstraction? Name some abstraction techniques.
+Q001857	E	What is a class in OOP?
+Q001858	E	What is an object in OOP?
+Q001859	E	How do access specifiers work and what are they typically?
+Q001860	M	Name some ways to overload a method.
+Q001861	E	What is cohesion in OOP?
+Q001862	E	What is coupling in OOP?
+Q001863	E	What is a constructor and how is it used?
+Q001864	M	Describe the concept of a destructor or finalizer in OOP.
+Q001865	M	Compare inheritance vs. mixin vs. composition.
+Q002113	M	Explain separation of concerns in software architecture.
+Q002118	E	Define modularity in software architecture.
+Q002119	E	Discuss the concepts of coupling and cohesion.
+Q002120	M	What is the principle of least knowledge (Law of Demeter) in architecture?
+Q002124	E	What are the SOLID principles of object-oriented design?
+Q002126	M	When should the Singleton pattern be applied and what are its drawbacks?
+Q002226	E	What is software testing, and why is it important?
+Q002227	E	Define the difference between verification and validation in software testing.
+Q002228	M	Explain the software development life cycle and the role testing plays in each phase.
+Q002229	E	What are the different levels of software testing?
+Q002230	E	Describe the difference between static and dynamic testing.
+Q002231	E	What is a test case, and what elements should it contain?
+Q002232	M	Explain the concept of coverage in testing and the main types of coverage (e.g., line, branch, path, statement).
+Q002233	E	What is the difference between white-box, black-box, and grey-box testing?
+Q002234	E	What is regression testing, and why is it performed?
+Q002235	E	Explain unit testing and which tools you might use for it.
+Q002236	E	What is integration testing and what are its types?
+Q002237	E	What is system testing, and how does it differ from other types of testing?
+Q002238	E	Define acceptance testing and describe its types.
+Q002239	E	What are the benefits of test automation?
+Q002240	M	When would you choose not to automate test cases?
+Q002672	E	What is the difference between abstract classes and interfaces?
+Q002673	M	Can abstract classes have constructors? Why?
+Q002674	M	What is the Template Method pattern and how do abstract classes support it?
+Q002675	M	Can you have an abstract class without abstract methods?
+Q002676	M	How do you decide between using abstract classes vs composition?
+Q002680	E	What is abstraction and how is it achieved in Java?
+Q002682	E	Can an abstract class have constructors? Why?
+Q002683	M	What are the Java 8+ interface features and how do they affect abstraction?
+Q002697	E	What is the difference between a constructor and a method?
+Q002698	M	Can constructors be overloaded? How does constructor chaining work?
+Q002699	E	What happens if you do not provide a constructor in a class?
+Q002700	M	Can constructors be private? What are the use cases?
+Q002707	E	What is encapsulation and why is it important?
+Q002708	M	What is the difference between encapsulation and data hiding?
+Q002709	E	How do you achieve encapsulation in Java?
+Q002710	M	Can you break encapsulation in Java? How?
+Q002711	E	What is the difference between encapsulation and abstraction?
+Q002728	E	What is inheritance and what are its types?
+Q002729	E	What is the difference between method overriding and method overloading?
+Q002730	M	What is the diamond problem and how does Java solve it?
+Q002731	M	When would you use inheritance vs composition?
+Q002732	M	What happens if you do not call super() in a constructor?
+Q002735	M	What is the difference between abstract classes and interfaces in modern Java?
+Q002736	M	How do default methods solve the interface evolution problem?
+Q002737	M	How does Java resolve conflicts when multiple interfaces have the same default method?
+Q002739	M	When should you use interfaces vs abstract classes in your design?
+Q002782	M	Can you override static methods in Java? Why or why not?
+Q002785	M	How does method resolution work in an inheritance hierarchy?
+Q002786	M	Why does Java not support multiple class inheritance?
+Q002788	M	What is the difference between composition and multiple inheritance?
+Q002789	M	When should you choose multiple inheritance over composition?
+Q002790	M	How do mixin interfaces work in Java?
+Q002796	E	What is polymorphism and what are its types?
+Q002797	M	How does method overriding enable runtime polymorphism?
+Q003915a	E	What is the difference between pytest and unittest?
+Q003915b	M	How do JUnit and Mockito work together?
+Q003922	E	What problems do mocks and stubs each solve?
+Q005632	E	Why use abstract classes?
+Q005633	M	Why use abstraction in payment systems?
+Q005634	M	When should you use aggregation?
+Q005640	M	Why prefer composition over inheritance?
+Q005645	M	Why use encapsulation in payment processing?
+Q005646	E	How do you implement inheritance in C++?
+Q005647	E	What is an interface?
+Q005648	E	Why use function overloading?
+Q005649	E	Why use function overriding?
+Q005650	M	Why use abstract classes with polymorphism?
+Q005651	M	Why use polymorphism in payment systems?
+Q005652	E	Why use method overloading?
+Q005653	E	Why use method overriding?
+Q005654	M	Why use interfaces with polymorphism?
+Q005655	E	Why use structs with methods?
+Q005656	M	What is inheritance, and what is its alternative in Go?
+Q005657	M	How do you implement inheritance-like behavior in Go?
+Q005659	M	Why use function parameters for polymorphism?
+Q005660	E	How do you implement inheritance in Java?
+Q005661	E	How do you implement inheritance in Python?
+Q005662	E	Why use default arguments?
+Q005664	M	Does Rust support aggregation?
+Q005665	M	Why does Rust prefer structs over classes?
+Q005667	M	Does Rust support encapsulation?
+Q005668	M	Does Rust support inheritance?
+Q005669	M	How do you implement "inheritance" in Rust?
+Q005671	M	Why use trait objects?
+Q006245	E	What is the Adapter design pattern?
+Q006246	E	What is the Factory Method design pattern?
+Q009956	M	You are given about 120 lines of working but messy code with passing tests. How do you improve the architecture without breaking the tests, and what do you change first?
+Q009957	M	The tests are green but coverage is thin. Do you refactor anyway or write tests first?
+Q009958	M	When is a rewrite cheaper than a refactor?
+Q010653	M	An AI-generated test suite has 95% coverage and all tests are green. What do you check before trusting it?
+Q010654	M	Would you gate merges on mutation score, and at what cost?
+D01256	E	What are the three pillars of object-oriented programming (encapsulation, inheritance, polymorphism) and what problem does each solve?
+D01257	M	What is the difference between compile-time and runtime polymorphism?
+D01258	M	When should you prefer composition over inheritance?
+D01259	M	What is the difference between an abstract class and an interface, and how do you decide which to use?
+D01260	M	Explain the UML relationships: generalization, realization, association, aggregation, composition and dependency.
+D01261	M	What is the difference between aggregation and composition in terms of lifecycle ownership?
+D01262	E	Explain each of the SOLID principles with a short example of a violation.
+D01263	M	What does the Liskov substitution principle require, and why does a Square extending Rectangle violate it?
+D01264	M	What is dependency inversion and how does dependency injection relate to it?
+D01265	M	Explain the Law of Demeter, the principle of least knowledge and the principle of composite reuse.
+D01266	M	Why are overloading and overriding different, and what are the rules for each?
+D01267	M	What makes code readable: naming, consistent style, comments that explain why, short functions and simple control flow?
+D01268	M	How would you refactor a deeply nested conditional or very long function?
+D01269	M	When are comments harmful, and what should good comments communicate?
+D01270	E	What are design patterns, why do they help, and what is the risk of overusing them?
+D01271	M	How are design patterns classified into creational, structural and behavioral categories? Give two examples of each.
+D01272	E	Implement a thread-safe singleton and explain the trade-offs of eager, lazy, double-checked locking, holder and enum approaches.
+D01273	M	How can a singleton be broken (reflection, serialization, multiple class loaders) and how do you defend against it?
+D01274	M	Why is the singleton often considered an anti-pattern for testability, and what are alternatives?
+D01275	M	What is the difference between simple factory, factory method and abstract factory?
+D01276	M	When would you choose abstract factory over factory method?
+D01277	M	What problem does the builder pattern solve compared with telescoping constructors?
+D01278	M	When is the prototype pattern useful and what are the pitfalls of shallow versus deep copy in it?
+D01279	M	What does the adapter pattern do, and how do object adapters differ from class adapters?
+D01280	M	How does the bridge pattern decouple abstraction from implementation, and how does it differ from adapter?
+D01281	M	When would you use the composite pattern, and how does it model tree structures such as a file system?
+D01282	M	How does the decorator pattern add behavior without subclassing, and how does it differ from inheritance and proxy?
+D01283	M	What is the facade pattern and which design principle does it support?
+D01284	M	Compare static proxy, dynamic proxy and the decorator pattern. Where are proxies used in practice?
+D01285	M	How does the flyweight pattern reduce memory usage, and what is the difference between intrinsic and extrinsic state?
+D01286	M	How does the chain of responsibility pattern work, and where do web frameworks use it (middleware, filters)?
+D01287	M	How does the command pattern enable undo, queuing and logging of operations?
+D01288	M	What is the interpreter pattern and when is it worthwhile versus using a parser generator?
+D01289	M	How does the iterator pattern decouple traversal from the underlying collection, and what happens when a collection is modified during iteration?
+D01290	M	What is the mediator pattern and how does it reduce coupling compared with direct object-to-object communication?
+D01291	M	How does the memento pattern save and restore object state without breaking encapsulation?
+D01292	E	Explain the observer pattern, its push versus pull variants, and the risk of memory leaks from forgotten listeners.
+D01293	M	How does the observer pattern relate to publish-subscribe and event buses, and what differs in coupling?
+D01294	M	What is the state pattern and how does it replace large conditional statements?
+D01295	M	What is the difference between the strategy pattern and the state pattern?
+D01296	M	What is the template method pattern and how does it relate to the Hollywood principle?
+D01297	M	What is the visitor pattern, what problem does double dispatch solve, and when does it become a burden?
+D01298	M	What is the null object pattern and what problems does it avoid?
+D01299	M	Which design patterns are used in a standard collections library (iterator, adapter, factory, decorator)?
+D01300	M	Given a payment system that supports many payment methods and promotions, which patterns would you apply and why?
+D01301	M	What is the purpose of build tools and dependency managers, and how do they resolve version conflicts between transitive dependencies?
+D01302	M	What is the difference between a unit test, integration test and end-to-end test, and why does testable design matter?
+D01708	E	What are the four pillars of object-oriented programming?
+D01709	M	How do abstraction and encapsulation differ, and how does encapsulation help maintainability?
+D01710	M	What is polymorphism and how do overloading and overriding differ?
+D01711	M	When should you prefer composition over inheritance?
+D01712	M	What is the fragile base class problem and how can inheritance break encapsulation?
+D01713	M	What is the difference between an abstract class and an interface, and how do you choose between them?
+D01714	M	What do upcasting and downcasting mean, and why can downcasting fail at runtime?
+D01715	M	What is the difference between tight and loose coupling, and between high and low cohesion?
+D01716	E	What are the SOLID principles?
+D01717	M	Explain the Single Responsibility Principle with an example of a class that violates it.
+D01718	M	Explain the Open-Closed Principle and how polymorphism helps satisfy it.
+D01719	M	Explain the Liskov Substitution Principle and give a classic violation such as the square-rectangle problem.
+D01720	M	Explain the Interface Segregation Principle and what a fat interface causes.
+D01721	M	Explain the Dependency Inversion Principle and how it relates to dependency injection.
+D01722	M	What are common design smells such as rigidity, fragility, immobility and viscosity?
+D01723	E	Why are design patterns useful and how are they categorized (creational, structural, behavioral)?
+D01724	M	What are the downsides of overusing design patterns?
+D01725	E	What is the Adapter pattern and when would you use it?
+D01726	M	Compare the class adapter and object adapter approaches.
+D01727	E	What is the Composite pattern and what kind of structures does it model?
+D01728	M	In the Composite pattern, where should child-management operations live: on the common component or only on the composite?
+D01729	M	How does the Composite pattern relate to the Decorator and Iterator patterns?
+D01730	E	What is the Observer pattern and what problem does it solve?
+D01731	M	What are the pitfalls of the Observer pattern such as memory leaks from unremoved listeners and notification ordering?
+D01732	M	How does Observer relate to publish-subscribe, and how do they differ?
+D01733	E	What is the Strategy pattern and what problem does it solve?
+D01734	M	How would you refactor a long if-else chain choosing between algorithms into the Strategy pattern?
+D01735	E	What is the Template Method pattern?
+D01736	M	How do Template Method and Strategy differ in their use of inheritance versus composition?
+D01737	M	What is the Singleton pattern and how can it be implemented thread-safely?
+D01738	M	Compare the Factory Method, Abstract Factory and Builder patterns.
+D01739	M	What is dependency injection and what are the benefits for testing?
+D01740	M	What does the MVC pattern separate and how do the model, view and controller interact?
+D01741	E	What are the characteristics of clean code, such as meaningful names and small functions?
+D01742	M	What is refactoring and when is it safe to do?
+D01743	M	What are common code smells and which refactorings address them?
+D01744	M	Why should functions have few side effects and few parameters?
+D01745	E	What is Test-Driven Development and what is the red-green-refactor cycle?
+D01746	M	What are the benefits and the costs of TDD?
+D01747	M	What is the difference between unit, integration and end-to-end tests, and what is the test pyramid?
+D01748	M	What are mocks, stubs and fakes, and when is mocking harmful?
+D01749	M	What makes a good unit test (FIRST principles)?
+D01750	M	What are the core principles of functional programming such as pure functions, immutability and higher-order functions?
+D01751	M	How does functional programming differ from imperative and object-oriented programming, and what are the benefits for concurrency?
+D01752	E	What is the Agile manifesto and what values does it state?
+D01753	M	How does Agile/Scrum differ from the waterfall model?
+D01754	M	What are the roles, events and artifacts in Scrum?
+D02665	E	What is refactoring, and how is it different from performance optimization?
+D02666	M	When is the right time to refactor, and why are automated tests a prerequisite?
+D02667	M	What are the risks of refactoring for its own sake, and how do you keep refactoring incremental and safe?
+D02668	E	What is the purpose of unit testing and how does it support refactoring and continuous integration?
+D02669	M	What is test-driven development, and what are its advantages and disadvantages?
+D02670	M	When should you use mocks or stubs in unit tests, and what are the risks of overusing them?
+D02671	M	What makes a good unit test in terms of isolation, determinism and speed?
+D02672	E	Compare camelCase, snake_case and kebab-case, and where each convention is typically used.
+D02673	M	Why does naming matter for maintainability, and what rules make identifiers readable?
+D02674	M	What are the main software development process models, and when would you choose an iterative model over waterfall?
+D02675	M	What basic strategies such as reuse, divide and conquer, incremental evolution and trade-off optimization guide software design?
+D02798	H	Implement an LRU cache using a hash map and a doubly linked list, and discuss how to make it thread-safe.
+D03066	E	What are the four pillars of object-oriented programming, and how does each contribute to maintainable software?
+D03067	E	What is the difference between a class and an object?
+D03068	E	What is encapsulation, and how does it differ from data hiding?
+D03069	M	Why are getters and setters sometimes considered an anti-pattern, and how can you protect class invariants without exposing internal state?
+D03070	M	How do access modifiers (public, protected, private, package-private) support encapsulation, and when is protected a design smell?
+D03071	E	What is abstraction, and how does it differ from encapsulation?
+D03072	M	What is the difference between an abstract class and an interface, and how do you decide which to use?
+D03073	M	How have default and static methods in interfaces blurred the line between interfaces and abstract classes, and what risks do they introduce?
+D03074	M	What is the diamond problem in multiple inheritance, and how do different languages avoid or resolve it?
+D03075	E	What is inheritance, and what are the different types of inheritance?
+D03076	M	What problems does deep inheritance hierarchies cause, and what is the fragile base class problem?
+D03077	M	Why is composition often preferred over inheritance, and when is inheritance still the right choice?
+D03078	H	Given a design that uses inheritance to share code between unrelated classes, how would you refactor it to composition and what would you gain?
+D03079	E	What is polymorphism, and what is the difference between compile-time and run-time polymorphism?
+D03080	M	How does dynamic dispatch work under the hood using a virtual table?
+D03081	M	What is the difference between method overloading and method overriding, and what rules govern each?
+D03082	M	Why is calling an overridable method from a constructor dangerous?
+D03083	M	What is the difference between static binding and dynamic binding?
+D03084	M	What is the Liskov-compatible way to override a method, and what do covariance and contravariance mean for return and parameter types?
+D03085	M	How do Go interfaces and struct embedding provide polymorphism and code reuse without classical inheritance?
+D03086	M	What does structural (implicit) interface satisfaction in Go give you compared with nominal interfaces in Java or C#, and what are its downsides?
+D03087	M	How do Python abstract base classes and duck typing differ in how they enforce an interface?
+D03088	M	What are pure virtual functions in C++, and why should base classes with virtual functions have a virtual destructor?
+D03089	M	What is object slicing in C++, and how can it break polymorphism?
+D03090	M	What is the difference between association, aggregation and composition, with examples of each?
+D03091	M	How do object lifetimes differ between aggregation and composition, and how does that affect ownership and deletion?
+D03092	M	What is the difference between unidirectional and bidirectional association, and what maintenance problems do bidirectional links cause?
+D03093	M	What is a dependency relationship in UML, and how does it differ from association?
+D03094	E	What are enums used for in object-oriented design, and when do they replace conditional logic or class hierarchies?
+D03095	M	What is the difference between a value object and an entity, and why does it matter for equality and immutability?
+D03096	M	What are the benefits of immutable objects, and how do you design a class to be immutable?
+D03097	M	What is the difference between shallow copy and deep copy, and when does each create bugs?
+D03098	M	What is the difference between equals and identity comparison, and what is the contract between equals and hashCode?
+D03099	M	What is the Law of Demeter, and how does violating it lead to tight coupling?
+D03100	M	What is the difference between coupling and cohesion, and how do you measure or improve each?
+D03101	M	What is the tell-dont-ask principle, and how does it improve object design?
+D03102	M	What is an anemic domain model, and why is it often considered an anti-pattern?
+D03103	M	What is the difference between program to an interface and program to an implementation, and why does it matter?
+D03104	E	What does the Single Responsibility Principle say, and how do you identify a class with more than one responsibility?
+D03105	M	What does the Open/Closed Principle mean in practice, and how can the strategy pattern help satisfy it?
+D03106	M	What does the Liskov Substitution Principle require of subclasses, and can you give an example such as the square and rectangle problem?
+D03107	M	What does the Interface Segregation Principle say, and how do fat interfaces harm clients?
+D03108	M	What does the Dependency Inversion Principle say, and how does it differ from dependency injection?
+D03109	M	Review a class that violates several SOLID principles at once and describe how you would refactor it step by step.
+D03110	H	Can following SOLID too rigidly hurt a codebase? Describe the trade-offs between abstraction and simplicity.
+D03111	E	What do the DRY, KISS and YAGNI principles mean, and when do they conflict with each other?
+D03112	M	When is code duplication preferable to a premature abstraction?
+D03113	M	What is dependency injection, and what are constructor, setter and interface injection?
+D03114	M	What are the benefits of dependency injection for testing, and what does an inversion-of-control container do?
+D03115	M	What is the difference between dependency injection and the service locator pattern?
+D03116	M	What is the principle of least astonishment, and how does it apply to API and class design?
+D03117	M	What is the difference between inheritance-based and delegation-based reuse, and how does the delegation pattern work?
+D03118	M	What is separation of concerns, and how does layered architecture implement it?
+D03119	M	What is a code smell? Name several well-known smells and the refactorings that address them.
+D03120	M	What are the characteristics of clean code, and how do naming, function size and comments contribute?
+D03121	M	What is technical debt, and how do you decide when to refactor versus ship?
+D03122	M	What is the rule of three in refactoring, and why wait before generalizing?
+D03123	E	What are design patterns, and what are the three GoF categories with examples from each?
+D03124	M	What are the risks of overusing design patterns, and how do you tell when a pattern is justified?
+D03125	M	How do patterns such as strategy, state and bridge look structurally similar, and how do you distinguish their intent?
+D03126	M	What is the difference between the decorator, proxy and adapter patterns?
+D03127	M	What is the difference between factory method, abstract factory and builder?
+D03128	M	Which design patterns are commonly used in well-known frameworks and standard libraries, and what are examples of each?
+D03129	M	What are anti-patterns such as god object, spaghetti code and golden hammer, and how do they emerge?
+D03130	E	What is the Singleton pattern, and when is it appropriate?
+D03131	M	What are the ways to implement a thread-safe singleton, and what is wrong with naive double-checked locking?
+D03132	M	Why is Singleton often criticized as hidden global state, and what alternatives improve testability?
+D03133	M	How can a singleton be broken in practice (reflection, serialization, multiple class loaders), and how do you defend against it?
+D03134	E	What is the Factory Method pattern, and what problem does it solve?
+D03135	M	What is the difference between a simple factory, the factory method pattern and the abstract factory pattern?
+D03136	M	When would you use the Abstract Factory pattern, and what is the main drawback when adding new product types?
+D03137	M	What is the Builder pattern, and how does it address the telescoping constructor problem?
+D03138	M	When should you prefer a builder over constructor overloading or named parameters, and how do you validate required fields?
+D03139	M	What is the Prototype pattern, and when does cloning beat constructing from scratch?
+D03140	M	What are the pitfalls of cloning objects in the Prototype pattern, particularly with deep and shallow copies?
+D03141	M	What is object pooling, and how does it differ from the Flyweight pattern?
+D03142	E	What is the Adapter pattern, and what is the difference between class adapters and object adapters?
+D03143	M	When would you use an adapter when integrating a third-party library, and what are the pitfalls of leaking the adaptee interface?
+D03144	M	What is the Bridge pattern, and how does it prevent a class explosion when two dimensions of variation exist?
+D03145	M	How does the Bridge pattern differ from the Adapter pattern?
+D03146	E	What is the Composite pattern, and what kinds of problems has a tree of uniform objects as its natural solution?
+D03147	M	In the Composite pattern, should child-management methods live on the component interface or only on the composite, and what are the trade-offs?
+D03148	E	What is the Decorator pattern, and how does it differ from subclassing for adding behaviour?
+D03149	M	What are the drawbacks of the Decorator pattern, such as ordering sensitivity and many small objects?
+D03150	E	What is the Facade pattern, and how does it reduce coupling between subsystems?
+D03151	M	How does a facade differ from an adapter and a mediator?
+D03152	M	What is the Flyweight pattern, and which state must be intrinsic versus extrinsic?
+D03153	M	When does Flyweight actually save memory, and what is the cost in complexity and thread safety?
+D03154	E	What is the Proxy pattern, and what are virtual, protection and remote proxies?
+D03155	M	How does a proxy differ from a decorator when both wrap the same interface?
+D03156	M	How can the proxy pattern be used for lazy loading, caching or access control, and how do dynamic proxies work?
+D03157	E	What is the Observer pattern, and where is it used in practice?
+D03158	M	What problems arise with the Observer pattern, such as memory leaks from unregistered listeners, notification ordering and cascading updates?
+D03159	M	How does Observer differ from publish-subscribe, and when would you prefer one over the other?
+D03160	M	What is the push versus pull model of observer notification, and what are the trade-offs?
+D03161	E	What is the Strategy pattern, and how does it remove conditional logic?
+D03162	M	How does the Strategy pattern differ from the State pattern?
+D03163	M	How does the Strategy pattern relate to the Open/Closed Principle, and how do higher-order functions replace it in modern languages?
+D03164	E	What is the Command pattern, and what does it enable beyond a direct method call?
+D03165	M	How does the Command pattern support undo, redo, queuing and macro commands?
+D03166	E	What is the State pattern, and when is it better than a switch on an enum?
+D03167	M	Who should own state transitions in the State pattern, the context or the states, and what are the implications?
+D03168	E	What is the Template Method pattern, and how does it differ from Strategy?
+D03169	M	How does the Template Method pattern relate to the Hollywood principle, and what are the drawbacks of relying on inheritance?
+D03170	M	What is the Iterator pattern, and why does it separate traversal from collection structure?
+D03171	M	What happens when a collection is modified during iteration, and how do fail-fast and snapshot iterators differ?
+D03172	M	What is the Visitor pattern, and what problem does double dispatch solve?
+D03173	M	What is the main trade-off of the Visitor pattern when adding new element types versus adding new operations?
+D03174	M	What is the Mediator pattern, and how does it reduce many-to-many coupling between components?
+D03175	M	What are the risks of a mediator becoming a god object?
+D03176	M	What is the Memento pattern, and how does it capture state for undo without breaking encapsulation?
+D03177	M	What is the Chain of Responsibility pattern, and what are real examples such as middleware pipelines and logging handlers?
+D03178	M	How does the Chain of Responsibility pattern behave when no handler processes a request, and how do you guarantee termination?
+D03179	M	What is the Null Object pattern, and when is it better than returning null?
+D03180	M	What is the Specification pattern, and how does it help compose business rules?
+D03181	M	What is the Interpreter pattern, and when is a small domain-specific language worth building?
+D03182	M	Which design pattern would you use to build a text-formatting pipeline with optional stages, and why?
+D03183	M	Which pattern fits a payment system that must support multiple payment gateways chosen at runtime?
+D03184	M	Which pattern would you apply to build a UI toolkit where widgets are nested in containers and treated uniformly?
+D03185	M	Which patterns would you combine to design an event-driven notification module with multiple channels and retry behaviour?
+D03186	M	Which pattern would you use to add caching, logging or authorization to an existing service without modifying it?
+D03187	M	A class has a long if-else chain choosing behaviour by type. Which patterns could remove it, and what would you choose?
+D03188	M	How would you implement a plugin architecture using patterns and dependency inversion?
+D03189	M	Which patterns help in building a document editor that supports undo, multiple views and format conversion?
+D03190	M	Which pattern would you use to build a middleware pipeline for HTTP request processing, and how does ordering matter?
+D03191	M	How do the Repository and Unit of Work patterns separate persistence from domain logic?
+D03192	M	What is the Model-View-Controller pattern, and how do MVP and MVVM differ from it?
+D03193	M	What is the Dependency Injection container lifecycle (singleton, scoped, transient), and what bugs arise from mismatched lifetimes?
+D03194	M	What is the Active Record pattern versus Data Mapper, and when would each be preferable?
+D03195	M	What is the Event Sourcing pattern at the object level, and how does it relate to the Memento and Command patterns?
+D03196	E	What are the main UML diagram types, and which ones are most useful in a design interview?
+D03197	M	How do you notate inheritance, interface realization, association, aggregation, composition and dependency in a UML class diagram?
+D03198	M	What do multiplicity and navigability mean on an association in a class diagram?
+D03199	M	When would you draw a sequence diagram rather than a class diagram?
+D03200	M	What does a use case diagram capture, and how do actors and use cases relate to requirements?
+D03201	M	What do activity diagrams show, and how do they differ from state machine diagrams?
+D03202	M	When is a state machine diagram the right tool for modelling an object?
+D03203	M	What is the difference between a design pattern and a distributed systems pattern such as sidecar, circuit breaker or saga?
+D03204	M	How do the principles of object-oriented design relate to the machine coding round, and what do interviewers look for?
+D03205	E	What is the difference between unit, integration and end-to-end tests, and what is the test pyramid?
+D03206	M	What is test-driven development, and what are its benefits and limitations?
+D03207	M	What is the difference between mocks, stubs, fakes and spies in unit testing?
+D03208	M	How does good object-oriented design make code easier to unit test, and what design choices make it hard?
+D03209	M	What is code coverage, and why is high coverage not a guarantee of quality?
+D03210	M	What is behaviour-driven development, and how does it differ from TDD?
+D03211	M	What makes a test flaky, and how would you diagnose and fix it?
+D03212	M	What is the difference between refactoring and rewriting, and what safety nets should be in place before refactoring?
+D03213	M	What are the goals of code review, and what should a reviewer prioritise?
+D03214	M	What is the difference between exceptions and error return values, and when should custom exception types be created?
+D03215	M	What are checked versus unchecked exceptions, and what is the argument for each?
+D03216	M	What is design by contract, and how do preconditions, postconditions and invariants appear in everyday code?
+D03217	M	What is the difference between defensive programming and fail-fast, and where is each appropriate?
+D03218	M	What is generic programming, and how do generics provide type safety compared with raw types or type erasure?
+D03219	M	What is the difference between functional and object-oriented decomposition, and how do immutability and pure functions complement OOP?
+D03220	M	What is the difference between an API and an SPI, and how do you evolve a public interface without breaking clients?
+D03221	M	What is the Hollywood principle, and how does inversion of control show up in frameworks?
+D03222	M	What is the difference between a library and a framework from a control-flow perspective?
+D03223	M	What are the trade-offs of using inheritance for code reuse in frameworks versus using mixins, traits or default methods?
+D03224	H	You inherit a large class with hundreds of lines, mixed responsibilities and no tests. Describe how you would safely restructure it.
+D03225	H	Design an extensible plugin system for a class library and explain which patterns and principles make it open to extension.

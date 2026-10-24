@@ -1,0 +1,484 @@
+SD03	E	What is a distributed system, and how does it differ from a cluster or a microservice architecture?	Snailclimb__JavaGuide:docs/distributed-system/distributed-system-intro.md
+SD03	M	Why can a distributed system not rely on a single global clock, and what problems does this cause for ordering events?	Snailclimb__JavaGuide:docs/distributed-system/distributed-system-intro.md
+SD03	M	Why is partial failure the defining difficulty of distributed systems compared with a single-node program?	Snailclimb__JavaGuide:docs/distributed-system/distributed-system-intro.md
+SD03	M	Why does having no instantaneous global view of state make debugging and reasoning about distributed systems hard?	Snailclimb__JavaGuide:docs/distributed-system/distributed-system-intro.md
+SD02	M	What are the two fundamental techniques of data replication and data partitioning, and what problem does each solve?	Snailclimb__JavaGuide:docs/distributed-system/distributed-system-intro.md
+SD04	M	When would you split a monolithic e-commerce application into distributed services, and when would you deliberately keep it as a monolith?	Snailclimb__JavaGuide:docs/distributed-system/distributed-system-intro.md
+SD03	M	What new classes of problems appear when you move from a single-node monolith to a distributed system, and which basic capabilities do you need to add?	Snailclimb__JavaGuide:docs/distributed-system/distributed-system-intro.md
+SD03	M	Explain the CAP theorem and why the popular "pick any two of three" framing is misleading.	Snailclimb__JavaGuide:docs/distributed-system/protocol/cap-and-base-theorem.md
+SD03	M	During a network partition, what concrete behaviour does a CP system exhibit versus an AP system?	Snailclimb__JavaGuide:docs/distributed-system/protocol/cap-and-base-theorem.md
+SD03	M	Is it meaningful to say a system is CA? Explain why partition tolerance is not optional in practice.	Snailclimb__JavaGuide:docs/distributed-system/protocol/cap-and-base-theorem.md
+SD03	H	How would you apply CAP thinking per feature inside one product, for example choosing different consistency for payments and for a product-view counter?	Snailclimb__JavaGuide:docs/distributed-system/protocol/cap-and-base-theorem.md
+SD03	M	What does the "consistency" in CAP mean, and how does it differ from the consistency in ACID?	Snailclimb__JavaGuide:docs/distributed-system/protocol/cap-and-base-theorem.md
+SD03	M	What does the "availability" in CAP precisely require, and how does it differ from the everyday notion of high availability?	Snailclimb__JavaGuide:docs/distributed-system/protocol/cap-and-base-theorem.md
+SD03	E	What are the three elements of BASE theory and how does BASE relate to ACID?	Snailclimb__JavaGuide:docs/distributed-system/protocol/cap-and-base-theorem.md
+SD03	M	Why is BASE often described as a practical extension of CAP trade-offs, and what does eventual consistency mean for application code?	Snailclimb__JavaGuide:docs/distributed-system/protocol/cap-and-base-theorem.md
+SD03	M	Compare strong consistency, weak consistency and eventual consistency, and give an example of a product feature suited to each.	Snailclimb__JavaGuide:docs/distributed-system/distributed-transaction.md
+SD03	H	Give a real-world system for which you would choose CP and one for which you would choose AP, and justify the choice including failure behaviour.	Snailclimb__JavaGuide:docs/distributed-system/protocol/cap-and-base-theorem.md
+SD03	M	What is the Byzantine Generals Problem and how do Byzantine faults differ from ordinary crash faults?	Snailclimb__JavaGuide:docs/distributed-system/protocol/byzantine-generals-problem.md
+SD03	H	Why do oral messages require at least 3m+1 nodes to tolerate m traitors, and how do signed messages change that bound?	Snailclimb__JavaGuide:docs/distributed-system/protocol/byzantine-generals-problem.md
+SD03	M	What properties must a consensus protocol satisfy, and why does agreement on a value not imply that the system can keep making progress?	Snailclimb__JavaGuide:docs/distributed-system/protocol/byzantine-generals-problem.md
+SD03	M	Why do most internal data-center consensus systems like Raft and Paxos assume crash faults only, and when would you need a Byzantine fault tolerant protocol?	Snailclimb__JavaGuide:docs/distributed-system/protocol/byzantine-generals-problem.md
+SD03	M	Explain Basic Paxos: the roles, the prepare and accept phases, and what the proposal number is used for.	Snailclimb__JavaGuide:docs/distributed-system/protocol/paxos-algorithm.md
+SD03	H	Why can Basic Paxos suffer from livelock with competing proposers, and how do practical systems mitigate it?	Snailclimb__JavaGuide:docs/distributed-system/protocol/paxos-algorithm.md
+SD03	H	How does Paxos guarantee safety once a value has been chosen, even when proposers and acceptors crash and restart?	Snailclimb__JavaGuide:docs/distributed-system/protocol/paxos-algorithm.md
+SD03	M	What problem does Multi-Paxos solve relative to Basic Paxos, and how does a stable leader reduce the message cost per decision?	Snailclimb__JavaGuide:docs/distributed-system/protocol/paxos-algorithm.md
+SD03	M	Compare Paxos and Raft in terms of understandability, leader handling, log replication and membership change.	Snailclimb__JavaGuide:docs/distributed-system/protocol/paxos-algorithm.md
+SD05	M	What metrics would you export to observe the health of a consensus cluster in production, such as leader changes and replication lag?	Snailclimb__JavaGuide:docs/distributed-system/protocol/paxos-algorithm.md
+SD05	M	How would you use chaos engineering to validate that a consensus-based cluster tolerates leader crashes and network partitions?	Snailclimb__JavaGuide:docs/distributed-system/protocol/paxos-algorithm.md
+SD03	E	What are the three node roles in Raft, and how does a node transition between them?	Snailclimb__JavaGuide:docs/distributed-system/protocol/raft-algorithm.md
+SD03	M	Walk through a Raft leader election, including terms, randomized election timeouts and the majority vote requirement.	Snailclimb__JavaGuide:docs/distributed-system/protocol/raft-algorithm.md
+SD03	M	How does Raft replicate log entries, and when is an entry considered committed?	Snailclimb__JavaGuide:docs/distributed-system/protocol/raft-algorithm.md
+SD03	H	Explain the Raft Log Matching Property and how a new leader repairs a follower whose log diverges from its own.	Snailclimb__JavaGuide:docs/distributed-system/protocol/raft-algorithm.md
+SD03	H	Why does Raft restrict leader election to candidates with sufficiently up-to-date logs?	Snailclimb__JavaGuide:docs/distributed-system/protocol/raft-algorithm.md
+SD03	H	Why does a Raft leader only commit entries from its own term by counting replicas, and what anomaly would otherwise be possible?	Snailclimb__JavaGuide:docs/distributed-system/protocol/raft-algorithm.md
+SD03	M	What happens to a Raft cluster during a network partition that isolates the current leader from the majority?	Snailclimb__JavaGuide:docs/distributed-system/protocol/raft-algorithm.md
+SD03	M	Why are consensus clusters usually deployed with an odd number of nodes, and how many failures can a 5-node cluster tolerate?	Snailclimb__JavaGuide:docs/distributed-system/distributed-process-coordination/zookeeper/zookeeper-intro.md
+SD03	M	What is split brain in a replicated cluster, and how do quorum-based majority rules prevent it?	Snailclimb__JavaGuide:docs/distributed-system/distributed-process-coordination/zookeeper/zookeeper-intro.md
+SD03	M	Explain the two modes of the ZAB protocol, broadcast and crash recovery, and what happens when a leader fails.	Snailclimb__JavaGuide:docs/distributed-system/protocol/zab.md
+SD03	M	What are ZXID and epoch used for in a leader-based atomic broadcast protocol?	Snailclimb__JavaGuide:docs/distributed-system/protocol/zab.md
+SD03	M	Compare ZAB and Raft with respect to how they order writes and recover after a leader crash.	Snailclimb__JavaGuide:docs/distributed-system/protocol/zab.md
+SD03	M	Is a system with a single leader necessarily a single point of failure? Explain how leader-based systems stay available.	Snailclimb__JavaGuide:docs/distributed-system/protocol/centralized-and-decentralized.md
+SD03	H	Why is a majority quorum not a complete answer to split brain, and what additional mechanisms like epochs, leases and fencing tokens are needed?	Snailclimb__JavaGuide:docs/distributed-system/protocol/centralized-and-decentralized.md
+SD03	H	Explain what a lease guarantees and why it cannot prove that an old lease holder has actually stopped acting.	Snailclimb__JavaGuide:docs/distributed-system/protocol/centralized-and-decentralized.md
+SD03	H	What is a fencing token, and how does a storage service use it to reject writes from a stale lock holder?	Snailclimb__JavaGuide:docs/distributed-system/protocol/centralized-and-decentralized.md
+SD03	M	When would you choose leader and quorum coordination versus a decentralized gossip approach for sharing cluster state?	Snailclimb__JavaGuide:docs/distributed-system/protocol/centralized-and-decentralized.md
+SD03	H	Three instances of a service each run a scheduled job but the job must run only once per tick. Design the coordination mechanism and discuss its failure modes.	Snailclimb__JavaGuide:docs/distributed-system/protocol/centralized-and-decentralized.md
+SD03	M	How does the gossip protocol spread information, and why does it scale well with the number of nodes?	Snailclimb__JavaGuide:docs/distributed-system/protocol/gossip-protocol.md
+SD03	M	Compare anti-entropy and rumor-mongering as gossip dissemination modes.	Snailclimb__JavaGuide:docs/distributed-system/protocol/gossip-protocol.md
+SD03	M	What are the main drawbacks of gossip protocols, such as convergence delay, redundant messages and Byzantine behaviour?	Snailclimb__JavaGuide:docs/distributed-system/protocol/gossip-protocol.md
+SD03	M	Where is gossip used in real systems, for example for failure detection and membership, and why is it a good fit?	Snailclimb__JavaGuide:docs/distributed-system/protocol/gossip-protocol.md
+SD01	M	Why does simple modulo hashing cause massive data movement when nodes are added or removed?	Snailclimb__JavaGuide:docs/distributed-system/protocol/consistent-hashing.md
+SD01	M	Explain consistent hashing with a hash ring and how it limits key remapping on node changes.	Snailclimb__JavaGuide:docs/distributed-system/protocol/consistent-hashing.md
+SD01	M	What is the data skew problem in consistent hashing and how do virtual nodes address it?	Snailclimb__JavaGuide:docs/distributed-system/protocol/consistent-hashing.md
+SD01	H	How would you implement consistent hashing with virtual nodes and replication for a distributed cache, and how does it handle hot keys?	Snailclimb__JavaGuide:docs/distributed-system/protocol/consistent-hashing.md
+SD03	E	What is a distributed transaction and why can a local database transaction not cover it?	Snailclimb__JavaGuide:docs/distributed-system/distributed-transaction.md
+SD03	M	Explain two-phase commit step by step and identify its main weaknesses.	Snailclimb__JavaGuide:docs/distributed-system/distributed-transaction.md
+SD03	M	What blocking problem arises in 2PC when the coordinator fails after the prepare phase?	Snailclimb__JavaGuide:docs/distributed-system/distributed-transaction.md
+SD03	M	How does three-phase commit try to fix 2PC, and why is it rarely used in practice?	Snailclimb__JavaGuide:docs/distributed-system/distributed-transaction.md
+SD03	M	What is TCC (Try-Confirm-Cancel) and what must each of the three operations guarantee?	Snailclimb__JavaGuide:docs/distributed-system/distributed-transaction.md
+SD03	H	What are the empty rollback, hanging and idempotency problems in TCC, and how do you handle them?	Snailclimb__JavaGuide:docs/distributed-system/distributed-transaction.md
+SD03	M	Explain the Saga pattern and compare orchestration versus choreography.	Snailclimb__JavaGuide:docs/distributed-system/distributed-transaction.md
+SD03	M	Compare TCC and Saga in terms of isolation, development cost and suitability for long-running business flows.	Snailclimb__JavaGuide:docs/distributed-system/distributed-transaction.md
+SD03	M	How does a transactional message or a local message table achieve eventual consistency across services?	Snailclimb__JavaGuide:docs/distributed-system/distributed-transaction.md
+SD03	M	What is the best-effort notification pattern for distributed consistency, and when is it appropriate?	Snailclimb__JavaGuide:docs/distributed-system/distributed-transaction.md
+SD03	H	An order service must deduct inventory and charge payment in two separate services. Which distributed transaction approach would you pick and how do you handle compensation failures?	Snailclimb__JavaGuide:docs/distributed-system/distributed-transaction.md
+SD03	M	What is the difference between rigid transactions and flexible transactions, and what trade-off does each make?	Snailclimb__JavaGuide:docs/distributed-system/distributed-transaction.md
+SD03	H	Compare 2PC, TCC, Saga, and message-based eventual consistency across consistency strength, performance and implementation complexity.	Snailclimb__JavaGuide:docs/distributed-system/distributed-transaction.md
+SD03	E	Why do we need distributed locks when a local lock already exists in each process?	Snailclimb__JavaGuide:docs/distributed-system/distributed-lock.md
+SD03	M	Does every multi-instance deployment require a distributed lock? Give alternatives such as unique constraints or optimistic locking.	Snailclimb__JavaGuide:docs/distributed-system/distributed-lock.md
+SD03	M	What properties should a correct distributed lock have, including mutual exclusion, deadlock freedom, reentrancy and fault tolerance?	Snailclimb__JavaGuide:docs/distributed-system/distributed-lock.md
+SD03	M	How do you implement a minimal distributed lock on Redis, and why must acquisition and expiry be set atomically?	Snailclimb__JavaGuide:docs/distributed-system/distributed-lock-implementations.md
+SD03	M	Why must a distributed lock have an expiry time, and what goes wrong if the lock holder outlives it?	Snailclimb__JavaGuide:docs/distributed-system/distributed-lock-implementations.md
+SD03	H	How does a watchdog or automatic lease renewal work, and what failure scenarios can it still not prevent?	Snailclimb__JavaGuide:docs/distributed-system/distributed-lock-implementations.md
+SD03	M	Why should the unlock operation verify the lock owner, and why must the check-and-delete be atomic?	Snailclimb__JavaGuide:docs/distributed-system/distributed-lock-implementations.md
+SD03	H	Is a single-node Redis lock safe under master-replica failover? Discuss the multi-node Redlock approach and its criticisms.	Snailclimb__JavaGuide:docs/distributed-system/distributed-lock-implementations.md
+SD03	M	How is a reentrant distributed lock implemented, and what extra state must be stored?	Snailclimb__JavaGuide:docs/distributed-system/distributed-lock-implementations.md
+SD03	M	How does a ZooKeeper-based distributed lock work with ephemeral sequential nodes, and why is watching only the predecessor node better than watching all nodes?	Snailclimb__JavaGuide:docs/distributed-system/distributed-lock-implementations.md
+SD03	M	Compare Redis-based and ZooKeeper or etcd-based distributed locks in terms of safety, performance and failure handling.	Snailclimb__JavaGuide:docs/distributed-system/distributed-lock-implementations.md
+SD03	H	A client holds a distributed lock, pauses for a long garbage collection, and resumes after its lease expired. How can the resource protect itself?	Snailclimb__JavaGuide:docs/distributed-system/distributed-lock-implementations.md
+SD03	E	What requirements must a distributed ID generator satisfy, such as uniqueness, ordering, high throughput and availability?	Snailclimb__JavaGuide:docs/distributed-system/distributed-id.md
+SD03	M	Compare auto-increment database IDs, segment (number range) allocation, UUID and Snowflake for generating distributed IDs.	Snailclimb__JavaGuide:docs/distributed-system/distributed-id.md
+SD03	M	Explain how the database segment mode reduces database load when generating IDs, and what happens when a segment is exhausted?	Snailclimb__JavaGuide:docs/distributed-system/distributed-id.md
+SD03	M	Describe the bit layout of a Snowflake ID and explain what the timestamp, machine ID and sequence bits do.	Snailclimb__JavaGuide:docs/distributed-system/distributed-id.md
+SD03	H	What problems does clock rollback cause for Snowflake-style ID generators, and how can you defend against them?	Snailclimb__JavaGuide:docs/distributed-system/distributed-id.md
+SD03	M	Why are random UUIDs poor primary keys for B+ tree indexed tables, and what alternatives exist?	Snailclimb__JavaGuide:docs/distributed-system/distributed-id.md
+SD03	H	Design an ID generation service for a platform with thousands of order creations per second across multiple data centers.	Snailclimb__JavaGuide:docs/distributed-system/distributed-id.md
+SD03	M	How would you design the structure of an order number so that it is unique, roughly sortable and does not leak business volume?	Snailclimb__JavaGuide:docs/distributed-system/distributed-id-design.md
+SD05	M	How are trace IDs and span IDs generated and propagated in distributed tracing, and what uniqueness properties do they need?	Snailclimb__JavaGuide:docs/distributed-system/distributed-id-design.md
+SD03	H	Design a short URL service, focusing on how you generate short unique codes and avoid collisions.	Snailclimb__JavaGuide:docs/distributed-system/distributed-id-design.md
+SD04	E	What is an RPC framework, and how does an RPC call travel from client stub to server implementation?	Snailclimb__JavaGuide:docs/distributed-system/rpc/rpc-intro.md
+SD04	M	Why use RPC when HTTP already exists, and what are the trade-offs between RPC and REST APIs?	Snailclimb__JavaGuide:docs/distributed-system/rpc/rpc-intro.md
+SD04	H	How would you design an RPC framework from scratch, including serialization, transport, service discovery and load balancing?	Snailclimb__JavaGuide:docs/distributed-system/rpc/rpc-intro.md
+SD04	M	Compare common RPC serialization formats such as JSON, Protobuf, Thrift and Hessian.	Snailclimb__JavaGuide:docs/distributed-system/rpc/dubbo.md
+SD04	M	What are the roles of a registry, provider and consumer in a service registration and discovery architecture?	Snailclimb__JavaGuide:docs/distributed-system/rpc/dubbo.md
+SD04	M	What is a plugin or SPI mechanism in a microkernel architecture, and how does it let you extend default behavior without modifying core code?	Snailclimb__JavaGuide:docs/distributed-system/rpc/dubbo.md
+SD01	M	What are the common client-side load balancing strategies in an RPC framework, and when does each fit?	Snailclimb__JavaGuide:docs/distributed-system/rpc/dubbo.md
+SD04	M	What is an API gateway, and what responsibilities does it take on in a microservice architecture?	Snailclimb__JavaGuide:docs/distributed-system/api-gateway.md
+SD04	M	How do you make an API gateway highly available and avoid it becoming a bottleneck?	Snailclimb__JavaGuide:docs/distributed-system/api-gateway.md
+SD04	M	What cross-cutting features are typically implemented at the gateway, such as authentication, rate limiting, routing and logging?	Snailclimb__JavaGuide:docs/distributed-system/api-gateway.md
+SD04	H	Explain a two-tier gateway architecture with a traffic gateway and a business gateway, and why teams adopt it.	Snailclimb__JavaGuide:docs/distributed-system/api-gateway.md
+SD04	M	How does a gateway implement dynamic routing without restarts?	Snailclimb__JavaGuide:docs/distributed-system/spring-cloud-gateway-questions.md
+SD04	M	What is the difference between route predicates and filters in a gateway, and how do global and per-route filters differ?	Snailclimb__JavaGuide:docs/distributed-system/spring-cloud-gateway-questions.md
+SD04	M	Why did gateways move from blocking thread-per-request models to non-blocking designs?	Snailclimb__JavaGuide:docs/distributed-system/spring-cloud-gateway-questions.md
+SD04	M	What problems does a centralized configuration center solve compared with config files in each service?	Snailclimb__JavaGuide:docs/distributed-system/distributed-configuration-center.md
+SD04	M	Compare push, long-polling and pull mechanisms for propagating configuration changes to clients.	Snailclimb__JavaGuide:docs/distributed-system/distributed-configuration-center.md
+SD04	H	How should a client survive a configuration center outage, including local snapshots and startup order?	Snailclimb__JavaGuide:docs/distributed-system/distributed-configuration-center.md
+SD04	M	What is the difference between a configuration center and a service registry, and where does Kubernetes ConfigMap fit?	Snailclimb__JavaGuide:docs/distributed-system/distributed-configuration-center.md
+SD04	M	What features does a production configuration center need, such as versioning, gray release, rollback, audit and permissions?	Snailclimb__JavaGuide:docs/distributed-system/distributed-configuration-center.md
+SD04	H	Design a configuration center that supports millions of config reads and near real-time updates across thousands of clients.	Snailclimb__JavaGuide:docs/distributed-system/distributed-configuration-center.md
+SD03	E	What is ZooKeeper and what coordination problems is it designed to solve?	Snailclimb__JavaGuide:docs/distributed-system/distributed-process-coordination/zookeeper/zookeeper-intro.md
+SD03	M	Explain the ZooKeeper data model, znode types and how ephemeral and sequential nodes are used.	Snailclimb__JavaGuide:docs/distributed-system/distributed-process-coordination/zookeeper/zookeeper-intro.md
+SD03	M	How does a watcher work in a coordination service, and what are its delivery semantics and limitations?	Snailclimb__JavaGuide:docs/distributed-system/distributed-process-coordination/zookeeper/zookeeper-intro.md
+SD03	M	How does session management work in a coordination service, and what happens to ephemeral nodes when a session expires?	Snailclimb__JavaGuide:docs/distributed-system/distributed-process-coordination/zookeeper/zookeeper-intro.md
+SD03	M	Why is an even number of nodes in a majority-quorum cluster no better than the next lower odd number?	Snailclimb__JavaGuide:docs/distributed-system/distributed-process-coordination/zookeeper/zookeeper-intro.md
+SD03	M	How would you implement leader election, naming service, and group membership on top of a coordination service like ZooKeeper?	Snailclimb__JavaGuide:docs/distributed-system/distributed-process-coordination/zookeeper/zookeeper-plus.md
+SD03	M	Compare ZooKeeper and etcd in terms of consensus protocol, data model and typical use cases.	Snailclimb__JavaGuide:docs/distributed-system/distributed-process-coordination/zookeeper/zookeeper-intro.md
+SD03	M	Which consistency guarantees does ZooKeeper provide for reads and writes, and why can a read from a follower be stale?	Snailclimb__JavaGuide:docs/distributed-system/distributed-process-coordination/zookeeper/zookeeper-plus.md
+SD04	M	When should you split a monolith into microservices, and what are the main costs introduced?	Snailclimb__JavaGuide:docs/distributed-system/microservices-interview-questions.md
+SD04	M	How do you decide microservice boundaries, and how do domain-driven design concepts such as bounded context help?	Snailclimb__JavaGuide:docs/distributed-system/microservices-interview-questions.md
+SD04	M	How do you handle data consistency when each microservice owns its own database?	Snailclimb__JavaGuide:docs/distributed-system/microservices-interview-questions.md
+SD04	M	Compare synchronous and asynchronous communication between microservices and the failure modes of each.	Snailclimb__JavaGuide:docs/distributed-system/microservices-interview-questions.md
+SD04	M	How does service discovery work in a dynamic environment where instances scale up and down?	Snailclimb__JavaGuide:docs/distributed-system/microservices-interview-questions.md
+SD05	M	What is a cascading failure in a microservice call chain, and what patterns prevent it?	Snailclimb__JavaGuide:docs/distributed-system/microservices-interview-questions.md
+SD05	M	How do you achieve observability in microservices using logs, metrics and distributed tracing?	Snailclimb__JavaGuide:docs/distributed-system/microservices-interview-questions.md
+SD04	H	How would you migrate a large monolith to microservices incrementally without a big-bang rewrite?	Snailclimb__JavaGuide:docs/distributed-system/microservices-interview-questions.md
+SD04	M	What is the difference between orchestration and choreography in microservice workflows?	Snailclimb__JavaGuide:docs/distributed-system/microservices-interview-questions.md
+SD05	M	How would you roll out a new version of a microservice safely, and how does gray release differ from blue-green deployment?	Snailclimb__JavaGuide:docs/distributed-system/microservices-interview-questions.md
+SD05	E	What is high availability, and how do you measure it in terms of nines of uptime?	Snailclimb__JavaGuide:docs/high-availability/high-availability-system-design.md
+SD05	M	What are the common causes of system unavailability, and which design measures address each?	Snailclimb__JavaGuide:docs/high-availability/high-availability-system-design.md
+SD05	M	How do clustering and redundancy remove single points of failure at each layer of a web architecture?	Snailclimb__JavaGuide:docs/high-availability/high-availability-system-design.md
+SD05	M	How do asynchronous calls and caching contribute to higher availability, and what new risks do they introduce?	Snailclimb__JavaGuide:docs/high-availability/high-availability-system-design.md
+SD05	H	Design a highly available order service for flash sales, and explain which availability mechanisms you would layer in.	Snailclimb__JavaGuide:docs/high-availability/high-availability-system-design.md
+SD05	M	What do RTO and RPO mean, and how do they drive the choice of a disaster recovery architecture?	Snailclimb__JavaGuide:docs/high-availability/redundancy.md
+SD05	M	Compare cold standby, warm standby, hot standby and active-active redundancy in cost and recovery time.	Snailclimb__JavaGuide:docs/high-availability/redundancy.md
+SD05	M	Compare same-city disaster recovery, remote disaster recovery, same-city active-active and geo-distributed active-active.	Snailclimb__JavaGuide:docs/high-availability/redundancy.md
+SD05	H	What are the main challenges of building a multi-region active-active architecture, particularly around data consistency and traffic routing?	Snailclimb__JavaGuide:docs/high-availability/redundancy.md
+SD05	M	How does automatic failover work with a sentinel or a keepalived virtual IP, and what can go wrong with false failover?	Snailclimb__JavaGuide:docs/high-availability/redundancy.md
+SD05	H	How would you prove that your failover actually works, and how often should you drill it?	Snailclimb__JavaGuide:docs/high-availability/redundancy.md
+SD01	E	What is rate limiting, and why is it needed to protect a service?	Snailclimb__JavaGuide:docs/high-availability/limit-request.md
+SD01	M	Compare fixed window, sliding window, leaky bucket and token bucket rate limiting algorithms.	Snailclimb__JavaGuide:docs/high-availability/limit-request.md
+SD01	M	What is the boundary burst problem of a fixed-window counter and how does a sliding window fix it?	Snailclimb__JavaGuide:docs/high-availability/limit-request.md
+SD01	M	How does a token bucket allow bursts while a leaky bucket smooths output, and when would you pick each?	Snailclimb__JavaGuide:docs/high-availability/limit-request.md
+SD01	M	What dimensions can you rate limit on, such as per user, per IP, per API or per tenant, and how do you choose?	Snailclimb__JavaGuide:docs/high-availability/limit-request.md
+SD01	M	How would you implement single-node rate limiting in an application process?	Snailclimb__JavaGuide:docs/high-availability/limit-request.md
+SD01	H	How would you implement a distributed rate limiter across many instances, and what are the trade-offs of using a central store like Redis?	Snailclimb__JavaGuide:docs/high-availability/limit-request.md
+SD01	H	Design a rate limiting service that handles millions of requests per second with configurable rules and low added latency.	Snailclimb__JavaGuide:docs/high-availability/limit-request.md
+SD05	M	What is a circuit breaker and what are its three states?	Snailclimb__JavaGuide:docs/high-availability/fallback-and-circuit-breaker.md
+SD05	M	How does a service avalanche happen in a call chain, and how does a circuit breaker prevent it?	Snailclimb__JavaGuide:docs/high-availability/fallback-and-circuit-breaker.md
+SD05	M	What triggers a breaker to open, for example error ratio, slow-call ratio or consecutive failures, and how is the half-open probe done?	Snailclimb__JavaGuide:docs/high-availability/fallback-and-circuit-breaker.md
+SD05	H	Can you use P99 latency directly as a circuit breaker condition? Discuss the pitfalls of using tail latency percentiles.	Snailclimb__JavaGuide:docs/high-availability/fallback-and-circuit-breaker.md
+SD05	M	What is the difference between circuit breaking, rate limiting and service degradation, and how do they cooperate on a single request?	Snailclimb__JavaGuide:docs/high-availability/fallback-and-circuit-breaker.md
+SD05	M	What is service degradation, when is it triggered and at what granularity can it be applied?	Snailclimb__JavaGuide:docs/high-availability/fallback-and-circuit-breaker.md
+SD05	M	What does a good fallback look like, and what pitfalls such as fallback calling another failing dependency must be avoided?	Snailclimb__JavaGuide:docs/high-availability/fallback-and-circuit-breaker.md
+SD05	M	Compare thread-pool isolation and semaphore isolation for protecting a service from slow dependencies.	Snailclimb__JavaGuide:docs/high-availability/fallback-and-circuit-breaker.md
+SD05	M	What is the bulkhead pattern and how does it contain failure?	Snailclimb__JavaGuide:docs/high-availability/fallback-and-circuit-breaker.md
+SD05	H	How would you operate degradation switches at scale, including pre-defined plans, switch storage and safe rollback?	Snailclimb__JavaGuide:docs/high-availability/fallback-and-circuit-breaker.md
+SD05	M	What is system adaptive protection that throttles traffic based on load, CPU and concurrency rather than static thresholds?	Snailclimb__JavaGuide:docs/high-availability/fallback-and-circuit-breaker.md
+SD05	M	Why is setting timeouts essential for remote calls, and what happens to a system with no timeouts?	Snailclimb__JavaGuide:docs/high-availability/timeout-and-retry.md
+SD05	M	How do you choose a timeout for a downstream call, and how should timeouts in a call chain relate to the caller overall deadline?	Snailclimb__JavaGuide:docs/high-availability/timeout-and-retry.md
+SD05	M	Compare retry strategies such as fixed interval, exponential backoff and backoff with jitter.	Snailclimb__JavaGuide:docs/high-availability/timeout-and-retry.md
+SD05	M	What is a retry storm, and how do you bound retry amplification across multiple layers?	Snailclimb__JavaGuide:docs/high-availability/timeout-and-retry.md
+SD05	M	Which errors are safe to retry and which are not, and why must retries be paired with idempotency?	Snailclimb__JavaGuide:docs/high-availability/timeout-and-retry.md
+SD05	H	A service calls three downstreams in series, each retrying three times. What happens during a downstream outage and how would you redesign it?	Snailclimb__JavaGuide:docs/high-availability/timeout-and-retry.md
+SD05	M	What metrics would you watch to detect that timeouts and retries are misconfigured in production?	Snailclimb__JavaGuide:docs/high-availability/timeout-and-retry.md
+SD04	E	What is idempotency for an API, and which HTTP methods are idempotent by definition?	Snailclimb__JavaGuide:docs/high-availability/idempotency.md
+SD04	M	Describe several techniques to make a write endpoint idempotent, such as unique index, dedup table, token and optimistic lock.	Snailclimb__JavaGuide:docs/high-availability/idempotency.md
+SD04	M	How does a one-time token mechanism prevent duplicate submissions, and what races does it need to handle?	Snailclimb__JavaGuide:docs/high-availability/idempotency.md
+SD04	H	Design idempotent handling for a payment callback that the provider may deliver multiple times and out of order.	Snailclimb__JavaGuide:docs/high-availability/idempotency.md
+SD04	M	How would you test and verify that an idempotency scheme actually works under concurrency and retries?	Snailclimb__JavaGuide:docs/high-availability/idempotency.md
+SD04	M	How can a unique business key combined with a status check guard against duplicate processing of messages?	Snailclimb__JavaGuide:docs/high-availability/idempotency.md
+SD01	M	What do response time, concurrency, throughput, QPS and TPS each measure, and how are they related?	Snailclimb__JavaGuide:docs/high-availability/performance-test.md
+SD01	M	Explain the differences between baseline, load, stress, capacity, stability and spike tests.	Snailclimb__JavaGuide:docs/high-availability/performance-test.md
+SD01	M	How do you estimate required peak QPS from daily active users and typical user behavior?	Snailclimb__JavaGuide:docs/high-availability/performance-test.md
+SD01	M	What precautions should you take before running a load test, including realistic request models, a stop mechanism and baseline data?	Snailclimb__JavaGuide:docs/high-availability/performance-test.md
+SD01	H	What is full-link load testing in production and how do you isolate test traffic and data from real users?	Snailclimb__JavaGuide:docs/high-availability/performance-test.md
+SD01	M	What is the difference between PV, UV, DAU and MAU, and how would you use them in capacity planning?	Snailclimb__JavaGuide:docs/high-availability/performance-test.md
+SD01	M	When latency spikes under load, how do you systematically find the bottleneck among CPU, memory, I/O, locks and network?	Snailclimb__JavaGuide:docs/high-availability/performance-test.md
+SD01	M	What is a CDN and how does it reduce latency compared with deploying the origin in multiple regions?	Snailclimb__JavaGuide:docs/high-performance/cdn.md
+SD01	M	How are static resources cached on a CDN node, and what happens on a cache miss?	Snailclimb__JavaGuide:docs/high-performance/cdn.md
+SD01	M	How does a CDN direct a user to the closest node, using DNS and global scheduling?	Snailclimb__JavaGuide:docs/high-performance/cdn.md
+SD01	M	How do you prevent hotlinking or unauthorized traffic consumption on CDN resources?	Snailclimb__JavaGuide:docs/high-performance/cdn.md
+SD01	M	How can a CDN accelerate dynamic content and speed up TLS handshakes?	Snailclimb__JavaGuide:docs/high-performance/cdn.md
+SD01	M	How do you purge or version cached assets on a CDN so users get the latest version without stale content?	Snailclimb__JavaGuide:docs/high-performance/cdn.md
+SD01	E	What is load balancing and what is the difference between server-side and client-side load balancing?	Snailclimb__JavaGuide:docs/high-performance/load-balancing.md
+SD01	M	Compare random, round robin, weighted, least connections, hash and consistent hash load balancing algorithms.	Snailclimb__JavaGuide:docs/high-performance/load-balancing.md
+SD01	M	What is the power of two choices algorithm and why does it often beat random selection?	Snailclimb__JavaGuide:docs/high-performance/load-balancing.md
+SD01	M	When would you choose least active requests or fastest-response routing over round robin?	Snailclimb__JavaGuide:docs/high-performance/load-balancing.md
+SD01	M	Compare Layer 4 and Layer 7 load balancing and when to use each.	Snailclimb__JavaGuide:docs/high-performance/load-balancing.md
+SD01	M	How do health checks and connection draining work so that traffic is taken off a failing backend?	Snailclimb__JavaGuide:docs/high-performance/load-balancing.md
+SD01	M	How do DNS-based load balancing and reverse-proxy load balancing differ, and why are they often combined?	Snailclimb__JavaGuide:docs/high-performance/load-balancing.md
+SD01	H	How do you make the load balancer itself highly available, and what happens to sticky sessions when a backend dies?	Snailclimb__JavaGuide:docs/high-performance/load-balancing.md
+SD02	E	What is read-write splitting and how is it typically implemented?	Snailclimb__JavaGuide:docs/high-performance/read-and-write-separation-and-library-subtable.md
+SD02	M	How does master-slave replication work in a relational database, and what is replication lag?	Snailclimb__JavaGuide:docs/high-performance/read-and-write-separation-and-library-subtable.md
+SD02	M	How can you avoid users reading stale data after a write when using read replicas?	Snailclimb__JavaGuide:docs/high-performance/read-and-write-separation-and-library-subtable.md
+SD02	M	What causes replication lag and how can you reduce it?	Snailclimb__JavaGuide:docs/high-performance/read-and-write-separation-and-library-subtable.md
+SD02	M	When do you need database sharding, and what is the difference between vertical and horizontal partitioning?	Snailclimb__JavaGuide:docs/high-performance/read-and-write-separation-and-library-subtable.md
+SD02	M	Compare hash-based, range-based and directory-based sharding strategies and their effect on hotspots and rebalancing.	Snailclimb__JavaGuide:docs/high-performance/read-and-write-separation-and-library-subtable.md
+SD02	M	How do you choose a shard key, and what makes a bad shard key?	Snailclimb__JavaGuide:docs/high-performance/read-and-write-separation-and-library-subtable.md
+SD02	M	What problems does sharding introduce, such as cross-shard joins, global IDs, distributed transactions and pagination?	Snailclimb__JavaGuide:docs/high-performance/read-and-write-separation-and-library-subtable.md
+SD02	H	How do you migrate a live database from a single instance to a sharded cluster with no downtime?	Snailclimb__JavaGuide:docs/high-performance/read-and-write-separation-and-library-subtable.md
+SD02	H	How would you add shards to a hash-sharded database without remapping all data?	Snailclimb__JavaGuide:docs/high-performance/read-and-write-separation-and-library-subtable.md
+SD02	M	What is hot and cold data separation and what are its benefits and costs?	Snailclimb__JavaGuide:docs/high-performance/data-cold-hot-separation.md
+SD02	M	How do you migrate cold data out of a hot database while keeping consistency, and how can you roll back?	Snailclimb__JavaGuide:docs/high-performance/data-cold-hot-separation.md
+SD02	M	How do you route queries between hot and cold storage in the application and keep cold queries acceptable?	Snailclimb__JavaGuide:docs/high-performance/data-cold-hot-separation.md
+SD02	M	How does cold-hot separation differ from archiving and from table partitioning?	Snailclimb__JavaGuide:docs/high-performance/data-cold-hot-separation.md
+SD02	H	Design the storage for an order system that must keep five years of orders while most queries target the last three months.	Snailclimb__JavaGuide:docs/high-performance/data-cold-hot-separation.md
+SD02	M	Why is deep pagination with LIMIT and a large OFFSET slow in a relational database?	Snailclimb__JavaGuide:docs/high-performance/deep-pagination-optimization.md
+SD02	M	Compare cursor-based pagination, subquery, deferred join and covering index approaches for deep pagination.	Snailclimb__JavaGuide:docs/high-performance/deep-pagination-optimization.md
+SD04	M	What are the trade-offs between offset pagination and cursor pagination from an API design perspective?	Snailclimb__JavaGuide:docs/high-performance/deep-pagination-optimization.md
+SD02	M	Why is SELECT * discouraged in production queries?	Snailclimb__JavaGuide:docs/high-performance/sql-optimization.md
+SD02	M	When are joins acceptable, and what makes a join expensive on large tables?	Snailclimb__JavaGuide:docs/high-performance/sql-optimization.md
+SD02	M	What are the pros and cons of foreign keys and cascades at large scale?	Snailclimb__JavaGuide:docs/high-performance/sql-optimization.md
+SD02	M	Why prefer UNION ALL over UNION, and why prefer batch operations over many single statements?	Snailclimb__JavaGuide:docs/high-performance/sql-optimization.md
+SD02	M	How do you diagnose and optimize a slow SQL query using execution plans?	Snailclimb__JavaGuide:docs/high-performance/sql-optimization.md
+SD02	M	What situations cause an index to be ignored, such as functions on columns, implicit type conversion or leading wildcards?	Snailclimb__JavaGuide:docs/high-performance/sql-optimization.md
+SD02	M	When does a composite index beat several single-column indexes and how does the leftmost prefix rule apply?	Snailclimb__JavaGuide:docs/high-performance/sql-optimization.md
+SD02	M	What are the costs of over-indexing, redundant indexes and indexing frequently updated columns?	Snailclimb__JavaGuide:docs/high-performance/sql-optimization.md
+SD02	M	When is a prefix index on a string column useful, and what are its limitations?	Snailclimb__JavaGuide:docs/high-performance/sql-optimization.md
+SD02	M	How does choosing appropriate column data types affect storage, index size and query performance?	Snailclimb__JavaGuide:docs/high-performance/sql-optimization.md
+SD03	E	What is a message queue and what problems does it solve in a distributed system?	Snailclimb__JavaGuide:docs/high-performance/message-queue/message-queue.md
+SD03	M	Explain how a message queue enables asynchronous processing, peak shaving and decoupling.	Snailclimb__JavaGuide:docs/high-performance/message-queue/message-queue.md
+SD03	M	What new problems does introducing a message queue create for a system, such as availability, consistency and complexity?	Snailclimb__JavaGuide:docs/high-performance/message-queue/message-queue.md
+SD03	M	How do you ensure no message is lost across producer, broker and consumer?	Snailclimb__JavaGuide:docs/high-performance/message-queue/message-queue.md
+SD03	M	How do you handle duplicate message delivery, and what does at-least-once versus at-most-once versus exactly-once mean?	Snailclimb__JavaGuide:docs/high-performance/message-queue/message-queue.md
+SD03	M	A queue backlog of millions of messages builds up. How do you diagnose and drain it?	Snailclimb__JavaGuide:docs/high-performance/message-queue/message-queue.md
+SD03	M	How do you guarantee ordering of messages in a distributed queue, and what does it cost in parallelism?	Snailclimb__JavaGuide:docs/high-performance/message-queue/message-queue.md
+SD03	M	Compare the point-to-point queue model and the publish-subscribe topic model.	Snailclimb__JavaGuide:docs/high-performance/message-queue/message-queue.md
+SD03	M	What is the difference between using RPC and a message queue to communicate between services?	Snailclimb__JavaGuide:docs/high-performance/message-queue/message-queue.md
+SD03	M	How would you choose between Kafka, RabbitMQ and a cloud queue for a given workload?	Snailclimb__JavaGuide:docs/high-performance/message-queue/message-queue.md
+SD03	M	How does Kafka partitioning and consumer groups provide scalability, and what limits the parallelism of one consumer group?	Snailclimb__JavaGuide:docs/high-performance/message-queue/kafka-questions-01.md
+SD03	M	How does Kafka replication with leader, followers and ISR provide durability?	Snailclimb__JavaGuide:docs/high-performance/message-queue/kafka-questions-01.md
+SD03	H	Which Kafka configurations (acks, replication factor, min in-sync replicas, retries, commit strategy) are needed to avoid message loss?	Snailclimb__JavaGuide:docs/high-performance/message-queue/kafka-questions-01.md
+SD03	M	How does Kafka guarantee ordering and what does it mean that order is only per partition?	Snailclimb__JavaGuide:docs/high-performance/message-queue/kafka-questions-01.md
+SD03	M	How does Kafka avoid duplicate consumption, including idempotent producers and transactional semantics?	Snailclimb__JavaGuide:docs/high-performance/message-queue/kafka-questions-01.md
+SD03	M	What is a consumer group rebalance, why is it risky, and how can you reduce its impact?	Snailclimb__JavaGuide:docs/high-performance/message-queue/kafka-questions-01.md
+SD03	M	What happens when a consumer fails to process a message, and how do you design retry topics and a dead-letter queue?	Snailclimb__JavaGuide:docs/high-performance/message-queue/kafka-questions-01.md
+SD03	M	Why did Kafka move away from depending on an external coordination service?	Snailclimb__JavaGuide:docs/high-performance/message-queue/kafka-questions-01.md
+SD03	M	Why is Kafka able to achieve high throughput with sequential disk I/O, page cache and zero-copy?	Snailclimb__JavaGuide:docs/high-performance/message-queue/rocketmq-questions.md
+SD03	M	Compare synchronous and asynchronous disk flush and synchronous and asynchronous replication in a message broker.	Snailclimb__JavaGuide:docs/high-performance/message-queue/rocketmq-questions.md
+SD03	M	How do transactional messages implement distributed transactions in a message broker, including the half message and check-back steps?	Snailclimb__JavaGuide:docs/high-performance/message-queue/rocketmq-questions.md
+SD03	M	How do delayed and scheduled messages work in a broker?	Snailclimb__JavaGuide:docs/high-performance/message-queue/rocketmq-questions.md
+SD03	M	Compare push and pull consumption models in a message queue.	Snailclimb__JavaGuide:docs/high-performance/message-queue/rocketmq-questions.md
+SD03	M	What is replay (rewind) consumption by offset or time and when is it useful?	Snailclimb__JavaGuide:docs/high-performance/message-queue/rocketmq-questions.md
+SD03	M	Why does a broker cluster need a name or metadata service for routing, and what happens when it fails?	Snailclimb__JavaGuide:docs/high-performance/message-queue/rocketmq-questions.md
+SD03	M	Explain the exchange, binding and queue model in an AMQP broker, and the differences between direct, fanout, topic and headers exchanges.	Snailclimb__JavaGuide:docs/high-performance/message-queue/rabbitmq-questions.md
+SD03	M	What is a dead-letter queue, what causes messages to be dead-lettered, and how do you use it to implement delayed messages?	Snailclimb__JavaGuide:docs/high-performance/message-queue/rabbitmq-questions.md
+SD03	M	How do publisher confirms, durable queues and consumer acknowledgements together provide reliability in an AMQP broker?	Snailclimb__JavaGuide:docs/high-performance/message-queue/rabbitmq-questions.md
+SD03	M	How do you provide high availability for a message broker, using mirrored or quorum queues?	Snailclimb__JavaGuide:docs/high-performance/message-queue/rabbitmq-questions.md
+SD03	M	What is a priority queue, and what are its drawbacks in a message broker?	Snailclimb__JavaGuide:docs/high-performance/message-queue/rabbitmq-questions.md
+SD03	M	What metrics should you monitor on a message broker in production, such as queue depth, consumer lag and unacknowledged messages?	Snailclimb__JavaGuide:docs/high-performance/message-queue/rabbitmq-questions.md
+SD03	M	What is the difference between JMS and AMQP?	Snailclimb__JavaGuide:docs/high-performance/message-queue/message-queue.md
+SD03	M	What is a ring buffer based in-process queue like Disruptor, and why can it be faster than a blocking queue?	Snailclimb__JavaGuide:docs/high-performance/message-queue/disruptor-questions.md
+SD03	M	How does cache-line padding avoid false sharing in a high-throughput lock-free queue?	Snailclimb__JavaGuide:docs/high-performance/message-queue/disruptor-questions.md
+SD03	M	Compare wait strategies in a high-performance ring buffer, such as blocking, sleeping, yielding and busy-spin.	Snailclimb__JavaGuide:docs/high-performance/message-queue/disruptor-questions.md
+SD03	M	How does an in-process queue like Disruptor differ from a distributed message queue like Kafka?	Snailclimb__JavaGuide:docs/high-performance/message-queue/disruptor-questions.md
+SD04	H	Design a flash-sale or ticketing system that uses a queue to absorb the traffic spike and keeps inventory consistent.	Snailclimb__JavaGuide:docs/high-performance/high-performance-system-interview-questions.md
+SD01	H	A product page takes 2 seconds to load worldwide. Walk through the layers where you would look for improvements.	Snailclimb__JavaGuide:docs/high-performance/high-performance-system-interview-questions.md
+SD04	M	Compare short polling, long polling, SSE and WebSocket for pushing real-time messages to a browser.	Snailclimb__JavaGuide:docs/system-design/web-real-time-message-push.md
+SD04	M	What are the advantages of Server-Sent Events over WebSocket for one-way server push, and when is WebSocket better?	Snailclimb__JavaGuide:docs/system-design/web-real-time-message-push.md
+SD04	H	Design a real-time notification push system to millions of connected web clients, covering connection management and scaling.	Snailclimb__JavaGuide:docs/system-design/web-real-time-message-push.md
+SD04	M	How would you route messages to the right gateway node when users are connected to many WebSocket servers?	Snailclimb__JavaGuide:docs/system-design/web-real-time-message-push.md
+SD04	M	What is MQTT and when is it preferred over HTTP-based push for devices?	Snailclimb__JavaGuide:docs/system-design/web-real-time-message-push.md
+SD03	M	Compare single-node scheduling approaches such as Timer, ScheduledExecutorService, DelayQueue and a time wheel.	Snailclimb__JavaGuide:docs/system-design/schedule-task.md
+SD03	M	How does a hashed time wheel schedule large numbers of timers efficiently?	Snailclimb__JavaGuide:docs/system-design/schedule-task.md
+SD03	H	Design a distributed task scheduler that guarantees a job runs exactly once per tick across many nodes and recovers from node failure.	Snailclimb__JavaGuide:docs/system-design/schedule-task.md
+SD03	M	How can Redis or a message queue be used to implement delayed or scheduled tasks, and what are the limitations?	Snailclimb__JavaGuide:docs/system-design/schedule-task.md
+SD03	M	What features should a distributed scheduling framework offer, such as sharding, failover, retries and misfire handling?	Snailclimb__JavaGuide:docs/system-design/schedule-task.md
+SD04	M	What is a state machine and in which business domains does it reduce complexity?	Snailclimb__JavaGuide:docs/system-design/state-machine-and-workflow.md
+SD04	M	How should workflow definitions be separated from running workflow instances, and how do you converge parallel branches?	Snailclimb__JavaGuide:docs/system-design/state-machine-and-workflow.md
+SD04	M	Why are retries in a workflow engine unsafe without idempotent steps?	Snailclimb__JavaGuide:docs/system-design/state-machine-and-workflow.md
+SD04	M	What are the key principles of designing a RESTful API, including resource naming, HTTP methods and status codes?	Snailclimb__JavaGuide:docs/system-design/basis/RESTfulAPI.md
+SD04	M	What is HATEOAS and is it worth the cost in practice?	Snailclimb__JavaGuide:docs/system-design/basis/RESTfulAPI.md
+SD04	M	How do you design filtering, sorting and pagination parameters for a REST collection endpoint?	Snailclimb__JavaGuide:docs/system-design/basis/RESTfulAPI.md
+SD04	M	What is the difference between GET and POST, and which properties like safety and idempotency matter for API design?	Snailclimb__JavaGuide:docs/system-design/J2EE基础知识.md
+SD04	M	Compare cookies and sessions, and how do sessions work with multiple server nodes?	Snailclimb__JavaGuide:docs/system-design/J2EE基础知识.md
+SD04	M	What is the difference between a server-side forward and a client-side redirect?	Snailclimb__JavaGuide:docs/system-design/J2EE基础知识.md
+SD04	M	Why must a request handler object shared across threads (such as a servlet) be written to be thread-safe?	Snailclimb__JavaGuide:docs/system-design/J2EE基础知识.md
+SD05	E	What is the difference between authentication and authorization?	Snailclimb__JavaGuide:docs/system-design/security/basis-of-authority-certification.md
+SD05	M	Explain how session-cookie based authentication works and how to make it work across multiple server nodes.	Snailclimb__JavaGuide:docs/system-design/security/basis-of-authority-certification.md
+SD05	M	Why do cookie-based sessions need CSRF protection, and how do token headers change the picture?	Snailclimb__JavaGuide:docs/system-design/security/basis-of-authority-certification.md
+SD05	M	Can sessions work if the client disables cookies? How else could the session identifier be carried?	Snailclimb__JavaGuide:docs/system-design/security/basis-of-authority-certification.md
+SD05	M	What is RBAC, and how does it differ from ABAC?	Snailclimb__JavaGuide:docs/system-design/security/design-of-authority-system.md
+SD05	H	Design an authorization system for an enterprise platform with menu, data and operation permissions, role management and an audit trail.	Snailclimb__JavaGuide:docs/system-design/security/design-of-authority-system.md
+SD05	M	What are the three parts of a JWT, and what does each contain?	Snailclimb__JavaGuide:docs/system-design/security/jwt-intro.md
+SD05	M	How does JWT-based authentication work, and what prevents a client from tampering with the payload?	Snailclimb__JavaGuide:docs/system-design/security/jwt-intro.md
+SD05	M	What is the difference between decoding a JWT and verifying it?	Snailclimb__JavaGuide:docs/system-design/security/jwt-intro.md
+SD05	M	What are the main advantages of stateless JWT authentication over server-side sessions?	Snailclimb__JavaGuide:docs/system-design/security/advantages-and-disadvantages-of-jwt.md
+SD05	H	How do you log out or revoke a JWT before it expires, given that the token is stateless?	Snailclimb__JavaGuide:docs/system-design/security/advantages-and-disadvantages-of-jwt.md
+SD05	M	How do you implement JWT renewal with short-lived access tokens and refresh tokens?	Snailclimb__JavaGuide:docs/system-design/security/advantages-and-disadvantages-of-jwt.md
+SD05	M	What security practices strengthen a JWT deployment, such as algorithm pinning, short expiry, secure storage and key rotation?	Snailclimb__JavaGuide:docs/system-design/security/jwt-intro.md
+SD05	M	What is single sign-on, and what benefits does it bring?	Snailclimb__JavaGuide:docs/system-design/security/sso-intro.md
+SD05	H	Design an SSO system covering login state storage, ticket validation, logout propagation and cross-domain login.	Snailclimb__JavaGuide:docs/system-design/security/sso-intro.md
+SD05	M	What is OAuth 2.0 and what problem does it solve compared with sharing passwords?	Snailclimb__JavaGuide:docs/system-design/security/basis-of-authority-certification.md
+SD05	M	Describe the authorization code flow and why it is preferred over the implicit flow.	Snailclimb__JavaGuide:docs/system-design/security/basis-of-authority-certification.md
+SD05	M	Why do servers store salted slow hashes of passwords rather than encrypted passwords, and why is MD5 inadequate?	Snailclimb__JavaGuide:docs/system-design/security/why-password-reset-instead-of-retrieval.md
+SD05	M	What is a salt and how does it defend against rainbow-table attacks?	Snailclimb__JavaGuide:docs/system-design/security/why-password-reset-instead-of-retrieval.md
+SD05	M	Why use an adaptive hash like bcrypt for passwords instead of a fast hash like SHA-256?	Snailclimb__JavaGuide:docs/system-design/security/encryption-algorithms.md
+SD05	M	Why do websites offer password reset rather than password retrieval, and what should a secure forgot-password flow include?	Snailclimb__JavaGuide:docs/system-design/security/why-password-reset-instead-of-retrieval.md
+SD05	M	Compare symmetric and asymmetric encryption, and explain how they are combined in practice such as in TLS.	Snailclimb__JavaGuide:docs/system-design/security/encryption-algorithms.md
+SD05	M	What is the difference between hashing, encryption and encoding, and when do you use each?	Snailclimb__JavaGuide:docs/system-design/security/encryption-algorithms.md
+SD05	M	Compare AES and RSA in terms of speed, key management and typical use.	Snailclimb__JavaGuide:docs/system-design/security/encryption-algorithms.md
+SD05	M	How do digital signatures work and what do they guarantee?	Snailclimb__JavaGuide:docs/system-design/security/encryption-algorithms.md
+SD05	M	What is data masking (desensitization), and where in the pipeline should it be applied for logs, APIs and databases?	Snailclimb__JavaGuide:docs/system-design/security/data-desensitization.md
+SD05	M	Why must input validation be done on the server even when the client already validates it?	Snailclimb__JavaGuide:docs/system-design/security/data-validation.md
+SD05	M	What is the difference between input validation, authorization checks and business rule validation, and where does each belong?	Snailclimb__JavaGuide:docs/system-design/security/data-validation.md
+SD05	H	Design a sensitive-word filtering service that scans user content at high QPS, and compare brute force, Trie, Aho-Corasick and DFA approaches.	Snailclimb__JavaGuide:docs/system-design/security/sentive-words-filter.md
+SD05	M	How does a Bloom filter act as a quick pre-filter in a content filtering pipeline, and what trade-off do false positives introduce?	Snailclimb__JavaGuide:docs/system-design/security/sentive-words-filter.md
+SD05	M	How can a keyword filter cope with obfuscated variants and support hot updates of the word list without downtime?	Snailclimb__JavaGuide:docs/system-design/security/sentive-words-filter.md
+CS06	E	What is refactoring, and how is it different from performance optimization?	Snailclimb__JavaGuide:docs/system-design/basis/refactoring.md
+CS06	M	When is the right time to refactor, and why are automated tests a prerequisite?	Snailclimb__JavaGuide:docs/system-design/basis/refactoring.md
+CS06	M	What are the risks of refactoring for its own sake, and how do you keep refactoring incremental and safe?	Snailclimb__JavaGuide:docs/system-design/basis/refactoring.md
+CS06	E	What is the purpose of unit testing and how does it support refactoring and continuous integration?	Snailclimb__JavaGuide:docs/system-design/basis/unit-test.md
+CS06	M	What is test-driven development, and what are its advantages and disadvantages?	Snailclimb__JavaGuide:docs/system-design/basis/unit-test.md
+CS06	M	When should you use mocks or stubs in unit tests, and what are the risks of overusing them?	Snailclimb__JavaGuide:docs/system-design/basis/unit-test.md
+CS06	M	What makes a good unit test in terms of isolation, determinism and speed?	Snailclimb__JavaGuide:docs/system-design/basis/unit-test.md
+CS06	E	Compare camelCase, snake_case and kebab-case, and where each convention is typically used.	Snailclimb__JavaGuide:docs/system-design/basis/naming.md
+CS06	M	Why does naming matter for maintainability, and what rules make identifiers readable?	Snailclimb__JavaGuide:docs/system-design/basis/naming.md
+CS06	M	What are the main software development process models, and when would you choose an iterative model over waterfall?	Snailclimb__JavaGuide:docs/system-design/basis/software-engineering.md
+CS06	M	What basic strategies such as reuse, divide and conquer, incremental evolution and trade-off optimization guide software design?	Snailclimb__JavaGuide:docs/system-design/basis/software-engineering.md
+CS02	E	What is the difference between a process and a thread, and why are threads called lightweight?	Snailclimb__JavaGuide:docs/java/concurrent/java-concurrent-questions-01.md
+CS02	M	How does a user-level language thread relate to an operating system kernel thread, and what are the common mapping models?	Snailclimb__JavaGuide:docs/java/concurrent/java-concurrent-questions-01.md
+CS02	E	Describe the typical states in a thread lifecycle and the transitions between them.	Snailclimb__JavaGuide:docs/java/concurrent/java-concurrent-questions-01.md
+CS02	M	What is a thread context switch, and what does it cost?	Snailclimb__JavaGuide:docs/java/concurrent/java-concurrent-questions-01.md
+CS02	M	Compare sleep and wait: which releases the lock, who wakes the thread, and why is wait defined on objects rather than threads?	Snailclimb__JavaGuide:docs/java/concurrent/java-concurrent-questions-01.md
+CS02	E	What happens if you call a thread run method directly instead of starting the thread?	Snailclimb__JavaGuide:docs/java/concurrent/java-concurrent-questions-01.md
+CS02	E	What is the difference between concurrency and parallelism, and between synchronous and asynchronous execution?	Snailclimb__JavaGuide:docs/java/concurrent/java-concurrent-questions-01.md
+CS02	M	Does multithreading help on a single-core CPU? When can adding threads make a program slower?	Snailclimb__JavaGuide:docs/java/concurrent/java-concurrent-questions-01.md
+CS02	M	What problems can multithreading introduce, such as deadlocks, memory leaks and context-switch overhead?	Snailclimb__JavaGuide:docs/java/concurrent/java-concurrent-questions-01.md
+CS02	E	What does it mean for code to be thread-safe, and what are the common sources of thread-unsafety?	Snailclimb__JavaGuide:docs/java/concurrent/java-concurrent-questions-01.md
+CS02	E	What are the four necessary conditions for deadlock?	Snailclimb__JavaGuide:docs/java/concurrent/java-concurrent-questions-01.md
+CS02	M	How do you prevent deadlocks using lock ordering, lock timeouts and resource allocation strategies?	Snailclimb__JavaGuide:docs/java/concurrent/java-concurrent-questions-01.md
+CS02	M	How can you detect a deadlock in a running program or production process?	Snailclimb__JavaGuide:docs/java/concurrent/java-concurrent-questions-01.md
+CS02	H	Two threads transfer money between two accounts in opposite directions and occasionally hang. Explain why and fix it.	Snailclimb__JavaGuide:docs/java/concurrent/java-concurrent-questions-01.md
+CS02	M	Why is a memory model needed at the language level, and what problems do CPU caches and instruction reordering cause?	Snailclimb__JavaGuide:docs/java/concurrent/jmm.md
+CS02	M	Explain the three properties of concurrent programs: atomicity, visibility and ordering.	Snailclimb__JavaGuide:docs/java/concurrent/jmm.md
+CS02	M	What is the happens-before relation, and what are the main rules that establish it?	Snailclimb__JavaGuide:docs/java/concurrent/jmm.md
+CS02	M	How does the working-memory versus main-memory abstraction of a language memory model differ from the runtime heap and stack layout?	Snailclimb__JavaGuide:docs/java/concurrent/jmm.md
+CS02	M	What types of instruction reordering exist, and how can reordering break correctness in double-checked locking?	Snailclimb__JavaGuide:docs/java/concurrent/jmm.md
+CS02	M	What guarantees does a volatile variable provide, and what does it not provide?	Snailclimb__JavaGuide:docs/java/concurrent/java-concurrent-questions-02.md
+CS02	M	How does volatile enforce visibility and prohibit reordering, using memory barriers?	Snailclimb__JavaGuide:docs/java/concurrent/java-concurrent-questions-02.md
+CS02	M	Why does volatile not make a compound increment operation atomic?	Snailclimb__JavaGuide:docs/java/concurrent/java-concurrent-questions-02.md
+CS02	M	Explain double-checked locking for a singleton and why the instance field must be volatile.	Snailclimb__JavaGuide:docs/java/concurrent/java-concurrent-questions-02.md
+CS02	E	What is the difference between optimistic and pessimistic locking, and when is each appropriate?	Snailclimb__JavaGuide:docs/java/concurrent/optimistic-lock-and-pessimistic-lock.md
+CS02	M	How can optimistic locking be implemented with version numbers and with compare-and-swap?	Snailclimb__JavaGuide:docs/java/concurrent/optimistic-lock-and-pessimistic-lock.md
+CS02	M	How does compare-and-swap work at the hardware level, and why is it atomic?	Snailclimb__JavaGuide:docs/java/concurrent/cas.md
+CS02	M	What is the ABA problem and how do version stamps or tagged references address it?	Snailclimb__JavaGuide:docs/java/concurrent/cas.md
+CS02	M	What are the drawbacks of CAS under high contention, and why can it be limited to a single variable?	Snailclimb__JavaGuide:docs/java/concurrent/cas.md
+CS02	M	How do atomic classes and adder-style accumulators achieve better throughput than a single contended atomic counter?	Snailclimb__JavaGuide:docs/java/concurrent/atomic-classes.md
+CS02	M	What categories of atomic classes are provided for primitives, arrays, references and field updaters, and when would you use each?	Snailclimb__JavaGuide:docs/java/concurrent/atomic-classes.md
+CS02	M	What is a spin lock, and in what situations is spinning better or worse than blocking?	Snailclimb__JavaGuide:docs/java/concurrent/java-lock.md
+CS02	M	Explain how a read-write lock works and when it outperforms a plain mutex.	Snailclimb__JavaGuide:docs/java/concurrent/java-lock.md
+CS02	M	What is lock reentrancy and why is it needed?	Snailclimb__JavaGuide:docs/java/concurrent/reentrantlock.md
+CS02	M	How does a monitor-based synchronized block work at the bytecode level with enter and exit instructions?	Snailclimb__JavaGuide:docs/java/concurrent/java-concurrent-questions-02.md
+CS02	M	Explain lock escalation in a managed runtime: biased, lightweight and heavyweight locks, and why biased locking was removed.	Snailclimb__JavaGuide:docs/java/concurrent/java-concurrent-questions-02.md
+CS02	M	Compare synchronized and volatile.	Snailclimb__JavaGuide:docs/java/concurrent/java-concurrent-questions-02.md
+CS02	M	Compare an intrinsic monitor lock and an explicit reentrant lock in terms of features, fairness, interruptibility and condition support.	Snailclimb__JavaGuide:docs/java/concurrent/java-concurrent-questions-02.md
+CS02	M	What is a fair lock versus an unfair lock, and why is the unfair variant usually faster?	Snailclimb__JavaGuide:docs/java/concurrent/java-concurrent-questions-02.md
+CS02	M	What is an interruptible lock acquisition and when would you want it?	Snailclimb__JavaGuide:docs/java/concurrent/java-concurrent-questions-02.md
+CS02	M	Why can a read lock not be upgraded to a write lock, while a write lock can be downgraded?	Snailclimb__JavaGuide:docs/java/concurrent/java-concurrent-questions-02.md
+CS02	M	How does an optimistic read in a stamped lock work, and why can it outperform a read-write lock?	Snailclimb__JavaGuide:docs/java/concurrent/java-concurrent-questions-02.md
+CS02	M	What is a condition variable, and how do await and signal differ from wait and notify on a monitor?	Snailclimb__JavaGuide:docs/java/concurrent/aqs.md
+CS02	M	What is the core idea of an abstract queued synchronizer built on a state variable and a CLH-style wait queue?	Snailclimb__JavaGuide:docs/java/concurrent/aqs.md
+CS02	H	Walk through how a thread acquires an exclusive lock in a queue-based synchronizer: CAS on state, enqueueing, parking and wake-up on release.	Snailclimb__JavaGuide:docs/java/concurrent/aqs.md
+CS02	M	What is the difference between exclusive and shared modes in a queued synchronizer?	Snailclimb__JavaGuide:docs/java/concurrent/aqs.md
+CS02	M	How does a queued synchronizer handle cancelled waiters in its queue, and what is the role of wait-status flags?	Snailclimb__JavaGuide:docs/java/concurrent/aqs.md
+CS02	M	Why do fair locks have lower throughput than non-fair locks?	Snailclimb__JavaGuide:docs/java/concurrent/aqs.md
+CS02	M	How does a semaphore work, and how would you use one to limit concurrent access to a resource?	Snailclimb__JavaGuide:docs/java/concurrent/aqs.md
+CS02	M	How does a countdown latch differ from a cyclic barrier, and when is each reusable?	Snailclimb__JavaGuide:docs/java/concurrent/aqs.md
+CS02	H	How would you implement a custom non-reentrant mutex or a bounded resource gate on top of a synchronizer framework?	Snailclimb__JavaGuide:docs/java/concurrent/reentrantlock.md
+CS02	M	How is reentrancy tracked in a reentrant lock, and what happens when the hold count reaches zero?	Snailclimb__JavaGuide:docs/java/concurrent/reentrantlock.md
+CS02	M	What is thread-local storage, and how is it implemented internally with a per-thread map?	Snailclimb__JavaGuide:docs/java/concurrent/threadlocal.md
+CS02	M	How can thread-local variables cause memory leaks, particularly with thread pools and weak-referenced keys?	Snailclimb__JavaGuide:docs/java/concurrent/threadlocal.md
+CS02	M	How does a thread-local map handle hash collisions, resizing and stale entry cleanup?	Snailclimb__JavaGuide:docs/java/concurrent/threadlocal.md
+CS02	M	How can you propagate thread-local context to child threads or to tasks submitted to a thread pool?	Snailclimb__JavaGuide:docs/java/concurrent/threadlocal.md
+CS02	M	Why must you clean up thread-local state at the end of a task in a pooled thread environment?	Snailclimb__JavaGuide:docs/java/concurrent/java-thread-pool-best-practices.md
+CS02	E	Why use a thread pool instead of creating a thread per task?	Snailclimb__JavaGuide:docs/java/concurrent/java-concurrent-questions-03.md
+CS02	M	Explain the core parameters of a configurable thread pool: core size, max size, queue, keep-alive and rejection policy.	Snailclimb__JavaGuide:docs/java/concurrent/java-thread-pool-summary.md
+CS02	M	Describe the exact order in which a thread pool uses core threads, the queue and extra threads when tasks arrive.	Snailclimb__JavaGuide:docs/java/concurrent/java-concurrent-questions-03.md
+CS02	M	Why are the factory-method built-in thread pools discouraged in production?	Snailclimb__JavaGuide:docs/java/concurrent/java-concurrent-questions-03.md
+CS02	M	Compare the rejection policies: abort, caller-runs, discard and discard-oldest, and when you would use each.	Snailclimb__JavaGuide:docs/java/concurrent/java-thread-pool-summary.md
+CS02	M	Can caller-runs rejection provide backpressure, and what are its risks?	Snailclimb__JavaGuide:docs/java/concurrent/java-thread-pool-best-practices.md
+CS02	M	What happens to a worker thread when a task throws an uncaught exception, and why are exceptions in async tasks easily lost?	Snailclimb__JavaGuide:docs/java/concurrent/java-concurrent-questions-03.md
+CS02	M	Compare bounded and unbounded queues for a thread pool, and the failure modes of each.	Snailclimb__JavaGuide:docs/java/concurrent/java-thread-pool-summary.md
+CS02	M	How do you size a thread pool for CPU-bound versus I/O-bound workloads?	Snailclimb__JavaGuide:docs/java/concurrent/java-concurrent-questions-03.md
+CS02	H	How would you size a thread pool and its queue given downstream capacity limits and a latency SLO?	Snailclimb__JavaGuide:docs/java/concurrent/java-thread-pool-best-practices.md
+CS02	M	Why should different workloads use isolated thread pools?	Snailclimb__JavaGuide:docs/java/concurrent/java-thread-pool-best-practices.md
+CS02	M	Does cancelling a task or hitting a timeout actually stop the running thread? How do you make tasks cooperatively cancellable?	Snailclimb__JavaGuide:docs/java/concurrent/java-thread-pool-best-practices.md
+CS02	M	What metrics should you monitor on a thread pool in production?	Snailclimb__JavaGuide:docs/java/concurrent/java-thread-pool-best-practices.md
+CS02	M	How do you gracefully shut down a thread pool, and what is the difference between shutdown and an immediate shutdown?	Snailclimb__JavaGuide:docs/java/concurrent/java-thread-pool-best-practices.md
+CS02	M	How would you dynamically adjust thread pool parameters at runtime, and what are the limits of doing so?	Snailclimb__JavaGuide:docs/java/concurrent/java-concurrent-questions-03.md
+CS02	H	How would you design a thread pool that executes tasks by priority?	Snailclimb__JavaGuide:docs/java/concurrent/java-concurrent-questions-03.md
+CS02	M	Why name threads in a pool, and how does it help diagnosing production problems?	Snailclimb__JavaGuide:docs/java/concurrent/java-concurrent-questions-03.md
+CS02	M	Do core threads in a pool ever get reclaimed, and what state is an idle worker in?	Snailclimb__JavaGuide:docs/java/concurrent/java-concurrent-questions-03.md
+CS02	M	What are the lifecycle states of a thread pool, and how does a worker thread loop pull tasks?	Snailclimb__JavaGuide:docs/java/concurrent/java-thread-pool-summary.md
+CS02	M	What is the difference between a future and a completable future, and what limitations of blocking futures does the latter address?	Snailclimb__JavaGuide:docs/java/concurrent/completablefuture-intro.md
+CS02	M	How would you run two independent async tasks and combine their results into a third task that depends on both?	Snailclimb__JavaGuide:docs/java/concurrent/completablefuture-intro.md
+CS02	M	How do you handle failures in a chain of async tasks, and how does exception propagation work?	Snailclimb__JavaGuide:docs/java/concurrent/completablefuture-intro.md
+CS02	M	Why should async tasks run on a custom executor rather than the shared default pool?	Snailclimb__JavaGuide:docs/java/concurrent/completablefuture-intro.md
+CS02	M	How do you wait for many async tasks and apply a timeout without blocking indefinitely?	Snailclimb__JavaGuide:docs/java/concurrent/completablefuture-intro.md
+CS02	M	What is a virtual thread and how does it differ from a platform thread?	Snailclimb__JavaGuide:docs/java/concurrent/virtual-thread.md
+CS02	M	Why are virtual threads well suited to I/O-bound workloads but not CPU-bound ones?	Snailclimb__JavaGuide:docs/java/concurrent/virtual-thread.md
+CS02	M	How does a virtual thread get mounted on and unmounted from a carrier thread, and what is pinning?	Snailclimb__JavaGuide:docs/java/concurrent/virtual-thread.md
+CS02	M	Should virtual threads be pooled, and how do you limit downstream concurrency without a thread pool?	Snailclimb__JavaGuide:docs/java/concurrent/virtual-thread.md
+CS02	M	Are virtual threads the same as coroutines? How do they compare with reactive programming?	Snailclimb__JavaGuide:docs/java/concurrent/virtual-thread.md
+CS02	M	What caveats arise when using thread-locals or connection pools with a very large number of lightweight threads?	Snailclimb__JavaGuide:docs/java/concurrent/virtual-thread.md
+CS02	H	How would you migrate a service from a fixed platform thread pool to per-task lightweight threads, and what would you re-verify?	Snailclimb__JavaGuide:docs/java/concurrent/virtual-thread.md
+CS02	M	How would you diagnose lightweight-thread pinning and thread dumps in production?	Snailclimb__JavaGuide:docs/java/concurrent/virtual-thread.md
+CS02	M	How does a copy-on-write list achieve thread safety, and what are the costs of writes and the consistency of iteration?	Snailclimb__JavaGuide:docs/java/collection/copyonwritearraylist-source-code.md
+CS02	M	In which scenarios is a copy-on-write collection a good choice, and when is it a bad one?	Snailclimb__JavaGuide:docs/java/collection/copyonwritearraylist-source-code.md
+CS02	M	Compare array-backed and linked blocking queues in terms of bounding, locking and throughput.	Snailclimb__JavaGuide:docs/java/collection/arrayblockingqueue-source-code.md
+CS02	M	How does a bounded blocking queue use a lock and two conditions to implement blocking put and take?	Snailclimb__JavaGuide:docs/java/collection/arrayblockingqueue-source-code.md
+CS02	M	What are the differences between offer, put, add and timed-offer methods on a blocking queue?	Snailclimb__JavaGuide:docs/java/collection/arrayblockingqueue-source-code.md
+CS02	M	How does a blocking queue differ from a non-blocking concurrent queue such as a lock-free linked queue?	Snailclimb__JavaGuide:docs/java/collection/arrayblockingqueue-source-code.md
+CS02	M	How does a delay queue return elements only after their delay expires, and how does it differ from a timer?	Snailclimb__JavaGuide:docs/java/collection/delayqueue-source-code.md
+CS02	H	Implement a producer-consumer pipeline with a bounded buffer and explain the conditions that prevent lost wakeups.	Snailclimb__JavaGuide:docs/java/concurrent/java-concurrent-collections.md
+CS02	M	What is a concurrent skip list and when is it preferable to a concurrent hash map?	Snailclimb__JavaGuide:docs/java/concurrent/java-concurrent-collections.md
+CS02	M	How does a priority blocking queue differ from a plain priority queue?	Snailclimb__JavaGuide:docs/java/concurrent/java-concurrent-collections.md
+CS07	M	How does a concurrent hash map in older designs use segment locks, and how does that differ from the newer CAS plus per-bin lock approach?	Snailclimb__JavaGuide:docs/java/collection/concurrent-hash-map-source-code.md
+CS07	M	How is size computed in a concurrent hash map without a global lock?	Snailclimb__JavaGuide:docs/java/collection/concurrent-hash-map-source-code.md
+CS07	M	Why does a concurrent hash map disallow null keys and values?	Snailclimb__JavaGuide:docs/java/collection/java-collection-questions-02.md
+CS07	M	Is a sequence of check-then-put operations on a concurrent map atomic? How do you make compound operations atomic?	Snailclimb__JavaGuide:docs/java/collection/java-collection-questions-02.md
+CS07	M	Compare a concurrent hash map with a synchronized legacy hash table.	Snailclimb__JavaGuide:docs/java/collection/java-collection-questions-02.md
+CS07	M	How does cooperative resizing by multiple threads work in a concurrent hash map?	Snailclimb__JavaGuide:docs/java/collection/concurrent-hash-map-source-code.md
+CS07	E	Compare List, Set, Queue and Map in terms of ordering, duplicates and typical operations.	Snailclimb__JavaGuide:docs/java/collection/java-collection-questions-01.md
+CS07	M	Compare dynamic array lists and linked lists for insertion, deletion, random access and memory locality.	Snailclimb__JavaGuide:docs/java/collection/java-collection-questions-01.md
+CS07	M	How does a dynamic array grow, and what is the amortized cost of appending?	Snailclimb__JavaGuide:docs/java/collection/arraylist-source-code.md
+CS07	M	Why does a linked list not implement the random-access marker interface?	Snailclimb__JavaGuide:docs/java/collection/linkedlist-source-code.md
+CS07	M	What are fail-fast and fail-safe iterators, and what is a concurrent modification error?	Snailclimb__JavaGuide:docs/java/collection/java-collection-questions-01.md
+CS07	M	What is the difference between Comparable and Comparator?	Snailclimb__JavaGuide:docs/java/collection/java-collection-questions-01.md
+CS07	M	Compare hash set, linked hash set and tree set in ordering, performance and underlying structure.	Snailclimb__JavaGuide:docs/java/collection/java-collection-questions-01.md
+CS07	M	How does a hash set detect duplicates, and why must equals and hashCode be consistent?	Snailclimb__JavaGuide:docs/java/collection/java-collection-questions-02.md
+CS07	M	Compare an array deque and a linked list when used as a queue or stack.	Snailclimb__JavaGuide:docs/java/collection/java-collection-questions-01.md
+CS07	M	How does a priority queue work internally with a binary heap, and what are the complexities of its operations?	Snailclimb__JavaGuide:docs/java/collection/java-collection-questions-01.md
+CS07	E	Explain the internal structure of a hash map: array of buckets, hash function, collision handling and treeification.	Snailclimb__JavaGuide:docs/java/collection/hashmap-source-code.md
+CS07	M	Why is the capacity of a hash table usually a power of two, and how does the index computation use bit masking?	Snailclimb__JavaGuide:docs/java/collection/java-collection-questions-02.md
+CS07	M	How does a hash map decide when to resize, what is load factor, and how are entries redistributed?	Snailclimb__JavaGuide:docs/java/collection/hashmap-source-code.md
+CS07	M	Why does a hash map convert long bucket chains to balanced trees, and what thresholds trigger conversion?	Snailclimb__JavaGuide:docs/java/collection/hashmap-source-code.md
+CS07	M	Why is a non-thread-safe hash map unsafe in multithreaded use, and how could concurrent resizing lead to lost data or infinite loops?	Snailclimb__JavaGuide:docs/java/collection/java-collection-questions-02.md
+CS07	M	Compare a hash map and a tree map in ordering, complexity and null-key handling.	Snailclimb__JavaGuide:docs/java/collection/java-collection-questions-02.md
+CS07	M	How do you iterate a map safely, and what are the cost differences between key, value and entry iteration?	Snailclimb__JavaGuide:docs/java/collection/java-collection-questions-02.md
+CS07	M	How does a linked hash map maintain insertion or access order, and how does it enable an LRU cache?	Snailclimb__JavaGuide:docs/java/collection/linkedhashmap-source-code.md
+CS06	H	Implement an LRU cache using a hash map and a doubly linked list, and discuss how to make it thread-safe.	Snailclimb__JavaGuide:docs/java/collection/linkedhashmap-source-code.md
+CS07	M	What pitfalls arise when converting a collection to a map, such as duplicate keys and null values?	Snailclimb__JavaGuide:docs/java/collection/java-collection-precautions-for-use.md
+CS07	M	Why is modifying a collection inside a for-each loop dangerous, and what safe alternatives exist?	Snailclimb__JavaGuide:docs/java/collection/java-collection-precautions-for-use.md
+CS07	M	What are the pitfalls of converting between arrays and lists, such as fixed-size views and sharing the backing array?	Snailclimb__JavaGuide:docs/java/collection/java-collection-precautions-for-use.md
+CS07	M	How should you de-duplicate a collection while preserving order or using a set?	Snailclimb__JavaGuide:docs/java/collection/java-collection-precautions-for-use.md
+CS07	E	Describe the runtime memory areas of the Java virtual machine and what each stores.	Snailclimb__JavaGuide:docs/java/jvm/memory-area.md
+CS07	M	What is the difference between the heap and the stack, and what is stored in a stack frame?	Snailclimb__JavaGuide:docs/java/jvm/memory-area.md
+CS07	M	What is the method area, metaspace and the runtime constant pool, and how did the permanent generation get replaced?	Snailclimb__JavaGuide:docs/java/jvm/memory-area.md
+CS07	M	What is the string constant pool and how does string interning work?	Snailclimb__JavaGuide:docs/java/jvm/memory-area.md
+CS07	M	What is direct (off-heap) memory, and what are its benefits and risks?	Snailclimb__JavaGuide:docs/java/jvm/memory-area.md
+CS07	M	Describe the steps of creating an object in the JVM, from class check to initialization of the header.	Snailclimb__JavaGuide:docs/java/jvm/memory-area.md
+CS07	M	What is the memory layout of a Java object, and how does an object reference locate the object using handles or direct pointers?	Snailclimb__JavaGuide:docs/java/jvm/memory-area.md
+CS07	M	What does a stack overflow error mean versus an out-of-memory error, and what causes each?	Snailclimb__JavaGuide:docs/java/jvm/memory-area.md
+CS07	M	Describe the class loading phases: loading, verification, preparation, resolution and initialization.	Snailclimb__JavaGuide:docs/java/jvm/class-loading-process.md
+CS07	M	When does class initialization get triggered, and when can a class be unloaded?	Snailclimb__JavaGuide:docs/java/jvm/class-loading-process.md
+CS07	M	What is the parent-delegation model of class loaders, what are its benefits, and how can it be broken?	Snailclimb__JavaGuide:docs/java/jvm/classloader.md
+CS07	M	Why would you write a custom class loader, and what are plugin or hot-deploy use cases?	Snailclimb__JavaGuide:docs/java/jvm/classloader.md
+CS07	M	What does a compiled class file contain: magic number, version, constant pool, access flags, fields, methods and attributes?	Snailclimb__JavaGuide:docs/java/jvm/class-file-structure.md
+CS07	M	Why is the JVM called a platform-independent runtime, and how do bytecode and the JIT compiler work together?	Snailclimb__JavaGuide:docs/java/jvm/jvm-intro.md
+CS07	M	How does a JVM determine that an object is dead: reference counting versus reachability analysis, and what are GC roots?	Snailclimb__JavaGuide:docs/java/jvm/jvm-garbage-collection.md
+CS07	M	Compare strong, soft, weak and phantom references and when to use each.	Snailclimb__JavaGuide:docs/java/jvm/jvm-garbage-collection.md
+CS07	M	Compare mark-sweep, copying and mark-compact garbage collection algorithms.	Snailclimb__JavaGuide:docs/java/jvm/jvm-garbage-collection.md
+CS07	M	Why do generational collectors split the heap into young and old regions, and how do Eden, survivor spaces and promotion work?	Snailclimb__JavaGuide:docs/java/jvm/jvm-garbage-collection.md
+CS07	M	What triggers a minor GC versus a full GC, and what is space allocation guarantee?	Snailclimb__JavaGuide:docs/java/jvm/jvm-garbage-collection.md
+CS07	M	Why are large objects allocated directly into the old generation, and what problems do they cause?	Snailclimb__JavaGuide:docs/java/jvm/jvm-garbage-collection.md
+CS07	M	Compare Serial, Parallel, CMS and G1 collectors in goal, pause behavior and use cases.	Snailclimb__JavaGuide:docs/java/jvm/jvm-garbage-collection.md
+CS07	H	How do low-pause collectors like ZGC achieve sub-millisecond pauses with colored pointers and load barriers?	Snailclimb__JavaGuide:docs/java/jvm/jvm-garbage-collection.md
+CS07	M	How does G1 divide the heap into regions and choose which regions to collect to meet a pause-time goal?	Snailclimb__JavaGuide:docs/java/jvm/jvm-garbage-collection.md
+CS07	M	What is stop-the-world and why does it occur in garbage collection?	Snailclimb__JavaGuide:docs/java/jvm/jvm-garbage-collection.md
+CS07	M	What is concurrent marking and how does a collector handle objects modified during it, such as with write barriers?	Snailclimb__JavaGuide:docs/java/jvm/jvm-garbage-collection.md
+CS07	M	Which JVM flags control heap size, young generation ratio, metaspace and GC choice, and how do you pick starting values?	Snailclimb__JavaGuide:docs/java/jvm/jvm-parameters-intro.md
+CS07	M	How do you enable GC logging and automatic heap dump on out-of-memory in production?	Snailclimb__JavaGuide:docs/java/jvm/jvm-parameters-intro.md
+CS07	M	What command-line tools help inspect a running JVM, such as for thread dumps, heap dumps and GC statistics?	Snailclimb__JavaGuide:docs/java/jvm/jdk-monitoring-and-troubleshooting-tools.md
+CS07	H	A Java service has frequent full GCs and growing heap usage. Describe how you determine whether it is a leak or normal growth.	Snailclimb__JavaGuide:docs/java/jvm/jvm-in-action.md
+CS07	H	A service shows high CPU usage. Walk through how you find the hot thread and the code responsible.	Snailclimb__JavaGuide:docs/java/jvm/jvm-in-action.md
+CS07	H	A service shows high load average but low CPU usage. What do you check?	Snailclimb__JavaGuide:docs/java/jvm/jvm-in-action.md
+CS07	H	A slow API has low CPU. How do you determine whether the time is spent on thread pool queuing, database connections, downstream calls or locks?	Snailclimb__JavaGuide:docs/java/jvm/jvm-in-action.md
+CS07	M	What is the difference between stopping the bleeding and preserving evidence during a production incident?	Snailclimb__JavaGuide:docs/java/jvm/jvm-in-action.md
+CS07	M	How do you investigate frequent young GCs?	Snailclimb__JavaGuide:docs/java/jvm/jvm-in-action.md
+CS07	M	How do you diagnose database connection pool exhaustion?	Snailclimb__JavaGuide:docs/java/jvm/jvm-in-action.md
+CS07	M	What should an incident postmortem record, and how do you verify a fix after deployment?	Snailclimb__JavaGuide:docs/java/jvm/jvm-in-action.md
+SD05	M	How do you troubleshoot growing message queue lag in a production consumer?	Snailclimb__JavaGuide:docs/java/jvm/jvm-in-action.md
+SD05	M	How do you troubleshoot a sudden slowdown of a cache server such as Redis?	Snailclimb__JavaGuide:docs/java/jvm/jvm-in-action.md

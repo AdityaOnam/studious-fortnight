@@ -1,0 +1,300 @@
+Q009622	LLM04	M	When a pretraining run's loss suddenly diverges and you roll back to a checkpoint, why does deterministic, resumable data ordering matter?
+Q009623	LLM04	H	When a pretraining run's loss diverges, what would make you choose to restart the run entirely rather than roll back to a checkpoint?
+Q009624	ML11	M	When would you choose Q-learning over policy gradients, and vice versa?
+Q009625	ML11	H	What is the deadly triad in reinforcement learning, precisely, and which of the three do you give up in each family of methods?
+Q009626	ML11	H	Why does PPO clip the importance ratio instead of using a KL penalty alone?
+Q009627	LLM04	H	Design the training setup for a model that doesn't fit on one accelerator, say a 70B-parameter model on a pod of accelerators.
+Q009628	LLM04	H	Where does communication become the bottleneck as you scale data parallelism, and what does gradient accumulation change?
+Q009629	LLM04	H	How would you decide between wider tensor parallelism and deeper pipeline parallelism?
+Q009630	LLM07	H	Build the evaluation harness for a new frontier LLM release. What does it need to do?
+Q009631	LLM07	M	How do you detect that a benchmark has saturated or leaked, and what do you do next?
+Q009632	LLM07	M	How would you evaluate a model whose main improvement is long-context behaviour?
+Q009633	MS04	H	Design the serving system for a multimodal assistant (text and image input, streaming text output) at hundreds of millions of users.
+Q009634	LLM06	H	In a serving system for a multimodal LLM assistant, what breaks first as median context length grows 10x?
+Q009635	GA04	H	How do you safely roll out a new LLM version under heavy production traffic (shadow traffic, interleaved evals, rollback)?
+Q009636	DROP	-	hr
+Q009637	DROP	-	hr
+Q009638	DROP	-	hr
+Q009639	DROP	-	offtopic
+Q009640	DROP	-	offtopic
+Q009641	LLM06	H	At what model size does the crossover favour an SRAM-only accelerator (no HBM, only on-die SRAM) for LLM inference?
+Q009642	LLM06	H	For an SRAM-only inference accelerator, what does removing the cache hierarchy do to your ability to reason about worst-case latency?
+Q009643	LLM06	H	For serving a 70B dense model with 8-bit weights, how does the analysis change for a sparse MoE of the same total parameter count?
+Q009644	LLM06	H	Where would you spend a 2x quantization win when serving an LLM: fewer chips per instance, or longer context?
+Q009645	DROP	-	offtopic
+Q009646	DROP	-	offtopic
+Q009647	DROP	-	offtopic
+Q009648	DROP	-	offtopic
+Q009649	DROP	-	unfixable
+Q009650	DROP	-	unfixable
+Q009651	LLM06	H	On a GPU you batch to amortise weight reads. What is the batching calculus on an SRAM-only accelerator?
+Q009652	DROP	-	offtopic
+Q009653	LLM06	M	In LLM serving, what does a long-context request cost you that a long-generation request does not?
+Q009654	DROP	-	offtopic
+Q009655	DROP	-	hr
+Q009656	LLM06	H	In a disaggregated LLM serving setup, how would you decide the ratio of prefill to decode capacity?
+Q009657	LLM06	H	What happens to prefix caching when prefill and decode live on different machines?
+Q009658	LLM06	H	How would you serve a large mixture-of-experts model when expert selection is data-dependent?
+Q009659	LLM06	H	When serving a mixture-of-experts model, how would you pick the capacity factor from production traffic rather than from the training config?
+Q009660	LLM06	H	When serving a mixture-of-experts model, what would you measure to know that expert placement is hurting you?
+Q009661	DROP	-	offtopic
+Q009662	DROP	-	offtopic
+Q009663	DROP	-	offtopic
+Q009664	DROP	-	offtopic
+Q009665	LLM06	M	In an accelerator-based LLM serving system, how would you detect that the host, not the device, is the tail-latency source?
+Q009666	SD05	H	What is your failure model when one chip in a several-hundred-chip inference instance goes down mid-request?
+Q009667	DROP	-	offtopic
+Q009668	DROP	-	offtopic
+Q009669	DROP	-	offtopic
+Q009670	DROP	-	hr
+Q009671	DROP	-	hr
+Q009672	DROP	-	hr
+Q009673	RAG05	H	A lawyer asks a question about a 200-page credit agreement where the operative clause on page 140 depends on a defined term on page 8. How do you build retrieval that gets this right?
+Q009674	RAG05	H	In a RAG system over legal agreements, how would you handle an amended and restated agreement where an amendment on page 190 supersedes the clause on page 140?
+Q009675	RAG02	M	What breaks in a RAG pipeline when the document is a scanned PDF rather than a native one?
+Q009676	RAG06	H	In a RAG system where every assertion must link back to a source passage, how do you handle a correct synthesis that no single passage supports?
+Q009677	RAG06	H	In a RAG system that verifies citations for every assertion, what is your latency budget for verification, and would you run it inline or stream the answer and revise?
+Q009678	LLM07	H	You need an eval set for a new contract-review capability. There is no labelled ground truth and the only people who can judge quality bill at partner rates. How do you build it?
+Q009679	LLM07	H	When building an LLM eval set with a rubric, how do you stop the rubric author's own style preferences from becoming the metric?
+Q009680	LLM07	M	What would make you throw an eval task out entirely?
+Q009681	MS04	H	Design an agent that takes a draft NDA and returns a redlined Word document reflecting the firm's playbook, not a chat response.
+Q009682	GA03	H	How would you make an agent's document edits idempotent when the agent is re-run on a document it already edited?
+Q009683	GA03	M	What is your rollback story when a user rejects half of an agent's redlines and asks for another pass?
+Q009684	GA05	H	In a multi-tenant LLM system serving law firms, how would you test an ethical wall (isolation between matters) in CI so a regression cannot ship?
+Q009685	GA05	H	In a multi-tenant LLM system with strict matter-level isolation, where would you allow cross-matter reuse, and what would you require before enabling it?
+Q009686	MS04	H	In a batch LLM document-review workflow, the client adds three questions after the batch has run. What re-runs and what does not?
+Q009687	MS04	H	How would the design of a batch LLM document-review workflow change if turnaround had to be under ten minutes?
+Q009688	RAG02	H	How would you extend a legal-document chunker to handle documents with schedules and exhibits that are effectively separate documents?
+Q009689	RAG02	M	What test would tell you a structure-aware chunker is better than fixed 512-token windows?
+Q009690	RAG06	H	An agentic legal research query returns a memo citing a case that was overruled. Where does that get caught?
+Q009691	RAG06	H	How would you evaluate a validity check (for example, checking whether cited cases are still good law) in a legal research agent?
+Q009692	RAG06	H	In a legal research agent that checks citation validity, what do you do in a jurisdiction where you have no citator coverage?
+Q009693	RAG05	H	When would you put a whole contract in the context window instead of retrieving over it? Defend the answer with numbers.
+Q009694	RAG05	M	How does prompt caching change the decision between full-context and retrieval for a document that a lawyer asks twenty questions about?
+Q009695	RAG05	H	At what corpus size would you stop hybridising long-context and retrieval approaches and go retrieval-only?
+Q009696	GA04	M	A new frontier model is released and it scores better on your benchmarks. What happens before it reaches customers?
+Q009697	LLM07	H	Users say a new model "feels worse" but every eval slice improved. What is your next move?
+Q009698	GA04	M	How would you structure a model rollback so a customer mid-task is not switched to a different model underneath them?
+Q009699	GA04	H	Estimate the cost and turnaround of running an LLM diligence workflow over a 5,000-document data room, and say which lever you would pull first.
+Q009700	GA04	M	How would you decide the smaller-model routing boundary empirically?
+Q009701	GA04	M	What changes in an LLM deployment if the customer requires a specific processing region with lower capacity?
+Q009702	GA04	H	How would you instrument an LLM pipeline so that triaging a report of a missed clause takes minutes instead of a day?
+Q009703	DROP	-	hr
+Q009704	GA04	H	Firms can customise prebuilt LLM agents, and one firm has built 400 of its own. You cannot hand-grade them all. How do you keep a bad customer-built agent from reaching a client?
+Q009705	LLM07	H	An agent passes its own evals because the evals are weak. How would you detect a low-quality eval set automatically?
+Q009706	GA04	H	How do you move thousands of customer-built agents to a new model without switching a customer mid-task?
+Q009707	DL07	M	Walk me through what actually happens when someone calls AutoModelForCausalLM.from_pretrained("org/model-8b", device_map="auto", torch_dtype="auto").
+Q009708	GA05	M	Why is trust_remote_code a real security boundary when loading models?
+Q009709	DL07	M	What changes when loading a model with from_pretrained if the checkpoint is sharded across 30 files and you only have 24 GB of GPU memory?
+Q009710	SD04	H	How would you roll out a new KV-cache API across 300 model architectures in a library without breaking downstream forks?
+Q009711	SD04	M	When is backwards compatibility worth more than a better API?
+Q009712	LLM02	M	Compare BPE, WordPiece, and Unigram tokenization. Why was a tokenizer library written in Rust, and what tokenizer bugs bite people in practice?
+Q009713	LLM02	M	Why do digits and whitespace handling in the tokenizer affect arithmetic and code benchmarks?
+Q009714	LLM02	M	How would you detect a train/inference tokenization mismatch after the fact?
+Q009715	FT01	M	What problem do chat templates solve, and what goes wrong when they're ignored?
+Q009716	FT01	M	How would you test for a chat-template mismatch across your LLM serving fleet?
+Q009717	GA02	M	What are the pitfalls of putting tool-call schemas inside chat templates?
+Q009718	GA05	M	Why was safetensors created when pickle-based checkpoints already worked everywhere?
+Q009719	GA05	H	How would you design a model hub's scanning pipeline for the pickle files that still get uploaded?
+Q009720	GA05	M	What is the remaining attack surface with trust_remote_code even when the weights are in safetensors format?
+Q009721	FT02	M	When fine-tuning an 8B model on a single 24 GB GPU, which modules do you target with LoRA, and why does rank matter less than people expect?
+Q009722	FT01	M	When do you step up from LoRA to full fine-tuning despite the cost?
+Q009723	FT03	M	Explain DPO to someone who knows PPO-based RLHF. When would you still choose an online RL method?
+Q009724	FT03	M	What does beta trade off in DPO?
+Q009725	FT03	H	How would you detect reward hacking in an online RL run?
+Q009726	MS02	M	A user loads a 2 TB dataset with the Hugging Face datasets library on a 64 GB RAM machine and it works. How? And when does it stop working?
+Q009727	MS02	M	In the Hugging Face datasets library, how does fingerprinting decide whether a map can be skipped, and how do you bust a stale cache?
+Q009728	MS02	H	How would you feed 8 training nodes from one hub-hosted dataset without downloading it 8 times?
+Q009729	SD06	H	Design the Hugging Face Hub: millions of git repos where individual files are tens to hundreds of GB.
+Q009730	MS02	M	How do you version and dedupe datasets stored as Parquet?
+Q009731	SD01	H	What breaks first on a model hub during a frontier-model release day?
+Q009732	MS04	H	Design a serverless inference layer where any of thousands of hosted models can receive a request at any moment.
+Q009733	LLM06	M	In a serverless model-inference platform, when does it become cheaper to give a model dedicated capacity?
+Q009734	LLM06	H	How does chunk-level weight deduplication change the cold-start math for serverless model inference?
+Q009735	LLM04	M	When building a web-scale pretraining corpus, why can a benchmark suite mislead you at small scale?
+Q009736	LLM07	M	How do you handle contamination between a pretraining corpus and your eval sets?
+Q009737	DROP	-	offtopic
+Q009738	DROP	-	offtopic
+Q009739	DROP	-	offtopic
+Q009740	LLM06	H	A new LLM architecture ships with an attention variant that no inference-engine kernel supports. What happens on day zero, and what is the fallback?
+Q009741	DROP	-	offtopic
+Q009742	MS03	H	Design the recommendation system for Instagram Reels.
+Q009743	ML10	M	In a short-video recommendation system, how do you handle cold-start for brand-new videos with zero engagement?
+Q009744	MS03	H	What breaks in a short-video recommendation design at 100k QPS, and where do you spend your latency budget?
+Q009745	DROP	-	offtopic
+Q009746	DROP	-	offtopic
+Q009747	SD01	H	Given a stream of user actions, return the k most engaged-with items. Why might a heap-based solution be the wrong choice in production?
+Q009748	SD01	H	How much error does a Count-Min Sketch with width w and depth d introduce, and how do you size it?
+Q009749	LLM03	H	Explain the architectural choices in a Llama-class model: why grouped-query attention, RoPE, and SwiGLU instead of the vanilla 2017 Transformer?
+Q009750	LLM06	H	How does grouped-query attention interact with KV-cache quantization?
+Q009751	LLM03	M	Why did later frontier models move toward MoE layers, and what does that do to serving?
+Q009752	FT03	H	Walk me through a post-training recipe to turn a pretrained base model into a personalized assistant.
+Q009753	FT03	M	Where does reward hacking show up concretely in post-training, and how do you detect it?
+Q009754	LLM07	H	How do you evaluate "personalization quality" of an assistant without violating privacy?
+Q009755	MS03	H	Design the harmful-content detection system for Facebook and Instagram uploads.
+Q009756	ML06	H	How do you evaluate a model change when labels are policy-dependent and reviewers disagree about 15% of the time?
+Q009757	MS03	H	In a harmful-content detection pipeline, where would you insert an LLM, and for which policy areas is it too slow or expensive?
+Q009758	LLM06	H	You need to serve a Llama-class 70B+ model to hundreds of millions of assistant users. What does the serving stack look like and where does the money go?
+Q009759	LLM06	M	Your p99 TTFT for an LLM service doubles at peak traffic. What are the top three suspects?
+Q009760	LLM06	M	When does speculative decoding hurt throughput?
+Q009761	ML06	H	Your ads CTR model shows a 2% offline AUC gain, but the online A/B shows revenue-neutral results with worse calibration. What's going on and what do you do?
+Q009762	ML06	M	Why is isotonic regression risky with sparse segments?
+Q009763	ML08	H	How would you design the holdback experiment to measure long-term advertiser value, not just next-day revenue?
+Q009764	LLM04	H	What breaks when you scale LLM training from 8 GPUs to thousands, and how do modern stacks deal with it?
+Q009765	LLM04	M	How do you pick the tensor-parallel x pipeline-parallel x data-parallel layout for a given cluster topology?
+Q009766	LLM03	H	What makes MoE training harder to load-balance than dense model training?
+Q009767	LLM07	H	How would you build the evaluation system for an AI assistant before and after each model release?
+Q009768	LLM07	H	Your LLM judge prefers the new model 60/40 but human raters are 50/50. Which do you trust, and how do you find out why?
+Q009769	LLM07	H	How do you evaluate memory and personalization features without storing sensitive user data in eval sets?
+Q009770	GA06	H	How do modern multimodal models get image and video understanding into an LLM, and what changes for video specifically?
+Q009771	GA06	H	When does a contrastive (CLIP-style) encoder underperform a captioning-trained one as the LLM's vision encoder?
+Q009772	GA06	H	How would you detect that your vision-language model is answering from the caption text and ignoring the pixels?
+Q009773	DROP	-	hr
+Q009774	DROP	-	hr
+Q009775	LLM06	H	One reasoning model serves an assistant across multiple apps and devices. How would you cut reasoning tokens per query at that scale without losing accuracy?
+Q009776	LLM07	H	Your length penalty cut reasoning tokens sharply and the aggregate eval is flat, but complaints on hard queries rise. How do you find the regression?
+Q009777	GA04	M	How would you set the token budget for a voice reply on smart glasses versus a chat reply?
+Q009778	MS04	H	Design a Copilot feature that answers questions over a user's work email, documents, and meetings without ever leaking content the user can't access.
+Q009779	MS04	M	In an enterprise Copilot over a user's documents, how do you handle a document shared with the user mid-conversation? When does it become answerable?
+Q009780	GA05	H	What is your test strategy for proving there is no cross-user data leakage in an enterprise LLM assistant before shipping?
+Q009781	GA05	H	Your Copilot summarises incoming email. An attacker emails a target user with hidden instructions addressed to the model. Walk me through the attack and your defence.
+Q009782	GA05	H	How does your defence against indirect prompt injection change when the Copilot can execute multi-step agentic plans?
+Q009783	GA05	M	What metric would you report to a security review board for prompt-injection defence?
+Q009784	SD01	H	Implement "top-k most frequent search queries" over a large query log, then explain what breaks when the log becomes an unbounded stream across many machines.
+Q009785	SD01	H	How much memory does a Count-Min Sketch need for 1% error at 99.9% confidence, roughly?
+Q009786	SD01	M	How would you dedupe bot traffic before counting top-k queries?
+Q009787	RAG04	M	Walk me through hybrid retrieval: keyword, vector, and reranking. When does each stage earn its cost?
+Q009788	RAG04	M	Why is score-based fusion between BM25 and cosine similarity problematic?
+Q009789	RAG04	H	Where do document ACL filters go in a hybrid retrieval pipeline, and what do they do to recall?
+Q009790	FT05	M	An enterprise customer wants the model to "know our business." Prompting, RAG, or fine-tuning: how do you decide?
+Q009791	FT05	M	A customer insists on fine-tuning for prestige reasons rather than need. What do you do?
+Q009792	RAG03	M	When would you fine-tune an embedding model instead of the LLM?
+Q009793	LLM07	H	How would you evaluate a meeting-summarisation feature before shipping it to a hundred million users?
+Q009794	LLM07	M	Your LLM judge agrees with humans 80% of the time. Is that usable, and for what?
+Q009795	GA04	H	How do you detect quality regressions of an LLM feature post-launch without reading user content?
+Q009796	GA04	H	A Copilot chat feature has a p95 latency budget of 3 seconds to first useful content. Where does the time go, and how do you cut it?
+Q009797	GA01	M	Prompt caching conflicts with per-user personalised system prompts. How do you structure the prompt to keep cache hits?
+Q009798	GA04	M	What would you do differently for a 300 ms autocomplete latency budget (as in a code-completion assistant) compared with a chat feature?
+Q009799	GA03	H	Design an agent that can take actions in a spreadsheet (for example, "insert a pivot table of Q3 sales by region"), covering orchestration, tools, and failure handling.
+Q009800	GA03	M	When do you split an agent into multiple specialised agents versus one agent with more tools?
+Q009801	GA03	M	How do you regression-test an agent when the underlying model version changes?
+Q009802	GA04	H	Estimate the annual serving cost of adding an LLM summary feature for 100 million weekly active users, and explain how you'd cut it by 10x.
+Q009803	DROP	-	unfixable
+Q009804	FT05	M	At what point does fine-tuning your own small model beat paying for a frontier model?
+Q009805	DROP	-	hr
+Q009806	DROP	-	hr
+Q009807	DROP	-	hr
+Q009808	GA05	H	A shipped LLM feature that summarises job applicants for recruiters is accused of working worse for some groups of candidates. How do you establish whether that's true, and what do you do about it?
+Q009809	GA05	H	Your counterfactual test suite shows a small but consistent tone difference on name swaps. Is that ship-blocking, and who decides?
+Q009810	GA05	H	How do you monitor for fairness regressions in production without inspecting customer content?
+Q009811	GA02	H	Two providers register a tool called "search" in an LLM tool registry. How does the registry resolve that, and what name does the model actually see?
+Q009812	GA02	M	In an LLM tool-calling system, where does per-user permission enforcement belong: the tool, a decorator, or the downstream service?
+Q009813	SD05	H	A coding assistant generated a retry helper for calls to a model endpoint: catch any exception, sleep 2^attempt seconds, try up to five times, return None if all fail. It passes the unit tests. Review it as if it were going into a production backend: what is wrong, and what would you change?
+Q009814	SD05	M	Should a retry policy for model-endpoint calls live in every caller, in the SDK client, or in a gateway in front of the model?
+Q009815	SD05	M	How do retries work when a streaming response fails halfway through?
+Q009816	LLM01	H	Mistral 7B shipped with grouped-query attention and sliding-window attention. What does each buy you, and what does each cost?
+Q009817	LLM06	M	Why does KV-cache bandwidth, not FLOPs, dominate decode latency?
+Q009818	LLM02	H	With sliding-window attention, what breaks if you apply the rolling buffer but forget to keep positions consistent (RoPE) across the wrap-around?
+Q009819	CODE01	H	Implement causal multi-head attention in PyTorch, then convert it to grouped-query attention.
+Q009820	CODE01	H	Add a KV cache to causal multi-head attention and write the single-token decode path. Where does RoPE get applied, and why to q and k only?
+Q009821	LLM03	M	Explain how a Mixtral-style sparse mixture-of-experts model works. Why does a model with about 47B parameters run at the cost of a roughly 13B one?
+Q009822	LLM03	H	Why is batched inference harder for MoE than for dense models (expert imbalance within a batch)?
+Q009823	LLM03	M	When would you recommend a dense model over an MoE to a customer self-hosting on limited VRAM?
+Q009824	LLM06	H	Estimate the KV-cache memory for serving Mistral 7B, and design the rolling-buffer cache that sliding-window attention enables.
+Q009825	LLM06	H	How does paged attention interact with a ring-buffer (rolling) KV cache?
+Q009826	LLM06	M	Does Mixtral's KV-cache memory math differ from Mistral 7B's, and why do people assume otherwise?
+Q009827	FT05	M	A customer with 2,000 pages of internal PDFs insists on fine-tuning because "we don't want our data leaving in prompts". How do you respond?
+Q009828	RAG06	M	How do you evaluate the faithfulness of a RAG system's answers cheaply?
+Q009829	FT02	H	What does it take, memory-wise, to fine-tune a 7B model? Compare full fine-tuning, LoRA, and QLoRA.
+Q009830	DL02	M	Why is fp32 master-weight storage kept in mixed-precision training?
+Q009831	LLM04	M	Which batch-size and sequence-length terms drive activation memory in LLM training?
+Q009832	MS04	H	Design an on-prem deployment of an open-weight model for a European bank that cannot send data to any external API.
+Q009833	MS04	H	A bank has 4x A100 80GB in total. What model and quantization do you pick for an on-prem LLM deployment, and how many concurrent users does that support?
+Q009834	MS01	M	How do you handle model updates in an on-prem LLM deployment without regressions?
+Q009835	LLM06	M	Why does continuous batching outperform static batching for LLM serving? What are the tradeoffs?
+Q009836	LLM06	H	How does speculative decoding interact with a continuous-batching scheduler?
+Q009837	LLM06	M	What metric would you alert on to detect KV-cache thrashing in an LLM serving system?
+Q009838	LLM06	H	You need to quantize a model for a customer's hardware. How do you choose a scheme, and how do you prove quality hasn't regressed?
+Q009839	LLM06	M	Why does weight-only quantization speed up decode but barely help prefill?
+Q009840	LLM06	M	When would you serve two precisions of the same model behind a router?
+Q009841	MS04	H	Build a service that takes a user question, enriches it with data from a third-party API, and answers via a chat-model API. How do you structure it?
+Q009842	GA04	M	In an LLM service that enriches questions with a third-party API, what changes if that API rate-limits you at 10 requests per second?
+Q009843	LLM07	M	How would you evaluate whether third-party data enrichment actually improves an LLM service's answers?
+Q009844	GA02	M	How does function calling actually work with an LLM, and how do you make it reliable enough for production agents?
+Q009845	GA02	M	Parallel tool calls: when do they help and what do they break?
+Q009846	GA03	M	How do you regression-test an agent before a model upgrade?
+Q009847	FT01	M	After fine-tuning on a customer's task, target-task accuracy is up but the model got worse at everything else. What happened and what do you do?
+Q009848	GA05	H	Why are safety refusals particularly prone to being fine-tuned away, and what does that imply for customer fine-tuning platforms?
+Q009849	MS01	M	What would you monitor post-deployment for a fine-tuned model?
+Q009850	LLM06	H	Mistral Large 3 is an open-weight sparse MoE with roughly 675B total and 41B active parameters. A customer wants to self-host it on one 8-GPU node. Does it fit, and how would you serve it?
+Q009851	LLM06	H	How does serving a large MoE model change if the customer only has 8x A100 80 GB, which has no FP8 tensor cores?
+Q009852	LLM06	H	How would you detect that quantization has damaged a few rarely routed experts more than the rest of an MoE model?
+Q009853	LLM05	H	When you push LLM context from 8K to hundreds of thousands of tokens, what actually breaks first, and why?
+Q009854	DROP	-	unfixable
+Q009855	LLM06	M	Why does context length turn into a memory question before it turns into a compute question during decode?
+Q009856	LLM01	H	In Multi-head Latent Attention (MLA), why does RoPE complicate the low-rank factorisation, and how is that usually resolved?
+Q009857	LLM01	M	In what regime would plain GQA still be the pragmatic choice over MLA?
+Q009858	LLM06	H	Why would you disaggregate prefill and decode onto separate machines for LLM serving? What does that buy you and what does it cost?
+Q009859	LLM06	M	In a disaggregated prefill/decode serving design, what determines whether the KV-cache transfer becomes the bottleneck?
+Q009860	LLM06	M	How does a shared multi-thousand-token system prompt change the economics in favour of a cache-centric LLM serving design?
+Q009861	LLM06	H	A chat assistant re-sends a long conversation history on every turn. How do you avoid recomputing all of it, and what are the pitfalls?
+Q009862	GA01	M	Where in the prompt do you place retrieved RAG documents if you want both good grounding and prompt-cache reuse?
+Q009863	GA04	M	How would you measure prompt-cache hit rate, and what would a low hit rate tell you?
+Q009864	LLM04	H	When training a trillion-parameter model, attention logits can blow up and destabilise the run. What is going on, and how does something like MuonClip address it?
+Q009865	LLM04	H	Why do orthogonalised optimizer updates (as in Muon) help efficiency but potentially worsen attention-logit instability?
+Q009866	LLM04	M	What would you monitor during a training run to catch attention-logit growth before it becomes a loss spike?
+Q009867	LLM03	H	Why does expert imbalance in an MoE hurt more during training than during single-request inference?
+Q009868	LLM03	M	How does a shared (always-on) expert change the routing dynamics in an MoE?
+Q009869	FT03	H	Why might you deliberately keep the RL recipe for reasoning simple, scaling RL without a process reward model or tree search?
+Q009870	FT03	M	What can go wrong with reward design when you skip a process reward model and reward only final correctness?
+Q009871	FT03	H	Why does long context reduce the need for explicit search at training time in RL for reasoning models?
+Q009872	LLM07	H	How would you evaluate whether an agentic coding model is actually good, beyond a single benchmark number such as SWE-bench?
+Q009873	LLM07	M	How would you detect that a high SWE-bench score is inflated by contamination?
+Q009874	LLM07	M	What would a good long-context agentic benchmark test that needle-in-a-haystack does not?
+Q009875	CODE01	H	Implement single-step decode with a KV cache in PyTorch for causal multi-head attention. Then say what changes for a long-context serving system.
+Q009876	LLM06	M	Why does paged allocation of the KV cache help fragmentation and admission control?
+Q009877	LLM06	M	Where would you slot in a rolling-window KV cache if the model used sliding-window attention?
+Q009878	LLM05	H	How do you take a model trained at, say, 8K-32K context and make it work at 128K or more?
+Q009879	LLM02	H	Why does high-frequency RoPE content need gentler scaling than low-frequency content when extending context length?
+Q009880	LLM07	H	How would you construct an eval that a needle-in-a-haystack-only model would fail?
+Q009881	RAG05	M	For a long-context assistant, when is a 1M-token context window the right tool, and when should you use retrieval (RAG) instead?
+Q009882	RAG05	M	How would prefix caching change the cost calculus for a long shared context reused across many queries?
+Q009883	RAG05	H	What retrieval failure would long context mask, and is masking it good or bad?
+Q009884	LLM06	M	Why is decode latency dominated by memory bandwidth rather than compute, and what does that imply for how you optimise a serving system?
+Q009885	DROP	-	dup
+Q009886	LLM06	M	At what batch size does LLM decode start to become compute-bound again?
+Q009887	LLM03	H	Why hybridise linear attention and full attention layers (for example, full attention in roughly one layer in four) instead of going all-linear or all-full, and what does it change about serving a 1M-token context?
+Q009888	LLM07	H	How would you build an eval that separates a model with real long-context retrieval from one that merely compresses well?
+Q009889	LLM06	H	What breaks in a paged-attention cache manager when three quarters of the layers keep no per-token KV?
+Q009890	DROP	-	dup
+Q009891	LLM06	H	How does the picture for serving a 70B-parameter model change on a Blackwell-class GPU with FP4 support?
+Q009892	LLM06	H	What does the block-table indirection in paged attention cost in the attention kernel?
+Q009893	LLM06	M	When would you evict versus offload KV-cache blocks to host memory?
+Q009894	LLM06	M	What does TensorRT / TensorRT-LLM actually do to a model to make it faster, and when will it not help?
+Q009895	LLM06	M	How would you verify a fused inference engine is numerically equivalent enough to the source model?
+Q009896	LLM06	M	What is your process when a TensorRT engine is slower than the PyTorch baseline?
+Q009897	LLM06	M	Compare FP8, INT8, and INT4 quantization for LLM inference. How do you decide, and how do you validate?
+Q009898	LLM06	M	Why is the KV cache often quantized separately from weights?
+Q009899	LLM06	M	When would you accept the cost of quantization-aware training over post-training quantization?
+Q009900	LLM06	M	Explain continuous (in-flight) batching. Why does it beat static batching, and what new problems does it create?
+Q009901	LLM06	H	How would you set the chunked-prefill chunk size?
+Q009902	LLM06	M	What metrics would tell you decode steps are being starved in a continuous-batching LLM server?
+Q009903	LLM06	H	Here's a CUDA kernel that's 10x slower than expected. Without running it, what are the usual suspects, and how do you confirm each?
+Q009904	LLM06	H	A GPU profiler says a kernel hits 85% memory throughput and 20% compute. What class of fixes remains?
+Q009905	LLM06	H	When does lowering occupancy improve GPU kernel performance?
+Q009906	LLM06	H	When is a workload compute-bound vs memory-bound on a GPU? Do the roofline math for transformer prefill vs decode.
+Q009907	LLM06	H	Where does attention (as opposed to the MLP GEMMs) sit on the roofline as context grows?
+Q009908	LLM06	H	How does FP8 move the roofline ridge point?
+Q009909	LLM06	H	Design the parallelism strategy for serving a 405B-parameter dense model. Tensor, pipeline, and expert parallelism: what goes where and why?
+Q009910	LLM06	H	How do NVLink bandwidth and InfiniBand bandwidth change the parallelism strategy for serving a 405B dense model if it moves to a Blackwell NVL72-class rack?
+Q009911	LLM06	H	How does the parallelism strategy for serving change for a 400B MoE with about 30B active parameters?
+Q009912	DL02	M	Why did BF16 largely replace FP16 with loss scaling for training?
+Q009913	DL02	M	A model runs fine in FP32 but produces garbage after conversion to lower precision. If the same symptom appears only for some prompts, what does that tell you?
+Q009914	LLM06	M	When implementing a block manager for a paged KV cache, how do you pick the block size? What do 1-token versus 128-token blocks trade?
+Q009915	LLM06	H	How would you add prefix caching across requests (hash-based block reuse) to a paged KV-cache block manager?
+Q009916	LLM06	M	A customer insists quality dropped after quantization but their eval suite shows no change. What now?
+Q009917	DROP	-	hr
+Q009918	LLM05	M	Explain speculative decoding. Why does it speed decode up, when does it not, and how is output quality preserved?
+Q009919	LLM05	M	How do you choose k in speculative decoding, and what happens to acceptance as k grows?
+Q009920	LLM06	H	How does speculative decoding interact with continuous batching in a real serving engine?
+Q009921	LLM06	M	Blackwell-class GPUs run NVFP4 natively. How does it differ from INT4 weight-only quantization, and when would you serve a model in it?

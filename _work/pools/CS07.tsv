@@ -1,0 +1,604 @@
+Q001941	E	Explain the difference between Python 2 and Python 3.
+Q001942	M	How does Python manage memory?
+Q001943	E	Discuss the difference between a list, a tuple, and a set in Python.
+Q001944	E	Describe how a dictionary works in Python. What are keys and values?
+Q001945	E	What is list comprehension and give an example of its use?
+Q001946	M	Explain the concept of generators in Python. How do they differ from list comprehensions?
+Q001947	E	Discuss the usage of *args and **kwargs in function definitions.
+Q001948	M	How does Python's garbage collection work?
+Q001949	M	What are decorators, and can you provide an example of when you'd use one?
+Q004458	E	Implement an execution-time decorator in Python.
+Q004460	E	Define a typed configuration object in Python.
+Q004461	E	When should you use a dataclass, function, class, or abstract base class in Python?
+Q004462	E	What is wrong with mutable default arguments in Python?
+Q004463	E	Explain shallow versus deep copies using an ML configuration as an example.
+Q004393	E	Explain time and space complexity.
+Q005497	M	How does a random number generator work, e.g. the rand() function in Python?
+Q006230	M	How does Python memory management work, and how do you troubleshoot out-of-memory (OOM) problems in AI applications?
+Q006233	M	How do you locate memory growth and event-loop blocking in a Python AI service?
+Q011891	M	Write a streaming SSE/JSON parser that handles arbitrary chunk boundaries.
+Q012641	E	Define tuples and lists in Python. What are the major differences between them?
+Q000142	M	How can Python provide flexibility similar to method overloading, given that it does not support traditional method overloading?
+Q000150	M	Does Python support constructor overloading?
+Q000152	M	What does the 'del' statement actually do in Python?
+Q000154	M	Why should __del__() not be used for critical cleanup in Python?
+Q000155	M	When should you use __del__() in Python?
+Q000156	E	What is Python's destructor-like method?
+Q000157	M	Does 'del obj' directly call __del__() in Python?
+Q000167	E	Why is 'self' needed in Python classes?
+Q000185	E	What is the difference between a shallow copy and a deep copy?
+Q000460	M	Can we override static methods in Java? What about the main method?
+Q000462	M	What is the difference between a shallow copy and a deep copy?
+Q000474	M	What is a virtual function in C++? Why does a base class need a virtual destructor?
+Q000475	E	What is the difference between pass by value and pass by reference?
+Q000476	M	How does exception handling work? What are the best practices?
+Q000477	H	What is a vtable? What is the cost of polymorphism?
+Q000506	E	Array vs linked list: when does each win?
+Q000507	E	What are the time complexities of the common sorting algorithms?
+Q000508	E	What is a stable sort and why does it matter?
+Q000509	M	Quicksort vs mergesort: which would you choose and why?
+Q000510	E	What are the requirements for binary search, and why is it O(log n)?
+Q000511	M	How does a hash table work? How are collisions handled?
+Q000512	M	What is the difference between a hash map and a tree map?
+Q000513	E	Stack vs queue: what are real use cases for each?
+Q000516	E	BFS vs DFS: when would you use which?
+Q000517	M	What is topological sorting and where is it used?
+Q000518	M	What is the difference between Dijkstra, BFS and Bellman-Ford?
+Q000519	M	Kruskal vs Prim for minimum spanning trees: how do they differ?
+Q000520	M	What is Union-Find (DSU) and why is it so fast?
+Q000521	E	Recursion vs iteration: what are the trade-offs?
+Q000522	M	What is backtracking?
+Q000523	M	What is the difference between dynamic programming, greedy algorithms and divide and conquer?
+Q000525	M	What is a heap? Heap vs BST for priority queues?
+Q000526	H	Why is building a heap O(n) when n inserts would take O(n log n)?
+Q000527	M	What is a trie? When do you use one?
+Q000528	M	What is a sliding window and when does it apply?
+Q000530	M	What is the difference between pseudo-polynomial and polynomial complexity?
+Q000531	M	What is the difference between time complexity and the actual runtime you would measure?
+Q000677	E	How do computer programs run?
+Q000679	M	How does garbage collection work?
+Q000682	M	How do C++, Java, and Python programs run (compiled versus interpreted)?
+Q000793	E	Explain the Java Collections Framework.
+Q000836	M	What is string interning?
+Q000839	E	What are the main differences between Java and C++?
+Q000840	E	What is the difference between HashMap and Hashtable in Java?
+Q000947	E	What is Big-O notation?
+Q000948	E	Explain the difference between Big-O, Big-Theta, and Big-Omega notations.
+Q000949	E	Describe the role of constants and lower-order terms in Big-O analysis.
+Q000950	M	Give examples of how amortized analysis can provide a more balanced complexity measure.
+Q000951	M	Describe how the coefficients of higher-order terms affect Big-O notation in practical scenarios.
+Q000952	H	Explain how probabilistic algorithms can have a different Big-O notation compared to deterministic ones.
+Q000953	E	Discuss the Big-O space complexity of using linked lists.
+Q000954	M	Compare the Big-O complexities of various sorting algorithms.
+Q000955	E	Evaluate the Big-O time complexity of binary search.
+Q000957	M	Discuss the Big-O complexities of tree operations, including binary search trees and AVL trees.
+Q000958	M	Discuss the time and space complexities of various heap operations.
+Q000959	E	What is a bitwise operation?
+Q000960	E	Why use bitwise operations?
+Q000961	E	What are some real-world applications of bitwise operators?
+Q000962	E	What is a bitwise AND operation, and how can it be used to check if a number is odd or even?
+Q000963	E	Explain the bitwise OR operation with an example.
+Q000964	E	How does the bitwise XOR operation work, and what is it commonly used for?
+Q000965	M	What is bit masking, and how would you create a mask to isolate the nth bit?
+Q000966	E	Explain how left and right shifts work in bit manipulation.
+Q000967	M	Explain how to perform left and right bit rotations.
+Q001111	E	What are the main features of C++?
+Q001112	E	Explain the difference between C and C++.
+Q001114	E	What are the access specifiers in C++ and what do they do?
+Q001115	E	Explain the concept of namespaces in C++.
+Q001116	E	What is the difference between 'struct' and 'class' in C++?
+Q001117	E	What is a constructor and what are its types in C++?
+Q001118	E	Explain the concept of destructors in C++.
+Q001119	E	What is function overloading in C++?
+Q001120	E	What is operator overloading in C++?
+Q001121	E	What is dynamic memory allocation in C++?
+Q001122	M	Explain the difference between 'new' and 'malloc()'.
+Q001123	M	What is a memory leak and how can it be prevented?
+Q001124	E	What is a dangling pointer?
+Q001125	M	Explain the concept of smart pointers in C++.
+Q001492	E	Explain the main idea behind Java and the concept of Write Once, Run Anywhere.
+Q001495	E	What are the main features of Java?
+Q001496	E	Can you list some non-object-oriented features of Java?
+Q001497	E	Describe the difference between JDK, JRE, and JVM.
+Q001498	M	What is the role of the ClassLoader in Java?
+Q001499	E	What is the difference between a path and a classpath in Java?
+Q001500	E	Can you explain the difference between an int and an Integer in Java?
+Q001501	E	What are wrapper classes in Java?
+Q001502	E	What does it mean that Java is a statically typed language?
+Q001503	M	Is Java a pure object-oriented language? Why or why not?
+Q001504	E	What is bytecode in the context of Java?
+Q001505	M	How does garbage collection work in Java?
+Q001506	E	What is the purpose of the 'final' keyword in Java?
+Q001507	M	Can we overload or override static methods in Java?
+Q001508	E	What is the significance of the 'this' keyword in Java?
+Q001926	E	What are the key features of Python?
+Q001927	E	How is Python executed?
+Q001928	E	What is PEP 8 and why is it important?
+Q001929	M	How are memory allocation and garbage collection handled in Python?
+Q001930	E	What are the built-in data types in Python?
+Q001931	E	Explain the difference between a mutable and an immutable object in Python.
+Q001932	E	How do you handle exceptions in Python?
+Q001933	E	What is the difference between a list and a tuple in Python?
+Q001934	E	How do you create a dictionary in Python?
+Q001935	E	What is the difference between the == and is operators in Python?
+Q001936	E	How does a Python function work?
+Q001937	E	What is a lambda function in Python, and where would you use it?
+Q001938	E	Explain *args and **kwargs in Python.
+Q001939	M	What are decorators in Python?
+Q001940	E	How can you create a module in Python?
+Q002685	E	What is the difference between generics and raw types in Java?
+Q002686	M	When would you use reflection in Java and what are its disadvantages?
+Q002687	M	Explain the different types of references in Java.
+Q002688	E	What are the benefits of using annotations in Java?
+Q002692	E	What is the difference between ArrayList and LinkedList?
+Q002693	M	When would you use TreeSet over HashSet?
+Q002694	M	How does HashMap handle collisions?
+Q002695	E	What is the difference between HashMap and TreeMap?
+Q002701	M	How do you handle exceptions in constructors?
+Q002702	M	When should you create custom checked vs unchecked exceptions?
+Q002703	H	How do you design exception hierarchies effectively?
+Q002704	M	What information should custom exceptions contain?
+Q002706	M	What are the performance considerations for custom exceptions?
+Q002712	E	What is the difference between checked and unchecked exceptions in Java?
+Q002713	M	Why does Java have both Error and Exception classes?
+Q002714	M	Can you throw an exception from a finally block?
+Q002716	M	How do you create effective custom exceptions?
+Q002717	E	What is the difference between final, finally, and finalize in Java?
+Q002718	M	Can you have a final class with non-final methods?
+Q002719	E	What happens if you do not initialize a final variable?
+Q002720	M	Can final methods be overloaded?
+Q002721	M	Why are String and wrapper classes final in Java?
+Q002722	M	What is garbage collection and how does it work in Java?
+Q002723	M	Explain the difference between minor and major garbage collection.
+Q002724	M	What are GC roots and why are they important?
+Q002725	H	How can you tune garbage collection performance in Java?
+Q002726	M	What causes OutOfMemoryError in Java and how can you prevent it?
+Q002738	E	What are functional interfaces and why are they important?
+Q002741	E	What is the enhanced for-loop in Java?
+Q002742	E	What are the different ways to iterate over a collection in Java?
+Q002743	M	When would you use an Iterator instead of an enhanced for-loop?
+Q002744	E	What is the difference between Iterator and ListIterator?
+Q002745	M	What is fail-fast behavior in iterators?
+Q002746	M	Which iteration method is most efficient for different collection types?
+Q002747	E	What are lambda expressions in Java?
+Q002749	E	What are method references in Java?
+Q002750	E	What are default methods in Java interfaces?
+Q002751	M	What are the advantages of lambda expressions over anonymous classes?
+Q002752	M	Explain the difference between map() and flatMap() in Java streams.
+Q002753	M	When should you use Optional instead of null?
+Q002755	M	Explain the Java Stream API processing model.
+Q002756	E	What is the difference between JDK, JRE, and JVM?
+Q002757	E	How does Java achieve platform independence?
+Q002759	M	What happens when you execute 'java MyClass'?
+Q002760	E	Can you run Java applications without installing the JDK?
+Q002761	E	What is bytecode and why is it important?
+Q002763	E	What is the List interface in Java?
+Q002765	M	When would you use Vector instead of ArrayList?
+Q002766	M	How does ArrayList handle capacity management?
+Q002768	M	What happens when you modify a list during iteration?
+Q002769	E	How do you convert between different List implementations?
+Q002770	E	What is the difference between capacity and size in ArrayList?
+Q002771	E	What is the Map interface in Java?
+Q002772	M	What is the difference between HashMap, LinkedHashMap, and TreeMap?
+Q002773	M	What is the significance of load factor in HashMap?
+Q002774	M	Can you use mutable objects as keys in HashMap?
+Q002775	E	How do you iterate through a Map efficiently?
+Q002776	E	Explain the difference between stack and heap memory in Java.
+Q002777	E	What happens to local variables when a method finishes execution?
+Q002778	M	How does Java prevent memory leaks compared to C/C++?
+Q002779	M	What is the difference between shallow and deep copying in terms of memory?
+Q002780	M	How can you monitor and optimize Java memory usage?
+Q002783	M	What are covariant return types in method overriding?
+Q002784	M	What happens if a method throws exceptions in overriding?
+Q002801	M	What are the rules for method overriding in Java?
+Q002803	E	What is the Queue interface in Java?
+Q002804	E	What is the difference between the Queue and Deque interfaces?
+Q002805	M	How does PriorityQueue maintain order?
+Q002806	M	Why is ArrayDeque preferred over LinkedList for stack/queue operations?
+Q002807	E	Can PriorityQueue contain duplicate elements?
+Q002814	E	What is the Set interface in Java?
+Q002815	E	What is the difference between HashSet, LinkedHashSet, and TreeSet?
+Q002816	M	How does HashSet ensure uniqueness?
+Q002817	E	Can you store null values in different Set implementations?
+Q002818	E	How do you convert between different Set implementations?
+Q002819	E	How do you implement set operations like union and intersection?
+Q002820	E	What is the static keyword and how does it work in Java?
+Q002823	M	Explain the difference between static and instance initialization blocks.
+Q002824	M	What are the use cases for static methods and when should you avoid them?
+Q002826	M	Why are Strings immutable in Java and what are the benefits?
+Q002827	E	When should you use StringBuilder vs StringBuffer?
+Q002828	M	What is the String Pool and how does intern() work?
+Q002829	E	Explain the difference between equals() and == for Strings.
+Q002830	M	How has the String implementation changed in recent Java versions?
+Q002831	E	What is the difference between the this and super keywords?
+Q002832	M	Can you use this() and super() in the same constructor?
+Q002834	M	How do you access a grandparent method in Java?
+Q002836	E	When should you use the this keyword explicitly?
+Q002837	E	What is the difference between throw and throws in Java?
+Q002838	E	Can a method have multiple throw statements?
+Q002839	E	What happens if you do not handle a checked exception that is thrown?
+Q002840	M	Can overriding methods change the throws clause?
+Q002841	M	How do you handle exceptions in lambda expressions?
+Q002842	M	What is the difference between try-catch-finally and try-with-resources?
+Q002843	M	Can a finally block prevent exception propagation?
+Q002844	M	What happens if both try and finally blocks throw exceptions?
+Q002845	E	Can you have a try block without catch or finally?
+Q002846	M	How does multi-catch work and what are its limitations?
+Q002848	E	What are wrapper classes and why do we need them?
+Q002849	E	Explain autoboxing and unboxing with examples.
+Q002850	M	What is the Integer cache and how does it work?
+Q002851	M	What are the performance implications of using wrapper classes?
+Q002852	M	How do you safely handle null wrapper values?
+Q002853	E	What utility methods do wrapper classes provide?
+Q002898	M	How do garbage collectors handle circular references?
+Q003506	M	Why is there only pass-by-value in Java?
+Q003665	M	Why must you override both equals() and hashCode() when using a custom object as a key?
+Q003666	M	How does Java's LinkedHashMap implement an LRU cache?
+Q003670	M	Why does a skip list reduce lookup from O(n) to O(log n) on average?
+Q003840	H	What can cause OOM in a JVM application and how can it be prevented? How do you troubleshoot and resolve memory leaks?
+Q003842	H	When a Java method creates a list of objects, how is memory allocated? When can it cause a stack overflow, and when OOM? What causes OOM and how can it be avoided?
+Q003858	M	What is type erasure in Java generics? What is the difference at runtime between List<String> and List<Integer>?
+Q003859	M	What is the difference between JDK dynamic proxy and CGLIB dynamic proxy?
+Q003860	M	Should monetary amounts be stored as a long in the smallest unit or as a BigDecimal?
+Q003848	M	What are the advantages of AOT compilation, and why is it not used everywhere?
+Q003849	E	What is the difference between continue, break and return?
+Q003850	E	What is the difference between JDK and JRE?
+Q003851	M	Why must hashCode() be overridden when equals() is overridden?
+Q003852	E	What is the difference between String#equals() and Object#equals()?
+Q003853	E	What is the difference between Exception and Error in Java?
+Q003854	M	Do you prefer checked or unchecked exceptions?
+Q003855	E	How do you use try-with-resources instead of try-catch-finally?
+Q003871	M	What is the difference between fail-fast and fail-safe?
+Q003861	M	What is the difference between ArrayBlockingQueue and LinkedBlockingQueue?
+Q003862	M	What is the difference between ArrayBlockingQueue and ConcurrentLinkedQueue?
+Q003863	E	Can an ArrayList hold null values?
+Q003864	E	What is the difference between ArrayList and LinkedList?
+Q003865	M	What is the role of the Delayed interface in DelayQueue?
+Q003866	M	What is the difference between DelayQueue and Timer/TimerTask?
+Q003867	M	Why can LinkedList not implement the RandomAccess interface?
+Q003868	M	Why can ConcurrentHashMap not have null keys or values?
+Q003869	M	How can LinkedHashMap be used to implement an LRU cache?
+Q003870	E	What is the difference between LinkedHashMap and HashMap?
+Q003879	M	What is the difference between the Java memory areas and the Java Memory Model (JMM)?
+Q003884	M	What are the responsibilities of Buffer, Channel and Selector in Java NIO?
+Q003902	E	What is the difference between Minor GC, Major GC and Full GC?
+Q003903	M	What are common JVM parameters? How do you retain GC logs and OOM dumps in production?
+Q003904	H	How do you troubleshoot high CPU usage, frequent Full GC and memory leaks?
+Q003886	M	Is direct memory part of the JVM runtime data areas? Why can it also cause OOM?
+Q003887	H	How do you choose between pointer bumping and free list allocation? When objects are allocated concurrently, what problems do CAS and TLAB each solve?
+Q003888	M	When writing a custom class loader, should you override findClass() or loadClass()?
+Q003890	M	How do the goals and suitable scenarios of Serial, Parallel, CMS, G1 and ZGC differ?
+Q003891	H	How does G1 control pause times using regions, collection value prediction and mixed GC?
+Q003892	M	What situations can trigger a Full GC? What data should you check first when Full GC is frequent?
+Q003893	M	Why do server applications often set -Xms and -Xmx to the same value?
+Q003894	M	How do you configure GC logs in JDK 8 versus JDK 9 and later?
+Q003895	M	How do you automatically generate a heap dump on OOM, and why should you confirm storage space in advance?
+Q003896	M	How do you use jstat to observe GC frequency, region capacities and object promotion?
+Q003897	M	What is the difference between a heap dump and a thread dump? Which one does kill -3 produce?
+Q003898	H	When analyzing a heap dump with MAT, what are the Dominator Tree and the reference chain to GC roots used for?
+Q003900	H	After a Java process hits OOM, how do you determine whether the problem is in the heap, metaspace, direct memory or native memory?
+Q003901	M	When should a heap dump be generated? What are the risks of running jmap -dump directly in production?
+Q003907	M	Why is Java 8 important? What problems do lambdas and streams each solve?
+Q003908	M	What is the difference between a Java Record and a regular JavaBean?
+Q003909	E	What is the difference between switch expressions and traditional switch statements?
+Q003928	E	Can a plain JAR also be run with java -jar?
+Q005663	E	Why use duck typing?
+Q006247	M	What methods can you think of to improve the memory usage and performance of serialization?
+Q006273	M	Are "inline virtual" member functions ever actually inlined in C++?
+Q006274	M	Is it legal for a member function to call "delete this" in C++?
+Q006280	M	Can a virtual function be an inline function in C++?
+Q006360	E	What are local and global variables and what are their differences?
+Q012139	H	Design and implement a simple Java garbage collector.
+Q012473	M	How does the Timsort algorithm work?
+Q012539	M	How are list and dict implemented in Python?
+Q009397	M	Where does a piece-table text buffer degrade, for example when long editing sessions fragment the pieces?
+Q009398	M	In an editor text buffer, how would you store line-start offsets to keep line lookup O(log n) after edits?
+Q009448	M	When does a trie beat binary search for CIDR-based IP allow-list lookups?
+D01303	E	What is the difference between a primitive type and its wrapper type, and what is autoboxing cost?
+D01304	M	Why are strings immutable in Java and what benefits does this provide (hashing, thread safety, string pool)?
+D01305	M	How do String, StringBuilder and StringBuffer differ in mutability and thread safety?
+D01306	M	What is the string intern pool and how many objects does new String("abc") create?
+D01307	M	Is Java pass-by-value or pass-by-reference? Explain with an example involving object references.
+D01308	M	What is the contract between equals() and hashCode(), and what breaks if only one is overridden?
+D01309	M	What is the difference between shallow copy and deep copy, and what are the pitfalls of clone()?
+D01310	M	What do final and static mean on variables, methods and classes?
+D01311	M	What is reflection, what is it used for, and what are its costs and risks?
+D01312	M	What is the difference between checked and unchecked exceptions and when should each be used?
+D01313	M	How do generics work with type erasure and what limitations does that bring?
+D01314	M	What is a bounded wildcard in generics and what does PECS (producer extends, consumer super) mean?
+D01315	M	How does serialization work, what does the transient keyword do and what are the security concerns?
+D01316	M	Compare blocking stream IO with NIO using channels, buffers and selectors.
+D01317	M	What are memory-mapped files and when are they faster than regular reads?
+D01318	M	What is the decorator pattern's role in the IO stream class hierarchy?
+D01319	M	Why does character encoding matter when converting between bytes and characters, and what causes garbled text?
+D01320	E	What are the memory regions of the Java virtual machine (heap, stack, method area, PC register, direct memory)?
+D01321	M	What can cause StackOverflowError versus OutOfMemoryError, and how would you debug each?
+D01322	M	How does the garbage collector decide an object is dead: reference counting versus reachability analysis?
+D01323	M	Explain strong, soft, weak and phantom references and a use case for each.
+D01324	M	Compare mark-sweep, mark-compact, copying and generational garbage collection algorithms.
+D01325	M	Why does generational GC split the heap into young and old generations and how does object promotion work?
+D01326	M	What are the differences between a minor GC and a full GC, and what triggers a full GC?
+D01327	M	Compare throughput-oriented collectors with low-pause collectors such as CMS and G1.
+D01328	M	What does stop-the-world mean, and how do concurrent collectors reduce pause times?
+D01329	H	An application suffers long GC pauses and frequent full GCs. How would you investigate and tune it?
+D01330	M	What are the phases of class loading: loading, linking, initialization?
+D01331	M	What is the parent delegation model of class loaders and why does it exist?
+D01332	M	When would you write a custom class loader?
+D01333	M	Describe the internal structure of ArrayList and how its growth strategy affects performance.
+D01334	M	Compare ArrayList and LinkedList across random access, insertion, memory overhead and cache behavior.
+D01335	M	Why is Vector considered obsolete and what does CopyOnWriteArrayList trade for lock-free reads?
+D01336	H	Explain how a hash map is implemented: buckets, hash function, collision resolution, resizing and treeification of long chains.
+D01337	M	Why must a hash map capacity be a power of two in some implementations, and how does it compute the bucket index?
+D01338	M	What can go wrong with a hash map in a multithreaded environment, such as lost updates or infinite loops during resize?
+D01339	M	How does a concurrent hash map achieve thread safety with segment locks or CAS plus per-bin locking?
+D01340	M	How does LinkedHashMap preserve order and how can it implement an LRU cache?
+D01341	M	What is a weak hash map and when would you use one?
+D01342	M	What is the fail-fast behavior of collection iterators and how does it differ from fail-safe iteration?
+D01343	M	Compare separate chaining with linear probing in hash tables: load factor, clustering and deletion.
+D01344	M	Why does a red-black tree guarantee logarithmic height and how does it differ from an AVL tree?
+D01345	M	Compare binary search trees, balanced trees and hash tables as symbol table implementations.
+D01346	M	What is amortized analysis and how does it justify the O(1) append cost of a dynamic array?
+D01347	M	Why can an algorithm with a better big-O be slower in practice (large constants, cache misses)?
+D01348	M	Compare stable and unstable sorting, in-place and out-of-place sorting, and where each matters.
+D01349	M	Why is quicksort often faster than merge sort in practice despite a worse worst case, and how is the worst case avoided?
+D01350	M	Which sorting algorithm would you choose for nearly sorted data, for linked lists, or for data too large for memory?
+D01351	M	What is the difference between compiled and interpreted language implementations, and where does a VM-based runtime fit?
+D01352	M	What does a just-in-time compiler do and how does it differ from ahead-of-time compilation?
+D01353	M	What is a Python generator and how does it differ from a list in memory use and laziness?
+D01354	M	What is the difference between a list and a tuple in Python, and why can only some be used as dictionary keys?
+D01355	M	How are Python lists and dictionaries implemented internally, and what are the complexities of their operations?
+D01356	M	What is a decorator in Python and how does it work with closures?
+D01357	M	How does Python manage memory: reference counting, cyclic garbage collection and generations?
+D01358	M	What is the difference between a shallow and a deep copy in Python? What happens when mutable objects are nested?
+D01359	M	What is the difference between == and is in Python, and why can small integers behave unexpectedly?
+D01360	M	What is a lambda expression in Python and what are its limitations?
+D01361	M	Why is a mutable default argument in a Python function a bug waiting to happen?
+D01362	E	What does the const keyword mean in C++ for variables, pointers, member functions and parameters?
+D01363	M	What is the difference between a pointer to const, a const pointer and a const pointer to const?
+D01364	M	What are the different uses of the static keyword in C and C++ (storage duration, linkage and class members)?
+D01365	M	What is the this pointer and how is it passed to non-static member functions?
+D01366	M	How does inline differ from a macro, and when does the compiler ignore an inline request?
+D01367	M	What does volatile tell the compiler and why is it not a substitute for atomics or synchronization?
+D01368	M	What is the difference between assert and static_assert, and why shouldn't assert contain side effects?
+D01369	M	What does sizeof return for structs, and how do alignment and padding affect struct layout?
+D01370	M	How does reordering struct members change memory usage, and what is the effect of pack pragmas?
+D01371	M	What are bit fields and what portability problems do they have?
+D01372	M	What does extern "C" do and why is it needed when mixing C and C++ code?
+D01373	M	Explain name mangling and why C++ needs it for function overloading.
+D01374	M	What is the difference between struct and class in C++, and between a C struct and a C++ struct?
+D01375	M	What is a union and how does it differ from a struct in memory layout? What is type punning?
+D01376	M	How can you implement object-oriented behavior such as classes and virtual dispatch in plain C?
+D01377	M	What does the explicit keyword prevent for constructors and conversion operators?
+D01378	M	What are friend functions and classes and how do they affect encapsulation?
+D01379	M	What is a scoped enum (enum class) and what advantages does it have over a plain enum?
+D01380	M	What does decltype do and how does it differ from auto?
+D01381	E	What is the difference between a pointer and a reference in C++?
+D01382	M	What are lvalue references, rvalue references and forwarding references? What problem does move semantics solve?
+D01383	M	When is std::move useful and what is the state of a moved-from object?
+D01384	M	What is perfect forwarding and why is std::forward needed?
+D01385	M	What are the dangers of preprocessor macros compared with inline functions, constexpr and templates?
+D01386	M	Why is a constructor member initializer list preferred over assignment in the constructor body, and when is it required?
+D01387	M	In what order are class members initialized, and how does this interact with the initializer list?
+D01388	M	What does std::initializer_list enable and how does brace initialization prevent narrowing conversions?
+D01389	E	How do virtual functions work internally? Explain the vptr and the vtable.
+D01390	M	When is the vptr set during construction, and why is calling a virtual function from a constructor a bad idea?
+D01391	M	Why should a base class intended for polymorphic deletion have a virtual destructor?
+D01392	M	What is a pure virtual function and an abstract class? Can a pure virtual function have a body?
+D01393	M	Can constructors or static member functions be virtual, and can templates be virtual? Explain each.
+D01394	M	What is the diamond problem in multiple inheritance and how does virtual inheritance solve it?
+D01395	M	How does virtual inheritance change object layout and the cost of accessing base members?
+D01396	M	What is object slicing and how can you avoid it?
+D01397	M	What is the difference between overloading, overriding and hiding in C++ inheritance?
+D01398	M	What are an abstract class, an interface class and an aggregate class in C++?
+D01399	M	What is the rule of three/five/zero, and why does a class owning raw resources need all of them?
+D01400	M	Compare malloc/free with new/delete: constructors, type safety, failure behavior and mixing them.
+D01401	M	What is placement new and when is it used?
+D01402	M	What happens if you call new[] but release with delete (not delete[])?
+D01403	M	What is a memory leak, dangling pointer, wild pointer and double free? How would you detect each?
+D01404	M	Is delete this legal? Under what conditions is it safe?
+D01405	E	What is RAII and how does it provide exception-safe resource management?
+D01406	E	Compare unique_ptr, shared_ptr and weak_ptr, including ownership semantics and overhead.
+D01407	M	How does shared_ptr implement reference counting, and is it thread-safe?
+D01408	M	How can shared_ptr cause a memory leak through cycles and how does weak_ptr fix it?
+D01409	M	Why is make_shared preferred to constructing shared_ptr from new, and what is its downside?
+D01410	M	Why was auto_ptr deprecated and what problem does unique_ptr solve differently?
+D01411	M	When should you pass a smart pointer by value, by reference or pass a raw pointer to a function?
+D01412	M	What are static_cast, dynamic_cast, const_cast and reinterpret_cast, and when is each safe?
+D01413	M	What is RTTI and how does dynamic_cast use it at runtime, and what is its cost?
+D01414	M	How does exception handling interact with destructors and why must destructors not throw?
+D01415	M	What does noexcept mean and why does it matter for move operations in containers?
+D01416	M	Compare std::vector, std::list, std::deque and std::array in memory layout, iterator invalidation and use cases.
+D01417	M	How does std::vector grow, and which operations invalidate iterators and references?
+D01418	M	What data structures underlie std::map and std::unordered_map, and how do their complexities and ordering differ?
+D01419	M	When would you use std::map versus std::unordered_map, and what do you need for a custom key type?
+D01420	M	How does std::priority_queue work and which heap operations does it use?
+D01421	M	How do templates differ from generics in Java, and what is code bloat?
+D01422	M	What is the erase-remove idiom and why is it needed for sequence containers?
+D01423	M	Explain how the compilation model of C++ (headers, translation units, one definition rule) leads to linker errors.
+D01424	M	What does the C++ memory model say about data races and how do std::atomic and memory orders help?
+D01425	H	A C++ service crashes intermittently with a segmentation fault in production. How do you find the root cause from a core dump?
+D01614	M	How does JavaScript closure work and how does it relate to lexical scoping?
+D01756	E	What is the difference between an array and a linked list in terms of access, insertion and memory layout?
+D01757	M	How does a dynamic array such as ArrayList grow, and why is append amortized O(1)?
+D01758	M	Why can an array outperform a linked list in practice even when asymptotic costs look similar?
+D01759	M	Compare singly linked, doubly linked and circular linked lists and their use cases.
+D01760	E	What are the differences between a stack and a queue and where is each used?
+D01761	M	How would you implement a queue with two stacks and what is its amortized cost?
+D01762	M	How is a circular queue implemented with an array, and how do you distinguish full from empty?
+D01763	M	Why does the call stack use a stack structure, and what causes a stack overflow?
+D01764	E	What is a hash table and how does it achieve average O(1) lookup?
+D01765	M	Compare chaining and open addressing for collision resolution.
+D01766	M	What is the load factor of a hash table and why does the table resize when it is exceeded?
+D01767	M	What makes a good hash function and what happens to lookup cost if many keys collide?
+D01768	H	Explain the cost of rehashing a table during resizing and how incremental rehashing can avoid latency spikes.
+D01769	M	Why must keys of a hash map implement both equals and hashCode consistently?
+D01770	M	How does Java HashMap handle collisions, and why did it start converting long buckets into balanced trees?
+D01771	M	What are the differences between HashMap, Hashtable and ConcurrentHashMap?
+D01772	E	What is a binary search tree and what are its time complexities?
+D01773	M	Why does a BST degrade to O(n) and how do self-balancing trees such as AVL or red-black trees fix this?
+D01774	M	How do you delete a node with two children from a BST?
+D01775	E	What are the pre-order, in-order, post-order and level-order traversals, and what does in-order give on a BST?
+D01776	M	What is the difference between a full, complete and perfect binary tree?
+D01777	E	What is a heap, and how does it support insert and extract-min efficiently?
+D01778	M	Why can a heap be stored in an array, and how are parent and child indices computed?
+D01779	M	What is the time complexity of building a heap from n elements, and why is it O(n) rather than O(n log n)?
+D01780	M	When would you use a priority queue and how does a heap implement one?
+D01781	E	What is a trie and what problems is it suited for?
+D01782	M	Compare a trie with a hash table for storing a dictionary of strings, including prefix queries and memory usage.
+D01783	M	What is the difference between DFS and BFS, and which data structure underlies each?
+D01784	M	How does Dijkstra's algorithm work and why does it fail with negative edge weights?
+D01785	M	What is the role of the priority queue in Dijkstra's algorithm and how does it affect time complexity?
+D01786	M	What is dynamic programming and how does it differ from plain recursion and from divide and conquer?
+D01787	M	What is the difference between memoization (top-down) and tabulation (bottom-up)?
+D01788	M	What properties must a problem have for dynamic programming to apply?
+D01789	M	What is the time complexity of binary search and what preconditions does it need?
+D01790	M	How can bitmasks represent sets, and what are the common bitwise operations used to add, remove and test elements?
+D01791	M	How would you speed up I/O heavy programs in C++ when reading large inputs?
+D01792	E	What does Big-O notation describe and how does it differ from Theta and Omega?
+D01793	M	What are the stages of compiling a C program from source to executable (preprocess, compile, assemble, link)?
+D01794	M	What is the difference between static and dynamic linking?
+D01795	E	What is a pointer and what is the difference between a pointer and a reference?
+D01796	M	What are dangling pointers, null pointer dereferences and wild pointers, and how do they arise?
+D01797	M	What is the relationship between arrays and pointers in C, and what does pointer arithmetic do?
+D01798	M	How does dynamic memory allocation with malloc and free work, and what are memory leaks and double frees?
+D01799	M	What is the difference between stack and heap allocation in terms of lifetime, speed and size?
+D01800	M	How is the size of a struct computed, and what are alignment and padding?
+D01801	M	How can reordering struct members reduce its memory footprint?
+D01802	M	What is the difference between shallow copy and deep copy, and what bugs can a shallow copy of a pointer member cause?
+D01803	M	What is the Rule of Three (or Five) in C++?
+D01804	E	What is a virtual function in C++ and how does dynamic dispatch work through the vtable?
+D01805	M	Why should a base class with virtual functions have a virtual destructor?
+D01806	M	What is a pure virtual function and an abstract class in C++?
+D01807	M	How does std::vector manage capacity, and when are iterators invalidated?
+D01808	M	What is the difference between size and capacity in a vector and what does reserve do?
+D01809	E	What are the main areas of the JVM memory model (heap, stack, method area, PC register)?
+D01810	E	What is garbage collection and why do managed runtimes use it?
+D01811	M	How does generational garbage collection work and why does it rely on the weak generational hypothesis?
+D01812	M	What is a stop-the-world pause and how do modern collectors try to reduce it?
+D01813	M	What is the difference between mark-sweep, mark-compact and copying collectors?
+D01814	M	Can a memory leak happen in a garbage-collected language, and how?
+D01815	M	What do the JVM's class loader, bytecode interpreter and JIT compiler each do?
+D01816	M	Describe the Java compilation process from source code to execution.
+D01817	M	What are the pros and cons of compiled, interpreted and JIT-compiled languages?
+D01818	M	Why is String immutable in Java and what are the benefits?
+D01819	M	Compare String, StringBuilder and StringBuffer in terms of mutability and thread safety.
+D01820	M	What is the string intern pool and how does it affect string equality comparisons?
+D01821	M	What is the difference between == and equals for objects?
+D01822	M	Is Java pass-by-value or pass-by-reference, and how do you explain the behavior with object arguments?
+D01823	M	What is autoboxing and unboxing and what performance and null-related pitfalls does it have?
+D01824	M	What are generics and what is type erasure?
+D01825	M	What is the difference between checked and unchecked exceptions and when should each be used?
+D01826	M	What does Java serialization do, and why is serialVersionUID important?
+D01827	M	What are security and compatibility concerns of native object serialization compared with formats like JSON?
+D01828	M	What are lambdas and streams, and how do lazy intermediate operations differ from terminal operations?
+D01829	M	What are the pros and cons of parallel streams?
+D01830	M	What is an immutable record or value class and what benefits does immutability give?
+D01831	M	What is a closure in JavaScript and how can it be used to emulate private state?
+D01832	M	Why does a var-declared loop variable captured in callbacks cause a common bug, and how do let or closures fix it?
+D01833	M	What is the difference between var, let and const regarding scope, hoisting and reassignment?
+D01834	M	How do arrow functions differ from regular functions regarding this binding?
+D01835	M	What are promises and async/await, and how do they improve on callbacks?
+D01836	M	How does the JavaScript event loop make a single-threaded runtime handle asynchronous work?
+D01837	M	How does prototype-based inheritance work in JavaScript, and what is the prototype chain?
+D01838	M	What are JavaScript's primitive types and why does it have special types like BigInt and Symbol?
+D01839	M	What is the purpose of React hooks and what rules govern using them?
+D01840	M	How does the virtual DOM help React update the UI efficiently?
+D01841	M	What are the main lifecycle phases of a UI component (creation, mounting, updating, destruction) and what work belongs in each?
+D01842	M	What are the trade-offs between a UI library like React and a full framework approach such as Vue?
+D01843	M	What is an ORM and what problem is the object-relational impedance mismatch?
+D01844	M	What is the N+1 query problem in ORMs and how do you avoid it?
+D01845	M	What is dirty checking in an ORM persistence context and when does it trigger updates?
+D01846	M	What are singleton versus prototype scoped objects in a dependency injection container, and what thread-safety implications follow?
+D01847	M	How does the request flow through the front controller in an MVC web framework?
+D02270	M	How does a hash table work, and what techniques resolve collisions (chaining versus open addressing)?
+D02271	M	What is the load factor of a hash table, when is it resized, and why is lookup O(1) on average but O(n) in the worst case?
+D02272	M	What makes a good hash function and what happens with an adversarial set of keys?
+D02273	M	Compare arrays and linked lists in terms of access, insertion, memory locality and typical use.
+D02274	E	Compare stacks and queues. Name real systems where each is used, and describe variants such as deque and priority queue.
+D02275	M	What is a circular queue and what problem does it solve compared to a simple array queue?
+D02276	M	What is a binary heap, how is it stored in an array, and what are the complexities of insert, delete-min and heapify?
+D02277	M	Why is building a heap from an array O(n) rather than O(n log n)?
+D02278	M	How does heap sort work, and why is it not stable and often slower than quicksort in practice?
+D02279	M	What is the difference between a full binary tree, a complete binary tree and a balanced tree?
+D02280	M	What do pre-order, in-order and post-order traversals produce on a binary search tree, and when is each useful?
+D02281	M	What is an AVL tree and how do rotations restore balance after insertion?
+D02282	M	Why do we need red-black trees, what invariants do they maintain, and how do they compare with AVL trees?
+D02283	M	How do you represent a graph in memory? Compare adjacency matrix with adjacency list.
+D02284	M	When would you choose BFS and when DFS, and what are their time and space complexities on a graph?
+D02285	M	What is a skip list, how does it achieve O(log n) search, and how does it compare with a balanced tree under concurrency?
+D02286	M	What is a trie, what problems is it suited for, and how do its memory costs compare with a hash table?
+D02287	M	What is a disjoint-set (union-find) structure and how do path compression and union by rank improve it?
+D02288	M	Which data structures are used to implement an LRU cache and why is a doubly linked list needed with a hash map?
+D02289	M	How would you extend an LRU cache to be thread-safe with good concurrency, and what are the trade-offs against LFU?
+D02290	E	How do you analyse time and space complexity? What are the common complexity classes and how do you assess loops and recursion?
+D02291	M	Compare comparison-based sorts (quick, merge, heap) in terms of time complexity, stability and space. When is each preferred?
+D02292	M	When can counting, bucket and radix sort beat O(n log n), and what assumptions do they need?
+D02293	M	What is the worst case of quicksort, how does pivot selection avoid it, and why is merge sort preferred for external sorting?
+D02294	M	What are the approaches to finding the top K elements in a stream? Compare heap, quickselect and sorting.
+D02295	M	How do you recognise that a problem can be solved by dynamic programming, and how does memoisation compare with bottom-up tabulation?
+D02296	M	What distinguishes a greedy algorithm from dynamic programming, and how do you prove a greedy choice is safe?
+D02297	M	How do you decide between DFS, BFS and backtracking for a search problem, and how do you prune duplicates?
+D02774	M	How does a concurrent hash map in older designs use segment locks, and how does that differ from the newer CAS plus per-bin lock approach?
+D02775	M	How is size computed in a concurrent hash map without a global lock?
+D02776	M	Why does a concurrent hash map disallow null keys and values?
+D02777	M	Is a sequence of check-then-put operations on a concurrent map atomic? How do you make compound operations atomic?
+D02778	M	Compare a concurrent hash map with a synchronized legacy hash table.
+D02779	M	How does cooperative resizing by multiple threads work in a concurrent hash map?
+D02780	E	Compare List, Set, Queue and Map in terms of ordering, duplicates and typical operations.
+D02781	M	Compare dynamic array lists and linked lists for insertion, deletion, random access and memory locality.
+D02782	M	How does a dynamic array grow, and what is the amortized cost of appending?
+D02783	M	Why does a linked list not implement the random-access marker interface?
+D02784	M	What are fail-fast and fail-safe iterators, and what is a concurrent modification error?
+D02785	M	What is the difference between Comparable and Comparator?
+D02786	M	Compare hash set, linked hash set and tree set in ordering, performance and underlying structure.
+D02787	M	How does a hash set detect duplicates, and why must equals and hashCode be consistent?
+D02788	M	Compare an array deque and a linked list when used as a queue or stack.
+D02789	M	How does a priority queue work internally with a binary heap, and what are the complexities of its operations?
+D02790	E	Explain the internal structure of a hash map: array of buckets, hash function, collision handling and treeification.
+D02791	M	Why is the capacity of a hash table usually a power of two, and how does the index computation use bit masking?
+D02792	M	How does a hash map decide when to resize, what is load factor, and how are entries redistributed?
+D02793	M	Why does a hash map convert long bucket chains to balanced trees, and what thresholds trigger conversion?
+D02794	M	Why is a non-thread-safe hash map unsafe in multithreaded use, and how could concurrent resizing lead to lost data or infinite loops?
+D02795	M	Compare a hash map and a tree map in ordering, complexity and null-key handling.
+D02796	M	How do you iterate a map safely, and what are the cost differences between key, value and entry iteration?
+D02797	M	How does a linked hash map maintain insertion or access order, and how does it enable an LRU cache?
+D02799	M	What pitfalls arise when converting a collection to a map, such as duplicate keys and null values?
+D02800	M	Why is modifying a collection inside a for-each loop dangerous, and what safe alternatives exist?
+D02801	M	What are the pitfalls of converting between arrays and lists, such as fixed-size views and sharing the backing array?
+D02802	M	How should you de-duplicate a collection while preserving order or using a set?
+D02803	E	Describe the runtime memory areas of the Java virtual machine and what each stores.
+D02804	M	What is the difference between the heap and the stack, and what is stored in a stack frame?
+D02805	M	What is the method area, metaspace and the runtime constant pool, and how did the permanent generation get replaced?
+D02806	M	What is the string constant pool and how does string interning work?
+D02807	M	What is direct (off-heap) memory, and what are its benefits and risks?
+D02808	M	Describe the steps of creating an object in the JVM, from class check to initialization of the header.
+D02809	M	What is the memory layout of a Java object, and how does an object reference locate the object using handles or direct pointers?
+D02810	M	What does a stack overflow error mean versus an out-of-memory error, and what causes each?
+D02811	M	Describe the class loading phases: loading, verification, preparation, resolution and initialization.
+D02812	M	When does class initialization get triggered, and when can a class be unloaded?
+D02813	M	What is the parent-delegation model of class loaders, what are its benefits, and how can it be broken?
+D02814	M	Why would you write a custom class loader, and what are plugin or hot-deploy use cases?
+D02815	M	What does a compiled class file contain: magic number, version, constant pool, access flags, fields, methods and attributes?
+D02816	M	Why is the JVM called a platform-independent runtime, and how do bytecode and the JIT compiler work together?
+D02817	M	How does a JVM determine that an object is dead: reference counting versus reachability analysis, and what are GC roots?
+D02818	M	Compare strong, soft, weak and phantom references and when to use each.
+D02819	M	Compare mark-sweep, copying and mark-compact garbage collection algorithms.
+D02820	M	Why do generational collectors split the heap into young and old regions, and how do Eden, survivor spaces and promotion work?
+D02821	M	What triggers a minor GC versus a full GC, and what is space allocation guarantee?
+D02822	M	Why are large objects allocated directly into the old generation, and what problems do they cause?
+D02823	M	Compare Serial, Parallel, CMS and G1 collectors in goal, pause behavior and use cases.
+D02824	H	How do low-pause collectors like ZGC achieve sub-millisecond pauses with colored pointers and load barriers?
+D02825	M	How does G1 divide the heap into regions and choose which regions to collect to meet a pause-time goal?
+D02826	M	What is stop-the-world and why does it occur in garbage collection?
+D02827	M	What is concurrent marking and how does a collector handle objects modified during it, such as with write barriers?
+D02828	M	Which JVM flags control heap size, young generation ratio, metaspace and GC choice, and how do you pick starting values?
+D02829	M	How do you enable GC logging and automatic heap dump on out-of-memory in production?
+D02830	M	What command-line tools help inspect a running JVM, such as for thread dumps, heap dumps and GC statistics?
+D02831	H	A Java service has frequent full GCs and growing heap usage. Describe how you determine whether it is a leak or normal growth.
+D02832	H	A service shows high CPU usage. Walk through how you find the hot thread and the code responsible.
+D02833	H	A service shows high load average but low CPU usage. What do you check?
+D02834	H	A slow API has low CPU. How do you determine whether the time is spent on thread pool queuing, database connections, downstream calls or locks?
+D02835	M	What is the difference between stopping the bleeding and preserving evidence during a production incident?
+D02836	M	How do you investigate frequent young GCs?
+D02837	M	How do you diagnose database connection pool exhaustion?
+D02838	M	What should an incident postmortem record, and how do you verify a fix after deployment?

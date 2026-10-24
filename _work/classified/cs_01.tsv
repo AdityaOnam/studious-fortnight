@@ -1,0 +1,300 @@
+Q000006	CS04	E	Why do we use a DBMS?
+Q000007	CS04	M	What happens when an application executes a query against a database?
+Q000008	CS04	E	Why not simply store everything in files instead of using a DBMS?
+Q000009	CS04	E	What makes an RDBMS relational?
+Q000010	CS04	E	What is a database schema?
+Q000011	DROP	-	unfixable
+Q000012	CS04	E	Why is a database schema important?
+Q000013	DROP	-	notq
+Q000014	DROP	-	notq
+Q000015	DROP	-	notq
+Q000016	DROP	-	notq
+Q000017	DROP	-	notq
+Q000018	CS04	E	What is a table, row, column, and record?
+Q000019	CS04	E	What are primary and foreign keys?
+Q000020	CS04	M	Why isn't a foreign key necessarily unique?
+Q000021	CS04	E	Why are keys important in a database?
+Q000022	CS04	E	What is a candidate key?
+Q000023	CS04	E	Why is it called a "candidate" key?
+Q000024	CS04	E	Why are candidate keys important?
+Q000025	CS04	E	What is a composite key?
+Q000026	CS04	M	Why use a composite key?
+Q000027	DROP	-	notq
+Q000028	DROP	-	notq
+Q000029	CS04	E	Why are constraints important in a database?
+Q000030	CS04	M	Why does database-level enforcement of constraints matter?
+Q000031	CS04	E	Why do we normalize a database?
+Q000032	CS04	M	Explain 1NF, 2NF, 3NF, and BCNF.
+Q000033	CS04	M	Why do we need BCNF?
+Q000034	DROP	-	dup
+Q000035	CS04	M	Is more normalization always better?
+Q000036	DROP	-	notq
+Q000037	DROP	-	notq
+Q000038	DROP	-	notq
+Q000039	DROP	-	notq
+Q000040	DROP	-	notq
+Q000041	DROP	-	dup
+Q000042	CS04	M	When might denormalization be useful?
+Q000043	DROP	-	dup
+Q000044	DROP	-	unfixable
+Q000045	CS04	E	What is a transaction?
+Q000046	CS04	E	Why are transactions important?
+Q000047	DROP	-	notq
+Q000048	DROP	-	notq
+Q000049	DROP	-	notq
+Q000050	DROP	-	notq
+Q000051	DROP	-	notq
+Q000052	CS04	M	What are transaction isolation levels?
+Q000053	DROP	-	dup
+Q000054	CS04	M	What are dirty reads, non-repeatable reads, and phantom reads?
+Q000055	CS04	E	What is a deadlock in a database?
+Q000056	CS04	M	Why do deadlocks happen in a database?
+Q000057	DROP	-	dup
+Q000058	DROP	-	dup
+Q000059	CS04	M	How can database deadlocks be prevented or handled?
+Q000060	DROP	-	dup
+Q000061	DROP	-	dup
+Q000062	CS04	E	How does a database index work?
+Q000063	CS04	E	Why are indexes useful?
+Q000064	DROP	-	notq
+Q000065	DROP	-	notq
+Q000066	DROP	-	dup
+Q000067	DROP	-	unfixable
+Q000068	DROP	-	dup
+Q000069	DROP	-	notq
+Q000070	CS04	M	Why doesn't every query use an index?
+Q000071	CS04	E	What are the disadvantages of indexes?
+Q000072	CS04	E	What is the difference between a clustered and a non-clustered index?
+Q000073	CS04	M	Why can a table have only one clustered index?
+Q000074	CS04	E	What is a composite index?
+Q000075	CS04	M	Why does column order matter in a composite index?
+Q000076	CS04	M	Can a composite index be unique?
+Q000077	CS04	M	How do you decide which columns to index?
+Q000078	DROP	-	notq
+Q000079	CS04	M	Why can adding more indexes make writes slower?
+Q000080	DROP	-	dup
+Q000081	DROP	-	unfixable
+Q000082	DROP	-	notq
+Q000083	CS04	M	How would you optimize a slow SQL query?
+Q000084	DROP	-	notq
+Q000085	DROP	-	notq
+Q000086	DROP	-	notq
+Q000087	DROP	-	notq
+Q000088	CS04	E	What is EXPLAIN / a query execution plan?
+Q000089	DROP	-	notq
+Q000090	CS04	M	What does a query execution plan contain?
+Q000091	CS04	M	What is the difference between EXPLAIN and EXPLAIN ANALYZE?
+Q000092	CS04	M	What should you look for in a query execution plan?
+Q000093	CS04	M	How does a query execution plan help with query optimization?
+Q000094	SD02	M	SQL vs NoSQL: when would you choose each?
+Q000095	DROP	-	dup
+Q000096	DROP	-	dup
+Q000097	SD02	M	What are common database scaling strategies?
+Q000098	DROP	-	notq
+Q000099	DROP	-	notq
+Q000100	DROP	-	notq
+Q000101	DROP	-	unfixable
+Q000102	SD02	M	How does database replication work?
+Q000103	DROP	-	notq
+Q000104	SD02	E	Why is database replication useful?
+Q000105	DROP	-	notq
+Q000106	SD02	E	Why is sharding used?
+Q000107	SD02	M	How does a query work in a sharded database?
+Q000108	SD02	M	What happens if a query does not provide the shard key in a sharded database?
+Q000109	DROP	-	notq
+Q000110	SD02	H	How would you design a database for a large-scale application?
+Q000111	DROP	-	notq
+Q000112	DROP	-	notq
+Q000113	DROP	-	notq
+Q000114	CS06	E	What is object-oriented programming and why is it used?
+Q000115	DROP	-	dup
+Q000116	DROP	-	notq
+Q000117	DROP	-	dup
+Q000118	CS06	M	Is OOP always the best choice?
+Q000119	CS06	E	What are the four pillars of OOP?
+Q000120	CS06	E	Why is encapsulation useful?
+Q000121	DROP	-	notq
+Q000122	CS06	E	Why is abstraction useful?
+Q000123	CS06	E	Why is inheritance useful?
+Q000124	CS06	M	How do the four pillars of OOP work together?
+Q000125	CS06	E	What is a class and what is an object?
+Q000126	CS06	M	Why is the class-object distinction important?
+Q000127	DROP	-	dup
+Q000128	DROP	-	dup
+Q000129	CS06	M	How is abstraction implemented?
+Q000130	DROP	-	unfixable
+Q000131	CS06	E	What is the difference between abstraction and encapsulation?
+Q000132	DROP	-	unfixable
+Q000133	DROP	-	dup
+Q000134	CS06	M	What is the difference between inheritance and composition?
+Q000135	CS06	E	Why is polymorphism useful?
+Q000136	CS06	M	Does polymorphism require inheritance?
+Q000137	CS06	E	What is the difference between inheritance and polymorphism?
+Q000138	CS06	M	How does runtime polymorphism work?
+Q000139	CS06	M	Why is runtime polymorphism useful?
+Q000140	CS06	E	What is the main difference between compile-time and runtime polymorphism?
+Q000141	CS06	E	Why is method overloading useful?
+Q000142	CS07	M	How can Python provide flexibility similar to method overloading, given that it does not support traditional method overloading?
+Q000143	CS06	M	How does method overriding work?
+Q000144	CS06	M	Can a method be both overloaded and overridden?
+Q000145	CS06	E	What is dynamic method dispatch?
+Q000146	CS06	M	How does dynamic method dispatch work?
+Q000147	CS06	M	Why is dynamic method dispatch useful?
+Q000148	CS06	E	What happens when an object is created (constructors)?
+Q000149	CS06	E	Why are constructors used?
+Q000150	CS07	M	Does Python support constructor overloading?
+Q000151	CS06	E	What is a destructor?
+Q000152	CS07	M	What does the 'del' statement actually do in Python?
+Q000153	CS06	E	Why are destructors used?
+Q000154	CS07	M	Why should __del__() not be used for critical cleanup in Python?
+Q000155	CS07	M	When should you use __del__() in Python?
+Q000156	CS07	E	What is Python's destructor-like method?
+Q000157	CS07	M	Does 'del obj' directly call __del__() in Python?
+Q000158	DROP	-	dup
+Q000159	CS06	M	Does every programming language implement destructors the same way?
+Q000160	CS06	E	What is the difference between an interface and an abstract class?
+Q000161	CS06	M	When should you use inheritance rather than composition?
+Q000162	CS06	M	When should you use composition rather than inheritance?
+Q000163	CS06	M	What is the difference between association, aggregation, and composition?
+Q000164	CS06	E	What are access modifiers?
+Q000165	CS06	E	Why are access modifiers important?
+Q000166	CS06	E	What is 'this' / 'self' in a class?
+Q000167	CS07	E	Why is 'self' needed in Python classes?
+Q000168	CS06	M	When should static members be used?
+Q000169	CS06	E	What is the difference between class variables and instance variables?
+Q000170	CS06	M	When should you use class variables versus instance variables?
+Q000171	CS06	M	Why is composition often preferred over inheritance?
+Q000172	DROP	-	dup
+Q000173	DROP	-	dup
+Q000174	CS06	M	What is the Liskov Substitution Principle?
+Q000175	DROP	-	unfixable
+Q000176	CS06	M	What does "substitutable" mean in the Liskov Substitution Principle?
+Q000177	DROP	-	notq
+Q000178	CS06	E	What are the SOLID principles?
+Q000179	CS06	M	How do the five SOLID principles work together?
+Q000180	CS06	M	Explain the Dependency Inversion Principle with an example.
+Q000181	DROP	-	unfixable
+Q000182	CS06	M	In the Dependency Inversion Principle, what exactly is being inverted?
+Q000183	CS06	E	What are coupling and cohesion?
+Q000184	CS06	M	Why is low coupling useful?
+Q000185	CS07	E	What is the difference between a shallow copy and a deep copy?
+Q000186	DROP	-	unfixable
+Q000187	DROP	-	unfixable
+Q000188	DROP	-	notq
+Q000189	CS06	H	How would you design a class hierarchy for a real-world problem?
+Q000190	DROP	-	dup
+Q000191	DROP	-	notq
+Q000192	DROP	-	notq
+Q000193	DROP	-	notq
+Q000194	DROP	-	notq
+Q000195	DROP	-	notq
+Q000196	DROP	-	notq
+Q000197	DROP	-	notq
+Q000198	DROP	-	unfixable
+Q000199	DROP	-	notq
+Q000200	DROP	-	notq
+Q000201	DROP	-	notq
+Q000202	DROP	-	notq
+Q000203	DROP	-	hr
+Q000204	DROP	-	notq
+Q000205	DROP	-	notq
+Q000206	DROP	-	notq
+Q000207	DROP	-	notq
+Q000208	DROP	-	notq
+Q000209	CS01	E	What is an operating system?
+Q000210	CS01	E	Why is an operating system needed?
+Q000211	DROP	-	notq
+Q000212	CS01	E	What does a process contain?
+Q000213	CS01	E	What does a thread have of its own?
+Q000214	CS01	E	Why are threads used?
+Q000215	CS01	M	When would you use a process versus a thread?
+Q000216	CS02	E	What are the advantages of multithreading?
+Q000217	CS02	M	When is multithreading particularly useful?
+Q000218	CS01	E	What is a Process Control Block (PCB)?
+Q000219	CS01	E	What does a PCB contain?
+Q000220	CS01	E	Why is the PCB important?
+Q000221	CS01	E	What is context switching?
+Q000222	CS01	M	What happens during a context switch?
+Q000223	CS01	E	Why is context switching needed?
+Q000224	DROP	-	dup
+Q000225	CS01	M	Why is context switching expensive?
+Q000226	CS01	M	How can excessive context switching be reduced?
+Q000227	CS01	E	What is the difference between a user-level thread and a kernel-level thread?
+Q000228	DROP	-	notq
+Q000229	DROP	-	notq
+Q000230	CS02	E	What is CPU scheduling?
+Q000231	DROP	-	notq
+Q000232	DROP	-	notq
+Q000233	DROP	-	notq
+Q000234	CS02	E	What is the ready queue?
+Q000235	CS02	E	Why is CPU scheduling needed?
+Q000236	CS02	M	Why is Round Robin scheduling useful?
+Q000237	DROP	-	notq
+Q000238	DROP	-	notq
+Q000239	DROP	-	notq
+Q000240	CS02	M	Explain FCFS, SJF, Round Robin, and Priority Scheduling.
+Q000241	CS02	M	Why is FCFS scheduling non-preemptive?
+Q000242	DROP	-	notq
+Q000243	CS02	M	Why can SJF scheduling be efficient?
+Q000244	DROP	-	dup
+Q000245	DROP	-	unfixable
+Q000246	CS02	E	What is the difference between preemptive and non-preemptive scheduling?
+Q000247	DROP	-	notq
+Q000248	DROP	-	notq
+Q000249	CS02	M	Why is preemptive scheduling useful?
+Q000250	DROP	-	notq
+Q000251	CS02	M	What happens if a process blocks?
+Q000252	CS02	M	Why does starvation occur in CPU scheduling?
+Q000253	CS02	M	How can starvation be prevented?
+Q000254	CS02	M	Why is aging needed in scheduling?
+Q000255	CS02	M	How does aging work?
+Q000256	DROP	-	dup
+Q000257	CS02	M	How do you calculate waiting time and turnaround time?
+Q000258	DROP	-	notq
+Q000259	DROP	-	notq
+Q000260	DROP	-	notq
+Q000261	CS02	E	What does turnaround time include in CPU scheduling?
+Q000262	DROP	-	unfixable
+Q000263	CS02	E	What is a race condition?
+Q000264	DROP	-	unfixable
+Q000265	CS02	E	Why is a race condition called a "race"?
+Q000266	CS02	M	How can race conditions be prevented?
+Q000267	CS02	E	What is a critical section?
+Q000268	CS02	E	Why is a critical section important?
+Q000269	DROP	-	notq
+Q000270	CS02	M	Is a critical section always protected by a lock?
+Q000271	CS02	E	Why do we need a mutex?
+Q000272	CS02	E	How does a mutex work?
+Q000273	CS02	M	What happens when another thread tries to acquire a locked mutex?
+Q000274	CS02	M	How can mutex deadlocks be avoided?
+Q000275	CS02	E	What is a semaphore?
+Q000276	CS02	E	Why do we need a semaphore?
+Q000277	CS02	E	How does a semaphore work?
+Q000278	DROP	-	notq
+Q000279	CS02	M	Why can't we simply use a mutex to manage three identical resources?
+Q000280	CS02	M	When should you use a mutex?
+Q000281	CS02	M	When should you use a semaphore?
+Q000282	CS02	M	What happens if we use a mutex instead of a semaphore to manage a limited pool of resources?
+Q000283	CS02	M	What happens if we use Semaphore(3) to protect a shared counter?
+Q000284	CS02	M	Why do we need monitors?
+Q000285	CS02	M	Why is wait() special in a monitor?
+Q000286	DROP	-	notq
+Q000287	DROP	-	notq
+Q000288	DROP	-	notq
+Q000289	CS02	M	How is a monitor different from a mutex?
+Q000290	CS02	M	Can a monitor use a mutex internally?
+Q000291	CS02	M	How can deadlock be prevented or handled in an operating system?
+Q000292	CS02	M	Why is deadlock difficult to debug?
+Q000293	CS02	E	What are the four necessary conditions for deadlock?
+Q000294	DROP	-	unfixable
+Q000295	CS02	M	How do the four deadlock conditions work together?
+Q000296	DROP	-	notq
+Q000297	DROP	-	notq
+Q000298	DROP	-	notq
+Q000299	CS02	M	What is a safe state in deadlock avoidance?
+Q000300	CS02	M	What happens after a deadlock is detected?
+Q000301	CS01	E	What is virtual memory?
+Q000302	CS01	E	Why do we need virtual memory?
+Q000303	CS01	M	How does virtual memory work?
+Q000304	CS01	M	What happens when a page is not in RAM?
+Q000305	CS01	M	What happens when RAM is full in a virtual memory system?

@@ -1,0 +1,9 @@
+D00312	offscope
+D00314	offscope
+D00323	offscope
+D00325	offscope
+D00326	offscope
+D00328	offscope
+D00330	hr
+D00334	junk
+D03813	offscope

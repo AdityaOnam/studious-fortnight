@@ -1,0 +1,309 @@
+Q008422	GA04	M	What are OpenTelemetry's GenAI semantic conventions, and why should you care?
+Q008423	GA04	M	How would you attach an eval score to a span after the fact?
+Q008424	GA04	M	What would you do when a semantic convention you depend on changes names in a new release?
+Q008425	LLM07	M	What makes a single eval case well specified, and what are the common ways individual cases go wrong?
+Q008426	LLM07	M	Who should write reference answers for an eval set in a domain where nobody on the team is an expert?
+Q008427	LLM07	M	An eval case passes 50% of the time across ten trials of the same configuration. Is it a good case or a broken one?
+Q008428	LLM07	M	Pointwise scoring vs pairwise comparison for LLM judges - which is more reliable, and why?
+Q008429	LLM07	M	How do you aggregate pairwise judge results across 5 candidate prompts efficiently?
+Q008430	LLM07	H	Your pairwise judge says B beats A 60/40 but binary criteria show identical pass rates - what do you conclude?
+Q008431	LLM07	M	What are the known biases of LLM judges, and how do you mitigate each?
+Q008432a	LLM07	M	Design a quick experiment to measure position bias in your own LLM judge.
+Q008432b	LLM07	H	Your LLM judge is from the same family as your production model, and switching families drops agreement with humans - what now?
+Q008433	LLM07	M	How do you decide whether to trust your LLM judge? Walk me through calibration.
+Q008434	LLM07	M	Your LLM judge's Cohen's kappa agreement with humans is 0.45 - what specifically do you do next?
+Q008435	LLM07	M	How do you keep LLM judge calibration current without a standing labelling team?
+Q008436	LLM07	M	How do you design a good rubric for model-graded evals, and where does chain-of-thought fit?
+Q008437	LLM07	M	How many criteria are too many per task in a model-graded eval rubric?
+Q008438	LLM07	H	Your faithfulness judge passes an answer that hedges so much it says nothing - what rubric change fixes that?
+Q008439	LLM07	M	What do MMLU, GSM8K, HumanEval, MT-Bench, and SWE-bench each measure - and why shouldn't you pick a model for your product based on them?
+Q008440	LLM07	M	If public benchmarks are this compromised, why do labs keep reporting them?
+Q008441	LLM07	M	What properties make a benchmark resistant to saturation and contamination?
+Q008442	LLM07	M	What is benchmark contamination, and how would you detect or protect against it?
+Q008443	LLM07	M	Can benchmark contamination make a model look worse?
+Q008444	LLM07	H	Your vendor claims decontamination via 13-gram overlap - what does that miss?
+Q008445	LLM07	M	How would you build an execution-based eval for a code-generation feature?
+Q008446	LLM07	M	How do you evaluate code edits in a large existing repo versus writing functions from scratch?
+Q008447	LLM07	M	Your code-generation eval pass rate is 60% - how do you decompose that into actionable failure categories?
+Q008448	RAG06	M	How do you evaluate a RAG pipeline? Why evaluate components separately from the end-to-end system?
+Q008449	RAG06	H	Retrieval recall@10 is 95% but end-to-end correctness is 70% - where do you look?
+Q008450	RAG06	H	How do you keep retrieval labels valid when the corpus is re-chunked?
+Q008451	RAG04	M	Which retrieval metrics would you use - recall@k, MRR, nDCG - and when does each matter?
+Q008452	RAG06	H	Your new embedder improves nDCG but end-to-end RAG answers get worse - what mechanisms could explain that?
+Q008453	RAG06	H	Why might recall@5 matter more than recall@20 even though your context fits 20 chunks?
+Q008454	RAG06	M	How do you measure faithfulness - whether the model's answer is actually grounded in retrieved context?
+Q008455	RAG06	H	How would you cheaply monitor faithfulness on live traffic where there is no reference answer?
+Q008456	RAG06	H	When measuring faithfulness, a claim is supported by chunk A but contradicted by chunk B in the same context - what should the metric do?
+Q008457	GA04	M	How do you wire evals into CI so that prompt or model changes can't silently regress quality?
+Q008458	GA04	M	A PR improves the target task but flips two unrelated eval cases to failing - what's your process?
+Q008459	GA04	M	How do you keep judge-based CI costs sane as the team's PR volume grows?
+Q008460	GA04	M	How do you evaluate an LLM feature online? Design the A/B test and name the implicit feedback signals you'd use.
+Q008461a	GA04	H	Thumbs-up rate went up but escalation rate also went up for an LLM feature - construct a story that explains both.
+Q008461b	GA04	M	When would you ship an LLM feature change on offline evals alone, without an A/B test?
+Q008462	LLM07	M	You have 500 production transcripts flagged as failures. Walk me through your error-analysis process.
+Q008463	LLM07	M	How do you handle failure modes that only appear in multi-turn context during error analysis?
+Q008464	LLM07	M	In error analysis of flagged production failures, what do you do with the "not actually a failure" cluster?
+Q008465	LLM07	M	How do you keep an eval set fresh over time, and how do you avoid overfitting to it?
+Q008466	LLM07	M	Concretely, how would you detect that your team has overfit the dev eval set?
+Q008467	LLM07	M	Who triages the production-failure queue, and what's the admission bar for a new eval case?
+Q008468	LLM07	M	How would you use synthetic data to build or extend an eval set, and what are the failure modes?
+Q008469	LLM07	H	How would you measure whether your synthetic eval set predicts production performance?
+Q008470	LLM07	M	How do you measure inter-annotator agreement on a human labelling effort, and what do you do when your annotators disagree a lot?
+Q008471	LLM07	M	Your annotators reach a Krippendorff's alpha of 0.4 and a rubric rewrite does not help. What now?
+Q008472	LLM07	M	How would you detect one annotator drifting over a month?
+Q008473	LLM07	H	You want to detect a 3-point improvement in pass rate. How many eval examples do you need, and how do you get that number down?
+Q008474	LLM07	H	Your minimum-detectable-effect calculation says you need 2,800 eval examples and you have 200. What do you actually do?
+Q008475	LLM07	M	When comparing two LLM configurations on an eval set, when is a paired design not available to you?
+Q008476	GA04	M	You are swapping the model behind a live feature. Walk me through shadow, canary and A/B. When do you use each?
+Q008477	GA04	H	How would you shadow-test an agent that writes to a production database?
+Q008478	GA04	H	Your canary looks fine at 2% traffic and quality tanks at 50%. What happened?
+Q008479	GA04	M	How do you instrument cost and latency for an agentic feature, and what actually drives cost creep?
+Q008480	GA04	M	Your cost per task doubled but every per-call metric is flat. Where do you look?
+Q008481	GA04	H	How would you attribute LLM cost to a specific customer without high-cardinality metrics?
+Q008482	GA05	M	Prompts and completions contain user data. How do you redact PII in traces without destroying your ability to debug?
+Q008483	GA05	M	Your NER-based PII redactor misses about 5% of names. Is that acceptable?
+Q008484	GA05	H	How do you debug a failure whose root cause was the exact text you redacted?
+Q008485	GA04	H	Design a human review queue for a production LLM feature. What gets reviewed, and how much?
+Q008486	GA04	M	How would you keep two human reviewers of LLM outputs consistent over six months?
+Q008487	GA04	M	What would you cut first if the human review budget for an LLM feature halved?
+Q008488	GA05	M	Your team ran a red-team exercise and found 30 ways to break the assistant. How do you turn that into something durable?
+Q008489	GA05	M	How do you keep a red-team suite from going stale as models improve?
+Q008490	GA05	M	Your red-team attack success rate is 0% for six months. Is that good news or bad?
+Q008491	LLM07	M	Your LLM judge model is being deprecated and you have to move to a new version. How do you keep your scores comparable?
+Q008492	LLM07	M	The new LLM judge agrees with humans slightly less but is 5x cheaper. Do you take it?
+Q008493	LLM07	M	How would you detect an LLM judge drifting if the model version is genuinely pinned?
+Q008494	GA04	M	You add a router that sends easy queries to a cheap model and hard ones to a frontier model. How do you evaluate the router?
+Q008495	GA04	M	Your model router cuts cost 60% and aggregate quality drops 1 point. What else do you check before shipping?
+Q008496	GA04	M	How would you evaluate a cascade that tries the cheap model first and escalates on low confidence instead of routing up front?
+Q008497	GA03	M	How do you evaluate agents? Compare trajectory-based and outcome-based approaches.
+Q008498	GA03	H	How do you eval an agent whose tools hit non-resettable third-party APIs?
+Q008499	LLM07	M	How does Chatbot Arena-style evaluation work, and what are its strengths and limits?
+Q008500	LLM07	H	Why is Bradley-Terry preferable to naive win-rate in Arena-style evaluation when comparison counts are uneven across model pairs?
+Q008501	LLM07	H	Design an internal arena for your company's use case - what breaks first?
+Q008502	LLM07	M	Your new prompt scores 78% vs the old prompt's 74% on a 100-example eval. Do you ship it?
+Q008503	LLM07	H	How large would n need to be to reliably detect a true 4-point improvement in eval pass rate (power)?
+Q008504	LLM07	H	How does per-case flip variance change your confidence-interval math when comparing two prompts on an eval set?
+Q008505	GA04	H	Design the observability stack for a production LLM application. What does a good trace look like?
+Q008506	GA04	H	How do you trace streaming responses and attribute TTFT vs generation time?
+Q008507	GA04	H	What trace sampling policy keeps costs sane at 10M requests/day without losing the failures?
+Q008508	GA04	M	How do you monitor a deployed LLM system for drift? What kinds of drift matter?
+Q008509	GA04	M	Your canary is green but user complaints are rising - what's your canary missing?
+Q008510	GA04	H	How would you detect that a provider quietly changed a model behind a pinned version string?
+Q008511	LLM07	M	Where does Goodhart's law bite in LLM evaluation? Give concrete examples and defences.
+Q008512	FT03	H	How is RLHF reward hacking formally the same problem as Goodhart's law in evaluation, and what do the mitigations share?
+Q008513	LLM07	M	Evals are nondeterministic - temperature, sampling, flaky agents. How do you get trustworthy numbers?
+Q008514	LLM07	H	Your CI budget allows 1 run per eval case or 3 runs on a third of the cases - which and why?
+Q008515	LLM07	M	How do you handle eval cases that flip on identical inputs during error analysis?
+Q008516	GA04	M	A team ships prompt changes on vibes - the founder tries five favourite prompts and merges. How do you move them to eval maturity without halting shipping?
+Q008517a	GA04	M	The founder says "our users are the eval" - how do you respond?
+Q008517b	GA04	M	Which single metric would you put on the team dashboard first for an LLM product, and why that one?
+Q008518	LLM07	M	Your new prompt improves aggregate pass rate by 3 points, but one customer segment drops 8. How do you catch this before shipping, and what do you do about it?
+Q008519	LLM07	M	How do you pick eval slices for failure modes you have not thought of yet?
+Q008520	LLM07	M	The regressed eval slice has 12 examples total. What do you do?
+Q008521	GA06	H	Design the evaluation for a document understanding feature: users upload invoices and scanned forms and ask questions about them.
+Q008522	GA06	H	How would you evaluate a document-QA feature on a 40-page document where the answer requires two facts from different pages?
+Q008523	GA06	M	Your vision-model judge for document understanding evals costs more than the feature. What now?
+Q008524	LLM07	M	How does evaluating and observing a reasoning model differ from a standard one?
+Q008525	LLM07	M	How would you set a reasoning budget per request rather than globally?
+Q008526	LLM07	H	Your pass-rate curve is still climbing at the maximum reasoning budget. What does that tell you?
+Q008527	GA03	H	How would you build a deterministic replay harness for agent evals, and what does it genuinely buy you?
+Q008528	GA03	M	In a replay harness for agent evals, how do you detect that your recordings have gone stale?
+Q008529	GA03	H	Where does a mocked sandbox for agent evals stop being worth its maintenance cost?
+Q008530	LLM07	H	Your eval suite is green, ship velocity is good, and users are complaining that quality got worse. Debug it.
+Q008531	LLM07	M	How would you prevent an eval suite that is green while users see quality regress from recurring, without doubling eval cost?
+Q008532	LLM07	H	Your eval suite is green but users complain about quality - what if the complaints came from 3 users out of 50,000?
+Q008533	LLM07	H	How do you evaluate your eval suite itself? What makes one good or bad?
+Q008534	LLM07	M	Your eval suite catches 9 of 10 escaped defects but takes 40 minutes in CI. Is it worth it?
+Q008535	LLM07	H	When validating your eval suite by checking that it detects a deliberately degraded ("crippled") model configuration, how would you build that configuration without it being trivially detectable?
+Q008536	GA04	H	Running your LLM judge on every production trace would cost more than the feature itself. How do you monitor quality online at scale?
+Q008537	LLM07	H	Your distilled evaluator agrees with the frontier judge 92% of the time but with humans only 78%. Which number do you trust, and what do you do?
+Q008538	LLM07	H	How would you decide whether a small evaluator model is good enough to block responses inline?
+Q008539	FT03	H	Your team wants to reuse the eval suite's graders as the reward signal for reinforcement fine-tuning. What changes?
+Q008540	FT03	M	Your grader agrees with humans 90% of the time on natural outputs. Is that enough to use it as a reward?
+Q008541	FT03	H	How would you tell whether a policy is exploiting the judge rather than genuinely improving?
+Q008542	GA03	H	Your agent now runs tasks that take hours and hundreds of steps. How do you evaluate and observe it?
+Q008543	GA03	H	How do you write milestones for an agent task with many valid paths without punishing the unconventional ones?
+Q008544	GA03	M	Your agent's success rate at four-hour tasks doubled after a model upgrade, but cost per success tripled. Is that a win?
+Q008545a	LLM06	M	Walk me through what happens inside the server when an LLM processes a request.
+Q008545b	LLM06	M	Why are prefill and decode bottlenecked differently in LLM inference?
+Q008546	LLM06	M	Why doesn't adding more compute (a faster GPU with the same bandwidth) speed up batch-1 decode?
+Q008547	LLM06	M	At roughly what batch size does LLM decode become compute-bound?
+Q008548	LLM06	M	How would you speed up TTFT specifically?
+Q008549	LLM06	M	What is the KV cache, why is it needed, and how big does it get? Ballpark it for a 70B-class model at 128K context.
+Q008550	LLM06	M	Why does GQA shrink the KV cache but not the weight count meaningfully?
+Q008551	LLM06	M	What happens in vLLM when the KV cache fills up mid-generation?
+Q008552	LLM06	H	How would the KV cache size math change for a mixture-of-experts model?
+Q008553	LLM06	M	Define TTFT, TPOT, and tokens/sec. What drives each one, and what are reasonable targets for a chat product?
+Q008554	LLM06	M	Your P99 TTFT doubled but P50 is flat - what are your top hypotheses?
+Q008555	LLM06	M	Which latency metric does speculative decoding improve, and which can it hurt?
+Q008556	SD04	M	Why do LLM products stream responses, and how does streaming actually work over HTTP?
+Q008557	GA04	M	How would you design retry behaviour for a streamed LLM response that dies at token 400 of 600?
+Q008558	SD04	M	What breaks when you put a naive CDN or proxy in front of server-sent events (SSE)?
+Q008559	LLM06	M	How do you estimate whether a model fits on a given GPU? Will a 70B model fit on one 80 GB card?
+Q008560	LLM06	M	How much memory does the KV cache add if you serve 32 concurrent 8K-context sequences on a 70B model?
+Q008561	LLM06	H	Why might you still choose 2xGPU FP8 over 1xGPU INT4 for serving a large model?
+Q008562	GA04	M	Why do output tokens cost more than input tokens, and how should that shape how you build?
+Q008563	GA04	M	How do reasoning tokens change your cost model for an agentic loop?
+Q008564	GA04	M	When is it worth paying for more output tokens for chain-of-thought?
+Q008565	LLM06	M	What is quantization for inference? Explain weights-only vs weights-and-activations quantization, and the typical tradeoffs.
+Q008566	LLM06	H	Why does W4A16 quantization barely help a high-batch serving deployment?
+Q008567	LLM06	H	What are activation outliers and why do they make W8A8 quantization hard?
+Q008568	LLM06	M	What's the difference between static and continuous batching, and why did continuous batching become universal?
+Q008569	LLM06	H	What new scheduling problems does continuous batching create?
+Q008570	LLM06	H	How does the inference engine decide when to preempt a running sequence, and what happens to its KV cache?
+Q008571	GA04	M	What is prompt (prefix) caching, and why is it one of the biggest cost levers available?
+Q008572	GA01	M	Why does inserting the current date at the top of a system prompt destroy prompt caching?
+Q008573	GA01	M	How does prefix caching interact with per-user personalisation?
+Q008574	GA04	M	What's the difference between prompt (prefix) caching and semantic caching?
+Q008575	GA04	M	Your app is getting 429s from your LLM provider at peak traffic. How do you handle rate limits properly?
+Q008576	GA04	M	Why is full jitter better than plain exponential backoff?
+Q008577	GA04	M	Your retries are succeeding but P99 latency tripled - what's happening and what do you change?
+Q008578	LLM05	M	We set temperature to 0, so outputs should be deterministic. Why do users still get different answers to the same prompt?
+Q008579	LLM05	H	Why does a busier LLM server make output divergence more likely at temperature 0?
+Q008580	GA04	M	How would you write a regression test for an LLM feature that cannot rely on exact output matching?
+Q008581	LLM01	M	What does FlashAttention actually do, and how is it different from PagedAttention?
+Q008582	LLM06	H	Why does decode need a differently shaped attention kernel than prefill?
+Q008583	LLM06	M	What does changing the attention backend actually change for you operationally?
+Q008584	GA04	M	A user closes the tab halfway through a streamed response. What happens on the server, and what should happen?
+Q008585	GA04	M	How would you implement a resumable stream for an LLM response?
+Q008586	GA04	H	What is the cost signature in your metrics of client disconnects that are never detected?
+Q008587	GA04	M	Your production code reads the LLM response text but never checks 'finish_reason' (or 'stop_reason'). Why is that a bug, and what should you do with each stop reason?
+Q008588	LLM05	M	How would you safely continue a generation that was truncated in the middle of a JSON object?
+Q008589	GA04	M	Your length-stop rate doubled after a model upgrade with no prompt change: what happened, and what do you change?
+Q008590	GA04	M	Why do we obsess over P99 latency rather than the average, and what causes tail latency in LLM serving specifically?
+Q008591	GA04	M	Why does an agent workflow's end-to-end tail latency degrade faster than any single call's?
+Q008592	SD05	M	What are the risks of hedged requests for non-idempotent operations?
+Q008593	LLM06	H	Explain arithmetic intensity and the roofline model as applied to LLM inference. Why does batching improve decode throughput so dramatically?
+Q008594	LLM06	H	Why doesn't the KV cache read amortise across the batch like weight reads do?
+Q008595	LLM06	H	Where does MoE sit on the roofline compared to a dense model at the same active-parameter count?
+Q008596	LLM06	M	What problem does PagedAttention solve, and how does it work?
+Q008597	LLM06	M	What's the cost of paging in PagedAttention - why not make blocks 1 token each?
+Q008598	LLM06	H	How does copy-on-write work in PagedAttention for beam search or n-best sampling?
+Q008599	LLM06	M	What is chunked prefill and what scheduling problem does it fix?
+Q008600	LLM06	M	How would you pick the chunk size for chunked prefill?
+Q008601	LLM06	H	Why does mixing a prefill chunk into a decode batch improve hardware utilization rather than just sharing the pain?
+Q008602	LLM05	H	Explain speculative decoding. Why is the output provably faithful to the target model, and when does it actually help?
+Q008603a	LLM05	H	Derive why the speculative decoding acceptance rule preserves the target distribution.
+Q008603b	LLM05	H	How does batch size change the economics of speculative decoding?
+Q008604	LLM05	M	When would n-gram lookup beat a trained draft model in speculative decoding?
+Q008605	LLM06	M	Compare GPTQ, AWQ, GGUF, INT8, and FP8. How do you actually choose a quantization approach for a deployment?
+Q008606	LLM06	H	Why do activation outliers make W8A8 harder than W4A16?
+Q008607	LLM06	M	What would make you reject a 4-bit quantized model that passes perplexity checks?
+Q008608	LLM06	M	What is KV-cache quantization, and when is it the right lever?
+Q008609	LLM06	H	Why are keys more quantization-sensitive than values in the KV cache?
+Q008610	LLM06	M	Describe the throughput-latency tradeoff curve for an LLM server, and explain goodput.
+Q008611	LLM06	M	Why does queueing delay explode near saturation in an LLM server?
+Q008612	LLM06	H	Your P99 TTFT breaches SLO but GPU utilization shows 60% - what do you investigate?
+Q008613	LLM06	M	vLLM, SGLang, TensorRT-LLM, TGI, llama.cpp/Ollama - how do you choose a serving stack?
+Q008614	LLM06	M	Your workload is 90% shared-system-prompt agent traffic - which LLM serving stack would you choose and why?
+Q008615	LLM06	M	What does a vendor-tuned stack like TensorRT-LLM buy over a portable engine, and what does it cost you when you want to add AMD capacity?
+Q008616	LLM06	M	Explain tensor parallelism vs pipeline parallelism for inference. When do you need each?
+Q008617	LLM06	H	Why does TP=8 across two 4-GPU nodes over Ethernet perform terribly?
+Q008618	LLM06	H	How does MoE change the parallelism picture for inference?
+Q008619	FT05	M	When deciding between self-hosting an open-weights model and calling a provider, what monthly token volume would make you re-evaluate?
+Q008620	FT05	M	How do provisioned-throughput offerings change the calculus of self-hosting an open-weights model versus calling a provider?
+Q008621	GA04	M	When would you use a batch API, and how do you design a pipeline around one?
+Q008622	GA04	M	How do you handle an LLM batch job that comes back 2% failed?
+Q008623	GA04	M	Your nightly LLM batch pipeline now needs 4-hour freshness - what changes?
+Q008624	GA04	M	What is semantic caching, how is it different from prompt/prefix caching, and what are its failure modes?
+Q008625a	GA04	H	Design the cache key for a semantic cache in a multi-tenant RAG product.
+Q008625b	GA04	H	How would you detect that your semantic cache similarity threshold is causing false hits in production?
+Q008626	GA02	M	How do you handle streaming when the model is emitting tool calls or structured JSON?
+Q008627	GA02	H	Where do you put schema validation when the model streams a 10-item JSON array you want to render progressively?
+Q008628	GA02	H	How do you prevent a tool from executing twice when a stream retry replays the tool call?
+Q008629	FT02	H	You need to serve 200 customer-specific fine-tunes of the same 8B base model. How do you do that on a handful of GPUs, and what breaks first?
+Q008630	FT02	H	Why can't a shared system prompt's KV cache be reused across two different LoRA adapters?
+Q008631	FT02	M	When would you merge an adapter into the base weights and serve it as its own model instead?
+Q008632	GA04	M	How do you load test an LLM service so the numbers actually mean something?
+Q008633	GA04	H	Why does a closed-loop load test with 100 workers understate P99 latency?
+Q008634	GA04	M	How would you design the prompt corpus for a benchmark of an agentic workload?
+Q008635	LLM06	H	Your product is moving from a standard chat model to a reasoning model with extended thinking. What changes for capacity, SLOs, and design?
+Q008636	LLM06	M	How would you pick the thinking budget per request rather than setting one global value?
+Q008637	LLM06	H	Which is worse for your fleet: one 30K-token reasoning request or thirty 1K-token chat requests, and why?
+Q008638	LLM06	H	Explain KV cache offloading and cross-request reuse beyond a single GPU's memory. When does loading a cached prefix beat just recomputing prefill?
+Q008639	LLM06	H	What exactly must go into the cache key for cross-request KV cache reuse?
+Q008640	LLM06	H	At what hit rate does an NVMe tier for KV cache stop paying for itself?
+Q008641	LLM06	M	How do you choose inference hardware: NVIDIA GPUs, AMD, TPUs, or cloud silicon like Inferentia and Trainium?
+Q008642	LLM06	H	Why might one GPU with more HBM beat two smaller GPUs with the same total memory for LLM inference?
+Q008643	LLM06	M	What would make you reject an inference chip that wins on dollars per token?
+Q008644	MS01	M	When does on-device or edge inference make sense, and what actually constrains it?
+Q008645	MS01	M	How do you decide where the local/cloud routing boundary sits for on-device inference?
+Q008646	MS01	M	What breaks about your evaluation and observability story when inference runs on the user's device?
+Q008647	LLM06	H	At low batch sizes your decode is slower than the bandwidth math predicts, and the GPU timeline shows gaps between kernels. What is CPU overhead in LLM serving, and how do CUDA graphs and overlapped scheduling fix it?
+Q008648	LLM06	H	Why do CUDA graphs need batch-size buckets, and what does padding to a bucket cost you?
+Q008649	LLM06	H	How would you confirm from a profile that a latency problem is host overhead rather than memory bandwidth?
+Q008650	GA04	M	Providers now sell the same model at several service tiers: standard, priority, flex or batch, and provisioned throughput. How do you decide which traffic goes where?
+Q008651	GA04	M	Your provisioned LLM capacity runs at 40% utilisation overnight: what do you route into it?
+Q008652	GA04	M	How do you decide whether a feature's P99 latency is worth paying priority-tier prices for?
+Q008653	LLM06	H	Build the full GPU memory budget for a serving deployment, and show how it determines maximum batch size and concurrency.
+Q008654a	LLM06	H	Redo the GPU memory budget math for a serving deployment with FP8 weights on 2 GPUs.
+Q008654b	LLM06	H	Your product wants to raise the context limit from 8K to 128K - what does that do to cost per request?
+Q008655	GA04	H	Design the SLOs for a new LLM-powered feature. What do you promise, and how do you measure it?
+Q008656	GA04	M	Your LLM provider's P99 is worse than the SLO you want to offer - what are your options?
+Q008657	GA04	M	Why measure timeout-terminated requests inside the latency distribution?
+Q008658	LLM06	H	How does a 30% prompt-cache hit rate change an LLM serving capacity plan?
+Q008659	LLM06	M	Peak LLM traffic is 3x the daily average - how do you split reserved vs autoscaled capacity?
+Q008660	LLM06	H	GPU cold starts take minutes. How do you autoscale an inference fleet anyway?
+Q008661	LLM06	H	Why is GPU utilization a bad scaling signal for decode-heavy workloads?
+Q008662	GA04	M	What do you monitor in production LLM serving, and what pages someone at 3 a.m.?
+Q008663	LLM06	H	KV cache utilization is 95%, preemptions are climbing, but GPU "utilization" looks fine - what's happening and what do you do?
+Q008664	GA04	M	What would you add to LLM serving monitoring for a multi-tenant platform?
+Q008665	GA04	H	Design the reliability layer for calls to an LLM provider: timeouts, retries, circuit breakers, idempotency.
+Q008666a	GA04	H	A stream dies at token 400 of a 600-token answer the user is reading - walk through exactly what happens.
+Q008666b	GA04	M	Why must fallback models be eval-gated rather than just API-compatible?
+Q008667	GA04	H	Traffic doubles overnight and you can't get more GPU capacity for a week. What are your graceful-degradation options?
+Q008668	LLM06	H	Which LLM-serving graceful-degradation options relieve KV-memory pressure versus compute pressure?
+Q008669	GA04	M	How do you decide the priority order between free-tier chat and paid-tier background jobs when LLM capacity is constrained?
+Q008670	LLM05	H	How is structured output actually enforced at the serving layer, and what does it cost?
+Q008671	LLM05	H	Why must the grammar be compiled against the tokenizer vocabulary in constrained decoding?
+Q008672	LLM05	M	When would you prefer parse-and-retry over constrained decoding?
+Q008673	GA04	H	Your LLM bill tripled this quarter. Design a cost-engineering programme - attribution, cascades, context management.
+Q008674	GA04	H	How do you build a difficulty router for LLM requests without labelled data?
+Q008675	GA04	M	A model upgrade improved quality but doubled reasoning tokens - how do you decide whether to adopt it?
+Q008676	LLM05	H	Why does sampling temperature affect acceptance rates in speculative decoding?
+Q008677	LLM06	H	What is prefill/decode disaggregation, and why do large-scale deployments separate the two?
+Q008678	LLM06	H	Estimate the KV bytes transferred for an 8K-token prompt on a 70B GQA model in prefill/decode disaggregation - is that transfer a problem on NVLink vs Ethernet?
+Q008679	LLM06	H	How does prefill/decode disaggregation interact with prefix caching?
+Q008680	MS04	H	Design a multi-provider LLM gateway: routing, fallbacks, and the pitfalls teams hit.
+Q008681	GA04	H	How do you run evals continuously across backends in an LLM gateway without exploding cost?
+Q008682	GA05	H	Where does an LLM gateway enforce prompt-injection and data-egress controls?
+Q008683	LLM06	H	How does prefix-aware routing interact with autoscaling for a replicated LLM deployment, and what does that do to your scale-up policy?
+Q008684	LLM06	H	What prefix cache hit rate would justify a shared KV tier over simple sticky sessions?
+Q008685	LLM06	H	How does serving a large sparse mixture-of-experts model differ from serving a dense model, and what does expert parallelism change?
+Q008686	LLM06	H	Why does low traffic hurt an MoE deployment more than a dense one of similar quality?
+Q008687	LLM06	H	How would you detect and quantify expert imbalance in production for an MoE model?
+Q008688	GA04	M	Why are requests-per-second quotas the wrong unit for a shared LLM platform, and what would you use instead?
+Q008689	GA04	H	How do you price internal chargeback when 60% of a tenant's input tokens are cache hits?
+Q008690	LLM06	H	Your traffic is shifting from single-turn chat to agents: 20 to 50 model calls per task, tool calls in between, sessions lasting tens of minutes. What does that do to your serving design?
+Q008691	GA03	H	Why is input token growth in an agent loop roughly quadratic in steps, and what would you change to flatten it?
+Q008692	GA04	M	How would you alert on prefix cache hit rate without paging on every deploy?
+Q008693	GA04	M	What deploy-time check would catch a prompt-prefix change that breaks prefix caching before it ships?
+Q008694	LLM06	H	You are moving from a dense transformer to a Mamba-attention hybrid. What changes in your serving stack?
+Q008695	LLM06	H	Why can you not roll a Mamba state back by 30 tokens the way you can drop KV blocks, and what does that cost an agent that edits its own history?
+Q008696	LLM06	H	Your hybrid Mamba-attention deployment reports a 0% prefix cache hit rate on chat traffic but 90% on RAG traffic. What do you check first?
+Q008697	LLM06	H	Product wants to offer a 1M-token context window on a model you self-host. What breaks in serving, and how do you make it work?
+Q008698	LLM06	H	Why does context parallelism help prefill far more than it helps decode?
+Q008699	LLM06	H	A customer sends a different 900K-token document with every request: how does that change your pricing and capacity plan?
+Q008700	LLM06	H	What changes in your serving design when the NVLink domain grows from 8 GPUs in a server to 72 GPUs in a rack, as with GB200 NVL72-class systems?
+Q008701	LLM06	H	Why does wide expert parallelism free HBM for KV cache, and how does that change achievable batch size?
+Q008702	LLM06	H	A single NVLink switch tray fails in the rack: what happens to your serving instance, and how do you design for it?
+Q008703	GA05	E	What is prompt injection, and how is it different from a jailbreak?
+Q008704	GA05	M	Which of prompt injection and jailbreaking can a model provider fully fix on their end, and which can't they?
+Q008705a	GA05	M	Give an example where a jailbreak enables a prompt injection attack.
+Q008705b	GA05	M	If your agent has no tools and no private data, which of prompt injection and jailbreaking still matters?
+Q008706	GA05	M	Why is prompt injection considered fundamentally unsolved?
+Q008707	GA05	M	Why doesn't delimiting or telling the model to "ignore any instructions in the following text" prevent prompt injection?
+Q008708	GA05	M	What's the SQL-injection analogy for prompt injection and where does it break?
+Q008709	GA05	M	Given that prompt injection is unsolved, what does a responsible engineer actually do?
+Q008710	GA05	M	What is indirect prompt injection, and why is it more dangerous than direct prompt injection?
+Q008711	GA05	M	How would an attacker hide an injection payload in a document your parser reads?
+Q008712	RAG06	M	Why does RAG turn every ingested document into an attack surface?
+Q008713	GA05	H	If you can't stop the model from reading injected text, where do you put the defence?
+Q008714	GA05	M	Walk me through the OWASP Top 10 for LLM Applications. Which matter most for an agent?
+Q008715	GA05	H	Map the lethal trifecta onto the OWASP Top 10 for LLM Applications categories. Which are new versus classic AppSec (injection, output handling, supply chain) rediscovered?
+Q008716	GA05	M	Which OWASP LLM Top 10 risk would you check first for a customer-support agent with database access?
+Q008717	GA05	M	Why should you assume the system prompt will leak, and what follows from that?
+Q008718	GA05	M	A teammate wants to gate a premium feature by telling the model not to use it for free users - what's wrong with that?
+Q008719	GA05	M	Where should the API key that the model's tool needs actually live?
+Q008720	GA05	M	Is there any harm in a leaked system prompt beyond embarrassment?
+Q008721	GA05	M	What is the lethal trifecta, and how do you use it to secure an agent?

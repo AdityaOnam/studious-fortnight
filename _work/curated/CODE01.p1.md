@@ -1,0 +1,114 @@
+## Activations, losses and optimizers
+- [E] Implement softmax from scratch and make it numerically stable. {Q002346}
+- [E] Implement the sigmoid, tanh, ReLU, LeakyReLU and softmax activation functions from scratch. {Q005438}
+- [E] Write functions that compute MSE, MAE and RMSE from predictions and targets. {Q005433,Q005434,Q011948}
+- [E] Implement a custom activation as an nn.Module with a learnable parameter, such as a learned SiLU. {Q002426}
+- [E] Implement the Huber loss as a torch.nn.Module. {Q002411}
+- [E] Implement one-hot encoding without using F.one_hot. {Q004467}
+- [E] Implement label-smoothed targets and the corresponding cross-entropy loss. {Q004468}
+- [M] Implement a numerically stable softmax and cross-entropy loss in NumPy. {D03820}
+- [M] Implement binary cross-entropy directly from logits in a numerically stable way. {GEN}
+- [M] Implement token-level cross-entropy for a language model that ignores padding positions, and compute perplexity from it. {GEN}
+- [M] Implement the KL divergence between two categorical distributions given their logits. {GEN}
+- [M] Implement Dice loss for segmentation. {Q002442}
+- [M] Implement focal loss for an imbalanced classification problem. {GEN}
+- [M] Write a finite-difference gradient check that verifies a hand-written backward pass. {GEN}
+- [E] Implement SGD with momentum and weight decay as a custom optimizer. {GEN}
+- [M] Implement Adam from scratch. {Q002369}
+- [M] Implement AdamW from scratch. {Q002370}
+- [M] Implement global-norm gradient clipping. {GEN}
+- [M] Implement a learning-rate scheduler with linear warmup followed by cosine decay. {GEN}
+- [H] Implement the Muon optimizer from scratch. {Q002372}
+
+## Classical ML from scratch
+- [E] Implement the perceptron learning rule. {D03831}
+- [M] Implement linear regression with gradient descent using vectorized NumPy. {Q005435,D03821}
+- [E] Implement a linear regression model class in PyTorch. {Q002413}
+- [M] Implement ridge regression using both the closed-form solution and gradient descent. {GEN}
+- [M] Implement logistic regression with gradient descent and handle numerical stability. {Q002345,Q005436,D03822}
+- [M] Implement multiclass softmax regression with vectorized gradients. {GEN}
+- [M] Implement k-nearest neighbors classification with vectorized distance computation. {Q002374,Q005437,D03823}
+- [M] Implement k-means clustering from scratch and discuss its convergence. {Q002344,Q005439,D03824}
+- [M] Implement k-means++ initialization. {GEN}
+- [H] Implement a Gaussian mixture model fitted with the EM algorithm. {GEN}
+- [M] Implement principal component analysis using the SVD. {D03826}
+- [M] Implement the best-split search of a decision tree using Gini impurity. {D03825}
+- [M] Implement a random forest using bootstrap sampling and feature subsampling on top of your decision tree. {GEN}
+- [H] Implement one gradient boosting step that fits a regression tree to the residuals. {D03836}
+- [M] Implement a linear SVM trained with hinge loss. {D03830}
+- [M] Implement a multinomial Naive Bayes text classifier with smoothing. {D03834}
+- [M] Implement TF-IDF from scratch. {D03842}
+- [M] Implement matrix factorization for recommendations trained with SGD. {D03835}
+- [M] Implement word2vec skip-gram with negative sampling. {D04893}
+- [H] Implement a feedforward neural network with backpropagation using only NumPy. {D03832}
+
+## Metrics, data splitting and preprocessing
+- [E] Implement precision, recall and F1 from scratch with vectorized operations and no loops. {Q005443,D03863}
+- [E] Implement binary accuracy from logits. {Q004480}
+- [E] Implement multiclass top-k accuracy. {Q004481}
+- [M] Compute a batched confusion matrix without per-example loops. {Q004469}
+- [M] Implement macro and micro averaged multiclass metrics from a confusion matrix. {D03833}
+- [M] Implement binary classification metrics and ROC AUC from predicted scores. {D03828}
+- [M] Implement average precision (area under the precision-recall curve) from scores and labels. {GEN}
+- [M] Implement expected calibration error for a binary or multiclass classifier. {GEN}
+- [M] Implement a bootstrap confidence interval for an arbitrary evaluation metric. {GEN}
+- [M] Implement a streaming metric that accumulates results across batches. {Q004482}
+- [M] Implement sample-weighted losses and streaming metrics that aggregate correctly across distributed workers. {D03841}
+- [M] Write code to perform k-fold cross-validation. {Q005440}
+- [E] Implement a reproducible train, validation and test split without scikit-learn that avoids leakage and supports stratification. {Q004456,D03837}
+- [M] Implement a time-ordered train/validation split for time-series data that avoids look-ahead leakage. {GEN}
+- [E] Implement feature standardization with fit, transform and inverse_transform using only training statistics. {Q004475,D03838}
+- [M] Implement missing value imputation and handling of unseen categories at inference. {D03839}
+- [M] Implement uniform, weighted and stratified sampling with reproducible seeds. {D03840}
+- [M] Implement reservoir sampling for a stream of unknown length. {D03829}
+- [M] Write a Python generator that lazily reads and transforms records from a dataset too large for memory. {Q004457}
+- [M] Implement a custom PyTorch Dataset for numerical and categorical features. {Q004476}
+- [M] Implement a Dataset and DataLoader for a CSV file. {Q004520}
+- [M] Write a custom Dataset and collate_fn for variable-length sequences. {Q004477,D03862}
+
+## PyTorch layers, models and training loops
+- [E] Implement a feedforward neural network with fully connected layers in PyTorch, for example for MNIST. {Q002420,Q004521}
+- [E] Implement a CNN for image classification in PyTorch. {Q002421,Q004522}
+- [E] Implement an RNN model in PyTorch. {Q002424}
+- [E] Implement an LSTM model using the built-in LSTM layer. {Q002450}
+- [M] Implement an LSTM model using a hand-written LSTM cell and layer. {Q002448}
+- [E] Implement inverted dropout as a layer with different train and eval behaviour. {GEN}
+- [M] Implement a BatchNorm1d layer with running statistics for training and evaluation modes. {GEN}
+- [M] Implement a custom Conv2d class that mimics nn.Conv2d, and derive its output shape. {Q002446,D03827}
+- [M] Implement a custom MaxPool2d class that mimics nn.MaxPool2d. {Q002447}
+- [M] Implement a ResNet basic block with a skip connection and a projection shortcut. {GEN}
+- [M] Implement the AlexNet architecture. {Q002443}
+- [H] Implement a 3D CNN with Conv3d and ConvTranspose3d layers for downsampling and upsampling volumetric data. {Q002441}
+- [M] Implement a convolutional autoencoder in PyTorch. {Q002415}
+- [M] Implement the generator and discriminator of a GAN and its training step in PyTorch. {Q002427}
+- [M] Implement Xavier and He weight initialization and compare activation variance across layers. {GEN}
+- [M] Write a PyTorch training and evaluation loop with gradient clipping and checkpointing. {D03861}
+- [M] Extend a training loop with gradient accumulation and mixed-precision training. {GEN}
+- [E] Implement early stopping. {Q004485}
+- [M] Implement knowledge distillation with a temperature-scaled soft-target loss. {Q002365}
+
+## Attention and Transformer components
+- [M] Implement scaled dot-product attention with a causal mask from scratch, in NumPy or PyTorch, with batch and head dimensions. {Q005161,Q011885,Q009205,D04880,D03843,Q002386}
+- [E] Build a causal attention mask for autoregressive decoding. {D03845}
+- [M] Implement padding and attention masks for a batch of variable-length token sequences. {D03849}
+- [M] Implement multi-head self-attention from scratch, without nn.MultiheadAttention, and make it causal. {Q002439,Q009615}
+- [M] Implement cross-attention between decoder states and encoder outputs. {GEN}
+- [M] Implement an attention mechanism that scores encoder outputs against the current decoder hidden state in a seq2seq model. {Q002435}
+- [H] Implement multi-head attention, then convert it into grouped-query attention. {Q002387,Q005162,D04881,Q009819}
+- [H] Implement grouped-query attention in PyTorch and quantify where the KV-cache savings come from. {Q010042}
+- [M] Implement sliding window attention. {Q002357}
+- [E] Implement the sinusoidal positional embedding as an nn.Module. {Q002403,D03846}
+- [M] Implement ALiBi attention biases. {D04895}
+- [M] Implement 2D positional embeddings for image patches. {Q002347}
+- [M] Implement rotary position embeddings (RoPE) from scratch. {Q002397}
+- [H] Implement rotary position embeddings and verify numerically that the attention score depends only on relative position. {D04883}
+- [E] Implement RMSNorm and compare it numerically with LayerNorm. {Q002396,D04882}
+- [E] Implement LayerNorm from scratch with learnable scale and shift. {GEN}
+- [E] Implement the position-wise feed-forward layer used inside Transformer blocks. {Q002440}
+- [M] Implement a SwiGLU feed-forward block. {D04892}
+- [M] Implement a pre-norm Transformer decoder block with residual connections. {GEN}
+- [H] Implement a small GPT-style decoder-only language model and train it on a toy corpus. {GEN}
+- [H] Implement a top-k mixture-of-experts layer with an auxiliary load-balancing loss. {Q002368,D04894,Q010274a}
+- [H] Implement top-k MoE routing with a shared expert in PyTorch, and point out the efficiency and correctness traps. {Q011982,Q009482}
+- [H] Rewrite the per-expert inner loop of a top-k MoE layer as a grouped matmul. {Q009483a}
+

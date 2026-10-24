@@ -1,0 +1,83 @@
+Q001662	M	Describe how LLMs can be used in the generation of synthetic text.
+Q002273	M	How do multi-task learning and transfer learning compare?
+Q004682	M	What is model distillation, and how is it used with LLMs?
+Q004704	H	Your distilled student model fails on the complex reasoning that the teacher model handled. How do you close the gap?
+Q004854	M	What is synthetic data generation, and how do you use it for fine-tuning?
+Q004864	M	What is knowledge distillation for fine-tuning, and what are the legal considerations?
+Q005345	M	How does knowledge distillation work?
+Q005920	M	What is test-time compute? How does a thinking budget control how much an AI model thinks?
+Q006206	M	What is test-time compute scaling, and why is it a core direction for agent reasoning?
+Q010874	H	When would you use Self-Consistency vs Best-of-N sampling?
+Q010880	M	What is the difference between ensemble learning and model arbitration?
+Q011278	M	Why is a distilled 8B model better than an 8B model trained from scratch on the same tokens?
+Q011279	M	What are the risks of distilling a closed API model into an open-weight student?
+Q011281	M	What is the risk of "model collapse" when training on synthetic data?
+Q011282	M	How do you ensure the quality of a synthetic dataset of 10 million rows?
+Q011443	M	What is inference-time scaling and how does it relate to agentic loops?
+Q011847	M	What is distillation, and how do you build a strong small model from a large one?
+Q011984	H	How do you build a training dataset without triggering model collapse when much of your data is synthetic?
+Q011999	M	Explain strong-to-weak distillation, bootstrapping smaller models from flagship ones. How does it work and why is it cheaper?
+Q007357	H	Why does label smoothing conflict with knowledge distillation?
+Q007589	E	What is distillation, and how is it used in the LLM ecosystem?
+Q007590	H	Why do soft targets carry more information than hard labels? Can you formalise it?
+Q007591	H	When does on-policy distillation (student generates, teacher corrects/scores) beat plain imitation of teacher outputs?
+Q007592	H	How would you build a distillation data pipeline with quality filtering?
+Q007612	H	When does model merging work, and what's actually going on underneath?
+Q007613	H	Why does model merging inflate leaderboard scores more than real capability?
+Q007614	H	How would you decide merge coefficients without a huge eval budget?
+Q008087	M	How do you generate synthetic training data with an LLM, and what are the pitfalls?
+Q008088	M	How would you measure whether a synthetic dataset is diverse enough?
+Q008089	H	Why does rejection sampling change the quality economics of synthetic data for math and code but not for creative writing?
+Q008090	M	Explain distillation for LLMs, black-box versus logit distillation, and the licensing caveats.
+Q008091	M	In distillation, why do soft targets carry more information than sampled text?
+Q008092	H	Your student and teacher have different tokenizers. What breaks in logit distillation and what are the workarounds?
+Q008103	M	Explain model merging: task arithmetic, TIES, DARE, and SLERP. When does merging actually work?
+Q008104	H	Why does model merging fail across independently pretrained models but work across fine-tunes of one base?
+Q008105	H	How would you merge three LoRAs of different ranks trained on the same base model?
+Q008167	H	How would you detect that your synthetic-data teacher model was contaminated, given you cannot inspect its training set?
+Q008171	H	Design a pipeline to distil a frontier model's performance on your task into an 8B model you can serve yourself. Walk me through the whole thing.
+Q008172	H	In a distillation setup, how would you decide the routing threshold between student and teacher in production?
+Q008173	H	What changes if the teacher and student have different tokenizers and you only have the teacher's text outputs?
+Q008965	H	How would you distil a VLM's labels into a small classifier without inheriting its systematic errors?
+Q008995	H	Does test-time compute help on visual tasks? Where does it help, where does it not, and how would you actually use it?
+Q008997	H	Given a fixed budget, would you spend it on more image tokens or more reasoning tokens, and how do you decide empirically?
+Q009484	H	How do you build a training dataset without triggering model collapse when a lot of your data is synthetic?
+Q009485	H	How would you measure diversity loss quantitatively in a model trained on synthetic data before it shows up in benchmarks?
+Q009486	M	When is self-generated data safe to train on and when is it poison?
+Q010032	H	A model unifies a "thinking" mode and a "non-thinking" mode, with a thinking budget the caller can set. How would you train that, and how would you serve it?
+Q010033	M	How would you stop a hybrid thinking model from "thinking" on trivial prompts?
+Q010037	M	Strong-to-weak distillation bootstraps smaller models from flagship ones instead of running the full heavy post-training on every size. How does that work and why is it cheaper?
+Q010038	H	When does logit distillation beat SFT on teacher outputs, and when is it not worth the extra plumbing?
+Q010039	H	How would you detect that a distilled student has simply memorised teacher traces?
+Q010075	H	How do you detect and prevent synthetic-data quality collapse?
+Q010225	H	What would you distil first from a large teacher, and how would you know the distillation lost something that only matters in the tail?
+Q010283	H	In post-training that distills from per-domain expert models, how do you decide the mixing ratio across domains?
+Q010284	H	In distillation from per-domain expert models, what goes wrong if the agent specialist's traces dominate the distillation set?
+Q010526	M	When would you distill an LLM into a smaller model, and what does that pipeline look like?
+Q010527	H	When distilling an LLM into a smaller model served behind a cascade, how do you pick the confidence threshold for the cascade?
+Q010528	H	In distillation, the teacher model is wrong in a systematic way on one class. What do you do?
+D00269	E	What is knowledge distillation, and why can a distilled small model beat a same-size model trained from scratch?
+D00270	M	Compare hard-label, soft-label and on-policy distillation.
+D00271	M	What is temperature scaling in soft-label distillation and why does it matter?
+D00272	M	How would you distill reasoning ability into a small model, and why is collecting long chain-of-thought for SFT not enough?
+D00273	M	What is self-distillation via rejection sampling, and when is it useful?
+D00274	M	What are the legal and technical risks of distilling a closed API model into an open-weight student?
+D00275	M	What is a model distillation attack through an API, and how would you defend against extraction?
+D00276	H	Design a customer-specific distillation pipeline from production traces to a canary-deployed student model.
+D00277	M	Why should distillation data come from real production traces rather than purely synthetic prompts?
+D00278	M	What happens to a student model when the teacher is upgraded, and how often should you re-distill?
+D00279	M	How do teacher hallucinations get baked into the student, and how do you filter them?
+D00280	M	A customer spends fifty thousand dollars per month on a frontier model. How would you quote a distillation project, including payback?
+D00281	M	When does distillation not make sense?
+D00282	M	What is quantization-aware distillation and why combine the two?
+D00283	M	What is test-time scaling, and how does it trade inference compute for accuracy?
+D00284	M	What is Extended Thinking with a token budget, and how do you decide the budget per task?
+D00285	M	Why does continual learning in a deployed agent risk catastrophic forgetting, and what mitigations exist?
+D00286	M	How does an online training loop let a product model keep improving from user feedback, and what are its risks?
+D00287	M	What is a data flywheel for an AI product, and how do you build one safely?
+D00288	M	How do you evaluate the quality of synthetic instruction data and prevent a loss of diversity?
+D03788	M	How does inference-time scaling improve reasoning, and what are its costs?
+D04875	M	Describe how knowledge distillation works for compressing language models (e.g. TinyBERT, patient KD) and which layers or signals are matched.
+D04876	M	Compare pruning, quantization, low-rank approximation, weight sharing and distillation as model compression methods.
+D04977	M	What is the difference between logit distillation and sequence-level distillation, and what is the effect of temperature on the soft targets?
+D04978	M	How does self-instruct bootstrapping relate to distillation from a stronger model, and what are the legal and quality caveats?

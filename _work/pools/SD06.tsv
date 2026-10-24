@@ -1,0 +1,430 @@
+Q011908	H	Design a distributed search system for 1 billion documents at 1 million QPS.
+Q011910	H	Design a file-sharing / distribution system.
+Q011935	H	Design and build a webhook delivery system that reliably delivers events to customer-registered URLs.
+Q011936	H	Design a system to schedule jobs in a distributed environment.
+Q011937b	H	Design Slack.
+Q012041a	H	Design a podcast search engine with transcript indexing.
+Q000629	H	How would you design Stack Overflow?
+Q000631	H	How does YouTube handle massive video uploads?
+Q000632	M	How does a typical push notification system work?
+Q000633	H	How does Netflix scale push messaging?
+Q000636	H	What is the journey of a message in Slack?
+Q000667	M	How does scan-to-pay work?
+Q000670	M	How do Apple Pay and Google Pay work?
+Q000671	M	How does VISA work when swiping a credit card?
+Q000672	M	How does an ACH payment work?
+Q000681	H	How do you avoid crawling duplicate URLs at Google scale?
+Q000699	M	How would you build a simple chat application with Redis?
+Q000701	H	How would you design Google Docs?
+Q000704	M	How do search engines work?
+Q000751	M	What happens behind the scenes when we shop online?
+Q000808	H	Given a radius and a location, how would you return a list of nearby restaurants?
+Q000810	H	How do you get nearby businesses with a quadtree?
+Q000825	H	In a simulation shooter game, characters A, B, and C open fire in sequence during a big fight; how does the game server transmit the states to the game clients?
+Q003252	H	How would you design a globally distributed chat system?
+Q003277	H	Design YouTube.
+Q003278	H	Design Amazon Prime Video.
+Q003279	H	Design Amazon Shopping Cart.
+Q003280	H	Design Facebook News Feed.
+Q003281	H	Design Instagram.
+Q003282	H	Design WhatsApp.
+Q003283	H	Design Netflix streaming service.
+Q003284	H	Design a content delivery network.
+Q003285	H	Design Uber ride-hailing.
+Q003286	H	Design a surge pricing system.
+Q003287	H	Design an Airbnb booking system.
+Q003289	H	Design Twitter.
+Q003308	H	Design a distributed cache system.
+Q003313	H	Design a real-time analytics dashboard.
+Q003317	H	Design a notification system for millions of users.
+Q003318	H	Design a global file storage system (Dropbox-like).
+Q003319	H	Design an inventory management system.
+Q003320	H	Design a supply chain tracking system.
+Q003321	H	Design a warehouse management system.
+Q005563	H	Design a SQL-backed KV store.
+Q005564	H	Design Slack's real-time communication.
+Q005565	H	Design a hashtag service.
+Q005566	M	Design a word dictionary.
+Q005567	H	Design a superfast KV store.
+Q005568	H	Design a video processing pipeline for a streaming service.
+Q005569	H	Design a text-based search engine.
+Q005570	M	Design a service that serves recent searches for a user.
+Q005571	H	Design a text-based cricket commentary service.
+Q005572	H	Design a SQL-backed message broker.
+Q005573	H	Design a distributed task scheduler.
+Q005516	H	Design an airline check-in system.
+Q005524	M	Design a blogging platform.
+Q005525	H	Design counting impressions at scale.
+Q005526	H	Design a distributed cache.
+Q005532	H	Design a remote file sync service.
+Q005540	M	Design an image service.
+Q005546	H	Design a load balancer.
+Q005550	M	Design a newly unread message indicator.
+Q005552	M	Design an online/offline indicator.
+Q005577	H	Design a real-time database.
+Q005588	H	Build a search engine on top of 100MB of text data using your favourite programming language.
+Q005591	H	Design a video processing pipeline for a streaming service.
+Q005592	M	Design a robust video upload flow for a video streaming service.
+Q005594	M	How does on-demand video optimization work in a video streaming service?
+Q005689	M	Design a URL shortener like TinyURL.
+Q005690	M	Design autocomplete for a search engine.
+Q005691	M	Design a content delivery network (CDN).
+Q005692	H	Design a distributed key-value store.
+Q005693	M	Design the Unified Payments Interface (UPI).
+Q005694	H	Design a distributed job scheduler.
+Q005695	H	Design an e-commerce store like Amazon.
+Q005696	H	Design a distributed message queue like Kafka.
+Q005697	H	Design a flight booking system.
+Q005698	H	Design an online code editor.
+Q005699	H	Design an analytics platform (metrics and logging).
+Q005700	H	Design a digital wallet.
+Q005701	H	Design a location-based service like Yelp.
+Q005702	H	Design a food delivery app like DoorDash.
+Q005703	H	Design a file sharing system like Dropbox.
+Q005704	H	Design a ticket booking system like BookMyShow.
+Q005705	H	Design a distributed web crawler.
+Q005706	H	Design a code deployment system.
+Q005707	H	Design a distributed cloud storage system like S3.
+Q005708	H	Design a distributed locking service.
+Q005713	M	What are best practices for building something like a news feed?
+Q005714	M	What are the scaling issues to keep in mind while developing a social network feed?
+Q005715	H	How would you create an asynchronous multiplayer game?
+Q005719	H	How would you implement Google Search?
+Q005833	M	How do you approach a system design interview question?
+Q005849	M	Design Pastebin.com (or Bit.ly).
+Q005850	H	Design the Twitter timeline and search (or Facebook feed and search).
+Q005852	H	Design the data structures for a social network.
+Q005853	H	Design a key-value store for a search engine.
+Q005854	H	Design Amazon's sales ranking by category feature.
+Q005855	H	Design a system that scales to millions of users on AWS.
+Q005901	H	Design a key-value cache to save the results of the most recent web server queries.
+Q006492	M	How does Geohashing work?
+Q006493	M	Why do we need Quadtrees?
+Q006509	E	What is a URL shortener?
+Q006512	M	What would be the requests per second (RPS) for a URL shortener system?
+Q006513	M	What kind of database should be used for a URL shortener?
+Q006514	E	Why do we need an API key in a URL shortener's API design?
+Q006515	M	How do you handle concurrent access in the Key Generation Service (KGS) of a URL shortener?
+Q006519	M	Which cache eviction policy should be used in a URL shortener?
+Q006520	M	How do you handle a cache miss in a URL shortener?
+Q006524	M	How would you handle inter-service communication and service discovery in a chat application architecture?
+Q006530	M	How do you identify trending topics in a Twitter-like system?
+Q006531	M	What is the difference between Netflix's Open Connect and a traditional Content Delivery Network (CDN)?
+Q006532	M	How do you identify trending content in a video streaming service?
+Q006535	M	How do you handle race conditions in ride matching for a ride-sharing service like Uber?
+Q006536	M	How do you find the best drivers nearby in a ride-sharing service?
+Q012127	H	Design a system for fast lookup of cars on the market according to the user's geo-position.
+Q012138	H	Design a suggestion system.
+Q012140	H	Design a video upload system for users with low network bandwidth.
+Q012146	H	Design a payment gateway like Razorpay.
+Q012148	H	Design a chat application like WhatsApp or WeChat.
+Q012157	H	Design a mock interview system like Pramp.
+Q012163	H	Design an employee management platform that includes payroll, IT, employee benefits, and all other employee operations in one place.
+Q012164	H	Design a user engagement platform.
+Q012165	H	Design a product experience platform like Pendo.
+Q012166	H	Design a live auction platform for IPL or EPL.
+Q012168	H	Design a browser testing application like BrowserStack or Sauce Labs.
+Q012169	H	Design a real-time collaboration application for teams.
+Q012170	H	Design a visual workplace for remote teams.
+Q012171	H	Design an online UML diagram tool like Lucidchart.
+Q012172	H	Design an online audio/video file downloader.
+Q012174	H	Design a game streaming platform.
+Q012175	H	Design a real-time translation platform.
+Q012176	H	Design a community-based discussion platform.
+Q012178	H	Design an online assessment platform for exams like GRE or TOEFL.
+Q012179	H	Design an online customer verification platform for digital onboarding (KYC) of users for banks and other clients.
+Q012180	H	Design a secure content management platform.
+Q012181	H	Design a freelancing hiring platform.
+Q012182	H	Design a monitoring and alerting system for production and other environments.
+Q012183	H	Design a digital video KYC (know your customer) verification system.
+Q012184	H	Design an online e-filing service for income tax returns.
+Q012185	H	Design a job posting system dedicated to blue-collar and grey-collar workers, supporting multiple languages and native languages.
+Q012186	H	Design a system similar to Product Hunt for sharing and discovering new products.
+Q012187	H	Design a clipboard service that stores the maximum number of clips.
+Q012188	H	Design a system for salary information and comparison, similar to Glassdoor Salaries or Levels.fyi.
+Q012189	H	Design a pricing and product comparison system.
+Q012190	H	Design a virtual event platform for communities and enterprises.
+Q012191	H	Design a short video and content sharing system like TikTok.
+Q012192	H	Design a short storytelling (text and images) platform like Terribly Tiny Tales.
+Q012193	H	Design a user activity tracking system for mobile users.
+Q012198	H	Design a torrent service, end to end.
+Q012199	H	Design a system like BigBasket for local retailers.
+Q012203	H	Design an electronic signature system like DocuSign.
+Q012215	H	Design a food ordering system like Swiggy or Zomato.
+Q012218	H	Design a navigation alerts system, similar to Google Maps functionality.
+Q012220	H	Design a plagiarism checker.
+Q012224	H	Design an ads system for a website.
+Q012225	H	Design an online code judge.
+Q012226	H	Design a Splunk-like log management system that supports queries with filters on the last minute, hour, day, week, etc.
+Q012227	H	Design LinkedIn's suggested connections feature.
+Q012247	H	Design a system that is incrementally scalable to 1000 unique ID requests per second from each of 1000 devices per person, for every human on earth, for 100 years.
+Q012248	M	Design a scalable weather service that pulls data from an API.
+Q012293	H	How do you implement the price-time FIFO matching algorithm in an order matching system?
+Q012294	H	In an order matching system, how do you transmit order book data to the client side in real time?
+Q012295	H	In an order matching system, how do you support different kinds of orders?
+Q012302	H	In a payment system, how do you synchronize the transaction table with external banks and vendors?
+Q012308	M	In a hotel reservation system, how do you find available rooms?
+Q012335	H	How would you store users' viewing data at scale (billions of events per day) for a video streaming service?
+Q012358	M	In a URL shortener, how do you purge expired URLs?
+Q012359	M	How will shortened URLs be generated in a URL shortener?
+Q012360	M	How do you store the URL mappings in a URL shortener?
+Q012361	M	How do you implement the redirect servers in a URL shortener?
+Q012362	M	How are click stats stored in a URL shortener?
+Q012363	H	How will the aggregation tier for click stats be partitioned in a URL shortener?
+Q012364	M	How do you prevent visiting restricted sites through a URL shortener?
+Q012450	H	How does Google Docs work (design a real-time collaborative document editor)?
+Q012460	H	How does Netflix work (design a video streaming service like Netflix)?
+Q012468	H	How would a ride-hailing service like Uber find nearby drivers at very high request rates?
+Q012469	H	How would you design a payment system for a ride-hailing service like Uber that handles tens of millions of transactions per day?
+Q012485	H	How does a stock exchange handle concurrency at scale?
+Q012486	H	Design a stock exchange.
+Q012490	H	Design WhatsApp.
+Q009359	H	Design a token-based rate limiter for a multi-tenant LLM API. Implement the core, then explain what changes when it is distributed.
+Q009729	H	Design the Hugging Face Hub: millions of git repos where individual files are tens to hundreds of GB.
+Q009924	H	Build a rate limiter for an API gateway: per-key token bucket first, then extend it to multiple gateway instances.
+Q009927	H	Design and build a webhook delivery system: your service must deliver events to customer-registered URLs reliably.
+D01463	H	Design a distributed lock service that clients across many machines can rely on.
+D01464	H	Design a distributed cache such as a Redis-like key-value store, including partitioning, replication and eviction.
+D01465	H	Design a message queue system that supports ordering, durability and consumer groups.
+D01466	H	Design a leaderboard for millions of players with real-time rank lookups.
+D01467	H	Design a rate limiter that works across a cluster of API servers.
+D01468	H	Design a discussion forum that supports posting, upvotes and ranking by popularity at scale.
+D01469	H	Design a flash-sale (seckill) system that handles a sudden burst of traffic without overselling.
+D01470	H	Design a session management system for a web application that runs on a cluster of servers.
+D03226	M	Design a multi-user blogging and publishing platform for 5 million daily active readers and 10,000 daily active writers, with image support, search and per-author blog counts.
+D03227	H	In a blogging platform design, how would you render the number of blogs written by each author on a profile page without expensive counting queries?
+D03228	M	How would you design low-latency blog reads and cache invalidation when authors edit or delete a post?
+D03229	M	Design an online/offline presence indicator for a chat application that shows within about 10 seconds whether a user is online, for 5 million concurrent users.
+D03230	H	How would you use heartbeats and TTL-based keys to implement presence, and how lenient can you be in marking users offline?
+D03231	H	How do you fan out presence changes to a user's friends efficiently without a thundering herd of updates?
+D03232	M	Design an airline web check-in system where a passenger logs in with a PNR, selects a seat and receives a boarding pass, and where 100 passengers may pick seats simultaneously.
+D03245	M	Design an image service that handles 5 million uploads per hour and serves device-optimized images with near-optimal bandwidth.
+D03246	H	How would you generate and cache device-specific image variants on demand versus at upload time, and what are the cost trade-offs?
+D03248	M	Design a hashtag service for a photo-sharing network handling 5 million uploads per hour with about 8 hashtags each, showing the photo count and top 50 photos per hashtag.
+D03249	H	How would you maintain the top 50 photos per hashtag and the total photo count under massive write skew for trending hashtags?
+D03251	M	Design a service that gives every user one stable image URL that always renders their currently active profile picture, with 50,000 uploads per minute and a 100000:1 read-to-write ratio.
+D03253	M	Design a feature for tagging people in photos with an optional rectangular region of interest.
+D03255	M	Design a follow-graph service for a 50 million user social network that efficiently answers who I follow and who follows me.
+D03258	M	Design a newly-unread-message indicator showing the number of distinct users who sent new messages, resetting to zero when clicked, for 1 million daily active users in real time.
+D03264	M	Design a dictionary service that handles 5 million requests per minute, is updated weekly from a changelog, and cannot use a traditional database.
+D03276	M	Design a video processing pipeline for a streaming service covering upload, storage, transcoding, post-processing, on-demand processing and caching, processing thousands of videos in parallel.
+D03277	H	How would you design a robust resumable video upload flow for large files?
+D03279	H	Design a text search engine from scratch without using Elasticsearch, with TF-IDF ranking, boolean queries, typo tolerance and phonetic matching.
+D03283	M	Design a recent-searches service that returns a user's last 10 unique searches with response time below 10 ms.
+D03285	M	Design a text-based live cricket commentary service, written ball by ball by commentators and read by 5 million concurrent readers.
+D03286	H	How would you push new commentary to millions of readers: polling, long polling, SSE or WebSockets, and with what caching strategy?
+D03295	M	Design a flash sale system selling 1,000 units in seconds, where winners get 5 minutes to pay and unpaid units are released to others.
+D03297	H	How would you implement the cart reservation with payment timeout, and what happens when a payment succeeds after the hold has expired?
+D03298	H	How would you use a queue-based virtual waiting room and an atomic counter such as Redis DECR to admit exactly N buyers in a flash sale?
+D03299	H	Design a system that counts unique visitors or ad impressions over an arbitrary time range given at query time, with approximate answers and efficient storage.
+D03302	M	Design a remote file sync service that syncs files up to 4 GB across all of a user's devices with resumable, bandwidth-efficient transfers.
+D03303	H	How would chunking, content hashing and delta sync reduce bandwidth in a file sync service?
+D03304	H	How do you detect and resolve conflicting edits made on two devices while offline in a file sync service?
+D03306	M	Design a who's-near-me service that finds all users within k kilometres of a location for 1 million users.
+D03309	M	Design a realtime clap counter for an article platform where all readers of the same article see updates instantly, with up to 10,000 concurrent readers per article.
+D03314	H	Design Slack's real-time messaging, including channels, presence, typing indicators, message history and fan-out to connected clients.
+D03316	M	How do you prove that the data in your design never goes into an inconsistent state when multiple writers act concurrently?
+D04196	M	Design a URL shortening service such as bit.ly that supports creating short links and redirecting to the original URL.
+D04197	M	In a URL shortener, how would you generate unique short keys: hashing and truncating, base62 encoding of a counter, or a pre-generated key service? Compare the options.
+D04198	H	How do you handle hash collisions and avoid two app servers handing out the same short key in a URL shortener?
+D04199	M	Estimate the storage, bandwidth, and cache size for a URL shortener that creates 100 million links per month with a 100:1 read-to-write ratio.
+D04200	M	Should a URL shortener redirect with HTTP 301 or 302, and how does the choice affect analytics and caching?
+D04201	M	Which database would you use for a URL shortener and how would you partition it as it grows to billions of rows?
+D04202	M	How would you expire and clean up old or deleted short URLs without hurting performance?
+D04203	M	How do you support custom aliases, link analytics, and abuse prevention in a URL shortener?
+D04204	M	Design Pastebin where users upload a block of text and get a link, with optional expiration.
+D04205	M	Where would you store paste contents versus metadata in Pastebin, and why would you use an object store for the content?
+D04206	M	How does a Pastebin service track page view analytics and delete expired pastes at scale?
+D04207	M	Design a service for creating and viewing pastes that sustains 40 reads per second per write. Where do the bottlenecks appear at 10x growth?
+D04208	M	Design the Twitter home timeline and search for hundreds of millions of users.
+D04209	H	Compare fan-out on write and fan-out on read for a social news feed. How would you handle celebrity accounts with millions of followers?
+D04210	M	How would you store the home timeline for each user in a cache, and how large can that cache get?
+D04211	M	Design the data model and API for posting a tweet, following a user, and fetching a newsfeed.
+D04212	M	How would you rank items in a newsfeed using recency, engagement, and relationship signals?
+D04213	M	How would you design tweet search so that new tweets are searchable within seconds?
+D04214	M	How would you support retweets and mutual friends computation in a Twitter-like system?
+D04215	M	Which entities would you shard in a Twitter-like system and by what keys, and how do you serve trending topics?
+D04216	M	How would you deliver notifications for mentions, likes, and new followers at the scale of a social network?
+D04217	M	Design a feed system for an Instagram or Pinterest style product that mixes photos from followed accounts and recommendations.
+D04218	M	Design Pinterest: pins, boards, following users, and a home feed.
+D04219	M	Design a chat application like WhatsApp, Facebook Messenger, or Discord that supports one-to-one and group messaging.
+D04220	M	How do you deliver messages in real time to online users and store them for offline users in a chat system?
+D04221	M	How would you implement message delivery and read receipts, and "last seen" presence in a chat system?
+D04222	H	How would you guarantee messages are delivered in order and exactly once from the user's point of view in a chat system?
+D04223	M	How would you scale persistent WebSocket connections to hundreds of millions of concurrent users in a chat system?
+D04224	M	How do you design group chat with thousands of members, including fan-out and ordering?
+D04225	M	Which database would you choose for chat message storage, and how would you partition it?
+D04226	M	How would you store and serve media attachments in a chat system and how would end-to-end encryption change the design?
+D04227	M	Design a simple chat application using Redis pub-sub and sorted sets, and discuss its limits.
+D04228	M	Design Netflix or YouTube: users upload or watch videos, with search, comments, and recommendations.
+D04229	M	Describe the video upload pipeline: transcoding into multiple resolutions and codecs, chunking, and storing the results.
+D04230	M	How does adaptive bitrate streaming work, and what does the server need to produce for it?
+D04231	M	How would you use CDNs and regional caches to serve popular video content and reduce origin load?
+D04232	M	How would geo-blocking and licensing restrictions fit in a video streaming platform?
+D04233	M	Estimate storage and egress bandwidth for a video platform with 200 million users watching an hour a day.
+D04234	M	Design the service that stores viewing history and playback position and the currently active viewers on an account.
+D04235	H	Why would you store active view state in memory partitioned by account, and how do you cope with node failure and hot partitions?
+D04236	M	How does live streaming differ from video on demand architecturally? Walk through capture, encoding, segmenting, and CDN delivery.
+D04237	M	Compare RTMP, HLS, and DASH for live streaming.
+D04238	M	Design a video search and recommendation capability for a streaming service.
+D04239	M	Design a ride-sharing service such as Uber that matches riders to nearby drivers.
+D04240	H	How would you track driver locations in real time and find nearby drivers efficiently? Compare geohash and quadtree approaches.
+D04241	M	How does ride matching work and how would you avoid assigning one driver to two riders?
+D04242	M	Estimate location update traffic for 5 million drivers sending a location every 4 seconds, and how would you store it?
+D04243	M	How would a ride-sharing backend decide between microservices for dispatch, payment, trip, user profile, and notifications?
+D04244	M	What happens when the dispatch service times out or a driver rejects the request? Describe failure handling in a ride-hailing system.
+D04245	M	How would you handle surge pricing and payment for a completed trip in a ride-sharing system?
+D04246	M	Design a proximity service such as Yelp that returns nearby businesses for a location and radius.
+D04247	M	Explain geohashing and quadtrees and their trade-offs for geospatial indexing, especially for uneven density.
+D04248	M	Design a simplified Google Maps with location, map rendering, and navigation services.
+D04249	M	How are map tiles produced, stored, and served efficiently at multiple zoom levels?
+D04250	M	How would a navigation service compute top-K routes and estimate travel time with live traffic?
+D04251	M	Design a web crawler that discovers and fetches billions of pages.
+D04252	M	How does a crawler avoid fetching duplicate URLs and detect pages with duplicate content?
+D04253	H	How would you build a crawler's URL frontier that respects politeness per host while prioritizing important pages?
+D04254	M	How does a web crawler decide when to recrawl a page, and how do you handle crawler traps?
+D04255	M	How do you handle robots.txt and rate limits per domain in a crawler?
+D04256	M	How would you build the index and the query service on top of crawled pages to return titles and snippets?
+D04257	M	Design a basic search engine from crawling to indexing to ranked retrieval.
+D04258	M	Design a key-value store to cache the results of recent web server queries, such as search queries.
+D04259	M	How would you implement an LRU cache backed by a hash map and linked list, and then scale it across machines?
+D04260	M	How would you shard an in-memory query cache and keep it consistent when the underlying results are updated?
+D04261	M	Design a distributed cache like Memcached. How does the client pick a server, and how do you keep it fresh and available?
+D04262	M	Design a distributed key-value store with replication and tunable consistency.
+D04263	H	Design a distributed key-value store similar to Dynamo. How do you handle partitioning, replication, conflict resolution, and failure detection?
+D04264	M	Design Mint.com: a service that connects to users' financial accounts, extracts transactions, and recommends budgets.
+D04265	M	How would a personal finance aggregator categorize transactions and pull from thousands of banks reliably?
+D04266	M	How would you design budget notifications and daily transaction extraction for millions of accounts, and prioritize active users?
+D04267	M	Design the data structures and services for a social network so a user can see the shortest connection path to another user.
+D04268	M	How would you do a bidirectional breadth-first search on a social graph that is sharded across machines?
+D04269	M	Design Amazon's sales rank by category for the most popular products of the past week.
+D04270	M	How would you compute category rankings using a map-reduce job and serve them from a read store?
+D04271	H	Design a system that scales from one user to millions of users on AWS. What do you add at each growth stage?
+D04272	M	Design a typeahead or autocomplete service that returns suggestions as the user types.
+D04273	H	How would you build a typeahead index with tries or inverted indexes, rank suggestions, and refresh them with new trending queries?
+D04274	M	How can a layered architecture with browser cache, web tier, and result aggregator achieve very low-latency typeahead results?
+D04275	M	How would you personalize typeahead suggestions by social-network distance while keeping new accounts immediately searchable?
+D04276	M	Design a notification service that sends push, SMS, and email to millions of users.
+D04277	M	Design a stock price alert system for 3 million users and several thousand stocks that notifies users of 5 and 10 percent moves.
+D04278	M	How would you avoid duplicate or delayed notifications and respect user preferences and quiet hours in a notification service?
+D04279	M	How would you add priority handling and retries for third-party delivery providers in a notification service?
+D04280	M	Design a rate limiter as a standalone service shared by many APIs.
+D04281	H	Design a distributed rate limiter that is accurate under bursts, has minimal latency overhead, and degrades gracefully when its store fails.
+D04282	M	Design an L7 load balancer that handles millions of requests per second and uses backend load feedback.
+D04283	M	Design an API gateway for a large microservice platform.
+D04284	M	Design a stock exchange order matching system supporting market, limit, and stop-loss orders.
+D04285	H	How would you achieve low latency and strict ordering in an order matching engine while staying highly available?
+D04286	M	How do you handle fill-or-kill and time-bounded orders in a stock exchange design, and how do you publish market data to millions of clients?
+D04287	M	Design a payment system for an e-commerce site that handles payment events, orders, wallet, and ledger.
+D04288	H	How would you ensure a customer is never charged twice in a payment system when requests time out or are retried?
+D04289	M	Design a PayPal or Cash App style money transfer system with deposits, payouts, and transfers between accounts.
+D04290	H	How do you keep a money transfer system strongly consistent across a ledger, wallet, and external banks while tolerating failures?
+D04291	M	How would you deduplicate non-idempotent payment operations under at-least-once delivery?
+D04292	M	Design the flow for a credit card swipe at a merchant, from card network to issuing bank, and how the card network earns revenue.
+D04293	M	Compare the four ways QR code payments work and how a mobile wallet payment such as Apple Pay protects card details.
+D04294	M	Describe the architecture of a real-time payments scheme such as UPI and what makes it interoperable.
+D04295	M	How does an international bank-to-bank messaging system such as SWIFT route payments and settle them?
+D04296	M	Design a digital wallet and compare a wallet at a traditional bank with a wallet on a blockchain.
+D04297	M	Design a webhook delivery service that notifies merchants when a payment succeeds.
+D04298	H	How would you build webhooks with at-least-once delivery, signed payloads, exponential retries, and a circuit breaker for broken receivers?
+D04299	M	Design a metrics and monitoring system that collects counters, timers, and conversion rates and supports dashboards and alerts.
+D04300	M	How would you store and downsample metrics in a time-series database to keep long-term data cheap?
+D04301	M	Design a hotel booking system such as Airbnb with search by location and dates and reservations.
+D04302	H	How do you prevent double booking of the same room for the same dates when many users book concurrently?
+D04303	M	Design a ticket booking system such as BookMyShow or Ticketmaster, including handling flash-sale traffic for popular events.
+D04304	M	Design an email system like Gmail. What happens when one user sends an email to another across providers?
+D04305	M	Design a photo storage service for billions of images with low-latency reads.
+D04306	M	Design a social graph store like TAO optimized for read-heavy workloads with a 500:1 read-to-write ratio.
+D04307	M	Design a file storage and sync service similar to Dropbox with chunking, deduplication, and sync conflict resolution.
+D04308	M	Design an unique ID generator service for a distributed system with millions of IDs per second.
+D04309	M	Design a distributed lock service for coordinating workers across many machines.
+D04310	M	Design an A/B testing and experiment platform: setup, variant assignment, instrumentation, and analysis.
+D04311	M	Design a marketing automation platform that forecasts customer lifetime value, allocates budget, and places bids across ad channels.
+D04312	M	Design a log aggregation and search system for thousands of servers.
+D04313	M	Design a permission and access control service that serves authorization checks for many products.
+D04314	M	Design a single sign-on system for an enterprise with multiple applications.
+D04315	M	Design an e-commerce platform covering catalog, inventory, cart, orders, payment, and delivery.
+D04316	H	How would you prevent overselling inventory during a flash sale on an e-commerce platform?
+D04317	M	Design a leaderboard that supports real-time ranking for millions of players.
+D04318	M	Design a real-time analytics pipeline that ingests clickstream events and shows near-real-time dashboards.
+D04319	M	Design a ChatGPT-like conversational service. What are the main components for serving requests at scale?
+D04320	M	Design a job scheduler or task queue service that runs delayed and recurring jobs reliably.
+D04321	M	Design a content delivery network. How do edge caches, origin shielding, and request routing work?
+D04322	M	Design a cloud file or object store like S3 with durability across failures.
+D04323	M	Design a stream processing system that computes rolling aggregates with exactly-once semantics.
+D04324	M	Design a system that blurs license plates and faces in street-level imagery at scale.
+D04325	M	In a system design interview, what are the clarifying questions you should ask about scale, consistency, and failure handling before designing anything?
+D04326	M	How would you structure a 45-minute system design interview answer from requirements to bottlenecks?
+D04327	M	What steps do you follow to identify and resolve bottlenecks in a design after drawing the high-level architecture?
+D04328	M	Which consistency model would you pick for a news feed, a bank balance, and a shopping cart, and why?
+D04329	M	For a given Design X prompt, how would you decide which components can be eventually consistent and which require strong consistency?
+D04330	M	For a high-traffic read-heavy design such as a URL shortener, what would your failure handling plan look like for cache, database, and app server outages?
+D04331	M	For a real-time service such as chat or ride sharing, how would you handle the loss of an entire data center?
+D04373	M	Design Dropbox-like blob metadata service. How do you represent files, versions, and chunks in the metadata store?
+D04374	M	Design a video call or conferencing service. How does media flow between participants, and when is a media server needed?
+D04375	M	Design a food delivery service that matches orders to restaurants and couriers and tracks deliveries.
+D04376	M	Design a distributed job scheduler that sends scheduled reminders for reservations using a priority queue.
+D04377	M	Design a recommendation-driven ad delivery platform with budget pacing and bidding.
+D04378	M	Design a global leaderboard of the most popular products per category that updates periodically.
+D04379	M	Design an event-driven order processing pipeline in which inventory, payment, and shipping are separate services.
+D04380	M	Design a read-heavy social media profile service that serves 500 reads per write with a graph-aware cache layer.
+D04381	M	Design a real-time collaborative document editor such as Google Docs, including conflict handling.
+D04382	H	Design a multi-region deployment of a user-facing service. How do you route traffic, replicate data, and handle region failure?
+D04383	M	Design a system that sends scheduled emails or reminders to millions of users reliably at the right time.
+D04384	M	Design a URL shortener and a Pastebin as one platform. What components can be shared between them?
+D04385	M	Design a web analytics service that counts page views per URL at very high write volume.
+D04386	M	In a Twitter-like feed, what consistency guarantees do users expect for their own tweets versus other people's tweets, and how do you provide them?
+D04387	H	In a news feed system, how would you handle the failure of the cache that stores precomputed timelines? Describe recovery and the load impact on the database.
+D04388	M	At 10x the traffic, which components of a fan-out-on-write feed would break first, and how would you scale them?
+D04389	M	How would you handle a user deleting a post or blocking another user in a precomputed feed design?
+D04390	M	In a chat system, what consistency model applies to message ordering within a conversation versus across conversations?
+D04391	H	In a chat system, a user's phone goes offline mid-send and reconnects on another network. How do you avoid lost, duplicate, or reordered messages?
+D04392	M	When a chat server holding thousands of WebSocket connections crashes, how do clients reconnect and how is state restored?
+D04393	M	In a ride-sharing service, what happens if the location service is partially down? How does matching degrade?
+D04394	H	At peak demand a city has 100,000 concurrent ride requests. How do you scale the matching service and avoid hot geographic cells?
+D04395	M	In a ride-sharing system, how do you keep the trip state consistent across rider app, driver app, and the backend when connectivity is flaky?
+D04396	M	What consistency does a URL shortener need for newly created links, and how do replicas and caches affect that?
+D04397	H	How would you make a URL shortener resilient to the loss of its key generation service or its primary database?
+D04398	M	How would you scale the URL shortener to 100x traffic, including handling a viral link that is accessed millions of times per minute?
+D04399	M	In a video streaming platform, how do you handle a failed transcoding job in the middle of a long video?
+D04400	M	In a video platform, how would you handle a sudden surge for a newly released popular title with cold CDN caches?
+D04401	M	How would you ensure uploaded videos are durable and not lost if a storage node fails in a video platform?
+D04402	H	In a web crawler, how do you recover from a crash without refetching everything, and how do you keep the frontier consistent across workers?
+D04403	M	How would you scale a crawler's duplicate detection when the number of seen URLs reaches tens of billions?
+D04404	M	For a typeahead service, how fresh must suggestions be, and what is the cost of serving slightly stale results?
+D04405	M	How would you scale a typeahead service to hundreds of thousands of queries per second without a cache stampede on rare prefixes?
+D04406	M	For a notification service, how do you guarantee at-least-once delivery without spamming users on retries?
+D04407	M	What happens in a notification system when a downstream provider such as an SMS gateway is down for an hour?
+D04408	M	At 10x scale, how would you shard and parallelize a notification pipeline to send to 100 million devices in minutes?
+D04409	M	For a rate limiter service, what should happen if the rate limiter store is unreachable: fail open or fail closed? Justify.
+D04410	M	For a rate limiter shared by multiple regions, how would you balance accuracy against cross-region latency?
+D04411	M	In a payment system, what happens if the payment provider times out after the charge actually succeeded? How do you recover?
+D04412	H	How would you design a payment system to survive crashes between updating the payment record, wallet, and ledger?
+D04413	M	How would a payment system support scale on peak days like Black Friday without sacrificing correctness?
+D04414	M	How do you design payment systems for multi-currency settlements and reporting?
+D04415	M	For a stock exchange, how do you recover the order book state after the matching engine crashes?
+D04416	M	In a booking system, how would you handle holds on inventory that expire if the user does not complete payment?
+D04417	H	In a flash-sale ticketing system, how do you manage a queue of millions of waiting users while preventing overselling and bot abuse?
+D04418	M	For a distributed cache, how would you handle a node failure without sending a surge of queries to the database?
+D04419	M	For a distributed cache across regions, how do you keep caches consistent when the database is updated in one region?
+D04420	M	In a key-value store, how would you recover the in-memory index after a restart and how does compaction affect read latency?
+D04421	M	For a metrics system, how do you handle high-cardinality labels and bursty ingestion without overwhelming storage?
+D04422	M	For a metrics pipeline, what happens to alerting if the ingestion pipeline is delayed, and how do you detect your own monitoring failing?
+D04423	M	For a social graph service, how do you keep friend counts and mutual friend queries consistent and fast?
+D04424	M	In Mint-style transaction aggregation, how do you handle a bank API that is slow, rate limited, or returns inconsistent data?
+D04425	M	For a proximity service, how do you handle dense urban areas with many points of interest versus sparse regions?
+D04426	M	How would you update the location index in a proximity or ride-sharing service when objects move frequently?
+D04427	M	For a maps service, how would you refresh map tiles and traffic data without a full rebuild?
+D04428	M	For a search engine design, how do you shard and replicate the inverted index, and how do you merge results across shards?
+D04429	M	For an e-mail system, how do you handle spam filtering, large attachments, and mailbox storage growth?
+D04430	M	For a photo or file storage system, how do you protect against silent data corruption and ensure durability?
+D04431	M	For a file sync service, how do you handle two clients editing the same file offline?
+D04432	M	For a unique ID generator, what are the failure modes when machine IDs are misconfigured or clocks drift?
+D04433	M	For a webhook service, how do you protect merchants from replay attacks and ensure each event is processed once?
+D04434	M	For a webhook service, how do you protect your own infrastructure from slow or malicious receivers?
+D04435	M	For an experiment platform, how do you keep variant assignment consistent for a user across sessions and devices?
+D04436	M	For a stock price alert system, how do you avoid sending the same alert twice when a price oscillates around a threshold?
+D04437	M	For a leaderboard with millions of players, how would you handle ties, sharding by score range, and querying a user's rank?
+D04438	M	For any Design X, how would you present a data model and API first, and why does that matter before drawing boxes?
+D04439	M	When asked to design a system, how would you explain the choice between SQL and NoSQL for its main data?
+D04440	M	When the interviewer says the system must now support 100x more traffic, what is your process for finding and relieving the next bottleneck?

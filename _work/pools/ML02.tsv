@@ -1,0 +1,123 @@
+Q001018	E	What is classification in the context of machine learning?
+Q001019	E	Can you differentiate between binary and multiclass classification?
+Q001023	E	Explain the concept of decision boundaries in classification.
+Q001026	M	Explain the concept of Support Vector Machines (SVM).
+Q001027	M	What is the Naive Bayes classifier and how does it work?
+Q001031	E	How does the k-Nearest Neighbours (k-NN) algorithm classify data points?
+Q001149	M	How does the curse of dimensionality affect the performance of the K-nearest neighbors (KNN) algorithm?
+Q001523	E	What is K-Nearest Neighbors (K-NN) in the context of machine learning?
+Q001524	E	How does the K-NN algorithm work for classification problems?
+Q001525	E	Explain how K-NN can be used for regression.
+Q001526	M	What does the K in K-NN stand for, and how do you choose its value?
+Q001527	E	List the pros and cons of using the K-NN algorithm.
+Q001528	M	In what kind of situations is K-NN not an ideal choice?
+Q001529	M	How does the choice of distance metric affect the K-NN algorithm's performance?
+Q001530	M	What are the effects of feature scaling on the K-NN algorithm?
+Q001531	M	How does K-NN handle multi-class problems?
+Q001532	M	Can K-NN be used for feature selection? If yes, explain how.
+Q001534	M	What are the differences between weighted K-NN and standard K-NN?
+Q001536	M	Discuss the impact of imbalanced datasets on the K-NN algorithm.
+Q001618	E	What is linear regression and how is it used in predictive modeling?
+Q001619	E	Can you explain the difference between simple linear regression and multiple linear regression?
+Q001620	E	What assumptions are made in linear regression modeling?
+Q001621	E	How do you interpret the coefficients of a linear regression model?
+Q001622	E	What is the role of the intercept term in a linear regression model?
+Q001624	M	Explain the concept of homoscedasticity in linear regression. Why is it important?
+Q001625	M	What is multicollinearity and how can it affect a regression model?
+Q001626	M	How is hypothesis testing used in the context of linear regression?
+Q001627	M	What do you understand by the term normality of residuals in linear regression?
+Q001685	E	What is logistic regression and how does it differ from linear regression?
+Q001686	E	Can you explain the concept of the logit function in logistic regression?
+Q001687	E	How is logistic regression used for classification tasks?
+Q001688	E	What is the sigmoid function and why is it important in logistic regression?
+Q001689	M	Discuss the probability interpretations of logistic regression outputs.
+Q001690	M	What are the assumptions made by logistic regression models?
+Q001691	M	How does logistic regression perform feature selection?
+Q001692	M	Explain the concept of odds and odds ratio in the context of logistic regression.
+Q001693	M	How do you interpret the coefficients of a logistic regression model?
+Q001696	M	Can logistic regression be used for more than two classes? If so, how?
+Q001697	M	Discuss the consequences of multicollinearity in logistic regression.
+Q001781	M	Explain Bayes' Theorem and how it applies to the Naive Bayes algorithm.
+Q001782	E	Can you list and describe the types of Naive Bayes classifiers?
+Q001783	E	What is the naive assumption in the Naive Bayes classifier?
+Q001784	M	How does the Naive Bayes classifier handle categorical and numerical features?
+Q001785	M	Why is the Naive Bayes classifier a good choice for text classification tasks?
+Q001786	M	Explain the concept of class conditional independence in Naive Bayes.
+Q001787	E	What are the advantages and disadvantages of using a Naive Bayes classifier?
+Q001788	M	How does the Multinomial Naive Bayes classifier differ from the Gaussian Naive Bayes classifier?
+Q001789	M	Why do we often use log probabilities instead of probabilities in Naive Bayes computation?
+Q001790	M	Explain how a Naive Bayes classifier can be used for spam detection.
+Q001791	M	How would you deal with missing values when implementing a Naive Bayes classifier?
+Q001792	M	What role does Laplace smoothing (additive smoothing) play in Naive Bayes?
+Q001793	M	Can Naive Bayes be used for regression tasks? Why or why not?
+Q001794	M	How does Naive Bayes perform in terms of model interpretability compared to other classifiers?
+Q002189	E	Explain the difference between simple and multiple linear regression.
+Q002190	E	What is Logistic Regression, and when is it used?
+Q002193	E	What is a Support Vector Machine (SVM) in Machine Learning?
+Q002195	E	Can you explain the concept of a hyperplane in SVM?
+Q002196	M	What is the maximum margin classifier in the context of SVM?
+Q002197	E	What are support vectors and why are they important in SVM?
+Q002198	E	Discuss the difference between linear and non-linear SVM.
+Q002199	M	How does the kernel trick work in SVM?
+Q002200	M	What kind of kernels can be used in SVM and give examples of each?
+Q002201	M	Can you explain the concept of a soft margin in SVM and why it's used?
+Q002203	M	How does SVM handle multi-class classification problems?
+Q002204	M	What are some of the limitations of SVMs?
+Q002205	M	Describe the objective function of the SVM.
+Q002206	H	What is the role of the Lagrange multipliers in SVM?
+Q002207	H	Explain the process of solving the dual problem in SVM optimization.
+Q002208	M	How do you choose the value of the regularization parameter (C) in SVM?
+Q002209	M	Explain the concept of the hinge loss function.
+Q003969	E	Consider linear regression. What are T, P and E?
+Q004062	H	How is the VC dimension of an SVM bounded although it is projected to an infinite dimension?
+Q004087	H	How can the SVM optimization function be derived from the logistic regression optimization function?
+Q004088	E	What is a large margin classifier?
+Q004089	M	Why is SVM an example of a large margin classifier?
+Q004090	M	What is the role of C in SVM?
+Q004091	H	In SVM, what is the angle between the decision boundary and theta?
+Q004092	H	What is the mathematical intuition of a large margin classifier?
+Q004093	M	What is a kernel in SVM? Why do we use kernels in SVM?
+Q004094	M	What is a similarity function in SVM? Why is it named so?
+Q004095	M	How are the landmarks initially chosen in an SVM? How many and where?
+Q004096	M	Can we apply the kernel trick to logistic regression? Why is it not used in practice then?
+Q004097	M	What is the difference between logistic regression and SVM without a kernel?
+Q004098	M	How does the SVM parameter C affect the bias/variance trade-off?
+Q004099	M	How does the SVM kernel parameter sigma^2 affect the bias/variance trade-off?
+Q004100	M	Can any similarity function be used for SVM?
+Q004101	M	Logistic regression vs. SVMs: when to use which one?
+Q004338	E	What is regression? Which models can you use to solve a regression problem?
+Q004339	E	What is linear regression? When do we use it?
+Q004348	E	What is classification? Which models would you use to solve a classification problem?
+Q004349	E	What is logistic regression? When do we need to use it?
+Q004350	M	Is logistic regression a linear model? Why?
+Q004412	E	Can you explain logistic regression?
+Q004413	E	Can you explain the K-Nearest Neighbors (KNN) algorithm?
+Q004414	E	Compare the K-means and KNN algorithms.
+Q004416	M	Can you explain the support vector machine (SVM) algorithm? What is a kernel SVM?
+Q005219	E	Explain how logistic regression differs from linear regression.
+Q005220	E	How does logistic regression work?
+Q005222	M	How do you check for multicollinearity in regression models?
+Q005223	E	How does K-Nearest Neighbors (KNN) work?
+Q005225	M	Explain Support Vector Machines (SVM). What is the kernel trick?
+Q005226	E	What is the decision boundary in classifiers?
+Q005461	E	Explain linear regression, logistic regression, decision tree, and random forest.
+Q006298	M	What is the effect on the coefficients of logistic regression if two predictors are highly correlated? What are the confidence intervals of the coefficients?
+Q006594	M	Explain collinearity: how is it possible to have a negative coefficient in a generalized linear model?
+Q006596	M	What are the assumptions of logistic regression?
+Q006604	M	What is linear regression? What do the terms p-value, coefficient, and R-squared mean?
+Q006619b	M	What are the assumptions of linear regression models?
+Q006659	M	You have several variables that are positively correlated with your response, and you think combining all of them could give a good prediction. However, in the multiple linear regression, one of the weights on the predictors is negative. What could be the issue?
+Q006662	M	Your linear regression did not run and reports that there are an infinite number of best estimates for the regression coefficients. What could be wrong?
+Q006664	M	You run your regression on different subsets of your data and find that in each subset, the beta value for a certain variable varies wildly. What could be the issue?
+Q011950	E	What are the assumptions of linear regression?
+Q012587	E	Explain briefly the logistic regression model and give an example of when you have used it.
+Q012590	E	Explain the linear regression model and discuss its assumptions.
+Q012595	M	Explain the kernel trick in SVM, why we use it, and how to choose which kernel to use.
+Q012606	M	Do you need to scale your data if you will be using the SVM classifier? Discuss your answer.
+D03699	E	Explain logistic regression, its cost function and the role of the sigmoid.
+D03700	M	Explain linear regression, least squares and residuals, and what happens with multivariate inputs.
+D03701	M	Explain how a support vector machine finds its decision boundary and what a kernel SVM adds.
+D03702	E	How does the k-nearest neighbors algorithm work, and how do you choose k and a distance metric?
+D03703	E	How do k-means and k-nearest neighbors differ?
+D03704	M	Explain linear discriminant analysis and how it relates to logistic regression.
+D03705	M	How does Naive Bayes work, and why does it perform reasonably even though its independence assumption is violated?

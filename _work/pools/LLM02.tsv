@@ -1,0 +1,154 @@
+Q001008	E	How does tokenization work in the context of transformer models?
+Q001010	M	What are positional encodings, and why are they important in transformers?
+Q001017	M	What are the steps involved in pre-processing input data for ChatGPT?
+Q001653	E	What are positional encodings in the context of LLMs?
+Q003326	M	CNNs and RNNs do not use positional embeddings. Why do transformers use positional embeddings?
+Q003329	E	What is tokenization, and why is it necessary in LLMs?
+Q003338	M	How do LLMs handle out-of-vocabulary (OOV) words?
+Q003366	E	After tokenization, how are tokens converted into embeddings in the Transformer model?
+Q004260	E	What is a token in the context of LLMs?
+Q004261	E	What are tokenizers in the context of LLMs?
+Q004322	M	Explain the concept of positional encoding in LLMs.
+Q004425	M	What is RoPE and why are rotary embeddings preferred over learned positional embeddings?
+Q004656	E	What is tokenization in LLMs?
+Q004657	M	Explain BPE (Byte Pair Encoding).
+Q004658	M	Explain WordPiece and SentencePiece.
+Q004659	E	What is positional encoding, and why is it needed in Transformers?
+Q004701	M	Your tokenizer splits important domain terms into meaningless subword pieces. How do you fix it?
+Q005333	E	What is subword tokenization?
+Q005334	E	What is BPE (Byte Pair Encoding) in LLMs?
+Q005335	E	What is positional embedding in LLMs?
+Q005968	M	How does ALiBi (Attention with Linear Biases) work, and why can it extrapolate to longer sequences zero-shot?
+Q006955	M	Your model counts the letters in "ELEPHANT" correctly when it can write Python but fails when asked directly, and a teammate wants to fine-tune on letter-counting examples. What is the best read?
+Q006956	M	A multilingual support feature is 3x over budget on cost and frequently truncates context, but only for Japanese and Arabic tickets; English is fine. What is the most likely cause?
+Q006957	M	You build a code assistant on a model whose tokenizer was trained on web prose. Retrieval and prompting are tuned, yet long files blow the context window sooner than expected. What is the strongest lever?
+Q006960	M	How would you size the embedding table for a 50k-vocabulary model with d_model=4096, and what does it cost?
+Q006961	H	A model emits bizarre, unsteerable text whenever a specific rare username-like string appears in the prompt, even across temperatures and rephrasings. What is the best explanation?
+Q006967	H	You take a model trained at 4k context, set its max position to 32k with no other change, and ship. Perplexity barely moves, but users report it "forgets" facts pasted near the top of long inputs. What is the best read?
+Q006969	M	Why is RoPE described as a "relative" position scheme even though each token is rotated by its absolute index?
+Q006971	M	Two candidate models: A uses a learned absolute position table trained to 2k; B uses RoPE. A product needs occasional 16k-token inputs with a light fine-tuning budget. Which is the safer base and why?
+Q007111	E	What is a token in a language model?
+Q007171	E	What is positional encoding?
+Q007177	H	If I have a vocabulary of 100K words/tokens, how can I optimize the transformer architecture?
+Q007178	H	A large vocabulary can cause computation issues and a small vocabulary can cause OOV issues. What approach would you use to find the best balance for vocabulary size?
+Q010868	E	Explain token counting and why it matters.
+Q011200	M	Why do LLMs struggle with simple character counting?
+Q011201	M	How would you estimate token count for cost planning?
+Q011202	M	What happens when switching tokenizers between models?
+Q011789	M	How does Byte Pair Encoding work, and what are its failure modes (numbers, code, non-Latin scripts)?
+Q011790	M	What is positional encoding in transformers, and how has it evolved (sinusoidal, learned, RoPE, ALiBi)?
+Q011791	H	Explain RoPE and how position interpolation / YaRN extend context beyond the trained length.
+Q011996	H	Qwen uses byte-level BPE with a ~151K vocabulary, augmented for multilingual coverage and with digits split into single characters. Why those choices, and what are the trade-offs?
+Q012003	M	Why is tokenization the first bottleneck for Indian-language LLMs, and how does a low-fertility tokenizer change the economics?
+Q012078	M	Compare BPE, WordPiece and Unigram tokenization. Why is the 'tokenizers' library written in Rust, and what tokenizer bugs bite people in practice?
+Q012403	E	What is tokenization in the context of LLM pretraining, and why is it important?
+Q003583	M	What is a token, and why do Chinese, English, and code consume different numbers of tokens?
+Q007437	E	Why do LLMs use subword tokenization instead of whole words or raw characters?
+Q007438	M	How does byte-level BPE guarantee there are no out-of-vocabulary strings?
+Q007439	M	What is the effect of tokenizer choice on multilingual pricing and quality?
+Q007440	H	Why hasn't character- or byte-level modeling replaced BPE yet?
+Q007441	M	Why do LLMs famously miscount the number of r's in "strawberry"?
+Q007442	M	Why does asking the model to spell the word first fix the letter-counting error?
+Q007443	M	What other task categories fail for the same root cause as letter counting in LLMs?
+Q007444	M	How would a byte-level model differ on letter-counting tasks?
+Q007460	M	What is weight tying, and why do some models tie the embedding and output matrices while others do not?
+Q007461	H	How does the vocabulary size decision interact with the weight-tying decision?
+Q007462	H	What happens to a weight-tied model if you want to extend the vocabulary post hoc?
+Q007476	M	Walk me through the BPE training algorithm step by step.
+Q007477	M	Why does pre-tokenization matter in BPE? What would go wrong without word-boundary constraints?
+Q007478	M	Why do "the" and " the" (with a leading space) need to be separate tokens?
+Q007479	M	How does unigram-LM tokenization differ conceptually from BPE?
+Q007480	M	Compare BPE, WordPiece, SentencePiece, and byte-level BPE.
+Q007481	M	Why does SentencePiece encode whitespace explicitly, and what property does that buy?
+Q007482	E	What is byte-fallback in tokenization?
+Q007483	H	Given the same vocabulary size, why might unigram-LM produce more linguistically natural segmentations than BPE?
+Q007484	M	What are the tradeoffs in choosing vocabulary size?
+Q007485	M	What are glitch tokens and what causes them?
+Q007486	H	Why does weight-tying the embedding and LM head matter more for small models?
+Q007487	H	How would you evaluate whether a tokenizer serves your target languages well?
+Q007488	M	Why does single-digit number tokenization improve arithmetic in LLMs?
+Q007489	M	If your product targets Southeast Asian languages, what tokenizer-related things would you check before choosing a model?
+Q007490	M	How would tokenization affect a code-diff-generation feature?
+Q007498	M	How do sinusoidal positional encodings work, and how do they compare to learned positional embeddings?
+Q007499	M	Why is relative position more useful than absolute position for language?
+Q007500a	H	Show why a fixed offset is a linear transform of a sinusoidal positional encoding.
+Q007500b	H	Why does adding position to token embeddings entangle content and position, and why does that matter?
+Q007501	M	Explain RoPE. What is the rotation intuition and why did it become the default?
+Q007502a	H	Prove that the RoPE attention score depends only on m−n for a single 2D pair.
+Q007502b	H	Why is RoPE applied to Q and K but not V?
+Q007503	H	How do position interpolation and YaRN manipulate RoPE's frequencies?
+Q007504	M	How does ALiBi encode position, and what is its claim to fame?
+Q007505	H	Why does ALiBi extrapolate where RoPE doesn't?
+Q007506	H	What is the cost of ALiBi's recency prior for retrieval-heavy tasks?
+Q007507	H	Why do high-frequency RoPE dimensions need no interpolation when extending context length?
+Q007617	H	What's the case for tokenizer-free models, and why hasn't the tokenizer died yet?
+Q007618	H	How would pricing and context accounting work for a model with no fixed token unit?
+Q007619	H	Does dynamic patching in tokenizer-free models interact well or badly with prefix caching?
+Q007720	M	When does tokenizer inefficiency justify a different model choice for specific language markets?
+Q007784	M	Why does chars/4 break as a token estimate, and where does it break worst?
+Q008943	H	In M-RoPE (multimodal rotary position embeddings), why does giving text tokens identical t, h, w indices matter when grafting it onto an already-trained LLM?
+Q008944	H	How would you extend the M-RoPE position scheme to a document with 50 pages where page identity matters?
+Q009712	M	Compare BPE, WordPiece, and Unigram tokenization. Why was a tokenizer library written in Rust, and what tokenizer bugs bite people in practice?
+Q009713	M	Why do digits and whitespace handling in the tokenizer affect arithmetic and code benchmarks?
+Q009714	M	How would you detect a train/inference tokenization mismatch after the fact?
+Q009818	H	With sliding-window attention, what breaks if you apply the rolling buffer but forget to keep positions consistent (RoPE) across the wrap-around?
+Q009879	H	Why does high-frequency RoPE content need gentler scaling than low-frequency content when extending context length?
+Q010029	H	Qwen used a byte-level BPE tokenizer with a vocabulary of around 151K, augmented for multilingual coverage and with digits split into single characters. Why those choices for a multilingual, maths-capable model, and what are the tradeoffs?
+Q010030	M	How would you measure whether a tokenizer is fair across languages?
+Q010031	H	Why does adding a new language after pretraining rarely mean just retraining the tokenizer?
+Q010043	M	In single-token decoding with a growing KV cache, where does RoPE get applied, and why to q and k only, not v?
+Q010060	H	Why is tokenization the first bottleneck for Indian-language LLMs, and how does a low-fertility tokenizer change the economics?
+Q010061	M	How would you measure tokenizer fertility empirically across a multilingual corpus?
+Q010062	H	What breaks if you simply bolt 20k new Indic tokens onto an existing English tokenizer's vocabulary?
+Q010078	M	Why can two tokenizers with the same vocabulary size have very different fertility on Tamil?
+Q010079	H	How would parallel-corpus fertility differ from fertility measured on independent monolingual corpora?
+Q010287	H	When a model must serve both Chinese and English well, what changes in tokenization, data, and evaluation?
+Q010288	M	How would you detect that your tokenizer is unfairly penalising Chinese?
+D00036	E	How does byte pair encoding build its vocabulary, and how does it tokenize unseen words?
+D00037	M	Compare BPE, WordPiece and unigram tokenization in how vocabularies are learned and how text is segmented.
+D00038	M	What are the trade-offs of a larger versus smaller vocabulary on embedding size, sequence length and multilingual quality?
+D00039	M	Why is byte-level BPE attractive for robustness, and what is its downside for non-Latin scripts?
+D00040	M	Why do LLMs struggle to count characters in a word or reverse strings?
+D00041	M	What happens if you swap the tokenizer between a model and its fine-tuned variant or serving stack?
+D00042	M	How does tokenization affect cost and latency for non-English languages, and what can be done about it?
+D00043	M	What are special tokens and chat templates, and what breaks when the wrong template is used at inference?
+D00044	M	How would you estimate token counts for cost planning before you have production traffic?
+D00045	M	Why does whitespace and formatting of code or JSON change token counts and model behavior?
+D00046	M	How are images converted into tokens for a vision transformer, and how does that affect context budget?
+D00047	M	How do audio and video get tokenized for multimodal models, and what are the cost implications?
+D00048	E	What is an embedding in the context of an LLM, and how does it relate to a token ID?
+D00049	E	Why does a transformer need positional information, and what happens without it?
+D00050	M	Why does the original transformer use sinusoidal encodings, and what are the properties of sine and cosine at different frequencies?
+D00051	M	How does rotary position embedding encode relative position, and why is it popular in modern LLMs?
+D00052	M	Compare RoPE and ALiBi in extrapolation behavior and typical use cases.
+D00053	H	Why does RoPE degrade beyond the trained context length, and how do position interpolation and NTK-aware scaling address it?
+D00054	H	How would you extend a model trained at 8K context to 128K, and how would you verify quality did not regress at short lengths?
+D00055	M	Why does ALiBi extrapolate to longer sequences without retraining?
+D03754	M	What is RoPE, and why are rotary embeddings preferred over learned absolute position embeddings?
+D03755	M	How do position interpolation and YaRN extend the context length of a pretrained model?
+D03756	M	How do byte-level BPE and SentencePiece differ, and how does vocabulary size affect model quality and cost?
+D04526	M	BERT sums token, segment and position embeddings. Why does adding rather than concatenating not destroy semantic information?
+D04548	M	How is rotary position embedding applied inside the attention layer in LLaMA code, and to which tensors?
+D04549	E	What are the main ways to inject position information into a Transformer, and why does attention need it at all?
+D04550	M	Compare sinusoidal, learned absolute, relative and rotary position encodings.
+D04551	M	Explain how RoPE encodes relative position through rotation of query and key vectors, and why the dot product depends only on relative offset.
+D04552	H	Derive why RoPE with 2D rotation blocks produces an attention score that is a function of the position difference m-n.
+D04553	M	What is the long-range decay property of RoPE and how does the base frequency affect it?
+D04554	M	How does ALiBi add linear distance penalties to attention logits, and why does it extrapolate to longer sequences?
+D04555	M	Why do models fail at lengths beyond their training window, and what are the common length-extrapolation approaches?
+D04556	H	Compare position interpolation, NTK-aware scaling and YaRN for extending RoPE context. What do they trade off?
+D04557	M	Why is the sinusoidal encoding in the original Transformer chosen to be a function of dimension and position, and what property does it give for relative offsets?
+D04558	E	What are the common subword tokenization algorithms (BPE, WordPiece, Unigram, byte-level BPE), and why use subwords at all?
+D04559	M	Describe the BPE training algorithm and how encoding a new string works.
+D04560	M	How does WordPiece differ from BPE in how it selects merges?
+D04561	M	What are the advantages of byte-level BPE, and how does it handle unseen characters?
+D04562	M	What does SentencePiece add compared with BPE implemented over pre-tokenized words?
+D04563	M	What happens to multilingual and low-resource languages when a tokenizer is trained mostly on English text?
+D04564	M	What is the effect of vocabulary size on embedding parameters, sequence length and softmax cost, and how do you pick it?
+D04565	M	When is extending the vocabulary of a pretrained model for a new domain or language worthwhile, and what are the risks?
+D04566	H	Describe the steps to extend a LLaMA tokenizer with new tokens and initialize their embeddings so continued pretraining converges.
+D04567	M	Why can tokenization cause LLMs to fail at tasks like counting letters, arithmetic or reversing strings?
+D04907	M	Why can adding position embeddings to token embeddings lose information compared with injecting position in each attention layer?
+D04908	M	What is the effect of the RoPE base (theta) on long-context behavior and why do long-context models raise it?
+D04909	M	How does NoPE (no positional encoding) work in decoder-only models and why can causal masking leak positional information?
+D04910	M	Why is Unicode normalization and pre-tokenization (whitespace, digits splitting) important in tokenizer design?

@@ -1,0 +1,300 @@
+Q005927	DROP	-	dup
+Q005928	LLM01	M	Is FlashAttention compatible with ALiBi?
+Q005929	GA01	E	What is Chain of Thought (CoT) prompting?
+Q005930	GA05	M	What is prompt injection, and how does it differ from prompt leakage?
+Q005931	GA02	M	What are Structured Outputs / JSON Mode, and how do they differ from function calling?
+Q005932	GA01	M	How do you write a system prompt that makes an agent more stable, and what elements must it contain?
+Q005933	GA01	M	What is context engineering, and how do you handle the "lost in the middle" problem in long contexts?
+Q005934	LLM07	M	What is Chain-of-Verification (CoVe), and how does it reduce LLM hallucinations?
+Q005935	GA04	M	How do you A/B test and evaluate different prompts in production?
+Q005936	GA01	M	Dynamic few-shot vs static few-shot prompting: when should you use each?
+Q005937	LLM05	M	What is constrained decoding, and how does it differ from JSON Mode / Structured Outputs?
+Q005938	GA05	M	What are prompt safety guardrails, and what does a production-grade protection system look like?
+Q005939	GA01	M	What is composable prompt design, and how does it reduce maintenance complexity?
+Q005940	GA04	M	What are prompt versioning and prompt drift, and how do you manage them in production?
+Q005941	GA01	M	How can prompt caching further optimize token cost, and how do you quantify the actual benefit?
+Q005942	GA04	M	How do you evaluate different prompt frameworks, e.g., LangSmith vs Braintrust vs Promptfoo?
+Q005943	FT05	M	How do you decide whether a problem should be solved with prompt tuning, retrieval, tool calling, or fine-tuning?
+Q005944	GA03	M	What are the core differences between LangGraph and LangChain, and when should you use each?
+Q005945	LLM07	M	How do you build and maintain a golden evaluation dataset, and why is it one of the most important assets in AI application development?
+Q005946	GA01	M	What is DSPy, how does it fundamentally differ from hand-written prompts, and when should you use it?
+Q005947	DROP	-	dup
+Q005948	GA04	M	What is prompt compression, and how does the LLMLingua family of methods work?
+Q005949	GA05	M	What is the instruction hierarchy, and which takes precedence when the system prompt conflicts with user input?
+Q005950	GA01	M	What is Self-Refine, and how does it differ from CoVe and Reflexion?
+Q005951	LLM07	M	How does rubric-based evaluation differ from LLM-as-a-Judge, and why is it often recommended?
+Q005952	GA01	M	How does Chain of Density work, and when should you use it instead of ordinary summarization?
+Q005953	GA01	M	What is a prompt chaining workflow, and how does it differ from simple CoT?
+Q005954	RAG05	M	What is GraphRAG, how does it differ from plain vector RAG, and when should you choose it?
+Q005955	RAG05	M	What is Agentic RAG, how does it differ from plain RAG, and how does it implement multi-hop reasoning?
+Q005956	RAG02	M	What are Parent-Document Retrieval and Sentence Window Retrieval?
+Q005957	RAG04	M	How do you choose a reranking model, and how do cross-encoders and ColBERT differ?
+Q005958	RAG04	M	How is multi-path retrieval implemented in RAG, and how does Reciprocal Rank Fusion (RRF) work?
+Q005959	LLM03	M	What is a state space model (SSM), and what problem does it solve when hybridized with a Transformer?
+Q005960	LLM01	M	What are the differences between MHA, MQA, and GQA, and why do inference systems commonly use GQA?
+Q005961	LLM01	M	What does the feed-forward network (FFN) do in a Transformer, and why is SwiGLU so common?
+Q005962	LLM01	M	How are Pre-Norm, Post-Norm, and RMSNorm related?
+Q005963	LLM01	M	Why does FlashAttention speed up attention computation, and what are its core optimization strategies?
+Q005964	LLM06	M	What are the KV cache memory management challenges, and how does PagedAttention solve them?
+Q005965	LLM01	M	How does the gating mechanism of SwiGLU and GLU differ from a standard FFN with ReLU/GELU?
+Q005966	LLM01	M	What is Multi-head Latent Attention (MLA), and why did DeepSeek-V3 use it instead of GQA?
+Q005967	LLM03	M	What are scaling laws, and what does Chinchilla's "compute-optimal" mean?
+Q005968	LLM02	M	How does ALiBi (Attention with Linear Biases) work, and why can it extrapolate to longer sequences zero-shot?
+Q005969	LLM03	M	Why have mainstream LLMs converged on the causal decoder-only architecture?
+Q005970	LLM01	M	How do LayerNorm and RMSNorm differ, and why do modern LLMs mostly use RMSNorm?
+Q005971	LLM04	M	What typical phases does the loss curve go through when training a Transformer, and how do you diagnose problems?
+Q005972	LLM01	M	What are the engineering implementation details of cross-attention, and why does it connect the encoder and decoder?
+Q005973	LLM01	H	What is attention sink, and why does gated attention mitigate it?
+Q005974	LLM01	M	What is linear attention, and how does it fundamentally differ from standard self-attention?
+Q005975	GA03	M	What is the difference between Plan-and-Execute and ReAct?
+Q005976	DROP	-	dup
+Q005977	GA03	M	How do you evaluate an agent's capabilities, and what are the mainstream benchmarks?
+Q005978	GA03	M	What is the Reflexion self-reflection mechanism, and how does it differ from ReAct?
+Q005979	GA03	M	How does AutoGPT work, and how does it differ from an ordinary agent?
+Q005980	DROP	-	offtopic
+Q005981	DROP	-	offtopic
+Q005982	GA03	M	What does it mean that Agent = Model + Harness + Tools + Environment?
+Q005983	DROP	-	offtopic
+Q005984	GA02	M	What is BFCL (Berkeley Function Calling Leaderboard), and how do you systematically evaluate function calling quality?
+Q005985	GA03	M	What is Voyager, and why is embodied lifelong learning an important direction for agents?
+Q005986	GA03	E	What are the differences and relationships between workflows, agents, and tools?
+Q005987	DROP	-	dup
+Q005988	DROP	-	dup
+Q005989	GA05	M	What are guardrails, and how do you design input and output safety protection in an agent?
+Q005990	GA04	M	What is a data flywheel, and how do you build one in an agent product?
+Q005991	GA04	M	How do you evaluate and control the ROI of an AI agent, and what are the key metrics?
+Q005992	GA03	M	How do you design human-in-the-loop interaction for an AI agent?
+Q005993	GA03	M	What stages has agent engineering evolved through, and how do you choose between workflows and autonomous agents?
+Q005994	RAG03	M	What is DiskANN, what problem does it solve, and how do you choose between it and HNSW?
+Q005995	RAG04	M	What is late-interaction retrieval, and what problems do ColBERTv2, ColPali, and ColQwen each solve?
+Q005996	DROP	-	dup
+Q005997	RAG03	M	What is binary quantization, and how does it differ from product quantization (PQ)?
+Q005998	RAG06	M	What is context poisoning, and how can a RAG knowledge base defend against it?
+Q005999	RAG03	M	What is ScaNN, and how does it fundamentally differ from IVF-PQ and HNSW?
+Q006000	RAG04	M	How do sparse vectors (BM25/SPLADE) differ from dense embedding vectors, and when should you use each?
+Q006001	DROP	-	dup
+Q006002	FT02	M	How do you choose LoRA hyperparameters, and how do rank r and alpha affect performance?
+Q006003	FT03	M	What is DPO, and how does it differ from RLHF?
+Q006004	FT03	H	What are DAPO and GSPO, and how do they differ from GRPO?
+Q006005	FT01	M	What is training data packing, and why must attention masks and loss masks be handled correctly?
+Q006006	DL02	M	How do learning rate, warmup, gradient clipping, and effective batch size interact?
+Q006007	LLM04	M	What problems do DDP, FSDP, and ZeRO each solve?
+Q006008	FT03	M	What are the mainstream post-training pipelines, and how do you choose between SFT→DPO and SFT→GRPO?
+Q006009	FT03	M	How does rejection sampling fine-tuning work, and how does it differ from DPO and GRPO?
+Q006010	LLM06	E	What is autoregressive generation, and how do the prefill and decode phases differ?
+Q006011	LLM06	M	What are prefix caching and RadixAttention, and why are they essential for long-context scenarios?
+Q006012	LLM06	H	What is Attention Matching for KV cache compression, and what are the newer directions in KV cache optimization?
+Q006013	LLM06	H	What is prefill-decode (PD) disaggregation in vLLM, how can KV cache be transferred across nodes (e.g., with Mooncake and LMCache), and how would you deploy it in production?
+Q006014	LLM06	M	What are continuous batching and chunked prefill, and why are they core optimizations in inference engines?
+Q006015	LLM06	H	How is tensor parallelism sharded, how costly is the AllReduce communication, and when should you use DP, PP, or EP instead?
+Q006016	DROP	-	dup
+Q006017	LLM06	H	For MoE model inference, how do you choose between expert parallelism and tensor parallelism, and why can't DeepSeek's MLA architecture use standard tensor parallelism?
+Q006018	LLM05	M	What techniques exist for context window compression, and when would you use a semantic cache versus a sliding window?
+Q006019	LLM06	H	What are KV cache offloading and context parallelism (Ring Attention), and what problems do they solve?
+Q006020	GA05	M	How can indirect prompt injection lead to tool privilege abuse or data exfiltration?
+Q006021	RAG06	M	How do the RAG evaluation frameworks RAGAS, TruLens, DeepEval, and UpTrain compare?
+Q006022	RAG06	M	How do you build a RAG evaluation pipeline, and how do the evaluation results drive iterative RAG optimization?
+Q006023	GA03	H	What is agent harness engineering, and how do you put LLM-as-a-Judge, trajectory analysis, and chaos engineering into practice for evaluating and testing agents?
+Q006024	GA05	H	What are the main categories of prompt injection attack, and how do you defend against RAG poisoning, man-in-the-middle, and multimodal injection at the enterprise level?
+Q006025	GA04	M	How do you choose an agent evaluation platform, and what use cases suit Braintrust, DeepEval, Weave, Langfuse, and Arize?
+Q006026	GA05	M	When deploying an AI application in the EU, how do you prepare engineering-wise for high-risk AI regulatory requirements?
+Q006027	GA05	M	What is a model distillation attack (adversarial distillation), how does it fundamentally differ from ordinary distillation, and how do you defend against it?
+Q006028	GA05	H	How are LLM text watermarks embedded and detected, how do KGW and semantic watermarks differ, and can watermarks survive translation?
+Q006029	GA05	M	How do you select and deploy guardrail models, and what use cases suit Llama Guard, Prompt Guard, and Qwen3Guard?
+Q006030	GA05	M	What are memorization and training data extraction attacks, and how do you evaluate and defend against them?
+Q006031	GA04	M	How do you implement streaming output for an LLM application, and how do you choose between SSE and WebSocket?
+Q006032	RAG06	M	How do you evaluate the quality of a RAG system, and what are the four RAGAS metrics?
+Q006033	DROP	-	dup
+Q006034	GA04	H	How do you implement rate limiting and circuit breaking for an LLM API, including token rate control and backpressure?
+Q006035	MS04	H	How would you design an LLM API gateway, including multi-model routing and A/B testing?
+Q006036	CS02	M	How do you use the worker pool pattern in Go to handle highly concurrent LLM requests, and what are the common pitfalls?
+Q006037	GA04	M	How does LLMOps differ from MLOps, and what must be operated after an LLM application goes live?
+Q006038	GA04	H	How do you design an LLM semantic cache, including similarity threshold and TTL, and how do you trade off hit rate against accuracy?
+Q006039	FT05	M	Should an enterprise self-host an LLM inference cluster or use a cloud provider's managed API, and how should it decide?
+Q006040	GA04	M	How do you govern the cost of LLM applications, and what cost controls are needed besides token metering?
+Q006041	GA04	H	How do you design a GenAI observability system for LLMs, and how is OpenTelemetry used?
+Q006042	MS04	H	How do you design and deploy an embedding service for large-scale RAG, including embedding API cost optimization and vector index version management?
+Q006043	LLM05	M	How do you allocate the LLM context window budget, and how does slot budgeting work?
+Q006044	RAG06	M	What is the "lost in the middle" problem, and how do you mitigate hallucinations caused by poorly ordered retrieved chunks in production?
+Q006045	GA04	M	How do you implement automatic multi-model failover, including failover chains and degradation strategies in production?
+Q006046	DROP	-	notq
+Q006047	GA06	M	How does CLIP perform zero-shot classification, and why does it work well?
+Q006048	GA06	M	How do BLIP and CLIP differ, and why was BLIP needed?
+Q006049	GA06	M	How does LLaVA work, and how does the vision encoder connect to the LLM?
+Q006050	GA06	M	How do you systematically evaluate a vision-language agent, and what do benchmarks such as MMLU-Pro, MathVista, ChartQA, and DocVQA each measure?
+Q006051	DROP	-	offtopic
+Q006052	DROP	-	offtopic
+Q006053	DROP	-	dup
+Q006054	RAG01	M	How do you build a RAG system with LlamaIndex, and how does it differ from LangChain?
+Q006055	DROP	-	offtopic
+Q006056	GA01	E	What is prompt caching, and why does it significantly reduce API cost?
+Q006057	DROP	-	dup
+Q006058	GA03	M	How do LangGraph and Semantic Kernel compare as agent frameworks, and how do you choose between them?
+Q006059	GA02	M	How does the OpenAI Responses API manage conversations and tools, and how does it relate to the older Assistants API?
+Q006060	GA03	H	How do you do production monitoring for LangGraph, and how are time-travel debugging, checkpointing, and human-in-the-loop interrupts implemented? How does LangSmith complement them?
+Q006061	GA03	M	How do you choose among production agent frameworks such as LangGraph, Claude Agent SDK, CrewAI, AutoGen/AG2, Semantic Kernel, LlamaIndex Agents, and Pydantic AI?
+Q006062	DROP	-	offtopic
+Q006063	DROP	-	dup
+Q006064	GA03	M	How do you design short-term versus long-term memory for an agent, and what technology choices exist for each?
+Q006065	DROP	-	dup
+Q006066	RAG04	M	Why is a re-ranker essential in a RAG pipeline, and how do you choose the model and tune it?
+Q006067	GA01	M	Why is a prompt template engine important in production, and how do you write chat prompt templates and few-shot templates in LangChain?
+Q006068	GA03	M	How does AutoGen implement conversational multi-agent collaboration?
+Q006069	GA03	M	How does CrewAI implement role-driven agent collaboration?
+Q006070	GA03	H	How do you design a policy engine, permissions, and auditing for a multi-agent system?
+Q006071	GA03	M	What are the responsibility boundaries between RAG, agents, MCP, and A2A?
+Q006072	GA03	M	How do you use the A2A protocol for agent discovery, task delegation, and status queries?
+Q006073	GA03	H	How would you design a hybrid A2A + MCP architecture?
+Q006074	GA02	M	What is the difference between Agent Skills and Tools?
+Q006075	GA02	E	What is the Model Context Protocol (MCP), and what integration problem does it solve?
+Q006076	DROP	-	offtopic
+Q006077	GA02	M	What are the similarities and differences between MCP and the OpenAI Tools API / GPTs?
+Q006078	GA05	M	What are the core security risks in the OWASP MCP Top 10, and how do you defend against them?
+Q006079	DROP	-	dup
+Q006080	GA05	M	What new threats does the OWASP Agentic Top 10 list, and how does it differ from the traditional OWASP Top 10?
+Q006081	GA02	H	What enterprise-readiness issues must MCP address, including audit trails, enterprise authentication, and gateway patterns?
+Q006082	GA02	M	What is the MCP Sampling primitive, and why does it let a server exhibit agentic behavior?
+Q006083	DROP	-	dup
+Q006084	GA02	M	What types of MCP clients exist, how do internal and external clients differ, and how is the sampling callback implemented?
+Q006085	GA02	H	How does the MCP authorization flow work, and how do PRM (Protected Resource Metadata), OAuth 2.1, and DPoP work together?
+Q006086	GA02	M	What is an MCP Server Card, and how does it let AI applications automatically discover and evaluate server capabilities?
+Q006087	GA02	M	What are MCP Triggers and Events, and why do they let an AI agent move from passive response to proactive awareness?
+Q006088	GA02	M	What is the MCP Registry, and how do you publish and distribute enterprise MCP servers?
+Q006089	GA02	M	What is "Skills over MCP", and why does it let an AI agent dynamically compose multiple tool capabilities?
+Q006090	DROP	-	offtopic
+Q006091	DROP	-	dup
+Q006092	DROP	-	offtopic
+Q006093	DROP	-	dup
+Q006094	GA05	H	How can MCP tool poisoning combine with server-side vulnerabilities into an attack chain, and how do you defend against it?
+Q006095	GA03	M	What are ACP (Agent Commerce Protocol) and UCP (Universal Commerce Protocol), and how do MCP, A2A, ACP, and UCP together form a complete agent technology stack?
+Q006096	GA05	H	What are the main security challenges of MCP, including supply chain registry risk, STDIO execution flaws, input/instruction boundary failure, and authentication governance, and how do you defend against each?
+Q006097	FT05	M	How do RAG and Skills differ, and what does it mean that RAG supplies "knowledge" while Skills supply "process"?
+Q006098	GA02	M	How can MCP serve as a cross-language tool bus, for example wrapping business tools in Go and registering and calling them uniformly from Python?
+Q006099	GA02	H	What is a Skill in an AI application, how do you design its three-part structure (input definition, processing and tool calls, structured output), and how do you handle versioning and regression evaluation?
+Q006100	GA02	M	MCP communicates over JSON-RPC 2.0. What are the standard error codes, and how should a server handle errors and diagnostics?
+Q006101	GA02	M	What is a Root in MCP, and what is its role in file access control and multi-workspace scenarios?
+Q006102	GA02	M	How do you choose an MCP transport, and which production scenarios suit stdio, SSE, and Streamable HTTP?
+Q006103	GA03	H	When one agent connects to multiple MCP servers at once, how do you orchestrate their collaboration and resolve conflicts?
+Q006104	DROP	-	offtopic
+Q006105	GA03	E	What is an agentic workflow, and how does it differ from a traditional AI application?
+Q006106	DROP	-	offtopic
+Q006107	FT03	M	What is a Process Reward Model (PRM), and why is process reward more important than outcome reward for agent reasoning?
+Q006108	DROP	-	offtopic
+Q006109	LLM07	M	What is extended thinking, and how does a thinking token budget control how much an AI model thinks?
+Q006110	DROP	-	offtopic
+Q006111	DROP	-	dup
+Q006112	DROP	-	hr
+Q006113	DROP	-	offtopic
+Q006114	DROP	-	offtopic
+Q006115	DROP	-	offtopic
+Q006116	LLM07	M	What is SWE-bench, and how is it used to evaluate AI coding ability?
+Q006117	GA03	E	What is the "agent mode" of AI coding tools, and how does it differ from ordinary code completion?
+Q006118	DROP	-	offtopic
+Q006119	DROP	-	offtopic
+Q006120	DROP	-	offtopic
+Q006121	DROP	-	offtopic
+Q006122	DROP	-	offtopic
+Q006123	DROP	-	offtopic
+Q006124	DROP	-	offtopic
+Q006125	DROP	-	offtopic
+Q006126	DROP	-	offtopic
+Q006127	DROP	-	offtopic
+Q006128	LLM07	M	What are SWE-bench Multimodal and Terminal-Bench, and what do they evaluate?
+Q006129	DROP	-	offtopic
+Q006130	DROP	-	offtopic
+Q006131	DROP	-	offtopic
+Q006132	DROP	-	offtopic
+Q006133	DROP	-	offtopic
+Q006134	DROP	-	offtopic
+Q006135	DROP	-	offtopic
+Q006136	DROP	-	offtopic
+Q006137	DROP	-	offtopic
+Q006138	DROP	-	offtopic
+Q006139	DROP	-	offtopic
+Q006140	DROP	-	offtopic
+Q006141	DROP	-	offtopic
+Q006142	DROP	-	offtopic
+Q006143	DROP	-	offtopic
+Q006144	DROP	-	offtopic
+Q006145	DROP	-	offtopic
+Q006146	GA04	M	When using a coding agent, how do you control context, tokens, latency, and cost?
+Q006147	LLM07	M	What is SWE-bench Pro, and how does it differ from SWE-bench?
+Q006148	DROP	-	offtopic
+Q006149	DROP	-	offtopic
+Q006150	DROP	-	offtopic
+Q006151	RAG01	H	How would you design a complete production-grade RAG pipeline?
+Q006152	GA03	M	How would you implement a code review agent using ReAct?
+Q006153	GA03	M	What is the difference between A2A and ordinary agent invocation?
+Q006154	DROP	-	hr
+Q006155	GA03	M	How do agents communicate in a multi-agent system, and how do you handle conflicts?
+Q006156	RAG06	M	A production RAG system responds slowly. How do you troubleshoot it systematically?
+Q006157	GA04	M	What problems must be solved to take a model API from integration to production deployment?
+Q006158	GA03	H	How do you design LangGraph State, checkpoints, and thread_id, and how do you resume accurately after an interruption?
+Q006159	GA03	M	How do you write a reducer when two parallel nodes update 'messages' at the same time in LangGraph?
+Q006160	GA03	H	Why can't an agent harness replay simply re-call real APIs, and how does replay differ from checkpoint recovery?
+Q006161	GA04	M	How do you anonymize replay data from online traces and move it into a regression set?
+Q006162	SD04	H	How can a Java main site reliably integrate a Python agent service, and at which layer should authentication, SSE, timeouts and circuit breaking, and observability sit?
+Q006163	DROP	-	dup
+Q006164	SD03	M	A Java service's retry caused a Python service to create two tickets. What is the root cause and how do you fix it?
+Q006165	DROP	-	dup
+Q006166	DROP	-	dup
+Q006167	DROP	-	offtopic
+Q006168	LLM06	M	What is prefill-decode (PD) disaggregation, and when is it worth using?
+Q006169	DROP	-	offtopic
+Q006170	LLM06	M	How do you design a reproducible benchmark for LLM inference frameworks?
+Q006171	DROP	-	offtopic
+Q006172	LLM06	M	How are HuggingFace TGI and vLLM related, and what are their respective strengths and weaknesses?
+Q006173	LLM06	M	Besides vLLM, SGLang, and TensorRT-LLM, what other inference frameworks exist, and how do you choose by hardware?
+Q006174	LLM05	M	What is EAGLE speculative decoding, and how does it differ from traditional speculative decoding?
+Q006175	LLM06	M	What is tiered KV cache offloading, and how do the GPU, CPU, and NVMe tiers divide the work?
+Q006176	LLM06	H	What is the architecture of LMCache, and how does it share KV cache across engines without modifying the vLLM/SGLang kernels?
+Q006177	LLM06	H	How does Mooncake Store, as a distributed KV cache storage engine, differ from LMCache, and what is each one's role?
+Q006178	LLM06	M	How do chunked prefill and layered prefill differ, and what scenarios suit each?
+Q006179	LLM06	H	What optimization problems are specific to MoE models in inference frameworks, and how do speculative decoding and PD separation work with MoE?
+Q006180	LLM05	H	How do inference frameworks handle ultra-long contexts (1M+ tokens), and what is the idea behind Ring Attention and block-wise attention?
+Q006181	RAG04	M	What is RAG-Fusion, and what problem of traditional RAG does it solve?
+Q006182	RAG04	M	What is HyDE (Hypothetical Document Embeddings), and how does it work?
+Q006183	FT05	M	How do you choose between RAG and SFT, and when should you use RAG instead of SFT?
+Q006184	DROP	-	dup
+Q006185	DROP	-	dup
+Q006186	LLM07	M	What is LLM-as-a-Judge, and why is it considered the future of RAG evaluation?
+Q006187	GA06	M	What are multimodal embedding models, and how do they affect RAG systems?
+Q006188	RAG06	H	What is self-healing RAG, and how do you implement self-detection and automatic recovery for RAG in production?
+Q006189	RAG06	H	What are the main structural risks enterprise RAG faces, and how do you build a production-grade defense for RAG?
+Q006190	RAG04	M	What is hybrid retrieval, when do you need sparse plus dense dual-path retrieval, and how does RRF fuse the results?
+Q006191	RAG02	M	Why is the Recursive Character Text Splitter considered the best default chunking strategy, and when should you not use it?
+Q006192	MS04	H	How do you design an enterprise production RAG system, and why must the two pipelines be separated?
+Q006193	RAG06	M	What is embedding drift in a RAG system, and how do you detect and mitigate it?
+Q006194	RAG03	M	How do HNSW and IVF-PQ differ, and how do you choose a vector search index?
+Q006195	GA03	H	How do you build the training data, action space, and evaluation loop for a GUI agent, and when must it request human takeover?
+Q006196	GA06	M	How do you trade off a pure-vision approach against an Accessibility Tree/XML approach for GUI agents?
+Q006197	GA06	M	What is Chain-of-Vision-Thought (CoVT), and why is it important for vision-language models?
+Q006198	DROP	-	offtopic
+Q006199	GA06	M	What is spatial grounding, and why is it one of the hardest capabilities for vision-language models?
+Q006200	GA06	M	How are voice/audio modalities integrated with VLMs to form a true multimodal agent, and what is a VLA (Vision-Language-Action) model?
+Q006201	GA03	E	What is the core difference between a copilot and an agent, and why are planning and reflection needed?
+Q006202	GA03	M	What is Plan-and-Solve, and how does it differ from ReAct?
+Q006203	GA03	H	What is LATS (Language Agent Tree Search), and how does it differ from Reflexion?
+Q006204	GA03	M	How do AutoGen and CrewAI differ, and what is the "commander pattern" for multi-agent collaboration?
+Q006205	GA03	M	What is an agent memory architecture, and what scenarios suit flat vector, episodic, graph, and hybrid architectures? What are Mem0, Zep, Letta, and LOCOMO?
+Q006206	FT04	M	What is test-time compute scaling, and why is it a core direction for agent reasoning?
+Q006207	GA01	M	What is Tree of Thoughts (ToT), how does it differ from CoT and ReAct, and when is tree search not worth the cost?
+Q006208	GA03	M	What production problems do node caching and deferred nodes in LangGraph solve?
+Q006209	DROP	-	dup
+Q006210	GA03	H	Checkpointing is not durable execution: what are the three core things missing for durable agent execution?
+Q006211	GA03	M	How do you combine retry, timeout, and error handlers for fault tolerance in LangGraph?
+Q006212	GA04	M	How do you use LangSmith to debug agents, and what advanced usage exists?
+Q006213	GA04	M	How do you monitor an agent's token consumption and cost, and what optimization strategies exist?
+Q006214	GA04	M	How do you use Arize Phoenix for open-source observability, and how does it differ from LangSmith?
+Q006215	GA04	M	How do you design SLAs and alerting rules for an agent, and what are the key thresholds?
+Q006216	GA04	M	How do you A/B test an agent, and what evaluation metrics are used?
+Q006217	DROP	-	offtopic
+Q006218	GA04	M	How do you detect degradation in agent output quality, and what is semantic drift?
+Q006219	GA04	M	How do you do automated agent evaluation in production, and what is the right way to use LLM-as-a-Judge?
+Q006220	GA03	M	How do you use LangGraph's native features to debug an agent, and what role does a checkpoint play in practical debugging?
+Q006221	GA05	M	What concrete security monitoring measures exist for agents in production, and how do you defend against prompt injection?
+Q006222	GA04	M	How do you choose an agent observability platform among LangSmith, Phoenix, Opik, and Galileo?
+Q006223	GA04	M	How do you find root causes from an agent's traces, and what are best practices for root cause analysis?
+Q006224	CS02	M	What are best practices for Python asyncio / async-await in AI applications?
+Q006225	GA02	M	How is Pydantic v2 used for structured LLM outputs, and how does it work?
+Q006226	GA04	M	How do you implement a robust LLM retry mechanism in Python, including exponential backoff?

@@ -1,0 +1,105 @@
+Q003405	M	Is RAG still relevant in the era of long context LLMs?
+Q004761	M	How do you handle multi-document and multi-hop questions in RAG?
+Q004764	H	Explain Self-RAG. How does the model decide when to retrieve?
+Q004765	M	What is GraphRAG, and when would you use it over traditional RAG?
+Q004772	M	Long context windows keep getting cheaper. When should you use retrieval (RAG) vs putting everything in the context window?
+Q004783	M	Your text-only RAG system now needs to handle images and tables. How do you extend it?
+Q004785	M	Your RAG system fails on multi-hop questions that require combining multiple facts. How do you fix it?
+Q005087	M	What is multi-modal RAG, and how does it differ from text-only RAG?
+Q005954	M	What is GraphRAG, how does it differ from plain vector RAG, and when should you choose it?
+Q005955	M	What is Agentic RAG, how does it differ from plain RAG, and how does it implement multi-hop reasoning?
+Q007041	M	Users mostly ask narrow factual lookups such as "what is the refund window for plan X?", and a teammate wants to switch the whole system to GraphRAG. What is the best call?
+Q007044	M	Why not just stuff the whole corpus into a 1M-token context and skip retrieval? What is the strongest answer?
+Q007068	M	Is RAG still relevant in the era of long-context LLMs?
+Q007106	M	A teammate proposes skipping retrieval entirely and stuffing all relevant docs into a 200k-token context window per query. Why push back?
+Q007167	H	How do you handle multi-hop or multifaceted queries?
+Q010904	M	Explain the difference between agentic RAG and traditional RAG.
+Q011156	M	Is RAG dead because of long context windows?
+Q011298	M	Why is context caching better than RAG for a 50k token document?
+Q011338	M	When would you choose long context over RAG?
+Q011352	M	Why would you still use RAG if frontier models ship 1M-token contexts?
+Q011353	M	What is "agentic RAG" and how does it differ from "advanced RAG"?
+Q011388	M	Why is the "extraction" phase the bottleneck for GraphRAG?
+Q011389	M	How does GraphRAG solve the context window limit for aggregate questions?
+Q011394	M	What is the "reasoning-retrieval balance" in agentic RAG?
+Q011395	M	Why does agentic RAG often lead to higher quality but lower reliability (determinism)?
+Q011396	H	When would you compile knowledge up front instead of running an agentic retrieval loop?
+Q011422	H	How would you handle a query that requires information from both a chart and a table on different pages?
+Q011540	M	What is the "property graph" in LlamaIndex and why is it superior to basic vector RAG?
+Q010765	E	What is agentic RAG?
+Q011819	M	How does agentic RAG differ from standard RAG, and when is the extra complexity justified?
+Q011988	M	For a long-context assistant, when is a 1M-token context window the right tool, and when should you use retrieval instead?
+Q012105	H	A lawyer asks about a 200-page credit agreement where the operative clause on page 140 depends on a defined term on page 8. How do you build retrieval that gets this right?
+Q012116	H	Users ask "how many open orders are blocked on a supplier issue?" Plain RAG gets this wrong. Why, and what is the right architecture?
+Q003605	M	What problem does GraphRAG solve, and how does it differ from standard vector RAG?
+Q007707	H	When is RAG-then-stuff worse than an agentic search-and-read loop over the corpus?
+Q007904	M	When does the agentic "model writes its own queries" pattern beat explicit query rewriting?
+Q007928	M	When does an embedding index beat an agent with grep over a code repository?
+Q007933	M	Explain self-RAG and corrective RAG. Do they earn their complexity in production?
+Q007934	M	In corrective RAG, what is the right fallback when the grader says every retrieved document is irrelevant, in an enterprise setting with no web search?
+Q007935	M	How would you keep a retrieval grading loop from doubling your p95 latency?
+Q007936	H	Some questions are answered by your data warehouse, some by documents, and some need both. How do you design retrieval across structured and unstructured data?
+Q007939	M	What is GraphRAG, and when is the knowledge-graph structure worth the complexity?
+Q007940	M	How would you handle entity resolution errors polluting the knowledge graph in GraphRAG?
+Q007941a	H	Estimate indexing cost for GraphRAG versus standard RAG on a 1M-chunk corpus.
+Q007941b	M	Why can't plain top-k retrieval ever answer "summarise the main themes of this corpus"?
+Q007942	M	Compare single-shot RAG with agentic RAG. When does retrieval-as-a-tool win?
+Q007944	M	What guardrails cap cost when the model controls how many searches it runs in agentic RAG?
+Q007948	H	A query needs docs and tickets joined together. How does each retrieval architecture cope?
+Q007952	H	Why does keying a semantic cache by user break its hit rate, and what is the middle ground?
+Q007974	M	What caching strategies apply to RAG systems, and what are the invalidation traps?
+Q007975	M	How do you pick the similarity threshold for a semantic cache? What experiment would you run?
+Q007977a	H	How exactly does prompt caching shift the crossover corpus size between long-context stuffing and RAG? Sketch the cost math.
+Q007977b	H	If effective context length keeps improving, which RAG components die first and which never do?
+Q007978	M	How do you decide empirically the retrieve-generously operating point (how many chunks to retrieve)?
+Q008002	H	A teammate wants to delete the vector index and give the agent grep, file reads, and keyword search instead, the way coding agents work. Where are they right, and where does it break outside code?
+Q008004	M	What does an agent need in a search tool's results to reformulate well after a miss?
+Q008967	H	Design multimodal RAG over 50k PDFs full of tables, charts, and diagrams. Where does ColPali-style retrieval fit?
+Q008969	H	When is caption-and-embed strictly better than ColPali for multimodal document retrieval?
+Q009391	M	When does retrieval lose to just stuffing a long-context model?
+Q009410	M	Long context windows keep getting cheaper. Why not drop retrieval and stuff the whole repo into context for every request?
+Q009596	H	An enterprise search ranking leans on a knowledge graph of people, content and activity. How would you build that graph, and how does it improve retrieval beyond embedding similarity?
+Q009597	H	How do you resolve the same person or project across ten systems with no shared identifier when building an enterprise knowledge graph?
+Q009598	M	In an enterprise search knowledge graph of people, content and activity, which graph features would you disable for a tenant that has enabled only one connector?
+Q009673	H	A lawyer asks a question about a 200-page credit agreement where the operative clause on page 140 depends on a defined term on page 8. How do you build retrieval that gets this right?
+Q009674	H	In a RAG system over legal agreements, how would you handle an amended and restated agreement where an amendment on page 190 supersedes the clause on page 140?
+Q009693	H	When would you put a whole contract in the context window instead of retrieving over it? Defend the answer with numbers.
+Q009694	M	How does prompt caching change the decision between full-context and retrieval for a document that a lawyer asks twenty questions about?
+Q009695	H	At what corpus size would you stop hybridising long-context and retrieval approaches and go retrieval-only?
+Q009881	M	For a long-context assistant, when is a 1M-token context window the right tool, and when should you use retrieval (RAG) instead?
+Q009882	M	How would prefix caching change the cost calculus for a long shared context reused across many queries?
+Q009883	H	What retrieval failure would long context mask, and is masking it good or bad?
+Q009964	M	What is an ontology (as in Palantir Foundry), and why put LLM agents on top of one instead of on raw tables and documents?
+Q009965	H	Who maintains an ontology used by LLM agents when the customer's business changes, and what breaks when it drifts?
+Q009966	H	When is building an ontology layer for LLM agents not worth it?
+Q009985	H	Users ask "how many open orders are blocked on a supplier issue?" Plain RAG gets this wrong. Why, and what is the right architecture?
+Q010004	H	How does an answer engine handle breaking news, such as a query about something that happened 20 minutes ago?
+Q010080	H	Design cross-lingual RAG: the knowledge base is in English and Hindi, but users ask in Tamil, Telugu, or transliterated Hinglish. How do you retrieve and answer correctly?
+Q010517	M	Where does retrieved-context caching sit relative to a feature store in an LLM application?
+D00415	M	What is GraphRAG, and when does it genuinely beat vector RAG?
+D00416	M	Why is entity extraction the bottleneck of GraphRAG indexing?
+D00417	M	How does community summarization let GraphRAG answer aggregate questions that exceed the context window?
+D00418	M	What is the maintenance tail of a knowledge graph, and when does it outweigh the benefits?
+D00419	M	How would you build a knowledge graph for GraphRAG from unstructured documents?
+D00420	M	What is the graph-as-reranker pattern?
+D00421	M	How does agentic RAG differ from advanced RAG, and what does it cost in determinism?
+D00422	M	Explain Self-RAG and corrective RAG, and how they decide whether to retrieve or to re-retrieve.
+D00423	M	How does multi-hop reasoning work in an agentic retrieval loop?
+D00424	M	What is the reasoning-retrieval balance in agentic RAG, and how do you stop it from over-searching?
+D00425	M	What new failure modes does agentic RAG introduce compared to a linear pipeline?
+D00426	M	How would you implement adaptive retrieval where effort scales with query complexity?
+D00427	M	What is the co-cheating trap when training search agents?
+D00428	M	How does a self-healing RAG system detect and recover from bad retrieval?
+D00429	M	Design a multimodal RAG system for a financial research platform with charts, tables and text.
+D00430	M	How would you answer a query that needs both a chart on one page and a table on another?
+D00431	H	Users want to query a 10,000-hour video library. How do you design and cost multimodal retrieval over it?
+D00432	M	How does ColPali-style page-as-image retrieval compare with a parse-then-embed pipeline?
+D00433	M	How do you build a dual representation of charts and diagrams for retrieval?
+D00434	M	How do image-text multimodal RAG systems index and retrieve mixed content?
+D00435	M	What is state-aware or agentic retrieval, and how does it differ from standard retrieval?
+D00436	M	When should an agent's memory store use a vector database and when a knowledge graph?
+D00437	M	How do you enforce permission-aware retrieval without leaking the existence of restricted documents?
+D00438	M	How would you design a hierarchical or multi-index strategy for a large heterogeneous corpus?
+D03816	M	What do multi-hop, agentic RAG and GraphRAG add over a basic RAG pipeline, and when are they worth the cost?
+D04839	M	How might a code assistant like Copilot retrieve relevant context from a repository, and what unique challenges does code retrieval pose?
+D04847	M	How do REALM and WebGPT integrate retrieval or browsing into language models?

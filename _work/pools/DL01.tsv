@@ -1,0 +1,88 @@
+Q001051	M	How do activation functions play a role in CNNs?
+Q001253	E	Define deep learning and how it differs from other machine learning approaches.
+Q001254	E	What is an artificial neural network?
+Q001255	E	Explain the concept of 'depth' in deep learning.
+Q001256	E	What are activation functions, and why are they necessary?
+Q001258	E	Describe the role of weights and biases in neural networks.
+Q001259	M	What is the vanishing gradient problem, and how can it be avoided?
+Q001260	E	Explain the difference between shallow and deep neural networks.
+Q001261	M	What is the universal approximation theorem?
+Q001263	E	What is forward propagation and backpropagation?
+Q001456	M	What is the problem of vanishing gradients, and how does it affect gradient descent?
+Q001795	E	What is a neural network, and how does it resemble human brain functionality?
+Q001796	E	Elaborate on the structure of a basic artificial neuron.
+Q001797	E	Describe the architecture of a multi-layer perceptron (MLP).
+Q001799	E	What is backpropagation, and why is it important in neural networks?
+Q001800	E	Explain the role of an activation function. Give examples of some common activation functions.
+Q001801	E	Describe the concept of deep learning in relation to neural networks.
+Q001803	E	What is the vanishing gradient problem? How does it affect training?
+Q001804	M	How does the exploding gradient problem occur, and what are the potential solutions?
+Q003960	E	What is the problem with sigmoid during backpropagation?
+Q004081	M	State the universal approximation theorem. What is the technique used to prove it?
+Q004083	H	Given the universal approximation theorem, why can't an MLP still reach an arbitrarily small positive error?
+Q004084	H	What is the mathematical motivation of Deep Learning as opposed to standard Machine Learning techniques?
+Q004085	H	In standard Machine Learning vs. Deep Learning, how is the order of the number of samples related to the order of regions that can be recognized in the function space?
+Q004086	H	How does Deep Learning tackle the curse of dimensionality?
+Q004351	E	What is sigmoid? What does it do?
+Q004369	E	What kind of problems can neural nets solve?
+Q004370	E	Why do we need activation functions?
+Q004505	M	Describe backpropagation in PyTorch.
+Q004510	M	How does PyTorch initialize neural-network weights?
+Q004528	H	What are GNNs (graph neural networks), and how are they implemented in PyTorch?
+Q004529	H	What are important neural architecture search (NAS) directions, and how can PyTorch support them?
+Q004417	E	Can you explain neural networks and how they work?
+Q004418	E	What is deep learning and how does it differ from traditional machine learning?
+Q004419	M	Can you explain the backpropagation algorithm and its role in training neural networks?
+Q005195	E	What is the softmax activation function?
+Q005204	E	What is a perceptron?
+Q005205	E	Explain the multilayer perceptron (MLP).
+Q005244	E	What are vanishing gradients?
+Q005254	E	What are neural networks?
+Q005255	E	How does matrix multiplication work in neural networks?
+Q005256	E	Explain the feedforward neural network.
+Q005257	E	What are forward propagation and backward propagation?
+Q005259	E	What is the advantage of deep learning over traditional machine learning?
+Q005260	E	What are activation functions, and why are they used?
+Q005261	M	Explain the sigmoid, tanh, ReLU, Leaky ReLU, and softmax activation functions with their pros and cons.
+Q005262	M	Why are sigmoid and tanh not preferred in the hidden layers of a neural network?
+Q005269	M	What is representation learning, and why is it useful?
+Q005290	M	How do you identify exploding gradient issues in your model?
+Q005339	E	What are skip connections?
+Q005469	E	How does a neural network work?
+Q005470	M	Why is ReLU better and more often used than sigmoid in neural networks?
+Q005471	E	List different activation functions.
+Q005472	E	What is the vanishing gradient problem?
+Q006301	E	What is a neural network?
+Q006612	E	Explain the MLP (multilayer perceptron).
+Q006622	E	Explain all the standard activation functions: tanh, ReLU, Leaky ReLU, sigmoid, softmax, and softplus.
+Q006623	M	How does a neural network with one layer and one input and output compare to logistic regression?
+Q012022b	M	What happens in a neural network if you remove all the hidden layers?
+Q012541	E	What is an activation function and what is its use? Explain three different types of activation functions.
+Q012544	M	How do you know whether your model is suffering from the problem of exploding gradients?
+Q012547	M	What is the vanishing gradient problem in artificial neural networks and how can it be fixed?
+Q012549	M	Why are Sigmoid or Tanh not preferred as the activation function in the hidden layers of a neural network?
+Q007271	M	Why does a neural network need non-linear activation functions, and how did the field move from sigmoid to ReLU to GELU-style activations?
+Q007272	M	How would you detect dead ReLUs in a trained network?
+Q007274	M	Why is sigmoid still the right output activation for a multi-label classifier?
+Q007301	M	Explain backpropagation to a strong software engineer who has never done ML. Why is it efficient?
+Q007305	M	What are vanishing and exploding gradients? What causes them, and what does modern architecture design do about them?
+Q007306	H	Why exactly does the residual connection's Jacobian I + ∂f/∂x fix gradient flow?
+Q007309	M	Why can't you initialize all weights to zero? What do Xavier and He initialization actually do?
+Q007310a	H	Derive why fan_in appears in the variance formula for the weight initialization of a linear layer.
+Q007310b	H	Why do residual networks need an extra 1/√N scaling in their initialization?
+Q007311	H	What breaks if you initialize a transformer with std 0.2 instead of 0.02?
+Q007318	M	Explain softmax and the temperature parameter. How do you compute softmax stably, and where does temperature show up across ML?
+Q007321	M	What breaks numerically if you compute log(softmax(z)) naively?
+D03740	E	Explain how a neural network works and what backpropagation computes.
+D03741	M	How does deep learning differ from traditional machine learning, and when is each the better choice?
+D03742	M	Which output activation would you use for classes that are not mutually exclusive, and why?
+D04483	E	Why do neural networks need non-linear activation functions? What would a deep network without them collapse into?
+D04484	M	Explain vanishing and exploding gradients, their causes in deep networks, and practical mitigations.
+D04485	E	What are the drawbacks of sigmoid and tanh as hidden-layer activations?
+D04486	M	Compare ReLU, Leaky ReLU, PReLU and ELU. What is the dying-ReLU problem and how do you detect it?
+D04487	M	What is GeLU, why is it preferred in Transformers, and how is it commonly approximated?
+D04488	M	Define Swish/SiLU and explain why it is smooth and non-monotonic.
+D04489	M	What is a Gated Linear Unit and how does it differ from a plain activation in a feed-forward block?
+D04608	M	Walk through backpropagation on a small computational graph and state the chain rule at one node.
+D04609	E	Why is cross-entropy preferred over mean squared error for classification output layers with softmax?
+D04981	M	What is the difference between ReLU, GeLU and SwiGLU in their gradient behavior near zero, and why does it matter for deep Transformers?

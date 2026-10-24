@@ -1,0 +1,300 @@
+Q005029	GA05	E	What is prompt injection, and what are the different types (direct, indirect)?
+Q005030	GA05	M	How do you implement input and output guardrails for AI systems?
+Q005031	FT03	E	What is AI alignment, and why is it important?
+Q005032	GA05	M	How do you detect and mitigate bias in AI systems?
+Q005033	GA05	M	What are the key data privacy considerations (GDPR, CCPA) when building AI applications?
+Q005034	GA05	M	How do you handle PII in LLM inputs and outputs?
+Q005035	ML06	E	What is explainability in AI, and why does it matter?
+Q005036	ML06	E	What is the difference between interpretability and explainability?
+Q005037	GA05	H	What is mechanistic interpretability, and why do AI labs invest in it?
+Q005038	GA05	M	How do you build trust with users in AI-powered applications?
+Q005039	GA05	M	What are adversarial attacks on AI systems, and how do you defend against them?
+Q005040	GA05	E	What is data poisoning, and how can it affect AI models?
+Q005041	GA05	M	How do you implement content safety filters for AI-generated content?
+Q005042	GA05	E	What is responsible AI, and what frameworks exist for implementing it?
+Q005043	GA05	M	How do you handle copyright and intellectual property concerns with AI-generated content?
+Q005044	GA05	M	What is the EU AI Act, and how does it affect AI engineering?
+Q005045	GA04	M	How do you implement audit trails and logging for AI decisions?
+Q005046	GA05	E	What is model card documentation, and why is it important?
+Q005047	GA05	M	How do you handle misuse and abuse of AI systems in production?
+Q005048	GA05	H	What is differential privacy, and how can it be applied during model training?
+Q005049	GA05	H	How would you design an AI incident response plan?
+Q005050	GA05	E	What is the NIST AI Risk Management Framework (AI RMF)?
+Q005051	GA05	M	Your healthcare chatbot gives medical diagnoses it should not make. How do you add safety guardrails?
+Q005052	GA05	M	Your AI system is reproducing copyrighted material verbatim. How do you prevent this?
+Q005053	GA05	M	Your resume screening AI rejects more female candidates for engineering roles. How do you fix gender bias?
+Q005054	GA05	H	Your AI model passes bias checks by gender and race separately, but fails for intersectional groups. How do you handle it?
+Q005055	GA05	M	Your AI denied a loan, and the customer demands a GDPR explanation. How do you provide one?
+Q005056	GA05	H	A user invokes the right to be forgotten, but their data is in your model weights. How do you comply?
+Q005057	GA05	M	The EU AI Act may classify your AI system as high-risk. How do you comply?
+Q005058	GA05	H	Your differentially private model lost significant accuracy. How do you balance privacy and utility?
+Q005059	GA05	H	One malicious participant is poisoning your federated learning model. How do you defend against it?
+Q005060	GA05	H	Your AI hiring model uses proxy features for protected attributes. How do you eliminate proxy discrimination?
+Q005061	GA05	H	Your predictive model creates a feedback loop of biased outcomes. How do you break it?
+Q005062	GA05	M	Your AI generates fake news images. How do you implement watermarking for AI-generated content?
+Q005063	GA05	M	Your AI denies a service, and the user has no way to challenge it. How do you design an appeals process?
+Q005064	GA04	M	An auditor asks why your AI rejected a request 6 months ago, and you have no logs. How do you build audit trails?
+Q005065	GA05	H	You removed PII, but users were re-identified from anonymized data. How do you prevent re-identification?
+Q005066	GA05	H	A pre-trained model from an open-source repo may contain a hidden backdoor. How do you detect it?
+Q005067	GA05	H	Your LLM's training data was deliberately poisoned by an adversary. How do you respond?
+Q005068	GA05	M	Your AI mental health chatbot gave harmful advice to a user in crisis. How do you mitigate harm?
+Q005069	GA05	M	Your AI system caused incorrect critical decisions. How do you run a blameless post-mortem?
+Q005070	GA05	M	Radiologists agree with AI 98% of the time, even when it is wrong. How do you prevent human over-reliance on AI?
+Q005071	GA05	M	Your content moderation flags normal cultural expressions as offensive in other markets. How do you adapt cross-culturally?
+Q005072	LLM04	M	Your AI training produces massive carbon emissions. How do you reduce environmental impact?
+Q005073	GA06	E	What are multimodal AI models, and how do they process different types of data?
+Q005074	GA06	M	How do vision-language models process images?
+Q005075	GA06	M	How do image embeddings work?
+Q005076	GA06	M	How does CLIP work, and why is it important for multi-modal AI?
+Q005077	GA06	M	What are the key architectures for multi-modal models?
+Q005078	DL05	M	How does image generation work with diffusion models (Stable Diffusion, DALL-E, Flux)?
+Q005079	GA06	E	What is text-to-speech (TTS), and what models are used for it?
+Q005080	GA06	M	How does speech-to-text (Whisper) work?
+Q005081	GA06	H	Budget the end-to-end latency for a real-time voice agent (VAD, ASR, LLM, TTS, network). Where does the time go?
+Q005082	GA06	M	What is turn-taking in a voice AI agent, and how does it detect when the user has finished speaking?
+Q005083	GA06	M	How does sentence chunking reduce the latency of a voice agent?
+Q005084	GA06	H	What is speculative (preemptive) LLM generation in a voice agent, and how does it reduce latency?
+Q005085	GA06	M	How do you handle barge-in (user interruptions) in a voice agent?
+Q005086	GA06	H	Cascaded ASR + LLM + TTS vs native speech-to-speech models: what are the trade-offs?
+Q005087	RAG05	M	What is multi-modal RAG, and how does it differ from text-only RAG?
+Q005088	GA06	M	How do you build a system that processes both images and text?
+Q005089	GA06	M	What are multi-modal embeddings, and how are they used for cross-modal search?
+Q005090	GA06	M	How do you evaluate multi-modal AI systems?
+Q005091	GA06	M	What are the challenges of real-time multi-modal AI processing?
+Q005092	GA06	M	How do you handle video understanding with AI?
+Q005093	GA06	E	What is visual question answering (VQA)?
+Q005094	GA06	M	What is document understanding, and how do models parse documents with layouts?
+Q005095	GA06	H	How do you fine-tune a vision-language model?
+Q005096	GA06	M	What are the latency and cost considerations for multi-modal AI in production?
+Q005097	GA05	M	How do you handle multi-modal content moderation?
+Q005098	DL05	M	What is text-to-video generation, and what are the current state-of-the-art approaches?
+Q005099	GA06	M	Explain multimodal fusion techniques: early fusion vs late fusion.
+Q005100	GA06	M	Your vision-language model generates factually incorrect image descriptions. How do you fix it?
+Q005101	GA06	H	Your VLM answers single-image questions but fails on multi-page documents. How do you fix it?
+Q005102	GA06	H	Your multimodal LLM ignores the image and generates descriptions from text alone. How do you fix it?
+Q005103	DL05	H	Your diffusion model ignores precise control requirements in text prompts. How do you improve controllability?
+Q005104	DL05	H	Your diffusion model generates sharp but repetitive images. How do you balance quality vs diversity?
+Q005105	DL05	M	Your diffusion model takes too long per image. How do you speed up sampling?
+Q005106	LLM06	M	How do you improve inference speed in production LLM deployments?
+Q005107	LLM06	M	How do you select GPUs for LLM inference?
+Q005108	DL07	E	How does a GPU work for deep learning?
+Q005109	DL07	M	How do CUDA kernels work?
+Q005110	DL07	M	How does a Google TPU work?
+Q005111	LLM06	M	How does an LPU work?
+Q005112	LLM06	H	Estimate the GPU memory needed to serve a 70B model (weights, KV cache, activations). Does it fit on a single 80 GB GPU?
+Q005113	LLM06	H	Do the roofline math: how many tokens/sec can one H100 produce for a 70B model at batch size 1?
+Q005114	LLM04	E	What is model parallelism vs data parallelism in distributed training?
+Q005115	LLM04	M	What is tensor parallelism, and how does it help serve large models?
+Q005116	LLM04	M	What is pipeline parallelism?
+Q005117	LLM06	M	How does continuous batching improve LLM inference throughput?
+Q005118	LLM05	M	What is speculative decoding, and how does it speed up inference?
+Q005119	LLM05	H	How does Medusa (multi-head speculative decoding) work?
+Q005120	LLM05	H	How does EAGLE (feature-level speculative decoding) work?
+Q005121	LLM05	M	What is n-gram speculation in LLMs, and how does it speed up generation?
+Q005122	LLM06	M	What is the KV cache, and how do you manage memory for it?
+Q005123	LLM06	M	What is PagedAttention?
+Q005124	LLM06	M	How do you optimize inference for edge and mobile deployment?
+Q005125	LLM06	M	What is model quantization (INT8, INT4, FP16, BF16), and how does it affect quality?
+Q005126	GA04	M	How do you implement auto-scaling for AI workloads?
+Q005127	GA04	M	What is the role of load balancing in AI serving infrastructure?
+Q005128	LLM06	M	How do you manage GPU memory for serving multiple models?
+Q005129	LLM06	M	What is model sharding, and when would you use it?
+Q005130	GA04	M	How do you implement request queuing and priority scheduling for AI services?
+Q005131	FT05	M	What are the cost trade-offs between self-hosted and API-based AI inference?
+Q005132	GA04	M	How do you handle cold start latency for serverless AI deployments?
+Q005133	GA04	M	How do you implement model caching to reduce redundant computations?
+Q005134	GA04	M	What is the difference between synchronous and asynchronous inference, and when do you use each?
+Q005135	LLM04	H	What is FSDP (Fully Sharded Data Parallel), and how does it differ from DeepSpeed ZeRO?
+Q005136	LLM06	M	What are TTFT, TPOT, and throughput, and how do they trade against each other?
+Q005137	GA04	M	How do you monitor and profile LLM inference in production (TTFT, inter-token latency, GPU utilization)?
+Q005138	GA04	M	What is model routing at the infrastructure level, and how do you route requests based on complexity and cost?
+Q005139	CODE01	M	Implement a basic RAG pipeline using an embedding model and a vector database.
+Q005140	CODE01	M	Build a simple AI agent with tool use (e.g., calculator, web search).
+Q005141	CODE01	M	Implement semantic search using embeddings and cosine similarity.
+Q005142	CODE01	M	Write code for different text chunking strategies (fixed-size, recursive, semantic).
+Q005143	CODE01	E	Implement a prompt template system with variable substitution.
+Q005144	CODE01	M	Build an evaluation pipeline for LLM outputs using LLM-as-a-judge.
+Q005145	CODE01	M	Implement streaming responses for an LLM API.
+Q005146	CODE01	M	Build a simple vector similarity search from scratch.
+Q005147	CODE01	M	Implement a conversation memory system for a chatbot (sliding window, summary, buffer).
+Q005148	CODE01	H	Write code to detect and handle hallucinations in LLM outputs.
+Q005149	CODE01	E	Implement a retry mechanism with exponential backoff for LLM API calls.
+Q005150	CODE01	M	Write a function calling (tool use) handler for an LLM API.
+Q005151	CODE01	M	Implement a simple re-ranker for search results.
+Q005152	CODE01	M	Build a basic document parser that extracts text from PDFs and splits it into chunks.
+Q005153	CODE01	E	Implement cosine similarity, dot product, and Euclidean distance functions from scratch.
+Q005154	CODE01	M	Write code to implement token counting and context window management.
+Q005155	CODE01	M	Build a simple prompt versioning system.
+Q005156	CODE01	M	Implement a caching layer for LLM responses.
+Q005157	CODE01	M	Implement semantic caching for LLM queries (cache responses for semantically similar queries).
+Q005158	CODE01	M	Write code to detect prompt injection attempts in user inputs.
+Q005159	CODE01	M	Implement an LLM output guardrails system that checks for off-topic responses and PII leakage.
+Q005160	CODE01	H	Build a multi-agent system where agents have different roles and collaborate on a task.
+Q005161	CODE01	M	Implement scaled dot-product attention with a causal mask from scratch (NumPy or PyTorch).
+Q005162	CODE01	H	Implement multi-head attention, then convert it to grouped-query attention.
+Q005163	CODE01	H	Implement a KV cache and single-step decode for causal multi-head attention.
+Q005164	CODE01	H	Implement BPE (Byte Pair Encoding) training and encoding from scratch.
+Q005165	CODE01	M	Implement top-k, top-p, and temperature sampling over a logits vector.
+Q005166	SD07	M	Implement an LRU cache with O(1) get/put, then add per-entry TTL.
+Q005167	SD07	H	Implement a token-bucket rate limiter for an LLM API where cost scales with tokens, then make it distributed.
+Q005168	CODE01	H	Write an async batch processor that runs an LLM call over 50,000 documents with a concurrency limit, retries with jitter, and error isolation.
+Q005169	CODE01	H	Write a streaming SSE parser for LLM token streams that handles arbitrary chunk boundaries.
+Q005170	CODE01	M	Implement a minimal agent loop with tool dispatch, error handling, and a step budget.
+Q005171	MS01	E	What is AI engineering, and how does it differ from machine learning engineering?
+Q005172	FT05	M	How do you decide whether a problem needs AI or a traditional software solution?
+Q005173	GA04	M	How do you measure the ROI of an AI feature?
+Q005174	LLM07	M	How do you handle hallucinations when they occur in a production AI system?
+Q005175	FT05	M	How do you decide between using an LLM API vs self-hosting an open-source model?
+Q005176	DROP	-	hr
+Q005177	RAG06	M	Describe your approach to debugging a poor-performing RAG system.
+Q005178	DROP	-	hr
+Q005179	DROP	-	hr
+Q005180	DROP	-	hr
+Q005181	GA05	M	How would you handle a situation where an AI model produces biased or harmful outputs in production?
+Q005182	GA04	M	How do you approach cost optimization for an AI system that is exceeding budget?
+Q005183	DROP	-	hr
+Q005184	MS01	M	How would you handle a situation where your AI system's quality degrades over time?
+Q005185	DROP	-	hr
+Q005186	ML05	M	How would you approach building an AI feature with limited labeled data?
+Q005187	DROP	-	hr
+Q005188	DROP	-	hr
+Q005189	DROP	-	hr
+Q005190	DROP	-	hr
+Q005191	DROP	-	hr
+Q005192	GA03	H	You need to choose between a complex agentic system that scores 15% better on benchmarks, or a simpler RAG pipeline that is easier to maintain. How do you decide?
+Q005193	DL02	E	Explain epoch, batch, batch size, and iteration.
+Q005194	DL06	E	What are embeddings in machine learning?
+Q005195	DL01	E	What is the softmax activation function?
+Q005196	ML01	E	What is machine learning?
+Q005197	ML01	E	What is the difference between supervised and unsupervised learning?
+Q005198	ML11	E	What is reinforcement learning?
+Q005199	ML01	E	What is the difference between classification and regression?
+Q005200	ML01	M	Explain overfitting and underfitting. How can you prevent them?
+Q005201	ML07	E	What are L1 and L2 loss functions?
+Q005202	ML07	M	What is regularization? Explain L1 (Lasso) and L2 (Ridge) regularization.
+Q005203	ML07	E	What are loss functions and cost functions? Explain the key difference between them.
+Q005204	DL01	E	What is a perceptron?
+Q005205	DL01	E	Explain the multilayer perceptron (MLP).
+Q005206	ML06	E	Explain cross-validation. Why is it used?
+Q005207	ML11	M	What is the difference between policy-based and value-based methods?
+Q005208	ML11	E	Explain the concept of exploration vs exploitation.
+Q005209	ML01	M	Explain the curse of dimensionality and how to address it.
+Q005210	ML07	H	Explain local loss, focal loss, and gradient blending in the context of multi-task learning.
+Q005211	ML03	E	How does a decision tree algorithm work?
+Q005212	ML03	M	Explain how decision trees make splits and handle categorical features.
+Q005213	ML03	M	How does the random forest algorithm work? How does it improve over decision trees? How does it reduce variance?
+Q005214	ML03	E	Explain ensemble methods. Why are they powerful?
+Q005215	ML03	E	What is the difference between bagging and boosting?
+Q005216	ML03	M	What is gradient boosting? How does XGBoost work?
+Q005217	ML03	M	What are the key hyperparameters for XGBoost?
+Q005218	ML03	M	Explain gradient boosting and its advantages over random forests.
+Q005219	ML02	E	Explain how logistic regression differs from linear regression.
+Q005220	ML02	E	How does logistic regression work?
+Q005221	ML06	M	Explain R-squared and adjusted R-squared.
+Q005222	ML02	M	How do you check for multicollinearity in regression models?
+Q005223	ML02	E	How does K-Nearest Neighbors (KNN) work?
+Q005224	ML04	M	Explain K-means clustering. How does it work? What are its limitations?
+Q005225	ML02	M	Explain Support Vector Machines (SVM). What is the kernel trick?
+Q005226	ML02	E	What is the decision boundary in classifiers?
+Q005227	ML04	E	What is dimensionality reduction?
+Q005228	ML04	M	Explain PCA (Principal Component Analysis). How does it work? When would you use it?
+Q005229	ML07	M	Explain gradient descent and its variants.
+Q005230	ML06	M	What is the ROC-AUC curve, and how is it interpreted?
+Q005231	ML05	E	What is feature engineering?
+Q005232	ML05	E	What is one-hot encoding? When should you use it?
+Q005233	ML05	E	How do you deal with missing data?
+Q005234	ML05	E	How do you handle outliers?
+Q005235	ML05	E	Explain feature scaling. Why is it needed?
+Q005236	ML05	E	How do you handle categorical features?
+Q005237	ML05	E	Explain feature selection vs feature extraction.
+Q005238	ML05	M	How would you create new features from existing ones?
+Q005239	ML05	M	How do you approach a dataset with highly imbalanced classes?
+Q005240	ML05	M	How do you select features for a model?
+Q005241	ML05	E	Why and how do you split data into train, test, and validation sets?
+Q005242	DROP	-	dup
+Q005243	ML07	E	What is stochastic gradient descent (SGD)?
+Q005244	DL01	E	What are vanishing gradients?
+Q005245	ML07	E	What is a learning rate? How do you choose a good one?
+Q005246	DROP	-	dup
+Q005247	ML06	M	How do you approach hyperparameter tuning?
+Q005248	DROP	-	dup
+Q005249	GA05	M	How do you ensure fairness and reduce bias in ML models?
+Q005250	ML06	M	Explain grid search vs random search vs Bayesian optimization.
+Q005251	ML06	H	Explain TPE (Tree-structured Parzen Estimator) hyperparameter optimization.
+Q005252	DL02	M	Explain the RMSprop optimizer.
+Q005253	DL02	M	What is the Adagrad optimizer?
+Q005254	DL01	E	What are neural networks?
+Q005255	DL01	E	How does matrix multiplication work in neural networks?
+Q005256	DL01	E	Explain the feedforward neural network.
+Q005257	DL01	E	What are forward propagation and backward propagation?
+Q005258	DL02	E	Can you name and explain a few hyperparameters used for training a neural network?
+Q005259	DL01	E	What is the advantage of deep learning over traditional machine learning?
+Q005260	DL01	E	What are activation functions, and why are they used?
+Q005261	DL01	M	Explain the sigmoid, tanh, ReLU, Leaky ReLU, and softmax activation functions with their pros and cons.
+Q005262	DL01	M	Why are sigmoid and tanh not preferred in the hidden layers of a neural network?
+Q005263	DL02	E	What is dropout, and why is it effective?
+Q005264	DL02	M	What is the effect of dropout on training and inference speed?
+Q005265	DL02	M	What is L1/L2 regularization, and how does it affect a neural network?
+Q005266	DL02	M	What is batch normalization, and why is it used?
+Q005267	DL02	M	What are the hyperparameters for batch normalization that can be optimized?
+Q005268	DL03	M	What is parameter sharing in deep learning?
+Q005269	DL01	M	What is representation learning, and why is it useful?
+Q005270	ML01	E	What is a generative model, and how does it differ from a discriminative model?
+Q005271	DROP	-	dup
+Q005272	DL05	E	What is latent space?
+Q005273	DL05	E	What are autoencoders? Explain their layers and practical uses.
+Q005274	DL05	M	What is a Variational Autoencoder (VAE), and how is it different from a traditional autoencoder?
+Q005275	DL05	H	How does a VAE impose a probabilistic structure on the latent space, and why is that important?
+Q005276	DL05	E	What is the architecture of a Generative Adversarial Network (GAN)?
+Q005277	DL05	E	What are the roles of the generator and discriminator in a GAN?
+Q005278	DL05	M	What is mode collapse in GANs, and how can it be mitigated?
+Q005279	DL05	M	How are GANs used in image synthesis or image-to-image translation tasks?
+Q005280	DL03	E	Explain convolutional neural networks (CNNs).
+Q005281	DL03	E	Explain filters in a CNN.
+Q005282	DL03	E	Explain stride in a CNN.
+Q005283	DL03	E	Explain padding in a CNN.
+Q005284	DL03	E	Explain pooling in a CNN.
+Q005285	DL03	E	Explain fully connected layers in a CNN.
+Q005286	DL04	E	What is a Recurrent Neural Network (RNN)?
+Q005287	DL04	M	What are the limitations of RNNs, and how are they solved?
+Q005288	DL04	M	What are LSTM and GRU? How do they solve long-term dependency issues?
+Q005289	DL04	M	What are the main gates in an LSTM and their roles?
+Q005290	DL01	M	How do you identify exploding gradient issues in your model?
+Q005291	LLM01	M	What is the Transformer architecture, and what makes it different from CNNs and RNNs?
+Q005292	LLM01	E	What is the attention mechanism in deep learning, and why is it significant?
+Q005293	LLM01	M	What is the basic difference between LSTM and Transformers?
+Q005294	DL05	H	Why does diffusion work better than auto-regression?
+Q005295	DL03	E	Explain transfer learning and when to use it.
+Q005296	DL05	H	How do world models work?
+Q005297	LLM01	M	What are the advantages of Transformers over traditional sequence-to-sequence models?
+Q005298	LLM01	M	What are the limitations of Transformers, and how can they be addressed?
+Q005299	LLM01	M	What is BERT, and how does it improve language understanding?
+Q005300	LLM04	M	How are Transformers trained (pre-training and fine-tuning)?
+Q005301	FT01	M	Explain transfer learning in the context of Transformers.
+Q005302	LLM05	M	Describe the process of text generation using Transformer-based language models.
+Q005303	DL04	E	What are Seq2Seq models?
+Q005304	DL06	M	Compare n-gram models and deep learning models (trade-offs).
+Q005305	DL06	E	What is the n-gram model?
+Q005306	DL06	M	What is TF-IDF, and how does it differ from word embeddings?
+Q005307	DL06	E	What is perplexity used for in NLP?
+Q005308	DL06	E	What is stemming vs lemmatization?
+Q005309	DL06	M	What is Latent Semantic Indexing (LSI)?
+Q005310	DL06	E	What is dependency parsing?
+Q005311	DL06	M	What are some approaches for text summarization?
+Q005312	DL06	E	What are word embeddings?
+Q005313	ML04	M	What is t-SNE, and how is it used for NLP?
+Q005314	DL03	E	What is computer vision, and why is it important?
+Q005315	DL03	E	What is image segmentation, and what are its applications?
+Q005316	DL03	E	What is object detection, and how does it differ from image classification?
+Q005317	DL03	M	What are the steps to build an image recognition system?
+Q005318	DL03	M	What are the challenges in real-time object tracking?
+Q005319	DL03	E	What is feature extraction in computer vision?
+Q005320	DL03	E	What is OCR, and what are its main applications?
+Q005321	DL03	M	How does a CNN differ from traditional neural networks in computer vision?
+Q005322	ML05	E	What is data augmentation, and what techniques are commonly used?
+Q005323	DL07	E	What are some popular deep learning frameworks for computer vision?
+Q005324	DL03	M	How can Transformers be used for computer vision tasks?
+Q005325	LLM01	M	What does each Transformer block learn?
+Q005326	FT01	E	What is pre-training vs fine-tuning in LLMs?
+Q005327	LLM04	M	What are some challenges in training LLMs?
+Q005328	GA01	E	What is zero-shot learning in the context of LLMs?

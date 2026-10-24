@@ -1,0 +1,894 @@
+LLM01	E	Why does self-attention scale quadratically with sequence length, and which part of the computation causes it?	A:01-foundations/01-llm-internals.md
+LLM01	M	What alternatives to full attention exist for long sequences, and what does each give up?	A:01-foundations/01-llm-internals.md
+LLM01	E	Why is the dot product of queries and keys divided by the square root of the key dimension?	A:01-foundations/03-attention-mechanisms.md
+LLM01	M	What would happen to the softmax distribution and gradients if you removed the scaling factor in scaled dot-product attention?	A:01-foundations/03-attention-mechanisms.md
+LLM01	E	Explain the roles of queries, keys and values in attention and why separate projections are used for each.	A:01-foundations/03-attention-mechanisms.md
+LLM01	M	Why do transformers use multiple attention heads instead of one large head of the same total dimension?	A:01-foundations/03-attention-mechanisms.md
+LLM01	M	How does a causal mask work in a decoder-only model, and why must it be applied before the softmax?	A:01-foundations/03-attention-mechanisms.md
+LLM01	M	Compare multi-head, multi-query and grouped-query attention in terms of quality, KV cache size and decode speed.	A:01-foundations/03-attention-mechanisms.md
+LLM01	M	Why has the industry moved from multi-head attention to grouped-query attention for most large models?	G:docs/01-basic-concepts/README.md
+LLM01	H	How would you convert an existing multi-head attention checkpoint into a grouped-query attention model with minimal retraining?	G:docs/04-transformer-architecture/README.md
+LLM01	M	What problem does multi-head latent attention solve, and how does it differ from grouped-query attention?	A:01-foundations/03-attention-mechanisms.md
+LLM01	M	Why is standard attention memory-bound rather than compute-bound on modern GPUs?	A:01-foundations/03-attention-mechanisms.md
+LLM01	M	Explain how FlashAttention reduces memory traffic without changing the mathematical result of attention.	A:01-foundations/03-attention-mechanisms.md
+LLM01	H	Walk through the online softmax trick used inside FlashAttention and why tiling is possible.	G:docs/04-transformer-architecture/README.md
+LLM01	M	What does FlashAttention-2 change in work partitioning compared to the first version, and why does it help?	A:01-foundations/03-attention-mechanisms.md
+LLM01	H	Why do newer FlashAttention versions depend on specific GPU generations, and how does low-precision FP8 attention affect accuracy?	G:docs/04-transformer-architecture/README.md
+LLM01	M	How does sliding window attention reduce cost, and how can information still propagate beyond the window?	G:docs/04-transformer-architecture/README.md
+LLM01	M	Compare sparse attention and linear attention approximations. Why have they not fully replaced softmax attention?	A:01-foundations/03-attention-mechanisms.md
+LLM01	H	What is an attention sink, and why do streaming-inference methods keep the first few tokens in cache?	G:docs/04-transformer-architecture/README.md
+LLM01	M	Why do modern LLMs use pre-layer-norm instead of post-layer-norm, and what training behavior does each produce?	A:01-foundations/01-llm-internals.md
+LLM01	M	What is RMSNorm, how does it differ from LayerNorm, and why do most recent LLMs use it?	G:docs/01-basic-concepts/README.md
+LLM01	M	What is the role of the feed-forward network in a transformer block, and roughly what fraction of parameters does it hold?	G:docs/04-transformer-architecture/README.md
+LLM01	M	Explain gated feed-forward variants such as SwiGLU and why they are preferred over ReLU or GELU MLPs.	A:01-foundations/01-llm-internals.md
+LLM01	M	Why do residual connections allow very deep transformers to train, and what is the gradient-flow argument?	G:docs/04-transformer-architecture/README.md
+LLM01	E	Walk me through a full forward pass of a decoder-only transformer from token IDs to next-token probabilities.	A:01-foundations/04-transformer-architecture.md
+LLM01	M	What changed architecturally between GPT-2 and Llama-style models?	A:01-foundations/04-transformer-architecture.md
+LLM01	M	What are the trade-offs of tying the input embedding matrix to the output projection?	A:01-foundations/04-transformer-architecture.md
+LLM01	M	How does cross-attention differ from self-attention, and where does it appear in encoder-decoder models?	G:docs/04-transformer-architecture/README.md
+LLM01	M	Contrast BERT, GPT and T5 in terms of architecture, pretraining objective and typical use cases.	G:docs/04-transformer-architecture/README.md
+LLM01	M	Why did decoder-only models win over encoder-decoder models for general-purpose LLMs, and where do encoder-decoder models still make sense?	G:docs/01-basic-concepts/README.md
+LLM01	M	For a given model, how do the compute shares of attention and the feed-forward layers change as sequence length grows?	G:docs/04-transformer-architecture/README.md
+LLM01	H	How would you estimate FLOPs and activation memory for one transformer layer given batch size, sequence length and hidden size?	G:docs/04-transformer-architecture/README.md
+LLM01	M	What are the typical stages of a transformer pretraining loss curve, and how would you diagnose a plateau or spike?	G:docs/04-transformer-architecture/README.md
+LLM01	M	What is a state-space model such as Mamba, and why are hybrid SSM-transformer models appealing?	G:docs/04-transformer-architecture/README.md
+LLM01	M	Why does the token embedding layer often need special treatment during training and fine-tuning?	G:docs/04-transformer-architecture/README.md
+LLM02	E	How does byte pair encoding build its vocabulary, and how does it tokenize unseen words?	A:01-foundations/02-tokenization-deep-dive.md
+LLM02	M	Compare BPE, WordPiece and unigram tokenization in how vocabularies are learned and how text is segmented.	A:01-foundations/02-tokenization-deep-dive.md
+LLM02	M	What are the trade-offs of a larger versus smaller vocabulary on embedding size, sequence length and multilingual quality?	A:01-foundations/02-tokenization-deep-dive.md
+LLM02	M	Why is byte-level BPE attractive for robustness, and what is its downside for non-Latin scripts?	A:01-foundations/02-tokenization-deep-dive.md
+LLM02	M	Why do LLMs struggle to count characters in a word or reverse strings?	A:01-foundations/02-tokenization-deep-dive.md
+LLM02	M	What happens if you swap the tokenizer between a model and its fine-tuned variant or serving stack?	A:01-foundations/02-tokenization-deep-dive.md
+LLM02	M	How does tokenization affect cost and latency for non-English languages, and what can be done about it?	A:01-foundations/02-tokenization-deep-dive.md
+LLM02	M	What are special tokens and chat templates, and what breaks when the wrong template is used at inference?	G:docs/01-basic-concepts/README.md
+LLM02	M	How would you estimate token counts for cost planning before you have production traffic?	A:01-foundations/02-tokenization-deep-dive.md
+LLM02	M	Why does whitespace and formatting of code or JSON change token counts and model behavior?	A:01-foundations/02-tokenization-deep-dive.md
+LLM02	M	How are images converted into tokens for a vision transformer, and how does that affect context budget?	A:01-foundations/02-tokenization-deep-dive.md
+LLM02	M	How do audio and video get tokenized for multimodal models, and what are the cost implications?	A:01-foundations/02-tokenization-deep-dive.md
+LLM02	E	What is an embedding in the context of an LLM, and how does it relate to a token ID?	G:docs/01-basic-concepts/README.md
+LLM02	E	Why does a transformer need positional information, and what happens without it?	G:docs/04-transformer-architecture/README.md
+LLM02	M	Why does the original transformer use sinusoidal encodings, and what are the properties of sine and cosine at different frequencies?	G:docs/04-transformer-architecture/README.md
+LLM02	M	How does rotary position embedding encode relative position, and why is it popular in modern LLMs?	A:01-foundations/01-llm-internals.md
+LLM02	M	Compare RoPE and ALiBi in extrapolation behavior and typical use cases.	G:docs/01-basic-concepts/README.md
+LLM02	H	Why does RoPE degrade beyond the trained context length, and how do position interpolation and NTK-aware scaling address it?	G:docs/04-transformer-architecture/README.md
+LLM02	H	How would you extend a model trained at 8K context to 128K, and how would you verify quality did not regress at short lengths?	G:docs/04-transformer-architecture/README.md
+LLM02	M	Why does ALiBi extrapolate to longer sequences without retraining?	G:docs/04-transformer-architecture/README.md
+LLM03	M	Explain mixture of experts: how routing works, what active versus total parameters mean, and why it saves compute.	A:01-foundations/01-llm-internals.md
+LLM03	H	What are the system-design consequences of MoE models for memory, batching and expert load balancing at serving time?	A:01-foundations/01-llm-internals.md
+LLM03	M	What auxiliary losses or techniques are used to keep MoE experts evenly utilized during training?	G:docs/04-transformer-architecture/README.md
+LLM03	M	Why is the KV cache of an MoE model not smaller than a dense model of equal attention size?	G:docs/04-transformer-architecture/README.md
+LLM03	M	What does the Chinchilla scaling law say about the optimal ratio of parameters to training tokens?	G:docs/01-basic-concepts/README.md
+LLM03	H	Why would a team train an 8B model on trillions of tokens far beyond the compute-optimal point?	A:03-training-and-adaptation/01-pretraining-basics.md
+LLM03	M	Distinguish training-compute-optimal from inference-optimal scaling and explain when each matters.	A:01-foundations/01-llm-internals.md
+LLM03	M	Are emergent abilities real phase transitions or artifacts of the metric chosen? How would you test that?	G:docs/01-basic-concepts/README.md
+LLM03	M	When would you choose a small language model over a frontier model, and what tasks suit each?	A:00-interview-prep/01-question-bank.md
+LLM03	M	How do dense, MoE and hybrid attention architectures differ in what they optimize for?	A:01-foundations/04-transformer-architecture.md
+LLM03	M	What is a diffusion language model, and where might it beat an autoregressive model?	A:04-inference-optimization/08-diffusion-llms.md
+LLM03	M	Why are diffusion language models not yet the default despite faster parallel decoding?	A:04-inference-optimization/08-diffusion-llms.md
+LLM03	M	What is native multimodality in an LLM compared to bolting a vision encoder onto a text model?	A:01-foundations/01-llm-internals.md
+LLM03	H	How do you read a vendor model card to decide whether an open-weight license fits a commercial product you plan to resell as an API?	A:00-interview-prep/01-question-bank.md
+LLM03	M	How would you approach picking between a closed frontier model and an open-weight model when quality is close but cost differs widely?	A:02-model-landscape/04-model-selection-guide.md
+LLM03	M	Why do reasoning models differ from standard chat models, and what are they trained to do differently?	G:docs/01-basic-concepts/README.md
+LLM03	M	What is test-time compute, and how does a thinking budget control cost and quality?	G:docs/01-basic-concepts/README.md
+LLM03	M	Why is the Transformer-SSM hybrid architecture attractive for long-context inference?	G:docs/04-transformer-architecture/README.md
+LLM03	H	A model advertises a 10M-token context window but scores poorly at 128K on a long-context benchmark. How do you advise a team planning to rely on it?	A:00-interview-prep/01-question-bank.md
+LLM04	E	What is the causal language modeling objective, and how does it differ from masked language modeling?	G:docs/01-basic-concepts/README.md
+LLM04	M	What loss function is used for pretraining, and how do cross-entropy and perplexity relate?	G:docs/01-basic-concepts/README.md
+LLM04	M	Why is deduplication of pretraining data important, and how do MinHash and SimHash work?	G:docs/01-basic-concepts/README.md
+LLM04	M	Describe a pretraining data pipeline: sources, filtering, deduplication, quality scoring and mixing.	A:03-training-and-adaptation/01-pretraining-basics.md
+LLM04	M	What is a data curriculum in pretraining, and why might ordering or mixing proportions matter?	A:03-training-and-adaptation/01-pretraining-basics.md
+LLM04	M	What is the data wall, and how does synthetic data change the pretraining picture?	A:03-training-and-adaptation/06-synthetic-data-generation.md
+LLM04	M	What are the risks of training on model-generated data, and what is model collapse?	A:03-training-and-adaptation/06-synthetic-data-generation.md
+LLM04	M	How do you ensure the quality of a ten-million-row synthetic dataset before using it for training?	A:03-training-and-adaptation/06-synthetic-data-generation.md
+LLM04	M	What is evol-instruct style data generation, and what diversity problems can it introduce?	A:03-training-and-adaptation/06-synthetic-data-generation.md
+LLM04	M	Estimate the compute needed to pretrain a 70B dense model on 15T tokens, and explain the formula you use.	A:03-training-and-adaptation/01-pretraining-basics.md
+LLM04	H	A 7B model needs how much GPU memory for training with Adam in mixed precision? Break down weights, gradients, optimizer states and activations.	G:docs/01-basic-concepts/README.md
+LLM04	M	How do you convert parameter count to inference memory for different precisions, and what is the KV cache overhead on top?	G:docs/01-basic-concepts/README.md
+LLM04	M	Compare data parallelism, tensor parallelism and pipeline parallelism, and say when you combine them.	G:docs/07-model-training/README.md
+LLM04	M	What do ZeRO stages 1, 2 and 3 shard, and how does FSDP relate?	G:docs/07-model-training/README.md
+LLM04	M	What is activation checkpointing, and what compute-for-memory trade does it make?	G:docs/07-model-training/README.md
+LLM04	M	Training hits out-of-memory errors. List the levers you would pull in order and the cost of each.	G:docs/07-model-training/README.md
+LLM04	M	What are loss spikes in large-scale training, and how do teams detect and recover from them?	A:03-training-and-adaptation/01-pretraining-basics.md
+LLM04	M	Compare BF16, FP8 and FP4 training: what range and precision issues arise at each level?	A:03-training-and-adaptation/01-pretraining-basics.md
+LLM04	M	How do learning rate, warmup, gradient clipping and effective batch size interact in large-model training?	G:docs/07-model-training/README.md
+LLM04	M	What is sequence packing, and why must attention masks and loss masks be handled correctly with it?	G:docs/07-model-training/README.md
+LLM04	M	What is a typical failure when a training job loses a GPU node mid-run, and how should checkpointing be designed?	A:16-case-studies/17-multi-tenant-fine-tuning-platform.md
+LLM04	H	How would you design fault tolerance and resume logic for a multi-week, thousand-GPU training run?	A:03-training-and-adaptation/01-pretraining-basics.md
+LLM04	M	Why does the Chinchilla compute-optimal recipe not tell you the right model size for a product that will serve billions of requests?	A:03-training-and-adaptation/01-pretraining-basics.md
+LLM04	M	How does the cost of data contamination in pretraining corpora show up in benchmark scores?	A:06-retrieval-systems/15-data-engineering-for-ai.md
+LLM05	E	Compare greedy decoding, beam search and sampling for text generation.	G:docs/01-basic-concepts/README.md
+LLM05	E	What does temperature do to the next-token distribution, and what happens at temperature zero and at very high values?	A:01-foundations/06-inference-pipeline.md
+LLM05	M	Explain top-k and top-p sampling and when top-p is preferable.	A:01-foundations/06-inference-pipeline.md
+LLM05	M	Why can outputs still vary at temperature zero?	G:docs/01-basic-concepts/README.md
+LLM05	M	How would you make LLM outputs reproducible enough to regression-test when the API no longer exposes temperature?	A:01-foundations/06-inference-pipeline.md
+LLM05	M	What are repetition penalties, and what side effects can they have on code or structured text?	G:docs/01-basic-concepts/README.md
+LLM05	M	How do logit bias and stop sequences give precise control over generation, and what are the pitfalls?	G:docs/01-basic-concepts/README.md
+LLM05	M	What are logits, and how does an LLM turn them into the next token step by step?	G:docs/01-basic-concepts/README.md
+LLM05	E	How does generation know when to stop? Discuss EOS tokens, max tokens and stop sequences.	G:docs/01-basic-concepts/README.md
+LLM05	M	Explain speculative decoding: draft, verify, accept. Why does it preserve the target distribution?	A:04-inference-optimization/03-speculative-decoding.md
+LLM05	M	Why does speculative decoding give little benefit for high-temperature creative generation?	A:04-inference-optimization/03-speculative-decoding.md
+LLM05	M	How do draft heads such as Medusa or EAGLE differ from using a separate small draft model?	A:04-inference-optimization/03-speculative-decoding.md
+LLM05	H	A colleague says speculative decoding hurts throughput at large batch sizes so it should be disabled in production. Do you agree?	A:04-inference-optimization/03-speculative-decoding.md
+LLM05	M	What is lookahead or n-gram speculation, and for which workloads does it shine?	A:04-inference-optimization/03-speculative-decoding.md
+LLM05	M	How does constrained decoding guarantee valid JSON or grammar-conforming output?	A:05-prompting-and-context/06-structured-generation.md
+LLM05	M	How does constrained decoding differ from JSON mode and from function calling?	G:docs/02-prompt-engineering/README.md
+LLM05	H	What is the throughput and quality cost of grammar-constrained decoding, and how would you mitigate it at scale?	G:docs/08-inference-optimization/README.md
+LLM05	E	What is the lost-in-the-middle problem, and what does it imply for how you order retrieved context?	A:05-prompting-and-context/05-context-engineering.md
+LLM05	M	What are the options when a document exceeds the model's context window?	G:docs/01-basic-concepts/README.md
+LLM05	M	When would you choose long context over RAG, and when does RAG still win?	A:05-prompting-and-context/05-context-engineering.md
+LLM05	M	How do you handle the high time-to-first-token of million-token prompts?	A:05-prompting-and-context/05-context-engineering.md
+LLM05	M	What is context rot, and why does response quality degrade as the context fills with irrelevant material?	A:05-prompting-and-context/05-context-engineering.md
+LLM05	M	Why is an LLM API stateless, and where does conversational memory actually live?	G:docs/01-basic-concepts/README.md
+LLM05	M	What techniques exist to compress long contexts, and when would you use semantic caching versus sliding windows?	G:docs/08-inference-optimization/README.md
+LLM05	M	Why do LLMs get math wrong, and what architectural patterns mitigate it?	G:docs/01-basic-concepts/README.md
+LLM05	M	What is a knowledge cutoff, and how should an application handle questions that need newer information?	G:docs/01-basic-concepts/README.md
+LLM05	M	How do sampling controls on hosted frontier models differ from open-weight models, and what does that imply for determinism?	A:01-foundations/06-inference-pipeline.md
+LLM05	M	What is self-consistency decoding, and how does best-of-N differ from it?	A:13-reliability-and-safety/02-ensemble-methods.md
+LLM06	E	What is the KV cache, and why does it speed up autoregressive generation?	A:01-foundations/03-attention-mechanisms.md
+LLM06	M	How do you compute KV cache size per token for a model, and which factors dominate at long context?	A:01-foundations/03-attention-mechanisms.md
+LLM06	H	Your capacity plan used one KV-per-token formula for every model in the fleet. What breaks for MLA, sliding-window or hybrid models?	A:04-inference-optimization/02-kv-cache-and-context-caching.md
+LLM06	M	Explain the prefill and decode phases and why they have different bottlenecks.	A:01-foundations/06-inference-pipeline.md
+LLM06	M	Why is LLM generation slower per token than running a classifier, and what is the arithmetic intensity argument?	A:04-inference-optimization/01-inference-fundamentals.md
+LLM06	M	How do you optimize time-to-first-token versus time-per-output-token, and why do they conflict?	A:04-inference-optimization/01-inference-fundamentals.md
+LLM06	M	What does PagedAttention solve, and how do block tables and copy-on-write enable KV sharing?	A:04-inference-optimization/05-paged-attention.md
+LLM06	M	Why does PagedAttention raise throughput rather than latency?	A:04-inference-optimization/05-paged-attention.md
+LLM06	M	Compare static, dynamic and continuous batching for LLM serving.	A:04-inference-optimization/04-batching-strategies.md
+LLM06	M	What is a prefill stall in a continuous-batching server, and how does chunked prefill mitigate it?	A:04-inference-optimization/04-batching-strategies.md
+LLM06	H	When does disaggregating prefill and decode onto separate pools beat chunked prefill on a single pool?	A:04-inference-optimization/04-batching-strategies.md
+LLM06	M	What does KV transfer between prefill and decode nodes require, and what tools are used to move the cache?	G:docs/08-inference-optimization/README.md
+LLM06	M	What is prefix caching or RadixAttention, and how does it change the way you structure system prompts?	G:docs/08-inference-optimization/README.md
+LLM06	M	Compare INT8, INT4, FP8 and FP4 quantization in terms of accuracy and hardware support.	G:docs/08-inference-optimization/README.md
+LLM06	M	How does AWQ differ from GPTQ in how it chooses what to protect during quantization?	A:03-training-and-adaptation/07-quantization-deep-dive.md
+LLM06	M	Why does QLoRA use NF4 instead of standard 4-bit floating point?	A:03-training-and-adaptation/07-quantization-deep-dive.md
+LLM06	H	The team wants to move serving from FP8 to NVFP4 to cut cost. What do you check before approving?	A:03-training-and-adaptation/07-quantization-deep-dive.md
+LLM06	M	What is KV cache quantization, and how can its error be compensated?	G:docs/08-inference-optimization/README.md
+LLM06	M	When is quantization-aware training worth it compared to post-training quantization?	A:03-training-and-adaptation/07-quantization-deep-dive.md
+LLM06	M	What are GGUF and similar local-serving formats, and why are they unsuited for datacenter serving?	A:03-training-and-adaptation/07-quantization-deep-dive.md
+LLM06	M	Why is tensor parallelism preferred over pipeline parallelism for low-latency serving?	A:04-inference-optimization/06-serving-infrastructure.md
+LLM06	M	How does tensor parallel sharding work, and what is the AllReduce communication cost per layer?	G:docs/08-inference-optimization/README.md
+LLM06	M	Explain expert parallelism and context parallelism and when each is needed.	A:04-inference-optimization/06-serving-infrastructure.md
+LLM06	H	Why can DeepSeek-style MLA models not use standard tensor-parallel layouts without KV duplication, and what do inference engines do about it?	G:docs/08-inference-optimization/README.md
+LLM06	M	What is KV cache offloading to CPU or NVMe, and how do you decide when it pays off?	G:docs/19-inference-frameworks/README.md
+LLM06	M	What is ring attention and how does it enable very long contexts across devices?	G:docs/08-inference-optimization/README.md
+LLM06	M	Compare vLLM, SGLang and TensorRT-LLM and pick one for a given workload.	A:04-inference-optimization/06-serving-infrastructure.md
+LLM06	M	When does RadixAttention in SGLang outperform PagedAttention, and for what workloads?	G:docs/19-inference-frameworks/README.md
+LLM06	H	Why shouldn't you quote framework throughput numbers from memory, and how would you design a reproducible inference benchmark?	G:docs/19-inference-frameworks/README.md
+LLM06	M	A vendor pitches an accelerator at 3,000 tokens per second. How do you evaluate that claim?	A:04-inference-optimization/01-inference-fundamentals.md
+LLM06	M	What is goodput, and why measure performance on a Pareto curve rather than at batch size one?	A:01-foundations/06-inference-pipeline.md
+LLM06	M	How would you estimate the number of GPUs needed to serve a given model at a target QPS and latency?	A:01-foundations/06-inference-pipeline.md
+LLM06	M	What is multi-LoRA serving, and how does it let one base model serve many tenants?	A:03-training-and-adaptation/03-lora-qlora-peft.md
+LLM06	M	How do you handle noisy neighbors in a multi-tenant LLM serving cluster?	A:04-inference-optimization/06-serving-infrastructure.md
+LLM06	H	One malformed request crashed an inference replica and every tenant on it lost service. What is the design lesson and fix?	A:04-inference-optimization/06-serving-infrastructure.md
+LLM06	H	Design a premium low-latency tier for an agent product needing very high tokens per second per user.	A:04-inference-optimization/06-serving-infrastructure.md
+LLM06	M	Why is Ollama not a production inference server, and what changes if a prototype built on it becomes a shared API?	A:04-inference-optimization/09-on-device-and-edge-deployment.md
+LLM06	M	When would you choose on-device inference over a cloud API, and what do you give up?	A:04-inference-optimization/09-on-device-and-edge-deployment.md
+LLM06	M	How does MoE inference change batching, communication and memory planning?	G:docs/08-inference-optimization/README.md
+LLM06	M	Why are inference frameworks vulnerable to unsafe deserialization, and how do you harden them?	G:docs/19-inference-frameworks/README.md
+LLM06	M	When is self-hosting an open-weight model cheaper than an API, and what hidden costs flip the answer?	A:04-inference-optimization/07-cost-optimization-playbook.md
+LLM06	M	How do you justify the cost of an AI system to a CFO?	A:04-inference-optimization/07-cost-optimization-playbook.md
+LLM06	M	What does a tiered KV storage hierarchy look like, and how does it affect cache hit rates for agentic workloads?	A:04-inference-optimization/02-kv-cache-and-context-caching.md
+LLM06	M	Why is context caching sometimes better than RAG for a single 50K-token document queried repeatedly?	A:04-inference-optimization/02-kv-cache-and-context-caching.md
+LLM06	M	How does knowledge distillation produce a smaller serving model, and when is distillation preferred over quantization?	A:03-training-and-adaptation/05-knowledge-distillation.md
+LLM06	M	Production LLM serving suddenly slows down. What metrics and diagnostic steps do you follow?	G:docs/08-inference-optimization/README.md
+LLM07	E	What is perplexity, and what are its limits as a measure of LLM quality?	G:docs/01-basic-concepts/README.md
+LLM07	M	Why are traditional metrics such as BLEU and ROUGE poor fits for evaluating open-ended LLM output?	A:14-evaluation-and-observability/01-llm-evaluation.md
+LLM07	M	How would you evaluate LLM outputs when there is no ground truth?	A:00-interview-prep/01-question-bank.md
+LLM07	M	What are the main limitations and biases of LLM-as-a-judge, and how do you mitigate them?	A:14-evaluation-and-observability/01-llm-evaluation.md
+LLM07	H	Walk through building and validating an LLM judge: labeling, data splits, prompt iteration and the metrics you track.	A:ai_evals_comprehensive_study_guide.md
+LLM07	M	Why do binary pass/fail judge criteria often work better than numeric rating scales?	A:ai_evals_comprehensive_study_guide.md
+LLM07	M	What is position bias in pairwise judging, and how do you debias it?	A:13-reliability-and-safety/02-ensemble-methods.md
+LLM07	M	Your three LLM judges agree on 95 percent of verdicts. Is that good news?	A:13-reliability-and-safety/02-ensemble-methods.md
+LLM07	M	How do you calibrate an LLM judge against human labels and correct estimated metrics for judge error?	A:16-case-studies/18-eval-gated-cicd.md
+LLM07	M	When would you use human evaluation, and how do you measure inter-annotator agreement?	A:14-evaluation-and-observability/01-llm-evaluation.md
+LLM07	M	A vendor claims 90 percent on a coding benchmark. What questions do you ask before believing it?	A:14-evaluation-and-observability/03-benchmarks-and-leaderboards.md
+LLM07	M	Why have benchmarks like MMLU and HumanEval become unreliable for ranking frontier models?	A:14-evaluation-and-observability/03-benchmarks-and-leaderboards.md
+LLM07	M	What are benchmark saturation and contamination, and how can you detect contamination?	A:14-evaluation-and-observability/03-benchmarks-and-leaderboards.md
+LLM07	M	Why do scaffold and harness differences produce very different scores for the same model?	A:14-evaluation-and-observability/03-benchmarks-and-leaderboards.md
+LLM07	M	How would you use a crowd-voted Elo leaderboard responsibly when choosing a model for a chat product?	A:14-evaluation-and-observability/03-benchmarks-and-leaderboards.md
+LLM07	M	What is wrong with using a general benchmark like MMLU to pick a model for your own use case?	A:02-model-landscape/02-capability-assessment.md
+LLM07	M	How do you build a custom evaluation set for a new LLM feature, step by step?	A:02-model-landscape/02-capability-assessment.md
+LLM07	M	What are common evaluation pitfalls such as small test sets, leakage, ignoring variance and evaluating a different system than you ship?	A:02-model-landscape/02-capability-assessment.md
+LLM07	M	What is eval awareness, and how might it distort safety or capability evaluations?	A:02-model-landscape/02-capability-assessment.md
+LLM07	H	Your coding agent's benchmark score jumped 15 points after a model upgrade. How do you know the gain is real?	A:07-agentic-systems/10-evaluating-agentic-systems.md
+LLM07	M	How do you decide whether a 95 percent accuracy claim from an AI system is meaningful?	A:00-interview-prep/01-question-bank.md
+LLM07	E	What are the different types of hallucination, and how would you detect each in production?	G:docs/01-basic-concepts/README.md
+LLM07	M	What causes LLM hallucinations at the training and decoding levels?	G:docs/01-basic-concepts/README.md
+LLM07	M	How do SelfCheckGPT, semantic entropy and citation verification detect hallucinations?	G:docs/09-ai-safety-evaluation/README.md
+LLM07	M	Your hallucination rate jumped 30 percent after a provider silently updated the model. How do you detect and respond?	A:00-interview-prep/01-question-bank.md
+LLM07	M	How would you design an abstention strategy so a model says it does not know instead of fabricating?	A:13-reliability-and-safety/01-guardrails.md
+LLM07	M	What is a reasoning model's chain of thought good for, and why is it not a reliable account of the model's actual computation?	A:05-prompting-and-context/03-chain-of-thought.md
+LLM07	M	Why should you not train against the chain of thought if you want to monitor it?	A:03-training-and-adaptation/08-rlvr-and-reasoning-models.md
+LLM07	M	When is chain-of-thought overthinking harmful, and how do you control reasoning effort?	A:05-prompting-and-context/03-chain-of-thought.md
+LLM07	M	How do you evaluate long-context recall, and why can retrieval benchmarks like needle-in-a-haystack mislead?	A:02-model-landscape/02-capability-assessment.md
+LLM07	M	How would you A/B test two models in production, and which metrics and guardrails would you track?	A:02-model-landscape/02-capability-assessment.md
+LLM07	M	Design an evaluation system for comparing two LLMs on open-ended tasks.	A:00-interview-prep/01-question-bank.md
+LLM07	M	Why can behavioural self-reports from an LLM differ from what it actually does?	G:docs/09-ai-safety-evaluation/README.md
+LLM07	M	What is overrefusal, and how do you balance safety and helpfulness when evaluating a model?	G:docs/09-ai-safety-evaluation/README.md
+LLM07	M	How would you evaluate whether a model's output is grounded when you need to both measure and enforce it?	A:13-reliability-and-safety/01-guardrails.md
+LLM07	M	What is a panel of LLM judges, and when is it worth the cost?	A:13-reliability-and-safety/02-ensemble-methods.md
+LLM07	M	What does Galileo-style distilled judge or cascade judging do, and what are its limits?	A:14-evaluation-and-observability/01-llm-evaluation.md
+LLM07	H	Your eval pipeline runs a cheap judge on all traffic and escalates low-confidence cases to a frontier judge. How do you validate this cascade?	A:14-evaluation-and-observability/01-llm-evaluation.md
+LLM07	M	How do you keep the grader out of reach of the system being evaluated?	A:14-evaluation-and-observability/01-llm-evaluation.md
+LLM07	M	What is the benchmark-to-production gap, and how do you bridge it?	A:14-evaluation-and-observability/03-benchmarks-and-leaderboards.md
+FT01	E	What is fine-tuning, and what problems does it solve that prompting alone cannot?	G:docs/07-model-training/README.md
+FT01	M	When should you fine-tune a model instead of improving the prompt, and what are the signs you are fine-tuning prematurely?	A:03-training-and-adaptation/02-fine-tuning-strategies.md
+FT01	M	Compare full-parameter fine-tuning with parameter-efficient fine-tuning in cost, quality and risk.	G:docs/07-model-training/README.md
+FT01	M	What is the quality hierarchy of SFT data, and why does a small high-quality set often beat a large noisy one?	A:03-training-and-adaptation/02-fine-tuning-strategies.md
+FT01	M	How would you prepare and quality-check a fine-tuning dataset from raw support transcripts?	G:docs/07-model-training/README.md
+FT01	M	What is continued pretraining, and why use it instead of mixing domain text into the SFT set?	A:03-training-and-adaptation/02-fine-tuning-strategies.md
+FT01	M	What is catastrophic forgetting, and how do you prevent a model from losing general capabilities during fine-tuning?	G:docs/07-model-training/README.md
+FT01	M	How do you pick the learning rate for fine-tuning, and why is it usually much lower than for pretraining?	A:03-training-and-adaptation/02-fine-tuning-strategies.md
+FT01	M	What is chat template mismatch in fine-tuning, and how does it silently ruin results?	G:docs/01-basic-concepts/README.md
+FT01	M	What is training data packing, and what bugs arise from cross-sample attention leakage or incorrect loss masks?	G:docs/07-model-training/README.md
+FT01	M	How do you tell whether a fine-tuned model is overfitting, leaking test data, or simply showing evaluation noise?	G:docs/07-model-training/README.md
+FT01	M	How would you evaluate a fine-tuned model against the base model and a strong prompted baseline?	A:03-training-and-adaptation/02-fine-tuning-strategies.md
+FT01	M	Your roadmap says to fine-tune a hosted model on support transcripts next year. What should you check about provider fine-tuning availability and model lifecycle?	A:03-training-and-adaptation/02-fine-tuning-strategies.md
+FT01	M	What is knowledge editing, and how does it differ from fine-tuning, RAG and machine unlearning?	G:docs/07-model-training/README.md
+FT01	M	How do ROME, MEMIT and MEND edit facts in a model, and how would you evaluate whether an edit succeeded?	G:docs/07-model-training/README.md
+FT01	M	How do you handle OOM errors during fine-tuning without changing the model?	G:docs/07-model-training/README.md
+FT01	M	What does it mean to be able to fine-tune on a customer's data when the data contains regulated or personal information?	A:16-case-studies/19-customer-distillation-pipeline.md
+FT01	M	How do you decide the number of epochs and detect when to stop SFT?	G:docs/07-model-training/README.md
+FT01	M	How do DDP, FSDP and ZeRO differ in what they replicate or shard during fine-tuning?	G:docs/07-model-training/README.md
+FT02	E	How does LoRA work, and why does a low-rank update reduce trainable parameters so much?	A:03-training-and-adaptation/03-lora-qlora-peft.md
+FT02	M	How do the LoRA rank and alpha hyperparameters affect capacity and training dynamics?	G:docs/07-model-training/README.md
+FT02	M	Why is LoRA alpha often set to twice the rank?	A:03-training-and-adaptation/03-lora-qlora-peft.md
+FT02	M	Which modules should you attach LoRA adapters to, and what is the effect of targeting only attention versus all linear layers?	A:03-training-and-adaptation/03-lora-qlora-peft.md
+FT02	M	What does QLoRA add to LoRA, and what memory savings does it achieve?	G:docs/07-model-training/README.md
+FT02	M	Walk through the memory math of fine-tuning a 70B model with QLoRA versus full fine-tuning.	G:docs/07-model-training/README.md
+FT02	M	What is DoRA and why would you use it over standard LoRA?	A:03-training-and-adaptation/03-lora-qlora-peft.md
+FT02	M	What are VeRA and rank-stabilized LoRA, and what problems do they address?	A:03-training-and-adaptation/03-lora-qlora-peft.md
+FT02	M	Compare LoRA, adapters, prefix tuning and prompt tuning.	G:docs/07-model-training/README.md
+FT02	M	Can LoRA adapters be merged into base weights, and what are the implications for serving and quantization?	A:03-training-and-adaptation/03-lora-qlora-peft.md
+FT02	H	Design a platform that serves hundreds of tenant-specific LoRA adapters on shared GPUs, including adapter swapping and isolation.	A:16-case-studies/17-multi-tenant-fine-tuning-platform.md
+FT02	M	Why might LoRA at a moderate rank be a better default than full fine-tuning for a multi-tenant platform?	A:16-case-studies/17-multi-tenant-fine-tuning-platform.md
+FT02	M	How do you handle a base-model upgrade that breaks existing tenant adapters?	A:16-case-studies/17-multi-tenant-fine-tuning-platform.md
+FT02	M	What integrity controls would you put on adapter artifacts such as signing and checksums?	A:16-case-studies/17-multi-tenant-fine-tuning-platform.md
+FT03	E	What is RLHF, and what are its three stages?	G:docs/07-model-training/README.md
+FT03	M	How is a reward model trained from pairwise preference data, and what loss is used?	G:docs/07-model-training/README.md
+FT03	M	Why does PPO-based RLHF need a KL penalty against the reference model?	G:docs/07-model-training/README.md
+FT03	M	How does DPO remove the need for an explicit reward model, and what assumptions does it make?	A:03-training-and-adaptation/04-rlhf-and-dpo.md
+FT03	M	Why is DPO often preferred over RLHF with PPO, and when is PPO still better?	A:03-training-and-adaptation/04-rlhf-and-dpo.md
+FT03	M	How is preference data collected, what does it cost, and what quality problems arise in annotation?	G:docs/07-model-training/README.md
+FT03	M	What is the alignment tax, and how do you measure it?	A:03-training-and-adaptation/04-rlhf-and-dpo.md
+FT03	M	What is reward hacking, and how do you detect and prevent it in best-of-N and RL training?	A:13-reliability-and-safety/02-ensemble-methods.md
+FT03	M	What is RLVR and why is it more stable than reward-model RLHF for reasoning?	A:03-training-and-adaptation/08-rlvr-and-reasoning-models.md
+FT03	M	Explain GRPO: how it computes advantages without a value model, and one known failure mode.	A:03-training-and-adaptation/08-rlvr-and-reasoning-models.md
+FT03	M	How do DAPO and GSPO differ from GRPO, and what instabilities do they target?	G:docs/07-model-training/README.md
+FT03	M	What is the credit assignment problem in LLM RL, and how do token-level and sequence-level rewards differ?	G:docs/07-model-training/README.md
+FT03	M	What stability problems appear in RL training of LLMs and how would you diagnose them?	G:docs/07-model-training/README.md
+FT03	H	You want RL on a domain with no programmatic verifier and plan to use a rubric-scored judge as the reward. What can go wrong?	A:03-training-and-adaptation/08-rlvr-and-reasoning-models.md
+FT03	M	Does RL add new capability or just sharpen sampling from the base model? What evidence would distinguish the two?	A:03-training-and-adaptation/08-rlvr-and-reasoning-models.md
+FT03	M	What is a process reward model, and how does it differ from an outcome reward model for agents?	G:docs/15-advanced-topics/README.md
+FT03	H	Design a process reward model for a customer-support agent: what do you score, and how do you avoid degenerate reward?	A:00-interview-prep/01-question-bank.md
+FT03	M	Compare the post-training pipelines SFT then DPO versus SFT then GRPO and when to choose each.	G:docs/07-model-training/README.md
+FT03	M	What is online alignment, and how does it differ from offline preference optimization?	A:03-training-and-adaptation/04-rlhf-and-dpo.md
+FT03	M	How does Constitutional AI or RLAIF replace human preference labels, and what are its risks?	A:03-training-and-adaptation/06-synthetic-data-generation.md
+FT03	M	What is rejection sampling fine-tuning, and how does it compare with DPO and GRPO?	G:docs/07-model-training/README.md
+FT03	M	Why is a single alignment technique not a safety guarantee, and how do you layer defenses?	G:docs/09-ai-safety-evaluation/README.md
+FT03	M	Your safety monitor reads the model's chain of thought. A new model card reports reduced monitorability. What changes in your safety design?	A:03-training-and-adaptation/08-rlvr-and-reasoning-models.md
+FT04	E	What is knowledge distillation, and why can a distilled small model beat a same-size model trained from scratch?	A:03-training-and-adaptation/05-knowledge-distillation.md
+FT04	M	Compare hard-label, soft-label and on-policy distillation.	A:03-training-and-adaptation/05-knowledge-distillation.md
+FT04	M	What is temperature scaling in soft-label distillation and why does it matter?	A:03-training-and-adaptation/05-knowledge-distillation.md
+FT04	M	How would you distill reasoning ability into a small model, and why is collecting long chain-of-thought for SFT not enough?	G:docs/07-model-training/README.md
+FT04	M	What is self-distillation via rejection sampling, and when is it useful?	A:03-training-and-adaptation/05-knowledge-distillation.md
+FT04	M	What are the legal and technical risks of distilling a closed API model into an open-weight student?	A:03-training-and-adaptation/05-knowledge-distillation.md
+FT04	M	What is a model distillation attack through an API, and how would you defend against extraction?	G:docs/09-ai-safety-evaluation/README.md
+FT04	H	Design a customer-specific distillation pipeline from production traces to a canary-deployed student model.	A:16-case-studies/19-customer-distillation-pipeline.md
+FT04	M	Why should distillation data come from real production traces rather than purely synthetic prompts?	A:16-case-studies/19-customer-distillation-pipeline.md
+FT04	M	What happens to a student model when the teacher is upgraded, and how often should you re-distill?	A:16-case-studies/19-customer-distillation-pipeline.md
+FT04	M	How do teacher hallucinations get baked into the student, and how do you filter them?	A:16-case-studies/19-customer-distillation-pipeline.md
+FT04	M	A customer spends fifty thousand dollars per month on a frontier model. How would you quote a distillation project, including payback?	A:00-interview-prep/01-question-bank.md
+FT04	M	When does distillation not make sense?	A:16-case-studies/19-customer-distillation-pipeline.md
+FT04	M	What is quantization-aware distillation and why combine the two?	A:03-training-and-adaptation/05-knowledge-distillation.md
+FT04	M	What is test-time scaling, and how does it trade inference compute for accuracy?	G:docs/01-basic-concepts/README.md
+FT04	M	What is Extended Thinking with a token budget, and how do you decide the budget per task?	G:docs/15-advanced-topics/README.md
+FT04	M	Why does continual learning in a deployed agent risk catastrophic forgetting, and what mitigations exist?	A:08-memory-and-state/03-long-term-memory.md
+FT04	M	How does an online training loop let a product model keep improving from user feedback, and what are its risks?	G:docs/07-model-training/README.md
+FT04	M	What is a data flywheel for an AI product, and how do you build one safely?	G:docs/05-ai-agent-basics/README.md
+FT04	M	How do you evaluate the quality of synthetic instruction data and prevent a loss of diversity?	A:03-training-and-adaptation/06-synthetic-data-generation.md
+FT05	M	How do you decide between prompt engineering, RAG, tool calling and fine-tuning for a given problem?	G:docs/02-prompt-engineering/README.md
+FT05	M	When would you choose RAG over fine-tuning, and when the reverse?	A:00-interview-prep/01-question-bank.md
+FT05	M	Can RAG and fine-tuning be combined, and what does each contribute in a combined system?	G:docs/03-rag-system/README.md
+FT05	M	Why is RAG better than fine-tuning for a regulated knowledge base that changes monthly?	A:16-case-studies/12-compliance-automation.md
+FT05	M	When does many-shot in-context learning substitute for fine-tuning?	A:05-prompting-and-context/02-few-shot-and-icl.md
+FT05	M	How do you decide when to use a frontier API model versus self-host an open-weight model?	A:02-model-landscape/04-model-selection-guide.md
+FT05	M	What are the limitations of fine-tuning that interviewers commonly probe?	G:docs/02-prompt-engineering/README.md
+FT05	M	Build versus buy versus framework: how do you decide for an LLM platform component?	A:09-frameworks-and-tools/08-framework-selection-guide.md
+FT05	M	A client wants better quality, lower latency and lower cost at once. How do you negotiate the trade-offs?	G:docs/26-forward-deployed-engineer/README.md
+FT05	M	How do you decide whether a problem is suitable for an LLM at all, or better handled by rules or classical ML?	G:docs/15-advanced-topics/README.md
+FT05	M	When should an agent be downgraded to a deterministic workflow?	G:docs/27-project-experience/README.md
+FT05	M	Provider model versions now change weekly. How do you keep model selection current without breaking production?	A:02-model-landscape/04-model-selection-guide.md
+FT05	M	How do sovereign-AI and data-residency requirements change your model hosting choice?	A:02-model-landscape/01-model-taxonomy.md
+FT05	M	How does a cheaper open-weight model with frontier-level quality change your production architecture decisions?	A:00-interview-prep/01-question-bank.md
+FT05	M	A regulated customer requires zero data retention but the best model requires 30-day retention. What are your options?	A:12-security-and-access/01-llm-security.md
+FT05	M	Your cost model for next year uses today's per-token prices. What will it get wrong?	A:02-model-landscape/03-pricing-and-costs.md
+FT05	M	How do you decide whether a skill or a RAG corpus should supply a given piece of agent knowledge?	G:docs/14-mcp-skill-systems/README.md
+RAG01	E	What is retrieval-augmented generation, and why use it instead of relying on model weights alone?	G:docs/03-rag-system/README.md
+RAG01	E	Walk through the full RAG pipeline, separating the offline indexing flow from the online query flow.	G:docs/03-rag-system/README.md
+RAG01	M	Describe the taxonomy of naive, advanced, agentic and graph RAG and what each adds.	A:06-retrieval-systems/01-rag-fundamentals.md
+RAG01	M	Why would you still use RAG if frontier models offer million-token contexts?	A:06-retrieval-systems/01-rag-fundamentals.md
+RAG01	M	Someone proposes replacing your RAG pipeline by loading all documents into a one-million-token context on every call. How do you evaluate that?	A:00-interview-prep/01-question-bank.md
+RAG01	M	Where is the cache-read break-even between long context with prompt caching and RAG?	A:06-retrieval-systems/14-production-rag-at-scale.md
+RAG01	M	When does compiling knowledge once into a wiki or summaries beat both RAG and an agentic retrieval loop?	A:06-retrieval-systems/08-agentic-rag.md
+RAG01	M	What limits naive RAG, and what is the retrieval quality gap in practice?	A:06-retrieval-systems/01-rag-fundamentals.md
+RAG01	M	How do poisoned sources threaten a RAG pipeline, and what defenses exist?	A:06-retrieval-systems/01-rag-fundamentals.md
+RAG01	M	Why do you need a vector database for RAG, and why can't a relational database do the job?	G:docs/03-rag-system/README.md
+RAG01	M	Search results are relevant but the model ignores them and answers from training data. How do you fix this?	A:00-interview-prep/01-question-bank.md
+RAG01	M	How do you assemble and order the final context from retrieved chunks, including citations?	A:06-retrieval-systems/14-production-rag-at-scale.md
+RAG01	M	What is context compression in RAG, and what are LLM-based, embedding-based and rerank-based approaches?	G:docs/03-rag-system/README.md
+RAG01	M	What is LLMLingua-style prompt compression, and what accuracy risks does it carry?	G:docs/20-rag-advanced-optimization/README.md
+RAG01	M	How do you reduce the cost of a RAG system?	G:docs/03-rag-system/README.md
+RAG01	M	When does a RAG system fail on enterprise use cases, and how do you choose an enhancement?	G:docs/20-rag-advanced-optimization/README.md
+RAG01	M	How do you update a RAG knowledge base dynamically with batch, real-time or versioned updates?	G:docs/03-rag-system/README.md
+RAG01	M	Compare Parent-Document Retrieval and Sentence Window Retrieval.	G:docs/03-rag-system/README.md
+RAG01	M	How do you handle conflicting information across retrieved chunks?	G:docs/20-rag-advanced-optimization/README.md
+RAG01	M	What is a semantic cache for RAG, how do you pick the similarity threshold, and how do you invalidate entries?	G:docs/03-rag-system/README.md
+RAG01	M	Design the layered caching architecture for a production RAG system.	A:06-retrieval-systems/14-production-rag-at-scale.md
+RAG01	M	When should a RAG request skip retrieval entirely, and how would you build the router that decides?	A:06-retrieval-systems/14-production-rag-at-scale.md
+RAG01	M	How would you design a four-path query router for a RAG system, and what signals feed it?	A:06-retrieval-systems/14-production-rag-at-scale.md
+RAG01	M	How do you optimize RAG latency using parallel retrieval, batched embedding and streaming?	A:06-retrieval-systems/14-production-rag-at-scale.md
+RAG01	M	A RAG project interviewer asks for the biggest challenge you faced. How would you structure your answer technically?	G:docs/20-rag-advanced-optimization/README.md
+RAG01	M	How do you handle ambiguous or multi-meaning user queries in RAG?	G:docs/20-rag-advanced-optimization/README.md
+RAG01	M	Why must the indexing and query pipelines of an enterprise RAG system be separated?	G:docs/20-rag-advanced-optimization/README.md
+RAG01	M	How do you tune cost per query in RAG using tiered models, progressive detail and cost guardrails?	A:06-retrieval-systems/14-production-rag-at-scale.md
+RAG01	M	What is the difference between Defensible RAG and ordinary RAG, and what structural problems does it address?	G:docs/20-rag-advanced-optimization/README.md
+RAG02	E	How do you choose chunk size and overlap, and how do they affect retrieval quality?	G:docs/03-rag-system/README.md
+RAG02	M	Why is fixed-size chunking with overlap problematic in production?	A:06-retrieval-systems/02-chunking-strategies.md
+RAG02	M	Compare recursive, semantic and structure-aware chunking.	A:06-retrieval-systems/02-chunking-strategies.md
+RAG02	M	What is hierarchical parent-child chunking, and when does it help?	A:06-retrieval-systems/02-chunking-strategies.md
+RAG02	M	What is late chunking, and how does it differ from contextual retrieval?	A:06-retrieval-systems/10-contextual-retrieval.md
+RAG02	M	Explain Anthropic-style contextual retrieval and when you would skip it.	A:06-retrieval-systems/10-contextual-retrieval.md
+RAG02	M	A knowledge base of fifty thousand documents needs contextual chunk enrichment. How do you control the ingestion cost?	A:06-retrieval-systems/10-contextual-retrieval.md
+RAG02	M	How would you chunk source code, tables and layout-heavy PDFs differently?	A:06-retrieval-systems/02-chunking-strategies.md
+RAG02	M	Why is the recursive character text splitter a common default, and when should you not use it?	G:docs/20-rag-advanced-optimization/README.md
+RAG02	M	What is semantic chunking, and what do recent studies say about its benefit over fixed-size chunks?	G:docs/20-rag-advanced-optimization/README.md
+RAG02	M	Many retrieval failures are really chunking failures. How do you recognize them?	A:06-retrieval-systems/14-production-rag-at-scale.md
+RAG02	M	How do you parse mixed PDFs, Word and HTML documents for a RAG knowledge base?	G:docs/27-project-experience/README.md
+RAG02	M	How do you extract and retrieve information from complex PDF tables?	G:docs/03-rag-system/README.md
+RAG02	M	Why do you still need OCR engines when vision-language models can read pages?	A:10-document-processing/01-ocr-and-layout.md
+RAG02	M	How would you route pages to the cheapest parsing tier that still works?	A:06-retrieval-systems/15-data-engineering-for-ai.md
+RAG02	H	You must parse five million pages a month of mixed born-digital and scanned documents for RAG. Which parser mix and cost controls do you use?	A:10-document-processing/01-ocr-and-layout.md
+RAG02	M	How do you process a 500-page PDF with vision models efficiently?	A:10-document-processing/01-ocr-and-layout.md
+RAG02	M	How do you recover reading order and logical structure from complex layouts?	A:10-document-processing/01-ocr-and-layout.md
+RAG02	M	How would you handle low-quality scans and handwriting in an ingestion pipeline?	A:10-document-processing/01-ocr-and-layout.md
+RAG02	M	Why is deduplication one of the most important stages in a data pipeline for AI?	A:06-retrieval-systems/15-data-engineering-for-ai.md
+RAG02	M	How do you handle PII, consent and governance during ingestion for RAG or fine-tuning?	A:06-retrieval-systems/15-data-engineering-for-ai.md
+RAG02	M	How do you handle document updates and version management in a RAG knowledge base?	G:docs/27-project-experience/README.md
+RAG02	M	How would you handle mixed-permission documents during chunking so that access control still holds?	A:16-case-studies/15-knowledge-management.md
+RAG02	M	How do you tune tokenizer-aligned chunking so chunks fit embedding model limits?	A:01-foundations/02-tokenization-deep-dive.md
+RAG03	E	What is an embedding and what does 1536 dimensions mean for retrieval?	G:docs/03-rag-system/README.md
+RAG03	M	How do embedding models learn semantic similarity through contrastive training?	A:01-foundations/05-embeddings-and-vector-spaces.md
+RAG03	M	Compare cosine similarity, dot product and Euclidean distance, and say when each is appropriate.	A:01-foundations/05-embeddings-and-vector-spaces.md
+RAG03	M	Compare bi-encoders, cross-encoders and late-interaction models in cost and accuracy.	A:06-retrieval-systems/11-late-interaction-colbert.md
+RAG03	M	What is a Matryoshka embedding, and why choose one for a billion-vector index?	A:06-retrieval-systems/03-embedding-models.md
+RAG03	M	How do binary and int8 quantization reduce vector storage, and what recall do you lose?	A:06-retrieval-systems/03-embedding-models.md
+RAG03	M	What is the vocabulary mismatch problem in embedding-based retrieval?	A:06-retrieval-systems/03-embedding-models.md
+RAG03	M	What is asymmetric retrieval, and how do query and document prefixes address it?	A:06-retrieval-systems/09-advanced-retrieval-patterns.md
+RAG03	M	How would you choose and compare embedding models for a domain-specific corpus?	A:01-foundations/05-embeddings-and-vector-spaces.md
+RAG03	M	How do you fine-tune an embedding model, and when is it worth it?	G:docs/03-rag-system/README.md
+RAG03	H	You need to upgrade the embedding model behind a 500M-vector index. How do you do it with no downtime?	A:06-retrieval-systems/03-embedding-models.md
+RAG03	M	What is embedding drift, and how do you detect and mitigate it?	G:docs/20-rag-advanced-optimization/README.md
+RAG03	M	How do multimodal embeddings such as CLIP and SigLIP create a shared space for text and images?	A:06-retrieval-systems/12-multimodal-rag.md
+RAG03	M	Why not simply ask an LLM to judge relevance instead of using embeddings for first-stage retrieval?	A:01-foundations/05-embeddings-and-vector-spaces.md
+RAG03	M	Explain how HNSW works and when you would not use it.	A:06-retrieval-systems/04-vector-databases.md
+RAG03	M	How do the HNSW parameters M, efConstruction and efSearch affect recall, latency and memory?	G:docs/06-vector-index-optimization/README.md
+RAG03	M	Compare IVF, IVF-PQ and HNSW and when to choose each.	G:docs/20-rag-advanced-optimization/README.md
+RAG03	M	How does product quantization compress vectors, and what error does it introduce?	A:06-retrieval-systems/04-vector-databases.md
+RAG03	M	When would you use a disk-based index such as DiskANN over a RAM-based HNSW index?	A:06-retrieval-systems/04-vector-databases.md
+RAG03	M	What distinguishes ScaNN from IVF-PQ and HNSW?	G:docs/06-vector-index-optimization/README.md
+RAG03	M	How does binary quantization differ from product quantization?	G:docs/06-vector-index-optimization/README.md
+RAG03	M	Why is metadata filtering often the bottleneck in vector databases, and what are pre-filter, post-filter and in-graph filtering?	A:06-retrieval-systems/04-vector-databases.md
+RAG03	M	How do you monitor and tune a vector index in production for recall and latency?	G:docs/06-vector-index-optimization/README.md
+RAG03	M	How would you choose between Pinecone and a self-hosted vector solution?	A:06-retrieval-systems/04-vector-databases.md
+RAG03	M	When is pgvector the right choice, and how do you combine vector similarity with business conditions?	G:docs/06-vector-index-optimization/README.md
+RAG03	H	How would you migrate a vector database without downtime or retrieval regression?	G:docs/06-vector-index-optimization/README.md
+RAG03	M	How do you handle multi-tenancy in a vector database: namespaces, per-tenant shards or row-level security?	A:06-retrieval-systems/04-vector-databases.md
+RAG03	M	How do you plan capacity for a vector index with hundreds of millions of vectors, including memory tiers and replicas?	A:06-retrieval-systems/14-production-rag-at-scale.md
+RAG03	M	How do you design an embedding service for large-scale RAG with cost optimization?	G:docs/10-production-deployment/README.md
+RAG03	M	What indexing trade-offs matter when you shard vectors across nodes?	A:06-retrieval-systems/14-production-rag-at-scale.md
+RAG04	E	When would you use hybrid search instead of pure dense retrieval?	A:06-retrieval-systems/05-hybrid-search.md
+RAG04	M	Why does BM25 still matter next to dense embeddings?	A:06-retrieval-systems/10-contextual-retrieval.md
+RAG04	M	Why is reciprocal rank fusion safer than adding raw scores from different retrievers?	A:06-retrieval-systems/05-hybrid-search.md
+RAG04	M	How do you tune the balance between dense and sparse in hybrid search, including query-adaptive weights?	A:06-retrieval-systems/05-hybrid-search.md
+RAG04	M	When would you pick learned sparse models like SPLADE over BM25 plus dense?	A:06-retrieval-systems/05-hybrid-search.md
+RAG04	M	Describe multi-path retrieval and RAG-Fusion: how are queries rewritten and results fused?	G:docs/03-rag-system/README.md
+RAG04	M	How does multi-tenant keyword scoring distort BM25 statistics, and how do you avoid it?	A:06-retrieval-systems/05-hybrid-search.md
+RAG04	M	Why is a cross-encoder fundamentally more accurate than a bi-encoder reranker?	A:06-retrieval-systems/06-reranking-strategies.md
+RAG04	M	How do you decide how many candidates to pass to the reranker?	A:06-retrieval-systems/06-reranking-strategies.md
+RAG04	M	When would you use an LLM as a reranker, and how do listwise and pointwise approaches differ?	A:06-retrieval-systems/06-reranking-strategies.md
+RAG04	M	How do you rerank when the query is extremely long?	A:06-retrieval-systems/06-reranking-strategies.md
+RAG04	M	When would you skip reranking altogether?	A:00-interview-prep/01-question-bank.md
+RAG04	M	How does ColBERT's MaxSim scoring work, and why is it better than single-vector similarity?	A:06-retrieval-systems/11-late-interaction-colbert.md
+RAG04	M	ColBERT stores one vector per token. How does it scale and what are the storage trade-offs?	A:06-retrieval-systems/11-late-interaction-colbert.md
+RAG04	H	For a legal search system with five million documents, decide between a dense bi-encoder, ColBERT and a hybrid with reranking.	A:06-retrieval-systems/11-late-interaction-colbert.md
+RAG04	M	What do ColBERTv2 and PLAID change about index size and speed?	A:06-retrieval-systems/11-late-interaction-colbert.md
+RAG04	M	What do ColPali and ColQwen do differently from text-based late-interaction retrieval?	G:docs/06-vector-index-optimization/README.md
+RAG04	M	Describe query rewriting strategies: contextual rewrite, expansion, HyDE and multi-query.	G:docs/03-rag-system/README.md
+RAG04	M	Why is HyDE risky for some applications?	A:06-retrieval-systems/09-advanced-retrieval-patterns.md
+RAG04	M	How does query decomposition help with multi-part questions?	A:06-retrieval-systems/09-advanced-retrieval-patterns.md
+RAG04	M	How does contextual retrieval compare to HyDE for improving retrieval quality?	A:06-retrieval-systems/10-contextual-retrieval.md
+RAG04	M	How do you improve recall when retrieval results are irrelevant?	G:docs/03-rag-system/README.md
+RAG04	M	What retrieval metrics would you compute to evaluate a retriever on a golden query set?	A:06-retrieval-systems/13-rag-evaluation-patterns.md
+RAG04	M	How do you diversify results after reranking and apply business rules without hurting relevance?	A:06-retrieval-systems/06-reranking-strategies.md
+RAG04	M	How do you choose a reranker model and tune its latency?	G:docs/12-frameworks-tools/README.md
+RAG04	M	How do you add metadata filters and recency weighting to ranking in enterprise search?	A:16-case-studies/15-knowledge-management.md
+RAG05	M	What is GraphRAG, and when does it genuinely beat vector RAG?	A:06-retrieval-systems/07-graph-rag.md
+RAG05	M	Why is entity extraction the bottleneck of GraphRAG indexing?	A:06-retrieval-systems/07-graph-rag.md
+RAG05	M	How does community summarization let GraphRAG answer aggregate questions that exceed the context window?	A:06-retrieval-systems/07-graph-rag.md
+RAG05	M	What is the maintenance tail of a knowledge graph, and when does it outweigh the benefits?	A:06-retrieval-systems/07-graph-rag.md
+RAG05	M	How would you build a knowledge graph for GraphRAG from unstructured documents?	G:docs/20-rag-advanced-optimization/README.md
+RAG05	M	What is the graph-as-reranker pattern?	A:06-retrieval-systems/07-graph-rag.md
+RAG05	M	How does agentic RAG differ from advanced RAG, and what does it cost in determinism?	A:06-retrieval-systems/08-agentic-rag.md
+RAG05	M	Explain Self-RAG and corrective RAG, and how they decide whether to retrieve or to re-retrieve.	A:06-retrieval-systems/08-agentic-rag.md
+RAG05	M	How does multi-hop reasoning work in an agentic retrieval loop?	G:docs/03-rag-system/README.md
+RAG05	M	What is the reasoning-retrieval balance in agentic RAG, and how do you stop it from over-searching?	A:06-retrieval-systems/08-agentic-rag.md
+RAG05	M	What new failure modes does agentic RAG introduce compared to a linear pipeline?	A:06-retrieval-systems/14-production-rag-at-scale.md
+RAG05	M	How would you implement adaptive retrieval where effort scales with query complexity?	A:06-retrieval-systems/14-production-rag-at-scale.md
+RAG05	M	What is the co-cheating trap when training search agents?	A:06-retrieval-systems/08-agentic-rag.md
+RAG05	M	How does a self-healing RAG system detect and recover from bad retrieval?	G:docs/20-rag-advanced-optimization/README.md
+RAG05	M	Design a multimodal RAG system for a financial research platform with charts, tables and text.	A:06-retrieval-systems/12-multimodal-rag.md
+RAG05	M	How would you answer a query that needs both a chart on one page and a table on another?	A:06-retrieval-systems/12-multimodal-rag.md
+RAG05	H	Users want to query a 10,000-hour video library. How do you design and cost multimodal retrieval over it?	A:06-retrieval-systems/12-multimodal-rag.md
+RAG05	M	How does ColPali-style page-as-image retrieval compare with a parse-then-embed pipeline?	A:06-retrieval-systems/12-multimodal-rag.md
+RAG05	M	How do you build a dual representation of charts and diagrams for retrieval?	A:06-retrieval-systems/12-multimodal-rag.md
+RAG05	M	How do image-text multimodal RAG systems index and retrieve mixed content?	G:docs/03-rag-system/README.md
+RAG05	M	What is state-aware or agentic retrieval, and how does it differ from standard retrieval?	G:docs/20-rag-advanced-optimization/README.md
+RAG05	M	When should an agent's memory store use a vector database and when a knowledge graph?	A:08-memory-and-state/03-long-term-memory.md
+RAG05	M	How do you enforce permission-aware retrieval without leaking the existence of restricted documents?	A:16-case-studies/15-knowledge-management.md
+RAG05	M	How would you design a hierarchical or multi-index strategy for a large heterogeneous corpus?	A:06-retrieval-systems/14-production-rag-at-scale.md
+RAG06	E	What is the RAG triad, and which failures does each dimension expose?	A:06-retrieval-systems/13-rag-evaluation-patterns.md
+RAG06	M	How are RAGAS faithfulness and context precision computed under the hood?	A:06-retrieval-systems/13-rag-evaluation-patterns.md
+RAG06	M	What are the four core RAGAS metrics and how would you optimize each?	G:docs/09-ai-safety-evaluation/README.md
+RAG06	M	Compare RAGAS, TruLens, DeepEval and UpTrain and when to use each.	G:docs/09-ai-safety-evaluation/README.md
+RAG06	M	How do you evaluate the retriever, reranker and generator separately?	A:06-retrieval-systems/13-rag-evaluation-patterns.md
+RAG06	M	How do you evaluate a RAG system when you have no ground-truth answers?	A:06-retrieval-systems/13-rag-evaluation-patterns.md
+RAG06	M	How do you build a golden test set for RAG, including synthetic query generation?	A:06-retrieval-systems/13-rag-evaluation-patterns.md
+RAG06	M	Your RAG evaluation pipeline costs five hundred dollars a day in judge calls. How do you reduce it?	A:06-retrieval-systems/13-rag-evaluation-patterns.md
+RAG06	M	What is the full RAG evaluation lifecycle from offline metrics to production monitoring?	G:docs/09-ai-safety-evaluation/README.md
+RAG06	M	Users report sometimes-wrong answers. How do you systematically diagnose the RAG system?	A:06-retrieval-systems/13-rag-evaluation-patterns.md
+RAG06	M	Your RAG system works great on test data but fails in production. What do you check?	A:00-interview-prep/01-question-bank.md
+RAG06	M	When retrieval returns irrelevant documents but the LLM still gives a plausible answer, how do you detect and prevent it?	A:06-retrieval-systems/14-production-rag-at-scale.md
+RAG06	M	Your RAG costs tripled in a month with no increase in volume. How do you investigate?	A:06-retrieval-systems/14-production-rag-at-scale.md
+RAG06	M	How do you debug a RAG system that gives poor answers: where do you look first?	G:docs/03-rag-system/README.md
+RAG06	M	What should happen when RAG hallucinates despite retrieved context?	G:docs/03-rag-system/README.md
+RAG06	M	Which production signals and alerts would you set up for a RAG system?	G:docs/03-rag-system/README.md
+RAG06	M	How do you detect retrieval quality drift and index drift after launch?	A:06-retrieval-systems/13-rag-evaluation-patterns.md
+RAG06	M	How do you do canary releases and rollbacks for retrieval strategy changes?	G:docs/10-production-deployment/README.md
+RAG06	M	Changing the embedding model improves some queries and hurts others. How do you manage this see-saw effect?	G:docs/20-rag-advanced-optimization/README.md
+RAG06	M	What is context poisoning in RAG, and how can a knowledge base defend against it?	G:docs/06-vector-index-optimization/README.md
+RAG06	M	What is indirect prompt injection in RAG, and how do you build a layered defense?	A:00-interview-prep/01-question-bank.md
+RAG06	M	Someone floods public sources with fake posts to steer your RAG answers. What stops it?	A:16-case-studies/06-real-time-search.md
+RAG06	M	How do you prevent hallucinated numbers in a financial RAG assistant?	A:16-case-studies/06-real-time-search.md
+RAG06	M	How do you handle stale data and the freshness requirement in a real-time RAG system?	A:16-case-studies/06-real-time-search.md
+RAG06	M	What failure modes arise when the same RAG system serves multiple tenants?	A:06-retrieval-systems/14-production-rag-at-scale.md
+RAG06	M	What tenant leaks does a metadata filter fail to stop?	A:06-retrieval-systems/14-production-rag-at-scale.md
+RAG06	M	How do you test that permission-aware retrieval cannot be bypassed?	G:docs/20-rag-advanced-optimization/README.md
+RAG06	M	Which failure taxonomy would you use when classifying RAG errors during error analysis?	A:06-retrieval-systems/14-production-rag-at-scale.md
+RAG06	M	How do you run error analysis on a RAG system using open coding and axial coding?	A:ai_evals_comprehensive_study_guide.md
+RAG06	M	How would you build a BM25 baseline and synthetic queries to quantify retrieval quality before tuning embeddings?	A:ai_evals_comprehensive_study_guide.md
+RAG06	M	How do you set up regression gates in CI for RAG quality?	A:06-retrieval-systems/13-rag-evaluation-patterns.md
+GA01	E	What are the essential elements of a good prompt, and how do intent and constraints differ?	A:05-prompting-and-context/01-prompt-engineering-fundamentals.md
+GA01	M	Why do system prompts carry more weight than user prompts, and what is the instruction hierarchy?	A:05-prompting-and-context/01-prompt-engineering-fundamentals.md
+GA01	M	How do delimiters and structured sections in a prompt reduce ambiguity and injection risk?	A:05-prompting-and-context/01-prompt-engineering-fundamentals.md
+GA01	M	What makes a good system prompt for a stable agent, and what sections would you include?	G:docs/02-prompt-engineering/README.md
+GA01	E	What is chain-of-thought prompting, and why does it help on multi-step problems?	A:05-prompting-and-context/03-chain-of-thought.md
+GA01	M	How do you use chain-of-thought in a latency-critical production system?	A:05-prompting-and-context/03-chain-of-thought.md
+GA01	M	How do you prompt reasoning models differently from standard models?	G:docs/02-prompt-engineering/README.md
+GA01	M	Explain self-consistency prompting and how it improves reasoning accuracy.	G:docs/02-prompt-engineering/README.md
+GA01	M	What is Tree-of-Thought, and when is it significantly better than chain-of-thought?	A:05-prompting-and-context/04-tree-of-thought.md
+GA01	M	What is the main drawback of Tree-of-Thought in a consumer app, and do you still need it with reasoning models?	A:05-prompting-and-context/04-tree-of-thought.md
+GA01	M	What is Auto-CoT, and how does it reduce the need for hand-written examples?	G:docs/02-prompt-engineering/README.md
+GA01	M	What is Chain-of-Verification and how does it reduce hallucination?	G:docs/02-prompt-engineering/README.md
+GA01	M	How do you pick few-shot examples, and why not put all fifty available examples in the prompt?	A:05-prompting-and-context/02-few-shot-and-icl.md
+GA01	M	What is label bias in in-context learning, and how does example ordering affect outputs?	A:05-prompting-and-context/02-few-shot-and-icl.md
+GA01	M	Compare dynamic and static few-shot selection and when to use each.	G:docs/02-prompt-engineering/README.md
+GA01	M	What are ReAct prompting's limitations, and how do you mitigate them in practice?	G:docs/02-prompt-engineering/README.md
+GA01	M	How do structured outputs differ from JSON mode and from function calling?	G:docs/02-prompt-engineering/README.md
+GA01	M	Why is JSON mode more reliable than asking for JSON in the prompt?	A:05-prompting-and-context/06-structured-generation.md
+GA01	M	What is the risk of requesting too many structured fields in a single call, and how does multi-stage extraction help?	A:05-prompting-and-context/06-structured-generation.md
+GA01	M	How do you handle validation failures from structured output, including retry with correction?	A:13-reliability-and-safety/01-guardrails.md
+GA01	M	An extraction pipeline forced a tool call to get JSON. After a model upgrade every request returns an error. What changed and how do you fix it?	A:05-prompting-and-context/06-structured-generation.md
+GA01	M	How do OpenAI, Anthropic and Google structured output mechanisms differ, and how do you choose?	G:docs/05-ai-agent-basics/README.md
+GA01	M	What is prompt caching, and how do you order prompt content to maximize hit rate?	G:docs/02-prompt-engineering/README.md
+GA01	M	How do you tell whether prompt caching actually saves money for a given workload?	G:docs/01-basic-concepts/README.md
+GA01	M	What are cache breakpoints, and how do you design them when tools or system prompts change mid-session?	A:17-tool-use-and-computer-agents/05-building-tool-agents.md
+GA01	M	How does prefix caching change how you design system prompts?	A:08-memory-and-state/02-short-term-context.md
+GA01	M	What is context engineering and how does it differ from prompt engineering?	A:05-prompting-and-context/05-context-engineering.md
+GA01	M	What are the core context engineering techniques: compaction, just-in-time loading, note-taking and sub-agent isolation?	A:05-prompting-and-context/05-context-engineering.md
+GA01	M	Explain the write, select, compress and isolate framework for agent context management.	G:docs/05-ai-agent-basics/README.md
+GA01	M	An agent works on short tasks but degrades on long ones. How do you diagnose and fix it?	A:05-prompting-and-context/05-context-engineering.md
+GA01	M	How do you budget context across system prompt, tools, history and retrieved documents?	G:docs/10-production-deployment/README.md
+GA01	M	How do you manage token budgets as conversations grow, with compression that keeps key information?	G:docs/02-prompt-engineering/README.md
+GA01	M	A gateway falls back to a different model mid-conversation and quality drops. What context-related issues could be involved?	A:05-prompting-and-context/05-context-engineering.md
+GA01	M	How do reasoning effort and thinking controls differ across providers, and how do you choose an effort level?	A:05-prompting-and-context/05-context-engineering.md
+GA01	M	Why is thinking bound to the conversation in append-only context, and what does that imply for caching?	A:05-prompting-and-context/05-context-engineering.md
+GA01	M	How does DSPy turn prompting into programming with signatures and optimizers?	A:05-prompting-and-context/07-prompt-optimization-dspy.md
+GA01	M	What is a teleprompter or optimizer in DSPy, and what does metric-driven optimization require?	A:05-prompting-and-context/07-prompt-optimization-dspy.md
+GA01	M	What is the biggest drawback of DSPy in production?	A:09-frameworks-and-tools/05-dspy.md
+GA01	M	When would you use GEPA instead of MIPROv2 for prompt optimization?	A:09-frameworks-and-tools/05-dspy.md
+GA01	M	How do you version prompts in production and detect prompt drift?	G:docs/02-prompt-engineering/README.md
+GA01	M	How would you run A/B tests and offline regression tests for prompt changes?	G:docs/02-prompt-engineering/README.md
+GA01	M	What is composable prompt design and how does it lower maintenance cost?	G:docs/02-prompt-engineering/README.md
+GA01	M	How do you prompt a model to honestly refuse when it does not know instead of making things up?	G:docs/02-prompt-engineering/README.md
+GA01	M	What is wrong with God prompts, vague instructions and missing output formats?	A:15-ai-design-patterns/02-anti-patterns.md
+GA01	M	How do you evaluate prompt frameworks such as LangSmith, Braintrust and Promptfoo?	G:docs/02-prompt-engineering/README.md
+GA01	M	What is a golden dataset, and how do you build and maintain one?	G:docs/02-prompt-engineering/README.md
+GA01	E	What is prompt injection and how does it differ from prompt leakage?	G:docs/02-prompt-engineering/README.md
+GA01	M	How do you prevent system prompt leakage?	G:docs/02-prompt-engineering/README.md
+GA01	M	How do you debug a prompt that behaves inconsistently across inputs?	G:docs/15-advanced-topics/README.md
+GA01	M	Rate limits and pricing now vary by model tier. How does that change your prompt design?	A:02-model-landscape/03-pricing-and-costs.md
+GA02	E	How does function calling work end to end, from schema to result feedback?	G:docs/05-ai-agent-basics/README.md
+GA02	M	What makes a high-precision tool definition for an LLM, and what schema design rules matter most?	A:17-tool-use-and-computer-agents/05-building-tool-agents.md
+GA02	M	How do you handle failure in tool calls: parameter errors, timeouts and fallbacks?	G:docs/05-ai-agent-basics/README.md
+GA02	M	Design retry strategy for tool failures including exponential backoff with jitter and a circuit breaker.	G:docs/05-ai-agent-basics/README.md
+GA02	M	How do you return structured errors to the model so it can self-correct?	G:docs/05-ai-agent-basics/README.md
+GA02	M	How do you handle parallel tool calls with dependencies, timeouts and mixed success?	G:docs/05-ai-agent-basics/README.md
+GA02	M	What is programmatic tool calling and when is it better than model-orchestrated chaining?	A:17-tool-use-and-computer-agents/05-building-tool-agents.md
+GA02	M	You must give an agent access to 200 internal tools. How do you handle schema overload?	A:17-tool-use-and-computer-agents/05-building-tool-agents.md
+GA02	M	How does dynamic tool search help, and how do you change tools mid-session without losing the cache?	A:17-tool-use-and-computer-agents/05-building-tool-agents.md
+GA02	M	How would you version tools and keep backwards compatibility?	A:17-tool-use-and-computer-agents/05-building-tool-agents.md
+GA02	M	What are the three testing layers for a tool-using agent?	A:17-tool-use-and-computer-agents/05-building-tool-agents.md
+GA02	M	Design a testing strategy for a customer-support tool-using agent.	A:17-tool-use-and-computer-agents/05-building-tool-agents.md
+GA02	M	How do you measure and trace tool-call quality, for example with BFCL-style evaluation?	G:docs/05-ai-agent-basics/README.md
+GA02	E	What is the Model Context Protocol, and what integration problem does it solve?	G:docs/14-mcp-skill-systems/README.md
+GA02	M	What are MCP's three core primitives and what is each for?	G:docs/14-mcp-skill-systems/README.md
+GA02	M	Describe MCP's client, server and transport layers and how a request flows through them.	G:docs/14-mcp-skill-systems/README.md
+GA02	M	Compare MCP stdio, SSE and streamable HTTP transports and when to use each.	G:docs/14-mcp-skill-systems/README.md
+GA02	M	How do MCP and plain function calling differ, and when should you not use MCP?	G:docs/14-mcp-skill-systems/README.md
+GA02	M	How does MCP address the too-many-tools problem?	A:07-agentic-systems/03-tool-use-and-mcp.md
+GA02	M	Why should tool logic be separated from the agent app via MCP servers?	A:07-agentic-systems/03-tool-use-and-mcp.md
+GA02	M	How does the MCP authorization flow work with OAuth 2.1, protected resource metadata and audience binding?	G:docs/14-mcp-skill-systems/README.md
+GA02	M	What changed with the stateless revision of MCP, and what is the migration impact for servers running behind sticky sessions?	A:07-agentic-systems/03-tool-use-and-mcp.md
+GA02	M	What is MCP sampling and why does it allow server-side agentic behavior?	G:docs/14-mcp-skill-systems/README.md
+GA02	M	What are MCP roots and how do they bound file access?	G:docs/14-mcp-skill-systems/README.md
+GA02	M	What are MCP tasks, triggers and server cards, and what problems do they solve?	G:docs/14-mcp-skill-systems/README.md
+GA02	M	How do JSON-RPC error codes work in MCP and how should servers surface errors?	G:docs/14-mcp-skill-systems/README.md
+GA02	M	How do you monitor an MCP server in production?	G:docs/14-mcp-skill-systems/README.md
+GA02	M	How does an agent coordinate several MCP servers with overlapping tools?	G:docs/14-mcp-skill-systems/README.md
+GA02	M	Compare skills and tools: what does a skill package that a tool does not?	G:docs/13-multi-agent-systems/README.md
+GA02	M	What is progressive disclosure for agent skills, and why not load every skill into context?	G:docs/05-ai-agent-basics/README.md
+GA02	M	What are the key MCP attack vectors: tool poisoning, confused deputy, token passthrough and SSRF?	G:docs/14-mcp-skill-systems/README.md
+GA02	H	Your agent connects to a dozen third-party MCP servers over OAuth. How do you stop one malicious server from abusing credentials intended for another?	A:07-agentic-systems/03-tool-use-and-mcp.md
+GA02	M	How do stdio-based MCP launches lead to command injection, and how do you migrate away safely?	A:16-case-studies/20-mcp-knowledge-agent.md
+GA02	H	Design a secure multi-tenant MCP server on the stateless protocol, covering state handles, authorization and rate limiting.	A:00-interview-prep/01-question-bank.md
+GA02	M	How would you build an enterprise MCP gateway for audit, authorization and routing?	G:docs/14-mcp-skill-systems/README.md
+GA02	M	How do you authorize an agent that calls tools on five MCP servers on a user's behalf?	A:12-security-and-access/02-access-control.md
+GA02	M	How do MCP and A2A work together in a production multi-agent system?	A:07-agentic-systems/03-tool-use-and-mcp.md
+GA02	M	What do the OWASP MCP and agent top-10 lists add beyond the traditional web top-10?	G:docs/14-mcp-skill-systems/README.md
+GA02	M	How would you protect a database tool from agent-driven SQL injection?	A:07-agentic-systems/09-agentic-security-and-sandboxing.md
+GA02	M	How do you make an agent that can execute arbitrary Python code safe?	A:00-interview-prep/01-question-bank.md
+GA02	M	What is a code interpreter tool, and where does it sit in sandbox-versus-privilege decisions?	A:17-tool-use-and-computer-agents/02-architecture-patterns.md
+GA02	M	How does a computer-use agent's screenshot, reason, act loop work?	A:17-tool-use-and-computer-agents/04-computer-use-agents.md
+GA02	M	Compare vision-based computer use with API-based tool calling.	A:17-tool-use-and-computer-agents/02-architecture-patterns.md
+GA02	M	Compare computer-use agents with Selenium-style scripted automation. When do you pick each?	A:17-tool-use-and-computer-agents/04-computer-use-agents.md
+GA02	M	What errors are specific to computer-use agents: misclicks, stale screenshots, scaling mismatches and unexpected dialogs?	A:17-tool-use-and-computer-agents/04-computer-use-agents.md
+GA02	M	A vendor says its computer-use model scores about 82 percent on a desktop benchmark. How do you turn that into a capacity plan?	A:17-tool-use-and-computer-agents/04-computer-use-agents.md
+GA02	M	What does the latency and cost per action look like for computer-use agents, and how do you optimize it?	A:17-tool-use-and-computer-agents/04-computer-use-agents.md
+GA02	H	A client has 500 insurance claim PDFs per day to enter into a legacy portal with no API. Design the automation.	A:17-tool-use-and-computer-agents/04-computer-use-agents.md
+GA02	M	How do you design the action space and data loop for a GUI agent?	G:docs/21-multimodal-agents/README.md
+GA02	M	What unique challenges do mobile GUI agents face compared to desktop agents?	G:docs/21-multimodal-agents/README.md
+GA02	M	When is a sandboxed environment mandatory for tool-using agents and what are the isolation options?	A:17-tool-use-and-computer-agents/07-safety-and-governance.md
+GA02	M	Compare Docker, gVisor, WebAssembly and Firecracker for agent sandboxing.	A:17-tool-use-and-computer-agents/07-safety-and-governance.md
+GA02	M	How do you prevent an AI agent from causing damage through tool calls?	A:17-tool-use-and-computer-agents/02-architecture-patterns.md
+GA02	M	How would you design a tool-using agent that automates invoice processing for thousands of invoices per day?	A:17-tool-use-and-computer-agents/06-use-cases-and-case-studies.md
+GA02	M	Explain tool-composition patterns: LLM-orchestrated, programmatic and server-side composition.	A:17-tool-use-and-computer-agents/05-building-tool-agents.md
+GA02	M	What is the Responses API versus an assistants-style API, and how do they manage state and tools?	G:docs/12-frameworks-tools/README.md
+GA02	M	How do you choose SSE versus WebSocket for streaming LLM or agent output?	G:docs/05-ai-agent-basics/README.md
+GA02	M	How would you implement streaming of tool calls and partial results to a front end?	A:07-agentic-systems/03-tool-use-and-mcp.md
+GA03	E	What is an AI agent and what are its core components?	G:docs/05-ai-agent-basics/README.md
+GA03	M	How do agents differ from workflows and from simple chatbots? Where does each belong?	A:00-interview-prep/01-question-bank.md
+GA03	M	What are the four components of a trustworthy agent: model, harness, tools and environment?	G:docs/05-ai-agent-basics/README.md
+GA03	M	Why do people say the model sets the ceiling and the harness sets the floor?	G:docs/05-ai-agent-basics/README.md
+GA03	M	What are agency levels and how do you choose how much autonomy to grant?	A:07-agentic-systems/01-agent-fundamentals.md
+GA03	M	Why is a reasoning model better suited to agency than a standard LLM?	A:07-agentic-systems/01-agent-fundamentals.md
+GA03	M	How do you prevent agentic drift in long-running tasks?	A:07-agentic-systems/01-agent-fundamentals.md
+GA03	E	Explain the ReAct loop and its main failure modes.	A:00-interview-prep/01-question-bank.md
+GA03	M	ReAct versus Plan-and-Solve versus ReWOO: when do you use each?	A:07-agentic-systems/02-reasoning-loops-react-and-beyond.md
+GA03	M	How does inference-time scaling relate to agentic loops?	A:07-agentic-systems/02-reasoning-loops-react-and-beyond.md
+GA03	M	What is Reflexion, and how does it differ from plain self-reflection?	G:docs/22-agent-planning-reflection/README.md
+GA03	M	How do LATS and tree-search planning differ from Reflexion?	G:docs/22-agent-planning-reflection/README.md
+GA03	M	What is a generator-evaluator architecture and why does reflection help?	G:docs/22-agent-planning-reflection/README.md
+GA03	M	What is dynamic replanning and when should it be triggered?	G:docs/22-agent-planning-reflection/README.md
+GA03	M	How do you prevent infinite recursion during task decomposition?	A:07-agentic-systems/06-planning-and-decomposition.md
+GA03	M	Why is plan revision often more expensive than plan generation?	A:07-agentic-systems/06-planning-and-decomposition.md
+GA03	M	Why should an agent clarify requirements before decomposing a task?	A:07-agentic-systems/06-planning-and-decomposition.md
+GA03	M	How does CRITIC-style grounded verification differ from self-reflection?	G:docs/22-agent-planning-reflection/README.md
+GA03	M	Why must the verifier be separate from the producer in an agent loop, and where should budget enforcement live?	A:07-agentic-systems/12-loop-engineering.md
+GA03	M	Should a verifier tell the agent why it rejected the work?	A:07-agentic-systems/12-loop-engineering.md
+GA03	M	When is an agent loop actively harmful, and how do you convert a non-converging loop into a useful one?	A:07-agentic-systems/12-loop-engineering.md
+GA03	M	An agent called a broken tool 400 times in five minutes. Diagnose it and design the fix.	A:07-agentic-systems/12-loop-engineering.md
+GA03	M	Your agent takes 47 LLM calls to finish a task that should take 5. How do you debug that?	A:00-interview-prep/01-question-bank.md
+GA03	M	How do you stop an agent from entering a dead loop?	G:docs/05-ai-agent-basics/README.md
+GA03	M	Why is traditional try/catch exception handling insufficient for agentic systems?	A:07-agentic-systems/07-error-handling-and-recovery.md
+GA03	M	How do you catch silent failures where a tool returns success but the data is wrong?	A:07-agentic-systems/07-error-handling-and-recovery.md
+GA03	M	What are stateful rollbacks and checkpoints in an agent workflow?	A:07-agentic-systems/07-error-handling-and-recovery.md
+GA03	M	What are kill switches and containment time, and why must containment be out-of-band?	A:07-agentic-systems/09-agentic-security-and-sandboxing.md
+GA03	M	Explain the agent memory hierarchy: working, episodic, semantic and procedural memory.	A:07-agentic-systems/05-agent-memory-and-state.md
+GA03	M	Why is the context window alone insufficient for a staff-level agent architecture?	A:07-agentic-systems/05-agent-memory-and-state.md
+GA03	M	Why not use a one-million-token context window for all agent memory?	A:08-memory-and-state/01-memory-architectures.md
+GA03	M	How would you design procedural memory for a production agent?	A:07-agentic-systems/05-agent-memory-and-state.md
+GA03	M	When does episodic memory become a liability rather than an asset?	A:07-agentic-systems/05-agent-memory-and-state.md
+GA03	M	How do you handle conflicting memories in an agentic system?	A:07-agentic-systems/05-agent-memory-and-state.md
+GA03	M	How do you prevent memory poisoning when an agent can write to its own long-term store?	A:07-agentic-systems/05-agent-memory-and-state.md
+GA03	M	Design a consolidation policy for moving episodic memories into semantic memory.	A:07-agentic-systems/05-agent-memory-and-state.md
+GA03	M	A benchmark shows your agent performs better with memory turned off. What do you do?	A:07-agentic-systems/05-agent-memory-and-state.md
+GA03	H	Your memory store holds fifty million memories across ten thousand tenants. How do you guarantee cross-tenant isolation?	A:07-agentic-systems/05-agent-memory-and-state.md
+GA03	M	How would you instrument production to catch hallucinated memory writes before they propagate?	A:07-agentic-systems/05-agent-memory-and-state.md
+GA03	M	How do you choose between a vector database and a knowledge graph for long-term agent memory?	A:08-memory-and-state/03-long-term-memory.md
+GA03	M	When would you store agent memory as files rather than in a vector database?	A:08-memory-and-state/01-memory-architectures.md
+GA03	M	How do you avoid memory fatigue where an agent surfaces too many irrelevant past details?	A:08-memory-and-state/04-agentic-memory-mem0.md
+GA03	M	Why use a dedicated memory layer like Mem0 instead of a custom script writing to Postgres?	A:08-memory-and-state/04-agentic-memory-mem0.md
+GA03	M	How do memory pruning, decay and privacy rules work in long-term memory design?	A:08-memory-and-state/03-long-term-memory.md
+GA03	M	How do you handle privacy leakage in a global semantic memory tier?	A:08-memory-and-state/01-memory-architectures.md
+GA03	M	What is the difference between the model's context window and the application's context window?	A:08-memory-and-state/02-short-term-context.md
+GA03	M	Compare sliding windows and summarization for short-term context, and design a thousand-turn conversation strategy.	G:docs/05-ai-agent-basics/README.md
+GA03	M	What is a semantic cache versus a provider prompt cache, and should you use both?	A:08-memory-and-state/05-semantic-caching.md
+GA03	M	What is semantic drift in caching and how do you prevent it?	A:08-memory-and-state/05-semantic-caching.md
+GA03	M	Why can a semantic cache cost more than a raw LLM call at low volume?	A:08-memory-and-state/05-semantic-caching.md
+GA03	M	Design a semantic cache that works in production, including thresholds, TTL and invalidation.	A:00-interview-prep/01-question-bank.md
+GA03	M	Why use a graph-based state machine like LangGraph instead of a simple while loop for agents?	A:08-memory-and-state/06-state-management-patterns.md
+GA03	M	How do you prevent state bloat in long-running agent sessions?	A:08-memory-and-state/06-state-management-patterns.md
+GA03	M	What are checkpointing, time-travel and fork/join in agent state management?	A:08-memory-and-state/06-state-management-patterns.md
+GA03	M	Checkpointing is not durable execution. What do production agents still lack after checkpointing?	G:docs/22-agent-planning-reflection/README.md
+GA03	M	Why are naive retries and checkpoints insufficient for an agent with side effects?	A:07-agentic-systems/11-durable-execution.md
+GA03	M	When is durable execution overkill, and what would you use instead?	A:07-agentic-systems/11-durable-execution.md
+GA03	M	Would you build an agent on Temporal or rent a managed agent runtime?	A:07-agentic-systems/11-durable-execution.md
+GA03	M	How do you design a multi-agent system, and when is multi-agent actually warranted?	A:00-interview-prep/01-question-bank.md
+GA03	M	What are the failure modes of a supervisor multi-agent architecture?	A:07-agentic-systems/04-multi-agent-orchestration.md
+GA03	M	How do you choose between a sequence of chains and a multi-agent graph?	A:07-agentic-systems/04-multi-agent-orchestration.md
+GA03	M	Compare commander, peer-to-peer and hybrid multi-agent collaboration modes.	G:docs/13-multi-agent-systems/README.md
+GA03	M	Why can a critic or verifier agent improve quality but also cause problems?	G:docs/13-multi-agent-systems/README.md
+GA03	M	When would you use multi-agent debate versus a mixture of agents?	A:00-interview-prep/01-question-bank.md
+GA03	M	How do you decide whether a published multi-agent research result is worth building?	G:docs/13-multi-agent-systems/README.md
+GA03	M	When do you define a multi-agent workflow in code versus letting a coordinator model delegate?	A:07-agentic-systems/04-multi-agent-orchestration.md
+GA03	M	How do you prevent infinite loops where agents keep talking to each other without solving the task?	A:09-frameworks-and-tools/07-autogen-crewai.md
+GA03	M	What are common multi-agent anti-patterns in production, and how would you split a customer-ticket workflow?	G:docs/13-multi-agent-systems/README.md
+GA03	M	When would you use A2A versus keeping all agents inside one framework?	A:07-agentic-systems/04-multi-agent-orchestration.md
+GA03	M	How do A2A task lifecycles and agent cards enable discovery and delegation?	G:docs/13-multi-agent-systems/README.md
+GA03	M	Where do the responsibilities of RAG, agents, MCP and A2A begin and end?	G:docs/13-multi-agent-systems/README.md
+GA03	M	How do you divide responsibilities and decompose tasks hierarchically among agents?	G:docs/13-multi-agent-systems/README.md
+GA03	M	How do you control quality, latency and cost when orchestrating agents dynamically at runtime?	G:docs/13-multi-agent-systems/README.md
+GA03	M	What are the benefits and bottlenecks of massively parallel agents?	G:docs/13-multi-agent-systems/README.md
+GA03	M	How would you design a policy engine, permission model and audit trail for multi-agent systems?	G:docs/13-multi-agent-systems/README.md
+GA03	M	How do you pass trace IDs across agents for distributed tracing?	G:docs/23-agent-observability/README.md
+GA03	M	How do you design a human-in-the-loop system that does not fatigue the human operator?	A:07-agentic-systems/08-human-in-the-loop-patterns.md
+GA03	M	What is the over-reliance risk in human-in-the-loop designs, and how do you mitigate approval laundering?	A:07-agentic-systems/08-human-in-the-loop-patterns.md
+GA03	M	You gate agent actions with a classifier that can run, deny or defer to a human. How do you set and monitor thresholds?	A:07-agentic-systems/08-human-in-the-loop-patterns.md
+GA03	M	When should an agent pause for human confirmation, and how would you implement interrupts in LangGraph?	G:docs/05-ai-agent-basics/README.md
+GA03	M	How do you evaluate an agent when the environment is non-deterministic such as the open web?	A:07-agentic-systems/10-evaluating-agentic-systems.md
+GA03	M	Why is meandering a critical failure in agent design, and what metrics expose it?	A:07-agentic-systems/10-evaluating-agentic-systems.md
+GA03	M	Define task success rate, action success rate and unit cost per task for agents.	A:07-agentic-systems/10-evaluating-agentic-systems.md
+GA03	M	What does it mean when an agent games its evaluation harness, and how do you detect it?	A:07-agentic-systems/10-evaluating-agentic-systems.md
+GA03	M	How do you quantitatively evaluate overall agent performance beyond prompt-level scoring?	G:docs/05-ai-agent-basics/README.md
+GA03	M	What are the mainstream agent benchmarks and what does each measure?	G:docs/05-ai-agent-basics/README.md
+GA03	M	How would you do trajectory grading with agent-as-judge, and what new failure modes does it add?	A:00-interview-prep/01-question-bank.md
+GA03	M	How do you control the ROI of an AI agent, and which metrics matter?	G:docs/05-ai-agent-basics/README.md
+GA03	M	Why would you use LangGraph rather than a managed agent runtime?	A:09-frameworks-and-tools/02-langgraph-orchestration.md
+GA03	M	How do you handle state overload in a graph with twenty or more nodes?	A:09-frameworks-and-tools/02-langgraph-orchestration.md
+GA03	M	What is the difference between LangChain and LangGraph, and when do you choose each?	G:docs/12-frameworks-tools/README.md
+GA03	M	What is the main benefit of LCEL over traditional chains, and how do you keep a LangChain system lean?	A:09-frameworks-and-tools/01-langchain-deep-dive.md
+GA03	M	How do LlamaIndex and LangChain workflows differ and how do you choose between them?	A:09-frameworks-and-tools/04-llamaindex.md
+GA03	M	When would you choose CrewAI instead of LangGraph?	A:09-frameworks-and-tools/07-autogen-crewai.md
+GA03	M	When is a typed agent framework such as Pydantic AI a better choice than LangGraph?	A:09-frameworks-and-tools/11-pydantic-ai-and-mastra.md
+GA03	M	With every lab shipping its own agent SDK, how do you avoid lock-in?	A:09-frameworks-and-tools/08-framework-selection-guide.md
+GA03	M	How would you build a system that works across OpenAI, Anthropic and local open-weight models?	A:09-frameworks-and-tools/08-framework-selection-guide.md
+GA03	M	Given framework churn, how do you decide whether to use a framework at all?	A:09-frameworks-and-tools/12-navigating-framework-churn.md
+GA03	M	How do you pin, lock and isolate dependencies to survive fast-moving AI frameworks?	A:09-frameworks-and-tools/12-navigating-framework-churn.md
+GA03	M	An agent's cost per task rose 40 percent and its tone changed overnight with no code change. What happened?	A:09-frameworks-and-tools/12-navigating-framework-churn.md
+GA03	M	Why is AutoGen in maintenance mode and what does the move to a merged agent framework mean for existing code?	A:09-frameworks-and-tools/07-autogen-crewai.md
+GA03	M	Compare Dify, Coze, n8n and similar low-code agent platforms against code-first frameworks.	G:docs/15-advanced-topics/README.md
+GA03	M	How would you design an enterprise AI agent platform similar to a low-code agent builder?	G:docs/27-project-experience/README.md
+GA03	M	How do coding agents like Claude Code, Cursor and Copilot differ in architecture and workflow?	A:09-frameworks-and-tools/09-claude-code.md
+GA03	M	What is a CLAUDE.md-style project manifest and why is it important for coding agents?	A:09-frameworks-and-tools/09-claude-code.md
+GA03	M	How do you run a coding agent safely in CI, and how do you control its cost?	A:09-frameworks-and-tools/09-claude-code.md
+GA03	M	Is it safe to run a coding agent in auto-approval mode on developer laptops?	A:09-frameworks-and-tools/09-claude-code.md
+GA03	M	How would you test an AI coding agent in CI?	A:09-frameworks-and-tools/10-opencoderguide.md
+GA03	M	Would you let an AI reviewer's approval count toward required reviews?	A:09-frameworks-and-tools/10-opencoderguide.md
+GA03	M	What is fill-in-the-middle and why does it matter for code completion models?	G:docs/17-ai-coding-tools/README.md
+GA03	M	What is SWE-bench, how does it score coding agents, and how can benchmarks be gamed?	G:docs/17-ai-coding-tools/README.md
+GA03	M	How does a coding agent's plan, execute, test and fix loop work?	G:docs/17-ai-coding-tools/README.md
+GA03	M	Why are open-weight coding models important for enterprises?	A:09-frameworks-and-tools/10-opencoderguide.md
+GA03	M	What are the architecture and security concerns of an always-on personal agent with its own compute?	A:17-tool-use-and-computer-agents/01-tool-use-landscape.md
+GA03	M	Design an always-on personal agent that keeps working while the user is away.	A:17-tool-use-and-computer-agents/01-tool-use-landscape.md
+GA03	M	Compare sandboxed and unsandboxed execution for AI agents.	A:17-tool-use-and-computer-agents/01-tool-use-landscape.md
+GA03	M	What risks come from skill or plugin ecosystems for agents, given that static detection has a ceiling?	A:17-tool-use-and-computer-agents/03-openclaw-deep-dive.md
+GA03	M	What vendor risks arise when your agent product depends on a third-party subscription policy?	A:17-tool-use-and-computer-agents/03-openclaw-deep-dive.md
+GA03	M	What is the eternal intern problem for agents, and how does continual learning address it?	G:docs/05-ai-agent-basics/README.md
+GA03	M	Should a team build an internal assistant on an open-source personal agent platform or build custom?	A:17-tool-use-and-computer-agents/01-tool-use-landscape.md
+GA03	M	What is Voyager-style lifelong learning and how does a skill library accumulate?	G:docs/22-agent-planning-reflection/README.md
+GA03	M	Design a skill system for a fleet of internal agents. How do skills differ from MCP tools and fine-tuning?	A:00-interview-prep/01-question-bank.md
+GA03	M	Your computer-use agent passes demos but fails 30 percent of real workflows. What is your reliability plan?	A:00-interview-prep/01-question-bank.md
+GA03	M	Your agent performs well for 5 minutes but degrades past 30 minutes of autonomous work. How do you fix it with context engineering?	A:00-interview-prep/01-question-bank.md
+GA04	E	What should you trace in an LLM application, and what makes a complete trace?	A:ai_evals_comprehensive_study_guide.md
+GA04	M	How is LLM observability different from conventional service observability?	A:14-evaluation-and-observability/02-observability.md
+GA04	M	What metrics would you track for a production LLM system across operational, quality and cost dimensions?	A:14-evaluation-and-observability/02-observability.md
+GA04	M	How do you detect quality degradation in production?	A:14-evaluation-and-observability/02-observability.md
+GA04	M	After a routine dependency upgrade your LLM dashboards go quiet. Traffic is the same. What do you suspect?	A:14-evaluation-and-observability/02-observability.md
+GA04	M	How does agent observability differ from general LLM monitoring?	G:docs/23-agent-observability/README.md
+GA04	M	How do you integrate OpenTelemetry into an agent system for traces and spans?	G:docs/23-agent-observability/README.md
+GA04	M	From a wrong answer, how do you trace back to the responsible model, knowledge source, skill, tool or agent node?	G:docs/23-agent-observability/README.md
+GA04	M	How do you detect abnormal agent behavior such as loops or runaway calls?	G:docs/23-agent-observability/README.md
+GA04	M	How do you set SLAs and alert rules for an agent service?	G:docs/23-agent-observability/README.md
+GA04	M	How would you perform root cause analysis from an agent trace?	G:docs/23-agent-observability/README.md
+GA04	M	How do you detect output quality decline and semantic drift in production agents?	G:docs/23-agent-observability/README.md
+GA04	M	How would you structure agent logs so they are searchable and analyzable?	G:docs/23-agent-observability/README.md
+GA04	M	How do you justify the cost of an observability platform like LangSmith?	A:09-frameworks-and-tools/03-langsmith-observability.md
+GA04	M	Why is trace attribution critical for a staff-level engineer working on LLM systems?	A:09-frameworks-and-tools/03-langsmith-observability.md
+GA04	M	How do you choose between observability platforms such as Langfuse, Phoenix, LangSmith and Opik?	G:docs/23-agent-observability/README.md
+GA04	M	How do you evaluate voice agents, and what is the accuracy-experience trade-off?	G:docs/23-agent-observability/README.md
+GA04	M	What are error analysis, open coding and axial coding for LLM products, and why must PMs and QAs take part?	A:ai_evals_comprehensive_study_guide.md
+GA04	M	What is theoretical saturation in error analysis, and how many traces should you review?	A:ai_evals_comprehensive_study_guide.md
+GA04	M	When do you use code-based evaluators instead of LLM judges?	A:ai_evals_comprehensive_study_guide.md
+GA04	M	How do you evaluate multi-step pipelines at the state level and analyze failure distributions?	A:ai_evals_comprehensive_study_guide.md
+GA04	M	How do you evaluate multi-turn conversations, and which metrics matter?	A:ai_evals_comprehensive_study_guide.md
+GA04	M	What is the difference between error analysis and automated evals, and when should each be prioritized?	A:00-interview-prep/01-question-bank.md
+GA04	M	Your eval scores keep improving but production complaints stay flat. How do you diagnose it?	A:00-interview-prep/01-question-bank.md
+GA04	M	How do you set up evals as a team culture without engineers gaming the metrics?	A:00-interview-prep/01-question-bank.md
+GA04	M	What is a test harness, and how does it differ from test scripts?	G:docs/28-test-harness-evaluation/README.md
+GA04	M	What is the difference between mock, stub, fake and spy, and when would you use each in LLM app tests?	G:docs/28-test-harness-evaluation/README.md
+GA04	M	How do you isolate tests from databases, networks, time and files?	G:docs/28-test-harness-evaluation/README.md
+GA04	M	How do you handle flaky tests, especially in LLM-dependent code?	G:docs/28-test-harness-evaluation/README.md
+GA04	M	Offline eval scores are high but online performance dropped. How do you debug it?	G:docs/28-test-harness-evaluation/README.md
+GA04	M	How do you prevent evaluation sets from being memorized or leaked into training or prompts?	G:docs/28-test-harness-evaluation/README.md
+GA04	M	Why can an agent harness replay not simply re-call real APIs, and how does replay differ from checkpointing?	G:docs/18-big-tech-interview-questions/README.md
+GA04	M	How do you prove a prompt or skill change did not regress quality?	G:docs/28-test-harness-evaluation/README.md
+GA04	M	How do you design a CI pipeline for LLM applications, with static checks, golden sets and LLM evaluation?	A:11-infrastructure-and-mlops/02-cicd.md
+GA04	M	How do you test prompt changes before production?	A:11-infrastructure-and-mlops/02-cicd.md
+GA04	M	What triggers should cause automatic rollback of an LLM deployment?	A:11-infrastructure-and-mlops/02-cicd.md
+GA04	M	Your provider is retiring the model your product runs on in 60 days. How do you migrate safely?	A:11-infrastructure-and-mlops/02-cicd.md
+GA04	M	How do canary and shadow deployments work for LLM changes?	A:11-infrastructure-and-mlops/02-cicd.md
+GA04	M	Why are model migrations treated as deploys, and how do you gate them?	A:11-infrastructure-and-mlops/02-cicd.md
+GA04	M	Your provider shipped a fix under the same model ID and your quality metrics moved. How do you detect and handle it?	A:13-reliability-and-safety/03-reliability-patterns.md
+GA04	M	What is an AI gateway, and what does it add beyond calling providers directly?	A:11-infrastructure-and-mlops/03-ai-gateways-and-model-routing.md
+GA04	M	Rate-limit errors are your top production failure. How does a gateway help, and how could it make things worse?	A:11-infrastructure-and-mlops/03-ai-gateways-and-model-routing.md
+GA04	M	When is a full gateway overkill?	A:11-infrastructure-and-mlops/03-ai-gateways-and-model-routing.md
+GA04	M	Your gateway holds every provider key. How do you secure it?	A:11-infrastructure-and-mlops/03-ai-gateways-and-model-routing.md
+GA04	M	How do you fail over a long-running agent conversation to another provider?	A:11-infrastructure-and-mlops/03-ai-gateways-and-model-routing.md
+GA04	M	How do you design a model router that picks the cheapest model meeting a quality bar?	A:00-interview-prep/01-question-bank.md
+GA04	M	How do you build the labels for a request-level router and avoid feedback loops?	A:00-interview-prep/01-question-bank.md
+GA04	M	What is a cascade pattern of models and how do you decide the escalation signal?	A:02-model-landscape/04-model-selection-guide.md
+GA04	M	How would you design rate limiting and backpressure for an LLM API, including token-based limits?	G:docs/10-production-deployment/README.md
+GA04	M	Design a multi-provider LLM architecture for 99.9 percent availability.	A:00-interview-prep/01-question-bank.md
+GA04	M	What is request hedging and when does it pay off?	A:13-reliability-and-safety/03-reliability-patterns.md
+GA04	M	Your 40-step agent platform depends on one provider that just had four outages in four days. How do you design for provider failure?	A:00-interview-prep/01-question-bank.md
+GA04	M	Design a model registry that survives divergent deprecation calendars across vendors.	A:09-frameworks-and-tools/12-navigating-framework-churn.md
+GA04	M	Your LLM bill doubled month over month with flat traffic. How do you find and fix it?	A:11-infrastructure-and-mlops/04-finops-and-token-economics.md
+GA04	M	Your LLM costs are ten times higher than expected. Walk me through the investigation.	A:00-interview-prep/01-question-bank.md
+GA04	M	Why do AI products have worse gross margins than typical SaaS, and what can engineers do?	A:11-infrastructure-and-mlops/04-finops-and-token-economics.md
+GA04	M	Why does the top cost lever tend to be caching, and how do batch and async tiers change the economics?	A:11-infrastructure-and-mlops/04-finops-and-token-economics.md
+GA04	M	A team wants to move a 300K-token-context workload to another provider because list prices match. What hidden pricing factors might change the bill?	A:11-infrastructure-and-mlops/04-finops-and-token-economics.md
+GA04	M	How do you attribute cost to features and tenants and set budget alerts?	A:11-infrastructure-and-mlops/01-llm-infrastructure.md
+GA04	M	How would you design a token-budget system that stops agents from running away with cost?	G:docs/23-agent-observability/README.md
+GA04	M	How do you design infrastructure for one million LLM queries per day?	A:11-infrastructure-and-mlops/01-llm-infrastructure.md
+GA04	M	How do you plan capacity and elastic scaling for LLM applications?	G:docs/10-production-deployment/README.md
+GA04	M	How would you evaluate a new accelerator or serving platform for your fleet?	A:11-infrastructure-and-mlops/01-llm-infrastructure.md
+GA04	M	What is the difference between LLMOps and MLOps?	G:docs/10-production-deployment/README.md
+GA04	M	How do you implement streaming output, and how do SSE and WebSocket differ?	G:docs/10-production-deployment/README.md
+GA04	M	Which memory leaks commonly occur in production agents and how do you track them?	G:docs/10-production-deployment/README.md
+GA04	M	How do you use worker pools to handle high-concurrency LLM requests in Go?	G:docs/10-production-deployment/README.md
+GA04	M	When you must use asyncio for batched LLM calls, how do you handle timeouts, cancellation and backpressure?	G:docs/24-python-engineering/README.md
+GA04	M	How do you make an LLM client testable and swappable using protocols and dependency injection?	G:docs/24-python-engineering/README.md
+GA04	M	How does the Python GIL affect AI services, and how do you work around it?	G:docs/24-python-engineering/README.md
+GA04	M	How would you stream an LLM response through FastAPI with server-sent events?	G:docs/24-python-engineering/README.md
+GA04	M	How should an application treat retries and hedging when the provider also enforces rate limits?	A:13-reliability-and-safety/03-reliability-patterns.md
+GA04	M	What does it take to design degradation levels for an LLM product under outage or overload?	A:13-reliability-and-safety/03-reliability-patterns.md
+GA04	M	How do bulkheads, circuit breakers and timeouts layer together in an LLM client?	A:13-reliability-and-safety/03-reliability-patterns.md
+GA04	M	What is the difference between a circuit breaker and a retry?	A:13-reliability-and-safety/03-reliability-patterns.md
+GA04	M	How do you design a feedback loop for continuous improvement of an LLM product?	A:00-interview-prep/01-question-bank.md
+GA04	M	How do you handle model updates and deprecations from providers over the life of a product?	A:00-interview-prep/01-question-bank.md
+GA04	M	How do you secure LangGraph production debugging with time travel and checkpointing?	G:docs/12-frameworks-tools/README.md
+GA04	M	How do you handle token counting for cost control and context planning?	A:00-interview-prep/01-question-bank.md
+GA05	E	What is prompt injection, and why is it harder to sanitize than SQL injection?	A:05-prompting-and-context/08-prompt-injection-defense.md
+GA05	M	What is indirect prompt injection and why is it especially dangerous in RAG and agent systems?	A:05-prompting-and-context/08-prompt-injection-defense.md
+GA05	M	How does the dual-LLM defense pattern work?	A:05-prompting-and-context/08-prompt-injection-defense.md
+GA05	M	How could a prompt injection spread from one agent to many, and how would you test for it?	A:05-prompting-and-context/08-prompt-injection-defense.md
+GA05	M	How do multi-step injections defeat single-payload defenses?	A:07-agentic-systems/09-agentic-security-and-sandboxing.md
+GA05	M	What does injection detection not buy you, and what must back it up?	A:13-reliability-and-safety/01-guardrails.md
+GA05	M	How do you design a layered defense against indirect injection for agents that read untrusted web content?	A:00-interview-prep/01-question-bank.md
+GA05	M	How would you design a browsing agent that has payment authority while resisting injected instructions in trusted data fields?	A:00-interview-prep/01-question-bank.md
+GA05	M	What are the OWASP top 10 risks for LLM applications and for agentic AI?	A:12-security-and-access/01-llm-security.md
+GA05	M	How do you build a threat model for a RAG or agent application?	G:docs/09-ai-safety-evaluation/README.md
+GA05	M	How do you design a system where one user's prompt cannot leak to another user?	A:00-interview-prep/01-question-bank.md
+GA05	M	What data-leak paths exist in an LLM app: training data, RAG, system prompts and API retention?	A:12-security-and-access/01-llm-security.md
+GA05	M	What is model extraction through an API and how would you detect and limit it?	A:12-security-and-access/01-llm-security.md
+GA05	M	What are training-data memorization and extraction attacks, and how do you evaluate exposure?	G:docs/09-ai-safety-evaluation/README.md
+GA05	M	How do you handle insecure output handling, such as rendering model output as HTML or executing it?	A:12-security-and-access/01-llm-security.md
+GA05	M	How do you handle user privacy data and PII in LLM applications?	G:docs/09-ai-safety-evaluation/README.md
+GA05	M	How do you prevent harmful content generation and abuse of an AI app?	G:docs/09-ai-safety-evaluation/README.md
+GA05	M	What are the layers of a guardrail architecture, and where does each check run?	A:13-reliability-and-safety/01-guardrails.md
+GA05	M	Design a guardrail system for a customer-service chatbot.	A:13-reliability-and-safety/01-guardrails.md
+GA05	M	How would you implement guardrails for an autonomous agent that can take real-world actions?	A:00-interview-prep/01-question-bank.md
+GA05	M	How do guardrail models such as Llama Guard and Prompt Guard compare, and how do you deploy them?	G:docs/09-ai-safety-evaluation/README.md
+GA05	M	Compare NeMo Guardrails and Guardrails AI.	A:13-reliability-and-safety/01-guardrails.md
+GA05	M	How do jailbreak benchmarks like HarmBench and JailbreakBench work, and how is attack success rate computed?	G:docs/09-ai-safety-evaluation/README.md
+GA05	M	How do you turn scattered jailbreak samples into a recurring automated red-team harness?	G:docs/09-ai-safety-evaluation/README.md
+GA05	M	How do you build a red-team set without leaking it into training or overfitting?	G:docs/09-ai-safety-evaluation/README.md
+GA05	M	How do you calibrate an LLM judge for safety evaluations?	G:docs/09-ai-safety-evaluation/README.md
+GA05	M	How do multimodal jailbreaks and image injection work, and how do you defend against them?	G:docs/09-ai-safety-evaluation/README.md
+GA05	M	What is LLM text watermarking and how do you evaluate it beyond detectability?	G:docs/09-ai-safety-evaluation/README.md
+GA05	M	How do you secure a multi-tenant RAG system against cross-tenant leakage?	A:12-security-and-access/01-llm-security.md
+GA05	M	Design tenant isolation across data, prompts and caches for an LLM service.	A:12-security-and-access/02-access-control.md
+GA05	M	How do you manage API keys for an LLM service, including rotation and workload identity?	A:12-security-and-access/02-access-control.md
+GA05	M	Compare RBAC and ABAC for LLM systems, and how would you model model-level permissions?	A:12-security-and-access/02-access-control.md
+GA05	M	How do you sandbox agent actions with microVMs or containers, and why does least privilege matter?	A:07-agentic-systems/09-agentic-security-and-sandboxing.md
+GA05	M	Why is instruction hierarchy critical for agent security?	A:07-agentic-systems/09-agentic-security-and-sandboxing.md
+GA05	M	What is capability-based access control for agents and how do allowlists compare with denylists?	A:17-tool-use-and-computer-agents/07-safety-and-governance.md
+GA05	M	What is exfiltration without an attacker, and how can agents leak data on their own?	A:07-agentic-systems/09-agentic-security-and-sandboxing.md
+GA05	M	What audit logging is required for accountable agent actions?	A:17-tool-use-and-computer-agents/07-safety-and-governance.md
+GA05	M	Why do agent frameworks suffer remote code execution vulnerabilities, and how do you defend systematically?	G:docs/09-ai-safety-evaluation/README.md
+GA05	M	How do you defend against supply-chain attacks on agent plugins, skills and auto-run hooks?	A:00-interview-prep/01-question-bank.md
+GA05	M	How would you vet a third-party fine-tuned open-weight model for supply-chain trust?	A:00-interview-prep/01-question-bank.md
+GA05	M	A coding agent passed tests and a human approved the diff, yet internal data ended up public. How could that happen?	A:16-case-studies/07-autonomous-coding-agent.md
+GA05	M	How do you handle the tension between zero data retention and provider safety retention?	A:12-security-and-access/01-llm-security.md
+GA05	M	What does a regulation such as the EU AI Act require engineers to implement for an LLM product?	A:13-reliability-and-safety/04-ai-governance-and-compliance.md
+GA05	M	How do the EU AI Act and the NIST AI RMF differ and when does each matter?	A:13-reliability-and-safety/04-ai-governance-and-compliance.md
+GA05	M	Your agent did something harmful to a third party's system. What are your reporting obligations and what do you change?	A:13-reliability-and-safety/04-ai-governance-and-compliance.md
+GA05	M	How do you handle AI-generated content disclosure, copyright and privacy compliance?	G:docs/10-production-deployment/README.md
+GA05	M	How do you design access control for a dual-use capability in your own product?	A:00-interview-prep/01-question-bank.md
+GA05	M	How do you make an agent's telemetry safe so it cannot silently upload sensitive data?	A:00-interview-prep/01-question-bank.md
+GA05	M	How do you detect and handle bias in LLM outputs?	G:docs/01-basic-concepts/README.md
+GA05	M	How do you handle approval laundering, over-reliance and operator fatigue in agent oversight?	A:07-agentic-systems/08-human-in-the-loop-patterns.md
+GA05	M	What are Behavioral Dispositions in LLM evaluation and why do agents behave differently under pressure?	A:17-tool-use-and-computer-agents/07-safety-and-governance.md
+GA05	M	How should an Agent gateway handle identity, permission, isolation and audit responsibilities?	G:docs/09-ai-safety-evaluation/README.md
+GA05	M	What is continuous authorization for agents and what are signed agent manifests?	G:docs/14-mcp-skill-systems/README.md
+GA06	E	What is a vision-language model and how are its components arranged?	G:docs/21-multimodal-agents/README.md
+GA06	M	How does CLIP train image and text encoders contrastively?	G:docs/11-multimodal-ai/README.md
+GA06	M	How does CLIP enable zero-shot classification and what are its limitations?	G:docs/11-multimodal-ai/README.md
+GA06	M	How do BLIP and BLIP-2 differ from CLIP, and what is the Q-Former?	G:docs/11-multimodal-ai/README.md
+GA06	M	How does LLaVA connect a visual encoder to an LLM?	G:docs/11-multimodal-ai/README.md
+GA06	M	What is a Perceiver Resampler and how does it compare to linear projection?	G:docs/21-multimodal-agents/README.md
+GA06	M	How does a multimodal agent handle multi-image input differently than single-image?	G:docs/21-multimodal-agents/README.md
+GA06	M	How do SigLIP and CLIP compare for retrieval embeddings?	A:06-retrieval-systems/12-multimodal-rag.md
+GA06	M	How do you build an image-text retrieval system with multimodal models?	G:docs/11-multimodal-ai/README.md
+GA06	M	What are common visual hallucinations in VLMs, and how do you detect and reduce them?	G:docs/21-multimodal-agents/README.md
+GA06	M	What is spatial grounding and why is it hard for VLMs?	G:docs/21-multimodal-agents/README.md
+GA06	M	How do you evaluate multimodal models and agents, and which benchmarks matter?	G:docs/11-multimodal-ai/README.md
+GA06	M	How does a video-understanding agent process long videos?	G:docs/21-multimodal-agents/README.md
+GA06	M	Compare fixed-frame sampling with agentic processing for video.	A:06-retrieval-systems/12-multimodal-rag.md
+GA06	M	Design an invoice recognition and reimbursement agent.	G:docs/21-multimodal-agents/README.md
+GA06	M	How do you design the tool set for a vision agent?	G:docs/21-multimodal-agents/README.md
+GA06	M	How does an image-generation sub-agent work, and how do you evaluate generation accuracy and diversity?	G:docs/11-multimodal-ai/README.md
+GA06	M	How does an image-editing agent differ from a text-to-image agent?	G:docs/21-multimodal-agents/README.md
+GA06	M	How do you regression-test a generative media pipeline when outputs are not reproducible?	A:19-multimodal-generation/01-multimodal-generation.md
+GA06	H	Design a service that turns a script into a narrated, music-backed video. What are the hard problems?	A:19-multimodal-generation/01-multimodal-generation.md
+GA06	M	How do provenance and watermarking apply to generated media pipelines?	A:19-multimodal-generation/01-multimodal-generation.md
+GA06	M	How do you handle multimodal inputs in a complex AI workflow, with degradation paths?	G:docs/15-advanced-topics/README.md
+GA06	M	How do you route between models to build a low-latency multimodal agent?	G:docs/11-multimodal-ai/README.md
+GA06	M	What are the trade-offs of an on-device multimodal model such as a small open-weight VLM?	G:docs/11-multimodal-ai/README.md
+GA06	M	How do vision LLMs extract layout and structure from documents, and when do you still prefer specialist APIs?	A:10-document-processing/01-ocr-and-layout.md
+GA06	M	What is an omni model with a thinker-talker architecture and why does it matter for voice and vision?	G:docs/11-multimodal-ai/README.md
+GA06	M	How do audio and VLA models integrate with vision-language models in an agent?	G:docs/21-multimodal-agents/README.md
+GA06	M	Compare the three voice-agent architectures: chained pipeline, speech-to-speech and duplex front end with a backend.	A:18-voice-and-audio-agents/01-realtime-voice-agents.md
+GA06	M	Walk through the latency budget of a voice agent and the single biggest lever.	A:18-voice-and-audio-agents/01-realtime-voice-agents.md
+GA06	M	How do turn detection and barge-in work in a voice agent?	A:18-voice-and-audio-agents/01-realtime-voice-agents.md
+GA06	M	Why is end-of-turn detection on 8 kHz telephone audio hard, and how do you distinguish a pause from an end of turn?	A:00-interview-prep/01-question-bank.md
+GA06	M	How do you design tool execution for voice so a mid-call correction never double-books?	A:00-interview-prep/01-question-bank.md
+GA06	M	How do you design for voice sessions that exceed model connection or session limits?	A:00-interview-prep/01-question-bank.md
+GA06	M	How do you capture exact identifiers such as member IDs and dates of birth reliably over voice?	A:00-interview-prep/01-question-bank.md
+GA06	M	Build a cost model for one million voice minutes per month across architecture options.	A:00-interview-prep/01-question-bank.md
+GA06	M	What would a release gate for a voice agent include?	A:00-interview-prep/01-question-bank.md
+GA06	M	How do you decide which languages a voice agent can actually launch in?	A:00-interview-prep/01-question-bank.md
+GA06	M	What consent, disclosure and opt-out handling does an outbound AI calling product need?	A:00-interview-prep/01-question-bank.md
+GA06	M	How do you threat-model a banking voice agent against audio injection and cloned voices?	A:00-interview-prep/01-question-bank.md
+GA06	M	Where should speech recognition run for a healthcare voice assistant: cloud under an agreement or on-premises?	A:16-case-studies/13-voice-ai-healthcare.md
+GA06	M	How do speaker diarization and medical entity extraction fit a clinical note pipeline?	A:16-case-studies/13-voice-ai-healthcare.md
+GA06	M	How would you integrate generated clinical notes with an EHR using FHIR?	A:16-case-studies/13-voice-ai-healthcare.md
+GA06	M	How do you handle noisy audio environments in speech pipelines?	A:16-case-studies/13-voice-ai-healthcare.md
+MS01	M	What is the end-to-end MLOps process, and how would you implement CI/CD for models?	G:docs/10-production-deployment/README.md
+MS01	M	How do you detect data drift for an LLM application in production?	G:docs/10-production-deployment/README.md
+MS01	M	How would you monitor model health in production and what would trigger retraining?	G:docs/10-production-deployment/README.md
+MS01	M	How do you build eval-gated CI/CD, including golden-set rotation and judge-drift detection?	A:16-case-studies/18-eval-gated-cicd.md
+MS01	M	What per-PR eval budget and caching strategies keep CI evals affordable?	A:16-case-studies/18-eval-gated-cicd.md
+MS01	M	How do you version datasets, prompts, models and judges for reproducibility?	A:11-infrastructure-and-mlops/02-cicd.md
+MS01	M	When do you choose self-hosted inference over managed APIs for infrastructure reasons?	G:docs/10-production-deployment/README.md
+MS01	M	What deployment sandboxes exist for enterprise agents, such as serverless isolates or microVMs?	G:docs/10-production-deployment/README.md
+MS01	M	How do you deploy agent containers versus run them directly on a host?	G:docs/05-ai-agent-basics/README.md
+MS01	M	How do you build a model lifecycle process that survives provider deprecations?	A:11-infrastructure-and-mlops/01-llm-infrastructure.md
+MS01	M	How do you plan disaster recovery for an LLM application with multiple providers?	A:11-infrastructure-and-mlops/01-llm-infrastructure.md
+MS01	M	How do you decide an inference engine and orchestration layer for a given workload?	A:04-inference-optimization/06-serving-infrastructure.md
+MS01	M	How do you instrument and control a fleet that spans multiple accelerator vendors?	A:11-infrastructure-and-mlops/01-llm-infrastructure.md
+MS01	M	How do you run a controlled rollout for a retrieval or prompt change with rollback criteria?	G:docs/10-production-deployment/README.md
+MS01	M	What is a queue-based architecture for LLM requests and when do you need one?	A:11-infrastructure-and-mlops/01-llm-infrastructure.md
+MS01	M	How do you design an AI task queue that avoids timeouts and keeps ordering guarantees?	G:docs/25-system-design-ai/README.md
+MS01	M	How would you debug a production LLM service whose behaviour changed overnight with no code deploy?	A:09-frameworks-and-tools/12-navigating-framework-churn.md
+MS01	M	What happens when a vendor retires a model mid-quarter and your evals depend on it as judge?	A:16-case-studies/18-eval-gated-cicd.md

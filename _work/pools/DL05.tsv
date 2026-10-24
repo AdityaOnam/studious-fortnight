@@ -1,0 +1,105 @@
+Q000901	E	What is an autoencoder?
+Q000902	E	Explain the architecture of a basic autoencoder.
+Q000903	E	What is the difference between an encoder and a decoder in an autoencoder?
+Q000905	E	What are some key applications of autoencoders?
+Q000906	M	Describe the difference between a traditional autoencoder and a variational autoencoder (VAE).
+Q000907	E	What is meant by the latent space in the context of autoencoders?
+Q000908	M	How can autoencoders be used for unsupervised learning?
+Q000909	M	Explain the concept of a sparse autoencoder.
+Q000910	M	What is a denoising autoencoder and how does it work?
+Q000911	M	Describe how a contractive autoencoder operates and its benefits.
+Q000912	M	What are convolutional autoencoders and in what cases are they preferred?
+Q000913	M	How do recurrent autoencoders differ from feedforward autoencoders, and when might they be useful?
+Q000914	M	Explain the idea behind stacked autoencoders.
+Q000915	M	Discuss the role of regularization in training autoencoders.
+Q001397	E	What are Generative Adversarial Networks (GANs)?
+Q001398	E	Could you describe the architecture of a basic GAN?
+Q001399	E	Explain the roles of the generator and discriminator in a GAN.
+Q001400	M	How do GANs handle the generation of new, unseen data?
+Q001401	M	What loss functions are commonly used in GANs and why?
+Q001402	M	How is the training process different for the generator and discriminator in a GAN?
+Q001403	M	What is mode collapse in GANs, and why is it problematic?
+Q001404	H	Can you describe the concept of Nash equilibrium in the context of GANs?
+Q001405	M	How can we evaluate the performance and quality of GANs?
+Q001406	M	What are some challenges in training GANs?
+Q001407	M	Explain the idea behind Conditional GANs (cGANs) and their uses.
+Q001408	M	What are Deep Convolutional GANs (DCGANs) and how do they differ from basic GANs?
+Q001409	H	Can you discuss the architecture and benefits of Wasserstein GANs (WGANs)?
+Q001410	M	Describe the concept of CycleGAN and its application to image-to-image translation.
+Q001411	M	Explain how GANs can be used for super-resolution imaging (SRGANs).
+Q003486	H	Compare DDPM and Flow Matching: what are their sampling efficiency, advantages, and disadvantages?
+Q003959	E	What are GANs, VAEs, and memory augmented neural networks?
+Q004010	E	What is an autoencoder? What does it "auto-encode"?
+Q004011	M	What were autoencoders traditionally used for? Why has there been a resurgence of autoencoders for generative modeling?
+Q004012	M	What loss functions are used for autoencoders?
+Q004013	H	What is a linear autoencoder? Can it be optimal (lowest training reconstruction error)? If yes, under what conditions?
+Q004014	M	What is the impact of the size of the hidden layer in autoencoders?
+Q004015	M	What is an undercomplete autoencoder? What is it typically used for?
+Q004017	M	What problems might a nonlinear undercomplete autoencoder face?
+Q004018	H	What are overcomplete autoencoders? What problems might they face? Does the scenario change for linear overcomplete autoencoders?
+Q004019	M	Discuss the importance of regularization in the context of autoencoders.
+Q004020	H	Why do generative autoencoders not require regularization?
+Q004021	E	What are sparse autoencoders?
+Q004022	M	What is a denoising autoencoder? What are its advantages? How does it solve the overcomplete problem?
+Q004023	H	What is score matching? Discuss its connections to denoising autoencoders.
+Q004024	H	Are there any connections between autoencoders and RBMs?
+Q004025	H	What is manifold learning? How are denoising and contractive autoencoders equipped to do manifold learning?
+Q004026	M	What is a contractive autoencoder? Discuss its advantages. How does it solve the overcomplete problem?
+Q004027	M	Why is a contractive autoencoder named so?
+Q004028	H	What are the practical issues with contractive autoencoders (CAEs)? How can they be tackled?
+Q004029	M	What is a stacked autoencoder? What is a deep autoencoder? Compare and contrast.
+Q004030	M	Compare the reconstruction quality of a deep autoencoder vs. PCA.
+Q004031	H	What is predictive sparse decomposition?
+Q004032	E	Discuss some applications of autoencoders.
+Q004530	H	How are GANs implemented, and what makes them difficult to train?
+Q004435	M	Diffusion vs autoregressive generation: how do they differ and when is each used (image, video, audio, text)?
+Q004436a	M	What is classifier-free guidance?
+Q004436b	H	What is flow matching / rectified flow?
+Q004716	H	How do Diffusion Language Models (DLMs) work?
+Q005078	M	How does image generation work with diffusion models (Stable Diffusion, DALL-E, Flux)?
+Q005098	M	What is text-to-video generation, and what are the current state-of-the-art approaches?
+Q005103	H	Your diffusion model ignores precise control requirements in text prompts. How do you improve controllability?
+Q005104	H	Your diffusion model generates sharp but repetitive images. How do you balance quality vs diversity?
+Q005105	M	Your diffusion model takes too long per image. How do you speed up sampling?
+Q005272	E	What is latent space?
+Q005273	E	What are autoencoders? Explain their layers and practical uses.
+Q005274	M	What is a Variational Autoencoder (VAE), and how is it different from a traditional autoencoder?
+Q005275	H	How does a VAE impose a probabilistic structure on the latent space, and why is that important?
+Q005276	E	What is the architecture of a Generative Adversarial Network (GAN)?
+Q005277	E	What are the roles of the generator and discriminator in a GAN?
+Q005278	M	What is mode collapse in GANs, and how can it be mitigated?
+Q005279	M	How are GANs used in image synthesis or image-to-image translation tasks?
+Q005294	H	Why does diffusion work better than auto-regression?
+Q005296	H	How do world models work?
+Q005477	E	What is an autoencoder? Name a few applications.
+Q005478	E	What are the components of a GAN?
+Q012540	M	What are autoencoders? Explain the different layers of autoencoders and mention three practical usages of them.
+Q008892	M	Give me the intuition for how diffusion models generate images.
+Q008893	M	What exactly does a diffusion network predict (noise, the clean image, or something else), and does it matter?
+Q008894	M	Why can diffusion samplers skip most of the 1000 training steps?
+Q008895	M	What does the noise schedule in a diffusion model trade off?
+Q008919	M	Why do latent diffusion? Walk me through the components of a Stable-Diffusion-style system.
+Q008920	H	Why use 4 (or 16) latent channels in latent diffusion rather than compressing harder?
+Q008921	M	What does moving from U-Net to DiT buy in a diffusion model?
+Q008922	H	Where does ControlNet-style conditioning hook into a latent diffusion architecture?
+Q008923	M	Explain classifier-free guidance. What actually happens when you turn the guidance scale up?
+Q008924	H	Why does high classifier-free guidance hurt diversity specifically?
+Q008925	M	How do negative prompts work mechanically in diffusion models?
+Q008926	H	Why do guidance-distilled diffusion models generate at CFG of about 1?
+Q008927	M	Compare diffusion and autoregressive approaches to image generation. Why did autoregressive come back?
+Q008928	H	Why do omni-models render text in images so much better?
+Q008929	H	What does the discrete tokenizer bottleneck in autoregressive image generation depend on?
+Q008930	H	If you needed 100ms generation for a live preview feature, which image generation model family would you use and what tricks would you apply?
+Q009003	H	How do text-to-video models like Veo or Sora work, and why is video generation so much more expensive than image generation?
+Q009004	H	Why does a causal 3D VAE make joint image and video training possible?
+Q009005	H	You must cut video generation cost 10x for a preview feature. Which levers do you pull first and what quality do you lose?
+Q009314	H	An open-source image model has been post-trained so a user's character stays recognisable across art styles. How would you build and evaluate that identity consistency?
+Q009315	M	How would you detect the copy-through failure of an identity-preserving image model in production without a human looking at every image?
+Q009316	M	What changes in an identity-preserving image model if creators want their character's identity locked so other users cannot restyle it?
+Q010232	H	A world model generates camera and lidar simulation, adapted from a general-purpose video world model. What does that buy over log replay and reconstruction, and how would you decide its output is valid enough to gate a release?
+Q010233	H	A generated simulation scenario exposes a driving-policy failure you cannot reproduce on any real log. Is that a policy bug or a simulator bug, and how do you find out?
+Q010234	H	How would you detect that a generative world model and your perception stack share a blind spot?
+D03796	M	Compare diffusion and autoregressive generation in likelihood, speed and use cases.
+D03797	M	Explain latent diffusion, diffusion transformers and classifier-free guidance.
+D03798	M	What is flow matching or rectified flow, and how does it reduce the number of sampling steps?
+D03799	M	How can text be generated with diffusion or masked diffusion language models, and what are the trade-offs?

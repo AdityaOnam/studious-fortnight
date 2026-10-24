@@ -1,0 +1,207 @@
+Q002342	H	Implement DDIM sampling with classifier-free guidance.
+Q002343	H	Implement DDPM (denoising diffusion) from scratch.
+Q002344	M	Implement K-means clustering in PyTorch.
+Q002345	M	Implement logistic regression with gradient descent.
+Q002346	E	Implement softmax from scratch.
+Q002347	M	Implement 2D positional embeddings.
+Q002348	H	Implement contrastive loss (InfoNCE) and a CLIP training loop.
+Q002349	H	Implement DPO loss from scratch.
+Q002350	H	Implement FSDP (Fully Sharded Data Parallel) from scratch.
+Q002352	H	Implement a KV cache for autoregressive generation.
+Q002353	M	Implement LoRA on a linear layer.
+Q002354	H	Implement PPO for RLHF.
+Q002355	H	Implement Ring Attention for long contexts.
+Q002356	H	Implement a selective state space model (Mamba block).
+Q002357	M	Implement sliding window attention.
+Q002358	H	Implement speculative decoding.
+Q002359	E	Implement temperature sampling.
+Q002360	E	Implement top-k sampling.
+Q002361	M	Implement top-p (nucleus) sampling.
+Q002362	H	Build a complete LLM inference engine.
+Q002363	H	Implement continuous batching for LLM inference.
+Q002364	M	Implement beam search for LLM decoding.
+Q002365	M	Implement knowledge distillation.
+Q002366	H	Implement a Vision Transformer with MAE pretraining.
+Q002367	H	Implement a Swin Transformer block (shifted window attention).
+Q002368	H	Implement a Mixture of Experts layer.
+Q002369	M	Implement Adam from scratch.
+Q002370	M	Implement AdamW from scratch.
+Q002371	H	Implement gradient checkpointing.
+Q002372	H	Implement Muon from scratch.
+Q002373	H	Write a fused softmax kernel in Triton.
+Q002374	M	Implement KNN in PyTorch.
+Q002375	H	Implement FlashAttention-2 in Triton.
+Q002378	M	Create embeddings out of an LLM.
+Q002386	M	Implement attention from scratch.
+Q002387	M	Implement grouped-query attention (GQA).
+Q002396	E	Implement RMS Norm.
+Q002397	M	Implement RoPE (rotary positional embeddings) from scratch.
+Q002403	E	Implement a sinusoidal positional embedding class inheriting from nn.Module.
+Q002411	E	Implement Huber loss as a torch.nn.Module.
+Q002413	E	Implement a linear regression model class in PyTorch.
+Q002415	M	Implement a convolutional autoencoder in PyTorch.
+Q002420	E	Implement a simple feedforward neural network using fully connected layers.
+Q002421	E	Implement a CNN model in PyTorch.
+Q002424	E	Implement an RNN model in PyTorch.
+Q002427	M	Implement the generator and discriminator of a GAN in PyTorch.
+Q002426	E	Implement a custom Learned-SiLU activation function.
+Q002435	M	Implement an attention mechanism that computes attention weights between the encoder outputs and the current decoder hidden state in a seq2seq model.
+Q002439	M	Implement the multi-head self-attention mechanism.
+Q002440	E	Implement the feed-forward layer used within Transformer blocks.
+Q002441	H	Implement a 3D CNN (MedCNN) with Conv3D and ConvTranspose3d for downsampling and upsampling.
+Q002442	M	Implement Dice loss for segmentation.
+Q002443	M	Implement the AlexNet architecture.
+Q002446	M	Implement a custom Conv2d class that mimics the behavior of nn.Conv2d.
+Q002447	M	Implement a custom MaxPool2d class that mimics the behavior of nn.MaxPool2d.
+Q002448	M	Implement an LSTM model using a custom LSTM layer.
+Q002450	E	Implement an LSTM model using the built-in LSTM layer.
+Q002458	H	Implement GRPO (Group Relative Policy Optimization).
+Q002489	H	Implement FlashAttention-2 in pure PyTorch (the tiled algorithm with online softmax).
+Q002500	M	Implement the online softmax algorithm in pure PyTorch.
+Q004455	E	Write a function that splits a sequence into batches while optionally retaining the final incomplete batch.
+Q004456	E	Implement a reproducible train/validation split without scikit-learn.
+Q004457	M	Write a Python generator that lazily reads and transforms records from a large dataset.
+Q004465	M	Compute the masked mean of a [B, T, D] tensor using a [B, T] mask.
+Q004466	E	Compute pairwise cosine similarity for tensors of shape [N, D] and [M, D].
+Q004467	E	Implement one-hot encoding without F.one_hot.
+Q004468	E	Create label-smoothed targets.
+Q004469	M	Compute a batched confusion matrix without per-example loops.
+Q004475	M	Implement fit, transform, and inverse_transform for standardization.
+Q004476	M	Implement a custom PyTorch Dataset for numerical and categorical features.
+Q004477	M	Write a collate_fn for variable-length sequences.
+Q004480	E	Implement binary accuracy from logits.
+Q004481	E	Implement multiclass top-k accuracy.
+Q004482	M	Design a streaming metric that accumulates results across batches.
+Q004485	E	Implement early stopping.
+Q004520	M	Implement a DataLoader for a CSV dataset.
+Q004521	M	Create a feedforward neural network for MNIST.
+Q004522	M	Implement a CNN for image classification.
+Q005139	M	Implement a basic RAG pipeline using an embedding model and a vector database.
+Q005140	M	Build a simple AI agent with tool use (e.g., calculator, web search).
+Q005141	M	Implement semantic search using embeddings and cosine similarity.
+Q005142	M	Write code for different text chunking strategies (fixed-size, recursive, semantic).
+Q005143	E	Implement a prompt template system with variable substitution.
+Q005144	M	Build an evaluation pipeline for LLM outputs using LLM-as-a-judge.
+Q005145	M	Implement streaming responses for an LLM API.
+Q005146	M	Build a simple vector similarity search from scratch.
+Q005147	M	Implement a conversation memory system for a chatbot (sliding window, summary, buffer).
+Q005148	H	Write code to detect and handle hallucinations in LLM outputs.
+Q005149	E	Implement a retry mechanism with exponential backoff for LLM API calls.
+Q005150	M	Write a function calling (tool use) handler for an LLM API.
+Q005151	M	Implement a simple re-ranker for search results.
+Q005152	M	Build a basic document parser that extracts text from PDFs and splits it into chunks.
+Q005153	E	Implement cosine similarity, dot product, and Euclidean distance functions from scratch.
+Q005154	M	Write code to implement token counting and context window management.
+Q005155	M	Build a simple prompt versioning system.
+Q005156	M	Implement a caching layer for LLM responses.
+Q005157	M	Implement semantic caching for LLM queries (cache responses for semantically similar queries).
+Q005158	M	Write code to detect prompt injection attempts in user inputs.
+Q005159	M	Implement an LLM output guardrails system that checks for off-topic responses and PII leakage.
+Q005160	H	Build a multi-agent system where agents have different roles and collaborate on a task.
+Q005161	M	Implement scaled dot-product attention with a causal mask from scratch (NumPy or PyTorch).
+Q005162	H	Implement multi-head attention, then convert it to grouped-query attention.
+Q005163	H	Implement a KV cache and single-step decode for causal multi-head attention.
+Q005164	H	Implement BPE (Byte Pair Encoding) training and encoding from scratch.
+Q005165	M	Implement top-k, top-p, and temperature sampling over a logits vector.
+Q005168	H	Write an async batch processor that runs an LLM call over 50,000 documents with a concurrency limit, retries with jitter, and error isolation.
+Q005169	H	Write a streaming SSE parser for LLM token streams that handles arbitrary chunk boundaries.
+Q005170	M	Implement a minimal agent loop with tool dispatch, error handling, and a step budget.
+Q005433	E	Write a Python function to compute the mean squared error (MSE).
+Q005434	E	Write a Python function to compute the mean absolute error (MAE).
+Q005435	E	Implement a simple linear regression model from scratch.
+Q005436	E	Implement a simple logistic regression model from scratch.
+Q005437	E	Implement K-Nearest Neighbors (KNN).
+Q005438	E	Implement the Sigmoid, Tanh, ReLU, LeakyReLU, and Softmax activation functions.
+Q005439	M	How would you implement k-means clustering?
+Q005440	M	Write code to perform k-fold cross-validation.
+Q005443	E	Write code to calculate precision and recall.
+Q005485	M	Implement non-maximum suppression as efficiently as you can.
+Q006866	M	Implement a ReAct agent that calls two tools and recovers from a tool error.
+Q007016b	M	Implement semantic caching for LLM responses.
+Q011885	M	Implement scaled dot-product attention with a causal mask, from scratch, in NumPy or PyTorch.
+Q011886	M	Implement a KV cache and single-step decode.
+Q011887	H	Implement BPE training and encoding from scratch.
+Q011892	M	Implement a text chunker with overlap that never splits a semantic unit.
+Q011893	M	Implement cosine similarity search over embeddings, then explain why you would not ship it.
+Q011948	E	Write a function to compute root-mean-square error given y_pred and y_true lists.
+Q011982	H	Implement top-k MoE routing with a shared expert in PyTorch, and point out the efficiency and correctness traps.
+Q012034	H	Implement the block manager for a paged KV cache: allocate, append, free, and copy-on-write prefix sharing.
+Q012044	M	Implement non-maximum suppression. Then vectorise it.
+Q009205	M	Implement scaled dot-product attention with a causal mask in NumPy.
+Q009206	H	Modify scaled dot-product attention for grouped-query attention. How does the causal mask interact with a KV cache at inference?
+Q009357	M	Write a parser that consumes a streamed LLM response (server-sent events) arriving in arbitrary network chunks and yields complete JSON events.
+Q009358	H	Make a streamed LLM response parser async and add a per-event timeout so a stalled stream fails fast. How do you test the chunk-boundary edge cases deterministically?
+Q009482	H	Implement top-k MoE routing with a shared expert in PyTorch, and point out where the efficiency and correctness traps are.
+Q009483a	H	How do you rewrite the per-expert inner loop of a top-k MoE routing implementation as a grouped matmul?
+Q009615	M	Implement multi-head self-attention from scratch, without nn.MultiheadAttention, and make it causal.
+Q009618a	M	Implement nucleus (top-p) sampling.
+Q009819	H	Implement causal multi-head attention in PyTorch, then convert it to grouped-query attention.
+Q009820	H	Add a KV cache to causal multi-head attention and write the single-token decode path. Where does RoPE get applied, and why to q and k only?
+Q009875	H	Implement single-step decode with a KV cache in PyTorch for causal multi-head attention. Then say what changes for a long-context serving system.
+Q010018	M	Implement beam search for an autoregressive model. When would an answer engine actually use it?
+Q010042	H	Implement grouped-query attention in PyTorch and explain where the KV-cache savings come from.
+Q010077	M	Write code to measure a tokenizer's fertility across languages, and explain what you would do with the result.
+Q010274a	H	Implement a top-k MoE router in PyTorch.
+D03820	E	Implement a numerically stable softmax and cross-entropy loss in NumPy.
+D03821	M	Implement linear regression with gradient descent using vectorized NumPy.
+D03822	M	Implement logistic regression with gradient descent and handle numerical stability.
+D03823	M	Implement k-nearest neighbors classification with vectorized distance computation.
+D03824	M	Implement k-means clustering from scratch and discuss its convergence.
+D03825	M	Implement the best split search of a decision tree using Gini impurity.
+D03826	M	Implement principal component analysis using the SVD.
+D03827	M	Implement a 2D convolution layer from scratch and reason about output shapes.
+D03828	M	Implement binary classification metrics and ROC AUC from predicted scores.
+D03829	M	Implement reservoir sampling for a stream of unknown length.
+D03830	M	Implement a linear SVM trained with hinge loss.
+D03831	E	Implement the perceptron learning rule.
+D03832	H	Implement a feedforward neural network with backpropagation using only NumPy.
+D03833	M	Implement macro and micro averaged multiclass metrics from a confusion matrix.
+D03834	M	Implement a multinomial Naive Bayes text classifier with smoothing.
+D03835	M	Implement matrix factorization for recommendations trained with SGD.
+D03836	H	Implement one gradient boosting step that fits a regression tree to residuals.
+D03837	E	Implement a train, validation and test split that avoids leakage and supports stratification.
+D03838	E	Implement feature standardization using only training statistics.
+D03839	M	Implement missing value imputation and handling of unseen categories.
+D03840	M	Implement uniform, weighted and stratified sampling with reproducible seeds.
+D03841	M	Implement sample-weighted losses and streaming metrics that aggregate across distributed workers.
+D03842	M	Implement TF-IDF from scratch.
+D03843	M	Implement scaled dot-product attention with masking.
+D03844	E	Implement the learning and application steps of byte-pair encoding.
+D03845	E	Build a causal attention mask for autoregressive decoding.
+D03846	E	Implement sinusoidal positional encoding.
+D03847	M	Implement temperature, top-k and top-p sampling.
+D03848	M	Implement an append-only KV cache for autoregressive attention.
+D03849	M	Implement padding and attention masks for a batch of variable-length token sequences.
+D03850	M	Implement a LoRA update for a linear layer.
+D03851	M	Implement a symmetric contrastive loss for paired embeddings.
+D03852	M	Implement exact cosine top-k retrieval for a RAG system.
+D03853	H	Implement the direct preference optimization loss.
+D03854	E	Implement the classifier-free guidance combination of conditional and unconditional predictions.
+D03855	E	Implement validation of JSON tool arguments against a schema.
+D03856	M	Implement a permission-aware tool registry for an LLM agent.
+D03857	M	Implement a planner and executor for an agent with a clean boundary and tracing.
+D03858	M	Implement retry logic with idempotency keys for tool calls with side effects.
+D03859	M	Implement sliding-window conversation memory with a token budget.
+D03860	H	Implement a bounded agent tool-use loop with termination and safety checks.
+D03861	M	Write a PyTorch training and evaluation loop with gradient clipping and checkpointing.
+D03862	M	Implement a custom PyTorch Dataset and collate function for variable-length data.
+D03863	M	Implement precision, recall and F1 in PyTorch tensors without loops.
+D04880	M	Implement scaled dot-product attention with a causal mask in PyTorch, including batch and head dimensions.
+D04881	M	Implement multi-head attention from scratch, then modify it into grouped-query attention.
+D04882	M	Implement RMSNorm and compare numerically with LayerNorm.
+D04883	H	Implement rotary position embeddings and verify that the attention score depends only on relative position.
+D04884	M	Implement a KV cache for autoregressive decoding of a small Transformer and show it matches full recomputation.
+D04885	M	Implement top-k and top-p (nucleus) sampling with temperature over a logits tensor.
+D04886	M	Implement beam search decoding with length normalization for a causal language model.
+D04887	M	Implement a LoRA linear layer that wraps a frozen linear layer and supports merging.
+D04888	M	Implement the DPO loss given policy and reference log-probabilities for chosen and rejected responses.
+D04889	M	Implement the PPO clipped objective and a GAE advantage computation for a batch of trajectories.
+D04890	M	Implement REINFORCE with a baseline on a simple environment.
+D04891	M	Implement a byte-pair-encoding tokenizer trainer and encoder from scratch.
+D04892	M	Implement a SwiGLU feed-forward block.
+D04893	M	Implement word2vec skip-gram with negative sampling.
+D04894	H	Implement a top-k mixture-of-experts layer with an auxiliary load-balancing loss.
+D04895	M	Implement sinusoidal positional encodings and ALiBi biases.
+D04896	M	Implement a BM25 scorer and a simple retriever over a small corpus.
+D04897	M	Implement a simple RAG pipeline: chunking, embedding, cosine similarity search, prompt assembly.
+D04898	H	Implement an online-softmax attention computation that processes keys in blocks, as in FlashAttention.

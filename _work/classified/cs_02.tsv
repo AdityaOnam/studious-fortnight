@@ -1,0 +1,303 @@
+Q000306	DROP	-	dup
+Q000307	DROP	-	dup
+Q000308	DROP	-	dup
+Q000309	DROP	-	notq
+Q000310	DROP	-	notq
+Q000311	CS01	E	What is the role of the MMU (Memory Management Unit)?
+Q000312	CS01	M	Why does paging reduce external fragmentation?
+Q000313	CS01	E	Why is segmentation used in memory management?
+Q000314	CS01	M	In segmentation, what happens if the offset exceeds the segment limit?
+Q000315	CS01	E	What is a page fault?
+Q000316	CS01	E	Why does a page fault occur?
+Q000317	CS01	M	How does a page fault get handled, step by step?
+Q000318	CS01	M	Why are page faults expensive?
+Q000319	CS01	E	Why is it called a "page fault"?
+Q000320	CS01	E	What is page replacement?
+Q000321	CS01	E	Why is page replacement needed?
+Q000322	DROP	-	dup
+Q000323	DROP	-	notq
+Q000324	DROP	-	notq
+Q000325	CS01	M	In page replacement, why does the choice of victim page matter?
+Q000326	CS01	M	Why is the Optimal page replacement algorithm mostly theoretical?
+Q000327	CS01	M	Why does thrashing happen?
+Q000328	CS01	M	What happens to CPU utilization during thrashing?
+Q000329	CS01	M	Why does page replacement make thrashing worse?
+Q000330	DROP	-	dup
+Q000331	DROP	-	notq
+Q000332	CS01	H	Can thrashing happen even with an SSD?
+Q000333	CS01	E	What is the difference between stack and heap memory?
+Q000334	CS01	E	Why is it called a stack?
+Q000335	CS01	M	Why is stack memory usually faster than heap memory?
+Q000336	DROP	-	notq
+Q000337	DROP	-	dup
+Q000338	CS01	E	Why does recursion cause stack overflow?
+Q000339	CS01	M	Can heap memory outlive the function that allocated it?
+Q000340	CS01	M	Can a local variable be stored on the heap?
+Q000341	CS01	M	Is heap memory shared between threads?
+Q000342	CS01	E	What happens if heap memory is not released?
+Q000343	CS01	M	Why is internal fragmentation called "internal"?
+Q000344	CS01	M	Why is external fragmentation called "external"?
+Q000345	CS01	M	How can memory fragmentation be reduced?
+Q000001	DROP	-	dup
+Q000002	CS04	M	How do indexes improve query performance?
+Q000003	CS04	M	Why can indexes make writes slower?
+Q000004	DROP	-	dup
+Q000005	DROP	-	notq
+Q000372	CS01	E	What is an operating system? What are its main functions?
+Q000373	CS01	E	What is the difference between a program and a process?
+Q000374	CS01	M	What is a context switch? Why is it costly?
+Q000375	CS01	E	Explain the process state diagram.
+Q000376	CS01	M	What does fork() return? What are zombie and orphan processes?
+Q000377	CS01	M	What are the IPC (inter-process communication) mechanisms?
+Q000378	CS02	M	What is the critical section problem?
+Q000379	CS02	M	What is a spinlock? When is it preferable?
+Q000380	CS02	M	Explain the producer-consumer (bounded buffer) problem.
+Q000381	CS02	M	What is the dining philosophers problem? How do you fix the deadlock?
+Q000382	CS02	E	What is a deadlock? State the four necessary conditions.
+Q000383	CS02	M	What is the difference between deadlock prevention, avoidance and detection?
+Q000384	CS02	M	Explain the Banker's algorithm.
+Q000385	CS02	M	Compare FCFS, SJF and Round Robin scheduling. What is the convoy effect?
+Q000386	CS02	E	Define turnaround time, waiting time and response time.
+Q000387	CS02	E	What is starvation? How is it fixed?
+Q000388	CS01	E	What is the difference between internal and external fragmentation?
+Q000389	CS01	M	What is the TLB and why do we need it?
+Q000390	CS01	E	What is virtual memory and why do we need it?
+Q000391	CS01	M	Compare FIFO, LRU and Optimal page replacement. What is Belady's anomaly?
+Q000392	CS01	M	What is thrashing? How do you fix it?
+Q000393	CS01	M	What is a kernel? What is the difference between a monolithic kernel and a microkernel?
+Q000394	CS01	M	What is a system call? Give examples and explain the flow.
+Q000395	CS01	E	What are the common RAID levels?
+Q000396	CS01	M	Name the disk scheduling algorithms and explain why they exist.
+Q000397	DROP	-	notq
+Q000398	CS03	E	Explain the OSI model and what each layer does.
+Q000399	CS03	E	What is the difference between the OSI and TCP/IP models?
+Q000400	CS03	E	TCP vs UDP: when would you choose each?
+Q000401	CS03	M	Explain the TCP 3-way handshake. Why not a 2-way handshake?
+Q000402	CS03	M	What is TIME_WAIT in TCP connection termination?
+Q000403	CS03	M	What happens when you type a URL in the browser?
+Q000404	CS03	M	How does DNS resolution work step by step?
+Q000405	CS03	M	What is ARP? How does it work?
+Q000406	CS03	E	What is the difference between TCP and IP?
+Q000407	CS03	E	What is the difference between a MAC address and an IP address?
+Q000408	CS03	M	How many hosts can a 192.168.1.0/26 subnet have?
+Q000409	CS03	E	What is NAT and why do we need it?
+Q000410	CS03	E	What is the difference between circuit switching and packet switching?
+Q000411	CS03	M	What is the difference between flow control and congestion control?
+Q000412	CS03	M	Explain TCP slow start and congestion avoidance.
+Q000413	CS03	M	What is the difference between Go-Back-N and Selective Repeat?
+Q000414	CS03	M	Why is HTTP stateless and how do sessions work then?
+Q000415	CS08	M	Explain the TLS handshake.
+Q000416	CS08	M	What is the difference between a cookie, a session and a token (JWT)?
+Q000417	CS03	E	What is the difference between SMTP, POP3 and IMAP?
+Q000418	CS03	E	What is the difference between a hub, a switch and a router?
+Q000419	CS03	E	What is a socket? Name some well-known ports.
+Q000420	CS03	M	How do ping and traceroute work?
+Q000421	CS08	M	What is the difference between an IDS and an IPS? What are the types of firewalls?
+Q000422	CS03	M	What is a VPN and how is it different from a proxy?
+Q000423	DROP	-	notq
+Q000424	DROP	-	dup
+Q000425	DROP	-	dup
+Q000426	CS04	E	What is a DBMS? What are its advantages over a file system?
+Q000427	CS04	M	Explain the 3-level architecture of a DBMS and data independence.
+Q000428	CS04	E	Explain the different types of keys in a database. What is the difference between a primary key and a unique key?
+Q000429	CS04	E	What is the difference between DELETE, TRUNCATE and DROP?
+Q000430	CS04	E	What are DDL, DML, DCL and TCL?
+Q000431	CS04	E	Explain all the SQL join types.
+Q000432	CS04	E	What is normalization? Why do we need it?
+Q000433	CS04	M	Explain 1NF, 2NF, 3NF and BCNF with an example.
+Q000434	CS04	M	When would you denormalize?
+Q000435	CS04	M	What concurrency anomalies exist in databases? Define each.
+Q000436	CS04	M	Explain the four transaction isolation levels and what each prevents.
+Q000437	CS04	M	What is two-phase locking (2PL)?
+Q000438	CS04	M	What is a deadlock in a DBMS and how is it handled?
+Q000439	CS04	M	What is serializability? How do you test for it?
+Q000440	CS04	E	What is a view? What is a materialized view?
+Q000441	CS04	M	What is an index? When do indexes hurt?
+Q000442	CS04	H	Why do databases use B+ trees rather than binary trees or hash tables?
+Q000443	CS04	M	What is the leftmost prefix rule for composite indexes?
+Q000444	CS04	M	How does a database execute a query? What is query optimization?
+Q000445	CS04	M	What is the difference between a stored procedure and a function? What are triggers and cursors?
+Q000446	SD02	M	SQL vs NoSQL: how do you choose?
+Q000447	SD03	M	Explain the CAP theorem.
+Q000448	SD02	M	What is the difference between sharding, partitioning and replication?
+Q000449	CS04	M	Write a SQL query to find the Nth highest salary.
+Q000450	CS04	M	Write a SQL query to delete duplicate rows, keeping the row with the lowest id.
+Q000451	DROP	-	notq
+Q000452	DROP	-	notq
+Q000453	DROP	-	notq
+Q000454	DROP	-	notq
+Q000455	CS06	E	What is OOP? Why do we use it?
+Q000456	CS06	E	What is the difference between a class, an object and an instance?
+Q000457	CS06	E	Explain the four pillars of OOP with real-life examples.
+Q000458	CS06	E	What are the types of inheritance? Which languages allow multiple inheritance?
+Q000459	CS06	M	What is the diamond problem and how is it solved?
+Q000460	CS07	M	Can we override static methods in Java? What about the main method?
+Q000461	CS06	E	What are the types of constructors? What is a copy constructor?
+Q000462	CS07	M	What is the difference between a shallow copy and a deep copy?
+Q000463	CS06	M	Abstract class vs interface: when would you use each?
+Q000464	CS06	M	Can an abstract class have a constructor? Can it be instantiated?
+Q000465	CS06	M	What is the difference between static and instance members? What are the restrictions on static methods?
+Q000466	CS06	M	What is the difference between association, aggregation and composition?
+Q000467	CS06	M	Inheritance vs composition: which do you prefer and why?
+Q000468	CS06	M	Explain the SOLID principles with quick examples.
+Q000469	CS06	M	What is the Liskov Substitution Principle in practice?
+Q000470	CS06	E	What are coupling and cohesion? What should we aim for?
+Q000471	CS06	M	What is the Singleton pattern? How do you make it thread-safe?
+Q000472	CS06	M	What is the difference between the Factory and Abstract Factory patterns?
+Q000473	CS06	M	Explain the Observer and Strategy design patterns.
+Q000474	CS07	M	What is a virtual function in C++? Why does a base class need a virtual destructor?
+Q000475	CS07	E	What is the difference between pass by value and pass by reference?
+Q000476	CS07	M	How does exception handling work? What are the best practices?
+Q000477	CS07	H	What is a vtable? What is the cost of polymorphism?
+Q000478	SD07	H	How would you design a parking lot, an elevator system, or an LRU cache (low-level design)?
+Q000479	DROP	-	notq
+Q000480a	DROP	-	dup
+Q000480b	CS09	M	What are the stages of a CI/CD pipeline?
+Q000481	CS09	E	What is DevOps? Is it a role, a tool, or a culture?
+Q000482	CS09	E	Explain the DevOps lifecycle.
+Q000483	CS09	M	What is the difference between Continuous Integration, Continuous Delivery and Continuous Deployment?
+Q000484	SD04	M	Monolith vs microservices: what are the DevOps implications?
+Q000485	CS09	E	What is the difference between git merge and git rebase?
+Q000486	CS09	M	What belongs in a CI pipeline?
+Q000487	DROP	-	offtopic
+Q000488	CS09	M	Virtual machine vs container: how do they differ under the hood?
+Q000489	CS09	E	What is the difference between a Docker image and a container?
+Q000490	CS09	E	What is the difference between COPY and ADD in a Dockerfile?
+Q000491	CS09	M	What are multi-stage builds in Docker and why use them?
+Q000492	CS09	M	How do containers isolate processes?
+Q000493	CS09	E	What is Kubernetes and why did it win?
+Q000494	CS09	M	What is the difference between a pod and a container? What is the difference between a Deployment, a ReplicaSet and a pod?
+Q000495	CS09	M	Explain the Kubernetes Service types.
+Q000496	CS09	M	What is the difference between a ConfigMap and a Secret in Kubernetes? How are they used?
+Q000497	CS09	M	What happens when a Kubernetes pod crashes? What is self-healing?
+Q000498	CS09	M	What is Terraform state and why does it matter?
+Q000499	CS09	M	What is idempotency and why is it important in automation?
+Q000500	SD05	M	What is the difference between blue-green and canary deployment?
+Q000501	SD05	M	What is the difference between monitoring and observability? What are the three pillars of observability?
+Q000502	CS09	M	Explain the Prometheus and Grafana monitoring stack.
+Q000503	SD05	M	What is the difference between SLI, SLO and SLA? What is an error budget?
+Q000504	CS09	M	What are the DORA metrics?
+Q000505	DROP	-	notq
+Q000506	CS07	E	Array vs linked list: when does each win?
+Q000507	CS07	E	What are the time complexities of the common sorting algorithms?
+Q000508	CS07	E	What is a stable sort and why does it matter?
+Q000509	CS07	M	Quicksort vs mergesort: which would you choose and why?
+Q000510	CS07	E	What are the requirements for binary search, and why is it O(log n)?
+Q000511	CS07	M	How does a hash table work? How are collisions handled?
+Q000512	CS07	M	What is the difference between a hash map and a tree map?
+Q000513	CS07	E	Stack vs queue: what are real use cases for each?
+Q000514	DROP	-	dsa
+Q000515	DROP	-	dsa
+Q000516	CS07	E	BFS vs DFS: when would you use which?
+Q000517	CS07	M	What is topological sorting and where is it used?
+Q000518	CS07	M	What is the difference between Dijkstra, BFS and Bellman-Ford?
+Q000519	CS07	M	Kruskal vs Prim for minimum spanning trees: how do they differ?
+Q000520	CS07	M	What is Union-Find (DSU) and why is it so fast?
+Q000521	CS07	E	Recursion vs iteration: what are the trade-offs?
+Q000522	CS07	M	What is backtracking?
+Q000523	CS07	M	What is the difference between dynamic programming, greedy algorithms and divide and conquer?
+Q000524	DROP	-	dsa
+Q000525	CS07	M	What is a heap? Heap vs BST for priority queues?
+Q000526	CS07	H	Why is building a heap O(n) when n inserts would take O(n log n)?
+Q000527	CS07	M	What is a trie? When do you use one?
+Q000528	CS07	M	What is a sliding window and when does it apply?
+Q000529	DROP	-	hr
+Q000530	CS07	M	What is the difference between pseudo-polynomial and polynomial complexity?
+Q000531	CS07	M	What is the difference between time complexity and the actual runtime you would measure?
+Q000532	DROP	-	notq
+Q000533	DROP	-	notq
+Q000534	DROP	-	notq
+Q000535	DROP	-	offtopic
+Q000536	DROP	-	offtopic
+Q000537	DROP	-	offtopic
+Q000538	DROP	-	offtopic
+Q000539	DROP	-	offtopic
+Q000540	DROP	-	offtopic
+Q000541	CS06	E	What is the difference between functional and non-functional requirements?
+Q000542	DROP	-	offtopic
+Q000543	DROP	-	dup
+Q000544	CS06	M	Explain black-box testing techniques.
+Q000545	CS06	M	What is white-box testing and code coverage?
+Q000546	CS06	E	What is the difference between smoke testing and sanity testing?
+Q000547	CS06	E	What is the difference between retesting and regression testing?
+Q000548	CS06	E	What is the difference between alpha and beta testing?
+Q000549	CS06	E	Explain the levels of software testing.
+Q000550	CS06	E	Explain the defect (bug) life cycle.
+Q000551	DROP	-	offtopic
+Q000552	CS06	E	What is technical debt?
+Q000553	DROP	-	offtopic
+Q000554	DROP	-	offtopic
+Q000555	DROP	-	offtopic
+Q000556	DROP	-	offtopic
+Q000557	DROP	-	notq
+Q000558	DROP	-	notq
+Q000559	DROP	-	notq
+Q000560	DROP	-	notq
+Q000561	CS09	E	What is cloud computing? What makes it different from a traditional data center?
+Q000562	CS09	E	What are the five NIST characteristics of cloud computing?
+Q000563	CS09	E	What is the difference between public, private and hybrid cloud?
+Q000564	CS09	E	What is virtualization? What are the types of hypervisors?
+Q000565	DROP	-	dup
+Q000566	SD05	M	What is the difference between a Region and an Availability Zone, and why does the distinction matter?
+Q000567	SD01	E	What is the difference between vertical and horizontal scaling?
+Q000568	SD01	M	What is autoscaling and how does it decide when to scale?
+Q000569	SD02	M	What is the difference between object, block and file storage?
+Q000570	CS09	M	What are S3 storage classes and why do they exist?
+Q000571	SD05	M	What is the difference between a security group and a NACL?
+Q000572	CS08	M	IAM user vs role: which should services use?
+Q000573	SD05	M	Explain the cloud shared responsibility model.
+Q000574	CS09	M	What is a VPC? Walk through its main components.
+Q000575	CS09	M	What is serverless computing? What are its pros and cons?
+Q000576	CS09	M	What are cold starts in serverless and how do you mitigate them?
+Q000577	SD01	M	What are the types of load balancers? What is the difference between L4 and L7?
+Q000578	SD01	E	What is a CDN and why use it?
+Q000579	CS09	E	What is the difference between reserved, spot and on-demand instances?
+Q000580	CS09	M	What is vendor lock-in and how do you reduce it?
+Q000581	SD01	M	Why do cloud architectures prefer stateless applications?
+Q000582	CS09	H	How would you migrate an on-premises application to the cloud? What are the 6 Rs of migration?
+Q000583	CS09	M	How do you keep cloud costs under control?
+Q000584	DROP	-	notq
+Q000585	DROP	-	dup
+Q000586	DROP	-	dup
+Q000587	CS08	E	Explain the CIA triad.
+Q000588	CS08	E	What is the difference between encryption, hashing and encoding?
+Q000589	CS08	E	Symmetric vs asymmetric encryption: when is each used?
+Q000590	CS08	M	How does HTTPS work? Walk through the TLS handshake.
+Q000591	CS08	M	What is a digital signature? How is it different from encryption?
+Q000592	CS08	M	What is a digital certificate and why do we trust it?
+Q000593	CS08	M	Why are MD5 and SHA-1 considered broken? What should be used instead?
+Q000594	CS08	M	What is salting in password hashing? Why do it?
+Q000595	CS08	M	What is XSS? What are its types and how is it prevented?
+Q000596	CS08	E	What is SQL injection and how do you prevent it?
+Q000597	CS08	M	What is the difference between XSS and CSRF?
+Q000598	CS08	M	What is CORS? Is it a security feature?
+Q000599	CS08	M	Which security headers would you set and why?
+Q000600	CS08	E	What is the OWASP Top 10? Name several entries.
+Q000601	CS08	M	What is a DDoS attack and how is it mitigated?
+Q000602	CS08	M	What is a man-in-the-middle (MITM) attack and what stops it?
+Q000603	DROP	-	dup
+Q000604	CS08	M	How should passwords be stored? What should password rules look like?
+Q000605	CS08	M	What is MFA? Why can SMS-based MFA be weak?
+Q000606	CS08	E	What is the difference between a virus, worm, trojan and ransomware?
+Q000607	CS08	E	What is the difference between phishing and spear phishing? How do organizations fight it?
+Q000608	CS08	M	What are the phases of penetration testing? What is the difference between red team, pentest and bug bounty?
+Q000609	CS08	E	What are CVE and CVSS?
+Q000610	CS08	M	What is the 3-2-1 backup rule and why does it matter for ransomware?
+Q000611	DROP	-	notq
+Q000612	DROP	-	notq
+Q000346	DROP	-	notq
+Q000347	DROP	-	notq
+Q000348	DROP	-	notq
+Q000349a	CS01	E	What is the difference between a process, a thread and a program?
+Q000349b	DROP	-	dup
+Q000350	DROP	-	dup
+Q000351	CS02	M	What is the difference between a mutex, a semaphore and a spinlock?
+Q000352a	CS01	M	What is the difference between paging and segmentation?
+Q000352b	DROP	-	dup
+Q000353	DROP	-	dup
+Q000354	DROP	-	unfixable
+Q000355	DROP	-	dup
+Q000356	DROP	-	dup
+Q000357	DROP	-	dup
+Q000358	DROP	-	dup
+Q000359	DROP	-	dup

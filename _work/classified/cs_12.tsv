@@ -1,0 +1,219 @@
+Q012228	SD07	H	Implement a wide column store like Cassandra, with support for secondary indexes.
+Q012229	SD07	M	Design an online music recommendation system that suggests songs according to user taste.
+Q012230	SD07	M	Design a system that recommends a set of songs from a music library to a user based on their preferences (matching genre, singer, tempo), taking into account their current playlist.
+Q012231	DROP	-	notq
+Q012232	SD07	M	Design a test-taking website where users can register and log in, take tests, and see their past test scores and rankings.
+Q012233	DROP	-	notq
+Q012234	SD07	M	Design a service that shows a heatmap of food delivery agents (as in Swiggy or Zomato) at a given time.
+Q012235	SD07	M	Design a service that returns the recently viewed listings of a user on a website (for example, a user who looked at hotels in Bangalore).
+Q012236	SD07	M	Design a Jackpot Machine.
+Q012237	SD07	M	Design a Bar Graph Library.
+Q012238	SD07	M	Design a notification service that takes a list of users and a message and notifies them, where users can be of different types such as delivery agents, employees, and end users of the app.
+Q012239	SD07	H	Design a backend system for a new enterprise application, FlipFit, being launched by Flipkart.
+Q012240	SD07	H	Design a scheduler that accepts 10 scheduling requests at a time and can execute 100 jobs at a time, where the jobs are HTTP requests.
+Q012241	SD07	M	Design a system that keeps track of leaders of a contest, such as a referral leaderboard.
+Q012242	SD07	H	Design a key-value store and an index.
+Q012243	SD07	M	Design an analytics system with a dashboard that displays all machines and whether they have good or bad (valid or invalid) certificates.
+Q012244	SD07	M	Design a service that calls any given endpoint at a fixed interval.
+Q012245	SD07	M	Design a system where a user can create alerts on stock options.
+Q012246	SD07	M	Design a UUID generator.
+Q012247	SD06	H	Design a system that is incrementally scalable to 1000 unique ID requests per second from each of 1000 devices per person, for every human on earth, for 100 years.
+Q012248	SD06	M	Design a scalable weather service that pulls data from an API.
+Q012249	SD07	M	Design a cache module that is generic, reusable, and easy to integrate across various modules within an organization.
+Q012250	SD07	M	Design a library management system.
+Q012251	SD07	M	Design an API rate limiter.
+Q012253	DROP	-	notq
+Q012254	DROP	-	notq
+Q012262	DROP	-	notq
+Q012264	DROP	-	notq
+Q012263	DROP	-	notq
+Q012255	DROP	-	notq
+Q012256	DROP	-	notq
+Q012257	SD01	M	How do you scale a web service?
+Q012258	DROP	-	hr
+Q012259	SD01	M	How do you do capacity planning?
+Q012260	DROP	-	hr
+Q012261	DROP	-	hr
+Q012265	SD01	M	Which caching pattern would you use for a key-value store: read-through, write-through, write-around, write-back, or cache-aside?
+Q012266	SD01	M	Where should a cache be placed: on the client side, in a distinct layer, or on the server side?
+Q012267	SD01	M	When should data in a cache be expired or replaced (for example LRU, LFU, ARC)?
+Q012268	DROP	-	notq
+Q012269	DROP	-	unfixable
+Q012270	DROP	-	notq
+Q012271	DROP	-	notq
+Q012272	DROP	-	notq
+Q012273	DROP	-	dup
+Q012274	DROP	-	dup
+Q012275	DROP	-	unfixable
+Q012276	DROP	-	dup
+Q012277	DROP	-	notq
+Q012278	DROP	-	notq
+Q012279	MS02	M	Why has Apache Flink gained popularity compared with earlier batch and stream processing systems?
+Q012280	DROP	-	notq
+Q012281	MS03	M	How do you evaluate user satisfaction in a content recommendation system?
+Q012282	DROP	-	notq
+Q012283	DROP	-	notq
+Q012284	DROP	-	notq
+Q012285	DROP	-	unfixable
+Q012286	MS03	E	What is content analysis in a news recommendation system?
+Q012287	DROP	-	unfixable
+Q012288	MS03	M	What features are extracted from an article in a content recommendation system?
+Q012289	DROP	-	notq
+Q012290	MS03	M	Why are semantic tags needed in a content recommendation system?
+Q012291	DROP	-	notq
+Q012292	SD04	E	Why do we need software architecture?
+Q012293	SD06	H	How do you implement the price-time FIFO matching algorithm in an order matching system?
+Q012294	SD06	H	In an order matching system, how do you transmit order book data to the client side in real time?
+Q012295	SD06	H	In an order matching system, how do you support different kinds of orders?
+Q012296	DROP	-	notq
+Q012297	DROP	-	offtopic
+Q012298	DROP	-	unfixable
+Q012299	DROP	-	notq
+Q012300	DROP	-	notq
+Q012301	DROP	-	notq
+Q012302	SD06	H	In a payment system, how do you synchronize the transaction table with external banks and vendors?
+Q012303	SD03	M	Why is deduplication a concern when delivering events to external endpoints?
+Q012304	SD03	M	What if the external system's endpoint is not idempotent?
+Q012305	DROP	-	unfixable
+Q012306	SD01	M	Given a list of Memcached servers, how does the client determine which server to query?
+Q012307	DROP	-	unfixable
+Q012308	SD06	M	In a hotel reservation system, how do you find available rooms?
+Q012309	DROP	-	unfixable
+Q012310	DROP	-	notq
+Q012311	SD04	M	In a microservices architecture, how do services find each other?
+Q012312	DROP	-	notq
+Q012313	DROP	-	notq
+Q012314	DROP	-	unfixable
+Q012315	DROP	-	hr
+Q012316	DROP	-	hr
+Q012317	DROP	-	hr
+Q012318	DROP	-	hr
+Q012319	DROP	-	notq
+Q012320	SD02	E	Why are data partitioning and routing needed?
+Q012321	SD02	M	How do you do data partitioning and routing?
+Q012322	SD02	M	Why are replication and consistency needed?
+Q012323	DROP	-	notq
+Q012324	DROP	-	notq
+Q012325	DROP	-	notq
+Q012326	DROP	-	notq
+Q012327	DROP	-	notq
+Q012328	DROP	-	notq
+Q012329	DROP	-	notq
+Q012330	DROP	-	notq
+Q012331	SD05	M	How can APIs be unreliable and unpredictable?
+Q012332	DROP	-	notq
+Q012333	DROP	-	notq
+Q012334	DROP	-	notq
+Q012335	SD06	H	How would you store users' viewing data at scale (billions of events per day) for a video streaming service?
+Q012336	DROP	-	notq
+Q012337	DROP	-	notq
+Q012338	DROP	-	notq
+Q012339	DROP	-	notq
+Q012340	DROP	-	unfixable
+Q012341	DROP	-	unfixable
+Q012342	DROP	-	notq
+Q012343	SD03	E	Why use Apache Kafka?
+Q012344	SD03	M	Why is Kafka so fast?
+Q012345	DROP	-	notq
+Q012346	SD03	M	How does Kafka tolerate faults?
+Q012347	DROP	-	notq
+Q012348	SD03	M	Is Kafka an AP or CP system in the CAP theorem?
+Q012349	DROP	-	hr
+Q012350	DROP	-	hr
+Q012351	DROP	-	hr
+Q012352	DROP	-	hr
+Q012353	DROP	-	hr
+Q012354	DROP	-	hr
+Q012355	DROP	-	hr
+Q012356	DROP	-	dup
+Q012357	MS02	E	What is lambda architecture?
+Q012358	SD06	M	In a URL shortener, how do you purge expired URLs?
+Q012359	SD06	M	How will shortened URLs be generated in a URL shortener?
+Q012360	SD06	M	How do you store the URL mappings in a URL shortener?
+Q012361	SD06	M	How do you implement the redirect servers in a URL shortener?
+Q012362	SD06	M	How are click stats stored in a URL shortener?
+Q012363	SD06	H	How will the aggregation tier for click stats be partitioned in a URL shortener?
+Q012364	SD06	M	How do you prevent visiting restricted sites through a URL shortener?
+Q012365	DROP	-	unfixable
+Q012366	DROP	-	unfixable
+Q012367	DROP	-	dup
+Q012430	CS01	M	How do virtual machines work?
+Q012431	SD01	H	How would you scale an app to 10 million users on AWS?
+Q012432	DROP	-	offtopic
+Q012433	DROP	-	offtopic
+Q012434	DROP	-	offtopic
+Q012435	DROP	-	offtopic
+Q012436	DROP	-	offtopic
+Q012437	DROP	-	offtopic
+Q012438	DROP	-	offtopic
+Q012439	DROP	-	offtopic
+Q012440	DROP	-	offtopic
+Q012441	DROP	-	offtopic
+Q012442	DROP	-	offtopic
+Q012443	DROP	-	frontend
+Q012444	DROP	-	offtopic
+Q012445	DROP	-	offtopic
+Q012446	DROP	-	offtopic
+Q012447	DROP	-	offtopic
+Q012448	DROP	-	offtopic
+Q012449	DROP	-	dup
+Q012450	SD06	H	How does Google Docs work (design a real-time collaborative document editor)?
+Q012451	DROP	-	offtopic
+Q012452	DROP	-	offtopic
+Q012453	DROP	-	offtopic
+Q012454	DROP	-	offtopic
+Q012455	DROP	-	offtopic
+Q012456	DROP	-	offtopic
+Q012457	DROP	-	offtopic
+Q012458	DROP	-	offtopic
+Q012459	DROP	-	offtopic
+Q012460	SD06	H	How does Netflix work (design a video streaming service like Netflix)?
+Q012461	SD05	M	What is chaos engineering, and how is it used to build resilient systems?
+Q012462	DROP	-	offtopic
+Q012463	DROP	-	dup
+Q012464	SD01	H	How would you design a system to handle flash sales at very high request rates?
+Q012465	SD03	M	How can an API prevent double payments using idempotency?
+Q012466	DROP	-	offtopic
+Q012467	MS03	H	How would you compute ETA at scale for a ride-hailing service like Uber?
+Q012468	SD06	H	How would a ride-hailing service like Uber find nearby drivers at very high request rates?
+Q012469	SD06	H	How would you design a payment system for a ride-hailing service like Uber that handles tens of millions of transactions per day?
+Q012470	DROP	-	offtopic
+Q012471	DROP	-	offtopic
+Q012472	CS03	M	How do you troubleshoot if you can't access a particular website?
+Q012473	CS07	M	How does the Timsort algorithm work?
+Q012474	SD04	M	How does an API gateway work?
+Q012475	DROP	-	offtopic
+Q012476	CS08	M	How do databases store passwords securely?
+Q012477	SD05	E	What is high availability?
+Q012478	SD01	M	How do load balancing algorithms work?
+Q012479	DROP	-	offtopic
+Q012480	SD03	M	How do message queues work?
+Q012481	SD01	H	How can a single server support 1 million concurrent connections?
+Q012482	SD04	M	How does a remote procedure call (RPC) work?
+Q012483	SD04	M	How does the sidecar pattern work?
+Q012484	DROP	-	dup
+Q012485	SD06	H	How does a stock exchange handle concurrency at scale?
+Q012486	SD06	H	Design a stock exchange.
+Q012487	CS03	M	How do WebSockets work?
+Q012488	SD04	M	How do webhooks work?
+Q012489	DROP	-	frontend
+Q012490	SD06	H	Design WhatsApp.
+Q012491	GA03	M	How do you design your own AI agent?
+Q012492	GA03	M	How does the Agent-to-Agent (A2A) protocol work?
+Q012493	DROP	-	offtopic
+Q012494	MS04	H	Design a personal AI chat assistant.
+Q012495	FT05	M	How do you build a domain expert AI?
+Q012496	FT01	M	How does fine-tuning work?
+Q012497	MS01	E	What is AI infrastructure?
+Q012498	GA03	H	How do you build AI agents that resume instead of starting over when they fail?
+Q012499	MS04	H	Design a knowledge Q&A system.
+Q012500	MS01	M	How do ML systems work, from data to deployment?
+Q012501	GA03	M	How does an AI research agent work?
+Q012502	GA03	M	How does a real-time AI agent work?
+Q012503	GA04	H	How do you scale an AI app to 1 million users in production?
+Q012504	RAG03	H	How does a vector database search billions of vectors in milliseconds?
+Q012535	CS03	M	What is RIP (Routing Information Protocol), a distance-vector routing protocol, and what algorithm does it use?
+Q012536	CS03	E	What is the ARP protocol (Address Resolution Protocol)?
+Q012537	CS03	E	What is NAT (Network Address Translation)?
+Q012538	CS04	M	What is the difference between the MySQL storage engines InnoDB and MyISAM?
+Q012539	CS07	M	How are list and dict implemented in Python?

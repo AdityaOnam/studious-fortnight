@@ -1,0 +1,303 @@
+Q006227	SD04	M	How do you implement a streaming SSE endpoint in FastAPI, and how does it differ from WebSocket?
+Q006228	CS02	M	How does the Python GIL affect AI applications, and how can multiprocessing be used to work around it?
+Q006229	GA04	M	How do you test an LLM application using pytest and mocks?
+Q006230	CS07	M	How does Python memory management work, and how do you troubleshoot out-of-memory (OOM) problems in AI applications?
+Q006231	GA04	M	How do you use asyncio and httpx to make batched concurrent calls to an LLM API, and how do you handle errors, retries, timeouts, and concurrency control in production?
+Q006232	CS06	M	How can you use Protocols and dependency injection to make an LLM client testable and replaceable?
+Q006233	CS07	M	How do you locate memory growth and event-loop blocking in a Python AI service?
+Q006234	GA03	H	How do the four layers of an AI application architecture (agent, tool layer, data layer, and harness) work together, and how do you choose among the options?
+Q006235	MS04	H	How would you design a hybrid architecture with a Go backend and a Python AI service, and why should Go handle business logic while Python handles AI orchestration?
+Q006236	DROP	-	offtopic
+Q006237	RAG02	M	How does your RAG knowledge base perform document parsing and content extraction, and how do you handle different formats such as PDF, Word, and HTML?
+Q006238	FT05	M	When should you not use an LLM in a project, or downgrade from an agent to a workflow?
+Q006239	MS04	H	How would you build an MVP from 0 to 1 for a vertical-industry AI project (such as for a law firm), and which modules would you build first?
+Q006281	ML05	E	Why do you use feature selection?
+Q006282	ML07	E	Explain what regularization is and why it is useful.
+Q006283	ML07	E	What is the difference between L1 and L2 regularization?
+Q006284	ML06	M	How would you validate a predictive model of a quantitative outcome variable that you created using multiple regression?
+Q006285	ML06	M	Explain what precision and recall are. How do they relate to the ROC curve?
+Q006286	ML06	M	Is it better to have too many false positives, or too many false negatives?
+Q006287	ML05	M	How do you deal with unbalanced binary classification?
+Q006288	ML08	M	What is statistical power?
+Q006289	ML01	E	What are bias and variance, and what is their relation to modeling data?
+Q006290	DROP	-	dup
+Q006291	ML05	M	What are some ways to make your model more robust to outliers?
+Q006292	ML04	M	In unsupervised learning, if the ground truth about a dataset is unknown, how can we determine the most useful number of clusters?
+Q006293	ML08	E	Describe the differences between box plots and histograms and their use cases.
+Q006294	DROP	-	dup
+Q006295	ML05	E	How do you deal with outliers in your data?
+Q006296	ML05	M	How do you deal with sparse data?
+Q006297	SD04	E	Can you explain what REST is?
+Q006298	ML02	M	What is the effect on the coefficients of logistic regression if two predictors are highly correlated? What are the confidence intervals of the coefficients?
+Q006299	ML04	M	What is the difference between a Gaussian Mixture Model and K-Means?
+Q006300	ML03	M	Describe how Gradient Boosting works.
+Q006301	DL01	E	What is a neural network?
+Q006302	ML01	M	What is an inductive bias?
+Q006303	DROP	-	dup
+Q006304	DROP	-	notq
+Q006305	DROP	-	notq
+Q006306	DROP	-	notq
+Q006307	DROP	-	notq
+Q006308	DROP	-	notq
+Q006641	ML08	E	Let A and B be events on the same sample space, with P(A) = 0.6 and P(B) = 0.7. Can these two events be disjoint?
+Q006642	ML08	M	Given that Alice has 2 kids, at least one of which is a girl, what is the probability that both kids are girls?
+Q006643	ML08	M	A group of 60 students is randomly split into 3 classes of equal size. All partitions are equally likely. Jack and Jill are two students belonging to that group. What is the probability that Jack and Jill will end up in the same class?
+Q006644	DROP	-	dup
+Q006645	ML01	E	Compare discriminative and generative models.
+Q006537	DROP	-	notq
+Q006538	DROP	-	notq
+Q006539	DROP	-	notq
+Q006540	DROP	-	notq
+Q006541	DROP	-	notq
+Q006542	DROP	-	notq
+Q006543	DROP	-	notq
+Q006544	DROP	-	notq
+Q006545	DROP	-	notq
+Q006546	DROP	-	notq
+Q006547	DROP	-	notq
+Q006548	DROP	-	notq
+Q006549	DROP	-	notq
+Q006550	DROP	-	notq
+Q006551	DROP	-	notq
+Q006552	DROP	-	notq
+Q006553	DROP	-	notq
+Q006554	DROP	-	notq
+Q006555	DROP	-	notq
+Q006556	DROP	-	notq
+Q006557	DROP	-	notq
+Q006558	DROP	-	notq
+Q006559	DROP	-	notq
+Q006560	DROP	-	notq
+Q006561	MS03	H	Build a machine learning model to predict whether an ad will be clicked on a social network.
+Q006562	DROP	-	notq
+Q006563	DROP	-	notq
+Q006564	DROP	-	notq
+Q006565	DROP	-	hr
+Q006566	DROP	-	hr
+Q006567	DROP	-	hr
+Q006568	DROP	-	hr
+Q006569	DROP	-	hr
+Q006570	DROP	-	hr
+Q006571	DROP	-	hr
+Q006572	DROP	-	hr
+Q006573	DROP	-	hr
+Q006574	DROP	-	hr
+Q006575	DROP	-	hr
+Q006576	DROP	-	hr
+Q006577	DROP	-	hr
+Q006578	DROP	-	hr
+Q006579	DROP	-	hr
+Q006580	DROP	-	hr
+Q006581	DROP	-	hr
+Q006582	DROP	-	hr
+Q006583	DROP	-	notq
+Q006584	DROP	-	notq
+Q006585	DROP	-	dsa
+Q006586	DROP	-	notq
+Q006587	ML08	E	What is the exponential distribution?
+Q006588	ML08	E	What is the Bernoulli distribution?
+Q006589	ML08	E	What is the logistic distribution?
+Q006590	ML08	E	What is hypothesis testing?
+Q006591	ML08	E	What is the Central Limit Theorem and why is it important?
+Q006592	ML08	E	What is sampling? How many sampling methods do you know?
+Q006593	ML08	E	What is an example of a data set with a non-Gaussian distribution?
+Q006594	ML02	M	Explain collinearity: how is it possible to have a negative coefficient in a generalized linear model?
+Q006595	DROP	-	dup
+Q006596	ML02	M	What are the assumptions of logistic regression?
+Q006597	ML06	E	What are the different metrics for evaluating a classification model?
+Q006598	ML03	M	Explain bagging vs boosting.
+Q006599	ML03	E	Is random forest bagging or boosting?
+Q006600	DROP	-	dup
+Q006601	ML05	M	How do you inspect missing data, and when does it matter?
+Q006602	ML06	M	How do you compare two regression models?
+Q006603	DROP	-	dup
+Q006604	ML02	M	What is linear regression? What do the terms p-value, coefficient, and R-squared mean?
+Q006605	DROP	-	dup
+Q006606	ML07	M	What is regularization? How does it address bias and variance problems?
+Q006607	ML01	M	What is a learning curve?
+Q006608	ML07	M	What is the meaning of the contour visualization of the cost function in linear regression?
+Q006609	ML07	E	How does an optimization algorithm work to minimize the cost function?
+Q006610	ML03	E	Explain the decision tree algorithm.
+Q006611	ML04	M	Explain PCA. What is the physical intuition behind it?
+Q006612	DL01	E	Explain the MLP (multilayer perceptron).
+Q006613	ML06	E	What is cross-validation?
+Q006614	ML06	M	Explain how you select the best model.
+Q006615	ML06	M	Explain TPE hyperparameter optimization. Explain Bayesian optimization for hyperparameter tuning.
+Q006616	ML04	M	How does a Gaussian Mixture Model work (EM algorithm)?
+Q006617	ML04	M	When using a Gaussian mixture model, how do you know it is applicable?
+Q006618a	ML06	M	Describe some criteria for model selection.
+Q006618b	ML04	E	Why is dimension reduction important?
+Q006619a	DROP	-	dup
+Q006619b	ML02	M	What are the assumptions of linear regression models?
+Q006619c	ML05	M	If you have a large number of predictors, how do you handle them?
+Q006620	ML03	M	What is the bias-variance tradeoff? How does XGBoost handle the bias-variance tradeoff?
+Q006621	ML10	M	How do you find an anomaly in a distribution? How do you investigate whether a certain trend in a distribution is due to an anomaly?
+Q006622	DL01	E	Explain all the standard activation functions: tanh, ReLU, Leaky ReLU, sigmoid, softmax, and softplus.
+Q006623	DL01	M	How does a neural network with one layer and one input and output compare to logistic regression?
+Q006624	DL04	M	Explain the problem with RNNs. How does LSTM help solve it?
+Q006625	ML08	M	When you split a population for A/B testing, what are some reasons you could see a significant difference between the control and variant groups?
+Q006626	ML08	E	If you draw 2 cards from a shuffled 52-card deck, what is the probability that you will have a pair?
+Q006627	DROP	-	dup
+Q006628	MS03	H	How would you design an algorithm for fraud detection?
+Q006629	DROP	-	dup
+Q006630	DROP	-	unfixable
+Q006631	ML08	M	How would you design an A/B test for a website homepage?
+Q006632	MS03	H	How would you design a ranking system?
+Q006633	ML08	M	What product metrics do you construct? How do you tell if your experiment is successful?
+Q006634	ML08	M	What trends in the data indicate that a given market is healthy? What does price tell you?
+Q006635	CS04	M	How can you illustrate a tree-based system with a SQL query?
+Q006636	DROP	-	unfixable
+Q006637	DROP	-	dsa
+Q006638	DROP	-	unfixable
+Q006639	DROP	-	notq
+Q006640	DROP	-	notq
+Q006646	DROP	-	hr
+Q006647	ML08	M	How would you explain an A/B test to an engineer with no statistics background? How would you explain a linear regression?
+Q006648	ML08	E	How would you explain a confidence interval to an engineer with no statistics background? What does 95% confidence mean?
+Q006649	DROP	-	hr
+Q006650	ML06	M	What is R2? What are some other metrics that could be better than R2, and why?
+Q006651	ML01	E	What is the curse of dimensionality?
+Q006652	ML01	M	Is more data always better?
+Q006653	ML05	E	What are the advantages of plotting your data before performing analysis?
+Q006654	ML08	M	How can you make sure that you don't analyze something that ends up meaningless?
+Q006655	ML08	M	What is the role of trial and error in data analysis? What is the role of making a hypothesis before diving in?
+Q006656	ML05	M	How can you determine which features are the most important in your model?
+Q006657	ML05	M	How do you deal with some of your predictors being missing?
+Q006658	DROP	-	notq
+Q006659	ML02	M	You have several variables that are positively correlated with your response, and you think combining all of them could give a good prediction. However, in the multiple linear regression, one of the weights on the predictors is negative. What could be the issue?
+Q006660	ML05	M	Suppose you are given an unfeasible number of predictors in a predictive modeling task. What are some ways to make the prediction more feasible?
+Q006661	ML05	M	Suppose you have a feasible number of predictors, but you are fairly sure you do not need all of them. How would you perform feature selection on the dataset?
+Q006662	ML02	M	Your linear regression did not run and reports that there are an infinite number of best estimates for the regression coefficients. What could be wrong?
+Q006663	DROP	-	notq
+Q006664	ML02	M	You run your regression on different subsets of your data and find that in each subset, the beta value for a certain variable varies wildly. What could be the issue?
+Q006665	ML03	M	What is the main idea behind ensemble learning? If you had many different models that predicted the same response variable, what might you want to do to incorporate all of them? Would you expect this to perform better or worse than an individual model?
+Q006666	MS03	H	Given Wi-Fi data in your office, how would you determine which rooms and areas are underutilized and overutilized?
+Q006667	DROP	-	notq
+Q006668	MS03	H	How could you use GPS data from a car to determine the quality of a driver?
+Q006669	MS03	H	Given accelerometer, altitude, and fuel usage data from a car, how would you determine the optimum acceleration pattern to drive over hills?
+Q006670	MS03	H	Given position data of NBA players in a season's games, how would you evaluate a basketball player's defensive ability?
+Q006671	MS03	H	How would you quantify the influence of a Twitter user?
+Q006672	MS03	H	Given location data of golf balls in games, how would you construct a model that can advise golfers where to aim?
+Q006673	ML10	H	You have 100 mathletes and 100 math problems. Each mathlete gets to choose 10 problems to solve. Given data on who got which problem correct, how would you rank the problems in terms of difficulty?
+Q006674	ML08	H	You have 5000 people who rank 10 sushis in terms of saltiness. How would you aggregate this data to estimate the true saltiness rank of each sushi?
+Q006675	ML10	H	Given data on congressional bills and which congressional representatives co-sponsored them, how would you determine which other representatives are most similar to yours in voting behavior? How would you evaluate who is the most liberal? The most Republican? The most bipartisan?
+Q006676	MS03	H	How would you come up with an algorithm to detect plagiarism in online content?
+Q006677	ML04	M	You have data on all purchases of customers at a grocery store. Describe how you would program an algorithm that clusters the customers into groups. How would you determine the appropriate number of clusters?
+Q006678	MS03	H	Suppose you are building the music recommendation engine at Spotify to recommend music based on past listening history. How would you approach this problem?
+Q006679	DROP	-	notq
+Q006680	ML05	M	What could be some issues if the distribution of the test data is significantly different from the distribution of the training data?
+Q006681	DROP	-	notq
+Q006682	ML07	M	What differences would you expect between a model that minimizes squared error and a model that minimizes absolute error? In which cases would each error metric be appropriate?
+Q006683	ML06	M	What error metric would you use to evaluate how good a binary classifier is? What if the classes are imbalanced? What if there are more than 2 groups?
+Q006684	DROP	-	notq
+Q006685	DROP	-	notq
+Q006686	DROP	-	dup
+Q006687	ML05	M	Why might it be preferable to include fewer predictors over many?
+Q006688	ML10	H	Given training data on tweets and their retweets, how would you predict the number of retweets of a given tweet 7 days after posting, after observing only 2 days of data?
+Q006689	DROP	-	notq
+Q006690	DROP	-	notq
+Q006691	DROP	-	notq
+Q006692	MS03	H	How could you collect and analyze data to use social media to predict the weather?
+Q006693	MS03	H	How would you construct a feed that shows relevant content for a site that involves user interactions with items?
+Q006694	MS03	H	How would you design the "People You May Know" feature on LinkedIn or Facebook?
+Q006695	DROP	-	notq
+Q006696	DROP	-	notq
+Q006697	DROP	-	notq
+Q006698	MS03	H	How would you predict who someone may want to send a Snapchat or Gmail message to?
+Q006699	MS03	H	How would you suggest to a franchise where to open a new store?
+Q006700	DROP	-	notq
+Q006701	DROP	-	notq
+Q006702	MS03	H	In a search engine, given partial data on what the user has typed, how would you predict the user's eventual search query?
+Q006703	DROP	-	notq
+Q006704	MS03	H	Given a database of all previous alumni donations to your university, how would you predict which recent alumni are most likely to donate?
+Q006705	MS03	H	You are Uber and you want to design a heatmap to recommend to drivers where to wait for a passenger. How would you approach this?
+Q006706	MS03	H	How would you build a model to predict a March Madness bracket?
+Q006707	DROP	-	notq
+Q006708	ML05	M	You want to run a regression to predict the probability of a flight delay, but flights with delays of up to 12 hours are distorting your model. How can you address this?
+Q006709	ML08	H	Bobo the amoeba has a 25%, 25%, and 50% chance of producing 0, 1, or 2 offspring, respectively. Each of Bobo's descendants has the same probabilities. What is the probability that Bobo's lineage dies out?
+Q006710	ML08	E	In any 15-minute interval, there is a 20% probability that you will see at least one shooting star. What is the probability that you see at least one shooting star in the period of an hour?
+Q006711	ML08	M	How can you generate a random number between 1 and 7 with only a die?
+Q006712	ML08	M	How can you get a fair coin toss if someone hands you a coin that is weighted to come up heads more often than tails?
+Q006713	ML08	H	You have a 50-50 mixture of two normal distributions with the same standard deviation. How far apart do the means need to be for this distribution to be bimodal?
+Q006714	ML08	M	Given draws from a normal distribution with known parameters, how can you simulate draws from a uniform distribution?
+Q006715	DROP	-	dup
+Q006716	ML08	M	A group of couples decide to have children until they have their first girl, after which they stop having children. What is the expected gender ratio of the children born? What is the expected number of children each couple will have?
+Q006717	ML08	E	How many ways can you split 12 people into 3 teams of 4?
+Q006718	ML08	M	You call 2 UberX's and 3 Lyfts. If the time each takes to reach you is IID, what is the probability that all the Lyfts arrive first? What is the probability that all the UberX's arrive first?
+Q006719	ML08	E	A program prints the numbers from 1 to 300, but prints Fizz instead if the number is divisible by 3, Buzz if divisible by 5, and FizzBuzz if divisible by both 3 and 5. What is the total number of numbers that are Fizzed, Buzzed, or FizzBuzzed?
+Q006720	ML08	M	On a dating site, users can select 5 out of 24 adjectives to describe themselves. A match is declared between two users if they match on at least 4 adjectives. If Alice and Bob randomly pick adjectives, what is the probability that they form a match?
+Q006721	ML08	M	A lazy high school senior types up applications and envelopes for n different colleges, but puts the applications randomly into the envelopes. What is the expected number of applications that went to the right college?
+Q006722	ML08	M	If you have a very tall father, on average what would you expect the height of his son to be: taller, equal, or shorter? What if you had a very short father?
+Q006723	ML08	M	What is the expected number of coin flips until you get two heads in a row? What is the expected number of coin flips until you get two tails in a row?
+Q006724	ML08	M	Suppose we play a game where I keep flipping a coin until I get heads. If the first time I get heads is on the nth flip, then I pay you 2^(n-1) dollars. How much would you pay me to play this game?
+Q006725	ML08	M	You have two coins, one fair that comes up heads with probability 1/2, and one biased that comes up heads with probability 3/4. You randomly pick a coin and flip it twice, and get heads both times. What is the probability that you picked the fair coin?
+Q006726	ML08	M	You have a 0.1% chance of picking up a coin with both heads, and a 99.9% chance of picking up a fair coin. You flip your coin and it comes up heads 10 times. What is the chance that you picked up the fair coin, given what you observed?
+Q006727	ML08	M	What would be good metrics of success for an advertising-driven consumer product (BuzzFeed, YouTube, Google Search)? For a service-driven consumer product (Uber, Flickr, Venmo)?
+Q006728	ML08	M	What would be good metrics of success for a productivity tool (Evernote, Asana, Google Docs)? For a MOOC (edX, Coursera, Udacity)?
+Q006729	ML08	M	What would be good metrics of success for a product that offers in-app purchases (Zynga, Angry Birds, other gaming apps)?
+Q006730	ML08	M	A certain metric is going down or up more than you expect. How would you try to identify the cause of the change?
+Q006731	ML08	M	Growth in the total number of tweets sent has been slow this month. What data would you look at to determine the cause of the problem?
+Q006732	ML08	M	You are a restaurant approached by Groupon to run a deal. What data would you ask from them in order to determine whether or not to do the deal?
+Q006733	ML08	H	You are tasked with improving the efficiency of a subway system. Where would you start?
+Q006734	MS03	H	Say you are working on Facebook News Feed. What would be some important metrics? How would you make the news each person gets more relevant?
+Q006735	ML08	H	How would you measure the impact that sponsored stories on Facebook News Feed have on user engagement? How would you determine the optimum balance between sponsored stories and organic content in a user's News Feed?
+Q006736	MS03	H	You are on the data science team at Uber and are asked to start thinking about surge pricing. What would be the objectives of such a product and how would you start looking into this?
+Q006737	ML08	H	Say you are Netflix. How would you determine which original series you should invest in and create?
+Q006738	ML08	M	What kinds of services would find churn (a metric that tracks how many customers leave the service) helpful? How would you calculate churn?
+Q006739	ML08	H	Suppose you are scheduling content for a television content provider. How would you determine the best times to schedule content?
+Q006740	DROP	-	dsa
+Q006741	DROP	-	dsa
+Q006742	DROP	-	dsa
+Q006743	DROP	-	dsa
+Q006744	DROP	-	dsa
+Q006745	CS02	M	When can parallelism make your algorithms run faster?
+Q006746	CS02	M	When can parallelism make your algorithms run slower?
+Q006747	DROP	-	notq
+Q006748	CS04	E	What are the different types of joins? What are the differences between them?
+Q006749	CS04	M	Why might a join on a subquery be slow? How might you speed it up?
+Q006750	CS04	E	Describe the difference between primary keys and foreign keys in a SQL database.
+Q006751	CS04	M	Given a COURSES table with columns course_id and course_name, a FACULTY table with columns faculty_id and faculty_name, and a COURSE_FACULTY table with columns faculty_id and course_id, how would you return a list of faculty who teach a course, given the name of the course?
+Q006752	CS04	M	Given an IMPRESSIONS table with ad_id, click (an indicator that the ad was clicked), and date, write a SQL query that returns the click-through rate of each ad by month.
+Q006753	CS04	E	Write a SQL query that returns the name of each department and a count of the number of employees in each.
+Q006754	ML08	M	In an A/B test, how can you check whether assignment to the various buckets was truly random?
+Q006755	ML08	M	What might be the benefits of running an A/A test, where two buckets are exposed to the exact same product?
+Q006756	ML08	M	What would be the hazards of letting users sneak a peek at the other bucket in an A/B test?
+Q006757	ML08	M	What would be some issues if blogs decide to cover one of your experimental groups?
+Q006758	ML08	M	How would you conduct an A/B test on an opt-in feature?
+Q006759	ML08	M	How would you run an A/B test for many variants, say 20 or more?
+Q006760	ML08	M	How would you run an A/B test if the observations are extremely right-skewed?
+Q006761	ML08	M	You have two different experiments that both change the sign-up button on your website, and you want to test them at the same time. What should you keep in mind?
+Q006762	ML08	E	What is a p-value? What is the difference between type-1 and type-2 error?
+Q006763	ML08	M	You are Airbnb and you want to test the hypothesis that a greater number of photographs increases the chances that a buyer selects the listing. How would you test this hypothesis?
+Q006764	ML08	H	How would you design an experiment to determine the impact of latency on user engagement?
+Q006765	ML07	M	What is maximum likelihood estimation? Could there be any case where it does not exist?
+Q006766	ML07	M	What is the difference between MAP, MOM, and MLE estimators? In which cases would you want to use each?
+Q006767	DROP	-	dup
+Q006768	ML08	M	What is unbiasedness as a property of an estimator? Is this always a desirable property when performing inference? What about in data analysis or predictive modeling?
+Q006769	ML08	E	What is selection bias?
+Q006777	DROP	-	notq
+Q006770	DROP	-	notq
+Q006771	DROP	-	hr
+Q006772	DROP	-	hr
+Q006773	DROP	-	hr
+Q006774	DROP	-	notq
+Q006775	DROP	-	notq
+Q006778	MS04	H	Design an agentic workflow with a planner/executor and tools.
+Q006779	DROP	-	notq
+Q006780	MS04	H	Design an AI candidate sourcing system with 750M profiles, semantic search, and under 500 ms latency.
+Q006781	MS04	H	Design a coding agent (SWE-bench-style).
+Q006782	MS03	H	Design a content moderation system.
+Q006783	MS04	H	Design an LLM evaluation pipeline.
+Q006784	MS04	H	Design a hallucination-free banking chatbot.
+Q006785	MS04	H	Design LLM inference at scale.
+Q006786	MS04	H	Design a RAG system over 10M documents.
+Q006787	MS04	H	Design a semantic search engine.
+Q006788	MS04	H	Design a customer support bot (RAG plus actions).
+Q006789	DROP	-	notq
+Q006790	LLM07	M	When designing an LLM evaluation set, where does the eval signal come from: human annotation, user feedback (thumbs), implicit signals, or synthetic generation?
+Q006791	LLM07	M	What are the delay and noise of the evaluation signal in an LLM system (for example, a click is not satisfaction, and no complaint does not mean correct)?
+Q006792	LLM07	M	How do you build and maintain a golden evaluation set: how big should it be, who owns it, and how do you grow it?
+Q006793	LLM07	M	What failure classes should you evaluate for in an LLM application, such as wrong answer, missing citation, refusal, latency, and cost?
+Q006794	MS03	M	Is this even an LLM/ML problem, or would a rule or heuristic win?
+Q006795	RAG03	M	What embedding dimension, index, and rerank depth would you choose for a retrieval system?
+Q006796	MS01	M	Should model serving be synchronous (chat), asynchronous (queue), batch (nightly), or streaming?

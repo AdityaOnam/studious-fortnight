@@ -1,0 +1,137 @@
+Q000945	M	What is regularization, and how does it help with bias and variance?
+Q001021	E	What is the role of a loss function in classification algorithms?
+Q001096	E	What is a cost function in machine learning?
+Q001097	E	How does a cost function differ from a loss function?
+Q001098	E	Explain the purpose of a cost function in the context of model training.
+Q001099	M	What are the characteristics of a good cost function?
+Q001100	M	Differentiate between convex and non-convex cost functions.
+Q001101	M	Why is convexity important in cost functions?
+Q001102	M	What is the significance of the global minimum in a cost function?
+Q001103	M	How does the choice of cost function affect the generalization of a model?
+Q001104	E	Describe the Mean Squared Error (MSE) cost function and when to use it.
+Q001105	M	Explain the Cross-Entropy cost function and its applications.
+Q001106	M	What is the Hinge loss, and in which scenarios is it applied?
+Q001107	M	How is the Log Loss function used in logistic regression?
+Q001108	M	Discuss the role of the Huber loss and where it is preferable over MSE.
+Q001109	M	What is the 0-1 loss function, and why is it often impractical?
+Q001110	M	Explain the concept of regularization in cost functions.
+Q001154	M	How does regularization help in dealing with the Curse of Dimensionality?
+Q001213	M	What is Regularization and how does it help prevent overfitting?
+Q001412	E	What is a genetic algorithm (GA) and how is it inspired by biological evolution?
+Q001413	E	Can you explain the terms chromosome, gene, and allele in the context of genetic algorithms?
+Q001414	E	Describe the process of selection in genetic algorithms.
+Q001415	E	Explain crossover and mutation operations in genetic algorithms.
+Q001416	E	What is a fitness function in the context of a genetic algorithm?
+Q001417	M	How does a genetic algorithm differ from other optimization techniques?
+Q001418	E	What are the typical stopping conditions for a genetic algorithm?
+Q001419	M	How can genetic algorithms be applied to combinatorial optimization problems?
+Q001420	M	What is elitism in genetic algorithms and why might it be used?
+Q001421	M	How do penalty functions work in genetic algorithms?
+Q001422	M	Explain the concept of genetic drift in genetic algorithms.
+Q001423	M	What is a multi-objective genetic algorithm?
+Q001443	E	What is gradient descent?
+Q001444	E	What are the main variants of gradient descent algorithms?
+Q001445	E	Explain the importance of the learning rate in gradient descent.
+Q001446	E	How does gradient descent help in finding the local minimum of a function?
+Q001447	M	What challenges arise when using gradient descent on non-convex functions?
+Q001448	E	Explain the purpose of using gradient descent in machine learning models.
+Q001449	E	Describe the concept of the cost function and its role in gradient descent.
+Q001450	E	Explain what a derivative tells us about the cost function in the context of gradient descent.
+Q001451	E	What is batch gradient descent, and when would you use it?
+Q001452	M	Discuss the concept of stochastic gradient descent (SGD) and its advantages and disadvantages.
+Q001453	E	What is mini-batch gradient descent, and how does it differ from other variants?
+Q001454	M	Explain how momentum can help in accelerating gradient descent.
+Q001694	M	Describe maximum likelihood estimation as it applies to logistic regression.
+Q001698	M	Explain regularization in logistic regression. What are L1 and L2 penalties?
+Q001726	M	How does the Regularization design pattern help in preventing overfitting?
+Q001866	E	What is optimization in the context of machine learning?
+Q001867	M	Can you explain the difference between a loss function and an objective function?
+Q001868	E	What is the role of gradients in optimization?
+Q001869	M	Why is convexity important in optimization problems?
+Q001870	E	Distinguish between local minima and global minima.
+Q001871	E	What is a hyperparameter, and how does it relate to the optimization process?
+Q001872	E	Explain the concept of a learning rate.
+Q001874	E	What is Gradient Descent, and how does it work?
+Q001875	M	Explain Stochastic Gradient Descent (SGD) and its benefits over standard Gradient Descent.
+Q001876	M	Describe the Momentum method in optimization.
+Q001877	M	What is the role of second-order methods in optimization, and how do they differ from first-order methods?
+Q001878	M	How does the AdaGrad algorithm work, and what problem does it address?
+Q001879	M	Can you explain the concept of RMSprop?
+Q002183	E	What is the role of a loss function in supervised learning?
+Q002188	E	What is regularization, and how does it work?
+Q002191	M	How does Ridge Regression prevent overfitting?
+Q002192	M	Describe Lasso Regression and its unique property.
+Q003964	M	Compare and contrast L1-loss vs. L2-loss and L1-regularization vs. L2-regularization.
+Q003970	M	Derive the normal equation for linear regression.
+Q003977	E	What is regularization? Intuitively, what does regularization do during the optimization procedure?
+Q003978	E	What is weight decay? Why is it added?
+Q003982	M	What is the maximum likelihood estimate of a parameter vector theta? Where does the log come from?
+Q003983	H	Prove that for linear regression, MSE can be derived from maximum likelihood under proper assumptions.
+Q003986	E	What is cross-entropy loss?
+Q003987	M	What is the difference between an optimization problem and a Machine Learning problem?
+Q003988	M	How can a learning problem be converted into an optimization problem?
+Q003989	M	What is empirical risk minimization? Why the term empirical? Why do we rarely use it in the context of deep learning?
+Q003990	E	Name some typical loss functions used for regression and compare and contrast them (L2-loss, L1-loss, and Huber loss).
+Q004103	M	Compare and contrast maximum likelihood and maximum a posteriori estimation.
+Q004105	M	What do you mean by Bayesian regularization?
+Q004107	E	What is L1 regularization?
+Q004108	E	What is L2 regularization?
+Q004109	M	Compare L1 and L2 regularization.
+Q004110	M	Why does L1 regularization result in sparse models?
+Q004134	E	What is the difference between a loss function, cost function and objective function?
+Q004184	E	Why should you use gradient descent when you want to minimize a function?
+Q004185	E	What is line search?
+Q004186	E	What is hill climbing?
+Q004357	E	What is regularization? Why do we need it?
+Q004359	M	How do we select the right regularization parameters?
+Q004409	M	Can you explain the concept of regularization and its types (L1, L2, etc.)?
+Q004687	E	What is cross-entropy loss?
+Q005201	E	What are L1 and L2 loss functions?
+Q005202	M	What is regularization? Explain L1 (Lasso) and L2 (Ridge) regularization.
+Q005203	E	What are loss functions and cost functions? Explain the key difference between them.
+Q005210	H	Explain local loss, focal loss, and gradient blending in the context of multi-task learning.
+Q005229	M	Explain gradient descent and its variants.
+Q005243	E	What is stochastic gradient descent (SGD)?
+Q005245	E	What is a learning rate? How do you choose a good one?
+Q005427	M	What is the difference between MLE and MAP estimation?
+Q005428	E	What is Maximum Likelihood Estimation (MLE)?
+Q005455	E	What is regularization, why do we use it, and what are some examples of common methods?
+Q005466	E	What is a cost function?
+Q005468	E	What is the difference between batch gradient descent and stochastic gradient descent?
+Q006282	E	Explain what regularization is and why it is useful.
+Q006283	E	What is the difference between L1 and L2 regularization?
+Q006606	M	What is regularization? How does it address bias and variance problems?
+Q006608	M	What is the meaning of the contour visualization of the cost function in linear regression?
+Q006609	E	How does an optimization algorithm work to minimize the cost function?
+Q006682	M	What differences would you expect between a model that minimizes squared error and a model that minimizes absolute error? In which cases would each error metric be appropriate?
+Q006765	M	What is maximum likelihood estimation? Could there be any case where it does not exist?
+Q006766	M	What is the difference between MAP, MOM, and MLE estimators? In which cases would you want to use each?
+Q011927	M	If the accuracy of a classifier is 1, what is the lower/upper bound on the loss function for a single training example?
+Q012015	M	What is the closed-form solution of linear regression, and when do you use gradient descent instead?
+Q012016	M	What are the differences between L1 and L2 regularization in logistic regression?
+Q012017	H	Write the loss function for logistic regression and prove it has a global minimum.
+Q012554	M	How does L1/L2 regularization affect a neural network?
+Q012584	E	What are L1 and L2 regularization? What are the differences between the two?
+Q012588	E	Explain briefly batch gradient descent, stochastic gradient descent, and mini-batch gradient descent. What are the pros and cons of each?
+Q012593	M	What are the differences between a model that minimizes squared error and one that minimizes absolute error, and in which cases would each error metric be more appropriate?
+Q012607	M	What is the importance of batch size in machine learning, and explain some batch-dependent gradient descent algorithms.
+Q007229	M	Compare L1 and L2 regularization. Why does L1 produce sparse weights?
+Q007230	E	What is elastic net and when would you use it?
+Q007264	H	Why does an unscaled feature ruin L2 regularization but not L1's sparsity property in the same way?
+Q007315	M	Derive cross-entropy loss from first principles. Why is it the right loss for classification and language modeling?
+Q007316a	H	Show that softmax plus cross-entropy gives the gradient p − y.
+Q007316b	M	What does label smoothing change in the softmax cross-entropy gradient?
+Q007348	M	Why is MSE a bad loss for classification, even though it "works"? Connect it to the probabilistic view of loss functions.
+Q007349a	H	Derive the p − y gradient for logistic loss and show where the cancellation happens.
+Q007350	M	What loss corresponds to Laplace noise, and when would you prefer it?
+Q007355	M	Beyond L1/L2: explain early stopping, data augmentation, and label smoothing as regularizers. What is regularization, really?
+Q007356a	H	Why is early stopping approximately equivalent to L2 regularization for quadratic losses? Give the intuition.
+Q007365	M	What is maximum likelihood estimation? Show how it generates the standard loss functions, and where the Bayesian view (MAP) connects to regularization.
+Q007366a	M	Derive MSE from the Gaussian likelihood explicitly.
+Q009608	M	How does the gradient of softmax cross-entropy loss change with label smoothing?
+D03731	E	What is gradient descent and how does it work, and how do batch, stochastic and mini-batch variants differ?
+D03732	M	Compare momentum, RMSprop and Adam as extensions of gradient descent.
+D03733	M	Explain L1 and L2 regularization and their effect on weights and sparsity.
+D03734	M	What is the logistic loss and why is cross entropy appropriate for classification?
+D03735	M	What is hinge loss and how does it lead to margin maximization in SVMs?
+D03736	M	What is empirical risk minimization, and why is the risk called empirical?

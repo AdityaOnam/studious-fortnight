@@ -1,0 +1,300 @@
+Q001779	CS05	E	How do you update documents in MongoDB?
+Q001780	CS05	E	What are the MongoDB commands for deleting documents?
+Q001825	CS05	E	What are the different types of NoSQL databases, with an example of each?
+Q001826	SD02	M	Explain eventual consistency and its role in NoSQL databases.
+Q001827	DROP	-	notq
+Q001828	SD02	M	How is data modeling in NoSQL databases distinct from that in relational databases?
+Q001829	SD02	E	What advantages do NoSQL databases offer for managing large volumes of data?
+Q001830	SD02	M	When would you choose a NoSQL database over a relational database?
+Q001831	SD02	H	Describe the various consistency models in NoSQL databases and how they handle transactions and conflict resolution.
+Q001832	CS05	E	List some NoSQL databases and the primary use cases they address.
+Q001833	CS05	E	How does a key-value store operate, and can you give a use-case example?
+Q001834	CS05	M	What strategies can be used to scale key-value stores for high demand or large data volumes?
+Q001835	CS05	M	What are some drawbacks of key-value stores compared to other NoSQL types?
+Q001836	CS05	M	Name a scenario where a key-value store might not be the best fit.
+Q001837	CS05	E	What makes a document in a NoSQL database different from a row in a relational database?
+Q001838	CS05	M	How does indexing work in document-oriented databases?
+Q001839	CS05	E	Give an example of a query in a document-oriented database.
+Q001840	CS05	E	Suggest a typical application for a document-oriented database.
+Q001852	CS06	E	What is Object-Oriented Programming (OOP)?
+Q001853	CS06	E	What is the difference between procedural and Object-Oriented programming?
+Q001854	CS06	E	What is polymorphism? Explain overriding and overloading.
+Q001855	CS06	E	What is inheritance? Name some types of inheritance.
+Q001856	CS06	E	What is abstraction? Name some abstraction techniques.
+Q001857	CS06	E	What is a class in OOP?
+Q001858	CS06	E	What is an object in OOP?
+Q001859	CS06	E	How do access specifiers work and what are they typically?
+Q001860	CS06	M	Name some ways to overload a method.
+Q001861	CS06	E	What is cohesion in OOP?
+Q001862	CS06	E	What is coupling in OOP?
+Q001863	CS06	E	What is a constructor and how is it used?
+Q001864	CS06	M	Describe the concept of a destructor or finalizer in OOP.
+Q001865	CS06	M	Compare inheritance vs. mixin vs. composition.
+Q001926	CS07	E	What are the key features of Python?
+Q001927	CS07	E	How is Python executed?
+Q001928	CS07	E	What is PEP 8 and why is it important?
+Q001929	CS07	M	How are memory allocation and garbage collection handled in Python?
+Q001930	CS07	E	What are the built-in data types in Python?
+Q001931	CS07	E	Explain the difference between a mutable and an immutable object in Python.
+Q001932	CS07	E	How do you handle exceptions in Python?
+Q001933	CS07	E	What is the difference between a list and a tuple in Python?
+Q001934	CS07	E	How do you create a dictionary in Python?
+Q001935	CS07	E	What is the difference between the == and is operators in Python?
+Q001936	CS07	E	How does a Python function work?
+Q001937	CS07	E	What is a lambda function in Python, and where would you use it?
+Q001938	CS07	E	Explain *args and **kwargs in Python.
+Q001939	CS07	M	What are decorators in Python?
+Q001940	CS07	E	How can you create a module in Python?
+Q002003	SD04	M	What are the defining characteristics of a Reactive System according to the Reactive Manifesto?
+Q002004	SD04	M	How is back-pressure implemented in Reactive Systems to manage data flow?
+Q002005	SD04	M	Contrast elasticity with scalability, with specific examples, as they pertain to Reactive Systems.
+Q002006	SD05	H	Describe a strategy a Reactive System might use to maintain responsiveness during a component failure.
+Q002007	SD05	M	How does message-driven architecture contribute to the resilience of Reactive Systems?
+Q002008	SD05	M	Identify a resiliency strategy in Reactive Systems and explain how it minimizes the impact of failures.
+Q002009	DROP	-	notq
+Q002010	CS02	M	Why are non-blocking I/O operations a necessity in Reactive Programming, and what problems do they solve?
+Q002011	SD04	H	In what ways can Domain-Driven Design (DDD) principles enhance the design of a Reactive System?
+Q002012	SD04	H	Provide an example of a system that is reactive without fulfilling all the Reactive Manifesto traits. Why does it qualify?
+Q002013	SD05	H	Describe how a Reactive System would differently address a transient failure versus a network partition.
+Q002014	SD03	H	Which transport layer technology would you recommend for a Reactive System's asynchronous communication, and why?
+Q002015	SD04	M	Explain the role of Reactive Systems in processing continuous data streams, providing industry use cases.
+Q002016	SD03	M	What is Event Sourcing, and how does it benefit Reactive Systems?
+Q002017	SD04	M	Differentiate between hot and cold reactive streams, with examples of use cases.
+Q002018	SD04	M	Compare synchronous request-response communication with reactive message-driven communication in terms of scalability.
+Q002035	CS05	E	What is Redis and what do you use it for?
+Q002036	CS05	E	How does Redis store data?
+Q002037	CS05	E	What data types can you store in Redis?
+Q002038	CS05	M	What is a Redis key and how should you structure it for best performance?
+Q002039	CS05	E	How do you set an expiration on Redis keys?
+Q002040	CS05	E	What do the commands SET and GET do in Redis?
+Q002041	CS05	M	How does Redis handle data persistence?
+Q002042	CS05	M	Explain the difference between RDB and AOF persistence strategies in Redis.
+Q002043	CS05	M	How would you implement a simple counter in Redis?
+Q002044	CS05	E	What are hashes in Redis and how do you use them?
+Q002045	CS05	M	How do you handle atomic operations in Redis?
+Q002046	CS05	E	What are lists in Redis and what are some common operations you can perform on them?
+Q002047	CS05	M	Can you describe the Pub/Sub model and how it is implemented in Redis?
+Q002048	CS05	M	What is pipelining in Redis and when would you use it?
+Q002049	DROP	-	notq
+Q002050	CS05	E	What are the different types of Redis databases?
+Q002096	SD04	E	What are the core principles of Service-Oriented Architecture (SOA)?
+Q002097	SD04	M	What is the difference between SOA and a microservices architecture?
+Q002098	SD04	E	Explain the concept of a service contract in SOA.
+Q002099	SD04	M	How does SOA facilitate service reusability?
+Q002100	SD04	E	What is loose coupling in SOA and why is it important?
+Q002101	DROP	-	notq
+Q002102	SD04	M	What do you understand by service orchestration and service choreography in the context of SOA?
+Q002103	DROP	-	notq
+Q002104	SD04	M	How does SOA differ from traditional monolithic application architectures?
+Q002105	SD04	E	What role does a service registry play in SOA?
+Q002106	SD04	M	What factors do you consider when designing a service interface in SOA?
+Q002107	SD04	M	Explain how versioning of services is handled in a SOA environment.
+Q002108	SD04	M	Describe a scenario in which you might opt for synchronous communication over asynchronous communication in SOA.
+Q002109	SD04	E	What are some of the common data formats used for service communication in SOA?
+Q002110	SD04	M	What is an Enterprise Service Bus (ESB) and how does it support SOA?
+Q002111	SD03	H	How would you handle transaction management in a SOA system?
+Q002112	SD04	E	What is the difference between software architecture and software design?
+Q002113	CS06	M	Explain separation of concerns in software architecture.
+Q002114	SD04	M	Define a system quality attribute and its importance in software architecture.
+Q002115	SD04	E	Describe the concept of a software architectural pattern.
+Q002116	SD04	E	What is the layered architectural pattern?
+Q002117	SD04	M	What are the elements of a good software architecture?
+Q002118	CS06	E	Define modularity in software architecture.
+Q002119	CS06	E	Discuss the concepts of coupling and cohesion.
+Q002120	CS06	M	What is the principle of least knowledge (Law of Demeter) in architecture?
+Q002121	SD04	M	How are cross-cutting concerns addressed in software architecture?
+Q002122	SD04	E	Describe the Model-View-Controller (MVC) architectural pattern.
+Q002123	SD04	M	Define Microservices architecture and contrast it with Monolithic architecture.
+Q002124	CS06	E	What are the SOLID principles of object-oriented design?
+Q002125	DROP	-	dup
+Q002126	CS06	M	When should the Singleton pattern be applied and what are its drawbacks?
+Q002127	CS04	E	What is SQL and what is it used for?
+Q002128	SD02	E	Describe the difference between SQL and NoSQL databases.
+Q002129	CS04	E	What are the different types of SQL commands?
+Q002130	CS04	E	Explain the purpose of the SELECT statement.
+Q002131	CS04	E	What is the difference between the WHERE and HAVING clauses?
+Q002132	DROP	-	notq
+Q002133	DROP	-	notq
+Q002134	CS04	E	Define what a JOIN is in SQL and list its types.
+Q002135	CS04	E	What is a primary key in a database?
+Q002136	CS04	E	Explain what a foreign key is and how it is used.
+Q002137	DROP	-	dup
+Q002138	CS04	E	What is normalization? Explain with examples.
+Q002139	CS04	M	Describe the concept of denormalization and when you would use it.
+Q002140	CS04	M	What are indexes and how can they improve query performance?
+Q002141	CS04	E	Explain the purpose of the GROUP BY clause.
+Q002142	CS04	E	What is a subquery, and when would you use one?
+Q002143	CS04	E	Describe the functions of the ORDER BY clause.
+Q002226	CS06	E	What is software testing, and why is it important?
+Q002227	CS06	E	Define the difference between verification and validation in software testing.
+Q002228	CS06	M	Explain the software development life cycle and the role testing plays in each phase.
+Q002229	CS06	E	What are the different levels of software testing?
+Q002230	CS06	E	Describe the difference between static and dynamic testing.
+Q002231	CS06	E	What is a test case, and what elements should it contain?
+Q002232	CS06	M	Explain the concept of coverage in testing and the main types of coverage (e.g., line, branch, path, statement).
+Q002233	CS06	E	What is the difference between white-box, black-box, and grey-box testing?
+Q002234	CS06	E	What is regression testing, and why is it performed?
+Q002235	CS06	E	Explain unit testing and which tools you might use for it.
+Q002236	CS06	E	What is integration testing and what are its types?
+Q002237	CS06	E	What is system testing, and how does it differ from other types of testing?
+Q002238	CS06	E	Define acceptance testing and describe its types.
+Q002239	CS06	E	What are the benefits of test automation?
+Q002240	CS06	M	When would you choose not to automate test cases?
+Q002241	DROP	-	notq
+Q002291	CS08	E	What is web security, and why is it important?
+Q002292	CS08	E	What is HTTPS and how does it differ from HTTP?
+Q002293	DROP	-	notq
+Q002294	CS08	E	What are SSL and TLS, and what role do they play in web security?
+Q002295	CS08	M	How do SSL certificates work, and what is the purpose of a Certificate Authority (CA)?
+Q002296	CS08	E	What is the difference between encryption and hashing?
+Q002297	CS08	M	Define the concept of a secure session and explain how it is established.
+Q002298	CS08	E	What are some common web security vulnerabilities?
+Q002299	CS08	M	Explain the Cross-Site Scripting (XSS) attack and how to prevent it.
+Q002300	DROP	-	notq
+Q002301	CS08	M	What is SQL Injection and how can you defend against it?
+Q002302	CS08	M	Describe what Cross-Site Request Forgery (CSRF) is and how to prevent it.
+Q002303	CS08	M	Explain the Same-Origin Policy and its importance in web security.
+Q002304	CS08	M	What is Clickjacking, and what measures can prevent it?
+Q002305	CS08	M	How can web cookies compromise security, and how do you safeguard against these risks?
+Q002306	CS08	M	What is a Man-in-the-Middle (MitM) attack and how can it be prevented?
+Q002307	CS08	M	Describe the concept of session management in web security.
+Q002308	CS03	E	What is the WebSocket protocol and how does it differ from HTTP?
+Q002309	CS03	M	Explain how the WebSocket handshake works.
+Q002310	CS03	E	What are some common use cases for WebSockets?
+Q002311	CS03	M	What are the limitations of WebSockets?
+Q002312	CS03	E	Can you describe the WebSocket API provided by HTML5?
+Q002313	CS03	H	Explain the WebSocket frame format.
+Q002314	CS03	M	How do WebSockets handle communication through proxies and firewalls?
+Q002315	CS08	M	What are the security considerations when using WebSockets?
+Q002316	CS03	M	How would you detect and handle WebSocket connection loss?
+Q002317	CS03	M	Explain the role of ping/pong frames in WebSockets.
+Q002318	CS03	M	How does WebSocket ensure ordered delivery of messages?
+Q002319	SD04	M	Can WebSockets be used for broadcasting messages to multiple clients? If so, how?
+Q002320	SD04	M	What is the difference between WebSockets and Server-Sent Events (SSE)?
+Q002321	CS03	M	Explain how a WebSocket connection is closed.
+Q002322	SD04	M	What fallback mechanisms can be used if WebSockets are not supported by a browser or server?
+Q002633	DROP	-	notq
+Q002562	CS04	M	What happens if a transaction violates ACID properties?
+Q002563	CS04	M	How does isolation prevent dirty reads?
+Q002564	CS04	E	Explain durability with an example.
+Q002565	CS04	M	Can you have consistency without atomicity?
+Q002566	CS04	M	What is the difference between logical and physical consistency?
+Q002567	CS04	E	What is the difference between COUNT(*) and COUNT(column_name)?
+Q002568	CS04	E	How do aggregate functions handle NULL values?
+Q002569	CS04	E	Can you use aggregate functions in the WHERE clause?
+Q002570	CS04	E	What is the difference between SUM and COUNT for calculating totals?
+Q002571	CS04	M	How do you find the second highest salary using aggregate functions?
+Q002572	DROP	-	dup
+Q002573	DROP	-	notq
+Q002574	CS04	M	Explain the order of execution in a SELECT statement.
+Q002575	CS04	E	What is the difference between DELETE, DROP, and TRUNCATE?
+Q002576	DROP	-	dup
+Q002577	CS04	E	What is the difference between UNION and UNION ALL?
+Q002578	SD03	M	Why can't a distributed system guarantee all three CAP properties?
+Q002579	SD03	M	How do modern databases handle CAP trade-offs?
+Q002580	SD02	E	What is the difference between strong consistency and eventual consistency?
+Q002581	SD03	M	Can you give examples of CP vs AP systems in practice?
+Q002582	SD03	M	How does the CAP theorem relate to ACID properties?
+Q002583	CS04	M	Can a table have multiple clustered indexes?
+Q002584	CS04	M	What happens when you insert data into a table with a clustered index?
+Q002585	CS04	M	When would you choose a non-clustered index over a clustered index?
+Q002586	CS04	M	What is a key lookup and when does it occur?
+Q002587	CS04	M	How do clustered and non-clustered indexes affect query performance differently?
+Q002588	CS04	M	How do isolation levels prevent concurrency problems?
+Q002589	CS04	E	What is the difference between a dirty read and a non-repeatable read?
+Q002590	CS04	M	How can you prevent lost update problems?
+Q002591	CS04	M	When would you choose lower isolation levels despite concurrency problems?
+Q002592	CS04	M	What is a phantom read and how is it different from a non-repeatable read?
+Q002593	CS04	E	What is the difference between a Primary Key and a Unique Key?
+Q002594	CS04	E	Can a table have multiple foreign keys?
+Q002595	CS04	M	What happens when you try to delete a record referenced by a foreign key?
+Q002596	CS04	M	Why can't a Primary Key contain NULL values?
+Q002597	CS04	E	What is the difference between a surrogate key and a natural key?
+Q002598	CS04	M	How does a database detect deadlocks?
+Q002599	CS04	M	What factors determine deadlock victim selection?
+Q002600	CS04	M	What is the difference between Wait-Die and Wound-Wait schemes?
+Q002601	DROP	-	notq
+Q002602	DROP	-	notq
+Q002603	DROP	-	notq
+Q002604	DROP	-	notq
+Q002605	CS04	M	How can application design prevent deadlocks?
+Q002606	CS04	M	What is the trade-off between deadlock prevention and detection?
+Q002607	CS04	E	What is the difference between a strong entity and a weak entity?
+Q002608	CS04	M	How do you resolve M:N relationships in database implementation?
+Q002609	CS04	E	What are the types of attributes in ER diagrams?
+Q002610	CS04	M	How do you represent inheritance in ER diagrams?
+Q002611	CS04	M	What is the difference between total and partial participation?
+Q002612	DROP	-	dup
+Q002613	CS04	M	Can you use ORDER BY with columns not in the SELECT list?
+Q002614	CS04	M	What happens if you use SELECT without GROUP BY but with aggregate functions?
+Q002615	CS04	E	Can you use multiple columns in GROUP BY?
+Q002616	CS04	E	What is the difference between ORDER BY column_name and ORDER BY column_position?
+Q002617	CS04	M	What is the difference between optimistic and pessimistic locking?
+Q002618	CS04	M	What is the Two-Phase Locking (2PL) protocol?
+Q002619	CS04	H	How do intent locks work and why are they needed?
+Q002620	DROP	-	notq
+Q002621	CS04	M	What causes deadlocks and how can they be prevented?
+Q002622	CS04	M	When would you use table-level locks instead of row-level locks?
+Q002623	CS04	E	What are the benefits of normalization?
+Q002624	DROP	-	dup
+Q002625	CS04	M	What is the difference between 3NF and BCNF?
+Q002626	CS04	E	Explain with an example: what is a transitive dependency?
+Q002627	CS04	M	Can a relation be in 2NF but not in 1NF?
+Q002628	CS04	M	How do you identify slow queries that need optimization?
+Q002629	CS04	M	What is the difference between a table scan and an index seek?
+Q002630	CS04	M	Why should you avoid using functions in WHERE clauses?
+Q002631	CS04	M	How do database statistics affect query optimization?
+Q002632	CS04	M	What is the impact of query hints and when should you use them?
+Q002634	SD02	E	What is the difference between horizontal and vertical sharding?
+Q002635	SD02	M	What are the challenges of sharding?
+Q002636	SD02	M	How do you choose a good shard key?
+Q002637	SD02	M	What is the difference between synchronous and asynchronous replication?
+Q002638	SD02	M	How do you handle failover in master-slave replication?
+Q002639	CS04	E	What is the difference between INNER JOIN and LEFT JOIN?
+Q002640	CS04	E	When would you use a SELF JOIN?
+Q002641	CS04	M	What is the performance difference between different JOINs?
+Q002642	CS04	E	How do you join more than two tables?
+Q002643	CS04	E	What happens if you don't specify a JOIN condition (ON clause)?
+Q002644	DROP	-	dup
+Q002645	DROP	-	dup
+Q002646	SD02	M	How do NoSQL databases achieve scalability?
+Q002647	CS05	M	Can you use SQL with NoSQL databases?
+Q002648	SD02	M	What is polyglot persistence?
+Q002649	CS04	M	What is the difference between correlated and non-correlated subqueries?
+Q002650	CS04	M	When would you use EXISTS vs IN with subqueries?
+Q002651	CS04	M	What are the performance implications of subqueries vs JOINs?
+Q002652	CS04	E	Can you use subqueries in UPDATE and DELETE statements?
+Q002653	CS04	E	What is a scalar subquery and when do you use it?
+Q002654	CS04	E	What is the difference between COMMIT and ROLLBACK?
+Q002655	CS04	M	Can a transaction move from the COMMITTED state to any other state?
+Q002656	CS04	M	What happens during the PARTIALLY COMMITTED state of a transaction?
+Q002657	DROP	-	notq
+Q002658	CS04	M	How do savepoints affect transaction states?
+Q002659	CS04	M	What causes a transaction to enter the FAILED state?
+Q002660	CS04	E	What is the difference between primary and secondary indexes?
+Q002661	CS04	M	When should you use a composite index vs multiple single-column indexes?
+Q002662	CS04	M	What are the disadvantages of having too many indexes?
+Q002663	CS04	M	How does a partial index improve performance?
+Q002664	CS04	M	What is a covering index and why is it beneficial?
+Q002665	CS04	E	What is the difference between a view and a materialized view?
+Q002666	CS04	M	When should you use stored procedures vs application code?
+Q002667	CS04	M	What are the different types of triggers and when do you use each?
+Q002668	CS04	M	What are the performance implications of views?
+Q002669	DROP	-	notq
+Q002670	CS04	M	Can triggers cause performance problems?
+Q002671	DROP	-	notq
+Q002809	DROP	-	notq
+Q002810	DROP	-	notq
+Q002811	DROP	-	notq
+Q002812	DROP	-	notq
+Q002813	DROP	-	notq
+Q002672	CS06	E	What is the difference between abstract classes and interfaces?
+Q002673	CS06	M	Can abstract classes have constructors? Why?
+Q002674	CS06	M	What is the Template Method pattern and how do abstract classes support it?
+Q002675	CS06	M	Can you have an abstract class without abstract methods?
+Q002676	CS06	M	How do you decide between using abstract classes vs composition?
+Q002677	DROP	-	notq
+Q002678	DROP	-	notq
+Q002679	DROP	-	notq
+Q002680	CS06	E	What is abstraction and how is it achieved in Java?
+Q002681	DROP	-	dup

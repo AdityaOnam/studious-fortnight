@@ -1,0 +1,413 @@
+CS01	E	What is an operating system and what are its main responsibilities?	gyoogle__tech-interview-for-developer:Operating System/Operation System
+CS01	M	Why is the operating system described as a resource manager and an abstraction layer between hardware and applications?	gyoogle__tech-interview-for-developer:Operating System/Operation System
+CS01	E	What is a device driver and why does an OS need one?	gyoogle__tech-interview-for-developer:Operating System/Operation System
+CS01	E	What is the difference between a process and a thread?	gyoogle__tech-interview-for-developer:Operating System/Process vs Thread
+CS01	M	Which resources do threads of the same process share, and which are private to each thread?	gyoogle__tech-interview-for-developer:Operating System/Process vs Thread
+CS01	M	Why is creating and context-switching between threads cheaper than between processes?	gyoogle__tech-interview-for-developer:Operating System/Process vs Thread
+CS01	M	When would you choose multi-process over multi-threaded design for an application?	gyoogle__tech-interview-for-developer:Operating System/Process vs Thread
+CS01	E	What are the main segments of a process address space (code, data, heap, stack)?	gyoogle__tech-interview-for-developer:Operating System/Process Address Space
+CS01	M	What happens to the stack and heap when a program makes a deeply recursive call or allocates memory without freeing it?	gyoogle__tech-interview-for-developer:Operating System/Process Address Space
+CS01	E	What is a Process Control Block and what information does it hold?	gyoogle__tech-interview-for-developer:Operating System/PCB & Context Switcing
+CS01	M	What exactly happens during a context switch, and why is it considered pure overhead?	gyoogle__tech-interview-for-developer:Operating System/PCB & Context Switcing
+CS01	M	What factors make a context switch more expensive, such as cache and TLB effects?	gyoogle__tech-interview-for-developer:Operating System/PCB & Context Switcing
+CS01	E	What are the states in the process life cycle and what transitions occur between them?	gyoogle__tech-interview-for-developer:Operating System/CPU Scheduling
+CS01	E	What is inter-process communication and why is it needed?	gyoogle__tech-interview-for-developer:Operating System/IPC
+CS01	M	Compare shared memory and message passing as IPC mechanisms.	gyoogle__tech-interview-for-developer:Operating System/IPC
+CS01	M	Compare pipes, named pipes (FIFOs), message queues, sockets and shared memory for IPC.	gyoogle__tech-interview-for-developer:Operating System/IPC
+CS01	E	What is an interrupt and how does the CPU handle one?	gyoogle__tech-interview-for-developer:Operating System/Interrupt
+CS01	M	Distinguish hardware interrupts from software interrupts (traps/exceptions) with examples.	gyoogle__tech-interview-for-developer:Operating System/Interrupt
+CS01	M	Why is polling sometimes preferred over interrupt-driven I/O?	gyoogle__tech-interview-for-developer:Operating System/Interrupt
+CS01	E	What is virtual memory and what problems does it solve?	gyoogle__tech-interview-for-developer:Operating System/Memory
+CS01	M	What does the MMU do, and how is a virtual address translated into a physical address?	gyoogle__tech-interview-for-developer:Operating System/Memory
+CS01	E	What is the difference between paging and segmentation?	gyoogle__tech-interview-for-developer:Operating System/Paging and Segmentation
+CS01	M	Compare internal and external fragmentation and explain which of paging or segmentation suffers from which.	gyoogle__tech-interview-for-developer:Operating System/Paging and Segmentation
+CS01	M	How does a page table work, and why are multi-level page tables used?	gyoogle__tech-interview-for-developer:Operating System/Paging and Segmentation
+CS01	M	What is a TLB and how does it speed up address translation?	gyoogle__tech-interview-for-developer:Operating System/Memory
+CS01	M	What is a page fault and what steps does the OS take to handle it?	gyoogle__tech-interview-for-developer:Operating System/Memory
+CS01	M	What is demand paging, and what are its advantages and risks?	gyoogle__tech-interview-for-developer:Operating System/Memory
+CS01	M	What is thrashing, why does it happen and how can the OS mitigate it?	gyoogle__tech-interview-for-developer:Operating System/Memory
+CS01	M	Explain FIFO, LRU, LFU and optimal page replacement algorithms and compare them.	gyoogle__tech-interview-for-developer:Operating System/Page Replacement Algorithm
+CS01	M	What is Belady's anomaly and which page replacement algorithms are affected by it?	gyoogle__tech-interview-for-developer:Operating System/Page Replacement Algorithm
+CS01	H	Why is true LRU hard to implement in hardware, and what approximations such as the clock algorithm are used?	gyoogle__tech-interview-for-developer:Operating System/Page Replacement Algorithm
+CS01	M	What is a file system and how are directories and files organized on disk?	gyoogle__tech-interview-for-developer:Operating System/File System
+CS01	M	Compare contiguous, linked and indexed file allocation methods.	gyoogle__tech-interview-for-developer:Operating System/File System
+CS01	M	What is an inode and what metadata does it store?	gyoogle__tech-interview-for-developer:Operating System/File System
+CS01	M	What is the difference between a hard link and a symbolic link?	gyoogle__tech-interview-for-developer:Linux/Linux Basic Command
+CS01	E	What is the difference between user mode and kernel mode, and how does a system call cross that boundary?	gyoogle__tech-interview-for-developer:Operating System/Operation System
+CS01	M	Why does cache locality matter for program performance, and how do temporal and spatial locality relate to caching?	gyoogle__tech-interview-for-developer:Computer Architecture/Cache Memory
+CS01	E	What is cache memory and why does the memory hierarchy exist?	gyoogle__tech-interview-for-developer:Computer Architecture/Cache Memory
+CS01	M	Compare direct-mapped, fully associative and set-associative cache mapping.	gyoogle__tech-interview-for-developer:Computer Architecture/Cache Memory
+CS01	M	What are write-through and write-back cache policies and what are their trade-offs?	gyoogle__tech-interview-for-developer:Computer Architecture/Cache Memory
+CS01	M	What is a cache line, and how can false sharing between cores degrade performance?	gyoogle__tech-interview-for-developer:Operating System/Memory
+CS01	E	Describe the fetch-decode-execute instruction cycle of a CPU.	gyoogle__tech-interview-for-developer:Computer Architecture/명령어 Cycle
+CS01	M	What roles do the program counter, registers, ALU and control unit play when a CPU executes an instruction?	gyoogle__tech-interview-for-developer:Computer Architecture/CPU 작동 원리
+CS01	M	What is the Von Neumann architecture and what is the Von Neumann bottleneck?	gyoogle__tech-interview-for-developer:Linux/Von Neumann Architecture
+CS01	M	Compare Von Neumann and Harvard architectures.	gyoogle__tech-interview-for-developer:Linux/Von Neumann Architecture
+CS01	M	How do fixed-point and floating-point number representations differ, and what precision issues arise with floating point?	gyoogle__tech-interview-for-developer:Computer Architecture/고정 소수점 & 부동 소수점
+CS01	M	Why does 0.1 + 0.2 not equal exactly 0.3 in floating-point arithmetic?	gyoogle__tech-interview-for-developer:Computer Architecture/고정 소수점 & 부동 소수점
+CS01	M	How does a parity bit detect errors, and what kinds of errors can it not detect?	gyoogle__tech-interview-for-developer:Computer Architecture/패리티 비트 & 해밍 코드
+CS01	H	How does a Hamming code detect and correct a single-bit error?	gyoogle__tech-interview-for-developer:Computer Architecture/패리티 비트 & 해밍 코드
+CS01	M	What are the main differences between RISC and CISC processors, and where does ARM fit?	gyoogle__tech-interview-for-developer:Computer Architecture/ARM 프로세서
+CS01	M	What are the main components of a computer system and how do CPU, memory, buses and I/O devices interact?	gyoogle__tech-interview-for-developer:Computer Architecture/컴퓨터의 구성
+CS01	M	What are the differences between DMA and CPU-driven (programmed) I/O?	gyoogle__tech-interview-for-developer:Computer Architecture/컴퓨터의 구성
+CS02	E	Why do we need CPU scheduling and what is the goal of a scheduler?	gyoogle__tech-interview-for-developer:Operating System/CPU Scheduling
+CS02	M	What is the difference between preemptive and non-preemptive scheduling?	gyoogle__tech-interview-for-developer:Operating System/CPU Scheduling
+CS02	M	Compare FCFS, SJF, SRTF, priority and round-robin scheduling.	gyoogle__tech-interview-for-developer:Operating System/CPU Scheduling
+CS02	M	What is the convoy effect in FCFS scheduling?	gyoogle__tech-interview-for-developer:Operating System/CPU Scheduling
+CS02	M	How does the choice of time quantum affect round-robin scheduling?	gyoogle__tech-interview-for-developer:Operating System/CPU Scheduling
+CS02	M	What is starvation in priority scheduling and how does aging address it?	gyoogle__tech-interview-for-developer:Operating System/CPU Scheduling
+CS02	M	What is a multilevel feedback queue and what problems does it solve?	gyoogle__tech-interview-for-developer:Operating System/CPU Scheduling
+CS02	E	Define CPU utilization, throughput, turnaround time, waiting time and response time as scheduling criteria.	gyoogle__tech-interview-for-developer:Operating System/CPU Scheduling
+CS02	M	Why is SJF provably optimal for average waiting time, and why can it not be implemented exactly in practice?	gyoogle__tech-interview-for-developer:Operating System/CPU Scheduling
+CS02	E	What is a deadlock?	gyoogle__tech-interview-for-developer:Operating System/DeadLock
+CS02	E	What are the four necessary conditions for deadlock?	gyoogle__tech-interview-for-developer:Operating System/DeadLock
+CS02	M	How can deadlock be prevented by breaking each of the necessary conditions?	gyoogle__tech-interview-for-developer:Operating System/DeadLock
+CS02	M	Explain how the Banker's algorithm avoids deadlock and what a safe state is.	gyoogle__tech-interview-for-developer:Operating System/DeadLock
+CS02	M	How is deadlock detected using a resource allocation graph, and how can the system recover?	gyoogle__tech-interview-for-developer:Operating System/DeadLock
+CS02	M	Why do many general-purpose operating systems simply ignore deadlocks (the ostrich approach)?	gyoogle__tech-interview-for-developer:Operating System/DeadLock
+CS02	M	How can two threads deadlock with two locks, and how do you fix it with lock ordering?	gyoogle__tech-interview-for-developer:Operating System/DeadLock
+CS02	E	What is a race condition?	gyoogle__tech-interview-for-developer:Operating System/Race Condition
+CS02	M	Give an example of a race condition on a shared counter and explain how to eliminate it.	gyoogle__tech-interview-for-developer:Operating System/Race Condition
+CS02	E	What is a critical section and what three properties must a correct solution satisfy?	gyoogle__tech-interview-for-developer:Operating System/Race Condition
+CS02	E	What is the difference between a mutex and a semaphore?	gyoogle__tech-interview-for-developer:Operating System/Semaphore & Mutex
+CS02	M	What is the difference between a binary semaphore and a mutex regarding ownership?	gyoogle__tech-interview-for-developer:Operating System/Semaphore & Mutex
+CS02	M	How would you use semaphores to solve the producer-consumer problem?	gyoogle__tech-interview-for-developer:Operating System/Semaphore & Mutex
+CS02	M	What is the readers-writers problem and how do you avoid starving writers?	gyoogle__tech-interview-for-developer:Operating System/Semaphore & Mutex
+CS02	M	Explain the dining philosophers problem and one way to avoid deadlock in it.	gyoogle__tech-interview-for-developer:Operating System/Semaphore & Mutex
+CS02	M	What is a monitor and how does it differ from a raw semaphore?	gyoogle__tech-interview-for-developer:Operating System/Semaphore & Mutex
+CS02	M	What is the difference between a spinlock and a blocking mutex, and when is each appropriate?	gyoogle__tech-interview-for-developer:Operating System/Semaphore & Mutex
+CS02	H	What is priority inversion and how do priority inheritance protocols address it?	gyoogle__tech-interview-for-developer:Operating System/Semaphore & Mutex
+CS02	M	What is busy waiting and why is it usually undesirable?	gyoogle__tech-interview-for-developer:Operating System/Semaphore & Mutex
+CS02	M	What does it mean for an operation to be atomic, and how do compare-and-swap instructions support lock-free programming?	gyoogle__tech-interview-for-developer:Language/[Java] Intrinsic Lock
+CS02	M	What is a reentrant lock and why does reentrancy matter?	gyoogle__tech-interview-for-developer:Language/[Java] Intrinsic Lock
+CS02	M	What is the difference between a lock on an object instance and a lock on a class in Java synchronized methods?	gyoogle__tech-interview-for-developer:Language/[Java] Intrinsic Lock
+CS02	M	What are the states in a Java thread lifecycle and what causes transitions between them?	gyoogle__tech-interview-for-developer:Language/[java] Java에서의 Thread
+CS02	M	What is the difference between extending Thread and implementing Runnable, and why is the latter generally preferred?	gyoogle__tech-interview-for-developer:Language/[java] Java에서의 Thread
+CS02	M	What does the volatile keyword guarantee in Java, and what does it not guarantee?	gyoogle__tech-interview-for-developer:Language/[java] Java에서의 Thread
+CS02	M	What is the difference between wait/notify and sleep, and why must wait be called inside a synchronized block?	gyoogle__tech-interview-for-developer:Language/[java] Java에서의 Thread
+CS02	M	What is a daemon thread and when would you use one?	gyoogle__tech-interview-for-developer:Language/[java] Java에서의 Thread
+CS02	M	What is a thread pool and why is it better than creating a new thread per task?	gyoogle__tech-interview-for-developer:Language/[java] Java에서의 Thread
+CS02	M	What does thread safety mean, and what techniques make a class thread-safe?	gyoogle__tech-interview-for-developer:Language/[java] Java에서의 Thread
+CS02	M	Compare blocking and non-blocking I/O, and synchronous and asynchronous I/O, using the four combinations.	gyoogle__tech-interview-for-developer:Network/Blocking,Non-blocking & Synchronous,Asynchronous
+CS02	M	In a non-blocking synchronous model, what does the caller do while waiting, and why is polling wasteful?	gyoogle__tech-interview-for-developer:Network/Blocking,Non-blocking & Synchronous,Asynchronous
+CS02	H	How do select, poll and epoll differ, and why is epoll more scalable for many connections?	gyoogle__tech-interview-for-developer:Network/Blocking,Non-blocking & Synchronous,Asynchronous
+CS03	E	Describe the seven layers of the OSI model and what each layer does.	gyoogle__tech-interview-for-developer:Network/OSI 7 계층
+CS03	M	How does the OSI model map onto the TCP/IP model, and what is encapsulation?	gyoogle__tech-interview-for-developer:Network/OSI 7 계층
+CS03	M	At which layers do hubs, switches, routers and load balancers operate?	gyoogle__tech-interview-for-developer:Network/OSI 7 계층
+CS03	E	What are the key differences between TCP and UDP?	gyoogle__tech-interview-for-developer:Network/UDP
+CS03	M	Why do DNS, live video streaming and online games typically use UDP?	gyoogle__tech-interview-for-developer:Network/UDP
+CS03	M	What fields does a UDP header contain and why is it so lightweight?	gyoogle__tech-interview-for-developer:Network/UDP
+CS03	H	How would you build reliability on top of UDP, and what protocol uses this approach?	gyoogle__tech-interview-for-developer:Network/UDP
+CS03	E	Explain the TCP three-way handshake.	gyoogle__tech-interview-for-developer:Network/TCP 3 way handshake & 4 way handshake
+CS03	M	Why does TCP need three steps instead of two to establish a connection?	gyoogle__tech-interview-for-developer:Network/TCP 3 way handshake & 4 way handshake
+CS03	M	What is a SYN flood attack and how can it be mitigated?	gyoogle__tech-interview-for-developer:Network/TCP 3 way handshake & 4 way handshake
+CS03	E	Explain the TCP four-way connection termination.	gyoogle__tech-interview-for-developer:Network/TCP 3 way handshake & 4 way handshake
+CS03	M	What is the TIME_WAIT state, why does it exist, and what problems can many TIME_WAIT sockets cause?	gyoogle__tech-interview-for-developer:Network/TCP 3 way handshake & 4 way handshake
+CS03	M	Why does connection termination need four steps rather than three?	gyoogle__tech-interview-for-developer:Network/TCP 3 way handshake & 4 way handshake
+CS03	E	What is the difference between TCP flow control and congestion control?	gyoogle__tech-interview-for-developer:Network/TCP (흐름제어혼잡제어)
+CS03	M	How does the sliding window protocol work, and how does the receiver window affect throughput?	gyoogle__tech-interview-for-developer:Network/TCP (흐름제어혼잡제어)
+CS03	M	Compare stop-and-wait, Go-Back-N and selective repeat ARQ.	gyoogle__tech-interview-for-developer:Network/TCP (흐름제어혼잡제어)
+CS03	M	Explain slow start, congestion avoidance, fast retransmit and fast recovery in TCP.	gyoogle__tech-interview-for-developer:Network/TCP (흐름제어혼잡제어)
+CS03	M	How do TCP Tahoe and Reno differ in their reaction to packet loss?	gyoogle__tech-interview-for-developer:Network/TCP (흐름제어혼잡제어)
+CS03	H	Why does TCP perform poorly over high-latency lossy links, and what could you do about it?	gyoogle__tech-interview-for-developer:Network/TCP (흐름제어혼잡제어)
+CS03	E	What happens, step by step, when a domain name is resolved to an IP address?	gyoogle__tech-interview-for-developer:Network/DNS
+CS03	M	Compare recursive and iterative DNS queries, and explain the role of resolvers, root and authoritative servers.	gyoogle__tech-interview-for-developer:Network/DNS
+CS03	M	How does DNS caching and TTL work, and what are the trade-offs when changing a record?	gyoogle__tech-interview-for-developer:Network/DNS
+CS03	E	What are the differences between HTTP and HTTPS?	gyoogle__tech-interview-for-developer:Network/HTTP & HTTPS
+CS03	M	What problems does HTTPS solve that plain HTTP does not (confidentiality, integrity, authentication)?	gyoogle__tech-interview-for-developer:Network/HTTP & HTTPS
+CS03	M	Is HTTP stateless, and how do applications maintain state across requests?	gyoogle__tech-interview-for-developer:Network/HTTP & HTTPS
+CS03	M	What are the main improvements of HTTP/2 over HTTP/1.1, and what does HTTP/3 change again?	gyoogle__tech-interview-for-developer:Network/HTTP & HTTPS
+CS03	M	What are persistent connections and head-of-line blocking in HTTP?	gyoogle__tech-interview-for-developer:Network/HTTP & HTTPS
+CS03	E	Walk through the TLS handshake and explain what is negotiated.	gyoogle__tech-interview-for-developer:Network/TLS HandShake
+CS03	M	Why does TLS use asymmetric cryptography for the handshake but symmetric cryptography for bulk data?	gyoogle__tech-interview-for-developer:Network/TLS HandShake
+CS03	M	How does a client validate a server certificate chain during the TLS handshake?	gyoogle__tech-interview-for-developer:Network/TLS HandShake
+CS03	M	What is forward secrecy and how does ephemeral Diffie-Hellman provide it?	gyoogle__tech-interview-for-developer:Network/TLS HandShake
+CS03	M	What are the semantics of the HTTP methods GET, POST, PUT, PATCH and DELETE, and which are safe and idempotent?	gyoogle__tech-interview-for-developer:Web/HTTP Request Methods
+CS03	M	When would you use PUT versus PATCH versus POST for updating a resource?	gyoogle__tech-interview-for-developer:Web/HTTP Request Methods
+CS03	E	What do the HTTP status code classes 2xx, 3xx, 4xx and 5xx mean?	gyoogle__tech-interview-for-developer:Web/HTTP status code
+CS03	M	What is the difference between 301 and 302, and between 401 and 403?	gyoogle__tech-interview-for-developer:Web/HTTP status code
+CS03	M	When should an API return 400, 404, 409, 422 or 429 versus 500, 502, 503 or 504?	gyoogle__tech-interview-for-developer:Web/HTTP status code
+CS03	E	What are cookies and sessions, and how do they differ?	gyoogle__tech-interview-for-developer:Web/Cookie & Session
+CS03	M	What are the security-related cookie attributes HttpOnly, Secure and SameSite, and what does each protect against?	gyoogle__tech-interview-for-developer:Web/Cookie & Session
+CS03	M	How do you handle sessions when the application is scaled out across multiple servers?	gyoogle__tech-interview-for-developer:Web/Cookie & Session
+CS03	E	What happens when you type a URL in the browser and press Enter?	gyoogle__tech-interview-for-developer:Web/브라우저 동작 방법
+CS03	M	How does the browser turn HTML, CSS and JavaScript into pixels, and what are reflow and repaint?	gyoogle__tech-interview-for-developer:Web/브라우저 동작 방법
+CS03	M	How do async and defer attributes on script tags affect page loading?	gyoogle__tech-interview-for-developer:Web/브라우저 동작 방법
+CS03	E	What are the REST architectural constraints?	gyoogle__tech-interview-for-developer:Web/[Web] REST API
+CS03	M	What makes an API truly RESTful in terms of resource naming, statelessness and use of HTTP methods?	gyoogle__tech-interview-for-developer:Web/[Web] REST API
+CS03	M	Compare client-side rendering and server-side rendering in terms of SEO, first paint and server load.	gyoogle__tech-interview-for-developer:Web/CSR & SSR
+CS03	M	Why would you choose static site generation or hybrid rendering over pure CSR or pure SSR?	gyoogle__tech-interview-for-developer:Web/CSR & SSR
+CS03	M	What is the difference between a web server and a web application server (WAS)?	gyoogle__tech-interview-for-developer:Web/Web Server와 WAS의 차이
+CS03	M	Why place a web server in front of an application server (reverse proxy, static content, SSL termination)?	gyoogle__tech-interview-for-developer:Web/Web Server와 WAS의 차이
+CS03	M	What are the trade-offs between native, web and hybrid mobile apps?	gyoogle__tech-interview-for-developer:Web/네이티브 앱 & 웹 앱 & 하이브리드 앱
+CS03	M	What is a progressive web app and which browser features make it work offline?	gyoogle__tech-interview-for-developer:Web/PWA
+CS07	M	How does JavaScript closure work and how does it relate to lexical scoping?	gyoogle__tech-interview-for-developer:Language/[Javascript] Closure
+CS08	M	What is the CORS mechanism and why does the browser enforce the same-origin policy?	gyoogle__tech-interview-for-developer:Web/CSRF & XSS
+CS03	E	What is the purpose of a load balancer and what problem does it solve?	gyoogle__tech-interview-for-developer:Network/로드 밸런싱
+CS03	M	Compare L4 and L7 load balancing.	gyoogle__tech-interview-for-developer:Network/로드 밸런싱
+CS03	M	Compare round robin, least connections, IP hash and weighted load balancing algorithms.	gyoogle__tech-interview-for-developer:Network/로드 밸런싱
+SD01	M	What health-check strategies would you use for a load balancer, and how do you avoid sending traffic to a failing node?	gyoogle__tech-interview-for-developer:Network/로드 밸런싱
+SD01	M	How do you keep user sessions consistent behind a load balancer: sticky sessions versus a shared session store?	gyoogle__tech-interview-for-developer:Network/로드 밸런싱
+SD01	E	What is the difference between vertical scaling and horizontal scaling?	gyoogle__tech-interview-for-developer:Web/DevOps/시스템 규모 확장
+SD01	M	What are the limits and costs of scaling up versus scaling out, and when would you choose each?	gyoogle__tech-interview-for-developer:Web/DevOps/시스템 규모 확장
+SD01	M	Why is a stateless web tier easier to scale horizontally, and how do you externalize state?	gyoogle__tech-interview-for-developer:Web/DevOps/시스템 규모 확장
+SD01	H	You have a single-server web application that is starting to buckle under traffic. How would you evolve its architecture step by step to serve millions of users?	gyoogle__tech-interview-for-developer:Web/DevOps/시스템 규모 확장
+SD01	M	Where in a web architecture would you introduce caching, and what are the risks of stale data?	gyoogle__tech-interview-for-developer:Web/DevOps/시스템 규모 확장
+SD01	M	How does a CDN reduce latency and origin load, and what content should or should not be cached on it?	gyoogle__tech-interview-for-developer:Web/DevOps/시스템 규모 확장
+SD02	M	When would you pick a relational database over a NoSQL store, and when the reverse?	gyoogle__tech-interview-for-developer:Database/SQL과 NOSQL의 차이
+SD02	M	How do the data models of key-value, document, column-family and graph databases differ, and what workloads suit each?	gyoogle__tech-interview-for-developer:Database/SQL과 NOSQL의 차이
+SD02	M	Compare how SQL and NoSQL databases typically scale (vertical vs horizontal) and what that implies for consistency.	gyoogle__tech-interview-for-developer:Database/SQL과 NOSQL의 차이
+SD02	M	What is schema-on-write versus schema-on-read and what are the pros and cons of flexible schemas?	gyoogle__tech-interview-for-developer:Database/SQL과 NOSQL의 차이
+SD04	M	What are the main differences between a monolithic and a microservices architecture?	gyoogle__tech-interview-for-developer:Software Engineering/마이크로서비스 아키텍처(MSA)
+SD04	M	What new problems does moving to microservices introduce (distributed transactions, latency, observability, deployment)?	gyoogle__tech-interview-for-developer:Software Engineering/마이크로서비스 아키텍처(MSA)
+SD04	M	How should service boundaries be decided when splitting a monolith?	gyoogle__tech-interview-for-developer:Software Engineering/마이크로서비스 아키텍처(MSA)
+SD04	H	Your team runs a large monolith and wants to migrate to microservices incrementally. How would you plan and execute it?	gyoogle__tech-interview-for-developer:Software Engineering/마이크로서비스 아키텍처(MSA)
+SD04	M	What is the purpose of an API gateway and what cross-cutting concerns does it handle?	gyoogle__tech-interview-for-developer:Software Engineering/마이크로서비스 아키텍처(MSA)
+SD04	M	Compare REST with RPC-style APIs in terms of coupling and ease of evolution.	gyoogle__tech-interview-for-developer:Web/[Web] REST API
+SD05	M	What does a continuous integration pipeline typically do, and what benefit does it give a team?	gyoogle__tech-interview-for-developer:Web/DevOps/[Travis CI] 프로젝트 연동하기
+SD05	M	What is the difference between continuous integration, continuous delivery and continuous deployment?	gyoogle__tech-interview-for-developer:Web/DevOps/[Travis CI] 프로젝트 연동하기
+SD05	M	How would you design a zero-downtime deployment script, and what is the difference between blue/green and rolling deployments?	gyoogle__tech-interview-for-developer:Web/DevOps/[AWS] 스프링 부트 배포 스크립트 생성
+SD05	M	What log levels exist (trace, debug, info, warn, error, fatal) and how do you choose what to log at each level in production?	gyoogle__tech-interview-for-developer:Web/Logging Level
+SD05	M	What should and should not be written to application logs for security and privacy reasons?	gyoogle__tech-interview-for-developer:Web/Logging Level
+CS04	E	What are the ACID properties of a database transaction?	gyoogle__tech-interview-for-developer:Database/Transaction
+CS04	M	How do databases implement atomicity and durability using logs and recovery?	gyoogle__tech-interview-for-developer:Database/Transaction
+CS04	M	What do commit and rollback do, and what is the role of savepoints?	gyoogle__tech-interview-for-developer:Database/Transaction
+CS04	M	Why is transaction scope a trade-off between consistency and concurrency?	gyoogle__tech-interview-for-developer:Database/Transaction
+CS04	E	What are the four standard transaction isolation levels?	gyoogle__tech-interview-for-developer:Database/Transaction Isolation Level
+CS04	M	Define dirty read, non-repeatable read and phantom read, and state which isolation levels prevent each.	gyoogle__tech-interview-for-developer:Database/Transaction Isolation Level
+CS04	M	What are the performance trade-offs of choosing SERIALIZABLE versus READ COMMITTED?	gyoogle__tech-interview-for-developer:Database/Transaction Isolation Level
+CS04	H	How does MVCC provide snapshot reads without blocking writers, and what anomalies can still occur such as write skew?	gyoogle__tech-interview-for-developer:Database/Transaction Isolation Level
+CS04	M	What is the difference between optimistic and pessimistic locking, and when is each better?	gyoogle__tech-interview-for-developer:Database/Transaction Isolation Level
+CS04	M	How can two concurrent transactions deadlock in a database and how do databases detect and resolve it?	gyoogle__tech-interview-for-developer:Database/Transaction
+CS04	M	How do shared and exclusive locks differ, and what does two-phase locking guarantee?	gyoogle__tech-interview-for-developer:Database/Transaction Isolation Level
+CS04	E	What is a database index and why does it speed up reads?	gyoogle__tech-interview-for-developer:Database/[DB] Index
+CS04	M	What are the costs of adding indexes to a table?	gyoogle__tech-interview-for-developer:Database/[DB] Index
+CS04	M	Why do most databases use B+ trees for indexes instead of binary search trees or hash tables?	gyoogle__tech-interview-for-developer:Data Structure/B Tree & B+ Tree
+CS04	M	What is the difference between a B-tree and a B+ tree, and why is the B+ tree better for range queries?	gyoogle__tech-interview-for-developer:Data Structure/B Tree & B+ Tree
+CS04	M	When is a hash index preferable to a B+ tree index, and what can it not do?	gyoogle__tech-interview-for-developer:Database/[DB] Index
+CS04	M	What is the difference between clustered and non-clustered indexes?	gyoogle__tech-interview-for-developer:Database/[DB] Index
+CS04	M	What is a composite index and how does the order of columns affect which queries can use it?	gyoogle__tech-interview-for-developer:Database/[DB] Index
+CS04	M	What is index selectivity (cardinality) and why does it matter when deciding which columns to index?	gyoogle__tech-interview-for-developer:Database/[DB] Index
+CS04	M	What is a covering index and how does it avoid table lookups?	gyoogle__tech-interview-for-developer:Database/[DB] Index
+CS04	M	Name situations in which a query does not use an available index, such as functions on the column or leading wildcards.	gyoogle__tech-interview-for-developer:Database/[DB] Index
+CS04	H	A query on a large table suddenly became slow. How would you diagnose it using the execution plan and fix it?	gyoogle__tech-interview-for-developer:Database/[DB] Index
+CS04	E	What are primary key, candidate key, super key, alternate key and foreign key?	gyoogle__tech-interview-for-developer:Database/[DB] Key
+CS04	M	What are the trade-offs between a natural key and a surrogate key as a primary key?	gyoogle__tech-interview-for-developer:Database/[DB] Key
+CS04	M	What does a foreign key constraint enforce, and what are cascading actions on delete or update?	gyoogle__tech-interview-for-developer:Database/[DB] Key
+CS04	E	Explain inner, left, right and full outer joins.	gyoogle__tech-interview-for-developer:Database/[Database SQL] JOIN
+CS04	M	What is the difference between a cross join, a self join and a natural join?	gyoogle__tech-interview-for-developer:Database/[Database SQL] JOIN
+CS04	M	How do nested loop, hash and merge joins work, and when does the optimizer prefer each?	gyoogle__tech-interview-for-developer:Database/[Database SQL] JOIN
+CS04	M	What is the difference between WHERE and HAVING?	gyoogle__tech-interview-for-developer:Database/[Database SQL] JOIN
+CS04	M	What is the difference between UNION and UNION ALL, and between IN, EXISTS and JOIN for filtering?	gyoogle__tech-interview-for-developer:Database/[Database SQL] JOIN
+CS04	M	What is the difference between DELETE, TRUNCATE and DROP?	gyoogle__tech-interview-for-developer:Database/[Database SQL] JOIN
+CS04	E	What is database normalization and what problems (anomalies) does it prevent?	gyoogle__tech-interview-for-developer:Database/정규화(Normalization)
+CS04	M	Explain 1NF, 2NF and 3NF with examples of the violations each fixes.	gyoogle__tech-interview-for-developer:Database/정규화(Normalization)
+CS04	M	What is BCNF and how does it differ from 3NF?	gyoogle__tech-interview-for-developer:Database/정규화(Normalization)
+CS04	M	When and why would you deliberately denormalize a schema?	gyoogle__tech-interview-for-developer:Database/정규화(Normalization)
+CS04	M	What are the pros and cons of stored procedures compared with application-side SQL?	gyoogle__tech-interview-for-developer:Database/저장 프로시저(Stored PROCEDURE)
+CS04	M	What are views, triggers and stored procedures and when is each appropriate?	gyoogle__tech-interview-for-developer:Database/저장 프로시저(Stored PROCEDURE)
+CS04	M	What is the difference between a view and a materialized view?	gyoogle__tech-interview-for-developer:Database/저장 프로시저(Stored PROCEDURE)
+CS05	M	What is Redis and why is it so fast for caching workloads?	gyoogle__tech-interview-for-developer:Database/Redis
+CS05	M	Which data structures does Redis support, and which use cases fit lists, sets, sorted sets and hashes?	gyoogle__tech-interview-for-developer:Database/Redis
+CS05	M	Compare Redis RDB snapshots and AOF persistence.	gyoogle__tech-interview-for-developer:Database/Redis
+CS05	M	How would you use Redis to implement a distributed lock, and what pitfalls exist?	gyoogle__tech-interview-for-developer:Database/Redis
+CS05	M	What eviction policies does Redis offer when memory is full?	gyoogle__tech-interview-for-developer:Database/Redis
+CS08	E	What is SQL injection and how does an attacker exploit it?	gyoogle__tech-interview-for-developer:Database/SQL Injection
+CS08	M	How do prepared statements and parameterized queries prevent SQL injection?	gyoogle__tech-interview-for-developer:Database/SQL Injection
+CS08	M	What defense-in-depth measures besides parameterization reduce SQL injection risk (least privilege, input validation, ORM usage)?	gyoogle__tech-interview-for-developer:Database/SQL Injection
+CS08	E	What is Cross-Site Scripting (XSS) and what are reflected, stored and DOM-based variants?	gyoogle__tech-interview-for-developer:Web/CSRF & XSS
+CS08	M	How do you prevent XSS using output encoding, CSP and HttpOnly cookies?	gyoogle__tech-interview-for-developer:Web/CSRF & XSS
+CS08	E	What is Cross-Site Request Forgery (CSRF) and why does it work?	gyoogle__tech-interview-for-developer:Web/CSRF & XSS
+CS08	M	How do CSRF tokens and SameSite cookies defend against CSRF?	gyoogle__tech-interview-for-developer:Web/CSRF & XSS
+CS08	M	How do CSRF and XSS differ in terms of what trust they exploit?	gyoogle__tech-interview-for-developer:Web/CSRF & XSS
+CS08	E	How do symmetric and asymmetric encryption differ, and what are the strengths and weaknesses of each?	gyoogle__tech-interview-for-developer:Network/대칭키 & 공개키
+CS08	M	How does a hybrid scheme combine public-key and symmetric encryption for key exchange?	gyoogle__tech-interview-for-developer:Network/대칭키 & 공개키
+CS08	M	How do digital signatures work and what do they guarantee?	gyoogle__tech-interview-for-developer:Network/대칭키 & 공개키
+CS08	M	What is a certificate authority and how does the chain of trust work?	gyoogle__tech-interview-for-developer:Network/TLS HandShake
+CS08	E	What is a JWT and what are its three parts?	gyoogle__tech-interview-for-developer:Web/JWT(JSON Web Token)
+CS08	M	How does the signature of a JWT prevent tampering, and why should sensitive data not be placed in the payload?	gyoogle__tech-interview-for-developer:Web/JWT(JSON Web Token)
+CS08	M	How do access and refresh tokens work together, and why is the access token short-lived?	gyoogle__tech-interview-for-developer:Web/JWT(JSON Web Token)
+CS08	M	What are the drawbacks of stateless JWT authentication, such as revocation and token theft, and how can they be mitigated?	gyoogle__tech-interview-for-developer:Web/JWT(JSON Web Token)
+CS08	M	Compare session-based and token-based authentication.	gyoogle__tech-interview-for-developer:Web/인증방식
+CS08	M	What are the weaknesses of API key authentication?	gyoogle__tech-interview-for-developer:Web/인증방식
+CS08	E	What is OAuth 2.0 and what problem does it solve?	gyoogle__tech-interview-for-developer:Web/OAuth
+CS08	M	Walk through the OAuth 2.0 authorization code flow and the roles of resource owner, client, authorization server and resource server.	gyoogle__tech-interview-for-developer:Web/OAuth
+CS08	M	What is the difference between authentication and authorization, and how does OAuth differ from OpenID Connect?	gyoogle__tech-interview-for-developer:Web/인증방식
+CS08	M	What does secure coding mean, and what common vulnerabilities (injection, broken authentication, sensitive data exposure) should developers guard against?	gyoogle__tech-interview-for-developer:Software Engineering/클린코드 & 시큐어코딩
+CS08	M	How should user passwords be stored securely, and why use salted slow hashes instead of encryption?	gyoogle__tech-interview-for-developer:Software Engineering/클린코드 & 시큐어코딩
+CS06	E	What are the four pillars of object-oriented programming?	gyoogle__tech-interview-for-developer:Software Engineering/Object-Oriented Programming
+CS06	M	How do abstraction and encapsulation differ, and how does encapsulation help maintainability?	gyoogle__tech-interview-for-developer:Software Engineering/Object-Oriented Programming
+CS06	M	What is polymorphism and how do overloading and overriding differ?	gyoogle__tech-interview-for-developer:Software Engineering/Object-Oriented Programming
+CS06	M	When should you prefer composition over inheritance?	gyoogle__tech-interview-for-developer:Language/[Java] 컴포지션(Composition)
+CS06	M	What is the fragile base class problem and how can inheritance break encapsulation?	gyoogle__tech-interview-for-developer:Language/[Java] 컴포지션(Composition)
+CS06	M	What is the difference between an abstract class and an interface, and how do you choose between them?	gyoogle__tech-interview-for-developer:Interview/[Java] Interview List
+CS06	M	What do upcasting and downcasting mean, and why can downcasting fail at runtime?	gyoogle__tech-interview-for-developer:Language/[java] Casting(업캐스팅 & 다운캐스팅)
+CS06	M	What is the difference between tight and loose coupling, and between high and low cohesion?	gyoogle__tech-interview-for-developer:Design Pattern/SOLID
+CS06	E	What are the SOLID principles?	gyoogle__tech-interview-for-developer:Design Pattern/SOLID
+CS06	M	Explain the Single Responsibility Principle with an example of a class that violates it.	gyoogle__tech-interview-for-developer:Design Pattern/SOLID
+CS06	M	Explain the Open-Closed Principle and how polymorphism helps satisfy it.	gyoogle__tech-interview-for-developer:Design Pattern/SOLID
+CS06	M	Explain the Liskov Substitution Principle and give a classic violation such as the square-rectangle problem.	gyoogle__tech-interview-for-developer:Design Pattern/SOLID
+CS06	M	Explain the Interface Segregation Principle and what a fat interface causes.	gyoogle__tech-interview-for-developer:Design Pattern/SOLID
+CS06	M	Explain the Dependency Inversion Principle and how it relates to dependency injection.	gyoogle__tech-interview-for-developer:Design Pattern/SOLID
+CS06	M	What are common design smells such as rigidity, fragility, immobility and viscosity?	gyoogle__tech-interview-for-developer:Design Pattern/SOLID
+CS06	E	Why are design patterns useful and how are they categorized (creational, structural, behavioral)?	gyoogle__tech-interview-for-developer:Design Pattern/[Design Pattern] Overview
+CS06	M	What are the downsides of overusing design patterns?	gyoogle__tech-interview-for-developer:Design Pattern/[Design Pattern] Overview
+CS06	E	What is the Adapter pattern and when would you use it?	gyoogle__tech-interview-for-developer:Design Pattern/Adapter Pattern
+CS06	M	Compare the class adapter and object adapter approaches.	gyoogle__tech-interview-for-developer:Design Pattern/Adapter Pattern
+CS06	E	What is the Composite pattern and what kind of structures does it model?	gyoogle__tech-interview-for-developer:Design Pattern/Composite Pattern
+CS06	M	In the Composite pattern, where should child-management operations live: on the common component or only on the composite?	gyoogle__tech-interview-for-developer:Design Pattern/Composite Pattern
+CS06	M	How does the Composite pattern relate to the Decorator and Iterator patterns?	gyoogle__tech-interview-for-developer:Design Pattern/Composite Pattern
+CS06	E	What is the Observer pattern and what problem does it solve?	gyoogle__tech-interview-for-developer:Design Pattern/Observer pattern
+CS06	M	What are the pitfalls of the Observer pattern such as memory leaks from unremoved listeners and notification ordering?	gyoogle__tech-interview-for-developer:Design Pattern/Observer pattern
+CS06	M	How does Observer relate to publish-subscribe, and how do they differ?	gyoogle__tech-interview-for-developer:Design Pattern/Observer pattern
+CS06	E	What is the Strategy pattern and what problem does it solve?	gyoogle__tech-interview-for-developer:Design Pattern/Strategy Pattern
+CS06	M	How would you refactor a long if-else chain choosing between algorithms into the Strategy pattern?	gyoogle__tech-interview-for-developer:Design Pattern/Strategy Pattern
+CS06	E	What is the Template Method pattern?	gyoogle__tech-interview-for-developer:Design Pattern/Template Method Pattern
+CS06	M	How do Template Method and Strategy differ in their use of inheritance versus composition?	gyoogle__tech-interview-for-developer:Design Pattern/Template Method Pattern
+CS06	M	What is the Singleton pattern and how can it be implemented thread-safely?	gyoogle__tech-interview-for-developer:Design Pattern/[Design Pattern] Overview
+CS06	M	Compare the Factory Method, Abstract Factory and Builder patterns.	gyoogle__tech-interview-for-developer:Design Pattern/[Design Pattern] Overview
+CS06	M	What is dependency injection and what are the benefits for testing?	gyoogle__tech-interview-for-developer:Web/Spring/[Spring] Bean Scope
+CS06	M	What does the MVC pattern separate and how do the model, view and controller interact?	gyoogle__tech-interview-for-developer:Web/Spring/Spring MVC
+CS06	E	What are the characteristics of clean code, such as meaningful names and small functions?	gyoogle__tech-interview-for-developer:Software Engineering/Clean Code & Refactoring
+CS06	M	What is refactoring and when is it safe to do?	gyoogle__tech-interview-for-developer:Software Engineering/Clean Code & Refactoring
+CS06	M	What are common code smells and which refactorings address them?	gyoogle__tech-interview-for-developer:Software Engineering/Clean Code & Refactoring
+CS06	M	Why should functions have few side effects and few parameters?	gyoogle__tech-interview-for-developer:Software Engineering/Clean Code & Refactoring
+CS06	E	What is Test-Driven Development and what is the red-green-refactor cycle?	gyoogle__tech-interview-for-developer:Software Engineering/TDD(Test Driven Development)
+CS06	M	What are the benefits and the costs of TDD?	gyoogle__tech-interview-for-developer:Software Engineering/TDD(Test Driven Development)
+CS06	M	What is the difference between unit, integration and end-to-end tests, and what is the test pyramid?	gyoogle__tech-interview-for-developer:Web/Spring/[Spring Boot] Test Code
+CS06	M	What are mocks, stubs and fakes, and when is mocking harmful?	gyoogle__tech-interview-for-developer:Web/Spring/[Spring Boot] Test Code
+CS06	M	What makes a good unit test (FIRST principles)?	gyoogle__tech-interview-for-developer:Software Engineering/TDD(Test Driven Development)
+CS06	M	What are the core principles of functional programming such as pure functions, immutability and higher-order functions?	gyoogle__tech-interview-for-developer:Software Engineering/Fuctional Programming
+CS06	M	How does functional programming differ from imperative and object-oriented programming, and what are the benefits for concurrency?	gyoogle__tech-interview-for-developer:Software Engineering/Fuctional Programming
+CS06	E	What is the Agile manifesto and what values does it state?	gyoogle__tech-interview-for-developer:Software Engineering/애자일(Agile)
+CS06	M	How does Agile/Scrum differ from the waterfall model?	gyoogle__tech-interview-for-developer:Software Engineering/애자일(Agile)2
+CS06	M	What are the roles, events and artifacts in Scrum?	gyoogle__tech-interview-for-developer:Software Engineering/애자일(Agile)2
+CS09	M	What is DevOps and how does it change collaboration between development and operations?	gyoogle__tech-interview-for-developer:Software Engineering/데브옵스(DevOps)
+CS07	E	What is the difference between an array and a linked list in terms of access, insertion and memory layout?	gyoogle__tech-interview-for-developer:Data Structure/Array vs ArrayList vs LinkedList
+CS07	M	How does a dynamic array such as ArrayList grow, and why is append amortized O(1)?	gyoogle__tech-interview-for-developer:Data Structure/Array vs ArrayList vs LinkedList
+CS07	M	Why can an array outperform a linked list in practice even when asymptotic costs look similar?	gyoogle__tech-interview-for-developer:Data Structure/Array
+CS07	M	Compare singly linked, doubly linked and circular linked lists and their use cases.	gyoogle__tech-interview-for-developer:Data Structure/Linked List
+CS07	E	What are the differences between a stack and a queue and where is each used?	gyoogle__tech-interview-for-developer:Data Structure/Stack & Queue
+CS07	M	How would you implement a queue with two stacks and what is its amortized cost?	gyoogle__tech-interview-for-developer:Data Structure/Stack & Queue
+CS07	M	How is a circular queue implemented with an array, and how do you distinguish full from empty?	gyoogle__tech-interview-for-developer:Data Structure/Stack & Queue
+CS07	M	Why does the call stack use a stack structure, and what causes a stack overflow?	gyoogle__tech-interview-for-developer:Data Structure/Stack & Queue
+CS07	E	What is a hash table and how does it achieve average O(1) lookup?	gyoogle__tech-interview-for-developer:Data Structure/Hash
+CS07	M	Compare chaining and open addressing for collision resolution.	gyoogle__tech-interview-for-developer:Data Structure/Hash
+CS07	M	What is the load factor of a hash table and why does the table resize when it is exceeded?	gyoogle__tech-interview-for-developer:Data Structure/Hash
+CS07	M	What makes a good hash function and what happens to lookup cost if many keys collide?	gyoogle__tech-interview-for-developer:Data Structure/Hash
+CS07	H	Explain the cost of rehashing a table during resizing and how incremental rehashing can avoid latency spikes.	gyoogle__tech-interview-for-developer:Algorithm/Hash Table 구현하기
+CS07	M	Why must keys of a hash map implement both equals and hashCode consistently?	gyoogle__tech-interview-for-developer:Data Structure/Hash
+CS07	M	How does Java HashMap handle collisions, and why did it start converting long buckets into balanced trees?	gyoogle__tech-interview-for-developer:Data Structure/Hash
+CS07	M	What are the differences between HashMap, Hashtable and ConcurrentHashMap?	gyoogle__tech-interview-for-developer:Data Structure/Hash
+CS07	E	What is a binary search tree and what are its time complexities?	gyoogle__tech-interview-for-developer:Data Structure/Binary Search Tree
+CS07	M	Why does a BST degrade to O(n) and how do self-balancing trees such as AVL or red-black trees fix this?	gyoogle__tech-interview-for-developer:Data Structure/Binary Search Tree
+CS07	M	How do you delete a node with two children from a BST?	gyoogle__tech-interview-for-developer:Data Structure/Binary Search Tree
+CS07	E	What are the pre-order, in-order, post-order and level-order traversals, and what does in-order give on a BST?	gyoogle__tech-interview-for-developer:Data Structure/Tree
+CS07	M	What is the difference between a full, complete and perfect binary tree?	gyoogle__tech-interview-for-developer:Data Structure/Tree
+CS07	E	What is a heap, and how does it support insert and extract-min efficiently?	gyoogle__tech-interview-for-developer:Data Structure/Heap
+CS07	M	Why can a heap be stored in an array, and how are parent and child indices computed?	gyoogle__tech-interview-for-developer:Data Structure/Heap
+CS07	M	What is the time complexity of building a heap from n elements, and why is it O(n) rather than O(n log n)?	gyoogle__tech-interview-for-developer:Data Structure/Heap
+CS07	M	When would you use a priority queue and how does a heap implement one?	gyoogle__tech-interview-for-developer:Data Structure/Heap
+CS07	E	What is a trie and what problems is it suited for?	gyoogle__tech-interview-for-developer:Data Structure/Trie
+CS07	M	Compare a trie with a hash table for storing a dictionary of strings, including prefix queries and memory usage.	gyoogle__tech-interview-for-developer:Data Structure/Trie
+CS07	M	What is the difference between DFS and BFS, and which data structure underlies each?	gyoogle__tech-interview-for-developer:Algorithm/DFS & BFS
+CS07	M	How does Dijkstra's algorithm work and why does it fail with negative edge weights?	gyoogle__tech-interview-for-developer:Algorithm/다익스트라(Dijkstra)
+CS07	M	What is the role of the priority queue in Dijkstra's algorithm and how does it affect time complexity?	gyoogle__tech-interview-for-developer:Algorithm/다익스트라(Dijkstra)
+CS07	M	What is dynamic programming and how does it differ from plain recursion and from divide and conquer?	gyoogle__tech-interview-for-developer:Algorithm/동적 계획법 (Dynamic Programming)
+CS07	M	What is the difference between memoization (top-down) and tabulation (bottom-up)?	gyoogle__tech-interview-for-developer:Algorithm/동적 계획법 (Dynamic Programming)
+CS07	M	What properties must a problem have for dynamic programming to apply?	gyoogle__tech-interview-for-developer:Algorithm/동적 계획법 (Dynamic Programming)
+CS07	M	What is the time complexity of binary search and what preconditions does it need?	gyoogle__tech-interview-for-developer:Algorithm/Binary Search
+CS07	M	How can bitmasks represent sets, and what are the common bitwise operations used to add, remove and test elements?	gyoogle__tech-interview-for-developer:Algorithm/비트마스크(BitMask)
+CS07	M	How would you speed up I/O heavy programs in C++ when reading large inputs?	gyoogle__tech-interview-for-developer:Language/[C++] 입출력 실행속도 줄이는 법
+CS07	E	What does Big-O notation describe and how does it differ from Theta and Omega?	gyoogle__tech-interview-for-developer:Data Structure/README
+CS07	M	What are the stages of compiling a C program from source to executable (preprocess, compile, assemble, link)?	gyoogle__tech-interview-for-developer:Language/[c] C언어 컴파일 과정
+CS07	M	What is the difference between static and dynamic linking?	gyoogle__tech-interview-for-developer:Language/[c] C언어 컴파일 과정
+CS07	E	What is a pointer and what is the difference between a pointer and a reference?	gyoogle__tech-interview-for-developer:Language/[C] 포인터(Pointer)
+CS07	M	What are dangling pointers, null pointer dereferences and wild pointers, and how do they arise?	gyoogle__tech-interview-for-developer:Language/[C] 포인터(Pointer)
+CS07	M	What is the relationship between arrays and pointers in C, and what does pointer arithmetic do?	gyoogle__tech-interview-for-developer:Language/[C] 포인터(Pointer)
+CS07	M	How does dynamic memory allocation with malloc and free work, and what are memory leaks and double frees?	gyoogle__tech-interview-for-developer:Language/[C] 동적할당
+CS07	M	What is the difference between stack and heap allocation in terms of lifetime, speed and size?	gyoogle__tech-interview-for-developer:Language/[C] 동적할당
+CS07	M	How is the size of a struct computed, and what are alignment and padding?	gyoogle__tech-interview-for-developer:Language/[C] 구조체 메모리 크기 계산
+CS07	M	How can reordering struct members reduce its memory footprint?	gyoogle__tech-interview-for-developer:Language/[C] 구조체 메모리 크기 계산
+CS07	M	What is the difference between shallow copy and deep copy, and what bugs can a shallow copy of a pointer member cause?	gyoogle__tech-interview-for-developer:Language/[Cpp] shallow copy vs deep copy
+CS07	M	What is the Rule of Three (or Five) in C++?	gyoogle__tech-interview-for-developer:Language/[Cpp] shallow copy vs deep copy
+CS07	E	What is a virtual function in C++ and how does dynamic dispatch work through the vtable?	gyoogle__tech-interview-for-developer:Language/[C++] 가상 함수(virtual function)
+CS07	M	Why should a base class with virtual functions have a virtual destructor?	gyoogle__tech-interview-for-developer:Language/[C++] 가상 함수(virtual function)
+CS07	M	What is a pure virtual function and an abstract class in C++?	gyoogle__tech-interview-for-developer:Language/[C++] 가상 함수(virtual function)
+CS07	M	How does std::vector manage capacity, and when are iterators invalidated?	gyoogle__tech-interview-for-developer:Language/[C++] Vector Container
+CS07	M	What is the difference between size and capacity in a vector and what does reserve do?	gyoogle__tech-interview-for-developer:Language/[C++] Vector Container
+CS07	E	What are the main areas of the JVM memory model (heap, stack, method area, PC register)?	gyoogle__tech-interview-for-developer:Interview/[Java] Interview List
+CS07	E	What is garbage collection and why do managed runtimes use it?	gyoogle__tech-interview-for-developer:Interview/[Java] Interview List
+CS07	M	How does generational garbage collection work and why does it rely on the weak generational hypothesis?	gyoogle__tech-interview-for-developer:Interview/[Java] Interview List
+CS07	M	What is a stop-the-world pause and how do modern collectors try to reduce it?	gyoogle__tech-interview-for-developer:Interview/[Java] Interview List
+CS07	M	What is the difference between mark-sweep, mark-compact and copying collectors?	gyoogle__tech-interview-for-developer:Interview/[Java] Interview List
+CS07	M	Can a memory leak happen in a garbage-collected language, and how?	gyoogle__tech-interview-for-developer:Interview/[Java] Interview List
+CS07	M	What do the JVM's class loader, bytecode interpreter and JIT compiler each do?	gyoogle__tech-interview-for-developer:Language/[java] 자바 가상 머신
+CS07	M	Describe the Java compilation process from source code to execution.	gyoogle__tech-interview-for-developer:Language/[java] 자바 컴파일 과정
+CS07	M	What are the pros and cons of compiled, interpreted and JIT-compiled languages?	gyoogle__tech-interview-for-developer:Language/[java] 자바 컴파일 과정
+CS07	M	Why is String immutable in Java and what are the benefits?	gyoogle__tech-interview-for-developer:Language/[java] String StringBuilder StringBuffer 차이
+CS07	M	Compare String, StringBuilder and StringBuffer in terms of mutability and thread safety.	gyoogle__tech-interview-for-developer:Language/[java] String StringBuilder StringBuffer 차이
+CS07	M	What is the string intern pool and how does it affect string equality comparisons?	gyoogle__tech-interview-for-developer:Language/[Java] Interned String in JAVA
+CS07	M	What is the difference between == and equals for objects?	gyoogle__tech-interview-for-developer:Language/[Java] Interned String in JAVA
+CS07	M	Is Java pass-by-value or pass-by-reference, and how do you explain the behavior with object arguments?	gyoogle__tech-interview-for-developer:Language/[java] Call by value와 Call by reference
+CS07	M	What is autoboxing and unboxing and what performance and null-related pitfalls does it have?	gyoogle__tech-interview-for-developer:Language/[Java] Auto Boxing & Unboxing
+CS07	M	What are generics and what is type erasure?	gyoogle__tech-interview-for-developer:Interview/[Java] Interview List
+CS07	M	What is the difference between checked and unchecked exceptions and when should each be used?	gyoogle__tech-interview-for-developer:Interview/[Java] Interview List
+CS07	M	What does Java serialization do, and why is serialVersionUID important?	gyoogle__tech-interview-for-developer:Language/[Java] 직렬화(Serialization)
+CS07	M	What are security and compatibility concerns of native object serialization compared with formats like JSON?	gyoogle__tech-interview-for-developer:Language/[Java] 직렬화(Serialization)
+CS07	M	What are lambdas and streams, and how do lazy intermediate operations differ from terminal operations?	gyoogle__tech-interview-for-developer:Language/[java] Stream
+CS07	M	What are the pros and cons of parallel streams?	gyoogle__tech-interview-for-developer:Language/[java] Stream
+CS07	M	What is an immutable record or value class and what benefits does immutability give?	gyoogle__tech-interview-for-developer:Language/[java] Record
+CS07	M	What is a closure in JavaScript and how can it be used to emulate private state?	gyoogle__tech-interview-for-developer:Language/[Javascript] Closure
+CS07	M	Why does a var-declared loop variable captured in callbacks cause a common bug, and how do let or closures fix it?	gyoogle__tech-interview-for-developer:Language/[Javascript] Closure
+CS07	M	What is the difference between var, let and const regarding scope, hoisting and reassignment?	gyoogle__tech-interview-for-developer:Language/[Javascript] ES2015+ 요약 정리
+CS07	M	How do arrow functions differ from regular functions regarding this binding?	gyoogle__tech-interview-for-developer:Language/[Javascript] ES2015+ 요약 정리
+CS07	M	What are promises and async/await, and how do they improve on callbacks?	gyoogle__tech-interview-for-developer:Language/[Javascript] ES2015+ 요약 정리
+CS07	M	How does the JavaScript event loop make a single-threaded runtime handle asynchronous work?	gyoogle__tech-interview-for-developer:Language/[Javascript] ES2015+ 요약 정리
+CS07	M	How does prototype-based inheritance work in JavaScript, and what is the prototype chain?	gyoogle__tech-interview-for-developer:Language/[Javasript] Object Prototype
+CS07	M	What are JavaScript's primitive types and why does it have special types like BigInt and Symbol?	gyoogle__tech-interview-for-developer:Language/[Javascript] 데이터 타입
+CS07	M	What is the purpose of React hooks and what rules govern using them?	gyoogle__tech-interview-for-developer:Web/React/React Hook
+CS07	M	How does the virtual DOM help React update the UI efficiently?	gyoogle__tech-interview-for-developer:Web/Vue.js와 React의 차이
+CS07	M	What are the main lifecycle phases of a UI component (creation, mounting, updating, destruction) and what work belongs in each?	gyoogle__tech-interview-for-developer:Web/Vue/Vue.js 라이프사이클 이해하기
+CS07	M	What are the trade-offs between a UI library like React and a full framework approach such as Vue?	gyoogle__tech-interview-for-developer:Web/Vue.js와 React의 차이
+CS07	M	What is an ORM and what problem is the object-relational impedance mismatch?	gyoogle__tech-interview-for-developer:Web/Spring/JPA
+CS07	M	What is the N+1 query problem in ORMs and how do you avoid it?	gyoogle__tech-interview-for-developer:Web/Spring/JPA
+CS07	M	What is dirty checking in an ORM persistence context and when does it trigger updates?	gyoogle__tech-interview-for-developer:Web/Spring/[Spring Data JPA] 더티 체킹
+CS07	M	What are singleton versus prototype scoped objects in a dependency injection container, and what thread-safety implications follow?	gyoogle__tech-interview-for-developer:Web/Spring/[Spring] Bean Scope
+CS07	M	How does the request flow through the front controller in an MVC web framework?	gyoogle__tech-interview-for-developer:Web/Spring/Spring MVC
+CS08	M	How does a filter-chain-based authentication and authorization framework process a request?	gyoogle__tech-interview-for-developer:Web/Spring/Spring Security
+CS08	M	Compare role-based and permission-based access control.	gyoogle__tech-interview-for-developer:Web/Spring/Spring Security
+CS08	M	How would you implement social login with a third-party identity provider and what are the security considerations?	gyoogle__tech-interview-for-developer:Web/Vue/Vue.js + Firebase 페이스북 로그인
+CS09	E	What do the Linux permission bits rwx mean for owner, group and others?	gyoogle__tech-interview-for-developer:Linux/Permission
+CS09	M	How do you read and set permissions using chmod in symbolic and octal notation?	gyoogle__tech-interview-for-developer:Linux/Permission
+CS09	M	What do the setuid, setgid and sticky bits do?	gyoogle__tech-interview-for-developer:Linux/Permission
+CS09	M	How would you find which process is listening on a given port and kill it on Linux?	gyoogle__tech-interview-for-developer:Linux/Linux Basic Command
+CS09	M	How do grep, find, awk, sed and xargs combine in a pipeline to analyze log files?	gyoogle__tech-interview-for-developer:Linux/Linux Basic Command
+CS09	M	What is the difference between a foreground and a background process, and what do nohup and & do?	gyoogle__tech-interview-for-developer:Linux/Linux Basic Command
+CS09	M	How do stdin, stdout, stderr and redirection or pipes work in a shell?	gyoogle__tech-interview-for-developer:Linux/Linux Basic Command
+CS09	M	How do you check CPU, memory and disk usage on a Linux server?	gyoogle__tech-interview-for-developer:Linux/Linux Basic Command
+CS09	M	What is the difference between a zombie process and an orphan process?	gyoogle__tech-interview-for-developer:Operating System/Process vs Thread
+CS09	M	What is Docker and how do containers differ from virtual machines?	gyoogle__tech-interview-for-developer:Software Engineering/데브옵스(DevOps)
+CS09	M	What does a CI/CD pipeline automate and what stages does it commonly include?	gyoogle__tech-interview-for-developer:Web/[Travis CI] 프로젝트 연동하기
+CS09	M	What are the DevOps practices of infrastructure as code and continuous monitoring?	gyoogle__tech-interview-for-developer:Software Engineering/데브옵스(DevOps)
+CS09	M	What is the difference between Git merge and rebase and when would you use each?	gyoogle__tech-interview-for-developer:Interview/README
+CS09	M	What is a third-party library or service, and what risks come with depending on one?	gyoogle__tech-interview-for-developer:Software Engineering/써드파티(3rd party)란
+SD05	M	How does a deployment script keep an application running after a new version is pushed, and how do you roll back safely?	gyoogle__tech-interview-for-developer:Web/DevOps/[AWS] 스프링 부트 배포 스크립트 생성
+SD04	M	Compare WebSockets, long polling and server-sent events for real-time updates.	gyoogle__tech-interview-for-developer:Network/HTTP & HTTPS
+SD04	M	How should an API handle idempotency for retries of POST requests?	gyoogle__tech-interview-for-developer:Web/HTTP Request Methods
+SD01	M	How does an LRU cache work and what data structures give O(1) get and put?	gyoogle__tech-interview-for-developer:Operating System/Page Replacement Algorithm
+SD01	M	What is cache locality at the application level versus a distributed cache, and when would you add an application-layer cache?	gyoogle__tech-interview-for-developer:Computer Architecture/Cache Memory
+SD02	M	What is the role of an index in a NoSQL store compared with an RDBMS?	gyoogle__tech-interview-for-developer:Database/SQL과 NOSQL의 차이
+CS04	M	What is the difference between a primary index and a secondary index?	gyoogle__tech-interview-for-developer:Database/[DB] Index
+CS04	M	What is the difference between DDL, DML, DCL and TCL in SQL?	gyoogle__tech-interview-for-developer:Database/Transaction
+CS04	M	What is the difference between a transaction rollback caused by a deadlock and one caused by a constraint violation?	gyoogle__tech-interview-for-developer:Database/Transaction
+CS02	M	What does the Java memory model's happens-before relationship guarantee between threads?	gyoogle__tech-interview-for-developer:Language/[Java] Intrinsic Lock
+CS02	M	What is the difference between concurrency and parallelism?	gyoogle__tech-interview-for-developer:Language/[java] Java에서의 Thread
+CS02	M	When is multithreading beneficial for CPU-bound versus I/O-bound workloads?	gyoogle__tech-interview-for-developer:Language/[java] Java에서의 Thread
+CS02	M	What is the thundering herd problem and how can it be mitigated in locks or caches?	gyoogle__tech-interview-for-developer:Operating System/Semaphore & Mutex
+CS03	M	Why must a process handling many connections avoid one-thread-per-connection, and how do event-driven servers address it?	gyoogle__tech-interview-for-developer:Network/Blocking,Non-blocking & Synchronous,Asynchronous
+CS03	M	What is the difference between a proxy and a reverse proxy?	gyoogle__tech-interview-for-developer:Web/Web Server와 WAS의 차이
+CS03	M	What is a socket and how does a TCP server accept and serve client connections?	gyoogle__tech-interview-for-developer:Network/TCP 3 way handshake & 4 way handshake
+CS03	M	How do HTTP caching headers such as Cache-Control, ETag and Last-Modified work?	gyoogle__tech-interview-for-developer:Network/HTTP & HTTPS
+CS03	M	What is the difference between URL, URI and URN?	gyoogle__tech-interview-for-developer:Web/[Web] REST API
+CS03	M	What is the difference between the TCP three-way handshake latency and the added round trips of TLS, and how do session resumption and keep-alive reduce them?	gyoogle__tech-interview-for-developer:Network/TLS HandShake

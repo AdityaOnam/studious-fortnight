@@ -1,0 +1,12 @@
+Q008815	offscope
+Q009266	offscope
+Q009301	offscope
+Q009304	offscope
+Q009306	offscope
+Q009307	offscope
+Q009350	offscope
+Q009509	offscope
+Q009529	offscope
+Q009558	offscope
+Q009559	offscope
+Q009560	offscope

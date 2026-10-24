@@ -1,0 +1,480 @@
+SD07	M	Design a parking lot system (class design / OOD). Support multiple floors, vehicle types, spot allocation, ticketing and fee calculation.	ashishps1__awesome-low-level-design:problems/parking-lot.md
+SD07	M	In a parking lot design, how would you make the spot-allocation policy pluggable (nearest to entrance, cheapest, by vehicle size) without changing the core classes?	ashishps1__awesome-low-level-design:problems/parking-lot.md
+SD07	H	In your parking lot design, how do you prevent two vehicles from being assigned the same spot when multiple entry gates operate concurrently?	ashishps1__awesome-low-level-design:problems/parking-lot.md
+SD07	M	How would you extend a parking lot design to support different pricing models such as hourly, daily, peak-hour and EV-charging surcharges?	ashishps1__awesome-low-level-design:problems/parking-lot.md
+SD07	M	Design a Q&A platform like Stack Overflow (class design / OOD). Cover questions, answers, comments, tags, votes and reputation.	ashishps1__awesome-low-level-design:problems/stack-overflow.md
+SD07	H	In a Stack Overflow style design, how would you model voting and reputation so the logic is extensible and safe under concurrent votes?	ashishps1__awesome-low-level-design:problems/stack-overflow.md
+SD07	M	How would you design tag-based search and the accepted-answer workflow in a Q&A platform class model?	ashishps1__awesome-low-level-design:problems/stack-overflow.md
+SD07	E	Design a vending machine (class design / OOD). Support item selection, payment, dispensing and change return.	ashishps1__awesome-low-level-design:problems/vending-machine.md
+SD07	M	Which design pattern fits a vending machine's behaviour that changes with its current state, and how would you model the states and transitions?	ashishps1__awesome-low-level-design:problems/vending-machine.md
+SD07	H	How would you handle failure scenarios in a vending machine design, such as insufficient change, item stuck, or cancellation after partial payment?	ashishps1__awesome-low-level-design:problems/vending-machine.md
+SD07	M	How would you extend a vending machine design to support multiple payment methods (coins, notes, card, UPI) and restocking by an operator?	ashishps1__awesome-low-level-design:problems/vending-machine.md
+SD07	M	Design a logging framework (class design / OOD) with log levels, multiple output destinations and configurable formatting.	ashishps1__awesome-low-level-design:problems/logging-framework.md
+SD07	H	How would you make a logging framework thread-safe and non-blocking for application threads, and which patterns would you apply?	ashishps1__awesome-low-level-design:problems/logging-framework.md
+SD07	M	Which design patterns appear in a typical logging framework (chain of responsibility, singleton, strategy, observer) and what role does each play?	ashishps1__awesome-low-level-design:problems/logging-framework.md
+SD07	M	How would you support runtime-changeable log levels and per-package loggers in a logging framework design?	ashishps1__awesome-low-level-design:problems/logging-framework.md
+SD07	M	Design a traffic signal control system for an intersection (class design / OOD) with configurable durations and emergency vehicle handling.	ashishps1__awesome-low-level-design:problems/traffic-signal.md
+SD07	H	How would you model emergency-vehicle preemption and guarantee safe signal transitions in a traffic light controller design?	ashishps1__awesome-low-level-design:problems/traffic-signal.md
+SD07	M	How would you extend a traffic signal design to adapt signal durations to real-time traffic density across multiple intersections?	ashishps1__awesome-low-level-design:problems/traffic-signal.md
+SD07	M	Design a coffee vending machine (class design / OOD) that supports multiple beverages, customizable recipes and ingredient inventory.	ashishps1__awesome-low-level-design:problems/coffee-vending-machine.md
+SD07	M	How would you use the decorator or builder pattern to model customizable beverage add-ons in a coffee machine design?	ashishps1__awesome-low-level-design:problems/coffee-vending-machine.md
+SD07	H	How would you handle concurrent orders and ingredient depletion in a coffee machine design, including low-stock alerts?	ashishps1__awesome-low-level-design:problems/coffee-vending-machine.md
+SD07	M	Design a task management system like Trello or Jira (class design / OOD) with tasks, users, priorities, status and assignments.	ashishps1__awesome-low-level-design:problems/task-management-system.md
+SD07	M	How would you model task state transitions, subtasks and dependencies in a task management system without hard-coding the workflow?	ashishps1__awesome-low-level-design:problems/task-management-system.md
+SD07	H	How would you add notifications, activity history and undo to a task management system design, and which patterns would you choose?	ashishps1__awesome-low-level-design:problems/task-management-system.md
+SD07	M	Design an ATM (class design / OOD) covering card authentication, balance inquiry, cash withdrawal and deposit.	ashishps1__awesome-low-level-design:problems/atm.md
+SD07	M	Which pattern would you use to model ATM transaction types and ATM states, and why?	ashishps1__awesome-low-level-design:problems/atm.md
+SD07	H	How would you ensure that an ATM withdrawal is atomic and consistent with the bank backend if the network fails mid-transaction?	ashishps1__awesome-low-level-design:problems/atm.md
+SD07	M	How does an ATM design decide which denominations to dispense, and how would you make the dispensing strategy extensible?	ashishps1__awesome-low-level-design:problems/atm.md
+SD07	M	Design a professional networking platform like LinkedIn (class design / OOD) with profiles, connections, posts, jobs and messaging.	ashishps1__awesome-low-level-design:problems/linkedin.md
+SD07	H	How would you model connection requests, degrees of connection and job recommendations in a LinkedIn style class design?	ashishps1__awesome-low-level-design:problems/linkedin.md
+SD07	M	How would you design the notification and feed-update mechanism for a professional network at the class level?	ashishps1__awesome-low-level-design:problems/linkedin.md
+SD07	E	Design an LRU cache (class design / OOD) with get and put in constant time.	ashishps1__awesome-low-level-design:problems/lru-cache.md
+SD07	M	Which data structures back an O(1) LRU cache and why is each one necessary?	ashishps1__awesome-low-level-design:problems/lru-cache.md
+SD07	H	How would you make an LRU cache thread-safe while keeping contention low, and what are the trade-offs between a single lock, lock striping and a concurrent design?	ashishps1__awesome-low-level-design:problems/lru-cache.md
+SD07	M	How would you generalize an LRU cache design into a cache with pluggable eviction policies such as LFU, FIFO and TTL-based?	ashishps1__awesome-low-level-design:problems/lru-cache.md
+SD07	M	How would you add per-entry TTL expiry and a write-through or write-back backing store to a cache class design?	ashishps1__awesome-low-level-design:problems/lru-cache.md
+SD07	E	Design a Tic Tac Toe game (class design / OOD) with players, board and win detection.	ashishps1__awesome-low-level-design:problems/tic-tac-toe.md
+SD07	M	How would you generalize a Tic Tac Toe design to an N x N board with K in a row and determine a winner in O(1) per move?	ashishps1__awesome-low-level-design:problems/tic-tac-toe.md
+SD07	M	How would you extend a Tic Tac Toe design to support an AI player and a human player behind a common interface?	ashishps1__awesome-low-level-design:problems/tic-tac-toe.md
+SD07	M	Design an in-memory publish-subscribe system (class design / OOD) with topics, publishers and subscribers.	ashishps1__awesome-low-level-design:problems/pub-sub-system.md
+SD07	H	How would you design delivery guarantees, ordering and slow-subscriber handling in an in-memory pub-sub system?	ashishps1__awesome-low-level-design:problems/pub-sub-system.md
+SD07	H	How do you make an in-memory pub-sub broker thread-safe so that publishing never blocks on slow subscribers?	ashishps1__awesome-low-level-design:problems/pub-sub-system.md
+SD07	M	How would you add message filtering, subscription by pattern and unsubscription at runtime to a pub-sub class design?	ashishps1__awesome-low-level-design:problems/pub-sub-system.md
+SD07	M	Design an elevator system for a building (class design / OOD) with multiple elevators, floor requests and a dispatcher.	ashishps1__awesome-low-level-design:problems/elevator-system.md
+SD07	H	What scheduling strategies could an elevator controller use to assign requests to cars, and how do you keep the strategy replaceable?	ashishps1__awesome-low-level-design:problems/elevator-system.md
+SD07	M	Which pattern models an elevator's movement states (idle, moving up, moving down, door open), and how are transitions handled?	ashishps1__awesome-low-level-design:problems/elevator-system.md
+SD07	H	How would you handle concurrent hall calls and in-car requests, overload and emergency stops in an elevator design?	ashishps1__awesome-low-level-design:problems/elevator-system.md
+SD07	M	Design a car rental system (class design / OOD) with vehicles, reservations, pricing, payments and branches.	ashishps1__awesome-low-level-design:problems/car-rental-system.md
+SD07	H	How would you prevent double-booking of a vehicle for overlapping date ranges in a car rental design?	ashishps1__awesome-low-level-design:problems/car-rental-system.md
+SD07	M	How would you support different pricing rules such as per-day, per-kilometre, insurance add-ons and late fees in a rental system model?	ashishps1__awesome-low-level-design:problems/car-rental-system.md
+SD07	M	Design an online auction system (class design / OOD) with listings, bidding, auction closing and winner selection.	ashishps1__awesome-low-level-design:problems/online-auction-system.md
+SD07	H	How do you handle two bids arriving at the same instant or a last-second bid in an online auction design?	ashishps1__awesome-low-level-design:problems/online-auction-system.md
+SD07	M	How would you support different auction types (English, Dutch, sealed-bid) using the strategy pattern in an auction design?	ashishps1__awesome-low-level-design:problems/online-auction-system.md
+SD07	M	Design a hotel management system (class design / OOD) with rooms, bookings, check-in/check-out, housekeeping and billing.	ashishps1__awesome-low-level-design:problems/hotel-management-system.md
+SD07	H	How would you model room availability search and overlapping reservations in a hotel booking design to avoid overbooking?	ashishps1__awesome-low-level-design:problems/hotel-management-system.md
+SD07	M	How would you design room types and dynamic pricing in a hotel management class model?	ashishps1__awesome-low-level-design:problems/hotel-management-system.md
+SD07	M	Design a digital wallet service (class design / OOD) with accounts, top-ups, transfers and transaction history.	ashishps1__awesome-low-level-design:problems/digital-wallet-service.md
+SD07	H	How would you guarantee atomic, deadlock-free money transfers between two wallets in a class-level design?	ashishps1__awesome-low-level-design:problems/digital-wallet-service.md
+SD07	H	How would you make wallet operations idempotent so that retries do not double-debit?	ashishps1__awesome-low-level-design:problems/digital-wallet-service.md
+SD07	M	How would you model multi-currency support and transaction limits in a digital wallet design?	ashishps1__awesome-low-level-design:problems/digital-wallet-service.md
+SD07	M	Design an airline management system (class design / OOD) covering flights, schedules, seat reservation, crew and passengers.	ashishps1__awesome-low-level-design:problems/airline-management-system.md
+SD07	H	How would you design seat selection so that two passengers cannot reserve the same seat concurrently in an airline booking model?	ashishps1__awesome-low-level-design:problems/airline-management-system.md
+SD07	M	How would you model flight search with layovers and fare classes in an airline system class design?	ashishps1__awesome-low-level-design:problems/airline-management-system.md
+SD07	E	Design a library management system (class design / OOD) with books, members, lending, returns and fines.	ashishps1__awesome-low-level-design:problems/library-management-system.md
+SD07	M	How would you model multiple copies of the same book, reservations and waiting lists in a library system?	ashishps1__awesome-low-level-design:problems/library-management-system.md
+SD07	M	How would you design the fine calculation and notification flow in a library management system so new rules can be added easily?	ashishps1__awesome-low-level-design:problems/library-management-system.md
+SD07	M	Design a social network like Facebook (class design / OOD) with users, friends, posts, comments, likes and a news feed.	ashishps1__awesome-low-level-design:problems/social-networking-service.md
+SD07	H	How would you design the news feed generation and privacy settings in a social network class model?	ashishps1__awesome-low-level-design:problems/social-networking-service.md
+SD07	M	How would the observer pattern apply to notifications for likes and comments in a social network design?	ashishps1__awesome-low-level-design:problems/social-networking-service.md
+SD07	M	Design a restaurant management system (class design / OOD) with tables, reservations, orders, kitchen workflow and billing.	ashishps1__awesome-low-level-design:problems/restaurant-management-system.md
+SD07	M	How would you model the order lifecycle from placement to kitchen preparation to serving and billing in a restaurant system?	ashishps1__awesome-low-level-design:problems/restaurant-management-system.md
+SD07	H	How would you assign tables to waiting parties and handle merged or split tables in a restaurant system design?	ashishps1__awesome-low-level-design:problems/restaurant-management-system.md
+SD07	M	Design a concert ticket booking system (class design / OOD) with events, seat maps, holds and payments.	ashishps1__awesome-low-level-design:problems/concert-ticket-booking-system.md
+SD07	H	How would you implement temporary seat holds with expiry in a ticket booking design and release them if payment fails?	ashishps1__awesome-low-level-design:problems/concert-ticket-booking-system.md
+SD07	H	How do you prevent overselling when thousands of users try to book the same seats at the same time in a ticket booking class design?	ashishps1__awesome-low-level-design:problems/concert-ticket-booking-system.md
+SD07	M	Design a live cricket scoring and information system like CricInfo (class design / OOD) with matches, innings, overs, balls and scorecards.	ashishps1__awesome-low-level-design:problems/cricinfo.md
+SD07	H	How would you design live score updates and commentary delivery to many viewers in a cricket scoring model?	ashishps1__awesome-low-level-design:problems/cricinfo.md
+SD07	M	How would you model player and team statistics aggregation in a sports scoring system so new statistics can be added easily?	ashishps1__awesome-low-level-design:problems/cricinfo.md
+SD07	M	Design an expense-sharing application like Splitwise (class design / OOD) with groups, equal, exact and percentage splits, and balances.	ashishps1__awesome-low-level-design:problems/splitwise.md
+SD07	H	How would you implement debt simplification to minimize the number of settlement transactions in an expense-sharing design?	ashishps1__awesome-low-level-design:problems/splitwise.md
+SD07	M	How would you apply the strategy pattern to different split types in an expense-sharing application?	ashishps1__awesome-low-level-design:problems/splitwise.md
+SD07	M	How would you handle rounding errors and currency in an expense-splitting design?	ashishps1__awesome-low-level-design:problems/splitwise.md
+SD07	M	Design a chess game (class design / OOD) with board, pieces, moves, turns and game-end conditions.	ashishps1__awesome-low-level-design:problems/chess-game.md
+SD07	H	How would you model piece movement rules, check, checkmate and special moves like castling and en passant in a chess class design?	ashishps1__awesome-low-level-design:problems/chess-game.md
+SD07	M	How would you add move history, undo and replay to a chess game design, and which patterns would you use?	ashishps1__awesome-low-level-design:problems/chess-game.md
+SD07	M	How would you extend a chess design to support network play, a clock and an AI opponent?	ashishps1__awesome-low-level-design:problems/chess-game.md
+SD07	E	Design a Snake and Ladder game (class design / OOD) with players, board, dice and snakes and ladders.	ashishps1__awesome-low-level-design:problems/snake-and-ladder.md
+SD07	M	How would you make the dice, board size and winning rule configurable in a Snake and Ladder design?	ashishps1__awesome-low-level-design:problems/snake-and-ladder.md
+SD07	M	How would you handle snakes and ladders that chain into each other and invalid board configurations?	ashishps1__awesome-low-level-design:problems/snake-and-ladder.md
+SD07	M	Design a ride-sharing service like Uber (class design / OOD) with riders, drivers, ride requests, matching, pricing and payments.	ashishps1__awesome-low-level-design:problems/ride-sharing-service.md
+SD07	H	How would you design pluggable driver-matching and surge pricing strategies in a ride-sharing class model?	ashishps1__awesome-low-level-design:problems/ride-sharing-service.md
+SD07	H	How would you handle concurrent ride requests competing for the same nearby driver in a ride-sharing design?	ashishps1__awesome-low-level-design:problems/ride-sharing-service.md
+SD07	M	How would the state pattern model the lifecycle of a ride from requested to completed or cancelled?	ashishps1__awesome-low-level-design:problems/ride-sharing-service.md
+SD07	M	Design a university course registration system (class design / OOD) with courses, students, prerequisites, capacity and waitlists.	ashishps1__awesome-low-level-design:problems/course-registration-system.md
+SD07	H	How would you handle concurrent enrollment into a course with limited capacity and automatically promote waitlisted students?	ashishps1__awesome-low-level-design:problems/course-registration-system.md
+SD07	M	How would you model prerequisite and schedule-conflict validation in a course registration system?	ashishps1__awesome-low-level-design:problems/course-registration-system.md
+SD07	M	Design a movie ticket booking system like BookMyShow (class design / OOD) with cinemas, screens, shows, seats and bookings.	ashishps1__awesome-low-level-design:problems/movie-ticket-booking-system.md
+SD07	H	How do you design seat locking, timeout release and payment confirmation so that no seat is double-booked in a movie booking system?	ashishps1__awesome-low-level-design:problems/movie-ticket-booking-system.md
+SD07	M	How would you model city-wise cinema search, show timings and dynamic pricing in a movie ticket booking design?	ashishps1__awesome-low-level-design:problems/movie-ticket-booking-system.md
+SD07	M	Design an online shopping system like Amazon (class design / OOD) with catalog, cart, orders, payments, inventory and shipping.	ashishps1__awesome-low-level-design:problems/online-shopping-service.md
+SD07	H	How would you design inventory reservation and order placement so stock never goes negative under concurrent checkouts?	ashishps1__awesome-low-level-design:problems/online-shopping-service.md
+SD07	M	How would you design the order state machine and shipping integration in an e-commerce class model?	ashishps1__awesome-low-level-design:problems/online-shopping-service.md
+SD07	M	How would you structure discounts, coupons and tax calculation in a shopping cart design to keep pricing rules extensible?	ashishps1__awesome-low-level-design:problems/online-shopping-service.md
+SD07	M	Design an online stock brokerage system (class design / OOD) with accounts, portfolios, buy and sell orders and an order book.	ashishps1__awesome-low-level-design:problems/online-stock-brokerage-system.md
+SD07	H	How would you design order matching for market and limit orders in a brokerage or exchange class model?	ashishps1__awesome-low-level-design:problems/online-stock-brokerage-system.md
+SD07	H	How would you ensure price-time priority and thread safety in an order book implementation?	ashishps1__awesome-low-level-design:problems/online-stock-brokerage-system.md
+SD07	M	Design a music streaming service like Spotify (class design / OOD) with songs, playlists, users, playback and recommendations.	ashishps1__awesome-low-level-design:problems/music-streaming-service.md
+SD07	M	How would you model playback queue, shuffle and repeat behaviours with the strategy or state pattern in a music player design?	ashishps1__awesome-low-level-design:problems/music-streaming-service.md
+SD07	M	How would you design the recommendation hook so different algorithms can be plugged into a music streaming model?	ashishps1__awesome-low-level-design:problems/music-streaming-service.md
+SD07	M	Design a food delivery service like Swiggy (class design / OOD) with restaurants, menus, orders, delivery partners and tracking.	ashishps1__awesome-low-level-design:problems/food-delivery-service.md
+SD07	H	How would you design delivery partner assignment and order-status tracking in a food delivery class model?	ashishps1__awesome-low-level-design:problems/food-delivery-service.md
+SD07	M	How would you support promotions, surge fees and order cancellations in a food delivery design?	ashishps1__awesome-low-level-design:problems/food-delivery-service.md
+SD07	M	Design a caller-ID and spam-detection service like Truecaller (class design / OOD) with contacts, number lookup and spam reporting.	prasadgujar__low-level-design-primer:questions.md
+SD07	M	Design a package locker service (class design / OOD) that assigns a locker of sufficient size to each package and handles pickup codes.	prasadgujar__low-level-design-primer:questions.md
+SD07	M	How would you choose a locker for a package when multiple sizes are available, and how would you handle expiry of uncollected packages?	prasadgujar__low-level-design-primer:questions.md
+SD07	M	Design a JSON parser from scratch that validates and parses at the same time and supports nested string key-value objects.	prasadgujar__low-level-design-primer:questions.md
+SD07	H	How would you design a parser for untrusted JSON input so it fails safely on malformed input and resists deeply nested or oversized payloads?	prasadgujar__low-level-design-primer:questions.md
+SD07	M	Design a CSV parser (class design / OOD) that handles quoting, escaped delimiters and malformed rows.	prasadgujar__low-level-design-primer:questions.md
+SD07	M	Design an in-memory text editor with display, insert, delete, copy, paste, undo and redo commands.	prasadgujar__low-level-design-primer:questions.md
+SD07	M	Which design pattern gives you undo and redo in a text editor, and how would you structure the command history?	prasadgujar__low-level-design-primer:questions.md
+SD07	H	How would you support multi-level undo and redo efficiently for large documents, and what are the memory trade-offs between command and memento approaches?	prasadgujar__low-level-design-primer:questions.md
+SD07	M	Implement a configurable finite state machine library with one start state, multiple end states, runtime-added transitions and per-state notification toggles.	prasadgujar__low-level-design-primer:questions.md
+SD07	H	How would you design a generic finite state machine so that states and transitions can be added at runtime without breaking running instances?	prasadgujar__low-level-design-primer:questions.md
+SD07	M	Design a Jira-like issue tracker (class design / OOD) with stories, features, bugs, subtasks, sprints and status changes.	prasadgujar__low-level-design-primer:questions.md
+SD07	M	How would you generate sprint reports such as delayed tasks, tasks per user and sprint summary in an issue tracker design without bloating the core classes?	prasadgujar__low-level-design-primer:questions.md
+SD07	M	Design a task planner that supports different task types (bug, feature, story) with type-specific attributes and a sprint as a collection of tasks.	prasadgujar__low-level-design-primer:questions.md
+SD07	M	Design a stock exchange matching engine (class design / OOD) that matches buy and sell orders and outputs executed trades.	prasadgujar__low-level-design-primer:questions.md
+SD07	H	How would you design a limit order book data structure to support add, cancel and match operations efficiently?	prasadgujar__low-level-design-primer:questions.md
+SD07	H	How would you ensure fairness and determinism in an order matching engine when orders arrive concurrently?	prasadgujar__low-level-design-primer:questions.md
+SD07	M	Design a car rental application like Zoomcar (class design / OOD) with vehicles, locations, availability and bookings.	prasadgujar__low-level-design-primer:questions.md
+SD07	M	Design an eBay-style billing and auction system (class design / OOD) where sellers pay listing and sale fees and buyers bid.	prasadgujar__low-level-design-primer:questions.md
+SD07	M	Design a product Q&A system as on e-commerce sites (class design / OOD) with questions, answers, voting and moderation.	prasadgujar__low-level-design-primer:questions.md
+SD07	M	Design a push notification service (class design / OOD) that receives events from a promotions team and sends to iOS, Android and email channels.	prasadgujar__low-level-design-primer:questions.md
+SD07	M	How would you design a notification system so that adding a new delivery channel does not require changing existing code?	prasadgujar__low-level-design-primer:questions.md
+SD07	H	How do you add retries, rate limiting, user preferences and deduplication to a notification class design?	prasadgujar__low-level-design-primer:questions.md
+SD07	M	Design a simple suggestion system (class design / OOD) that recommends items based on user behaviour.	prasadgujar__low-level-design-primer:questions.md
+SD07	H	Design and implement a simplified Java garbage collector with Eden, Tenured and Permanent regions and collection rounds that promote surviving objects.	prasadgujar__low-level-design-primer:questions.md
+SD07	M	Design a calendar application like Google Calendar (class design / OOD) with events, invitations, accept and reject states and per-user calendars.	prasadgujar__low-level-design-primer:questions.md
+SD07	H	How would you find a common free time slot for a set of users in a calendar design, and what is the complexity?	prasadgujar__low-level-design-primer:questions.md
+SD07	M	How would you model recurring events and time zones in a calendar class design?	prasadgujar__low-level-design-primer:questions.md
+SD07	M	Design a guitar inventory system (class design / OOD) with searchable instruments by attributes.	prasadgujar__low-level-design-primer:questions.md
+SD07	M	How would you design flexible attribute-based search for an inventory system so new criteria do not require new methods?	prasadgujar__low-level-design-primer:questions.md
+SD07	M	Design a payment system (class design / OOD) with multiple payment methods, transactions, refunds and statuses.	prasadgujar__low-level-design-primer:questions.md
+SD07	H	How would you design a payment gateway class model with pluggable processors, retry logic and idempotent charge requests?	prasadgujar__low-level-design-primer:questions.md
+SD07	M	Design a chat application like WhatsApp (class design / OOD) with users, one-to-one and group conversations, and message status.	prasadgujar__low-level-design-primer:questions.md
+SD07	M	Design a home automation system (class design / OOD) to remotely control switches and devices with extensible device types.	prasadgujar__low-level-design-primer:questions.md
+SD07	M	Design a maps navigation client (class design / OOD) that builds a route between two points for walking, driving, bus and cycling.	prasadgujar__low-level-design-primer:questions.md
+SD07	M	How would the strategy pattern help a navigation client support different transport modes and routing preferences?	prasadgujar__low-level-design-primer:questions.md
+SD07	M	Design a meeting room scheduler (class design / OOD) that books a free room for a time interval, notifies attendees and shows booking history.	prasadgujar__low-level-design-primer:questions.md
+SD07	H	How would you detect room availability and interval conflicts efficiently when there are many meeting rooms and bookings?	prasadgujar__low-level-design-primer:questions.md
+SD07	M	Design a configuration management system (class design / OOD) with add, delete, search and subscription to configuration updates.	prasadgujar__low-level-design-primer:questions.md
+SD07	M	Design an in-memory message queue where publishers produce JSON messages and subscribers register regex filters and callbacks at runtime.	prasadgujar__low-level-design-primer:questions.md
+SD07	H	How would you support dependency ordering among subscribers (A must process after B) and retries on processing failure in an in-memory message queue?	prasadgujar__low-level-design-primer:questions.md
+SD07	H	How would you detect and prevent circular dependencies between subscribers in a dependency-aware message queue design?	prasadgujar__low-level-design-primer:questions.md
+SD07	M	Design a mock interview matching platform like Pramp (class design / OOD).	prasadgujar__low-level-design-primer:questions.md
+SD07	M	Design an applicant tracking system (class design / OOD) with job postings, candidates, pipeline stages and recruiters.	prasadgujar__low-level-design-primer:questions.md
+SD07	M	Design a logistics system (class design / OOD) with shipments, hubs, vehicles and tracking.	prasadgujar__low-level-design-primer:questions.md
+SD07	M	Design an employee management platform (class design / OOD) with payroll, benefits and IT provisioning modules.	prasadgujar__low-level-design-primer:questions.md
+SD07	M	Design a unit-testing framework (class design / OOD) that discovers tests, runs them and reports results.	prasadgujar__low-level-design-primer:questions.md
+SD07	M	Design an inventory management system (class design / OOD) with stock levels, reorder points and multiple warehouses.	prasadgujar__low-level-design-primer:questions.md
+SD07	M	Design a warehouse management system (class design / OOD) with receiving, putaway, picking and shipping.	prasadgujar__low-level-design-primer:questions.md
+SD07	M	Design a restaurant waiting-queue system (class design / OOD) that assigns tables efficiently to waiting parties.	prasadgujar__low-level-design-primer:questions.md
+SD07	M	Design an online assessment platform (class design / OOD) for timed exams with question banks, attempts and scoring.	prasadgujar__low-level-design-primer:questions.md
+SD07	M	Design a survey application like Google Forms (class design / OOD) with question types, responses and analytics.	prasadgujar__low-level-design-primer:questions.md
+SD07	M	Design a learning management system (class design / OOD) with courses, lessons, enrollments and progress tracking.	prasadgujar__low-level-design-primer:questions.md
+SD07	M	Design a generic coupon and promo code system (class design / OOD) supporting percentage and flat discounts, minimum cart sizes, customer and merchant targeting, and usage limits.	prasadgujar__low-level-design-primer:questions.md
+SD07	H	How would you design composable coupon rules so combinations of conditions and discount types can be added without code changes in a promo system?	prasadgujar__low-level-design-primer:questions.md
+SD07	H	How would you enforce a per-user usage limit on coupons under concurrent redemption in a coupon system?	prasadgujar__low-level-design-primer:questions.md
+SD07	M	Design a distributed unique ID generator in the style of Twitter Snowflake (class design / OOD).	prasadgujar__low-level-design-primer:questions.md
+SD07	H	How do you handle clock skew, sequence overflow and worker-id assignment in a Snowflake-style ID generator?	prasadgujar__low-level-design-primer:questions.md
+SD07	M	Design an in-memory database with tables, indexing and basic queries (class design / OOD).	prasadgujar__low-level-design-primer:questions.md
+SD07	H	How would you add secondary indexes and transaction support to an in-memory database design?	prasadgujar__low-level-design-primer:questions.md
+SD07	M	Design an in-memory data streaming service (class design / OOD) with topics, partitions, producers and consumer offsets.	prasadgujar__low-level-design-primer:questions.md
+SD07	M	Design a system exposing save-number and get-median operations where get-median is the most frequent call.	prasadgujar__low-level-design-primer:questions.md
+SD07	M	Which data structures give an efficient running median, and how would you scale it for a high write rate?	prasadgujar__low-level-design-primer:questions.md
+SD07	M	Design an e-commerce product review and rating system (class design / OOD).	prasadgujar__low-level-design-primer:questions.md
+SD07	M	Design an online book reader system (class design / OOD) with users, libraries, bookmarks and reading sessions.	prasadgujar__low-level-design-primer:questions.md
+SD07	M	Design a ride-sharing matching component where drivers offer rides with seats and riders request rides, and the best overlapping match is chosen.	prasadgujar__low-level-design-primer:questions.md
+SD07	M	Design an airport runway allocation service (class design / OOD) that assigns a free runway to landing planes.	prasadgujar__low-level-design-primer:questions.md
+SD07	H	How do you ensure a runway is never allocated to two aircraft at once, and what happens when none is available?	prasadgujar__low-level-design-primer:questions.md
+SD07	M	Design a card game platform (class design / OOD) with players, tables, decks, turns and scoring.	prasadgujar__low-level-design-primer:questions.md
+SD07	M	Design a rate limiter library (class design / OOD) that supports multiple algorithms and per-client limits.	prasadgujar__low-level-design-primer:questions.md
+SD07	H	How would you design a rate limiter class so the algorithm (token bucket, sliding window, fixed window) is swappable and the limiter is thread-safe?	prasadgujar__low-level-design-primer:questions.md
+SD07	M	Design an in-memory file system (class design / OOD) with directories, files, create, list, read and delete operations.	prasadgujar__low-level-design-primer:questions.md
+SD07	H	Which pattern models files and directories uniformly in an in-memory file system, and how would you add permissions and search?	prasadgujar__low-level-design-primer:questions.md
+SD07	M	Design a spreadsheet engine (class design / OOD) with cells, formulas and dependency recalculation.	prasadgujar__low-level-design-primer:questions.md
+SD07	H	How would you detect cyclic references and recompute dependent cells efficiently in a spreadsheet class design?	prasadgujar__low-level-design-primer:questions.md
+SD07	M	Design a URL shortener at the class level (class design / OOD) with key generation, storage and expiry.	prasadgujar__low-level-design-primer:questions.md
+SD07	M	Design a scheduler library (class design / OOD) that runs jobs at given times or intervals using a worker pool.	prasadgujar__low-level-design-primer:questions.md
+SD07	M	Design an electronic signature workflow (class design / OOD) with documents, signers, ordering and audit trail.	prasadgujar__low-level-design-primer:questions.md
+SD07	E	What steps would you follow in a low-level design interview, from clarifying requirements to the final class diagram?	ashishps1__awesome-low-level-design:LLD methodology
+SD07	M	How do you identify the core entities, relationships and responsibilities when given a vague object-oriented design problem?	ashishps1__awesome-low-level-design:LLD methodology
+SD07	M	How do you decide between modelling a concept as an enum, an interface with implementations, or a class hierarchy in an OOD problem?	ashishps1__awesome-low-level-design:LLD methodology
+SD07	M	How do you decide which design patterns to apply in a low-level design problem without over-engineering?	ashishps1__awesome-low-level-design:LLD methodology
+SD07	M	What is the difference between a low-level design interview, a machine coding round and a high-level design interview?	ashishps1__awesome-low-level-design:LLD methodology
+SD07	M	How do you incorporate concurrency considerations into a low-level design after the single-threaded model is complete?	ashishps1__awesome-low-level-design:LLD methodology
+SD07	M	How do you handle extensibility questions such as add a new vehicle type or a new payment method after you present your design?	ashishps1__awesome-low-level-design:LLD methodology
+SD07	M	How do you keep your low-level design testable, and what would you mock when unit testing the core classes?	ashishps1__awesome-low-level-design:LLD methodology
+SD07	M	Which diagrams would you draw in a low-level design interview, and what does each one communicate?	ashishps1__awesome-low-level-design:LLD methodology
+SD07	H	Walk through how you would refactor a god-class in a low-level design into cohesive classes using SOLID principles.	ashishps1__awesome-low-level-design:LLD methodology
+SD07	M	How do you model the boundary between domain objects and service or manager classes in an OOD solution?	ashishps1__awesome-low-level-design:LLD methodology
+SD07	M	When should a low-level design use a singleton for services such as a manager or controller, and what testing problems does it cause?	ashishps1__awesome-low-level-design:LLD methodology
+SD07	M	How do you design for idempotency and failure handling in a low-level design that involves payments or bookings?	ashishps1__awesome-low-level-design:LLD methodology
+SD07	M	What are common mistakes candidates make in object-oriented design interviews, and how can they be avoided?	ashishps1__awesome-low-level-design:LLD methodology
+CS02	M	Print FooBar alternately using two threads. Which synchronization primitives would you use and why?	ashishps1__awesome-low-level-design:concurrency problems
+CS02	M	Design a solution that prints zero, even and odd numbers in a fixed interleaved order using three threads.	ashishps1__awesome-low-level-design:concurrency problems
+CS02	M	How would you implement a multithreaded FizzBuzz with separate threads for fizz, buzz, fizzbuzz and number output?	ashishps1__awesome-low-level-design:concurrency problems
+CS02	M	Build a thread-safe H2O molecule builder where two hydrogen threads and one oxygen thread must bond together. Which primitive is the best fit?	ashishps1__awesome-low-level-design:concurrency problems
+CS02	H	Design a thread-safe cache with TTL expiry. How would you handle expiry cleanup and concurrent reads and writes?	ashishps1__awesome-low-level-design:concurrency problems
+CS02	H	Design a concurrent hash map. How do lock striping, per-bucket locks and lock-free approaches differ?	ashishps1__awesome-low-level-design:concurrency problems
+CS02	H	Design a thread-safe blocking queue. How do you implement it with locks and condition variables and avoid lost wake-ups?	ashishps1__awesome-low-level-design:concurrency problems
+CS02	H	Design a concurrent Bloom filter. How would you make bit-set updates thread-safe without a global lock?	ashishps1__awesome-low-level-design:concurrency problems
+CS02	M	How would you implement a multithreaded merge sort, and when does parallelism stop paying off?	ashishps1__awesome-low-level-design:concurrency problems
+CS02	M	What is the difference between coarse-grained and fine-grained locking, and when does each pay off?	ashishps1__awesome-low-level-design:concurrency problems
+CS02	M	What is a reentrant lock and what problem does it solve compared to a non-reentrant mutex?	ashishps1__awesome-low-level-design:concurrency problems
+CS02	M	When would you choose try-lock or timed locking over blocking lock acquisition?	ashishps1__awesome-low-level-design:concurrency problems
+CS02	M	How does compare-and-swap enable lock-free algorithms, and what is the ABA problem?	ashishps1__awesome-low-level-design:concurrency problems
+CS02	M	What is livelock, how does it differ from deadlock, and how can it be resolved?	ashishps1__awesome-low-level-design:concurrency problems
+CS02	M	What is the signaling pattern in concurrent programming and when would you use condition variables instead of busy waiting?	ashishps1__awesome-low-level-design:concurrency problems
+CS02	M	How does the reader-writer pattern improve throughput over a plain mutex, and what are the risks of writer starvation?	ashishps1__awesome-low-level-design:concurrency problems
+CS02	M	How does a thread pool improve performance, and how do you size it for CPU-bound versus I/O-bound workloads?	ashishps1__awesome-low-level-design:concurrency problems
+CS02	M	Describe the producer-consumer pattern and how bounded queues provide back-pressure.	ashishps1__awesome-low-level-design:concurrency problems
+CS02	E	What is the difference between concurrency and parallelism?	ashishps1__awesome-low-level-design:concurrency problems
+CS02	E	What are the states in a thread lifecycle and which events cause transitions between them?	ashishps1__awesome-low-level-design:concurrency problems
+CS02	M	What is a race condition and a critical section, and how do you reduce the size of a critical section?	ashishps1__awesome-low-level-design:concurrency problems
+CS06	E	What are the four pillars of object-oriented programming, and how does each contribute to maintainable software?	ashishps1__awesome-low-level-design:oop
+CS06	E	What is the difference between a class and an object?	ashishps1__awesome-low-level-design:oop
+CS06	E	What is encapsulation, and how does it differ from data hiding?	ashishps1__awesome-low-level-design:oop
+CS06	M	Why are getters and setters sometimes considered an anti-pattern, and how can you protect class invariants without exposing internal state?	ashishps1__awesome-low-level-design:oop
+CS06	M	How do access modifiers (public, protected, private, package-private) support encapsulation, and when is protected a design smell?	ashishps1__awesome-low-level-design:oop
+CS06	E	What is abstraction, and how does it differ from encapsulation?	ashishps1__awesome-low-level-design:oop
+CS06	M	What is the difference between an abstract class and an interface, and how do you decide which to use?	ashishps1__awesome-low-level-design:oop
+CS06	M	How have default and static methods in interfaces blurred the line between interfaces and abstract classes, and what risks do they introduce?	ashishps1__awesome-low-level-design:oop
+CS06	M	What is the diamond problem in multiple inheritance, and how do different languages avoid or resolve it?	ashishps1__awesome-low-level-design:oop
+CS06	E	What is inheritance, and what are the different types of inheritance?	ashishps1__awesome-low-level-design:oop
+CS06	M	What problems does deep inheritance hierarchies cause, and what is the fragile base class problem?	ashishps1__awesome-low-level-design:oop
+CS06	M	Why is composition often preferred over inheritance, and when is inheritance still the right choice?	ashishps1__awesome-low-level-design:oop
+CS06	H	Given a design that uses inheritance to share code between unrelated classes, how would you refactor it to composition and what would you gain?	ashishps1__awesome-low-level-design:oop
+CS06	E	What is polymorphism, and what is the difference between compile-time and run-time polymorphism?	ashishps1__awesome-low-level-design:oop
+CS06	M	How does dynamic dispatch work under the hood using a virtual table?	ashishps1__awesome-low-level-design:oop
+CS06	M	What is the difference between method overloading and method overriding, and what rules govern each?	ashishps1__awesome-low-level-design:oop
+CS06	M	Why is calling an overridable method from a constructor dangerous?	ashishps1__awesome-low-level-design:oop
+CS06	M	What is the difference between static binding and dynamic binding?	ashishps1__awesome-low-level-design:oop
+CS06	M	What is the Liskov-compatible way to override a method, and what do covariance and contravariance mean for return and parameter types?	ashishps1__awesome-low-level-design:oop
+CS06	M	How do Go interfaces and struct embedding provide polymorphism and code reuse without classical inheritance?	ashishps1__awesome-low-level-design:oop
+CS06	M	What does structural (implicit) interface satisfaction in Go give you compared with nominal interfaces in Java or C#, and what are its downsides?	ashishps1__awesome-low-level-design:oop
+CS06	M	How do Python abstract base classes and duck typing differ in how they enforce an interface?	ashishps1__awesome-low-level-design:oop
+CS06	M	What are pure virtual functions in C++, and why should base classes with virtual functions have a virtual destructor?	ashishps1__awesome-low-level-design:oop
+CS06	M	What is object slicing in C++, and how can it break polymorphism?	ashishps1__awesome-low-level-design:oop
+CS06	M	What is the difference between association, aggregation and composition, with examples of each?	ashishps1__awesome-low-level-design:oop
+CS06	M	How do object lifetimes differ between aggregation and composition, and how does that affect ownership and deletion?	ashishps1__awesome-low-level-design:oop
+CS06	M	What is the difference between unidirectional and bidirectional association, and what maintenance problems do bidirectional links cause?	ashishps1__awesome-low-level-design:oop
+CS06	M	What is a dependency relationship in UML, and how does it differ from association?	ashishps1__awesome-low-level-design:oop
+CS06	E	What are enums used for in object-oriented design, and when do they replace conditional logic or class hierarchies?	ashishps1__awesome-low-level-design:oop
+CS06	M	What is the difference between a value object and an entity, and why does it matter for equality and immutability?	ashishps1__awesome-low-level-design:oop
+CS06	M	What are the benefits of immutable objects, and how do you design a class to be immutable?	ashishps1__awesome-low-level-design:oop
+CS06	M	What is the difference between shallow copy and deep copy, and when does each create bugs?	ashishps1__awesome-low-level-design:oop
+CS06	M	What is the difference between equals and identity comparison, and what is the contract between equals and hashCode?	ashishps1__awesome-low-level-design:oop
+CS06	M	What is the Law of Demeter, and how does violating it lead to tight coupling?	ashishps1__awesome-low-level-design:oop
+CS06	M	What is the difference between coupling and cohesion, and how do you measure or improve each?	ashishps1__awesome-low-level-design:oop
+CS06	M	What is the tell-dont-ask principle, and how does it improve object design?	ashishps1__awesome-low-level-design:oop
+CS06	M	What is an anemic domain model, and why is it often considered an anti-pattern?	ashishps1__awesome-low-level-design:oop
+CS06	M	What is the difference between program to an interface and program to an implementation, and why does it matter?	ashishps1__awesome-low-level-design:oop
+CS06	E	What does the Single Responsibility Principle say, and how do you identify a class with more than one responsibility?	ashishps1__awesome-low-level-design:design principles
+CS06	M	What does the Open/Closed Principle mean in practice, and how can the strategy pattern help satisfy it?	ashishps1__awesome-low-level-design:design principles
+CS06	M	What does the Liskov Substitution Principle require of subclasses, and can you give an example such as the square and rectangle problem?	ashishps1__awesome-low-level-design:design principles
+CS06	M	What does the Interface Segregation Principle say, and how do fat interfaces harm clients?	ashishps1__awesome-low-level-design:design principles
+CS06	M	What does the Dependency Inversion Principle say, and how does it differ from dependency injection?	ashishps1__awesome-low-level-design:design principles
+CS06	M	Review a class that violates several SOLID principles at once and describe how you would refactor it step by step.	ashishps1__awesome-low-level-design:design principles
+CS06	H	Can following SOLID too rigidly hurt a codebase? Describe the trade-offs between abstraction and simplicity.	ashishps1__awesome-low-level-design:design principles
+CS06	E	What do the DRY, KISS and YAGNI principles mean, and when do they conflict with each other?	ashishps1__awesome-low-level-design:design principles
+CS06	M	When is code duplication preferable to a premature abstraction?	ashishps1__awesome-low-level-design:design principles
+CS06	M	What is dependency injection, and what are constructor, setter and interface injection?	ashishps1__awesome-low-level-design:design principles
+CS06	M	What are the benefits of dependency injection for testing, and what does an inversion-of-control container do?	ashishps1__awesome-low-level-design:design principles
+CS06	M	What is the difference between dependency injection and the service locator pattern?	ashishps1__awesome-low-level-design:design principles
+CS06	M	What is the principle of least astonishment, and how does it apply to API and class design?	ashishps1__awesome-low-level-design:design principles
+CS06	M	What is the difference between inheritance-based and delegation-based reuse, and how does the delegation pattern work?	ashishps1__awesome-low-level-design:design principles
+CS06	M	What is separation of concerns, and how does layered architecture implement it?	ashishps1__awesome-low-level-design:design principles
+CS06	M	What is a code smell? Name several well-known smells and the refactorings that address them.	ashishps1__awesome-low-level-design:design principles
+CS06	M	What are the characteristics of clean code, and how do naming, function size and comments contribute?	ashishps1__awesome-low-level-design:design principles
+CS06	M	What is technical debt, and how do you decide when to refactor versus ship?	ashishps1__awesome-low-level-design:design principles
+CS06	M	What is the rule of three in refactoring, and why wait before generalizing?	ashishps1__awesome-low-level-design:design principles
+CS06	E	What are design patterns, and what are the three GoF categories with examples from each?	ashishps1__awesome-low-level-design:design patterns (general)
+CS06	M	What are the risks of overusing design patterns, and how do you tell when a pattern is justified?	ashishps1__awesome-low-level-design:design patterns (general)
+CS06	M	How do patterns such as strategy, state and bridge look structurally similar, and how do you distinguish their intent?	ashishps1__awesome-low-level-design:design patterns (general)
+CS06	M	What is the difference between the decorator, proxy and adapter patterns?	ashishps1__awesome-low-level-design:design patterns (general)
+CS06	M	What is the difference between factory method, abstract factory and builder?	ashishps1__awesome-low-level-design:design patterns (general)
+CS06	M	Which design patterns are commonly used in well-known frameworks and standard libraries, and what are examples of each?	ashishps1__awesome-low-level-design:design patterns (general)
+CS06	M	What are anti-patterns such as god object, spaghetti code and golden hammer, and how do they emerge?	ashishps1__awesome-low-level-design:design patterns (general)
+CS06	E	What is the Singleton pattern, and when is it appropriate?	ashishps1__awesome-low-level-design:design-patterns/creational
+CS06	M	What are the ways to implement a thread-safe singleton, and what is wrong with naive double-checked locking?	ashishps1__awesome-low-level-design:design-patterns/creational
+CS06	M	Why is Singleton often criticized as hidden global state, and what alternatives improve testability?	ashishps1__awesome-low-level-design:design-patterns/creational
+CS06	M	How can a singleton be broken in practice (reflection, serialization, multiple class loaders), and how do you defend against it?	ashishps1__awesome-low-level-design:design-patterns/creational
+CS06	E	What is the Factory Method pattern, and what problem does it solve?	ashishps1__awesome-low-level-design:design-patterns/creational
+CS06	M	What is the difference between a simple factory, the factory method pattern and the abstract factory pattern?	ashishps1__awesome-low-level-design:design-patterns/creational
+CS06	M	When would you use the Abstract Factory pattern, and what is the main drawback when adding new product types?	ashishps1__awesome-low-level-design:design-patterns/creational
+CS06	M	What is the Builder pattern, and how does it address the telescoping constructor problem?	ashishps1__awesome-low-level-design:design-patterns/creational
+CS06	M	When should you prefer a builder over constructor overloading or named parameters, and how do you validate required fields?	ashishps1__awesome-low-level-design:design-patterns/creational
+CS06	M	What is the Prototype pattern, and when does cloning beat constructing from scratch?	ashishps1__awesome-low-level-design:design-patterns/creational
+CS06	M	What are the pitfalls of cloning objects in the Prototype pattern, particularly with deep and shallow copies?	ashishps1__awesome-low-level-design:design-patterns/creational
+CS06	M	What is object pooling, and how does it differ from the Flyweight pattern?	ashishps1__awesome-low-level-design:design-patterns/creational
+CS06	E	What is the Adapter pattern, and what is the difference between class adapters and object adapters?	ashishps1__awesome-low-level-design:design-patterns/structural
+CS06	M	When would you use an adapter when integrating a third-party library, and what are the pitfalls of leaking the adaptee interface?	ashishps1__awesome-low-level-design:design-patterns/structural
+CS06	M	What is the Bridge pattern, and how does it prevent a class explosion when two dimensions of variation exist?	ashishps1__awesome-low-level-design:design-patterns/structural
+CS06	M	How does the Bridge pattern differ from the Adapter pattern?	ashishps1__awesome-low-level-design:design-patterns/structural
+CS06	E	What is the Composite pattern, and what kinds of problems has a tree of uniform objects as its natural solution?	ashishps1__awesome-low-level-design:design-patterns/structural
+CS06	M	In the Composite pattern, should child-management methods live on the component interface or only on the composite, and what are the trade-offs?	ashishps1__awesome-low-level-design:design-patterns/structural
+CS06	E	What is the Decorator pattern, and how does it differ from subclassing for adding behaviour?	ashishps1__awesome-low-level-design:design-patterns/structural
+CS06	M	What are the drawbacks of the Decorator pattern, such as ordering sensitivity and many small objects?	ashishps1__awesome-low-level-design:design-patterns/structural
+CS06	E	What is the Facade pattern, and how does it reduce coupling between subsystems?	ashishps1__awesome-low-level-design:design-patterns/structural
+CS06	M	How does a facade differ from an adapter and a mediator?	ashishps1__awesome-low-level-design:design-patterns/structural
+CS06	M	What is the Flyweight pattern, and which state must be intrinsic versus extrinsic?	ashishps1__awesome-low-level-design:design-patterns/structural
+CS06	M	When does Flyweight actually save memory, and what is the cost in complexity and thread safety?	ashishps1__awesome-low-level-design:design-patterns/structural
+CS06	E	What is the Proxy pattern, and what are virtual, protection and remote proxies?	ashishps1__awesome-low-level-design:design-patterns/structural
+CS06	M	How does a proxy differ from a decorator when both wrap the same interface?	ashishps1__awesome-low-level-design:design-patterns/structural
+CS06	M	How can the proxy pattern be used for lazy loading, caching or access control, and how do dynamic proxies work?	ashishps1__awesome-low-level-design:design-patterns/structural
+CS06	E	What is the Observer pattern, and where is it used in practice?	ashishps1__awesome-low-level-design:design-patterns/behavioral
+CS06	M	What problems arise with the Observer pattern, such as memory leaks from unregistered listeners, notification ordering and cascading updates?	ashishps1__awesome-low-level-design:design-patterns/behavioral
+CS06	M	How does Observer differ from publish-subscribe, and when would you prefer one over the other?	ashishps1__awesome-low-level-design:design-patterns/behavioral
+CS06	M	What is the push versus pull model of observer notification, and what are the trade-offs?	ashishps1__awesome-low-level-design:design-patterns/behavioral
+CS06	E	What is the Strategy pattern, and how does it remove conditional logic?	ashishps1__awesome-low-level-design:design-patterns/behavioral
+CS06	M	How does the Strategy pattern differ from the State pattern?	ashishps1__awesome-low-level-design:design-patterns/behavioral
+CS06	M	How does the Strategy pattern relate to the Open/Closed Principle, and how do higher-order functions replace it in modern languages?	ashishps1__awesome-low-level-design:design-patterns/behavioral
+CS06	E	What is the Command pattern, and what does it enable beyond a direct method call?	ashishps1__awesome-low-level-design:design-patterns/behavioral
+CS06	M	How does the Command pattern support undo, redo, queuing and macro commands?	ashishps1__awesome-low-level-design:design-patterns/behavioral
+CS06	E	What is the State pattern, and when is it better than a switch on an enum?	ashishps1__awesome-low-level-design:design-patterns/behavioral
+CS06	M	Who should own state transitions in the State pattern, the context or the states, and what are the implications?	ashishps1__awesome-low-level-design:design-patterns/behavioral
+CS06	E	What is the Template Method pattern, and how does it differ from Strategy?	ashishps1__awesome-low-level-design:design-patterns/behavioral
+CS06	M	How does the Template Method pattern relate to the Hollywood principle, and what are the drawbacks of relying on inheritance?	ashishps1__awesome-low-level-design:design-patterns/behavioral
+CS06	M	What is the Iterator pattern, and why does it separate traversal from collection structure?	ashishps1__awesome-low-level-design:design-patterns/behavioral
+CS06	M	What happens when a collection is modified during iteration, and how do fail-fast and snapshot iterators differ?	ashishps1__awesome-low-level-design:design-patterns/behavioral
+CS06	M	What is the Visitor pattern, and what problem does double dispatch solve?	ashishps1__awesome-low-level-design:design-patterns/behavioral
+CS06	M	What is the main trade-off of the Visitor pattern when adding new element types versus adding new operations?	ashishps1__awesome-low-level-design:design-patterns/behavioral
+CS06	M	What is the Mediator pattern, and how does it reduce many-to-many coupling between components?	ashishps1__awesome-low-level-design:design-patterns/behavioral
+CS06	M	What are the risks of a mediator becoming a god object?	ashishps1__awesome-low-level-design:design-patterns/behavioral
+CS06	M	What is the Memento pattern, and how does it capture state for undo without breaking encapsulation?	ashishps1__awesome-low-level-design:design-patterns/behavioral
+CS06	M	What is the Chain of Responsibility pattern, and what are real examples such as middleware pipelines and logging handlers?	ashishps1__awesome-low-level-design:design-patterns/behavioral
+CS06	M	How does the Chain of Responsibility pattern behave when no handler processes a request, and how do you guarantee termination?	ashishps1__awesome-low-level-design:design-patterns/behavioral
+CS06	M	What is the Null Object pattern, and when is it better than returning null?	ashishps1__awesome-low-level-design:design-patterns/behavioral
+CS06	M	What is the Specification pattern, and how does it help compose business rules?	ashishps1__awesome-low-level-design:design-patterns/behavioral
+CS06	M	What is the Interpreter pattern, and when is a small domain-specific language worth building?	ashishps1__awesome-low-level-design:design-patterns/behavioral
+CS06	M	Which design pattern would you use to build a text-formatting pipeline with optional stages, and why?	ashishps1__awesome-low-level-design:design pattern scenarios
+CS06	M	Which pattern fits a payment system that must support multiple payment gateways chosen at runtime?	ashishps1__awesome-low-level-design:design pattern scenarios
+CS06	M	Which pattern would you apply to build a UI toolkit where widgets are nested in containers and treated uniformly?	ashishps1__awesome-low-level-design:design pattern scenarios
+CS06	M	Which patterns would you combine to design an event-driven notification module with multiple channels and retry behaviour?	ashishps1__awesome-low-level-design:design pattern scenarios
+CS06	M	Which pattern would you use to add caching, logging or authorization to an existing service without modifying it?	ashishps1__awesome-low-level-design:design pattern scenarios
+CS06	M	A class has a long if-else chain choosing behaviour by type. Which patterns could remove it, and what would you choose?	ashishps1__awesome-low-level-design:design pattern scenarios
+CS06	M	How would you implement a plugin architecture using patterns and dependency inversion?	ashishps1__awesome-low-level-design:design pattern scenarios
+CS06	M	Which patterns help in building a document editor that supports undo, multiple views and format conversion?	ashishps1__awesome-low-level-design:design pattern scenarios
+CS06	M	Which pattern would you use to build a middleware pipeline for HTTP request processing, and how does ordering matter?	ashishps1__awesome-low-level-design:design pattern scenarios
+CS06	M	How do the Repository and Unit of Work patterns separate persistence from domain logic?	ashishps1__awesome-low-level-design:design pattern scenarios
+CS06	M	What is the Model-View-Controller pattern, and how do MVP and MVVM differ from it?	ashishps1__awesome-low-level-design:design pattern scenarios
+CS06	M	What is the Dependency Injection container lifecycle (singleton, scoped, transient), and what bugs arise from mismatched lifetimes?	ashishps1__awesome-low-level-design:design pattern scenarios
+CS06	M	What is the Active Record pattern versus Data Mapper, and when would each be preferable?	ashishps1__awesome-low-level-design:design pattern scenarios
+CS06	M	What is the Event Sourcing pattern at the object level, and how does it relate to the Memento and Command patterns?	ashishps1__awesome-low-level-design:design pattern scenarios
+CS06	E	What are the main UML diagram types, and which ones are most useful in a design interview?	ashishps1__awesome-low-level-design:UML
+CS06	M	How do you notate inheritance, interface realization, association, aggregation, composition and dependency in a UML class diagram?	ashishps1__awesome-low-level-design:UML
+CS06	M	What do multiplicity and navigability mean on an association in a class diagram?	ashishps1__awesome-low-level-design:UML
+CS06	M	When would you draw a sequence diagram rather than a class diagram?	ashishps1__awesome-low-level-design:UML
+CS06	M	What does a use case diagram capture, and how do actors and use cases relate to requirements?	ashishps1__awesome-low-level-design:UML
+CS06	M	What do activity diagrams show, and how do they differ from state machine diagrams?	ashishps1__awesome-low-level-design:UML
+CS06	M	When is a state machine diagram the right tool for modelling an object?	ashishps1__awesome-low-level-design:UML
+CS06	M	What is the difference between a design pattern and a distributed systems pattern such as sidecar, circuit breaker or saga?	prasadgujar__low-level-design-primer:Design-Patterns
+CS06	M	How do the principles of object-oriented design relate to the machine coding round, and what do interviewers look for?	prasadgujar__low-level-design-primer:Design-Patterns
+CS06	E	What is the difference between unit, integration and end-to-end tests, and what is the test pyramid?	ashishps1__awesome-low-level-design:testing and quality
+CS06	M	What is test-driven development, and what are its benefits and limitations?	ashishps1__awesome-low-level-design:testing and quality
+CS06	M	What is the difference between mocks, stubs, fakes and spies in unit testing?	ashishps1__awesome-low-level-design:testing and quality
+CS06	M	How does good object-oriented design make code easier to unit test, and what design choices make it hard?	ashishps1__awesome-low-level-design:testing and quality
+CS06	M	What is code coverage, and why is high coverage not a guarantee of quality?	ashishps1__awesome-low-level-design:testing and quality
+CS06	M	What is behaviour-driven development, and how does it differ from TDD?	ashishps1__awesome-low-level-design:testing and quality
+CS06	M	What makes a test flaky, and how would you diagnose and fix it?	ashishps1__awesome-low-level-design:testing and quality
+CS06	M	What is the difference between refactoring and rewriting, and what safety nets should be in place before refactoring?	ashishps1__awesome-low-level-design:testing and quality
+CS06	M	What are the goals of code review, and what should a reviewer prioritise?	ashishps1__awesome-low-level-design:testing and quality
+CS06	M	What is the difference between exceptions and error return values, and when should custom exception types be created?	ashishps1__awesome-low-level-design:testing and quality
+CS06	M	What are checked versus unchecked exceptions, and what is the argument for each?	ashishps1__awesome-low-level-design:testing and quality
+CS06	M	What is design by contract, and how do preconditions, postconditions and invariants appear in everyday code?	ashishps1__awesome-low-level-design:testing and quality
+CS06	M	What is the difference between defensive programming and fail-fast, and where is each appropriate?	ashishps1__awesome-low-level-design:testing and quality
+CS06	M	What is generic programming, and how do generics provide type safety compared with raw types or type erasure?	ashishps1__awesome-low-level-design:testing and quality
+CS06	M	What is the difference between functional and object-oriented decomposition, and how do immutability and pure functions complement OOP?	ashishps1__awesome-low-level-design:testing and quality
+CS06	M	What is the difference between an API and an SPI, and how do you evolve a public interface without breaking clients?	ashishps1__awesome-low-level-design:testing and quality
+CS06	M	What is the Hollywood principle, and how does inversion of control show up in frameworks?	ashishps1__awesome-low-level-design:testing and quality
+CS06	M	What is the difference between a library and a framework from a control-flow perspective?	ashishps1__awesome-low-level-design:testing and quality
+CS06	M	What are the trade-offs of using inheritance for code reuse in frameworks versus using mixins, traits or default methods?	ashishps1__awesome-low-level-design:testing and quality
+CS06	H	You inherit a large class with hundreds of lines, mixed responsibilities and no tests. Describe how you would safely restructure it.	ashishps1__awesome-low-level-design:testing and quality
+CS06	H	Design an extensible plugin system for a class library and explain which patterns and principles make it open to extension.	ashishps1__awesome-low-level-design:testing and quality
+SD06	M	Design a multi-user blogging and publishing platform for 5 million daily active readers and 10,000 daily active writers, with image support, search and per-author blog counts.	arpitbbhayani__system-design-questions:blogging-platform.md
+SD06	H	In a blogging platform design, how would you render the number of blogs written by each author on a profile page without expensive counting queries?	arpitbbhayani__system-design-questions:blogging-platform.md
+SD06	M	How would you design low-latency blog reads and cache invalidation when authors edit or delete a post?	arpitbbhayani__system-design-questions:blogging-platform.md
+SD06	M	Design an online/offline presence indicator for a chat application that shows within about 10 seconds whether a user is online, for 5 million concurrent users.	arpitbbhayani__system-design-questions:online-offline-indicator.md
+SD06	H	How would you use heartbeats and TTL-based keys to implement presence, and how lenient can you be in marking users offline?	arpitbbhayani__system-design-questions:online-offline-indicator.md
+SD06	H	How do you fan out presence changes to a user's friends efficiently without a thundering herd of updates?	arpitbbhayani__system-design-questions:online-offline-indicator.md
+SD06	M	Design an airline web check-in system where a passenger logs in with a PNR, selects a seat and receives a boarding pass, and where 100 passengers may pick seats simultaneously.	arpitbbhayani__system-design-questions:airline-checkin.md
+SD02	H	How would you guarantee that one seat is assigned to exactly one passenger under heavy concurrency without making other passengers wait on locks?	arpitbbhayani__system-design-questions:airline-checkin.md
+SD02	H	Compare pessimistic locking, optimistic concurrency control and a single-writer queue for seat assignment in a check-in system.	arpitbbhayani__system-design-questions:airline-checkin.md
+SD02	M	Design a key-value store built on top of a relational database supporting get, put, delete and TTL, scaled to 1 million concurrent transactions and petabytes of data.	arpitbbhayani__system-design-questions:sql-kv.md
+SD02	H	How would you implement key expiry efficiently in a SQL-backed key-value store so expired keys are deleted without scanning the full table?	arpitbbhayani__system-design-questions:sql-kv.md
+SD02	H	How would you shard a SQL-backed key-value store and handle rebalancing when you add shards?	arpitbbhayani__system-design-questions:sql-kv.md
+SD01	M	Design a TCP load balancer acting as a reverse proxy that supports adding and removing backends, health checks, configurable strategies and metrics, and scales to millions of concurrent connections.	arpitbbhayani__system-design-questions:load-balancer.md
+SD01	H	How would you implement health checking and connection draining in a load balancer so that removing a backend does not drop in-flight connections?	arpitbbhayani__system-design-questions:load-balancer.md
+SD01	M	Compare round robin, least connections, weighted and consistent hashing as load balancing strategies and when each is preferable.	arpitbbhayani__system-design-questions:load-balancer.md
+SD01	H	How do you make the load balancer itself highly available and avoid it being a single point of failure?	arpitbbhayani__system-design-questions:load-balancer.md
+SD03	M	Given a remote queue that removes and returns the head on each fetch and offers no protection against concurrent consumers, design a way to synchronize consumers so each element is processed once.	arpitbbhayani__system-design-questions:queue-consumers.md
+SD03	H	How would you implement a distributed lock for queue consumers, and what happens if the lock holder crashes mid-processing?	arpitbbhayani__system-design-questions:queue-consumers.md
+SD03	H	Compare a lease-based distributed lock, a single-leader consumer and partitioning the queue for synchronizing consumers.	arpitbbhayani__system-design-questions:queue-consumers.md
+SD06	M	Design an image service that handles 5 million uploads per hour and serves device-optimized images with near-optimal bandwidth.	arpitbbhayani__system-design-questions:image-service.md
+SD06	H	How would you generate and cache device-specific image variants on demand versus at upload time, and what are the cost trade-offs?	arpitbbhayani__system-design-questions:image-service.md
+SD01	M	How would you design analytics on image requests in an image service without hurting serving latency?	arpitbbhayani__system-design-questions:image-service.md
+SD06	M	Design a hashtag service for a photo-sharing network handling 5 million uploads per hour with about 8 hashtags each, showing the photo count and top 50 photos per hashtag.	arpitbbhayani__system-design-questions:hashtag-service.md
+SD06	H	How would you maintain the top 50 photos per hashtag and the total photo count under massive write skew for trending hashtags?	arpitbbhayani__system-design-questions:hashtag-service.md
+SD03	H	How would you ingest hashtag updates asynchronously and cope with hot hashtags in a stream-processing pipeline?	arpitbbhayani__system-design-questions:hashtag-service.md
+SD06	M	Design a service that gives every user one stable image URL that always renders their currently active profile picture, with 50,000 uploads per minute and a 100000:1 read-to-write ratio.	arpitbbhayani__system-design-questions:onepic.md
+SD01	H	How would you handle cache invalidation and CDN propagation when a user switches their active profile picture behind a stable URL?	arpitbbhayani__system-design-questions:onepic.md
+SD06	M	Design a feature for tagging people in photos with an optional rectangular region of interest.	arpitbbhayani__system-design-questions:tagging-photos-with-people.md
+SD02	M	How would you model and index photo tags to efficiently answer both photos where user X is tagged and who is tagged in photo Y?	arpitbbhayani__system-design-questions:tagging-photos-with-people.md
+SD06	M	Design a follow-graph service for a 50 million user social network that efficiently answers who I follow and who follows me.	arpitbbhayani__system-design-questions:user-affinity.md
+SD02	H	Compare adjacency lists in a relational store, a graph database and a key-value store for follower/following queries, and how you would shard them.	arpitbbhayani__system-design-questions:user-affinity.md
+SD02	H	How would you handle celebrity accounts with millions of followers in a follow-graph design?	arpitbbhayani__system-design-questions:user-affinity.md
+SD06	M	Design a newly-unread-message indicator showing the number of distinct users who sent new messages, resetting to zero when clicked, for 1 million daily active users in real time.	arpitbbhayani__system-design-questions:newly-unread-indicator.md
+SD02	H	How would you store and update a per-user set of senders with new messages so that updates are real time and reads are very cheap?	arpitbbhayani__system-design-questions:newly-unread-indicator.md
+SD01	M	Design a distributed cache supporting get, put, delete and TTL that is highly available and scales without major data movement.	arpitbbhayani__system-design-questions:distributed-cache.md
+SD01	H	How would you design a single-node cache to be lock-free and keep throughput high while monitoring and eviction run in the background?	arpitbbhayani__system-design-questions:distributed-cache.md
+SD01	M	How do pluggable eviction policies such as LRU, LFU and random affect performance and memory overhead in a cache?	arpitbbhayani__system-design-questions:distributed-cache.md
+SD01	H	How would you use consistent hashing and replication to scale a cache cluster up and down with minimal cache misses?	arpitbbhayani__system-design-questions:distributed-cache.md
+SD06	M	Design a dictionary service that handles 5 million requests per minute, is updated weekly from a changelog, and cannot use a traditional database.	arpitbbhayani__system-design-questions:word-dictionary.md
+SD02	H	What non-traditional storage approaches would suit a read-heavy, rarely updated dictionary service, and how would you roll out weekly updates safely?	arpitbbhayani__system-design-questions:word-dictionary.md
+SD02	H	Design a single-node persistent key-value store with O(1) get, put and delete that uses disk and RAM optimally.	arpitbbhayani__system-design-questions:superfast-kv.md
+SD02	H	How does a log-structured hash index (like Bitcask) achieve O(1) writes and reads, and what are its limitations?	arpitbbhayani__system-design-questions:superfast-kv.md
+SD02	H	How would you handle compaction, crash recovery and key-space limits in a single-node log-structured key-value store?	arpitbbhayani__system-design-questions:superfast-kv.md
+SD02	H	How would you make a single-node persistent key-value store even faster than a log-structured hash index, and what hardware or I/O techniques would you use?	arpitbbhayani__system-design-questions:faster-superfast-kv.md
+SD02	H	What trade-offs do memory-mapped files, direct I/O and batched fsync introduce for the latency and durability of a key-value store?	arpitbbhayani__system-design-questions:faster-superfast-kv.md
+SD02	H	Design a scalable blob storage service like Amazon S3 with seamless scaling, durability under node failures, multi-tenancy and geographic redundancy.	arpitbbhayani__system-design-questions:s3.md
+SD02	H	How would you achieve high durability in an object store using replication versus erasure coding, and what are the cost trade-offs?	arpitbbhayani__system-design-questions:s3.md
+SD02	H	How would you detect and handle data corruption in transit and at rest in a distributed object store?	arpitbbhayani__system-design-questions:s3.md
+SD02	H	How would you handle hot storage nodes and rebalance data when adding capacity in an object store?	arpitbbhayani__system-design-questions:s3.md
+SD02	M	How would you design the metadata service and bucket/object namespace for an S3-like storage system?	arpitbbhayani__system-design-questions:s3.md
+SD06	M	Design a video processing pipeline for a streaming service covering upload, storage, transcoding, post-processing, on-demand processing and caching, processing thousands of videos in parallel.	arpitbbhayani__system-design-questions:video-pipeline.md
+SD06	H	How would you design a robust resumable video upload flow for large files?	arpitbbhayani__system-design-questions:video-pipeline.md
+SD03	H	How would you orchestrate a DAG of video transcoding tasks with retries, idempotency and parallel chunk processing?	arpitbbhayani__system-design-questions:video-pipeline.md
+SD06	H	Design a text search engine from scratch without using Elasticsearch, with TF-IDF ranking, boolean queries, typo tolerance and phonetic matching.	arpitbbhayani__system-design-questions:text-search-engine.md
+SD02	M	How does an inverted index work, and how would you update it incrementally as new documents arrive?	arpitbbhayani__system-design-questions:text-search-engine.md
+SD02	H	How would you implement typo-tolerant search using edit distance, n-grams or a BK-tree, and what are the performance trade-offs?	arpitbbhayani__system-design-questions:text-search-engine.md
+SD02	M	How does TF-IDF scoring work and what are its weaknesses compared to BM25?	arpitbbhayani__system-design-questions:text-search-engine.md
+SD06	M	Design a recent-searches service that returns a user's last 10 unique searches with response time below 10 ms.	arpitbbhayani__system-design-questions:recent-searches.md
+SD01	M	Which data structure and storage would you use to keep the last N unique items per user, and how do you handle duplicates and ordering?	arpitbbhayani__system-design-questions:recent-searches.md
+SD06	M	Design a text-based live cricket commentary service, written ball by ball by commentators and read by 5 million concurrent readers.	arpitbbhayani__system-design-questions:live-commentary.md
+SD06	H	How would you push new commentary to millions of readers: polling, long polling, SSE or WebSockets, and with what caching strategy?	arpitbbhayani__system-design-questions:live-commentary.md
+SD01	H	How would you use a CDN and short-TTL caching to serve a read-heavy live commentary feed without a thundering herd on the origin?	arpitbbhayani__system-design-questions:live-commentary.md
+SD03	H	Design a message broker on top of a SQL database that supports multiple producers and consumers, exactly-one-consumer delivery, optional message expiry and high throughput.	arpitbbhayani__system-design-questions:sql-broker.md
+SD03	H	How can you use SELECT FOR UPDATE SKIP LOCKED or equivalent mechanisms to build a safe queue on a relational database, and what are the throughput limits?	arpitbbhayani__system-design-questions:sql-broker.md
+SD03	H	How would you implement visibility timeouts, retries and dead-letter handling in a SQL-backed message broker?	arpitbbhayani__system-design-questions:sql-broker.md
+SD03	M	Design a distributed task scheduler that executes one-time and cron-style recurring tasks within 10 seconds of their scheduled time.	arpitbbhayani__system-design-questions:task-scheduler.md
+SD03	H	How would you partition scheduled tasks across workers and avoid double execution after a worker failure in a distributed scheduler?	arpitbbhayani__system-design-questions:task-scheduler.md
+SD03	H	How would you store and efficiently scan for due tasks in a scheduler: time-bucketed tables, delay queues, hierarchical timing wheels or sorted sets?	arpitbbhayani__system-design-questions:task-scheduler.md
+SD03	M	How would you handle recurring task rescheduling, missed runs and clock drift in a distributed cron service?	arpitbbhayani__system-design-questions:task-scheduler.md
+SD06	M	Design a flash sale system selling 1,000 units in seconds, where winners get 5 minutes to pay and unpaid units are released to others.	arpitbbhayani__system-design-questions:flash-sale.md
+SD02	H	How would you protect the database from a burst of purchase attempts in a flash sale while guaranteeing no overselling?	arpitbbhayani__system-design-questions:flash-sale.md
+SD06	H	How would you implement the cart reservation with payment timeout, and what happens when a payment succeeds after the hold has expired?	arpitbbhayani__system-design-questions:flash-sale.md
+SD06	H	How would you use a queue-based virtual waiting room and an atomic counter such as Redis DECR to admit exactly N buyers in a flash sale?	arpitbbhayani__system-design-questions:flash-sale.md
+SD06	H	Design a system that counts unique visitors or ad impressions over an arbitrary time range given at query time, with approximate answers and efficient storage.	arpitbbhayani__system-design-questions:counting-impressions.md
+SD02	H	How would HyperLogLog or other probabilistic sketches be used to count unique visitors per time window, and how do you merge sketches across windows?	arpitbbhayani__system-design-questions:counting-impressions.md
+SD03	H	How would you ingest billions of impression events per day with a streaming pipeline and still answer ad hoc time-range unique counts in seconds?	arpitbbhayani__system-design-questions:counting-impressions.md
+SD06	M	Design a remote file sync service that syncs files up to 4 GB across all of a user's devices with resumable, bandwidth-efficient transfers.	arpitbbhayani__system-design-questions:file-sync.md
+SD06	H	How would chunking, content hashing and delta sync reduce bandwidth in a file sync service?	arpitbbhayani__system-design-questions:file-sync.md
+SD06	H	How do you detect and resolve conflicting edits made on two devices while offline in a file sync service?	arpitbbhayani__system-design-questions:file-sync.md
+SD03	M	How would a file sync service notify other devices of changes in near real time, and how would you keep their state consistent?	arpitbbhayani__system-design-questions:file-sync.md
+SD06	M	Design a who's-near-me service that finds all users within k kilometres of a location for 1 million users.	arpitbbhayani__system-design-questions:near-me.md
+SD02	H	Compare geohash, quadtree and S2/H3 cell indexes for proximity search, including boundary issues and hot cells.	arpitbbhayani__system-design-questions:near-me.md
+SD02	H	How would you handle frequently changing user locations in a nearby-search index without constant index rewrites?	arpitbbhayani__system-design-questions:near-me.md
+SD06	M	Design a realtime clap counter for an article platform where all readers of the same article see updates instantly, with up to 10,000 concurrent readers per article.	arpitbbhayani__system-design-questions:realtime-claps.md
+SD03	H	How would you batch and aggregate clap events to cut write amplification while keeping the count visible in near real time?	arpitbbhayani__system-design-questions:realtime-claps.md
+SD03	H	How would you fan out updates to 10,000 readers of one article over WebSockets or SSE, and how would you scale connection servers?	arpitbbhayani__system-design-questions:realtime-claps.md
+SD02	H	Design a realtime key-value database that broadcasts every insert, update and delete to all subscribed clients, with 1 million tables of up to 100 subscribers each.	arpitbbhayani__system-design-questions:realtime-db.md
+SD03	H	How would you implement change-data-capture and subscription routing in a realtime database, and keep subscribers consistent after reconnecting?	arpitbbhayani__system-design-questions:realtime-db.md
+SD06	H	Design Slack's real-time messaging, including channels, presence, typing indicators, message history and fan-out to connected clients.	arpitbbhayani__system-design-questions:slack realtime
+SD03	H	How would you guarantee message ordering and delivery in a real-time channel messaging system when clients reconnect frequently?	arpitbbhayani__system-design-questions:slack realtime
+SD06	M	How do you prove that the data in your design never goes into an inconsistent state when multiple writers act concurrently?	arpitbbhayani__system-design-questions:cross-cutting
+SD01	M	How do you use capacity planning and back-of-the-envelope estimation to justify a design decision such as choosing sharding over a single database?	arpitbbhayani__system-design-questions:cross-cutting
+SD05	M	How do you justify the cost-effectiveness of a design and trade it off against availability and durability requirements?	arpitbbhayani__system-design-questions:cross-cutting
+SD02	M	How does your design behave while scaling up and down, and what data movement or warm-up costs are involved?	arpitbbhayani__system-design-questions:cross-cutting
+SD03	M	How would you ensure your design is free of deadlocks, and how do you reduce the throughput impact of locks?	arpitbbhayani__system-design-questions:cross-cutting

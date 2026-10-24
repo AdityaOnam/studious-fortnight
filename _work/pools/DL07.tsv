@@ -1,0 +1,144 @@
+Q001538	E	What is Keras and how does it relate to TensorFlow?
+Q001539	E	Can you explain the concept of a deep learning framework?
+Q001540	E	What are the core components of a Keras model?
+Q001541	E	How do you configure a neural network in Keras?
+Q001542	E	Explain the difference between the Sequential and Functional APIs in Keras.
+Q001543	E	Describe how you would install and set up Keras in a Python environment.
+Q001544	E	What are some advantages of using Keras over other deep learning frameworks?
+Q001545	E	How do you save and load models in Keras?
+Q001546	E	What is the purpose of the Dense layer in Keras?
+Q001547	M	How would you implement a Convolutional Neural Network in Keras?
+Q001548	M	Can you describe how Recurrent Neural Networks are different from feedforward networks and how to implement one in Keras?
+Q001550	E	Explain the purpose of dropout layers and how to use them in Keras.
+Q001551	M	How do you use Batch Normalization in a Keras model?
+Q001552	M	What is a custom layer in Keras and how would you implement one?
+Q001553	M	Discuss how you would construct a residual network (ResNet) in Keras.
+Q001841	E	What is NumPy, and why is it important in Machine Learning?
+Q001842	E	Explain how NumPy arrays are different from Python lists.
+Q001843	E	What are the main attributes of a NumPy ndarray?
+Q001844	E	How do you create a NumPy array from a regular Python list?
+Q001846	M	Explain the concept of broadcasting in NumPy.
+Q001847	E	What are the data types supported by NumPy arrays?
+Q001848	E	How do you inspect the shape and size of a NumPy array?
+Q001849	M	What is the difference between a deep copy and a shallow copy in NumPy?
+Q001881	E	What is Pandas in Python and why is it used for data analysis?
+Q001882	E	Explain the difference between a Series and a DataFrame in Pandas.
+Q001883	E	How can you read and write data from and to a CSV file in Pandas?
+Q001884	E	What are Pandas indexes, and how are they used?
+Q001886	E	Discuss the use of 'groupby' in Pandas and provide an example.
+Q001887	M	Explain the concept of data alignment and broadcasting in Pandas.
+Q001888	M	What is data slicing in Pandas, and how does it differ from filtering?
+Q001889	M	Describe how joining and merging data works in Pandas.
+Q001890	E	How do you apply a function to all elements in a DataFrame column?
+Q001892	E	How can you pivot data in a DataFrame?
+Q001893	M	How do you apply conditional logic to columns using the where() method in Pandas?
+Q001894	E	What is the purpose of the apply() function in Pandas?
+Q001950	E	List the Python libraries that are most commonly used in machine learning and their primary purposes.
+Q001951	E	What is NumPy and how is it useful in machine learning?
+Q001952	E	Give an overview of Pandas and its significance in data manipulation.
+Q001953	E	How does Scikit-learn fit into the machine learning workflow?
+Q001954	E	Explain the Matplotlib and Seaborn libraries for data visualization.
+Q001955	M	What is PyTorch and how does it differ from other deep learning frameworks like TensorFlow?
+Q001958	E	Explain the concept of Tensors in PyTorch.
+Q001959	E	In PyTorch, what is the difference between a Tensor and a Variable?
+Q001960	E	How can you convert a NumPy array to a PyTorch Tensor?
+Q001961	E	What is the purpose of the '.grad' attribute in PyTorch Tensors?
+Q001962	E	Explain what CUDA is and how it relates to PyTorch.
+Q001963	M	How does automatic differentiation work in PyTorch using Autograd?
+Q001964	M	Describe the steps for creating a neural network model in PyTorch.
+Q001965	M	What is a 'Sequential' model in PyTorch, and how does it differ from using the 'Module' class?
+Q001966	M	How do you implement custom layers in PyTorch?
+Q001967	E	What is the role of the 'forward' method in a PyTorch 'Module'?
+Q001968	E	In PyTorch, what are optimizers, and how do you use them?
+Q001969	E	What is the purpose of 'zero_grad()' in PyTorch, and when is it used?
+Q001970	M	How can you implement learning rate scheduling in PyTorch?
+Q001971	M	Describe the process of backpropagation in PyTorch.
+Q002081	E	What is Scikit-Learn, and why is it popular in the field of Machine Learning?
+Q002082	M	Explain the design principles behind Scikit-Learn's API.
+Q002084	M	Describe the role of transformers and estimators in Scikit-Learn.
+Q002085	E	What is the typical workflow for building a predictive model using Scikit-Learn?
+Q002087	M	Explain the concept of a pipeline in Scikit-Learn.
+Q002088	E	What are some of the main categories of algorithms included in Scikit-Learn?
+Q002092	M	Describe the use of 'ColumnTransformer' in Scikit-Learn.
+Q002210	E	What is TensorFlow and who developed it?
+Q002211	E	What are the main features of TensorFlow?
+Q002212	M	Can you explain the concept of a computation graph in TensorFlow?
+Q002213	E	What are Tensors in TensorFlow?
+Q002214	M	How does TensorFlow differ from other Machine Learning libraries?
+Q002215	E	What types of devices does TensorFlow support for computation?
+Q002216	M	What is a Session in TensorFlow? Explain its role.
+Q002217	M	What is the difference between TensorFlow 1.x and TensorFlow 2.x?
+Q002219	M	How does TensorFlow handle automatic differentiation?
+Q002220	M	What is a Placeholder in TensorFlow, and how is it used?
+Q002221	E	Could you explain the concept of TensorFlow Lite and where it's used?
+Q002222	E	Define a Variable in TensorFlow and its importance.
+Q002223	E	What are the different data types supported by TensorFlow?
+Q002224	M	How do you build a neural network in TensorFlow?
+Q002225	M	Explain the process of compiling a model in TensorFlow.
+Q004470	M	Explain contiguous tensors and .contiguous() in PyTorch.
+Q004471	E	What bug can arise from calling squeeze() when the batch size is one?
+Q004472	M	How do in-place operations affect autograd?
+Q004473	E	Compare detach(), clone(), and torch.no_grad() in PyTorch.
+Q004474	M	Why can calling .item() slow down a GPU training loop?
+Q004479	M	Why might using multiple DataLoader workers be slower?
+Q004487	E	Why does validation behave differently between train() and eval() modes in PyTorch?
+Q004488	E	How do you calculate the epoch loss correctly when the final batch is smaller than the others?
+Q004489	M	Compare CPU and GPU implementations of a metric in PyTorch.
+Q004490	H	How do you find a memory leak caused by retained computation graphs in PyTorch?
+Q004491	E	What is PyTorch, and how does it differ from frameworks such as TensorFlow?
+Q004492	E	What are tensors in PyTorch?
+Q004493	E	What is the difference between a Tensor and a Variable in PyTorch?
+Q004494	E	How do you convert a NumPy array to a PyTorch tensor?
+Q004495	E	What is the purpose of .grad in PyTorch?
+Q004496	E	What is CUDA, and how does it relate to PyTorch?
+Q004497	M	How does autograd work in PyTorch?
+Q004498	E	What are the main steps for creating a neural-network model in PyTorch?
+Q004499	E	How does nn.Sequential differ from subclassing nn.Module?
+Q004500	M	How do you implement a custom layer in PyTorch?
+Q004501	E	What is the role of the forward method in a PyTorch model?
+Q004503	E	Why and when do you call zero_grad() in PyTorch?
+Q004507	E	How do you check whether a model is using the GPU?
+Q004512	M	How do you build a DataLoader for a custom dataset?
+Q004513	E	What are torchvision transforms used for?
+Q004516	H	How do you use GPUs for distributed PyTorch training?
+Q004519	M	What is TorchScript, and how does it help deployment?
+Q004533	H	How do you create a custom C++ or CUDA operation in PyTorch?
+Q004537	E	How can PyTorch Lightning simplify a PyTorch workflow?
+Q004538	E	How would you normalize each row of a tensor without using a Python loop?
+Q004539	E	What is the difference between view, reshape, and squeeze in PyTorch?
+Q004544	M	What are the essential steps in a PyTorch training loop?
+Q004545	E	What is the difference between model.eval() and torch.no_grad() or torch.inference_mode()?
+Q004546	E	What happens if you forget optimizer.zero_grad()?
+Q004548	E	How would you write a utility that works on both CPU and GPU?
+Q004549	M	What tests would you write for a tensor preprocessing or metric utility?
+Q004552	E	When should a utility return tensors versus Python numbers?
+Q004555	M	What can PyTorch control about reproducibility?
+Q004556	M	How do you balance readable tensor code and vectorization?
+Q004558	M	How do you review correctness across devices, dtypes, and shapes?
+Q005108	E	How does a GPU work for deep learning?
+Q005109	M	How do CUDA kernels work?
+Q005110	M	How does a Google TPU work?
+Q005323	E	What are some popular deep learning frameworks for computer vision?
+Q005441	E	How would you use Pandas to load and clean data?
+Q012033	H	A CUDA kernel is 10x slower than expected. Without running it, what are the usual suspects, and how do you confirm each?
+Q012077	M	Walk me through what actually happens when someone calls AutoModelForCausalLM.from_pretrained(..., device_map="auto", torch_dtype="auto").
+Q012576	E	Discuss some popular deep learning frameworks or libraries used for computer vision tasks.
+Q012642	E	How do you compute the Euclidean distance between two pandas Series?
+Q012643	E	Write a function to generate N samples from a normal distribution and plot them on a histogram.
+Q012644	E	What is the difference between the apply and applymap functions in pandas?
+Q007235	M	What does model.eval() change in PyTorch besides dropout?
+Q009707	M	Walk me through what actually happens when someone calls AutoModelForCausalLM.from_pretrained("org/model-8b", device_map="auto", torch_dtype="auto").
+Q009709	M	What changes when loading a model with from_pretrained if the checkpoint is sharded across 30 files and you only have 24 GB of GPU memory?
+D03864	M	Explain how PyTorch autograd builds and traverses the computation graph, and what detach and no_grad do.
+D03865	M	What is the difference between view, reshape and contiguous in PyTorch tensors, and when does a copy occur?
+D03866	M	How does broadcasting work in tensor operations, and what shape bugs does it commonly hide?
+D03867	M	Why must you call optimizer zero_grad, and what happens if you accumulate gradients deliberately?
+D03868	M	What is the difference between model.eval and torch.no_grad, and what goes wrong if you forget either at inference?
+D03869	M	How would you debug a PyTorch training run whose loss stays flat or becomes NaN?
+D03870	M	How do DataLoader workers, batch size and pinned memory affect input pipeline throughput?
+D03871	M	How would you write unit tests for a PyTorch training utility and check shapes, dtypes and determinism?
+D03872	M	How do you make PyTorch experiments reproducible, and what sources of nondeterminism remain on a GPU?
+D03873	M	How do you save and load a model for inference versus resume training, including optimizer state?
+D04679	M	How would you launch multi-node DDP training with torchrun, and what are rank, local rank and world size?
+D04680	M	Why does DDP with unused parameters hang or error, and how do you debug it?
+D04681	M	When saving a checkpoint under FSDP or ZeRO-3, how are sharded states consolidated and what pitfalls exist?

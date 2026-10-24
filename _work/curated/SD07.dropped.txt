@@ -1,0 +1,11 @@
+Q010108	offscope
+Q012156	vague
+Q012228	offscope
+Q012239	offscope
+Q012243	offscope
+Q012234	offscope
+Q012223	vague
+Q012216	vague
+D02977	offscope
+D03014	dsa
+D03015	dsa

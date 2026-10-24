@@ -1,0 +1,104 @@
+## Batching and scheduling
+- [E] What is batch inference, and how does it differ from single-query inference? {Q003362}
+- [M] How does batching improve GPU efficiency for LLM inference? {Q003363}
+- [M] What is static batching, and why is it inefficient for variable-length LLM requests? {Q006939b,D04745}
+- [M] What is continuous (in-flight) batching, how does it differ from static batching, and why did it become standard? {Q003379,Q005117,Q008568,Q011302,Q011801,Q010246,D04746,Q009835,Q009900,D03768}
+- [M] Compare static, dynamic, and continuous batching strategies for LLM serving. {Q010848,D00135}
+- [H] What new scheduling problems does continuous batching create? {Q008569}
+- [M] Your serving GPU has plenty of free KV cache memory, yet throughput is poor and requests sit idle waiting for a batch to finish. Which lever helps most? {Q006986}
+- [M] Why does increasing batch size improve decode throughput only up to a point, and what limits it? {D04948}
+- [H] Design the scheduler for a continuous-batching inference engine. {Q010171}
+- [H] Design a batched inference system where 100 concurrent requests take roughly the same time as one. {Q011904}
+- [M] What is chunked prefill, and what scheduling problem does it fix? {Q006014,Q008599,D04947}
+- [H] What is a prefill "stall" in LLM serving, and how does chunked prefill improve tail latency under mixed traffic? {Q004947,Q011303,D00136}
+- [H] Why does mixing a prefill chunk into a decode batch improve hardware utilization rather than just sharing the pain? {Q008601}
+- [H] How would you choose the chunk size for chunked prefill? {Q008600,Q009901}
+- [M] How do chunked prefill and layered prefill differ, and what scenarios suit each? {Q006178}
+- [M] What metrics would tell you decode steps are being starved, or that the scheduler is misbehaving, and what would a rising preemption rate indicate? {Q009902,Q010173}
+- [H] How would you handle head-of-line blocking from very long requests, for example with priority or SLO-aware scheduling? {GEN}
+- [H] Could predicting output length help a batch scheduler, and what could go wrong? {GEN}
+- [M] How do you apply admission control and backpressure to an LLM server under overload? {GEN}
+## Speculative decoding and latency tuning
+- [M] How does speculative decoding work, why does it preserve the target model's output distribution, and what speedup should you expect? {Q006939a,D04754}
+- [H] What determines the speedup from speculative decoding, and when does it fail to help or even hurt throughput? {D04755,Q009760}
+- [H] You enabled speculative decoding and saw a latency win at low traffic, but at peak concurrency it got slightly slower. Why? {Q006922}
+- [M] Which latency metric does speculative decoding improve, and which can it hurt? {Q008555}
+- [M] How would you measure whether speculative decoding is actually helping in a live deployment? {Q007464}
+- [H] How does speculative decoding interact with a continuous-batching scheduler when sequences accept different numbers of tokens per step? {Q009420,Q009836,Q009920,Q010172,Q010179,Q010248}
+- [H] Compare draft-model speculative decoding with Medusa or EAGLE-style heads and prompt-lookup (n-gram) speculation. {GEN}
+- [M] What are the main options for accelerating LLM inference? {Q003385}
+- [M] How do you improve inference speed and throughput in production LLM deployments? {Q005106,Q007202}
+- [H] How can you accelerate a model's response time without attention approximations such as grouped-query attention? {Q007203}
+- [M] Why does the decoder generate tokens sequentially, and what techniques reduce its latency? {D04767}
+- [M] How would you cut TTFT for a generated answer by half without changing models? {Q008548,Q009595}
+- [H] At low batch sizes decode is slower than the bandwidth math predicts and the GPU timeline shows gaps between kernels. What is CPU overhead, and how do CUDA graphs and overlapped scheduling fix it? {Q008647}
+- [H] Why do CUDA graphs need batch-size buckets, and what does padding to a bucket cost? {Q008648}
+- [H] How would you confirm from a profile that a latency problem is host overhead rather than memory bandwidth? {Q008649,Q009665}
+- [M] What role do custom CUDA kernels and operator fusion play in LLM inference engines? {D04953}
+- [M] How much overhead does grammar-constrained (structured output) decoding add, and how do engines reduce it? {GEN}
+- [H] How do you make sampling reproducible across different batch sizes on a GPU? {Q009620}
+## Disaggregation and KV-aware routing
+- [H] What is prefill-decode disaggregation, why do large deployments separate the two phases, and what does it cost? {Q004948,Q006168,Q008677,Q011813,Q009858,Q009936}
+- [H] When does disaggregated prefill/decode beat chunked prefill on a single pool? {Q011304,D00137}
+- [H] When is disaggregated prefill/decode serving not worth the operational cost? {Q010426}
+- [H] Estimate the KV bytes transferred for an 8K-token prompt on a 70B GQA model under disaggregation. Is the transfer a problem on NVLink versus Ethernet? {Q008678,Q009859,D00138}
+- [H] How does prefill/decode disaggregation interact with prefix caching? {Q008679,Q009657}
+- [H] In a disaggregated setup, how would you decide the ratio of prefill to decode capacity? {Q009656}
+- [H] How would you deploy prefill-decode disaggregation in vLLM, with KV transfer across nodes through something like Mooncake or LMCache? {Q006013}
+- [M] Why is load balancing LLM inference different from load balancing stateless HTTP, and what does a good routing layer do? {Q010396}
+- [H] Session affinity versus prefix-hash routing for LLM inference: when does each fail? {Q010397}
+- [H] How does prefix caching change your load-balancer design for LLM serving? {Q010250}
+- [H] Would you replicate a prefix cache across serving nodes or shard requests by prefix hash? What hit rate justifies a shared KV tier over sticky sessions? {Q009287,Q008684}
+- [H] How does prefix-aware routing interact with autoscaling, and what does that do to your scale-up policy? {Q008683}
+## Deployment, autoscaling, and multi-tenancy
+- [M] How do you serve LLMs in production? {Q004951,Q007015a}
+- [H] How would you design a scalable LLM inference system for real-time applications? {Q003378}
+- [H] You must serve a Llama-class 70B+ model to hundreds of millions of assistant users. What does the serving stack look like and where does the money go? {Q009758}
+- [H] Walk me through deploying a 70B open-weight model to production on Kubernetes. What breaks? {Q010399}
+- [H] How do you autoscale a vLLM deployment? Why does CPU-based HPA not work, and why is GPU utilization a poor scaling signal for decode-heavy workloads? {Q010393,Q008661}
+- [H] Your queue-depth autoscaler for an LLM deployment flaps every 5 minutes. How do you stabilise it without eating the spike? {Q010394}
+- [H] GPU cold starts take minutes. How do you autoscale an inference fleet anyway, for example cutting replica startup from 12 minutes to under 3? {Q008660,Q010400,Q009734}
+- [M] Peak LLM traffic is 3x the daily average. How do you split reserved versus autoscaled capacity? {Q008659}
+- [H] Which graceful-degradation options relieve KV memory pressure versus compute pressure in LLM serving? {Q008668}
+- [M] In a serverless model-inference platform, when does it become cheaper to give a model dedicated capacity? {Q009733}
+- [M] What is multi-LoRA serving, and how does it let one base model serve many tenants? {D00159,D04954}
+- [M] How do you serve fine-tuned models at scale: merged checkpoints versus adapters, versioning, and rollback? {Q008159}
+- [H] Design routing for 500 tenant LoRA adapters where 10 tenants account for 80% of traffic. What changes if variants also need different system prompts? {Q008161}
+- [M] How do you handle noisy neighbors in a multi-tenant LLM serving cluster? {D00160}
+- [H] One malformed request crashed an inference replica and every tenant on it lost service. What is the design lesson and fix? {D00161}
+- [H] Design a premium low-latency tier for an agent product that needs very high tokens per second per user. {D00162}
+- [H] Your traffic is shifting from single-turn chat to agents: 20 to 50 model calls per task, tool calls in between, long sessions. What does that do to your serving design? {Q008690,Q010424}
+- [H] In a low-latency serving system, how do you cheaply cancel in-flight GPU work when the client disconnects or the user keeps typing? {Q009388}
+- [M] How do you ship a major vLLM version upgrade without changing model behavior? {Q011028}
+- [H] How do you handle a replica failing mid-stream, and what are the options for retrying or resuming a partially generated response? {GEN}
+## Capacity planning and cost
+- [M] How do you estimate whether a model fits on a given GPU? Will a 70B model fit on one 80 GB card? {Q008559,Q005112,Q011807}
+- [H] Build the full GPU memory budget for a serving deployment (weights, KV cache, activations, fragmentation) and show how it determines maximum batch size, including FP8 weights on 2 GPUs. {Q008653,Q008654a}
+- [M] How would you estimate the number of GPUs needed to serve a given model at a target QPS and latency? {Q011235,D00158}
+- [H] Mistral Large 3 is an open-weight sparse MoE with about 675B total and 41B active parameters. A customer wants to self-host it on one 8-GPU node. Does it fit, and how would you serve it? {Q009850}
+- [H] Your product wants to raise the context limit from 8K to 128K. What does that do to cost per request and to capacity? {Q008654b,Q010421}
+- [H] How does a 30% prompt-cache hit rate change an LLM serving capacity plan? {Q008658}
+- [H] When sizing a self-hosted 13B deployment where 80% of traffic shares one system prompt, how does prefix caching change the math? {Q010420}
+- [H] How do prefill-heavy workloads (long prompts, short answers) change the cost-per-million-tokens math of a dedicated endpoint? {Q010194}
+- [M] What changes in the cost-per-million-tokens estimate for a dedicated endpoint when moving it to B200 GPUs? {Q010195}
+- [M] Given a GPU hourly price and a measured tokens-per-second at a given batch size, how do you compute cost per million tokens? {GEN}
+- [M] Estimate what one chat message costs to serve, and say which lever moves that cost most as dialogue length grows. {Q009290,Q009291}
+- [M] How do you estimate the cost of running SaaS-based versus open-source LLMs, and when is self-hosting cheaper than an API? {Q007112,D00167}
+- [H] How would you cut LLM serving cost by 10x? Enumerate every lever and rank them. {Q011811,Q010849,Q011175}
+- [M] What would you try next to cut LLM inference costs by another 50% once the obvious levers are used? {Q009064}
+- [M] When would you use cheaper tiers such as offline batch processing, a model cascade, or a semantic cache to cut serving cost, and what are the risks? {GEN}
+- [H] Your product moves from a standard chat model to a reasoning model with extended thinking. What changes for capacity, SLOs, and design? {Q008635}
+- [H] Which is worse for your fleet: one 30K-token reasoning request or thirty 1K-token chat requests, and why? {Q008637}
+- [H] A customer sends a different 900K-token document with every request. How does that change your pricing and capacity plan? {Q008699}
+## Debugging and design scenarios
+- [H] A customer's LLM chatbot on 8 GPUs is "too slow and too expensive." You have one week with them. What do you do? {Q012042}
+- [M] Production LLM serving suddenly slows down. What metrics and diagnostic steps do you follow? {D00172}
+- [M] Your p99 TTFT for an LLM service doubles at peak traffic while p50 stays flat. What are your top suspects? {Q009759,Q008554}
+- [H] Your p99 TTFT breaches its SLO but GPU utilization shows 60%. What do you investigate? {Q008612}
+- [H] KV cache utilization is 95%, preemptions are climbing, but GPU utilization looks fine. What is happening and what do you do? {Q008663}
+- [M] A custom code-completion model serving millions of users shows 35% GPU utilization with fine p99 latency. Do you chase the utilization? {Q009419}
+- [M] When diagnosing a jump in an endpoint's p99 latency, how does continuous batching change the analysis versus static batching? {Q009438}
+- [M] To control p99 latency on an LLM endpoint, what would you cap first, input tokens or output tokens, and why? {Q009439}
+- [H] Your LLM service must meet a p95 TTFT target while maximizing tokens per second. How do you configure batching, chunked prefill, and replicas? {D04765}
+- [H] You self-host a VLM for a document pipeline and throughput is a third of what you projected from the LLM's specs. Why, and what do you do? {Q009001}
+- [H] In a serving system for a multimodal LLM assistant, what breaks first as median context length grows 10x? {Q009634}

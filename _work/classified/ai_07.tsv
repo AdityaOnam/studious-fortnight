@@ -1,0 +1,302 @@
+Q004484	ML06	M	How should a classification threshold be selected?
+Q004485	CODE01	E	Implement early stopping.
+Q004486	DL02	M	When should a learning-rate scheduler step?
+Q004487	DL07	E	Why does validation behave differently between train() and eval() modes in PyTorch?
+Q004488	DL07	E	How do you calculate the epoch loss correctly when the final batch is smaller than the others?
+Q004489	DL07	M	Compare CPU and GPU implementations of a metric in PyTorch.
+Q004490	DL07	H	How do you find a memory leak caused by retained computation graphs in PyTorch?
+Q004491	DL07	E	What is PyTorch, and how does it differ from frameworks such as TensorFlow?
+Q004492	DL07	E	What are tensors in PyTorch?
+Q004493	DL07	E	What is the difference between a Tensor and a Variable in PyTorch?
+Q004494	DL07	E	How do you convert a NumPy array to a PyTorch tensor?
+Q004495	DL07	E	What is the purpose of .grad in PyTorch?
+Q004496	DL07	E	What is CUDA, and how does it relate to PyTorch?
+Q004497	DL07	M	How does autograd work in PyTorch?
+Q004498	DL07	E	What are the main steps for creating a neural-network model in PyTorch?
+Q004499	DL07	E	How does nn.Sequential differ from subclassing nn.Module?
+Q004500	DL07	M	How do you implement a custom layer in PyTorch?
+Q004501	DL07	E	What is the role of the forward method in a PyTorch model?
+Q004502	DL02	E	What are optimizers, and how are they used in PyTorch?
+Q004503	DL07	E	Why and when do you call zero_grad() in PyTorch?
+Q004504	DL02	M	How do you implement learning-rate scheduling?
+Q004505	DL01	M	Describe backpropagation in PyTorch.
+Q004506	DL02	M	How does gradient clipping work, and why is it useful?
+Q004507	DL07	E	How do you check whether a model is using the GPU?
+Q004508	DL02	M	How do you monitor and reduce overfitting?
+Q004509	DL02	M	What is batch normalization, and how does it affect training?
+Q004510	DL01	M	How does PyTorch initialize neural-network weights?
+Q004511	DL02	M	What common training problems occur, and how do you debug them?
+Q004512	DL07	M	How do you build a DataLoader for a custom dataset?
+Q004513	DL07	E	What are torchvision transforms used for?
+Q004514	DL04	M	How do you preprocess time-series data for RNNs?
+Q004515	ML05	E	What is data augmentation, and how is it implemented?
+Q004516	DL07	H	How do you use GPUs for distributed PyTorch training?
+Q004517	DL03	M	How do you implement transfer learning?
+Q004518	DL04	M	Compare RNNs, LSTMs, and GRUs.
+Q004519	DL07	M	What is TorchScript, and how does it help deployment?
+Q004520	CODE01	M	Implement a DataLoader for a CSV dataset.
+Q004521	CODE01	M	Create a feedforward neural network for MNIST.
+Q004522	CODE01	M	Implement a CNN for image classification.
+Q004523	ML05	M	How do you handle imbalanced classes?
+Q004524	MS01	M	How can PyTorch support real-time inference?
+Q004525	MS01	M	When would you convert a model to ONNX?
+Q004526	MS01	H	How would you deploy a model as a REST API?
+Q004527	FT01	M	How do you fine-tune a pretrained model?
+Q004528	DL01	H	What are GNNs (graph neural networks), and how are they implemented in PyTorch?
+Q004529	DL01	H	What are important neural architecture search (NAS) directions, and how can PyTorch support them?
+Q004530	DL05	H	How are GANs implemented, and what makes them difficult to train?
+Q004531	LLM06	M	What is model quantization, and when is it useful?
+Q004532	ML11	H	What role does PyTorch play in reinforcement learning?
+Q004533	DL07	H	How do you create a custom C++ or CUDA operation in PyTorch?
+Q004534	DROP	-	hr
+Q004535	DROP	-	hr
+Q004536	MS01	M	How do you improve experiment reproducibility?
+Q004537	DL07	E	How can PyTorch Lightning simplify a PyTorch workflow?
+Q004538	DL07	E	How would you normalize each row of a tensor without using a Python loop?
+Q004539	DL07	E	What is the difference between view, reshape, and squeeze in PyTorch?
+Q004540	ML05	M	How would you design a reusable preprocessing component?
+Q004541	ML05	E	What is data leakage, and how do you prevent it during preprocessing?
+Q004542	ML06	E	Explain precision, recall, and F1. When would you use each?
+Q004543	ML06	M	Why is averaging F1 across batches usually incorrect?
+Q004544	DL07	M	What are the essential steps in a PyTorch training loop?
+Q004545	DL07	E	What is the difference between model.eval() and torch.no_grad() or torch.inference_mode()?
+Q004546	DL07	E	What happens if you forget optimizer.zero_grad()?
+Q004547	MS01	M	How would you refactor a monolithic ML script into clean modules?
+Q004548	DL07	E	How would you write a utility that works on both CPU and GPU?
+Q004549	DL07	M	What tests would you write for a tensor preprocessing or metric utility?
+Q004550	CS06	M	What makes an ML utility reusable without excessive abstraction?
+Q004551	CS06	M	Which input validation belongs at module boundaries in an ML codebase?
+Q004552	DL07	E	When should a utility return tensors versus Python numbers?
+Q004553	MS02	M	How do you keep preprocessing consistent across training, evaluation, and inference?
+Q004554	CS06	M	How should an ML codebase be structured for independent testing?
+Q004555	DL07	M	What can PyTorch control about reproducibility?
+Q004556	DL07	M	How do you balance readable tensor code and vectorization?
+Q004557	MS01	M	What should a training loop log?
+Q004558	DL07	M	How do you review correctness across devices, dtypes, and shapes?
+Q004559	MS01	M	What changes before moving notebook code into production?
+Q004560	MS03	H	How does Google Search work?
+Q004561	MS03	H	How does the Facebook News Feed work?
+Q004562	MS03	H	How does Facebook's advertising targeting algorithm work?
+Q004563	MS03	H	How does the Instagram feed work?
+Q004564	DROP	-	notq
+Q004565	DROP	-	notq
+Q004566	DROP	-	notq
+Q004567	DROP	-	notq
+Q004568	DROP	-	notq
+Q004569	DROP	-	notq
+Q004570	DROP	-	notq
+Q004571	DROP	-	notq
+Q004572	DROP	-	notq
+Q004573	DROP	-	notq
+Q004574	DROP	-	notq
+Q004575	DROP	-	notq
+Q004576	DROP	-	notq
+Q004577	DROP	-	notq
+Q004578	DROP	-	notq
+Q004579	DROP	-	notq
+Q004580	DROP	-	notq
+Q004581	DROP	-	notq
+Q004582	DROP	-	notq
+Q004583	DROP	-	notq
+Q004584	DROP	-	notq
+Q004585	MS03	H	Design an event recommendation system.
+Q004586	DROP	-	notq
+Q004587	DROP	-	notq
+Q004588	DROP	-	notq
+Q004589	DROP	-	notq
+Q004590	DROP	-	notq
+Q004591	DROP	-	notq
+Q004592	DROP	-	notq
+Q004593	DROP	-	notq
+Q004594	DROP	-	notq
+Q004595	DROP	-	notq
+Q004596	DROP	-	notq
+Q004597	DROP	-	notq
+Q004598	MS03	H	Design a game recommendation engine.
+Q004599	DROP	-	notq
+Q004600	DROP	-	notq
+Q004601	DROP	-	notq
+Q004602	DROP	-	notq
+Q004603	DROP	-	notq
+Q004604	DROP	-	notq
+Q004605	DROP	-	notq
+Q004606	DROP	-	notq
+Q004607	DROP	-	notq
+Q004608	DROP	-	notq
+Q004609	DROP	-	notq
+Q004610	DROP	-	notq
+Q004611	DROP	-	notq
+Q004612	DROP	-	notq
+Q004613	DROP	-	notq
+Q004614	DROP	-	notq
+Q004615	DROP	-	notq
+Q004616	DROP	-	notq
+Q004617	DROP	-	notq
+Q004618	DROP	-	notq
+Q004619	DROP	-	notq
+Q004620	DROP	-	notq
+Q004621	DROP	-	notq
+Q004622	DROP	-	notq
+Q004623	DROP	-	notq
+Q004624	DROP	-	notq
+Q004625	DROP	-	notq
+Q004626	DROP	-	notq
+Q004627	DROP	-	notq
+Q004628	DROP	-	notq
+Q004629	DROP	-	notq
+Q004630	DROP	-	notq
+Q004631	DROP	-	notq
+Q004632	DROP	-	notq
+Q004633	DROP	-	notq
+Q004634	DROP	-	notq
+Q004635	DROP	-	notq
+Q004636	DROP	-	notq
+Q004637	DROP	-	notq
+Q004638	DROP	-	notq
+Q004639	DROP	-	notq
+Q004640	DROP	-	notq
+Q004641	DROP	-	notq
+Q004642	DROP	-	notq
+Q004643	DROP	-	notq
+Q004644	DROP	-	notq
+Q004645	DROP	-	notq
+Q004646	DROP	-	notq
+Q004647	DROP	-	notq
+Q004648	MS03	H	Design a video recommendation system.
+Q004649	DROP	-	notq
+Q004438	DROP	-	hr
+Q004439	DROP	-	hr
+Q004440	DROP	-	hr
+Q004441	DROP	-	hr
+Q004442	DROP	-	hr
+Q004443	DROP	-	hr
+Q004444	DROP	-	hr
+Q004445	DROP	-	hr
+Q004391	DROP	-	notq
+Q004392	DROP	-	notq
+Q004393	CS07	E	Explain time and space complexity.
+Q004394	DROP	-	notq
+Q004395	DROP	-	notq
+Q004396	DROP	-	notq
+Q004397	DROP	-	notq
+Q004398	ML05	M	How do you choose among techniques for handling imbalanced datasets?
+Q004399	DL04	M	How do you apply dropout to an LSTM?
+Q004400	LLM07	M	Why do classic metrics fail for open-ended generation? Discuss hallucination and calibration.
+Q004401	ML01	E	What are the different types of machine learning techniques?
+Q004402	ML01	E	What is the difference between supervised and unsupervised learning?
+Q004403	ML01	E	What is semi-supervised learning?
+Q004404	ML01	E	What are the stages of building machine learning models?
+Q004405	ML01	M	Can you explain the bias-variance trade-off in machine learning?
+Q004406	ML01	E	What is overfitting and how do you prevent it?
+Q004407	ML05	E	Why and how do you split data into train, test, and validation sets?
+Q004408	ML06	E	What is cross-validation and why is it important?
+Q004409	ML07	M	Can you explain the concept of regularization and its types (L1, L2, etc.)?
+Q004410	ML05	E	How do you handle missing or corrupted data in a dataset?
+Q004411	ML03	E	What is a decision tree and how does it work?
+Q004412	ML02	E	Can you explain logistic regression?
+Q004413	ML02	E	Can you explain the K-Nearest Neighbors (KNN) algorithm?
+Q004414	ML02	E	Compare the K-means and KNN algorithms.
+Q004415	ML03	M	Explain decision-tree based algorithms (random forest, GBDT).
+Q004416	ML02	M	Can you explain the support vector machine (SVM) algorithm? What is a kernel SVM?
+Q004417	DL01	E	Can you explain neural networks and how they work?
+Q004418	DL01	E	What is deep learning and how does it differ from traditional machine learning?
+Q004419	DL01	M	Can you explain the backpropagation algorithm and its role in training neural networks?
+Q004420	DL03	E	What is a convolutional neural network (CNN) and how does it work?
+Q004421	DL03	E	What is transfer learning and how is it used in practice?
+Q004422a	LLM01	M	Walk through a transformer block.
+Q004422b	DROP	-	dup
+Q004423	LLM06	M	What is the KV cache and why does it matter for inference? How does its memory scale?
+Q004424	LLM01	M	Compare MHA, MQA, and GQA. Why did Llama adopt GQA?
+Q004425	LLM02	M	What is RoPE and why are rotary embeddings preferred over learned positional embeddings?
+Q004426	FT05	M	When would you choose RAG vs fine-tuning vs long-context?
+Q004427	FT03	H	Compare SFT, DPO, GRPO, and RLVR in terms of data requirements, what extra models each needs, and when to use each.
+Q004428	FT03	H	Why does GRPO drop the critic network, and how does it estimate advantage?
+Q004429	FT02	M	What is LoRA / QLoRA and when would you use PEFT over full fine-tuning?
+Q004430	LLM06	M	Explain quantization (INT8/INT4, FP8) and KV-cache quantization. What is the accuracy/latency tradeoff?
+Q004431	LLM05	M	How does speculative decoding speed up generation?
+Q004432	RAG06	M	How do you evaluate an LLM / RAG system? What is the RAG triad and LLM-as-judge?
+Q004433	GA06	M	How does a VLM combine a vision encoder with an LLM (e.g., LLaVA, PaliGemma)?
+Q004434	GA06	H	What is a VLA (vision-language-action) model? Contrast discrete action tokens (RT-2, OpenVLA) with flow-matching action heads (pi0).
+Q004435	DL05	M	Diffusion vs autoregressive generation: how do they differ and when is each used (image, video, audio, text)?
+Q004436a	DL05	M	What is classifier-free guidance?
+Q004436b	DL05	H	What is flow matching / rectified flow?
+Q004437	LLM03	M	What is a Mixture-of-Experts model? Distinguish active vs total parameters.
+Q004650	LLM03	E	What are foundation models, and how have they changed AI engineering?
+Q004651	LLM03	E	What is a Large Language Model (LLM), and how does it work?
+Q004652	LLM03	M	What happens inside ChatGPT after you hit Enter?
+Q004653	LLM01	M	What is the Transformer architecture and how does it work?
+Q004654	LLM01	E	What are the key components of the Transformer architecture?
+Q004655	LLM01	H	Walk me through what happens, step by step, in one forward pass of a decoder-only Transformer.
+Q004656	LLM02	E	What is tokenization in LLMs?
+Q004657	LLM02	M	Explain BPE (Byte Pair Encoding).
+Q004658	LLM02	M	Explain WordPiece and SentencePiece.
+Q004659	LLM02	E	What is positional encoding, and why is it needed in Transformers?
+Q004660	LLM01	E	Explain the Query (Q), Key (K), and Value (V) in attention.
+Q004661	LLM01	E	What is self-attention, and how does it work in Transformers?
+Q004662	LLM01	M	What is cross attention in Transformers?
+Q004663	LLM01	M	Why do we scale the dot product attention by sqrt(d_k) in the Transformer architecture?
+Q004664	LLM01	E	What is causal masking?
+Q004665	LLM01	M	What is multi-head attention? Why use multiple attention heads?
+Q004666	LLM01	E	What are feed-forward networks in LLMs?
+Q004667	LLM03	E	What is Generative AI?
+Q004668	LLM05	E	What is the context window in LLMs, and why does it matter?
+Q004669	LLM05	M	Why is the context window limited in LLMs?
+Q004670	LLM05	E	What is temperature in the context of LLMs, and how does it affect output?
+Q004671	LLM06	M	Why is the first token slower than the rest in an LLM?
+Q004672	LLM05	M	Explain top-p (nucleus) sampling and top-k sampling. How do they differ?
+Q004673	LLM05	M	Compare greedy decoding, beam search, top-k, top-p, and temperature sampling. When does each fail?
+Q004674	LLM05	E	What are logits, and how are they used in text generation?
+Q004675	LLM05	E	What are stop tokens in LLMs, and how does an LLM know when to stop generating?
+Q004676	LLM05	E	What is the difference between a stop token and a stop sequence?
+Q004677	LLM01	E	What are skip connections (residual connections) in Transformers?
+Q004678	FT05	M	What is the difference between open-source and closed-source LLMs? When would you choose one over the other?
+Q004679	LLM03	M	What is the difference between encoder-only, decoder-only, and encoder-decoder Transformer architectures?
+Q004680	DROP	-	dup
+Q004681	LLM06	H	Estimate the KV cache memory needed to serve a large model. How does it constrain batch size and context length?
+Q004682	FT04	M	What is model distillation, and how is it used with LLMs?
+Q004683	LLM03	M	What is Mixture of Experts (MoE), and how does it work in models like Mixtral?
+Q004684	LLM03	E	What is the difference between dense and sparse models?
+Q004685	LLM03	H	How does DeepSeek-V4 work?
+Q004686	LLM01	M	What is Flash Attention?
+Q004687	ML07	E	What is cross-entropy loss?
+Q004688	DROP	-	dup
+Q004689	LLM01	M	How does Sliding Window Attention work?
+Q004690	LLM01	H	How do attention sinks work?
+Q004691	DROP	-	dup
+Q004692	LLM01	M	Explain RMSNorm (Root Mean Square Layer Normalization).
+Q004693	LLM01	M	Why do modern Transformers use Pre-LayerNorm (Pre-Norm) instead of Post-LayerNorm?
+Q004694	LLM03	M	What are scaling laws (Chinchilla), and how do they guide model size vs training data decisions?
+Q004695	GA01	M	Your LLM keeps ignoring your instructions. How do you make it follow structured output formats?
+Q004696	LLM05	M	Your LLM-powered tool hits the context window limit on long documents. How do you handle it?
+Q004697	LLM07	M	Your LLM does not admit when it does not know the answer. How do you make it say "I don't know"?
+Q004698	GA01	M	Your LLM generates responses that are too verbose. How do you control response length?
+Q004699	GA05	H	Your LLM memorized proprietary training data and leaks it in responses. How do you prevent this?
+Q004700	FT05	M	Your LLM coding assistant generates outdated code using deprecated libraries. How do you fix it?
+Q004701	LLM02	M	Your tokenizer splits important domain terms into meaningless subword pieces. How do you fix it?
+Q004702	LLM06	M	Your Transformer's KV cache grows too large during long sequence generation. How do you manage memory?
+Q004703	LLM05	H	Your Transformer runs out of memory on long documents due to quadratic self-attention. How do you scale it?
+Q004704	FT04	H	Your distilled student model fails on the complex reasoning that the teacher model handled. How do you close the gap?
+Q004705	FT03	H	After RLHF alignment, your LLM became safer but lost capability on hard tasks. How do you manage the alignment tax?
+Q004706	FT03	H	Your RLHF-trained LLM is gaming the reward model instead of being genuinely helpful. How do you fix reward hacking?
+Q004707	GA03	M	Your chatbot loses context after 10 turns in a conversation. How do you maintain a long conversation context?
+Q004708	GA03	M	Your chatbot fails when users switch topics mid-conversation. How do you handle topic switches?
+Q004709	RAG06	M	Your QA system always generates an answer even when no answer exists in the context. How do you detect unanswerable questions?
+Q004710	LLM07	M	Your summarization system hallucinated facts not in the original article. How do you fix it?
+Q004711	LLM05	M	Your text generation repeats phrases in long outputs. How do you fix repetition?
+Q004712	GA06	M	Transformers work on text, so can they also understand images?
+Q004713	LLM03	E	What are autoregressive models?
+Q004714	LLM04	M	Explain the difference between autoregressive and masked language modeling.
+Q004715	LLM03	H	What is Recursive Self-Improvement (RSI)?
+Q004716	DL05	H	How do Diffusion Language Models (DLMs) work?
+Q004717	GA05	H	How does LLM watermarking work?
+Q004718	DL04	M	How do RNNs and Transformers differ?
+Q004719	GA01	E	What is prompt engineering, and why is it critical for AI applications?
+Q004720	GA01	E	Explain zero-shot, one-shot, and few-shot prompting with examples.
+Q004721	GA01	M	What is chain-of-thought (CoT) prompting, and when should you use it?
+Q004722	GA01	M	Explain self-consistency prompting and how it improves reasoning.
+Q004723	GA01	M	What is tree-of-thought prompting?
+Q004724	GA01	M	What is ReAct (Reasoning + Acting) prompting, and how does it work?
+Q004725	GA01	E	What is a system prompt, and how does it influence model behavior?
+Q004726	GA01	M	How do you structure prompts for consistent structured output (JSON, XML)?
+Q004727	GA05	M	What is prompt injection, and how do you defend against it?
+Q004728	GA05	M	What is jailbreaking in LLMs, and what are common jailbreak techniques?

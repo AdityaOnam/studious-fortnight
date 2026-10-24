@@ -1,0 +1,300 @@
+Q000963	CS07	E	Explain the bitwise OR operation with an example.
+Q000964	CS07	E	How does the bitwise XOR operation work, and what is it commonly used for?
+Q000965	CS07	M	What is bit masking, and how would you create a mask to isolate the nth bit?
+Q000966	CS07	E	Explain how left and right shifts work in bit manipulation.
+Q000967	CS07	M	Explain how to perform left and right bit rotations.
+Q000968	DROP	-	dsa
+Q000969	DROP	-	dsa
+Q000970	SD01	E	Define caching in the context of computer programming.
+Q000971	SD01	E	What are the main purposes of using a cache in a software application?
+Q000972	SD01	E	Can you explain the concept of cache hit and cache miss?
+Q000973	SD01	M	Describe the impact of cache size on performance.
+Q000974	SD01	E	How does a cache improve data retrieval times?
+Q000975	SD01	M	What is the difference between local caching and distributed caching?
+Q000976	SD01	E	Explain the concept of cache eviction and mention common strategies.
+Q000977	SD01	E	What is a cache key and how is it used?
+Q000978	SD01	M	Explain the importance of cache expiration and how it is managed.
+Q000979	DROP	-	notq
+Q000980	SD01	M	How does cache invalidation work and why is it necessary?
+Q000981	SD01	M	Describe the steps involved in implementing a basic cache system.
+Q000982	SD03	H	How would you handle cache synchronization in a distributed environment?
+Q000983	SD01	M	Explain the use of hash maps in cache implementation.
+Q000984	SD01	M	What are some common caching algorithms, and how do they differ?
+Q000985	SD01	H	Explain the design considerations for a cache that supports high concurrency.
+Q000986	SD03	E	What is the CAP Theorem and why is it important for distributed systems?
+Q000987	SD03	E	How does the CAP Theorem define consistency in the context of a distributed system?
+Q000988	SD03	E	What does availability mean in the CAP Theorem?
+Q000989	SD03	E	Explain partition tolerance in a distributed system as stated by the CAP Theorem.
+Q000990	SD03	M	Give an example of a real system that favors consistency over availability.
+Q000991	DROP	-	notq
+Q000992	SD03	M	Can you name a system that prefers availability over consistency?
+Q000993	SD03	E	What is meant by "eventual consistency" in the context of the CAP Theorem?
+Q000994	SD03	M	What trade-offs might you have to make in a distributed system design due to the CAP Theorem?
+Q000995	SD03	H	How would you design a system that requires high availability and what trade-offs would you have to make according to the CAP Theorem?
+Q000996	SD03	M	If a system is experiencing a partition (network failure), what strategies can you employ to maintain service?
+Q000997	SD03	H	Considering the CAP Theorem, how would you approach building a distributed system that handles sensitive financial transactions?
+Q000998	SD03	H	Describe a scenario where a system may switch from being CA to AP during its operation due to external factors.
+Q000999	SD03	H	How do quorums help in achieving consistency or availability in distributed systems, and how is this related to the CAP Theorem?
+Q001000	SD03	M	How do modern databases like Cassandra or DynamoDB address the challenges posed by the CAP Theorem?
+Q001001	SD03	H	Explain how concepts like idempotency, commutativity, and convergence are important in designs that are influenced by the CAP Theorem.
+Q001080	CS02	E	What is concurrency in programming and how does it differ from parallelism?
+Q001081	CS02	E	Can you explain race conditions and provide an example where one might occur?
+Q001082	CS02	E	What is a critical section in the context of concurrent programming?
+Q001083	CS02	M	How does an operating system ensure mutual exclusion in concurrent processes?
+Q001084	CS02	M	Can you describe the concept of atomicity in relation to concurrency?
+Q001085	CS02	M	How does a deadlock occur and what are common strategies to prevent it?
+Q001086	CS02	M	What is a livelock and how is it different from a deadlock?
+Q001087	CS02	M	Can you explain the producer-consumer problem and how can it be addressed using concurrency mechanisms?
+Q001088	CS01	E	What is the difference between a process and a thread?
+Q001089	CS01	M	How are threads typically created and managed in modern operating systems?
+Q001090	CS02	E	What is a thread pool and why might you use one?
+Q001091	CS01	M	Can you explain the concept of a context switch and how it affects concurrency?
+Q001092	DROP	-	dup
+Q001093	CS02	M	What are the benefits and disadvantages of using many small threads vs. a few large threads?
+Q001094	CS02	E	What is a mutex and how does it work?
+Q001095	CS02	E	What are semaphores and how do they differ from mutexes?
+Q001111	CS07	E	What are the main features of C++?
+Q001112	CS07	E	Explain the difference between C and C++.
+Q001113	CS06	E	What is object-oriented programming in C++?
+Q001114	CS07	E	What are the access specifiers in C++ and what do they do?
+Q001115	CS07	E	Explain the concept of namespaces in C++.
+Q001116	CS07	E	What is the difference between 'struct' and 'class' in C++?
+Q001117	CS07	E	What is a constructor and what are its types in C++?
+Q001118	CS07	E	Explain the concept of destructors in C++.
+Q001119	CS07	E	What is function overloading in C++?
+Q001120	CS07	E	What is operator overloading in C++?
+Q001121	CS07	E	What is dynamic memory allocation in C++?
+Q001122	CS07	M	Explain the difference between 'new' and 'malloc()'.
+Q001123	CS07	M	What is a memory leak and how can it be prevented?
+Q001124	CS07	E	What is a dangling pointer?
+Q001125	CS07	M	Explain the concept of smart pointers in C++.
+Q001126	CS08	E	What is cryptography, and what are its main goals?
+Q001127	CS08	E	Explain the difference between symmetric and asymmetric cryptography.
+Q001128	CS08	E	What is a cryptographic hash function, and what properties must it have?
+Q001129	CS08	M	Describe the concept of public key infrastructure (PKI).
+Q001130	CS08	M	What is a digital signature, and how does it work?
+Q001131	CS08	M	Can you explain what a nonce is and how it is used in cryptography?
+Q001132	CS08	M	What does it mean for a cryptographic algorithm to be "computationally secure"?
+Q001133	CS08	M	Describe the concept of perfect secrecy and name an encryption system that achieves it.
+Q001134	CS08	M	What are substitution and permutation in the context of encryption algorithms?
+Q001135	CS08	M	Explain the basic principle behind the AES encryption algorithm.
+Q001136	CS08	M	What is the Data Encryption Standard (DES), and why is it considered insecure today?
+Q001137	CS08	M	Describe the differences between RSA and ECC (Elliptic Curve Cryptography).
+Q001138	CS08	M	How does a stream cipher differ from a block cipher?
+Q001139	CS08	H	Can you describe the Feistel cipher structure?
+Q001140	CS08	M	What are the key differences between DES and 3DES?
+Q001222	CS04	E	What is a database management system (DBMS), and can you name some examples?
+Q001223	CS04	E	Explain the ACID properties in the context of databases.
+Q001224	CS04	E	What are the differences between SQL and NoSQL databases?
+Q001225	CS04	E	Describe a relational database schema.
+Q001226	CS04	E	What is a primary key, and why is it important?
+Q001227	CS04	E	Can you explain what a foreign key is and its role in the database?
+Q001228	CS04	E	What is database normalization, and why do we use it?
+Q001229	CS04	M	What is denormalization and when would you consider it?
+Q001230	CS04	E	Compare and contrast the DROP, DELETE, and TRUNCATE commands.
+Q001231	CS04	E	What is the difference between a full join and an inner join?
+Q001232	CS04	M	How would you write an SQL query to fetch duplicate records from a table?
+Q001233	CS04	M	What is a prepared statement, and why would you use one?
+Q001234	DROP	-	notq
+Q001235	CS04	M	What is the N+1 query problem and how can you solve it?
+Q001236	CS04	E	Explain the function of GROUP BY and HAVING clauses in SQL.
+Q001237	CS04	E	What are indexes and how do they work in databases?
+Q001269	CS06	E	What is Dependency Injection and why is it used in modern software development?
+Q001270	CS06	M	Explain the concept of Inversion of Control (IoC) and how it relates to Dependency Injection.
+Q001271	CS06	E	What are the main advantages of using Dependency Injection in a software project?
+Q001272	CS06	M	Describe the impact of Dependency Injection on the maintainability of code.
+Q001273	CS06	M	Can you explain the Dependency Inversion Principle and how it differs from Dependency Injection?
+Q001274	DROP	-	notq
+Q001275	CS06	M	Compare and contrast constructor injection versus setter injection.
+Q001276	CS06	M	When would you use method injection instead of constructor injection?
+Q001277	DROP	-	notq
+Q001278	CS06	M	Can mixing different types of injection in the same class lead to issues? If so, what kind?
+Q001279	CS06	M	Is there a preferred type of dependency injection when working with immutable objects? Please explain.
+Q001280	CS06	M	How does each type of dependency injection affect the ease of unit testing?
+Q001281	CS06	M	What is a Dependency Injection container and what are its responsibilities?
+Q001282	DROP	-	notq
+Q001283	DROP	-	offtopic
+Q001284	CS06	M	What is the difference between a Dependency Injection container and a service locator?
+Q001285	CS06	M	How do you typically configure dependencies within a DI container?
+Q001286	CS06	M	Describe a situation where you should opt for a lightweight DI container over a full-fledged framework.
+Q001287	DROP	-	notq
+Q001288	CS09	E	What is DevOps and how does it enhance software delivery?
+Q001289	CS09	E	Can you describe the key principles of DevOps?
+Q001290	CS09	E	How do continuous integration and continuous deployment (CI/CD) relate to DevOps?
+Q001291	CS09	E	What are the benefits of DevOps in software development and operations?
+Q001292	CS09	E	Can you explain the concept of "Infrastructure as Code" (IaC)?
+Q001293	CS09	E	What is meant by "Shift Left" in DevOps?
+Q001294	CS09	E	How does version control support DevOps practices?
+Q001295	CS09	E	What role does automation play in DevOps?
+Q001296	CS09	M	What are the common metrics used to measure DevOps success?
+Q001297	CS09	E	How does DevOps differ from the Agile methodology?
+Q001298	CS09	E	What are some popular tools used in the DevOps ecosystem for version control?
+Q001299	DROP	-	notq
+Q001300	CS09	E	Can you list some CI/CD tools commonly used in DevOps?
+Q001301	CS09	E	What containerization technologies are commonly used in DevOps?
+Q001302	CS09	E	Name some configuration management tools used in DevOps.
+Q001303	CS09	E	What monitoring tools are popular in DevOps?
+Q001319	CS09	E	What is Docker, and how is it different from virtual machines?
+Q001320	CS09	E	Can you explain what a Docker image is?
+Q001321	DROP	-	notq
+Q001322	CS09	E	How does a Docker container differ from a Docker image?
+Q001323	CS09	E	What is Docker Hub, and what is it used for?
+Q001324	CS09	E	Explain the Dockerfile and its significance in Docker.
+Q001325	CS09	M	How does Docker use layers to build images?
+Q001326	CS09	E	What is the difference between the 'COPY' and 'ADD' commands in a Dockerfile?
+Q001327	CS09	E	What is the purpose of the '.dockerignore' file?
+Q001328	CS09	M	How would you go about creating a Docker image from an existing container?
+Q001329	CS09	M	In practice, how do you reduce the size of Docker images?
+Q001330	CS09	E	What command is used to run a Docker container from an image?
+Q001331	CS09	M	Can you explain what a Docker namespace is and its benefits?
+Q001332	CS09	E	What is a Docker volume, and when would you use it?
+Q001333	CS09	E	Explain the use and significance of the 'docker-compose' tool.
+Q001334	CS09	M	Can Docker containers running on the same host communicate with each other by default? If so, how?
+Q001335	SD04	E	What is Domain-Driven Design (DDD) and what are its core principles?
+Q001336	SD04	M	How does DDD differ from traditional data-driven or service-driven approaches?
+Q001337	SD04	M	What is the difference between the Domain Model and the Data Model in DDD?
+Q001338	SD04	M	Can you explain what Bounded Contexts are in DDD, and why they are important?
+Q001339	SD04	M	What strategies can you use to define Bounded Contexts in a large system?
+Q001340	SD04	M	How do you integrate multiple Bounded Contexts within a single system?
+Q001341	SD04	M	Why is Ubiquitous Language important in DDD, and how do you establish it?
+Q001342	SD04	M	What is the role of Entities in DDD, and how do they differ from Value Objects?
+Q001343	SD04	M	How would you identify Aggregates in a domain model, and what boundary rules apply to them?
+Q001344	SD04	M	Can you explain what a Domain Event is and give an example of when it might be used?
+Q001345	SD04	M	How do Repositories function in DDD and what is their main responsibility?
+Q001346	SD04	M	What is the difference between a Repository and a Service in DDD?
+Q001347	SD04	H	How would you handle complex domain logic that involves multiple entities and value objects?
+Q001348	SD04	M	Can you delineate the role of a Domain Service versus an Application Service?
+Q001349	SD04	H	What considerations are there for implementing Aggregates to ensure transactional consistency?
+Q001350	DROP	-	notq
+Q001427	CS09	E	What is Git and why is it used?
+Q001428	CS09	E	How does Git differ from other version control systems (VCS)?
+Q001429	CS09	E	What are some drawbacks of other version control systems compared to Git?
+Q001430	CS09	E	What is the difference between Git and GitHub?
+Q001431	CS09	E	What is a repository in Git?
+Q001432	CS09	E	Explain the concept of a commit in Git.
+Q001433	CS09	E	What is the difference between a working directory, staging area, and repository in Git?
+Q001434	CS09	E	Define branching in Git and its importance.
+Q001435	CS09	E	What is a 'HEAD' in Git?
+Q001436	CS09	E	What does the 'clone' operation in Git do?
+Q001437	CS09	M	How does Git store information?
+Q001438	CS09	E	How do you initialize a new Git repository?
+Q001439	CS09	E	Explain the purpose of the 'git status' command.
+Q001440	CS09	E	What does the 'git add' command do?
+Q001441	CS09	E	How do you create a commit in Git?
+Q001442	CS09	M	What information is contained in a commit object in Git?
+Q001458	SD04	E	What is GraphQL and how does it differ from REST?
+Q001459	DROP	-	notq
+Q001460	SD04	M	Explain the main components of the GraphQL architecture.
+Q001461	SD04	E	Can you describe the structure of a GraphQL query?
+Q001462	SD04	E	What are the core features of GraphQL?
+Q001463	SD04	E	What is a GraphQL schema and why is it important?
+Q001464	DROP	-	notq
+Q001465	SD04	E	Explain the concept of fields in GraphQL.
+Q001466	SD04	E	How does GraphQL handle data types?
+Q001467	SD04	E	In GraphQL, what are queries and mutations?
+Q001468	SD04	E	Describe how you would fetch data with a GraphQL query.
+Q001469	SD04	E	What are scalar types in GraphQL?
+Q001470	SD04	M	Explain the role of resolvers in GraphQL.
+Q001471	SD04	M	What are the advantages of using GraphQL over other API query languages?
+Q001472	SD04	E	How do you pass arguments to fields in GraphQL queries?
+Q001473	SD04	E	What is a fragment in GraphQL and how is it used?
+Q001474	SD04	M	How does GraphQL handle caching?
+Q001492	CS07	E	Explain the main idea behind Java and the concept of Write Once, Run Anywhere.
+Q001493	DROP	-	notq
+Q001494	DROP	-	notq
+Q001495	CS07	E	What are the main features of Java?
+Q001496	CS07	E	Can you list some non-object-oriented features of Java?
+Q001497	CS07	E	Describe the difference between JDK, JRE, and JVM.
+Q001498	CS07	M	What is the role of the ClassLoader in Java?
+Q001499	CS07	E	What is the difference between a path and a classpath in Java?
+Q001500	CS07	E	Can you explain the difference between an int and an Integer in Java?
+Q001501	CS07	E	What are wrapper classes in Java?
+Q001502	CS07	E	What does it mean that Java is a statically typed language?
+Q001503	CS07	M	Is Java a pure object-oriented language? Why or why not?
+Q001504	CS07	E	What is bytecode in the context of Java?
+Q001505	CS07	M	How does garbage collection work in Java?
+Q001506	CS07	E	What is the purpose of the 'final' keyword in Java?
+Q001507	CS07	M	Can we overload or override static methods in Java?
+Q001508	CS07	E	What is the significance of the 'this' keyword in Java?
+Q001554	CS09	E	What is Kubernetes, and why is it used for container orchestration?
+Q001555	DROP	-	notq
+Q001556	CS09	M	Describe the roles of master and worker nodes in the Kubernetes architecture.
+Q001557	CS09	E	How do Pods facilitate the management of containers in Kubernetes?
+Q001558	CS09	M	What types of Services exist in Kubernetes, and how do they facilitate pod communication?
+Q001559	CS09	E	Explain the functionality of Namespaces in Kubernetes.
+Q001560	CS09	M	Differentiate between Deployments, StatefulSets, and DaemonSets.
+Q001561	CS09	M	How do ReplicaSets ensure pod availability?
+Q001562	CS09	E	What are Jobs in Kubernetes, and when is it suitable to use them?
+Q001563	CS09	E	How do Labels and Selectors work together in Kubernetes?
+Q001564	DROP	-	notq
+Q001565	CS09	M	What would you consider when performing a rolling update in Kubernetes?
+Q001566	CS09	M	How do Services route traffic to pods in Kubernetes?
+Q001567	CS09	M	Describe the purpose of Ingress and its key components.
+Q001568	CS09	M	Explain Kubernetes DNS resolution for services.
+Q001569	CS09	M	What is the Container Network Interface (CNI), and how does it integrate with Kubernetes?
+Q001570	CS09	M	How do you implement Network Policies in Kubernetes, and what are their benefits?
+Q001571	DROP	-	notq
+Q001572	SD04	E	Can you explain what is meant by layering in the context of software architecture and its benefits?
+Q001573	SD04	E	Describe the three typical layers you might find in a three-tiered application architecture and their responsibilities.
+Q001574	SD04	M	How does middleware facilitate decoupling of components in a system?
+Q001575	SD04	E	What are some common functionalities provided by middleware in a layered architecture?
+Q001576	SD04	M	Give an example of a middleware solution that provides service orchestration.
+Q001577	SD04	E	Explain the concept of a service layer and its purpose in a layered architecture.
+Q001578	SD04	M	Describe how middleware can support both synchronous and asynchronous communication patterns.
+Q001579	SD04	M	How do Object Request Brokers (ORBs) differ from Message Oriented Middleware (MOM)?
+Q001580	SD04	M	In what scenario would you choose an Enterprise Service Bus (ESB)?
+Q001581	SD04	M	When would you use Remote Procedure Call (RPC) middleware, and what advantages does it offer?
+Q001582	SD04	M	Explain how middleware systems support data format transformations between disparate technologies.
+Q001583	SD01	M	Describe how middleware handles load balancing among multiple server instances.
+Q001584	SD01	H	Can you discuss strategies for scaling middleware solutions in response to increasing load?
+Q001585	SD05	M	How can you configure middleware to ensure secure data transmission?
+Q001586	SD01	M	Explain how middleware caching can improve the performance of a multi-layered application.
+Q001666	SD01	E	Define load balancing in the context of modern web services.
+Q001667	SD01	E	What are the primary objectives of implementing load balancing?
+Q001668	SD01	E	Explain the difference between hardware and software load balancers.
+Q001669	SD01	M	Can you list some common load balancing algorithms and briefly describe how they work?
+Q001670	SD01	E	Describe the term "sticky session" in load balancing.
+Q001671	SD01	E	How does load balancing improve application reliability?
+Q001672	DROP	-	notq
+Q001673	SD01	M	How do load balancers perform health checks on backend servers?
+Q001674	SD01	M	What are the advantages and disadvantages of round-robin load balancing?
+Q001675	SD01	M	In load balancing, what is the significance of the least connections method?
+Q001676	SD01	M	Explain how a load balancer might handle failure in one of the servers it manages.
+Q001677	SD01	M	How does a load balancer distribute traffic in a stateless vs stateful scenario?
+Q001678	SD01	M	What is the concept of session persistence, and why is it important?
+Q001679	DROP	-	notq
+Q001680	DROP	-	notq
+Q001681	SD01	M	Discuss the role of DNS in load balancing.
+Q001682	SD01	M	In what scenarios would you use weighted load balancing?
+Q001683	SD05	M	How can load balancers help mitigate DDoS attacks?
+Q001684	DROP	-	notq
+Q001700	SD04	E	What is a microservice and how does it differ from a monolithic architecture?
+Q001701	DROP	-	notq
+Q001702	SD04	M	Can you describe the principles behind the microservices architecture?
+Q001703	SD04	E	What are the main benefits of using microservices?
+Q001704	SD04	M	What are some of the challenges you might face when designing a microservices architecture?
+Q001705	SD04	M	How do microservices communicate with each other?
+Q001706	SD04	M	What is the best way to implement microservices?
+Q001707	SD04	M	What is Domain-Driven Design (DDD) and how is it related to microservices?
+Q001708	SD04	H	How would you decompose a monolithic application into microservices?
+Q001709	SD03	H	What strategies can be employed to manage transactions across multiple microservices?
+Q001710	SD04	M	Explain the concept of 'Bounded Context' in the microservices architecture.
+Q001711	SD05	M	How do you handle failure in a microservice?
+Q001712	SD04	M	What design patterns are commonly used in microservices architectures?
+Q001713	SD04	M	Can you describe the API Gateway pattern and its benefits?
+Q001714	SD05	M	Explain the 'Circuit Breaker' pattern. Why is it important in a microservices ecosystem?
+Q001715	SD04	M	What is a 'Service Mesh'? How does it aid in managing microservices?
+Q001716	SD03	H	How do you ensure data consistency across microservices?
+Q001766	CS05	E	What is MongoDB and what are its main features?
+Q001767	CS05	E	How does MongoDB differ from relational databases?
+Q001768	CS05	E	Can you describe the structure of data in MongoDB?
+Q001769	CS05	E	What is a document in MongoDB?
+Q001770	CS05	E	How is data stored in collections in MongoDB?
+Q001771	CS05	E	Describe what a MongoDB database is.
+Q001772	DROP	-	offtopic
+Q001773	CS05	M	How does MongoDB provide high availability and disaster recovery?
+Q001774	CS05	E	What are indexes in MongoDB, and why are they used?
+Q001775	CS05	E	What is the role of the _id field in MongoDB documents?
+Q001776	CS05	E	How do you create a new MongoDB collection?
+Q001777	CS05	E	What is the syntax to insert a document into a MongoDB collection?
+Q001778	CS05	E	Describe how to read data from a MongoDB collection.

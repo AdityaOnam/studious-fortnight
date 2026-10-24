@@ -1,0 +1,302 @@
+Q006342	CS01	E	What is RAID and how does it work?
+Q006343	CS04	E	What is the difference between the DELETE and TRUNCATE commands?
+Q006344	CS04	M	If locking is not implemented in a database, what issues can occur?
+Q006345	CS04	M	What are the different transaction isolation levels in SQL Server?
+Q006346	CS04	M	What are the different types of locks in SQL Server?
+Q006347	DROP	-	offtopic
+Q006348	CS04	M	What is lock escalation?
+Q006349	DROP	-	offtopic
+Q006350	CS04	E	What is the difference between a HAVING clause and a WHERE clause?
+Q006351	DROP	-	dup
+Q006352	CS04	E	What are the different types of triggers in SQL Server?
+Q006353	DROP	-	offtopic
+Q006354	CS08	E	What is SQL injection?
+Q006355	CS04	M	What is the difference between a stored procedure and a user-defined function?
+Q006356	DROP	-	offtopic
+Q006357	SD02	E	What is the purpose of database replication?
+Q006358	SD02	M	What are the different types of database replication supported by SQL Server?
+Q006359	DROP	-	offtopic
+Q006360	CS07	E	What are local and global variables and what are their differences?
+Q006361	CS04	E	Why do you need an index in a database?
+Q006362	CS04	E	What is a query in a database?
+Q006363	CS04	E	What are the query types in a database?
+Q006364	CS04	E	What is a join in SQL?
+Q006365	DROP	-	dup
+Q006366	CS04	E	What is a user-defined function?
+Q006367	CS04	E	What are the types of user-defined functions?
+Q006368	CS04	E	What are the different types of collation sensitivity?
+Q006369	CS04	E	What are the advantages and disadvantages of stored procedures?
+Q006370	CS04	E	What is Online Transaction Processing (OLTP)?
+Q006371	CS04	M	What is a recursive stored procedure?
+Q006372	CS04	E	What are the UNION, MINUS, and INTERSECT commands?
+Q006373	CS04	E	What is an ALIAS in SQL?
+Q006374	CS04	E	What is the difference between the TRUNCATE and DROP statements?
+Q006375	CS04	E	What are aggregate and scalar functions?
+Q006376	CS04	E	What is an inner join in SQL?
+Q006377	CS04	E	What is an outer join in SQL?
+Q006378	CS04	E	What is a full join in SQL?
+Q006379	CS04	E	What is a left join in SQL?
+Q006380	CS04	E	What is a right join in SQL?
+Q006381	DROP	-	offtopic
+Q006382	DROP	-	offtopic
+Q006383	DROP	-	offtopic
+Q006384	DROP	-	offtopic
+Q006385	DROP	-	offtopic
+Q006386	DROP	-	offtopic
+Q006387	DROP	-	dup
+Q006388	CS04	E	How do you select data from a SQL table?
+Q006389	CS04	E	What is a CHECK constraint in SQL?
+Q006390	CS04	E	What is a DEFAULT constraint in SQL?
+Q006391	CS04	E	How do you create a database using SQL?
+Q006392	CS04	E	What is a constraint in SQL?
+Q006393	CS04	E	What is data integrity?
+Q006394	CS04	E	What is auto increment in SQL?
+Q006395	CS04	M	What is the difference between a clustered and a non-clustered index?
+Q006396	CS04	E	How do you define constraints in SQL?
+Q006397	CS04	E	What is the meaning of NOT NULL in SQL?
+Q006398	CS04	E	How do you alter a table schema in SQL?
+Q006399	CS04	E	How do you create an index in SQL?
+Q006400	CS04	E	How do you get unique records in SQL?
+Q006401	DROP	-	offtopic
+Q006402a	CS04	E	What are the ACID properties?
+Q006402b	CS04	E	What are transactions in SQL Server?
+Q006403	CS04	E	How do GROUP BY and ORDER BY differ?
+Q006404	CS04	E	Compare SQL and PL/SQL.
+Q006405	DROP	-	notq
+Q006406	DROP	-	dup
+Q006407	CS04	M	When is the UPDATE STATISTICS command used?
+Q006408	DROP	-	offtopic
+Q006409	DROP	-	dup
+Q006410	CS04	M	How does a correlated query work?
+Q006411	CS04	M	When is an explicit cursor used?
+Q006412	DROP	-	unfixable
+Q006413	DROP	-	offtopic
+Q006414	DROP	-	offtopic
+Q006415	DROP	-	offtopic
+Q006416	CS04	M	How can you delete duplicate records in a table that has no primary key?
+Q006417	DROP	-	offtopic
+Q006418	DROP	-	offtopic
+Q006419	DROP	-	offtopic
+Q006420	CS04	M	How do you maintain database integrity so that deletions from one table automatically cause deletions in another table?
+Q006421	DROP	-	offtopic
+Q006422	CS04	E	What is the SQL CASE statement used for? Explain with an example.
+Q006423	DROP	-	offtopic
+Q006424	DROP	-	dup
+Q006425	DROP	-	offtopic
+Q006426	DROP	-	offtopic
+Q006427	DROP	-	offtopic
+Q006428	DROP	-	offtopic
+Q006429	DROP	-	offtopic
+Q006430	CS04	M	What is denormalization in a SQL database? Give examples.
+Q006431	CS04	M	Can you explain the buffer cache and the log cache in SQL Server?
+Q006432	DROP	-	offtopic
+Q006433	DROP	-	offtopic
+Q006434	DROP	-	offtopic
+Q006435	DROP	-	offtopic
+Q006436	DROP	-	offtopic
+Q006437	DROP	-	offtopic
+Q006438	SD05	M	What is failover clustering?
+Q006439	DROP	-	offtopic
+Q006440	CS04	E	Write an SQL query to display the current date.
+Q006441	CS04	M	Write an SQL query to check whether a date passed to the query is in a given format.
+Q006442	CS04	E	Write an SQL query to print the names of distinct employees whose date of birth is between 01/01/1960 and 31/12/1975.
+Q006443	CS04	E	Write an SQL query to find the number of employees by gender whose date of birth is between 01/01/1960 and 31/12/1975.
+Q006444	CS04	E	Write an SQL query to find employees whose salary is greater than or equal to 10000.
+Q006445	CS04	E	Write an SQL query to find the names of employees whose name starts with 'M'.
+Q006446	CS04	E	Write an SQL query to find all employee records containing the word "Joe", regardless of whether it was stored as JOE, Joe, or joe.
+Q006447	CS04	E	Write an SQL query to find the year from a date.
+Q006448	CS04	E	How can you create an empty table from an existing table?
+Q006449	CS04	M	How do you fetch common records from two tables?
+Q006450	CS04	M	How do you fetch alternate records from a table?
+Q006451	DROP	-	dup
+Q006452	CS04	E	What is the command used to fetch the first 5 characters of a string?
+Q006453	CS04	E	Which operator is used in a query for pattern matching?
+Q006454a	CS04	M	Write an SQL query to find duplicate rows in a database.
+Q006454b	CS04	M	Write an SQL query to delete duplicate rows in a database.
+Q006455	CS04	M	How do you find all employees who are also managers?
+Q006456	CS04	M	You have a composite index on three columns, and you provide the values of only two columns in the WHERE clause of a select query. Will the index be used for this operation?
+Q006457	CS04	E	What is the default join in SQL? Give an example query.
+Q006458	CS04	E	Describe all the joins in SQL with examples.
+Q006459	CS04	E	What are UNION and UNION ALL? Explain the differences.
+Q006460	SD01	E	What is system design?
+Q006461	SD01	E	Why is system design important?
+Q006462	CS03	E	Why does the OSI model matter?
+Q006463	SD01	M	When should you not use caching?
+Q006464	SD01	E	How does a CDN work?
+Q006465	DROP	-	notq
+Q006466	CS04	E	Why do we need normalization?
+Q006467	DROP	-	notq
+Q006468	DROP	-	notq
+Q006469	SD03	M	Why do we need distributed transactions?
+Q006470	SD03	M	In a distributed transaction using two-phase commit, what happens if one of the participant nodes crashes?
+Q006471	SD03	M	In a distributed transaction using two-phase commit, what happens if the coordinator itself crashes?
+Q006472	SD03	M	Why is the pre-commit phase helpful in three-phase commit?
+Q006473	DROP	-	notq
+Q006474	SD02	M	When should you use sharding?
+Q006475	DROP	-	notq
+Q006476	SD01	M	Why do we need consistent hashing?
+Q006477	DROP	-	notq
+Q006478	SD04	E	Why do we need an API Gateway?
+Q006479	DROP	-	notq
+Q006480	SD04	M	When should you use the Backend For Frontend (BFF) pattern?
+Q006481	DROP	-	notq
+Q006482	DROP	-	notq
+Q006483	DROP	-	notq
+Q006484	DROP	-	notq
+Q006485	DROP	-	notq
+Q006486	DROP	-	notq
+Q006487	DROP	-	notq
+Q006488	DROP	-	notq
+Q006489	DROP	-	notq
+Q006490	SD04	M	Which API technology is better: REST, GraphQL, or gRPC?
+Q006491	DROP	-	notq
+Q006492	SD06	M	How does Geohashing work?
+Q006493	SD06	M	Why do we need Quadtrees?
+Q006494	SD05	M	Why do we need circuit breaking?
+Q006495	SD01	E	Why do we need rate limiting?
+Q006496	SD03	M	Why do we need idempotency?
+Q006497	DROP	-	notq
+Q006498	DROP	-	notq
+Q006499	SD04	E	Why do we need service discovery?
+Q006500	SD05	E	Why are SLAs, SLOs, and SLIs important?
+Q006501	SD05	E	Why is disaster recovery important?
+Q006502	CS01	E	What is a hypervisor?
+Q006503	CS01	E	Why use a virtual machine?
+Q006504	CS09	E	Why do we need containers?
+Q006505	CS08	M	How does OAuth 2.0 work?
+Q006506	CS08	E	Why is it called an SSL certificate if SSL is deprecated?
+Q006507	CS08	E	Why was SSL so important?
+Q006508	DROP	-	notq
+Q006509	SD06	E	What is a URL shortener?
+Q006510	DROP	-	dup
+Q006511	DROP	-	notq
+Q006512	SD06	M	What would be the requests per second (RPS) for a URL shortener system?
+Q006513	SD06	M	What kind of database should be used for a URL shortener?
+Q006514	SD06	E	Why do we need an API key in a URL shortener's API design?
+Q006515	SD06	M	How do you handle concurrent access in the Key Generation Service (KGS) of a URL shortener?
+Q006516	DROP	-	notq
+Q006517	DROP	-	notq
+Q006518	DROP	-	notq
+Q006519	SD06	M	Which cache eviction policy should be used in a URL shortener?
+Q006520	SD06	M	How do you handle a cache miss in a URL shortener?
+Q006521	DROP	-	notq
+Q006522	DROP	-	notq
+Q006523	DROP	-	notq
+Q006524	SD06	M	How would you handle inter-service communication and service discovery in a chat application architecture?
+Q006525	SD03	E	Why use a message queue for notifications?
+Q006526	DROP	-	notq
+Q006527	DROP	-	notq
+Q006528	DROP	-	notq
+Q006529	DROP	-	notq
+Q006530	SD06	M	How do you identify trending topics in a Twitter-like system?
+Q006531	SD06	M	What is the difference between Netflix's Open Connect and a traditional Content Delivery Network (CDN)?
+Q006532	SD06	M	How do you identify trending content in a video streaming service?
+Q006533	DROP	-	notq
+Q006534	DROP	-	notq
+Q006535	SD06	M	How do you handle race conditions in ride matching for a ride-sharing service like Uber?
+Q006536	SD06	M	How do you find the best drivers nearby in a ride-sharing service?
+Q012252	DROP	-	notq
+Q012124	SD07	H	Design a subscription-based sports website that can display scores, game status, and history for any game.
+Q012125	SD07	H	Design an online card game such as poker.
+Q012126	SD07	H	Design a geographically partitioned multi-player card game that supports multiple players and multiple games at a time.
+Q012127	SD06	H	Design a system for fast lookup of cars on the market according to the user's geo-position.
+Q012128	SD07	H	Design a task planner. Different types of tasks are present: bug, feature, and story, each with their own attributes. A sprint is a collection of tasks.
+Q012129	SD07	M	Implement a finite state machine.
+Q012130	SD07	H	Design a system like Jira.
+Q012131	DROP	-	notq
+Q012132	SD07	H	Design a stock exchange system.
+Q012133	SD07	H	Design a car rental system like Zoomcar.
+Q012134	SD07	H	Design a billing and auctioning system similar to eBay.
+Q012135	SD07	H	Design a Q&A application like the product Q&A on Amazon or Walmart.
+Q012136	DROP	-	notq
+Q012137	DROP	-	notq
+Q012138	SD06	H	Design a suggestion system.
+Q012139	CS07	H	Design and implement a simple Java garbage collector.
+Q012140	SD06	H	Design a video upload system for users with low network bandwidth.
+Q012141	SD07	H	Design a learning management system.
+Q012142	SD07	H	Design a survey system similar to Google Forms or SurveyMonkey.
+Q012143	SD07	H	Design a calendar application similar to Google Calendar.
+Q012144	SD07	M	Design a guitar inventory system.
+Q012145	SD07	H	Design a stock trading system.
+Q012146	SD06	H	Design a payment gateway like Razorpay.
+Q012147	SD07	H	Design a JSON parser from scratch.
+Q012148	SD06	H	Design a chat application like WhatsApp or WeChat.
+Q012149	SD07	H	Design a home automation system to remotely control all the switches and devices in a home.
+Q012150	SD07	H	Design a maps navigator client for different transportation types.
+Q012151	DROP	-	dup
+Q012152	DROP	-	notq
+Q012153	DROP	-	notq
+Q012154	SD07	M	Design and implement a logger library that applications can use to log messages.
+Q012155	SD07	H	Design a configuration management system.
+Q012156	SD07	H	Design Amazon's comments filtering system.
+Q012157	SD06	H	Design a mock interview system like Pramp.
+Q012158	SD07	H	Design an applicant tracking system (ATS) like Greenhouse.
+Q012159	SD07	H	Design a logistics system.
+Q012160	SD07	H	Design a message queueing system.
+Q012161	SD07	M	Create your own queue that holds messages in the form of JSON, without using standard library queues.
+Q012162	DROP	-	notq
+Q012163	SD06	H	Design an employee management platform that includes payroll, IT, employee benefits, and all other employee operations in one place.
+Q012164	SD06	H	Design a user engagement platform.
+Q012165	SD06	H	Design a product experience platform like Pendo.
+Q012166	SD06	H	Design a live auction platform for IPL or EPL.
+Q012167	SD07	H	Design a unit testing application.
+Q012168	SD06	H	Design a browser testing application like BrowserStack or Sauce Labs.
+Q012169	SD06	H	Design a real-time collaboration application for teams.
+Q012170	SD06	H	Design a visual workplace for remote teams.
+Q012171	SD06	H	Design an online UML diagram tool like Lucidchart.
+Q012172	SD06	H	Design an online audio/video file downloader.
+Q012173	SD07	H	Design a warehouse management system.
+Q012174	SD06	H	Design a game streaming platform.
+Q012175	SD06	H	Design a real-time translation platform.
+Q012176	SD06	H	Design a community-based discussion platform.
+Q012177	SD07	H	Design an application for restaurants or malls to efficiently handle the waiting queue and optimally assign tables.
+Q012178	SD06	H	Design an online assessment platform for exams like GRE or TOEFL.
+Q012179	SD06	H	Design an online customer verification platform for digital onboarding (KYC) of users for banks and other clients.
+Q012180	SD06	H	Design a secure content management platform.
+Q012181	SD06	H	Design a freelancing hiring platform.
+Q012182	SD06	H	Design a monitoring and alerting system for production and other environments.
+Q012183	SD06	H	Design a digital video KYC (know your customer) verification system.
+Q012184	SD06	H	Design an online e-filing service for income tax returns.
+Q012185	SD06	H	Design a job posting system dedicated to blue-collar and grey-collar workers, supporting multiple languages and native languages.
+Q012186	SD06	H	Design a system similar to Product Hunt for sharing and discovering new products.
+Q012187	SD06	H	Design a clipboard service that stores the maximum number of clips.
+Q012188	SD06	H	Design a system for salary information and comparison, similar to Glassdoor Salaries or Levels.fyi.
+Q012189	SD06	H	Design a pricing and product comparison system.
+Q012190	SD06	H	Design a virtual event platform for communities and enterprises.
+Q012191	SD06	H	Design a short video and content sharing system like TikTok.
+Q012192	SD06	H	Design a short storytelling (text and images) platform like Terribly Tiny Tales.
+Q012193	SD06	H	Design a user activity tracking system for mobile users.
+Q012194	SD07	H	Design an in-memory database that supports operations such as adding and removing tables.
+Q012195	SD05	H	Design a login API that remains secure even if the SSL certificate is compromised.
+Q012196	SD04	H	How would you design an API whose response combines the responses from three other microservices?
+Q012197	DROP	-	unfixable
+Q012198	SD06	H	Design a torrent service, end to end.
+Q012199	SD06	H	Design a system like BigBasket for local retailers.
+Q012200	SD07	H	Design a limit order book for a trading system.
+Q012201	SD07	M	Design a cache mechanism.
+Q012202	SD07	H	Design a personal stock and investment portfolio system.
+Q012203	SD06	H	Design an electronic signature system like DocuSign.
+Q012204	SD07	H	Design a generic coupon and promo code system.
+Q012205	SD07	M	Design a quizzing app.
+Q012206	CS05	H	Design and implement RocksDB.
+Q012207	SD03	H	Design and develop ZooKeeper using RocksDB and Google's Bigtable.
+Q012208	DROP	-	dup
+Q012209	SD07	H	Design a service to view, add, and remove viewers of a document, like the feature in Google Docs.
+Q012210	SD07	H	Design an online auction system.
+Q012211	SD07	H	Design a system for storing chemicals with their constituents in an efficiently retrievable format.
+Q012212	SD07	H	Design an appointment booking system for a hospital where each doctor can open slots independently for any time period.
+Q012213	DROP	-	dup
+Q012214	DROP	-	unfixable
+Q012215	SD06	H	Design a food ordering system like Swiggy or Zomato.
+Q012216	SD07	M	Design a bill summary feature.
+Q012217	SD07	H	Design a learning app where teachers can upload content and students can view it.
+Q012218	SD06	H	Design a navigation alerts system, similar to Google Maps functionality.
+Q012219	MS02	H	Design a system that improves the quality of data.
+Q012220	SD06	H	Design a plagiarism checker.
+Q012221	SD07	H	Design a business rules engine.
+Q012222	SD05	H	Design an authentication and authorization service that supports OTP, OAuth, etc.
+Q012223	SD07	M	Design an SMS validator system.
+Q012224	SD06	H	Design an ads system for a website.
+Q012225	SD06	H	Design an online code judge.
+Q012226	SD06	H	Design a Splunk-like log management system that supports queries with filters on the last minute, hour, day, week, etc.
+Q012227	SD06	H	Design LinkedIn's suggested connections feature.

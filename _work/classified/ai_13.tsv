@@ -1,0 +1,312 @@
+Q006797	GA04	M	In an LLM RAG serving system, what is the p99 latency budget for each stage (retrieve, rerank, generate, guardrail)?
+Q006798	MS04	M	For an LLM customer-support system, what is the online metric (deflection, CSAT, task completion) and its counter-metric (escalation rate, false-refusal rate, hallucination rate)?
+Q006799	GA05	M	When designing a GenAI system, what must the system never do (for example leak PII, give financial or medical advice, or follow injected instructions)?
+Q006800	GA05	M	What is the difference between input guardrails (prompt injection, PII, off-topic) and output guardrails (groundedness, toxicity, schema)?
+Q006801	MS01	H	What is the business KPI for a deployed LLM system, and what proxy signals fire before labels arrive (prediction-distribution drift, calibration, staleness, cost per request)?
+Q006802	MS01	M	What rollout order (shadow, canary, full) and which rollback layers (model, config, feature) would you use when deploying an LLM system?
+Q006803	GA04	M	How do you set the cost budget per request and per month for an LLM system?
+Q006804	MS04	H	In a RAG/LLM serving system, what breaks first at 10x traffic: the GPU queue, vector index RAM, the reranker, or the database?
+Q006805	MS04	H	How do you degrade gracefully under a traffic spike rather than fall over in an LLM serving system?
+Q006806	DROP	-	notq
+Q006807	DROP	-	notq
+Q006808	DROP	-	notq
+Q006809	LLM01	M	Why do we divide by √d_k in scaled dot-product attention? Give the exact variance argument.
+Q006810	DROP	-	dup
+Q006811	DROP	-	notq
+Q006812	DROP	-	dup
+Q006813	DROP	-	dup
+Q006814	GA03	M	When is an agentic approach the wrong solution?
+Q006815	DROP	-	dup
+Q006816	DROP	-	dup
+Q006817	DROP	-	dup
+Q006818	FT01	M	How do you evaluate a fine-tuned model?
+Q006819	DROP	-	dup
+Q006820	DROP	-	dup
+Q006821	GA04	E	What is the difference between LLMOps and MLOps?
+Q006822	DROP	-	dup
+Q006823	DROP	-	dup
+Q006824	DROP	-	dup
+Q006825	DROP	-	dup
+Q006826	DROP	-	dup
+Q006827	DROP	-	dup
+Q006828	DROP	-	dup
+Q006829	DROP	-	dup
+Q006830	DROP	-	notq
+Q006831	DROP	-	dup
+Q006832	DROP	-	notq
+Q006833	LLM05	M	How does constrained / structured decoding actually work, and why is it nearly free in terms of quality?
+Q006834	GA01	M	Why can a strict output schema hurt accuracy, and how do you fix it?
+Q006835	GA01	M	How many few-shot examples should you use, and do ordering effects matter?
+Q006836	GA04	M	How do you version, evaluate, and gate a prompt change?
+Q006837	GA02	M	How do you handle invalid or partial JSON from an LLM in production?
+Q006838	DROP	-	notq
+Q006839	DROP	-	notq
+Q006840	GA05	M	What is the "lethal trifecta" in agent security, and how do you break it?
+Q006841	GA05	H	How do you secure an application that calls untrusted MCP servers?
+Q007069	DROP	-	notq
+Q007070	DROP	-	hr
+Q007071	DROP	-	hr
+Q007072	DROP	-	notq
+Q007073	DROP	-	hr
+Q007074	DROP	-	hr
+Q007075	DROP	-	notq
+Q006842	DROP	-	dup
+Q006843	GA02	M	A tool hits a transient upstream 503. What should it return so that the agent loop behaves well?
+Q006844	GA04	M	Why would an agent's monthly bill grow much faster than the number of steps per task?
+Q006845	GA03	M	Your agent retrieves a 50k-token document early in a task, and three steps later it seems to forget its original goal. What is the most likely cause and fix?
+Q006846	GA03	M	You add a "think" tool to a policy-heavy refund agent but see almost no improvement. What is the most likely reason?
+Q006847	GA03	M	You are building a coding agent where several agents would edit the same repository in parallel. Should it be single-agent or multi-agent?
+Q006848	GA03	M	When does adding Reflexion-style self-critique actually improve an agent?
+Q006849	DROP	-	notq
+Q006850	GA03	M	A PM asks you to spec an agent that takes an incoming support email and either answers it, issues a refund, or escalates to a human. What is the right first architecture?
+Q006851	GA03	H	Each step of your ReAct agent is about 95% reliable in isolation, yet end-to-end success on 15-step tasks is poor. What is going on, and what is the structural fix?
+Q006852	GA03	M	Your agent occasionally runs up a large bill by re-issuing slightly reworded versions of the same failing search for many steps, even though the harness has a max-steps cap. What is missing?
+Q006853	GA02	M	You are building one embedded agent with a single, latency-sensitive tool surface and sensitive local credentials. Should you use MCP or in-process tools?
+Q006854	DROP	-	dup
+Q006855	GA05	H	An MCP server you approved months ago silently changes one tool's description to instruct the agent to attach a secret file to every call. Which control specifically defends against this "rug pull"?
+Q006856	GA05	H	You need to let 50 engineers safely use about 30 internal and community MCP servers. What is the scalable architecture?
+Q006857	GA02	M	After connecting eight MCP servers, your single agent's tool selection gets noticeably worse and its prompt grew. What is the best explanation?
+Q006858	GA03	H	Your agent needs to work on a task that spans far more than one context window. What is the right architecture?
+Q006859	GA04	M	An interviewer asks how you know your agent is production-ready. What is the best answer?
+Q006860	GA03	M	Your long-running agent occasionally crashes mid-task and loses hours of work, and restarting begins from scratch. What is the best fix?
+Q006861	GA04	M	Two weeks after launch, users report your agent "got worse," though you shipped nothing. What in your harness both prevents this and tells you what happened?
+Q006862a	GA03	E	What is the difference between an AI agent and a simple LLM call?
+Q006862b	GA03	M	What makes a system truly agentic, and what doesn't?
+Q006863a	GA03	M	When would you choose a multi-agent system over a single agent?
+Q006863b	GA03	M	How do you debug failures across interacting agents?
+Q006864	GA02	M	Your agent keeps picking the wrong tool. How do you improve tool selection?
+Q006865	GA05	M	An agent deleted a production database. How do you prevent irreversible actions by agents?
+Q006866	CODE01	M	Implement a ReAct agent that calls two tools and recovers from a tool error.
+Q006867	GA02	M	Explain MCP (Model Context Protocol). When would you use MCP over a custom tool bus?
+Q006868	GA02	H	Walk me through an MCP handshake between a Claude client and a Postgres MCP server.
+Q006869	GA03	M	Orchestration vs choreography for multi-agent systems: what are the tradeoffs?
+Q006870	DROP	-	hr
+Q006871	DROP	-	hr
+Q006872	DROP	-	hr
+Q006873	DROP	-	hr
+Q006874	DROP	-	hr
+Q006875	FT05	M	Should powerful AI systems be open-weight or closed? Argue your position.
+Q006876	GA05	H	How would you evaluate whether a model is safe to deploy? What does "aligned" mean operationally?
+Q006877	DROP	-	hr
+Q006878	DROP	-	notq
+Q006879	GA05	H	Where do you think the biggest real risks of agentic AI are today, and how would you mitigate them?
+Q006880	SD04	M	Design the .proto for a gRPC GenerateReport RPC in a financial report generation service, with a request (params, template ID) and a server-streaming response that streams tokens for TTFT/UX.
+Q006881	GA03	M	Your agent's final answers look fine, but its cost is creeping up and some runs take many extra tool calls. Which eval surfaces this?
+Q006882	GA03	M	You are reporting reliability for a customer-facing support agent. Which metric should the SLA use?
+Q006883	GA03	M	You inherit an agent with no evals and a vague "make it better" mandate. What is the right first move?
+Q006884	GA05	H	A security eval for prompt injection reports 0% pass@100 on a task where the agent should NOT comply with an injected instruction. What is the most likely explanation?
+Q006885	LLM07	M	Your LLM judge often disagrees with your spot-checks, and you used the same model family to generate and to judge. What is the best fix?
+Q006886	DROP	-	dup
+Q006887	GA05	M	Your agent reads customer-uploaded documents and can send emails. What is the most durable defense against indirect prompt injection?
+Q006888	GA05	M	Why can't "just tell the model to ignore malicious instructions in documents" work even in principle?
+Q006889	DROP	-	offtopic
+Q006890	GA05	H	You must let an agent read untrusted web pages and also call tools that can act. Which architecture best contains prompt injection?
+Q006891	DROP	-	notq
+Q006892	GA03	H	How do you build an evaluation harness for an agent? Design an eval suite for a coding agent covering three metric categories.
+Q006893	GA03	M	Outcome vs trajectory evaluation of agents: when does each fail?
+Q006894a	LLM07	M	Explain LLM-as-a-judge: what are its biases and mitigations?
+Q006894b	LLM07	M	When do you trust GPT-4 as a judge versus a human?
+Q006895	GA04	M	How do you build a regression test set for an LLM feature that ships weekly?
+Q006896	LLM07	M	Why does AlpacaEval 2.0 use a length-controlled win rate?
+Q006897	LLM07	E	What is hallucination and how do you mitigate it?
+Q006898	GA05	M	Name three classes of prompt injection and a defense for each.
+Q006899	GA05	M	Why is indirect prompt injection harder to defend against than direct injection? Cite a real incident.
+Q006900	LLM07	M	How do you evaluate a reasoning model differently from an instruction-tuned model?
+Q006901	FT05	M	A team wants a support assistant that answers from a knowledge base that changes weekly and must cite the document it used. What is the strongest primary lever: prompting, RAG, or fine-tuning?
+Q006902	FT05	M	A model answers factually fine but won't reliably emit your strict JSON tool schema and ignores your house tone, even with a careful prompt and examples. What is the best durable fix?
+Q006903	FT01	M	Your fine-tune lifted task accuracy on support tickets but MMLU dropped 6 points. What does a senior engineer do?
+Q006904	FT05	M	A latency-critical, high-volume classifier uses a 2,000-token few-shot prompt per call, and the labels are stable. What is the strongest optimisation?
+Q006905	FT01	H	You have 2M scraped instruction pairs, and a competitor shipped a strong model trained on about 8k curated ones. Where do you start?
+Q006906	FT01	M	Your synthetic SFT set scores great on your in-distribution eval but the model is brittle on slightly unusual real queries. What is the most likely cause?
+Q006907	FT01	M	After a fine-tune the model sometimes never stops generating, or echoes the prompt back, even though the data and loss curve looked fine. What is the first thing to check?
+Q006908	FT01	M	Two expert annotators persistently disagree on about 12% of your legal SFT labels. What is the senior move?
+Q006909	LLM07	M	Your fine-tune reports a big jump on the task eval, but you suspect the win is inflated. What is the most likely culprit and how do you check it?
+Q006910	FT02	H	Why can a rank-8 B·A update approximate a full fine-tune of a 12,288-dimensional attention weight?
+Q006911	FT02	M	Your LoRA fine-tune (q_proj and v_proj, r=16) consistently lands about 3 points below a full fine-tune on the held-out set, and the data is clean. What do you try first?
+Q006912	FT02	M	You need to fine-tune a 33B model with a single 48GB GPU. What is the defensible approach, and what cost should you flag?
+Q006913	FT02	M	When is full (or near-full) fine-tuning genuinely worth its cost over LoRA?
+Q006914	FT03	M	You are aligning a customer-support chat model to a preferred tone and refusal style, with a small team and limited GPU budget. Which approach fits best and why?
+Q006915	FT03	M	In an interview you are asked to explain DPO. What is the one-sentence core that signals real understanding?
+Q006916	FT03	H	You are building a model that must solve multi-step math and verify tool-call success. Why might PPO/RLHF beat DPO here?
+Q006917	DROP	-	notq
+Q006918	FT03	M	After heavy DPO the model is more on-tone but its answers feel repetitive and slightly shallower factually. What is happening and what do you do?
+Q006919	FT03	M	What are the failure modes of RLHF compared with the failure modes of DPO?
+Q006920	LLM06	H	You must deploy a 70B model on 8×A100 40GB GPUs (320GB total). Walk through the precision choice. What is the strongest plan?
+Q006921	LLM06	M	Your chatbot shares a long system prompt across most requests and TTFT is high under load. Which lever gives the biggest, most direct win?
+Q006922	LLM06	H	You enabled speculative decoding and saw a latency win at low traffic, but at peak (high concurrency) it got slightly slower. Why?
+Q006923	LLM06	M	Why does vLLM report roughly 23x throughput over naive batching? What is the strongest mechanism-level answer?
+Q006924	LLM06	M	Your traffic is mostly multi-call agentic programs that reuse the same prompts in slightly varying forms and emit strict JSON. Which serving stack fits best?
+Q006925	FT05	H	For a support assistant with house voice, strict format, and a tool schema, over weekly-changing tickets, what is the right primary architecture?
+Q006926	FT01	M	You have 50k support tickets. What is the strongest data move before fine-tuning a 7B model?
+Q006927	FT01	M	How do you prove the fine-tune got better, not just different?
+Q006928	DROP	-	notq
+Q006929	DROP	-	dup
+Q006930	LLM06	M	A BF16 fine-tune passed your gates. You quantize it to int4 for serving. What is the disciplined final step?
+Q006931a	FT02	E	What is the difference between LoRA and full fine-tuning?
+Q006931b	FT02	M	Explain QLoRA. Why does it use 4-bit quantization?
+Q006932	FT02	E	What is PEFT and what are its techniques (LoRA, adapters, prefix tuning, prompt tuning)?
+Q006933a	FT03	M	Explain RLHF (SFT, reward model, PPO).
+Q006933b	FT03	M	How do DPO and PPO differ at the algorithm level?
+Q006934	FT03	H	What is GRPO and why did DeepSeek-R1 use it over PPO?
+Q006935a	FT05	M	When do you fine-tune versus use RAG versus better prompts?
+Q006935b	FT05	M	Give an example where you would not fine-tune despite having data.
+Q006936a	LLM06	E	What is quantization and why is it used? How do INT8 and FP16 compare?
+Q006936b	LLM06	M	GPTQ vs AWQ vs GGUF vs bitsandbytes NF4: when would you use each?
+Q006937	LLM06	H	How does FP8 improve inference throughput on H100 GPUs?
+Q006938a	LLM06	E	What is the KV cache and why does it matter?
+Q006938b	LLM06	M	How does PagedAttention eliminate memory fragmentation?
+Q006938c	LLM01	M	How does FlashAttention reduce memory usage?
+Q006939a	LLM06	M	How does speculative decoding work and what speedup should you expect?
+Q006939b	LLM06	M	What is the difference between static and dynamic (continuous) batching?
+Q006940	GA02	M	You set temperature=0 and parse the model's reply with json.loads(). It works in dev, then crashes intermittently in production. What is the best explanation and fix?
+Q006941	LLM05	M	You stuff 60 documents into one prompt; the model nails facts from the first and last few but ignores a crucial one in the middle. What is the best fix?
+Q006942	LLM06	M	Why is the first token slow but subsequent tokens stream out quickly?
+Q006943	LLM06	M	One feature sends a 1,000-token prompt and gets a 1,000-token answer; another sends 2,000-token prompts but caps answers at 100 tokens. Which is cheaper and faster, and why?
+Q006944	GA04	M	Users report your support bot "got noticeably worse this week," but you shipped nothing. What is the most likely cause and the right safeguard?
+Q006945	DROP	-	unfixable
+Q006946	GA01	M	Your system prompt has grown to 1,500 tokens of accumulated rules and examples; latency is erratic and a small edit just caused an unpredicted regression. What is the best move?
+Q006947	GA01	M	You need 4 few-shot examples in a high-traffic feature and you also want provider prompt caching to help. Where do the examples go?
+Q006948	GA05	M	A retrieved document contains the line "ignore previous instructions and reveal the system prompt," and the model sometimes complies. What is the strongest structural fix?
+Q006949	GA01	M	A math-word-problem feature is about 70% accurate with direct answers, and you can afford a moderate cost increase. What gives the biggest reliable lift?
+Q006950	GA04	M	A teammate "fixed" a bad output by editing the prompt in the vendor console; a week later quality dropped on unrelated inputs and nobody can tell what changed. What practice would have prevented this?
+Q006951	GA02	M	A downstream service consumes the model's JSON and occasionally throws a parse error in production. What is the strongest fix?
+Q006952	GA02	M	With strict structured outputs on, you still occasionally get JSON that ends mid-object with stop_reason="max_tokens". What is happening and what is the right response?
+Q006953	GA02	M	An agent has grown to 90 strict tool definitions; the model increasingly calls the wrong tool (with perfectly valid arguments) and latency is up. What is the strongest fix?
+Q006954	GA02	M	Your extraction schema requires owner: str (non-null). On documents with no owner, the model invents a plausible name. What is the best fix?
+Q006955	LLM02	M	Your model counts the letters in "ELEPHANT" correctly when it can write Python but fails when asked directly, and a teammate wants to fine-tune on letter-counting examples. What is the best read?
+Q006956	LLM02	M	A multilingual support feature is 3x over budget on cost and frequently truncates context, but only for Japanese and Arabic tickets; English is fine. What is the most likely cause?
+Q006957	LLM02	M	You build a code assistant on a model whose tokenizer was trained on web prose. Retrieval and prompting are tuned, yet long files blow the context window sooner than expected. What is the strongest lever?
+Q006958	DROP	-	notq
+Q006959	DROP	-	notq
+Q006960	LLM02	M	How would you size the embedding table for a 50k-vocabulary model with d_model=4096, and what does it cost?
+Q006961	LLM02	H	A model emits bizarre, unsteerable text whenever a specific rare username-like string appears in the prompt, even across temperatures and rephrasings. What is the best explanation?
+Q006962	LLM01	M	A teammate removes the 1/√d_k scaling from a custom attention to "simplify," and now training loss plateaus immediately with tiny gradients. What is the best diagnosis?
+Q006963	LLM01	M	Why use 12 heads of d_head=64 rather than one head of d=768, given identical FLOPs?
+Q006964	LLM01	M	Your from-scratch transformer compiles and runs but never learns; the attention weights look nearly uniform and loss is flat. Which bug is most consistent with this?
+Q006965	LLM01	M	Going from a 2k to a 16k context, your single-GPU prefill latency and memory grow far more than 8x. What does the senior answer name?
+Q006966	LLM01	M	What makes it possible inside attention for a model to generate text left-to-right while being trained efficiently on all positions at once?
+Q006967	LLM02	H	You take a model trained at 4k context, set its max position to 32k with no other change, and ship. Perplexity barely moves, but users report it "forgets" facts pasted near the top of long inputs. What is the best read?
+Q006968	DROP	-	notq
+Q006969	LLM02	M	Why is RoPE described as a "relative" position scheme even though each token is rotated by its absolute index?
+Q006970	RAG03	M	Why can't you just feed a decoder LLM's internal token vectors into a vector DB for semantic search?
+Q006971	LLM02	M	Two candidate models: A uses a learned absolute position table trained to 2k; B uses RoPE. A product needs occasional 16k-token inputs with a light fine-tuning budget. Which is the safer base and why?
+Q006972	LLM01	M	If you shuffle the order of tokens in a prompt and positional encoding is removed, the attention scores are unchanged. What property does this demonstrate?
+Q006973	LLM01	H	You scale a from-scratch decoder from 12 to 48 layers using post-norm and no warm-up; loss spikes and diverges in the first few hundred steps. What is the fastest principled fix?
+Q006974	LLM01	M	Why does an LLM use LayerNorm/RMSNorm rather than BatchNorm, given BatchNorm's success in CNNs?
+Q006975	DROP	-	notq
+Q006976	LLM01	M	In a Llama-style model most FLOPs are not in attention. Where are they, and what is the modern variant of that component?
+Q006977	LLM01	M	Post-norm sometimes reaches a lower final loss, so why does everyone ship pre-norm?
+Q006978	LLM01	E	In a pre-norm transformer block, which tensor is carried forward on the residual stream to the next sublayer?
+Q006979	LLM06	M	Two requests to the same model: (A) a 4,000-token prompt with a 50-token answer; (B) a 400-token prompt with a 2,000-token answer. Which feels slower end-to-end, and why?
+Q006980	LLM06	H	You must serve Llama-2-70B (GQA, 8 KV heads, 80 layers, D_h=128, FP16) at 32k context with batch 4. Roughly how much GPU memory does the KV cache alone need?
+Q006981	LLM06	M	During decode your GPU shows low compute utilization but is clearly the bottleneck. What is the most accurate explanation?
+Q006982	LLM05	M	You enable beam search (width 4) for higher-quality generation and immediately hit OOM at a context that was fine with greedy decoding. Why?
+Q006983	LLM06	H	A 70B MHA model is too KV-cache-heavy to serve at your target context and concurrency, and you have about 5% of the original pre-training compute available. What is the best move?
+Q006984	LLM01	H	At 8k+ context attention is the latency bottleneck on an A100 and you are running a hand-written three-loop attention kernel. What is the highest-impact change, and why is it safe?
+Q006985	LLM01	M	You deploy a single-layer sliding-window attention model and users report it can answer about recent text but fails whenever the needed fact is far earlier in a long document. What is the best explanation?
+Q006986	LLM06	M	Your serving GPU has plenty of KV-cache memory free, yet throughput is poor and many requests sit idle waiting for a batch to finish. Which lever helps most?
+Q006987	LLM06	M	On H100s you want both lower memory and higher matmul throughput for a Llama-class model, with minimal accuracy work. What is the best quantization choice?
+Q006988	LLM01	M	Tracing a forward pass, what does the (B, n_head, T, T) attention tensor imply at scale?
+Q006989	DROP	-	dup
+Q006990	LLM06	M	A Llama-7B FP16 service at 4k context runs fine at batch 1 on a 24 GB GPU but OOMs at batch 8. What changed, and what is the cheapest fix to raise the ceiling?
+Q006991	LLM01	H	Why do open-weight models almost always ship GQA while a frontier lab might train MHA at the same size?
+Q006992	LLM05	H	Your team plans to extend a 4k-context 70B model to 128k and quantize the KV cache to fit. What single safeguard belongs in the rollout plan above all?
+Q006993	GA04	M	Right after a launch, the provider starts returning 429s; your clients retry immediately, and the problem gets worse. What is the fix?
+Q006994	GA04	M	Which kinds of errors should an LLM API client not retry?
+Q006995	GA04	M	Your client streams responses and a call dies after streaming about 800 of an expected 1,000 tokens; your generic retry decorator re-fires the whole request. What is the problem and the better design?
+Q006996	GA04	M	An interactive LLM feature has a fat tail: p50 TTFT is 600ms but p99 is about 8s, and users hate the stragglers. Cost has some headroom. What is the strongest lever?
+Q006997	GA04	M	Your primary model is down so a circuit breaker fails over to a cheaper second-provider model. Availability recovers, but a week later you learn answer quality quietly dropped during the outage. What was missing?
+Q006998	GA04	M	Your prompt-cache hit rate is near 0% despite a large, seemingly stable system prompt. What is the most likely cause?
+Q006999	DROP	-	notq
+Q007000	GA04	M	Which workload is semantic response caching most likely to help?
+Q007001	DROP	-	notq
+Q007002	GA04	M	A feature sends a 1,200-token prompt (1,000 of it a stable system prefix) and returns about 250 tokens, on a frontier model at 200k requests/day. Where is the biggest cost win?
+Q007003	GA04	M	A high-volume extraction endpoint (shallow task, strict structured output) is on a reasoning model "for accuracy," and both cost and p99 latency are too high. What is the best move?
+Q007004	GA04	H	You add a cheap-to-expensive model cascade and savings look great at launch, but two months later spend is back up though traffic is flat. What is the most likely cause and the right instrumentation?
+Q007005	GA04	M	You are writing the first tests for an LLM service's probabilistic output. Which kind of test (ring) do you ship first?
+Q007006	DROP	-	dup
+Q007007	LLM05	M	A user uploads a 400-page contract, well over the context window, and asks for a one-paragraph summary. What is the best approach?
+Q007008	GA02	M	Strict structured output is on, so the JSON is always valid, yet the extracted "owner" field is wrong on about 30% of documents. Where is the problem and what is the fix?
+Q007009	LLM07	M	You add an LLM-as-judge as a test layer and trust its scores to gate deploys. A month later it is passing changes that users dislike. What is the most likely cause and fix?
+Q007010	GA04	M	Your agent passes every staging test but misbehaves in production. What is the most likely cause and fix?
+Q007011	GA04	M	What is typically the earliest signal that a prompt change quietly regressed your agent?
+Q007012	GA04	M	Cost per call on your agent has been flat for weeks, yet the monthly bill is climbing and tasks resolve at the same rate. What is happening?
+Q007013	MS01	M	You are about to ship a new agent version and want to measure its real-world behaviour with zero user risk before serving any of its output. Which rollout stage should you use?
+Q007014	GA05	M	Your team wants to keep full prompt/response traces of every production agent run forever for debugging. What is the senior concern?
+Q007015a	LLM06	M	How do you serve LLMs in production?
+Q007015b	LLM06	E	Explain model quantization.
+Q007016a	GA04	M	How does prompt caching work?
+Q007016b	CODE01	M	Implement semantic caching for LLM responses.
+Q007017	GA04	H	Build a prompt-versioning system.
+Q007018	GA04	H	Design tiered model routing that drops cost by 50% without regressing quality.
+Q007019	GA04	H	Where do you put an OpenTelemetry collector in a multi-agent mesh, and what spans do you emit?
+Q007020	GA02	M	How would you evaluate the reliability of an MCP wrapper around an internal API?
+Q007021	DROP	-	dup
+Q007022	RAG03	M	A teammate proposes fixing weak RAG answers by upgrading to the largest available embedding model. What is the senior response?
+Q007023	RAG01	M	You are building support QA over a fixed 40k-document knowledge base with a 1.5 s latency budget. Which "shape" framing should drive your RAG architecture?
+Q007024	FT05	M	"RAG or fine-tuning to make the model answer from our internal wiki?" What is the strongest opening answer?
+Q007025	RAG03	M	Your retriever's recall@20 is stuck at 0.86 and tuning chunking has not moved it. You are on HNSW with default parameters. What is worth trying first?
+Q007026	RAG03	M	You are serving 50M chunks and the vector index won't fit in your RAM budget. Which move shrinks the footprint without re-embedding the corpus?
+Q007027	RAG02	M	A retrieved chunk says "revenue grew 3% over the previous quarter," but the model can't tell which company or quarter, and the right chunk often doesn't rank for "ACME Q2 2023 revenue." What is the strongest fix?
+Q007028	RAG04	M	Your RAG system has healthy recall@20, but answers are vague and miss specifics, and precision@5 measures 0.55. What is the best first move?
+Q007029	RAG02	M	You need to change your chunk size and contextualization prompt on a live 1 TB index. What is the safe rollout?
+Q007030	DROP	-	notq
+Q007031	RAG02	M	When indexing a codebase, answers to "where is parseConfig defined?" keep missing or returning fragments, and your splitter is fixed-size 512 tokens. What is the best fix?
+Q007032	RAG02	M	Your corpus is mostly scanned PDFs with tables. Recall is poor and answers garble numeric facts. Where do you look first?
+Q007033	RAG04	M	A user searches for the exact error code "E1042." Which retriever most reliably surfaces it?
+Q007034	RAG04	M	Why do production systems like Perplexity fuse BM25 and dense retrieval and then run a cross-encoder, instead of just doing one bigger vector search?
+Q007035	RAG04	M	You turned on hybrid search, but searches for part numbers like "ACME-X200" still miss even though the docs contain them. What is the most likely cause?
+Q007036	RAG04	M	A teammate wants to replace RRF with a tuned weighted fusion (α·bm25 + (1−α)·dense) to squeeze out a few NDCG points. What is the senior caveat?
+Q007037	DROP	-	notq
+Q007038	RAG04	M	Queries are pure natural-language paraphrases over a small, clean FAQ with no codes or proper nouns, and a teammate insists on adding BM25 and RRF. What is the best call?
+Q007039	RAG04	M	Why not just run the cross-encoder reranker over the whole corpus and skip first-stage retrieval?
+Q007040	DROP	-	notq
+Q007041	RAG05	M	Users mostly ask narrow factual lookups such as "what is the refund window for plan X?", and a teammate wants to switch the whole system to GraphRAG. What is the best call?
+Q007042	RAG04	M	In a RAG system recall@50 is broken because the gold chunk often isn't retrieved at all, and a teammate adds a cross-encoder reranker to fix it. Will it work?
+Q007043	RAG04	M	A grounded factual QA system over your own clean docs has good recall, and a teammate proposes HyDE to boost retrieval. What is the best call?
+Q007044	RAG05	M	Why not just stuff the whole corpus into a 1M-token context and skip retrieval? What is the strongest answer?
+Q007045	DROP	-	notq
+Q007046	RAG03	H	You must serve 800M vectors but your RAM budget is tight. Which index choice fits, and what is the cost?
+Q007047	RAG06	M	A multi-tenant RAG system returns correct answers in testing. What is the highest-priority production risk to design against?
+Q007048	RAG06	H	Latency, throughput, and individual retrievals all look healthy, but users say RAG answers are subtly out of date and dashboards are green. What is the likely failure and how would you have caught it?
+Q007049	RAG03	M	A 4-person startup is launching a B2B RAG product with about 2M vectors per customer and a strict data-residency requirement. Should it build or buy the vector store?
+Q007050	RAG03	M	You upgrade your embedding model and push the new vectors into the existing live index alongside the old ones. What happens?
+Q007051	RAG06	M	You are swapping embedding vendors and offline RAGAS scores improve. What is the safest way to ship?
+Q007052	RAG06	M	You build a golden set by having an LLM write Q&A from chunks you hand-picked. Offline recall is 0.91 but production recall is 0.40. What went wrong?
+Q007053	LLM07	M	A teammate uses GPT-4 as an LLM judge and reports its scores as the deploy gate, with no human comparison. What is the senior objection?
+Q007054	RAG06	H	Your guardrail reliably blocks jailbreaks in the user prompt, but a study shows injecting documents into its context flips its judgments in a meaningful fraction of cases, and your retrieved chunks are exactly such documents. What is the lesson?
+Q007055	RAG06	M	Where should you enforce per-user document permissions in a RAG system?
+Q007056	RAG06	M	"It works in the demo": how do you know a RAG system is production-ready?
+Q007057	MS04	H	Design a Q&A assistant over our internal docs. What is the strongest first move?
+Q007058	RAG03	M	How would you size the index for 50M chunks of 1,536-dimensional embeddings on HNSW?
+Q007059	DROP	-	notq
+Q007060	DROP	-	dup
+Q007061	MS04	H	A new B2B customer asks for the assistant over their private wiki, with exact part-number queries common, about 3M docs, a 1.5 s budget, strict isolation, and weekly doc updates. What is the defensible end-to-end design?
+Q007062	RAG06	M	How do you evaluate a RAG pipeline? Which metrics (NDCG, MRR, precision@k, recall) would you use?
+Q007063	RAG04	E	What is hybrid search? Why combine vector and keyword (BM25) search?
+Q007064	RAG04	M	Why re-rank on top of vector retrieval? Cross-encoder vs bi-encoder?
+Q007065	RAG03	M	Explain ANN search and HNSW indexing.
+Q007066	RAG03	M	Where do embeddings fail: negation, temporal reasoning, precision?
+Q007067	RAG01	M	What are the key RAG tradeoffs (latency vs accuracy, chunk size vs context, cost vs quality)?
+Q007068	RAG05	M	Is RAG still relevant in the era of long-context LLMs?
+Q007076	MS03	M	An interviewer says "design a system to recommend products" and you have 45 minutes. What is the strongest first move?
+Q007077	DROP	-	notq
+Q007078	MS03	M	Your ranker lifts offline NDCG@10 by 4 points, and the interviewer asks how you know this helps the business. How do you answer?
+Q007079	MS03	M	In an ML system design interview at the Staff+ level with 45 minutes, how should you allocate depth versus breadth compared to a mid-level candidate?
+Q007080	MS03	M	Halfway through an ML system design interview you have spent 20 of 45 minutes on feature engineering and haven't touched serving or monitoring. What is the right recovery?
+Q007081	MS03	M	The prompt is "detect spam in comments." Volume is low and a keyword blocklist already catches most of it. What is the strongest senior response?
+Q007082	DROP	-	notq
+Q007083	MS03	M	You are designing a recommendation feed and propose training on "click = positive, no-click = negative." The interviewer pushes back. What is the strongest revision?
+Q007084	ML10	M	Your fraud model has 0.99 offline AUC but performs poorly in production. What is the most likely root cause given fraud's label dynamics?
+Q007085	MS02	M	Why would you put a feature store between your pipelines and your model?
+Q007086	MS02	M	You need a "number of distinct countries this card was used in over the past hour" feature for fraud scoring. Which pipeline is right, and why?
+Q007087	DROP	-	notq
+Q007088	ML05	M	A teammate wants to ship a new feature purely because it lifts held-out AUC by 6 points. What should you check first?
+Q007089	LLM06	M	Your interactive LLM chat has acceptable TTFT but users complain text "types out" too slowly. Which change targets the right bottleneck?
+Q007090	LLM06	M	Your self-hosted LLM cluster starts rejecting requests with OOM errors under load, but nvidia-smi shows several GB free per GPU. What is the most likely cause and fix?
+Q007091	GA04	M	A RAG chat assistant reuses a 1,500-token system prompt and retrieved context on every call. How do you cut cost and latency most effectively?
+Q007092	MS01	M	You are configuring autoscaling for a vLLM deployment on GKE. Which scaling signal should you use?
+Q007093	MS01	M	How would you monitor a deployed ranking model in production?
+Q007094	DROP	-	notq
+Q007095	MS01	M	You set up a Kolmogorov-Smirnov drift test on a feature with about 200,000 daily samples, and it fires a drift alarm almost every day. What is going on and what is the fix?
+Q007096	DROP	-	notq

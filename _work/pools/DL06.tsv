@@ -1,0 +1,78 @@
+Q001661	E	How do LLMs contribute to the field of sentiment analysis?
+Q001663	E	In what ways can LLMs be utilized for language translation?
+Q001810	E	What is Natural Language Processing (NLP) and why is it important?
+Q001811	E	What do you understand by the terms 'corpus', 'tokenization', and 'stopwords' in NLP?
+Q001812	M	Distinguish between morphology and syntax in the context of NLP.
+Q001813	E	Explain the significance of Part-of-Speech (POS) tagging in NLP.
+Q001814	E	Describe lemmatization and stemming. When would you use one over the other?
+Q001815	E	What is a 'named entity' and how is Named Entity Recognition (NER) useful in NLP tasks?
+Q001816	E	Define 'sentiment analysis' and discuss its applications.
+Q001817	M	How does a dependency parser work, and what information does it provide?
+Q001818	E	What are n-grams, and how do they contribute to language modeling?
+Q001819	E	Describe what a 'bag of words' model is and its limitations.
+Q001820	M	Explain how the Naive Bayes classifier is used in NLP.
+Q001821	M	How are Hidden Markov Models (HMMs) applied in NLP tasks?
+Q001822	M	Discuss the role of Support Vector Machines (SVM) in text classification.
+Q001823	M	What are the advantages of using Random Forests in NLP?
+Q001824	M	Explain how Decision Trees are utilized for NLP problems.
+Q004125	M	What is sampled softmax?
+Q004381	M	Do you know any other ways to get word embeddings?
+Q004382	M	How can you use neural nets for text classification?
+Q004383	M	How can we use CNNs for text classification?
+Q005194	E	What are embeddings in machine learning?
+Q005304	M	Compare n-gram models and deep learning models (trade-offs).
+Q005305	E	What is the n-gram model?
+Q005306	M	What is TF-IDF, and how does it differ from word embeddings?
+Q005307	E	What is perplexity used for in NLP?
+Q005308	E	What is stemming vs lemmatization?
+Q005309	M	What is Latent Semantic Indexing (LSI)?
+Q005310	E	What is dependency parsing?
+Q005311	M	What are some approaches for text summarization?
+Q005312	E	What are word embeddings?
+Q005382	M	What approach would you take for a sentiment analysis task?
+Q005503	E	What is the difference between stemming and lemmatization?
+Q005504	M	What do you know about Latent Semantic Indexing (LSI)?
+Q005505	M	What do you know about dependency parsing?
+Q005506	M	Name different approaches for text summarization.
+Q005507	M	What approach would you use for part-of-speech tagging?
+Q005508	E	Explain what an n-gram model is.
+Q005509	E	Explain how TF-IDF measures word importance.
+Q005510	E	What is perplexity used for?
+Q005511	E	What is the Bag-of-Words model?
+Q005512	M	Explain how the Markov assumption affects the bigram model.
+Q005513	M	What are the most common word embedding methods? Explain each briefly.
+Q005514	M	What are the first few steps you would take before applying an NLP algorithm to a given corpus?
+Q005515	E	List a few types of linguistic ambiguities.
+Q005729	M	How do you map nicknames (Pete, Andy, Nick, Rob, etc.) to real names?
+Q005731	M	How would you train a model to predict whether the word "jaguar" in a sentence refers to the animal or the car?
+Q012507	M	In what ways is word2vec better than earlier word embedding methods?
+D03480	M	What are the trade-offs between statistical text encoders like TF-IDF and learned encoders like BERT for ranking features?
+D03481	M	How would you preprocess text for a transformer model, including normalization, pre-tokenization and special tokens?
+D04458	M	How does an n-gram language model estimate probabilities, and why does it suffer from sparsity and limited context?
+D04459	M	What is the entropy of English, and how did early information-theoretic work motivate statistical language modelling?
+D04460	M	What smoothing techniques are used in n-gram models, and what problem do they solve?
+D04461	M	Why is Chinese word segmentation hard, and what are the main sources of ambiguity (granularity standards, overlapping ambiguity, unseen words)?
+D04462	M	Compare dictionary-based segmentation (forward/backward maximum matching) with statistical segmentation approaches.
+D04463	M	How does a DAG plus dynamic programming find the max-probability segmentation of a sentence, and what role does an HMM play for out-of-vocabulary words?
+D04464	M	Explain how a Viterbi decoder is used with a BMES tagging scheme to segment unseen words.
+D04465	E	What makes part-of-speech tagging hard, and how do dictionary-lookup and statistical taggers differ?
+D04466	M	How would an HMM-based POS tagger be trained and decoded, and what independence assumptions does it make?
+D04467	E	What is the difference between constituency parsing and dependency parsing, and what downstream tasks use each?
+D04468	M	How has deep learning changed syntactic parsing compared with grammar-rule-based approaches?
+D04469	E	What are word embeddings and why are dense vectors preferred over one-hot representations?
+D04470	M	How would you evaluate the quality of a set of trained word vectors, intrinsically and extrinsically?
+D04471	M	Describe how you would incrementally update a word-embedding model with new domain vocabulary without retraining from scratch.
+D04472	E	Compare CBOW and skip-gram in word2vec. Which works better for rare words and why?
+D04473	M	Why does word2vec use negative sampling or hierarchical softmax instead of a full softmax over the vocabulary?
+D04474	M	How are negative samples drawn in word2vec, and why is the unigram distribution raised to the 3/4 power?
+D04475	M	Explain hierarchical softmax: how does a Huffman tree reduce the cost of computing output probabilities?
+D04476	M	What is subsampling of frequent words in word2vec and what problem does it solve?
+D04477	M	In what ways does word2vec improve on earlier embedding methods such as LSA or neural-network language model embeddings?
+D04478	M	Why are static embeddings such as word2vec unable to handle polysemy, and how did ELMo and BERT address this?
+D04479	M	Walk through the history of NLP pretraining from word embeddings to ELMo, GPT and BERT. What changed at each step?
+D04480	M	Compare BERT, OpenAI GPT and ELMo in terms of architecture, directionality and how they are used downstream.
+D04481	M	Compare CNN, RNN and Transformer as feature extractors for text, in terms of long-range dependencies, parallelism and compute.
+D04482	E	What are the main strategies for obtaining a sentence embedding from a pretrained encoder, and when is each appropriate?
+D04877	M	What are the main metrics for text generation evaluation and their weaknesses (BLEU, ROUGE, BERTScore, human)?
+D04982	M	What is the difference between extractive, generative and retrieval-based question answering?
+D04983	M	How do the BERT-era approaches to machine reading comprehension predict answer spans?

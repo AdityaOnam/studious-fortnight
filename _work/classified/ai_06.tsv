@@ -1,0 +1,300 @@
+Q004103	ML07	M	Compare and contrast maximum likelihood and maximum a posteriori estimation.
+Q004104	ML08	M	How do Bayesian methods do automatic feature selection?
+Q004105	ML07	M	What do you mean by Bayesian regularization?
+Q004106	ML08	M	When would you use Bayesian methods instead of Frequentist methods (e.g., small dataset, large feature set)?
+Q004107	ML07	E	What is L1 regularization?
+Q004108	ML07	E	What is L2 regularization?
+Q004109	ML07	M	Compare L1 and L2 regularization.
+Q004110	ML07	M	Why does L1 regularization result in sparse models?
+Q004111	ML06	E	What are accuracy, sensitivity, specificity, and ROC?
+Q004112	ML06	E	What are precision and recall?
+Q004113	ML08	M	Describe the t-test in the context of machine learning.
+Q004114	ML04	E	Describe the k-means algorithm.
+Q004115	ML04	M	What is the distortion function in k-means? Is it convex or non-convex?
+Q004116	ML04	M	Tell me about the convergence of the distortion function in k-means.
+Q004117	ML04	E	What is the Gaussian Mixture Model?
+Q004118	ML04	M	Describe the EM algorithm intuitively.
+Q004119	ML04	E	What are the two steps of the EM algorithm?
+Q004120	ML04	E	Why do we need dimensionality reduction techniques?
+Q004121	ML04	E	Why do we need PCA and what does it do?
+Q004122	ML04	M	What is the difference between logistic regression and PCA?
+Q004123	ML04	E	What are the two pre-processing steps that should be applied before doing PCA?
+Q004124	ML04	M	What is t-SNE? Why do we use PCA instead of t-SNE?
+Q004125	DL06	M	What is sampled softmax?
+Q004126	DL04	M	Why is it difficult to train an RNN with SGD?
+Q004127	DL04	M	How do you tackle the problem of exploding gradients in RNNs?
+Q004128	DL04	M	What is the problem of vanishing gradients in RNNs?
+Q004129	DL04	M	How do you tackle the problem of vanishing gradients in RNNs?
+Q004130	DL04	M	Explain the memory cell of an LSTM.
+Q004131	DL04	M	What type of regularization do you use in an LSTM?
+Q004132	LLM05	M	What is beam search?
+Q004133	DL03	M	How would you automatically caption an image?
+Q004134	ML07	E	What is the difference between a loss function, cost function and objective function?
+Q004135	ML09	E	What is broadcasting in connection to linear algebra?
+Q004136	ML09	E	What are scalars, vectors, matrices, and tensors?
+Q004137	ML09	E	What is the Hadamard product of two matrices?
+Q004138	ML09	E	What is an inverse matrix?
+Q004139	ML09	E	If the inverse of a matrix exists, how do you calculate it?
+Q004140	ML09	M	What is the determinant of a square matrix? How is it calculated (e.g., Laplace expansion)? What is the connection of the determinant to eigenvalues?
+Q004141	ML09	E	Discuss span and linear dependence.
+Q004142	ML09	M	What is Ax = b? When does Ax = b have a unique solution?
+Q004143	ML09	M	In Ax = b, what happens when A is fat or tall?
+Q004144	ML09	E	When does the inverse of A exist?
+Q004145	ML09	E	What is a norm? What are the L1, L2 and L-infinity norms?
+Q004146	ML09	M	What are the conditions a norm has to satisfy?
+Q004147	ML09	M	Why is the squared L2 norm preferred in ML over the plain L2 norm?
+Q004148	ML09	M	When is the L1 norm preferred over the L2 norm?
+Q004149	ML09	M	Can the number of nonzero elements in a vector be defined as the L0 norm? If not, why?
+Q004150	ML09	E	What is the Frobenius norm?
+Q004151	ML09	E	What is a diagonal matrix?
+Q004152	ML09	M	Why is multiplication by a diagonal matrix computationally cheap? How is the multiplication different for a square vs. non-square diagonal matrix?
+Q004153	ML09	E	What is a symmetric matrix?
+Q004154	ML09	E	What is a unit vector?
+Q004155	ML09	E	When are two vectors x and y orthogonal?
+Q004156	ML09	M	In R^n, what is the maximum possible number of orthogonal vectors with non-zero norm?
+Q004157	ML09	E	When are two vectors x and y orthonormal?
+Q004158	ML09	M	What is an orthogonal matrix? Why is it computationally preferred?
+Q004159	ML09	E	What are eigendecomposition, eigenvectors and eigenvalues?
+Q004160	ML09	E	How do you find the eigenvalues of a matrix?
+Q004161	ML09	M	Write the eigendecomposition formula for a matrix. If the matrix is real symmetric, how does this change?
+Q004162	ML09	M	Is the eigendecomposition guaranteed to be unique? If not, how do we represent it?
+Q004163	ML09	M	What are positive definite, negative definite, positive semi-definite and negative semi-definite matrices?
+Q004164	ML09	M	What is SVD? Why do we use it? Why not just use eigendecomposition?
+Q004165	ML09	M	Given a matrix A, how will you calculate its SVD?
+Q004166	ML09	E	What are singular values, left singular vectors and right singular vectors?
+Q004167	ML09	M	What is the connection of the SVD of A with functions of A?
+Q004168	ML09	M	Why are singular values always non-negative?
+Q004169	ML09	M	What is the Moore-Penrose pseudo-inverse and how do you calculate it?
+Q004170	ML09	H	If we apply the Moore-Penrose pseudo-inverse to Ax = b, what solution is provided if A is fat? What solution is provided if A is tall?
+Q004171	ML09	M	Which matrices can be decomposed by eigendecomposition?
+Q004172	ML09	M	Which matrices can be decomposed by SVD?
+Q004173	ML09	E	What is the trace of a matrix?
+Q004174	ML09	M	How do you write the Frobenius norm of a matrix A in terms of the trace?
+Q004175	ML09	M	Why is the trace of a product of matrices invariant to cyclic permutations?
+Q004176	ML09	E	What is the trace of a scalar?
+Q004177	DROP	-	dup
+Q004178	ML09	E	What are underflow and overflow?
+Q004179	ML09	M	How do you tackle the problem of underflow or overflow for the softmax function or log-softmax function?
+Q004180	ML09	M	What is poor conditioning?
+Q004181	ML09	E	What is the condition number?
+Q004182	ML09	E	What are grad, div and curl?
+Q004183	ML09	E	What are critical or stationary points in multiple dimensions?
+Q004184	ML07	E	Why should you use gradient descent when you want to minimize a function?
+Q004185	ML07	E	What is line search?
+Q004186	ML07	E	What is hill climbing?
+Q004187	ML09	E	What is a Jacobian matrix?
+Q004188	ML09	E	What is a Hessian matrix?
+Q004189	ML08	M	Compare "Frequentist probability" vs. "Bayesian probability".
+Q004190	ML08	E	What is a random variable?
+Q004191	ML08	E	What is a probability distribution?
+Q004192	ML08	E	What is a probability mass function?
+Q004193	ML08	E	What is a probability density function?
+Q004194	ML08	E	What is a joint probability distribution?
+Q004195	ML08	E	What are the conditions for a function to be a probability mass function?
+Q004196	ML08	E	What are the conditions for a function to be a probability density function?
+Q004197	ML08	E	What is a marginal probability? Given the joint probability function, how do you calculate it?
+Q004198	ML08	E	What is conditional probability? Given the joint probability function, how do you calculate it?
+Q004199	ML08	E	State the chain rule of conditional probabilities.
+Q004200	ML08	E	What are the conditions for independence and conditional independence of two random variables?
+Q004201	ML08	E	What are expectation, variance and covariance?
+Q004202	ML08	M	Compare covariance and independence.
+Q004203	ML08	M	What is the covariance for a vector of random variables?
+Q004204	ML08	E	What is a Bernoulli distribution? Calculate the expectation and variance of a random variable that follows a Bernoulli distribution.
+Q004205	ML08	E	What is a multinoulli distribution?
+Q004206	ML08	E	What is a normal distribution?
+Q004207	ML08	M	Why is the normal distribution a default choice for a prior over a set of real numbers?
+Q004208	ML08	E	What is the central limit theorem?
+Q004209	ML08	E	What are the exponential and Laplace distributions?
+Q004210	ML08	M	What are the Dirac distribution and the empirical distribution?
+Q004211	ML08	M	What is a mixture of distributions?
+Q004212	ML08	E	Name two common examples of mixtures of distributions.
+Q004213	ML08	H	Is a Gaussian mixture model a universal approximator of densities?
+Q004214	ML09	E	Write the formulae for the logistic and softplus functions.
+Q004215	ML08	E	Write the formula for Bayes' rule.
+Q004216	ML09	H	What do you mean by measure zero and almost everywhere?
+Q004217	ML08	H	If two random variables are related in a deterministic way, how are their PDFs related?
+Q004218	ML09	E	Define self-information. What are its units?
+Q004219	ML09	M	What are Shannon entropy and differential entropy?
+Q004220	ML09	M	What is Kullback-Leibler (KL) divergence?
+Q004221	ML09	M	Can KL divergence be used as a distance measure?
+Q004222	ML08	M	What are structured probabilistic models or graphical models?
+Q004223	ML08	M	In the context of structured probabilistic models, what are directed and undirected models? How are they represented?
+Q004224	ML08	M	What are cliques in undirected structured probabilistic models?
+Q004225	ML08	E	What are the population mean and the sample mean?
+Q004226	ML08	E	What are the population standard deviation and the sample standard deviation?
+Q004227	ML08	M	Why does the population standard deviation have N degrees of freedom while the sample standard deviation has N-1? In other words, why is it 1/N inside the root for the population s.d. and 1/(N-1) for the sample s.d.?
+Q004228	ML08	M	What is the formula for calculating the standard deviation of the sample mean?
+Q004229	ML08	E	What is a confidence interval?
+Q004230	ML08	E	What is standard error?
+Q004257	ML01	E	What is the difference between predictive/discriminative and generative AI models?
+Q004258	LLM03	E	What is a Large Language Model (LLM)?
+Q004259	LLM04	M	How are Large Language Models trained?
+Q004260	LLM02	E	What is a token in the context of LLMs?
+Q004261	LLM02	E	What are tokenizers in the context of LLMs?
+Q004262	FT05	M	How do you estimate the cost of running an API-based / closed-source LLM vs. an open-source LLM (self-hosted)?
+Q004263	DROP	-	dup
+Q004264	LLM05	M	What are the different parameters that can be tuned in LLMs during inference?
+Q004265	DROP	-	dup
+Q004266	LLM05	M	What are the different decoding strategies for picking output tokens?
+Q004267	LLM05	M	What are the stopping criteria for decoding in the context of LLMs?
+Q004268	GA01	E	What are some elements that make up a prompt?
+Q004269	GA01	E	What are some common prompt engineering techniques?
+Q004270	GA01	M	Explain the concept of in-context learning.
+Q004271	GA01	M	When does in-context learning fail?
+Q004272	GA01	M	What would be a good methodology for designing prompts for a specific task?
+Q004273	GA01	M	What LLM prompting framework produces the best outputs?
+Q004274	GA02	M	Suppose you want an LLM to output JSON or YAML or any other structure. How would you ensure the output is parsable?
+Q004275	LLM07	E	Explain the concept of hallucination in the context of LLMs.
+Q004276	GA01	E	What prompt engineering concept is known to enhance reasoning capabilities in LLMs?
+Q004277	RAG01	M	What is a common design pattern for grounding LLM answers in facts?
+Q004278	DROP	-	notq
+Q004279	RAG01	M	Explain the intuition and methodology behind Retrieval Augmented Generation (RAG).
+Q004280	FT05	M	Discuss the case for RAG vs. full fine-tuning.
+Q004281	RAG02	E	Explain the concept of chunking and its importance to RAG systems.
+Q004282	RAG02	M	Explain the intuition behind chunk sizes using an example.
+Q004283	RAG02	M	If you embed each page as a chunk (about 450 tokens per page), what do you do when the information you need is spread across multiple pages?
+Q004284	RAG02	M	What are the different chunking strategies used in RAG systems and how do you evaluate your chunking strategy?
+Q004285	RAG03	E	Explain the concept of a vector embedding.
+Q004286	DROP	-	dup
+Q004287	RAG03	E	What are embedding models?
+Q004288	RAG03	M	How do embedding models work in the context of systems with LLMs?
+Q004289	RAG03	M	What are the different types of text embeddings?
+Q004290	RAG03	M	How do you train an embedding model?
+Q004291	RAG03	M	Explain the concept of contrastive learning in the context of embedding models.
+Q004292	RAG04	M	Explain the difference between a cross-encoder and a bi-encoder.
+Q004293	RAG03	M	Explain the intuition behind single-vector dense representations.
+Q004294	RAG04	M	Explain the intuition behind multi-vector dense representations.
+Q004295	RAG04	M	Explain the intuition behind sparse representations.
+Q004296	RAG04	M	Elaborate on why sparse text embeddings are more efficient than dense text embeddings.
+Q004297	RAG03	M	How do you benchmark the performance of an embedding model?
+Q004298	RAG03	M	How do you pick an embedding model for a specific use case?
+Q004299	RAG03	E	What is a vector database?
+Q004300	RAG03	E	How are vector databases different from traditional databases?
+Q004301	RAG03	M	How does a vector database work?
+Q004302	RAG03	M	What are the different strategies for searching in a vector database or index?
+Q004303	RAG03	M	Explain the concept of clustering in the context of vector retrieval, and its relation to the search space.
+Q004304	RAG03	H	Compare various vector databases and indexes based on a set of criteria, and decide which one is best for a given use case.
+Q004305	RAG03	M	Explain the concept of quantization in the context of vectors.
+Q004306	RAG03	M	Explain the concept of locality-sensitive hashing (LSH) within the context of vector retrieval.
+Q004307	RAG03	M	Explain the concept of product quantization within the context of vector retrieval.
+Q004308	RAG03	M	Explain the concept of inverted indices within the context of vector retrieval.
+Q004309	RAG03	M	Explain the concept of Hierarchical Navigable Small Worlds (HNSW) within the context of vector retrieval.
+Q004310	RAG03	M	Explain some of the distance and similarity metrics used in vector retrieval.
+Q004311	RAG04	H	Explain some of the architectures and patterns in retrieval systems and semantic search in the context of LLM systems.
+Q004312	RAG04	H	How do you achieve good search in large-scale systems?
+Q004313	RAG04	H	How would you implement query understanding and decomposition to break down complex queries into simpler sub-queries and then recombine the results?
+Q004314	RAG03	H	How do you achieve fast search in large-scale systems?
+Q004315	RAG04	E	Explain the concept behind keyword-based search in the context of search systems.
+Q004316	RAG04	M	How are reranking models trained?
+Q004317	RAG06	M	Explain the process for evaluating an end-to-end RAG system.
+Q004318	LLM01	M	Explain the concept of attention (and self-attention) in LLMs.
+Q004319	DROP	-	notq
+Q004320	LLM01	M	What are the disadvantages of the self-attention mechanism in LLMs?
+Q004321	LLM01	M	What is the difference between encoder, decoder, and encoder-decoder architectures in LLMs?
+Q004322	LLM02	M	Explain the concept of positional encoding in LLMs.
+Q004323	LLM06	M	Explain the concept of KV caching in LLM inference.
+Q004324	LLM03	M	Explain the concept of a mixture of experts (MoE) in LLMs.
+Q004330	DROP	-	notq
+Q004331	DROP	-	notq
+Q004332	DROP	-	notq
+Q004325	DROP	-	notq
+Q004326	DROP	-	notq
+Q004327	DROP	-	notq
+Q004328	DROP	-	notq
+Q004329	DROP	-	notq
+Q004333	DROP	-	dsa
+Q004334	DROP	-	dsa
+Q004335	DROP	-	dsa
+Q004336	DROP	-	notq
+Q004337	ML01	E	What is supervised machine learning?
+Q004338	ML02	E	What is regression? Which models can you use to solve a regression problem?
+Q004339	ML02	E	What is linear regression? When do we use it?
+Q004340	ML08	E	What is the normal distribution? Why do we care about it?
+Q004341	ML06	E	Which metrics for evaluating regression models do you know?
+Q004342	ML06	E	What are MSE and RMSE?
+Q004343	ML06	E	How do you validate your models?
+Q004344	ML05	M	Why do we need to split our data into three parts: train, validation, and test?
+Q004345	ML06	M	Can you explain how cross-validation works?
+Q004346	ML06	E	What is K-fold cross-validation?
+Q004347	ML06	M	How do we choose K in K-fold cross-validation? What is your favorite K?
+Q004348	ML02	E	What is classification? Which models would you use to solve a classification problem?
+Q004349	ML02	E	What is logistic regression? When do we need to use it?
+Q004350	ML02	M	Is logistic regression a linear model? Why?
+Q004351	DL01	E	What is sigmoid? What does it do?
+Q004352	ML06	E	How do we evaluate classification models?
+Q004353	ML06	M	Is accuracy always a good metric?
+Q004354	ML06	E	What is the confusion table? What are the cells in this table?
+Q004355	ML06	E	What are precision, recall, and F1-score?
+Q004356	DROP	-	notq
+Q004357	ML07	E	What is regularization? Why do we need it?
+Q004358	DROP	-	notq
+Q004359	ML07	M	How do we select the right regularization parameters?
+Q004360	ML05	E	What is feature selection? Why do we need it?
+Q004361	ML03	E	What are decision trees?
+Q004362	DROP	-	notq
+Q004363	ML03	M	What are the main parameters of the decision tree model?
+Q004364	ML03	E	What is random forest?
+Q004365	DROP	-	notq
+Q004366	ML03	M	In a decision tree, what if instead of finding the best split, we randomly select a few splits and just select the best from them? Will it work?
+Q004367	ML03	M	Are there any differences between continuous and discrete variables when it comes to feature importance of gradient boosting models?
+Q004368	ML03	M	How do you approach tuning parameters in XGBoost or LightGBM?
+Q004369	DL01	E	What kind of problems can neural nets solve?
+Q004370	DL01	E	Why do we need activation functions?
+Q004371	DROP	-	notq
+Q004372	DL02	E	What is the learning rate?
+Q004373	DL02	E	What happens when the learning rate is too large? Too small?
+Q004374	DL02	M	How do we decide when to stop training a neural net?
+Q004375	DL03	M	Are CNNs resistant to rotations? What happens to the predictions of a CNN if an image is rotated?
+Q004376	DL03	E	What are augmentations? Why do we need them?
+Q004377	DL03	E	What kind of augmentations do you know?
+Q004378	DL03	E	What kind of CNN architectures for classification do you know?
+Q004379	DL03	M	What is object detection? Do you know any architectures for that?
+Q004380	DL03	M	What is object segmentation? Do you know any architectures for that?
+Q004381	DL06	M	Do you know any other ways to get word embeddings?
+Q004382	DL06	M	How can you use neural nets for text classification?
+Q004383	DL06	M	How can we use CNNs for text classification?
+Q004384	ML04	E	What is unsupervised learning?
+Q004385	ML04	E	What is clustering? When do we need it?
+Q004386	DROP	-	notq
+Q004387	ML10	M	How can we use clicks data as the training data for ranking algorithms?
+Q004388	ML10	M	Do you know how to use gradient boosting trees for ranking?
+Q004389	ML10	E	What is a recommender system?
+Q004390	ML10	M	How is time series different from the usual regression problem?
+Q004446	DROP	-	notq
+Q004447	DROP	-	notq
+Q004448	DROP	-	notq
+Q004449	DROP	-	notq
+Q004450	DROP	-	notq
+Q004451	DROP	-	notq
+Q004452	DROP	-	notq
+Q004453	DROP	-	notq
+Q004454	DROP	-	notq
+Q004455	CODE01	E	Write a function that splits a sequence into batches while optionally retaining the final incomplete batch.
+Q004456	CODE01	E	Implement a reproducible train/validation split without scikit-learn.
+Q004457	CODE01	M	Write a Python generator that lazily reads and transforms records from a large dataset.
+Q004458	CS07	E	Implement an execution-time decorator in Python.
+Q004459	CS06	E	Design a registry for losses, optimizers, or preprocessing functions.
+Q004460	CS07	E	Define a typed configuration object in Python.
+Q004461	CS07	E	When should you use a dataclass, function, class, or abstract base class in Python?
+Q004462	CS07	E	What is wrong with mutable default arguments in Python?
+Q004463	CS07	E	Explain shallow versus deep copies using an ML configuration as an example.
+Q004464	CS06	E	Design the errors raised for an invalid preprocessing input shape or dtype.
+Q004465	CODE01	M	Compute the masked mean of a [B, T, D] tensor using a [B, T] mask.
+Q004466	CODE01	E	Compute pairwise cosine similarity for tensors of shape [N, D] and [M, D].
+Q004467	CODE01	E	Implement one-hot encoding without F.one_hot.
+Q004468	CODE01	E	Create label-smoothed targets.
+Q004469	CODE01	M	Compute a batched confusion matrix without per-example loops.
+Q004470	DL07	M	Explain contiguous tensors and .contiguous() in PyTorch.
+Q004471	DL07	E	What bug can arise from calling squeeze() when the batch size is one?
+Q004472	DL07	M	How do in-place operations affect autograd?
+Q004473	DL07	E	Compare detach(), clone(), and torch.no_grad() in PyTorch.
+Q004474	DL07	M	Why can calling .item() slow down a GPU training loop?
+Q004475	CODE01	M	Implement fit, transform, and inverse_transform for standardization.
+Q004476	CODE01	M	Implement a custom PyTorch Dataset for numerical and categorical features.
+Q004477	CODE01	M	Write a collate_fn for variable-length sequences.
+Q004478	MS02	M	Where should preprocessing live in an ML training and serving pipeline?
+Q004479	DL07	M	Why might using multiple DataLoader workers be slower?
+Q004480	CODE01	E	Implement binary accuracy from logits.
+Q004481	CODE01	E	Implement multiclass top-k accuracy.
+Q004482	CODE01	M	Design a streaming metric that accumulates results across batches.
+Q004483	ML06	M	Why is averaging per-batch F1 scores wrong?

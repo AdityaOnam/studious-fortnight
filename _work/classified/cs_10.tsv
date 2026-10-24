@@ -1,0 +1,300 @@
+Q005588	SD06	H	Build a search engine on top of 100MB of text data using your favourite programming language.
+Q005589	DROP	-	unfixable
+Q005590	DROP	-	frontend
+Q005591	SD06	H	Design a video processing pipeline for a streaming service.
+Q005592	SD06	M	Design a robust video upload flow for a video streaming service.
+Q005593	SD01	M	How does a CDN stream video?
+Q005594	SD06	M	How does on-demand video optimization work in a video streaming service?
+Q005595	SD01	M	How would you design the caching strategy for a video streaming service?
+Q005596	SD07	M	How do you answer a low-level design interview problem?
+Q005597	SD07	M	Design a vending machine.
+Q005598	SD07	M	Design a traffic signal control system.
+Q005599	SD07	M	Design a coffee vending machine.
+Q005600	SD07	M	Design a task management system.
+Q005601	SD07	M	Design a Tic Tac Toe game.
+Q005602	SD07	M	Design a pub-sub system.
+Q005603	SD07	M	Design an elevator system.
+Q005604	SD07	M	Design a car rental system.
+Q005605	SD07	M	Design an online auction system.
+Q005606	SD07	M	Design a hotel management system.
+Q005607	SD07	M	Design a digital wallet service.
+Q005608	SD07	M	Design an airline management system.
+Q005609	SD07	M	Design a library management system.
+Q005610	SD07	M	Design a social network like Facebook.
+Q005611	SD07	M	Design a restaurant management system.
+Q005612	SD07	M	Design a concert ticket booking system.
+Q005613	SD07	M	Design a Snake and Ladder game.
+Q005614	SD07	H	Design a ride-sharing service like Uber.
+Q005615	SD07	H	Design a course registration system.
+Q005616	SD07	H	Design a movie ticket booking system.
+Q005617	SD07	H	Design an online shopping system like Amazon.
+Q005618	SD07	H	Design an online stock brokerage system.
+Q005619	SD07	H	Design a music streaming service like Spotify.
+Q005620	SD07	H	Design an online food delivery service like Swiggy.
+Q005621	SD07	H	Design a thread-safe cache with TTL.
+Q005622	SD07	H	Design a thread-safe blocking queue.
+Q005623	SD07	H	Design a concurrent Bloom filter.
+Q005624	DROP	-	notq
+Q005625	DROP	-	notq
+Q005626	DROP	-	notq
+Q005627	DROP	-	notq
+Q005628	DROP	-	notq
+Q005629	DROP	-	notq
+Q005630	DROP	-	notq
+Q005631	DROP	-	unfixable
+Q005632	CS06	E	Why use abstract classes?
+Q005633	CS06	M	Why use abstraction in payment systems?
+Q005634	CS06	M	When should you use aggregation?
+Q005635	DROP	-	notq
+Q005636	DROP	-	notq
+Q005637	DROP	-	notq
+Q005638	DROP	-	notq
+Q005639	DROP	-	notq
+Q005640	CS06	M	Why prefer composition over inheritance?
+Q005641	DROP	-	notq
+Q005642	DROP	-	notq
+Q005643	DROP	-	notq
+Q005644	DROP	-	notq
+Q005645	CS06	M	Why use encapsulation in payment processing?
+Q005646	CS06	E	How do you implement inheritance in C++?
+Q005647	CS06	E	What is an interface?
+Q005648	CS06	E	Why use function overloading?
+Q005649	CS06	E	Why use function overriding?
+Q005650	CS06	M	Why use abstract classes with polymorphism?
+Q005651	CS06	M	Why use polymorphism in payment systems?
+Q005652	CS06	E	Why use method overloading?
+Q005653	CS06	E	Why use method overriding?
+Q005654	CS06	M	Why use interfaces with polymorphism?
+Q005655	CS06	E	Why use structs with methods?
+Q005656	CS06	M	What is inheritance, and what is its alternative in Go?
+Q005657	CS06	M	How do you implement inheritance-like behavior in Go?
+Q005658	DROP	-	dup
+Q005659	CS06	M	Why use function parameters for polymorphism?
+Q005660	CS06	E	How do you implement inheritance in Java?
+Q005661	CS06	E	How do you implement inheritance in Python?
+Q005662	CS06	E	Why use default arguments?
+Q005663	CS07	E	Why use duck typing?
+Q005664	CS06	M	Does Rust support aggregation?
+Q005665	CS06	M	Why does Rust prefer structs over classes?
+Q005666	DROP	-	notq
+Q005667	CS06	M	Does Rust support encapsulation?
+Q005668	CS06	M	Does Rust support inheritance?
+Q005669	CS06	M	How do you implement "inheritance" in Rust?
+Q005670	DROP	-	notq
+Q005671	CS06	M	Why use trait objects?
+Q005672	DROP	-	notq
+Q005673	DROP	-	notq
+Q005674	DROP	-	notq
+Q005675	DROP	-	notq
+Q005676	DROP	-	notq
+Q005677	DROP	-	notq
+Q005678	DROP	-	notq
+Q005679	DROP	-	notq
+Q005680	DROP	-	notq
+Q005681	DROP	-	notq
+Q005682	DROP	-	notq
+Q005683	DROP	-	notq
+Q005684	DROP	-	notq
+Q005685	DROP	-	notq
+Q005686	DROP	-	notq
+Q005687	DROP	-	notq
+Q005688	DROP	-	dup
+Q005689	SD06	M	Design a URL shortener like TinyURL.
+Q005690	SD06	M	Design autocomplete for a search engine.
+Q005691	SD06	M	Design a content delivery network (CDN).
+Q005692	SD06	H	Design a distributed key-value store.
+Q005693	SD06	M	Design the Unified Payments Interface (UPI).
+Q005694	SD06	H	Design a distributed job scheduler.
+Q005695	SD06	H	Design an e-commerce store like Amazon.
+Q005696	SD06	H	Design a distributed message queue like Kafka.
+Q005697	SD06	H	Design a flight booking system.
+Q005698	SD06	H	Design an online code editor.
+Q005699	SD06	H	Design an analytics platform (metrics and logging).
+Q005700	SD06	H	Design a digital wallet.
+Q005701	SD06	H	Design a location-based service like Yelp.
+Q005702	SD06	H	Design a food delivery app like DoorDash.
+Q005703	SD06	H	Design a file sharing system like Dropbox.
+Q005704	SD06	H	Design a ticket booking system like BookMyShow.
+Q005705	SD06	H	Design a distributed web crawler.
+Q005706	SD06	H	Design a code deployment system.
+Q005707	SD06	H	Design a distributed cloud storage system like S3.
+Q005708	SD06	H	Design a distributed locking service.
+Q005709	DROP	-	notq
+Q005710	DROP	-	notq
+Q005711	DROP	-	notq
+Q005712	DROP	-	notq
+Q005713	SD06	M	What are best practices for building something like a news feed?
+Q005714	SD06	M	What are the scaling issues to keep in mind while developing a social network feed?
+Q005715	SD06	H	How would you create an asynchronous multiplayer game?
+Q005716	DROP	-	notq
+Q005717	DROP	-	notq
+Q005718	DROP	-	notq
+Q005719	SD06	H	How would you implement Google Search?
+Q005720	DROP	-	dup
+Q005827	SD04	M	Why do you prefer REST over RPC?
+Q005828	SD04	M	When are RPC-ish approaches more appropriate than REST?
+Q005829	SD04	M	What are the drawbacks of using REST?
+Q005830	SD04	M	Why use REST for internal use and not RPC?
+Q005831	DROP	-	dup
+Q005832	DROP	-	dup
+Q005833	SD06	M	How do you approach a system design interview question?
+Q005834	SD01	M	When should the cache be updated?
+Q005835	DROP	-	notq
+Q005836	DROP	-	notq
+Q005837	DROP	-	notq
+Q005838	DROP	-	notq
+Q005839	DROP	-	notq
+Q005840	DROP	-	notq
+Q005841	DROP	-	notq
+Q005842	DROP	-	notq
+Q005843	DROP	-	notq
+Q005844	DROP	-	notq
+Q005845	DROP	-	notq
+Q005846	DROP	-	notq
+Q005847	DROP	-	notq
+Q005848	DROP	-	notq
+Q005849	SD06	M	Design Pastebin.com (or Bit.ly).
+Q005850	SD06	H	Design the Twitter timeline and search (or Facebook feed and search).
+Q005851	DROP	-	dup
+Q005852	SD06	H	Design the data structures for a social network.
+Q005853	SD06	H	Design a key-value store for a search engine.
+Q005854	SD06	H	Design Amazon's sales ranking by category feature.
+Q005855	SD06	H	Design a system that scales to millions of users on AWS.
+Q005856	DROP	-	notq
+Q005857	DROP	-	notq
+Q005858	DROP	-	notq
+Q005859	DROP	-	notq
+Q005860	CS04	E	Is there a good reason VARCHAR(255) is used so often?
+Q005861	CS04	M	How do null values affect performance?
+Q005862	DROP	-	notq
+Q005863	DROP	-	notq
+Q005864	SD03	M	What is the difference between a message queue and a task queue?
+Q005865	DROP	-	notq
+Q005866	DROP	-	notq
+Q005867	DROP	-	notq
+Q005868	DROP	-	notq
+Q005869	SD07	M	Design a call center.
+Q005870	DROP	-	notq
+Q005871	DROP	-	notq
+Q005872	DROP	-	notq
+Q005873	DROP	-	notq
+Q005874	DROP	-	notq
+Q005875	DROP	-	notq
+Q005876	DROP	-	notq
+Q005877	DROP	-	notq
+Q005878	SD07	M	Design a deck of cards.
+Q005879	DROP	-	notq
+Q005880	DROP	-	notq
+Q005881	DROP	-	notq
+Q005882	DROP	-	notq
+Q005883	DROP	-	notq
+Q005884	DROP	-	notq
+Q005885	DROP	-	notq
+Q005886	SD07	M	Design an online chat.
+Q005887	DROP	-	notq
+Q005888	SD07	M	Design a parking lot.
+Q005889	DROP	-	notq
+Q005890	DROP	-	notq
+Q005891	DROP	-	notq
+Q005892	DROP	-	notq
+Q005893	DROP	-	notq
+Q005894	DROP	-	notq
+Q005895	DROP	-	notq
+Q005896	DROP	-	notq
+Q005897	DROP	-	notq
+Q005898	DROP	-	notq
+Q005899	DROP	-	notq
+Q005900	DROP	-	notq
+Q005901	SD06	H	Design a key-value cache to save the results of the most recent web server queries.
+Q005902	DROP	-	notq
+Q005903	DROP	-	dup
+Q005904	DROP	-	notq
+Q005905	DROP	-	notq
+Q005906	DROP	-	notq
+Q005907	DROP	-	notq
+Q005908	DROP	-	notq
+Q005909	DROP	-	notq
+Q005910	DROP	-	notq
+Q005911	DROP	-	notq
+Q005912	DROP	-	notq
+Q005913	DROP	-	notq
+Q005914	DROP	-	notq
+Q005915	DROP	-	notq
+Q005916	DROP	-	notq
+Q005917	DROP	-	dup
+Q005918	DROP	-	notq
+Q005919	DROP	-	notq
+Q006240	DROP	-	unfixable
+Q006241	DROP	-	notq
+Q006242	CS03	E	Why were TCP and UDP created?
+Q006243	CS03	M	How do TCP and UDP handle errors?
+Q006244	DROP	-	unfixable
+Q006245	CS06	E	What is the Adapter design pattern?
+Q006246	CS06	E	What is the Factory Method design pattern?
+Q006247	CS07	M	What methods can you think of to improve the memory usage and performance of serialization?
+Q006248	CS02	M	Why use multithreading for work that could be handled with multiple processes?
+Q006249	CS02	E	What is a deadlock, and what are its four conditions?
+Q006250	CS02	E	What are a mutex and a semaphore, and what is the difference between them?
+Q006251	CS01	M	What is the difference between user-level threads and kernel-level threads?
+Q006252	CS01	M	What is the difference between a system call and a subroutine in Linux?
+Q006253	CS04	E	What is a view in a database, and what is a virtual table?
+Q006254	CS04	M	What do you think is the most important consideration when designing a database?
+Q006255	DROP	-	dsa
+Q006256	DROP	-	frontend
+Q006257	SD04	E	What are microservices (MSA)?
+Q006258	DROP	-	unfixable
+Q006259	DROP	-	unfixable
+Q006260	CS01	E	What is the name of the operating system technique in which two or more CPUs run programs simultaneously and divide the work among themselves?
+Q006261	DROP	-	unfixable
+Q006262	DROP	-	unfixable
+Q006263	DROP	-	unfixable
+Q006264	DROP	-	unfixable
+Q006265	DROP	-	unfixable
+Q006266	DROP	-	frontend
+Q006267	DROP	-	offtopic
+Q006268	DROP	-	offtopic
+Q006269	DROP	-	hr
+Q006272	DROP	-	frontend
+Q006270	SD04	M	If a WAS can also act as a web server, why are the web server and the WAS separated?
+Q006271	DROP	-	offtopic
+Q006273	CS07	M	Are "inline virtual" member functions ever actually inlined in C++?
+Q006274	CS07	M	Is it legal for a member function to call "delete this" in C++?
+Q006275	DROP	-	notq
+Q006276	DROP	-	notq
+Q006277	DROP	-	notq
+Q006278	DROP	-	notq
+Q006279	DROP	-	notq
+Q006280	CS07	M	Can a virtual function be an inline function in C++?
+Q006309	CS04	E	What is the difference between SQL and PL/SQL?
+Q006310	DROP	-	dup
+Q006311	DROP	-	notq
+Q006312	CS04	E	What are the types of subquery?
+Q006313	CS04	E	How do you create a table in SQL?
+Q006314	CS04	E	What are tables and fields?
+Q006315	CS04	E	How do you delete a table in SQL Server?
+Q006316	CS04	E	How do you update a database table using SQL?
+Q006317	CS04	E	What is a database relationship?
+Q006318	CS04	E	What is a primary key of a database?
+Q006319	CS04	E	What is a unique key?
+Q006320	CS04	E	What is a foreign key of a database?
+Q006321	CS04	E	What is database normalization?
+Q006322	CS04	E	What are the database normalization forms?
+Q006323	CS04	E	What is a stored procedure?
+Q006324	CS04	E	Why do we use stored procedures?
+Q006325	CS04	E	How do you create a stored procedure?
+Q006326	CS04	E	What is a function in SQL Server?
+Q006327	CS04	E	What are the different types of functions in SQL Server?
+Q006328	CS04	E	What is a trigger in SQL Server?
+Q006329	CS04	E	Why do we need triggers?
+Q006330	DROP	-	dup
+Q006331	CS04	E	What are the different types of triggers?
+Q006332	CS04	E	What is a view in a database?
+Q006333	CS04	E	Why do we need views in a database?
+Q006334	CS04	E	What is the difference between a primary key and a unique key?
+Q006335	CS04	M	How can you increase SQL performance?
+Q006336	CS05	E	What is the use of OLAP?
+Q006337	CS05	E	What is a measure in OLAP?
+Q006338	CS05	E	What are dimensions in OLAP?
+Q006339	CS05	E	What are levels in dimensions?
+Q006340	CS05	E	What are fact tables and dimension tables in OLAP?
+Q006341	CS04	M	What is fill factor, and when does a page split occur?

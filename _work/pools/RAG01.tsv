@@ -1,0 +1,78 @@
+Q003406	M	What are the fundamental challenges of RAG systems?
+Q003407	E	Can you give examples of real-world applications where RAG systems have demonstrated value?
+Q003415	M	What are the key considerations when choosing an LLM for a RAG system?
+Q003416	M	How is the prompt provided to the LLM in a RAG system different from a standard, non-RAG prompt?
+Q003417	M	What are the key hyperparameters in a RAG pipeline?
+Q003418	M	How do you choose values for various LLM inference hyperparameters in a RAG system?
+Q003432	M	How does RAG help reduce hallucinations in LLM-generated responses?
+Q004277	M	What is a common design pattern for grounding LLM answers in facts?
+Q004279	M	Explain the intuition and methodology behind Retrieval Augmented Generation (RAG).
+Q004749	E	What is Retrieval-Augmented Generation (RAG), and why is it important?
+Q004750	E	Explain the architecture of a basic RAG system.
+Q004751	E	What are the key components of a RAG pipeline?
+Q004774	M	How do you implement citation and source attribution in RAG?
+Q006054	M	How do you build a RAG system with LlamaIndex, and how does it differ from LangChain?
+Q006151	H	How would you design a complete production-grade RAG pipeline?
+Q007023	M	You are building support QA over a fixed 40k-document knowledge base with a 1.5 s latency budget. Which "shape" framing should drive your RAG architecture?
+Q007067	M	What are the key RAG tradeoffs (latency vs accuracy, chunk size vs context, cost vs quality)?
+Q007123	M	How do you increase accuracy and reliability and make answers verifiable in an LLM system?
+Q007124	E	What are some benefits of using a RAG system?
+Q007215	H	How do you build a production-grade RAG system? Explain each component in detail.
+Q010801	H	Walk me through the architecture of a production RAG system.
+Q011669	M	Describe three RAG patterns and when to use each.
+Q010759	E	What is RAG (Retrieval-Augmented Generation)?
+Q011825	H	How do you attribute every claim in a generated answer to a specific retrieved span?
+Q012420	E	What are the main parts of a RAG system?
+Q012421	E	Why is RAG better than using an LLM alone?
+Q012422	E	How does the RAG pipeline work?
+Q003618	M	How do you update a RAG knowledge base without rebuilding everything?
+Q007736	M	You have retrieved chunks and a question. How do you actually build the prompt? Assume some documents are irrelevant and two of them contradict each other.
+Q007738	M	If recall matters and you must send 40 retrieved chunks to the LLM, what changes in the prompt?
+Q007808	E	What is RAG, and what problem does it actually solve?
+Q007811	M	How would you explain to a PM why RAG doesn't make hallucination impossible?
+Q007816	M	Walk me through every stage of a production RAG pipeline, from raw documents to a cited answer.
+Q007817	M	Which stage of a RAG pipeline would you invest in first for a new system and why?
+Q007905	M	How do you make a RAG system produce trustworthy citations?
+Q007908	M	Would you ever let a RAG model answer from parametric knowledge without a citation?
+Q009433	M	How do you keep a RAG index fresh within minutes of a document changing?
+Q010439	M	A customer's lawyers say RAG answers must be traceable to exact clause text. How does that change the design?
+Q010458	M	A customer says "just index everything" for a RAG system. Why is that wrong?
+Q010599	H	Design the smallest RAG system that could work for "chat with our docs." When do you need more, and when is RAG the wrong call?
+D00306	E	What is retrieval-augmented generation, and why use it instead of relying on model weights alone?
+D00307	E	Walk through the full RAG pipeline, separating the offline indexing flow from the online query flow.
+D00308	M	Describe the taxonomy of naive, advanced, agentic and graph RAG and what each adds.
+D00309	M	Why would you still use RAG if frontier models offer million-token contexts?
+D00310	M	Someone proposes replacing your RAG pipeline by loading all documents into a one-million-token context on every call. How do you evaluate that?
+D00311	M	Where is the cache-read break-even between long context with prompt caching and RAG?
+D00312	M	When does compiling knowledge once into a wiki or summaries beat both RAG and an agentic retrieval loop?
+D00313	M	What limits naive RAG, and what is the retrieval quality gap in practice?
+D00314	M	How do poisoned sources threaten a RAG pipeline, and what defenses exist?
+D00315	M	Why do you need a vector database for RAG, and why can't a relational database do the job?
+D00316	M	Search results are relevant but the model ignores them and answers from training data. How do you fix this?
+D00317	M	How do you assemble and order the final context from retrieved chunks, including citations?
+D00318	M	What is context compression in RAG, and what are LLM-based, embedding-based and rerank-based approaches?
+D00319	M	What is LLMLingua-style prompt compression, and what accuracy risks does it carry?
+D00320	M	How do you reduce the cost of a RAG system?
+D00321	M	When does a RAG system fail on enterprise use cases, and how do you choose an enhancement?
+D00322	M	How do you update a RAG knowledge base dynamically with batch, real-time or versioned updates?
+D00323	M	Compare Parent-Document Retrieval and Sentence Window Retrieval.
+D00324	M	How do you handle conflicting information across retrieved chunks?
+D00325	M	What is a semantic cache for RAG, how do you pick the similarity threshold, and how do you invalidate entries?
+D00326	M	Design the layered caching architecture for a production RAG system.
+D00327	M	When should a RAG request skip retrieval entirely, and how would you build the router that decides?
+D00328	M	How would you design a four-path query router for a RAG system, and what signals feed it?
+D00329	M	How do you optimize RAG latency using parallel retrieval, batched embedding and streaming?
+D00330	M	A RAG project interviewer asks for the biggest challenge you faced. How would you structure your answer technically?
+D00331	M	How do you handle ambiguous or multi-meaning user queries in RAG?
+D00332	M	Why must the indexing and query pipelines of an enterprise RAG system be separated?
+D00333	M	How do you tune cost per query in RAG using tiered models, progressive detail and cost guardrails?
+D00334	M	What is the difference between Defensible RAG and ordinary RAG, and what structural problems does it address?
+D03813	M	Explain the RAG triad of faithfulness, answer relevance and context relevance and how each is measured.
+D04824	E	What is retrieval-augmented generation and what problems does it solve for LLMs?
+D04825	M	How does RAG handle long-tail knowledge, private data, data freshness and source attribution?
+D04826	E	What are the key modules of a RAG system, from data ingestion and indexing to retrieval, post-processing and generation?
+D04827	M	What different invocation patterns of RAG exist (retrieve once, iterative retrieval, retrieval on demand)?
+D04836	M	What response generation strategies exist for RAG (stuff, map-reduce, refine) and how do they trade off context use and cost?
+D04838	M	How do retrieval-plugin style systems, LlamaIndex and LangChain structure a RAG pipeline and what do these abstractions cost?
+D04842	M	Why do naive RAG systems fail on multi-hop or comparison questions, and what would you change?
+D04964	M	When should a RAG system decide not to retrieve at all, and how would you implement that decision?

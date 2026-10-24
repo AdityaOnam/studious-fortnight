@@ -1,0 +1,269 @@
+Q012069	H	You have a stream of billions of events and need the top-K most frequent keys with bounded memory. Exact counting is impossible: what do you do?
+Q000567	E	What is the difference between vertical and horizontal scaling?
+Q000568	M	What is autoscaling and how does it decide when to scale?
+Q000577	M	What are the types of load balancers? What is the difference between L4 and L7?
+Q000578	E	What is a CDN and why use it?
+Q000581	M	Why do cloud architectures prefer stateless applications?
+Q000623	E	What is a load balancer?
+Q000655	E	Why are Content Delivery Networks (CDNs) so popular?
+Q000657	M	How can cache systems go wrong?
+Q000664	E	Which latency numbers should you know?
+Q000707	M	Why is Nginx so popular?
+Q000731	M	What algorithms should you know before taking system design interviews?
+Q000742	M	What is the issue with simple hashing for distributing data across servers?
+Q000743	M	How is consistent hashing used in the real world?
+Q000794	E	Why do we need a cache?
+Q000800	M	What are the most popular cache eviction strategies, and how do they work?
+Q000894	M	What is API rate limiting, and why might it be used?
+Q000970	E	Define caching in the context of computer programming.
+Q000971	E	What are the main purposes of using a cache in a software application?
+Q000972	E	Can you explain the concept of cache hit and cache miss?
+Q000973	M	Describe the impact of cache size on performance.
+Q000974	E	How does a cache improve data retrieval times?
+Q000975	M	What is the difference between local caching and distributed caching?
+Q000976	E	Explain the concept of cache eviction and mention common strategies.
+Q000977	E	What is a cache key and how is it used?
+Q000978	M	Explain the importance of cache expiration and how it is managed.
+Q000980	M	How does cache invalidation work and why is it necessary?
+Q000981	M	Describe the steps involved in implementing a basic cache system.
+Q000983	M	Explain the use of hash maps in cache implementation.
+Q000984	M	What are some common caching algorithms, and how do they differ?
+Q000985	H	Explain the design considerations for a cache that supports high concurrency.
+Q001583	M	Describe how middleware handles load balancing among multiple server instances.
+Q001584	H	Can you discuss strategies for scaling middleware solutions in response to increasing load?
+Q001586	M	Explain how middleware caching can improve the performance of a multi-layered application.
+Q001666	E	Define load balancing in the context of modern web services.
+Q001667	E	What are the primary objectives of implementing load balancing?
+Q001668	E	Explain the difference between hardware and software load balancers.
+Q001669	M	Can you list some common load balancing algorithms and briefly describe how they work?
+Q001670	E	Describe the term "sticky session" in load balancing.
+Q001671	E	How does load balancing improve application reliability?
+Q001673	M	How do load balancers perform health checks on backend servers?
+Q001674	M	What are the advantages and disadvantages of round-robin load balancing?
+Q001675	M	In load balancing, what is the significance of the least connections method?
+Q001676	M	Explain how a load balancer might handle failure in one of the servers it manages.
+Q001677	M	How does a load balancer distribute traffic in a stateless vs stateful scenario?
+Q001678	M	What is the concept of session persistence, and why is it important?
+Q001681	M	Discuss the role of DNS in load balancing.
+Q001682	M	In what scenarios would you use weighted load balancing?
+Q003014	M	When should you use private vs public Cache-Control directives?
+Q003015	H	How do you handle cache invalidation in distributed systems?
+Q003016	M	What are the performance implications of different caching strategies?
+Q003017	M	How do you prevent cache stampede problems?
+Q003018	M	What caching considerations apply to paginated responses?
+Q003019	M	How do you implement cache warming effectively?
+Q003020	M	What are the security implications of caching in APIs?
+Q003021	H	How do you handle cache coherence across multiple API instances?
+Q003022	M	What metrics should you monitor for cache performance?
+Q003024	M	How do you design cache-friendly URLs?
+Q003025	M	How do you cache authenticated responses safely?
+Q003026	M	What are stale-while-revalidate and stale-if-error?
+Q003027	M	When should you choose write-through vs cache-aside?
+Q003034	M	How does content negotiation affect caching strategies?
+Q003067	M	How do you serve large files efficiently (CDN, range requests)?
+Q003102	M	How should you handle rate limiting in APIs?
+Q003159	M	How do query parameters affect caching?
+Q003163	M	What are the trade-offs between token bucket and sliding window rate limiting?
+Q003164	M	How do you handle rate limits per endpoint and per user?
+Q003167	H	How do you scale rate limits across multiple servers?
+Q003291	E	What is load balancing?
+Q003811	M	Why does average response time not represent tail latency? How should P95 and P99 be interpreted?
+Q003812	M	How does a CDN speed up HTTPS access?
+Q003813	M	How should caching be configured for HTML, hashed JS/CSS files, images and downloadable files?
+Q003815	E	What is Layer 4 load balancing?
+Q003816	E	What is Layer 7 load balancing?
+Q003916	M	How do you read a JMeter load-test report? What do P95 and P99 represent?
+Q005593	M	How does a CDN stream video?
+Q005595	M	How would you design the caching strategy for a video streaming service?
+Q005834	M	When should the cache be updated?
+Q006460	E	What is system design?
+Q006461	E	Why is system design important?
+Q006463	M	When should you not use caching?
+Q006464	E	How does a CDN work?
+Q006476	M	Why do we need consistent hashing?
+Q006495	E	Why do we need rate limiting?
+Q012257	M	How do you scale a web service?
+Q012259	M	How do you do capacity planning?
+Q012265	M	Which caching pattern would you use for a key-value store: read-through, write-through, write-around, write-back, or cache-aside?
+Q012266	M	Where should a cache be placed: on the client side, in a distinct layer, or on the server side?
+Q012267	M	When should data in a cache be expired or replaced (for example LRU, LFU, ARC)?
+Q012306	M	Given a list of Memcached servers, how does the client determine which server to query?
+Q012431	H	How would you scale an app to 10 million users on AWS?
+Q012464	H	How would you design a system to handle flash sales at very high request rates?
+Q012478	M	How do load balancing algorithms work?
+Q012481	H	How can a single server support 1 million concurrent connections?
+Q009187	H	Find the top-K most frequent items in a high-volume event stream with bounded memory.
+Q009188	M	How do you get the top-K most frequent items over a sliding 5-minute window in an event stream?
+Q009189	M	When would you use exact counting sharded over hosts instead of an approximate top-K algorithm?
+Q009216	H	What changes when a rate limiter must be shared across processes (Redis, atomicity, clock skew)?
+Q009360	H	A tenant sends 500 concurrent requests to a token-based rate limiter, and each passes the check before any reconciles. What is the failure and the fix?
+Q009361	M	How do you rate-limit fairly across a tenant's sub-organisations?
+Q009516	M	In a streaming TTS proxy service, where would you add a cache, and what is the cache key for a voice plus text pair?
+Q009526	H	What is your admission-control policy for real-time TTS serving when demand exceeds real-time capacity by 20%?
+Q009731	H	What breaks first on a model hub during a frontier-model release day?
+Q009747	H	Given a stream of user actions, return the k most engaged-with items. Why might a heap-based solution be the wrong choice in production?
+Q009748	H	How much error does a Count-Min Sketch with width w and depth d introduce, and how do you size it?
+Q009784	H	Implement "top-k most frequent search queries" over a large query log, then explain what breaks when the log becomes an unbounded stream across many machines.
+Q009785	H	How much memory does a Count-Min Sketch need for 1% error at 99.9% confidence, roughly?
+Q009786	M	How would you dedupe bot traffic before counting top-k queries?
+Q009926	H	In an API gateway rate limiter, what changes for a per-org limit shared across thousands of keys?
+Q010014	H	How do you merge Space-Saving summaries from 20 shards correctly?
+Q010015	M	When maintaining the top-k queries from a high-volume query stream, what changes if you need top-k per country?
+Q010109	H	Given annotation sessions as (start, end) intervals streaming in real time, maintain the running peak concurrency. If memory prevents storing all events, what do you approximate, and with what error?
+Q010239	M	How does an LRU cache with per-entry TTL change for a multi-process inference server?
+D01202	E	What are cache hit rate, maximum size and eviction policy, and how do they interact when sizing a cache?
+D01203	M	Where can caching occur between a user and the database (browser, CDN, reverse proxy, application, database)?
+D01204	M	How does a CDN work, and which kinds of content benefit from one?
+D01205	M	Explain cache penetration, cache breakdown and cache avalanche and the mitigation for each.
+D01206	M	How do Bloom filters help against cache penetration, and what are the trade-offs of false positives?
+D01207	M	How do you keep a cache consistent with the database? Compare cache-aside, write-through, write-behind and read-through.
+D01208	M	Why is it usually safer to delete a cache entry than update it on a database write, and what race conditions remain?
+D01209	M	What is the cache bottomless-pit phenomenon when adding more cache nodes, and how can it be reduced?
+D01210	M	Compare hash distribution and range distribution of data across nodes.
+D01211	E	Explain consistent hashing and why virtual nodes improve balance.
+D01212	M	What fraction of keys move when a node is added to a modulo-hash cluster versus a consistent-hash ring?
+D01213	M	Describe how an LRU cache is built and which data structures give O(1) get and put.
+D01214	M	What are the drawbacks of plain LRU, and how do LFU, 2Q or ARC address them?
+D01215	M	What is the CPU multi-level cache hierarchy and why does cache locality matter for performance?
+D01216	E	Compare vertical and horizontal scaling, and explain how scalability differs from raw performance.
+D01217	M	What common metrics measure performance (response time, throughput, concurrency, percentiles) and why do tail latencies matter?
+D01218	M	What approaches help scale a stateless application tier versus a stateful storage tier?
+D01219	M	What is the difference between scalability and extensibility in a system?
+D01220	E	Compare load-balancing algorithms: round robin, weighted round robin, least connections, random and source-IP hash.
+D01221	M	What are the differences between layer-4 and layer-7 load balancing, and between NAT, direct routing and tunneling forwarding modes?
+D01222	M	How can a load balancer avoid becoming a single point of failure?
+D01223	M	How do you manage user sessions in a cluster: sticky sessions, session replication, a shared session store, or client-side tokens?
+D01224	M	What are the trade-offs of sticky sessions during failure and scale-in events?
+D01225	M	How do you do back-of-envelope sizing for an application with 100 million daily users?
+D01619	M	What health-check strategies would you use for a load balancer, and how do you avoid sending traffic to a failing node?
+D01620	M	How do you keep user sessions consistent behind a load balancer: sticky sessions versus a shared session store?
+D01621	E	What is the difference between vertical scaling and horizontal scaling?
+D01622	M	What are the limits and costs of scaling up versus scaling out, and when would you choose each?
+D01623	M	Why is a stateless web tier easier to scale horizontally, and how do you externalize state?
+D01624	H	You have a single-server web application that is starting to buckle under traffic. How would you evolve its architecture step by step to serve millions of users?
+D01625	M	Where in a web architecture would you introduce caching, and what are the risks of stale data?
+D01626	M	How does a CDN reduce latency and origin load, and what content should or should not be cached on it?
+D01868	M	How does an LRU cache work and what data structures give O(1) get and put?
+D01869	M	What is cache locality at the application level versus a distributed cache, and when would you add an application-layer cache?
+D02192	M	Compare local cache, distributed cache and multi-level cache. When would you combine them?
+D02407	M	Why does simple modulo hashing cause massive data movement when nodes are added or removed?
+D02408	M	Explain consistent hashing with a hash ring and how it limits key remapping on node changes.
+D02409	M	What is the data skew problem in consistent hashing and how do virtual nodes address it?
+D02410	H	How would you implement consistent hashing with virtual nodes and replication for a distributed cache, and how does it handle hot keys?
+D02452	M	What are the common client-side load balancing strategies in an RPC framework, and when does each fit?
+D02495	E	What is rate limiting, and why is it needed to protect a service?
+D02496	M	Compare fixed window, sliding window, leaky bucket and token bucket rate limiting algorithms.
+D02497	M	What is the boundary burst problem of a fixed-window counter and how does a sliding window fix it?
+D02498	M	How does a token bucket allow bursts while a leaky bucket smooths output, and when would you pick each?
+D02499	M	What dimensions can you rate limit on, such as per user, per IP, per API or per tenant, and how do you choose?
+D02500	M	How would you implement single-node rate limiting in an application process?
+D02501	H	How would you implement a distributed rate limiter across many instances, and what are the trade-offs of using a central store like Redis?
+D02502	H	Design a rate limiting service that handles millions of requests per second with configurable rules and low added latency.
+D02527	M	What do response time, concurrency, throughput, QPS and TPS each measure, and how are they related?
+D02528	M	Explain the differences between baseline, load, stress, capacity, stability and spike tests.
+D02529	M	How do you estimate required peak QPS from daily active users and typical user behavior?
+D02530	M	What precautions should you take before running a load test, including realistic request models, a stop mechanism and baseline data?
+D02531	H	What is full-link load testing in production and how do you isolate test traffic and data from real users?
+D02532	M	What is the difference between PV, UV, DAU and MAU, and how would you use them in capacity planning?
+D02533	M	When latency spikes under load, how do you systematically find the bottleneck among CPU, memory, I/O, locks and network?
+D02534	M	What is a CDN and how does it reduce latency compared with deploying the origin in multiple regions?
+D02535	M	How are static resources cached on a CDN node, and what happens on a cache miss?
+D02536	M	How does a CDN direct a user to the closest node, using DNS and global scheduling?
+D02537	M	How do you prevent hotlinking or unauthorized traffic consumption on CDN resources?
+D02538	M	How can a CDN accelerate dynamic content and speed up TLS handshakes?
+D02539	M	How do you purge or version cached assets on a CDN so users get the latest version without stale content?
+D02540	E	What is load balancing and what is the difference between server-side and client-side load balancing?
+D02541	M	Compare random, round robin, weighted, least connections, hash and consistent hash load balancing algorithms.
+D02542	M	What is the power of two choices algorithm and why does it often beat random selection?
+D02543	M	When would you choose least active requests or fastest-response routing over round robin?
+D02544	M	Compare Layer 4 and Layer 7 load balancing and when to use each.
+D02545	M	How do health checks and connection draining work so that traffic is taken off a failing backend?
+D02546	M	How do DNS-based load balancing and reverse-proxy load balancing differ, and why are they often combined?
+D02547	H	How do you make the load balancer itself highly available, and what happens to sticky sessions when a backend dies?
+D02613	H	A product page takes 2 seconds to load worldwide. Walk through the layers where you would look for improvements.
+D03238	M	Design a TCP load balancer acting as a reverse proxy that supports adding and removing backends, health checks, configurable strategies and metrics, and scales to millions of concurrent connections.
+D03239	H	How would you implement health checking and connection draining in a load balancer so that removing a backend does not drop in-flight connections?
+D03240	M	Compare round robin, least connections, weighted and consistent hashing as load balancing strategies and when each is preferable.
+D03241	H	How do you make the load balancer itself highly available and avoid it being a single point of failure?
+D03247	M	How would you design analytics on image requests in an image service without hurting serving latency?
+D03252	H	How would you handle cache invalidation and CDN propagation when a user switches their active profile picture behind a stable URL?
+D03260	M	Design a distributed cache supporting get, put, delete and TTL that is highly available and scales without major data movement.
+D03261	H	How would you design a single-node cache to be lock-free and keep throughput high while monitoring and eviction run in the background?
+D03262	M	How do pluggable eviction policies such as LRU, LFU and random affect performance and memory overhead in a cache?
+D03263	H	How would you use consistent hashing and replication to scale a cache cluster up and down with minimal cache misses?
+D03284	M	Which data structure and storage would you use to keep the last N unique items per user, and how do you handle duplicates and ordering?
+D03287	H	How would you use a CDN and short-TTL caching to serve a read-heavy live commentary feed without a thundering herd on the origin?
+D03317	M	How do you use capacity planning and back-of-the-envelope estimation to justify a design decision such as choosing sharding over a single database?
+D03877	E	What is the difference between vertical and horizontal scaling, and when would you choose each?
+D03878	M	Why is a stateless application tier easier to scale horizontally than a stateful one, and how do you move session state out of the web servers?
+D03879	M	What is the difference between performance problems and scalability problems, and how can you tell which one your system has?
+D03880	E	Explain latency versus throughput and why optimizing one can hurt the other.
+D03881	M	What are the main trade-offs between scaling a database vertically and scaling it horizontally?
+D03882	M	Walk through how a simple single-server website evolves to support millions of users, and what bottleneck you fix at each step.
+D03883	M	At what point do you separate the application server and the database onto different machines, and what does that change for failure modes?
+D03884	H	Your site grows from 1,000 to 10 million users. Describe the order in which you would introduce load balancers, replicas, caches, CDN, and sharding, and why.
+D03885	E	What does a load balancer do and why is it needed in a horizontally scaled system?
+D03886	M	Compare Layer 4 and Layer 7 load balancing. What can each one see and what can each one do?
+D03887	M	Compare round robin, weighted round robin, least connections, least response time, and IP hash as load-balancing algorithms. When does each fail?
+D03888	M	Why can least-connections or latency-based balancing cause a herd effect when several load balancers act on the same stale information?
+D03889	H	Explain the power-of-two-choices algorithm. Why does it balance load nearly as well as global least-loaded selection with far less coordination?
+D03890	H	Why is distributing requests evenly not the same as distributing load evenly, and how can a balancer use real-time backend load feedback?
+D03891	M	Is the load balancer itself a single point of failure? How do you make it highly available?
+D03892	M	Compare active-active and active-passive configurations for load balancers or server clusters.
+D03893	M	What is the difference between a load balancer and a reverse proxy, and can one component play both roles?
+D03894	M	Compare forward proxy and reverse proxy with an example of each.
+D03895	E	What benefits does a reverse proxy provide besides load balancing, such as TLS termination, compression, and static content?
+D03896	M	How would you design sticky sessions, and what problems do they introduce for scaling and failover?
+D03897	E	What is a CDN and what problems does it solve?
+D03898	M	Compare push CDNs and pull CDNs. Which would you choose for a rarely changing site versus a large catalog of content?
+D03899	M	How does a CDN decide which edge server serves a user, and what happens on a CDN cache miss?
+D03900	M	How do you invalidate or update content already cached on CDN edges, and what are the trade-offs of using TTLs versus versioned URLs?
+D03901	M	What are the disadvantages and costs of using a CDN, and when is it not worth it?
+D03902	E	Name the common caching layers between a user and a database and what each caches.
+D03903	E	What is a cache hit ratio and how would you improve a low one?
+D03904	M	Compare cache-aside, read-through, write-through, write-around, and write-back caching strategies.
+D03905	M	What are the failure modes of cache-aside, and how can stale data appear?
+D03906	M	Why is write-back caching risky, and how would you reduce the chance of data loss?
+D03907	M	Compare read-through and write-through caches. Which combinations give stronger consistency?
+D03908	M	Compare LRU, LFU, FIFO, and random eviction. What workload makes LRU perform badly?
+D03909	M	Why do some caches use approximate or segmented variants of LRU such as 2Q or TinyLFU instead of strict LRU?
+D03910	H	Cache invalidation is called one of the hard problems in computer science. What makes it hard and what strategies keep caches reasonably fresh?
+D03911	M	What is a cache stampede or thundering herd, and how do you prevent it for a hot key that expires?
+D03912	M	What is cache penetration, and how do null caching and Bloom filters protect the database from queries for nonexistent keys?
+D03913	M	What is cache breakdown versus cache avalanche, and how do you mitigate each?
+D03914	M	If your cache cluster goes down completely, what happens to the database, and how do you design for it?
+D03915	H	You have a hot key receiving a huge fraction of read traffic that overloads a single cache node. How do you diagnose and fix it?
+D03916	M	Compare a local in-process cache with a distributed cache and a global cache. What are the consistency and cost trade-offs?
+D03917	M	What are the trade-offs of putting a cache in the application server versus a separate cache tier versus in front of the web tier?
+D03918	M	How do you decide what to cache and what TTL to use for different kinds of data?
+D03919	H	How would you measure whether adding a cache actually helps a service, and what could make it harmful?
+D03920	M	Explain consistent hashing and why it avoids massive data movement when nodes are added or removed compared with hash modulo N.
+D03921	M	What are virtual nodes in consistent hashing and what problems do they solve?
+D03922	H	How does a consistent-hash ring handle node failure and replication of keys to successor nodes? What happens to the load on neighbors?
+D03923	M	What are hot spots in a hash-partitioned system, and how can you mitigate them?
+D03924	E	Why do we rate limit APIs, and where in the architecture would you place a rate limiter?
+D03925	M	Compare token bucket, leaky bucket, fixed window, sliding window log, and sliding window counter rate limiting.
+D03926	M	What is the boundary burst problem with fixed-window rate limiting and how do other algorithms fix it?
+D03927	H	How would you implement a rate limiter that is accurate across many API gateway nodes? Discuss race conditions and synchronization costs.
+D03928	M	What should a rate-limited client receive, and how should well-behaved clients react?
+D03929	M	Why do we use back-of-the-envelope estimation in a design interview, and which numbers should you memorize?
+D03930	M	Which latency numbers should every engineer know, such as memory reference, SSD read, datacenter round trip, and cross-continent round trip? What design decisions follow from them?
+D03931	M	How would you estimate daily storage growth and peak queries per second for a service with a given number of daily active users?
+D03932	E	How many seconds are in a day, and how do you quickly convert monthly request counts into requests per second?
+D03933	M	How do you estimate cache memory needed using the 80/20 rule?
+D03934	M	What are the best ways to improve API performance, such as pagination, caching, compression, connection pooling, and asynchronous logging?
+D03935	M	Why does connection pooling improve throughput, and what happens when the pool is misconfigured?
+D03936	M	List common causes of 100 percent CPU usage on a server and how you would investigate each.
+D03937	M	Which website performance metrics matter most, such as TTFB, FCP, LCP, and TTI, and how would you improve them?
+D03938	M	Compare synchronous and asynchronous processing for a user request. When would you offload work to a background queue?
+D03939	M	When would you choose batch processing over stream processing, and what are the latency and complexity trade-offs?
+D03940	M	What are the 8 common production problems such as read-heavy load, write-heavy load, single point of failure, and high latency, and the standard remedy for each?
+D03941	M	Compare stateful and stateless services. How does each affect scaling, deployment, and failure recovery?
+D03942	H	Which design trade-offs do you consider most often, such as consistency versus availability, normalization versus denormalization, and sync versus async, and how do you argue for one side in an interview?
+D03943	M	What is DNS-based load balancing and what are its limitations, such as TTL caching and lack of health awareness?
+D03944	M	What is the difference between a monolith being scaled by cloning and a service being scaled by splitting functionality, as in the AKF scale cube?
+D03945	M	Explain the four layers of the system design interview approach: requirements, estimation, data and API design, then high-level and detailed design.
+D03946	M	How would you design for graceful degradation when traffic exceeds capacity?
+D04365	M	What is the difference between database caching, application caching, web server caching, and client caching?
+D04366	M	What are the disadvantages of caching, such as cache invalidation complexity and the need for application code changes?
+D04372	M	Why does a reverse proxy simplify security, compression, SSL termination, and static content serving, and what are its disadvantages?

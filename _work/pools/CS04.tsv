@@ -1,0 +1,590 @@
+Q001156	E	What is data modeling and why is it important?
+Q001157	M	Explain the difference between conceptual, logical, and physical data models.
+Q001158	M	What are the key steps in the data modeling process?
+Q001159	E	Describe the different types of relationships in a relational database.
+Q001160	E	What is normalization and why is it used in database design?
+Q001161	E	Explain the difference between OLTP and OLAP systems.
+Q001166	M	Explain the purpose of surrogate keys in data modeling.
+Q002144	E	What are the different types of JOIN operations in SQL?
+Q002145	E	Explain the difference between WHERE and HAVING clauses.
+Q002146	E	How would you write a SQL query to select distinct values from a column?
+Q002148	E	What does GROUP BY do in a SQL query?
+Q002150	E	How can you aggregate data in SQL (e.g., COUNT, AVG, SUM, MAX, MIN)?
+Q002151	E	Describe a subquery and its typical use case.
+Q002152	M	Can you explain the use of indexes in databases and how they relate to Machine Learning?
+Q002153	M	How would you optimize a SQL query that seems to be running slowly?
+Q002155	E	Write a SQL query that joins two tables and retrieves only the rows with matching keys.
+Q002156	M	How would you merge multiple result sets in SQL without duplicates?
+Q002157	M	Create a SQL query to pivot a table transforming rows into columns.
+Q002158	M	Explain the importance of data normalization in SQL and how it affects Machine Learning models.
+Q006635	M	How can you illustrate a tree-based system with a SQL query?
+Q006748	E	What are the different types of joins? What are the differences between them?
+Q006749	M	Why might a join on a subquery be slow? How might you speed it up?
+Q006750	E	Describe the difference between primary keys and foreign keys in a SQL database.
+Q006751	M	Given a COURSES table with columns course_id and course_name, a FACULTY table with columns faculty_id and faculty_name, and a COURSE_FACULTY table with columns faculty_id and course_id, how would you return a list of faculty who teach a course, given the name of the course?
+Q006752	M	Given an IMPRESSIONS table with ad_id, click (an indicator that the ad was clicked), and date, write a SQL query that returns the click-through rate of each ad by month.
+Q006753	E	Write a SQL query that returns the name of each department and a count of the number of employees in each.
+Q012654	E	What are joins in SQL and what are their types?
+Q012655	E	Define primary, foreign, and unique keys and the differences between them.
+Q012656	E	What is the difference between the BETWEEN and IN operators in SQL?
+Q012658	M	Given a table of user transactions, write a SQL query to obtain the third transaction of every user.
+Q012659	E	What is a self join? Explain using an example.
+Q012660	E	Write an SQL query to join three tables.
+Q012661	M	Write a SQL query to get the third-highest salary of an employee from employee_table and arrange the results in descending order.
+Q012662	M	What is the difference between temporary tables and common table expressions?
+Q012663	M	Why use a right join when a left join can satisfy the requirement?
+Q012664	M	Why does RANK skip sequence numbers?
+Q000006	E	Why do we use a DBMS?
+Q000007	M	What happens when an application executes a query against a database?
+Q000008	E	Why not simply store everything in files instead of using a DBMS?
+Q000009	E	What makes an RDBMS relational?
+Q000010	E	What is a database schema?
+Q000012	E	Why is a database schema important?
+Q000018	E	What is a table, row, column, and record?
+Q000019	E	What are primary and foreign keys?
+Q000020	M	Why isn't a foreign key necessarily unique?
+Q000021	E	Why are keys important in a database?
+Q000022	E	What is a candidate key?
+Q000023	E	Why is it called a "candidate" key?
+Q000024	E	Why are candidate keys important?
+Q000025	E	What is a composite key?
+Q000026	M	Why use a composite key?
+Q000029	E	Why are constraints important in a database?
+Q000030	M	Why does database-level enforcement of constraints matter?
+Q000031	E	Why do we normalize a database?
+Q000032	M	Explain 1NF, 2NF, 3NF, and BCNF.
+Q000033	M	Why do we need BCNF?
+Q000035	M	Is more normalization always better?
+Q000042	M	When might denormalization be useful?
+Q000045	E	What is a transaction?
+Q000046	E	Why are transactions important?
+Q000052	M	What are transaction isolation levels?
+Q000054	M	What are dirty reads, non-repeatable reads, and phantom reads?
+Q000055	E	What is a deadlock in a database?
+Q000056	M	Why do deadlocks happen in a database?
+Q000059	M	How can database deadlocks be prevented or handled?
+Q000062	E	How does a database index work?
+Q000063	E	Why are indexes useful?
+Q000070	M	Why doesn't every query use an index?
+Q000071	E	What are the disadvantages of indexes?
+Q000072	E	What is the difference between a clustered and a non-clustered index?
+Q000073	M	Why can a table have only one clustered index?
+Q000074	E	What is a composite index?
+Q000075	M	Why does column order matter in a composite index?
+Q000076	M	Can a composite index be unique?
+Q000077	M	How do you decide which columns to index?
+Q000079	M	Why can adding more indexes make writes slower?
+Q000083	M	How would you optimize a slow SQL query?
+Q000088	E	What is EXPLAIN / a query execution plan?
+Q000090	M	What does a query execution plan contain?
+Q000091	M	What is the difference between EXPLAIN and EXPLAIN ANALYZE?
+Q000092	M	What should you look for in a query execution plan?
+Q000093	M	How does a query execution plan help with query optimization?
+Q000002	M	How do indexes improve query performance?
+Q000003	M	Why can indexes make writes slower?
+Q000426	E	What is a DBMS? What are its advantages over a file system?
+Q000427	M	Explain the 3-level architecture of a DBMS and data independence.
+Q000428	E	Explain the different types of keys in a database. What is the difference between a primary key and a unique key?
+Q000429	E	What is the difference between DELETE, TRUNCATE and DROP?
+Q000430	E	What are DDL, DML, DCL and TCL?
+Q000431	E	Explain all the SQL join types.
+Q000432	E	What is normalization? Why do we need it?
+Q000433	M	Explain 1NF, 2NF, 3NF and BCNF with an example.
+Q000434	M	When would you denormalize?
+Q000435	M	What concurrency anomalies exist in databases? Define each.
+Q000436	M	Explain the four transaction isolation levels and what each prevents.
+Q000437	M	What is two-phase locking (2PL)?
+Q000438	M	What is a deadlock in a DBMS and how is it handled?
+Q000439	M	What is serializability? How do you test for it?
+Q000440	E	What is a view? What is a materialized view?
+Q000441	M	What is an index? When do indexes hurt?
+Q000442	H	Why do databases use B+ trees rather than binary trees or hash tables?
+Q000443	M	What is the leftmost prefix rule for composite indexes?
+Q000444	M	How does a database execute a query? What is query optimization?
+Q000445	M	What is the difference between a stored procedure and a function? What are triggers and cursors?
+Q000449	M	Write a SQL query to find the Nth highest salary.
+Q000450	M	Write a SQL query to delete duplicate rows, keeping the row with the lowest id.
+Q000360a	E	What is the difference between a primary key, a unique key, and a foreign key?
+Q000360b	E	What is the difference between DELETE, TRUNCATE, and DROP?
+Q000361	M	Explain the normal forms from 1NF to BCNF with an example of each.
+Q000362a	M	What are the ACID properties of a database transaction?
+Q000362b	M	What are the four transaction isolation levels, and which of dirty reads, non-repeatable reads, and phantom reads does each allow?
+Q000363a	E	What is the difference between a clustered and a non-clustered index?
+Q000363b	M	Why do databases use B+ trees for indexes?
+Q000364a	M	Write a SQL query to find the Nth highest salary.
+Q000364b	M	Write a SQL query to delete duplicate rows from a table.
+Q000649	E	What does ACID mean?
+Q000650	E	How do SQL joins work?
+Q000816	E	What is a database, and what are some common types of databases?
+Q001222	E	What is a database management system (DBMS), and can you name some examples?
+Q001223	E	Explain the ACID properties in the context of databases.
+Q001224	E	What are the differences between SQL and NoSQL databases?
+Q001225	E	Describe a relational database schema.
+Q001226	E	What is a primary key, and why is it important?
+Q001227	E	Can you explain what a foreign key is and its role in the database?
+Q001228	E	What is database normalization, and why do we use it?
+Q001229	M	What is denormalization and when would you consider it?
+Q001230	E	Compare and contrast the DROP, DELETE, and TRUNCATE commands.
+Q001231	E	What is the difference between a full join and an inner join?
+Q001232	M	How would you write an SQL query to fetch duplicate records from a table?
+Q001233	M	What is a prepared statement, and why would you use one?
+Q001235	M	What is the N+1 query problem and how can you solve it?
+Q001236	E	Explain the function of GROUP BY and HAVING clauses in SQL.
+Q001237	E	What are indexes and how do they work in databases?
+Q002127	E	What is SQL and what is it used for?
+Q002129	E	What are the different types of SQL commands?
+Q002130	E	Explain the purpose of the SELECT statement.
+Q002131	E	What is the difference between the WHERE and HAVING clauses?
+Q002134	E	Define what a JOIN is in SQL and list its types.
+Q002135	E	What is a primary key in a database?
+Q002136	E	Explain what a foreign key is and how it is used.
+Q002138	E	What is normalization? Explain with examples.
+Q002139	M	Describe the concept of denormalization and when you would use it.
+Q002140	M	What are indexes and how can they improve query performance?
+Q002141	E	Explain the purpose of the GROUP BY clause.
+Q002142	E	What is a subquery, and when would you use one?
+Q002143	E	Describe the functions of the ORDER BY clause.
+Q002562	M	What happens if a transaction violates ACID properties?
+Q002563	M	How does isolation prevent dirty reads?
+Q002564	E	Explain durability with an example.
+Q002565	M	Can you have consistency without atomicity?
+Q002566	M	What is the difference between logical and physical consistency?
+Q002567	E	What is the difference between COUNT(*) and COUNT(column_name)?
+Q002568	E	How do aggregate functions handle NULL values?
+Q002569	E	Can you use aggregate functions in the WHERE clause?
+Q002570	E	What is the difference between SUM and COUNT for calculating totals?
+Q002571	M	How do you find the second highest salary using aggregate functions?
+Q002574	M	Explain the order of execution in a SELECT statement.
+Q002575	E	What is the difference between DELETE, DROP, and TRUNCATE?
+Q002577	E	What is the difference between UNION and UNION ALL?
+Q002583	M	Can a table have multiple clustered indexes?
+Q002584	M	What happens when you insert data into a table with a clustered index?
+Q002585	M	When would you choose a non-clustered index over a clustered index?
+Q002586	M	What is a key lookup and when does it occur?
+Q002587	M	How do clustered and non-clustered indexes affect query performance differently?
+Q002588	M	How do isolation levels prevent concurrency problems?
+Q002589	E	What is the difference between a dirty read and a non-repeatable read?
+Q002590	M	How can you prevent lost update problems?
+Q002591	M	When would you choose lower isolation levels despite concurrency problems?
+Q002592	M	What is a phantom read and how is it different from a non-repeatable read?
+Q002593	E	What is the difference between a Primary Key and a Unique Key?
+Q002594	E	Can a table have multiple foreign keys?
+Q002595	M	What happens when you try to delete a record referenced by a foreign key?
+Q002596	M	Why can't a Primary Key contain NULL values?
+Q002597	E	What is the difference between a surrogate key and a natural key?
+Q002598	M	How does a database detect deadlocks?
+Q002599	M	What factors determine deadlock victim selection?
+Q002600	M	What is the difference between Wait-Die and Wound-Wait schemes?
+Q002605	M	How can application design prevent deadlocks?
+Q002606	M	What is the trade-off between deadlock prevention and detection?
+Q002607	E	What is the difference between a strong entity and a weak entity?
+Q002608	M	How do you resolve M:N relationships in database implementation?
+Q002609	E	What are the types of attributes in ER diagrams?
+Q002610	M	How do you represent inheritance in ER diagrams?
+Q002611	M	What is the difference between total and partial participation?
+Q002613	M	Can you use ORDER BY with columns not in the SELECT list?
+Q002614	M	What happens if you use SELECT without GROUP BY but with aggregate functions?
+Q002615	E	Can you use multiple columns in GROUP BY?
+Q002616	E	What is the difference between ORDER BY column_name and ORDER BY column_position?
+Q002617	M	What is the difference between optimistic and pessimistic locking?
+Q002618	M	What is the Two-Phase Locking (2PL) protocol?
+Q002619	H	How do intent locks work and why are they needed?
+Q002621	M	What causes deadlocks and how can they be prevented?
+Q002622	M	When would you use table-level locks instead of row-level locks?
+Q002623	E	What are the benefits of normalization?
+Q002625	M	What is the difference between 3NF and BCNF?
+Q002626	E	Explain with an example: what is a transitive dependency?
+Q002627	M	Can a relation be in 2NF but not in 1NF?
+Q002628	M	How do you identify slow queries that need optimization?
+Q002629	M	What is the difference between a table scan and an index seek?
+Q002630	M	Why should you avoid using functions in WHERE clauses?
+Q002631	M	How do database statistics affect query optimization?
+Q002632	M	What is the impact of query hints and when should you use them?
+Q002639	E	What is the difference between INNER JOIN and LEFT JOIN?
+Q002640	E	When would you use a SELF JOIN?
+Q002641	M	What is the performance difference between different JOINs?
+Q002642	E	How do you join more than two tables?
+Q002643	E	What happens if you don't specify a JOIN condition (ON clause)?
+Q002649	M	What is the difference between correlated and non-correlated subqueries?
+Q002650	M	When would you use EXISTS vs IN with subqueries?
+Q002651	M	What are the performance implications of subqueries vs JOINs?
+Q002652	E	Can you use subqueries in UPDATE and DELETE statements?
+Q002653	E	What is a scalar subquery and when do you use it?
+Q002654	E	What is the difference between COMMIT and ROLLBACK?
+Q002655	M	Can a transaction move from the COMMITTED state to any other state?
+Q002656	M	What happens during the PARTIALLY COMMITTED state of a transaction?
+Q002658	M	How do savepoints affect transaction states?
+Q002659	M	What causes a transaction to enter the FAILED state?
+Q002660	E	What is the difference between primary and secondary indexes?
+Q002661	M	When should you use a composite index vs multiple single-column indexes?
+Q002662	M	What are the disadvantages of having too many indexes?
+Q002663	M	How does a partial index improve performance?
+Q002664	M	What is a covering index and why is it beneficial?
+Q002665	E	What is the difference between a view and a materialized view?
+Q002666	M	When should you use stored procedures vs application code?
+Q002667	M	What are the different types of triggers and when do you use each?
+Q002668	M	What are the performance implications of views?
+Q002670	M	Can triggers cause performance problems?
+Q003152	M	How do you optimize database queries for paginated results?
+Q003512	M	How is a SQL statement executed in MySQL?
+Q003513	M	Are MySQL auto-increment primary keys always continuous?
+Q003668	M	Why are B-trees and B+ trees suitable for database indexes?
+Q003716	E	How should you understand the execution order of WHERE, GROUP BY, HAVING, and ORDER BY in SQL?
+Q003719	M	How do you analyze a SQL execution plan using EXPLAIN?
+Q003714	E	What are a database, a database management system, a database system, and a database administrator?
+Q003715	E	What are a tuple, key, candidate key, primary key, foreign key, prime attribute, and non-prime attribute?
+Q003731	M	How does InnoDB implement snapshot reads using MVCC, undo logs, and Read View?
+Q003733	M	How can MySQL be restored to a specific point in time using a full backup, binlog, and PITR?
+Q003735	M	How do you locate the cause of a slow SQL query layer by layer, from table design and indexes to SQL writing and execution plans?
+Q003739	M	What are the differences between binlog, redo log, and undo log, and what problem does two-phase commit solve?
+Q003742	E	How should you choose between DATETIME and TIMESTAMP?
+Q003725	E	What is the difference between CHAR and VARCHAR?
+Q003726	E	What is the difference between DECIMAL and FLOAT/DOUBLE?
+Q003727	M	Why is it not recommended to use TEXT and BLOB?
+Q003728	M	How do you choose between MyISAM and InnoDB?
+Q003729	M	Why does InnoDB not use a B-tree as its index data structure?
+Q003758	M	What is the role of SELECT, WHERE, ORDER BY, LIMIT, GROUP BY and HAVING in a SQL query, and in what order are they executed?
+Q003759	M	In which scenarios would you use INNER JOIN, LEFT JOIN, RIGHT JOIN, UNION and subqueries respectively?
+Q003760	E	What is the difference between WHERE and HAVING in SQL?
+Q003761	E	What is the difference between INNER JOIN and LEFT JOIN?
+Q003762	E	What is the difference between UNION and UNION ALL?
+Q003763	E	Why must you be careful to include a filter condition in UPDATE and DELETE statements?
+Q003857	M	Should a database use BIGINT or DECIMAL for storing monetary amounts?
+Q004236	E	What is a DBMS? What are its advantages?
+Q004238	E	What is a database system?
+Q004239	E	What is an RDBMS? What are its properties?
+Q004240	E	What is DDL (Data Definition Language)?
+Q004242	E	What is DML (Data Manipulation Language)?
+Q004243	E	What is normalization? What are the types of normalization?
+Q004244	E	What is a functional dependency?
+Q004245	M	What are concurrency control protocols (CCP)?
+Q004246	E	What are SQL commands, and what are their types?
+Q004247	E	What is a JOIN? Explain the types of JOINs.
+Q005860	E	Is there a good reason VARCHAR(255) is used so often?
+Q005861	M	How do null values affect performance?
+Q006253	E	What is a view in a database, and what is a virtual table?
+Q006254	M	What do you think is the most important consideration when designing a database?
+Q006309	E	What is the difference between SQL and PL/SQL?
+Q006312	E	What are the types of subquery?
+Q006313	E	How do you create a table in SQL?
+Q006314	E	What are tables and fields?
+Q006315	E	How do you delete a table in SQL Server?
+Q006316	E	How do you update a database table using SQL?
+Q006317	E	What is a database relationship?
+Q006318	E	What is a primary key of a database?
+Q006319	E	What is a unique key?
+Q006320	E	What is a foreign key of a database?
+Q006321	E	What is database normalization?
+Q006322	E	What are the database normalization forms?
+Q006323	E	What is a stored procedure?
+Q006324	E	Why do we use stored procedures?
+Q006325	E	How do you create a stored procedure?
+Q006326	E	What is a function in SQL Server?
+Q006327	E	What are the different types of functions in SQL Server?
+Q006328	E	What is a trigger in SQL Server?
+Q006329	E	Why do we need triggers?
+Q006331	E	What are the different types of triggers?
+Q006332	E	What is a view in a database?
+Q006333	E	Why do we need views in a database?
+Q006334	E	What is the difference between a primary key and a unique key?
+Q006335	M	How can you increase SQL performance?
+Q006341	M	What is fill factor, and when does a page split occur?
+Q006343	E	What is the difference between the DELETE and TRUNCATE commands?
+Q006344	M	If locking is not implemented in a database, what issues can occur?
+Q006345	M	What are the different transaction isolation levels in SQL Server?
+Q006346	M	What are the different types of locks in SQL Server?
+Q006348	M	What is lock escalation?
+Q006350	E	What is the difference between a HAVING clause and a WHERE clause?
+Q006352	E	What are the different types of triggers in SQL Server?
+Q006355	M	What is the difference between a stored procedure and a user-defined function?
+Q006361	E	Why do you need an index in a database?
+Q006362	E	What is a query in a database?
+Q006363	E	What are the query types in a database?
+Q006364	E	What is a join in SQL?
+Q006366	E	What is a user-defined function?
+Q006367	E	What are the types of user-defined functions?
+Q006368	E	What are the different types of collation sensitivity?
+Q006369	E	What are the advantages and disadvantages of stored procedures?
+Q006370	E	What is Online Transaction Processing (OLTP)?
+Q006371	M	What is a recursive stored procedure?
+Q006372	E	What are the UNION, MINUS, and INTERSECT commands?
+Q006373	E	What is an ALIAS in SQL?
+Q006374	E	What is the difference between the TRUNCATE and DROP statements?
+Q006375	E	What are aggregate and scalar functions?
+Q006376	E	What is an inner join in SQL?
+Q006377	E	What is an outer join in SQL?
+Q006378	E	What is a full join in SQL?
+Q006379	E	What is a left join in SQL?
+Q006380	E	What is a right join in SQL?
+Q006388	E	How do you select data from a SQL table?
+Q006389	E	What is a CHECK constraint in SQL?
+Q006390	E	What is a DEFAULT constraint in SQL?
+Q006391	E	How do you create a database using SQL?
+Q006392	E	What is a constraint in SQL?
+Q006393	E	What is data integrity?
+Q006394	E	What is auto increment in SQL?
+Q006395	M	What is the difference between a clustered and a non-clustered index?
+Q006396	E	How do you define constraints in SQL?
+Q006397	E	What is the meaning of NOT NULL in SQL?
+Q006398	E	How do you alter a table schema in SQL?
+Q006399	E	How do you create an index in SQL?
+Q006400	E	How do you get unique records in SQL?
+Q006402a	E	What are the ACID properties?
+Q006402b	E	What are transactions in SQL Server?
+Q006403	E	How do GROUP BY and ORDER BY differ?
+Q006404	E	Compare SQL and PL/SQL.
+Q006407	M	When is the UPDATE STATISTICS command used?
+Q006410	M	How does a correlated query work?
+Q006411	M	When is an explicit cursor used?
+Q006416	M	How can you delete duplicate records in a table that has no primary key?
+Q006420	M	How do you maintain database integrity so that deletions from one table automatically cause deletions in another table?
+Q006422	E	What is the SQL CASE statement used for? Explain with an example.
+Q006430	M	What is denormalization in a SQL database? Give examples.
+Q006431	M	Can you explain the buffer cache and the log cache in SQL Server?
+Q006440	E	Write an SQL query to display the current date.
+Q006441	M	Write an SQL query to check whether a date passed to the query is in a given format.
+Q006442	E	Write an SQL query to print the names of distinct employees whose date of birth is between 01/01/1960 and 31/12/1975.
+Q006443	E	Write an SQL query to find the number of employees by gender whose date of birth is between 01/01/1960 and 31/12/1975.
+Q006444	E	Write an SQL query to find employees whose salary is greater than or equal to 10000.
+Q006445	E	Write an SQL query to find the names of employees whose name starts with 'M'.
+Q006446	E	Write an SQL query to find all employee records containing the word "Joe", regardless of whether it was stored as JOE, Joe, or joe.
+Q006447	E	Write an SQL query to find the year from a date.
+Q006448	E	How can you create an empty table from an existing table?
+Q006449	M	How do you fetch common records from two tables?
+Q006450	M	How do you fetch alternate records from a table?
+Q006452	E	What is the command used to fetch the first 5 characters of a string?
+Q006453	E	Which operator is used in a query for pattern matching?
+Q006454a	M	Write an SQL query to find duplicate rows in a database.
+Q006454b	M	Write an SQL query to delete duplicate rows in a database.
+Q006455	M	How do you find all employees who are also managers?
+Q006456	M	You have a composite index on three columns, and you provide the values of only two columns in the WHERE clause of a select query. Will the index be used for this operation?
+Q006457	E	What is the default join in SQL? Give an example query.
+Q006458	E	Describe all the joins in SQL with examples.
+Q006459	E	What are UNION and UNION ALL? Explain the differences.
+Q006466	E	Why do we need normalization?
+Q012538	M	What is the difference between the MySQL storage engines InnoDB and MyISAM?
+Q010383	M	An AI assistant proposes 'SELECT DISTINCT' to make a duplicate-row test pass. What is your response?
+Q010384	M	How would you let a team use AI for SQL authoring without letting fan-out (join duplication) bugs reach dashboards?
+D01115	E	What are the ACID properties of a transaction, and how does a database implement each of them?
+D01116	M	How are atomicity and durability typically implemented with undo logs, redo logs and write-ahead logging?
+D01117	E	What concurrency anomalies can occur: lost update, dirty read, non-repeatable read and phantom read?
+D01118	M	What is the difference between a non-repeatable read and a phantom read, with an example of each?
+D01119	E	Describe the four SQL isolation levels and which anomalies each permits.
+D01120	M	How are the isolation levels implemented in practice using locks or multi-version concurrency control?
+D01121	M	What is the default isolation level in common relational databases and why was it chosen?
+D01122	M	What does AUTOCOMMIT do, and what risks arise when a connection leaves transactions open?
+D01123	M	Compare row-level, page-level and table-level locking: granularity versus overhead and concurrency.
+D01124	M	What are shared and exclusive locks, and what are intention locks used for?
+D01125	M	Explain the three-level locking protocol and which anomalies each level prevents.
+D01126	M	What is two-phase locking, and how does it guarantee serializability? Why can it still deadlock?
+D01127	M	What are optimistic and pessimistic locking, and when is each appropriate?
+D01128	M	What is MVCC, and how do version numbers, undo logs and read views let readers avoid blocking writers?
+D01129	M	What is the difference between a snapshot read and a current read?
+D01130	M	Explain record locks, gap locks and next-key locks and how they prevent phantom reads at repeatable read.
+D01131	M	Why can gap locking lead to unexpected lock waits or deadlocks on inserts?
+D01132	M	How does a database detect a deadlock between transactions and what does it do about it?
+D01133	H	Two concurrent transactions each check a balance and then withdraw. How could this produce a negative balance and how would you prevent it?
+D01134	M	What are functional dependencies and how do they lead to update, insert and delete anomalies?
+D01135	E	Explain 1NF, 2NF, 3NF and BCNF with examples of violations.
+D01136	M	When is it reasonable to denormalize a schema, and what do you give up?
+D01137	M	What is the difference between a primary key, a candidate key, a super key and a foreign key?
+D01138	M	How do you represent one-to-many, many-to-many and ternary relationships and subclass hierarchies from an ER diagram in relational tables?
+D01139	E	What are the different types of SQL joins and how do inner, left, right and full outer joins differ?
+D01140	M	What is a self join and a natural join, and when would you use a self join?
+D01141	M	What is the difference between WHERE and HAVING, and between GROUP BY and ORDER BY?
+D01142	M	What is the difference between DELETE, TRUNCATE and DROP regarding rollback, speed, triggers and storage?
+D01143	M	What is the difference between UNION and UNION ALL?
+D01144	M	Write a SQL query to find the second highest salary in a table without using LIMIT-based tricks that fail on ties.
+D01145	M	Write a query to find employees who earn more than their managers.
+D01146	M	Write a query to find duplicate emails and then delete all but one record for each.
+D01147	M	Write a query that returns the highest paid employee in each department including ties.
+D01148	M	How would you find customers who have never placed an order? Compare the NOT IN, LEFT JOIN and NOT EXISTS approaches.
+D01149	M	Write a query to find numbers that appear at least three times consecutively in a log table.
+D01150	M	How would you rank scores with dense ranking using window functions versus without them?
+D01151	M	How would you swap every two adjacent seat IDs in a table using a single UPDATE or SELECT?
+D01152	M	What are views, and what are their benefits and limitations (updatability, performance)?
+D01153	M	What are stored procedures and what are their pros and cons compared with application-side logic?
+D01154	M	What is a database cursor and why can cursor-based row-by-row processing be slow?
+D01155	M	What are triggers, and what risks do they bring to maintainability and performance?
+D01156	E	Why is the B+ tree the standard index structure for relational databases, and how does it differ from a B tree?
+D01157	M	Compare B+ tree indexes with hash indexes: which queries does each support?
+D01158	M	Why are B+ trees preferred over balanced binary trees or red-black trees for disk-based indexes?
+D01159	M	What is a clustered index versus a secondary index, and why can a secondary index lookup need a second lookup?
+D01160	M	What is a covering index and how does it avoid table access?
+D01161	M	Explain the leftmost-prefix rule for composite indexes and how to decide the column order.
+D01162	M	In which situations will an index not be used (functions on columns, implicit casts, leading wildcards, OR)?
+D01163	M	When should you create an index, and when is indexing a column a bad idea?
+D01164	M	What are the write-side costs of indexes and how do too many indexes hurt a write-heavy workload?
+D01165	M	Which index types exist (primary, unique, full-text, spatial, prefix) and what is each good for?
+D01166	M	How do you read an EXPLAIN plan, and what do access types such as ALL, index, range, ref and const tell you?
+D01167	H	A query that was fast last week now takes seconds. How would you investigate using execution plans, statistics and indexes?
+D01168	M	How would you optimize a slow query that uses LIMIT with a large offset for pagination?
+D01169	M	What strategies can reduce data access cost: selecting fewer columns, avoiding SELECT *, caching and breaking down large joins?
+D01170	M	Why can splitting a join into multiple simple queries sometimes be faster?
+D01171	M	Compare InnoDB and MyISAM regarding transactions, locking granularity, crash recovery and foreign keys.
+D01172	M	What are the trade-offs between CHAR and VARCHAR, and between DATETIME and TIMESTAMP?
+D01173	M	Why should you avoid storing monetary values in floating-point types?
+D01174	M	What roles do the binary log, relay log and replication threads play in leader-follower replication?
+D01175	M	How does master-slave replication work, and how can read-write splitting use it?
+D01642	E	What are the ACID properties of a database transaction?
+D01643	M	How do databases implement atomicity and durability using logs and recovery?
+D01644	M	What do commit and rollback do, and what is the role of savepoints?
+D01645	M	Why is transaction scope a trade-off between consistency and concurrency?
+D01646	E	What are the four standard transaction isolation levels?
+D01647	M	Define dirty read, non-repeatable read and phantom read, and state which isolation levels prevent each.
+D01648	M	What are the performance trade-offs of choosing SERIALIZABLE versus READ COMMITTED?
+D01649	H	How does MVCC provide snapshot reads without blocking writers, and what anomalies can still occur such as write skew?
+D01650	M	What is the difference between optimistic and pessimistic locking, and when is each better?
+D01651	M	How can two concurrent transactions deadlock in a database and how do databases detect and resolve it?
+D01652	M	How do shared and exclusive locks differ, and what does two-phase locking guarantee?
+D01653	E	What is a database index and why does it speed up reads?
+D01654	M	What are the costs of adding indexes to a table?
+D01655	M	Why do most databases use B+ trees for indexes instead of binary search trees or hash tables?
+D01656	M	What is the difference between a B-tree and a B+ tree, and why is the B+ tree better for range queries?
+D01657	M	When is a hash index preferable to a B+ tree index, and what can it not do?
+D01658	M	What is the difference between clustered and non-clustered indexes?
+D01659	M	What is a composite index and how does the order of columns affect which queries can use it?
+D01660	M	What is index selectivity (cardinality) and why does it matter when deciding which columns to index?
+D01661	M	What is a covering index and how does it avoid table lookups?
+D01662	M	Name situations in which a query does not use an available index, such as functions on the column or leading wildcards.
+D01663	H	A query on a large table suddenly became slow. How would you diagnose it using the execution plan and fix it?
+D01664	E	What are primary key, candidate key, super key, alternate key and foreign key?
+D01665	M	What are the trade-offs between a natural key and a surrogate key as a primary key?
+D01666	M	What does a foreign key constraint enforce, and what are cascading actions on delete or update?
+D01667	E	Explain inner, left, right and full outer joins.
+D01668	M	What is the difference between a cross join, a self join and a natural join?
+D01669	M	How do nested loop, hash and merge joins work, and when does the optimizer prefer each?
+D01670	M	What is the difference between WHERE and HAVING?
+D01671	M	What is the difference between UNION and UNION ALL, and between IN, EXISTS and JOIN for filtering?
+D01672	M	What is the difference between DELETE, TRUNCATE and DROP?
+D01673	E	What is database normalization and what problems (anomalies) does it prevent?
+D01674	M	Explain 1NF, 2NF and 3NF with examples of the violations each fixes.
+D01675	M	What is BCNF and how does it differ from 3NF?
+D01676	M	When and why would you deliberately denormalize a schema?
+D01677	M	What are the pros and cons of stored procedures compared with application-side SQL?
+D01678	M	What are views, triggers and stored procedures and when is each appropriate?
+D01679	M	What is the difference between a view and a materialized view?
+D01871	M	What is the difference between a primary index and a secondary index?
+D01872	M	What is the difference between DDL, DML, DCL and TCL in SQL?
+D01873	M	What is the difference between a transaction rollback caused by a deadlock and one caused by a constraint violation?
+D02084	E	What is the difference between a database, a DBMS, a database system and a DBA?
+D02085	E	Define candidate key, primary key, foreign key, prime attribute and non-prime attribute in the relational model.
+D02086	E	What is an ER diagram and how do you map entities and relationships to tables?
+D02087	M	Explain the first three normal forms and Boyce-Codd normal form. Give an example of a violation of each.
+D02088	M	When is it reasonable to denormalise a schema, and what costs does it introduce?
+D02089	E	What is the difference between a primary key and a foreign key?
+D02090	M	Why do many large-scale systems avoid foreign key constraints and cascading deletes in the database?
+D02091	E	What are stored procedures and what are their advantages and drawbacks?
+D02092	E	What is the difference between DROP, DELETE and TRUNCATE?
+D02093	E	What is the difference between DML and DDL statements, and which ones can be rolled back?
+D02094	M	What steps do you follow when designing a database schema for a new application?
+D02095	E	What are views, triggers and cursors in SQL, and when would you avoid using them?
+D02096	E	What is the difference between WHERE and HAVING?
+D02097	E	Explain INNER, LEFT, RIGHT, FULL OUTER and CROSS joins with examples of when each is used.
+D02098	M	What is the difference between UNION and UNION ALL, and why is UNION ALL usually faster?
+D02099	M	Compare correlated and uncorrelated subqueries. When can a subquery be rewritten as a join, and does that help performance?
+D02100	M	How do aggregate functions treat NULL values, and how does COUNT(*) differ from COUNT(column) and COUNT(DISTINCT column)?
+D02101	M	How does NULL behave in comparisons, joins, GROUP BY and ORDER BY? What is three-valued logic?
+D02102	M	How would you find the Nth highest salary within each department? Compare window-function and subquery approaches.
+D02103	M	Compare ROW_NUMBER, RANK and DENSE_RANK window functions with a tie example.
+D02104	M	How do aggregate window functions with PARTITION BY and frame clauses compute running totals or moving averages?
+D02105	M	How do LAG and LEAD work, and how would you use them to compute month-over-month change?
+D02106	M	How would you find duplicate rows in a table and delete all but one?
+D02107	M	How would you find customers who have never placed an order? Compare NOT IN, NOT EXISTS and LEFT JOIN IS NULL.
+D02108	M	What is the logical processing order of a SELECT statement (FROM, WHERE, GROUP BY, HAVING, SELECT, ORDER BY, LIMIT)?
+D02109	M	How do CASE expressions and conditional aggregation help pivot rows into columns?
+D02110	M	What is the difference between a self join and a hierarchical query, and how would you query a tree stored in a table?
+D02111	E	What are the ACID properties of a transaction? Explain each with an example.
+D02112	M	Which mechanisms in a database implement atomicity, consistency, isolation and durability?
+D02113	E	What problems can occur with concurrent transactions: dirty read, non-repeatable read, phantom read and lost update?
+D02114	M	What is the difference between a non-repeatable read and a phantom read?
+D02115	E	Describe the four SQL standard isolation levels and which anomalies each prevents.
+D02116	M	What is the default isolation level in MySQL InnoDB and why was it chosen? Is isolation implemented purely with locks?
+D02117	M	Compare lock-based and MVCC-based concurrency control. What are the trade-offs?
+D02118	H	Explain how InnoDB implements MVCC using undo logs, hidden columns and read views.
+D02119	M	How does MVCC behave differently under READ COMMITTED and REPEATABLE READ?
+D02120	H	Does MVCC fully prevent phantom reads in InnoDB? How do next-key locks complement it, and what remains for locking reads?
+D02121	M	What is the difference between a snapshot read and a current read?
+D02122	M	Compare table-level and row-level locks. What are the benefits and drawbacks of each?
+D02123	M	What kinds of row locks does InnoDB have: record lock, gap lock and next-key lock? When is each used?
+D02124	M	What are shared and exclusive locks, and how do intention locks speed up table-lock checks?
+D02125	M	Why can an UPDATE that filters on a non-indexed column lock the whole table in InnoDB?
+D02126	M	How do two transactions deadlock in a database, how does InnoDB resolve it, and how would you reduce deadlock frequency?
+D02127	M	Describe optimistic and pessimistic concurrency control in databases. When is each suitable?
+D02128	E	Why do databases use indexes, and what are the costs of having many indexes?
+D02129	M	Why do relational databases use B+ trees rather than hash tables for indexes?
+D02130	M	Why use a B+ tree instead of a B tree or a binary search tree for database indexes?
+D02131	M	When does a hash index outperform a B+ tree index, and what query types can it not support?
+D02132	M	What is the difference between a clustered and a non-clustered (secondary) index?
+D02133	M	Why does a secondary-index lookup in InnoDB need a second lookup into the clustered index, and how can that be avoided?
+D02134	M	What is a covering index and how does it improve query performance?
+D02135	M	Explain composite indexes and the leftmost prefix rule. How do you choose column order?
+D02136	M	What is index condition pushdown and when does it reduce table lookups?
+D02137	M	Which columns are good candidates for indexing and which are not?
+D02138	M	What are the common causes of an index not being used: functions on columns, leading wildcard, OR conditions, implicit type conversion?
+D02139	M	Why does comparing a string column to a numeric literal cause an index to be ignored while the reverse case does not?
+D02140	M	Why can LIKE '%abc' not use a B+ tree index, and what alternatives exist for suffix or substring search?
+D02141	M	How does the optimizer handle OR conditions and index merge, and why can IN/NOT IN lead to full scans?
+D02142	M	Is SELECT * always bad for index usage? What are the trade-offs?
+D02143	M	How can ORDER BY with LIMIT end up using filesort or a bad index, and how would you fix it?
+D02144	M	Why should primary keys be monotonically increasing in a clustered-index engine, and what are the downsides of random UUID primary keys?
+D02145	M	How do you read an EXPLAIN plan? What do type, key, rows and Extra tell you?
+D02146	M	A query that was fast is now slow. Describe how you diagnose it with slow query logs, EXPLAIN and statistics.
+D02147	M	What are common SQL optimisation techniques you apply to slow queries?
+D02148	M	How do you optimise deep pagination queries such as LIMIT 1000000, 20?
+D02149	M	What is the difference between keyset (seek) pagination and offset pagination?
+D02150	M	Describe the components of the MySQL architecture: connector, parser, optimizer, executor and storage engine. How is a SELECT executed?
+D02151	M	Why was the MySQL query cache removed in 8.0, and what made it ineffective under write-heavy workloads?
+D02152	M	Compare MyISAM and InnoDB: transactions, locking, crash recovery, foreign keys and index layout.
+D02153	M	What are the roles of redo log, undo log and binlog in MySQL?
+D02154	H	Why does MySQL use a two-phase commit between redo log and binlog, and what could go wrong without it?
+D02155	M	How does the redo log provide crash recovery and what is write-ahead logging?
+D02156	M	Explain the redo log flush policies (innodb_flush_log_at_trx_commit) and the durability versus performance trade-off.
+D02157	M	Compare the binlog formats STATEMENT, ROW and MIXED. What are the consequences for replication safety?
+D02158	M	What is the difference between redo log and binlog in terms of layer, content and use?
+D02159	M	How does the undo log support both rollback and MVCC, and what happens when long transactions keep old versions alive?
+D02160	M	What is the difference between CHAR and VARCHAR, and why does VARCHAR(100) versus VARCHAR(10) matter beyond storage?
+D02161	M	Why use DECIMAL instead of FLOAT or DOUBLE for monetary values?
+D02162	M	Why is storing large TEXT or BLOB columns discouraged, and should files like images be stored in the database?
+D02163	M	Compare DATETIME, TIMESTAMP and integer Unix timestamps for storing times. How do time zones and range limits influence the choice?
+D02164	M	Why should dates not be stored as strings?
+D02165	E	What is the difference between NULL and an empty string in SQL, and what problems can NULL cause for indexes and queries?
+D02166	M	Should a phone number or an IP address be stored as an integer or a string? Justify the choice.
+D02167	M	Why can an auto-increment primary key have gaps after rollbacks, failed inserts or restarts?
+D02168	M	Where is the auto-increment counter persisted, and what happens to it after a restart in different MySQL versions?
+D02169	M	What are RTO and RPO and how do they drive a database backup strategy?
+D02170	M	Compare logical and physical backups, and explain how binlog-based point-in-time recovery works.
+D02171	M	Why is an untested backup not a backup, and how would you design a restore drill?
+D02172	M	What is the difference between a character set and a collation, and why is utf8mb4 preferable to utf8 in MySQL?
+D02173	E	What is the difference between a character set and a character encoding, and how do ASCII, GBK and UTF-8 compare?
+D02174	M	Why does the same table sometimes show garbled text after migration between systems, and how do you troubleshoot charset mismatches?
+D02175	M	How do you evaluate and plan a hot and cold data separation strategy for a large table?
+D02176	M	What are the indexing, naming and field-design rules you would enforce for a high-performance MySQL schema?
+D02177	M	What are the risks of long-running transactions and large transactions in a relational database?
+D02178	M	What is a database view and when does a materialised view make sense?
+D02179	M	Why does a JOIN on columns with different data types or character sets perform poorly?
+D02180	M	Describe the nested loop join, hash join and sort-merge join strategies and when each is chosen.
+D02335	M	What is a savepoint in a transaction, and how can it be used for partial rollback?
+D02336	M	Explain how write-ahead logging, checkpoints and group commit interact in a relational database engine.
+D02337	M	How does a database buffer pool work and how do its size and hit ratio affect performance?
+D02338	M	What are the trade-offs of a UUID, auto-increment or snowflake ID as a primary key?
+D02339	M	How would you add a column or an index to a billion-row table in production without downtime?
+D02340	M	Why can COUNT(*) be slow on large InnoDB tables, and how do you speed up counting?
+D02341	M	What are the differences between a unique index, a prefix index and a full-text index?
+D02342	M	How does the query optimizer choose between candidate indexes, and why can stale statistics lead to a bad plan?
+D02343	M	What does the EXPLAIN type column progression (ALL, index, range, ref, eq_ref, const) mean for performance?
+D02344	M	What do Using filesort and Using temporary in an EXPLAIN output mean, and how do you eliminate them?
+D02345	M	How can a gap lock cause unexpected lock waits under REPEATABLE READ?
+D02346	M	How do you handle a hot-row update such as an inventory decrement without heavy lock contention?
+D02347	M	How does SELECT FOR UPDATE differ from a plain SELECT within a transaction?
+D02348	M	How does MySQL master-replica replication work using the binlog, relay log and IO/SQL threads?
+D04041	E	Explain the four ACID properties with a bank transfer example.
+D04042	M	What are the transaction isolation levels and which anomalies does each allow?
+D04043	M	Compare pessimistic and optimistic locking. When would each be a better fit?
+D04044	M	What are the different kinds of database locks, such as shared, exclusive, row, table, and intent locks?
+D04045	M	What is a database deadlock, how does it occur, and how do systems detect and resolve it?
+D04046	M	How is a SQL statement executed inside a database, from parsing to execution plan?
+D04047	M	Explain the differences between inner, left, right, and full outer joins and how the database may execute them.
+D04048	E	What are the life-cycle states of a database transaction?
+D04049	M	What are the dependencies, keys, and anomalies that motivate normalization?
+D04050	M	Why can a query still be slow even if an index exists on the filtered column?

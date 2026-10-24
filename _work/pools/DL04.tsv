@@ -1,0 +1,67 @@
+Q001265	E	Explain Recurrent Neural Networks (RNNs) and their use cases.
+Q001266	M	Discuss the architecture and applications of Long Short-Term Memory networks (LSTMs).
+Q001798	E	How does a feedforward neural network differ from recurrent neural networks (RNNs)?
+Q002066	E	What are Recurrent Neural Networks (RNNs), and how do they differ from feedforward neural networks?
+Q002067	E	Explain the concept of time steps in the context of RNNs.
+Q002068	E	What types of sequences are RNNs good at modeling?
+Q002069	M	Can you describe how the hidden state in an RNN operates?
+Q002070	M	What are the challenges associated with training vanilla RNNs?
+Q002071	M	Discuss the importance of activation functions in RNNs.
+Q002072	M	How does backpropagation through time (BPTT) work in RNNs?
+Q002073	M	What are some limitations of BPTT, and how can they be mitigated?
+Q002074	M	Explain the vanishing gradient problem in RNNs and why it matters.
+Q002075	M	What is the exploding gradient problem, and how can it affect RNN performance?
+Q002076	M	What are Long Short-Term Memory (LSTM) networks, and how do they address the vanishing gradient problem?
+Q002077	M	Describe the gating mechanism of an LSTM cell.
+Q002078	M	Explain the differences between LSTM and GRU (Gated Recurrent Unit) networks.
+Q002079	M	How do attention mechanisms work in conjunction with RNNs?
+Q002080	M	What are Bidirectional RNNs, and when would you use them?
+Q003991	M	Write the equation describing a dynamical system. Can you unfold it? Now, can you use this to describe an RNN?
+Q003992	M	What determines the size of an unfolded graph?
+Q003993	M	What are the advantages of an unfolded computational graph in RNNs?
+Q003994	M	What does the output of the hidden layer of an RNN at an arbitrary time t represent?
+Q003995	M	Are the outputs of the hidden layers of RNNs lossless? If not, why?
+Q003996	M	RNNs are used for various tasks. From an RNN's point of view, which tasks are more demanding than others?
+Q003997	M	Discuss some examples of important design patterns of classical RNNs.
+Q003998	H	Write the equations for a classical RNN where the hidden layer has recurrence. How would you define the loss in this case? What problems might you face while training it?
+Q003999	E	What is backpropagation through time (BPTT)?
+Q004000	M	Consider an RNN that has only output-to-hidden recurrence. What are its advantages or disadvantages compared to an RNN having only hidden-to-hidden recurrence?
+Q004001	M	What is teacher forcing? Compare and contrast it with BPTT.
+Q004002	M	What is the disadvantage of using a strict teacher forcing technique? How can this be solved?
+Q004003	H	Explain the vanishing/exploding gradient phenomenon for recurrent neural networks.
+Q004004	H	Why don't we see the vanishing/exploding gradient phenomenon in feedforward networks?
+Q004005	M	What is the key difference in architecture of LSTMs/GRUs compared to traditional RNNs?
+Q004006	E	What is the difference between LSTM and GRU?
+Q004008	H	Discuss RNNs in the context of Bayesian Machine Learning.
+Q004126	M	Why is it difficult to train an RNN with SGD?
+Q004127	M	How do you tackle the problem of exploding gradients in RNNs?
+Q004128	M	What is the problem of vanishing gradients in RNNs?
+Q004129	M	How do you tackle the problem of vanishing gradients in RNNs?
+Q004130	M	Explain the memory cell of an LSTM.
+Q004131	M	What type of regularization do you use in an LSTM?
+Q004514	M	How do you preprocess time-series data for RNNs?
+Q004518	M	Compare RNNs, LSTMs, and GRUs.
+Q004399	M	How do you apply dropout to an LSTM?
+Q004718	M	How do RNNs and Transformers differ?
+Q005286	E	What is a Recurrent Neural Network (RNN)?
+Q005287	M	What are the limitations of RNNs, and how are they solved?
+Q005288	M	What are LSTM and GRU? How do they solve long-term dependency issues?
+Q005289	M	What are the main gates in an LSTM and their roles?
+Q005303	E	What are Seq2Seq models?
+Q005475	E	List the key components of an LSTM.
+Q005476	E	List the variants of RNN.
+Q006624	M	Explain the problem with RNNs. How does LSTM help solve it?
+Q012021	M	How do GRU cells work, and how do they address the vanishing gradient problem? How does a BiLSTM work?
+Q012551	M	Discuss the vanishing gradient problem in RNNs and how it can be solved.
+Q012552	E	What are the main gates in an LSTM and what are their tasks?
+Q007266	M	Walk me from RNNs to LSTMs to transformers. Why did attention win?
+Q007268	H	Why does the LSTM's additive cell state help gradients when the gates themselves are multiplicative?
+Q007408	M	What are state-space models trying to recover from RNNs?
+D03474	M	How are RNNs and LSTMs used for trajectory prediction of other agents on the road, and what are alternatives?
+D03746	M	What is backpropagation through time and why does it lead to vanishing or exploding gradients in RNNs?
+D03747	M	How do LSTM gates mitigate the vanishing gradient problem?
+D03748	M	How does a sequence-to-sequence model work and what limitation motivated attention?
+D04604	M	Why did LSTMs and GRUs replace vanilla RNNs, and what do the forget, input and output gates do?
+D04605	M	How does the vanishing gradient problem manifest in RNNs, and how does an LSTM cell state mitigate it?
+D04606	M	Compare GRU and LSTM in parameters and when you would choose one.
+D04607	M	What are the benefits of a bidirectional RNN and when can it not be used?

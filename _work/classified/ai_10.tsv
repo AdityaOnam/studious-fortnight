@@ -1,0 +1,300 @@
+Q005329	GA05	M	How do you handle bias and fairness in LLMs?
+Q005330	LLM03	E	What are some real-world applications of LLMs in business and tech?
+Q005331	LLM01	M	How does the Transformer architecture improve LLM performance over RNNs?
+Q005332	LLM01	M	How does attention help capture long-range dependencies?
+Q005333	LLM02	E	What is subword tokenization?
+Q005334	LLM02	E	What is BPE (Byte Pair Encoding) in LLMs?
+Q005335	LLM02	E	What is positional embedding in LLMs?
+Q005336	LLM05	E	What is temperature in the context of LLMs?
+Q005337	LLM07	M	Why do LLMs hallucinate?
+Q005338	LLM05	E	What are stop tokens in LLMs?
+Q005339	DL01	E	What are skip connections?
+Q005340	DL02	M	What is dropout, and how is it applied in LLMs?
+Q005341	LLM01	M	Why does attention use softmax?
+Q005342	RAG03	E	What does a vector database store for LLM usage?
+Q005343	LLM05	E	What is the context window in an LLM?
+Q005344	FT05	M	Explain prompting, Retrieval-Augmented Generation (RAG), and fine-tuning.
+Q005345	FT04	M	How does knowledge distillation work?
+Q005346	ML06	E	What are precision, recall, F1 score, and accuracy?
+Q005347	ML06	E	What is the confusion matrix, and how do you interpret it?
+Q005348	ML06	E	What are common evaluation metrics for classification?
+Q005349	ML06	M	When would you use accuracy vs other metrics?
+Q005350	ML06	M	When would you use log loss vs accuracy?
+Q005351	ML06	M	What metrics would you use for a multi-class classification problem?
+Q005352	ML06	M	How do you handle class imbalance in classification metrics?
+Q005353	ML06	E	What is the ROC curve? What is AUC?
+Q005354	DROP	-	dup
+Q005355	ML06	E	What are common evaluation metrics for regression?
+Q005356	ML06	E	What is the difference between MAE, MSE, and RMSE?
+Q005357	ML06	M	How do you choose the right evaluation metric for a given problem?
+Q005358	ML06	M	How do you compare the performance of different models?
+Q005359	ML06	E	Explain cross-validation and its importance.
+Q005360	ML06	E	What is hyperparameter tuning?
+Q005361	ML06	M	How do you evaluate unsupervised learning models?
+Q005362	ML06	M	How do you evaluate a clustering algorithm?
+Q005363	ML06	M	What metrics would you use for a recommendation system?
+Q005364	ML08	M	What is A/B testing in the context of ML?
+Q005365	MS03	H	Design a machine learning system for YouTube video recommendation.
+Q005366	MS03	H	Design a machine learning system for YouTube video search.
+Q005367	MS03	H	Design a machine learning system for a personalized content feed.
+Q005368	MS03	H	Design a machine learning system for harmful content detection.
+Q005369	MS03	H	Design a machine learning system for similar listings on Airbnb.
+Q005370	MS03	H	Design a machine learning system for replacement product recommendation.
+Q005371	MS03	H	Design a machine learning system for event recommendation.
+Q005372	MS03	H	Design a machine learning system for multimodal search.
+Q005373	MS03	H	Design a machine learning system for ad click prediction.
+Q005374	MS03	H	Design a machine learning system to estimate delivery time.
+Q005375	MS03	H	Design a machine learning system for image search.
+Q005376	MS03	H	Design a machine learning system for friends recommendation.
+Q005377	MS03	H	Design a machine learning product recommendation system for an e-commerce platform.
+Q005378	MS03	H	How would you build a system to detect fraudulent transactions?
+Q005379	ML10	M	How would you approach a time series forecasting problem?
+Q005380	MS03	H	How would you build a spam detection system?
+Q005381	DL03	M	Describe how you would implement an image classification system.
+Q005382	DL06	M	What approach would you take for a sentiment analysis task?
+Q005383	MS03	H	How would you design a customer churn prediction model?
+Q005384	MS03	H	What would be your approach to ranking search results?
+Q005385	ML10	H	How would you build a system to detect anomalies in network traffic?
+Q005386	ML01	M	How do you choose the right machine learning algorithm?
+Q005387	MS01	M	What is model drift, and how do you handle it?
+Q005388	MS02	M	How would you handle large-scale data for training?
+Q005389	ML05	M	How do you deal with noisy data in machine learning models?
+Q005390	DL02	M	What strategies would you use to optimize the training time for a deep learning model?
+Q005391	MS01	M	How do you deploy an ML model in production?
+Q005392	MS01	M	How do you monitor a model's performance in production?
+Q005393	MS01	M	How would you deploy a model with low-latency requirements?
+Q005394	MS01	M	What are the common challenges when deploying ML models?
+Q005395	MS03	M	Discuss scalability and latency requirements for ML systems.
+Q005396	MS01	M	How do you ensure your model is scalable and performs well with large datasets?
+Q005397	ML06	E	What is model explainability? Why is it important?
+Q005398	ML06	M	What techniques would you use to make a model more interpretable?
+Q005399	ML06	M	Describe your approach to debugging an underperforming ML model.
+Q005400	MS01	E	Explain MLOps and its key components.
+Q005401	MS02	E	What is a feature store, and why is it important?
+Q005402	ML01	E	Explain the bias-variance tradeoff.
+Q005403	ML08	E	Explain different probability distributions (Normal, Binomial, Poisson, Uniform).
+Q005404	ML08	E	What is the normal distribution and its functions?
+Q005405	ML08	E	What is an exponential distribution?
+Q005406	ML08	E	What is the binomial distribution?
+Q005407	ML08	E	What is the Bernoulli distribution?
+Q005408	ML08	E	What is the multinomial distribution?
+Q005409	ML08	E	What is the lognormal distribution?
+Q005410	ML08	E	What is a logistic distribution?
+Q005411	ML08	E	What is the gamma distribution and its functions?
+Q005412	ML08	M	When would you use a Poisson distribution over a binomial distribution?
+Q005413	ML08	E	What is the variance?
+Q005414	ML08	E	Explain the difference between mean, median, and mode.
+Q005415	ML08	E	What is the difference between correlation and covariance?
+Q005416	ML08	E	What does a correlation coefficient of +1, 0, and -1 indicate?
+Q005417	ML08	E	Explain correlation vs causation.
+Q005418	ML08	E	What are Type I and Type II errors?
+Q005419	ML08	E	What is a p-value? What does statistical significance mean?
+Q005420	ML08	M	Explain p-values and their limitations.
+Q005421	ML08	M	What is hypothesis testing, and when is it used in ML?
+Q005422	ML08	M	What statistical tests would you use to compare two models?
+Q005423	ML08	M	How do you assess if a feature is statistically significant?
+Q005424	ML08	E	What is a confidence interval, and how is it used?
+Q005425	ML08	E	What are z-score and t-score? When do you use each?
+Q005426	ML08	M	Explain Bayes' theorem. How is it relevant to Naive Bayes or Bayesian methods?
+Q005427	ML07	M	What is the difference between MLE and MAP estimation?
+Q005428	ML07	E	What is Maximum Likelihood Estimation (MLE)?
+Q005429	ML08	M	Explain the Bayesian vs frequentist approach in statistics.
+Q005430	ML08	E	What is the Central Limit Theorem (CLT)? Why is it important?
+Q005431	ML08	E	What are sampling techniques?
+Q005432	ML08	M	What is the bootstrap method, and how is it used?
+Q005433	CODE01	E	Write a Python function to compute the mean squared error (MSE).
+Q005434	CODE01	E	Write a Python function to compute the mean absolute error (MAE).
+Q005435	CODE01	E	Implement a simple linear regression model from scratch.
+Q005436	CODE01	E	Implement a simple logistic regression model from scratch.
+Q005437	CODE01	E	Implement K-Nearest Neighbors (KNN).
+Q005438	CODE01	E	Implement the Sigmoid, Tanh, ReLU, LeakyReLU, and Softmax activation functions.
+Q005439	CODE01	M	How would you implement k-means clustering?
+Q005440	CODE01	M	Write code to perform k-fold cross-validation.
+Q005441	DL07	E	How would you use Pandas to load and clean data?
+Q005442	DROP	-	dup
+Q005443	CODE01	E	Write code to calculate precision and recall.
+Q005444	DROP	-	hr
+Q005445	ML05	M	How would you approach a project with limited labeled data?
+Q005446	MS01	M	What would you do if a model performs well in testing but poorly in production?
+Q005447	DROP	-	hr
+Q005448	DROP	-	hr
+Q005449	DROP	-	hr
+Q005450	DROP	-	hr
+Q005451	DROP	-	hr
+Q005452	DROP	-	hr
+Q005503	DL06	E	What is the difference between stemming and lemmatization?
+Q005504	DL06	M	What do you know about Latent Semantic Indexing (LSI)?
+Q005505	DL06	M	What do you know about dependency parsing?
+Q005506	DL06	M	Name different approaches for text summarization.
+Q005507	DL06	M	What approach would you use for part-of-speech tagging?
+Q005508	DL06	E	Explain what an n-gram model is.
+Q005509	DL06	E	Explain how TF-IDF measures word importance.
+Q005510	DL06	E	What is perplexity used for?
+Q005511	DL06	E	What is the Bag-of-Words model?
+Q005512	DL06	M	Explain how the Markov assumption affects the bigram model.
+Q005513	DL06	M	What are the most common word embedding methods? Explain each briefly.
+Q005514	DL06	M	What are the first few steps you would take before applying an NLP algorithm to a given corpus?
+Q005515	DL06	E	List a few types of linguistic ambiguities.
+Q005453	DROP	-	dup
+Q005454	ML01	E	Explain over- and under-fitting and how to combat them.
+Q005455	ML07	E	What is regularization, why do we use it, and what are some examples of common methods?
+Q005456	ML01	E	Can you explain the differences between supervised, unsupervised, and reinforcement learning?
+Q005457	ML01	E	What is the difference between a generative and a discriminative model?
+Q005458	ML01	E	What is the Turing test?
+Q005459	ML03	M	Why do ensembles typically have higher scores than individual models?
+Q005460	ML03	E	What is the difference between boosting and bagging?
+Q005461	ML02	E	Explain linear regression, logistic regression, decision tree, and random forest.
+Q005462	ML05	E	What is data normalization and why do we need it?
+Q005463	ML05	E	What is an imbalanced dataset? Can you list some ways to deal with it?
+Q005464	ML05	E	What is data augmentation? Can you give some examples?
+Q005465	ML05	E	When should you use label encoding vs. one-hot encoding?
+Q005466	ML07	E	What is a cost function?
+Q005467	DL02	M	What is momentum with respect to neural network optimization?
+Q005468	ML07	E	What is the difference between batch gradient descent and stochastic gradient descent?
+Q005469	DL01	E	How does a neural network work?
+Q005470	DL01	M	Why is ReLU better and more often used than sigmoid in neural networks?
+Q005471	DL01	E	List different activation functions.
+Q005472	DL01	E	What is the vanishing gradient problem?
+Q005473	DL02	M	What is batch normalization and why does it work?
+Q005474	DL03	M	What is the significance of residual networks?
+Q005475	DL04	E	List the key components of an LSTM.
+Q005476	DL04	E	List the variants of RNN.
+Q005477	DL05	E	What is an autoencoder? Name a few applications.
+Q005478	DL05	E	What are the components of a GAN?
+Q005479	DL03	M	Describe how convolution works. What changes if your inputs are grayscale vs RGB images? What determines the shape of the next layer?
+Q005480	DL03	M	Why do we use convolutions for images rather than just fully connected layers?
+Q005481	DL03	M	What makes CNNs translation invariant?
+Q005482	DL03	M	Why do we have max-pooling in classification CNNs?
+Q005483	DL03	M	Why would you use many small convolutional kernels such as 3x3 rather than a few large ones?
+Q005484	DL03	M	Why do segmentation CNNs typically have an encoder-decoder structure?
+Q005485	CODE01	M	Implement non-maximum suppression as efficiently as you can.
+Q005486	DL03	M	How would you remove outliers when trying to estimate a flat plane from noisy samples?
+Q005487	DL03	H	How does image registration work? Compare sparse vs. dense optical flow.
+Q005488	ML01	M	How do you combat the curse of dimensionality?
+Q005489	ML04	E	Explain Principal Component Analysis (PCA).
+Q005490	ML04	M	What is the difference between LDA and PCA for dimensionality reduction?
+Q005491	ML04	M	What is the difference between t-SNE and UMAP for dimensionality reduction?
+Q005492	ML05	E	Why do we need a validation set and a test set? What is the difference between them?
+Q005493	ML06	M	What is stratified cross-validation and when should we use it?
+Q005494	DROP	-	unfixable
+Q005495	DROP	-	dup
+Q005496	DROP	-	dup
+Q005497	CS07	M	How does a random number generator work, e.g. the rand() function in Python?
+Q005498	DROP	-	dup
+Q005499	DROP	-	dsa
+Q005500	DROP	-	dsa
+Q005501	DROP	-	dsa
+Q005502	DROP	-	dsa
+Q005721	MS03	H	How would you measure the difficulty level of a story?
+Q005722	MS03	H	Given a story, how would you edit it to make it easier or more difficult?
+Q005723	MS03	H	When you type a question on StackOverflow, you are shown a list of similar questions to make sure your question hasn't been asked before. How do you build such a system?
+Q005724	MS03	H	How would you design an algorithm to match pool riders for Lyft or Uber?
+Q005725	MS03	H	How would you build a trigger word detection algorithm to spot the word "activate" in a 10-second audio clip?
+Q005726	MS03	H	If you were to build a Netflix clone, how would you build a system that predicts when a user stops watching a TV show, whether they are tired of that show or just taking a break?
+Q005727	MS03	H	Imagine you were working on the iPhone. Every time users open their phones, you want to suggest the one app they are most likely to open first, with 90% accuracy. How would you do that?
+Q005728	MS03	H	Given a dataset of credit card purchases where each record is labelled as fraudulent or safe, how would you build a fraud detection algorithm?
+Q005729	DL06	M	How do you map nicknames (Pete, Andy, Nick, Rob, etc.) to real names?
+Q005730	MS04	H	How would you design a question answering system that can extract an answer from a large collection of documents given a user query?
+Q005731	DL06	M	How would you train a model to predict whether the word "jaguar" in a sentence refers to the animal or the car?
+Q005732	DL03	M	How would you create a model to recognize whether an image is a triangle, a circle, or a square?
+Q005733	DL03	H	Given only the CIFAR-10 dataset, how would you build a model to recognize whether an image belongs to one of the 10 CIFAR-10 classes or not?
+Q005734	MS03	H	When you enter a search query on Google, you are shown a list of related searches. How would you generate a list of related searches for each query?
+Q005735	MS03	H	How would you build a system to suggest trending hashtags on Twitter?
+Q005736	MS03	H	How would you build a system to display the top 10 results when a user searches for rental listings in a certain location on Airbnb?
+Q005737	DROP	-	notq
+Q005738	MS03	H	Design a machine learning system.
+Q005739	DROP	-	notq
+Q005740	DROP	-	notq
+Q005741	DROP	-	notq
+Q005742	DROP	-	notq
+Q005743	DROP	-	notq
+Q005744	DROP	-	notq
+Q005745	DROP	-	notq
+Q005746	DROP	-	notq
+Q005747	DROP	-	hr
+Q005748	DROP	-	hr
+Q005749	DROP	-	hr
+Q005750	DROP	-	hr
+Q005751	DROP	-	notq
+Q005752	MS03	H	For any user on Twitter, how would you suggest who they should follow? What do you do when that user is new? What are some of the limitations of data-driven recommender systems?
+Q005753	DROP	-	dup
+Q005754	MS03	H	Build a system that returns images associated with a query, like Google Images.
+Q005755	MS03	H	Each question on Quora often gets many different answers. How do you create a model that ranks all these answers? How computationally intensive is this model?
+Q005756	MS03	H	How would you build an autocompletion algorithm to finish your sentence when you text?
+Q005757	MS03	H	On social networks like Facebook, users can list their high schools. How would you estimate what percentage of listed high schools are real, and how would you find and deploy at scale a way of detecting invalid schools?
+Q005758	DROP	-	dup
+Q005759	DROP	-	dup
+Q005760	MS03	H	Facebook would like to estimate the month and day of people's birthdays, regardless of whether people give that information directly. What methods would you propose, and what data would you use?
+Q005761	MS03	M	Build a system to predict the language a text is written in.
+Q005762	MS03	H	An e-commerce company is trying to minimize the time it takes customers to purchase their selected items. As a machine learning engineer, what can you do to help them?
+Q005763	MS04	H	Build a chatbot to help people book hotels.
+Q005764	DROP	-	dup
+Q005765	DROP	-	offtopic
+Q005766	DROP	-	hr
+Q005767	DROP	-	hr
+Q005768	DROP	-	hr
+Q005769	DROP	-	hr
+Q005770	DROP	-	hr
+Q005771	DROP	-	hr
+Q005772	DROP	-	notq
+Q005773	DROP	-	hr
+Q005774	DROP	-	hr
+Q005775	DROP	-	hr
+Q005776	DROP	-	hr
+Q005777	DROP	-	hr
+Q005778	DROP	-	hr
+Q005779	DROP	-	hr
+Q005780	DROP	-	hr
+Q005781	DROP	-	hr
+Q005782	DROP	-	hr
+Q005783	DROP	-	hr
+Q005784	DROP	-	hr
+Q005785	DROP	-	hr
+Q005786	DROP	-	hr
+Q005787	DROP	-	hr
+Q005788	DROP	-	hr
+Q005789	DROP	-	hr
+Q005790	DROP	-	hr
+Q005791	DROP	-	hr
+Q005792	DROP	-	hr
+Q005793	DROP	-	hr
+Q005794	DROP	-	hr
+Q005795	DROP	-	hr
+Q005796	DROP	-	hr
+Q005797	DROP	-	hr
+Q005798	DROP	-	hr
+Q005799	DROP	-	hr
+Q005800	DROP	-	hr
+Q005801	DROP	-	hr
+Q005802	DROP	-	hr
+Q005803	DROP	-	hr
+Q005804	DROP	-	hr
+Q005805	ML09	M	What is the relationship between SVD and eigendecomposition?
+Q005806	ML09	M	What is the relationship between PCA and SVD?
+Q005807	DROP	-	unfixable
+Q005808	DROP	-	unfixable
+Q005809	DROP	-	unfixable
+Q005810	DROP	-	unfixable
+Q005811	DROP	-	unfixable
+Q005812	DROP	-	dsa
+Q005813	DROP	-	dsa
+Q005814	DROP	-	dsa
+Q005815	DROP	-	dsa
+Q005816	DROP	-	dsa
+Q005817	DROP	-	dsa
+Q005818	DROP	-	dsa
+Q005819	DROP	-	dup
+Q005820	DROP	-	unfixable
+Q005821	DROP	-	unfixable
+Q005822	DROP	-	unfixable
+Q005823	DROP	-	unfixable
+Q005824	DROP	-	notq
+Q005825	DROP	-	notq
+Q005826	DROP	-	notq
+Q005920	FT04	M	What is test-time compute? How does a thinking budget control how much an AI model thinks?
+Q005921	LLM05	E	What are logits? How does an LLM generate the next token step by step?
+Q005922	LLM05	E	What is a stop token (EOS)? How does generation terminate?
+Q005923	LLM03	M	Why are most mainstream LLMs decoder-only architectures?
+Q005924	GA01	E	What is in-context learning? What is the difference between zero-shot and few-shot?
+Q005925	LLM04	M	How is an LLM trained? Describe the three-stage pipeline of pretraining, SFT, and alignment (RLHF/DPO).
+Q005926	LLM03	M	What is a scaling law? What did the Chinchilla law correct?

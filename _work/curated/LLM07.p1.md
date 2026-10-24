@@ -1,0 +1,147 @@
+## Evaluation fundamentals and metrics
+- [E] What are the main ways to evaluate an LLM, and how do you choose metrics for a given application? {Q004997,Q007197,Q011171,D04858}
+- [E] What is the difference between intrinsic evaluation (such as perplexity) and extrinsic evaluation on downstream tasks for a language model? {GEN}
+- [M] How does evaluating an LLM application differ from evaluating a traditional ML model? {Q005021}
+- [M] Give a taxonomy of LLM evaluation methods and say when you would use each one. {Q008390}
+- [M] What is evaluation-driven development for AI applications, and why do people say evals are the moat? {Q004995,Q008386}
+- [M] What is the difference between reference-based and reference-free evaluation? {Q008413}
+- [M] Why do BLEU, ROUGE and exact match fail on open-ended LLM output, and what do teams use instead? {Q004400,D00174,D03771}
+- [M] Explain BLEU, ROUGE and BERTScore. When would you use each? {Q004998}
+- [M] When is BLEU still the right tool for evaluating LLM output? {Q008414}
+- [M] How do you evaluate open-ended generation when there is no single right answer and no ground truth? {Q007714,Q010851,D00175}
+- [M] How is an LLM typically evaluated during and after the pretraining phase? {Q012405}
+- [H] How do you evaluate answers to questions on which even domain experts have no consensus ground truth? {Q010023}
+- [E] What is perplexity, and what are its limits as a measure of LLM quality? {D00173}
+- [E] Why is perplexity the exponential of cross-entropy, and what does a perplexity of 8 mean in terms of average branching factor? {Q007317,D04457}
+- [E] Convert a loss of 2.0 nats per token into perplexity. {Q007470a}
+- [M] What does perplexity measure, and why can't you compare it across models with different tokenizers? {Q007469}
+- [M] Why is perplexity not a reliable measure of instruction-following or chat quality? {D04959}
+- [M] How would you use perplexity on a held-out corpus to spot low-quality documents or a domain shift in your data? {GEN}
+- [H] Tokenizer A averages 3.5 bytes per token and tokenizer B averages 4.5. How do you compare the losses of models that use them? {Q007470b}
+- [H] Why might a better model show a higher perplexity on your eval set? {Q007471}
+
+## Public benchmarks, leaderboards and vendor claims
+- [M] What is the difference between a public capability benchmark and a task-specific eval, and when is each the right tool? {GEN}
+- [M] What do MMLU, GSM8K, HumanEval, MT-Bench, GPQA and SWE-bench each measure, and how should you interpret their scores? {Q005006,Q008439,D03775,D04859}
+- [M] Why is a general benchmark like MMLU a poor basis for choosing a model for your own product? {Q011249,D00188,Q003591}
+- [M] Why have MMLU and HumanEval stopped being useful for ranking frontier models, and what has replaced them? {Q011662,D00184}
+- [M] If public benchmarks are this compromised, why do labs keep reporting them? {Q008440}
+- [M] How do you detect that a benchmark has saturated or leaked, and what do you do next? {Q009631}
+- [M] What is SWE-bench, and how is it used to evaluate AI coding ability? {Q006116}
+- [M] How do SWE-bench Pro, SWE-bench Multimodal and Terminal-Bench differ from the original SWE-bench? {Q006128,Q006147}
+- [M] How do SWE-bench Verified and LiveCodeBench differ, and which matters more for evaluating a coding agent? {Q010949}
+- [M] Why do two labs report very different scores for the same model on the same benchmark when scaffolds or harnesses differ? {D00186,Q010298}
+- [M] Why does AlpacaEval 2.0 use a length-controlled win rate? {Q006896}
+- [H] How would you construct a length-controlled evaluation of a DPO-tuned model that a reviewer would trust? {Q008164}
+- [M] How does Chatbot Arena-style evaluation work, and what are its strengths and limits? {Q008499}
+- [M] How would you use a crowd-voted Elo leaderboard such as Arena responsibly when choosing a model for a chat product? {Q011663,D00187}
+- [H] Why is Bradley-Terry preferable to a naive win rate in Arena-style evaluation when comparison counts are uneven across model pairs? {Q008500}
+- [H] Design an internal arena for your company's use case. What breaks first? {Q008501}
+- [M] A vendor says its model scores 90% on a coding benchmark. What do you ask before believing it predicts your own quality? {Q011661,D00183}
+- [M] A vendor says its new model beats your current one by 10 points. What do you check before switching? {Q011243}
+- [M] A vendor reports 99.9% on a benchmark, but the organizer's own harness gives 62.7% for the same model. Which number do you use, and is a vendor number ever admissible? {Q011251,Q011026}
+- [M] A launch post claims near-perfect scores on a new reasoning benchmark and a computer-use benchmark. How do you read those numbers? {Q011664}
+- [H] A candidate claims their AI system achieves 95% accuracy. What questions do you ask to decide whether that is meaningful? {Q010931,D00193}
+- [M] How do you evaluate which LLM is best for your use case, for example a customer support chatbot? {Q007195,Q011247}
+- [M] What do you do when model-comparison eval results are ambiguous? {Q009101}
+
+## Contamination and benchmark integrity
+- [M] What is benchmark contamination, and why does it inflate scores? {Q005007,Q008442,D00185}
+- [M] What are canary strings, and how do they help keep benchmark data out of training corpora? {GEN}
+- [M] How would you concretely detect that a model has memorized a benchmark or that it leaked into a vendor's training data? {Q010297,Q007277,D04962,Q008973}
+- [M] How would you decontaminate an eval set or a pretraining corpus, and keep eval results honest? {Q007240,Q009736,Q011438}
+- [M] How do you stop eval tasks from leaking into later fine-tuning data, including synthetic training data? {Q009386,Q010091}
+- [M] Can benchmark contamination ever make a model look worse? {Q008443}
+- [M] What properties make a benchmark resistant to saturation and contamination? {Q008441}
+- [H] Your vendor claims decontamination via 13-gram overlap. What does that miss? {Q008444}
+- [H] How do you detect that a model was trained on paraphrases of your benchmark set? {Q010105}
+- [H] Why is benchmark contamination especially insidious for a multilingual model? {Q010052}
+- [H] Your fine-tune gained 8 points on your benchmark. How do you know the gain is real and not contamination? {Q008165,Q006909}
+- [H] After a fine-tune gained 8 points, you find 3% n-gram overlap with training data, and removing it costs 2 of the 8 points. Do you ship? {Q008166}
+- [H] Your coding agent's benchmark score jumped 15 points after a model upgrade. How do you know the gain is real? {Q011495,D00192}
+- [M] How would you detect that a high SWE-bench score is inflated by contamination? {Q009873}
+- [H] As release engineer for an open-weights model that tops leaderboards, how do you make sure the benchmark numbers are trustworthy? {Q012001,Q010051}
+- [H] Design a private LLM benchmark and leaderboard. How do you keep it trustworthy as labs optimise against it? {Q010103,D04860}
+- [M] A lab disputes its score on your private benchmark and demands the failing items. What do you give them? {Q010104}
+- [H] How would you design an eval that stays meaningful six months after a model's release? {Q010053}
+- [M] What is eval awareness, and how might it distort safety or capability evaluations? {D00191}
+
+## LLM-as-a-judge
+- [M] What is LLM-as-a-judge, when is it the right tool, and when is it unacceptable as the primary evaluation gate? {Q008398,Q006186,Q009977}
+- [M] What are the main limitations of LLM-as-a-judge evaluation? {Q005000,Q011651}
+- [M] What biases does an LLM judge have (position, verbosity, self-preference), and how do you mitigate each? {Q006894a,Q008431,D00176,D04960,D03772}
+- [M] Design a quick experiment to measure position bias in your own LLM judge, and say how you would debias it. {Q008432a,Q008133,D00179}
+- [M] What is G-Eval, and how does it use LLMs for evaluation? {Q004999}
+- [M] Pointwise scoring versus pairwise comparison for LLM judges: which is more reliable, and why? {Q008428}
+- [H] Your pairwise judge says B beats A 60/40 but binary criteria show identical pass rates. What do you conclude? {Q008430}
+- [M] How do you aggregate pairwise judge results across five candidate prompts efficiently? {Q008429}
+- [M] Why do binary pass/fail judge criteria often work better than numeric rating scales? {D00178}
+- [M] How do you design a good rubric for model-graded evals, how many criteria are too many, and where does chain-of-thought fit? {Q008436,Q008437}
+- [M] How does rubric-based evaluation differ from a generic LLM-as-a-judge prompt, and why is it often recommended? {Q005951}
+- [H] Your faithfulness judge passes an answer that hedges so much it says nothing. What rubric change fixes that? {Q008438}
+- [M] What temperature would you use for an LLM-as-a-judge evaluation, and why? {Q007448}
+- [M] Would you use the same model as generator and judge? What if the judge disagrees with your spot-checks? {Q008400,Q006885}
+- [H] Your LLM judge is from the same family as your production model, and switching families drops agreement with humans. What now? {Q008432b}
+- [M] What is a panel of LLM judges, and when is it worth the cost? {D00208}
+- [M] Your three LLM judges agree on 95% of verdicts. Is that good news? {Q011623,D00180}
+- [H] Your eval pipeline runs a cheap judge on all traffic and escalates low-confidence cases to a frontier judge. How do you validate that the escalation buys accuracy? {Q011653,D00210,D00209}
+- [H] Your distilled evaluator agrees with the frontier judge 92% of the time but with humans only 78%. Which number do you trust? {Q008537}
+- [H] How would you decide whether a small evaluator model is good enough to block responses inline? {Q008538}
+- [H] Agent-as-judge versus LLM-as-judge: when does the upgrade pay off, and what new failure modes does it introduce? {Q010967}
+- [H] Design a production LLM-as-a-judge pipeline. What are its biases and failure modes, and how do you correct for them? {Q010927,Q011848}
+- [H] Walk through building and validating an LLM judge: labeling, data splits, prompt iteration and the metrics you track. {D00177}
+- [H] How would you use an LLM judge for Hindi without importing the judge's English bias? {Q010090}
+- [M] How would you evaluate a candidate judge model on human-labelled preference data before adopting it? {GEN}
+
+## Human evaluation and trusting your judge
+- [M] How do you conduct human evaluation for AI systems? {Q005001}
+- [M] When would you pay for human evaluation even though your LLM judge agrees with humans 85% of the time? {Q008391b,Q006894b}
+- [M] How do you measure inter-annotator agreement, and what do you do when annotators disagree a lot? {Q008470,D00182}
+- [M] Your annotators reach a Krippendorff's alpha of 0.4 and a rubric rewrite does not help. What now? {Q008471}
+- [M] How would you detect one annotator drifting over a month? {Q008472}
+- [M] Subject-matter experts disagree on 20% of golden labels, or the customer's own experts disagree. Who defines correct, and what do you do? {Q009976,Q010449}
+- [M] How do you decide whether to trust your LLM judge? Walk me through calibration against human labels. {Q008433,Q009051}
+- [M] How do you calibrate an LLM judge against human labels and correct estimated metrics for judge error? {D00181}
+- [M] Your LLM judge's Cohen's kappa with humans is 0.45. What specifically do you do next? {Q008434}
+- [H] How would you calibrate an LLM judge that outputs a 1-10 score? {Q007285}
+- [M] How do you detect judge-human disagreement systematically? {Q010522}
+- [H] Your LLM judge and human labels disagree 15-30% of the time. What do you do? {Q008361,Q009200,Q009363}
+- [M] Your judge agrees with humans 70-80% of the time (including a VLM judge). Is that usable, and for what? {Q009794,Q008972,Q010406}
+- [H] Your automated judge and your clinicians disagree on a slice of notes. How do you work out which one is wrong? {Q009157}
+- [H] Your LLM judge prefers the new model 60/40 but human raters are 50/50, or the customer disagrees with the judge. Which do you trust? {Q009768,Q009947}
+- [H] Your LLM judge scores rose but the user follow-up rate worsened. What happened? {Q010022}
+- [H] Your LLM judge passes 90-95% of outputs but users are unhappy. How do you debug the judge itself? {Q008399,Q010595}
+- [M] How do you make judge scores trustworthy enough to gate releases, and what is the senior objection to a judge-only deploy gate? {Q008082,Q010628,Q007053}
+- [M] You use an LLM judge to gate deploys. A month later it is passing changes that users dislike. What is the likely cause and fix? {Q007009}
+- [M] How do you keep LLM judge calibration current without a standing labelling team? {Q008435,Q010525b,Q010135}
+- [M] Your judge model is deprecated or updated and every score shifts. How do you keep scores comparable? {Q008491,Q009583}
+- [M] How would you detect judge drift if the model version is genuinely pinned? {Q008493}
+- [M] The new LLM judge agrees with humans slightly less but is 5x cheaper. Do you take it? {Q008492}
+- [H] How do you version the judge itself so a judge-prompt change does not masquerade as a product regression? {Q010629}
+
+## Hallucination
+- [E] What is hallucination in LLMs, and how do factuality errors differ from faithfulness errors? {Q004275,D04848}
+- [E] What are the different forms of hallucination, and how would you detect each in production? {Q007199,D00194}
+- [M] Why do LLMs hallucinate? Discuss data, training and inference-level causes. {Q005337,Q007581,D04850,D00195}
+- [M] Why might maximum-likelihood training and exposure bias encourage hallucination? {D04851}
+- [M] Why might SFT on knowledge the base model never saw encourage hallucination? {D04852}
+- [M] On what types of queries are LLMs most likely to hallucinate? {D04856}
+- [M] Is hallucination always harmful? When is a hallucination-shaped answer acceptable or desirable, and how do you switch regimes? {D04849,Q007584}
+- [M] How does RLHF or preference tuning affect hallucination, for example through sycophancy and rewarding confident answers? {GEN}
+- [M] How does retrieval-augmented generation reduce hallucination, and how can a RAG system still produce unfaithful answers? {GEN}
+- [M] How do you detect and measure hallucinations in LLM outputs? {Q005003,Q010910,D04853}
+- [M] How do you measure factual consistency or groundedness, and how do you enforce it as well as measure it? {Q005013,D00207}
+- [M] How do SelfCheckGPT-style sampling consistency, semantic entropy and citation verification detect hallucinations? {D00196,D04854}
+- [M] What is Chain-of-Verification (CoVe), and how does it reduce hallucination? {Q005934,Q007198}
+- [M] Why does verifying citations require checking the source text, not just that a citation exists? {Q008787}
+- [M] How do you mitigate hallucination at the data, training and inference levels? {Q005028,Q006897,Q007200,D04855,D03776}
+- [M] Your summarization system hallucinated facts that are not in the original article. How do you fix it? {Q004710}
+- [M] Your LLM does not admit when it does not know. How do you make it say "I don't know"? {Q004697,D04857}
+- [M] How would you design an abstention strategy, by training or prompting, so a model abstains instead of fabricating? {Q008788,D00198}
+- [M] How would you measure the knowledge boundary of a model to enable honest refusal? {D04961}
+- [M] Which is safer for a medical FAQ: a fluent guess or an "I can't answer that" response? {Q008789}
+- [M] How do you treat hallucination as a safety and product risk, and design the product around it rather than only the prompt? {Q008786,Q010608}
+- [M] When is showing confidence scores to users a bad idea? {Q010610}
+- [M] How would you measure your hallucination rate in production? {Q010609}
+- [M] How do you handle hallucinations when they occur in a production AI system? {Q005174,Q010858}
+- [M] Your hallucination rate jumped 30% after a provider silently updated the model. How do you detect and respond? {D00197}

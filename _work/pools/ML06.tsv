@@ -1,0 +1,165 @@
+Q001212	M	Explain the concept of Cross-Validation and its importance in ML.
+Q001367	E	What is Explainable AI (XAI), and why is it important?
+Q001368	M	Can you explain the difference between interpretable and explainable models?
+Q001369	M	What are some challenges faced when trying to implement explainability in AI?
+Q001370	M	How does explainable AI (XAI) relate to model transparency, and why is it needed in sensitive applications?
+Q001371	M	What are some of the trade-offs between model accuracy and explainability?
+Q001372	E	What are model-agnostic methods in explainable AI (XAI), and can you give an example?
+Q001373	M	How do model-specific methods differ from model-agnostic methods for explainability?
+Q001374	M	What are the advantages and disadvantages of using LIME (Local Interpretable Model-Agnostic Explanations)?
+Q001375	M	Can you explain what SHAP (Shapley Additive exPlanations) is and when it is used?
+Q001376	E	What is feature importance, and how can it help in explaining model predictions?
+Q001377	E	Explain the concept of decision trees in the context of interpretability.
+Q001378	E	How can the coefficients of a linear model be interpreted?
+Q001379	M	What role does the Partial Dependence Plot (PDP) play in model interpretation?
+Q001380	M	Describe the use of counterfactual explanations in explainable AI (XAI).
+Q001381	H	How can the activation maximization technique in neural networks be used for interpretability?
+Q001623	E	What are the common metrics to evaluate a linear regression model's performance?
+Q001699	M	How would you assess the goodness-of-fit of a logistic regression model?
+Q001749	E	What is model evaluation in the context of machine learning?
+Q001751	E	What is cross-validation, and why is it used?
+Q001752	E	Define precision, recall, and F1-score.
+Q001753	E	What do you understand by the term confusion matrix?
+Q001754	M	Explain the concept of the ROC curve and AUC.
+Q001755	M	Why is accuracy not always the best metric for model evaluation?
+Q001759	M	How can learning curves help in model evaluation?
+Q001760	M	What is the difference between explained variance and R-squared?
+Q001761	E	How do you evaluate a regression model's performance?
+Q001762	E	What metrics would you use to evaluate a classifier's performance?
+Q001763	E	Explain the use of the Mean Squared Error (MSE) in regression models.
+Q001764	M	How is the Area Under the Precision-Recall Curve (AUPRC) beneficial?
+Q001765	M	What is the distinction between macro-average and micro-average in classification metrics?
+Q002187	E	Explain validation sets and cross-validation.
+Q003962	M	How do you find the best hyperparameters?
+Q003979	E	Why is a validation set necessary?
+Q003980	M	What are the different types of cross-validation? When do you use which one?
+Q004064	E	Why are model selection methods needed?
+Q004066	M	What are the different attributes that can be selected by model selection methods?
+Q004067	E	Why is cross-validation required?
+Q004069	M	What is hold-out cross validation? What are its advantages and disadvantages?
+Q004070	M	What is k-fold cross validation? What are its advantages and disadvantages?
+Q004071	M	What is leave-one-out cross validation? What are its advantages and disadvantages?
+Q004111	E	What are accuracy, sensitivity, specificity, and ROC?
+Q004112	E	What are precision and recall?
+Q004341	E	Which metrics for evaluating regression models do you know?
+Q004342	E	What are MSE and RMSE?
+Q004343	E	How do you validate your models?
+Q004345	M	Can you explain how cross-validation works?
+Q004346	E	What is K-fold cross-validation?
+Q004347	M	How do we choose K in K-fold cross-validation? What is your favorite K?
+Q004352	E	How do we evaluate classification models?
+Q004353	M	Is accuracy always a good metric?
+Q004354	E	What is the confusion table? What are the cells in this table?
+Q004355	E	What are precision, recall, and F1-score?
+Q004483	M	Why is averaging per-batch F1 scores wrong?
+Q004484	M	How should a classification threshold be selected?
+Q004542	E	Explain precision, recall, and F1. When would you use each?
+Q004543	M	Why is averaging F1 across batches usually incorrect?
+Q004408	E	What is cross-validation and why is it important?
+Q005035	E	What is explainability in AI, and why does it matter?
+Q005036	E	What is the difference between interpretability and explainability?
+Q005206	E	Explain cross-validation. Why is it used?
+Q005221	M	Explain R-squared and adjusted R-squared.
+Q005230	M	What is the ROC-AUC curve, and how is it interpreted?
+Q005247	M	How do you approach hyperparameter tuning?
+Q005250	M	Explain grid search vs random search vs Bayesian optimization.
+Q005251	H	Explain TPE (Tree-structured Parzen Estimator) hyperparameter optimization.
+Q005346	E	What are precision, recall, F1 score, and accuracy?
+Q005347	E	What is the confusion matrix, and how do you interpret it?
+Q005348	E	What are common evaluation metrics for classification?
+Q005349	M	When would you use accuracy vs other metrics?
+Q005350	M	When would you use log loss vs accuracy?
+Q005351	M	What metrics would you use for a multi-class classification problem?
+Q005352	M	How do you handle class imbalance in classification metrics?
+Q005353	E	What is the ROC curve? What is AUC?
+Q005355	E	What are common evaluation metrics for regression?
+Q005356	E	What is the difference between MAE, MSE, and RMSE?
+Q005357	M	How do you choose the right evaluation metric for a given problem?
+Q005358	M	How do you compare the performance of different models?
+Q005359	E	Explain cross-validation and its importance.
+Q005360	E	What is hyperparameter tuning?
+Q005361	M	How do you evaluate unsupervised learning models?
+Q005362	M	How do you evaluate a clustering algorithm?
+Q005363	M	What metrics would you use for a recommendation system?
+Q005397	E	What is model explainability? Why is it important?
+Q005398	M	What techniques would you use to make a model more interpretable?
+Q005399	M	Describe your approach to debugging an underperforming ML model.
+Q005493	M	What is stratified cross-validation and when should we use it?
+Q006284	M	How would you validate a predictive model of a quantitative outcome variable that you created using multiple regression?
+Q006285	M	Explain what precision and recall are. How do they relate to the ROC curve?
+Q006286	M	Is it better to have too many false positives, or too many false negatives?
+Q006597	E	What are the different metrics for evaluating a classification model?
+Q006602	M	How do you compare two regression models?
+Q006613	E	What is cross-validation?
+Q006614	M	Explain how you select the best model.
+Q006615	M	Explain TPE hyperparameter optimization. Explain Bayesian optimization for hyperparameter tuning.
+Q006618a	M	Describe some criteria for model selection.
+Q006650	M	What is R2? What are some other metrics that could be better than R2, and why?
+Q006683	M	What error metric would you use to evaluate how good a binary classifier is? What if the classes are imbalanced? What if there are more than 2 groups?
+Q007163	M	I have a recommendation system. Which metric should I use to evaluate it?
+Q011928	M	We have two models, with 85% and 82% accuracy. Which do you pick?
+Q011952	M	You have a binary loan-approval classifier and limited access to feature weights. How do you explain a rejection?
+Q011963	H	Your ads CTR model shows a 2% offline AUC gain, but the online A/B is revenue-neutral with worse calibration. What is going on, and what do you do?
+Q012023	E	Discuss precision, recall and F1: when would you prioritise one over the others?
+Q012051	H	Disengagement rate is a weak proxy. How would you actually measure whether an autonomy release is safer than the last one?
+Q012055	H	Your offline metric improved but the online A/B did not. Enumerate the reasons this happens and how you would tell them apart.
+Q012592	E	Define precision, recall, and F1 and discuss the trade-off between them.
+Q012596	E	Define the cross-validation process and the motivation behind using it.
+Q012599	E	What is the ROC curve and when should you use it?
+Q012612	M	What evaluation metrics can be used for multi-label classification?
+Q007237	M	Walk me through train/validation/test splits. When do you use cross-validation, and when is it a bad idea?
+Q007239	M	What is nested cross-validation for?
+Q007241	E	Explain precision, recall, and F1. Give a concrete case where 99% accuracy means the model is useless.
+Q007242	M	Why is F1 the harmonic mean rather than the arithmetic mean of precision and recall?
+Q007243	M	Your model's precision is 0.95 but the product team is unhappy. What would you check?
+Q007244	M	How do micro- and macro-averaged F1 differ on an imbalanced multiclass problem?
+Q007245	E	What is the difference between parameters and hyperparameters? How do you tune hyperparameters efficiently?
+Q007246	M	Why sample the learning rate log-uniformly during hyperparameter search?
+Q007247	M	If you can afford only 20 training runs, how do you allocate them for hyperparameter tuning?
+Q007248	M	Is the number of training epochs a parameter or a hyperparameter, and what about a learned temperature like CLIP's?
+Q007262	M	How would you get calibrated probabilities out of a boosted tree model?
+Q007278	M	ROC-AUC vs PR-AUC: what does each measure, and why does ROC-AUC look deceptively good on imbalanced data?
+Q007279	H	Why is linear interpolation between points on a precision-recall curve invalid?
+Q007280	M	Your ROC-AUC improved but your PR-AUC dropped. What happened?
+Q007281	M	How do you choose the final operating threshold for production?
+Q007282	M	What does it mean for a classifier to be calibrated? How do you measure and fix miscalibration?
+Q007283	M	Why does temperature scaling leave accuracy and AUC unchanged?
+Q007284	H	How does class imbalance interact with calibration under resampling?
+Q007289	H	How do delayed fraud labels (for example, chargebacks arriving 60 days later) change your evaluation?
+Q007336	M	What goes wrong when you validate a model on time-ordered data, and how do you do it properly?
+Q007337	H	Your walk-forward validation folds show wildly different scores. What does that tell you and what do you report to stakeholders?
+Q007346	H	Two features are 0.95 correlated and both show near-zero permutation importance. What is going on, and how do you report it?
+Q007347	M	Why might two SHAP tools give different values for the same model?
+Q007349b	M	When would you use the Brier score deliberately?
+Q007375	H	Design the evaluation for a fraud model at 0.1% prevalence, end to end: metrics, thresholding, validation protocol, and monitoring.
+Q007377	H	In a fraud-detection system, the ops team's review capacity halves. What changes in your metric and threshold?
+Q007379	H	Your model hits 0.87 AUC offline, you launch it, and the business metric doesn't move. Debug it.
+Q007380	H	Your model hits 0.87 AUC offline and the business metric doesn't move after launch. If online AUC matches offline and the intervention is randomized, what explanation is left, and how do you quantify it?
+Q009000	H	Your offline Recall@10 improves 8 points but the A/B test is flat. What are the likely explanations?
+Q009553	H	How do you evaluate a manipulation policy when every trial costs robot time and every failure has physical consequences?
+Q009554	M	How would you build a regression suite for a robot policy that stays meaningful as the policy improves?
+Q009555	M	What would you do if a robot policy improved throughput 10 percent and raised near-miss events 5 percent?
+Q009580	H	How would you detect that ranking quality regressed for one tenant without being able to read their queries?
+Q009756	H	How do you evaluate a model change when labels are policy-dependent and reviewers disagree about 15% of the time?
+Q009761	H	Your ads CTR model shows a 2% offline AUC gain, but the online A/B shows revenue-neutral results with worse calibration. What's going on and what do you do?
+Q009762	M	Why is isotonic regression risky with sparse segments?
+Q010226	H	How would you extend minADE and minFDE to joint multi-agent scoring, where a scene is correct only if all agents are within threshold? How would you weight timesteps if you cared more about the first two seconds?
+Q010509	M	How big does the golden set need to be to trust per-class metrics across 40 classes?
+Q010521	M	Your offline evals improved but the online metric dropped after launch. Walk me through the investigation.
+D03380	M	When would you prefer Precision@k and Recall@k, and why do they fail to capture ranking quality?
+D03381	M	Explain Mean Reciprocal Rank and describe a situation where it is the right metric.
+D03382	M	Explain mean average precision for ranked retrieval and when binary relevance makes it appropriate.
+D03383	M	Explain DCG and nDCG, why the log discount is used, and when graded relevance calls for nDCG.
+D03384	M	What is normalized cross entropy and why is it used to evaluate ads click prediction models?
+D03385	M	Why is click-through rate an imperfect online metric for search or recommendation quality?
+D03386	M	What is the difference between conversion rate, bounce rate, engagement rate and time spent, and when is each appropriate?
+D03387	M	How would you choose between offline ranking metrics for a system with binary versus graded relevance?
+D03388	M	Your offline nDCG improved but online engagement did not. What are possible reasons?
+D03389	H	How would you compute and interpret a revenue lift metric from an online experiment on an ads system?
+D03390	M	What are prevalence, proactive rate and appeal reversal rate in content moderation, and what does each tell you?
+D03391	M	Why do PR-AUC and F1 suit harmful content detection better than accuracy?
+D03726	E	Explain the confusion matrix and derive accuracy, precision, recall, specificity and F-score.
+D03727	M	How do you choose among accuracy, precision, recall and F1 on an imbalanced dataset?
+D03728	M	Explain the ROC curve and AUC, and how to pick an operating threshold.
+D03729	M	When is precision-recall AUC more informative than ROC AUC?
+D03730	M	How do you extend precision, recall and ROC metrics to multi-class problems, and how do macro and micro averaging differ?

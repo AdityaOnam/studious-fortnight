@@ -1,0 +1,193 @@
+Q001655	M	How do LLMs handle context and long-term dependencies in text?
+Q003368	E	What are the different decoding strategies in LLMs?
+Q003369	M	How does Beam Search improve upon Greedy Search, and what is the role of the beam width parameter?
+Q003370	E	When you set the temperature to 0.0, which decoding strategy are you using?
+Q003371	M	How is Beam Search fundamentally different from a Breadth-First Search (BFS) or Depth-First Search (DFS)?
+Q003372	E	What is the role of the context window during LLM inference?
+Q003373	E	What is the purpose of temperature in LLM inference, and how does it affect the output?
+Q003374	E	What is autoregressive generation in the context of LLMs?
+Q003376	M	What is speculative decoding, and when would you use it?
+Q003485	M	In autoregressive generation, is the next input the sampled token id or the probability distribution?
+Q004132	M	What is beam search?
+Q004264	M	What are the different parameters that can be tuned in LLMs during inference?
+Q004266	M	What are the different decoding strategies for picking output tokens?
+Q004267	M	What are the stopping criteria for decoding in the context of LLMs?
+Q004431	M	How does speculative decoding speed up generation?
+Q004668	E	What is the context window in LLMs, and why does it matter?
+Q004669	M	Why is the context window limited in LLMs?
+Q004670	E	What is temperature in the context of LLMs, and how does it affect output?
+Q004672	M	Explain top-p (nucleus) sampling and top-k sampling. How do they differ?
+Q004673	M	Compare greedy decoding, beam search, top-k, top-p, and temperature sampling. When does each fail?
+Q004674	E	What are logits, and how are they used in text generation?
+Q004675	E	What are stop tokens in LLMs, and how does an LLM know when to stop generating?
+Q004676	E	What is the difference between a stop token and a stop sequence?
+Q004696	M	Your LLM-powered tool hits the context window limit on long documents. How do you handle it?
+Q004703	H	Your Transformer runs out of memory on long documents due to quadratic self-attention. How do you scale it?
+Q004711	M	Your text generation repeats phrases in long outputs. How do you fix repetition?
+Q004739	M	What is the "lost in the middle" problem in long-context prompting?
+Q004980	M	How do you handle long contexts efficiently in production (context compression, prefix caching)?
+Q005118	M	What is speculative decoding, and how does it speed up inference?
+Q005119	H	How does Medusa (multi-head speculative decoding) work?
+Q005120	H	How does EAGLE (feature-level speculative decoding) work?
+Q005121	M	What is n-gram speculation in LLMs, and how does it speed up generation?
+Q005302	M	Describe the process of text generation using Transformer-based language models.
+Q005336	E	What is temperature in the context of LLMs?
+Q005338	E	What are stop tokens in LLMs?
+Q005343	E	What is the context window in an LLM?
+Q005921	E	What are logits? How does an LLM generate the next token step by step?
+Q005922	E	What is a stop token (EOS)? How does generation terminate?
+Q005937	M	What is constrained decoding, and how does it differ from JSON Mode / Structured Outputs?
+Q006018	M	What techniques exist for context window compression, and when would you use a semantic cache versus a sliding window?
+Q006043	M	How do you allocate the LLM context window budget, and how does slot budgeting work?
+Q006174	M	What is EAGLE speculative decoding, and how does it differ from traditional speculative decoding?
+Q006180	H	How do inference frameworks handle ultra-long contexts (1M+ tokens), and what is the idea behind Ring Attention and block-wise attention?
+Q006833	M	How does constrained / structured decoding actually work, and why is it nearly free in terms of quality?
+Q006941	M	You stuff 60 documents into one prompt; the model nails facts from the first and last few but ignores a crucial one in the middle. What is the best fix?
+Q006982	M	You enable beam search (width 4) for higher-quality generation and immediately hit OOM at a context that was fine with greedy decoding. Why?
+Q006992	H	Your team plans to extend a 4k-context 70B model to 128k and quantize the KV cache to fit. What single safeguard belongs in the rollout plan above all?
+Q007007	M	A user uploads a 400-page contract, well over the context window, and asks for a one-paragraph summary. What is the best approach?
+Q007113	E	Explain the temperature parameter and how to set it.
+Q007114	E	What are the different decoding strategies for picking output tokens?
+Q007115	M	What are the different ways you can define stopping criteria in a large language model?
+Q007176	M	How can you increase the context length of an LLM?
+Q010806	M	How do you handle the "lost in the middle" problem?
+Q010847	M	What is speculative decoding and when would you use it?
+Q010884	M	How do you manage context window limits with long conversations?
+Q010960	H	A model claims a 10M-token context window, but it scores very poorly on a long-context benchmark at 128K tokens. How would you advise a team that wants to "just dump everything into the context"?
+Q011176	M	What is speculative decoding?
+Q011232	E	How do temperature and top-p affect generation?
+Q011233	M	How do you get reproducible outputs when the API no longer accepts temperature?
+Q011300	M	Why doesn't speculative decoding work well for high-temperature creative writing?
+Q011301	H	How do draft heads (Medusa, EAGLE-3, native MTP) differ from a separate draft model?
+Q011326	H	The API rejects the temperature parameter now. How do you make outputs reproducible enough to test?
+Q011339	H	How do you handle the high TTFT associated with million-token prompts?
+Q011795	M	Compare greedy, beam search, top-k, top-p and temperature sampling. When does each fail?
+Q011796	M	What is the lost-in-the-middle problem in long contexts and how do you address it?
+Q011803	H	What is speculative decoding? Why is output quality preserved, and when does it not help?
+Q011932	M	What is the effect of adjusting an LLM's context window size?
+Q011986	H	When you push a model from 8K to hundreds of thousands of tokens of context, what actually breaks first, and why?
+Q011987	H	How do you take a model trained at 8K-32K context and make it work at 128K or more?
+Q012506	M	Why do LLMs exhibit the repetition (parroting) problem?
+Q012510	M	What are the solutions to the length extrapolation problem?
+Q012565	M	Describe the process of generating text using a transformer-based language model.
+Q003521	M	How do tokens, the context window, temperature, and top-p each affect an LLM's behavior?
+Q003584	M	What is the lost-in-the-middle problem, and how can it be mitigated in long-context scenarios?
+Q003585	M	Why can an LLM's output still be non-deterministic even when temperature is set to 0?
+Q007320	H	Why is low temperature not the same as top-k truncation?
+Q007445	E	What does the temperature parameter actually do? Give the formula.
+Q007446	M	Why can temperature 0 still produce different outputs across identical API calls?
+Q007447	M	If you increase temperature, why do you usually also want min-p or top-p?
+Q007449	E	Compare greedy decoding, top-k sampling, and top-p (nucleus) sampling.
+Q007450	H	Why does greedy decoding loop, mechanistically?
+Q007451	M	When does top-p fail and how does min-p fix it?
+Q007452	H	Why is sampled text at temperature 1 often worse than the model's "true" distribution would suggest?
+Q007463	M	Explain speculative decoding. Why doesn't it change the model's output distribution?
+Q007465	H	What acceptance rate do you need for speculative decoding to break even?
+Q007508	H	Why does long-context extension usually still require some fine-tuning on long documents?
+Q007509	M	How would you verify the usable context length of a model before shipping?
+Q007518	M	Explain min-p sampling and repetition/frequency penalties. When do standard sampling settings fail?
+Q007519	H	Why does top-p specifically break down at high temperature?
+Q007520	M	How would you generate guaranteed-valid JSON: sampling settings or constrained decoding?
+Q007521	H	Why do repetition penalties operate on tokens rather than words, and what artifacts does that cause?
+Q007522	M	What are logprobs, and what are they useful for in production systems?
+Q007525	H	Why is the probability of an answer not the same as the probability of a sequence?
+Q007546	H	Why does a multi-token prediction (MTP) draft head achieve higher acceptance than a separately trained 1B draft model in speculative decoding?
+Q007558	M	What is "lost in the middle," and why doesn't a long context window equal reliable retrieval?
+Q007593	M	Beam search is standard in machine translation. Why is it rarely used for open-ended LLM generation?
+Q007594	H	Why does likelihood diverge from quality specifically for open-ended tasks? What's the entropy argument?
+Q007595	H	Why does best-of-n with a reward model succeed where beam search fails?
+Q007596	M	What is length bias in beam search?
+Q007620	H	After extending a model from 32k to 256k context with YaRN, how much short-context replay data would you mix in, and how would you pick that ratio?
+Q007621	H	If disabling RoPE scaling restores short-prompt quality in a context-extended model, what's your next move?
+Q007659	E	What do temperature and top_p actually do, and how do you choose them per task?
+Q007660	M	Why does temperature 0 not guarantee identical outputs across identical requests?
+Q007661	M	If you had to raise output diversity without raising error rate, what would you change instead of temperature?
+Q007677	M	What happens to visible output when a reasoning model hits its token cap?
+Q007706	M	How would you detect lost-in-the-middle empirically in production?
+Q008578	M	We set temperature to 0, so outputs should be deterministic. Why do users still get different answers to the same prompt?
+Q008579	H	Why does a busier LLM server make output divergence more likely at temperature 0?
+Q008588	M	How would you safely continue a generation that was truncated in the middle of a JSON object?
+Q008602	H	Explain speculative decoding. Why is the output provably faithful to the target model, and when does it actually help?
+Q008603a	H	Derive why the speculative decoding acceptance rule preserves the target distribution.
+Q008603b	H	How does batch size change the economics of speculative decoding?
+Q008604	M	When would n-gram lookup beat a trained draft model in speculative decoding?
+Q008670	H	How is structured output actually enforced at the serving layer, and what does it cost?
+Q008671	H	Why must the grammar be compiled against the tokenizer vocabulary in constrained decoding?
+Q008672	M	When would you prefer parse-and-retry over constrained decoding?
+Q008676	H	Why does sampling temperature affect acceptance rates in speculative decoding?
+Q009268	M	How would you make nucleus (top-p) sampling deterministic for reproducible on-device tests?
+Q009269	M	What changes in nucleus (top-p) sampling if the logits arrive quantized to int8?
+Q009270	H	Your on-device model must emit valid, schema-conforming tool calls. How do you guarantee validity rather than hope for it?
+Q009272	H	How do constrained decoding and speculative decoding interact?
+Q009400	M	Why does speculative decoding preserve exactness of the target model's distribution?
+Q009412	E	What repository size makes stuffing the whole repo into an LLM's context physically impossible today?
+Q009469	H	How does MTP-based speculative decoding compare to using a separate small draft model?
+Q009470	M	What acceptance rate do you need for speculative decoding to be a net win?
+Q009493	H	DeepSeek-V4 serves a native 1M-token context. MLA already shrinks the KV cache, so why was it not enough, and how does V4's hybrid compressed attention work?
+Q009494	H	In a sparse or compressed attention scheme with a block indexer for 1M-token contexts, how would you detect the indexer silently dropping the block a query needed?
+Q009618b	M	What failure mode of top-k sampling does top-p (nucleus) sampling fix?
+Q009619	H	Why can top-p=1.0, temperature=1.0 still produce degenerate repetition, and what mitigations exist?
+Q009853	H	When you push LLM context from 8K to hundreds of thousands of tokens, what actually breaks first, and why?
+Q009878	H	How do you take a model trained at, say, 8K-32K context and make it work at 128K or more?
+Q009918	M	Explain speculative decoding. Why does it speed decode up, when does it not, and how is output quality preserved?
+Q009919	M	How do you choose k in speculative decoding, and what happens to acceptance as k grows?
+Q009937	M	Where does speculative decoding fit in an LLM serving stack that separates prefill and decode?
+Q010019	M	Why does raw beam search favour short sequences, exactly?
+Q010020	M	What does beam width 8 do to KV-cache memory and time-to-first-token?
+Q010041	H	How would you test whether a long-context model truly uses information 800K tokens back rather than just not crashing?
+Q010177	M	Explain speculative decoding. When does it help, when does it hurt, and why adapt the speculator to live traffic?
+Q010178	H	Why does speculative decoding preserve the output distribution even when the draft model is terrible?
+Q010290	M	What is Multi-Token Prediction (MTP), why do models add an MTP layer, and how does it help at inference time?
+Q010291	M	Why does speculative decoding not change the output distribution?
+Q010292	M	When does Multi-Token Prediction give little speed-up (low acceptance)?
+Q010633	M	We set temperature to 0. The outputs are deterministic now, right?
+D00099	E	Compare greedy decoding, beam search and sampling for text generation.
+D00100	E	What does temperature do to the next-token distribution, and what happens at temperature zero and at very high values?
+D00101	M	Explain top-k and top-p sampling and when top-p is preferable.
+D00102	M	Why can outputs still vary at temperature zero?
+D00103	M	How would you make LLM outputs reproducible enough to regression-test when the API no longer exposes temperature?
+D00104	M	What are repetition penalties, and what side effects can they have on code or structured text?
+D00105	M	How do logit bias and stop sequences give precise control over generation, and what are the pitfalls?
+D00106	M	What are logits, and how does an LLM turn them into the next token step by step?
+D00107	E	How does generation know when to stop? Discuss EOS tokens, max tokens and stop sequences.
+D00108	M	Explain speculative decoding: draft, verify, accept. Why does it preserve the target distribution?
+D00109	M	Why does speculative decoding give little benefit for high-temperature creative generation?
+D00110	M	How do draft heads such as Medusa or EAGLE differ from using a separate small draft model?
+D00111	H	A colleague says speculative decoding hurts throughput at large batch sizes so it should be disabled in production. Do you agree?
+D00112	M	What is lookahead or n-gram speculation, and for which workloads does it shine?
+D00113	M	How does constrained decoding guarantee valid JSON or grammar-conforming output?
+D00114	M	How does constrained decoding differ from JSON mode and from function calling?
+D00115	H	What is the throughput and quality cost of grammar-constrained decoding, and how would you mitigate it at scale?
+D00116	E	What is the lost-in-the-middle problem, and what does it imply for how you order retrieved context?
+D00117	M	What are the options when a document exceeds the model's context window?
+D00118	M	When would you choose long context over RAG, and when does RAG still win?
+D00119	M	How do you handle the high time-to-first-token of million-token prompts?
+D00120	M	What is context rot, and why does response quality degrade as the context fills with irrelevant material?
+D00121	M	Why is an LLM API stateless, and where does conversational memory actually live?
+D00122	M	What techniques exist to compress long contexts, and when would you use semantic caching versus sliding windows?
+D00123	M	Why do LLMs get math wrong, and what architectural patterns mitigate it?
+D00124	M	What is a knowledge cutoff, and how should an application handle questions that need newer information?
+D00125	M	How do sampling controls on hosted frontier models differ from open-weight models, and what does that imply for determinism?
+D00126	M	What is self-consistency decoding, and how does best-of-N differ from it?
+D03762	M	How do greedy, beam, temperature, top-k and top-p decoding differ, and when would you use each?
+D03763	M	How does speculative decoding speed up generation without changing the output distribution?
+D03764	M	How does structured or constrained decoding force valid JSON output?
+D04451	M	Why do LLMs sometimes fall into repetitive loops, and what decoding-time and training-time remedies would you apply?
+D04452	M	Can an LLM accept an arbitrarily long input in theory? Which architectural and hardware constraints bound the usable context?
+D04453	H	What techniques let a pretrained model handle inputs much longer than its training context, and what does each sacrifice?
+D04568	M	What are the top-k, top-p and temperature sampling strategies, and how do they reshape the next-token distribution?
+D04569	M	Compare top-k and top-p sampling. When does top-p adapt better to varying distribution shapes?
+D04570	M	What does temperature do mathematically to logits, and what happens at temperature near 0 and very high temperature?
+D04571	M	In what order are top-k, top-p and temperature applied when combined, and does order change the result?
+D04572	E	What is greedy decoding and what are its weaknesses compared with beam search?
+D04573	M	How does beam search work, and why does it tend to produce generic, repetitive text in open-ended generation?
+D04574	M	How does a repetition penalty modify logits, and what side effects can too high a value cause?
+D04575	M	How would you choose generation parameters for a code assistant versus a creative writing assistant?
+D04576	M	Why do beam search scores need length normalization?
+D04768	M	How do you make an LLM output comply with a required format (JSON, regex, schema), and what are the trade-offs of constrained decoding?
+D04878	M	What are the differences between autoregressive and non-autoregressive generation in speed and quality?
+D04879	M	How can you control text generation via prompts, probability modification or architectural changes?
+D04955	M	What does min-p or typical sampling try to improve over top-p?
+D04956	M	Why can high temperature increase hallucination while very low temperature lowers diversity, and how would you choose in a QA product?
+D04957	M	What is the lost-in-the-middle effect and how would you order retrieved passages to minimize it?
+D04958	M	How do you evaluate whether a long-context extension actually works, beyond perplexity (needle-in-haystack, long-benchmarks)?

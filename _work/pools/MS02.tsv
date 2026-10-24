@@ -1,0 +1,88 @@
+Q000870	E	What is Apache Spark and what are its main components?
+Q000871	E	Why choose Apache Spark?
+Q000872	M	Explain how Apache Spark differs from Hadoop MapReduce.
+Q000873	E	Describe the concept of RDDs (Resilient Distributed Datasets) in Spark.
+Q000874	M	What are DataFrames in Spark and how do they compare to RDDs?
+Q000875	M	What is lazy evaluation and how does it benefit Spark computations?
+Q000876	M	How does Spark achieve fault tolerance?
+Q000877	E	What is the role of the Spark Driver and Executors?
+Q000878	M	How does Spark's DAG (Directed Acyclic Graph) Scheduler work?
+Q000879	E	Explain the concept of a Spark Session and its purpose.
+Q000880	M	How does Spark integrate with Hadoop components like HDFS and YARN?
+Q000881	E	Describe the various ways to run Spark applications (cluster, client, local modes).
+Q000882	E	What are Spark's data source APIs and how do you use them?
+Q000883	M	Discuss the role of accumulators and broadcast variables in Spark.
+Q000884	M	What is the significance of the Catalyst optimizer in Spark SQL?
+Q000885	M	How does Tungsten contribute to Spark's performance?
+Q001164	M	Describe the concept of slowly changing dimensions (SCDs) in data warehousing.
+Q001165	E	What is a fact table and how does it differ from a dimension table?
+Q001167	E	What is a data warehouse and its key characteristics?
+Q001168	E	Explain the ETL (Extract, Transform, Load) process and its stages.
+Q001169	M	What are the common challenges faced during ETL processes?
+Q001170	M	Describe the difference between full load and incremental load in ETL.
+Q001171	M	What is data staging and why is it important in ETL?
+Q001179	M	Explain the concept of data warehousing and its relevance to data mining.
+Q001475	E	What is Hadoop and what are its core components?
+Q001476	M	Explain the concept of the Hadoop Distributed File System (HDFS) and its architecture.
+Q001477	M	How does the MapReduce programming model work in Hadoop?
+Q001478	M	What is YARN, and how does it improve Hadoop's resource management?
+Q001479	M	Explain the role of the Namenode and Datanode in HDFS.
+Q001480	M	What is the Rack Awareness algorithm in HDFS, and why is it important?
+Q001482	M	What are some of the characteristics that differentiate Hadoop from traditional RDBMS?
+Q001483	M	How can you secure a Hadoop cluster? Name some of the security mechanisms available.
+Q001484	M	Describe the role of HBase in the Hadoop ecosystem.
+Q001485	E	What is Apache Hive and what types of problems does it solve?
+Q001639	M	What role does data versioning play in MLOps?
+Q001647	M	Discuss feature stores and their importance in MLOps workflows.
+Q001648	M	Explain the concept of a data pipeline and its role in MLOps.
+Q001719	M	Describe the Feature Store design pattern and its advantages.
+Q001721	M	Discuss the purpose of the Replay design pattern in machine learning.
+Q001725	M	Explain the Transformation design pattern and its significance in data preprocessing.
+Q001730	M	Explain the Data Versioning design pattern and its role in model reproducibility.
+Q001738	E	What are feature stores, and why are they important in MLOps?
+Q001740	M	What is DataOps and how does it relate to MLOps?
+Q004478	M	Where should preprocessing live in an ML training and serving pipeline?
+Q004553	M	How do you keep preprocessing consistent across training, evaluation, and inference?
+Q005388	M	How would you handle large-scale data for training?
+Q005401	E	What is a feature store, and why is it important?
+Q007085	M	Why would you put a feature store between your pipelines and your model?
+Q007086	M	You need a "number of distinct countries this card was used in over the past hour" feature for fraud scoring. Which pipeline is right, and why?
+Q012057	M	How do you design a feature store, and what causes training/serving skew?
+Q012115	H	Given exports from three customer systems, each with its own customer records, how would you produce one deduplicated set of entities? Write the code and explain your design.
+Q012219	H	Design a system that improves the quality of data.
+Q012279	M	Why has Apache Flink gained popularity compared with earlier batch and stream processing systems?
+Q012357	E	What is lambda architecture?
+Q007327	M	What is training-serving skew? How do you detect it and how do you design it out?
+Q007328a	H	Give a concrete example of a point-in-time join and show where the naive version leaks.
+Q007338	H	How do you build a training set when a key feature's values get restated 3 days after the fact?
+Q009427	H	You have a stream of billions of events and need the top-K most frequent keys with bounded memory. An exact answer is impossible. What do you do?
+Q009428	H	In a streaming top-K frequent keys computation, how do you handle a single key so hot that it skews one partition?
+Q009429	M	What changes in a streaming top-K frequent keys computation for a sliding 5-minute window?
+Q009430	M	In a Spark job that joins a 2 TB fact table to a 50 GB dimension table, when does broadcasting make things worse?
+Q009431	M	In a Spark join of a large fact table to a large dimension table, how does a shuffle-hash join differ from a sort-merge join?
+Q009453	M	In a Spark Structured Streaming pipeline, what does a Delta transaction log give you that a plain Parquet directory sink cannot?
+Q009544	H	Design the teleoperation data pipeline for robot learning. Why is data collection the bottleneck in robotics rather than compute?
+Q009545	M	How would you detect a systematically bad teleoperation operator without watching every episode?
+Q009546	M	What would make you accept a lower-quality episode into a robot imitation-learning training set?
+Q009574	H	A source API offers no change feed and rate-limits you to 10 QPS over 20M documents. What is your freshness story?
+Q009575	M	How do you detect a data connector silently missing updates (reconciliation, sampling audits)?
+Q009605	H	When approximating top-K frequent items over an unbounded stream with probabilistic sketches on 1,000 workers, how would you merge the sketches and what happens to the error bound?
+Q009606	M	When computing approximate stream statistics with sketches, how do you handle a rotating window of the last hour?
+Q009726	M	A user loads a 2 TB dataset with the Hugging Face datasets library on a 64 GB RAM machine and it works. How? And when does it stop working?
+Q009727	M	In the Hugging Face datasets library, how does fingerprinting decide whether a map can be skipped, and how do you bust a stale cache?
+Q009728	H	How would you feed 8 training nodes from one hub-hosted dataset without downloading it 8 times?
+Q009730	M	How do you version and dedupe datasets stored as Parquet?
+Q009983	M	You inherit a data pipeline script, and your fix changes historical numbers the customer already reported upstream. What now?
+Q010349	M	Where do quality checks belong in a RAG document ingestion pipeline DAG?
+Q010362	M	In an LLM batch job classifying and summarising 50 million records, the label distribution shifts halfway through the run. Is it a bug or the data?
+Q010364	H	Product wants an assistant to answer from data no older than 15 minutes. How do you design and monitor that freshness SLA?
+Q010365	H	A backfill floods the queue and pushes incremental lag past the SLA. How do you isolate the lanes?
+Q010366	M	What do you do when one data source cannot meet the freshness SLA of an AI assistant?
+Q010370	M	Why does the AI team keep asking for lineage, and what does lineage mean for RAG data?
+Q010371	H	A parser bug corrupted some fraction of chunks over three weeks. How does lineage bound the blast radius?
+Q010372	M	What lineage do you attach to LLM-generated (enriched) columns?
+Q010382	M	An AI assistant wrote an incremental model that loads yesterday's orders into a fact table. What do you check before shipping it?
+Q010513	M	What is training-serving skew, and does it have an equivalent in LLM applications?
+Q010516	M	What is a feature store, and does an LLM application need one?
+D03486	M	How do you pre-compute and store embeddings for users and items so that online ranking is fast?
+D03664	H	Design a data platform that ingests petabytes of events with minute-level latency for ML feature computation.

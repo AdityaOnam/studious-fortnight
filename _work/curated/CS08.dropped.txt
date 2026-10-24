@@ -1,0 +1,15 @@
+Q000421	offscope
+Q000572	offscope
+Q000606	offscope
+Q000607	offscope
+Q000608	offscope
+Q000610	offscope
+Q000710	offscope
+Q000853	offscope
+Q000791	vague
+Q002959	offscope
+Q003155	offscope
+Q003214	vague
+Q003220	offscope
+Q003244	offscope
+D01848	offscope

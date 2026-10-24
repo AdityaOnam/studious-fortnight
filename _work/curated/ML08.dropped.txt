@@ -1,0 +1,14 @@
+Q004045	offscope
+Q004047	offscope
+Q004222	offscope
+Q004223	offscope
+Q004224	offscope
+Q006719	dsa
+Q006733	vague
+Q006737	offscope
+Q006739	offscope
+Q006732	offscope
+Q006634	vague
+Q006654	vague
+Q006655	vague
+Q012671	junk

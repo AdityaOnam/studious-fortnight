@@ -1,0 +1,262 @@
+Q004433	M	How does a VLM combine a vision encoder with an LLM (e.g., LLaVA, PaliGemma)?
+Q004434	H	What is a VLA (vision-language-action) model? Contrast discrete action tokens (RT-2, OpenVLA) with flow-matching action heads (pi0).
+Q004712	M	Transformers work on text, so can they also understand images?
+Q004817	M	How do you handle multi-modal inputs and outputs in agentic systems?
+Q004882	M	What are multi-modal embeddings, and how are they generated?
+Q005073	E	What are multimodal AI models, and how do they process different types of data?
+Q005074	M	How do vision-language models process images?
+Q005075	M	How do image embeddings work?
+Q005076	M	How does CLIP work, and why is it important for multi-modal AI?
+Q005077	M	What are the key architectures for multi-modal models?
+Q005079	E	What is text-to-speech (TTS), and what models are used for it?
+Q005080	M	How does speech-to-text (Whisper) work?
+Q005081	H	Budget the end-to-end latency for a real-time voice agent (VAD, ASR, LLM, TTS, network). Where does the time go?
+Q005082	M	What is turn-taking in a voice AI agent, and how does it detect when the user has finished speaking?
+Q005083	M	How does sentence chunking reduce the latency of a voice agent?
+Q005084	H	What is speculative (preemptive) LLM generation in a voice agent, and how does it reduce latency?
+Q005085	M	How do you handle barge-in (user interruptions) in a voice agent?
+Q005086	H	Cascaded ASR + LLM + TTS vs native speech-to-speech models: what are the trade-offs?
+Q005088	M	How do you build a system that processes both images and text?
+Q005089	M	What are multi-modal embeddings, and how are they used for cross-modal search?
+Q005090	M	How do you evaluate multi-modal AI systems?
+Q005091	M	What are the challenges of real-time multi-modal AI processing?
+Q005092	M	How do you handle video understanding with AI?
+Q005093	E	What is visual question answering (VQA)?
+Q005094	M	What is document understanding, and how do models parse documents with layouts?
+Q005095	H	How do you fine-tune a vision-language model?
+Q005096	M	What are the latency and cost considerations for multi-modal AI in production?
+Q005099	M	Explain multimodal fusion techniques: early fusion vs late fusion.
+Q005100	M	Your vision-language model generates factually incorrect image descriptions. How do you fix it?
+Q005101	H	Your VLM answers single-image questions but fails on multi-page documents. How do you fix it?
+Q005102	H	Your multimodal LLM ignores the image and generates descriptions from text alone. How do you fix it?
+Q006047	M	How does CLIP perform zero-shot classification, and why does it work well?
+Q006048	M	How do BLIP and CLIP differ, and why was BLIP needed?
+Q006049	M	How does LLaVA work, and how does the vision encoder connect to the LLM?
+Q006050	M	How do you systematically evaluate a vision-language agent, and what do benchmarks such as MMLU-Pro, MathVista, ChartQA, and DocVQA each measure?
+Q006187	M	What are multimodal embedding models, and how do they affect RAG systems?
+Q006196	M	How do you trade off a pure-vision approach against an Accessibility Tree/XML approach for GUI agents?
+Q006197	M	What is Chain-of-Vision-Thought (CoVT), and why is it important for vision-language models?
+Q006199	M	What is spatial grounding, and why is it one of the hardest capabilities for vision-language models?
+Q006200	M	How are voice/audio modalities integrated with VLMs to form a true multimodal agent, and what is a VLA (Vision-Language-Action) model?
+Q011023	H	While the backend is slow, a voice agent tells the caller 'that change fee should be waived for you.' How do you catch this, and how do you stop it recurring?
+Q011030	H	Eager end-of-turn detection raises LLM calls by 50 to 70% in a voice agent. Is speculative generation worth it?
+Q011031	H	Design turn detection and barge-in for an agent that answers 8 kHz phone calls through a carrier media stream. How do you tell a pause from the end of a turn, and "uh-huh" from an interruption?
+Q011032	M	A managed service such as Twilio ConversationRelay handles turns and interruptions for you. Why not just use it?
+Q011033	M	A voice agent is booking an appointment, and the caller hangs up between hold and confirm. What happens?
+Q011034	H	When a long voice call session is restarted as a new session, what goes in the seed for the new session, and how big should it be?
+Q011036	H	Design the release gate for a voice agent. A change to the model, prompt, voice, or framework must not ship unless it is proven at least as good. What is in the harness, and what blocks a release?
+Q011037	M	How do you keep the simulated caller honest in a voice agent evaluation harness?
+Q011038	M	A caller spells their surname and the voice agent still gets it wrong twice. Now what?
+Q011039	H	Leadership wants the voice agent in Spanish, Hindi, Korean, and Mandarin next quarter because the vendor's model "supports 97 languages." How do you decide what actually launches, and what do you build differently per language?
+Q011040	M	A caller switches from Spanish to English mid-call. What breaks first in a voice agent?
+Q011041	M	A bank's voice agent requires in-app approval for sensitive requests, but an elderly customer has no smartphone and cannot approve in an app. What do you do?
+Q011718	M	How do you handle medical abbreviations and jargon in a clinical speech-to-text documentation system?
+Q011719	M	In a voice-based clinical documentation system, what if the nurse makes a correction mid-sentence?
+Q011780	H	Walk me through the latency budget of a voice agent. Where do the milliseconds go, and what is the single biggest lever?
+Q011781	H	Chained pipeline, single speech-to-speech model, or a duplex front end with a backend: how do you choose for a voice agent?
+Q011782	H	Design the backbone of a service that turns a script into a narrated, music-backed video. What are the hard parts?
+Q011867	M	How do vision-language models get images into an LLM: projector, cross-attention, or native tokens?
+Q011868	M	What changes when you move from images to video in multimodal models?
+Q011869	H	Budget the latency for a real-time voice agent: VAD, ASR, LLM, TTS, network. Where does the time go?
+Q011870	H	Design barge-in / interruption handling for a voice agent.
+Q011871	M	How do you evaluate ASR quality beyond WER, and TTS quality when there is no single correct output?
+Q011872	M	How do you handle code-switching and accents in a production ASR system?
+Q011873	H	Explain streaming TTS chunking and jitter-buffer sizing.
+Q011874	H	Design a speaker diarisation system and explain how you attribute roles, not just clusters.
+Q011875	H	How would you build multimodal retrieval over images, video and text in one index?
+Q012002	H	Qwen2.5-VL uses a native dynamic-resolution ViT with window attention and multimodal RoPE. Why native resolution instead of fixed tiling, and what does MRoPE encode?
+Q012008	H	Build a Voice Activity Detector from scratch. How do you make it robust for phone-quality Indian-language audio?
+Q012052	H	How would you fuse camera, radar and IMU inputs into a single perception stack, and where would you fuse them?
+Q012109	H	Write a service that proxies streaming TTS to a browser and cancels cleanly when the user navigates away.
+Q003581	E	What are ASR, LLM, TTS, and VAD each responsible for in a voice system?
+Q003582	M	What are the pros and cons of a cascaded ASR + LLM + TTS pipeline versus a native speech-to-speech model?
+Q007981	H	When would you skip parsing entirely and retrieve over page images with a visual retriever like ColPali?
+Q007982	H	How would you cut the per-page vector count in a ColPali-style retriever without losing the benefit of late interaction?
+Q007983	H	How do you produce a precise citation when your retrieval unit is a page image?
+Q008521	H	Design the evaluation for a document understanding feature: users upload invoices and scanned forms and ask questions about them.
+Q008522	H	How would you evaluate a document-QA feature on a 40-page document where the answer requires two facts from different pages?
+Q008523	M	Your vision-model judge for document understanding evals costs more than the feature. What now?
+Q008877	M	Walk me through how a modern VLM gets an image into an LLM.
+Q008878	M	Why can you get away with training only the projector in stage 1 of VLM training?
+Q008879	M	What breaks if you use a randomly initialized vision encoder instead of CLIP in a VLM?
+Q008880	M	How does a VLM handle an image whose aspect ratio does not match the vision encoder's training resolution?
+Q008881	E	What is CLIP, how is it trained, and why did it become the foundation for so much multimodal work?
+Q008882	M	Why do large batches matter so much for contrastive learning?
+Q008883	H	How would you use CLIP to build a zero-shot content moderation filter, and where would it fail?
+Q008885	M	How do images become tokens in a VLM, and why does image resolution drive inference cost?
+Q008886	H	You are processing receipts and the model misreads totals. Walk me through how you would decide whether to raise resolution or change approach. Why does a resampler-based model (fixed 64 tokens per image) struggle with dense documents?
+Q008887	M	How would you estimate the monthly bill for a screenshot-heavy agent?
+Q008888	M	What do vision-language models reliably get wrong?
+Q008889	H	Why does contrastive pretraining specifically produce weak spatial reasoning in vision-language models?
+Q008890	H	How would you detect numeric hallucination by a vision-language model in production without humans reviewing every document?
+Q008891	H	Which common vision-language model failure modes have reasoning models improved, and which persist?
+Q008896	M	How does Whisper work, and why is it so robust compared to earlier ASR systems?
+Q008897	H	Why does Whisper hallucinate on silence, and how would you guard against it in production?
+Q008898	H	How would you build streaming transcription from a 30-second-window batch model like Whisper?
+Q008899	M	What does weak supervision mean in the context of Whisper, and why did it beat curated data?
+Q008900	M	What does "grounding" mean for a VLM, and how does a model actually output a bounding box?
+Q008901	H	How would you evaluate VLM grounding quality, and why is IoU a poor fit for a document-redaction use case?
+Q008902	H	If a VLM gives you a bounding box that is close but consistently shifted down and right, what would you check first?
+Q008903	M	What is the modality gap in CLIP-style embedding spaces, and when does it actually bite you?
+Q008904	H	How would mean-centring per modality change your CLIP retrieval results, and what could it break?
+Q008905	H	If you had to compare "how similar is this image to this caption" against "how similar is this image to that image" in one ranking, how would you make the scores comparable?
+Q008906	M	What is WER, and why is it a misleading metric for a voice product?
+Q008907	H	How would you build an entity error rate metric for speech recognition without hand-labelling thousands of hours?
+Q008908	M	Why did SigLIP's sigmoid loss displace CLIP's softmax contrastive loss as the default vision encoder pretraining?
+Q008909	H	Why does a learnable bias term matter for the sigmoid loss specifically?
+Q008910	H	If you were pretraining a vision encoder for dense document text rather than natural images, what would you change about the recipe?
+Q008912	H	How do you catch a VLM confidently misreading a dollar amount?
+Q008915	M	How would you reliably extract tables and charts from documents?
+Q008916	H	A VLM returns a beautifully formatted table with one hallucinated row. What catches it?
+Q008918	H	How do you evaluate chart extraction when ground truth is only the image?
+Q008932	H	Where do you put safety filtering in a speech-to-speech architecture with no text midpoint?
+Q008933	M	How do you evaluate a voice agent end to end?
+Q008934	H	When a user interrupts a voice agent mid-tool-call, what state do you roll back?
+Q008935	M	How do models understand video, and what are the current limits?
+Q008936	H	How would you build "find when the package was delivered" over 24 hours of doorbell footage without ingesting 24 hours of tokens?
+Q008937	M	Why is counting event repetitions in video so hard for video-understanding models?
+Q008938	M	When does sampling video at 1 fps break down?
+Q008957	H	Your voice agent both cuts users off mid-sentence and leaves awkward dead air. Diagnose and fix.
+Q008958	H	How would you collect labelled data to train a semantic turn detector for your domain?
+Q008959	H	Speculative generation in a voice agent wastes tokens on cancellation. How would you decide whether it is worth it?
+Q008960	H	A marketplace wants AI-generated lifestyle photos of sellers' own products. How do you keep the product itself accurate: LoRA, IP-Adapter, ControlNet, or an editing model?
+Q008961	H	How would you harmonise lighting and shadows when compositing original product pixels into a generated scene?
+Q008962	M	A seller uploads one blurry photo. Which approaches for generating product lifestyle images still work, and what do you tell the seller?
+Q008963	H	How would you detect that an image editing model subtly changed the text on a product label?
+Q008964	H	When should a VLM hand off to a dedicated vision model, such as a detector, segmenter or tracker, instead of answering from pixels itself?
+Q008966	H	A safety-compliance camera system must flag missing harnesses. Sketch the specialist-first pipeline and where the VLM sits. What breaks when the detector and the VLM disagree, and who wins?
+Q008971	M	How do you evaluate multimodal systems, covering both understanding and generation?
+Q008974	H	Compare VLM projector/adapter designs: MLP vs resampler vs cross-attention. How does the choice interact with the training recipe?
+Q008975	H	Why did resampler-based VLMs underperform on DocVQA?
+Q008976	H	When would you unfreeze the vision encoder in a VLM, and what can go wrong?
+Q008977	H	How does the token-per-image count change multi-image and video capability in a VLM?
+Q008981	M	How does modern TTS work, and what makes speech generation hard in a real-time product?
+Q008982	H	Why does sentence-chunked streaming TTS sound choppy, and how do you fix it?
+Q008983	H	How would you automatically regression-test TTS quality in CI?
+Q008984	H	What changes when TTS moves inside a speech-to-speech omni-model?
+Q008985	H	Adapter-based VLMs vs natively multimodal (early-fusion) models: what is the real tradeoff?
+Q008986	H	Why does a shared softmax over mixed-modality tokens cause training instability?
+Q008988	H	Where do adapter-based multimodal models still beat natively multimodal ones on benchmarks, and why?
+Q008992	H	Your VLM extracts invoice fields at about 91% per-field accuracy. The customer needs 99% and you cannot fine-tune the model. What do you do?
+Q008993	H	How would you set the abstention threshold for invoice field extraction without a large labelled set?
+Q008994	H	What changes in an invoice extraction system if the customer's 99% accuracy requirement is per-document rather than per-field?
+Q008996	H	How would you build a crop-and-zoom tool loop for a VLM, and what stops it looping forever?
+Q008998	H	You need one embedding space for your own domain: product photos, spec sheets as PDFs, and text queries. Off-the-shelf CLIP is not good enough. How do you build it?
+Q008999	H	How would you detect and handle false negatives in click-mined training data for a multimodal embedding model?
+Q009002	H	How would you decide the pixel budget per document class rather than globally for a VLM document pipeline?
+Q009006	H	How would you evaluate temporal consistency of generated video automatically?
+Q009007	H	What is a vision-language-action (VLA) model, and how do you turn a VLM into a robot policy that runs at control frequency?
+Q009008	H	Why does co-training on web vision-language data matter for a VLA model when you only care about robot success?
+Q009009	H	What goes wrong when a VLA action chunk is executed open-loop and the scene changes mid-chunk?
+Q009010	H	How would you compare two VLA checkpoints fairly with only 50 real-robot trials each?
+Q009011	H	How does a full-duplex speech model listen and talk at the same time, and when would you choose one over a turn-based voice pipeline?
+Q009012	H	Why does distilling the first codebook towards semantic features help a speech language model?
+Q009013	H	How would you add a safety filter to a full-duplex speech model without reintroducing turn latency?
+Q009014	H	What training data would you need to teach a full-duplex speech model backchannelling, and how would you get it?
+Q009141	H	How would you build and improve an ASR system for a clinic room with two or three speakers, background noise, accents, and a vocabulary full of drug names?
+Q009142	M	How would you handle a clinician and patient code-switching mid-sentence in ASR?
+Q009144	M	Why does speaker diarisation matter clinically, and how would you attribute roles rather than just cluster voices?
+Q009145	H	How would you evaluate diarisation quality in a way that correlates with clinical note errors rather than with DER?
+Q009146	M	What changes in speaker diarisation for clinical visits when an interpreter is present?
+Q009147	H	A patient's chart already lists their medications. How would you use that to improve transcription of drug names, and how would you keep it from backfiring?
+Q009148	M	In contextual ASR biasing with a patient's medication list, how would you size the bias list, and what do you drop first when it gets too long?
+Q009496	H	Budget the end-to-end latency for a real-time voice agent. Why is time-to-first-audio a different problem from an LLM's time-to-first-token?
+Q009497	M	In a real-time voice agent latency budget, which term would you attack first if p50 is fine but p99 is 2.5 s?
+Q009498	M	How does the latency budget of a voice agent change over PSTN telephony rather than WebRTC?
+Q009499	H	How would you moderate a speech-to-speech agent's output without transcribing it?
+Q009500	M	What would make you migrate a shipped cascaded ASR plus LLM plus TTS voice agent to a native speech-to-speech model?
+Q009501	H	Design barge-in for a voice agent. What breaks if you get it wrong?
+Q009502	H	How do you tune the backchannel threshold in a voice agent's barge-in handling without a labelled dataset?
+Q009503	M	What changes in a voice agent's barge-in handling when the caller is on a speakerphone in a car?
+Q009504	H	Walk through streaming TTS. How do you chunk input text, and how do you size the jitter buffer?
+Q009505	H	How would you make jitter buffer sizing adaptive in streaming TTS without oscillating?
+Q009506	M	Where do you meter characters for billing in a streaming TTS service when a stream is cancelled halfway?
+Q009510	H	There is no single correct output for an utterance. How do you evaluate speech synthesis quality at scale?
+Q009511	H	How do you build a regression suite for a TTS system that catches a prosody regression an ASR-based WER check would pass?
+Q009512	M	How many CMOS raters do you need to detect a small change in speech quality?
+Q009517	H	Design the dubbing pipeline: an English video becomes Spanish, with the same speakers and the same timing.
+Q009518	H	In a video dubbing pipeline, two speakers overlap for four seconds. What does your pipeline do?
+Q009519	M	In a dubbing pipeline, how do you handle a proper noun that should not be translated but must be pronounced natively?
+Q009520	M	A bank wants account numbers read in groups of four with pauses by a TTS system. Where does that logic live, the text normaliser or the model?
+Q009521	M	How do you version a customer's pronunciation lexicon for TTS without regressing their old audio?
+Q009524	H	Serving real-time TTS is a different capacity problem from serving a text LLM. Why, and how do you plan capacity?
+Q009530	H	What is a vision-language-action model, and how is it different from an LLM with tools?
+Q009531	M	Where do discrete tool calls still make sense on a humanoid robot that uses a vision-language-action model?
+Q009532	H	What would you have to give up to make a VLA fully autoregressive over single actions instead of action chunks?
+Q009533	H	A humanoid control system splits into a large slow model and a small fast one. Why not run a single end-to-end network?
+Q009534	H	In a dual-system VLA with a slow large model (S2) and a fast small model (S1), what happens to behaviour if S2 stalls for a full second?
+Q009535	H	In a dual-system VLA with a slow model (S2) and a fast model (S1), how would you decide whether a new capability belongs in S2, S1, or the data?
+Q009536	H	If the slow semantic reasoning model of a humanoid robot is moved off-board to the cloud, how would you measure whether staleness is actually hurting task success?
+Q009537	M	If the slow semantic reasoning model of a humanoid robot runs in the cloud, what onboard fallback would you ship for a network partition?
+Q009538	M	Explain action chunking. Why predict a sequence of future actions instead of the next one?
+Q009539	M	How would you choose the action chunk length empirically?
+Q009540	M	In action-chunked robot control, what signal would trigger an early replan, and what does replanning too eagerly cost you?
+Q009770	H	How do modern multimodal models get image and video understanding into an LLM, and what changes for video specifically?
+Q009771	H	When does a contrastive (CLIP-style) encoder underperform a captioning-trained one as the LLM's vision encoder?
+Q009772	H	How would you detect that your vision-language model is answering from the caption text and ignoring the pixels?
+Q010046	H	A vision-language model uses a native dynamic-resolution ViT with window attention and multimodal RoPE (MRoPE). Why use native resolution instead of fixed-size tiling, and what does MRoPE encode?
+Q010047	H	How does a variable token count per image complicate batching and serving of a vision-language model?
+Q010048	M	Why is native resolution especially important for OCR and grounding compared with, say, image captioning?
+Q010063	H	Build a Voice Activity Detector from scratch to detect where speech is present in an audio stream. How do you approach it, and how do you make it robust for phone-quality Indian-language audio?
+Q010064	M	How do you tune a voice agent's endpoint silence timeout differently for a form-filling bot versus open conversation?
+Q010065	M	How would you evaluate voice activity detection quality without frame-level labels?
+Q010068	M	How do you keep the LLM in a voice agent from switching language mid-answer when the user code-mixes?
+Q010069	H	Whisper transcribes Hinglish poorly, often forcing output into one language or hallucinating. Why, and how would you build an ASR that handles code-mixed speech?
+Q010070	M	How would you build a labelled code-mixed speech evaluation set cheaply?
+Q010071	M	For code-mixed ASR output, would you normalize to native script or keep transliteration, and why?
+Q010083	H	Text-to-speech has to speak code-mixed, mixed-script text naturally. What are the hard parts of text normalization and prosody for Indian-language TTS?
+Q010084	H	How would you handle a sentence that switches script mid-word in a TTS front-end?
+Q010085	H	Why is an LLM-based front-end better than rule-based prosody for expressive TTS, and what does it cost you?
+Q010147	H	Your chat agent is moving to the phone. What actually changes?
+Q010148	M	Where would you spend a 300 ms latency-reduction budget first in a voice agent?
+Q010149	M	How do you regression-test barge-in behaviour in a voice agent?
+Q010223	H	Where do vision-language models and foundation models genuinely help in an autonomy stack, and where are they a liability?
+Q010224	H	How would you evaluate whether a VLM's scene explanation is actually correct rather than plausible?
+Q010286	H	How would you collect training data for GUI grounding at scale?
+D00834	E	What is a vision-language model and how are its components arranged?
+D00835	M	How does CLIP train image and text encoders contrastively?
+D00836	M	How does CLIP enable zero-shot classification and what are its limitations?
+D00837	M	How do BLIP and BLIP-2 differ from CLIP, and what is the Q-Former?
+D00838	M	How does LLaVA connect a visual encoder to an LLM?
+D00839	M	What is a Perceiver Resampler and how does it compare to linear projection?
+D00840	M	How does a multimodal agent handle multi-image input differently than single-image?
+D00841	M	How do SigLIP and CLIP compare for retrieval embeddings?
+D00842	M	How do you build an image-text retrieval system with multimodal models?
+D00843	M	What are common visual hallucinations in VLMs, and how do you detect and reduce them?
+D00844	M	What is spatial grounding and why is it hard for VLMs?
+D00845	M	How do you evaluate multimodal models and agents, and which benchmarks matter?
+D00846	M	How does a video-understanding agent process long videos?
+D00847	M	Compare fixed-frame sampling with agentic processing for video.
+D00848	M	Design an invoice recognition and reimbursement agent.
+D00849	M	How do you design the tool set for a vision agent?
+D00850	M	How does an image-generation sub-agent work, and how do you evaluate generation accuracy and diversity?
+D00851	M	How does an image-editing agent differ from a text-to-image agent?
+D00852	M	How do you regression-test a generative media pipeline when outputs are not reproducible?
+D00853	H	Design a service that turns a script into a narrated, music-backed video. What are the hard problems?
+D00854	M	How do provenance and watermarking apply to generated media pipelines?
+D00855	M	How do you handle multimodal inputs in a complex AI workflow, with degradation paths?
+D00856	M	How do you route between models to build a low-latency multimodal agent?
+D00857	M	What are the trade-offs of an on-device multimodal model such as a small open-weight VLM?
+D00858	M	How do vision LLMs extract layout and structure from documents, and when do you still prefer specialist APIs?
+D00859	M	What is an omni model with a thinker-talker architecture and why does it matter for voice and vision?
+D00860	M	How do audio and VLA models integrate with vision-language models in an agent?
+D00861	M	Compare the three voice-agent architectures: chained pipeline, speech-to-speech and duplex front end with a backend.
+D00862	M	Walk through the latency budget of a voice agent and the single biggest lever.
+D00863	M	How do turn detection and barge-in work in a voice agent?
+D00864	M	Why is end-of-turn detection on 8 kHz telephone audio hard, and how do you distinguish a pause from an end of turn?
+D00865	M	How do you design tool execution for voice so a mid-call correction never double-books?
+D00866	M	How do you design for voice sessions that exceed model connection or session limits?
+D00867	M	How do you capture exact identifiers such as member IDs and dates of birth reliably over voice?
+D00868	M	Build a cost model for one million voice minutes per month across architecture options.
+D00869	M	What would a release gate for a voice agent include?
+D00870	M	How do you decide which languages a voice agent can actually launch in?
+D00871	M	What consent, disclosure and opt-out handling does an outbound AI calling product need?
+D00872	M	How do you threat-model a banking voice agent against audio injection and cloned voices?
+D00873	M	Where should speech recognition run for a healthcare voice assistant: cloud under an agreement or on-premises?
+D00874	M	How do speaker diarization and medical entity extraction fit a clinical note pipeline?
+D00875	M	How would you integrate generated clinical notes with an EHR using FHIR?
+D00876	M	How do you handle noisy audio environments in speech pipelines?
+D03792	M	How does a vision-language model combine a vision encoder, a projector and an LLM, and how is it trained?
+D03793	M	Compare contrastive dual encoders such as CLIP with adapter-based and cross-attention approaches to multimodal models.
+D03794	M	Compare early and late fusion and native any-to-any multimodal models.
+D03795	M	What is a vision-language-action model and how do discrete action tokens differ from flow-matching action heads?

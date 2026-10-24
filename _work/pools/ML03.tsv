@@ -1,0 +1,123 @@
+Q000946	M	Describe how boosting helps to reduce bias.
+Q001028	M	Describe how a Decision Tree works in classification tasks.
+Q001029	M	What is a Random Forest and why is it often more effective than a single Decision Tree?
+Q001030	M	Explain what Gradient Boosting Machines (GBM) are and how they work.
+Q001153	M	Can Random Forests effectively handle high-dimensional data without overfitting?
+Q001238	E	What is a Decision Tree in the context of Machine Learning?
+Q001239	M	Can you explain how a Decision Tree is constructed?
+Q001240	E	What is the difference between classification and regression Decision Trees?
+Q001241	M	Name and describe the common algorithms used to build a Decision Tree.
+Q001242	E	What are the main advantages of using Decision Trees?
+Q001243	E	Outline some limitations or disadvantages of Decision Trees.
+Q001244	M	Explain the concept of "impurity" in a Decision Tree and how it is used.
+Q001245	M	What are entropy and information gain in the Decision Tree context?
+Q001246	M	Define Gini impurity and its role in Decision Trees.
+Q001247	M	Discuss how Decision Trees handle both categorical and numerical data.
+Q001248	M	What is tree pruning and why is it important?
+Q001249	M	How does a Decision Tree avoid overfitting?
+Q001250	M	What is the significance of the depth of a Decision Tree?
+Q001251	M	Explain how missing values are handled by Decision Trees.
+Q001252	M	Can Decision Trees be used for multi-output tasks?
+Q001351	E	What is ensemble learning in machine learning?
+Q001352	M	Can you explain the difference between bagging, boosting, and stacking?
+Q001353	E	Describe what a weak learner is and how it is used in ensemble methods.
+Q001355	E	What are some advantages of using ensemble learning methods over single models?
+Q001356	M	How does ensemble learning help with the variance and bias trade-off?
+Q001357	M	What is a bootstrap sample and how is it used in bagging?
+Q001358	M	Explain the main idea behind the Random Forest algorithm.
+Q001359	M	How does the boosting technique improve weak learners?
+Q001360	M	What is model stacking and how do you select base learners for it?
+Q001361	E	How can ensemble learning be used for both classification and regression tasks?
+Q001362	M	Describe the AdaBoost algorithm and its process.
+Q001363	M	How does Gradient Boosting work and what makes it different from AdaBoost?
+Q001364	M	Explain XGBoost and its advantages over other boosting methods.
+Q001365	M	Discuss the principle behind the LightGBM algorithm.
+Q001366	M	How does the CatBoost algorithm handle categorical features differently from other boosting algorithms?
+Q001587	M	What is LightGBM and how does it differ from other gradient boosting frameworks?
+Q001588	M	How does LightGBM handle categorical features differently from other tree-based algorithms?
+Q001589	M	Can you explain the concept of Gradient Boosting and how LightGBM utilizes it?
+Q001591	M	What are some of the advantages of LightGBM over XGBoost or CatBoost?
+Q001592	M	How does LightGBM achieve faster training and lower memory usage?
+Q001593	M	Explain the histogram-based approach used by LightGBM.
+Q001594	M	Discuss the types of tree learners available in LightGBM.
+Q001595	M	What is meant by leaf-wise tree growth in LightGBM, and how is it different from depth-wise growth?
+Q001596	M	Explain how LightGBM deals with overfitting.
+Q001597	H	What are feature parallelism and data parallelism in the context of LightGBM?
+Q001598	H	How do Gradient-based One-Side Sampling (GOSS) and Exclusive Feature Bundling (EFB) contribute to LightGBM's performance?
+Q001599	M	Explain the role of the learning rate in the LightGBM algorithm.
+Q001600	M	How would you tune the number of leaves or maximum depth of trees in LightGBM?
+Q001601	M	What is the significance of the min_data_in_leaf parameter in LightGBM?
+Q001602	M	Discuss the impact of using a large versus small bagging_fraction in LightGBM.
+Q001722	M	Explain the Model Ensemble design pattern and when you would use it.
+Q001987	E	What is a Random Forest, and how does it work?
+Q001988	E	How does a Random Forest differ from a single decision tree?
+Q001990	E	What are the main advantages of using a Random Forest?
+Q001991	M	What is bagging, and how is it implemented in a Random Forest?
+Q001992	M	How does Random Forest achieve feature randomness?
+Q001993	M	What is out-of-bag (OOB) error in Random Forest?
+Q001994	H	Are Random Forests biased towards attributes with more levels? Explain your answer.
+Q001995	M	How do you handle missing values in a Random Forest model?
+Q001996	M	What are the key hyperparameters of a Random Forest, and how do they affect the model?
+Q001997	E	Can Random Forest be used for both classification and regression tasks?
+Q001998	M	What is the concept of ensemble learning, and how does Random Forest fit into it?
+Q001999	M	Compare Random Forest with Gradient Boosting Machine (GBM).
+Q002000	M	What is the difference between Random Forest and Extra Trees classifiers?
+Q002001	M	How does Random Forest prevent overfitting in comparison to decision trees?
+Q002002	M	Explain the differences between Random Forest and AdaBoost.
+Q002323	E	What is XGBoost and why is it considered an effective machine learning algorithm?
+Q002324	M	Can you explain the differences between gradient boosting machines (GBM) and XGBoost?
+Q002325	M	How does XGBoost handle missing or null values in the dataset?
+Q002326	M	What is meant by regularization in XGBoost and how does it help in preventing overfitting?
+Q002327	M	How does XGBoost differ from random forests?
+Q002328	M	Explain the concept of gradient boosting. How does it work in the context of XGBoost?
+Q002329	M	What are the loss functions used in XGBoost for regression and classification problems?
+Q002330	M	How does XGBoost use tree pruning and why is it important?
+Q002331	M	Describe the role of shrinkage (learning rate) in XGBoost.
+Q002332	M	What are the core parameters in XGBoost that you often consider tuning?
+Q002333	M	Explain the importance of the max_depth parameter in XGBoost.
+Q002334	M	Discuss how to manage the trade-off between learning rate and n_estimators in XGBoost.
+Q002335	M	What is early stopping in XGBoost and how can it be implemented?
+Q002336	M	How does the objective function affect the performance of the XGBoost model?
+Q002337	M	Discuss how XGBoost can handle highly imbalanced datasets.
+Q004361	E	What are decision trees?
+Q004363	M	What are the main parameters of the decision tree model?
+Q004364	E	What is random forest?
+Q004366	M	In a decision tree, what if instead of finding the best split, we randomly select a few splits and just select the best from them? Will it work?
+Q004367	M	Are there any differences between continuous and discrete variables when it comes to feature importance of gradient boosting models?
+Q004368	M	How do you approach tuning parameters in XGBoost or LightGBM?
+Q004411	E	What is a decision tree and how does it work?
+Q004415	M	Explain decision-tree based algorithms (random forest, GBDT).
+Q005211	E	How does a decision tree algorithm work?
+Q005212	M	Explain how decision trees make splits and handle categorical features.
+Q005213	M	How does the random forest algorithm work? How does it improve over decision trees? How does it reduce variance?
+Q005214	E	Explain ensemble methods. Why are they powerful?
+Q005215	E	What is the difference between bagging and boosting?
+Q005216	M	What is gradient boosting? How does XGBoost work?
+Q005217	M	What are the key hyperparameters for XGBoost?
+Q005218	M	Explain gradient boosting and its advantages over random forests.
+Q005459	M	Why do ensembles typically have higher scores than individual models?
+Q005460	E	What is the difference between boosting and bagging?
+Q006300	M	Describe how Gradient Boosting works.
+Q006598	M	Explain bagging vs boosting.
+Q006599	E	Is random forest bagging or boosting?
+Q006610	E	Explain the decision tree algorithm.
+Q006620	M	What is the bias-variance tradeoff? How does XGBoost handle the bias-variance tradeoff?
+Q006665	M	What is the main idea behind ensemble learning? If you had many different models that predicted the same response variable, what might you want to do to incorporate all of them? Would you expect this to perform better or worse than an individual model?
+Q012019	M	How do bagging and boosting differ? What is the computational difference between XGBoost and Random Forest?
+Q012035	M	Explain strategies to combat overfitting in tree-based classification models.
+Q012582	M	Describe the motivation behind random forests and mention two reasons why they are better than individual decision trees.
+Q012583	M	What are the differences and similarities between gradient boosting and random forest, and what are the advantages and disadvantages of each compared to the other?
+Q012589	M	Explain what information gain and entropy are in the context of decision trees.
+Q012600	E	What is the difference between hard and soft voting classifiers in the context of ensemble learners?
+Q012601	E	What is boosting in the context of ensemble learners? Discuss two famous boosting methods.
+Q012608	M	What are the different methods to split a node in a decision tree algorithm?
+Q012609	M	Why is boosting a more stable algorithm compared to other ensemble algorithms?
+Q007260	M	Random forest vs gradient boosting: how does each work, and why do tree ensembles still beat neural networks on tabular data?
+Q007261	H	Why does CatBoost's ordered target encoding exist, and what leakage does it prevent?
+Q007393	M	Why do ensembles work, when are they worth the cost, and where do they show up in LLM systems?
+D03706	E	How does a decision tree choose its splits, and when does it stop growing?
+D03707	M	What is tree pruning and why is it needed?
+D03708	M	Compare bagging and boosting and explain which one reduces variance and which reduces bias.
+D03709	M	Explain how a random forest works and why it decorrelates trees.
+D03710	M	Explain how AdaBoost, gradient boosting and XGBoost differ.
+D03711	M	Compare tree-based models with neural networks for tabular data.
