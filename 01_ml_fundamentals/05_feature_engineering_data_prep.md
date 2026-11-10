@@ -3,7 +3,7 @@ domain: ml
 topic: feature_engineering_data_prep
 title: Feature engineering and data preparation
 tags: [ml, features, data-prep, leakage]
-count: 158
+count: 171
 ---
 # Feature engineering and data preparation
 
@@ -184,3 +184,18 @@ count: 158
 - [ML05-156] How do you estimate the true error rate of 10M model-generated labels from an audit sample, and how big does the sample need to be?
 - [ML05-157] Some annotators are pasting your tasks into an LLM and submitting the output. How do you detect and handle it?
 - [ML05-158] How do you estimate what fraction of already-delivered annotation data is contaminated by LLM-generated content?
+
+## More data preparation and feature engineering
+- [ML05-159] How does frequency (count) encoding work, and when can it fail?
+- [ML05-160] How do you validate data and catch inconsistencies such as conflicting units, formats or impossible values before training?
+- [ML05-161] How do you detect and handle duplicate and near-duplicate records, and how can they leak across data splits?
+- [ML05-162] How do you use mutual information to select features, and what are its limitations?
+- [ML05-163] How do you evaluate whether a newly engineered feature actually helps the model?
+- [ML05-164] Which features would you engineer for time-series data, such as lags, rolling statistics and calendar features?
+- [ML05-165] What is automated feature engineering, for example deep feature synthesis, and what are its risks?
+- [ML05-166] What is online normalization with running statistics, and when do you need it?
+- [ML05-167] How can data collection and preprocessing introduce bias into a model, and how would you detect and mitigate it?
+- [ML05-168] How do you take random, stratified or reproducible samples of a large table in SQL?
+- [ML05-169] Which features would you engineer for a predictive maintenance model on sensor data?
+- [ML05-170] Which features would you engineer for a customer churn prediction model?
+- [ML05-171] How would you engineer features for real-time anomaly detection on web traffic?

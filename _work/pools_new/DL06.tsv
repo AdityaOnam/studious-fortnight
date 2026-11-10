@@ -1,0 +1,53 @@
+Q012998	data-mining	What is text mining and how does it differ from traditional data mining?
+Q013058	data-processing	How do you preprocess text data for natural language processing?
+Q013059	data-processing	Explain the methods of tokenization, stemming, and lemmatization.
+Q013060	data-processing	What is the difference between Bag-of-Words and TF-IDF?
+Q013061	data-processing	How do you deal with a large vocabulary size in text data?
+Q013062	data-processing	Describe how word embeddings are used in data processing for NLP.
+Q013158	data-scientist	What is Natural Language Processing (NLP) and its applications?
+Q013159	data-scientist	Explain the difference between Tokenization and Stemming.
+Q013160	data-scientist	What is Word Embedding and its popular techniques (Word2Vec, GloVe)?
+Q013161	data-scientist	Describe the concept of Named Entity Recognition (NER) and its approaches.
+Q013162	data-scientist	What is Sentiment Analysis and its methods?
+Q013163	data-scientist	Explain the concept of Topic Modeling and its algorithms (LDA, NMF).
+Q013164	data-scientist	What is Text Classification and its techniques?
+Q013165	data-scientist	Describe the concept of Language Translation and its challenges.
+Q013166	data-scientist	What is Text Summarization and its types (Extractive, Abstractive)?
+Q013273	deep-learning	Discuss the role of deep learning in Natural Language Processing (NLP).
+Q013294	deep-learning	How would you use deep learning to improve natural language understanding in chatbots?
+Q013296	deep-learning	Describe an approach to develop a deep learning model for sentiment analysis on social media.
+Q014092	neural-networks	Discuss an application of neural networks in natural language processing (NLP).
+Q014097	neural-networks	Describe a strategy to use neural networks for sentiment analysis on social media posts.
+Q014114	nlp	Briefly explain word embeddings and their importance in NLP.
+Q014115	nlp	Describe the architecture and applications of Recurrent Neural Networks (RNN) in NLP.
+Q014116	nlp	How do Long Short-Term Memory (LSTM) networks work, and when would you use them?
+Q014117	nlp	What are the benefits of using Attention Mechanisms in NLP models?
+Q014118	nlp	Explain the concept and capabilities of Transformer models like BERT and GPT.
+Q014119	nlp	Describe the TF-IDF statistic and its significance in document retrieval.
+Q014120	nlp	What is the idea behind Latent Semantic Analysis (LSA) in NLP?
+Q014121	nlp	How do word2vec and GloVe differ as word embedding techniques?
+Q014122	nlp	What challenges does one face when using vector space models for semantic analysis?
+Q014123	nlp	Discuss the concept of semantic similarity and its computational approaches in NLP.
+Q014124	nlp	How do you use spaCy for text processing tasks?
+Q014125	nlp	Describe a typical workflow with the Natural Language Toolkit (NLTK) in Python.
+Q014126	nlp	What are the benefits of using libraries like Hugging Face’s Transformers?
+Q014127	nlp	Explain how PyTorch and TensorFlow facilitate NLP model building.
+Q014128	nlp	How do you handle multilingual text processing in modern NLP libraries?
+Q014134	nlp	What are context-free grammars, and how do they apply to parsing in NLP?
+Q014135	nlp	How can topic modeling be used in analyzing large collections of documents?
+Q014136	nlp	Discuss the use of Conditional Random Fields (CRF) in sequence modeling for NLP.
+Q014137	nlp	What is the difference between rule-based, statistical, and neural approaches in NLP?
+Q014138	nlp	Explain how machine translation models are evaluated for accuracy.
+Q014139	nlp	How do you handle noisy text data from sources like social media for NLP tasks?
+Q014140	nlp	Discuss strategies for dealing with slang and abbreviations in text processing.
+Q014141	nlp	Explain the importance of domain-specific corpora and language resources in NLP.
+Q014142	nlp	How do you address the issue of data scarcity when working with less-resourced languages?
+Q014143	nlp	What measures can be taken to reduce bias in NLP models?
+Q014144	nlp	How would you build a chatbot using NLP principles?
+Q014145	nlp	Outline your approach to develop a recommendation system based on textual content analysis.
+Q014146	nlp	Propose an NLP solution for detecting fake news articles.
+Q014147	nlp	Describe an approach to automatically summarize long documents.
+Q014148	nlp	How would you design a voice-activated assistant like Siri or Alexa with NLP technology?
+Q014387	python-ml	What is the role of attention mechanisms in natural language processing models?
+Q014389	python-ml	How would you develop a spam detection system using Python?
+Q014391	python-ml	Explain how you would create a sentiment analysis model with Python.

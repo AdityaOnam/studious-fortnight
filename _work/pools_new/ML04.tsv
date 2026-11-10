@@ -1,0 +1,156 @@
+Q012821	cluster-analysis	How do Gaussian Mixture Models (GMM) contribute to cluster analysis?
+Q012822	cluster-analysis	What preprocessing steps would you suggest before performing cluster analysis?
+Q012823	cluster-analysis	Describe how you would evaluate the stability of the clusters formed.
+Q012824	cluster-analysis	Discuss feature selection techniques appropriate for cluster analysis.
+Q012825	cluster-analysis	How might you address missing values in a dataset before clustering?
+Q012826	cluster-analysis	What are some post-clustering analysis methods you can perform?
+Q012827	cluster-analysis	Explain the concept of cluster validation techniques.
+Q012828	cluster-analysis	How can the elbow method help in selecting the optimal number of clusters?
+Q012829	cluster-analysis	What is the impact of random initialization in K-means clustering?
+Q012830	cluster-analysis	Explain the advantages of using hierarchical clustering over K-means.
+Q012831	cluster-analysis	How does partitioning around medoids (PAM) differ from K-means?
+Q012832	cluster-analysis	What are the main differences between Agglomerative and Divisive hierarchical clustering?
+Q012833	cluster-analysis	Discuss the benefits of using Spectral Clustering and the type of problems it can solve.
+Q012834	cluster-analysis	Describe how affinity propagation clustering works.
+Q012835	cluster-analysis	Explain the concept of clustering using BIRCH (Balanced Iterative Reducing and Clustering using Hierarchies).
+Q012844	cluster-analysis	How would you apply cluster analysis for customer segmentation in a retail business?
+Q012845	cluster-analysis	Discuss how cluster analysis can be leveraged for image segmentation.
+Q012846	cluster-analysis	Describe how you would use clustering for organizing a large set of documents into topics.
+Q012847	cluster-analysis	Propose a clustering strategy for identifying similar regions in geographical data.
+Q012848	cluster-analysis	Explain how you would employ cluster analysis in a recommendation system.
+Q012849	cluster-analysis	Discuss a potential framework for analyzing social network connectivity using clustering.
+Q012850	cluster-analysis	How would you approach clustering time-series data, such as stock market prices or weather patterns?
+Q012851	cluster-analysis	Discuss the role of deep learning in cluster analysis and mention any popular approaches.
+Q012852	cluster-analysis	How does consensus clustering improve the robustness and stability of cluster assignments?
+Q012853	cluster-analysis	What is subspace clustering, and how does it apply to high-dimensional data?
+Q012854	cluster-analysis	Explain the challenges and solutions for clustering large-scale datasets.
+Q012855	cluster-analysis	How can reinforcement learning theoretically be utilized for optimizing cluster analysis tasks?
+Q012986	data-mining	How does k-means clustering work in the context of data mining?
+Q013030	data-processing	How do principal component analysis (PCA) and linear discriminant analysis (LDA) differ?
+Q013036	data-processing	Discuss various dimensionality reduction techniques besides PCA and LDA.
+Q013099	data-processing	How is unsupervised learning used for preprocessing and feature extraction?
+Q013114	data-scientist	What is Principal Component Analysis (PCA) and its role in dimensionality reduction?
+Q013128	data-scientist	What is K-Means Clustering and its objective function?
+Q013129	data-scientist	Explain the difference between Hierarchical and Partitional Clustering.
+Q013130	data-scientist	What is Density-Based Spatial Clustering of Applications with Noise (DBSCAN) and its parameters?
+Q013131	data-scientist	Describe the concept of Gaussian Mixture Models (GMM) and its applications.
+Q013132	data-scientist	What is Principal Component Analysis (PCA) and its role in unsupervised learning?
+Q013133	data-scientist	Explain the concept of t-Distributed Stochastic Neighbor Embedding (t-SNE) and its use cases.
+Q013136	data-scientist	What is Self-Organizing Maps (SOM) and its applications?
+Q013137	data-scientist	Explain the concept of Latent Dirichlet Allocation (LDA) in topic modeling.
+Q013308	dimensionality-reduction	Explain how the Singular Value Decomposition (SVD) technique is related to PCA.
+Q013309	dimensionality-reduction	Discuss the role of manifold learning in dimensionality reduction. Give examples like Isomap or Locally Linear Embedding (LLE).
+Q013310	dimensionality-reduction	In PCA, how do you decide on the number of principal components to keep?
+Q013311	dimensionality-reduction	Describe the process of training a model using LDA.
+Q013312	dimensionality-reduction	What are the limitations of using PCA for dimensionality reduction?
+Q013313	dimensionality-reduction	How can one interpret the components obtained from a PCA?
+Q013314	dimensionality-reduction	What are some of the challenges associated with using t-SNE?
+Q013315	dimensionality-reduction	Discuss the advantages and disadvantages of using Autoencoders for dimensionality reduction.
+Q013316	dimensionality-reduction	How do you handle missing values when applying PCA?
+Q013317	dimensionality-reduction	Describe the steps for feature selection using a tree-based estimator like Random Forest.
+Q013318	dimensionality-reduction	What cross-validation technique would you use when performing dimensionality reduction?
+Q013319	dimensionality-reduction	Explain how dimensionality reduction can affect the performance of clustering algorithms.
+Q013320	dimensionality-reduction	How can you evaluate if dimensionality reduction has preserved the important features of the dataset?
+Q013321	dimensionality-reduction	What preprocessing steps would you take before applying dimensionality reduction algorithms?
+Q013322	dimensionality-reduction	How does feature scaling impact the outcome of PCA?
+Q013323	dimensionality-reduction	Can dimensionality reduction be applied to any machine learning algorithms? If not, explain why.
+Q013328	dimensionality-reduction	Modify a given t-SNE implementation to work more efficiently on a large-scale dataset.
+Q013333	dimensionality-reduction	How would you use dimensionality reduction for a dataset containing thousands of features, such as gene expression data?
+Q013334	dimensionality-reduction	Discuss your approach to reduce dimensionality for text data before performing sentiment analysis.
+Q013335	dimensionality-reduction	How could dimensionality reduction be applied effectively when visualizing high-dimensional data?
+Q013336	dimensionality-reduction	Explain the process you would follow to select features for a predictive model in a marketing dataset.
+Q013337	dimensionality-reduction	What are some potential pitfalls when applying dimensionality reduction to time-series data?
+Q013338	dimensionality-reduction	Discuss current research topics in the field of dimensionality reduction.
+Q013339	dimensionality-reduction	Explain how dimensionality reduction techniques can be adapted for large-scale distributed systems.
+Q013340	dimensionality-reduction	What are the implications of using deep learning-based methods for dimensionality reduction, such as variational autoencoders?
+Q013341	dimensionality-reduction	How might advancements in quantum computing impact the field of dimensionality reduction?
+Q013342	dimensionality-reduction	What role do you think dimensionality reduction will play in the future of interpretable machine learning?
+Q013577	k-means-clustering	Compare K-Means clustering with hierarchical clustering.
+Q013578	k-means-clustering	Explain the significance of the Elbow Method in K-Means Clustering.
+Q013579	k-means-clustering	What is the curse of dimensionality, and how does it affect K-Means Clustering?
+Q013580	k-means-clustering	Can you use K-Means for high-dimensional data?
+Q013581	k-means-clustering	Describe the silhouette coefficient and how it is used with K-Means Clustering.
+Q013582	k-means-clustering	How would you explain the differences between hard and soft clustering?
+Q013583	k-means-clustering	Explain mini-batch K-Means. How does it differ from the standard K-Means?
+Q013584	k-means-clustering	How can the K-Means algorithm be optimized for very large datasets?
+Q013585	k-means-clustering	Discuss the concept of K-Means++ and why it improves the original K-Means?
+Q013586	k-means-clustering	How would you improve the computational efficiency of K-Means Clustering?
+Q013587	k-means-clustering	How can you determine if K-Means clustering has properly converged?
+Q013588	k-means-clustering	What considerations should be made when choosing initial centroid locations?
+Q013589	k-means-clustering	How can the results of K-Means clustering be validated?
+Q013590	k-means-clustering	In what ways can K-Means clustering influence business decision-making?
+Q013591	k-means-clustering	Describe a scenario where K-Means clustering was effectively applied to solve a real-world problem.
+Q013592	k-means-clustering	What preprocessing steps would you perform before applying K-Means Clustering?
+Q013595	k-means-clustering	Given a dataset, apply feature scaling and run K-Means Clustering using scikit-learn.
+Q013597	k-means-clustering	Script a program to compare the performance of different initialization methods for centroids.
+Q013601	k-means-clustering	Using Pandas and Python, clean and prepare a real-world dataset for K-Means Clustering.
+Q013603	k-means-clustering	How can K-Means be applied to segment customers in a retail business?
+Q013604	k-means-clustering	Discuss how you would use K-Means Clustering for image compression.
+Q013605	k-means-clustering	Outline a strategy to cluster documents based on their textual content using K-Means.
+Q013606	k-means-clustering	How would you apply K-Means clustering for anomaly detection?
+Q013607	k-means-clustering	Provide an example of using K-Means clustering for market trend analysis.
+Q013608	k-means-clustering	Explain how you can apply K-Means Clustering to the problem of load balancing in distributed computing.
+Q013609	k-means-clustering	Describe a project where K-Means contributed to improving recommendation systems.
+Q013610	k-means-clustering	How would you leverage K-Means clustering in designing a content delivery network?
+Q013611	k-means-clustering	Discuss the significance of Lloyd’s Algorithm in the context of K-Means Clustering enhancements.
+Q013612	k-means-clustering	Describe the latest research findings on K-Means clustering and its variants for big data applications.
+Q014277	pca	Provide examples of how PCA can be used in image processing.
+Q014278	pca	Explain the curse of dimensionality and how PCA can help to mitigate it.
+Q014279	pca	How does PCA handle missing values in the data?
+Q014280	pca	Discuss the application of PCA in feature engineering.
+Q014281	pca	What is the difference between PCA and t-SNE for dimensionality reduction?
+Q014282	pca	Explain how PCA can be used as a noise reduction technique.
+Q014283	pca	Describe how you would apply PCA for visualization purposes.
+Q014284	pca	Discuss how PCA can suffer from outlier sensitivity and ways to address it.
+Q014285	pca	Can PCA be applied to categorical data? Why or why not?
+Q014286	pca	What are the advantages and drawbacks of kernel PCA compared to linear PCA?
+Q014295	pca	How would you use PCA for data compression in a real-time streaming application?
+Q014296	pca	Explain how you would apply PCA in a stock market data analysis situation.
+Q014297	pca	Describe a scenario where using PCA might be detrimental to the performance of a machine learning model.
+Q014298	pca	How would you decide whether to use PCA or a classification algorithm for a given dataset?
+Q014299	pca	Discuss a case where PCA helped improve model performance by reducing overfitting.
+Q014300	pca	Give an example of how PCA might be incorrectly applied to a dataset and propose a solution.
+Q014301	pca	Discuss how you would ensure the robustness of PCA results against variations in the dataset.
+Q014302	pca	How can PCA be parallelized to handle very large datasets?
+Q014303	pca	What are the best practices in visualizing the components obtained from PCA?
+Q014304	pca	Compare the use of PCA to select features with other feature selection methods.
+Q014305	pca	Explain how Incremental PCA differs from standard PCA and when you would use it.
+Q014306	pca	Discuss how Randomized PCA is used and its benefits over traditional PCA.
+Q014307	pca	What recent advancements have been made concerning PCA for big data?
+Q014308	pca	Discuss how robust PCA attempts to handle outliers and its practical implications.
+Q014309	pca	How does Generalized PCA differ from standard PCA and what are its applications?
+Q014381	python-ml	What is dimensionality reduction, and when would you use it?
+Q015001	unsupervised-learning	What is association rule mining and how is it relevant to unsupervised learning?
+Q015002	unsupervised-learning	Explain the Apriori algorithm for association rule learning.
+Q015003	unsupervised-learning	Discuss the concepts of support, confidence, and lift in association rule learning.
+Q015004	unsupervised-learning	Can you describe the FP-Growth algorithm and how it improves over the Apriori algorithm?
+Q015005	unsupervised-learning	How can association rule learning be applied in a market-basket analysis?
+Q015006	unsupervised-learning	What are Gaussian Mixture Models (GMMs) and how do they relate to clustering?
+Q015007	unsupervised-learning	How can you determine the optimal number of clusters for a dataset?
+Q015008	unsupervised-learning	Explain the concept of cluster validity indices.
+Q015009	unsupervised-learning	What challenges do you face when clustering high-dimensional data?
+Q015010	unsupervised-learning	What preprocessing steps are suggested before performing unsupervised learning?
+Q015011	unsupervised-learning	How do you handle missing values in an unsupervised learning context?
+Q015012	unsupervised-learning	Describe the steps you would take to scale and normalize data for clustering.
+Q015013	unsupervised-learning	Discuss how you could evaluate the performance of a clustering algorithm.
+Q015014	unsupervised-learning	Explain the importance of feature selection in unsupervised learning.
+Q015015	unsupervised-learning	How would you implement clustering on a large, distributed dataset?
+Q015016	unsupervised-learning	Describe a scenario where unsupervised learning could add value to a business process.
+Q015017	unsupervised-learning	Discuss how unsupervised learning can be used in image segmentation.
+Q015018	unsupervised-learning	Explain how recommendation systems utilize unsupervised learning techniques.
+Q015019	unsupervised-learning	How can unsupervised learning be applied to anomaly detection?
+Q015020	unsupervised-learning	What are Generative Adversarial Networks (GANs) and how do they work?
+Q015021	unsupervised-learning	Explain the concept of a Variational Autoencoder (VAE).
+Q015022	unsupervised-learning	How do unsupervised learning techniques contribute to the field of natural language processing (NLP)?
+Q015023	unsupervised-learning	Describe the role of unsupervised pre-training in deep learning.
+Q015024	unsupervised-learning	Discuss the use of self-organizing maps in unsupervised learning.
+Q015030	unsupervised-learning	Propose an unsupervised learning strategy to segment customers for targeted marketing.
+Q015031	unsupervised-learning	How would you use clustering to inform feature creation in a supervised learning task?
+Q015032	unsupervised-learning	Design an approach to group similar documents using unsupervised learning.
+Q015033	unsupervised-learning	Discuss a framework for detecting communities in social networks via unsupervised learning.
+Q015034	unsupervised-learning	Explain how unsupervised learning could assist in identifying patterns in genomic data.
+Q015035	unsupervised-learning	What are some of the latest advancements in clustering algorithms?
+Q015036	unsupervised-learning	How has unsupervised learning been used in the field of reinforcement learning?
+Q015037	unsupervised-learning	Discuss the challenges of interpretability in unsupervised learning models.
+Q015038	unsupervised-learning	How can you use unsupervised learning for cross-lingual or multilingual text analysis?
+Q015039	unsupervised-learning	What is the role of unsupervised learning in Big Data analytics?

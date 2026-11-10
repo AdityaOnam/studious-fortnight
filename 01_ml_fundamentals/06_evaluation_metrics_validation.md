@@ -3,7 +3,7 @@ domain: ml
 topic: evaluation_metrics_validation
 title: Evaluation metrics and validation
 tags: [ml, metrics, auc, cross-validation, interpretability]
-count: 160
+count: 169
 ---
 # Evaluation metrics and validation
 
@@ -186,3 +186,14 @@ count: 160
 - [ML06-158] How can activation maximization be used for neural network interpretability?
 - [ML06-159] Do SHAP values or feature importances imply causal effects? How would you caveat them to stakeholders?
 - [ML06-160] How would you test whether an explanation method is faithful to the model rather than just plausible to humans?
+
+## More evaluation and explainability
+- [ML06-161] When would you prefer AIC over BIC for model selection?
+- [ML06-162] What is the Gini coefficient for a classifier, and how does it relate to AUC?
+- [ML06-163] How would you evaluate a time-series forecasting model, for example with backtesting and scaled errors such as MASE?
+- [ML06-164] What is adversarial validation, and how does it reveal a shift between training and test data?
+- [ML06-165] How would you continuously evaluate an online learning system, for example with prequential evaluation?
+- [ML06-166] What is the difference between global and local interpretability?
+- [ML06-167] What extra requirements does explainability have in regulated industries such as credit scoring?
+- [ML06-168] How would you explain a deep learning model's predictions to a non-technical stakeholder?
+- [ML06-169] How can model explanations leak private training data, and how do you balance explainability with privacy?

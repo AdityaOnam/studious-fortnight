@@ -3,7 +3,7 @@ domain: ml
 topic: loss_optimization_regularization
 title: Loss functions, optimization, regularization
 tags: [ml, loss, optimization, regularization]
-count: 142
+count: 164
 ---
 # Loss functions, optimization, regularization
 
@@ -168,3 +168,29 @@ count: 142
 - [ML07-140] Why is early stopping approximately equivalent to L2 regularization for quadratic losses?
 - [ML07-141] What is implicit regularization of SGD, and why does it matter in overparameterized models?
 - [ML07-142] Why does the Lasso have no closed-form solution in general, and what algorithms are used instead?
+
+## More optimization techniques
+- [ML07-143] How do you check that the loss you optimize is aligned with the business objective?
+- [ML07-144] What stopping or convergence criteria would you use for gradient descent?
+- [ML07-145] How do you run gradient descent on data that does not fit in memory?
+- [ML07-146] When would you use the conjugate gradient method?
+- [ML07-147] How can optimization be parallelized, for example with parameter servers, asynchronous SGD or Hogwild?
+- [ML07-148] How can hyperparameters be optimized with gradients, and what makes this hard?
+- [ML07-149] What is simulated annealing, and when would you use it instead of gradient-based methods?
+
+## Genetic algorithms and evolutionary optimization
+- [ML07-150] What is a genetic algorithm, and what are its main components: representation, fitness, selection, crossover and mutation?
+- [ML07-151] When would you use a genetic algorithm instead of gradient-based optimization?
+- [ML07-152] What genetic representations are used for different problems, such as binary, real-valued, permutation and tree encodings?
+- [ML07-153] How do you design a fitness function for a genetic algorithm application?
+- [ML07-154] How do roulette-wheel, tournament and rank selection compare, and how do you choose one?
+- [ML07-155] How do you choose crossover and mutation rates for a genetic algorithm?
+- [ML07-156] How do generational and steady-state genetic algorithms differ?
+- [ML07-157] What is premature convergence in a genetic algorithm, and how do you avoid getting stuck in a local optimum?
+- [ML07-158] How do you maintain diversity in a GA population, for example with crowding, niching or speciation?
+- [ML07-159] How do island-model genetic algorithms work, and what are the benefits of parallelizing a GA this way?
+- [ML07-160] How do you handle constraints in a genetic algorithm?
+- [ML07-161] How would you apply a genetic algorithm to the traveling salesman problem, and which crossover operators preserve valid tours?
+- [ML07-162] How can genetic algorithms be used for feature selection in a predictive model?
+- [ML07-163] How can genetic algorithms tune the hyperparameters of an ML model, and how do they compare with Bayesian optimization?
+- [ML07-164] How does neuroevolution, for example NEAT, evolve neural network architectures and weights?

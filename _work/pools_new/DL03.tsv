@@ -1,0 +1,119 @@
+Q012856	cnn	Describe the backpropagation process in a CNN.
+Q012857	cnn	What are the advantages of using deep CNNs compared to shallow ones?
+Q012858	cnn	Explain the vanishing gradient problem and how it impacts CNNs.
+Q012859	cnn	What is transfer learning and fine-tuning in the context of CNNs?
+Q012860	cnn	What are some common strategies for initializing weights in CNNs?
+Q012861	cnn	How do you handle image resizing or normalization in CNNs?
+Q012862	cnn	What preprocessing steps would you apply to an image dataset before feeding it into a CNN?
+Q012863	cnn	How do you choose the number and size of filters in a convolutional layer?
+Q012864	cnn	What techniques can you use to reduce computation time in a CNN?
+Q012865	cnn	Discuss the trade-offs between using max pooling and average pooling.
+Q012866	cnn	How do you address the issue of class imbalance in training a CNN?
+Q012867	cnn	What metrics would you use to evaluate the performance of a CNN?
+Q012868	cnn	How can you visualize the features learned by a convolutional layer?
+Q012869	cnn	Describe how dropout is implemented in a CNN and what effects it has.
+Q012870	cnn	What are some popular CNN architectures and how have they evolved over time?
+Q012871	cnn	Explain how the Inception module works in GoogLeNet.
+Q012872	cnn	How do Residual Networks (ResNets) facilitate training deeper networks?
+Q012873	cnn	What is the concept behind Capsule Networks, and how do they differ from typical CNNs?
+Q012874	cnn	Describe the U-Net architecture and its applications.
+Q012875	cnn	How do generative adversarial networks (GANs) leverage convolutional layers?
+Q012879	cnn	Visualize the filters of the first convolutional layer of a trained CNN using Matplotlib.
+Q012881	cnn	Discuss recent advances in optimization techniques for CNNs.
+Q012882	cnn	How does the attention mechanism improve the performance of CNNs?
+Q012883	cnn	What are the computational challenges associated with training very deep CNNs?
+Q012884	cnn	How do CNNs interpret and process color information differently than grayscale images?
+Q012885	cnn	Discuss the role of CNNs in the field of object detection and segmentation.
+Q012886	cnn	Explore the limitations of CNNs in understanding contextual information within images.
+Q012887	cnn	How can recurrent neural networks (RNNs) be combined with CNNs to process sequential image data?
+Q012888	cnn	What are some alternative convolutional layer designs that have shown promise in recent research?
+Q012889	cnn	Explain the impact of adversarial examples on CNNs and methods to overcome them.
+Q012890	cnn	What is the role of CNNs in reinforcement learning scenarios?
+Q012891	computer-vision	Describe how the Histogram of Oriented Gradients (HOG) descriptor works.
+Q012892	computer-vision	Compare and contrast different image feature extraction methods.
+Q012893	computer-vision	What are Haar Cascades, and how are they used for object detection?
+Q012894	computer-vision	How do CNNs differ from traditional neural networks in terms of architecture?
+Q012895	computer-vision	Explain the purpose of pooling layers in a CNN.
+Q012896	computer-vision	What is transfer learning, and when would you apply it in computer vision?
+Q012897	computer-vision	Discuss the concept and advantages of using pre-trained models in computer vision.
+Q012898	computer-vision	What’s the difference between object detection and image classification?
+Q012899	computer-vision	What algorithms can you use for real-time object detection?
+Q012900	computer-vision	Explain the YOLO (You Only Look Once) approach to object detection.
+Q012901	computer-vision	Discuss the Region-based CNN (R-CNN) family of algorithms for object detection.
+Q012902	computer-vision	How do image recognition models deal with occlusion?
+Q012903	computer-vision	Compare the use of one-stage vs. two-stage detectors for object detection.
+Q012904	computer-vision	Explain the Fully Convolutional Network (FCN) and its role in semantic segmentation.
+Q012905	computer-vision	Discuss applications of scene understanding in computer vision.
+Q012906	computer-vision	How can depth information be utilized in semantic segmentation?
+Q012907	computer-vision	What is pose estimation, and what are its applications?
+Q012908	computer-vision	How does optical flow contribute to understanding motion in videos?
+Q012909	computer-vision	Explain how CNNs can be used for human activity recognition in video data.
+Q012915	computer-vision	What are Generative Adversarial Networks (GANs) and their role in computer vision?
+Q012916	computer-vision	Discuss few-shot learning and its challenges in computer vision.
+Q012917	computer-vision	Explain the concept of zero-shot learning in the context of image recognition.
+Q012918	computer-vision	How can reinforcement learning be applied to problems in computer vision?
+Q012919	computer-vision	What are Siamese networks and where are they applicable in computer vision?
+Q012920	computer-vision	How do you handle overfitting in a computer vision model?
+Q012921	computer-vision	What are some common metrics to evaluate a computer vision system’s performance?
+Q012922	computer-vision	Discuss the importance of cross-validation in assessing a vision model.
+Q012923	computer-vision	Explain how the Intersection over Union (IoU) metric works for object detection models.
+Q012924	computer-vision	How would you design a computer vision system for automatic license plate recognition?
+Q012925	computer-vision	Outline the computer vision technologies involved in autonomous vehicle navigation.
+Q012926	computer-vision	Propose an approach for medical image analysis using computer vision.
+Q012927	computer-vision	Discuss the use of computer vision in retail for product recognition and tracking.
+Q012928	computer-vision	How might augmented reality (AR) applications benefit from advances in computer vision?
+Q013063	data-processing	What preprocessing steps are commonly applied to image data?
+Q013064	data-processing	Explain how you might normalize pixel values in images.
+Q013065	data-processing	What is image augmentation, and why is it useful?
+Q013066	data-processing	How does resizing or cropping images affect model training?
+Q013067	data-processing	Describe how you handle different image aspect ratios during preprocessing.
+Q013153	data-scientist	Explain the concept of Convolutional Neural Networks (CNN) and their architecture.
+Q013156	data-scientist	What is Transfer Learning and its benefits in deep learning?
+Q013245	deep-learning	Describe how U-Net architecture works for image segmentation tasks.
+Q013247	deep-learning	What is a Siamese Neural Network?
+Q013257	deep-learning	How do you use transfer learning in deep learning?
+Q013266	deep-learning	Explain how to perform feature extraction using pretrained deep learning models.
+Q013269	deep-learning	Discuss the concept of style transfer in deep learning.
+Q013274	deep-learning	What is the relationship between deep learning and the field of computer vision?
+Q013288	deep-learning	How would you approach building a deep learning model for self-driving cars?
+Q013289	deep-learning	Propose a strategy for developing a deep learning system for medical image diagnosis.
+Q013292	deep-learning	Discuss a deep learning approach to real-time object detection in videos.
+Q013295	deep-learning	Outline a plan for using CNNs to monitor and classify satellite imagery.
+Q013907	ml-design-patterns	How would you leverage ‘Transfer Learning’ in a case where labeled data is scarce?
+Q014038	neural-networks	Elaborate on the concept of transfer learning and when it would be appropriate to use it.
+Q014044	neural-networks	Define and explain the significance of convolutional neural networks (CNNs).
+Q014045	neural-networks	What are the common use cases for CNNs in comparison to RNNs?
+Q014046	neural-networks	Explain what deconvolutional layers are and their role in neural networks.
+Q014050	neural-networks	Explain the concept of semantic segmentation in the context of CNNs.
+Q014051	neural-networks	How do CNNs achieve translation invariance?
+Q014052	neural-networks	What is the purpose of pooling layers in CNNs?
+Q014053	neural-networks	Describe the differences between 1D, 2D, and 3D convolutions.
+Q014066	neural-networks	Discuss the differences and similarities between CNNs and capsule networks.
+Q014067	neural-networks	Explain the theory behind Siamese networks and their use cases.
+Q014089	neural-networks	Describe a real-world application where CNNs could be applied.
+Q014094	neural-networks	How would you design a neural network for detecting objects in a video in real-time?
+Q014098	neural-networks	What neural network architecture would you choose for a self-driving car perception system?
+Q014101	neural-networks	What are zero-shot and few-shot learning in the context of neural networks?
+Q014112	neural-networks	Describe the application of neural networks in medical image analysis.
+Q014385	python-ml	What is transfer learning, and how can you implement it using Python libraries?
+Q014393	python-ml	Discuss the development of a system to classify images using Python.
+Q014978	transfer-learning	How do you decide how much of a pre-trained network to freeze during transfer learning?
+Q014979	transfer-learning	Describe how you would approach transfer learning with an imbalanced dataset.
+Q014980	transfer-learning	How can you adapt a pre-trained model from one domain to a different but related domain?
+Q014981	transfer-learning	What are some challenges when applying transfer learning to sequential data like time series or text?
+Q014982	transfer-learning	How can you measure the similarity between the source and target domains in transfer learning?
+Q014983	transfer-learning	Can you explain how knowledge distillation works in the context of transfer learning?
+Q014984	transfer-learning	Discuss the use of adversarial training in the process of domain adaptation.
+Q014985	transfer-learning	Explain the concept of meta-learning and how it applies to transfer learning.
+Q014986	transfer-learning	What is the role of attention mechanisms in transferring knowledge between tasks?
+Q014987	transfer-learning	How does transfer learning relate to reinforcement learning?
+Q014990	transfer-learning	Fine-tune a pre-trained image recognition network to classify a new set of images not included in the original training set.
+Q014992	transfer-learning	Using TensorFlow, extract feature vectors from a pre-trained model and use them to train a new classifier on a different task.
+Q014993	transfer-learning	How would you implement transfer learning for enhancing a model trained to recognize car models to also recognize trucks?
+Q014994	transfer-learning	Discuss how you might use transfer learning in a medical imaging domain, transferring knowledge from X-ray to MRI images.
+Q014995	transfer-learning	Propose a transfer learning setup for cross-language text classification, where you have labeled data in one language but need to classify text in another.
+Q014996	transfer-learning	How would you use transfer learning to improve the performance of a voice recognition system initially trained with adult voices to better recognize children’s speech?
+Q014997	transfer-learning	Describe a scenario where transfer learning could significantly reduce the need for labeled data in a mobile app that needs to classify user photos.
+Q014998	transfer-learning	What are the potential risks of bias when using transfer learning, particularly with pre-trained models?
+Q014999	transfer-learning	Discuss the current research on understanding why transfer learning works, including theoretical frameworks.
+Q015000	transfer-learning	How do generative adversarial networks (GANs) contribute to transfer learning in unsupervised scenarios?

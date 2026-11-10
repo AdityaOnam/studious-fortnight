@@ -3,7 +3,7 @@ domain: ml
 topic: supervised_regression_classification
 title: Supervised learning: regression and classification models
 tags: [ml, regression, classification, svm, knn]
-count: 152
+count: 186
 ---
 # Supervised learning: regression and classification models
 
@@ -180,3 +180,45 @@ count: 152
 - [ML02-150] What is the case for and against SMOTE versus cost-sensitive learning for linear models?
 - [ML02-151] Which of logistic regression, SVM, kNN and Naive Bayes is most sensitive to imbalance, and why?
 - [ML02-152] What is a one-class SVM and when would you use it instead of a binary classifier?
+
+## More on kNN
+- [ML02-153] How does radius-neighbors classification differ from k-nearest neighbors, and when is it preferable?
+- [ML02-154] How do missing values affect kNN, and how would you handle them?
+- [ML02-155] How do kNN and decision trees differ in how they partition the feature space, train and predict?
+- [ML02-156] Does bagging improve a kNN classifier, and why is kNN considered a stable learner?
+- [ML02-157] How can kNN be used for outlier detection?
+- [ML02-158] How can kNN be adapted for time-series forecasting?
+- [ML02-159] How is item-based kNN used in recommender systems?
+- [ML02-160] How is kNN used on top of learned embeddings, and how does approximate nearest neighbor search make it scale?
+
+## More on linear and logistic regression
+- [ML02-161] What is the variance inflation factor, how is it computed, and what values indicate a problem?
+- [ML02-162] How do spline functions extend regression to non-linear relationships, and how do you choose the knots?
+- [ML02-163] How does quantile regression differ from ordinary least squares, and when would you use it?
+- [ML02-164] What are mixed-effects models, and when would you use them instead of ordinary regression?
+- [ML02-165] What are robust regression methods such as Huber regression, RANSAC or Theil-Sen, and when would you use them?
+- [ML02-166] How would you use regression to estimate the effect of a marketing campaign on sales, and why can the coefficient not simply be read as a causal effect?
+- [ML02-167] What are pseudo R-squared measures for logistic regression, and how reliable are they?
+- [ML02-168] What is the Hosmer-Lemeshow test, and what are its limitations?
+- [ML02-169] How do polynomial and interaction terms change a logistic regression model and its interpretation?
+- [ML02-170] How can logistic regression be extended to ordinal outcomes?
+- [ML02-171] What would you consider when building a credit scoring model, such as interpretability, regulation and reject inference?
+- [ML02-172] How would you approach a time-series classification task, from hand-crafted features to sequence models?
+
+## More on Naive Bayes and SVMs
+- [ML02-173] How does Naive Bayes behave when the data contains many irrelevant features?
+- [ML02-174] How can Naive Bayes be trained in a semi-supervised way with expectation-maximization?
+- [ML02-175] How do variants such as Complement Naive Bayes or tree-augmented Naive Bayes deal with skewed or correlated features?
+- [ML02-176] Derive the primal optimization problem for the soft-margin SVM.
+- [ML02-177] What is Sequential Minimal Optimization (SMO), and why was it important for training SVMs?
+- [ML02-178] When would you use a polynomial or sigmoid kernel, and why is the sigmoid kernel not always a valid kernel?
+- [ML02-179] How can SVMs be used for feature selection, for example with L1-regularized SVMs or recursive feature elimination?
+- [ML02-180] How can you reduce an SVM's model size and inference time when it has many support vectors?
+
+## Logistic regression worked problems
+- [ML02-181] If the probability of an event is 0.1, what are its odds and its log-odds? And if the odds of success are 4, what is the probability of success?
+- [ML02-182] Write the equation of the decision boundary of a logistic regression model. Why is it a hyperplane?
+- [ML02-183] A logistic regression has coefficients β0 = −1.5, β1 = 3 and β2 = −0.5. For x1 = 1 and x2 = 5, what are the logit, the odds and P(y = 1)?
+- [ML02-184] A logistic model has logit = −6 + 0.05·x1 + x2. What is the predicted probability at x1 = 40, x2 = 3.5, and what x1 gives exactly a 50% probability at that x2?
+- [ML02-185] Given a logistic regression output table with coefficients, standard errors and z-values, how do you write the odds for an observation and decide which predictors are significantly associated with the outcome?
+- [ML02-186] How do you get the odds ratio for a one-unit increase in a predictor, and a confidence interval for it, from a logistic regression coefficient and its standard error?

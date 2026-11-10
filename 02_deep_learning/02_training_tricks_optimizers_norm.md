@@ -3,7 +3,7 @@ domain: dl
 topic: training_tricks_optimizers_norm
 title: Training deep nets: optimizers, normalization, regularization
 tags: [dl, optimizers, batchnorm, dropout, training]
-count: 111
+count: 124
 ---
 # Training deep nets: optimizers, normalization, regularization
 
@@ -137,3 +137,20 @@ count: 111
 - [DL02-109] Two training runs with identical configs reach different final losses. How do you tell noise from a real regression?
 - [DL02-110] Training diverges only when you scale to more GPUs. What differs in the setup and what would you check?
 - [DL02-111] Which per-layer statistics (activation, gradient and update-to-weight ratios) would you monitor to catch silent training bugs?
+
+## More training techniques and diagnostics
+- [DL02-112] How does normalizing or standardizing the input features affect neural network training?
+- [DL02-113] What strategies can you use to train a deep network on an imbalanced dataset, such as class-weighted loss, focal loss or resampling?
+- [DL02-114] How do you perform error analysis on a deep learning model's predictions, and how does it guide what to fix next?
+- [DL02-115] How can gradient flow be accidentally cut during training, for example by detached tensors, in-place operations or frozen layers, and how do you detect it?
+- [DL02-116] What is an exponential moving average (EMA) of model weights, and why does it often improve the final model?
+- [DL02-117] What is sharpness-aware minimization (SAM), and what does it cost compared with a standard optimizer step?
+- [DL02-118] What problem do LARS and LAMB solve for very large batch training?
+- [DL02-119] What is stochastic depth (drop path), and why is it used in deep residual networks and vision transformers?
+- [DL02-120] What is curriculum learning, and when does ordering training examples by difficulty help?
+
+## Ensembles and dropout details
+- [DL02-121] What is snapshot ensembling, how do cyclic cosine-annealing learning rates produce several models in one training run, and what are its drawbacks?
+- [DL02-122] Do deep ensembles give better uncertainty estimates under distribution shift than Monte Carlo dropout? What does the evidence say?
+- [DL02-123] Can two consecutive dropout layers with rates p and q be replaced by a single dropout layer? With what rate, and does the rescaling still match?
+- [DL02-124] Does applying an activation function before or after dropout change the result? Compare ReLU with sigmoid.

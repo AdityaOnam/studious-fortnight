@@ -3,7 +3,7 @@ domain: ml
 topic: linear_algebra_calculus_math
 title: Linear algebra, calculus and math for ML
 tags: [math, linear-algebra, calculus, information-theory]
-count: 154
+count: 179
 ---
 # Linear algebra, calculus and math for ML
 
@@ -178,3 +178,32 @@ count: 154
 - [ML09-152] What is natural gradient descent, and how does it differ from ordinary gradient descent?
 - [ML09-153] Why is the loss landscape of a neural network non-convex, and why does gradient descent still work well in practice?
 - [ML09-154] What is duality in optimization, and what does the dual of an SVM buy you?
+
+## More linear algebra and numerical computing
+- [ML09-155] What is Gaussian elimination, and how does it relate to LU decomposition?
+- [ML09-156] How does a change of basis affect the matrix that represents a linear transformation?
+- [ML09-157] What is the Fourier transform, and how is it used in data processing and time-series analysis?
+- [ML09-158] What are sparse matrices, how are formats such as CSR and CSC stored, and when do they pay off?
+- [ML09-159] How do graph theory and linear algebra meet in ML, for example through adjacency matrices and the graph Laplacian?
+- [ML09-160] How does einsum express tensor operations, and why is it useful in ML code?
+- [ML09-161] What are BLAS and LAPACK, and why do NumPy and PyTorch performance depend on them?
+- [ML09-162] How would you handle matrix computations too large for memory, for example with blocking, sparsity or randomized algorithms?
+
+## Information theory and differentiation problems
+- [ML09-163] Which distribution has maximum entropy on a bounded interval [a, b], and which has maximum entropy on the real line for a fixed mean and variance?
+- [ML09-164] Which properties did Shannon require of a measure of uncertainty, and why do they lead to the entropy formula?
+- [ML09-165] What is a bit in Shannon's sense, and how does it differ from a binary digit?
+- [ML09-166] What does Shannon's source coding theorem say about how far a message can be compressed?
+- [ML09-167] What is the entropy in bits of an 8-bit grayscale pixel if all 256 values are equally likely?
+- [ML09-168] Why is entropy a concave function of the probability distribution, and what useful property follows from that?
+- [ML09-169] If Y = X + Z, is the joint entropy H(X, Y) equal to H(X, Z)? Explain.
+- [ML09-170] A coin lands heads with probability 0.98. How many bits of information does a head carry, how many does a tail carry, and what is the entropy of the coin?
+- [ML09-171] What is Boltzmann's entropy formula, and what is the entropy of a fair eight-sided die from that perspective?
+- [ML09-172] What is the finite-difference approximation of a derivative, and what numerical problems does it have?
+- [ML09-173] What are the Taylor series of 1/(1 − x) and of ln(1 + x) around 0, and for which x do they converge?
+- [ML09-174] Find and classify the stationary points of f(x, y) = 2x² − xy + y².
+- [ML09-175] What are dual numbers, and how does forward-mode automatic differentiation use them?
+- [ML09-176] Show that g(x + x′ε) = g(x) + g′(x)x′ε for dual numbers, and use it to differentiate a small polynomial.
+- [ML09-177] For f(x1, x2) = x1·x2 + ln(x1), draw the computational graph and compute the partial derivatives with forward-mode automatic differentiation. What role do the seed values play?
+- [ML09-178] Compare numerical, symbolic and automatic differentiation. Which suffers from rounding errors and which from expression swell?
+- [ML09-179] Compute the Euclidean and Manhattan distances between [6, 1, 4, 5] and [2, 8, 3, −1].

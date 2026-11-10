@@ -1,37 +1,39 @@
 # INDEX — every question file
 
-Generated 2026-10-24. Total questions: **11821** in **100** files (E/M/H = 1318/7696/2807; 2338 written by Claude to fill gaps, the rest harvested from GitHub repos — see SOURCES.md).
+Generated 2026-10-30. Total questions: **12318** in **102** files (E/M/H = 1354/8102/2862; 2409 written by Claude to fill gaps, the rest harvested from GitHub repos — see SOURCES.md).
 
 Question IDs look like `RAG03-014` (topic key + running number). Files contain questions only.
 
-## 01_ml_fundamentals — Classical ML & statistics (1603 questions)
+## 01_ml_fundamentals — Classical ML & statistics (1819 questions)
 
 | File | Topic | Questions |
 |---|---|---|
-| `01_ml_fundamentals/01_ml_basics_bias_variance_overfitting.md` | ML basics, bias-variance, overfitting | 105 |
-| `01_ml_fundamentals/02_supervised_regression_classification.md` | Supervised learning: regression and classification models | 152 |
-| `01_ml_fundamentals/03_trees_ensembles_boosting.md` | Decision trees, ensembles, boosting | 138 |
-| `01_ml_fundamentals/04_unsupervised_clustering_dim_reduction.md` | Unsupervised learning: clustering and dimensionality reduction | 121 |
-| `01_ml_fundamentals/05_feature_engineering_data_prep.md` | Feature engineering and data preparation | 158 |
-| `01_ml_fundamentals/06_evaluation_metrics_validation.md` | Evaluation metrics and validation | 160 |
-| `01_ml_fundamentals/07_loss_optimization_regularization.md` | Loss functions, optimization, regularization | 142 |
+| `01_ml_fundamentals/01_ml_basics_bias_variance_overfitting.md` | ML basics, bias-variance, overfitting | 117 |
+| `01_ml_fundamentals/02_supervised_regression_classification.md` | Supervised learning: regression and classification models | 186 |
+| `01_ml_fundamentals/03_trees_ensembles_boosting.md` | Decision trees, ensembles, boosting | 163 |
+| `01_ml_fundamentals/04_unsupervised_clustering_dim_reduction.md` | Unsupervised learning: clustering and dimensionality reduction | 143 |
+| `01_ml_fundamentals/05_feature_engineering_data_prep.md` | Feature engineering and data preparation | 171 |
+| `01_ml_fundamentals/06_evaluation_metrics_validation.md` | Evaluation metrics and validation | 169 |
+| `01_ml_fundamentals/07_loss_optimization_regularization.md` | Loss functions, optimization, regularization | 164 |
 | `01_ml_fundamentals/08_probability_statistics_ab_testing_part1.md` | Probability, statistics and A/B testing | 124 |
-| `01_ml_fundamentals/08_probability_statistics_ab_testing_part2.md` | Probability, statistics and A/B testing | 91 |
-| `01_ml_fundamentals/09_linear_algebra_calculus_math.md` | Linear algebra, calculus and math for ML | 154 |
-| `01_ml_fundamentals/10_recsys_timeseries_anomaly.md` | Recommender systems, time series, anomaly detection | 151 |
-| `01_ml_fundamentals/11_reinforcement_learning.md` | Reinforcement learning | 107 |
+| `01_ml_fundamentals/08_probability_statistics_ab_testing_part2.md` | Probability, statistics and A/B testing | 112 |
+| `01_ml_fundamentals/09_linear_algebra_calculus_math.md` | Linear algebra, calculus and math for ML | 179 |
+| `01_ml_fundamentals/10_recsys_timeseries_anomaly.md` | Recommender systems, time series, anomaly detection | 172 |
+| `01_ml_fundamentals/11_reinforcement_learning.md` | Reinforcement learning | 119 |
 
-## 02_deep_learning — Deep learning (857 questions)
+## 02_deep_learning — Deep learning (1077 questions)
 
 | File | Topic | Questions |
 |---|---|---|
-| `02_deep_learning/01_neural_net_basics_backprop.md` | Neural network basics and backpropagation | 93 |
-| `02_deep_learning/02_training_tricks_optimizers_norm.md` | Training deep nets: optimizers, normalization, regularization | 111 |
-| `02_deep_learning/03_cnn_computer_vision.md` | CNNs and computer vision | 119 |
-| `02_deep_learning/04_rnn_lstm_sequence_models.md` | RNN, LSTM, GRU and sequence models | 102 |
-| `02_deep_learning/05_generative_gan_vae_diffusion.md` | Generative models: GAN, VAE, diffusion | 143 |
-| `02_deep_learning/06_classic_nlp_embeddings.md` | Classic NLP and word embeddings | 120 |
-| `02_deep_learning/07_pytorch_tensorflow_framework.md` | PyTorch / TensorFlow / framework questions | 169 |
+| `02_deep_learning/01_neural_net_basics_backprop.md` | Neural network basics and backpropagation | 108 |
+| `02_deep_learning/02_training_tricks_optimizers_norm.md` | Training deep nets: optimizers, normalization, regularization | 124 |
+| `02_deep_learning/03_cnn_computer_vision_part1.md` | CNNs and computer vision | 119 |
+| `02_deep_learning/03_cnn_computer_vision_part2.md` | CNNs and computer vision | 113 |
+| `02_deep_learning/04_rnn_lstm_sequence_models.md` | RNN, LSTM, GRU and sequence models | 111 |
+| `02_deep_learning/05_generative_gan_vae_diffusion.md` | Generative models: GAN, VAE, diffusion | 159 |
+| `02_deep_learning/06_classic_nlp_embeddings.md` | Classic NLP and word embeddings | 132 |
+| `02_deep_learning/07_pytorch_tensorflow_framework_part1.md` | PyTorch / TensorFlow / framework questions | 169 |
+| `02_deep_learning/07_pytorch_tensorflow_framework_part2.md` | PyTorch / TensorFlow / framework questions | 42 |
 
 ## 03_transformers_llm — Transformers & LLM internals (1409 questions)
 
@@ -94,11 +96,11 @@ Question IDs look like `RAG03-014` (topic key + running number). Files contain q
 | `06_genai_apps_agents/06_multimodal_vision_audio_llms_part1.md` | Multimodal, vision and audio models | 102 |
 | `06_genai_apps_agents/06_multimodal_vision_audio_llms_part2.md` | Multimodal, vision and audio models | 113 |
 
-## 07_mlops_ml_system_design — MLOps & ML/GenAI system design (722 questions)
+## 07_mlops_ml_system_design — MLOps & ML/GenAI system design (734 questions)
 
 | File | Topic | Questions |
 |---|---|---|
-| `07_mlops_ml_system_design/01_mlops_deployment_monitoring.md` | MLOps, deployment and monitoring | 148 |
+| `07_mlops_ml_system_design/01_mlops_deployment_monitoring.md` | MLOps, deployment and monitoring | 160 |
 | `07_mlops_ml_system_design/02_data_pipelines_feature_stores.md` | Data pipelines and feature stores | 139 |
 | `07_mlops_ml_system_design/03_ml_system_design_framework_and_case_studies.md` | ML system design: framework and case studies | 169 |
 | `07_mlops_ml_system_design/04_genai_system_design_case_studies_part1.md` | GenAI / LLM system design case studies | 105 |
@@ -147,9 +149,9 @@ Question IDs look like `RAG03-014` (topic key + running number). Files contain q
 | `09_cs_fundamentals/09_devops_git_docker_k8s_linux_part1.md` | DevOps, Git, Docker, Kubernetes, Linux | 89 |
 | `09_cs_fundamentals/09_devops_git_docker_k8s_linux_part2.md` | DevOps, Git, Docker, Kubernetes, Linux | 87 |
 
-## 10_coding_practice_index — ML/LLM coding tasks (titles only) (195 questions)
+## 10_coding_practice_index — ML/LLM coding tasks (titles only) (244 questions)
 
 | File | Topic | Questions |
 |---|---|---|
 | `10_coding_practice_index/01_ml_llm_coding_problems_part1.md` | ML / LLM coding problems (titles only) | 104 |
-| `10_coding_practice_index/01_ml_llm_coding_problems_part2.md` | ML / LLM coding problems (titles only) | 91 |
+| `10_coding_practice_index/01_ml_llm_coding_problems_part2.md` | ML / LLM coding problems (titles only) | 140 |

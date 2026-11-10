@@ -3,7 +3,7 @@ domain: ml
 topic: reinforcement_learning
 title: Reinforcement learning
 tags: [rl, q-learning, policy-gradient, bandits]
-count: 107
+count: 119
 ---
 # Reinforcement learning
 
@@ -133,3 +133,17 @@ count: 107
 - [ML11-105] What is domain randomization, and what are its limits?
 - [ML11-106] How do you evaluate an RL algorithm fairly given high variance across random seeds?
 - [ML11-107] Your RL agent maximizes the training reward but behaves badly in deployment. How do you investigate?
+
+## More reinforcement learning topics
+- [ML11-108] How does Monte Carlo Tree Search work, and where is it used?
+- [ML11-109] What are eligibility traces, and how do they relate TD learning and Q-learning to Monte Carlo methods?
+- [ML11-110] How does Q-learning cope with non-stationary environments?
+- [ML11-111] How would you formulate a real problem as an MDP, for example an autonomous vehicle at an intersection, including states, actions and rewards?
+- [ML11-112] What is hierarchical reinforcement learning, for example the options framework, and when does it help?
+- [ML11-113] How can knowledge be transferred between reinforcement learning tasks?
+- [ML11-114] What is meta-reinforcement learning, and how does it let an agent adapt quickly to a new task?
+- [ML11-115] How do RL agents overfit to their training environments, and how do you test and improve generalization to unseen environments?
+- [ML11-116] How do you tune hyperparameters for a reinforcement learning algorithm given its high variance?
+- [ML11-117] What is safe reinforcement learning, and which constraints and safeguards matter in areas such as healthcare or driving?
+- [ML11-118] How would you use reinforcement learning to optimize traffic signal control in a simulated city?
+- [ML11-119] What challenges arise when deploying and monitoring a reinforcement learning system in production?

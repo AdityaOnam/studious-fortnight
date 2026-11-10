@@ -3,7 +3,7 @@ domain: dl
 topic: generative_gan_vae_diffusion
 title: Generative models: GAN, VAE, diffusion
 tags: [gan, vae, diffusion, generative]
-count: 143
+count: 159
 ---
 # Generative models: GAN, VAE, diffusion
 
@@ -169,3 +169,21 @@ count: 143
 - [DL05-141] You must cut video generation cost 10x for a preview feature. Which levers do you pull first, and what quality do you lose?
 - [DL05-142] How would you measure temporal consistency in generated video, and what are the weaknesses of metrics such as FVD?
 - [DL05-143] What changes in an identity-preserving image model if creators want their character's identity locked so other users cannot restyle it?
+
+## More autoencoder and GAN questions
+- [DL05-144] How do you choose the depth, width and latent dimension of an autoencoder?
+- [DL05-145] How can autoencoders be used in recommender systems, for example to improve collaborative filtering?
+- [DL05-146] How are autoencoders used in NLP, for example for sentence representations or denoising pretraining as in BART?
+- [DL05-147] How can an autoencoder be used in a semi-supervised learning setup?
+- [DL05-148] How do graph autoencoders learn node embeddings, and what do they reconstruct?
+- [DL05-149] How would you design an autoencoder-based audio codec, and how do neural codecs use quantized latents?
+- [DL05-150] How can GANs and autoencoders be combined, as in VAE-GANs or adversarial autoencoders?
+- [DL05-151] What is feature matching in GAN training, and what problem does it address?
+- [DL05-152] How did Progressive Growing of GANs train high-resolution generators stably?
+- [DL05-153] How did GAN-based text-to-image models such as StackGAN or AttnGAN condition on text, and why were they overtaken?
+- [DL05-154] What does the latent space of a GAN encode, and what are latent interpolation and GAN inversion used for?
+- [DL05-155] How can GANs be used for unsupervised representation learning, for example with BiGAN?
+- [DL05-156] How can GANs be used in semi-supervised learning?
+- [DL05-157] When does GAN-based data augmentation actually help a downstream classifier, and how would you verify it?
+- [DL05-158] How would you use a GAN to generate synthetic time-series data, for example for financial modeling, and how would you evaluate it?
+- [DL05-159] How can GANs be used for privacy-preserving synthetic data release, and what privacy risks remain?

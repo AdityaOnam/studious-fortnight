@@ -86,6 +86,7 @@ L = ["# SOURCES", "",
 for repo, st, lic, c in rows:
     link = f"[{repo}](https://github.com/{repo})" if "/" in repo and not repo.startswith("(") and "*" not in repo else (f"[Devinterview-io](https://github.com/Devinterview-io) (≈95 repos)" if repo == "Devinterview-io/*" else repo)
     L.append(f"| {link} | {st} | {lic} | {c} |")
-L += ["", "Not harvested: *Deep Learning Interviews* (interviews.ai, arXiv 2201.00650) — the book is PDF-only; add it manually if you want its problems.", ""]
+L += ["", "*Deep Learning Interviews* (interviews.ai, arXiv 2201.00650) was harvested from its PDF: its problem statements were rewritten as self-contained questions (worked numeric problems included), and figure-dependent or duplicate problems were left out.",
+      "Devinterview-io: full question-title lists were taken from devinterview.io topic pages (titles are public there; answers are not used).", ""]
 open(os.path.join(ROOT, "00_START_HERE", "SOURCES.md"), "w", encoding="utf-8").write("\n".join(L))
 print("INDEX/SOURCES written;", len(meta), "questions;", len(rows), "source rows")

@@ -1,0 +1,203 @@
+Q012784	classification-algorithms	Briefly describe the working principle of Logistic Regression.
+Q012785	classification-algorithms	What are Artificial Neural Networks and how can they be used for classification tasks?
+Q012786	classification-algorithms	How do you deal with unbalanced datasets in classification?
+Q012787	classification-algorithms	What techniques can be used to prevent overfitting in classification models?
+Q012788	classification-algorithms	How would you select the appropriate metrics for evaluating a classification model?
+Q012789	classification-algorithms	Discuss the process of feature engineering and its importance in classification.
+Q012790	classification-algorithms	Explain the concept of hyperparameter tuning in the context of classification models.
+Q012791	classification-algorithms	What is model ensemble and how can it improve classification performance?
+Q012792	classification-algorithms	How would you approach a text classification task?
+Q012793	classification-algorithms	Describe how you would build a spam detection classifier.
+Q012794	classification-algorithms	What considerations would you take into account when building a credit scoring model?
+Q012795	classification-algorithms	Discuss the use of classification algorithms in image recognition.
+Q012796	classification-algorithms	Describe a real-world application where precision is more important than recall, and vice versa.
+Q012797	classification-algorithms	How would you handle time-series data for a classification task?
+Q012798	classification-algorithms	Explain how you could use classification models to predict customer churn.
+Q012799	classification-algorithms	Discuss the differences between L1 and L2 regularization in the context of Logistic Regression.
+Q012800	classification-algorithms	Explain the “Kernel trick” in SVMs and why it is useful.
+Q012801	classification-algorithms	What are the advantages of using ensemble methods like Bagging and Boosting?
+Q012802	classification-algorithms	Compare and contrast shallow and deep learning classifiers.
+Q012803	classification-algorithms	How do decision tree splitting criteria like Gini impurity and entropy affect the model?
+Q012804	classification-algorithms	What are the challenges of using Neural Networks for classification problems?
+Q012812	classification-algorithms	What is one-class classification and in what scenarios is it used?
+Q012813	classification-algorithms	Explain how semi-supervised learning can be used for classification tasks.
+Q012814	classification-algorithms	Discuss the concept of multi-label classification and how it differs from multiclass classification.
+Q012815	classification-algorithms	How do Convolutional Neural Networks (CNNs) differ from regular Neural Networks in classification tasks related to images?
+Q012816	classification-algorithms	Discuss the impact of deep learning on traditional classification algorithms.
+Q012817	classification-algorithms	Explain the concept of transfer learning and its relevance to classification.
+Q012818	classification-algorithms	What are adversarial examples and how do they affect classification models?
+Q012819	classification-algorithms	Discuss the role of attention mechanisms in classification tasks.
+Q012820	classification-algorithms	How has the field of Natural Language Processing evolved with advancements in classification models?
+Q012988	data-mining	What is the Naive Bayes classifier and how is it used in data mining?
+Q012989	data-mining	Explain the Support Vector Machine (SVM) algorithm in the context of data mining.
+Q013118	data-scientist	What is Linear Regression and its assumptions?
+Q013119	data-scientist	Explain the concept of Logistic Regression and its applications.
+Q013122	data-scientist	What is Support Vector Machine (SVM) and its kernel functions?
+Q013123	data-scientist	Explain the concept of Naive Bayes algorithm and its types.
+Q013124	data-scientist	What is K-Nearest Neighbors (KNN) algorithm and its distance metrics?
+Q013613	k-nearest-neighbors	Explore the differences between K-NN and Radius Neighbors.
+Q013614	k-nearest-neighbors	If you have a large dataset, how can you make K-NN’s computation faster?
+Q013615	k-nearest-neighbors	How do you handle categorical features when implementing K-NN?
+Q013616	k-nearest-neighbors	What is the role of data normalization in K-NN, and how is it performed?
+Q013617	k-nearest-neighbors	How do you assess the similarity between instances in K-NN?
+Q013618	k-nearest-neighbors	Describe the process of cross-validation in the context of tuning K-NN’s hyperparameters.
+Q013619	k-nearest-neighbors	Discuss how missing values in the dataset affect K-NN and how you would handle them.
+Q013620	k-nearest-neighbors	Outline strategies you would use to select an appropriate distance metric for K-NN.
+Q013621	k-nearest-neighbors	What is a kd-tree, and how can it be used to optimize K-NN?
+Q013622	k-nearest-neighbors	Compare K-NN to decision trees. What are the key differences in their algorithms?
+Q013623	k-nearest-neighbors	How can ensemble methods be used in conjunction with K-NN?
+Q013624	k-nearest-neighbors	Explore the use of K-NN for outlier detection and the rationale behind it.
+Q013625	k-nearest-neighbors	Explain how K-NN can be adapted for time-series prediction.
+Q013626	k-nearest-neighbors	Compare and contrast the use of K-NN in a supervised context versus its use in unsupervised learning (e.g., clustering).
+Q013627	k-nearest-neighbors	Discuss how bootstrap aggregating (bagging) can improve the performance of K-NN.
+Q013633	k-nearest-neighbors	Optimize a K-NN model in a large dataset using approximate nearest neighbors techniques like LSH or kd-trees.
+Q013634	k-nearest-neighbors	Given a dataset with time-series data, how would you apply K-NN for forecasting?
+Q013635	k-nearest-neighbors	Describe a scenario where you would use K-NN for image classification.
+Q013636	k-nearest-neighbors	How would you apply the K-NN algorithm in a recommendation system?
+Q013637	k-nearest-neighbors	Discuss a healthcare application where K-NN could be beneficial. How would you implement it?
+Q013638	k-nearest-neighbors	In a retail context, explain how K-NN could be used for customer segmentation.
+Q013639	k-nearest-neighbors	Summarize the main ideas of a few recent research papers on improving the K-NN algorithm.
+Q013640	k-nearest-neighbors	Explain how the K-NN algorithm can be parallelized. What are the challenges and benefits?
+Q013641	k-nearest-neighbors	How can K-NN be combined with deep learning techniques?
+Q013642	k-nearest-neighbors	Discuss the role of approximate nearest neighbor search in scaling K-NN for big data.
+Q013643	k-nearest-neighbors	What are the trends and future advancements in the field of K-NN and its applications?
+Q013784	linear-regression	What is cross-validation and how is it performed with linear regression?
+Q013785	linear-regression	How do you address overfitting in linear regression?
+Q013786	linear-regression	Can you explain the concept of gradient descent and its importance in linear regression?
+Q013787	linear-regression	What is ridge regression and how does it differ from standard linear regression?
+Q013788	linear-regression	Explain the concept of Lasso regression and its benefits.
+Q013789	linear-regression	What is elastic net regression and in what cases would you use it?
+Q013790	linear-regression	How do you use regularization to improve linear regression models?
+Q013791	linear-regression	How can you optimize the hyperparameters of a regularized linear regression model?
+Q013792	linear-regression	Explain the purpose of residual plots and how to interpret them.
+Q013793	linear-regression	What is the adjusted R-squared, and why is it used?
+Q013794	linear-regression	What are leverage points and how do they affect a regression model?
+Q013795	linear-regression	Describe how you would detect and address outliers in your regression analysis.
+Q013796	linear-regression	Explain the concept of Cook’s distance.
+Q013797	linear-regression	How is influence measured in the context of linear regression?
+Q013798	linear-regression	Describe the variance inflation factor (VIF) and its significance.
+Q013799	linear-regression	How does polynomial regression extend the linear regression model?
+Q013800	linear-regression	What are generalized linear models (GLMs), and how do they relate to linear regression?
+Q013801	linear-regression	Can you discuss the use of spline functions in regression?
+Q013802	linear-regression	Explain how quantile regression differs from ordinary least squares (OLS) regression.
+Q013803	linear-regression	What are mixed models, and where might you use them?
+Q013810	linear-regression	Plot residual diagrams and analyze the model fit using Matplotlib or Seaborn.
+Q013814	linear-regression	Discuss how linear regression can be used for sales forecasting.
+Q013815	linear-regression	Describe a situation where linear regression could be applied in the finance sector.
+Q013816	linear-regression	How can linear regression be used for price optimization in retail?
+Q013817	linear-regression	Explain how you might use regression analysis to assess the effect of marketing campaigns.
+Q013818	linear-regression	Describe how linear regression models could be used in predicting real estate prices.
+Q013819	linear-regression	How would you approach building a linear regression model to predict customer churn?
+Q013820	linear-regression	Illustrate the process you would follow to model the relationship between advertising spend and revenue generation.
+Q013821	linear-regression	Walk me through a time you diagnosed a poorly performing regression model and how you improved it.
+Q013822	linear-regression	Describe how you might use linear regression to optimize inventory levels in a supply chain context.
+Q013823	linear-regression	Propose a framework for using regression analysis to evaluate the impact of promotional activities on sales volume.
+Q013824	linear-regression	Discuss recent advances in optimization algorithms for linear regression.
+Q013825	linear-regression	How has the field of linear regression modeling evolved with the advent of big data?
+Q013826	linear-regression	What are the latest research trends in regularized regression techniques?
+Q013827	linear-regression	How can linear regression models be made more robust to non-standard data types?
+Q013828	linear-regression	Discuss the potential role of linear regression in the development of AI for personalized medicine.
+Q013829	linear-regression	Describe a situation where logistic regression might be preferred over linear regression.
+Q013830	linear-regression	How would you explain the importance of linear regression to a non-technical stakeholder?
+Q013831	linear-regression	What steps would you take if your linear regression model shows significant bias after deployment?
+Q013832	linear-regression	How would you use A/B testing to validate the outcomes of a linear regression model in a live environment?
+Q013833	linear-regression	Describe a scenario where you’d have to transition from a simple to a multiple linear regression model, and the considerations you’d have to make.
+Q013839	logistic-regression	What are pseudo R-squared measures in logistic regression, and are they reliable?
+Q013840	logistic-regression	Can you explain the concept of the link function in generalized linear models?
+Q013841	logistic-regression	How do you evaluate a logistic regression model’s performance?
+Q013842	logistic-regression	What is a confusion matrix, and how do you interpret it?
+Q013843	logistic-regression	Discuss the ROC curve and the AUC metric in the context of logistic regression.
+Q013844	logistic-regression	What are some common classification metrics used to assess logistic regression?
+Q013845	logistic-regression	How do you deal with imbalanced classes in logistic regression?
+Q013846	logistic-regression	Describe methods for selecting a threshold for the logistic regression decision boundary.
+Q013847	logistic-regression	What is the Hosmer-Lemeshow test, and how is it used?
+Q013848	logistic-regression	How would you approach diagnosing and addressing overfitting in a logistic regression model?
+Q013849	logistic-regression	Explain how feature engineering can impact logistic regression.
+Q013850	logistic-regression	Discuss the use of polynomial and interaction terms in logistic regression.
+Q013851	logistic-regression	How can you extend logistic regression to handle ordinal outcomes?
+Q013852	logistic-regression	What role do quasi-likelihood methods play in logistic regression?
+Q013853	logistic-regression	How does one interpret logistic regression with a non-linear transformation of the dependent variable?
+Q013854	logistic-regression	What are some best practices for data preprocessing before applying logistic regression?
+Q013855	logistic-regression	How does one ensure that a logistic regression model is scalable?
+Q013856	logistic-regression	Discuss the implications of missing data on logistic regression models.
+Q013857	logistic-regression	How would you implement class-weighting in logistic regression?
+Q013858	logistic-regression	How can you use logistic regression for variable selection?
+Q013862	logistic-regression	Given a dataset with categorical features, perform one-hot encoding and fit a logistic regression model using scikit-learn.
+Q013869	logistic-regression	How would you apply logistic regression to a marketing campaign to predict customer conversion?
+Q013870	logistic-regression	Discuss how logistic regression can be used for credit scoring in the financial industry.
+Q013871	logistic-regression	Present an approach to predict the likelihood of a patient having a particular disease using logistic regression.
+Q013872	logistic-regression	Describe how you would use logistic regression to build a recommender system for e-commerce.
+Q013873	logistic-regression	How would you use logistic regression to analyze the impact of various factors on employee attrition?
+Q014004	naive-bayes	In what kind of situations might the ‘naivety’ assumption of Naive Bayes lead to poor performance?
+Q014005	naive-bayes	How would you handle an imbalanced dataset when using a Naive Bayes classifier?
+Q014006	naive-bayes	What preprocessing steps would you take for text data before applying Naive Bayes?
+Q014007	naive-bayes	Discuss the impact of feature scaling on Naive Bayes classifiers.
+Q014008	naive-bayes	How can overfitting occur in Naive Bayes, and how would you prevent it?
+Q014009	naive-bayes	What metrics would you use to evaluate the performance of a Naive Bayes classification model?
+Q014010	naive-bayes	Explain how feature selection affects the performance of a Naive Bayes model.
+Q014011	naive-bayes	Describe how you would perform parameter tuning for Naive Bayes models.
+Q014012	naive-bayes	How does Naive Bayes handle irrelevant features in a dataset?
+Q014013	naive-bayes	Compare and contrast Naive Bayes with logistic regression.
+Q014014	naive-bayes	Explain the Beroulli Naive Bayes classifier and in what context it is useful.
+Q014015	naive-bayes	How can you use the Naive Bayes classifier in a semi-supervised learning scenario?
+Q014016	naive-bayes	Discuss how the Naive Bayes classifier can be applied to recommendation systems.
+Q014017	naive-bayes	How does Naive Bayes deal with continuous data, and what are the challenges?
+Q014018	naive-bayes	Can Naive Bayes be used with kernel methods? If yes, explain how.
+Q014024	naive-bayes	How would you use Naive Bayes to build an email categorization system (e.g., important, social, promotions)?
+Q014025	naive-bayes	Propose a strategy for using Naive Bayes in a real-time bidding system for online advertising.
+Q014026	naive-bayes	How would a Naive Bayes classifier identify fake news articles?
+Q014027	naive-bayes	Describe a practical application of Naive Bayes in medical diagnosis.
+Q014028	naive-bayes	Explain how you would apply Naive Bayes to customer sentiment analysis_ from product reviews.
+Q014029	naive-bayes	Discuss improvements over standard Naive Bayes for dealing with highly correlated features.
+Q014030	naive-bayes	What are the recent advancements in Naive Bayes for handling big data?
+Q014031	naive-bayes	How does the concept of distributional semantics enhance Naive Bayes text classification?
+Q014032	naive-bayes	Explore the challenges and solutions for Naive Bayes classification in the context of multi-label classification tasks.
+Q014033	naive-bayes	How can active learning algorithms benefit from the Naive Bayes classifier in data-scarce scenarios?
+Q014832	svm	How do you choose the value of the regularization parameter © in SVM?
+Q014833	svm	Discuss the significance of the kernel parameters like sigma in the Gaussian (RBF) kernel.
+Q014834	svm	What is the computational complexity of training an SVM?
+Q014835	svm	How does SVM ensure the maximization of the margin?
+Q014836	svm	Can you derive the optimization problem for the soft margin SVM?
+Q014837	svm	Describe the steps you would take to preprocess data before training an SVM model.
+Q014838	svm	How do you handle categorical variables when training an SVM?
+Q014839	svm	What methods can be used to tune SVM hyperparameters?
+Q014840	svm	How do you deal with an imbalanced dataset when using SVM?
+Q014841	svm	What metrics are commonly used to evaluate the performance of an SVM model?
+Q014842	svm	Discuss the trade-off between model complexity and generalization in SVM.
+Q014843	svm	Explain how feature scaling affects SVM performance.
+Q014844	svm	How can you speed up SVM training on large datasets?
+Q014845	svm	What steps would you take to diagnose and solve underfitting or overfitting in an SVM model?
+Q014846	svm	What considerations should be taken into account for deploying an SVM model in production?
+Q014847	svm	How does SVM handle incremental learning or online learning scenarios?
+Q014848	svm	What are the challenges of working with SVMs in distributed computing environments?
+Q014849	svm	Discuss strategies for reducing model storage and inference time for SVMs.
+Q014850	svm	What are “Support Vector Regression” and its applications?
+Q014851	svm	Explain the linear kernel in SVM and when to use it.
+Q014852	svm	What is a Radial Basis Function (RBF) kernel, and how does it transform the feature space?
+Q014853	svm	In what scenarios would you use a polynomial kernel?
+Q014854	svm	Discuss the purpose of using a sigmoid kernel in SVM.
+Q014855	svm	How can you create a custom kernel for SVM, and what are the considerations?
+Q014864	svm	Discuss the Quasi-Newton methods in the context of SVM training.
+Q014865	svm	What is Sequential Minimal Optimization (SMO), and why is it important for SVM?
+Q014866	svm	Explain the concept and advantages of using probabilistic outputs in SVMs (Platt scaling).
+Q014867	svm	Discuss the Reese kernel and its use cases in SVM.
+Q014868	svm	How would you implement an anomaly detection system using a one-class SVM?
+Q014869	svm	Explain the use of SVM in feature selection.
+Q014870	svm	Discuss the use of SVM in bioinformatics and computational biology.
+Q014871	svm	How would you apply SVM for image classification tasks?
+Q014872	svm	Describe a financial application where SVMs can be used for forecasting.
+Q014873	svm	How can SVM be used for sentiment analysis on social media data?
+Q014874	svm	Discuss the application of SVMs in text categorization.
+Q014875	svm	Explain how SVM can be utilized for handwriting recognition.
+Q014876	svm	How would you leverage SVM for intrusion detection in cybersecurity?
+Q014877	svm	Propose an application of SVM in the healthcare industry for disease diagnosis.
+Q014878	svm	Discuss recent advances in SVM and their implications for Machine Learning.
+Q014879	svm	How can deep learning techniques be integrated with SVMs?
+Q014880	svm	Explain the use of SVM in reinforcement learning contexts.
+Q014881	svm	Discuss the role of SVMs in the development of self-driving cars.
+Q014882	svm	How can domain adaptation be achieved using SVM models for transfer learning?
+Q014883	svm	What are the potential uses of SVMs in recommendation systems?
+Q014884	svm	How is the research on quantum machine learning potentially impacting SVM algorithms?
+Q014885	svm	How can SVM be combined with other machine learning models to form an ensemble?
+Q014886	svm	Explain the concept of bagging and boosting SVM classifiers.
+Q014887	svm	Describe a scenario where an SVM is used as a weak learner in an ensemble method.

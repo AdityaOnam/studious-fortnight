@@ -3,7 +3,7 @@ domain: mlsd
 topic: mlops_deployment_monitoring
 title: MLOps, deployment and monitoring
 tags: [mlops, deployment, monitoring, drift]
-count: 148
+count: 160
 ---
 # MLOps, deployment and monitoring
 
@@ -174,3 +174,17 @@ count: 148
 - [MS01-146] What changes when a customer wants an enterprise workflow agent deployed air-gapped?
 - [MS01-147] How do you handle model updates in an on-prem LLM deployment without regressions?
 - [MS01-148] How do you roll back a bad model that is already deployed on 10 million devices?
+
+## ML design patterns and lifecycle practices
+- [MS01-149] What is the prediction cache pattern, and when does caching model outputs improve serving performance?
+- [MS01-150] What is the warm start pattern, and when should a retrained model start from the previous model's weights?
+- [MS01-151] How would you set up a champion/challenger model deployment architecture?
+- [MS01-152] What is model decay, and how do periodic, continuous and drift-triggered retraining strategies compare?
+- [MS01-153] How do feature flags help when deploying new models or model features?
+- [MS01-154] How do you retire and archive a model safely?
+- [MS01-155] What role does metadata play in ML lifecycle management, and how do you keep model lineage intact?
+- [MS01-156] What are the major security concerns across the MLOps lifecycle, for example data poisoning, model theft and supply-chain risks?
+- [MS01-157] How do privacy regulations affect MLOps practices, and where does differential privacy fit?
+- [MS01-158] What is federated learning, and what operational challenges does it bring?
+- [MS01-159] How does multi-tenancy affect MLOps, for example with per-customer models?
+- [MS01-160] What are the benefits and risks of running ML inside the database (in-database analytics)?

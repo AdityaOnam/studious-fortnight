@@ -1,0 +1,36 @@
+Q013196	data-scientist	What is Early Stopping and its role in preventing overfitting?
+Q013197	data-scientist	Explain the concept of Learning Rate Scheduling and its types.
+Q013248	deep-learning	What are loss functions, and why are they important?
+Q013249	deep-learning	Explain the concept of gradient descent.
+Q013250	deep-learning	What are the differences between batch gradient descent, stochastic gradient descent, and mini-batch gradient descent?
+Q013251	deep-learning	Discuss the role of learning rate in model training and its impact.
+Q013252	deep-learning	What are optimization algorithms like Adam, RMSprop, and AdaGrad?
+Q013253	deep-learning	How does Batch Normalization work?
+Q013254	deep-learning	Describe the process of hyperparameter tuning in neural networks.
+Q013255	deep-learning	What is early stopping, and how does it prevent overfitting?
+Q013256	deep-learning	Explain the trade-off between bias and variance.
+Q013263	deep-learning	Discuss the importance of data augmentation in deep learning.
+Q013264	deep-learning	How do you handle overfitting in deep learning models beyond dropout?
+Q013265	deep-learning	What strategies can be used for training on imbalanced datasets?
+Q013267	deep-learning	How do you monitor and debug a deep learning model during training?
+Q013300	deep-learning	Discuss the methods for handling a model that has a high variance.
+Q013304	deep-learning	How do you perform error analysis on the predictions of a deep learning model?
+Q014036	neural-networks	What criteria would you use to choose an optimizer for training a neural network?
+Q014039	neural-networks	Discuss the importance of data augmentation in training neural networks.
+Q014040	neural-networks	What metrics can be used to evaluate the performance of a neural network?
+Q014042	neural-networks	Describe the role of learning rate and learning rate schedules in training.
+Q014049	neural-networks	What are the challenges in training deep neural networks?
+Q014054	neural-networks	What is gradient clipping, and why might it be useful?
+Q014055	neural-networks	Discuss the difference between stochastic gradient descent (SGD) and mini-batch gradient descent.
+Q014056	neural-networks	Explain the concepts of momentum and Nesterov accelerated gradient in network training.
+Q014057	neural-networks	What is Adam optimization, and how does it differ from other optimizers like SGD?
+Q014058	neural-networks	How would you tackle the problem of overfitting in a deep neural network?
+Q014059	neural-networks	Discuss the implications of batch size on model performance and training.
+Q014060	neural-networks	What are the main strategies for hyperparameter tuning in neural network models?
+Q014061	neural-networks	How is the performance of a neural network affected by data normalization or standardization?
+Q014062	neural-networks	Discuss how gradient tracking can be lost during training and potential solutions to resolve it.
+Q014063	neural-networks	Elaborate on the challenge of catastrophic forgetting in neural networks.
+Q014084	neural-networks	How do you ensure that your neural network is generalizing well to unseen data?
+Q014085	neural-networks	Describe the process you would follow to debug a model that is not learning.
+Q014086	neural-networks	What are some strategies to improve computational efficiency in neural network training?
+Q014088	neural-networks	Explain the importance of checkpoints and early stopping in training neural networks.

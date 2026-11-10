@@ -1,0 +1,431 @@
+Q012699	anomaly-detection	Write a Python function to identify outliers in a dataset using the IQR (Interquartile Range) method.
+Q012700	anomaly-detection	Implement a k-NN algorithm to detect anomalies in a two-dimensional dataset.
+Q012701	anomaly-detection	Code an example of using the Isolation Forest algorithm with scikit-learn.
+Q012702	anomaly-detection	Simulate a dataset with outliers and demonstrate how PCA can be used to detect these points.
+Q012703	anomaly-detection	Use TensorFlow/Keras to build a simple autoencoder for anomaly detection on a sample dataset.
+Q012704	anomaly-detection	Write an SQL query to spot potential anomalies in a transaction table based on statistical z-scores.
+Q012705	anomaly-detection	Implement a simple version of the Local Outlier Factor algorithm in Python.
+Q012706	anomaly-detection	Create a Python script using pandas that flags outliers in time-series data based on moving averages.
+Q012707	anomaly-detection	Write a Python function that flags anomalies in a dataset by evaluating cluster compactness after running K-means.
+Q012734	autoencoders	Implement a basic autoencoder in TensorFlow/Keras to compress and reconstruct images.
+Q012735	autoencoders	Write a Python function that visualizes the latent space representation of data after going through an autoencoder.
+Q012736	autoencoders	Create a denoising autoencoder using PyTorch that can clean noisy images.
+Q012737	autoencoders	Develop a variational autoencoder (VAE) using TensorFlow/Keras and demonstrate its generative capabilities.
+Q012738	autoencoders	Code a sparse autoencoder from scratch in Python to learn a representation of text data.
+Q012740	autoencoders	Build a convolutional autoencoder for video frame prediction using TensorFlow/Keras.
+Q012741	autoencoders	Implement a stacked autoencoder for multi-label classification and compare its performance with a basic neural network.
+Q012769	bias-and-variance	Implement k-fold cross-validation on a dataset to diagnose model bias and variance.
+Q012770	bias-and-variance	Write a Python script to plot learning curves for understanding model bias and variance.
+Q012771	bias-and-variance	Use L1 (Lasso) and L2 (Ridge) regularization to address a high-variance problem in a linear regression model.
+Q012772	bias-and-variance	Code an ensemble method to combine multiple decision trees with the intention of reducing variance.
+Q012773	bias-and-variance	Implement a Grid Search in scikit-learn to find the optimal parameters and balance bias-variance in an SVM model.
+Q012805	classification-algorithms	Implement a logistic regression model from scratch using Python.
+Q012806	classification-algorithms	Write a function that calculates the Gini impurity for a given dataset in a Decision Tree.
+Q012807	classification-algorithms	Code a Support Vector Machine using scikit-learn to classify data from a toy dataset.
+Q012808	classification-algorithms	Create a k-NN classifier in Python and test its performance on a sample dataset.
+Q012809	classification-algorithms	Use a Boosting algorithm to improve the accuracy of a weak classifier on a dataset.
+Q012810	classification-algorithms	Implement a function for feature scaling and normalization in preparation for classification.
+Q012811	classification-algorithms	Develop a Python script that visualizes the decision boundary of a given classification model.
+Q012836	cluster-analysis	Implement the K-means clustering algorithm from scratch in Python.
+Q012837	cluster-analysis	Write a Python script that uses hierarchical clustering to group data and visualizes the resulting dendrogram.
+Q012838	cluster-analysis	Use scikit-learn to perform DBSCAN clustering on a given dataset and plot the clusters.
+Q012839	cluster-analysis	Create a Python function to calculate silhouette scores for different numbers of clusters in a dataset.
+Q012840	cluster-analysis	Implement a Gaussian Mixture Model clustering with scikit-learn and visualize the results.
+Q012841	cluster-analysis	Develop a Python script to run and compare multiple clustering algorithms on the same dataset.
+Q012842	cluster-analysis	Write a Python function to normalize and scale data before clustering.
+Q012843	cluster-analysis	Implement a custom distance metric and use it in a clustering algorithm within scikit-learn.
+Q012876	cnn	Implement a convolution layer from scratch using Numpy.
+Q012877	cnn	Write a Python function to apply max pooling to a given input matrix.
+Q012878	cnn	Use TensorFlow/Keras to build and train a CNN to classify images from the CIFAR-10 dataset.
+Q012880	cnn	Create a script to fine-tune a pre-trained CNN on a new dataset with TensorFlow/Keras.
+Q012910	computer-vision	Write a Python program to perform edge detection using the Canny filter.
+Q012911	computer-vision	Implement a simple image classifier using a pre-trained CNN with TensorFlow.
+Q012912	computer-vision	Create a function to automatically crop images centering on the main object.
+Q012913	computer-vision	Write code to segment an image into superpixels using SLIC (Simple Linear Iterative Clustering).
+Q012914	computer-vision	Implement basic facial landmark detection using Dlib or OpenCV.
+Q012939	cost-function	Implement a Python function that calculates the Mean Squared Error between predicted and actual values.
+Q012940	cost-function	Write a Python code snippet to compute the Cross-Entropy loss given predicted probabilities and actual labels.
+Q012941	cost-function	Implement a gradient descent algorithm in Python to minimize a simple quadratic cost function.
+Q012942	cost-function	Create a Python simulation that compares the convergence speed of batch and stochastic gradient descent.
+Q012954	cost-function	Build a Python class that implements an adaptive learning rate algorithm, like Adam or AdaGrad, from scratch.
+Q012955	cost-function	Write a Python function that minimizes a cost function using simulated annealing.
+Q012956	cost-function	Implement a basic version of the RMSprop optimization algorithm in Python.
+Q012970	curse-of-dimensionality	Implement PCA in Python from scratch and apply it to a high-dimensional dataset.
+Q012971	curse-of-dimensionality	Write a Python function that selects the top k features based on mutual information with the target variable.
+Q012972	curse-of-dimensionality	Code a Python script that performs recursive feature elimination to reduce the dimensionality of the dataset.
+Q012973	curse-of-dimensionality	Create a visualization of the nearest neighbors of a point in a high-dimensional space after applying t-SNE.
+Q012974	curse-of-dimensionality	Demonstrate the use of L1 regularization in a logistic regression model on a high-dimensional dataset using scikit-learn.
+Q013004	data-mining	Write a SQL query that selects the top 3 most frequent purchasers from a sales table.
+Q013005	data-mining	Implement the Apriori algorithm in Python to generate association rules from a transaction dataset.
+Q013006	data-mining	Create a Python function to normalize a vector using Min-Max normalization.
+Q013007	data-mining	Use scikit-learn to perform k-means clustering on a sample multi-dimensional dataset.
+Q013008	data-mining	Write a Python script to preprocess text data, including tokenization and stemming.
+Q013009	data-mining	Implement a decision tree classifier from scratch in Python.
+Q013010	data-mining	Write a Python function that calculates the Gini index for a given data split in a decision tree.
+Q013011	data-mining	Use Pandas and NumPy to process and clean a dataset, handling missing values and outliers.
+Q013073	data-processing	Write a Python function to replace missing values with the median in a dataset.
+Q013074	data-processing	Implement min-max scaling on a given dataset without using any libraries.
+Q013075	data-processing	Create a function to encode categorical variables using one-hot encoding in Python.
+Q013076	data-processing	Use sklearn to set up a preprocessing pipeline with feature scaling and PCA.
+Q013077	data-processing	Write an SQL query to clean and preprocess a dataset with null values and outliers.
+Q013078	data-processing	Code a Python script to automatically detect and resolve duplicates in a dataset.
+Q013079	data-processing	Implement a time-series rolling window feature extraction in pandas.
+Q013080	data-processing	Write a Python function to perform sentiment encoding on text data.
+Q013081	data-processing	Perform image augmentation on a batch of images using TensorFlow or PyTorch.
+Q013082	data-processing	Implement a custom transformer in sklearn that adds a new feature calculated from existing ones.
+Q013223	decision-tree	Implement a basic Decision Tree algorithm from scratch in Python.
+Q013224	decision-tree	Write a Python function to compute Gini impurity given a dataset.
+Q013225	decision-tree	Create a Python script to visualize a Decision Tree using graphviz.
+Q013227	decision-tree	Implement a recursive binary splitting algorithm for a regression Decision Tree.
+Q013228	decision-tree	Write a function in Python that prunes a Decision Tree to avoid overfitting.
+Q013229	decision-tree	Code a Python function to calculate feature importance from a trained Decision Tree.
+Q013230	decision-tree	Use cross-validation in Python to determine the optimal depth for a Decision Tree.
+Q013231	decision-tree	Build a Random Forest model in Python and compare its performance with a single Decision Tree.
+Q013232	decision-tree	Implement a simple version of the AdaBoost algorithm with Decision Trees in Python.
+Q013278	deep-learning	Implement a simple neural network from scratch using Python.
+Q013279	deep-learning	Create a CNN in TensorFlow to classify images from the MNIST dataset.
+Q013280	deep-learning	Write a Python function using Keras for real-time data augmentation.
+Q013281	deep-learning	Train a RNN with LSTM cells on a text dataset to generate new text sequences.
+Q013282	deep-learning	Use PyTorch to construct and train a GAN on a dataset of your choice.
+Q013283	deep-learning	Develop an autoencoder using TensorFlow for dimensionality reduction on a high-dimensional dataset.
+Q013284	deep-learning	Build a chatbot using a Sequence-to-Sequence (Seq2Seq) model.
+Q013285	deep-learning	Code a ResNet in Keras and train it on a dataset with transfer learning.
+Q013286	deep-learning	Implement a Transformer model for a language translation task.
+Q013287	deep-learning	Create an anomaly detection system using an autoencoder.
+Q013324	dimensionality-reduction	Implement PCA on a given dataset using scikit-learn and plot the explained variance ratio.
+Q013325	dimensionality-reduction	Write a Python function that performs feature selection using Recursive Feature Elimination (RFE).
+Q013326	dimensionality-reduction	Code a small example to demonstrate the use of LDA for classification.
+Q013327	dimensionality-reduction	Implement a basic version of an autoencoder for dimensionality reduction using TensorFlow/Keras.
+Q013329	dimensionality-reduction	Develop a Python script to compare the performance of PCA and LDA on a sample dataset.
+Q013330	dimensionality-reduction	Create a Python function that uses Factor Analysis for dimensionality reduction on multivariate data.
+Q013331	dimensionality-reduction	Write a code snippet to perform feature extraction using Non-negative Matrix Factorization (NMF).
+Q013332	dimensionality-reduction	Use the feature importance provided by a trained ensemble model to reduce the dimensionality of a dataset in Python.
+Q013358	ensemble-learning	Implement a simple bagging classifier in Python using decision trees as base learners.
+Q013359	ensemble-learning	Write a Python script to perform K-fold cross-validation on a Random Forest model.
+Q013360	ensemble-learning	Create a stacking ensemble of classifiers using scikit-learn and evaluate its performance.
+Q013361	ensemble-learning	Code a Boosting algorithm from scratch using Python.
+Q013362	ensemble-learning	Use XGBoost in Python to train and fine-tune a model on a given dataset.
+Q013363	ensemble-learning	Implement feature bagging in Python to see its effect on a classification problem.
+Q013364	ensemble-learning	Develop a voting ensemble classifier in Python with different weighting strategies for base learners.
+Q013365	ensemble-learning	Simulate overfitting in an ensemble model and implement a method to reduce it.
+Q013366	ensemble-learning	Demonstrate the use of out-of-bag samples to estimate model accuracy in Random Forest using Python.
+Q013367	ensemble-learning	Write a Python routine to identify the least important features in a Gradient Boosting model.
+Q013388	ensemble-learning	Implement ensemble learning to improve accuracy on a multi-class classification problem.
+Q013390	ensemble-learning	Build an ensemble model that combines predictions from a neural network and a boosting classifier.
+Q013391	ensemble-learning	Create a weighted ensemble that dynamically adjusts weights based on the performance of each learner.
+Q013392	ensemble-learning	Develop a mechanism to periodically retrain an ensemble model with new streaming data.
+Q013393	ensemble-learning	Write a script in Python that utilizes early stopping with gradient boosting methods.
+Q013394	ensemble-learning	Create an end-to-end pipeline for training, validating, and selecting the best ensemble setup automatically.
+Q013396	ensemble-learning	Generate a synthetic dataset with Python and apply different ensemble learning models to compare their generalization capabilities.
+Q013397	ensemble-learning	Implement a collaborative filtering recommendation system using a stack of matrix factorization models as an ensemble.
+Q013403	explainable-ai	Implement LIME to explain the predictions of a classifier on a simple dataset.
+Q013404	explainable-ai	Write a function that computes Shapley Values for a single prediction in a small dataset.
+Q013406	explainable-ai	Build a linear regression model and interpret its coefficients using Python.
+Q013407	explainable-ai	Create a Partial Dependence Plot using a Gradient Boosting Classifier and interpret the results.
+Q013438	feature-engineering	Write a Python function that normalizes a given feature vector.
+Q013439	feature-engineering	Code a function in Python for one-hot encoding categorical variables.
+Q013440	feature-engineering	Implement PCA from scratch in Python and apply it to a sample dataset.
+Q013441	feature-engineering	Create a Python script that uses scikit-learn’s SelectKBest class to select the top ‘k’ features based on a chosen statistical test.
+Q013442	feature-engineering	Design a Python function to handle missing data by imputing with mean, median, or mode.
+Q013443	feature-engineering	Write an SQL command to create new feature columns based on existing data.
+Q013444	feature-engineering	Implement a basic feature hashing scheme in Python.
+Q013445	feature-engineering	Create a Python script to detect and remove highly correlated features from a dataset.
+Q013446	feature-engineering	Write a Python function that generates polynomial and interaction features using scikit-learn’s PolynomialFeatures.
+Q013447	feature-engineering	Implement feature scaling (both normalization and standardization) in Python using NumPy.
+Q013468	gans	Implement a simple GAN model in TensorFlow/Keras to generate new samples from a given dataset.
+Q013470	gans	Create a Python script using NumPy to visualize the loss of the generator and discriminator during training.
+Q013471	gans	Code a DCGAN in TensorFlow/Keras and train it on a dataset of images to generate new ones.
+Q013472	gans	Implement a WGAN with gradient penalty in PyTorch and demonstrate its stability compared to standard GANs.
+Q013473	gans	Build a Conditional GAN in TensorFlow/Keras to generate images conditioned on class labels.
+Q013474	gans	Write a script to monitor and report mode collapse during GAN training.
+Q013475	gans	Develop a CycleGAN in PyTorch for unpaired image-to-image translation.
+Q013476	gans	Implement a GAN using TensorFlow/Keras capable of generating high-resolution images of human faces (e.g., inspired by StyleGAN).
+Q013477	gans	Code an example of semi-supervised learning with GANs, using a limited number of labeled samples in a dataset.
+Q013515	genetic-algorithms	Implement a basic genetic algorithm in Python to solve the problem of maximizing the function f(x) = x^2.
+Q013516	genetic-algorithms	Write a genetic algorithm to evolve a simple string of characters toward a target string.
+Q013517	genetic-algorithms	Create a mutation function for a GA that operates on real-valued vectors.
+Q013518	genetic-algorithms	Code a crossover function that combines two parent solutions to produce offspring for a bit-string representation.
+Q013519	genetic-algorithms	Develop a selection mechanism in Python to select fittest individuals based on the roulette wheel method.
+Q013520	genetic-algorithms	Write a Python function that implements a rank-based selection method for a GA.
+Q013521	genetic-algorithms	Implement a GA in Python to solve the problem of finding the minimal-cost path in a graph.
+Q013522	genetic-algorithms	Create a simple GA in Python for optimizing the weights of a small neural network.
+Q013557	gradient-descent	Write a Python implementation of basic gradient descent to find the minimum of a quadratic function.
+Q013558	gradient-descent	Implement batch gradient descent for linear regression from scratch using Python.
+Q013559	gradient-descent	Create a stochastic gradient descent algorithm in Python for optimizing a logistic regression model.
+Q013560	gradient-descent	Simulate annealing of the learning rate in gradient descent and plot the convergence over time.
+Q013561	gradient-descent	Design a Python function to compare the convergence speed of gradient descent with and without momentum.
+Q013562	gradient-descent	Implement gradient descent with early stopping using Python.
+Q013563	gradient-descent	Code a mini-batch gradient descent optimizer and test it on a small dataset.
+Q013564	gradient-descent	Write a Python function to check the gradients computed by a gradient descent algorithm.
+Q013566	gradient-descent	Implement and visualize the optimization path of the Adam optimizer vs. vanilla gradient descent.
+Q013593	k-means-clustering	Implement a basic K-Means Clustering algorithm from scratch using Python.
+Q013594	k-means-clustering	Write a function in Python that determines the best value of k (number of clusters) using the Elbow Method.
+Q013596	k-means-clustering	Create a Python script to visualize the results of K-Means Clustering on a 2D dataset.
+Q013598	k-means-clustering	Write code to compute the silhouette coefficient for evaluating the clustering quality.
+Q013599	k-means-clustering	Implement a mini-batch K-Means clustering using Python.
+Q013600	k-means-clustering	Write a Python function to identify the centroid of a new data point in an existing K-Means model.
+Q013602	k-means-clustering	Create a multi-dimensional K-Means clustering example and visualize it using PCA for dimensionality reduction.
+Q013628	k-nearest-neighbors	Write a Python function to implement K-NN from scratch on a simple dataset.
+Q013629	k-nearest-neighbors	Use scikit-learn to demonstrate K-NN classification using the Iris dataset.
+Q013630	k-nearest-neighbors	Implement a LazyLearningClassifier in Python that uses K-NN under the hood.
+Q013631	k-nearest-neighbors	Create a Python script to visualize the decision boundary of K-NN on a 2D dataset.
+Q013632	k-nearest-neighbors	Develop a weighted K-NN algorithm in Python and test its performance against the standard K-NN.
+Q013669	keras	Create a simple Keras model using the Sequential API for binary classification.
+Q013670	keras	Write a script to load and preprocess image data for a CNN in Keras.
+Q013671	keras	Implement custom training logic in Keras by overriding the training step function.
+Q013672	keras	Code a Multi-Layer Perceptron (MLP) in Keras for a regression task.
+Q013673	keras	Use the Keras functional API to create a model with shared layers and multiple inputs/outputs.
+Q013674	keras	Develop a custom callback in Keras that logs the predictions of a model at the end of each epoch.
+Q013675	keras	Implement a Keras data generator to handle large datasets that cannot fit into memory.
+Q013676	keras	Write a Python function using Keras to calculate and display a confusion matrix for a classification model.
+Q013677	keras	Code an LSTM network in Keras to perform sentiment analysis on text data.
+Q013678	keras	Create a script that fine-tunes a pre-trained convolutional neural network on a new dataset in Keras.
+Q013712	light-gbm	Implement a basic LightGBM model for a binary classification problem using Python.
+Q013713	light-gbm	Write a script to perform grid search hyperparameter tuning for a LightGBM model in Python.
+Q013714	light-gbm	Code a LightGBM regression model with custom evaluation metrics in Python.
+Q013715	light-gbm	Demonstrate feature importance extraction from a trained LightGBM model.
+Q013716	light-gbm	Create a Python function that uses LightGBM for cross-validation on a given dataset.
+Q013718	light-gbm	Implement a multi-class classification using LightGBM and evaluate it using the appropriate metrics.
+Q013751	linear-algebra	Write code to add, subtract, and multiply two matrices without using external libraries.
+Q013752	linear-algebra	Implement a function to calculate the transpose of a given matrix.
+Q013753	linear-algebra	Code to find the determinant of a matrix using recursion.
+Q013754	linear-algebra	Develop a Python function to compute the inverse of a matrix.
+Q013755	linear-algebra	Write an algorithm to perform eigenvalue and eigenvector decomposition.
+Q013756	linear-algebra	Create a Python script to solve a system of linear equations using NumPy.
+Q013757	linear-algebra	Implement a function to calculate the L2 norm of a vector.
+Q013758	linear-algebra	Write a program to verify if a given square matrix is orthogonal.
+Q013804	linear-regression	Implement simple linear regression from scratch in Python.
+Q013805	linear-regression	Implement a multiple linear regression model using NumPy or similar libraries.
+Q013806	linear-regression	Write a Python function that performs the gradient descent algorithm for linear regression.
+Q013807	linear-regression	Create a Python script to calculate the VIF for each predictor in a dataset.
+Q013808	linear-regression	Code a Python function to implement ridge regression using scikit-learn.
+Q013809	linear-regression	Use pandas to load a dataset and prepare it for linear regression, handling any missing values.
+Q013811	linear-regression	Write a Python function to compute and print out model evaluation metrics (RMSE, MAE, R-squared).
+Q013812	linear-regression	Perform a polynomial regression on a sample dataset and plot the results.
+Q013813	linear-regression	Use scikit-learn to perform cross-validation on a linear regression model and extract the test scores.
+Q013834	linear-regression	Implement a linear regression model to predict customer lifetime value using scikit-learn.
+Q013835	linear-regression	Develop a regularized regression model to analyze and predict healthcare costs.
+Q013836	linear-regression	Perform a time-series linear regression analysis on stock market data.
+Q013837	linear-regression	Create a Python script that tunes the hyperparameters of an elastic net regression model using grid search.
+Q013838	linear-regression	Write a Python function that incorporates polynomial features into a regression model for better fit and analyzes the trade-off with model complexity.
+Q013859	logistic-regression	Code a basic logistic regression model from scratch using Numpy.
+Q013860	logistic-regression	Implement data standardization for a logistic regression model in Python.
+Q013861	logistic-regression	Write a Python function to calculate the AUC-ROC curve for a logistic regression model.
+Q013863	logistic-regression	Create a Python script that tunes the regularization strength (C value) for a logistic regression model using cross-validation.
+Q013864	logistic-regression	Write a Python function to interpret and output the model coefficients of a logistic regression in terms of odds ratios.
+Q013865	logistic-regression	Develop a logistic regression model that handles class imbalance with weighted classes in scikit-learn.
+Q013866	logistic-regression	Implement a multi-class logistic regression model in Tensorflow/Keras.
+Q013867	logistic-regression	Code a Python function to perform stepwise regression using the logistic regression model.
+Q013868	logistic-regression	Implement a logistic regression model with polynomial features using scikit-learn’s Pipeline.
+Q013896	ml-design-patterns	Implement a basic ‘Replay’ pattern mechanism using Python to simulate model retraining with different datasets.
+Q013897	ml-design-patterns	Develop a simple ensemble model using Python, following the ‘Model Ensemble’ design pattern.
+Q013898	ml-design-patterns	Write a script to perform batch serving of a machine learning model using dummy data.
+Q013899	ml-design-patterns	Code a ‘Model Checkpointing’ system during training using TensorFlow/Keras.
+Q013900	ml-design-patterns	Create a feature store simulation in Python to demonstrate sharing and reuse of feature transformation code.
+Q013901	ml-design-patterns	Implement a ‘Warm Start’ to accelerate training for a new model using an established pretrained model.
+Q013902	ml-design-patterns	Simulate a horizontal scaling of a machine learning pipeline handling increasing workloads.
+Q013923	ml-design-patterns	Write a Python function that demonstrates the ‘Handling Missing Data’ pattern.
+Q013924	ml-design-patterns	Code a simplified ‘Hyperparameter Database’ to track experiments in machine learning.
+Q013925	ml-design-patterns	Develop a basic implementation of ‘Model Factories’ using Python for creating and deploying models.
+Q013926	ml-design-patterns	Simulate a ‘Data Validator’ using Python to check for data skew or anomalies as new data arrives.
+Q013927	ml-design-patterns	Create a ‘Feature Monitoring’ tool using Python and a visualization library to track changes over time.
+Q013928	ml-design-patterns	Implement a ‘Retry’ pattern in a Python script for a machine learning service that handles intermittent failures.
+Q013948	mlops	Create a Dockerfile for a simple machine learning model service.
+Q013949	mlops	Write a Python script that automates the training and validation of a machine learning model.
+Q013951	mlops	Implement code to monitor model performance metrics in production.
+Q013952	mlops	Write a script to perform automated hyperparameter tuning for a machine learning model.
+Q013953	mlops	Create a Python function that checks the data schema conformity of input data for predictions.
+Q013979	model-evaluation	Implement a Python function that calculates the F1-score given precision and recall values.
+Q013980	model-evaluation	Write a Python script to compute the Confusion Matrix for a two-class problem.
+Q013981	model-evaluation	Develop a Python function to perform k-fold cross-validation on a dataset.
+Q013982	model-evaluation	Simulate overfitting in a machine learning model, and show how to detect it with a validation curve.
+Q013983	model-evaluation	Write code to draw an ROC curve and calculate AUC for a given set of predictions and true labels.
+Q013989	model-evaluation	Code a Python function that uses StratifiedKFold cross-validation on an imbalanced dataset.
+Q013990	model-evaluation	Implement a Python program to plot learning curves for a given estimator.
+Q013991	model-evaluation	Simulate and evaluate model performance with Monte Carlo cross-validation using Python.
+Q013992	model-evaluation	Create a Python function to calculate specificity and sensitivity from a given confusion matrix.
+Q014019	naive-bayes	Implement a Gaussian Naive Bayes classifier from scratch in Python.
+Q014020	naive-bayes	Write a Python function using scikit-learn to perform text classification with Multinomial Naive Bayes.
+Q014021	naive-bayes	Create a Python script to perform feature selection specifically suited for Naive Bayes.
+Q014022	naive-bayes	Write code to apply Laplace smoothing to a dataset with categorical features.
+Q014023	naive-bayes	Develop a function in Python to handle missing data for a dataset before applying Naive Bayes.
+Q014074	neural-networks	Implement a simple perceptron in Python.
+Q014075	neural-networks	Create a MLP using a deep learning library such as TensorFlow or PyTorch.
+Q014076	neural-networks	Write a Python script to visualize the weights of a trained neural network.
+Q014077	neural-networks	Implement an RNN from scratch that can generate text, given an input seed.
+Q014079	neural-networks	Code a regularization technique (L1, L2, or dropout) into a neural network training loop.
+Q014080	neural-networks	Write a Python function that dynamically adjusts the learning rate during training.
+Q014081	neural-networks	Create a simple GAN to generate synthetic data that resembles a provided dataset.
+Q014082	neural-networks	Use a pre-trained model and apply transfer learning to solve a classification task on a new dataset.
+Q014083	neural-networks	Implement and visualize the output of an autoencoder on the MNIST dataset.
+Q014129	nlp	Write a Python function for tokenizing text using NLTK.
+Q014130	nlp	Implement an n-gram language model in Python from scratch.
+Q014131	nlp	Code a regular expression in Python for extracting email addresses from text.
+Q014132	nlp	Design a Python function that calculates cosine similarity between two text documents.
+Q014133	nlp	Implement a simple sentiment analysis classifier using a bag-of-words model and Scikit-learn.
+Q014182	numpy	Write a NumPy code to create a 3x3 identity matrix.
+Q014183	numpy	Code a function in NumPy to compute the moving average of a 1D array.
+Q014184	numpy	Generate a 2D NumPy array of random integers and normalize it between 0 and 1.
+Q014185	numpy	Create a NumPy code snippet to extract all odd numbers from an array.
+Q014186	numpy	Implement a routine to calculate the outer product of two vectors in NumPy.
+Q014187	numpy	Write a NumPy program to create a checkerboard 8x8 matrix using the _tile_ function.
+Q014188	numpy	Code a NumPy snippet to create a border around an existing array.
+Q014189	numpy	Write a function to compute the convolution of two matrices in NumPy.
+Q014190	numpy	Implement a script that computes the Fibonacci sequence using a NumPy matrix.
+Q014191	numpy	Write a code to replace all elements greater than a certain threshold in a NumPy array with a specific value.
+Q014192	numpy	Implement an efficient rolling window calculation for a 1D array using NumPy.
+Q014229	optimization	Implement basic Gradient Descent to minimize a simple quadratic function.
+Q014230	optimization	Write a Python function to perform SGD on a sample dataset.
+Q014231	optimization	Code a simulation in Python demonstrating the effects of different learning rates on convergence.
+Q014232	optimization	Implement the Momentum technique in a Gradient Descent optimizer.
+Q014233	optimization	Create a regularization function in Python that penalizes large weights in a linear regression model.
+Q014234	optimization	Develop a Python script that uses the Adam optimizer from a library like TensorFlow or PyTorch.
+Q014235	optimization	Write a function that showcases the difference between L1 and L2 regularization on a small dataset.
+Q014246	pandas	Demonstrate how to handle duplicate rows in a DataFrame.
+Q014262	pandas	Write a Pandas script to filter rows in a DataFrame based on a column’s value being higher than a specified percentile.
+Q014263	pandas	Code a function that concatenates two DataFrames and handles overlapping indices correctly.
+Q014264	pandas	Implement a data cleaning function that drops columns with more than 50% missing values and fills the remaining ones with column mean.
+Q014265	pandas	Create a Pandas pipeline that ingests, processes, and summarizes time-series data from a CSV file.
+Q014266	pandas	Write a Python function that takes a DataFrame and computes the correlation matrix, then visualizes it using Seaborn’s heatmap.
+Q014269	pandas	Develop a routine in Pandas to detect and flag rows that deviate by more than three standard deviations from the mean of specific columns.
+Q014287	pca	Write a Python function to perform PCA from scratch using NumPy.
+Q014288	pca	Use scikit-learn to apply PCA on a high-dimensional dataset and interpret the results.
+Q014289	pca	Code a Python script to visualize the eigenfaces from a given set of facial images dataset using PCA.
+Q014290	pca	Implement PCA for feature extraction before applying a machine learning model.
+Q014291	pca	Implement PCA in TensorFlow or PyTorch and compare the results with scikit-learn’s implementation.
+Q014292	pca	Demonstrate how to choose an optimal number of dimensions with PCA in Python using the “elbow method”.
+Q014293	pca	Write a Python script to automatically remove outliers before performing PCA.
+Q014294	pca	Create a synthetic dataset and show the effect of PCA on classification accuracy using a machine learning algorithm before and after PCA.
+Q014325	probability	Write a Python function that calculates the probability of rolling a sum of ‘S’ on two dice.
+Q014326	probability	Implement a function that simulates a biased coin flip n times and estimates the probability of heads.
+Q014327	probability	Code a Gaussian Naive Bayes classifier from scratch using Python.
+Q014328	probability	Simulate the Law of Large Numbers using Python: verify that as the number of coin tosses increases, the average of the results becomes closer to the expected value.
+Q014329	probability	Write a Python script that estimates the mean and variance of a dataset and plots the corresponding Gaussian distribution.
+Q014365	python-ml	Write a Python function that normalizes an array of data to the range [0, 1].
+Q014366	python-ml	Construct a Python class structure for a simple perceptron model.
+Q014367	python-ml	Implement the k-means clustering algorithm using only standard Python libraries.
+Q014368	python-ml	Create a Python script that performs linear regression on a dataset using NumPy.
+Q014369	python-ml	Write a function that optimizes a given cost function using gradient descent.
+Q014370	python-ml	Use Pandas to read a CSV file, clean the data, and prepare it for analysis.
+Q014371	python-ml	Implement a decision tree from scratch in Python.
+Q014372	python-ml	Write a Python function to split a dataset into training and testing sets.
+Q014373	python-ml	Develop a Python script that automates the process of hyperparameter tuning using grid search.
+Q014410	python-ml	Create a Python generator that yields batches of data from a large dataset.
+Q014411	python-ml	Implement a convolutional neural network using PyTorch or TensorFlow in Python.
+Q014412	python-ml	Develop a Python function that uses genetic algorithms to optimize a simple problem.
+Q014413	python-ml	Code a Python simulation that compares different optimization techniques on a fixed dataset.
+Q014414	python-ml	Write a Python script that visualizes decision boundaries for a classification model.
+Q014415	python-ml	Create a Python implementation of the A* search algorithm for pathfinding on a grid.
+Q014416	python-ml	Implement a simple reinforcement learning agent that learns to play a basic game.
+Q014417	python-ml	Use a Python library to perform time-series forecasting on stock market data.
+Q014437	pytorch	Implement a PyTorch DataLoader for a given CSV dataset.
+Q014438	pytorch	Code a Python script that demonstrates tensor operations, such as slicing, indexing, concatenating, and transposing, using PyTorch.
+Q014439	pytorch	Create a simple feedforward neural network in PyTorch that works on the MNIST dataset.
+Q014440	pytorch	Write a PyTorch function to manually compute the gradients for a basic linear regression model.
+Q014441	pytorch	Use PyTorch to implement a convolutional neural network (CNN) for image classification.
+Q014442	pytorch	Write a Python script using PyTorch that saves and loads a trained model.
+Q014465	q-learning	Implement a basic Q-learning agent that learns to navigate a simple gridworld environment.
+Q014466	q-learning	Write a function that updates the Q-table given a state, action, reward, and next state.
+Q014467	q-learning	Create a simulation of a Q-learning agent in a stochastic environment and show how the agent improves over time.
+Q014468	q-learning	Code a solution that demonstrates epsilon-greedy action selection in Q-learning.
+Q014469	q-learning	Develop a Python script that visualizes the convergence of Q-values over episodes.
+Q014481	q-learning	Write a Python function that evaluates a Q-learning agent’s policy after training.
+Q014482	q-learning	Create a Q-learning agent that can solve the Taxi-v3 environment from OpenAI Gym.
+Q014483	q-learning	Implement a Q-learning solution where the agent must learn context-specific rules, such as traffic signal control with variable vehicle flow.
+Q014484	q-learning	Code a Q-learning agent to solve a simple maze with dynamic obstacles, demonstrating how you manage changing environments.
+Q014507	random-forest	Write a Python code to train a Random Forest Classifier using scikit-learn on a given dataset.
+Q014508	random-forest	Create a function that computes the OOB error for a Random Forest model.
+Q014509	random-forest	Write Python code that selects the most important features using a trained Random Forest model.
+Q014510	random-forest	Implement from scratch a simplified version of the Random Forest algorithm in Python.
+Q014511	random-forest	Write a function to visualize an individual decision tree from a Random Forest in Python.
+Q014537	recommendation-systems	Implement a simple content-based recommendation algorithm in Python.
+Q014538	recommendation-systems	Write a collaborative filtering recommendation engine using Python’s Surprise library.
+Q014539	recommendation-systems	Demonstrate matrix factorization using the NMF (Non-negative Matrix Factorization) algorithm on a sample dataset.
+Q014540	recommendation-systems	Code a recommender that uses cosine similarity to recommend similar items.
+Q014541	recommendation-systems	Build a user-based collaborative filtering system in Python from scratch.
+Q014542	recommendation-systems	Use TensorFlow/Keras to develop a deep learning-based recommendation model.
+Q014543	recommendation-systems	Create a Python script that recommends items to users based on item-item similarity.
+Q014544	recommendation-systems	Implement a recommendation engine that leverages user ratings and item metadata for suggestions.
+Q014545	recommendation-systems	Write an algorithm to suggest items using the Pearson Correlation Coefficient in a user-item ratings matrix.
+Q014575	reinforcement-learning	Implement the epsilon-greedy strategy in Python for action selection.
+Q014576	reinforcement-learning	Write a Python script to simulate a simple MDP using a transition matrix.
+Q014577	reinforcement-learning	Code a Q-learning algorithm in Python to solve a grid-world problem.
+Q014578	reinforcement-learning	Implement a value iteration algorithm for a given MDP in Python.
+Q014579	reinforcement-learning	Write a function to calculate the discounted reward for a sequence of rewards in a reinforcement learning context.
+Q014580	reinforcement-learning	Develop a SARSA-learning based agent in Python for the Taxi-v3 environment from OpenAI Gym.
+Q014581	reinforcement-learning	Construct a basic neural network in TensorFlow or PyTorch that can serve as a function approximator for a policy.
+Q014582	reinforcement-learning	Create a Python implementation of the REINFORCE algorithm.
+Q014583	reinforcement-learning	Code an epsilon-decreasing strategy for exploration in a reinforcement learning agent.
+Q014584	reinforcement-learning	Implement a policy gradient method using a neural network in TensorFlow or PyTorch.
+Q014626	rnn	Implement a basic RNN to classify sequential data in Python using a library of your choice.
+Q014627	rnn	Write Python code using TensorFlow/Keras to build and train an LSTM network on a text dataset.
+Q014628	rnn	Create a GRU-based neural network in PyTorch for predicting the next item in a sequence.
+Q014629	rnn	Develop an RNN model with attention that translates sentences from English to French.
+Q014630	rnn	Code a function that visualizes the hidden state dynamics of an RNN during sequence processing.
+Q014658	scikit-learn	Write a Python script using Scikit-Learn to train and evaluate a logistic regression model.
+Q014659	scikit-learn	Create a Python function that uses Scikit-Learn to perform a k-fold cross-validation on a dataset.
+Q014660	scikit-learn	Implement feature extraction from text using Scikit-Learn’s CountVectorizer or TfidfVectorizer.
+Q014662	scikit-learn	Demonstrate how to use Scikit-Learn’s Pipeline to combine preprocessing and model training steps.
+Q014663	scikit-learn	Write a Python function that uses Scikit-Learn’s RandomForestClassifier and performs a grid search to find the best hyperparameters.
+Q014664	scikit-learn	Use Scikit-Learn to visualize the decision boundary of a SVM with a non-linear kernel.
+Q014665	scikit-learn	Implement dimensionality reduction using PCA with Scikit-Learn and visualize the result.
+Q014666	scikit-learn	Create a clustering analysis on a dataset using Scikit-Learn’s DBSCAN method.
+Q014679	sql-ml	Write a SQL query to calculate moving averages.
+Q014684	sql-ml	Write a SQL query that identifies and removes duplicate records from a dataset.
+Q014690	sql-ml	Write a SQL stored procedure that calls a Machine Learning scoring function.
+Q014699	sql-ml	Write a SQL script to identify and replace missing values with the column mean.
+Q014700	sql-ml	Create a SQL query that normalizes a column (scales between 0 and 1).
+Q014701	sql-ml	Generate a feature that is a count over a rolling time window using SQL.
+Q014702	sql-ml	Code an SQL function that categorizes continuous variables into bins.
+Q014703	sql-ml	Implement a SQL solution to compute the TF-IDF score for text data.
+Q014760	statistics	Write Python code to calculate mean, median, and mode from a given list of numbers.
+Q014761	statistics	Generate and visualize 1,000 random points from a Normal distribution in Python.
+Q014762	statistics	Implement a simple linear regression model from scratch in Python.
+Q014763	statistics	Simulate the Monty Hall problem in Python and analyze the results.
+Q014764	statistics	Create a Python function to perform a t-test given two sample datasets.
+Q014765	statistics	Write a Python script to compute and graphically display a correlation matrix for a given dataset.
+Q014766	statistics	Implement the Metropolis-Hastings algorithm for a simple Bayesian inference simulation.
+Q014767	statistics	Create a Python program that estimates Pi using a Monte Carlo simulation.
+Q014768	statistics	Write a Python code snippet for performing a Chi-squared test of independence on a contingency table.
+Q014769	statistics	Develop a Python function to convert a non-stationary time series into a stationary one.
+Q014770	statistics	Write an R script to conduct an ANOVA test on a given dataset.
+Q014771	statistics	Implement PCA for dimensionality reduction on a high-dimensional dataset in Python.
+Q014807	supervised-learning	Implement linear regression from scratch in Python or R.
+Q014808	supervised-learning	Write code for a logistic regression classifier using scikit-learn.
+Q014809	supervised-learning	Create a decision tree to classify a dataset and visualize it.
+Q014810	supervised-learning	Use TensorFlow or Keras to build and train a simple feedforward neural network.
+Q014811	supervised-learning	Write a Python function to compute the F1 score given the confusion matrix.
+Q014856	svm	Implement a basic linear SVM from scratch using Python.
+Q014857	svm	Write a Python function to select an optimal C parameter for an SVM using cross-validation.
+Q014858	svm	Code an SVM model in scikit-learn to classify text data using TF-IDF features.
+Q014859	svm	Develop a multi-class SVM classifier on a given dataset using the one-vs-one strategy.
+Q014860	svm	Use Python to demonstrate the impact of different kernels on SVM decision boundaries with a 2D dataset.
+Q014861	svm	Implement an SVM in Python using a stochastic gradient descent approach.
+Q014862	svm	Write a script to visualize support vectors in a trained SVM model.
+Q014863	svm	Create a Python function for grid search optimization to find the best kernel and its parameters for an SVM.
+Q014919	tensorflow	Write a TensorFlow code to create two Tensors and perform element-wise multiplication.
+Q014920	tensorflow	Implement logistic regression using TensorFlow.
+Q014921	tensorflow	Build a simple convolutional neural network in TensorFlow for image classification.
+Q014922	tensorflow	Write a TensorFlow script to normalize the features of a dataset.
+Q014923	tensorflow	Create a recurrent neural network in TensorFlow to process sequential data.
+Q014924	tensorflow	Write a Python function using TensorFlow to compute the gradient of a given function.
+Q014925	tensorflow	Develop a code to save and load a trained TensorFlow model.
+Q014926	tensorflow	Implement a custom training loop in TensorFlow for a basic neural network.
+Q014927	tensorflow	Code a TensorFlow program that uses dataset shuffling, repetition, and batching.
+Q014928	tensorflow	Write a TensorFlow function for data augmentation on an image dataset.
+Q014962	time-series	Implement a Python function to perform simple exponential smoothing on a time series.
+Q014964	time-series	Code an ARIMA model in Python on a given dataset and visualize the forecasts.
+Q014966	time-series	Create a Python script that decomposes a time series into trend, seasonality, and residuals using statsmodels library.
+Q014967	time-series	Write a Python function to calculate and plot the ACF and PACF for a given time series.
+Q014988	transfer-learning	Write a Python script to fine-tune a pre-trained convolutional neural network on a new dataset using Keras.
+Q014989	transfer-learning	Implement a transfer learning model with PyTorch using a pre-trained BERT model for a text classification task.
+Q014991	transfer-learning	Code an example that demonstrates the transfer of learning from a source model trained on MNIST to a target dataset of hand-written letters.
+Q015025	unsupervised-learning	Implement K-means clustering from scratch in Python.
+Q015026	unsupervised-learning	Write a Python function to compute the silhouette coefficient for a given clustering.
+Q015027	unsupervised-learning	Use PCA with scikit-learn to reduce the dimensions of a dataset.
+Q015028	unsupervised-learning	Code an example using the DBSCAN algorithm to cluster a given spatial dataset.
+Q015029	unsupervised-learning	Implement an Apriori algorithm in Python to find frequent itemsets in transaction data.
+Q015050	xgboost	Write a Python code to load a dataset, create an XGBoost model, and fit it to the data.
+Q015051	xgboost	Implement a Python function that uses cross-validation to optimize the hyperparameters of an XGBoost model.
+Q015052	xgboost	Code a Python script that demonstrates how to use XGBoost’s built-in feature importance to rank features.
+Q015053	xgboost	Implement an XGBoost model on a given dataset and use SHAP values to interpret the model’s predictions.

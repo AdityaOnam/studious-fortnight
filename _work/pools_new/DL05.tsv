@@ -1,0 +1,66 @@
+Q012719	autoencoders	What loss functions are typically used when training autoencoders?
+Q012720	autoencoders	How do you prevent overfitting in an autoencoder?
+Q012721	autoencoders	Discuss the importance of weight initialization and optimization algorithms in training autoencoders.
+Q012722	autoencoders	What factors influence the capacity and size of the latent space in an autoencoder?
+Q012723	autoencoders	How do you determine the number of layers and neurons in an autoencoder?
+Q012724	autoencoders	How can autoencoders be applied for feature learning?
+Q012725	autoencoders	Discuss the use of autoencoders in image reconstruction.
+Q012726	autoencoders	How are autoencoders utilized in recommendation systems?
+Q012727	autoencoders	Describe an application of autoencoders in natural language processing (NLP).
+Q012728	autoencoders	In what ways can autoencoders contribute to anomaly detection?
+Q012729	autoencoders	How does backpropagation work in training an autoencoder?
+Q012730	autoencoders	Describe how autoencoders can be integrated into a semi-supervised learning framework.
+Q012731	autoencoders	How can generative adversarial networks (GANs) and autoencoders be used together?
+Q012732	autoencoders	Discuss the concept of transfer learning in the context of autoencoders.
+Q012733	autoencoders	Explain how autoencoders can be used for domain adaptation.
+Q012739	autoencoders	Using scikit-learn, create a pipeline that includes feature extraction with an autoencoder followed by a classification model.
+Q012742	autoencoders	Discuss recent advances in autoencoder architectures and their implications.
+Q012743	autoencoders	How do autoencoders contribute to the understanding and visualization of high-dimensional data?
+Q012744	autoencoders	What are the challenges and potential solutions in training deep autoencoders?
+Q012745	autoencoders	Describe how autoencoders can be used to create embeddings for graph data.
+Q012746	autoencoders	What are the current limitations of autoencoders in unsupervised learning applications?
+Q012747	autoencoders	Explain the potential role of reinforcement learning in enhancing the capabilities of autoencoders.
+Q012748	autoencoders	Discuss the intersection of autoencoders and Bayesian methods in machine learning.
+Q012749	autoencoders	How would you design an autoencoder for a system that compresses and decompresses audio files?
+Q012750	autoencoders	Propose an approach for using autoencoders to detect credit card fraud.
+Q012751	autoencoders	Describe a scenario where autoencoders can be used to enhance collaborative filtering in a recommendation system.
+Q012752	autoencoders	Provide an example of how autoencoders could be used for genomic data compression and feature extraction.
+Q012753	autoencoders	How would you use an autoencoder for a facial recognition system with a large dataset of images?
+Q013096	data-processing	What is the role of generative adversarial networks in data augmentation?
+Q013155	data-scientist	Describe the concept of Autoencoders and their use cases.
+Q013157	data-scientist	Explain the concept of Generative Adversarial Networks (GAN) and their applications.
+Q013243	deep-learning	Differentiate between a standard neural network and an Autoencoder.
+Q013244	deep-learning	What are Generative Adversarial Networks (GANs), and what are their applications?
+Q013453	gans	In what ways do GANs contribute to semi-supervised learning?
+Q013454	gans	How do generative models like GANs handle feature matching?
+Q013455	gans	Discuss Progressive Growing of GANs (PGGANs) and their unique training approach.
+Q013456	gans	What are StyleGANs and how do they manage the generation of high-resolution images?
+Q013457	gans	How does the GAN framework support tasks like text-to-image synthesis?
+Q013458	gans	How would you preprocess data for training GANs?
+Q013459	gans	What techniques can be applied to stabilize the training of GANs?
+Q013460	gans	How are GANs used for data augmentation?
+Q013461	gans	Describe the importance of the latent space in GANs.
+Q013462	gans	What are some common pitfalls when training GANs on small datasets?
+Q013463	gans	How would you address issues of overfitting in GANs?
+Q013464	gans	Discuss strategies for selecting an optimal number of layers and neurons for the generator and discriminator.
+Q013465	gans	Explain any regularization techniques that can be applied to GAN training.
+Q013466	gans	How can GANs be used for unsupervised representation learning?
+Q013467	gans	What metrics are suitable for assessing the diversity of generated samples in GANs?
+Q013469	gans	Using PyTorch, code a discriminator network that can classify between real and generated images.
+Q013478	gans	How would you use GANs to improve the realism of synthetic data in a simulation?
+Q013479	gans	Propose a GAN architecture for generating photorealistic textures in a game development context.
+Q013480	gans	Discuss how you would leverage GANs to enhance low-resolution medical images.
+Q013481	gans	Present a use case for GANs in financial modeling for generating synthetic time-series data.
+Q013482	gans	Describe a scenario where GANs can be used to generate artificial voices for virtual assistants.
+Q013483	gans	How would you detect overfitting in a GAN model that generates music?
+Q013484	gans	Explain how GANs can play a role in privacy-preserving data release.
+Q013485	gans	Discuss recent advances in GAN architectures and their training techniques.
+Q013486	gans	How can GANs be defended against adversarial attacks, or conversely, how can they be used for adversarial training?
+Q013487	gans	What role do GANs play in the field of reinforcement learning?
+Q013488	gans	How does the concept of transfer learning apply to GANs, especially between different domains or datasets?
+Q013489	gans	What are the ongoing challenges researchers face when working with GANs?
+Q014048	neural-networks	Discuss Generative Adversarial Networks (GANs) and their typical applications.
+Q014068	neural-networks	Describe how an autoencoder works and potential applications.
+Q014091	neural-networks	Give an example of how autoencoders could be used for anomaly detection.
+Q014093	neural-networks	How are GANs used in content creation, such as image generation or style transfer?
+Q014384	python-ml	Define generative adversarial networks (GANs) and their use cases.

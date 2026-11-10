@@ -4,8 +4,9 @@ topic: cnn_computer_vision
 title: CNNs and computer vision
 tags: [cnn, computer-vision, detection, segmentation]
 count: 119
+part: 1/2
 ---
-# CNNs and computer vision
+# CNNs and computer vision (part 1)
 
 ## CNN fundamentals
 - [DL03-001] What is a convolutional neural network and how does it work?

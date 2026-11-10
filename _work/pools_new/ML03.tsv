@@ -1,0 +1,152 @@
+Q012984	data-mining	Explain decision tree algorithms and their use in data mining.
+Q013003	data-mining	Explain the concept of ensemble learning in data mining.
+Q013120	data-scientist	What is Decision Tree and how does it work?
+Q013121	data-scientist	Describe the concept of Random Forest and its advantages over Decision Trees.
+Q013125	data-scientist	Describe the concept of Gradient Boosting and its popular implementations.
+Q013126	data-scientist	What is XGBoost and its key features?
+Q013127	data-scientist	Explain the concept of Stacking and its benefits in Ensemble Learning.
+Q013198	decision-tree	Explain in detail the ID3 algorithm for Decision Tree construction.
+Q013199	decision-tree	Describe the C4.5 algorithm and how it differs from ID3.
+Q013200	decision-tree	How does the CART (Classification and Regression Trees) algorithm work?
+Q013201	decision-tree	What modifications are done by the CHAID (Chi-squared Automatic Interaction Detector) algorithm in building Decision Trees?
+Q013202	decision-tree	Explain how the concept of the minimum description length (MDL) principle is applied in Decision Trees.
+Q013203	decision-tree	Discuss the role of recursive binary splitting in constructing Decision Trees.
+Q013204	decision-tree	How is feature importance determined in the context of Decision Trees?
+Q013205	decision-tree	Describe the process of k-fold cross-validation in the context of Decision Trees.
+Q013206	decision-tree	Elaborate on how boosting techniques can be used with Decision Trees.
+Q013207	decision-tree	Explain how bagging and random forests improve the performance of Decision Trees.
+Q013208	decision-tree	What are the steps involved in preparing data for Decision Tree modeling?
+Q013209	decision-tree	How do you determine the optimal number of splits for a Decision Tree?
+Q013210	decision-tree	Describe the process for selecting the best attributes at each node in a Decision Tree.
+Q013211	decision-tree	Discuss how you would visualize a trained Decision Tree model.
+Q013212	decision-tree	Explain how Decision Trees can handle imbalanced datasets.
+Q013213	decision-tree	What are the strategies to deal with missing data in Decision Tree training?
+Q013214	decision-tree	How do you interpret and explain the results of a Decision Tree?
+Q013215	decision-tree	What metrics or methods do you use for validating a Decision Tree model?
+Q013216	decision-tree	Discuss the performance trade-offs between a deep tree and a shallow tree.
+Q013217	decision-tree	Compare and contrast the various Decision Tree algorithms (e.g., ID3, C4.5, CART, CHAID).
+Q013218	decision-tree	How does a Random Forest work, and how is it an extension of Decision Trees?
+Q013219	decision-tree	Explain the Gradient Boosting Decision Tree (GBDT) model and its advantages.
+Q013220	decision-tree	Discuss the differences between a single Decision Tree and an ensemble of trees.
+Q013221	decision-tree	How do pruning strategies differ among various Decision Tree algorithms?
+Q013222	decision-tree	Describe the role of Decision Trees in ensemble methods such as Extra Trees and XGBoost.
+Q013226	decision-tree	Using scikit-learn, train a Decision Tree classifier on a sample dataset and evaluate its performance.
+Q013233	decision-tree	How would you approach a real-world problem requiring a Decision Tree model?
+Q013234	decision-tree	Imagine you have a highly imbalanced dataset, how would you fine-tune a Decision Tree to handle it?
+Q013235	decision-tree	Describe a scenario where a simple Decision Tree might outperform a Random Forest or Gradient Boosting model.
+Q013236	decision-tree	Discuss how you would apply a Decision Tree for a time-series prediction problem.
+Q013237	decision-tree	What approach would you take to handle high-dimensional data when building Decision Trees?
+Q013238	decision-tree	Explain how you would use Decision Trees for feature selection in a large dataset.
+Q013239	decision-tree	Discuss recent research developments in Decision Tree algorithms.
+Q013240	decision-tree	How does feature engineering affect the accuracy and interpretability of Decision Trees?
+Q013241	decision-tree	What are the computational complexities of training Decision Trees, and how can they be optimized?
+Q013242	decision-tree	Explain any new approaches to tree pruning or overfitting prevention that have emerged in recent years.
+Q013343	ensemble-learning	What is the concept of feature bagging and how does it relate to Random Forests?
+Q013344	ensemble-learning	Describe the voting classifier and when it should be used.
+Q013345	ensemble-learning	Explain the concept of homogeneous and heterogeneous ensembles.
+Q013346	ensemble-learning	What is the out-of-bag error in a Random Forest and how is it useful?
+Q013347	ensemble-learning	How does the ensemble diversity affect the performance of an ensemble model?
+Q013348	ensemble-learning	What are the key considerations in building an ensemble model?
+Q013349	ensemble-learning	How do you decide the number of learners to include in an ensemble?
+Q013350	ensemble-learning	Describe how you would handle missing data when creating ensemble models.
+Q013351	ensemble-learning	What strategies can be used to reduce overfitting in ensemble models?
+Q013352	ensemble-learning	Can you implement ensemble models with imbalanced datasets? If yes, how?
+Q013353	ensemble-learning	How would you approach feature selection for ensemble models?
+Q013354	ensemble-learning	What is model drift, and how might it affect ensemble models?
+Q013355	ensemble-learning	Explain the importance of cross-validation in evaluating ensemble models.
+Q013356	ensemble-learning	Discuss how ensemble learning can be applied in a distributed computing environment.
+Q013357	ensemble-learning	How are hyperparameters optimized in ensemble models such as XGBoost or Random Forest?
+Q013368	ensemble-learning	Describe a scenario where a Random Forest model would be preferred over a simple decision tree and vice versa.
+Q013369	ensemble-learning	How would you configure an ensemble model for real-time prediction in a production environment?
+Q013370	ensemble-learning	Discuss how ensemble learning can be used to improve recommendation systems.
+Q013371	ensemble-learning	If model interpretability is crucial, how would you ensure ensemble models are understandable?
+Q013372	ensemble-learning	What ensemble methods would you suggest for a time-series forecasting problem and why?
+Q013373	ensemble-learning	How would you deploy an ensemble learning model for detecting fraudulent transactions in a banking system?
+Q013374	ensemble-learning	Describe a proper ensemble strategy for a self-driving car perception system.
+Q013375	ensemble-learning	How can ensemble models be applied in natural language processing tasks?
+Q013376	ensemble-learning	Propose an ensemble learning strategy for a large-scale image classification problem.
+Q013377	ensemble-learning	What considerations would you take into account when building an ensemble model for health-related data?
+Q013378	ensemble-learning	Discuss the latest research trends around ensemble learning methods.
+Q013379	ensemble-learning	What are multi-layer ensembles and how do they differ from traditional ensemble methods?
+Q013380	ensemble-learning	How does ensemble pruning work, and why might it be necessary?
+Q013381	ensemble-learning	What role does diversity of base learners play in the success of an ensemble model?
+Q013382	ensemble-learning	How can deep learning models be incorporated into ensemble learning?
+Q013383	ensemble-learning	Describe how transfer learning can be used alongside ensemble learning.
+Q013384	ensemble-learning	What is the role of ensemble learning in semi-supervised learning contexts?
+Q013385	ensemble-learning	How can reinforcement learning strategies benefit from ensemble methods?
+Q013386	ensemble-learning	Discuss dynamic ensembling and its potential for adaptive learning over time.
+Q013387	ensemble-learning	What developments have been made in the use of ensemble methods for anomaly detection?
+Q013389	ensemble-learning	Using scikit-learn, compare the performance of a single decision tree and a Random Forest on the same dataset.
+Q013395	ensemble-learning	Script a solution for an imbalanced classification problem using ensemble learning with proper sampling techniques.
+Q013699	light-gbm	How does LightGBM handle missing values?
+Q013700	light-gbm	What preprocessing steps would you recommend when preparing data for LightGBM?
+Q013701	light-gbm	In what scenarios would you prefer LightGBM over other machine learning algorithms?
+Q013702	light-gbm	What are the potential pitfalls when using LightGBM on small datasets?
+Q013703	light-gbm	How do you approach hyperparameter optimization for a LightGBM model?
+Q013704	light-gbm	Which metrics can you use to evaluate the performance of a LightGBM model?
+Q013705	light-gbm	Explain the importance of early stopping in training LightGBM models.
+Q013706	light-gbm	Describe a strategy for updating a LightGBM model as new data becomes available.
+Q013707	light-gbm	How can LightGBM be applied to ranking problems, and what parameters are important in this context?
+Q013708	light-gbm	Detail how LightGBM can be used for multiclass classification problems.
+Q013709	light-gbm	Explain how LightGBM models can be interpreted and what tools can assist in model interpretation.
+Q013710	light-gbm	Discuss the support of weight-based sampling in LightGBM.
+Q013711	light-gbm	What is a decision tree’s “gain” and “split” in the context of LightGBM, and how are they important?
+Q013717	light-gbm	Optimize a LightGBM model using early stopping criteria with Python’s lightgbm package.
+Q013719	light-gbm	How would you use LightGBM to predict customer churn based on usage data?
+Q013720	light-gbm	Outline your approach to building a fraud detection system using LightGBM.
+Q013721	light-gbm	Describe how you would train a LightGBM model to recommend products based on user behavior data.
+Q013722	light-gbm	Discuss how LightGBM could be utilized in a high-frequency trading algorithm.
+Q013723	light-gbm	Propose a methodology for using LightGBM to detect anomalies in time-series sensor data.
+Q013724	light-gbm	Discuss the current research trends and advancements in the field of gradient boosting and LightGBM.
+Q013725	light-gbm	How can the interpretability of LightGBM be improved while maintaining its performance?
+Q013726	light-gbm	What are the challenges and strategies associated with distributed training of LightGBM models?
+Q013727	light-gbm	Consider the implications of adversarial examples on LightGBM models and how you would protect against them.
+Q013728	light-gbm	Explore the possibility of combining LightGBM with neural networks in a hybrid model for complex tasks.
+Q014356	python-ml	Discuss how ensemble methods work and give an example where they might be useful.
+Q014487	random-forest	How do you determine the number of trees to use in a Random Forest?
+Q014488	random-forest	Describe the process of bootstrapping in Random Forest.
+Q014489	random-forest	What is feature importance, and how does Random Forest calculate it?
+Q014490	random-forest	Explain the concept of variable proximity in Random Forest.
+Q014491	random-forest	How can Random Forest be used for feature selection?
+Q014492	random-forest	How do you measure the performance of a Random Forest model?
+Q014493	random-forest	What are the limitations of Random Forest?
+Q014494	random-forest	Discuss the impact of imbalanced datasets on Random Forest.
+Q014495	random-forest	How does node purity relate to the Random Forest algorithm?
+Q014496	random-forest	Can Random Forest handle time series data? If so, how?
+Q014497	random-forest	Describe the steps involved in training a Random Forest model.
+Q014498	random-forest	What are some common implementation challenges with Random Forest?
+Q014499	random-forest	How do you deal with categorical variables in Random Forest?
+Q014500	random-forest	Discuss strategies to deal with high dimensionality in Random Forest.
+Q014501	random-forest	What practices should be followed to scale Random Forest for big data?
+Q014502	random-forest	How does the Random Forest algorithm handle collinearity among features?
+Q014503	random-forest	What model validation techniques would you apply for a Random Forest algorithm?
+Q014504	random-forest	Explain how Random Forest can be parallelized.
+Q014505	random-forest	How do you tune a Random Forest model’s hyperparameters systematically?
+Q014506	random-forest	How would you explain the Random Forest model to a non-technical stakeholder?
+Q014512	random-forest	How would you use Random Forest for a real-time recommendation system?
+Q014513	random-forest	Describe a scenario where Random Forest could be applied to detect credit card fraud.
+Q014514	random-forest	Explain how Random Forest might be used for customer segmentation.
+Q014515	random-forest	How would you apply Random Forest for predictive maintenance in manufacturing?
+Q014516	random-forest	Discuss the use of Random Forest in natural language processing (NLP) applications.
+Q014517	random-forest	Discuss current research trends in ensemble learning and Random Forest.
+Q014518	random-forest	What are some ensemble learning techniques that can be combined with Random Forest for enhanced performance?
+Q014519	random-forest	Explain how out-of-bag samples can be leveraged for model assessment.
+Q014520	random-forest	How is Random Forest used in the analysis of genomic and bioinformatics data?
+Q014521	random-forest	What role does Random Forest play in complex systems like self-driving cars or high-frequency trading algorithms?
+Q015040	xgboost	How do you interpret XGBoost models and understand feature importance?
+Q015041	xgboost	What methods can be employed to improve the computational efficiency of XGBoost training?
+Q015042	xgboost	How can you use XGBoost for a multi-class classification problem?
+Q015043	xgboost	How does the DART booster in XGBoost work and what’s its use case?
+Q015044	xgboost	Discuss how XGBoost processes sparse data and the benefits of this approach.
+Q015045	xgboost	Explain how XGBoost can be used for ranking problems.
+Q015046	xgboost	How does XGBoost perform regularization, and how does it differ from other boosting algorithms?
+Q015047	xgboost	How can you combine XGBoost with other machine learning models in an ensemble?
+Q015048	xgboost	Describe a scenario where using an XGBoost model would be preferable to deep learning models.
+Q015049	xgboost	How can XGBoost be integrated within a distributed computing environment for large-scale problems?
+Q015054	xgboost	Suppose you have a dataset with a mixture of categorical and continuous features. How would you preprocess the data before training an XGBoost model?
+Q015055	xgboost	Imagine you’re developing a recommendation system. Explain how you might utilize XGBoost in this context.
+Q015056	xgboost	You’re tasked with predicting customer churn. How would you go about applying XGBoost to solve this problem?
+Q015057	xgboost	In a scenario where model interpretability is crucial, how would you justify the use of XGBoost?
+Q015058	xgboost	Discuss the potential advantages of using XGBoost over other gradient boosting frameworks like LightGBM or CatBoost.
+Q015059	xgboost	How do recent advancements in hardware (such as GPU acceleration) impact the use of XGBoost?
+Q015060	xgboost	Explore the concept of using XGBoost in a federated learning setup. What challenges might arise?

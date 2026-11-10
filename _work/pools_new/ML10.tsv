@@ -1,0 +1,117 @@
+Q012684	anomaly-detection	What are the benefits and drawbacks of using Gaussian Mixture Models for anomaly detection?
+Q012685	anomaly-detection	What preprocessing steps are important before applying anomaly detection algorithms?
+Q012686	anomaly-detection	How do you select the threshold for flagging anomalies using a given method?
+Q012687	anomaly-detection	Explain the importance of feature selection in improving anomaly detection.
+Q012688	anomaly-detection	How would you deal with class imbalance in a dataset for supervised anomaly detection?
+Q012689	anomaly-detection	What metrics would you use to evaluate the performance of an anomaly detection model?
+Q012690	anomaly-detection	How can you ensure your anomaly detection model is not overfitting?
+Q012691	anomaly-detection	Describe a process for tuning hyperparameters of anomaly detection algorithms.
+Q012692	anomaly-detection	How can anomaly detection models be updated over time as new data comes in?
+Q012693	anomaly-detection	Explain how Support Vector Machines (SVM) can be adapted for anomaly detection.
+Q012694	anomaly-detection	How is DBSCAN clustering used for anomaly detection?
+Q012695	anomaly-detection	What is the Local Outlier Factor algorithm and how does it work?
+Q012696	anomaly-detection	Explain the concept of anomaly detection using the One-Class SVM.
+Q012697	anomaly-detection	How does a Random Cut Forest algorithm detect anomalies?
+Q012698	anomaly-detection	Explain the concept of time-series anomaly detection and the unique challenges it presents.
+Q012708	anomaly-detection	How would you approach anomaly detection in a network security context?
+Q012709	anomaly-detection	Propose a method for detecting fraud in credit card transactions.
+Q012710	anomaly-detection	Discuss how you would set up an anomaly detection system for monitoring industrial equipment.
+Q012711	anomaly-detection	Describe your approach to identifying bot behavior in web traffic data.
+Q012712	anomaly-detection	Present a framework for detecting anomalies in social media trend data.
+Q012713	anomaly-detection	How would you detect anomalies in a multi-tenant cloud system’s resource utilization?
+Q012714	anomaly-detection	Discuss recent advances in deep learning for anomaly detection.
+Q012715	anomaly-detection	How does the concept of collective anomalies apply to anomaly detection, and what are the challenges associated with it?
+Q012716	anomaly-detection	What are the implications of adversarial attacks on anomaly detection systems?
+Q012717	anomaly-detection	How can transfer learning be applied to anomaly detection in different domains?
+Q012718	anomaly-detection	What is the role of active learning in the context of anomaly detection?
+Q012985	data-mining	What is the role of the Apriori algorithm in data mining?
+Q012987	data-mining	Describe the concept of Association Rule Mining.
+Q012997	data-mining	How is data mining applied in fraud detection?
+Q013000	data-mining	How can time-series data be mined, and what are the unique challenges?
+Q013012	data-mining	How would you apply data mining techniques to improve product recommendations on an e-commerce platform?
+Q013013	data-mining	Design a strategy for mining customer data for insights in a telecommunications company.
+Q013014	data-mining	Discuss how data mining can be used to predict stock market trends.
+Q013016	data-mining	Propose a method for segmenting customers in retail banking using data mining.
+Q013017	data-mining	Explain how you might use data mining to detect anomalies in network traffic for cybersecurity.
+Q013022	data-mining	How do recommendation systems use data mining to provide personalized suggestions?
+Q013048	data-processing	What special considerations are there when processing time-series data?
+Q013049	data-processing	Explain how window functions are used in time-series data.
+Q013050	data-processing	How do you handle seasonality in time-series data?
+Q013051	data-processing	Describe techniques for detrending a time series.
+Q013052	data-processing	Explain how lag features can be used in time-series analysis.
+Q013095	data-processing	Discuss the concept of embeddings in collaborative filtering.
+Q013134	data-scientist	What is Association Rule Mining and its popular algorithms?
+Q013135	data-scientist	Describe the concept of Anomaly Detection and its techniques.
+Q013168	data-scientist	What is a Recommender System and its types?
+Q013169	data-scientist	Explain the difference between Content-Based and Collaborative Filtering.
+Q013170	data-scientist	What is Matrix Factorization and its role in Recommender Systems?
+Q013171	data-scientist	Describe the concept of Cold Start Problem and its solutions.
+Q013172	data-scientist	What is Evaluation Metrics for Recommender Systems (Precision, Recall, NDCG)?
+Q013173	data-scientist	Explain the concept of Hybrid Recommender Systems and their advantages.
+Q013174	data-scientist	What is the Alternating Least Squares (ALS) algorithm and its use in Recommender Systems?
+Q013175	data-scientist	Describe the concept of Implicit Feedback and its challenges.
+Q013176	data-scientist	What is the Singular Value Decomposition (SVD) and its application in Recommender Systems?
+Q013177	data-scientist	Explain the concept of Diversity and Serendipity in Recommender Systems.
+Q013290	deep-learning	Describe the steps you would take to create a recommendation system using deep learning.
+Q013291	deep-learning	How would you design a neural network to predict stock prices using time-series data?
+Q013297	deep-learning	How can deep learning be applied in predicting genome sequences?
+Q014095	neural-networks	Outline a neural network approach for a recommendation system.
+Q014388	python-ml	How do you implement a recommendation system using Python?
+Q014394	python-ml	Propose a method for detecting fraudulent transactions with Python-based machine learning.
+Q014522	recommendation-systems	How does the Apriori algorithm work in the context of a recommendation engine?
+Q014523	recommendation-systems	What kind of data preprocessing is typically required when building a recommendation system?
+Q014524	recommendation-systems	How would you handle scalability and sparsity issues in recommendation systems?
+Q014525	recommendation-systems	Describe the data privacy concerns in building recommendation systems.
+Q014526	recommendation-systems	What strategies can be used to evaluate the performance of a recommendation system?
+Q014527	recommendation-systems	Explain the importance of A/B testing in the context of deploying recommendation systems.
+Q014528	recommendation-systems	How do recommendation systems handle changing user preferences over time?
+Q014529	recommendation-systems	What are the typical performance metrics used for evaluating collaborative filtering systems?
+Q014530	recommendation-systems	How can content-based recommendation systems utilize natural language processing (NLP)?
+Q014531	recommendation-systems	Explain the role of neighborhood models in collaborative filtering.
+Q014532	recommendation-systems	How are Bayesian networks used in recommendation systems?
+Q014533	recommendation-systems	What is a Restricted Boltzmann Machine and how can it be applied to recommendation?
+Q014534	recommendation-systems	How does reinforcement learning apply to adaptive recommendation systems?
+Q014535	recommendation-systems	Discuss the application of the Gradient Boosting Machines (GBM) in recommendation engines.
+Q014536	recommendation-systems	Explain how to use clustering methods like K-means for user segmentation in recommendations.
+Q014546	recommendation-systems	Describe how you would build a recommendation system for an e-commerce platform.
+Q014547	recommendation-systems	How would you approach designing a music recommendation engine?
+Q014548	recommendation-systems	Discuss a personalized approach for recommendations in a video streaming service.
+Q014549	recommendation-systems	Outline a strategy to improve movie recommendations on a platform with diverse user demographics.
+Q014550	recommendation-systems	Present an approach for a recommendation system in the educational technology sector.
+Q014551	recommendation-systems	How would you develop a recommendation system for a social network to suggest new connections?
+Q014552	recommendation-systems	What are the potential ethical issues with recommendation systems and how can they be addressed?
+Q014553	recommendation-systems	Discuss the state-of-the-art models used in recommendation systems, such as Neural Collaborative Filtering.
+Q014554	recommendation-systems	How does context-aware recommendation operate and in what scenarios is it most beneficial?
+Q014555	recommendation-systems	What roles do multi-armed bandit algorithms play in recommendation systems?
+Q014556	recommendation-systems	Explore the use of graph-based recommendation systems and the potential advantages they offer.
+Q014943	time-series	What is Exponential Smoothing, and when would you use it in time series forecasting?
+Q014944	time-series	Describe the steps involved in building a time series forecasting model.
+Q014945	time-series	What metrics are commonly used to evaluate the accuracy of time series models?
+Q014946	time-series	How do you ensure that a time series forecasting model is not overfitting?
+Q014947	time-series	In what ways can machine learning models be applied to time series forecasting?
+Q014948	time-series	Explain the concept of cross-validation in the context of time series analysis.
+Q014949	time-series	Discuss the use and considerations of rolling-window analysis in time series.
+Q014950	time-series	How does the ARCH (Autoregressive Conditional Heteroskedasticity) model deal with time series volatility?
+Q014951	time-series	Describe the GARCH (Generalized Autoregressive Conditional Heteroskedasticity) model and its application.
+Q014952	time-series	Explain the concepts of cointegration and error correction models in time series.
+Q014953	time-series	Discuss the advantage of using state-space models and the Kalman filter for time series analysis.
+Q014954	time-series	What is meant by multivariate time series analysis, and how does it differ from univariate time series analysis?
+Q014955	time-series	Explain the concept of Granger causality in time series analysis.
+Q014956	time-series	How would you approach building a time series model to forecast stock prices?
+Q014957	time-series	Describe how time series analysis could be used for demand forecasting in retail.
+Q014958	time-series	What considerations should be taken into account when using time series analysis for climate change research?
+Q014959	time-series	How can time series models improve the forecasting of inventory levels in supply chain management?
+Q014960	time-series	Discuss the challenges and strategies of using time series analysis in anomaly detection for system monitoring.
+Q014961	time-series	How would you use time series analysis to predict electricity consumption patterns?
+Q014963	time-series	Using pandas, write a script to detect seasonality in a time series dataset.
+Q014965	time-series	Fit a GARCH model to a financial time series dataset and interpret the results.
+Q014968	time-series	Propose a strategy for forecasting tourist arrivals using time series data.
+Q014969	time-series	How would you analyze and predict the load on a server using time series?
+Q014970	time-series	Describe how you would use time series data to optimize pricing strategies over time.
+Q014971	time-series	Outline a time series analysis method to identify trends in social media engagement.
+Q014972	time-series	Discuss your approach to evaluating the impact of promotional campaigns on sales using time series analysis.
+Q014973	time-series	What are some current research areas in time series analysis and forecasting?
+Q014974	time-series	How are Fourier transforms used in analyzing time series data?
+Q014975	time-series	Describe the concept of wavelet analysis in the context of time series.
+Q014976	time-series	Discuss the potential of recurrent neural networks (RNNs) in time series forecasting.
+Q014977	time-series	How can deep learning models, such as Long Short-Term Memory (LSTM) networks, be utilized for complex time series analysis tasks?

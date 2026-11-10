@@ -1,0 +1,19 @@
+Q012990	data-mining	How can neural networks be applied to data mining tasks?
+Q013148	data-scientist	What is a Neural Network and its components?
+Q013149	data-scientist	Explain the difference between Feedforward and Recurrent Neural Networks.
+Q013150	data-scientist	What is Backpropagation and how does it work?
+Q013151	data-scientist	Describe the concept of Activation Functions and their types.
+Q013152	data-scientist	What is Deep Learning and its applications?
+Q013246	deep-learning	Explain the concept of attention mechanisms in deep learning.
+Q013268	deep-learning	What are adversarial examples in deep learning, and why do they pose a threat?
+Q013271	deep-learning	Explain the concept of few-shot learning and its significance in deep learning.
+Q013272	deep-learning	What are zero-shot learning and one-shot learning?
+Q014034	neural-networks	Explain how to initialize neural network weights effectively.
+Q014035	neural-networks	How can you determine the number of layers and their types for a problem?
+Q014047	neural-networks	What is attention mechanism in neural networks? Give an example of its application.
+Q014065	neural-networks	How do attention mechanisms in transformer models work?
+Q014078	neural-networks	Define and train a CNN using a framework of your choice to classify images in CIFAR-10.
+Q014102	neural-networks	Describe the current state of research in neural network interpretability and the techniques involved.
+Q014103	neural-networks	Discuss the concept of neural architecture search and its significance.
+Q014105	neural-networks	Describe how adversarial examples can affect neural networks and methods to make them more robust against these attacks.
+Q014382	python-ml	Explain the concept of a neural network, and how you would implement one in Python.

@@ -1,0 +1,13 @@
+Q013085	data-processing	How would you process and clean a large dataset that doesn’t fit in memory?
+Q013090	data-processing	How would you sanitize and validate user input data in a production environment?
+Q013091	data-processing	Discuss the process of cleaning and preprocessing real-time streaming data.
+Q013092	data-processing	How do you keep track of different preprocessing and feature engineering steps you have tested?
+Q013879	ml-design-patterns	Explain the ‘Embeddings’ design pattern and how it applies to handling categorical data.
+Q013881	ml-design-patterns	What is the ‘Feature Projection’ design pattern and how is it implemented?
+Q013882	ml-design-patterns	Describe the ‘Join’ design pattern and when it is relevant in feature management.
+Q013883	ml-design-patterns	How does the ‘Auto Feature Engineering’ design pattern leverage algorithms to generate features?
+Q013893	ml-design-patterns	Describe the ‘Data Skew’ and ‘Concept Drift’ patterns. How are they monitored and mitigated?
+Q013920	ml-design-patterns	Describe how you would perform feature normalization in a distributed environment, considering the ‘Consistency’ pattern.
+Q014704	sql-ml	How would you handle very large datasets in SQL for Machine Learning purposes?
+Q014705	sql-ml	Explain the role of partitioning in large-scale SQL databases.
+Q014707	sql-ml	How do you ensure the consistency and reliability of SQL data used for Machine Learning?

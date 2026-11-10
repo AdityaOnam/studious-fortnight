@@ -1,0 +1,230 @@
+Q013116	data-scientist	What is the Imputer class in scikit-learn and how is it used?
+Q013259	deep-learning	How can GPUs be utilized in training deep neural networks?
+Q013644	keras	How can you add regularization to a model in Keras?
+Q013645	keras	Explain the role of optimizers in Keras.
+Q013646	keras	What is the purpose of a loss function in Keras and how do you select one?
+Q013647	keras	Discuss the process of compiling a model in Keras.
+Q013648	keras	How do callbacks work in Keras and when would you use them?
+Q013649	keras	Can you explain the difference between validation and test sets in the context of a Keras model?
+Q013650	keras	What methods does Keras provide for evaluating a model’s performance?
+Q013651	keras	How do you prevent overfitting in a Keras model?
+Q013652	keras	What is the importance of data preprocessing in training Keras models?
+Q013653	keras	Can you describe the concept of hyperparameter tuning and its importance in Keras models?
+Q013654	keras	How does learning rate affect the training of a Keras model?
+Q013655	keras	Discuss different strategies for finding the optimal batch size and number of epochs in Keras.
+Q013656	keras	What is early stopping in Keras and how do you implement it?
+Q013657	keras	Explain how you would fine-tune a pre-trained model in Keras.
+Q013658	keras	What is the use of a grid search in hyperparameter optimization and can it be used with Keras?
+Q013659	keras	How do you handle image data in Keras?
+Q013660	keras	Explain how you would use data augmentation in Keras.
+Q013661	keras	How does Keras handle sequence data for tasks like text generation or translation?
+Q013662	keras	Discuss the process of feature scaling and why it’s important for neural networks in Keras.
+Q013663	keras	What Keras functionality allows you to convert text to sequences or one-hot encoded vectors?
+Q013664	keras	How do you implement a multi-output model in Keras?
+Q013665	keras	Discuss the implementation of stateful LSTM networks in Keras.
+Q013666	keras	Explain the use of attention mechanisms in Keras models.
+Q013667	keras	How to incorporate transfer learning into Keras?
+Q013668	keras	What are the challenges associated with training very deep networks in Keras and how can you overcome them?
+Q013679	keras	How do you troubleshoot a model that is not learning in Keras?
+Q013680	keras	What are some common issues you might face when working with Keras and how do you resolve them?
+Q013681	keras	How do you interpret NaN values in loss during training and what steps would you take to address this?
+Q013682	keras	How do you deal with overfitting after early epochs in a Keras model?
+Q013683	keras	Discuss strategies to identify the cause of a performance bottleneck in a Keras model.
+Q013684	keras	What factors do you consider when deploying a Keras model to production?
+Q013685	keras	How would you convert a Keras model to TensorFlow’s SavedModel format for deployment?
+Q013686	keras	Describe the process of serving a Keras model using TensorFlow Serving.
+Q013687	keras	Discuss the use of Keras in mobile and edge devices.
+Q013688	keras	How can you monitor and maintain Keras models in a production environment?
+Q013689	keras	What are Generative Adversarial Networks (GANs) and how would you implement them using Keras?
+Q013690	keras	How does reinforcement learning work in Keras?
+Q013691	keras	Discuss recent advancements in Keras, such as custom training loops.
+Q013692	keras	Explain how you can use Keras to implement a neural style transfer model.
+Q013693	keras	How is Keras being used in the context of Graph Neural Networks?
+Q013694	keras	How would you architect a Keras model to handle a large-scale image recognition problem?
+Q013695	keras	Describe how you would use Keras to develop a recommendation system.
+Q013696	keras	Discuss a strategy for implementing a real-time object detection system using Keras.
+Q013697	keras	How would you use Keras to build models for sequence-to-sequence tasks, such as machine translation?
+Q013698	keras	Present a framework for anomaly detection using autoencoders in Keras.
+Q014149	numpy	How do you perform element-wise operations in NumPy?
+Q014150	numpy	What are universal functions (ufuncs) in NumPy?
+Q014151	numpy	How do you perform matrix multiplication using NumPy?
+Q014152	numpy	Explain how to invert a matrix in NumPy.
+Q014153	numpy	How do you calculate the determinant of a matrix?
+Q014154	numpy	What is the use of the _axis_ parameter in NumPy functions?
+Q014155	numpy	How do you concatenate two arrays in NumPy?
+Q014156	numpy	Describe how you would flatten a multi-dimensional array.
+Q014157	numpy	How do you calculate the eigenvalues and eigenvectors of a matrix in NumPy?
+Q014158	numpy	Explain the use of slicing and indexing with NumPy arrays.
+Q014159	numpy	How can you reverse an array in NumPy?
+Q014160	numpy	How do you apply a conditional filter to a NumPy array?
+Q014161	numpy	How do you compute the mean, median, and standard deviation with NumPy?
+Q014162	numpy	Explain how to generate random data with NumPy.
+Q014163	numpy	What is the purpose of the NumPy histogram function?
+Q014164	numpy	How do you normalize an array in NumPy?
+Q014165	numpy	How can you compute percentiles with NumPy?
+Q014166	numpy	What is the difference between _np.var()_ and _np.std()_?
+Q014167	numpy	How do you calculate the correlation coefficient using NumPy?
+Q014168	numpy	Explain the use of the np.cumsum() and np.cumprod() functions.
+Q014169	numpy	Why is NumPy more efficient for numerical computations than pure Python?
+Q014170	numpy	What is the concept of vectorization in NumPy?
+Q014171	numpy	Explain the term “stride” in the context of NumPy arrays.
+Q014172	numpy	How do you check the memory size of a NumPy array?
+Q014173	numpy	Discuss the performance benefits of using NumPy’s in-place operations.
+Q014174	numpy	How does NumPy handle data types to optimize memory use?
+Q014175	numpy	What are NumPy strides, and how do they affect array manipulation?
+Q014176	numpy	How do you create a record array in NumPy?
+Q014177	numpy	Explain the concept and use of masked arrays in NumPy.
+Q014178	numpy	How do you stack multiple arrays vertically and horizontally?
+Q014179	numpy	Describe the process for creating a structured array in NumPy.
+Q014180	numpy	How do you save and load NumPy arrays to and from disk?
+Q014181	numpy	What are the functions available for padding arrays in NumPy?
+Q014193	numpy	How would you use NumPy to process image data for a convolutional neural network?
+Q014194	numpy	Describe how you can use NumPy for simulating Monte Carlo experiments.
+Q014195	numpy	How can NumPy be used for audio signal processing?
+Q014196	numpy	Explain how you would implement gradient descent optimization with NumPy.
+Q014197	numpy	Discuss the role of NumPy in managing data for training a machine learning model.
+Q014198	numpy	How do you handle NaN or infinite values in a NumPy array?
+Q014199	numpy	What methods are there in NumPy to deal with missing data?
+Q014200	numpy	How do you find unique values and their counts in a NumPy array?
+Q014201	numpy	Discuss the potential issues when importing large datasets into NumPy arrays.
+Q014202	numpy	Explain how to resolve the MemoryError when working with very large arrays in NumPy.
+Q014203	numpy	What are NumPy “polynomial” objects and how are they used?
+Q014204	numpy	How does the internal C-API contribute to NumPy’s performance?
+Q014205	numpy	Explain the concept of a stride trick in NumPy.
+Q014206	numpy	Discuss the use of NumPy for operations on polynomials.
+Q014207	numpy	What is the role of the NumPy nditer object?
+Q014208	numpy	Explain how NumPy integrates with other Python libraries like Pandas and Matplotlib.
+Q014209	numpy	How can you use NumPy arrays with Cython for performance optimization?
+Q014210	numpy	Describe how NumPy can be used with JAX for accelerated machine learning computation.
+Q014247	pandas	How do you reshape a DataFrame using stack and unstack methods?
+Q014248	pandas	Explain the usage and differences between astype, to_numeric, and pd.to_datetime.
+Q014249	pandas	Discuss how to deal with time series data in Pandas.
+Q014250	pandas	How can you perform statistical aggregation on DataFrame groups?
+Q014251	pandas	Explain the different types of data ranking available in Pandas.
+Q014252	pandas	How do you use window functions in Pandas for running calculations?
+Q014253	pandas	What is a crosstab in Pandas, and when would you use it?
+Q014254	pandas	Describe how to perform a multi-index query on a DataFrame.
+Q014255	pandas	Provide an example of how to normalize data within a DataFrame column.
+Q014256	pandas	Show how to create simple plots from a DataFrame using Pandas’ visualization tools.
+Q014257	pandas	Discuss how Pandas integrates with Matplotlib and Seaborn for data visualization.
+Q014258	pandas	Explain how you would export a DataFrame to different file formats for reporting purposes.
+Q014259	pandas	What techniques can you use to improve the performance of Pandas operations?
+Q014260	pandas	Compare and contrast the memory usage in Pandas for categories vs. objects.
+Q014261	pandas	How does one use Dask or Modin to handle larger-than-memory data in Pandas?
+Q014267	pandas	If you have a DataFrame with multiple datetime columns, detail how you would create a new column combining them into the earliest datetime.
+Q014268	pandas	Describe how you could use Pandas to preprocess data for a machine learning model.
+Q014270	pandas	How would you use Pandas to prepare and clean ecommerce sales data for better insight into customer purchasing patterns?
+Q014271	pandas	Outline how to merge multiple time series datasets effectively in Pandas, ensuring correct alignment and handling missing values.
+Q014272	pandas	Discuss the advantages of vectorized operations in Pandas over iteration.
+Q014273	pandas	How do you manage memory usage when working with large DataFrames?
+Q014274	pandas	What are some strategies for optimizing Pandas code performance?
+Q014275	pandas	How can you use chunking to process large CSV files with Pandas?
+Q014276	pandas	Explain the importance of using categorical data types, especially when working with a large number of unique values.
+Q014340	python-ml	Contrast the differences between Scipy and Numpy.
+Q014341	python-ml	Discuss the benefits of using Jupyter Notebooks for machine learning projects.
+Q014342	python-ml	What is TensorFlow and Keras, and how do they relate to each other?
+Q014348	python-ml	Discuss the use of pipelines in Scikit-learn for streamlining preprocessing steps.
+Q014357	python-ml	Give an example of how to implement a gradient descent algorithm in Python.
+Q014379	python-ml	How can you parallelize computations in Python for machine learning?
+Q014407	python-ml	What are Python’s profiling tools and how do they assist in optimizing machine learning code?
+Q014423	pytorch	Explain how gradient clipping works in PyTorch and why it may be necessary.
+Q014424	pytorch	How do you check if your PyTorch model is utilizing the GPU?
+Q014425	pytorch	What strategies can you use to monitor and decrease overfitting in a PyTorch model?
+Q014426	pytorch	Explain batch normalization and its effects on training convergence.
+Q014427	pytorch	How does PyTorch handle weight initialization for neural networks?
+Q014428	pytorch	What are some common issues you may encounter when training models in PyTorch, and how do you troubleshoot them?
+Q014429	pytorch	How do you create a data loader in PyTorch for custom datasets?
+Q014430	pytorch	What is the use of transforms in PyTorch’s torchvision package?
+Q014431	pytorch	How do you manage and preprocess time-series data in PyTorch for RNNs?
+Q014432	pytorch	Explain the concept of data augmentation and its implementation in PyTorch.
+Q014433	pytorch	How do you use GPU accelerators for distributed training in PyTorch?
+Q014434	pytorch	Explain transfer learning and its implementation in PyTorch.
+Q014435	pytorch	Compare recurrent neural networks (RNNs), long short-term memory networks (LSTMs), and gated recurrent units (GRUs) in the context of PyTorch.
+Q014436	pytorch	What is PyTorch’s TorchScript, and how does it aid in deploying PyTorch models in production environments?
+Q014443	pytorch	How would you handle imbalanced classes when training a classification model in PyTorch?
+Q014444	pytorch	How can PyTorch be utilized for real-time inference, and what concerns would you have in such a setting?
+Q014445	pytorch	Discuss a scenario where you would need to convert a PyTorch model to ONNX format.
+Q014446	pytorch	Propose a method for deploying a PyTorch model as a REST API service.
+Q014447	pytorch	Describe your approach to fine-tuning a pre-trained model in PyTorch for a new task.
+Q014448	pytorch	What are Graph Neural Networks (GNNs) and how can they be implemented in PyTorch?
+Q014449	pytorch	Discuss the latest research on neural architecture search (NAS) and its application within PyTorch.
+Q014450	pytorch	How can generative adversarial networks (GANs) be implemented in PyTorch, and what are some of their challenges?
+Q014451	pytorch	Explain the concept of “model quantization” in PyTorch and when it is useful.
+Q014452	pytorch	What is the role of PyTorch in reinforcement learning research, and can you provide an example?
+Q014453	pytorch	How would you create a PyTorch extension module with custom C++/CUDA operations?
+Q014454	pytorch	Describe your experience contributing to PyTorch’s open-source community or using community-created tools.
+Q014455	pytorch	Discuss a project where PyTorch played a key role in developing a machine learning solution.
+Q014456	pytorch	How do you ensure reproducibility of experiments when using PyTorch?
+Q014457	pytorch	Portray how PyTorch Lightning can simplify the standard PyTorch workflow.
+Q014644	scikit-learn	Explain the process of training a supervised machine learning model using Scikit-Learn.
+Q014645	scikit-learn	How do you perform cross-validation using Scikit-Learn?
+Q014646	scikit-learn	What metrics can be used in Scikit-Learn to assess the performance of a regression model versus a classification model?
+Q014647	scikit-learn	Explain the GridSearchCV function and its purpose.
+Q014648	scikit-learn	What is the difference between .fit(), .predict(), and .transform() methods?
+Q014649	scikit-learn	How would you explain the concept of overfitting, and how can it be identified using Scikit-Learn tools?
+Q014650	scikit-learn	How do you use Scikit-Learn to build ensemble models?
+Q014651	scikit-learn	Describe how a decision tree is constructed in Scikit-Learn.
+Q014652	scikit-learn	Explain the differences between RandomForestClassifier and GradientBoostingClassifier in Scikit-Learn.
+Q014653	scikit-learn	How does Scikit-Learn’s SVM handle non-linear data?
+Q014654	scikit-learn	Describe the k-means clustering process as implemented in Scikit-Learn.
+Q014655	scikit-learn	How does Scikit-Learn implement logistic regression differently from linear regression?
+Q014656	scikit-learn	What is a support vector machine, and how can it be used for both classification and regression tasks?
+Q014657	scikit-learn	How are hyperparameters tuned in Scikit-Learn?
+Q014661	scikit-learn	Normalize a given dataset using Scikit-Learn’s preprocessing module, then train and test a Naive Bayes classifier.
+Q014667	scikit-learn	How do you save a trained Scikit-Learn model to disk and load it back for later use?
+Q014668	scikit-learn	Describe the process of deploying a Scikit-Learn model into a production environment.
+Q014669	scikit-learn	Explain how you would update a Scikit-Learn model with new data over time.
+Q014670	scikit-learn	How do you monitor the performance of a Scikit-Learn model in production?
+Q014671	scikit-learn	What are some of the limitations of Scikit-Learn when dealing with very large datasets?
+Q014672	scikit-learn	How can you implement custom transformers in Scikit-Learn?
+Q014673	scikit-learn	What recent advancements in machine learning are not yet fully supported by Scikit-Learn?
+Q014674	scikit-learn	Discuss the integration of Scikit-Learn with other popular machine learning libraries like TensorFlow and PyTorch.
+Q014675	scikit-learn	What role do libraries like joblib play in the context of Scikit-Learn?
+Q014676	scikit-learn	How would you approach building a recommendation system using Scikit-Learn?
+Q014677	scikit-learn	Discuss the steps you would take to diagnose and solve performance issues in a machine learning model built with Scikit-Learn.
+Q014678	scikit-learn	Propose a pipeline for processing and analyzing textual data from social media platforms using Scikit-Learn’s tools.
+Q014888	tensorflow	Describe how TensorFlow optimizers work and name a few common ones.
+Q014889	tensorflow	How do you perform batch processing in TensorFlow?
+Q014890	tensorflow	What is the role of loss functions in TensorFlow, and can you name some?
+Q014891	tensorflow	How do you implement a custom layer in TensorFlow?
+Q014892	tensorflow	What are the differences between sequential and functional APIs in TensorFlow?
+Q014893	tensorflow	How does TensorFlow support regularization to prevent overfitting?
+Q014894	tensorflow	Explain the concept of saving and restoring a model in TensorFlow.
+Q014895	tensorflow	How do you use callbacks in TensorFlow?
+Q014896	tensorflow	What strategies does TensorFlow use to handle overfitting during training?
+Q014897	tensorflow	How does TensorFlow integrate with Keras?
+Q014898	tensorflow	Explain the concept of eager execution in TensorFlow.
+Q014899	tensorflow	Describe the role of tf.data in TensorFlow.
+Q014900	tensorflow	How do you use TensorFlow Transformers for sequence modeling?
+Q014901	tensorflow	What is TensorFlow Distribution Strategies and when would you use it?
+Q014902	tensorflow	Can you explain TensorFlow Extended (TFX) and its main components?
+Q014903	tensorflow	Discuss how TensorFlow can be used for reinforcement learning.
+Q014904	tensorflow	What is TensorFlow Serving and how does it facilitate model deployment?
+Q014905	tensorflow	How does one use TensorFlow’s Estimator API?
+Q014906	tensorflow	How do you approach optimizing TensorFlow model performance?
+Q014907	tensorflow	What techniques are used in TensorFlow for graph optimizations?
+Q014908	tensorflow	How do you perform memory optimization in TensorFlow?
+Q014909	tensorflow	Explain the concept of quantization in TensorFlow and when it might be used.
+Q014910	tensorflow	Discuss how to use mixed-precision training in TensorFlow.
+Q014911	tensorflow	How does TensorFlow support multi-GPU or distributed training?
+Q014912	tensorflow	What are some best practices for writing efficient TensorFlow code?
+Q014913	tensorflow	How do you handle image data in TensorFlow?
+Q014914	tensorflow	Describe the process of text preprocessing in TensorFlow.
+Q014915	tensorflow	Explain how you would approach time-series forecasting with TensorFlow.
+Q014916	tensorflow	What support does TensorFlow offer for transfer learning?
+Q014917	tensorflow	How is TensorFlow deployed in mobile or edge devices?
+Q014918	tensorflow	Can you give an example of how TensorFlow is used in healthcare?
+Q014929	tensorflow	How would you go about debugging a TensorFlow model that isn’t learning?
+Q014930	tensorflow	Discuss common errors encountered in TensorFlow and how to resolve them.
+Q014931	tensorflow	How does TensorFlow’s tf.debugging package assist in debugging?
+Q014932	tensorflow	What steps would you take to investigate and fix a shape mismatch error in TensorFlow?
+Q014933	tensorflow	How can the TensorBoard tool be used to debug TensorFlow programs?
+Q014934	tensorflow	Discuss how GradientTape works in TensorFlow.
+Q014935	tensorflow	How would you implement attention mechanisms in TensorFlow?
+Q014936	tensorflow	Explain the concept of graph mode versus eager mode in TensorFlow.
+Q014937	tensorflow	How is TensorFlow utilized in Natural Language Processing (NLP)?
+Q014938	tensorflow	What are some of the latest features or additions to TensorFlow that are currently gaining traction?
+Q014939	tensorflow	How would you apply TensorFlow to predict stock market trends?
+Q014940	tensorflow	Explain what steps you would take to develop a chatbot using TensorFlow.
+Q014941	tensorflow	Describe how you would use TensorFlow in an autonomous vehicle perception system.
+Q014942	tensorflow	Present an approach for real-time object detection using TensorFlow.

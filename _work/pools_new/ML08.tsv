@@ -1,0 +1,71 @@
+Q014310	probability	How do probabilistic models cope with uncertainty in predictions?
+Q014311	probability	In machine learning, what are Naive Bayes classifiers, and why are they ‘naive’?
+Q014312	probability	How does logistic regression utilize probability?
+Q014313	probability	What is the concept of entropy in information theory, and how does it relate to machine learning models?
+Q014314	probability	Explain the relationship between Maximum Likelihood Estimation (MLE) and probability.
+Q014315	probability	How is probability used in Bayesian inference for machine learning?
+Q014316	probability	How can assuming independence in probabilistic models lead to inaccuracies?
+Q014317	probability	Describe how to update probabilities using the concept of prior, likelihood, and posterior.
+Q014318	probability	What strategies would you use to handle missing data in probabilistic models?
+Q014319	probability	How do you determine the significance of an observed effect using probability?
+Q014320	probability	What are p-values and confidence intervals, and how are they interpreted?
+Q014321	probability	Describe how a probabilistic graphical model (PGM) works.
+Q014322	probability	Explain the concepts of “Markov Chains” and how they apply to machine learning.
+Q014323	probability	How do Hidden Markov Models (HMMs) use probability in sequential data modeling?
+Q014324	probability	What is Expectation-Maximization (EM) algorithm and how does probability play a role in it?
+Q014330	probability	How would you use probability to design a recommendation system model?
+Q014331	probability	Propose a method for predicting customer churn using probabilistic models.
+Q014332	probability	Discuss how you would use probabilities to detect anomalies in transaction data.
+Q014333	probability	Describe how you might use Bayesian methods to improve the performance of a spam classifier.
+Q014334	probability	Explain a situation where you would use Markov Chains for modeling customer behavior on a website.
+Q014335	probability	How has the advent of Quantum Computing influenced probabilistic algorithms?
+Q014336	probability	What role does probability play in reinforcement learning and decision making?
+Q014337	probability	Describe how Monte Carlo simulations are used in machine learning for approximation of probabilities.
+Q014338	probability	How do GANs (Generative Adversarial Networks) utilize probability theory?
+Q014339	probability	What are the probabilistic underpinnings of Active Learning and how might they be utilized in algorithm design?
+Q014719	statistics	Explain the difference between joint, marginal, and conditional probability.
+Q014720	statistics	How does the Poisson distribution differ from the Normal distribution?
+Q014721	statistics	What is a cumulative distribution function (CDF)?
+Q014722	statistics	Describe the use cases of the Exponential distribution and Uniform distribution.
+Q014723	statistics	How is Covariance different from Correlation?
+Q014724	statistics	What are measures of central tendency, and why are they important?
+Q014725	statistics	Explain measures of dispersion: Range, Interquartile Range (IQR), Variance, and Standard Deviation.
+Q014726	statistics	What is the difference between mean and median, and when would you use each?
+Q014727	statistics	How would you describe skewness and kurtosis in a dataset?
+Q014728	statistics	What is the five-number summary in descriptive statistics?
+Q014729	statistics	Explain the steps in conducting a hypothesis test.
+Q014730	statistics	Describe how a t-test is performed and when it is appropriate to use.
+Q014731	statistics	What is ANOVA (analysis of variance), and when is it used?
+Q014732	statistics	Explain the concepts of effect size and Cohen’s d.
+Q014733	statistics	How do you perform a Chi-squared test, and what does it tell you?
+Q014734	statistics	What is a nonparametric statistical test, and why might you use one?
+Q014735	statistics	What is linear regression, and when is it used?
+Q014736	statistics	How do you interpret R-squared and adjusted R-squared in the context of a regression model?
+Q014737	statistics	Explain the assumptions underlying linear regression.
+Q014738	statistics	What is multicollinearity, and why is it a problem in regression analyses?
+Q014739	statistics	Explain the difference between correlation and causation.
+Q014740	statistics	How can you detect and remedy heteroscedasticity in a regression model?
+Q014741	statistics	What is a time series, and what makes it different from other types of data?
+Q014742	statistics	Explain autocorrelation and partial autocorrelation in the context of time series.
+Q014743	statistics	What is stationarity in a time series, and why is it important?
+Q014744	statistics	Describe some methods to make a non-stationary time series stationary.
+Q014745	statistics	What is ARIMA, and how is it used for forecasting time series data?
+Q014746	statistics	What is the purpose of dimensionality reduction in data analysis?
+Q014747	statistics	Explain Principal Component Analysis (PCA) and its applications.
+Q014748	statistics	How does Factor Analysis differ from PCA?
+Q014749	statistics	What is Singular Value Decomposition (SVD), and how is it used in Machine Learning?
+Q014750	statistics	What is A/B testing, and why is it an important tool in statistics?
+Q014751	statistics	How do you design an A/B test and determine the sample size required?
+Q014752	statistics	What are control and treatment groups in the context of an experiment?
+Q014753	statistics	Explain how you would use hypothesis testing to analyze the results of an A/B test.
+Q014754	statistics	How can you avoid biases when conducting experiments and A/B tests?
+Q014755	statistics	What defines Bayesian statistics, and how does it differ from frequentist statistics?
+Q014756	statistics	Explain what a prior, likelihood, and posterior are in Bayesian inference.
+Q014757	statistics	Describe a scenario where applying Bayesian statistics would be advantageous.
+Q014758	statistics	What is Markov Chain Monte Carlo (MCMC), and where is it used in statistics?
+Q014759	statistics	How would you update a Bayesian model with new data?
+Q014772	statistics	How would you assess which factors contribute most to sales in a supermarket chain?
+Q014773	statistics	Describe your approach to determining whether a new drug is effective based on clinical trial data.
+Q014774	statistics	Explain how you would evaluate the success of an online advertising campaign with statistical analysis.
+Q014775	statistics	Discuss how you would use time series analysis to forecast stock prices.
+Q014776	statistics	How would you design a statistical study to understand customer churn in a subscription-based business?

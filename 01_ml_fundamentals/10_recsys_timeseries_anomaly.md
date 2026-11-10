@@ -3,7 +3,7 @@ domain: ml
 topic: recsys_timeseries_anomaly
 title: Recommender systems, time series, anomaly detection
 tags: [recsys, time-series, anomaly-detection]
-count: 151
+count: 172
 ---
 # Recommender systems, time series, anomaly detection
 
@@ -177,3 +177,30 @@ count: 151
 - [ML10-149] When is survival analysis better than logistic regression for modelling customer churn?
 - [ML10-150] How do you evaluate a survival model (concordance index, time-dependent AUC, calibration)?
 - [ML10-151] How would you handle time-varying covariates and competing risks in a survival model?
+
+## More anomaly detection
+- [ML10-152] What are the benefits and drawbacks of using Gaussian mixture models for anomaly detection?
+- [ML10-153] How can DBSCAN be used for anomaly detection?
+- [ML10-154] How does the Random Cut Forest algorithm detect anomalies in streaming data?
+- [ML10-155] How do you update an anomaly detector as normal behaviour drifts without teaching it that anomalies are normal?
+- [ML10-156] How would you identify bot behaviour in web traffic data?
+- [ML10-157] How would you detect anomalies in resource utilization across a multi-tenant cloud system?
+- [ML10-158] How can adversaries evade anomaly detection systems, and how would you make a detector more robust?
+- [ML10-159] How can active learning help an anomaly detection system make the best use of analyst feedback?
+
+## More recommender systems
+- [ML10-160] What is neural collaborative filtering, and how does it compare with matrix factorization?
+- [ML10-161] How were Restricted Boltzmann Machines used for collaborative filtering?
+- [ML10-162] How does context-aware recommendation work, and when is it most beneficial?
+- [ML10-163] How can content-based recommenders use NLP to represent items?
+- [ML10-164] How would you build a "people you may know" recommender for a social network?
+- [ML10-165] How can reinforcement learning be used to optimize long-term outcomes in a recommender system?
+- [ML10-166] What privacy concerns arise when building recommender systems, and how would you address them?
+
+## More time series
+- [ML10-167] How do ARCH and GARCH models capture volatility clustering in financial time series?
+- [ML10-168] What are state-space models and the Kalman filter, and what advantages do they offer for time series?
+- [ML10-169] How does multivariate time series analysis, for example with VAR models, differ from univariate analysis?
+- [ML10-170] What is Granger causality, and why is it not true causality?
+- [ML10-171] What is wavelet analysis, and when is it better than Fourier analysis for time series?
+- [ML10-172] How would you estimate the impact of a promotional campaign on sales from time-series data, for example with interrupted time series or a counterfactual forecast?

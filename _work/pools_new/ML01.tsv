@@ -1,0 +1,108 @@
+Q012754	bias-and-variance	How does bagging help to reduce variance?
+Q012755	bias-and-variance	In what ways can feature selection impact bias and variance?
+Q012756	bias-and-variance	How does increasing the size of the training set affect bias and variance?
+Q012757	bias-and-variance	How would you balance bias and variance while developing models?
+Q012758	bias-and-variance	Can you discuss some strategies to overcome underfitting and overfitting?
+Q012759	bias-and-variance	What role does model complexity play in the bias-variance trade-off?
+Q012760	bias-and-variance	How would you decide when a model is sufficiently good for deployment considering bias and variance?
+Q012761	bias-and-variance	Explain the concept of the “No Free Lunch” theorem in relation to bias and variance.
+Q012762	bias-and-variance	What is Occam’s razor principle, and how does it apply to the bias-variance dilemma?
+Q012763	bias-and-variance	Discuss how decision tree depth impacts bias and variance.
+Q012764	bias-and-variance	How does the choice of kernel in a Support Vector Machine affect bias and variance?
+Q012765	bias-and-variance	In neural networks, how do you control for bias and variance through architectural decisions?
+Q012766	bias-and-variance	Describe how the number of nearest neighbors in k-NN affects model bias and variance.
+Q012767	bias-and-variance	Explain how ensemble methods can lead to models with a better bias-variance trade-off.
+Q012768	bias-and-variance	How do hyperparameters tuning in gradient boosting models affect bias and variance?
+Q012774	bias-and-variance	How would you handle a scenario where your model has low bias but high variance?
+Q012775	bias-and-variance	Propose a modeling strategy when facing high bias in a time-series prediction problem.
+Q012776	bias-and-variance	Discuss a case where simplifying the model features helped reduce bias.
+Q012777	bias-and-variance	Describe a situation from your experience where model validation revealed bias-variance issues.
+Q012778	bias-and-variance	Imagine you need to build a model for predicting housing prices; how would you manage the bias-variance trade-off?
+Q012779	bias-and-variance	What are the implications of the curse of dimensionality on bias and variance?
+Q012780	bias-and-variance	How does the concept of the Bayesian approach relate to bias and variance?
+Q012781	bias-and-variance	Discuss how meta-learning can influence the bias-variance trade-off in model development.
+Q012782	bias-and-variance	What do you think about the potential impacts of deep learning techniques on bias and variance?
+Q012783	bias-and-variance	How could you potentially leverage active learning to mitigate bias and/or variance in a model?
+Q012957	curse-of-dimensionality	Briefly describe the idea behind t-Distributed Stochastic Neighbor Embedding (t-SNE) and its application to high-dimensional data.
+Q012958	curse-of-dimensionality	What is the “peaking phenomenon” in high-dimensional spaces?
+Q012959	curse-of-dimensionality	How do you choose the number of principal components to use when applying PCA?
+Q012960	curse-of-dimensionality	Explain the concept of intrinsic dimensionality.
+Q012961	curse-of-dimensionality	How does the Curse of Dimensionality affect model interpretability?
+Q012962	curse-of-dimensionality	What metrics can be misleading in high-dimensional spaces, and which ones are more reliable?
+Q012963	curse-of-dimensionality	Describe the impact of the Curse of Dimensionality on clustering algorithms like K-means.
+Q012964	curse-of-dimensionality	What are some challenges in visualizing high-dimensional data?
+Q012965	curse-of-dimensionality	How does L1 regularization help in reducing dimensionality?
+Q012966	curse-of-dimensionality	What are some limitations of linear dimensionality reduction techniques like PCA?
+Q012967	curse-of-dimensionality	Explain how autoencoders can be used for dimensionality reduction.
+Q012968	curse-of-dimensionality	Describe the role of feature hashing in dealing with high-dimensional data.
+Q012969	curse-of-dimensionality	Discuss the technique of variable clustering as a way to address the Curse of Dimensionality.
+Q012975	curse-of-dimensionality	How would you design a recommendation system that handles hundreds of features for user preference profiling?
+Q012976	curse-of-dimensionality	Discuss a project where you had to deal with a large number of features. What strategies did you employ to deal with the Curse of Dimensionality?
+Q012977	curse-of-dimensionality	Consider a text classification task with thousands of features (words). How would you address potential issues caused by high dimensionality?
+Q012978	curse-of-dimensionality	What are the latest advancements in dimensionality reduction techniques?
+Q012979	curse-of-dimensionality	Discuss the theoretical foundations of the Curse of Dimensionality and its implications for the future of Machine Learning.
+Q012980	curse-of-dimensionality	How can embedding techniques be leveraged to understand complex high-dimensional data structures within neural networks?
+Q012981	curse-of-dimensionality	Explain the concept of “concentration of measure” and how it relates to the Curse of Dimensionality.
+Q012982	curse-of-dimensionality	What are the potential benefits and challenges of using quantum computing to address the Curse of Dimensionality in Machine Learning?
+Q012983	data-mining	What are the different classifications of data mining algorithms?
+Q012991	data-mining	What considerations should be made when choosing a data mining algorithm?
+Q012994	data-mining	What are the challenges of big data mining?
+Q013139	data-scientist	Explain the difference between Train, Validation, and Test sets.
+Q014041	neural-networks	Explain the difference between local minima and global minima in the context of neural networks.
+Q014347	python-ml	What is the purpose of data splitting in train, validation, and test sets?
+Q014350	python-ml	Describe the process of building a machine learning model in Python.
+Q014351	python-ml	How do you ensure that your model is not overfitting?
+Q014353	python-ml	What is the bias-variance tradeoff in machine learning?
+Q014354	python-ml	Describe the steps taken to improve a model’s accuracy.
+Q014374	python-ml	Describe steps to take when a model performs well on the training data but poorly on new data.
+Q014386	python-ml	Explain the difference between batch learning and online learning.
+Q014777	supervised-learning	Describe Linear Regression.
+Q014778	supervised-learning	Explain the principle of Support Vector Machine (SVM).
+Q014779	supervised-learning	How do you handle categorical variables in supervised learning models?
+Q014780	supervised-learning	What are ensemble methods, and how do they help improve model performance?
+Q014781	supervised-learning	Explain the concept of feature scaling and its importance.
+Q014782	supervised-learning	Describe how a decision tree is constructed.
+Q014783	supervised-learning	What are the pros and cons of using decision trees?
+Q014784	supervised-learning	Explain Gini impurity and information gain.
+Q014785	supervised-learning	How does the Random Forest algorithm improve upon basic decision trees?
+Q014786	supervised-learning	What is feature importance, and how is it determined in decision trees or random forests?
+Q014787	supervised-learning	What are the basic components of a neural network?
+Q014788	supervised-learning	Explain the role of activation functions in neural networks.
+Q014789	supervised-learning	How do you prevent overfitting in neural networks?
+Q014790	supervised-learning	Discuss backpropagation and its significance in training neural networks.
+Q014791	supervised-learning	What is the difference between shallow and deep neural networks?
+Q014792	supervised-learning	What are confusion matrices, precision, recall, and F1 score?
+Q014793	supervised-learning	Define Accuracy, and why isn’t it always the best performance metric?
+Q014794	supervised-learning	Explain ROC curve and AUC.
+Q014795	supervised-learning	Compare and contrast RMSE and MAE.
+Q014796	supervised-learning	When would you choose to use the Mean Absolute Percentage Error (MAPE)?
+Q014797	supervised-learning	Discuss the importance of hyperparameter tuning in supervised learning.
+Q014798	supervised-learning	What is grid search, and how can it be used for hyperparameter optimization?
+Q014799	supervised-learning	Explain random search compared to grid search.
+Q014800	supervised-learning	Discuss the role of learning rate in model training convergence.
+Q014801	supervised-learning	What is early stopping in the context of training machine learning models?
+Q014802	supervised-learning	How would you apply supervised learning to predict stock prices?
+Q014803	supervised-learning	Discuss the application of supervised learning in credit scoring.
+Q014804	supervised-learning	Explain how supervised learning can be used for recommender systems.
+Q014805	supervised-learning	Describe how supervised learning is applied in healthcare diagnostics.
+Q014806	supervised-learning	What role does supervised learning play in natural language processing (NLP)?
+Q014812	supervised-learning	How do you deal with unbalanced datasets in classification tasks?
+Q014813	supervised-learning	Explain the use of SVMs with non-linear kernels.
+Q014814	supervised-learning	Discuss how decision trees are pruned.
+Q014815	supervised-learning	Describe adaptive boosting (AdaBoost) and its algorithmic approach.
+Q014816	supervised-learning	How does gradient boosting differ from AdaBoost?
+Q014817	supervised-learning	Explain how you would handle missing data in a supervised learning problem.
+Q014818	supervised-learning	Describe the steps you would take to prepare your dataset for a supervised learning model.
+Q014819	supervised-learning	How would you handle textual data in a supervised learning problem?
+Q014820	supervised-learning	When is dimensionality reduction useful, and how can it be accomplished?
+Q014821	supervised-learning	What are common data augmentation techniques that can be applied to improve supervised learning models?
+Q014822	supervised-learning	Discuss the role of transfer learning in supervised models.
+Q014823	supervised-learning	What is the concept of end-to-end learning in deep learning?
+Q014824	supervised-learning	Explain multitask learning and its benefits.
+Q014825	supervised-learning	How can reinforcement learning be framed as a supervised learning problem?
+Q014826	supervised-learning	What role do attention mechanisms play in neural networks?
+Q014827	supervised-learning	How would you design a supervised learning model for predicting customer churn?
+Q014828	supervised-learning	Discuss your strategy for developing a sentiment analysis model with supervised learning.
+Q014829	supervised-learning	Propose a supervised learning approach for fraud detection in transactions.
+Q014830	supervised-learning	Explain how you would create a predictive maintenance system using supervised learning.
+Q014831	supervised-learning	Describe how you would approach building a model to automate medical image diagnosis.

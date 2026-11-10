@@ -1,0 +1,62 @@
+ML02	E	If the probability of an event is 0.1, what are its odds and its log-odds? And if the odds of success are 4, what is the probability of success?	B0005,B0011,B0012
+ML02	M	Write the equation of the decision boundary of a logistic regression model. Why is it a hyperplane?	B0015
+ML02	M	A logistic regression has coefficients β0 = −1.5, β1 = 3 and β2 = −0.5. For x1 = 1 and x2 = 5, what are the logit, the odds and P(y = 1)?	B0018
+ML02	M	A logistic model has logit = −6 + 0.05·x1 + x2. What is the predicted probability at x1 = 40, x2 = 3.5, and what x1 gives exactly a 50% probability at that x2?	B0020,B0025
+ML02	M	Given a logistic regression output table with coefficients, standard errors and z-values, how do you write the odds for an observation and decide which predictors are significantly associated with the outcome?	B0021,B0022
+ML02	M	How do you get the odds ratio for a one-unit increase in a predictor, and a confidence interval for it, from a logistic regression coefficient and its standard error?	B0269
+ML08	M	From a 2×2 table of treatment versus outcome, how do you compute the sample odds ratio, the log-odds ratio and a 95% confidence interval for the true odds ratio?	B0023
+ML08	M	Derive the expectation and variance of a Binomial(n, p) random variable.	B0031,B0033,B0034
+ML08	M	A device fires 200 independent particles that each hit the target with probability 0.1. What distribution describes the number of hits, what are its mean and variance, and how plausible is a claim of exactly 60 hits?	B0035
+ML08	E	A screening test is correct 95% of the time whether or not a condition is present, and 1% of cases have the condition. What is the probability that the test comes back positive?	B0044,B0276
+ML08	M	In a population that is half female, 5% of females and 0.25% of males have a disease. If a randomly chosen person has the disease, what is the probability that the person is female?	B0045
+ML08	M	A predictor is right 85% of the time, and a portfolio holds twice as many state-1 items as state-0 items. If the predictor says an item is in state 1, what is the probability that it is correct?	B0046
+ML08	M	Derive the maximum likelihood estimator of p from i.i.d. binomial observations.	B0050,B0051,B0053,B0056
+ML08	M	What is the score function, and what is its expected value at the true parameter?	B0054
+ML08	H	Derive the Fisher information for a Bernoulli(θ) and for a Poisson(λ) distribution.	B0055,B0057
+ML08	M	What is the difference between the posterior distribution, the prior predictive distribution and the posterior predictive distribution?	B0059
+ML08	M	With 5 Bernoulli trials and a discrete prior P(θ = 1/2) = 0.25, P(θ = 1/6) = 0.5, P(θ = 1/4) = 0.25, how do you derive the posterior p(θ | y) and the prior predictive distribution of y?	B0060,B0277
+ML08	M	What is a non-informative prior, and why can a supposedly non-informative prior still influence the result?	B0061
+ML09	M	Which distribution has maximum entropy on a bounded interval [a, b], and which has maximum entropy on the real line for a fixed mean and variance?	B0002
+ML09	H	Which properties did Shannon require of a measure of uncertainty, and why do they lead to the entropy formula?	B0071,B0069
+ML09	E	What is a bit in Shannon's sense, and how does it differ from a binary digit?	B0073
+ML09	M	What does Shannon's source coding theorem say about how far a message can be compressed?	B0075
+ML09	E	What is the entropy in bits of an 8-bit grayscale pixel if all 256 values are equally likely?	B0076
+ML09	M	Why is entropy a concave function of the probability distribution, and what useful property follows from that?	B0078
+ML09	H	If Y = X + Z, is the joint entropy H(X, Y) equal to H(X, Z)? Explain.	B0079
+ML09	E	A coin lands heads with probability 0.98. How many bits of information does a head carry, how many does a tail carry, and what is the entropy of the coin?	B0080,B0271,B0074
+ML09	M	What is Boltzmann's entropy formula, and what is the entropy of a fair eight-sided die from that perspective?	B0095,B0096,B0097
+ML09	M	What is the finite-difference approximation of a derivative, and what numerical problems does it have?	B0100
+ML09	M	What are the Taylor series of 1/(1 − x) and of ln(1 + x) around 0, and for which x do they converge?	B0105,B0106
+ML09	M	Find and classify the stationary points of f(x, y) = 2x² − xy + y².	B0117
+ML09	M	What are dual numbers, and how does forward-mode automatic differentiation use them?	B0125
+ML09	H	Show that g(x + x′ε) = g(x) + g′(x)x′ε for dual numbers, and use it to differentiate a small polynomial.	B0126,B0127
+ML09	M	For f(x1, x2) = x1·x2 + ln(x1), draw the computational graph and compute the partial derivatives with forward-mode automatic differentiation. What role do the seed values play?	B0130,B0131
+ML09	M	Compare numerical, symbolic and automatic differentiation. Which suffers from rounding errors and which from expression swell?	B0132,B0133
+ML09	E	Compute the Euclidean and Manhattan distances between [6, 1, 4, 5] and [2, 8, 3, −1].	B0264,B0265
+ML03	M	For a very small dataset, would you prefer bagging or stacking, and why?	B0136,B0135
+ML03	M	Why is the covariance between two draws zero when sampling with replacement but not without replacement, and how does this relate to bagging?	B0140
+ML03	H	Under what conditions does the error of an ensemble approach zero as the number of members grows, according to Hansen and Salamon?	B0142
+ML03	M	What are static and dynamic committee machines, and which combiners, such as a mixture of experts, use the input directly?	B0148,B0149
+DL02	M	What is snapshot ensembling, how do cyclic cosine-annealing learning rates produce several models in one training run, and what are its drawbacks?	B0153,B0156,B0154
+DL02	M	Do deep ensembles give better uncertainty estimates under distribution shift than Monte Carlo dropout? What does the evidence say?	B0146
+DL02	M	Can two consecutive dropout layers with rates p and q be replaced by a single dropout layer? With what rate, and does the rescaling still match?	B0235
+DL02	M	Does applying an activation function before or after dropout change the result? Compare ReLU with sigmoid.	B0244
+DL01	E	Compute the output of a neuron with inputs (0.9, 0.7), weights (−0.3, 0.15), bias 0.001 and a ReLU activation.	B0208,B0209,B0267
+DL01	M	Which of these activations can be trained with backpropagation: |x|, x·sin(1/x) and a function with a jump discontinuity? What property is required?	B0210
+DL01	M	Can tanh units saturate even though tanh is zero-centered? Why?	B0220,B0262
+DL01	M	How can the sigmoid be approximated cheaply in hardware, for example with powers of two, and what error does that introduce?	B0217
+DL01	H	If hidden units use x³ and output units use sin(2x) as activation functions, how do you derive the backpropagation weight updates with the chain rule?	B0121
+DL03	E	VGG-16 has about 138 million parameters. How much storage does it need in fp32, and in fp16?	B0159
+DL03	E	Describe the VGG-19 architecture: the number of convolutional and fully connected layers, kernel sizes, pooling, input size and preprocessing.	B0163,B0233
+DL03	M	Which layers of a pretrained CNN make the best fixed feature extractors, and why are the layers closest to the output not always the best choice?	B0160,B0161,B0274
+DL03	M	How can you build an ensemble of fixed feature extractors from different layers or different pretrained CNNs?	B0165,B0147
+DL03	M	What is the difference between convolution and cross-correlation, and which one do deep learning libraries actually compute?	B0186,B0187,B0188,B0185
+DL03	M	How many multiplications does convolving a w×h image with a K×K kernel take, and how does a separable kernel such as a Gaussian reduce that cost?	B0196,B0198
+DL03	M	Why do you L2-normalize CNN embeddings before comparing them, and how does cosine similarity relate to Euclidean distance on normalized vectors?	B0199,B0200,B0273
+DL03	M	What output shapes does the VGG-11 feature extractor produce for 224×224, 512×512 and 704×1024 inputs, and why can it accept any input size?	B0231,B0232
+DL03	M	For a 224×224×3 input, a 7×7 convolution with 32 filters and padding 2, followed by two 2×2 max-pools with stride 2, what is the output shape?	B0240,B0268,B0230
+ML04	M	What is MinHash, and how does it estimate the Jaccard similarity between two sets?	B0203,B0201
+ML04	M	What is locality-sensitive hashing, and how does it increase the collision probability of similar items?	B0204,B0205
+DL07	E	What is the output shape of nn.Linear(5, 7) applied to a tensor of shape (3, 5), and what is the shape of its weight matrix?	B0026
+CODE01	M	Implement a custom torch.autograd.Function, for example for arctanh, with an analytical backward pass, and verify it with gradcheck.	B0124,B0120,B0123
+CODE01	M	Turn a pretrained torchvision ResNet-34 into a 512-dimensional feature extractor, with the correct ImageNet preprocessing.	B0166,B0167,B0168

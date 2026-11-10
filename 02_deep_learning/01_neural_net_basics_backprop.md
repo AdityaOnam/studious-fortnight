@@ -3,7 +3,7 @@ domain: dl
 topic: neural_net_basics_backprop
 title: Neural network basics and backpropagation
 tags: [dl, backprop, activation, mlp]
-count: 93
+count: 108
 ---
 # Neural network basics and backpropagation
 
@@ -117,3 +117,24 @@ count: 93
 - [DL01-091] What are depth-separation results, and what do they say about the efficiency of deep versus shallow networks?
 - [DL01-092] Does the universal approximation theorem tell us anything about whether gradient descent will find the approximating function?
 - [DL01-093] How many linear regions can a ReLU network with L layers and n units per layer have, and why does it grow with depth?
+
+## Robustness, interpretability and architecture search
+- [DL01-094] What are adversarial examples, why are neural networks vulnerable to them, and how can models be made more robust?
+- [DL01-095] What techniques are used to interpret neural networks, such as saliency maps, integrated gradients and probing?
+- [DL01-096] What is neural architecture search, how do search strategies such as RL, evolution and differentiable NAS work, and why is it expensive?
+- [DL01-097] What are zero-shot, one-shot and few-shot learning in deep learning?
+
+## Generalization in deep networks
+- [DL01-098] Why do heavily overparameterized neural networks generalize instead of simply memorizing the training data?
+- [DL01-099] What is double descent, and how does it challenge the classical bias-variance picture?
+- [DL01-100] What is the lottery ticket hypothesis, and what does it suggest about pruning and initialization?
+- [DL01-101] What is grokking, and what does it say about when to stop training?
+- [DL01-102] What is the neural tangent kernel (lazy training) regime, and why do practical networks often operate outside it?
+- [DL01-103] What is the connection between flat minima and generalization, and why is it debated?
+
+## Neuron and activation problems
+- [DL01-104] Compute the output of a neuron with inputs (0.9, 0.7), weights (−0.3, 0.15), bias 0.001 and a ReLU activation.
+- [DL01-105] Which of these activations can be trained with backpropagation: |x|, x·sin(1/x) and a function with a jump discontinuity? What property is required?
+- [DL01-106] Can tanh units saturate even though tanh is zero-centered? Why?
+- [DL01-107] How can the sigmoid be approximated cheaply in hardware, for example with powers of two, and what error does that introduce?
+- [DL01-108] If hidden units use x³ and output units use sin(2x) as activation functions, how do you derive the backpropagation weight updates with the chain rule?

@@ -3,7 +3,7 @@ domain: coding
 topic: ml_llm_coding_problems
 title: ML / LLM coding problems (titles only)
 tags: [coding, from-scratch, pytorch, implementation]
-count: 91
+count: 140
 part: 2/2
 ---
 # ML / LLM coding problems (titles only) (part 2)
@@ -108,3 +108,64 @@ part: 2/2
 - [CODE01-193] Implement a planner and executor for an agent with a clean boundary and tracing.
 - [CODE01-194] Implement retry logic with idempotency keys for tool calls that have side effects.
 - [CODE01-195] Build a multi-agent system where agents have different roles and collaborate on a task.
+
+## More classical ML from scratch
+- [CODE01-196] Implement a regression tree using recursive binary splitting on squared error.
+- [CODE01-197] Implement cost-complexity pruning for a trained decision tree.
+- [CODE01-198] Compute impurity-based feature importances from a trained decision tree.
+- [CODE01-199] Implement AdaBoost with decision stumps from scratch.
+- [CODE01-200] Compute the out-of-bag error of a random forest from its bootstrap samples.
+- [CODE01-201] Implement a Gaussian Naive Bayes classifier from scratch.
+- [CODE01-202] Implement a categorical Naive Bayes classifier with Laplace smoothing.
+- [CODE01-203] Implement distance-weighted k-nearest neighbors and compare it with uniform voting.
+- [CODE01-204] Implement a one-vs-one multiclass classifier on top of a binary SVM.
+- [CODE01-205] Implement mini-batch k-means.
+- [CODE01-206] Implement the silhouette coefficient from scratch for a given clustering.
+- [CODE01-207] Implement the Apriori algorithm to find frequent itemsets and generate association rules.
+- [CODE01-208] Implement the Local Outlier Factor algorithm from scratch.
+- [CODE01-209] Write a function that flags outliers with the interquartile range (IQR) rule.
+- [CODE01-210] Implement user-based collaborative filtering with Pearson correlation from scratch.
+- [CODE01-211] Implement item-item collaborative filtering with cosine similarity and produce top-N recommendations.
+
+## Feature selection, explainability and evaluation code
+- [CODE01-212] Select the top-k features by mutual information with the target, implementing the estimate for discrete features.
+- [CODE01-213] Implement recursive feature elimination around any estimator that exposes coefficients or importances.
+- [CODE01-214] Write a function that drops one feature from every highly correlated pair above a threshold.
+- [CODE01-215] Implement the hashing trick for high-cardinality categorical features.
+- [CODE01-216] Compute a variance inflation factor for each predictor.
+- [CODE01-217] Compute exact Shapley values for a single prediction of a model with a handful of features.
+- [CODE01-218] Implement a simple LIME-style local explanation by fitting a weighted linear surrogate on perturbed samples.
+- [CODE01-219] Compute a partial dependence curve for one feature of a trained model.
+- [CODE01-220] Compute learning curves of training and validation score as the training set grows.
+
+## Optimization, statistics and linear algebra code
+- [CODE01-221] Implement AdaGrad and RMSprop optimizers from scratch.
+- [CODE01-222] Minimize a non-convex function with simulated annealing.
+- [CODE01-223] Implement a genetic algorithm that evolves a random string toward a target string.
+- [CODE01-224] Implement roulette-wheel and rank-based selection, single-point crossover and mutation for a genetic algorithm.
+- [CODE01-225] Implement the Metropolis-Hastings algorithm to sample from an unnormalized posterior.
+- [CODE01-226] Implement Welch's two-sample t-test from scratch.
+- [CODE01-227] Implement a chi-squared test of independence on a contingency table.
+- [CODE01-228] Implement matrix inversion with Gauss-Jordan elimination and partial pivoting.
+- [CODE01-229] Implement power iteration to find the dominant eigenvalue and eigenvector of a matrix.
+- [CODE01-230] Compute gradients of linear regression by hand and verify them against autograd.
+
+## Time series, sequence and vision code
+- [CODE01-231] Implement simple exponential smoothing for a time series.
+- [CODE01-232] Compute the autocorrelation function of a time series from scratch.
+- [CODE01-233] Implement an efficient rolling-window mean in NumPy without Python loops.
+- [CODE01-234] Implement a character-level RNN in NumPy that generates text from a seed.
+- [CODE01-235] Implement an n-gram language model with smoothing from scratch.
+- [CODE01-236] Implement the forward pass of a 2D convolution in NumPy, including stride and padding.
+- [CODE01-237] Implement Sobel edge detection, then outline the remaining Canny steps of non-maximum suppression and hysteresis.
+- [CODE01-238] Implement the gradient penalty term of WGAN-GP.
+
+## Reinforcement learning code
+- [CODE01-239] Compute discounted returns for a sequence of rewards.
+- [CODE01-240] Implement value iteration for a small MDP given its transition matrix.
+- [CODE01-241] Implement a tabular Q-learning agent with decaying epsilon-greedy exploration for a grid world.
+- [CODE01-242] Implement a SARSA agent and compare its learned policy with Q-learning on the same environment.
+
+## Feature extraction and autograd code
+- [CODE01-243] Implement a custom torch.autograd.Function, for example for arctanh, with an analytical backward pass, and verify it with gradcheck.
+- [CODE01-244] Turn a pretrained torchvision ResNet-34 into a 512-dimensional feature extractor, with the correct ImageNet preprocessing.

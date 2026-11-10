@@ -1,0 +1,86 @@
+Q012995	data-mining	Describe the importance of feature selection and feature engineering in data mining.
+Q013028	data-processing	Explain the difference between label encoding and one-hot encoding.
+Q013029	data-processing	Describe the process of feature extraction.
+Q013032	data-processing	Why is feature engineering critical in model performance?
+Q013033	data-processing	How do you design and select features for a machine learning model?
+Q013034	data-processing	What are interaction features, and when might they be useful?
+Q013037	data-processing	How does feature selection help prevent overfitting?
+Q013038	data-processing	When should you apply Z-score normalization?
+Q013039	data-processing	Explain the min-max scaling process.
+Q013040	data-processing	How do you decide which feature scaling method to use?
+Q013041	data-processing	Compare and contrast standardization vs normalization.
+Q013042	data-processing	What is the effect of scaling on gradient descent optimization?
+Q013043	data-processing	Why do you need to convert categorical data into numerical format?
+Q013044	data-processing	Describe the “dummy variable trap” and how to avoid it.
+Q013045	data-processing	How does frequency encoding work?
+Q013046	data-processing	What is target mean encoding, and when is it appropriate to use?
+Q013047	data-processing	How would you handle a categorical feature with a large number of levels?
+Q013053	data-processing	Discuss the advantages of using a data preprocessing pipeline.
+Q013054	data-processing	How do you implement a data processing pipeline with scikit-learn?
+Q013055	data-processing	What are the key components of an efficient preprocessing pipeline?
+Q013056	data-processing	How do you incorporate custom transformers within a preprocessing pipeline?
+Q013057	data-processing	What is the role of the ColumnTransformer class in scikit-learn?
+Q013068	data-processing	How do you identify and resolve data inconsistencies?
+Q013069	data-processing	What are the common steps for data validation?
+Q013070	data-processing	Explain how you manage duplicate data in your dataset.
+Q013071	data-processing	Discuss the approaches to handle outliers in your data.
+Q013072	data-processing	How do you verify the correctness of the data after cleaning?
+Q013083	data-processing	You are given a dataset with several categorical features; describe your approach to preprocessing it for a machine learning model.
+Q013084	data-processing	How would you approach preprocessing a dataset that you know little about?
+Q013086	data-processing	Describe the steps you would take to preprocess a dataset for a recommender system.
+Q013087	data-processing	How would you handle varying scales of features in a clustering problem?
+Q013088	data-processing	Explain how to process a dataset for a model that is sensitive to unbalanced data.
+Q013093	data-processing	What is the concept of automated feature engineering, and what tools are available for it?
+Q013094	data-processing	How can deep learning be used for feature extraction in unstructured data?
+Q013097	data-processing	How does online normalization work, and in what scenarios is it used?
+Q013103	data-processing	How can preprocessing steps impact data bias in your models?
+Q013104	data-processing	What measures can be taken to prevent introducing bias during data cleaning?
+Q013105	data-processing	How does the concept of fairness apply to data processing?
+Q013107	data-processing	What are some strategies to detect and mitigate bias in datasets?
+Q013113	data-scientist	Explain the difference between Filter, Wrapper, and Embedded methods for Feature Selection.
+Q013115	data-scientist	Describe the concept of Outlier Detection and its methods.
+Q013117	data-scientist	Explain the concept of Handling Imbalanced Datasets in ML.
+Q013262	deep-learning	What data preprocessing steps are important for training a deep learning model?
+Q013418	feature-engineering	Discuss how Random Forest can be used for feature importance estimation.
+Q013419	feature-engineering	What is Regularization and how does it perform feature selection implicitly?
+Q013420	feature-engineering	How can you use mutual information to select relevant features?
+Q013421	feature-engineering	Explain Principal Component Analysis (PCA) and its role in feature engineering.
+Q013422	feature-engineering	Describe how Autoencoders can be used for feature extraction.
+Q013423	feature-engineering	What is t-distributed Stochastic Neighbor Embedding (t-SNE) and how is it useful?
+Q013424	feature-engineering	Explain the use of Linear Discriminant Analysis (LDA) in feature extraction.
+Q013425	feature-engineering	Discuss the concept of Independent Component Analysis (ICA).
+Q013426	feature-engineering	How do you deal with missing values during feature engineering?
+Q013427	feature-engineering	Describe methods for dealing with imbalanced datasets when engineering features.
+Q013428	feature-engineering	How do you detect and treat outliers during the feature engineering process?
+Q013429	feature-engineering	Discuss the trade-off between adding more features and the risk of overfitting.
+Q013430	feature-engineering	How do you evaluate the effectiveness of your engineered features?
+Q013431	feature-engineering	What is the curse of dimensionality and how can feature engineering address it?
+Q013432	feature-engineering	How do you handle time-series data in feature engineering?
+Q013433	feature-engineering	How can you use domain knowledge to create interaction features?
+Q013434	feature-engineering	Explain the concept of polynomial feature expansion.
+Q013435	feature-engineering	What are some feature engineering techniques specific to text data?
+Q013436	feature-engineering	Describe how deep learning can be used for automatic feature engineering.
+Q013437	feature-engineering	Can you use genetic algorithms for feature engineering? If yes, how?
+Q013448	feature-engineering	Explain how you would perform feature engineering for a recommendation system.
+Q013449	feature-engineering	Discuss your approach to feature engineering for a predictive maintenance problem.
+Q013450	feature-engineering	Describe the feature engineering process you would use for a customer churn prediction model.
+Q013451	feature-engineering	How would you approach feature engineering for real-time anomaly detection in web traffic data?
+Q013452	feature-engineering	Propose a strategy for feature engineering in a natural language processing task to predict sentiment.
+Q013880	ml-design-patterns	Discuss the ‘Rebalancing’ design pattern and its importance in training datasets.
+Q013911	ml-design-patterns	How might ‘Recursive Feature Elimination’ fit into a design pattern for feature selection?
+Q014343	python-ml	Explain the process of data cleaning and why it’s important in machine learning.
+Q014344	python-ml	What are the common steps involved in data preprocessing for a machine learning model?
+Q014345	python-ml	How do you deal with missing or corrupted data in a dataset using Python?
+Q014346	python-ml	Describe the concept of feature scaling and why it is necessary.
+Q014349	python-ml	How can you handle categorical data in machine learning models?
+Q014375	python-ml	How would you approach feature selection in a large dataset?
+Q014376	python-ml	Discuss strategies for dealing with imbalanced datasets.
+Q014680	sql-ml	How can you create lagged features in SQL?
+Q014681	sql-ml	Describe how to compute a ratio feature within groups using SQL.
+Q014682	sql-ml	Explain how to discretize a continuous variable in SQL.
+Q014683	sql-ml	How do you join transactional data to a dimension table in such a way that features for Machine Learning can be extracted?
+Q014685	sql-ml	How can you deal with outliers in a SQL database before passing data to Machine Learning algorithms?
+Q014687	sql-ml	Explain how to perform binning of categorical variables in SQL for use in a Machine Learning model.
+Q014688	sql-ml	Describe SQL techniques to perform data sampling.
+Q014696	sql-ml	What are SQL Common Table Expressions (CTEs) and how can they be used for feature generation?
+Q014697	sql-ml	How would you construct a complex SQL query to extract time series features for a Machine Learning model?

@@ -3,7 +3,7 @@ domain: ml
 topic: ml_basics_bias_variance_overfitting
 title: ML basics, bias-variance, overfitting
 tags: [ml, basics, bias-variance, overfitting]
-count: 105
+count: 117
 ---
 # ML basics, bias-variance, overfitting
 
@@ -133,3 +133,19 @@ count: 105
 - [ML01-103] Given a black-box ML algorithm that you cannot modify, how could you improve its error?
 - [ML01-104] You have a tight deadline and a small labelled dataset. How do you pick a simple baseline, and why start with one?
 - [ML01-105] Model performance dropped in production although offline validation looked fine. What generalization issues might explain it?
+
+## More on generalization and model choice
+- [ML01-106] What is Occam's razor, and how does it apply to model selection and the bias-variance tradeoff?
+- [ML01-107] How does feature selection affect bias and variance?
+- [ML01-108] How do gradient boosting hyperparameters such as learning rate, number of trees and tree depth affect bias and variance?
+- [ML01-109] How does a Bayesian view of learning, with priors and posterior averaging, relate to bias and variance?
+- [ML01-110] How do you decide that a model is good enough to deploy?
+- [ML01-111] What is multitask learning, and when does sharing a model across tasks help or hurt?
+- [ML01-112] What is end-to-end learning, and when is a pipeline of separately trained components the better choice?
+
+## More on high-dimensional data
+- [ML01-113] What is the peaking (Hughes) phenomenon, where adding features eventually lowers classifier accuracy?
+- [ML01-114] What is intrinsic dimensionality, and how can you estimate it for a dataset?
+- [ML01-115] What is concentration of measure, and how does it explain why distances become less informative in high dimensions?
+- [ML01-116] How does feature hashing help with very high-dimensional sparse features, and what does it cost?
+- [ML01-117] What is variable clustering, and how can it reduce dimensionality while keeping features interpretable?

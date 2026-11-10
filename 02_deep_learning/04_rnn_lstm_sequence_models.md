@@ -3,7 +3,7 @@ domain: dl
 topic: rnn_lstm_sequence_models
 title: RNN, LSTM, GRU and sequence models
 tags: [rnn, lstm, gru, seq2seq]
-count: 102
+count: 111
 ---
 # RNN, LSTM, GRU and sequence models
 
@@ -126,3 +126,14 @@ count: 102
 - [DL04-100] What does "selective" mean in Mamba, why does input-dependent state dynamics break the convolutional view, and how is it made efficient?
 - [DL04-101] Compare Mamba, a Transformer and an LSTM on training parallelism, inference cost, long-context handling and recall of specific earlier tokens.
 - [DL04-102] How do linear attention and models like RWKV connect Transformers to recurrent networks?
+
+## RNN applications and extensions
+- [DL04-103] How would you set up an RNN for multi-step time-series forecasting, and how do recursive and direct forecasting strategies compare?
+- [DL04-104] How do you use a character-level RNN to generate text, and how does sampling temperature affect the output?
+- [DL04-105] How can you visualize and interpret what an RNN has learned, for example through hidden-unit activations or attention weights?
+- [DL04-106] How do 1D CNNs and temporal convolutional networks compare with RNNs for sequence data?
+- [DL04-107] How can recurrent models such as ConvLSTM be used for video frame prediction?
+- [DL04-108] How can RNNs model user sessions for session-based recommendation, as in GRU4Rec?
+- [DL04-109] Why are recurrent policies used in reinforcement learning for partially observable environments?
+- [DL04-110] How do memory-augmented networks such as Neural Turing Machines add external memory to an RNN?
+- [DL04-111] How would you use an LSTM for anomaly detection in sequential data, for example through prediction or reconstruction error?

@@ -1,0 +1,37 @@
+Q013154	data-scientist	What is Recurrent Neural Networks (RNN) and their variants (LSTM, GRU)?
+Q014037	neural-networks	In what scenarios would you choose a recurrent neural network over a feedforward neural network?
+Q014043	neural-networks	What are Gated Recurrent Units (GRUs) and Long Short-Term Memory (LSTM) networks? What problems do they solve?
+Q014064	neural-networks	What is the role of recurrent connections in the context of an RNN?
+Q014069	neural-networks	Discuss the challenges of sequence modeling with neural networks.
+Q014070	neural-networks	How do LSTMs work, and what are their advantages over basic RNNs?
+Q014071	neural-networks	Elaborate on the bidirectional RNN and when you would use it.
+Q014072	neural-networks	How do you handle variable-length sequences in neural networks?
+Q014073	neural-networks	Discuss the importance of sequence padding, and how does it affect network performance.
+Q014090	neural-networks	How can RNNs be utilized for time-series forecasting?
+Q014612	rnn	Describe the process of implementing an RNN with TensorFlow or PyTorch.
+Q014613	rnn	How would you preprocess text data for training an RNN?
+Q014614	rnn	Explain how you would use an RNN for generating text sequences.
+Q014615	rnn	What considerations do you take into account when initializing RNN weights?
+Q014616	rnn	How do you prevent overfitting while training an RNN model?
+Q014617	rnn	What metrics are most commonly used to evaluate the performance of an RNN?
+Q014618	rnn	How do you assess the impact of different RNN architectures on your model’s performance?
+Q014619	rnn	Describe a method for tuning hyperparameters of an RNN model.
+Q014620	rnn	What techniques can be used to visualize and interpret RNN models or their predictions?
+Q014621	rnn	How would you use RNNs for a time-series forecasting task?
+Q014622	rnn	What are the considerations when using RNNs for natural language processing (NLP) tasks?
+Q014623	rnn	In what ways can RNNs be utilized for speech recognition?
+Q014624	rnn	How can RNNs be applied to video frame prediction?
+Q014625	rnn	Provide an example of how RNNs can be used in a recommendation systems context.
+Q014631	rnn	Discuss the implications of recent advancements in transformer architecture on the future uses of RNNs.
+Q014632	rnn	How has the advent of transfer learning influenced RNN applications in NLP?
+Q014633	rnn	What are some exciting research areas related to RNNs and sequential data modeling?
+Q014634	rnn	Describe the role of RNNs in the context of reinforcement learning and agent decision-making.
+Q014635	rnn	What are potential applications of RNNs in the emerging field of edge computing and IoT devices?
+Q014636	rnn	How do sequence-to-sequence models work, and in what applications are they commonly used?
+Q014637	rnn	Compare convolutional neural networks (CNNs) to RNNs in processing sequence data.
+Q014638	rnn	How would you incorporate external memory mechanisms into RNNs?
+Q014639	rnn	Describe how RNNs could be used for anomaly detection in sequential data.
+Q014640	rnn	Explain the application of RNNs in multi-agent systems and the complexities involved.
+Q014641	rnn	Explain the process of deploying an RNN model to production and the challenges involved.
+Q014642	rnn	How do you monitor and maintain an RNN model in production?
+Q014643	rnn	What is model versioning, and why is it important for RNNs deployed in practice?

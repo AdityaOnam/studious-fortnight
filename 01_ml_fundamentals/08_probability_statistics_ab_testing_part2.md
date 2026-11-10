@@ -3,7 +3,7 @@ domain: ml
 topic: probability_statistics_ab_testing
 title: Probability, statistics and A/B testing
 tags: [statistics, probability, ab-testing, bayes]
-count: 91
+count: 112
 part: 2/2
 ---
 # Probability, statistics and A/B testing (part 2)
@@ -114,3 +114,28 @@ part: 2/2
 - [ML08-213] How would you sample from an arbitrary distribution given only a uniform random number generator?
 - [ML08-214] What is the expected value of the minimum of two independent uniform [0, 1] random variables?
 - [ML08-215] How would you estimate pi with a Monte Carlo simulation, and how does the error shrink with the number of samples?
+
+## More probability and statistics
+- [ML08-216] What is the five-number summary, and how do range, interquartile range, variance and standard deviation each measure dispersion?
+- [ML08-217] What is kurtosis, and what does excess kurtosis tell you about tail risk?
+- [ML08-218] What is effect size, for example Cohen's d, and why report it alongside a p-value?
+- [ML08-219] What is a Markov chain, what is its stationary distribution, and how would you use one to model user navigation on a website?
+- [ML08-220] What are probabilistic graphical models, and how do Bayesian networks differ from Markov random fields?
+- [ML08-221] What is Markov Chain Monte Carlo, and how do Metropolis-Hastings and Gibbs sampling work?
+- [ML08-222] What is variational inference, and how does it trade accuracy for speed compared with MCMC?
+- [ML08-223] What is a Gaussian process, and how does it provide uncertainty estimates for regression?
+- [ML08-224] How would you determine from clinical trial data whether a new drug is effective?
+
+## Probability and Bayesian worked problems
+- [ML08-225] From a 2×2 table of treatment versus outcome, how do you compute the sample odds ratio, the log-odds ratio and a 95% confidence interval for the true odds ratio?
+- [ML08-226] Derive the expectation and variance of a Binomial(n, p) random variable.
+- [ML08-227] A device fires 200 independent particles that each hit the target with probability 0.1. What distribution describes the number of hits, what are its mean and variance, and how plausible is a claim of exactly 60 hits?
+- [ML08-228] A screening test is correct 95% of the time whether or not a condition is present, and 1% of cases have the condition. What is the probability that the test comes back positive?
+- [ML08-229] In a population that is half female, 5% of females and 0.25% of males have a disease. If a randomly chosen person has the disease, what is the probability that the person is female?
+- [ML08-230] A predictor is right 85% of the time, and a portfolio holds twice as many state-1 items as state-0 items. If the predictor says an item is in state 1, what is the probability that it is correct?
+- [ML08-231] Derive the maximum likelihood estimator of p from i.i.d. binomial observations.
+- [ML08-232] What is the score function, and what is its expected value at the true parameter?
+- [ML08-233] Derive the Fisher information for a Bernoulli(θ) and for a Poisson(λ) distribution.
+- [ML08-234] What is the difference between the posterior distribution, the prior predictive distribution and the posterior predictive distribution?
+- [ML08-235] With 5 Bernoulli trials and a discrete prior P(θ = 1/2) = 0.25, P(θ = 1/6) = 0.5, P(θ = 1/4) = 0.25, how do you derive the posterior p(θ | y) and the prior predictive distribution of y?
+- [ML08-236] What is a non-informative prior, and why can a supposedly non-informative prior still influence the result?

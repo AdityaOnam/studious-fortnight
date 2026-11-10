@@ -3,7 +3,7 @@ domain: ml
 topic: unsupervised_clustering_dim_reduction
 title: Unsupervised learning: clustering and dimensionality reduction
 tags: [ml, clustering, pca, unsupervised]
-count: 121
+count: 143
 ---
 # Unsupervised learning: clustering and dimensionality reduction
 
@@ -149,3 +149,31 @@ count: 121
 ## Additional questions
 - [ML04-120] Can you describe the K-means clustering algorithm and its limitations?
 - [ML04-121] What is Principal Component Analysis (PCA) and how does it address high dimensionality?
+
+## More clustering methods and practice
+- [ML04-122] How would you evaluate the stability of a clustering, for example with bootstrap resampling?
+- [ML04-123] What is consensus clustering, and how does it make cluster assignments more robust?
+- [ML04-124] How do you select features for clustering when there is no label to guide you?
+- [ML04-125] After clustering, how do you profile and name the clusters so the business can act on them?
+- [ML04-126] How does affinity propagation work, and how does it pick the number of clusters?
+- [ML04-127] How does BIRCH cluster very large datasets with a single pass?
+- [ML04-128] How would you cluster time-series data, and why might you use dynamic time warping instead of Euclidean distance?
+- [ML04-129] What is subspace clustering, and why is it useful for high-dimensional data?
+- [ML04-130] What are deep clustering methods such as DEC, and how do they learn representations and clusters together?
+- [ML04-131] How is community detection performed on social networks, for example with modularity-based methods like Louvain?
+- [ML04-132] How can k-means be used for image segmentation or color quantization?
+- [ML04-133] How can k-means be used for anomaly detection, and what are its weaknesses for this?
+- [ML04-134] How can cluster assignments be used to create features for a supervised model?
+- [ML04-135] What is a self-organizing map, and what is it used for?
+
+## More dimensionality reduction
+- [ML04-136] How do manifold learning methods such as Isomap and Locally Linear Embedding work?
+- [ML04-137] How do you handle missing values when applying PCA?
+- [ML04-138] Can PCA be applied to categorical data, and what alternatives such as MCA or FAMD exist?
+
+## Association rule mining
+- [ML04-139] What is association rule mining, and how does it relate to unsupervised learning?
+- [ML04-140] What are support, confidence and lift, and why can a high-confidence rule still be useless?
+- [ML04-141] How does the Apriori algorithm find frequent itemsets, and what property does it use to prune the search?
+- [ML04-142] How does FP-Growth improve on Apriori?
+- [ML04-143] How would you run a market-basket analysis for a retailer, and how would you turn the rules into actions?

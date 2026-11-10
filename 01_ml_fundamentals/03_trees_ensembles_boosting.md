@@ -3,7 +3,7 @@ domain: ml
 topic: trees_ensembles_boosting
 title: Decision trees, ensembles, boosting
 tags: [ml, trees, ensemble, boosting, xgboost]
-count: 138
+count: 163
 ---
 # Decision trees, ensembles, boosting
 
@@ -164,3 +164,32 @@ count: 138
 ## Additional questions
 - [ML03-137] Is random forest bagging or boosting?
 - [ML03-138] Why is boosting a more stable algorithm compared to other ensemble algorithms?
+
+## More on trees and ensembles
+- [ML03-139] How does the CHAID algorithm build a decision tree, and how does it differ from CART?
+- [ML03-140] How is the minimum description length principle applied to decision tree learning and pruning?
+- [ML03-141] How do pruning strategies differ across decision tree algorithms, such as reduced-error, pessimistic and cost-complexity pruning?
+- [ML03-142] Describe a scenario where a single decision tree is a better choice than a random forest or gradient boosting model.
+- [ML03-143] How would you use tree-based models for time-series prediction, and why does their inability to extrapolate matter there?
+- [ML03-144] How can decision trees and random forests be used for feature selection on a large dataset?
+- [ML03-145] What is the difference between homogeneous and heterogeneous ensembles?
+- [ML03-146] How do you decide how many base learners or trees to include in an ensemble?
+- [ML03-147] What is ensemble pruning, and why might you remove members from an ensemble?
+- [ML03-148] What is dynamic ensemble selection, where the ensemble members used depend on the input?
+- [ML03-149] How are neural networks combined into ensembles, for example deep ensembles or snapshot ensembles, and what do they add for uncertainty estimation?
+- [ML03-150] Which ensemble methods would you use for time-series forecasting, and why?
+- [ML03-151] If interpretability is crucial, how can you make a tree ensemble understandable to stakeholders and regulators?
+- [ML03-152] What are random forest proximities, and how can they be used for clustering, outlier detection or imputation?
+- [ML03-153] What are the limitations of random forests, for example on extrapolation, sparse high-dimensional data and model size?
+- [ML03-154] What are the pitfalls of using LightGBM on small datasets, and how do you adjust its parameters?
+- [ML03-155] How do you update a gradient boosting model as new data arrives: continue training, refit or retrain from scratch?
+- [ML03-156] How do LightGBM and XGBoost handle learning-to-rank problems, for example with LambdaMART, and which parameters matter?
+- [ML03-157] How does gradient boosting handle multiclass classification, and how does the number of trees grow with the number of classes?
+- [ML03-158] How can gradient boosted trees be combined with linear models or neural networks, for example by using tree leaves as features as in GBDT+LR?
+- [ML03-159] How does GPU acceleration change gradient boosting training, and when is it worth using?
+
+## Ensemble theory
+- [ML03-160] For a very small dataset, would you prefer bagging or stacking, and why?
+- [ML03-161] Why is the covariance between two draws zero when sampling with replacement but not without replacement, and how does this relate to bagging?
+- [ML03-162] Under what conditions does the error of an ensemble approach zero as the number of members grows, according to Hansen and Salamon?
+- [ML03-163] What are static and dynamic committee machines, and which combiners, such as a mixture of experts, use the input directly?

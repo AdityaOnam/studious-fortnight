@@ -1,0 +1,48 @@
+Q013031	data-processing	What is a Fourier transform, and how is it applied in data processing?
+Q013729	linear-algebra	Explain the properties of an identity matrix.
+Q013730	linear-algebra	Define what a symmetric matrix is.
+Q013731	linear-algebra	What is a unit vector and how do you find it?
+Q013732	linear-algebra	Explain the concept of an orthogonal matrix.
+Q013733	linear-algebra	Define positive definiteness of a matrix.
+Q013734	linear-algebra	What is the rank of a matrix and why is it important?
+Q013735	linear-algebra	How do you represent a system of linear equations using matrices?
+Q013736	linear-algebra	What is the method of Gaussian elimination?
+Q013737	linear-algebra	Explain the concept of linear dependence and independence.
+Q013738	linear-algebra	What is the meaning of the solution space of a system of linear equations?
+Q013739	linear-algebra	Describe the conditions for consistency in linear equations.
+Q013740	linear-algebra	Define and differentiate between homogenous and non-homogenous systems.
+Q013741	linear-algebra	How do you compute the inverse of a matrix and when is it possible?
+Q013742	linear-algebra	Explain the LU decomposition of a matrix.
+Q013743	linear-algebra	What are singular or ill-conditioned matrices?
+Q013744	linear-algebra	How do you perform QR decomposition?
+Q013745	linear-algebra	What is the Singular Value Decomposition (SVD) and its applications in machine learning?
+Q013746	linear-algebra	Explain the concept of matrix factorization.
+Q013747	linear-algebra	What is a linear transformation in linear algebra?
+Q013748	linear-algebra	How can you represent linear transformation using a matrix?
+Q013749	linear-algebra	Describe the kernel and image of a linear transformation.
+Q013750	linear-algebra	How does change of basis affect matrix representation of linear transformations?
+Q013759	linear-algebra	How is linear regression related to linear algebra?
+Q013760	linear-algebra	Describe the role of linear algebra in neural network computations.
+Q013761	linear-algebra	How do eigenvalues and eigenvectors apply to Principal Component Analysis (PCA)?
+Q013762	linear-algebra	Explain how the SVD is used in recommendation systems.
+Q013763	linear-algebra	Discuss the importance of linear algebra in optimization problems, such as gradient descent.
+Q013764	linear-algebra	How would you handle large-scale matrix operations efficiently in terms of memory and computation?
+Q013765	linear-algebra	Explain how you would preprocess data to be used in linear algebra computations.
+Q013766	linear-algebra	Describe ways to find the rank of a matrix effectively.
+Q013767	linear-algebra	What would you consider when choosing a library for linear algebra operations?
+Q013768	linear-algebra	How do you ensure numerical stability when performing matrix computations?
+Q013769	linear-algebra	Propose a method for dimensionality reduction using linear algebra techniques.
+Q013770	linear-algebra	Explain how you would use linear algebra to clean and preprocess a dataset.
+Q013771	linear-algebra	Describe a scenario where linear algebra could be used to improve model accuracy.
+Q013772	linear-algebra	How would you use matrices to model relational data in databases?
+Q013773	linear-algebra	Discuss how to apply linear algebra to image processing tasks.
+Q013774	linear-algebra	What are sparse matrices and how are they efficiently represented and used?
+Q013775	linear-algebra	Discuss the role of linear algebra in deep learning, specifically in training convolutional neural networks.
+Q013776	linear-algebra	Explain how tensor operations are vital in algorithms working with higher-dimensional data.
+Q013777	linear-algebra	What is the role of linear algebra in time series analysis?
+Q013778	linear-algebra	How do graph theory and linear algebra intersect in machine learning?
+Q013779	linear-algebra	Given a dataset, determine if PCA would be beneficial and justify your approach.
+Q013780	linear-algebra	How would you implement a linear algebra-based algorithm to classify text documents?
+Q013781	linear-algebra	Design a linear algebra solution for a collaborative filtering problem in a movie recommendation system.
+Q013782	linear-algebra	Propose strategies to visualize high-dimensional data using linear algebra techniques.
+Q013783	linear-algebra	Discuss an approach for optimizing memory usage in matrix computations for a large-scale machine learning application.

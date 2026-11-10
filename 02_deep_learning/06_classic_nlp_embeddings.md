@@ -3,7 +3,7 @@ domain: dl
 topic: classic_nlp_embeddings
 title: Classic NLP and word embeddings
 tags: [nlp, word2vec, tfidf, bert]
-count: 120
+count: 132
 ---
 # Classic NLP and word embeddings
 
@@ -146,3 +146,17 @@ count: 120
 - [DL06-118] How would you build a spelling corrector using the noisy channel model?
 - [DL06-119] How would you detect duplicate questions on a forum, and which text similarity measures would you compare?
 - [DL06-120] Why do abstractive summarizers hallucinate, and how would you measure and reduce unfaithful summaries?
+
+## More classic NLP questions
+- [DL06-121] What are the differences between rule-based, statistical and neural approaches to NLP?
+- [DL06-122] How do you deal with a very large vocabulary in text models, for example with the hashing trick, vocabulary pruning or subword units?
+- [DL06-123] How do LDA and NMF perform topic modeling, and how do you choose the number of topics and evaluate topic quality?
+- [DL06-124] What approaches measure semantic similarity between texts, from lexical overlap to embeddings and cross-encoders?
+- [DL06-125] What are context-free grammars, and how are they used in parsing?
+- [DL06-126] How are machine translation systems evaluated, and how do BLEU, chrF, COMET and human evaluation compare?
+- [DL06-127] How do you handle multilingual text processing, including language identification, script normalization and multilingual models?
+- [DL06-128] How would you build NLP models for a low-resource language with little labeled data?
+- [DL06-129] How do spaCy, NLTK and Hugging Face Transformers differ, and when would you use each?
+- [DL06-130] How would you build a task-oriented chatbot with intent classification and slot filling?
+- [DL06-131] How would you build a spam detection system for text messages or email?
+- [DL06-132] How would you design an NLP system to detect fake news articles, and what are its limits?

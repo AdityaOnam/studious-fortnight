@@ -4,8 +4,9 @@ topic: pytorch_tensorflow_framework
 title: PyTorch / TensorFlow / framework questions
 tags: [pytorch, tensorflow, keras, numpy, pandas]
 count: 169
+part: 1/2
 ---
-# PyTorch / TensorFlow / framework questions
+# PyTorch / TensorFlow / framework questions (part 1)
 
 ## NumPy fundamentals
 - [DL07-001] What is NumPy, and why is it important for machine learning work?

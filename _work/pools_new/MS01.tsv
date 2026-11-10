@@ -1,0 +1,79 @@
+Q013024	data-mining	What are the considerations for deploying a data mining model into production?
+Q013025	data-mining	How do you monitor the performance of a data mining system over time?
+Q013026	data-mining	Discuss strategies for updating data mining models with new incoming data.
+Q013260	deep-learning	Explain how a deep learning model can be deployed into production.
+Q013261	deep-learning	What are the considerations for scaling deep learning models?
+Q013874	ml-design-patterns	Discuss the ‘Microservice’ design pattern in deploying ML models.
+Q013875	ml-design-patterns	Describe the ‘Continuous Training’ design pattern and its use cases.
+Q013877	ml-design-patterns	What is the ‘Prediction Cache’ design pattern and how does it improve performance?
+Q013878	ml-design-patterns	Can you discuss the ‘Warm Start’ pattern in machine learning model training?
+Q013885	ml-design-patterns	How would you scale a machine learning pipeline according to the ‘Horizontal Scaling’ design pattern?
+Q013886	ml-design-patterns	Describe a scenario where the ‘Model-as-a-Service’ design pattern would be suitable.
+Q013887	ml-design-patterns	What considerations should be taken into account when using ‘Replicated Prediction Servers’?
+Q013888	ml-design-patterns	Explain how the ‘Periodic Training’ design pattern is implemented in an actual system.
+Q013889	ml-design-patterns	Discuss the ‘Model Decay’ design pattern and strategies to overcome it.
+Q013890	ml-design-patterns	Describe the ‘Real-time serving’ design pattern and its use in latency-sensitive applications.
+Q013891	ml-design-patterns	Explain the ‘Distributed Machine Learning’ design pattern and its challenges.
+Q013892	ml-design-patterns	What is ‘Model Monitoring’ and what patterns does it involve?
+Q013894	ml-design-patterns	Explain the ‘Logging’ design pattern in the ML lifecycle.
+Q013895	ml-design-patterns	Discuss how ‘Continuous Evaluation’ helps in maintaining model quality.
+Q013903	ml-design-patterns	How would you set up a ‘Champion/Challenger’ model deployment architecture?
+Q013904	ml-design-patterns	Propose a system design using ‘Static Model’ and ‘Dynamic Model’ patterns to handle different needs.
+Q013914	ml-design-patterns	How can we make sure that the ‘Model Lineage’ design pattern is maintained throughout the model lifecycle?
+Q013915	ml-design-patterns	What design patterns would you recommend for a system requiring high throughput and low latency predictions?
+Q013916	ml-design-patterns	How would you approach ‘Model Serving’ in an environment with strict data regulations?
+Q013921	ml-design-patterns	What ‘Rollback’ strategies could be put in place for deployed machine learning models?
+Q013922	ml-design-patterns	Discuss ‘Dynamic Training’ approaches in a scenario where data distributions change rapidly.
+Q013929	mlops	Describe the process of setting up a CI/CD pipeline for a machine learning project.
+Q013930	mlops	How do you automate model testing and validation in an MLOps pipeline?
+Q013931	mlops	What are some strategies for managing dependencies and version control in machine learning projects?
+Q013932	mlops	Explain the concept of blue/green deployments in the context of machine learning models.
+Q013933	mlops	How do feature flags play into the deployment of new model features?
+Q013934	mlops	What are the key performance indicators (KPIs) you would monitor for a deployed machine learning model?
+Q013935	mlops	How would you approach versioning for machine learning models?
+Q013936	mlops	What is model drift, and how do you monitor and handle it in a production system?
+Q013937	mlops	Discuss the importance of A/B testing in machine learning model deployment.
+Q013938	mlops	Explain the process of rolling back a machine learning model in production.
+Q013939	mlops	How can you ensure the reproducibility of machine learning experiments?
+Q013940	mlops	Explain the role of metadata in machine learning lifecycle management.
+Q013941	mlops	How do you document and manage the lifecycle of machine learning models?
+Q013942	mlops	Discuss the importance of data governance and compliance in MLOps.
+Q013943	mlops	Explain the process of model retirement and archival.
+Q013944	mlops	What are the major security concerns in the MLOps lifecycle?
+Q013945	mlops	How do privacy laws and regulations affect MLOps practices?
+Q013946	mlops	What measures can be put in place to ensure the ethical use of machine learning models?
+Q013947	mlops	Explain the concept of differential privacy and its application in MLOps.
+Q013950	mlops	Set up a basic CI pipeline using GitHub Actions for a machine learning project.
+Q013954	mlops	Given a scenario where a model’s performance has degraded suddenly, detail a plan of action to identify and correct the issue.
+Q013955	mlops	Discuss how you would approach the problem of scaling machine learning models for global usage.
+Q013956	mlops	Propose an MLOps strategy for a company transitioning from a single model in a monolithic application to multiple models across microservices.
+Q013957	mlops	Explain end-to-end how you would deploy a machine learning model into a production environment with zero downtime.
+Q013958	mlops	Outline the steps you would take to automate retraining of a model based on new data availability.
+Q013959	mlops	Discuss the concept of ML pipelines in Kubeflow and their benefits.
+Q013960	mlops	How does reinforcement learning pose unique challenges to the MLOps lifecycle, and how can they be addressed?
+Q013961	mlops	What are the latest advancements in model interpretability, and how do they affect MLOps?
+Q013962	mlops	Describe how multi-tenancy affects MLOps practices and what solutions exist to handle it.
+Q013963	mlops	What role does edge computing play in modern MLOps, and how can one optimize ML models for edge deployment?
+Q014087	neural-networks	How would you approach reducing the inference time of a neural network in production?
+Q014380	python-ml	Discuss the importance of model persistence and demonstrate how to save and load models in Python.
+Q014400	python-ml	Explain the concept of microservices architecture in deploying machine learning models.
+Q014401	python-ml	What are the considerations for scaling a machine learning application with Python?
+Q014402	python-ml	Discuss various options for deploying a machine learning model in Python.
+Q014403	python-ml	How can containerization with tools like Docker benefit machine learning applications?
+Q014404	python-ml	What is model versioning, and how can it be managed in a real-world application?
+Q014405	python-ml	Describe a situation where a machine learning model might fail, and how you would investigate the issue using Python.
+Q014406	python-ml	Discuss strategies for effective logging and monitoring in machine-learning applications.
+Q014408	python-ml	Explain how unit tests and integration tests ensure the correctness of your machine learning code.
+Q014409	python-ml	How do you handle exceptions and manage error handling in Python when deploying machine learning models?
+Q014422	python-ml	What is federated learning, and how can Python be used to implement it?
+Q014689	sql-ml	How can you execute a Machine Learning model stored in a database (such as a SQL Server with R or Python integration)?
+Q014691	sql-ml	Can you update a Machine Learning model directly from SQL? If so, how might you do it?
+Q014692	sql-ml	How does SQL play a role in ML model deployment?
+Q014693	sql-ml	What is the significance of in-database analytics for Machine Learning?
+Q014706	sql-ml	What strategies can be used to efficiently update a large SQL-based Machine Learning model?
+Q014708	sql-ml	Discuss how you would design a system to regularly feed a Machine Learning model with SQL data.
+Q014714	sql-ml	Describe how you would version control the datasets used for building Machine Learning models in SQL.
+Q014715	sql-ml	What is Data Lineage, and how can you track it using SQL?
+Q014716	sql-ml	How would you log and track predictions made by a Machine Learning model within a SQL environment?
+Q014717	sql-ml	Discuss how to manage the entire lifecycle of a Machine Learning model using SQL tools.
+Q014718	sql-ml	What strategies might you use to automate the retraining and evaluation of Machine Learning models from within SQL?

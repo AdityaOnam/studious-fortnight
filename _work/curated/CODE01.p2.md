@@ -98,3 +98,64 @@
 - [M] Implement a planner and executor for an agent with a clean boundary and tracing. {D03857}
 - [M] Implement retry logic with idempotency keys for tool calls that have side effects. {D03858}
 - [H] Build a multi-agent system where agents have different roles and collaborate on a task. {Q005160}
+
+## More classical ML from scratch
+- [M] Implement a regression tree using recursive binary splitting on squared error. {Q013227}
+- [M] Implement cost-complexity pruning for a trained decision tree. {Q013228}
+- [M] Compute impurity-based feature importances from a trained decision tree. {Q013229}
+- [M] Implement AdaBoost with decision stumps from scratch. {Q013232,Q013361}
+- [M] Compute the out-of-bag error of a random forest from its bootstrap samples. {Q014508,Q013366}
+- [M] Implement a Gaussian Naive Bayes classifier from scratch. {Q014019,Q014327}
+- [M] Implement a categorical Naive Bayes classifier with Laplace smoothing. {Q014022}
+- [M] Implement distance-weighted k-nearest neighbors and compare it with uniform voting. {Q013632}
+- [M] Implement a one-vs-one multiclass classifier on top of a binary SVM. {Q014859}
+- [M] Implement mini-batch k-means. {Q013599}
+- [M] Implement the silhouette coefficient from scratch for a given clustering. {Q013598,Q015026,Q012839}
+- [M] Implement the Apriori algorithm to find frequent itemsets and generate association rules. {Q013005,Q015029}
+- [M] Implement the Local Outlier Factor algorithm from scratch. {Q012705}
+- [E] Write a function that flags outliers with the interquartile range (IQR) rule. {Q012699}
+- [M] Implement user-based collaborative filtering with Pearson correlation from scratch. {Q014541,Q014545}
+- [M] Implement item-item collaborative filtering with cosine similarity and produce top-N recommendations. {Q014543,Q014540}
+
+## Feature selection, explainability and evaluation code
+- [M] Select the top-k features by mutual information with the target, implementing the estimate for discrete features. {Q012971}
+- [M] Implement recursive feature elimination around any estimator that exposes coefficients or importances. {Q012972,Q013325}
+- [E] Write a function that drops one feature from every highly correlated pair above a threshold. {Q013445}
+- [M] Implement the hashing trick for high-cardinality categorical features. {Q013444}
+- [M] Compute a variance inflation factor for each predictor. {Q013807}
+- [H] Compute exact Shapley values for a single prediction of a model with a handful of features. {Q013404}
+- [M] Implement a simple LIME-style local explanation by fitting a weighted linear surrogate on perturbed samples. {Q013403}
+- [M] Compute a partial dependence curve for one feature of a trained model. {Q013407}
+- [E] Compute learning curves of training and validation score as the training set grows. {Q012770,Q013990}
+
+## Optimization, statistics and linear algebra code
+- [M] Implement AdaGrad and RMSprop optimizers from scratch. {Q012956,Q012954}
+- [M] Minimize a non-convex function with simulated annealing. {Q012955}
+- [M] Implement a genetic algorithm that evolves a random string toward a target string. {Q013516,Q013515}
+- [M] Implement roulette-wheel and rank-based selection, single-point crossover and mutation for a genetic algorithm. {Q013519,Q013520,Q013517,Q013518}
+- [M] Implement the Metropolis-Hastings algorithm to sample from an unnormalized posterior. {Q014766}
+- [M] Implement Welch's two-sample t-test from scratch. {Q014764}
+- [M] Implement a chi-squared test of independence on a contingency table. {Q014768}
+- [M] Implement matrix inversion with Gauss-Jordan elimination and partial pivoting. {Q013754,Q013753}
+- [M] Implement power iteration to find the dominant eigenvalue and eigenvector of a matrix. {Q013755}
+- [M] Compute gradients of linear regression by hand and verify them against autograd. {Q014440}
+
+## Time series, sequence and vision code
+- [E] Implement simple exponential smoothing for a time series. {Q014962}
+- [M] Compute the autocorrelation function of a time series from scratch. {Q014967}
+- [M] Implement an efficient rolling-window mean in NumPy without Python loops. {Q014183,Q014192}
+- [M] Implement a character-level RNN in NumPy that generates text from a seed. {Q014077}
+- [M] Implement an n-gram language model with smoothing from scratch. {Q014130}
+- [M] Implement the forward pass of a 2D convolution in NumPy, including stride and padding. {Q012876,Q014189}
+- [M] Implement Sobel edge detection, then outline the remaining Canny steps of non-maximum suppression and hysteresis. {Q012910}
+- [M] Implement the gradient penalty term of WGAN-GP. {Q013472}
+
+## Reinforcement learning code
+- [E] Compute discounted returns for a sequence of rewards. {Q014579}
+- [M] Implement value iteration for a small MDP given its transition matrix. {Q014578}
+- [M] Implement a tabular Q-learning agent with decaying epsilon-greedy exploration for a grid world. {Q014465,Q014577,Q014575,Q014583}
+- [M] Implement a SARSA agent and compare its learned policy with Q-learning on the same environment. {Q014580}
+
+## Feature extraction and autograd code
+- [M] Implement a custom torch.autograd.Function, for example for arctanh, with an analytical backward pass, and verify it with gradcheck. {B0124,B0120,B0123}
+- [M] Turn a pretrained torchvision ResNet-34 into a 512-dimensional feature extractor, with the correct ImageNet preprocessing. {B0166,B0167,B0168}

@@ -1,0 +1,5 @@
+Q014395	python-ml	How do Python’s global, nonlocal, and local scopes affect variable access within a machine learning model?
+Q014396	python-ml	Discuss the impact of the GIL (Global Interpreter Lock) on Python concurrency in machine learning applications.
+Q014397	python-ml	Explain how to use context managers in Python and provide a machine learning-related example.
+Q014398	python-ml	What are slots in Python classes and how could they be useful in machine learning applications?
+Q014399	python-ml	Discuss the role of the collections module in managing data structures for machine learning.

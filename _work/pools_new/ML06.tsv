@@ -1,0 +1,86 @@
+Q012992	data-mining	How do you evaluate the performance of a data mining model?
+Q012993	data-mining	Explain cross-validation as it applies to data mining.
+Q013035	data-processing	Explain the concept of feature importance and how to measure it.
+Q013138	data-scientist	What is the purpose of Model Evaluation and Validation in ML?
+Q013140	data-scientist	What is Confusion Matrix and its components?
+Q013141	data-scientist	Describe the concept of Precision, Recall, and F1-Score.
+Q013142	data-scientist	What is Receiver Operating Characteristic (ROC) Curve and its interpretation?
+Q013143	data-scientist	Explain the concept of Area Under the Curve (AUC) and its significance.
+Q013144	data-scientist	What is Mean Squared Error (MSE) and its use in regression problems?
+Q013145	data-scientist	Describe the concept of R-squared (Coefficient of Determination) and its interpretation.
+Q013146	data-scientist	What is K-Fold Cross-Validation and its advantages?
+Q013147	data-scientist	Explain the concept of Stratified K-Fold Cross-Validation and its use cases.
+Q013192	data-scientist	What is Hyperparameter Tuning and its techniques?
+Q013193	data-scientist	Explain the concept of Grid Search and its limitations.
+Q013194	data-scientist	What is Random Search and its advantages over Grid Search?
+Q013195	data-scientist	Describe the concept of Bayesian Optimization and its applications.
+Q013298	deep-learning	How do you evaluate the performance of a deep learning model?
+Q013299	deep-learning	What techniques are used for visualizing and interpreting deep neural networks?
+Q013301	deep-learning	How can confusion matrices help in the evaluation of classification models?
+Q013302	deep-learning	Explain the significance of ROC curves and AUC in model performance.
+Q013303	deep-learning	What are the methods for model introspection and understanding feature importance in deep learning?
+Q013305	deep-learning	Discuss the use of Precision-Recall curves and their importance.
+Q013306	deep-learning	What is model explainability, and why is it important?
+Q013307	deep-learning	How do you deal with the interpretability-vs-performance trade-off in deep learning?
+Q013398	explainable-ai	What are some considerations for implementing XAI in regulated industries?
+Q013399	explainable-ai	How do you assess the quality of an explanation provided by an XAI method?
+Q013400	explainable-ai	How can explainability be integrated into the machine learning model development lifecycle?
+Q013401	explainable-ai	Discuss the potential impact of explainability on the trust and adoption of AI systems.
+Q013402	explainable-ai	How do you maintain the balance between explainability and data privacy?
+Q013405	explainable-ai	Visualize feature importances for a RandomForest model trained on a sample dataset.
+Q013408	explainable-ai	What are current research trends in XAI, and what future developments do you foresee?
+Q013409	explainable-ai	How does causality relate to XAI, and why is it important?
+Q013410	explainable-ai	Discuss the role of natural language processing in generating explanations for AI predictions.
+Q013411	explainable-ai	What are the limitations of current XAI techniques, and how can they be addressed?
+Q013412	explainable-ai	Explain the concept of global interpretability versus local interpretability in machine learning models.
+Q013413	explainable-ai	Describe how you would implement XAI for a credit scoring model.
+Q013414	explainable-ai	How would you explain a deep learning model’s predictions to a non-technical stakeholder?
+Q013415	explainable-ai	Imagine you are tasked with developing a healthcare diagnostic tool. How would XAI factor into your approach?
+Q013416	explainable-ai	What could be the potential risks of not using XAI in autonomous vehicle technology?
+Q013417	explainable-ai	How would you approach building an XAI system for detecting fraudulent financial transactions?
+Q013964	model-evaluation	How do you interpret a model’s calibration curve?
+Q013965	model-evaluation	What is the Brier score, and when would you use it?
+Q013966	model-evaluation	Describe how you would use bootstrapping in model evaluation.
+Q013967	model-evaluation	When is it appropriate to use the Matthews Correlation Coefficient (MCC)?
+Q013968	model-evaluation	What are the trade-offs between the different model evaluation metrics?
+Q013969	model-evaluation	Explain the concept of p-value in the context of model evaluation.
+Q013970	model-evaluation	What is a receiver operating characteristic (ROC) curve, and what does it tell us?
+Q013971	model-evaluation	How do you assess statistical significance in differences of model performance?
+Q013972	model-evaluation	What role do confidence intervals play in model evaluation?
+Q013973	model-evaluation	How can Bayesian methods be used in model evaluation?
+Q013974	model-evaluation	How do you compare multiple models with each other?
+Q013975	model-evaluation	Describe model selection criteria based on AIC (Akaike’s Information Criterion) and BIC (Bayesian Information Criterion).
+Q013976	model-evaluation	When would you choose to use AIC over BIC?
+Q013977	model-evaluation	What is the Elbow Method, and how is it used to evaluate models?
+Q013978	model-evaluation	How is the Gini Coefficient used in evaluating classification models?
+Q013984	model-evaluation	How would you evaluate a time-series forecasting model?
+Q013985	model-evaluation	What special considerations are there for evaluating models on imbalanced datasets?
+Q013986	model-evaluation	How would you validate a natural language processing model?
+Q013987	model-evaluation	What is the best way to evaluate a recommendation system?
+Q013988	model-evaluation	Describe a method for evaluating the performance of a clustering algorithm.
+Q013993	model-evaluation	Provide a Python script to compare two models using t-tests and report statistical significance.
+Q013994	model-evaluation	How would you approach the evaluation of a fraud detection algorithm with highly imbalanced classes?
+Q013995	model-evaluation	Describe how you would set up an A/B test to evaluate changes in a machine learning model.
+Q013996	model-evaluation	Discuss how you would evaluate a computer vision model used for self-driving cars.
+Q013997	model-evaluation	Propose a framework for continuous evaluation of an online learning system.
+Q013998	model-evaluation	How would you assess the business impact of precision and recall in a customer churn prediction model?
+Q013999	model-evaluation	Discuss the role of model explainability in model evaluation.
+Q014000	model-evaluation	How does transfer learning affect the way we evaluate models?
+Q014001	model-evaluation	What are ensemble learning models, and how do their evaluation strategies differ?
+Q014002	model-evaluation	Explain adversarial validation and where it might be used.
+Q014003	model-evaluation	What is the concept of ‘model drift’, and how do you measure it?
+Q014352	python-ml	Explain cross-validation and where it fits in the model training process.
+Q014355	python-ml	What are hyperparameters, and how do you tune them?
+Q014358	python-ml	How would you assess a model’s performance? Mention at least three metrics.
+Q014359	python-ml	What is a confusion matrix, and how is it interpreted?
+Q014360	python-ml	Define precision and recall in the context of classification problems.
+Q014361	python-ml	Explain the ROC curve and the area under the curve (AUC) metric.
+Q014362	python-ml	Discuss the differences between supervised and unsupervised learning evaluation.
+Q014363	python-ml	How can you use a learning curve to diagnose a model’s performance?
+Q014364	python-ml	Explain different validation strategies, such as k-fold cross-validation.
+Q014419	python-ml	What is the role of Explainable AI (XAI) and how can Python libraries help achieve it?
+Q014709	sql-ml	What SQL features are there for report generation that might be useful for analyzing Machine Learning model performance?
+Q014710	sql-ml	How can you use SQL to visualize the distribution of data points before feeding them into an ML algorithm?
+Q014711	sql-ml	Describe how you could use SQL to report the performance metrics of a Machine Learning model.
+Q014712	sql-ml	Can SQL be used to visualize false positives and false negatives in classification models? If so, how?
+Q014713	sql-ml	How would you extract and prepare a confusion matrix for a classification problem using SQL?
